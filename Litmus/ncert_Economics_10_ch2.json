@@ -1,0 +1,1647 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Economics",
+  "book": "Understanding Economic Development",
+  "chapterNumber": 2,
+  "chapterName": "Sectors of the Indian Economy",
+  "sourceStatus": "Built from the NCERT PDF jess202 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Understanding Economic Development (Class 10), Reprint 2026-27, chapter pp. 18-37",
+    "note": "Pages are the printed page numbers (the PDF's internal page labels start at 1). Quotes were checked automatically against the PDF text. This reprint says MGNREGA 2005 was replaced in 2025 by Viksit Bharat-G RAM G 2025."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_eco2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_eco2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example primary sector, tertiary sector, final goods, intermediate goods, GDP, disguised unemployment, organised sector or public sector.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "primary sector",
+    "secondary sector",
+    "tertiary sector",
+    "service sector",
+    "final goods",
+    "intermediate goods",
+    "Gross Domestic Product",
+    "Gross Value Added",
+    "underemployment",
+    "disguised unemployment",
+    "open unemployment",
+    "MGNREGA",
+    "Right to Work",
+    "organised sector",
+    "unorganised sector",
+    "public sector",
+    "private sector"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_eco_10_ch2_t1",
+      "title": "Sectors of economic activities",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch2_t1_c1",
+          "label": "Primary, Secondary and Tertiary Sectors",
+          "headingType": "heading",
+          "sourcePages": [20],
+          "cardText": "When we produce a good by exploiting natural resources, such as cotton, milk or minerals, it is an activity of the primary sector, also called agriculture and related sector, because it forms the base for all other products. The secondary sector changes natural products into other forms through manufacturing, like cotton into cloth or sugarcane into sugar; it is also called the industrial sector. The tertiary sector does not produce a good but supports production: transport, storage, communication, banking and trade. Since these generate services, it is also called the service sector.",
+          "hint": "Does the activity use nature directly, make something in a factory or workshop, or provide a service?",
+          "probe": "Explain the difference between primary, secondary and tertiary sectors with examples.",
+          "causeChain": "Primary sector exploits natural resources (base for all products) -> secondary sector manufactures natural products into other forms -> tertiary sector supports both with services such as transport, storage and banking",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_primary_base",
+              "linksChecks": [
+                "chk_eco2_primary_def",
+                "chk_eco2_secondary_def"
+              ],
+              "criterion": "Explains that the primary sector is called primary because it forms the base for the products that the secondary sector later makes.",
+              "isRequired": false
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When we produce a good by exploiting natural resources, it is an activity of the primary sector. Why primary? This is because it forms the base for all other products that we subsequently make. Since most of the natural products we get are from agriculture, dairy, fishing, forestry, this sector is also called agriculture and related sector.",
+              "followUp": "What kind of activities belong to the primary sector, and why is it called 'primary'?",
+              "followUpAllows": [
+                "primary sector"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "exploiting natural resources",
+                  "primary sector",
+                  "base for all other products",
+                  "agriculture and related sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_primary_def",
+                    "criterion": "Defines the primary sector as producing goods by exploiting natural resources (for example agriculture, dairy, fishing, forestry or minerals).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The secondary sector covers activities in which natural products are changed into other forms through ways of manufacturing that we associate with industrial activity. Using cotton fibre we spin yarn and weave cloth; using sugarcane we make sugar or gur. Since this sector gradually became associated with different kinds of industries, it is also called the industrial sector.",
+              "followUp": "What happens to natural products in the secondary sector? Give an example.",
+              "assessment": {
+                "requiredEvidence": [
+                  "natural products are changed into other forms",
+                  "manufacturing",
+                  "industrial sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_secondary_def",
+                    "criterion": "Defines the secondary sector as changing natural products into other forms through manufacturing (for example cotton into cloth, sugarcane into sugar).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t1c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The tertiary sector covers activities that help in the development of the primary and secondary sectors. These activities, by themselves, do not produce a good but they are an aid or a support for the production process. Transport, storage, communication, banking, trade are some examples. Since these activities generate services rather than goods, the tertiary sector is also called the service sector. It also includes essential services like teachers, doctors, washermen, barbers, lawyers, and new IT-based services.",
+              "followUp": "How is the tertiary sector different from the other two? Give some examples.",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not produce a good",
+                  "support for the production process",
+                  "transport, storage, communication, banking, trade",
+                  "service sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_tertiary_def",
+                    "criterion": "Defines the tertiary (service) sector as activities that do not produce a good but support production, such as transport, storage, communication, banking or trade.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_personal_services",
+                    "criterion": "Mentions that the service sector also includes essential services like teachers, doctors, barbers or lawyers, or new IT-based services.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_tertiary_produces_goods"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Cotton cultivation (primary), spinning and weaving cloth (secondary), transport and sale in shops (tertiary)",
+            "Exercise: cotton is a natural product and cloth is a manufactured product",
+            "Exercise: production of a commodity mostly through the natural process is an activity in the primary sector",
+            "Exercise: workers in the tertiary sector do not produce goods"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_tertiary_produces_goods",
+              "wrong": "The tertiary sector produces goods like the other two sectors.",
+              "fix": "Tertiary activities, by themselves, do not produce a good but are an aid or a support for the production process. They generate services rather than goods."
+            }
+          ],
+          "verify": [
+            { "page": 20, "quote": "When we produce a good by exploiting natural resources, it is an activity of the primary sector.", "supports": ["eco2_t1c1_kp1"] },
+            { "page": 20, "quote": "This is because it forms the base for all other products that we subsequently make.", "supports": ["eco2_t1c1_kp1"] },
+            { "page": 20, "quote": "The secondary sector covers activities in which natural products are changed into other forms through ways of manufacturing that we associate with industrial activity.", "supports": ["eco2_t1c1_kp2"] },
+            { "page": 20, "quote": "These activities, by themselves, do not produce a good but they are an aid or a support for the production process.", "supports": ["eco2_t1c1_kp3"] },
+            { "page": 20, "quote": "Since these activities generate services rather than goods, the tertiary sector is also called the service sector.", "supports": ["eco2_t1c1_kp3"] },
+            { "page": 35, "quote": "Production of a commodity, mostly through the natural process, is an", "supports": ["eco2_t1c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t1_c2",
+          "label": "Interdependence of the Three Sectors",
+          "headingType": "subheading",
+          "sourcePages": [21],
+          "cardText": "Economic activities are grouped into three sectors, but they are highly interdependent. If farmers refuse to sell sugarcane to a sugar mill, the mill will have to shut down: industry depends on the primary sector. If the price of fertilisers or pumpsets goes up, farmers' costs rise: agriculture depends on industry. If transporters strike, food becomes scarce in cities and farmers cannot sell their products: both depend on services.",
+          "hint": "What happens to a sugar mill if farmers stop selling it sugarcane?",
+          "probe": "How are the primary, secondary and tertiary sectors dependent on each other? Give examples.",
+          "causeChain": "Mills need farm produce; farmers need fertilisers and pumpsets; both need transport and trade -> a problem in one sector affects the others -> the sectors are highly interdependent",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "eco2_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Economic activities, though grouped into three different categories, are highly interdependent.",
+              "followUp": "Do the three sectors work on their own, or do they depend on each other?",
+              "assessment": {
+                "requiredEvidence": [
+                  "highly interdependent"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_interdependent",
+                    "criterion": "States that the three sectors, though grouped separately, are highly interdependent.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_sectors_independent"
+                ]
+              }
+            },
+            {
+              "id": "eco2_t1c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "If farmers refuse to sell sugarcane to a sugar mill, the mill will have to shut down: the secondary sector depends on the primary. If the price of fertilisers or pumpsets goes up, the cost of cultivation rises and farmers' profits fall. If transporters strike and lorries refuse to take vegetables and milk from rural areas, food becomes scarce in urban areas and farmers cannot sell their products.",
+              "followUp": "Give an example of how a problem in one sector affects another sector.",
+              "assessment": {
+                "requiredEvidence": [
+                  "sugarcane",
+                  "mill will have to shut down",
+                  "fertilisers or pumpsets",
+                  "strike by transporters"
+                ],
+                "passRule": "minCount:1",
+                "checks": [
+                  {
+                    "id": "chk_eco2_example_sugar_mill",
+                    "criterion": "Gives an example of industry depending on agriculture, such as a sugar mill shutting down if farmers stop selling sugarcane.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_example_inputs",
+                    "criterion": "Gives an example of agriculture depending on industry, such as costlier fertilisers or pumpsets raising farmers' costs.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_example_transport",
+                    "criterion": "Gives an example of dependence on services, such as a transport strike making food scarce in cities and leaving farmers unable to sell.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: the activities in primary, secondary and tertiary sectors are interdependent"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_sectors_independent",
+              "wrong": "The three sectors work independently of each other.",
+              "fix": "Economic activities, though grouped into three categories, are highly interdependent; for example a sugar mill shuts down if farmers refuse to sell it sugarcane."
+            }
+          ],
+          "verify": [
+            { "page": 21, "quote": "Economic activities, though, are grouped into three different categories, are highly interdependent.", "supports": ["eco2_t1c2_kp1"] },
+            { "page": 21, "quote": "This is an example of the secondary or industrial sector being dependent on the primary.", "supports": ["eco2_t1c2_kp2"] },
+            { "page": 35, "quote": "(vi) The activities in primary, secondary and tertiary sectors are", "supports": ["eco2_t1c2_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch2_t2",
+      "title": "Comparing the three sectors",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch2_t2_c1",
+          "label": "Final Goods, Intermediate Goods and GDP",
+          "headingType": "heading",
+          "sourcePages": [22, 23],
+          "cardText": "To add up production, economists use the values of goods and services, not their numbers. Only final goods and services, those that reach consumers, are counted. Intermediate goods, like wheat and flour used to make biscuits, are used up in producing final goods, and the value of the final good already includes them. Counting them separately would count the same things several times. The sum of production in the three sectors is the Gross Domestic Product (GDP): the value of all final goods and services produced within a country during a particular year. It shows how big the economy is.",
+          "hint": "If you count the wheat, the flour and the biscuits, how many times have you counted the wheat?",
+          "probe": "What is GDP, and why are only final goods and services counted?",
+          "causeChain": "Final goods already include the value of intermediate goods -> counting intermediate goods separately would count the same value several times -> only final goods and services are counted -> their total is GDP",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_double_counting",
+              "linksChecks": [
+                "chk_eco2_intermediate_included",
+                "chk_eco2_final_only"
+              ],
+              "criterion": "Explains that because the value of final goods already includes intermediate goods, counting intermediate goods separately would count the same value more than once.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t2c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "To get around the problem of adding up so many goods and services, economists suggest that the values of goods and services should be used rather than adding up the actual numbers. For example, 10,000 kgs of wheat sold at Rs 20 per kg has a value of Rs 2,00,000.",
+              "assessment": {
+                "requiredEvidence": [
+                  "values of goods and services",
+                  "rather than adding up the actual numbers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_use_values",
+                    "criterion": "Explains that production is measured by adding the values of goods and services, not their actual numbers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "It makes sense only to include the final goods and services, which reach the consumers. Intermediate goods, like wheat and wheat flour used for biscuits, are used up in producing final goods and services. The value of final goods already includes the value of all the intermediate goods used in making them, so counting the value of the flour and wheat separately would count the same things a number of times.",
+              "followUp": "Why do we count only some goods when we measure a sector's production? What could go wrong otherwise?",
+              "assessment": {
+                "requiredEvidence": [
+                  "final goods and services",
+                  "intermediate goods",
+                  "already includes",
+                  "a number of times"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_final_only",
+                    "criterion": "States that only final goods and services (those that reach consumers) are counted.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_intermediate_included",
+                    "criterion": "Explains that intermediate goods are used up in producing final goods, and the value of final goods already includes them.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_count_everything"
+                ]
+              }
+            },
+            {
+              "id": "eco2_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The value of final goods and services produced in each sector during a particular year provides the total production of the sector for that year. The sum of production in the different sectors gives the Gross Domestic Product (GDP) of a country. It is the value of all final goods and services produced within a country during a particular year. GDP shows how big the economy is.",
+              "followUp": "What is GDP, and how is it worked out from the production of the sectors?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Gross Domestic Product",
+                  "all final goods and services",
+                  "within a country",
+                  "particular year"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_gdp_def",
+                    "criterion": "Defines GDP as the value of all final goods and services produced within a country during a particular year.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_gdp_size",
+                    "criterion": "Mentions that GDP shows how big the economy is.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In India, the task of measuring GDP is undertaken by a central government ministry, with the help of government departments of all states and union territories. Recently the Indian Government began to bring out the contribution of the three sectors towards Gross Value Added (GVA), which measures their contribution after adjusting for taxes and subsidies.",
+              "assessment": {
+                "requiredEvidence": [
+                  "central government ministry",
+                  "Gross Value Added",
+                  "taxes and subsidies"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_eco2_gdp_measured_by",
+                    "criterion": "Mentions that GDP in India is measured by a central government ministry with the help of state departments.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_gva",
+                    "criterion": "Mentions that the government now reports the three sectors' contribution as Gross Value Added (GVA), adjusted for taxes and subsidies.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Wheat sold to a flour mill at Rs 20 per kg, flour sold at Rs 25 per kg, biscuits sold for Rs 80: only the Rs 80 is counted",
+            "Exercise: GDP is the total value of all final goods and services produced during a particular year"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_count_everything",
+              "wrong": "GDP adds up the value of every good sold, including raw materials and intermediate goods.",
+              "fix": "Only final goods and services are counted. The value of final goods already includes intermediate goods, so counting those separately would count the same value several times."
+            }
+          ],
+          "verify": [
+            { "page": 22, "quote": "economists suggest that the values of goods and services should be used rather than adding up the actual numbers", "supports": ["eco2_t2c1_kp1"] },
+            { "page": 22, "quote": "It makes sense only to include the final goods and services.", "supports": ["eco2_t2c1_kp2"] },
+            { "page": 22, "quote": "Intermediate goods are used up in producing final goods and services.", "supports": ["eco2_t2c1_kp2"] },
+            { "page": 22, "quote": "The value of final goods already includes the value of all the intermediate goods that are used in making the final good.", "supports": ["eco2_t2c1_kp2"] },
+            { "page": 23, "quote": "is the value of all final goods and services produced within a country", "supports": ["eco2_t2c1_kp3"] },
+            { "page": 23, "quote": "GDP shows how big the economy is.", "supports": ["eco2_t2c1_kp3"] },
+            { "page": 23, "quote": "The GVA measures the contribution of three sectors of an economy after adjusting for taxes and subsidies.", "supports": ["eco2_t2c1_kp4"] },
+            { "page": 35, "quote": "(ii) all final goods and services", "supports": ["eco2_t2c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t2_c2",
+          "label": "Historical Change in Sectors",
+          "headingType": "subheading",
+          "sourcePages": [23],
+          "cardText": "In now-developed countries, the primary sector was most important at the initial stages of development. As farming improved, agriculture produced much more food, so many people took up crafts, trade and other activities. Over more than a hundred years, new methods of manufacturing brought factories, and the secondary sector became the most important in production and employment. In the past 100 years, there has been a further shift from secondary to tertiary in developed countries: the service sector is now the most important in total production and employs most working people.",
+          "hint": "Which sector dominated first, which came next, and which dominates developed countries today?",
+          "probe": "What does the history of developed countries indicate about shifts between sectors?",
+          "causeChain": "Better farming methods -> agriculture produces more food -> people take up other activities; new manufacturing methods -> factories expand -> secondary sector most important; later -> shift to tertiary sector in developed countries",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_manufacturing_to_shift",
+              "linksChecks": [
+                "chk_eco2_primary_first",
+                "chk_eco2_secondary_next"
+              ],
+              "criterion": "Connects new methods of manufacturing and expanding factories to the shift of importance from the primary to the secondary sector.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "From the histories of many now developed countries, at initial stages of development, primary sector was the most important sector of economic activity. As the methods of farming changed and agriculture began to prosper, it produced much more food than before, and many people could take up other activities.",
+              "followUp": "In the early stages of development, which sector mattered most in today's developed countries?",
+              "assessment": {
+                "requiredEvidence": [
+                  "initial stages of development",
+                  "primary sector was the most important"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_primary_first",
+                    "criterion": "States that at the initial stages of development the primary sector was the most important sector.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Over a long time, especially because new methods of manufacturing were introduced, factories came up and started expanding. Those who had worked on farms began to work in factories. Secondary sector gradually became the most important in total production and employment.",
+              "followUp": "What changed as new ways of making goods spread?",
+              "assessment": {
+                "requiredEvidence": [
+                  "new methods of manufacturing",
+                  "factories",
+                  "most important in total production and employment"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_secondary_next",
+                    "criterion": "States that with new methods of manufacturing and expanding factories, the secondary sector became the most important in production and employment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "In the past 100 years, there has been a further shift from secondary to tertiary sector in developed countries. The service sector has become the most important in terms of total production. Most of the working people are also employed in the service sector.",
+              "followUp": "In the last hundred years, which way has the shift between sectors gone in developed countries?",
+              "assessment": {
+                "requiredEvidence": [
+                  "further shift from secondary to tertiary",
+                  "developed countries",
+                  "service sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_tertiary_shift",
+                    "criterion": "States that in developed countries there has been a further shift from the secondary to the tertiary sector, which is now the most important in production and employment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 23, "quote": "at initial stages of development, primary sector was the most important sector of economic activity", "supports": ["eco2_t2c2_kp1"] },
+            { "page": 23, "quote": "Secondary sector gradually became the most important in total production and employment.", "supports": ["eco2_t2c2_kp2"] },
+            { "page": 23, "quote": "In the past 100 years, there has been a further shift from secondary to tertiary sector in developed countries.", "supports": ["eco2_t2c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t2_c3",
+          "label": "Rising Importance of the Tertiary Sector",
+          "headingType": "subheading",
+          "sourcePages": [24, 25],
+          "cardText": "Between 1977-78 and 2017-18, production rose in all three sectors but most in the tertiary sector, which became India's largest producing sector. Reasons: basic services like hospitals, schools, police, courts, transport and banks are needed, and the government provides them; development of agriculture and industry raises demand for transport, trade and storage; as incomes rise, people demand services like eating out, tourism and private schools; and new ICT-based services have grown rapidly. But not all of the service sector is growing: many small shopkeepers, repair persons and transport persons barely earn a living.",
+          "hint": "Think of basic services, support for other sectors, rising incomes and information technology.",
+          "probe": "Why is the tertiary sector becoming so important in India? Is all of it growing equally?",
+          "causeChain": "Basic services needed + growth of agriculture and industry + rising incomes + new ICT services -> tertiary production grows most -> largest producing sector; but only a part of it (skilled services) is growing",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_incomes_to_services",
+              "linksChecks": [
+                "chk_eco2_reason_income",
+                "chk_eco2_tertiary_largest"
+              ],
+              "criterion": "Connects reasons such as rising incomes or growth of agriculture and industry to the tertiary sector becoming India's largest producing sector.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Over the forty years between 1977-78 and 2017-18, while production in all the three sectors has increased, it has increased the most in the tertiary sector. As a result, in 2017-18, the tertiary sector has emerged as the largest producing sector in India replacing the primary sector.",
+              "followUp": "Which sector's production grew the most in India between 1977-78 and 2017-18?",
+              "followUpAllows": [
+                "1977-78 and 2017-18"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "1977-78 and 2017-18",
+                  "increased the most in the tertiary sector",
+                  "largest producing sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_tertiary_largest",
+                    "criterion": "States that production rose most in the tertiary sector, which became India's largest producing sector, replacing the primary sector.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_tertiary_insignificant"
+                ]
+              }
+            },
+            {
+              "id": "eco2_t2c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Reasons: first, basic services such as hospitals, educational institutions, post and telegraph, police stations, courts, municipal corporations, defence, transport, banks and insurance are required, and in a developing country the government has to provide them. Second, development of agriculture and industry leads to demand for services such as transport, trade and storage. Third, as income levels rise, people demand many more services like eating out, tourism, shopping, private hospitals and private schools. Fourth, new services based on information and communication technology have become important and essential.",
+              "followUp": "Give some reasons why the tertiary sector is growing so fast in India.",
+              "assessment": {
+                "requiredEvidence": [
+                  "basic services",
+                  "transport, trade, storage",
+                  "income levels rise",
+                  "information and communication technology"
+                ],
+                "passRule": "minCount:2",
+                "checks": [
+                  {
+                    "id": "chk_eco2_reason_basic",
+                    "criterion": "Gives the reason that basic services (hospitals, schools, police, courts, transport, banks) are required and the government provides them.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_reason_support",
+                    "criterion": "Gives the reason that development of agriculture and industry increases demand for services such as transport, trade and storage.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_reason_income",
+                    "criterion": "Gives the reason that as incomes rise, people demand more services like eating out, tourism or private schools.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_reason_ict",
+                    "criterion": "Gives the reason that new services based on information and communication technology have grown rapidly.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Not all of the service sector is growing equally well. At one end are a limited number of services that employ highly skilled and educated workers. At the other end, a very large number of workers, such as small shopkeepers, repair persons and transport persons, barely manage to earn a living because no alternative opportunities for work are available. Only a part of this sector is growing in importance.",
+              "assessment": {
+                "requiredEvidence": [
+                  "not all of the service sector is growing",
+                  "highly skilled",
+                  "barely manage to earn a living"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_two_kinds_services",
+                    "criterion": "Explains that only part of the service sector is growing: a few services employ highly skilled workers, while many small shopkeepers, repair persons and transport persons barely earn a living.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'Service sector in India employs two different kinds of people. Who are these?'",
+            "Exercise: 'Tertiary sector is not playing any significant role in the development of Indian economy.' Do you agree?"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_tertiary_insignificant",
+              "wrong": "The tertiary sector plays no significant role in India's economy.",
+              "fix": "Between 1977-78 and 2017-18, production increased the most in the tertiary sector, which became India's largest producing sector."
+            }
+          ],
+          "verify": [
+            { "page": 24, "quote": "it has increased the most in the tertiary sector", "supports": ["eco2_t2c3_kp1"] },
+            { "page": 24, "quote": "the tertiary sector has emerged as the largest producing sector in India replacing the primary sector", "supports": ["eco2_t2c3_kp1"] },
+            { "page": 24, "quote": "In a developing country the government has to take responsibility for the provision of these services.", "supports": ["eco2_t2c3_kp2"] },
+            { "page": 25, "quote": "Greater the development of the primary and secondary sectors, more would be the demand for such services.", "supports": ["eco2_t2c3_kp2"] },
+            { "page": 25, "quote": "as income levels rise, certain sections of people start demanding many more services like eating out, tourism, shopping, private hospitals, private schools", "supports": ["eco2_t2c3_kp2"] },
+            { "page": 25, "quote": "Hence, only a part of this sector is growing in importance.", "supports": ["eco2_t2c3_kp3"] },
+            { "page": 37, "quote": "Service sector in India employs two different kinds of people.", "supports": ["eco2_t2c3_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t2_c4",
+          "label": "Where Are Most People Employed?",
+          "headingType": "subheading",
+          "sourcePages": [25, 26],
+          "cardText": "The share of the three sectors in GVA has changed, but a similar shift has not taken place in employment: the primary sector continues to be the largest employer. Not enough jobs were created in the secondary and tertiary sectors. Industrial output rose more than nine times but industrial employment only about three times; service production rose 14 times but service employment only about five times. So more than half of India's workers are in the primary sector, mainly agriculture, producing only about one sixth of the GVA.",
+          "hint": "Production moved to services. Did jobs move with it?",
+          "probe": "Why did a shift out of the primary sector in production not happen in employment?",
+          "causeChain": "Production grew much faster than employment in secondary and tertiary sectors -> not enough jobs created there -> workers stay in agriculture -> more than half of workers produce only about one sixth of GVA",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_jobs_not_created",
+              "linksChecks": [
+                "chk_eco2_not_enough_jobs",
+                "chk_eco2_primary_largest_employer"
+              ],
+              "criterion": "Connects too few jobs being created in the secondary and tertiary sectors to the primary sector remaining the largest employer.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t2c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "While there has been a change in the share of the three sectors in GVA, a similar shift has not taken place in employment. The primary sector continues to be the largest employer even now.",
+              "followUp": "Has employment shifted between sectors in the same way that production has?",
+              "assessment": {
+                "requiredEvidence": [
+                  "similar shift has not taken place in employment",
+                  "largest employer"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_primary_largest_employer",
+                    "criterion": "States that although production shares changed, the primary sector continues to be the largest employer.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "It is because not enough jobs were created in the secondary and tertiary sectors. Industrial output went up by more than nine times, but employment in industry went up by around three times. While production in the service sector rose by 14 times, employment in the service sector rose around five times.",
+              "followUp": "Why have most workers not moved out of the primary sector?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not enough jobs were created",
+                  "nine times",
+                  "three times",
+                  "14 times",
+                  "five times"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_not_enough_jobs",
+                    "criterion": "Explains that not enough jobs were created in the secondary and tertiary sectors (production rose much faster than employment).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c4_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "As a result, more than half of the workers in the country are working in the primary sector, mainly in agriculture, producing only about one sixth of the GVA.",
+              "assessment": {
+                "requiredEvidence": [
+                  "more than half of the workers",
+                  "one sixth of the GVA"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_half_workers_sixth",
+                    "criterion": "States that more than half of India's workers are in the primary sector but produce only about one sixth of the GVA.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: employment in the service sector has not increased to the same extent as production"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 25, "quote": "a similar shift has not taken place in employment", "supports": ["eco2_t2c4_kp1"] },
+            { "page": 25, "quote": "The primary sector continues to be the largest employer even now.", "supports": ["eco2_t2c4_kp1"] },
+            { "page": 25, "quote": "It is because not enough jobs were created in the secondary and tertiary sectors.", "supports": ["eco2_t2c4_kp2"] },
+            { "page": 26, "quote": "While production in the service sector rose by 14 times, employment in the service sector rose around five times.", "supports": ["eco2_t2c4_kp2"] },
+            { "page": 26, "quote": "more than half of the workers in the country are working in the primary sector, mainly in agriculture, producing only about one sixth of the GVA", "supports": ["eco2_t2c4_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t2_c5",
+          "label": "Underemployment and Disguised Unemployment",
+          "headingType": "subheading",
+          "sourcePages": [26, 27],
+          "cardText": "There are more people in agriculture than necessary, so even if a few move out, production is not affected: agricultural workers are underemployed. Laxmi's family of five works on two hectares of unirrigated land; everyone works, but no one is fully employed. People apparently work but all work less than their potential. This hidden underemployment, unlike someone clearly without a job, is called disguised unemployment. If two members move to a factory, the farm produces as much and family income rises. It also exists in cities, among casual workers like painters, plumbers and repair persons.",
+          "hint": "If two of Laxmi's five family members leave the farm, does the harvest fall?",
+          "probe": "What is disguised unemployment? Explain with an example from rural and urban areas.",
+          "causeChain": "More people in agriculture than necessary -> labour effort divided, no one fully employed -> people work below their potential (hidden) -> disguised unemployment -> removing workers does not reduce production",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_surplus_to_disguised",
+              "linksChecks": [
+                "chk_eco2_more_than_necessary",
+                "chk_eco2_disguised_def"
+              ],
+              "criterion": "Connects there being more people in agriculture than necessary to production not falling when some move out, which is why the unemployment is disguised.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t2c5_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "There are more people in agriculture than is necessary. So, even if you move a few people out, production will not be affected. In other words, workers in the agricultural sector are underemployed.",
+              "followUp": "What would happen to farm production if a few workers moved out of agriculture? What does that tell us?",
+              "assessment": {
+                "requiredEvidence": [
+                  "more people in agriculture than is necessary",
+                  "production will not be affected",
+                  "underemployed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_more_than_necessary",
+                    "criterion": "Explains that there are more people in agriculture than necessary, so moving some out would not affect production.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t2c5_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Laxmi owns about two hectares of unirrigated land; all five members of her family work on it throughout the year because they have nowhere else to go. Everyone is working, but their labour effort gets divided and no one is fully employed. This is underemployment, where people are apparently working but all of them are made to work less than their potential. This underemployment is hidden, in contrast to someone who clearly has no job, so it is also called disguised unemployment.",
+              "followUp": "Think of Laxmi's family: everyone works, so why is it still a kind of unemployment?",
+              "followUpAllows": [
+                "Laxmi"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Laxmi",
+                  "no one is fully employed",
+                  "less than their potential",
+                  "disguised unemployment"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_disguised_def",
+                    "criterion": "Defines disguised unemployment: people apparently work but all work less than their potential, and the underemployment is hidden.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_laxmi_example",
+                    "criterion": "Gives a rural example such as Laxmi's family of five working on a small plot where no one is fully employed.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_disguised_lazy"
+                ]
+              }
+            },
+            {
+              "id": "eco2_t2c5_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "This underemployment can also happen in other sectors. There are thousands of casual workers in the service sector in urban areas who search for daily employment, employed as painters, plumbers, repair persons and others doing odd jobs. Many don't find work every day.",
+              "assessment": {
+                "requiredEvidence": [
+                  "casual workers",
+                  "urban areas",
+                  "painters, plumbers, repair persons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_urban_underemployment",
+                    "criterion": "Gives an urban example of underemployment, such as casual workers (painters, plumbers, repair persons) or street vendors who earn very little.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Laxmi's two-hectare unirrigated plot worked by all five family members",
+            "Exercise: underemployment occurs when people are working less than what they are capable of doing",
+            "Exercise: 'Distinguish between open unemployment and disguised unemployment.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_disguised_lazy",
+              "wrong": "Disguised unemployment means people are lazy or refuse to work.",
+              "fix": "Everyone is working, but there are more people than necessary, so all of them are made to work less than their potential."
+            }
+          ],
+          "verify": [
+            { "page": 26, "quote": "there are more people in agriculture than is necessary", "supports": ["eco2_t2c5_kp1"] },
+            { "page": 26, "quote": "In other words, workers in the agricultural sector are underemployed.", "supports": ["eco2_t2c5_kp1"] },
+            { "page": 26, "quote": "This is the situation of underemployment, where people are apparently working but all of them are made to work less than their potential.", "supports": ["eco2_t2c5_kp2"] },
+            { "page": 26, "quote": "Hence, it is also called disguised unemployment.", "supports": ["eco2_t2c5_kp2"] },
+            { "page": 26, "quote": "They are employed as painters, plumbers, repair persons and others doing odd jobs.", "supports": ["eco2_t2c5_kp3"] },
+            { "page": 27, "quote": "(iii) are working less than what they are capable of doing", "supports": ["eco2_t2c5_kp2"] },
+            { "page": 36, "quote": "Distinguish between open unemployment and disguised unemployment.", "supports": ["eco2_t2c5_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch2_t3",
+      "title": "How to create more employment?",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch2_t3_c1",
+          "label": "Ways to Create More Employment",
+          "headingType": "heading",
+          "sourcePages": [27, 28, 29],
+          "cardText": "A well, dam or canals let farmers like Laxmi irrigate land and grow a second crop, creating work within agriculture itself. Investment in transport, storage and rural roads lets farmers sell more, creating jobs in transport and trade. Cheap agricultural credit from banks helps farmers buy seeds and inputs. Industries and services in semi-rural areas, like a dal mill, cold storage, honey collection centres and food processing, can employ many people. A study estimates nearly 20 lakh jobs could be created in education alone, and many more in health and tourism.",
+          "hint": "Think of irrigation, roads and storage, cheap credit, and industries near villages.",
+          "probe": "How can more employment be created in rural and semi-rural areas?",
+          "causeChain": "Irrigation (well, dam, canals) -> second crop -> more work in agriculture; roads, transport and storage -> farmers sell more -> jobs in trade and transport; cheap credit -> timely inputs; semi-rural industries -> jobs near villages",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_irrigation_to_jobs",
+              "linksChecks": [
+                "chk_eco2_irrigation",
+                "chk_eco2_agri_employment"
+              ],
+              "criterion": "Connects providing irrigation (a well, dam or canals) to farmers growing a second crop and more employment within agriculture.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The government can spend some money or banks can provide a loan to construct a well for Laxmi's family to irrigate the land. She can then take a second crop, wheat, during the rabi season, employing two more family members. If a new dam is constructed and canals are dug to irrigate many such farms, this could lead to a lot of employment generation within the agricultural sector itself, reducing the problem of underemployment.",
+              "followUp": "How could money spent on irrigation create more work for families like Laxmi's?",
+              "assessment": {
+                "requiredEvidence": [
+                  "construct a well",
+                  "second crop",
+                  "dam",
+                  "canals",
+                  "employment generation within the agricultural sector"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_irrigation",
+                    "criterion": "Suggests providing irrigation, such as a well, a dam or canals, so farmers can grow a second crop.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_agri_employment",
+                    "criterion": "States that this creates employment within agriculture itself, reducing underemployment.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "If the government invests in transportation and storage of crops, or makes better rural roads so that mini-trucks reach everywhere, farmers can grow and sell more, providing productive employment also to those in transport or trade. Along with water, cheap agricultural credit from banks at a reasonable rate of interest is needed so farmers can buy seeds, fertilisers, equipment and pumpsets.",
+              "followUp": "How could better roads or storage create more jobs in rural areas?",
+              "assessment": {
+                "requiredEvidence": [
+                  "transportation and storage",
+                  "rural roads",
+                  "cheap agricultural credit"
+                ],
+                "passRule": "minCount:1",
+                "checks": [
+                  {
+                    "id": "chk_eco2_roads_storage",
+                    "criterion": "Suggests investing in transport, storage or rural roads so farmers can sell their crops, creating jobs in transport and trade.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_cheap_credit",
+                    "criterion": "Suggests providing cheap agricultural credit from banks so farmers can buy inputs in time.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t3c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Another way is to identify, promote and locate industries and services in semi-rural areas where a large number of people may be employed: a dal mill to process pulses, a cold storage for potatoes and onions, honey collection centres near forests, and industries that process vegetables and agricultural produce.",
+              "followUp": "What kinds of industries could be set up in semi-rural areas to employ more people?",
+              "assessment": {
+                "requiredEvidence": [
+                  "semi-rural areas",
+                  "dal mill",
+                  "cold storage",
+                  "honey collection"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_semi_rural_industry",
+                    "criterion": "Suggests locating industries and services in semi-rural areas, such as a dal mill, cold storage, honey collection centres or food processing units.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t3c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A study by the erstwhile Planning Commission (now NITI Aayog) estimates that nearly 20 lakh jobs can be created in the education sector alone. Improving health needs many more doctors, nurses and health workers in rural areas. If tourism is improved, more than 35 lakh people could get additional employment every year.",
+              "assessment": {
+                "requiredEvidence": [
+                  "20 lakh jobs",
+                  "education sector",
+                  "health",
+                  "tourism"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_eco2_education_health_jobs",
+                    "criterion": "Mentions that jobs can be created in education (nearly 20 lakh) or health in rural areas.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_tourism_jobs",
+                    "criterion": "Mentions tourism, regional crafts or new services like IT as sources of employment.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'How would income and employment increase if farmers were provided with irrigation and marketing facilities?'",
+            "Exercise (match): unirrigated land - construction of canals; debt burden - banks to provide credit with low interest; no job in the off season - setting up agro-based mills"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 27, "quote": "The government can spend some money or banks can provide a loan, to construct a well for her family to irrigate the land.", "supports": ["eco2_t3c1_kp1"] },
+            { "page": 28, "quote": "This could lead to a lot of employment generation within the agricultural sector itself reducing the problem of underemployment.", "supports": ["eco2_t3c1_kp1"] },
+            { "page": 28, "quote": "we also need to provide cheap agricultural credit to the farmers", "supports": ["eco2_t3c1_kp2"] },
+            { "page": 28, "quote": "identify, promote and locate industries and services in semi-rural areas where a large number of people may be employed", "supports": ["eco2_t3c1_kp3"] },
+            { "page": 29, "quote": "nearly 20 lakh jobs can be created in the education sector alone", "supports": ["eco2_t3c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t3_c2",
+          "label": "Right to Work: MGNREGA",
+          "headingType": "subheading",
+          "sourcePages": [29],
+          "cardText": "Long-term measures take time, so the Union Government made a law implementing the Right to Work in about 625 districts: the Mahatma Gandhi National Rural Employment Guarantee Act 2005 (MGNREGA). It guaranteed 100 days of employment in a year to all who are able and in need of work in rural areas; if the government failed, it would give unemployment allowances. Work that would help increase production from land was given preference. In 2025, the Act was replaced by Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission (Viksit Bharat-G RAM G 2025).",
+          "hint": "What did the law guarantee rural workers, and what if the government could not give work?",
+          "probe": "What was the objective of MGNREGA 2005, and why is it called the 'Right to Work'?",
+          "causeChain": "Long-term measures take time -> quick measure needed -> law guarantees 100 days of rural employment a year -> unemployment allowance if work is not provided -> 'Right to Work'",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "eco2_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Under MGNREGA 2005, all those who are able to, and are in need of, work in rural areas were guaranteed 100 days of employment in a year by the government. If the government fails in its duty to provide employment, it would give unemployment allowances to the people.",
+              "followUp": "What does MGNREGA promise rural people, and what happens if the government cannot keep the promise?",
+              "assessment": {
+                "requiredEvidence": [
+                  "MGNREGA",
+                  "100 days of employment",
+                  "rural areas",
+                  "unemployment allowances"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_mgnrega_100_days",
+                    "criterion": "States that MGNREGA 2005 guaranteed 100 days of employment a year to those able and in need of work in rural areas.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_unemployment_allowance",
+                    "criterion": "Mentions that if the government fails to provide work, it gives unemployment allowances.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t3c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The Union Government made a law implementing the Right to Work in about 625 districts of India. The types of work that would in future help to increase the production from land were given preference under the Act. In 2025, the Act was replaced by Viksit Bharat-Guarantee for Rozgar and Ajeevika Mission (Viksit Bharat-G RAM G 2025).",
+              "assessment": {
+                "requiredEvidence": [
+                  "Right to Work",
+                  "625 districts",
+                  "production from land",
+                  "Viksit Bharat-G RAM G 2025"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_eco2_right_to_work",
+                    "criterion": "Explains that the law implements the Right to Work, giving preference to work that increases production from land.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_replaced_2025",
+                    "criterion": "Mentions that in 2025 MGNREGA was replaced by Viksit Bharat-G RAM G 2025.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'Explain the objective of implementing the MGNREGA 2005 or Viksit Bharat-G RAM G 2025.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 29, "quote": "100 days of employment in a year by", "supports": ["eco2_t3c2_kp1"] },
+            { "page": 29, "quote": "in about 625 districts of India.", "supports": ["eco2_t3c2_kp2"] },
+            { "page": 29, "quote": "Why do you think MGNREGA 2005 or Viksit Bharat-G RAM G 2025 is referred to as", "supports": ["eco2_t3c2_kp2"] },
+            { "page": 37, "quote": "Explain the objective of implementing the MGNREGA 2005 or Viksit Bharat-G RAM G 2025.", "supports": ["eco2_t3c2_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch2_t4",
+      "title": "Division of sectors as organised and unorganised",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch2_t4_c1",
+          "label": "Organised and Unorganised Sectors",
+          "headingType": "heading",
+          "sourcePages": [30, 31],
+          "cardText": "Kanta works in an office with regular hours, a monthly salary, provident fund, medical allowances, paid holidays and an appointment letter: the organised sector. Organised sector enterprises have regular terms of employment, are registered by the government and follow laws like the Factories Act and Minimum Wages Act. Workers get job security, fixed hours, overtime, paid leave, provident fund, gratuity and pensions. Kamal, a daily wage worker in a grocery shop, has no leave, no allowances, no appointment letter and can be asked to leave anytime: the unorganised sector of small, scattered units largely outside government control, where rules are not followed.",
+          "hint": "Compare Kanta and Kamal: who has an appointment letter, paid leave and job security?",
+          "probe": "How do the organised and unorganised sectors differ in their employment conditions?",
+          "causeChain": "Organised sector: registered, follows labour laws -> regular work, job security and benefits; unorganised sector: small scattered units outside government control, rules not followed -> low-paid, irregular, insecure jobs",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_registration_to_security",
+              "linksChecks": [
+                "chk_eco2_organised_def",
+                "chk_eco2_organised_benefits"
+              ],
+              "criterion": "Connects organised sector enterprises being registered and following government rules to workers getting job security and benefits.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Organised sector covers those enterprises or places of work where the terms of employment are regular and therefore people have assured work. They are registered by the government and have to follow its rules and regulations given in laws such as the Factories Act, Minimum Wages Act, Payment of Gratuity Act, Shops and Establishments Act.",
+              "followUp": "What makes a workplace part of the organised sector?",
+              "assessment": {
+                "requiredEvidence": [
+                  "terms of employment are regular",
+                  "assured work",
+                  "registered by the government",
+                  "Factories Act"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_organised_def",
+                    "criterion": "Defines the organised sector as enterprises with regular terms of employment that are registered by the government and follow its rules and laws.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Workers in the organised sector enjoy security of employment. They work a fixed number of hours and get overtime if they work more. They get paid leave, payment during holidays, provident fund, gratuity, medical benefits, a safe working environment, and pensions when they retire.",
+              "followUp": "What benefits do workers in the organised sector get?",
+              "assessment": {
+                "requiredEvidence": [
+                  "security of employment",
+                  "fixed number of hours",
+                  "overtime",
+                  "paid leave",
+                  "provident fund",
+                  "pensions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_organised_benefits",
+                    "criterion": "Describes organised sector benefits such as job security, fixed hours, overtime pay, paid leave, provident fund, medical benefits or pensions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t4c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The unorganised sector is characterised by small and scattered units which are largely outside the control of the government. There are rules and regulations but these are not followed. Jobs here are low-paid and often not regular. There is no provision for overtime, paid leave, holidays or leave due to sickness. Employment is not secure: people can be asked to leave without any reason. It includes many people employed on their own, like street sellers or repair workers.",
+              "followUp": "What are working conditions like in the unorganised sector?",
+              "assessment": {
+                "requiredEvidence": [
+                  "small and scattered units",
+                  "outside the control of the government",
+                  "low-paid",
+                  "not secure"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_unorganised_def",
+                    "criterion": "Defines the unorganised sector as small, scattered units largely outside government control, where rules are not followed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_unorganised_conditions",
+                    "criterion": "Describes unorganised sector conditions: low-paid, irregular, insecure jobs without overtime, paid leave or sick leave.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_unorganised_no_rules"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Kanta, an office worker with salary, provident fund and paid holidays (organised)",
+            "Kamal, a daily wage labourer in a grocery shop who can be asked to leave anytime (unorganised)",
+            "Exercise: most of the workers in the organised sector enjoy job security",
+            "Exercise: a large proportion of labourers in India are working in the unorganised sector"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_unorganised_no_rules",
+              "wrong": "There are no rules for the unorganised sector.",
+              "fix": "There are rules and regulations, but these are not followed; the units are small, scattered and largely outside the control of the government."
+            }
+          ],
+          "verify": [
+            { "page": 30, "quote": "Kanta works in the organised sector.", "supports": ["eco2_t4c1_kp1"] },
+            { "page": 30, "quote": "Organised sector covers those enterprises or places of work where the terms of employment are regular", "supports": ["eco2_t4c1_kp1"] },
+            { "page": 31, "quote": "They get paid leave, payment during holidays, provident fund, gratuity etc.", "supports": ["eco2_t4c1_kp2"] },
+            { "page": 31, "quote": "When they retire, these workers get pensions as well.", "supports": ["eco2_t4c1_kp2"] },
+            { "page": 31, "quote": "The unorganised sector is characterised by small and scattered units which are largely outside the control of the government.", "supports": ["eco2_t4c1_kp3"] },
+            { "page": 31, "quote": "There are rules and regulations but these are not followed.", "supports": ["eco2_t4c1_kp3"] },
+            { "page": 37, "quote": "Compare the employment conditions prevailing in the organised and unorganised", "supports": ["eco2_t4c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t4_c2",
+          "label": "Protecting Workers in the Unorganised Sector",
+          "headingType": "subheading",
+          "sourcePages": [32],
+          "cardText": "Organised sector jobs are most sought-after, but they have been expanding very slowly, and some organised enterprises operate in the unorganised sector to evade taxes and labour laws. Since the 1990s, many workers have lost organised sector jobs. So workers in the unorganised sector need protection and support. In rural areas they are landless labourers, small and marginal farmers (nearly 80 per cent of rural households), sharecroppers and artisans; in urban areas, workers in small-scale industry, casual workers, street vendors, head load workers and rag pickers. Most workers from scheduled castes, tribes and backward communities are in this sector and also face social discrimination.",
+          "hint": "Who works in the unorganised sector in villages and in cities, and what support do they need?",
+          "probe": "Who are the vulnerable workers in the unorganised sector, and why do they need protection?",
+          "causeChain": "Organised jobs expanding slowly + organised firms evading laws + job losses since the 1990s -> more workers forced into low-paid, insecure unorganised jobs -> protection and support needed for economic and social development",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_slow_jobs_to_protection",
+              "linksChecks": [
+                "chk_eco2_organised_slow",
+                "chk_eco2_need_protection"
+              ],
+              "criterion": "Connects organised sector jobs expanding slowly (and job losses) to more workers being forced into the unorganised sector, so they need protection.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The employment opportunities in the organised sector have been expanding very slowly. Many organised sector enterprises are found in the unorganised sector; they adopt such strategies to evade taxes and refuse to follow laws that protect labourers. Since the 1990s, a large number of workers have lost their jobs in the organised sector and been forced to take up low-earning unorganised jobs.",
+              "followUp": "Why have jobs in the organised sector been growing so slowly?",
+              "assessment": {
+                "requiredEvidence": [
+                  "expanding very slowly",
+                  "evade taxes",
+                  "since the 1990s"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_organised_slow",
+                    "criterion": "Explains that organised sector jobs have been expanding very slowly, or that workers have been losing organised jobs since the 1990s, forcing them into the unorganised sector.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In rural areas, the unorganised sector mostly comprises landless agricultural labourers, small and marginal farmers, sharecroppers and artisans. Nearly 80 per cent of rural households are small and marginal farmers, who need timely seeds, inputs, credit, storage and marketing outlets. In urban areas, it comprises workers in small-scale industry, casual workers in construction, trade and transport, street vendors, head load workers, garment makers and rag pickers.",
+              "followUp": "Who works in the unorganised sector in rural and in urban areas?",
+              "assessment": {
+                "requiredEvidence": [
+                  "landless agricultural labourers",
+                  "small and marginal farmers",
+                  "80 per cent",
+                  "street vendors",
+                  "casual workers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_who_vulnerable",
+                    "criterion": "Names vulnerable unorganised workers, such as landless labourers, small and marginal farmers or artisans (rural) or casual workers, street vendors or rag pickers (urban).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_farmer_support",
+                    "criterion": "Mentions the support small and marginal farmers need: timely seeds, inputs, credit, storage and marketing.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t4c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The majority of workers from scheduled castes, tribes and backward communities find themselves in the unorganised sector. Besides getting irregular and low paid work, they also face social discrimination. Protection and support to the unorganised sector workers is thus necessary for both economic and social development.",
+              "followUp": "Which social groups are most often found in the unorganised sector, and what extra problems do they face?",
+              "assessment": {
+                "requiredEvidence": [
+                  "scheduled castes, tribes and backward communities",
+                  "social discrimination",
+                  "economic and social development"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_need_protection",
+                    "criterion": "Concludes that protecting and supporting unorganised sector workers is necessary for both economic and social development.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_social_discrimination",
+                    "criterion": "Mentions that most workers from scheduled castes, tribes and backward communities are in the unorganised sector and also face social discrimination.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Factory workers who lose their jobs selling goods or pushing a cart",
+            "Exercise: 'Workers are exploited in the unorganised sector. Do you agree with this view?'",
+            "Exercise: 'The workers in the unorganised sector need protection on the following issues: wages, safety and health.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 32, "quote": "the employment opportunities in the organised sector have been expanding very slowly", "supports": ["eco2_t4c2_kp1"] },
+            { "page": 32, "quote": "They adopt such strategies to evade taxes and refuse to follow laws that protect labourers.", "supports": ["eco2_t4c2_kp1"] },
+            { "page": 32, "quote": "Nearly 80 per cent of rural households in India are in small and marginal farmer category.", "supports": ["eco2_t4c2_kp2"] },
+            { "page": 32, "quote": "Protection and support to the unorganised sector workers is thus necessary for both economic and social development.", "supports": ["eco2_t4c2_kp3"] },
+            { "page": 37, "quote": "Workers are exploited in the unorganised sector. Do you agree with this view?", "supports": ["eco2_t4c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch2_t5",
+      "title": "Sectors in terms of ownership: public and private sectors",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch2_t5_c1",
+          "label": "Public and Private Sectors",
+          "headingType": "heading",
+          "sourcePages": [33],
+          "cardText": "Sectors can also be classified by who owns assets and is responsible for delivering services. In the public sector, the government owns most of the assets and provides all the services, like the Railways or the post office. In the private sector, ownership of assets and delivery of services is in the hands of private individuals or companies, like TISCO or RIL. Private sector activities are guided by the motive to earn profits; the purpose of the public sector is not just to earn profits. Governments raise money through taxes to meet the expenses of their services.",
+          "hint": "Who owns the assets: the government or private companies? What is each one's aim?",
+          "probe": "How are economic activities classified into public and private sectors?",
+          "causeChain": "Classification by ownership of assets -> public sector (government owns, not just for profit, funded by taxes) and private sector (individuals or companies own, guided by profit)",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "eco2_t5c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Another way of classifying economic activities is on the basis of who owns assets and is responsible for the delivery of services. In the public sector, the government owns most of the assets and provides all the services. In the private sector, ownership of assets and delivery of services is in the hands of private individuals or companies. Railways or post office are public sector; companies like TISCO or RIL are privately owned.",
+              "followUp": "On what basis are economic activities divided into public and private sectors? Give an example of each.",
+              "assessment": {
+                "requiredEvidence": [
+                  "who owns assets",
+                  "government owns most of the assets",
+                  "private individuals or companies",
+                  "Railways",
+                  "TISCO"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_public_private_def",
+                    "criterion": "Explains that the public sector is where the government owns most assets and provides services, and the private sector is where individuals or companies own them.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_public_private_examples",
+                    "criterion": "Gives examples such as the Railways or post office (public) and TISCO or RIL (private).",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t5c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Activities in the private sector are guided by the motive to earn profits. The purpose of the public sector is not just to earn profits. Governments raise money through taxes and other ways to meet expenses on the services rendered by it.",
+              "followUp": "What is the main aim of each sector, and how does the government pay for its services?",
+              "assessment": {
+                "requiredEvidence": [
+                  "motive to earn profits",
+                  "not just to earn profits",
+                  "taxes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_profit_motive",
+                    "criterion": "States that the private sector is guided by the motive to earn profits, while the purpose of the public sector is not just to earn profits.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco2_public_profit"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: sectors are classified into public and private sector on the basis of ownership of enterprises"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco2_public_profit",
+              "wrong": "The public sector, like the private sector, runs mainly to make profits.",
+              "fix": "Private sector activities are guided by the motive to earn profits; the purpose of the public sector is not just to earn profits."
+            }
+          ],
+          "verify": [
+            { "page": 33, "quote": "on the basis of who owns assets and is responsible for the delivery of services", "supports": ["eco2_t5c1_kp1"] },
+            { "page": 33, "quote": "In the public sector, the government owns most of the assets and provides all the services.", "supports": ["eco2_t5c1_kp1"] },
+            { "page": 33, "quote": "Activities in the private sector are guided by the motive to earn profits.", "supports": ["eco2_t5c1_kp2"] },
+            { "page": 33, "quote": "The purpose of the public sector is not just to earn profits.", "supports": ["eco2_t5c1_kp2"] },
+            { "page": 35, "quote": "(iii) ownership of enterprises", "supports": ["eco2_t5c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch2_t5_c2",
+          "label": "Why the Government Spends on Public Activities",
+          "headingType": "subheading",
+          "sourcePages": [33, 34],
+          "cardText": "Some things society needs will not be provided by the private sector at a reasonable cost: roads, bridges, railways, harbours, electricity and irrigation dams need large sums of money, and collecting payment from thousands of users is hard. The government also supports some activities: it supplies electricity at rates small-scale industries can afford, and buys wheat and rice from farmers at a 'fair price' and sells them cheaper through ration shops, supporting both farmers and consumers. Health and education for all, safe drinking water, housing and nutrition, and care of the poorest regions are its primary responsibility.",
+          "hint": "Why won't a private company build every road or sell electricity at a loss to small units?",
+          "probe": "Why does the government take up certain activities through the public sector? Give examples.",
+          "causeChain": "Some facilities need huge spending, beyond the private sector, and are hard to charge for -> private sector would not provide them at a reasonable cost -> government provides or supports them (roads, electricity, PDS, health, education)",
+          "causeLinks": [
+            {
+              "id": "lnk_eco2_cost_to_public",
+              "linksChecks": [
+                "chk_eco2_private_wont_provide",
+                "chk_eco2_infrastructure"
+              ],
+              "criterion": "Connects the private sector not providing some facilities at a reasonable cost (large spending, hard to collect money) to the government undertaking them.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco2_t5c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "There are several things needed by society as a whole which the private sector will not provide at a reasonable cost. Some need spending large sums of money, beyond the capacity of the private sector, and collecting money from thousands of users is not easy. Examples are construction of roads, bridges, railways, harbours, generating electricity, providing irrigation through dams. Governments undertake such heavy spending and ensure these facilities are available for everyone.",
+              "followUp": "Why does the government build things like roads and railways instead of leaving them to private companies?",
+              "assessment": {
+                "requiredEvidence": [
+                  "will not provide at a reasonable cost",
+                  "large sums of money",
+                  "roads, bridges, railways, harbours"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_private_wont_provide",
+                    "criterion": "Explains that the private sector will not provide some things at a reasonable cost because they need large spending or it is hard to collect money from users.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_infrastructure",
+                    "criterion": "Gives examples such as roads, bridges, railways, harbours, electricity or irrigation dams that the government provides.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t5c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The government supports some activities. Selling electricity at the cost of generation may push up costs for many industries and force small-scale units to shut down, so the government supplies electricity at rates they can afford. The government buys wheat and rice from farmers at a 'fair price' and sells them at a lower price to consumers through ration shops, supporting both farmers and consumers.",
+              "followUp": "How does the government support small industries, farmers and poor consumers?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electricity at rates",
+                  "small-scale units",
+                  "fair price",
+                  "ration shops",
+                  "farmers and consumers"
+                ],
+                "passRule": "minCount:1",
+                "checks": [
+                  {
+                    "id": "chk_eco2_electricity_support",
+                    "criterion": "Gives the example of the government supplying electricity at rates small-scale industries can afford.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco2_fair_price",
+                    "criterion": "Gives the example of the government buying wheat and rice at a fair price and selling it cheaper through ration shops, supporting both farmers and consumers.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco2_t5c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "A large number of activities are the primary responsibility of the government. Providing health and education facilities for all is one example; running proper schools and providing quality elementary education is the duty of the government. Nearly half of India's children are malnourished, and infant mortality in Odisha (36) or Madhya Pradesh (43) is higher than in some of the poorest regions of the world. Government must also attend to safe drinking water, housing for the poor, food and nutrition, and the poorest regions.",
+              "followUp": "Which services are mainly the government's responsibility to provide for everyone?",
+              "assessment": {
+                "requiredEvidence": [
+                  "primary responsibility",
+                  "health and education facilities",
+                  "safe drinking water",
+                  "housing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco2_health_education_duty",
+                    "criterion": "States that providing health and education for all (and safe drinking water, housing, nutrition) is a primary responsibility of the government.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Government supplying electricity at affordable rates to small-scale industries",
+            "Government buying wheat and rice at a fair price and selling through ration shops",
+            "Exercise: 'Give a few examples of public sector activities and explain why the government has taken them up.'",
+            "Exercise: 'Explain how public sector contributes to the economic development of a nation.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 33, "quote": "There are several things needed by the society as a whole but which the private sector will not provide at a reasonable cost.", "supports": ["eco2_t5c2_kp1"] },
+            { "page": 34, "quote": "Examples are construction of roads, bridges, railways, harbours, generating electricity, providing irrigation through dams etc.", "supports": ["eco2_t5c2_kp1"] },
+            { "page": 34, "quote": "Government here steps in by producing and supplying electricity at rates which these industries can afford.", "supports": ["eco2_t5c2_kp2"] },
+            { "page": 34, "quote": "In this way, the government supports both farmers and consumers.", "supports": ["eco2_t5c2_kp2"] },
+            { "page": 34, "quote": "Providing health and education facilities for all is one example.", "supports": ["eco2_t5c2_kp3"] },
+            { "page": 37, "quote": "Give a few examples of public sector activities and explain why the government", "supports": ["eco2_t5c2_kp1"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

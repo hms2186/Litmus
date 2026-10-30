@@ -1,0 +1,1342 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Geography",
+  "book": "Contemporary India II",
+  "chapterNumber": 2,
+  "chapterName": "Forest and Wildlife Resources",
+  "sourceStatus": "Built from the NCERT PDF jess102 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Contemporary India II (Class 10), Reprint 2026-27, chapter pp. 13-18",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. This reprint has no section on the causes of depletion of flora and fauna (although exercise 3(ii) asks about it), so that content is not graded here."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_geo2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_geo2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example biodiversity, conservation, Wildlife Protection Act, Project Tiger, reserved forests, protected forests, unclassed forests, Chipko movement, joint forest management or sacred groves.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "biodiversity",
+    "flora",
+    "fauna",
+    "ecological system",
+    "primary producers",
+    "conservation",
+    "genetic diversity",
+    "Indian Wildlife (Protection) Act",
+    "national parks",
+    "wildlife sanctuaries",
+    "Project Tiger",
+    "tiger reserves",
+    "reserved forests",
+    "protected forests",
+    "unclassed forests",
+    "permanent forest estates",
+    "Chipko movement",
+    "Beej Bachao Andolan",
+    "Navdanya",
+    "joint forest management",
+    "sacred groves",
+    "Bishnoi"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_geo_10_ch2_t1",
+      "title": "Flora and fauna in India",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch2_t1_c1",
+          "label": "Biodiversity and Our Dependence on It",
+          "headingType": "heading",
+          "sourcePages": [13],
+          "cardText": "India is one of the world's richest countries in biological diversity. We share this planet with millions of living beings, from micro-organisms and bacteria to banyan trees, elephants and blue whales. Biodiversity is immensely rich in wildlife and cultivated species, diverse in form and function but closely integrated through a multiple network of interdependencies. Humans and all living organisms form a complex web of ecological system in which we are only a part, and we depend on it for our existence: plants, animals and micro-organisms re-create the air we breathe, the water we drink and the soil that produces our food. Forests play a key role because they are the primary producers on which all other living beings depend. These resources are now under great stress, mainly due to insensitivity to our environment.",
+          "hint": "What do plants, animals and micro-organisms do for the air, water and soil? Why are forests called primary producers?",
+          "probe": "What is biodiversity? Why is biodiversity important for human lives?",
+          "causeChain": "Plants, animals and micro-organisms re-create air, water and soil -> humans are only a part of the ecological web and depend on it -> biodiversity is essential for human survival; forests are primary producers",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_web_to_survival",
+              "linksChecks": [
+                "chk_geo2_web_of_life",
+                "chk_geo2_air_water_soil"
+              ],
+              "criterion": "Connects humans being part of the ecological web to our survival depending on organisms that re-create the air, water and soil.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Biodiversity or Biological Diversity is immensely rich in wildlife and cultivated species, diverse in form and function but closely integrated in a system through multiple network of interdependencies. India is one of the world's richest countries in terms of its vast array of biological diversity.",
+              "followUp": "What does biodiversity include, and how are its parts connected?",
+              "assessment": {
+                "requiredEvidence": [
+                  "wildlife and cultivated species",
+                  "diverse in form and function",
+                  "interdependencies"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_biodiversity_def",
+                    "criterion": "Defines biodiversity as the rich variety of wildlife and cultivated species, diverse in form and function but closely integrated through a network of interdependencies.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_wild_only"
+                ]
+              }
+            },
+            {
+              "id": "geo2_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "We humans along with all living organisms form a complex web of ecological system in which we are only a part and very much dependent on this system for our own existence. The plants, animals and micro-organisms re-create the quality of the air we breathe, the water we drink and the soil that produces our food without which we cannot survive.",
+              "followUp": "How do human beings depend on other living things for their survival?",
+              "assessment": {
+                "requiredEvidence": [
+                  "complex web of ecological system",
+                  "only a part",
+                  "air we breathe",
+                  "water we drink",
+                  "soil"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_web_of_life",
+                    "criterion": "States that humans and all living organisms form a complex web of ecological system, in which humans are only a part and depend on it for existence.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_air_water_soil",
+                    "criterion": "Explains that plants, animals and micro-organisms re-create the air we breathe, the water we drink and the soil that produces our food.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_humans_apart"
+                ]
+              }
+            },
+            {
+              "id": "geo2_t1c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Forests play a key role in the ecological system as these are also the primary producers on which all other living beings depend.",
+              "assessment": {
+                "requiredEvidence": [
+                  "forests",
+                  "key role",
+                  "primary producers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_primary_producers",
+                    "criterion": "States that forests play a key role in the ecological system as primary producers on which all other living beings depend.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t1c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "These diverse flora and fauna are so well integrated in our daily life that we take these for granted. But, lately, they are under great stress mainly due to insensitivity to our environment.",
+              "assessment": {
+                "requiredEvidence": [
+                  "take these for granted",
+                  "great stress",
+                  "insensitivity to our environment"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_under_stress",
+                    "criterion": "States that flora and fauna are under great stress, mainly due to insensitivity to our environment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Living beings from micro-organisms and bacteria, lichens to banyan trees, elephants and blue whales",
+            "Exercise: 'What is biodiversity? Why is biodiversity important for human lives?'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo2_wild_only",
+              "wrong": "Biodiversity means only wild animals.",
+              "fix": "Biodiversity covers wildlife and cultivated species, from micro-organisms and bacteria to plants and large animals, linked through a network of interdependencies."
+            },
+            {
+              "id": "misc_geo2_humans_apart",
+              "wrong": "Humans are separate from the ecological system and do not depend on it.",
+              "fix": "We humans are only a part of the complex web of ecological system and are very much dependent on it for our own existence."
+            }
+          ],
+          "verify": [
+            { "page": 13, "quote": "India is one of the world’s richest countries in terms of its vast array of biological diversity.", "supports": ["geo2_t1c1_kp1"] },
+            { "page": 13, "quote": "Biodiversity or Biological Diversity is immensely rich in wildlife and cultivated species, diverse in form and function but closely integrated in a system through multiple network of interdependencies.", "supports": ["geo2_t1c1_kp1"] },
+            { "page": 13, "quote": "We humans along with all living organisms form a complex web of ecological system in which we are only a part", "supports": ["geo2_t1c1_kp2"] },
+            { "page": 13, "quote": "the water we drink and the soil that produces our food without which we cannot survive", "supports": ["geo2_t1c1_kp2"] },
+            { "page": 13, "quote": "primary producers on which all other living beings depend", "supports": ["geo2_t1c1_kp3"] },
+            { "page": 13, "quote": "under great stress mainly due to insensitivity to our environment", "supports": ["geo2_t1c1_kp4"] },
+            { "page": 18, "quote": "What is biodiversity? Why is biodiversity important for human lives?", "supports": ["geo2_t1c1_kp1", "geo2_t1c1_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch2_t2",
+      "title": "Conservation of forest and wildlife in India",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch2_t2_c1",
+          "label": "Why Conserve Forests and Wildlife?",
+          "headingType": "heading",
+          "sourcePages": [13],
+          "cardText": "With the rapid decline in wildlife population and forestry, conservation has become essential. Conservation preserves the ecological diversity and our life support systems: water, air and soil. It also preserves the genetic diversity of plants and animals for better growth of species and breeding. For example, agriculture still depends on traditional crop varieties, and fisheries depend heavily on the maintenance of aquatic biodiversity.",
+          "hint": "What life support systems does conservation protect? Why does genetic diversity matter for farming?",
+          "probe": "Why do we need to conserve our forests and wildlife?",
+          "causeChain": "Rapid decline in wildlife and forests -> conservation essential -> preserves ecological diversity, life support systems (water, air, soil) and genetic diversity -> better growth and breeding; agriculture and fisheries depend on it",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_genetic_to_agriculture",
+              "linksChecks": [
+                "chk_geo2_genetic_diversity",
+                "chk_geo2_agri_fisheries"
+              ],
+              "criterion": "Connects conservation of genetic diversity to agriculture depending on traditional crop varieties or fisheries depending on aquatic biodiversity.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Conservation in the background of rapid decline in wildlife population and forestry has become essential. Conservation preserves the ecological diversity and our life support systems – water, air and soil.",
+              "followUp": "What does conservation protect for us, and why has it become essential?",
+              "assessment": {
+                "requiredEvidence": [
+                  "rapid decline",
+                  "ecological diversity",
+                  "life support systems",
+                  "water, air and soil"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_life_support",
+                    "criterion": "States that conservation preserves ecological diversity and our life support systems: water, air and soil.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "It also preserves the genetic diversity of plants and animals for better growth of species and breeding. For example, in agriculture, we are still dependent on traditional crop varieties. Fisheries too are heavily dependent on the maintenance of aquatic biodiversity.",
+              "followUp": "How does conservation help farming and fishing?",
+              "assessment": {
+                "requiredEvidence": [
+                  "genetic diversity",
+                  "better growth of species and breeding",
+                  "traditional crop varieties",
+                  "aquatic biodiversity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_genetic_diversity",
+                    "criterion": "States that conservation preserves the genetic diversity of plants and animals for better growth of species and breeding.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_agri_fisheries",
+                    "criterion": "Gives an example: agriculture depends on traditional crop varieties, or fisheries depend on maintaining aquatic biodiversity.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_conserve_only_animals"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Agriculture still depends on traditional crop varieties",
+            "Fisheries depend on the maintenance of aquatic biodiversity"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo2_conserve_only_animals",
+              "wrong": "Conservation only matters for saving rare animals and has nothing to do with our food.",
+              "fix": "Conservation preserves our life support systems (water, air, soil) and the genetic diversity on which agriculture and fisheries depend."
+            }
+          ],
+          "verify": [
+            { "page": 13, "quote": "Conservation preserves the ecological diversity and our life support systems – water, air and soil.", "supports": ["geo2_t2c1_kp1"] },
+            { "page": 13, "quote": "It also preserves the genetic diversity of plants and animals for better growth of species and breeding.", "supports": ["geo2_t2c1_kp2"] },
+            { "page": 13, "quote": "Fisheries too are heavily dependent on the maintenance of aquatic biodiversity.", "supports": ["geo2_t2c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t2_c2",
+          "label": "Indian Wildlife (Protection) Act, 1972",
+          "headingType": "subheading",
+          "sourcePages": [13, 14],
+          "cardText": "In the 1960s and 1970s, conservationists demanded a national wildlife protection programme. The Indian Wildlife (Protection) Act was implemented in 1972, with provisions for protecting habitats, and an all-India list of protected species was published. Its thrust was to protect the remaining population of endangered species by banning hunting, giving legal protection to their habitats and restricting trade in wildlife. Central and state governments then established national parks and wildlife sanctuaries, and the central government announced projects for gravely threatened animals such as the tiger, the one-horned rhinoceros, the Kashmir stag or hangul, three types of crocodiles and the Asiatic lion. Recently the Indian elephant, black buck (chinkara), great Indian bustard (godawan) and snow leopard have been given full or partial legal protection.",
+          "hint": "What three things did the Act's programme do to protect endangered species?",
+          "probe": "What was the Indian Wildlife (Protection) Act, 1972, and how did it try to protect endangered species?",
+          "causeChain": "Conservationists' demand in the 1960s-70s -> Wildlife (Protection) Act 1972 -> ban on hunting, legal protection of habitats, restricted wildlife trade -> national parks, sanctuaries and species projects",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo2_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In the 1960s and 1970s, conservationists demanded a national wildlife protection programme. The Indian Wildlife (Protection) Act was implemented in 1972, with various provisions for protecting habitats. An all-India list of protected species was also published.",
+              "followUp": "What law was passed in 1972 to protect wildlife, and what did it set up?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1972",
+                  "Wildlife (Protection) Act",
+                  "protecting habitats",
+                  "list of protected species"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_wpa_1972",
+                    "criterion": "States that the Indian Wildlife (Protection) Act was implemented in 1972, with provisions for protecting habitats and an all-India list of protected species.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The thrust of the programme was towards protecting the remaining population of certain endangered species by banning hunting, giving legal protection to their habitats, and restricting trade in wildlife.",
+              "followUp": "What three things did the programme do to protect endangered species?",
+              "assessment": {
+                "requiredEvidence": [
+                  "endangered species",
+                  "banning hunting",
+                  "legal protection to their habitats",
+                  "restricting trade in wildlife"
+                ],
+                "passRule": "minCount:2",
+                "checks": [
+                  {
+                    "id": "chk_geo2_ban_hunting",
+                    "criterion": "Mentions banning hunting to protect endangered species.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_habitat_protection",
+                    "criterion": "Mentions giving legal protection to the habitats of endangered species.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_restrict_trade",
+                    "criterion": "Mentions restricting trade in wildlife.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Subsequently, central and many state governments established national parks and wildlife sanctuaries. The central government also announced several projects for protecting specific animals, which were gravely threatened, including the tiger, the one-horned rhinoceros, the Kashmir stag or hangul, three types of crocodiles, the Asiatic lion, and others. Most recently, the Indian elephant, black buck (chinkara), the great Indian bustard (godawan) and the snow leopard have been given full or partial legal protection against hunting and trade throughout India.",
+              "assessment": {
+                "requiredEvidence": [
+                  "national parks and wildlife sanctuaries",
+                  "one-horned rhinoceros",
+                  "hangul",
+                  "Asiatic lion",
+                  "snow leopard"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo2_parks_sanctuaries",
+                    "criterion": "Mentions that governments established national parks and wildlife sanctuaries.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_species_projects",
+                    "criterion": "Names a protected animal, such as the tiger, one-horned rhinoceros, hangul, crocodiles, Asiatic lion, Indian elephant, black buck, great Indian bustard or snow leopard.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Three types of crocodiles: fresh water crocodile, saltwater crocodile and the Gharial",
+            "Great Indian bustard (godawan) given legal protection"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 13, "quote": "In the 1960s and 1970s, conservationists demanded a national wildlife protection programme.", "supports": ["geo2_t2c2_kp1"] },
+            { "page": 14, "quote": "Act was implemented in 1972, with various provisions for protecting habitats.", "supports": ["geo2_t2c2_kp1"] },
+            { "page": 14, "quote": "by banning hunting, giving legal protection to their habitats, and restricting trade in wildlife", "supports": ["geo2_t2c2_kp2"] },
+            { "page": 14, "quote": "governments established national parks and wildlife sanctuaries", "supports": ["geo2_t2c2_kp3"] },
+            { "page": 14, "quote": "against hunting and trade throughout India", "supports": ["geo2_t2c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t2_c3",
+          "label": "Project Tiger",
+          "headingType": "subheading",
+          "sourcePages": [14, 15],
+          "cardText": "The tiger is a key wildlife species in the faunal web. In 1973 the authorities realised the tiger population had dwindled to 1,827 from an estimated 55,000 at the turn of the century. The major threats are poaching for trade, shrinking habitat, depletion of prey base species and growing human population. The trade in tiger skins and the use of their bones in traditional medicines left the tiger on the verge of extinction; because India and Nepal hold about two-thirds of the world's surviving tigers, they became prime targets for poaching. Project Tiger was launched in 1973, viewed not only as saving an endangered species but equally as a means of preserving biotypes of sizeable magnitude. Tiger reserves include Corbett (Uttarakhand), Sunderbans (West Bengal), Bandhavgarh (Madhya Pradesh), Sariska (Rajasthan), Manas (Assam) and Periyar (Kerala).",
+          "hint": "What happened to tiger numbers by 1973? What were the main threats?",
+          "probe": "Why was Project Tiger launched, and what did it aim to preserve?",
+          "causeChain": "Poaching for trade (skins, bones for medicine), shrinking habitat, depletion of prey, growing population -> tigers fell from about 55,000 to 1,827 by 1973 -> Project Tiger launched in 1973 to save the species and preserve biotypes",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_threats_to_project",
+              "linksChecks": [
+                "chk_geo2_tiger_threats",
+                "chk_geo2_project_tiger_1973"
+              ],
+              "criterion": "Connects the threats to tigers (poaching, shrinking habitat, depletion of prey) and their falling numbers to the launch of Project Tiger.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Tiger is one of the key wildlife species in the faunal web. In 1973, the authorities realised that the tiger population had dwindled to 1,827 from an estimated 55,000 at the turn of the century.",
+              "followUp": "What had happened to the number of tigers by 1973?",
+              "followUpAllows": [
+                "1973"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "1973",
+                  "1,827",
+                  "55,000",
+                  "dwindled"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_tiger_numbers",
+                    "criterion": "States that by 1973 the tiger population had dwindled to 1,827 from an estimated 55,000 at the turn of the century.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The major threats to tiger population are poaching for trade, shrinking habitat, depletion of prey base species, growing human population, etc. The trade of tiger skins and the use of their bones in traditional medicines, especially in the Asian countries, left the tiger population on the verge of extinction. Since India and Nepal provide habitat to about two-thirds of the surviving tiger population in the world, these two nations became prime targets for poaching and illegal trading.",
+              "followUp": "What were the main threats to tigers?",
+              "assessment": {
+                "requiredEvidence": [
+                  "poaching for trade",
+                  "shrinking habitat",
+                  "depletion of prey base species",
+                  "tiger skins",
+                  "bones in traditional medicines"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_tiger_threats",
+                    "criterion": "Names threats to tigers: poaching for trade, shrinking habitat, depletion of prey base species, or growing human population.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_skins_bones",
+                    "criterion": "Mentions the trade in tiger skins and use of bones in traditional medicines, or India and Nepal holding about two-thirds of surviving tigers and becoming prime targets for poaching.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "'Project Tiger', one of the well-publicised wildlife campaigns in the world, was launched in 1973. Tiger conservation has been viewed not only as an effort to save an endangered species, but with equal importance as a means of preserving biotypes of sizeable magnitude.",
+              "followUp": "When was the tiger project launched, and what was it meant to protect besides the tiger?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Project Tiger",
+                  "launched in 1973",
+                  "endangered species",
+                  "biotypes of sizeable magnitude"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_project_tiger_1973",
+                    "criterion": "States that Project Tiger was launched in 1973.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_biotypes",
+                    "criterion": "Explains that tiger conservation aims not only to save an endangered species but equally to preserve biotypes of sizeable magnitude.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_tiger_only"
+                ]
+              }
+            },
+            {
+              "id": "geo2_t2c3_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Corbett National Park in Uttarakhand, Sunderbans National Park in West Bengal, Bandhavgarh National Park in Madhya Pradesh, Sariska Wildlife Sanctuary in Rajasthan, Manas Tiger Reserve in Assam and Periyar Tiger Reserve in Kerala are some of the tiger reserves of India.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Corbett",
+                  "Sunderbans",
+                  "Bandhavgarh",
+                  "Sariska",
+                  "Manas",
+                  "Periyar"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo2_tiger_reserves",
+                    "criterion": "Names a tiger reserve with its state, such as Corbett (Uttarakhand), Sunderbans (West Bengal), Bandhavgarh (Madhya Pradesh), Sariska (Rajasthan), Manas (Assam) or Periyar (Kerala).",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Corbett National Park in Uttarakhand",
+            "Sunderbans National Park in West Bengal",
+            "Periyar Tiger Reserve in Kerala"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo2_tiger_only",
+              "wrong": "Project Tiger only protects tigers.",
+              "fix": "Tiger conservation is viewed not only as saving an endangered species but with equal importance as a means of preserving biotypes of sizeable magnitude."
+            }
+          ],
+          "verify": [
+            { "page": 14, "quote": "Tiger is one of the key wildlife species in the faunal web.", "supports": ["geo2_t2c3_kp1"] },
+            { "page": 14, "quote": "dwindled to 1,827 from an estimated 55,000 at the turn of the century", "supports": ["geo2_t2c3_kp1"] },
+            { "page": 14, "quote": "such as poaching for trade, shrinking habitat, depletion of prey base species, growing human population", "supports": ["geo2_t2c3_kp2"] },
+            { "page": 14, "quote": "the tiger population on the verge of extinction", "supports": ["geo2_t2c3_kp2"] },
+            { "page": 14, "quote": "was launched in 1973", "supports": ["geo2_t2c3_kp3"] },
+            { "page": 15, "quote": "preserving biotypes of sizeable magnitude", "supports": ["geo2_t2c3_kp3"] },
+            { "page": 15, "quote": "are some of the tiger reserves of India", "supports": ["geo2_t2c3_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t2_c4",
+          "label": "Conserving Biodiversity, Not Just a Few Species",
+          "headingType": "subheading",
+          "sourcePages": [15],
+          "cardText": "Conservation projects now focus on biodiversity rather than on a few of its components, with a more intensive search for different conservation measures. Even insects are finding a place in conservation planning: under the Wildlife Act notifications of 1980 and 1986, several hundred butterflies, moths, beetles and one dragonfly were added to the list of protected species. In 1991, for the first time, plants were also added to the list, starting with six species.",
+          "hint": "What kinds of living things were added to the protected list in 1980, 1986 and 1991?",
+          "probe": "How has the focus of conservation projects in India changed over time?",
+          "causeChain": "Focus shifts from a few components to the whole of biodiversity -> insects (1980, 1986) and plants (1991) added to the protected list",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo2_t2c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The conservation projects are now focusing on biodiversity rather than on a few of its components. There is now a more intensive search for different conservation measures.",
+              "followUp": "How has the focus of conservation projects changed?",
+              "assessment": {
+                "requiredEvidence": [
+                  "focusing on biodiversity",
+                  "rather than on a few of its components"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_focus_biodiversity",
+                    "criterion": "States that conservation projects now focus on biodiversity as a whole rather than on a few of its components.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t2c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Increasingly, even insects are beginning to find a place in conservation planning. In the notification under Wildlife Act of 1980 and 1986, several hundred butterflies, moths, beetles, and one dragonfly have been added to the list of protected species. In 1991, for the first time plants were also added to the list, starting with six species.",
+              "followUp": "Which new kinds of living things have been added to the protected list?",
+              "assessment": {
+                "requiredEvidence": [
+                  "insects",
+                  "butterflies, moths, beetles",
+                  "1991",
+                  "plants",
+                  "six species"
+                ],
+                "passRule": "minCount:1",
+                "checks": [
+                  {
+                    "id": "chk_geo2_insects_added",
+                    "criterion": "Mentions that insects such as butterflies, moths, beetles and a dragonfly were added to the protected list (1980 and 1986).",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_plants_added",
+                    "criterion": "Mentions that in 1991 plants were added to the protected list for the first time, starting with six species.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Several hundred butterflies, moths, beetles and one dragonfly added to the protected list"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 15, "quote": "The conservation projects are now focusing on biodiversity rather than on a few of its components.", "supports": ["geo2_t2c4_kp1"] },
+            { "page": 15, "quote": "even insects are beginning to find a place in conservation planning", "supports": ["geo2_t2c4_kp2"] },
+            { "page": 15, "quote": "In 1991, for the first time plants were also added to the list, starting with six species.", "supports": ["geo2_t2c4_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch2_t3",
+      "title": "Types and distribution of forest and wildlife resources",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch2_t3_c1",
+          "label": "Reserved, Protected and Unclassed Forests",
+          "headingType": "heading",
+          "sourcePages": [15],
+          "cardText": "In India, much of the forest and wildlife resources are owned or managed by the government through the Forest Department. They are classified into: (i) Reserved Forests: more than half of the total forest land; regarded as the most valuable for conservation of forest and wildlife resources. (ii) Protected Forests: almost one-third of the total forest area, protected from any further depletion. (iii) Unclassed Forests: other forests and wastelands belonging to both government and private individuals and communities. Reserved and protected forests are also called permanent forest estates, maintained for producing timber and other forest produce and for protective reasons.",
+          "hint": "Which category covers more than half of the forest land? Which covers about one-third?",
+          "probe": "What are reserved, protected and unclassed forests? What are permanent forest estates?",
+          "causeChain": "Government manages forests through the Forest Department -> classified as reserved (over half, most valuable), protected (one-third, protected from depletion) and unclassed (government, private and community) -> reserved and protected = permanent forest estates",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo2_t3c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In India, much of its forest and wildlife resources are either owned or managed by the government through the Forest Department or other government departments.",
+              "assessment": {
+                "requiredEvidence": [
+                  "owned or managed by the government",
+                  "Forest Department"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_govt_managed",
+                    "criterion": "States that much of India's forest and wildlife resources are owned or managed by the government through the Forest Department.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t3c1_kp2",
+              "weight": 3,
+              "role": "core",
+              "text": "(i) Reserved Forests: more than half of the total forest land has been declared reserved forests; they are regarded as the most valuable as far as the conservation of forest and wildlife resources are concerned. (ii) Protected Forests: almost one-third of the total forest area is protected forest, as declared by the Forest Department; this forest land is protected from any further depletion. (iii) Unclassed Forests: other forests and wastelands belonging to both government and private individuals and communities.",
+              "followUp": "What are the three types of forest that the government manages, and how much land does each cover?",
+              "assessment": {
+                "requiredEvidence": [
+                  "reserved forests",
+                  "more than half",
+                  "most valuable",
+                  "protected forests",
+                  "one-third",
+                  "unclassed forests",
+                  "private individuals and communities"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_reserved",
+                    "criterion": "Describes reserved forests: more than half of the total forest land, regarded as the most valuable for conservation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_protected",
+                    "criterion": "Describes protected forests: almost one-third of the forest area, protected from any further depletion.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_unclassed",
+                    "criterion": "Describes unclassed forests: other forests and wastelands belonging to government, private individuals and communities.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_reserved_protected_swap"
+                ]
+              }
+            },
+            {
+              "id": "geo2_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Reserved and protected forests are also referred to as permanent forest estates maintained for the purpose of producing timber and other forest produce, and for protective reasons.",
+              "assessment": {
+                "requiredEvidence": [
+                  "permanent forest estates",
+                  "timber",
+                  "protective reasons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_permanent_estates",
+                    "criterion": "States that reserved and protected forests are called permanent forest estates, maintained for timber and other forest produce and for protective reasons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: match reserved, protected and unclassed forests with their descriptions",
+            "Exercise: demarcation of wildlife sanctuaries does not directly involve community participation"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo2_reserved_protected_swap",
+              "wrong": "Protected forests cover more than half of the forest land and are the most valuable for conservation.",
+              "fix": "Reserved forests cover more than half of the forest land and are the most valuable for conservation; protected forests cover almost one-third."
+            }
+          ],
+          "verify": [
+            { "page": 15, "quote": "either owned or managed by the government through the Forest Department or other government departments", "supports": ["geo2_t3c1_kp1"] },
+            { "page": 15, "quote": "(i) Reserved Forests: More than half of the total forest land has been declared reserved forests.", "supports": ["geo2_t3c1_kp2"] },
+            { "page": 15, "quote": "(ii) Protected Forests: Almost one-third of the total forest area is protected forest", "supports": ["geo2_t3c1_kp2"] },
+            { "page": 15, "quote": "(iii) Unclassed Forests: These are other forests and wastelands belonging to both government and private individuals and communities.", "supports": ["geo2_t3c1_kp2"] },
+            { "page": 15, "quote": "referred to as permanent forest estates maintained for the purpose of producing timber and other forest produce, and for protective reasons", "supports": ["geo2_t3c1_kp3"] },
+            { "page": 18, "quote": "Forest lands are protected from any further depletion.", "supports": ["geo2_t3c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t3_c2",
+          "label": "Distribution of Forest Types Across States",
+          "headingType": "subheading",
+          "sourcePages": [15, 16],
+          "cardText": "Madhya Pradesh has the largest area under permanent forests, constituting 75 per cent of its total forest area. Jammu and Kashmir, Andhra Pradesh, Uttarakhand, Kerala, Tamil Nadu, West Bengal and Maharashtra have large percentages of reserved forests, whereas Bihar, Haryana, Punjab, Himachal Pradesh, Odisha and Rajasthan have a bulk under protected forests. All North-eastern states and parts of Gujarat have a very high percentage of their forests as unclassed forests managed by local communities.",
+          "hint": "Which state has the largest area under permanent forests? Who manages the unclassed forests of the North-east?",
+          "probe": "How are reserved, protected and unclassed forests distributed across Indian states?",
+          "causeChain": "Different states have different shares: Madhya Pradesh largest permanent forests; some states mostly reserved, others mostly protected; North-east and parts of Gujarat mostly unclassed, managed by local communities",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo2_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Madhya Pradesh has the largest area under permanent forests, constituting 75 per cent of its total forest area.",
+              "followUp": "Which state has the most land under permanent forests?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Madhya Pradesh",
+                  "largest area under permanent forests",
+                  "75 per cent"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_mp_permanent",
+                    "criterion": "States that Madhya Pradesh has the largest area under permanent forests, 75 per cent of its total forest area.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t3c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Jammu and Kashmir, Andhra Pradesh, Uttarakhand, Kerala, Tamil Nadu, West Bengal, and Maharashtra have large percentages of reserved forests of its total forest area whereas Bihar, Haryana, Punjab, Himachal Pradesh, Odisha and Rajasthan have a bulk of it under protected forests.",
+              "assessment": {
+                "requiredEvidence": [
+                  "reserved forests",
+                  "protected forests",
+                  "Kerala",
+                  "Punjab"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo2_reserved_states",
+                    "criterion": "Names a state with a large share of reserved forests (Jammu and Kashmir, Andhra Pradesh, Uttarakhand, Kerala, Tamil Nadu, West Bengal or Maharashtra).",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  },
+                  {
+                    "id": "chk_geo2_protected_states",
+                    "criterion": "Names a state with the bulk of its forests protected (Bihar, Haryana, Punjab, Himachal Pradesh, Odisha or Rajasthan).",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t3c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "All North-eastern states and parts of Gujarat have a very high percentage of their forests as unclassed forests managed by local communities.",
+              "followUp": "Where are most forests unclassed, and who manages them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "North-eastern states",
+                  "Gujarat",
+                  "unclassed forests",
+                  "local communities"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_northeast_unclassed",
+                    "criterion": "States that the North-eastern states and parts of Gujarat have a very high share of unclassed forests managed by local communities.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 15, "quote": "Madhya Pradesh has the largest area under permanent forests, constituting 75 per cent of its total forest area.", "supports": ["geo2_t3c2_kp1"] },
+            { "page": 15, "quote": "Himachal Pradesh, Odisha and Rajasthan have a bulk of it under protected forests", "supports": ["geo2_t3c2_kp2"] },
+            { "page": 16, "quote": "high percentage of their forests as unclassed forests managed by local communities", "supports": ["geo2_t3c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch2_t4",
+      "title": "Community and conservation",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch2_t4_c1",
+          "label": "Community Efforts to Conserve Forests",
+          "headingType": "heading",
+          "sourcePages": [16],
+          "cardText": "Conservation strategies are not new in India; forests are home to traditional communities, and in some areas local communities struggle to conserve habitats alongside government officials, recognising that only this will secure their long-term livelihood. In Sariska Tiger Reserve, Rajasthan, villagers fought against mining by citing the Wildlife Protection Act. Five villages in Alwar district, Rajasthan, declared 1,200 hectares of forest as the Bhairodev Dakav 'Sonchuri', with their own rules that do not allow hunting. The Chipko movement in the Himalayas resisted deforestation and showed that community afforestation with indigenous species can be enormously successful. The Beej Bachao Andolan in Tehri and Navdanya have shown that diversified crop production without synthetic chemicals is possible and economically viable.",
+          "hint": "Give one example from Rajasthan and one from the Himalayas.",
+          "probe": "Describe how communities have conserved and protected forests and wildlife in India.",
+          "causeChain": "Forests are home to traditional communities -> conserving habitats secures their own long-term livelihood -> villagers resist mining (Sariska), declare their own sanctuaries (Bhairodev Dakav Sonchuri), resist deforestation (Chipko), revive traditional farming (Beej Bachao Andolan, Navdanya)",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_livelihood_to_action",
+              "linksChecks": [
+                "chk_geo2_livelihood",
+                "chk_geo2_sariska_alwar"
+              ],
+              "criterion": "Connects communities recognising that conservation secures their own livelihood to their actions protecting forests and wildlife.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t4c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Conservation strategies are not new in our country. In India, forests are also home to some of the traditional communities. In some areas of India, local communities are struggling to conserve these habitats along with government officials, recognising that only this will secure their own long-term livelihood.",
+              "assessment": {
+                "requiredEvidence": [
+                  "traditional communities",
+                  "long-term livelihood"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_livelihood",
+                    "criterion": "Explains that local communities conserve habitats because they recognise that only this will secure their own long-term livelihood.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In Sariska Tiger Reserve, Rajasthan, villagers have fought against mining by citing the Wildlife Protection Act. The inhabitants of five villages in the Alwar district of Rajasthan have declared 1,200 hectares of forest as the Bhairodev Dakav 'Sonchuri', declaring their own set of rules and regulations which do not allow hunting, and are protecting the wildlife against any outside encroachments.",
+              "followUp": "Give an example of villagers in Rajasthan protecting forests or wildlife.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Sariska",
+                  "fought against mining",
+                  "Alwar",
+                  "Bhairodev Dakav",
+                  "do not allow hunting"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo2_sariska_alwar",
+                    "criterion": "Gives a Rajasthan example: villagers in Sariska fought mining by citing the Wildlife Protection Act, or five Alwar villages declared 1,200 hectares as the Bhairodev Dakav 'Sonchuri' with their own rules banning hunting.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The famous Chipko movement in the Himalayas has not only successfully resisted deforestation in several areas but has also shown that community afforestation with indigenous species can be enormously successful.",
+              "followUp": "What did the Chipko movement achieve?",
+              "followUpAllows": [
+                "Chipko movement"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Chipko movement",
+                  "Himalayas",
+                  "resisted deforestation",
+                  "community afforestation",
+                  "indigenous species"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_chipko",
+                    "criterion": "Describes the Chipko movement in the Himalayas: it resisted deforestation and showed that community afforestation with indigenous species can be very successful.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Farmers and citizen's groups like the Beej Bachao Andolan in Tehri and Navdanya have shown that adequate levels of diversified crop production without the use of synthetic chemicals are possible and economically viable.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Beej Bachao Andolan",
+                  "Tehri",
+                  "Navdanya",
+                  "without the use of synthetic chemicals"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_beej_bachao",
+                    "criterion": "Mentions the Beej Bachao Andolan in Tehri or Navdanya, showing diversified crop production without synthetic chemicals is possible and economically viable.",
+                    "isRequired": true,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Bhairodev Dakav 'Sonchuri' in Alwar district, Rajasthan",
+            "Chipko movement in the Himalayas",
+            "Exercise: 'Describe how communities have conserved and protected forests and wildlife in India?'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 16, "quote": "Conservation strategies are not new in our country.", "supports": ["geo2_t4c1_kp1"] },
+            { "page": 16, "quote": "recognising that only this will secure their own long-term livelihood", "supports": ["geo2_t4c1_kp1"] },
+            { "page": 16, "quote": "villagers have fought against mining by citing the Wildlife Protection Act", "supports": ["geo2_t4c1_kp2"] },
+            { "page": 16, "quote": "have declared 1,200 hectares of forest as the Bhairodev Dakav ‘Sonchuri’", "supports": ["geo2_t4c1_kp2"] },
+            { "page": 16, "quote": "The famous Chipko movement in the Himalayas has not only successfully resisted deforestation", "supports": ["geo2_t4c1_kp3"] },
+            { "page": 16, "quote": "the Beej Bachao Andolan in Tehri and Navdanya", "supports": ["geo2_t4c1_kp4"] },
+            { "page": 18, "quote": "Describe how communities have conserved and protected forests and wildlife", "supports": ["geo2_t4c1_kp2", "geo2_t4c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t4_c2",
+          "label": "Joint Forest Management",
+          "headingType": "subheading",
+          "sourcePages": [16, 17],
+          "cardText": "The joint forest management (JFM) programme is a good example of involving local communities in the management and restoration of degraded forests. It has existed formally since 1988, when Odisha passed the first resolution for joint forest management. JFM depends on local (village) institutions that undertake protection activities, mostly on degraded forest land managed by the forest department. In return, members of these communities are entitled to intermediary benefits like non-timber forest produce and a share in the timber harvested by 'successful protection'.",
+          "hint": "Which state passed the first JFM resolution, and when? What do villagers get in return?",
+          "probe": "What is joint forest management? How do local communities benefit from it?",
+          "causeChain": "Village institutions protect degraded forest land managed by the forest department -> in return they get non-timber forest produce and a share in timber -> communities gain from restoring forests",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_protection_to_benefits",
+              "linksChecks": [
+                "chk_geo2_jfm_institutions",
+                "chk_geo2_jfm_benefits"
+              ],
+              "criterion": "Connects village institutions protecting degraded forest land to the benefits they receive in return (non-timber forest produce and a share in timber).",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In India joint forest management (JFM) programme furnishes a good example for involving local communities in the management and restoration of degraded forests. The programme has been in formal existence since 1988 when the state of Odisha passed the first resolution for joint forest management.",
+              "followUp": "What is joint forest management, and where and when did it begin?",
+              "assessment": {
+                "requiredEvidence": [
+                  "joint forest management",
+                  "local communities",
+                  "degraded forests",
+                  "1988",
+                  "Odisha"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_jfm_def",
+                    "criterion": "Defines joint forest management as involving local communities in the management and restoration of degraded forests.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_jfm_odisha",
+                    "criterion": "States that JFM has existed formally since 1988, when Odisha passed the first resolution.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "JFM depends on the formation of local (village) institutions that undertake protection activities mostly on degraded forest land managed by the forest department. In return, the members of these communities are entitled to intermediary benefits like non-timber forest produces and share in the timber harvested by 'successful protection'.",
+              "followUp": "Who protects the forest under JFM, and what do they get in return?",
+              "assessment": {
+                "requiredEvidence": [
+                  "village institutions",
+                  "protection activities",
+                  "non-timber forest produces",
+                  "share in the timber"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_jfm_institutions",
+                    "criterion": "Explains that JFM depends on local (village) institutions that protect degraded forest land managed by the forest department.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_jfm_benefits",
+                    "criterion": "States that in return community members get non-timber forest produce and a share in the timber harvested by successful protection.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo2_jfm_govt_only"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Odisha's first JFM resolution, 1988",
+            "Exercise: joint forest management directly involves community participation"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo2_jfm_govt_only",
+              "wrong": "Under joint forest management, only the forest department protects forests and villagers get nothing.",
+              "fix": "Village institutions undertake the protection activities and in return get non-timber forest produce and a share in the timber harvested."
+            }
+          ],
+          "verify": [
+            { "page": 16, "quote": "In India joint forest management (JFM) programme furnishes a good example for involving local communities in the management and restoration of degraded", "supports": ["geo2_t4c2_kp1"] },
+            { "page": 17, "quote": "existence since 1988 when the state of Odisha passed the first resolution for joint forest management", "supports": ["geo2_t4c2_kp1"] },
+            { "page": 17, "quote": "JFM depends on the formation of local (village) institutions that undertake protection activities", "supports": ["geo2_t4c2_kp2"] },
+            { "page": 17, "quote": "intermediary benefits like non-timber forest produces and share in the timber harvested by ‘successful protection’", "supports": ["geo2_t4c2_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t4_c3",
+          "label": "Sacred Groves and Traditional Beliefs",
+          "headingType": "subheading",
+          "sourcePages": [17],
+          "cardText": "Nature worship is an age-old tribal belief based on the premise that all creations of nature have to be protected. Such beliefs have preserved several virgin forests in pristine form, called sacred groves (the forests of gods and goddesses); local people leave them untouched and ban any interference. The Mundas and the Santhal of Chota Nagpur worship mahua and kadamba trees, and tribals of Odisha and Bihar worship tamarind and mango trees during weddings; many consider peepal and banyan sacred. Macaques and langurs are fed around many temples, and around Bishnoi villages in Rajasthan, herds of blackbuck (chinkara), nilgai and peacocks are an integral part of the community and nobody harms them.",
+          "hint": "What belief lies behind sacred groves? Give one example of a community protecting animals.",
+          "probe": "What are sacred groves? How have traditional beliefs helped conserve nature in India?",
+          "causeChain": "Tribal belief that all creations of nature must be protected -> forests left untouched, interference banned -> virgin forests preserved as sacred groves; reverence for trees and animals protects them",
+          "causeLinks": [
+            {
+              "id": "lnk_geo2_belief_to_groves",
+              "linksChecks": [
+                "chk_geo2_nature_worship",
+                "chk_geo2_sacred_groves"
+              ],
+              "criterion": "Connects the tribal belief that all creations of nature must be protected to virgin forests being preserved as sacred groves.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo2_t4c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Nature worship is an age old tribal belief based on the premise that all creations of nature have to be protected. Such beliefs have preserved several virgin forests in pristine form called Sacred Groves (the forests of God and Goddesses). These patches of forest have been left untouched by the local people and any interference with them is banned.",
+              "followUp": "What belief lies behind sacred groves, and how are these forests treated?",
+              "assessment": {
+                "requiredEvidence": [
+                  "nature worship",
+                  "all creations of nature",
+                  "virgin forests",
+                  "Sacred Groves",
+                  "interference"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_nature_worship",
+                    "criterion": "Explains nature worship as an age-old tribal belief that all creations of nature have to be protected.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_sacred_groves",
+                    "criterion": "Defines sacred groves as virgin forests preserved in pristine form, left untouched by local people, with any interference banned.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The Mundas and the Santhal of Chota Nagpur region worship mahua and kadamba trees, and the tribals of Odisha and Bihar worship the tamarind and mango trees during weddings. You will find troops of macaques and langurs around many temples. In and around Bishnoi villages in Rajasthan, herds of blackbuck (chinkara), nilgai and peacocks can be seen as an integral part of the community and nobody harms them.",
+              "followUp": "Give an example of a community that protects particular trees or animals.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Mundas and the Santhal",
+                  "mahua",
+                  "Bishnoi",
+                  "blackbuck",
+                  "nobody harms them"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo2_sacred_trees",
+                    "criterion": "Gives an example of revered trees, such as the Mundas and Santhal worshipping mahua and kadamba, or tribals of Odisha and Bihar worshipping tamarind and mango.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_bishnoi",
+                    "criterion": "Gives an example of protected animals, such as blackbuck, nilgai and peacocks around Bishnoi villages in Rajasthan, or macaques and langurs around temples.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Bishnoi villages in Rajasthan protecting blackbuck, nilgai and peacocks",
+            "Mundas and Santhal of Chota Nagpur worshipping mahua and kadamba trees"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 17, "quote": "Nature worship is an age old tribal belief based on the premise that all creations of nature have to be protected.", "supports": ["geo2_t4c3_kp1"] },
+            { "page": 17, "quote": "forests in pristine form called Sacred Groves (the forests of God and Goddesses)", "supports": ["geo2_t4c3_kp1"] },
+            { "page": 17, "quote": "Mundas and the Santhal of Chota Nagpur region", "supports": ["geo2_t4c3_kp2"] },
+            { "page": 17, "quote": "community and nobody harms them", "supports": ["geo2_t4c3_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch2_t4_c4",
+          "label": "Involving Local Communities in Resource Management",
+          "headingType": "concluding",
+          "sourcePages": [17],
+          "cardText": "The clear lesson from the dynamics of both environmental destruction and reconstruction in India is that local communities everywhere have to be involved in some kind of natural resource management. But there is still a long way to go before local communities are at the centre-stage in decision-making. We should accept only those economic or developmental activities that are people centric, environment-friendly and economically rewarding.",
+          "hint": "What is the clear lesson, and what kind of development should we accept?",
+          "probe": "What is the main lesson from India's experience of environmental destruction and reconstruction?",
+          "causeChain": "Experience of environmental destruction and reconstruction -> local communities must be involved in natural resource management -> accept only people centric, environment-friendly and economically rewarding activities",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo2_t4c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The clear lesson from the dynamics of both environmental destruction and reconstruction in India is that local communities everywhere have to be involved in some kind of natural resource management. But there is still a long way to go before local communities are at the centre-stage in decision-making.",
+              "followUp": "What is the main lesson from India's experience of protecting and rebuilding its environment?",
+              "assessment": {
+                "requiredEvidence": [
+                  "local communities",
+                  "natural resource management",
+                  "centre-stage in decision-making"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_involve_communities",
+                    "criterion": "States that local communities everywhere have to be involved in natural resource management.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo2_long_way",
+                    "criterion": "Notes that there is still a long way to go before local communities are at the centre-stage in decision-making.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo2_t4c4_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Accept only those economic or developmental activities that are people centric, environment-friendly and economically rewarding.",
+              "assessment": {
+                "requiredEvidence": [
+                  "people centric",
+                  "environment-friendly",
+                  "economically rewarding"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo2_people_centric",
+                    "criterion": "Says we should accept only economic or developmental activities that are people centric, environment-friendly and economically rewarding.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'Write a note on good practices towards conserving forest and wildlife.'"
+          ],
+          "extraExamplesOk": [
+            "Everyday practices that conserve the environment, as in the chapter's essay activity"
+          ],
+          "misconceptions": [],
+          "verify": [
+            { "page": 17, "quote": "local communities everywhere have to be involved in some kind of natural resource management", "supports": ["geo2_t4c4_kp1"] },
+            { "page": 17, "quote": "centre-stage in decision-making", "supports": ["geo2_t4c4_kp1"] },
+            { "page": 17, "quote": "activities, that are people centric, environment-friendly and economically rewarding", "supports": ["geo2_t4c4_kp2"] },
+            { "page": 18, "quote": "Write a note on good practices towards conserving forest and wildlife.", "supports": ["geo2_t4c4_kp2"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

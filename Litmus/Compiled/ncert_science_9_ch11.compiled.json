@@ -1,0 +1,4450 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch11.json",
+  "sourceSha256": "91c4a70119682cbac7cc72e55f823d5d698b89956976431e8827ac0322ae6bd7",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 11,
+  "chapterName": "Reproduction: How Life Continues",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c11_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c11_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example reproduction, asexual reproduction, sexual reproduction, vegetative propagation, budding, spore, clone, mitosis.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "reproduction",
+    "asexual reproduction",
+    "sexual reproduction",
+    "vegetative propagation",
+    "budding",
+    "spore",
+    "clone",
+    "mitosis",
+    "meiosis",
+    "gamete",
+    "pollination",
+    "fertilisation",
+    "zygote",
+    "ovulation",
+    "menstruation",
+    "gametogenesis",
+    "implantation",
+    "contraception"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch11_t1_c1",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Reproduction and Its Two Modes",
+      "headingType": "heading",
+      "sourcePages": [
+        208
+      ],
+      "conceptHash": "6923ed8fdccaa4a9b7cc9ce9f7747fb41d4d409e94f68251a18831386900d76f",
+      "cardText": "Reproduction is a biological process by which living beings produce new individuals of their own kind, and this is how life on the Earth continues to exist. Every organism has a definite life span: it is born, grows, matures, reproduces and eventually dies. Living beings reproduce in two main ways: asexually, where a single parent produces offspring that are almost exact copies of the parent, and sexually, where offspring inherit a mix of characteristics from the two individuals. This mixing may lead to small differences between parents and their young ones, and accumulated over many generations such differences help living beings adapt to changing environments.",
+      "hint": "What are the two main ways in which living beings reproduce?",
+      "probe": "Define reproduction and distinguish asexual from sexual reproduction.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reproduction and Its Two Modes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the process that makes more living beings like the parents, and why does it matter for the continuation of life?",
+          "requiredEvidence": [
+            "biological process",
+            "produce new individuals of their own kind",
+            "life on the Earth continues"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_rp_def",
+              "criterion": "Defines reproduction as the biological process by which living beings produce new individuals of their own kind, by which life on the Earth continues.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the process that makes more living beings like the parents, and why does it matter for the continuation of life?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In what ways, depending on the number of parents, do living beings reproduce, and how do the offspring differ between them?",
+          "requiredEvidence": [
+            "two main ways",
+            "asexually",
+            "single parent",
+            "almost exact copies",
+            "sexually",
+            "mix of characteristics from the two individuals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_rp_modes",
+              "criterion": "States the two main ways: asexual (a single parent produces almost exact copies) and sexual (offspring inherit a mix of characteristics from two individuals).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In what ways, depending on the number of parents, do living beings reproduce, and how do the offspring differ between them?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_rp_sexual_copy"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "mixing of characteristics",
+            "small differences",
+            "many generations",
+            "adapt to changing environments"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_rp_mix",
+              "criterion": "States that mixing of characteristics gives small differences which, accumulated over many generations, help living beings adapt to changing environments.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the two main ways in which living beings reproduce?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "definite life span",
+            "born, grows, matures, reproduces"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_rp_life",
+              "criterion": "States that every organism has a definite life span: it is born, grows, matures, reproduces and eventually dies.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the two main ways in which living beings reproduce?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_mix_adapt",
+          "linksChecks": [
+            "chk_sci9c11_rp_modes",
+            "chk_sci9c11_rp_mix"
+          ],
+          "criterion": "Connects the mixing of characteristics in sexual reproduction to small differences that, accumulated over generations, help organisms adapt to changing environments.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_rp_sexual_copy",
+          "wrong": "Offspring of sexual reproduction are exact copies of one parent.",
+          "fix": "In asexual reproduction a single parent produces offspring that are almost exact copies; in sexual reproduction offspring inherit a mix of characteristics from two individuals.",
+          "checkId": "mchk_misc_sci9c11_rp_sexual_copy",
+          "checkCriterion": "The answer states or implies this wrong idea: Offspring of sexual reproduction are exact copies of one parent.",
+          "fixCheckId": "mfix_misc_sci9c11_rp_sexual_copy",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In asexual reproduction a single parent produces offspring that are almost exact copies; in sexual reproduction offspring inherit a mix of characteristics from two individuals.",
+          "keyPointIds": [
+            "sci9c11_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_rp_sexual_copy"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_rp_def",
+            "chk_sci9c11_rp_modes"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_rp_mix",
+            "chk_sci9c11_rp_life",
+            "lnk_sci9c11_mix_adapt"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c2",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Vegetative Propagation in Plants",
+      "headingType": "heading",
+      "sourcePages": [
+        209
+      ],
+      "conceptHash": "9f8ef7b7ad2694828b010d36f0557e202a584afb70598b65f86be6c086f96511",
+      "cardText": "Asexual reproduction is seen in many unicellular organisms such as bacteria, amoeba and yeast and in simple multicellular organisms such as hydra and sponge. It is also seen in many plants. Plants with fleshy underground stems, such as potato and ginger, sprout new plants without producing seeds; money plant stem and sugarcane stem cuttings grow into new plants; and Bryophyllum leaves sprout tiny plantlets. All these are examples of vegetative propagation, which means that new plants arise from the vegetative parts, the growing parts of a plant. The key point is that this type of reproduction involves only one parent and hence produces genetically identical individuals.",
+      "hint": "From which part of a plant do new plants arise in vegetative propagation, and how many parents are involved?",
+      "probe": "What is vegetative propagation, and why are the new plants genetically identical to the parent?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Vegetative Propagation in Plants, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "unicellular organisms",
+            "bacteria, amoeba, yeast",
+            "hydra, sponge",
+            "many plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vp_where",
+              "criterion": "States that asexual reproduction is seen in many unicellular organisms (bacteria, amoeba, yeast), simple multicellular organisms (hydra, sponge) and many plants.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "From which part of a plant do new plants arise in vegetative propagation, and how many parents are involved?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Give examples of plants that sprout new individuals from underground stems or cut stems without seeds.",
+          "requiredEvidence": [
+            "potato and ginger",
+            "without producing seeds",
+            "stem cuttings",
+            "Bryophyllum",
+            "tiny plantlets"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vp_examples",
+              "criterion": "Gives examples: potato and ginger sprout from underground stems without seeds, stem cuttings of money plant and sugarcane grow into new plants, and Bryophyllum leaves sprout plantlets.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Give examples of plants that sprout new individuals from underground stems or cut stems without seeds."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_vp_seed"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is it called when new plants arise from the growing parts of an existing plant?",
+          "requiredEvidence": [
+            "vegetative propagation",
+            "new plants arise from the vegetative parts",
+            "growing parts of a plant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vp_def",
+              "criterion": "Defines vegetative propagation as new plants arising from the vegetative (growing) parts of a plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is it called when new plants arise from the growing parts of an existing plant?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many parents are involved in this type of reproduction, and what follows for the genes of the offspring?",
+          "requiredEvidence": [
+            "only one parent",
+            "genetically identical individuals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vp_one",
+              "criterion": "States that this type of reproduction involves only one parent and hence produces genetically identical individuals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many parents are involved in this type of reproduction, and what follows for the genes of the offspring?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_one_parent_identical",
+          "linksChecks": [
+            "chk_sci9c11_vp_def",
+            "chk_sci9c11_vp_one"
+          ],
+          "criterion": "Connects vegetative propagation involving only one parent to the production of genetically identical individuals.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_vp_seed",
+          "wrong": "Potato and ginger plants can only be grown from seeds.",
+          "fix": "Plants with fleshy underground stems, such as potato and ginger, sprout new plants without producing seeds.",
+          "checkId": "mchk_misc_sci9c11_vp_seed",
+          "checkCriterion": "The answer states or implies this wrong idea: Potato and ginger plants can only be grown from seeds.",
+          "fixCheckId": "mfix_misc_sci9c11_vp_seed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Plants with fleshy underground stems, such as potato and ginger, sprout new plants without producing seeds.",
+          "keyPointIds": [
+            "sci9c11_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_vp_seed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_vp_examples",
+            "chk_sci9c11_vp_def",
+            "chk_sci9c11_vp_one"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_vp_where",
+            "lnk_sci9c11_one_parent_identical"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c3",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Cutting, Grafting, Layering and Tissue Culture",
+      "headingType": "heading",
+      "sourcePages": [
+        209,
+        210
+      ],
+      "conceptHash": "8de0eb154201dd335512b2e5f6b5933391605d939e0358eeb662e502af1dd10c",
+      "cardText": "Asexual reproduction produces genetically identical individuals. This natural process has been adapted by scientists and horticulturists to develop several methods of vegetative propagation, such as cutting, grafting, layering and tissue culture, which are widely used to propagate plants efficiently and enable farmers to cultivate desirable crops on a large scale. In cutting, shoot cuttings are planted in soil mixed with compost after removing the leaves from the lower half. In grafting, a stem piece of one variety (Plant B) is fitted into a slit on a rooted plant (Plant A) and the wound is protected until it heals. In layering, the middle part of a flexible, thin twig, for example of lemon, is buried under the soil, and after 10 to 15 days roots develop; the twig is then cut from the parent plant. Propagation by tissue culture, which uses the shoot tip (apical meristem), has revolutionised farming practices like banana farming, providing mass-produced healthy plantlets that eliminate virus-infected plants and ensure high yields.",
+      "hint": "Name four methods of vegetative propagation and what each involves.",
+      "probe": "Describe cutting, grafting, layering and tissue culture as methods of vegetative propagation.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Cutting, Grafting, Layering and Tissue Culture, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which techniques have scientists and gardeners developed by adapting this natural process?",
+          "requiredEvidence": [
+            "adapted by scientists and horticulturists",
+            "cutting, grafting, layering and tissue culture",
+            "efficiently propagate plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_adapted",
+              "criterion": "States that scientists and horticulturists have adapted this natural process into methods of vegetative propagation such as cutting, grafting, layering and tissue culture, which efficiently propagate plants.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which techniques have scientists and gardeners developed by adapting this natural process?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "farmers",
+            "desirable crops",
+            "large scale"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_scale",
+              "criterion": "States that such methods enable farmers to cultivate desirable crops on a large scale.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name four methods of vegetative propagation and what each involves."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When a stem piece is used to grow a new plant in soil, how should the leaves and the depth be handled?",
+          "requiredEvidence": [
+            "cutting",
+            "remove leaves from the lower half",
+            "soil mixed with compost"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_cutting",
+              "criterion": "Describes cutting: shoot cuttings have their lower leaves removed and are inserted about half their length into soil mixed with compost.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When a stem piece is used to grow a new plant in soil, how should the leaves and the depth be handled?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When two plants are joined, how is the stem of one fitted onto the other and how is the join protected?",
+          "requiredEvidence": [
+            "grafting",
+            "stem of Plant B",
+            "slit of stem of Plant A",
+            "until it heals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_grafting",
+              "criterion": "Describes grafting: a stem piece of Plant B is fitted into a slit in the stem of the rooted Plant A and the wound is protected until it heals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When two plants are joined, how is the stem of one fitted onto the other and how is the join protected?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_gm_graft"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c3_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is a flexible twig of a lemon plant used to produce a new plant while still attached?",
+          "requiredEvidence": [
+            "layering",
+            "flexible, thin twig",
+            "bury the middle part",
+            "roots will develop"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_layering",
+              "criterion": "Describes layering: the middle part of a flexible, thin twig is buried in the soil, roots develop in 10 to 15 days, and the twig is then cut from the parent plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is a flexible twig of a lemon plant used to produce a new plant while still attached?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c3_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How has growing plants from small pieces of tissue in a lab changed farming of bananas?",
+          "requiredEvidence": [
+            "tissue culture",
+            "banana farming",
+            "mass-produced healthy plantlets",
+            "shoot tip",
+            "eliminate virus-infected plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gm_tissue",
+              "criterion": "States that propagation by tissue culture from the shoot tip (apical meristem) gives mass-produced healthy plantlets that eliminate virus-infected plants and ensure high yields, as in banana farming.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How has growing plants from small pieces of tissue in a lab changed farming of bananas?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_identical_scale",
+          "linksChecks": [
+            "chk_sci9c11_gm_adapted",
+            "chk_sci9c11_gm_scale"
+          ],
+          "criterion": "Connects asexual reproduction producing genetically identical plants to farmers being able to cultivate desirable crops on a large scale by cutting, grafting, layering and tissue culture.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_gm_graft",
+          "wrong": "In grafting, the two plants fuse to form a new species with seeds from both.",
+          "fix": "In grafting, a stem piece of one plant is fitted into a slit of another rooted plant and the wound is protected until it heals, so that the cutting grows along with the rooted plant.",
+          "checkId": "mchk_misc_sci9c11_gm_graft",
+          "checkCriterion": "The answer states or implies this wrong idea: In grafting, the two plants fuse to form a new species with seeds from both.",
+          "fixCheckId": "mfix_misc_sci9c11_gm_graft",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In grafting, a stem piece of one plant is fitted into a slit of another rooted plant and the wound is protected until it heals, so that the cutting grows along with the rooted plant.",
+          "keyPointIds": [
+            "sci9c11_t1c3_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 10,
+        "scored": 11
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_gm_graft"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_gm_adapted",
+            "chk_sci9c11_gm_cutting",
+            "chk_sci9c11_gm_grafting",
+            "chk_sci9c11_gm_layering",
+            "chk_sci9c11_gm_tissue"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_gm_scale",
+            "lnk_sci9c11_identical_scale"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c4",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Budding in Yeast and Hydra",
+      "headingType": "heading",
+      "sourcePages": [
+        211
+      ],
+      "conceptHash": "b60d3bcd0ecc739db27d9883e40f15eea6bbd8c58157fbd1f87e07316a96bdeb",
+      "cardText": "In Activity 11.2, a drop of the yeast mixture under a microscope shows small round outgrowths, buds, emerging from the parent yeast cells, indicating that yeast is duplicating. In hydra, a multicellular animal, repeated cell division at a specific site on the parent body produces a small outgrowth called a bud. The bud enlarges and separates from the parent to live independently. This process is called budding. In hydra one can often see many buds growing on the parent's body at the same time.",
+      "hint": "How does a bud form and what happens to it?",
+      "probe": "Explain budding in yeast and hydra.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Budding in Yeast and Hydra, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c4_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "small, round outgrowths",
+            "buds",
+            "parent yeast cells",
+            "yeast is duplicating"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_bd_yeast",
+              "criterion": "States that yeast cells show small round outgrowths (buds) emerging from the parent cells, indicating that the yeast is duplicating.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a bud form and what happens to it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a multicellular animal living in water, how does a small outgrowth form on the parent body?",
+          "requiredEvidence": [
+            "hydra",
+            "repeated cell division",
+            "specific site on the parent body",
+            "small outgrowth called a bud"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_bd_hydra",
+              "criterion": "Explains that in hydra repeated cell division at a specific site on the parent body produces a small outgrowth called a bud.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a multicellular animal living in water, how does a small outgrowth form on the parent body?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_bud_both_parents"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the outgrowth as it matures, and what is the process called?",
+          "requiredEvidence": [
+            "bud enlarges",
+            "separates from the parent",
+            "live independently",
+            "budding",
+            "many buds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_bd_def",
+              "criterion": "States that the bud enlarges and separates from the parent to live independently, a process called budding.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the outgrowth as it matures, and what is the process called?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_bud_both_parents",
+          "wrong": "Budding needs two parents, like sexual reproduction.",
+          "fix": "In budding a small outgrowth forms at a specific site on a single parent and then separates to live independently.",
+          "checkId": "mchk_misc_sci9c11_bud_both_parents",
+          "checkCriterion": "The answer states or implies this wrong idea: Budding needs two parents, like sexual reproduction.",
+          "fixCheckId": "mfix_misc_sci9c11_bud_both_parents",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In budding a small outgrowth forms at a specific site on a single parent and then separates to live independently.",
+          "keyPointIds": [
+            "sci9c11_t1c4_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_bud_both_parents"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_bd_hydra",
+            "chk_sci9c11_bd_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_bd_yeast"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c5",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Pasteur and the Origin of Microorganisms",
+      "headingType": "heading",
+      "sourcePages": [
+        211
+      ],
+      "conceptHash": "ba9a8673d4d04f8ba9a73f61cef8eb0fd61377e2b9bd0fdc443268a6b00d50e9",
+      "cardText": "Microorganisms such as the fuzzy patches that grow on cooked food left on the counter in warm weather, or the black patches on damp walls, raise the question of where they come from. For long, people thought living things arose spontaneously from non-living matter. Experiments by Louis Pasteur proved that new life always comes from pre-existing life. He found the germ theory of disease, strengthened the cell theory that all cells arise from pre-existing cells, and led to practices like food and instrument sterilisation.",
+      "hint": "What did Pasteur's experiments prove about where new life comes from?",
+      "probe": "What did people once think about the origin of living things, and what did Pasteur show?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Pasteur and the Origin of Microorganisms, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did people long believe about where living things came from, and what did experiments by a famous French scientist show?",
+          "requiredEvidence": [
+            "arose spontaneously from non-living matter",
+            "Louis Pasteur",
+            "new life always comes from pre-existing life"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pa_proof",
+              "criterion": "States that people long thought living things arose spontaneously from non-living matter, but Louis Pasteur's experiments proved that new life always comes from pre-existing life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did people long believe about where living things came from, and what did experiments by a famous French scientist show?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_pa_spont"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c5_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "germ theory of disease",
+            "cell theory",
+            "all cells arise from pre-existing cells",
+            "sterilisation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pa_effect",
+              "criterion": "States that Pasteur found the germ theory of disease, strengthened the cell theory and led to practices like food and instrument sterilisation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Pasteur's experiments prove about where new life comes from?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_pa_spont",
+          "wrong": "Mould arises spontaneously from the rotting food itself.",
+          "fix": "Pasteur proved that new life always comes from pre-existing life; the mould on bread grows from spores already present in the air.",
+          "checkId": "mchk_misc_sci9c11_pa_spont",
+          "checkCriterion": "The answer states or implies this wrong idea: Mould arises spontaneously from the rotting food itself.",
+          "fixCheckId": "mfix_misc_sci9c11_pa_spont",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Pasteur proved that new life always comes from pre-existing life; the mould on bread grows from spores already present in the air.",
+          "keyPointIds": [
+            "sci9c11_t1c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_pa_spont"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_pa_proof"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_pa_effect"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c6",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Spore Formation in Fungi",
+      "headingType": "heading",
+      "sourcePages": [
+        212
+      ],
+      "conceptHash": "62d13f290844609208ee94fded4d114e61f6b3c8a3fefde33079b51b8ac4b00d",
+      "cardText": "In Activity 11.3 mould grows on a moist slice of bread kept in a warm, dark moist chamber; the mould grew from spores already present in the air, which settled on the moist bread and began reproducing rapidly. Spores are formed in a sac-like structure or on a swollen vesicle on a long strip of fungal hyphae, and are produced in huge numbers, millions from one mould colony. Spores are lightweight, usually single-celled and float easily through air currents, waiting for moisture and nutrients to germinate quickly into a new individual. The chamber was kept warm (25 to 35 degrees Celsius) because mould spores need warmth and moisture; lower temperatures slow or stop their reproduction, which is why we refrigerate perishable food. Fungi grow very fast by spore formation and degrade organic wastes and pollutants, and many antibiotics such as penicillin and amoxicillin are derived from fungi.",
+      "hint": "Where does the mould on bread come from, and what are spores like?",
+      "probe": "Explain spore formation in fungi and why bread is kept moist and warm in the activity.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Spore Formation in Fungi, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where did the growth on moist bread come from?",
+          "requiredEvidence": [
+            "spores already present in the air",
+            "settled on the moist bread",
+            "began reproducing rapidly"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sp_source",
+              "criterion": "Explains that the mould on bread grew from spores already present in the air, which settled on the moist bread and began reproducing rapidly.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where did the growth on moist bread come from?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_sp_fresh"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In what structures on fungal threads are these reproductive cells made?",
+          "requiredEvidence": [
+            "sac-like structure",
+            "swollen vesicle",
+            "fungal hyphae",
+            "huge numbers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sp_formed",
+              "criterion": "States that spores are formed in a sac-like structure or on a swollen vesicle on fungal hyphae, in huge numbers (millions from one colony).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In what structures on fungal threads are these reproductive cells made?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c6_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are these cells well suited to spreading through the air and then growing?",
+          "requiredEvidence": [
+            "lightweight",
+            "single-celled",
+            "air currents",
+            "moisture and nutrients",
+            "germinate quickly into a new individual"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sp_features",
+              "criterion": "States that spores are lightweight, usually single-celled and float easily through air, germinating quickly into a new individual when moisture and nutrients are available.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are these cells well suited to spreading through the air and then growing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c6_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "warmth and moisture",
+            "lower temperatures",
+            "slow or stop their reproduction",
+            "refrigerate perishable food"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sp_cold",
+              "criterion": "States that mould spores need warmth and moisture to grow, and lower temperatures slow or stop their reproduction, which is why perishable food is refrigerated.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does the mould on bread come from, and what are spores like?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c6_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "spore formation",
+            "degrade organic wastes and pollutants",
+            "antibiotics",
+            "penicillin"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sp_use",
+              "criterion": "States that fungi grow fast by spore formation, degrade organic wastes and pollutants, and many antibiotics such as penicillin come from fungi.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Where does the mould on bread come from, and what are spores like?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_airborne_spores",
+          "linksChecks": [
+            "chk_sci9c11_sp_source",
+            "chk_sci9c11_sp_features"
+          ],
+          "criterion": "Connects lightweight spores floating in air to mould growing on moist bread, and warmth and moisture to rapid reproduction.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_sp_fresh",
+          "wrong": "The mould was already present inside the fresh bread.",
+          "fix": "The mould was not present when the bread was fresh; it grew from spores already present in the air, which settled on the moist bread.",
+          "checkId": "mchk_misc_sci9c11_sp_fresh",
+          "checkCriterion": "The answer states or implies this wrong idea: The mould was already present inside the fresh bread.",
+          "fixCheckId": "mfix_misc_sci9c11_sp_fresh",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The mould was not present when the bread was fresh; it grew from spores already present in the air, which settled on the moist bread.",
+          "keyPointIds": [
+            "sci9c11_t1c6_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_sp_fresh"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_sp_source",
+            "chk_sci9c11_sp_formed",
+            "chk_sci9c11_sp_features"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_sp_cold",
+            "chk_sci9c11_sp_use",
+            "lnk_sci9c11_airborne_spores"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t1_c7",
+      "topicId": "ncert_sci_9_ch11_t1",
+      "topicTitle": "Reproduction and asexual reproduction",
+      "label": "Asexual Reproduction by Mitosis: Clones",
+      "headingType": "heading",
+      "sourcePages": [
+        212
+      ],
+      "conceptHash": "5021880f85c2c3de227827cacd5d4a8ac39aaad24941b0b02959ab352a4e208c",
+      "cardText": "In all the organisms studied so far in this chapter, the central process behind asexual reproduction is mitosis, a type of cell division that produces two daughter cells, each having the same number of chromosomes identical to the parent cell. Because of this, the offspring produced are genetically identical to the parent and are called clones. This method is fast and helps organisms increase their population quickly, especially when environmental conditions are favourable.",
+      "hint": "Why are offspring of asexual reproduction genetically identical to the parent?",
+      "probe": "Explain why asexual reproduction gives clones and why it is useful for organisms.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Asexual Reproduction by Mitosis: Clones, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t1c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which type of cell division underlies asexual reproduction, and how do the daughter cells compare with the parent cell in chromosome number?",
+          "requiredEvidence": [
+            "asexual reproduction is mitosis",
+            "two daughter cells",
+            "same number of chromosomes identical to the parent cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_cl_mitosis",
+              "criterion": "States that the central process behind asexual reproduction is mitosis, a cell division that produces two daughter cells each with the same number of chromosomes, identical to the parent cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which type of cell division underlies asexual reproduction, and how do the daughter cells compare with the parent cell in chromosome number?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_cl_meiosis"
+          ]
+        },
+        {
+          "id": "sci9c11_t1c7_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What follows for the genes of offspring produced this way, and what are they called?",
+          "requiredEvidence": [
+            "genetically identical to the parent",
+            "clones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_cl_clone",
+              "criterion": "States that, because of mitosis, the offspring are genetically identical to the parent and are called clones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What follows for the genes of offspring produced this way, and what are they called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t1c7_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fast",
+            "increase their population quickly",
+            "favourable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_cl_fast",
+              "criterion": "States that this method is fast and helps organisms increase their population quickly, especially when conditions are favourable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are offspring of asexual reproduction genetically identical to the parent?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_mitosis_clones",
+          "linksChecks": [
+            "chk_sci9c11_cl_mitosis",
+            "chk_sci9c11_cl_clone"
+          ],
+          "criterion": "Connects mitosis producing daughter cells with identical chromosomes to offspring being genetically identical clones.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_cl_meiosis",
+          "wrong": "Asexual reproduction uses meiosis, which halves the chromosome number.",
+          "fix": "The central process behind asexual reproduction is mitosis, which gives daughter cells with the same number of identical chromosomes as the parent cell.",
+          "checkId": "mchk_misc_sci9c11_cl_meiosis",
+          "checkCriterion": "The answer states or implies this wrong idea: Asexual reproduction uses meiosis, which halves the chromosome number.",
+          "fixCheckId": "mfix_misc_sci9c11_cl_meiosis",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The central process behind asexual reproduction is mitosis, which gives daughter cells with the same number of identical chromosomes as the parent cell.",
+          "keyPointIds": [
+            "sci9c11_t1c7_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_cl_meiosis"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_cl_mitosis",
+            "chk_sci9c11_cl_clone"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_cl_fast",
+            "lnk_sci9c11_mitosis_clones"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t2_c1",
+      "topicId": "ncert_sci_9_ch11_t2",
+      "topicTitle": "Sexual reproduction",
+      "label": "Sexual Reproduction and Meiosis",
+      "headingType": "heading",
+      "sourcePages": [
+        212,
+        213
+      ],
+      "conceptHash": "a46c7728342fdc4eb743d1f68d0ccc474d96d300ba3881553ec7fa3965c28ade",
+      "cardText": "Sexual reproduction involves two parents in the formation of a new individual, so both parents contribute to the genetic material of the offspring. If each generation received the full set of chromosomes from both parents, the chromosome number would double in every generation; this problem is solved by a special type of cell division known as meiosis. Each species has a fixed number of chromosomes in its cells; chromosomes are thread-like structures in the nucleus that carry genetic information. Humans have 23 pairs of chromosomes, each pair consisting of one chromosome from each of two different individuals, a total of 46. Meiosis forms gametes: the chromosome number of the parent cell (diploid) is reduced to half (haploid) in the daughter cells, which are used only for reproduction. In animals male gametes are sperm and female gametes are eggs; in plants the pollen grain contains the male gametes and an ovule contains the female gametes. During meiosis the chromosomes of each pair separate so that each gamete receives only one from each pair, so every human gamete has 23 chromosomes.",
+      "hint": "Why must gametes have half the number of chromosomes of the parent cell?",
+      "probe": "Explain why meiosis is needed in sexual reproduction and what it does to the chromosome number.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sexual Reproduction and Meiosis, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many parents are needed in sexual reproduction, and what do both of them contribute?",
+          "requiredEvidence": [
+            "two parents",
+            "formation of a new individual",
+            "both parents contribute",
+            "genetic material"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_two",
+              "criterion": "States that sexual reproduction involves two parents and both contribute to the genetic material of the offspring.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many parents are needed in sexual reproduction, and what do both of them contribute?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What would happen to the chromosome number each generation if both parents passed on their full set?",
+          "requiredEvidence": [
+            "full set of chromosomes from both the parents",
+            "chromosome number would double",
+            "meiosis"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_need",
+              "criterion": "Explains that if each generation received the full set of chromosomes from both parents the chromosome number would double every generation, a problem solved by meiosis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What would happen to the chromosome number each generation if both parents passed on their full set?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_mei_double"
+          ]
+        },
+        {
+          "id": "sci9c11_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which special cell division makes the reproductive cells, and what does it do to the chromosome number of the parent cell?",
+          "requiredEvidence": [
+            "special type of cell division",
+            "forms gametes",
+            "diploid",
+            "reduced to half",
+            "haploid"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_def",
+              "criterion": "States that meiosis is a special cell division that forms gametes, reducing the chromosome number of the diploid parent cell to half (haploid) in the daughter cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which special cell division makes the reproductive cells, and what does it do to the chromosome number of the parent cell?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fixed number of chromosomes",
+            "thread-like structures",
+            "nucleus",
+            "23 pairs",
+            "46 chromosomes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_chr",
+              "criterion": "States that each species has a fixed number of chromosomes, thread-like structures in the nucleus carrying genetic information; humans have 23 pairs (46).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why must gametes have half the number of chromosomes of the parent cell?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the male and female gametes called in animals, and in flowering plants?",
+          "requiredEvidence": [
+            "male gametes are called sperm",
+            "female gametes are called eggs",
+            "pollen grain contains male gametes",
+            "ovule"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_gametes",
+              "criterion": "Names the gametes: sperm and eggs in animals; in plants the pollen grain contains male gametes and the ovule contains the female gametes (eggs).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the male and female gametes called in animals, and in flowering plants?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c1_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the chromosomes of each pair behave during this division, so that each gamete receives how many from each pair?",
+          "requiredEvidence": [
+            "chromosomes of each pair separate",
+            "only one chromosome from each pair",
+            "23 chromosomes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mei_separate",
+              "criterion": "States that during meiosis the chromosomes of each pair separate so each gamete gets only one chromosome from each pair; every human gamete has 23 chromosomes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the chromosomes of each pair behave during this division, so that each gamete receives how many from each pair?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_halve_restore",
+          "linksChecks": [
+            "chk_sci9c11_mei_need",
+            "chk_sci9c11_mei_def"
+          ],
+          "criterion": "Connects meiosis halving the chromosome number in gametes to the chromosome number staying the same from one generation to the next.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_mei_double",
+          "wrong": "Each parent passes its full set of chromosomes to the offspring.",
+          "fix": "If each generation received the full set from both parents the number would double every generation, which is solved by meiosis halving it in the gametes.",
+          "checkId": "mchk_misc_sci9c11_mei_double",
+          "checkCriterion": "The answer states or implies this wrong idea: Each parent passes its full set of chromosomes to the offspring.",
+          "fixCheckId": "mfix_misc_sci9c11_mei_double",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If each generation received the full set from both parents the number would double every generation, which is solved by meiosis halving it in the gametes.",
+          "keyPointIds": [
+            "sci9c11_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 10,
+        "scored": 11
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_mei_double"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_mei_two",
+            "chk_sci9c11_mei_need",
+            "chk_sci9c11_mei_def",
+            "chk_sci9c11_mei_gametes",
+            "chk_sci9c11_mei_separate"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_mei_chr",
+            "lnk_sci9c11_halve_restore"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t2_c2",
+      "topicId": "ncert_sci_9_ch11_t2",
+      "topicTitle": "Sexual reproduction",
+      "label": "Variation from Meiosis",
+      "headingType": "heading",
+      "sourcePages": [
+        213,
+        214
+      ],
+      "conceptHash": "ea38e044296dafa287c6ac7ff4cb0a898f95ad00de38392c4853a7a330d6321b",
+      "cardText": "In the bead activity with three pairs of beads representing contrasting characters on different chromosomes, randomly picking one bead from each pair gives eight possible combinations; with 23 pairs of chromosomes, each carrying genetic information for many characters, the number of combinations is enormous. This random mixing makes children genetically different from their parents and also from their siblings: each of us receives a unique combination of chromosomes. This creates variation among individuals, which is important for the survival of a species. Variation helps some individuals adapt better to changing environments, and over time this process contributes to evolution. For example, some people can tolerate low oxygen levels at high altitudes, or digest milk in their adulthood.",
+      "hint": "Why are children different from their parents and from their siblings?",
+      "probe": "Explain how meiosis creates variation and why variation matters for a species.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Variation from Meiosis, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "With just a few pairs of characters, how many combinations are possible, and what happens as the number of chromosome pairs rises to 23?",
+          "requiredEvidence": [
+            "three pairs of characters",
+            "eight combinations",
+            "23 pairs of chromosomes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_va_combos",
+              "criterion": "States that with just three pairs of characters eight combinations are possible, and with 23 pairs of chromosomes the number of combinations is far greater.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "With just a few pairs of characters, how many combinations are possible, and what happens as the number of chromosome pairs rises to 23?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does this mixing of chromosomes mean for how children compare with their parents and with brothers and sisters?",
+          "requiredEvidence": [
+            "random mixing",
+            "many combinations",
+            "genetically different from their parents",
+            "siblings"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_va_unique",
+              "criterion": "States that random mixing provides many combinations, making children genetically different from their parents and also from their siblings.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does this mixing of chromosomes mean for how children compare with their parents and with brothers and sisters?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_va_same"
+          ]
+        },
+        {
+          "id": "sci9c11_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the difference between individuals matter for a species over time?",
+          "requiredEvidence": [
+            "variation among individuals",
+            "survival of a species",
+            "adapt better to changing environments",
+            "evolution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_va_matters",
+              "criterion": "States that variation among individuals is important for the survival of a species, helps some adapt better to changing environments and contributes to evolution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the difference between individuals matter for a species over time?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t2c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "low oxygen levels at high altitudes",
+            "digest milk in their adulthood"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_va_example",
+              "criterion": "Gives examples of variation: some people can tolerate low oxygen at high altitudes or digest milk in adulthood.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why are children different from their parents and from their siblings?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_random_variation",
+          "linksChecks": [
+            "chk_sci9c11_va_combos",
+            "chk_sci9c11_va_matters"
+          ],
+          "criterion": "Connects the random combination of one chromosome from each pair in the gametes to genetic differences between children and their parents and siblings.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_va_same",
+          "wrong": "Brothers and sisters from the same parents are genetically identical.",
+          "fix": "Random mixing provides many combinations, making children genetically different from their parents and also from their siblings.",
+          "checkId": "mchk_misc_sci9c11_va_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Brothers and sisters from the same parents are genetically identical.",
+          "fixCheckId": "mfix_misc_sci9c11_va_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Random mixing provides many combinations, making children genetically different from their parents and also from their siblings.",
+          "keyPointIds": [
+            "sci9c11_t2c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_va_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_va_combos",
+            "chk_sci9c11_va_unique",
+            "chk_sci9c11_va_matters"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_va_example",
+            "lnk_sci9c11_random_variation"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t3_c1",
+      "topicId": "ncert_sci_9_ch11_t3",
+      "topicTitle": "Sexual reproduction in flowering plants",
+      "label": "Parts of a Flower",
+      "headingType": "heading",
+      "sourcePages": [
+        214,
+        215
+      ],
+      "conceptHash": "76d2a0114dfd63e6cdd2188a56a51a929e802248243410559b1c24ea0cedb22f",
+      "cardText": "Flowering plants, also called angiosperms, are the most diverse group of plants on the Earth, and flowers serve as reproductive organs in angiosperms. In flower buds the coloured projections are often covered by a green covering, the outermost whorl of the flower, called the sepal; the coloured projections are the petals. A complete flower has four parts: sepals, petals, stamens and pistil. The stamen is the male part and consists of a filament and an anther, which produces pollen grains containing male gametes. The pistil is the female part with three subparts: the stigma at the tip, which may be flat or sticky; the style, a thin long tube connecting the stigma to the ovary; and the ovary, which contains ovules, each with an egg cell (female gamete).",
+      "hint": "Name the four parts of a complete flower and say which are male and female.",
+      "probe": "Describe the parts of a flower and the structure of the stamen and the pistil.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Parts of a Flower, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t3c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "angiosperms",
+            "most diverse group of plants",
+            "reproductive organs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fl_angio",
+              "criterion": "States that flowering plants (angiosperms) are the most diverse group of plants and flowers serve as their reproductive organs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the four parts of a complete flower and say which are male and female."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which part is the outer leaf-like covering around a bud and which part is coloured?",
+          "requiredEvidence": [
+            "green covering",
+            "outermost whorl",
+            "sepal",
+            "coloured projections",
+            "petals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fl_sepal",
+              "criterion": "States that the green covering around the other parts in the bud, the outermost whorl, is the sepal, and the coloured projections are the petals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which part is the outer leaf-like covering around a bud and which part is coloured?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_fl_petals"
+          ]
+        },
+        {
+          "id": "sci9c11_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the parts that make up a flower having all its whorls.",
+          "requiredEvidence": [
+            "complete flower",
+            "four parts",
+            "sepals, petals, stamens and pistil"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fl_four",
+              "criterion": "States that a complete flower has four parts: sepals, petals, stamens and pistil.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the parts that make up a flower having all its whorls."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which part is the male part, and what are its subparts and what does one of them produce?",
+          "requiredEvidence": [
+            "stamen is the male part",
+            "filament",
+            "anther",
+            "pollen grains",
+            "male gametes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fl_stamen",
+              "criterion": "States that the stamen is the male part, consisting of a filament and an anther, which produces pollen grains containing male gametes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which part is the male part, and what are its subparts and what does one of them produce?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which part is the female part, and what are its three subparts?",
+          "requiredEvidence": [
+            "pistil is the female part",
+            "stigma",
+            "style",
+            "ovary",
+            "ovules",
+            "egg cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fl_pistil",
+              "criterion": "States that the pistil is the female part with three subparts: the stigma at the tip, the style (a thin tube joining stigma to ovary) and the ovary containing ovules, each with an egg cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which part is the female part, and what are its three subparts?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_stamen_pistil",
+          "linksChecks": [
+            "chk_sci9c11_fl_stamen",
+            "chk_sci9c11_fl_pistil"
+          ],
+          "criterion": "Connects the stamen (anther producing pollen with male gametes) and the pistil (ovary with ovules holding egg cells) to the male and female reproductive parts.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_fl_petals",
+          "wrong": "Petals are the reproductive parts of a flower.",
+          "fix": "The male part is the stamen and the female part the pistil; sepals protect the bud and petals are the coloured projections.",
+          "checkId": "mchk_misc_sci9c11_fl_petals",
+          "checkCriterion": "The answer states or implies this wrong idea: Petals are the reproductive parts of a flower.",
+          "fixCheckId": "mfix_misc_sci9c11_fl_petals",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The male part is the stamen and the female part the pistil; sepals protect the bud and petals are the coloured projections.",
+          "keyPointIds": [
+            "sci9c11_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_fl_petals"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_fl_sepal",
+            "chk_sci9c11_fl_four",
+            "chk_sci9c11_fl_stamen",
+            "chk_sci9c11_fl_pistil"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_fl_angio",
+            "lnk_sci9c11_stamen_pistil"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t3_c2",
+      "topicId": "ncert_sci_9_ch11_t3",
+      "topicTitle": "Sexual reproduction in flowering plants",
+      "label": "Pollination: Self and Cross",
+      "headingType": "heading",
+      "sourcePages": [
+        215,
+        216
+      ],
+      "conceptHash": "8b9ff669e91c58b0de998e2c98fd8b153f68f83c8d96b9ec909412fab3a9535d",
+      "cardText": "In Activity 11.6 flowers of the pea plant are treated in different ways: fruits form in place of flowers in all treatments except the one in which the stamens were removed from the flower bud, so the transfer of pollen grains from the anther to the stigma is necessary for fruit formation. The transfer of pollen grains from the anther to the stigma of a flower is called pollination. When the pollen is transferred to the stigma of the same flower, or of another flower of the same plant, it is self-pollination. When it is transferred from the anther of a flower of one plant to the stigma of a flower of another plant of the same type, it is cross-pollination. The transfer of pollen to the stigma is important for the formation of fruits and seeds.",
+      "hint": "What does the pea plant activity show about fruit formation, and what are self- and cross-pollination?",
+      "probe": "Define pollination and distinguish self-pollination from cross-pollination.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Pollination: Self and Cross, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In an experiment on treating flowers differently, in which case did no fruit form, and what does that suggest?",
+          "requiredEvidence": [
+            "fruits are formed",
+            "all treatments except",
+            "stamens were removed from the flower bud"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pol_activity",
+              "criterion": "Describes the pea activity: fruits form in all treatments except when the stamens were removed from the flower bud.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In an experiment on treating flowers differently, in which case did no fruit form, and what does that suggest?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the transfer of pollen from the anther to the stigma called, and why is it necessary?",
+          "requiredEvidence": [
+            "necessary for fruit formation",
+            "transfer of pollen grains from the anther to the stigma",
+            "pollination"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pol_def",
+              "criterion": "States that the transfer of pollen grains from the anther to the stigma is necessary for fruit formation, and is called pollination.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the transfer of pollen from the anther to the stigma called, and why is it necessary?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_pol_fert"
+          ]
+        },
+        {
+          "id": "sci9c11_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call pollen reaching a stigma on the plant that produced it?",
+          "requiredEvidence": [
+            "same flower",
+            "another flower of the same plant",
+            "self-pollination"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pol_self",
+              "criterion": "Defines self-pollination as pollen transfer to the stigma of the same flower or another flower of the same plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call pollen reaching a stigma on the plant that produced it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call pollen going from a flower of one plant to a stigma of a different plant of the same kind?",
+          "requiredEvidence": [
+            "anther of a flower of one plant",
+            "stigma of a flower of another plant",
+            "same type",
+            "cross-pollination"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pol_cross",
+              "criterion": "Defines cross-pollination as pollen transferred from the anther of a flower of one plant to the stigma of a flower of another plant of the same type.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call pollen going from a flower of one plant to a stigma of a different plant of the same kind?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "important for the formation of fruits and seeds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pol_why",
+              "criterion": "States that the transfer of pollen to the stigma is important for the formation of fruits and seeds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the pea plant activity show about fruit formation, and what are self- and cross-pollination?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_no_pollen_no_fruit",
+          "linksChecks": [
+            "chk_sci9c11_pol_activity",
+            "chk_sci9c11_pol_def"
+          ],
+          "criterion": "Connects removing the stamens from the flower bud, so that no pollen reaches the stigma, to fruits not forming, showing pollination is necessary.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_pol_fert",
+          "wrong": "Pollination and fertilisation are the same thing.",
+          "fix": "Pollination is the transfer of pollen from the anther to the stigma; fertilisation is the fusion of the male gamete with the egg cell later on.",
+          "checkId": "mchk_misc_sci9c11_pol_fert",
+          "checkCriterion": "The answer states or implies this wrong idea: Pollination and fertilisation are the same thing.",
+          "fixCheckId": "mfix_misc_sci9c11_pol_fert",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Pollination is the transfer of pollen from the anther to the stigma; fertilisation is the fusion of the male gamete with the egg cell later on.",
+          "keyPointIds": [
+            "sci9c11_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_pol_fert"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_pol_activity",
+            "chk_sci9c11_pol_def",
+            "chk_sci9c11_pol_self",
+            "chk_sci9c11_pol_cross"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_pol_why",
+            "lnk_sci9c11_no_pollen_no_fruit"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t3_c3",
+      "topicId": "ncert_sci_9_ch11_t3",
+      "topicTitle": "Sexual reproduction in flowering plants",
+      "label": "Pollinators and Pollination Strategies",
+      "headingType": "heading",
+      "sourcePages": [
+        216
+      ],
+      "conceptHash": "50d266bc4da1a892f962c465b49289df93b3b7d6d563ce8fefcf96dfc6f5f8b0",
+      "cardText": "Pollination depends on external agents called pollinators, such as wind, water, insects like bees and butterflies, or birds. Pollination by wind is seen in plants like wheat, maize and rice, where pollen grains are light and small, produced in large numbers, and the stigma is long and feathery to trap them. In aquatic plants such as Vallisneria and Hydrilla, pollination occurs through water, with currents carrying the pollen from one flower to another. Many plants, including sunflower, hibiscus and marigold, are pollinated by insects such as bees and butterflies; their flowers are often brightly coloured, produce nectar and give off fragrance to attract pollinators, and the pollen grains are large, sticky or spiny so they can attach to the insect's body, while the stigma is also sticky. Some flowers, like those of the coral tree and hibiscus, are pollinated by birds such as the Indian white-eye and sunbirds.",
+      "hint": "How are wind-pollinated and insect-pollinated flowers adapted differently?",
+      "probe": "Compare the features of wind-pollinated and insect-pollinated flowers.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Pollinators and Pollination Strategies, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which outside agents carry pollen from flower to flower?",
+          "requiredEvidence": [
+            "external agents called pollinators",
+            "wind, water, insects",
+            "birds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pl_agents",
+              "criterion": "States that pollination depends on external agents called pollinators, such as wind, water, insects (bees, butterflies) or birds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which outside agents carry pollen from flower to flower?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_pl_all_wind"
+          ]
+        },
+        {
+          "id": "sci9c11_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name plants pollinated by air currents, and describe their pollen grains.",
+          "requiredEvidence": [
+            "wheat, maize and rice",
+            "light and small",
+            "large numbers",
+            "long and feathery"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pl_wind",
+              "criterion": "Describes wind pollination in wheat, maize and rice: pollen grains are light and small and produced in large numbers, and the stigma is long and feathery to trap them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name plants pollinated by air currents, and describe their pollen grains."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Vallisneria and Hydrilla",
+            "through water",
+            "currents carrying the pollen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pl_water",
+              "criterion": "States that in aquatic plants such as Vallisneria and Hydrilla pollination occurs through water, with currents carrying the pollen from one flower to another.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are wind-pollinated and insect-pollinated flowers adapted differently?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name plants pollinated by bees and butterflies, and say what their flowers are often like.",
+          "requiredEvidence": [
+            "sunflower, hibiscus and marigold",
+            "brightly coloured",
+            "nectar",
+            "fragrance",
+            "large, sticky or spiny",
+            "stigma is also sticky"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pl_insect",
+              "criterion": "Describes insect pollination: flowers are often brightly coloured, produce nectar and fragrance to attract pollinators, and the pollen grains are large, sticky or spiny to attach to the insect's body while the stigma is sticky.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name plants pollinated by bees and butterflies, and say what their flowers are often like."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "coral tree",
+            "hibiscus",
+            "birds",
+            "Indian white-eye",
+            "sunbirds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pl_bird",
+              "criterion": "States that some flowers, like those of the coral tree and hibiscus, are pollinated by birds such as the Indian white-eye and sunbirds.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How are wind-pollinated and insect-pollinated flowers adapted differently?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_adapted_agent",
+          "linksChecks": [
+            "chk_sci9c11_pl_wind",
+            "chk_sci9c11_pl_insect"
+          ],
+          "criterion": "Connects the features of a flower (light pollen and feathery stigma, or bright colour, nectar and sticky pollen) to the agent that pollinates it.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_pl_all_wind",
+          "wrong": "All flowers are pollinated by wind, so they do not need bright colours.",
+          "fix": "Pollination depends on external agents such as wind, water, insects and birds; brightly coloured, scented flowers with nectar attract insect pollinators.",
+          "checkId": "mchk_misc_sci9c11_pl_all_wind",
+          "checkCriterion": "The answer states or implies this wrong idea: All flowers are pollinated by wind, so they do not need bright colours.",
+          "fixCheckId": "mfix_misc_sci9c11_pl_all_wind",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Pollination depends on external agents such as wind, water, insects and birds; brightly coloured, scented flowers with nectar attract insect pollinators.",
+          "keyPointIds": [
+            "sci9c11_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_pl_all_wind"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_pl_agents",
+            "chk_sci9c11_pl_wind",
+            "chk_sci9c11_pl_insect"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_pl_water",
+            "chk_sci9c11_pl_bird",
+            "lnk_sci9c11_adapted_agent"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t3_c4",
+      "topicId": "ncert_sci_9_ch11_t3",
+      "topicTitle": "Sexual reproduction in flowering plants",
+      "label": "Fertilisation, Seed and Fruit Formation",
+      "headingType": "heading",
+      "sourcePages": [
+        216
+      ],
+      "conceptHash": "45add69320ea0d9836e3626dd7775e683191a5addfda618e81ec98d766ec3d4c",
+      "cardText": "Once pollen reaches a compatible stigma, pollen grains produce pollen tubes that grow down through the style into the ovary. The male gamete moves through this tube and arrives at the ovule, where it fuses with the egg cell. This fusion of gametes is called fertilisation and it marks the beginning of a new life. The fertilised egg is called a zygote, which later develops into an embryo. Meanwhile the ovary surrounding the ovules enlarges and develops into a fruit, while the ovules develop into seeds inside it. Seed dispersal takes place by wind or water and animals, and when conditions such as water, air and temperature are favourable the seed germinates and grows into a new plant. Sexual reproduction not only produces new plants but also creates variation, helping plant species survive and adapt.",
+      "hint": "What happens after pollen lands on a compatible stigma, and what do the ovary and ovules become?",
+      "probe": "Describe fertilisation in a flower and the formation of the fruit and seeds.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Fertilisation, Seed and Fruit Formation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the reproductive cell from the pollen reach the egg after the pollen lands on the stigma?",
+          "requiredEvidence": [
+            "pollen tubes",
+            "grow down through the style into the ovary",
+            "male gamete",
+            "ovule",
+            "fuses with the egg cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fz_tube",
+              "criterion": "States that pollen grains produce pollen tubes that grow down through the style into the ovary, and the male gamete moves through the tube to the ovule where it fuses with the egg cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the reproductive cell from the pollen reach the egg after the pollen lands on the stigma?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the joining of gametes called, and what is the fertilised egg called?",
+          "requiredEvidence": [
+            "fusion of gametes",
+            "fertilisation",
+            "beginning of a new life",
+            "zygote",
+            "embryo"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fz_def",
+              "criterion": "Defines fertilisation as the fusion of gametes, marking the beginning of a new life; the fertilised egg is the zygote, which develops into an embryo.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the joining of gametes called, and what is the fertilised egg called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After fertilisation, what do the ovary and the ovules develop into?",
+          "requiredEvidence": [
+            "ovary surrounding the ovules",
+            "develops into a fruit",
+            "ovules develop into seeds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fz_fruit",
+              "criterion": "States that the ovary enlarges and develops into a fruit, while the ovules develop into seeds inside it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After fertilisation, what do the ovary and the ovules develop into?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_fz_fruit_seed"
+          ]
+        },
+        {
+          "id": "sci9c11_t3c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "seed dispersal",
+            "wind or water and animals",
+            "favourable",
+            "germinates"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fz_seed",
+              "criterion": "States that seeds are dispersed by wind, water and animals, and germinate into a new plant when water, air and temperature are favourable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens after pollen lands on a compatible stigma, and what do the ovary and ovules become?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t3c4_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "creates variation",
+            "survive and adapt"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fz_var",
+              "criterion": "States that sexual reproduction in plants also creates variation, helping plant species survive and adapt to their environment.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens after pollen lands on a compatible stigma, and what do the ovary and ovules become?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_tube_fusion",
+          "linksChecks": [
+            "chk_sci9c11_fz_tube",
+            "chk_sci9c11_fz_fruit"
+          ],
+          "criterion": "Connects the pollen tube carrying the male gamete down the style to its fusion with the egg cell in the ovule, forming the zygote.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_fz_fruit_seed",
+          "wrong": "The ovary becomes the seed and the ovule becomes the fruit.",
+          "fix": "The ovary surrounding the ovules enlarges and develops into a fruit, while the ovules develop into seeds inside it.",
+          "checkId": "mchk_misc_sci9c11_fz_fruit_seed",
+          "checkCriterion": "The answer states or implies this wrong idea: The ovary becomes the seed and the ovule becomes the fruit.",
+          "fixCheckId": "mfix_misc_sci9c11_fz_fruit_seed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The ovary surrounding the ovules enlarges and develops into a fruit, while the ovules develop into seeds inside it.",
+          "keyPointIds": [
+            "sci9c11_t3c4_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_fz_fruit_seed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_fz_tube",
+            "chk_sci9c11_fz_def",
+            "chk_sci9c11_fz_fruit"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_fz_seed",
+            "chk_sci9c11_fz_var",
+            "lnk_sci9c11_tube_fusion"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t4_c1",
+      "topicId": "ncert_sci_9_ch11_t4",
+      "topicTitle": "Reproduction in animals",
+      "label": "External and Internal Fertilisation",
+      "headingType": "heading",
+      "sourcePages": [
+        218
+      ],
+      "conceptHash": "cc4086cb4d1de076a435abb139f4ae5614fcef4faa48a1679b0623b9ea1d1270",
+      "cardText": "In many aquatic animals that reproduce sexually, such as frogs and most fish, fertilisation occurs outside the body: the female releases eggs into the water and the male releases sperm over the eggs. This method is called external fertilisation. Although a large number of eggs are laid, many are destroyed by water currents or eaten by other animals. In reptiles, birds and mammals, fertilisation takes place inside the body of the female, which is called internal fertilisation. Here the chances of survival of the young ones are generally higher because the fertilised egg or embryo is protected more in internal fertilisation.",
+      "hint": "Why do animals with external fertilisation lay many more eggs?",
+      "probe": "Distinguish external from internal fertilisation and say which gives better protection to the young.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain External and Internal Fertilisation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In many animals that live in water, such as amphibians and fish, where does fertilisation take place?",
+          "requiredEvidence": [
+            "frogs and most fish",
+            "outside the body",
+            "female releases eggs into the water",
+            "male releases sperm",
+            "external fertilisation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ef_external",
+              "criterion": "Defines external fertilisation: in frogs and most fish the female releases eggs into water and the male releases sperm over them, so fertilisation occurs outside the body.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In many animals that live in water, such as amphibians and fish, where does fertilisation take place?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_ef_all_internal"
+          ]
+        },
+        {
+          "id": "sci9c11_t4c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "large number of eggs",
+            "destroyed by water currents",
+            "eaten by other animals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ef_loss",
+              "criterion": "States that although a large number of eggs are laid in external fertilisation, many are destroyed by water currents or eaten by other animals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do animals with external fertilisation lay many more eggs?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In animals such as lizards, parrots and humans, where does fertilisation take place and what is it called?",
+          "requiredEvidence": [
+            "reptiles, birds and mammals",
+            "inside the body of the female",
+            "internal fertilisation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ef_internal",
+              "criterion": "Defines internal fertilisation: in reptiles, birds and mammals fertilisation takes place inside the body of the female.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In animals such as lizards, parrots and humans, where does fertilisation take place and what is it called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do the young generally survive better with this kind of fertilisation?",
+          "requiredEvidence": [
+            "chances of survival",
+            "generally higher",
+            "fertilised egg or embryo is protected more"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ef_survival",
+              "criterion": "States that with internal fertilisation the young's chances of survival are generally higher because the fertilised egg or embryo is protected more.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the young generally survive better with this kind of fertilisation?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_protection_numbers",
+          "linksChecks": [
+            "chk_sci9c11_ef_external",
+            "chk_sci9c11_ef_internal"
+          ],
+          "criterion": "Connects eggs being unprotected in external fertilisation to the large numbers laid, while internal fertilisation protects the embryo and gives higher survival.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_ef_all_internal",
+          "wrong": "All animals have internal fertilisation.",
+          "fix": "In many aquatic animals such as frogs and most fish, fertilisation occurs outside the body (external fertilisation).",
+          "checkId": "mchk_misc_sci9c11_ef_all_internal",
+          "checkCriterion": "The answer states or implies this wrong idea: All animals have internal fertilisation.",
+          "fixCheckId": "mfix_misc_sci9c11_ef_all_internal",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In many aquatic animals such as frogs and most fish, fertilisation occurs outside the body (external fertilisation).",
+          "keyPointIds": [
+            "sci9c11_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_ef_all_internal"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_ef_external",
+            "chk_sci9c11_ef_internal",
+            "chk_sci9c11_ef_survival"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_ef_loss",
+            "lnk_sci9c11_protection_numbers"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t4_c2",
+      "topicId": "ncert_sci_9_ch11_t4",
+      "topicTitle": "Reproduction in animals",
+      "label": "Variation in Reproductive Strategies of Animals",
+      "headingType": "heading",
+      "sourcePages": [
+        218,
+        219
+      ],
+      "conceptHash": "1ae88f8f62e0173e2d101f8db75495f8abf0aeef7467c1292b90dc913a109136",
+      "cardText": "Animals show a wide variety of methods of sexual reproduction, but all face the basic challenge of ensuring that the male and female gametes meet and that the young ones survive long enough to grow and reproduce. Fish, amphibians and insects produce several hundred to several thousand eggs at a time with yolk, which contains nutritive substances to nourish the developing embryos. Since the mother's body cannot provide so much yolk for so many eggs, the yolk is just enough to produce a larva, which hatches from the egg and gets nutrition by eating organic wastes like rotten food and manures. This larva is an intermediate feeding stage; once enough nutrition is accumulated a transformation takes place and the adult body is formed, as in butterflies and frogs. In contrast, reptiles and birds lay eggs, and each egg contains enough yolk to nourish the developing embryo until it hatches into a young one. In mammals the zygote grows and develops inside the female body, and mammals typically feed their young with breast milk for some time after birth. Some young are ready to find their own food at birth, whereas others need an extended period of post-hatching or post-birth feeding and care, depending on how long the embryo develops inside an egg or inside the mother's body.",
+      "hint": "Why do fish and insects produce a larva, while reptiles and birds do not?",
+      "probe": "Compare how embryos are nourished in fish and insects, in reptiles and birds, and in mammals.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Variation in Reproductive Strategies of Animals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t4c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "wide variety of methods",
+            "male and the female gametes meet",
+            "young ones survive"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_challenge",
+              "criterion": "States that animals show a wide variety of methods of sexual reproduction but all face the challenge of ensuring the gametes meet and the young survive long enough to grow and reproduce.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do fish and insects produce a larva, while reptiles and birds do not?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many eggs do animals like carp, toads and butterflies produce, and what do the eggs contain to nourish embryos?",
+          "requiredEvidence": [
+            "fish, amphibians, and insects",
+            "several hundred to several thousand eggs",
+            "yolk",
+            "nutritive substances"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_many",
+              "criterion": "States that fish, amphibians and insects produce several hundred to several thousand eggs at a time, with yolk that nourishes the developing embryos.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many eggs do animals like carp, toads and butterflies produce, and what do the eggs contain to nourish embryos?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How much food is in these eggs and what hatches from them?",
+          "requiredEvidence": [
+            "yolk in the egg is just enough",
+            "larva",
+            "hatches from the egg",
+            "organic wastes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_larva",
+              "criterion": "Explains that the yolk is just enough to produce a larva, which hatches and gets nutrition by eating organic wastes like rotten food and manures and grows.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How much food is in these eggs and what hatches from them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "enough nutrition is accumulated",
+            "transformation",
+            "adult body is formed",
+            "butterfly",
+            "frogs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_transform",
+              "criterion": "States that once enough nutrition is accumulated a transformation takes place and the adult body forms, as in butterflies and frogs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do fish and insects produce a larva, while reptiles and birds do not?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do eggs of reptiles and birds differ in food supply from those of fish?",
+          "requiredEvidence": [
+            "reptiles and birds lay eggs",
+            "enough yolk",
+            "until it hatches",
+            "mammals",
+            "inside the female body"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_birds",
+              "criterion": "States that reptiles and birds lay eggs each with enough yolk to nourish the embryo until it hatches, while in mammals the zygote grows and develops inside the female body.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do eggs of reptiles and birds differ in food supply from those of fish?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t4c2_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "mammals",
+            "breast milk"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_vr_milk",
+              "criterion": "States that mammals typically feed their young ones with breast milk for some time after birth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do fish and insects produce a larva, while reptiles and birds do not?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_vr_all_same"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_yolk_larva",
+          "linksChecks": [
+            "chk_sci9c11_vr_larva",
+            "chk_sci9c11_vr_birds"
+          ],
+          "criterion": "Connects many eggs with limited yolk to a feeding larval stage that later transforms into the adult, unlike reptile and bird eggs with enough yolk.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_vr_all_same",
+          "wrong": "All animals care for and feed their young for a long time after birth.",
+          "fix": "In some species the young are ready to find their own food at birth, whereas in others an extended period of post-hatching or post-birth feeding and care is necessary.",
+          "checkId": "mchk_misc_sci9c11_vr_all_same",
+          "checkCriterion": "The answer states or implies this wrong idea: All animals care for and feed their young for a long time after birth.",
+          "fixCheckId": "mfix_misc_sci9c11_vr_all_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In some species the young are ready to find their own food at birth, whereas in others an extended period of post-hatching or post-birth feeding and care is necessary.",
+          "keyPointIds": [
+            "sci9c11_t4c2_kp6"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_vr_all_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_vr_many",
+            "chk_sci9c11_vr_larva",
+            "chk_sci9c11_vr_birds"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_vr_challenge",
+            "chk_sci9c11_vr_transform",
+            "chk_sci9c11_vr_milk",
+            "lnk_sci9c11_yolk_larva"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c1",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "The Male Reproductive System",
+      "headingType": "heading",
+      "sourcePages": [
+        219
+      ],
+      "conceptHash": "b5744ce1f88d405b0d0ce65cb9babba8c13917339943b2765370558f7de45928",
+      "cardText": "The male reproductive system has organs that produce male germ cells called sperm and help them transfer to the female body. Sperm are produced in two oval-shaped organs called testes, present in a pouch of skin called the scrotum. The scrotum keeps the testes slightly cooler than normal body temperature, which is necessary for sperm formation. The testes also produce a hormone, a chemical that regulates different functions, which controls sperm production and causes the physical changes seen in boys during puberty. From the testes sperm travel through a long tube called the vas deferens, which opens into the urethra, a common passage for the urine and the sperm. Glands like the seminal vesicles and the prostate add fluids to nourish the sperm and help them remain active and move. Each sperm has a head containing genetic material and a long tail that helps it swim towards the egg.",
+      "hint": "Where are sperm made, and what route do they take?",
+      "probe": "Describe the male reproductive system: where sperm are produced, how they travel and what each part does.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Male Reproductive System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the male system produce and what does it help to do?",
+          "requiredEvidence": [
+            "male germ cells called sperm",
+            "transfer to the female body"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ma_role",
+              "criterion": "States that the male reproductive system has organs that produce male germ cells called sperm and help them transfer to the female body.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the male system produce and what does it help to do?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where are sperm produced and what is the pouch of skin that holds them called?",
+          "requiredEvidence": [
+            "two oval-shaped organs called testes",
+            "scrotum",
+            "slightly cooler than normal body temperature",
+            "sperm formation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ma_testes",
+              "criterion": "States that sperm are produced in two oval-shaped testes in a pouch of skin, the scrotum, which keeps them slightly cooler than body temperature, necessary for sperm formation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where are sperm produced and what is the pouch of skin that holds them called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hormone",
+            "controls sperm production",
+            "physical changes seen in boys during puberty"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ma_hormone",
+              "criterion": "States that the testes also produce a hormone that controls sperm production and causes the physical changes seen in boys during puberty.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where are sperm made, and what route do they take?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Through which tube do sperm travel after leaving the testes, and where does this open?",
+          "requiredEvidence": [
+            "vas deferens",
+            "opens into the urethra",
+            "common passage for the urine and the sperm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ma_route",
+              "criterion": "States that sperm travel from the testes through the vas deferens, which opens into the urethra, a common passage for urine and sperm.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Through which tube do sperm travel after leaving the testes, and where does this open?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_ma_urethra"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the glands add to the sperm, and what parts does each sperm have?",
+          "requiredEvidence": [
+            "seminal vesicles and the prostate",
+            "add fluids to nourish the sperm",
+            "head containing genetic material",
+            "long tail"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ma_glands",
+              "criterion": "States that the seminal vesicles and prostate add fluids that nourish the sperm and help them stay active, and each sperm has a head with genetic material and a tail to swim.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the glands add to the sperm, and what parts does each sperm have?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_cooler_sperm",
+          "linksChecks": [
+            "chk_sci9c11_ma_testes",
+            "chk_sci9c11_ma_route"
+          ],
+          "criterion": "Connects the scrotum keeping the testes slightly cooler than normal body temperature to sperm formation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_ma_urethra",
+          "wrong": "The urethra carries only urine, never sperm.",
+          "fix": "The vas deferens opens into the urethra, a common passage for the urine and the sperm.",
+          "checkId": "mchk_misc_sci9c11_ma_urethra",
+          "checkCriterion": "The answer states or implies this wrong idea: The urethra carries only urine, never sperm.",
+          "fixCheckId": "mfix_misc_sci9c11_ma_urethra",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The vas deferens opens into the urethra, a common passage for the urine and the sperm.",
+          "keyPointIds": [
+            "sci9c11_t5c1_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_ma_urethra"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_ma_role",
+            "chk_sci9c11_ma_testes",
+            "chk_sci9c11_ma_route",
+            "chk_sci9c11_ma_glands"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_ma_hormone",
+            "lnk_sci9c11_cooler_sperm"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c2",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "The Female Reproductive System",
+      "headingType": "heading",
+      "sourcePages": [
+        219,
+        220
+      ],
+      "conceptHash": "5c7ff2a75df9af201b7d35a4419cfb4707b8b1433be7eb6be3fb1a30f2627c7d",
+      "cardText": "The female reproductive system has a pair of ovaries, oviducts (fallopian tubes), a uterus and a vagina. The ovaries produce the female germ cells (eggs) and also release hormones. The hormones bring about changes during puberty. The oviducts connect each ovary to the uterus. The uterus is a bag-like structure where a foetus develops. The uterus opens into the vagina through a narrow passage called the cervix.",
+      "hint": "Name the parts of the female reproductive system and what the ovaries and uterus do.",
+      "probe": "Describe the parts of the female reproductive system and the functions of the ovaries and uterus.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Female Reproductive System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the parts of the female reproductive system.",
+          "requiredEvidence": [
+            "pair of ovaries",
+            "oviducts",
+            "fallopian tubes",
+            "uterus",
+            "vagina"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fe_parts",
+              "criterion": "Names the parts: a pair of ovaries, oviducts (fallopian tubes), a uterus and a vagina.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the parts of the female reproductive system."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the ovaries produce besides eggs?",
+          "requiredEvidence": [
+            "ovaries",
+            "female germ cells",
+            "release hormones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fe_ovary",
+              "criterion": "States that the ovaries produce the female germ cells (eggs) and also release hormones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the ovaries produce besides eggs?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_fe_uterus_egg"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hormones",
+            "changes during puberty",
+            "oviducts connect each ovary to the uterus"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fe_oviduct",
+              "criterion": "States that the hormones bring about changes during puberty and the oviducts connect each ovary to the uterus.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the parts of the female reproductive system and what the ovaries and uterus do."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does a foetus develop, and what narrow passage links this organ to the vagina?",
+          "requiredEvidence": [
+            "uterus is a bag-like structure",
+            "foetus develops",
+            "opens into the vagina",
+            "cervix"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_fe_uterus",
+              "criterion": "States that the uterus is a bag-like structure where a foetus develops and it opens into the vagina through a narrow passage called the cervix.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does a foetus develop, and what narrow passage links this organ to the vagina?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_fe_uterus_egg",
+          "wrong": "The uterus produces the eggs.",
+          "fix": "The ovaries produce the female germ cells (eggs); the uterus is where a foetus develops.",
+          "checkId": "mchk_misc_sci9c11_fe_uterus_egg",
+          "checkCriterion": "The answer states or implies this wrong idea: The uterus produces the eggs.",
+          "fixCheckId": "mfix_misc_sci9c11_fe_uterus_egg",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The ovaries produce the female germ cells (eggs); the uterus is where a foetus develops.",
+          "keyPointIds": [
+            "sci9c11_t5c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_fe_uterus_egg"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_fe_parts",
+            "chk_sci9c11_fe_ovary",
+            "chk_sci9c11_fe_uterus"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_fe_oviduct"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c3",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "Gametogenesis: How Reproductive Cells Are Made",
+      "headingType": "heading",
+      "sourcePages": [
+        220
+      ],
+      "conceptHash": "bcd54f4e3dc48a891e240c77f7bbf3bd0a5797b9a30d36e4434c9a7fd04f80b2",
+      "cardText": "The formation of gametes is called gametogenesis and takes place in the testes and the ovaries. Gametes are formed by meiosis, in which the number of chromosomes is reduced to half: in humans, body cells have 46 chromosomes but sperm and eggs have only 23. This is important so that when they combine the zygote has the same number of chromosomes as the parents. In males, gametogenesis results in the production of numerous tiny motile sperm, whereas in females it results in the formation of a single large egg. In sexual reproduction male and female gametes differ greatly in size, number and structure, and this asymmetry is seen across most of the animals.",
+      "hint": "How do sperm and eggs differ, and why do they have only 23 chromosomes?",
+      "probe": "Explain gametogenesis and how male and female gametes differ.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Gametogenesis: How Reproductive Cells Are Made, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the production of reproductive cells called and in which organs does it occur?",
+          "requiredEvidence": [
+            "formation of gametes",
+            "gametogenesis",
+            "testes and the ovaries"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gg_def",
+              "criterion": "Defines gametogenesis as the process of the formation of gametes, which takes place in the testes and the ovaries.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the production of reproductive cells called and in which organs does it occur?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do chromosome counts in human body cells compare with those in sperm and eggs, and why does this matter?",
+          "requiredEvidence": [
+            "46 chromosomes",
+            "sperm and eggs have only 23",
+            "zygote has the same number of chromosomes as parents"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gg_half",
+              "criterion": "States that human cells have 46 chromosomes but sperm and eggs only 23, so that when they combine the zygote has the same number of chromosomes as the parents.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do chromosome counts in human body cells compare with those in sperm and eggs, and why does this matter?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do male and female gamete production differ in the numbers and nature of cells produced?",
+          "requiredEvidence": [
+            "numerous tiny motile",
+            "active sperm",
+            "single large egg"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gg_diff",
+              "criterion": "States that in males gametogenesis produces numerous tiny, motile sperm while in females it forms a single large egg.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do male and female gamete production differ in the numbers and nature of cells produced?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_gg_equal"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "differ greatly in size, number and structure"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_gg_asym",
+              "criterion": "States that male and female gametes differ greatly in size, number and structure.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do sperm and eggs differ, and why do they have only 23 chromosomes?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_half_restore_zygote",
+          "linksChecks": [
+            "chk_sci9c11_gg_def",
+            "chk_sci9c11_gg_half"
+          ],
+          "criterion": "Connects sperm and eggs each having 23 chromosomes to the zygote having the same number of chromosomes as the parents.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_gg_equal",
+          "wrong": "Male and female gametes are similar in size and number.",
+          "fix": "Male and female gametes differ greatly in size, number and structure: numerous tiny motile sperm, but a single large egg.",
+          "checkId": "mchk_misc_sci9c11_gg_equal",
+          "checkCriterion": "The answer states or implies this wrong idea: Male and female gametes are similar in size and number.",
+          "fixCheckId": "mfix_misc_sci9c11_gg_equal",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Male and female gametes differ greatly in size, number and structure: numerous tiny motile sperm, but a single large egg.",
+          "keyPointIds": [
+            "sci9c11_t5c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_gg_equal"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_gg_def",
+            "chk_sci9c11_gg_half",
+            "chk_sci9c11_gg_diff"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_gg_asym",
+            "lnk_sci9c11_half_restore_zygote"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c4",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "Ovulation, Fertilisation and Implantation",
+      "headingType": "heading",
+      "sourcePages": [
+        220
+      ],
+      "conceptHash": "c644bdff231cc906e7dea50f75cd702b06ea3b6a22f3d1efa17bec48357d9832",
+      "cardText": "At birth a girl's ovaries already have millions of immature eggs. From puberty onwards, usually one mature egg is released every month from one of the ovaries, which is called ovulation. Before ovulation the uterus starts to prepare itself and its inner lining becomes thick. As ovulation happens the egg travels from the ovary to the oviduct. Sperm swim through the reproductive tract and may reach the egg in the oviduct; if a sperm encounters an egg and succeeds in fusing with it, a zygote is formed. The inner lining of the uterus becomes thicker and richer in blood vessels. The zygote undergoes a series of mitotic divisions while travelling to the uterus, and implants into the inner lining of the uterus to receive nourishment for development. This implantation marks the beginning of pregnancy. In-vitro fertilisation (IVF) is a medical technique in which an egg and a sperm are combined outside the female body, usually in a laboratory dish, and the resulting fertilised egg is then implanted in the uterus.",
+      "hint": "What is ovulation, and what marks the beginning of pregnancy?",
+      "probe": "Describe ovulation, fertilisation and implantation, and say what IVF is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ovulation, Fertilisation and Implantation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many eggs are present in a girl's ovaries at birth and how often is a mature egg released after puberty?",
+          "requiredEvidence": [
+            "millions of immature eggs",
+            "from puberty onwards",
+            "one mature egg is released every month",
+            "ovulation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ov_ovulation",
+              "criterion": "States that a girl's ovaries have millions of immature eggs at birth and from puberty usually one mature egg is released every month from an ovary, called ovulation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many eggs are present in a girl's ovaries at birth and how often is a mature egg released after puberty?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c4_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "uterus starts to prepare itself",
+            "inner lining becomes thick",
+            "egg travels from the ovary to the oviduct"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ov_prepare",
+              "criterion": "States that before ovulation the uterus prepares itself and its inner lining becomes thick, and the egg then travels from the ovary to the oviduct.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is ovulation, and what marks the beginning of pregnancy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What forms when a sperm meets and fuses with an egg?",
+          "requiredEvidence": [
+            "sperm encounters an egg",
+            "fusing with it",
+            "zygote is formed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ov_zygote",
+              "criterion": "States that if a sperm encounters an egg and fuses with it, a zygote is formed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What forms when a sperm meets and fuses with an egg?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the zygote do while travelling to the uterus, and where does it settle to receive nourishment?",
+          "requiredEvidence": [
+            "series of mitotic divisions",
+            "implants into the inner lining of the uterus",
+            "nourishment for development",
+            "implantation",
+            "beginning of pregnancy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ov_implant",
+              "criterion": "States that the zygote divides by mitosis while travelling to the uterus and implants into its inner lining to receive nourishment; this implantation marks the beginning of pregnancy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the zygote do while travelling to the uterus, and where does it settle to receive nourishment?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c4_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "In-vitro Fertilisation",
+            "egg and a sperm are combined outside the female body",
+            "laboratory dish",
+            "implanted in the uterus"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_ov_ivf",
+              "criterion": "Defines in-vitro fertilisation as combining an egg and a sperm outside the female body, usually in a laboratory dish, and then implanting the fertilised egg in the uterus.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is ovulation, and what marks the beginning of pregnancy?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_ov_ivf"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_thick_lining_implant",
+          "linksChecks": [
+            "chk_sci9c11_ov_ovulation",
+            "chk_sci9c11_ov_implant"
+          ],
+          "criterion": "Connects the uterus lining becoming thick and rich in blood vessels to the zygote implanting there and receiving nourishment, marking the start of pregnancy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_ov_ivf",
+          "wrong": "In IVF the whole pregnancy takes place in a test tube.",
+          "fix": "In IVF the egg and sperm are combined outside the female body in a laboratory dish and the fertilised egg is then implanted in the uterus.",
+          "checkId": "mchk_misc_sci9c11_ov_ivf",
+          "checkCriterion": "The answer states or implies this wrong idea: In IVF the whole pregnancy takes place in a test tube.",
+          "fixCheckId": "mfix_misc_sci9c11_ov_ivf",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In IVF the egg and sperm are combined outside the female body in a laboratory dish and the fertilised egg is then implanted in the uterus.",
+          "keyPointIds": [
+            "sci9c11_t5c4_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_ov_ivf"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_ov_ovulation",
+            "chk_sci9c11_ov_zygote",
+            "chk_sci9c11_ov_implant"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_ov_prepare",
+            "chk_sci9c11_ov_ivf",
+            "lnk_sci9c11_thick_lining_implant"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c5",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "Menstruation and the Menstrual Cycle",
+      "headingType": "heading",
+      "sourcePages": [
+        221,
+        222
+      ],
+      "conceptHash": "71ced905b1d391cfda24912e8a01ff43d118bb1b368d4fce688fb120608f703d",
+      "cardText": "If an egg is not fertilised it remains viable for about a day and then degenerates. The inner lining of the uterus, which had become thick and rich with blood vessels to nourish a developing zygote, is no longer needed and sheds. This lining, along with some blood, leaves the body through the vagina; the process is called menstruation or a period and usually lasts 3 to 7 days. The cycle of ovulation, preparation of the uterus and menstruation repeats typically every 21 to 35 days, often around 28 days, beginning at puberty between the ages of 10 to 14 in girls and continuing till menopause around age 50. Menstruation is a sign of a healthy reproductive system, not something to be ashamed of. Hygiene practices include using clean menstrual products, washing hands with soap and water before and after changing a pad, changing pads every 4 to 6 hours or more often if the flow is heavy, and disposing of used products properly by wrapping them and not flushing them down the toilet.",
+      "hint": "What happens to the thickened lining of the uterus if the egg is not fertilised?",
+      "probe": "Explain menstruation, the menstrual cycle and the hygiene practices to follow during periods.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Menstruation and the Menstrual Cycle, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to an unfertilised egg and to the thickened lining of the uterus?",
+          "requiredEvidence": [
+            "not fertilised",
+            "viable for about a day",
+            "degenerates",
+            "inner lining of the uterus",
+            "no longer needed",
+            "lining sheds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_why",
+              "criterion": "Explains that an unfertilised egg lasts about a day and degenerates, so the thick, blood-rich uterine lining, no longer needed, sheds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to an unfertilised egg and to the thickened lining of the uterus?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What exits the body by the vaginal passage when there is no fertilisation, what is it called, and how long does it usually last?",
+          "requiredEvidence": [
+            "along with some blood",
+            "leaves the body through the vagina",
+            "menstruation or a period",
+            "3 to 7 days"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_shed",
+              "criterion": "States that the lining, with some blood, leaves the body through the vagina; this is menstruation or a period and usually lasts 3 to 7 days.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What exits the body by the vaginal passage when there is no fertilisation, what is it called, and how long does it usually last?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How often does the cycle repeat, and what is a typical length?",
+          "requiredEvidence": [
+            "ovulation, preparation of the uterus and menstruation repeats",
+            "21 – 35 days",
+            "28 days",
+            "begins at puberty",
+            "menopause"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_cycle",
+              "criterion": "States that the cycle of ovulation, preparation of the uterus and menstruation repeats typically every 21 to 35 days (often 28), beginning at puberty and continuing till menopause around age 50.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How often does the cycle repeat, and what is a typical length?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c5_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "sign of a healthy reproductive system",
+            "not something to be ashamed of"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_healthy",
+              "criterion": "States that menstruation is a sign of a healthy reproductive system, not something to be ashamed of.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the thickened lining of the uterus if the egg is not fertilised?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_mn_shame"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c5_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hand washing",
+            "soap and water",
+            "change pads in 4 – 6 hours",
+            "heavy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_hygiene",
+              "criterion": "Gives hygiene practices: wash hands with soap and water before and after changing a pad, and change menstrual products regularly (pads in 4 to 6 hours, or more often if the flow is heavy).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the thickened lining of the uterus if the egg is not fertilised?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c5_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "proper disposal",
+            "wrap used pads",
+            "bin",
+            "do not flush"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_mn_dispose",
+              "criterion": "States that used pads should be wrapped in newspaper or their wrapper and put in a bin, not flushed down the toilet.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What happens to the thickened lining of the uterus if the egg is not fertilised?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_unfertilised_shed",
+          "linksChecks": [
+            "chk_sci9c11_mn_shed",
+            "chk_sci9c11_mn_cycle"
+          ],
+          "criterion": "Connects the egg not being fertilised to the thickened uterine lining being shed with blood as menstruation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_mn_shame",
+          "wrong": "Menstruation is a sign of illness or something to hide.",
+          "fix": "Menstruation is a sign of a healthy reproductive system, not something to be ashamed of.",
+          "checkId": "mchk_misc_sci9c11_mn_shame",
+          "checkCriterion": "The answer states or implies this wrong idea: Menstruation is a sign of illness or something to hide.",
+          "fixCheckId": "mfix_misc_sci9c11_mn_shame",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Menstruation is a sign of a healthy reproductive system, not something to be ashamed of.",
+          "keyPointIds": [
+            "sci9c11_t5c5_kp4"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_mn_shame"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_mn_why",
+            "chk_sci9c11_mn_shed",
+            "chk_sci9c11_mn_cycle"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_mn_healthy",
+            "chk_sci9c11_mn_hygiene",
+            "chk_sci9c11_mn_dispose",
+            "lnk_sci9c11_unfertilised_shed"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c6",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "What Determines a Baby's Biological Sex",
+      "headingType": "heading",
+      "sourcePages": [
+        221
+      ],
+      "conceptHash": "78d07b3542c3e25817c42165e43bef1b893356480a89d28051c3fdbd46109242",
+      "cardText": "Every person has two sex chromosomes. Females have XX and males have XY chromosomes. The mother always contributes an X chromosome to a baby and the father contributes either an X, giving a female baby with XX, or a Y, giving a male baby with XY. So it is the father's contribution, X or Y, that determines the sex of a baby.",
+      "hint": "Which parent determines whether the baby is a boy or a girl, and how?",
+      "probe": "Explain how the sex of a baby is determined using the sex chromosomes of the parents.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain What Determines a Baby's Biological Sex, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which chromosomes do females and males carry?",
+          "requiredEvidence": [
+            "two sex chromosomes",
+            "females have XX",
+            "males have XY"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sx_xy",
+              "criterion": "States that every person has two sex chromosomes: females have XX and males have XY.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which chromosomes do females and males carry?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who determines the baby's sex, and what does each parent contribute?",
+          "requiredEvidence": [
+            "mother always contributes an X chromosome",
+            "father contributes either an X",
+            "or a Y"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sx_contribute",
+              "criterion": "States that the mother always contributes an X chromosome while the father contributes either an X (female, XX) or a Y (male, XY), so the father's contribution determines the baby's sex.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who determines the baby's sex, and what does each parent contribute?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_sx_mother"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_father_decides",
+          "linksChecks": [
+            "chk_sci9c11_sx_xy",
+            "chk_sci9c11_sx_contribute"
+          ],
+          "criterion": "Connects the mother always giving an X and the father giving either X or Y to the sex of the baby being decided by the father's contribution.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_sx_mother",
+          "wrong": "The mother determines whether the baby is a boy or a girl.",
+          "fix": "The mother always contributes an X chromosome; the father contributes either an X (female) or a Y (male), so the father's chromosome determines the baby's sex.",
+          "checkId": "mchk_misc_sci9c11_sx_mother",
+          "checkCriterion": "The answer states or implies this wrong idea: The mother determines whether the baby is a boy or a girl.",
+          "fixCheckId": "mfix_misc_sci9c11_sx_mother",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The mother always contributes an X chromosome; the father contributes either an X (female) or a Y (male), so the father's chromosome determines the baby's sex.",
+          "keyPointIds": [
+            "sci9c11_t5c6_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_sx_mother"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_sx_xy",
+            "chk_sci9c11_sx_contribute"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c11_father_decides"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c7",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "Pregnancy, Childbirth and the Mother's Health",
+      "headingType": "heading",
+      "sourcePages": [
+        222,
+        223
+      ],
+      "conceptHash": "495e3ecf646ba03a8b8696be4d9b06e5b86b0d263c217863f3169b480319f7ad",
+      "cardText": "Pregnancy in humans lasts about nine months and is divided into three stages called trimesters. In the first trimester the fertilised egg develops into an embryo during the first two months and major organs start forming; from about the ninth week the developing embryo is called a foetus. In the second trimester the foetus grows bigger and stronger and the mother can usually feel its movements. In the third trimester the baby grows rapidly and gets ready for life outside the womb. The uterus protects and nourishes the baby throughout. During childbirth strong contractions of the muscles of the uterus help push the foetus out through the birth canal. After birth breastfeeding is essential because a mother's milk provides complete nutrition and protects the infant from many diseases. During pregnancy a woman's health plays a vital role in the baby's growth and safety: she should eat a balanced diet rich in proteins, vitamins and minerals, attend regular medical check-ups, follow her doctor's advice on light exercise and rest, and avoid harmful habits such as smoking, alcohol, or taking any medicines without medical advice.",
+      "hint": "What happens in each trimester, and how should the mother stay healthy?",
+      "probe": "Describe the stages of pregnancy, childbirth and the care of the mother and baby.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Pregnancy, Childbirth and the Mother's Health, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How long does pregnancy last and how is it divided?",
+          "requiredEvidence": [
+            "about nine months",
+            "three stages called trimesters",
+            "first trimester",
+            "embryo",
+            "major organs start forming"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_trimesters",
+              "criterion": "States that pregnancy lasts about nine months in three trimesters, with the fertilised egg developing into an embryo and major organs starting to form in the first.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How long does pregnancy last and how is it divided?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c7_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "ninth week",
+            "foetus",
+            "second trimester",
+            "feel its movements"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_foetus",
+              "criterion": "States that from about the ninth week the embryo is called a foetus, and in the second trimester it grows bigger and stronger and the mother can usually feel its movements.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in each trimester, and how should the mother stay healthy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c7_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "third trimester",
+            "grows rapidly",
+            "life outside the womb",
+            "protects and nourishes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_third",
+              "criterion": "States that in the third trimester the baby grows rapidly and gets ready for life outside the womb, with the uterus protecting and nourishing it throughout.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in each trimester, and how should the mother stay healthy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c7_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What action of the uterine muscles expels the baby during childbirth?",
+          "requiredEvidence": [
+            "strong contractions",
+            "muscles of the uterus",
+            "push the foetus out",
+            "birth canal"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_birth",
+              "criterion": "States that during childbirth strong contractions of the uterine muscles help push the foetus out through the birth canal.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What action of the uterine muscles expels the baby during childbirth?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c7_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "breastfeeding",
+            "complete nutrition",
+            "protects the infant from many diseases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_milk",
+              "criterion": "States that breastfeeding is essential because a mother's milk provides complete nutrition and protects the infant from many diseases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in each trimester, and how should the mother stay healthy?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_pg_milk"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c7_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What should the mother do to stay healthy during pregnancy?",
+          "requiredEvidence": [
+            "balanced diet",
+            "proteins, vitamins and minerals",
+            "regular medical check-ups",
+            "light exercise and rest"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_health",
+              "criterion": "States that during pregnancy a woman should eat a balanced diet rich in proteins, vitamins and minerals, attend regular check-ups and follow her doctor's advice on light exercise and rest.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What should the mother do to stay healthy during pregnancy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c7_kp7",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "avoid harmful habits",
+            "smoking",
+            "consuming alcohol",
+            "medicines without medical advice",
+            "closely connected"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_pg_avoid",
+              "criterion": "States that the mother should avoid smoking, alcohol and any medicines without medical advice, since the health of the mother and the baby are closely connected.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in each trimester, and how should the mother stay healthy?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_mother_baby_health",
+          "linksChecks": [
+            "chk_sci9c11_pg_trimesters",
+            "chk_sci9c11_pg_health"
+          ],
+          "criterion": "Connects the mother's nutrition, check-ups and avoiding harmful substances to the baby's growth and safety, since their health is closely connected.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_pg_milk",
+          "wrong": "Breast milk is not important for a newborn's health.",
+          "fix": "Breastfeeding is essential because a mother's milk provides complete nutrition and protects the infant from many diseases.",
+          "checkId": "mchk_misc_sci9c11_pg_milk",
+          "checkCriterion": "The answer states or implies this wrong idea: Breast milk is not important for a newborn's health.",
+          "fixCheckId": "mfix_misc_sci9c11_pg_milk",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Breastfeeding is essential because a mother's milk provides complete nutrition and protects the infant from many diseases.",
+          "keyPointIds": [
+            "sci9c11_t5c7_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_pg_milk"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_pg_trimesters",
+            "chk_sci9c11_pg_birth",
+            "chk_sci9c11_pg_health"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_pg_foetus",
+            "chk_sci9c11_pg_third",
+            "chk_sci9c11_pg_milk",
+            "chk_sci9c11_pg_avoid",
+            "lnk_sci9c11_mother_baby_health"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch11_t5_c8",
+      "topicId": "ncert_sci_9_ch11_t5",
+      "topicTitle": "Reproduction in human beings",
+      "label": "Sexual Maturity, Infections and Contraception",
+      "headingType": "heading",
+      "sourcePages": [
+        223,
+        224
+      ],
+      "conceptHash": "e6800c25783115c14159ad694eaad2ec6b8baa5bb34554785c72d8ba88475da2",
+      "cardText": "Adolescence brings sexual maturation, meaning our bodies are becoming capable of reproduction. It happens gradually, like the production of sperm in boys and menstrual cycles in girls, but emotional maturity takes longer; being emotionally mature means handling feelings, communicating clearly and making thoughtful decisions. Responsible choices help prevent unplanned pregnancies and sexually transmitted infections and support healthy relationships. Because sexual activity involves close physical contact, some infections can be transmitted from an infected person to an uninfected one; these are called Sexually Transmitted Infections (STIs) and include gonorrhoea, herpes, syphilis, genital warts and HIV, which can eventually lead to AIDS. Some of these are not curable yet, and using condoms can prevent their transmission and also help prevent pregnancy. Contraceptive methods include barriers like condoms or vaginal covers, oral pills that alter hormones, and intra-uterine devices such as copper-T, and surgical methods block the vas deferens in males or the fallopian tubes in females. Prenatal sex determination is strictly prohibited by law in India because self-selective abortion driven by gender preference can lead to a marked imbalance in the societal sex-ratio.",
+      "hint": "Why is physical maturity not the same as readiness, and how are infections and unwanted pregnancy prevented?",
+      "probe": "Explain sexual maturity versus emotional maturity, and the ways to prevent STIs and unwanted pregnancies.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sexual Maturity, Infections and Contraception, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c11_t5c8_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What change happens in the body during growing up that makes parenthood possible, and how quickly does it proceed?",
+          "requiredEvidence": [
+            "sexual maturation",
+            "capable of reproduction",
+            "gradual",
+            "not fully ready for adult responsibilities"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_maturity",
+              "criterion": "States that sexual maturation means the body becoming capable of reproduction, gradually, but this does not mean we are fully ready for adult responsibilities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What change happens in the body during growing up that makes parenthood possible, and how quickly does it proceed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c8_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which kind of maturity develops more slowly than the changes of the body?",
+          "requiredEvidence": [
+            "production of sperm in boys",
+            "menstrual cycles in girls",
+            "emotional maturity takes longer",
+            "handling feelings",
+            "thoughtful decisions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_responsible",
+              "criterion": "States that sexual maturity comes gradually but emotional maturity takes longer, and being emotionally mature means handling feelings, communicating clearly and making thoughtful decisions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which kind of maturity develops more slowly than the changes of the body?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c8_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are infections passed through sexual contact called, and name some of them?",
+          "requiredEvidence": [
+            "Sexually Transmitted Infections",
+            "gonorrhoea, herpes, syphilis, genital warts",
+            "HIV",
+            "not curable yet",
+            "condoms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_sti",
+              "criterion": "States that sexually transmitted infections include gonorrhoea, herpes, syphilis, genital warts and HIV, some are not curable, and using condoms can prevent their transmission and also help prevent pregnancy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are infections passed through sexual contact called, and name some of them?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c11_sm_pill"
+          ]
+        },
+        {
+          "id": "sci9c11_t5c8_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name barrier and medicine based methods that prevent unwanted pregnancy.",
+          "requiredEvidence": [
+            "barriers",
+            "condoms or vaginal covers",
+            "oral pills",
+            "altering hormones",
+            "Intra-Uterine Devices",
+            "copper-T"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_methods",
+              "criterion": "Names contraceptive methods: barriers such as condoms or vaginal covers that stop sperm reaching the egg, oral pills that alter hormones and the release of eggs, and intra-uterine devices such as copper-T placed in the uterus.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Name barrier and medicine based methods that prevent unwanted pregnancy."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c8_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "surgical methods",
+            "blocking the vas deferens",
+            "fallopian tubes",
+            "sperm and the egg cannot meet"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_surgical",
+              "criterion": "States that surgical methods include blocking the vas deferens in males or the fallopian tubes in females, so that sperm and egg cannot meet.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is physical maturity not the same as readiness, and how are infections and unwanted pregnancy prevented?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c11_t5c8_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "self-selective abortion",
+            "preference for a specific gender",
+            "imbalance in the societal sex-ratio",
+            "prenatal sex determination",
+            "strictly prohibited by law"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c11_sm_sexratio",
+              "criterion": "States that self-selective abortion driven by gender preference can imbalance the sex-ratio, so prenatal sex determination is strictly prohibited by law in India.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is physical maturity not the same as readiness, and how are infections and unwanted pregnancy prevented?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c11_physical_emotional",
+          "linksChecks": [
+            "chk_sci9c11_sm_maturity",
+            "chk_sci9c11_sm_responsible"
+          ],
+          "criterion": "Connects bodies becoming physically capable of reproduction before emotional maturity to the need for thoughtful, responsible decisions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c11_sm_pill",
+          "wrong": "Oral contraceptive pills also protect against sexually transmitted infections.",
+          "fix": "Condoms can prevent transmission of STIs and also help prevent pregnancy; oral pills only change the release of eggs by altering hormones.",
+          "checkId": "mchk_misc_sci9c11_sm_pill",
+          "checkCriterion": "The answer states or implies this wrong idea: Oral contraceptive pills also protect against sexually transmitted infections.",
+          "fixCheckId": "mfix_misc_sci9c11_sm_pill",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Condoms can prevent transmission of STIs and also help prevent pregnancy; oral pills only change the release of eggs by altering hormones.",
+          "keyPointIds": [
+            "sci9c11_t5c8_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c11_sm_pill"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c11_sm_maturity",
+            "chk_sci9c11_sm_responsible",
+            "chk_sci9c11_sm_sti",
+            "chk_sci9c11_sm_methods"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c11_sm_surgical",
+            "chk_sci9c11_sm_sexratio",
+            "lnk_sci9c11_physical_emotional"
+          ]
+        ]
+      }
+    }
+  ]
+}

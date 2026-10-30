@@ -1,0 +1,1420 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Economics",
+  "book": "Understanding Economic Development",
+  "chapterNumber": 3,
+  "chapterName": "Money and Credit",
+  "sourceStatus": "Built from the NCERT PDF jess203 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Understanding Economic Development (Class 10), Reprint 2026-27, chapter pp. 38-53",
+    "note": "Pages are the printed page numbers (the PDF's internal page labels start at 1). Quotes were checked automatically against the PDF text. This reprint says banks hold about 5 per cent of deposits as cash."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_eco3_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_eco3_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example double coincidence of wants, medium of exchange, demand deposits, collateral, terms of credit, debt-trap, formal sector or Self Help Group.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "barter system",
+    "double coincidence of wants",
+    "medium of exchange",
+    "currency",
+    "Reserve Bank of India",
+    "demand deposits",
+    "cheque",
+    "credit",
+    "working capital",
+    "debt-trap",
+    "interest rate",
+    "collateral",
+    "terms of credit",
+    "cooperatives",
+    "formal sector credit",
+    "informal sector credit",
+    "Self Help Groups",
+    "Grameen Bank"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_eco_10_ch3_t1",
+      "title": "Money as a medium of exchange",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t1_c1",
+          "label": "Money as a Medium of Exchange",
+          "headingType": "heading",
+          "sourcePages": [39, 40],
+          "cardText": "A person holding money can easily exchange it for any commodity or service. Without money, a shoe manufacturer who wants wheat would have to find a farmer who both sells wheat and wants to buy shoes: both parties must agree to sell and buy each other's commodities. This is the double coincidence of wants, an essential feature of a barter system. Money provides the crucial intermediate step and eliminates the need for it: the shoe manufacturer only needs a buyer for his shoes. Since money acts as an intermediate in exchange, it is called a medium of exchange.",
+          "hint": "What does the shoe manufacturer need to find if there is no money? What changes with money?",
+          "probe": "How does money solve the problem of double coincidence of wants? Explain with an example.",
+          "causeChain": "Barter needs double coincidence of wants (each must want what the other sells) -> hard to find -> money acts as an intermediate -> sell goods for money, buy anything with money -> money is a medium of exchange",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_money_removes_dcw",
+              "linksChecks": [
+                "chk_eco3_double_coincidence",
+                "chk_eco3_medium_of_exchange"
+              ],
+              "criterion": "Connects money acting as an intermediate in exchange to eliminating the need for a double coincidence of wants.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Without money, a shoe manufacturer who wants wheat would have to look for a wheat growing farmer who not only wants to sell wheat but also wants to buy the shoes in exchange. Both parties have to agree to sell and buy each others commodities. This is known as double coincidence of wants. In a barter system where goods are directly exchanged without the use of money, double coincidence of wants is an essential feature.",
+              "followUp": "What problem would a shoe maker who wants wheat face if there were no money?",
+              "assessment": {
+                "requiredEvidence": [
+                  "double coincidence of wants",
+                  "both parties",
+                  "barter system",
+                  "directly exchanged"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_double_coincidence",
+                    "criterion": "Explains double coincidence of wants: both parties must want to sell and buy each other's goods, which is an essential feature of barter.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In an economy where money is in use, money by providing the crucial intermediate step eliminates the need for double coincidence of wants. The shoe manufacturer only has to find a buyer for his shoes; once he has exchanged his shoes for money, he can purchase wheat or any other commodity. Since money acts as an intermediate in the exchange process, it is called a medium of exchange.",
+              "followUp": "How does money get rid of that problem?",
+              "assessment": {
+                "requiredEvidence": [
+                  "intermediate step",
+                  "eliminates the need",
+                  "medium of exchange"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_medium_of_exchange",
+                    "criterion": "Explains that money acts as an intermediate in the exchange process, eliminating the need for double coincidence of wants, and so is called a medium of exchange.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_barter_needs_money"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "A shoe manufacturer selling shoes for money and then buying wheat",
+            "Exercise: 'How does money solve the problem of double coincidence of wants? Explain with an example of your own.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_barter_needs_money",
+              "wrong": "Money is useful only because it is valuable in itself.",
+              "fix": "Money is useful because it acts as an intermediate in exchange, eliminating the need for a double coincidence of wants."
+            }
+          ],
+          "verify": [
+            { "page": 39, "quote": "A person holding money can easily exchange it for any commodity or service that he or she might want.", "supports": ["eco3_t1c1_kp2"] },
+            { "page": 39, "quote": "This is known as double coincidence of wants.", "supports": ["eco3_t1c1_kp1"] },
+            { "page": 39, "quote": "In a barter system where goods are directly exchanged without the use of money, double coincidence of wants is an essential feature.", "supports": ["eco3_t1c1_kp1"] },
+            { "page": 39, "quote": "money by providing the crucial intermediate step eliminates the need for double coincidence of wants", "supports": ["eco3_t1c1_kp2"] },
+            { "page": 40, "quote": "Since money acts as an intermediate in the exchange process, it is called a medium of exchange.", "supports": ["eco3_t1c1_kp2"] },
+            { "page": 52, "quote": "How does money solve the problem of double coincidence of wants?", "supports": ["eco3_t1c1_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t2",
+      "title": "Modern forms of money",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t2_c1",
+          "label": "Currency as Money",
+          "headingType": "heading",
+          "sourcePages": [40],
+          "cardText": "Before coins, Indians used grains and cattle as money, then gold, silver and copper coins. Modern currency, paper notes and coins, is not made of precious metal and has no use of its own. It is accepted as a medium of exchange because it is authorised by the government. In India, the Reserve Bank of India issues currency notes on behalf of the central government, and no other individual or organisation may issue currency. The law makes the rupee a medium of payment that cannot be refused in India, so the rupee is widely accepted.",
+          "hint": "A paper note has no use of its own. Why does everyone accept it?",
+          "probe": "Why is modern paper currency accepted as a medium of exchange?",
+          "causeChain": "Currency authorised by the government + RBI alone issues notes + law says rupees cannot be refused -> rupee widely accepted as a medium of exchange, even though it has no use of its own",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_authorised_to_accepted",
+              "linksChecks": [
+                "chk_eco3_no_own_use",
+                "chk_eco3_authorised"
+              ],
+              "criterion": "Connects government authorisation (and the law that rupees cannot be refused) to currency being accepted even though it has no use of its own.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t2c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Before the introduction of coins, a variety of objects was used as money. Since the very early ages, Indians used grains and cattle as money. Thereafter came the use of metallic coins, gold, silver and copper coins.",
+              "assessment": {
+                "requiredEvidence": [
+                  "grains and cattle",
+                  "metallic coins"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_early_money",
+                    "criterion": "Mentions earlier forms of money such as grains and cattle, and then gold, silver and copper coins.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Modern forms of money include currency: paper notes and coins. Unlike earlier money, modern currency is not made of precious metal and is not of everyday use. The modern currency is without any use of its own. It is accepted as a medium of exchange because the currency is authorised by the government of the country.",
+              "followUp": "Modern notes and coins have no use of their own, so why does everyone accept them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "paper notes and coins",
+                  "without any use of its own",
+                  "authorised by the government"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_no_own_use",
+                    "criterion": "States that modern currency (paper notes and coins) is not made of precious metal and has no use of its own.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_authorised",
+                    "criterion": "Explains that currency is accepted as a medium of exchange because it is authorised by the government.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_note_has_value"
+                ]
+              }
+            },
+            {
+              "id": "eco3_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "In India, the Reserve Bank of India issues currency notes on behalf of the central government. As per Indian law, no other individual or organisation is allowed to issue currency. The law legalises the use of rupee as a medium of payment that cannot be refused in settling transactions in India. No individual in India can legally refuse a payment made in rupees.",
+              "followUp": "Who issues currency notes in India, and can anyone refuse to accept the rupee?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Reserve Bank of India issues currency notes",
+                  "on behalf of the central government",
+                  "cannot be refused"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_rbi_issues",
+                    "criterion": "States that the Reserve Bank of India issues currency notes on behalf of the central government, and no one else may issue currency.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_cannot_refuse",
+                    "criterion": "Mentions that by law no one in India can refuse a payment made in rupees.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Punch-marked coins, Gupta coins, Tughlaq coins and the gold mohar of Akbar's reign",
+            "Exercise: 'Look at a 10 rupee note. What is written on top? Can you explain this statement?'",
+            "Exercise: the Reserve Bank of India issues currency notes on behalf of the Central Government"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_note_has_value",
+              "wrong": "A currency note is valuable because of the paper or metal it is made of.",
+              "fix": "Modern currency is without any use of its own. It is accepted as a medium of exchange because it is authorised by the government."
+            }
+          ],
+          "verify": [
+            { "page": 40, "quote": "Indians used grains and cattle as money", "supports": ["eco3_t2c1_kp1"] },
+            { "page": 40, "quote": "Modern forms of money include currency — paper notes and coins.", "supports": ["eco3_t2c1_kp2"] },
+            { "page": 40, "quote": "The modern currency is without any use of its own.", "supports": ["eco3_t2c1_kp2"] },
+            { "page": 40, "quote": "It is accepted as a medium of exchange because the currency is authorised by the government of the country.", "supports": ["eco3_t2c1_kp2"] },
+            { "page": 40, "quote": "In India, the Reserve Bank of India issues currency notes on behalf of the central government.", "supports": ["eco3_t2c1_kp3"] },
+            { "page": 40, "quote": "No individual in India can legally refuse a payment made in rupees.", "supports": ["eco3_t2c1_kp3"] },
+            { "page": 53, "quote": "issues currency notes on behalf of the Central Government.", "supports": ["eco3_t2c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch3_t2_c2",
+          "label": "Demand Deposits and Cheques",
+          "headingType": "subheading",
+          "sourcePages": [40, 41, 42],
+          "cardText": "People deposit extra cash with banks, which keep it safe and pay interest. Since these deposits can be withdrawn on demand, they are called demand deposits. A cheque is a paper instructing the bank to pay a specific amount from the person's account to the person named on it, so payments can be settled without cash, as when M. Salim pays his leather supplier. Since demand deposits are widely accepted as a means of payment, along with currency, they constitute money in the modern economy. Modern forms of money are closely linked to the banking system.",
+          "hint": "How can Salim pay his leather supplier without handing over any cash?",
+          "probe": "What are demand deposits, and why are they considered money?",
+          "causeChain": "Deposits can be withdrawn on demand -> demand deposits -> cheques against them settle payments without cash -> widely accepted as payment -> demand deposits are money",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_cheques_to_money",
+              "linksChecks": [
+                "chk_eco3_cheque_def",
+                "chk_eco3_deposits_are_money"
+              ],
+              "criterion": "Connects cheques letting people settle payments directly from demand deposits to demand deposits being accepted as money.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "People deposit extra cash with the banks by opening a bank account. Banks accept the deposits and also pay an amount as interest. People's money is safe with the banks and earns interest, and people can withdraw it as and when they require. Since the deposits in the bank accounts can be withdrawn on demand, these deposits are called demand deposits.",
+              "followUp": "Why do people put money in banks, and when can they take it out?",
+              "assessment": {
+                "requiredEvidence": [
+                  "deposit",
+                  "interest",
+                  "withdrawn on demand",
+                  "demand deposits"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_demand_deposit_def",
+                    "criterion": "Explains demand deposits: money deposited in bank accounts that earns interest and can be withdrawn on demand.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A cheque is a paper instructing the bank to pay a specific amount from the person's account to the person in whose name the cheque has been issued. The facility of cheques against demand deposits makes it possible to directly settle payments without the use of cash.",
+              "followUp": "What is a cheque, and how does it let people pay without cash?",
+              "followUpAllows": [
+                "cheque"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "cheque",
+                  "instructing the bank",
+                  "without the use of cash"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_cheque_def",
+                    "criterion": "Defines a cheque as a paper instructing the bank to pay a specific amount from the person's account to the person named, allowing payment without cash.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t2c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Demand deposits share the essential features of money. Since demand deposits are accepted widely as a means of payment, along with currency, they constitute money in the modern economy. But for the banks, there would be no demand deposits and no payments by cheques; the modern forms of money, currency and deposits, are closely linked to the working of the modern banking system.",
+              "followUp": "Why are bank deposits counted as money in the modern economy?",
+              "assessment": {
+                "requiredEvidence": [
+                  "essential features of money",
+                  "accepted widely as a means of payment",
+                  "constitute money in the modern economy",
+                  "banking system"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_deposits_are_money",
+                    "criterion": "States that demand deposits are widely accepted as a means of payment along with currency, and so constitute money in the modern economy.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_linked_to_banking",
+                    "criterion": "Mentions that modern forms of money are closely linked to the working of the modern banking system.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_only_cash_money"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "M. Salim paying the leather supplier by cheque; the money moves between bank accounts in a couple of days",
+            "Exercise: 'Why are demand deposits considered as money?'"
+          ],
+          "extraExamplesOk": [
+            "UPI transfers, debit cards and other digital payments from bank deposits"
+          ],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_only_cash_money",
+              "wrong": "Only notes and coins count as money.",
+              "fix": "Demand deposits are accepted widely as a means of payment, along with currency, so they constitute money in the modern economy."
+            }
+          ],
+          "verify": [
+            { "page": 40, "quote": "Since the deposits in the bank accounts can be withdrawn on demand, these deposits are called demand deposits.", "supports": ["eco3_t2c2_kp1"] },
+            { "page": 41, "quote": "A cheque is a paper instructing the bank to pay a specific amount from the person's account to the person in whose name the cheque has been issued.", "supports": ["eco3_t2c2_kp2"] },
+            { "page": 41, "quote": "Thus we see that demand deposits share the essential features of money.", "supports": ["eco3_t2c2_kp3"] },
+            { "page": 41, "quote": "they constitute money in the modern economy", "supports": ["eco3_t2c2_kp3"] },
+            { "page": 41, "quote": "closely linked to the working of the modern banking system", "supports": ["eco3_t2c2_kp3"] },
+            { "page": 42, "quote": "3. Why are demand deposits considered as money?", "supports": ["eco3_t2c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t3",
+      "title": "Loan activities of banks",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t3_c1",
+          "label": "Loan Activities of Banks",
+          "headingType": "heading",
+          "sourcePages": [42],
+          "cardText": "Banks keep only a small proportion of their deposits as cash, about 5 per cent in India these days, to pay depositors who withdraw money on any day; since only some depositors come on a given day, this is enough. Banks use the major portion of deposits to extend loans. In this way, banks mediate between those who have surplus funds (depositors) and those who need funds (borrowers). Banks charge a higher interest rate on loans than they pay on deposits, and this difference is their main source of income.",
+          "hint": "Where does most of the money you deposit in a bank go? How does the bank earn?",
+          "probe": "How do banks mediate between those who have surplus money and those who need money?",
+          "causeChain": "Only some depositors withdraw on any day -> banks keep a small cash reserve (about 5 per cent) -> lend the major portion to borrowers -> charge more interest on loans than they pay on deposits -> the difference is their main income",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_reserve_to_loans",
+              "linksChecks": [
+                "chk_eco3_small_cash",
+                "chk_eco3_extend_loans"
+              ],
+              "criterion": "Connects banks needing only a small cash reserve (since few depositors withdraw on any day) to their using most deposits to give loans.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Banks keep only a small proportion of their deposits as cash with themselves; banks in India these days hold about 5 per cent of their deposits as cash. This is kept as provision to pay the depositors who might come to withdraw money on any given day. Since only some depositors come to withdraw cash on a particular day, the bank is able to manage with this cash.",
+              "followUp": "What share of their deposits do banks keep in hand, and why?",
+              "assessment": {
+                "requiredEvidence": [
+                  "small proportion",
+                  "5 per cent",
+                  "as cash",
+                  "withdraw"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_small_cash",
+                    "criterion": "States that banks keep only a small proportion of deposits as cash (about 5 per cent) because only some depositors withdraw money on any day.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_bank_keeps_all"
+                ]
+              }
+            },
+            {
+              "id": "eco3_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Banks use the major portion of the deposits to extend loans. In this way, banks mediate between those who have surplus funds (the depositors) and those who are in need of these funds (the borrowers).",
+              "followUp": "What do banks do with most of the money people deposit?",
+              "assessment": {
+                "requiredEvidence": [
+                  "major portion of the deposits",
+                  "extend loans",
+                  "mediate",
+                  "surplus funds",
+                  "borrowers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_extend_loans",
+                    "criterion": "States that banks use the major portion of deposits to give loans, mediating between depositors with surplus funds and borrowers who need funds.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t3c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Banks charge a higher interest rate on loans than what they offer on deposits. The difference between what is charged from borrowers and what is paid to depositors is their main source of income.",
+              "followUp": "How do banks earn their income from deposits and loans?",
+              "assessment": {
+                "requiredEvidence": [
+                  "higher interest rate on loans",
+                  "difference",
+                  "main source of income"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_interest_difference",
+                    "criterion": "Explains that banks charge higher interest on loans than they pay on deposits, and this difference is their main source of income.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'How do banks mediate between those who have surplus money and those who need money?'",
+            "Exercise: banks charge a higher interest rate on loans than what they offer on deposits"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_bank_keeps_all",
+              "wrong": "Banks keep all the money people deposit locked up in their vaults.",
+              "fix": "Banks keep only a small proportion (about 5 per cent) as cash and use the major portion of deposits to extend loans."
+            }
+          ],
+          "verify": [
+            { "page": 42, "quote": "Banks keep only a small proportion of their deposits as cash with themselves.", "supports": ["eco3_t3c1_kp1"] },
+            { "page": 42, "quote": "hold about 5 per cent of their deposits as cash", "supports": ["eco3_t3c1_kp1"] },
+            { "page": 42, "quote": "Banks use the major portion of the deposits to extend loans.", "supports": ["eco3_t3c1_kp2"] },
+            { "page": 42, "quote": "banks mediate between those who have surplus funds (the depositors) and those who are in need of these funds (the borrowers)", "supports": ["eco3_t3c1_kp2"] },
+            { "page": 42, "quote": "Banks charge a higher interest rate on loans than what they offer on deposits.", "supports": ["eco3_t3c1_kp3"] },
+            { "page": 52, "quote": "How do banks mediate between those who have surplus money and those who need money?", "supports": ["eco3_t3c1_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t4",
+      "title": "Two different credit situations",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t4_c1",
+          "label": "Credit: Positive Role and Debt-Trap",
+          "headingType": "heading",
+          "sourcePages": [43, 44],
+          "cardText": "Credit (loan) is an agreement in which the lender supplies the borrower with money, goods or services in return for the promise of future payment. Salim, a shoe manufacturer, borrows to meet the working capital needs of a festival order, delivers on time, makes a profit and repays: credit plays a vital and positive role. Swapna, a small farmer, borrows from a moneylender for groundnut, but pests destroy her crop; the debt grows and she must sell part of her land. This is a debt-trap. Whether credit is useful depends on the risks in the situation and whether there is support in case of loss.",
+          "hint": "Both Salim and Swapna borrowed. Why did one gain and the other lose land?",
+          "probe": "How can credit help one borrower but push another into a debt-trap?",
+          "causeChain": "Credit meets working capital needs -> production on time -> higher earnings (Salim); but crop failure -> loan cannot be repaid -> debt grows -> land sold (Swapna's debt-trap) -> usefulness of credit depends on risk and support",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_risk_to_trap",
+              "linksChecks": [
+                "chk_eco3_debt_trap",
+                "chk_eco3_depends_on_risk"
+              ],
+              "criterion": "Connects the risk of crop failure (with no support) to credit pushing the borrower into a debt-trap.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t4c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Credit (loan) refers to an agreement in which the lender supplies the borrower with money, goods or services in return for the promise of future payment.",
+              "assessment": {
+                "requiredEvidence": [
+                  "lender supplies the borrower",
+                  "promise of future payment"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_credit_def",
+                    "criterion": "Defines credit as an agreement in which the lender supplies money, goods or services to the borrower in return for a promise of future payment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Salim obtains credit to meet the working capital needs of production. The credit helps him to meet the ongoing expenses of production, complete production on time, and thereby increase his earnings. Credit therefore plays a vital and positive role in this situation.",
+              "followUp": "How did credit help Salim's business?",
+              "followUpAllows": [
+                "Salim"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Salim",
+                  "working capital",
+                  "increase his earnings",
+                  "positive role"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_positive_credit",
+                    "criterion": "Explains how credit helped Salim meet working capital needs, complete production on time and increase earnings: a positive role.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t4c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Swapna takes a loan from the moneylender for cultivation, but pests destroy her crop and she cannot repay. The debt grows, and she has to sell a part of the land to pay off the debt. Credit, instead of helping her improve her earnings, left her worse off. This is commonly called debt-trap: credit pushes the borrower into a situation from which recovery is very painful.",
+              "followUp": "What happened to Swapna after she took a loan, and why?",
+              "followUpAllows": [
+                "Swapna"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Swapna",
+                  "crop fails",
+                  "sell a part of the land",
+                  "debt-trap"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_debt_trap",
+                    "criterion": "Explains a debt-trap, for example Swapna's crop failing so she cannot repay, the debt grows and she sells part of her land, leaving her worse off.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_credit_always_good"
+                ]
+              }
+            },
+            {
+              "id": "eco3_t4c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "In rural areas, the main demand for credit is for crop production; repayment is crucially dependent on income from farming. Whether credit would be useful or not depends on the risks in the situation and whether there is some support, in case of loss.",
+              "followUp": "What decides whether credit will help a rural borrower or harm them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "crop production",
+                  "depends on the risks",
+                  "support, in case of loss"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_depends_on_risk",
+                    "criterion": "Concludes that whether credit is useful depends on the risks in the situation and whether there is support in case of loss.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Salim's festival order for 3,000 pairs of shoes",
+            "Swapna's groundnut crop hit by pests",
+            "Exercise: 'In situations with high risks, credit might create further problems for the borrower. Explain.'",
+            "Exercise: 'Analyse the role of credit for development.'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_credit_always_good",
+              "wrong": "Taking a loan always helps the borrower earn more.",
+              "fix": "Credit can help increase earnings, but in risky situations, such as crop failure, it can push the borrower into a debt-trap."
+            }
+          ],
+          "verify": [
+            { "page": 43, "quote": "Credit (loan) refers to an agreement in which the lender supplies the borrower with money, goods or services in return for the promise of future payment.", "supports": ["eco3_t4c1_kp1"] },
+            { "page": 43, "quote": "In this case, Salim obtains credit to meet the working capital needs of production.", "supports": ["eco3_t4c1_kp2"] },
+            { "page": 43, "quote": "Credit therefore plays a vital and positive role in this situation.", "supports": ["eco3_t4c1_kp2"] },
+            { "page": 43, "quote": "She has to sell a part of the land to pay off the debt.", "supports": ["eco3_t4c1_kp3"] },
+            { "page": 44, "quote": "This is an example of what is commonly called debt-trap.", "supports": ["eco3_t4c1_kp3"] },
+            { "page": 44, "quote": "In rural areas, the main demand for credit is for crop production.", "supports": ["eco3_t4c1_kp4"] },
+            { "page": 44, "quote": "Whether credit would be useful or not, therefore, depends on the risks in the situation and whether there is some support, in case of loss.", "supports": ["eco3_t4c1_kp4"] },
+            { "page": 52, "quote": "In situations with high risks, credit might create further problems for the borrower.", "supports": ["eco3_t4c1_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t5",
+      "title": "Terms of credit",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t5_c1",
+          "label": "Terms of Credit and Collateral",
+          "headingType": "heading",
+          "sourcePages": [44, 45],
+          "cardText": "Every loan agreement specifies an interest rate that the borrower pays along with repaying the principal. Lenders may also demand collateral: an asset the borrower owns, such as land, a building, a vehicle, livestock or bank deposits, used as a guarantee until the loan is repaid. If the borrower fails to repay, the lender can sell the collateral. Megha's Rs 5 lakh housing loan at 12 per cent, repaid in monthly instalments over 10 years, needed salary documents and the house papers as collateral. Interest rate, collateral and documentation, and the mode of repayment together are the terms of credit, which vary between lenders and borrowers.",
+          "hint": "What did the bank ask Megha for before it gave her the loan?",
+          "probe": "What are the terms of credit, and why do lenders ask for collateral?",
+          "causeChain": "Lender needs a guarantee of repayment -> asks for collateral (an asset the borrower owns) -> can sell it if the borrower fails to repay; interest, collateral, documents and repayment mode together -> terms of credit",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_collateral_guarantee",
+              "linksChecks": [
+                "chk_eco3_collateral_def",
+                "chk_eco3_lender_sells"
+              ],
+              "criterion": "Explains that lenders ask for collateral because they can sell it to recover the money if the borrower fails to repay.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t5c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Every loan agreement specifies an interest rate which the borrower must pay to the lender along with the repayment of the principal.",
+              "assessment": {
+                "requiredEvidence": [
+                  "interest rate",
+                  "repayment of the principal"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_interest_rate",
+                    "criterion": "States that every loan agreement specifies an interest rate the borrower pays along with repaying the principal.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t5c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Lenders may demand collateral (security) against loans. Collateral is an asset that the borrower owns (such as land, building, vehicle, livestocks, deposits with banks) and uses this as a guarantee to a lender until the loan is repaid. If the borrower fails to repay the loan, the lender has the right to sell the asset or collateral to obtain payment.",
+              "followUp": "What is collateral, and what can the lender do with it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "collateral",
+                  "asset that the borrower owns",
+                  "guarantee",
+                  "right to sell"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_collateral_def",
+                    "criterion": "Defines collateral as an asset the borrower owns (land, building, vehicle, livestock, bank deposits) used as a guarantee until the loan is repaid.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_lender_sells",
+                    "criterion": "States that if the borrower fails to repay, the lender has the right to sell the collateral to obtain payment.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t5c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Interest rate, collateral and documentation requirement, and the mode of repayment together comprise what is called the terms of credit. The terms of credit vary substantially from one credit arrangement to another, depending on the nature of the lender and the borrower. Megha took a Rs 5 lakh bank loan for a house at 12 per cent per annum, repayable in 10 years in monthly instalments, submitting salary documents and keeping the house papers as collateral.",
+              "followUp": "What makes up the 'terms of credit'? Are they the same for every loan?",
+              "assessment": {
+                "requiredEvidence": [
+                  "terms of credit",
+                  "documentation",
+                  "mode of repayment",
+                  "vary substantially"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_terms_def",
+                    "criterion": "Explains that the terms of credit are the interest rate, collateral and documentation requirements, and the mode of repayment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_terms_vary",
+                    "criterion": "Mentions that terms of credit vary between credit arrangements, depending on the lender and the borrower (for example Megha's house loan).",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Megha's Rs 5 lakh house loan at 12 per cent, repayable over 10 years, with the house papers as collateral",
+            "Exercise: 'Why do lenders ask for collateral while lending?'",
+            "Exercise: collateral is an asset that the borrower owns and uses as a guarantee until the loan is repaid to the lender"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 44, "quote": "Every loan agreement specifies an interest rate which the borrower must pay to the lender along with the repayment of the principal.", "supports": ["eco3_t5c1_kp1"] },
+            { "page": 44, "quote": "Collateral is an asset that the borrower owns (such as land, building, vehicle, livestocks, deposits with banks) and uses this as a guarantee to a lender until the loan is repaid.", "supports": ["eco3_t5c1_kp2"] },
+            { "page": 44, "quote": "If the borrower fails to repay the loan, the lender has the right to sell the asset or collateral to obtain payment.", "supports": ["eco3_t5c1_kp2"] },
+            { "page": 45, "quote": "Interest rate, collateral and documentation requirement, and the mode of repayment together comprise what is called the terms of credit.", "supports": ["eco3_t5c1_kp3"] },
+            { "page": 45, "quote": "Megha has taken a loan of Rs 5 lakhs from the bank to purchase a house.", "supports": ["eco3_t5c1_kp3"] },
+            { "page": 45, "quote": "1. Why do lenders ask for collateral while lending?", "supports": ["eco3_t5c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch3_t5_c2",
+          "label": "Variety of Credit Arrangements in Sonpur",
+          "headingType": "subheading",
+          "sourcePages": [46, 47],
+          "cardText": "In Sonpur, Shyamal, a small farmer, once borrowed from a moneylender at 5 per cent a month (60 per cent a year) and now borrows from a trader at 3 per cent a month, but must sell his crop to the trader, who buys it cheaply after harvest. Arun, with seven acres, gets a bank loan at 8.5 per cent a year. Rama, a landless labourer, borrows from her employer at 5 per cent a month and repays by working for him; the only source of credit for the landless is the landowner-employers. Cooperatives, like the Krishak Cooperative, are the other major source of cheap rural credit: members pool resources, and their deposits serve as collateral for a large bank loan.",
+          "hint": "Compare who gets cheap credit in Sonpur and who pays the most, and why.",
+          "probe": "Compare the terms of credit for the small farmer, the medium farmer and the landless worker in Sonpur.",
+          "causeChain": "Only those with collateral (like Arun) get cheap bank loans -> small farmers and the landless depend on traders, moneylenders and employers -> higher interest and conditions (sell crop to trader, work for employer)",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_collateral_to_access",
+              "linksChecks": [
+                "chk_eco3_arun_bank",
+                "chk_eco3_rama_landowner"
+              ],
+              "criterion": "Connects who can provide collateral to who gets cheap bank credit (Arun) and who depends on costly informal lenders (Shyamal, Rama).",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t5c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Shyamal, a small farmer, borrowed from the village moneylender at five per cent per month (60% per annum); now he borrows from an agricultural trader at three per cent per month. The trader also makes the farmers promise to sell the crop to him, and profits by buying at a low price after harvest and selling later.",
+              "followUp": "Where did Shyamal borrow from, and what conditions did he have to accept?",
+              "followUpAllows": [
+                "Shyamal"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Shyamal",
+                  "five per cent per month",
+                  "trader",
+                  "sell the crop to him"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_shyamal_terms",
+                    "criterion": "Describes Shyamal's terms of credit: high interest from the moneylender or trader, and the trader making him promise to sell his crop.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t5c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Arun, who has seven acres of land, is one of the few persons in Sonpur to receive a bank loan for cultivation. The interest rate on the loan is 8.5 per cent per annum, repayable anytime in the next three years.",
+              "followUp": "Where did Arun get his loan, and how were his terms different from the others?",
+              "followUpAllows": [
+                "Arun"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Arun",
+                  "bank loan",
+                  "8.5 per cent per annum"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_arun_bank",
+                    "criterion": "Describes Arun getting a cheap bank loan (8.5 per cent a year) as one of the few in Sonpur who can.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t5c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Rama, an agricultural labourer, depends on her employer, a landowner, for credit at 5 per cent per month and repays by working for him. She often takes a fresh loan before the previous one is repaid. The only source of credit for the landless people in Sonpur are the landowner-employers.",
+              "followUp": "Who does Rama borrow from, and how does she repay?",
+              "followUpAllows": [
+                "Rama"
+              ],
+              "assessment": {
+                "requiredEvidence": [
+                  "Rama",
+                  "landowner",
+                  "5 per cent per month",
+                  "landless"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_rama_landowner",
+                    "criterion": "Describes Rama, a landless labourer, borrowing from her landowner-employer at high interest and repaying by working for him.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t5c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Besides banks, the other major source of cheap credit in rural areas are the cooperative societies. Members of a cooperative pool their resources. The Krishak Cooperative, with 2300 farmers, accepts deposits from its members, uses them as collateral to obtain a large bank loan, and lends to members for implements, cultivation, fishery, houses and other expenses.",
+              "assessment": {
+                "requiredEvidence": [
+                  "cooperative societies",
+                  "cheap credit",
+                  "pool their resources",
+                  "deposits as collateral"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_cooperatives",
+                    "criterion": "Explains that cooperatives are a major source of cheap rural credit: members pool resources and their deposits act as collateral for a bank loan that is lent to members.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Krishak Cooperative with 2300 farmer members",
+            "Exercise: Arun is one of the few people in Sonpur to take a bank loan because banks demand collateral which everyone cannot provide",
+            "Exercise: over the years, Rama's debt will rise"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 46, "quote": "at an interest rate of five per cent per month (60% per annum)", "supports": ["eco3_t5c2_kp1"] },
+            { "page": 46, "quote": "the trader also makes the farmers promise to sell the crop to him", "supports": ["eco3_t5c2_kp1"] },
+            { "page": 46, "quote": "The interest rate on the loan is 8.5 per cent per annum", "supports": ["eco3_t5c2_kp2"] },
+            { "page": 46, "quote": "Rama tells us that the only source of credit for the landless people in Sonpur are the landowner-employers.", "supports": ["eco3_t5c2_kp3"] },
+            { "page": 47, "quote": "Besides banks, the other major source of cheap credit in rural areas are the cooperative societies (or cooperatives).", "supports": ["eco3_t5c2_kp4"] },
+            { "page": 47, "quote": "With these deposits as collateral, the Cooperative has obtained a large loan from the bank.", "supports": ["eco3_t5c2_kp4"] },
+            { "page": 47, "quote": "banks demand collateral which everyone cannot provide.", "supports": ["eco3_t5c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t6",
+      "title": "Formal sector credit in India",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t6_c1",
+          "label": "Formal and Informal Sources of Credit",
+          "headingType": "heading",
+          "sourcePages": [48, 49],
+          "cardText": "Loans can be grouped as formal sector loans (from banks and cooperatives) and informal sector loans (from moneylenders, traders, employers, relatives and friends). The Reserve Bank of India supervises formal lenders: it checks that banks maintain a minimum cash balance and lend not just to profit-making businesses but also to small cultivators and small borrowers, and banks report their lending to it. No organisation supervises informal lenders: they can charge any interest and use unfair means to recover money. Their much higher interest takes a larger part of borrowers' earnings and can lead to a debt-trap. Cheap and affordable credit is crucial for the country's development.",
+          "hint": "Who supervises banks? Who supervises the village moneylender?",
+          "probe": "What are the differences between formal and informal sources of credit, and why is supervision by the RBI important?",
+          "causeChain": "Formal lenders supervised by RBI -> regulated cash balances and lending to small borrowers; informal lenders unsupervised -> very high interest, unfair recovery -> larger share of earnings goes to repayment -> debt-trap; so cheap formal credit is crucial for development",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_no_supervision_to_high_cost",
+              "linksChecks": [
+                "chk_eco3_informal_unsupervised",
+                "chk_eco3_high_cost"
+              ],
+              "criterion": "Connects informal lenders having no supervision to their charging much higher interest, which raises the cost of borrowing and can cause a debt-trap.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t6c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The various types of loans can be grouped as formal sector loans and informal sector loans. Among the former are loans from banks and cooperatives. The informal lenders include moneylenders, traders, employers, relatives and friends, etc.",
+              "followUp": "Which lenders give formal loans, and which give informal loans?",
+              "assessment": {
+                "requiredEvidence": [
+                  "formal sector loans",
+                  "banks and cooperatives",
+                  "informal lenders",
+                  "moneylenders"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_formal_informal_def",
+                    "criterion": "Distinguishes formal sources of credit (banks and cooperatives) from informal sources (moneylenders, traders, employers, relatives and friends).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_employer_formal"
+                ]
+              }
+            },
+            {
+              "id": "eco3_t6c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The Reserve Bank of India supervises the functioning of formal sources of loans. The RBI monitors the banks in actually maintaining cash balance, and sees that banks give loans not just to profit-making businesses and traders but also to small cultivators, small scale industries and small borrowers. Banks periodically submit information to the RBI on how much they lend, to whom, and at what interest rate.",
+              "followUp": "Who supervises formal lenders, and what does it check?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Reserve Bank of India supervises",
+                  "cash balance",
+                  "small cultivators",
+                  "submit information"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_rbi_supervises",
+                    "criterion": "Explains how the RBI supervises formal lenders: monitoring cash balances, ensuring loans to small cultivators and small borrowers, or requiring banks to report their lending.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t6c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "There is no organisation which supervises the credit activities of lenders in the informal sector. They can lend at whatever interest rate they choose and use unfair means to get their money back. Most informal lenders charge a much higher interest on loans, so a larger part of borrowers' earnings is used to repay the loan, which can lead to increasing debt and debt trap, and discourage people from starting enterprises.",
+              "followUp": "What happens because nobody supervises informal lenders?",
+              "assessment": {
+                "requiredEvidence": [
+                  "no organisation which supervises",
+                  "whatever interest rate",
+                  "much higher interest",
+                  "debt trap"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_informal_unsupervised",
+                    "criterion": "States that no organisation supervises informal lenders, so they can charge any interest rate and use unfair means to recover money.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_high_cost",
+                    "criterion": "Explains that the higher cost of informal loans takes a larger part of borrowers' earnings and can lead to increasing debt or a debt-trap.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t6c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Banks and cooperative societies need to lend more. Many people could then borrow cheaply to grow crops, do business or set up small-scale industries. Cheap and affordable credit is crucial for the country's development.",
+              "assessment": {
+                "requiredEvidence": [
+                  "lend more",
+                  "cheap and affordable credit",
+                  "development"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_cheap_credit_development",
+                    "criterion": "States that cheap and affordable credit is crucial for the country's development, so banks and cooperatives need to lend more.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Graph 1 (2019): commercial banks 51 per cent and moneylenders 23 per cent of rural credit",
+            "Exercise: formal sources of credit do not include employers",
+            "Exercise: 'In what ways does the Reserve Bank of India supervise the functioning of banks? Why is this necessary?'"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_employer_formal",
+              "wrong": "A loan from an employer or a trader is formal credit.",
+              "fix": "Formal sector loans come from banks and cooperatives. Moneylenders, traders, employers, relatives and friends are informal lenders."
+            }
+          ],
+          "verify": [
+            { "page": 48, "quote": "The various types of loans can be conveniently grouped as formal sector loans and informal sector loans.", "supports": ["eco3_t6c1_kp1"] },
+            { "page": 48, "quote": "The informal lenders include moneylenders, traders, employers, relatives and friends, etc.", "supports": ["eco3_t6c1_kp1"] },
+            { "page": 48, "quote": "The Reserve Bank of India supervises the functioning of formal sources of loans.", "supports": ["eco3_t6c1_kp2"] },
+            { "page": 48, "quote": "There is no organisation which supervises the credit activities of lenders in the informal sector.", "supports": ["eco3_t6c1_kp3"] },
+            { "page": 49, "quote": "Compared to the formal lenders, most of the informal lenders charge a much higher interest on loans.", "supports": ["eco3_t6c1_kp3"] },
+            { "page": 49, "quote": "Cheap and affordable credit is crucial for the country's development.", "supports": ["eco3_t6c1_kp4"] },
+            { "page": 53, "quote": "In what ways does the Reserve Bank of India supervise the functioning of banks?", "supports": ["eco3_t6c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "eco10_ch3_t6_c2",
+          "label": "Formal and Informal Credit: Who Gets What?",
+          "headingType": "subheading",
+          "sourcePages": [49, 50],
+          "cardText": "In urban areas, 54 per cent of loans taken by poor households come from informal sources, while rich households take only 17 per cent from informal and 83 per cent from formal sources; the pattern is similar in rural areas. The rich get cheap formal credit while the poor pay a lot to borrow. The formal sector still meets only about half of rural people's credit needs. So banks and cooperatives must increase their lending, especially in rural areas, and formal credit must be distributed more equally so the poor can benefit from cheaper loans.",
+          "hint": "Who borrows mostly from banks, and who mostly from moneylenders?",
+          "probe": "Why do we need to expand formal sources of credit in India, and why should they reach the poor?",
+          "causeChain": "Rich households get most loans from cheap formal sources; poor depend on costly informal sources -> formal sector meets only about half of rural needs -> banks and cooperatives must lend more, and more equally, to the poor",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_unequal_to_expand",
+              "linksChecks": [
+                "chk_eco3_poor_informal",
+                "chk_eco3_expand_equal"
+              ],
+              "criterion": "Connects the poor depending on costly informal credit to the need to expand formal credit and distribute it more equally.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t6c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "54 per cent of the loans taken by poor households in the urban areas are from informal sources. Only 17 per cent of rich urban households' loans are from informal sources, while 83 per cent are from formal sources. A similar pattern is found in rural areas. The rich households are availing cheap credit from formal lenders whereas the poor households have to pay a large amount for borrowing.",
+              "followUp": "How do poorer and better-off households differ in where they get their loans?",
+              "assessment": {
+                "requiredEvidence": [
+                  "54 per cent",
+                  "poor households",
+                  "83 per cent",
+                  "rich households",
+                  "formal"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_poor_informal",
+                    "criterion": "States that poor households depend mostly on informal sources while rich households get most of their credit from cheap formal sources (for example 54 per cent versus 17 per cent informal in urban areas).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t6c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The formal sector still meets only about half of the total credit needs of the rural people. It is necessary that banks and cooperatives increase their lending particularly in the rural areas, so that the dependence on informal sources of credit reduces. It is also important that formal credit is distributed more equally so that the poor can benefit from the cheaper loans.",
+              "followUp": "How much of rural people's credit needs does the formal sector meet, and what should change?",
+              "assessment": {
+                "requiredEvidence": [
+                  "only about half",
+                  "increase their lending",
+                  "rural areas",
+                  "distributed more equally"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_half_needs",
+                    "criterion": "Mentions that the formal sector meets only about half of rural people's credit needs.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_expand_equal",
+                    "criterion": "States that banks and cooperatives must increase lending, especially in rural areas, and that formal credit must be distributed more equally so the poor benefit.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Graph 2: 54 per cent of poor urban households' loans are informal; 83 per cent of rich urban households' loans are formal",
+            "Exercise: 'Why do we need to expand formal sources of credit in India?'",
+            "Exercise: majority of the credit needs of the poor households are met from informal sources"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 49, "quote": "54 per cent of the loans taken by poor households in the urban areas are from informal sources", "supports": ["eco3_t6c2_kp1"] },
+            { "page": 49, "quote": "Only 17 per cent of their loans are from informal sources, while 83 per cent are from formal sources.", "supports": ["eco3_t6c2_kp1"] },
+            { "page": 49, "quote": "the formal sector still meets only about half of the total credit needs of the rural people", "supports": ["eco3_t6c2_kp2"] },
+            { "page": 50, "quote": "It is important that the formal credit is distributed more equally so that the poor can benefit from the cheaper loans.", "supports": ["eco3_t6c2_kp2"] },
+            { "page": 52, "quote": "Why do we need to expand formal sources of credit in India?", "supports": ["eco3_t6c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_eco_10_ch3_t7",
+      "title": "Self-help groups for the poor",
+      "concepts": [
+        {
+          "conceptId": "eco10_ch3_t7_c1",
+          "label": "Self Help Groups for the Poor",
+          "headingType": "heading",
+          "sourcePages": [50, 51, 52],
+          "cardText": "Banks are not present everywhere, and bank loans need documents and collateral; absence of collateral is a major reason the poor cannot get bank loans. Moneylenders lend without collateral but charge very high interest, keep no records and harass borrowers. Self Help Groups organise the rural poor, especially women, into groups of 15-20 who save regularly (Rs 25 to Rs 100 or more) and take small loans from the group at less than moneylenders' rates. After a year or two of regular saving, the group can get a bank loan in its name. The group decides on loans and is responsible for repayment, so banks lend without collateral. SHGs help women become financially self-reliant and discuss social issues.",
+          "hint": "Why will a bank lend to a group of poor women when it would not lend to any one of them alone?",
+          "probe": "What is the basic idea behind Self Help Groups, and how do they help the poor overcome the problem of collateral?",
+          "causeChain": "Poor lack collateral -> no bank loans -> depend on costly moneylenders; SHG: members save together, group decides and is responsible for repayment -> banks lend to the group without collateral -> timely loans at reasonable interest",
+          "causeLinks": [
+            {
+              "id": "lnk_eco3_group_responsibility",
+              "linksChecks": [
+                "chk_eco3_group_repays",
+                "chk_eco3_overcome_collateral"
+              ],
+              "criterion": "Connects the group being responsible for repayment to banks being willing to lend to SHGs without collateral.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "eco3_t7c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Banks are not present everywhere in rural India, and bank loans require proper documents and collateral. Absence of collateral is one of the major reasons which prevents the poor from getting bank loans. Moneylenders know the borrowers personally and lend without collateral, but they charge very high rates of interest, keep no records of the transactions and harass the poor borrowers.",
+              "followUp": "Why is it hard for poor people to get loans from banks?",
+              "assessment": {
+                "requiredEvidence": [
+                  "absence of collateral",
+                  "prevents the poor",
+                  "moneylenders",
+                  "very high rates of interest"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_poor_no_collateral",
+                    "criterion": "Explains that the poor cannot get bank loans mainly because they lack collateral (and documents), so they depend on moneylenders who charge very high interest.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t7c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The idea is to organise rural poor, in particular women, into small Self Help Groups (SHGs) and pool (collect) their savings. A typical SHG has 15-20 members, usually from one neighbourhood, who meet and save regularly. Members can take small loans from the group itself at interest less than what the moneylender charges. After a year or two of regular saving, the group becomes eligible for a bank loan, sanctioned in the name of the group, meant to create self-employment opportunities.",
+              "followUp": "How is a Self Help Group organised, and how does it work?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Self Help Groups",
+                  "rural poor, in particular women",
+                  "pool their savings",
+                  "15-20 members",
+                  "loan from the bank"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_shg_idea",
+                    "criterion": "Explains the basic idea of SHGs: organising the rural poor, especially women, into small groups that pool their savings and lend to members.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_shg_bank_loan",
+                    "criterion": "Mentions that after a year or two of regular saving, the group becomes eligible for a bank loan in its name, for self-employment.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t7c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Most of the important decisions regarding the savings and loan activities are taken by the group members, including the purpose, amount, interest and repayment schedule. It is the group which is responsible for the repayment of the loan; non-repayment by any member is followed up seriously by the others. Because of this, banks are willing to lend to poor women organised in SHGs, even though they have no collateral. Thus SHGs help borrowers overcome the problem of lack of collateral.",
+              "followUp": "Who takes decisions in a Self Help Group, and how does that solve the problem of security for loans?",
+              "assessment": {
+                "requiredEvidence": [
+                  "taken by the group members",
+                  "responsible for the repayment",
+                  "no collateral",
+                  "overcome the problem of lack of collateral"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_group_repays",
+                    "criterion": "States that the group members take the decisions and the group is responsible for repayment of the loan.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_eco3_overcome_collateral",
+                    "criterion": "Explains that SHGs help borrowers overcome the lack of collateral, since banks lend to the group without it.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_eco3_bank_decides_shg"
+                ]
+              }
+            },
+            {
+              "id": "eco3_t7c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "SHGs are the building blocks of organisation of the rural poor. They help women become financially self-reliant, and regular meetings provide a platform to discuss and act on social issues such as health, nutrition and domestic violence.",
+              "assessment": {
+                "requiredEvidence": [
+                  "building blocks",
+                  "financially self-reliant",
+                  "social issues"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_shg_empower",
+                    "criterion": "Mentions that SHGs help women become financially self-reliant and give a platform to discuss social issues like health, nutrition or domestic violence.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "eco3_t7c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Grameen Bank of Bangladesh is one of the biggest success stories in reaching the poor to meet their credit needs at reasonable rates. Started in the 1970s, in 2018 it had over 9 million members in about 81,600 villages. Almost all borrowers are women from the poorest sections, who have proved to be reliable borrowers. Its founder, Professor Muhammad Yunus, received the 2006 Nobel Prize for Peace.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Grameen Bank",
+                  "9 million members",
+                  "women",
+                  "Muhammad Yunus"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_eco3_grameen",
+                    "criterion": "Gives the Grameen Bank of Bangladesh as an example of reaching poor women with credit at reasonable rates (founded by Muhammad Yunus).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "A women's self-help group meeting in Gujarat",
+            "Grameen Bank of Bangladesh, with over 9 million members in about 81,600 villages in 2018",
+            "Exercise: 'What is the basic idea behind the SHGs for the poor? Explain in your own words.'",
+            "Exercise: in an SHG most decisions regarding savings and loan activities are taken by the members"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_eco3_bank_decides_shg",
+              "wrong": "In a Self Help Group, the bank decides who gets loans.",
+              "fix": "Most of the important decisions regarding savings and loans are taken by the group members, and the group is responsible for repayment."
+            }
+          ],
+          "verify": [
+            { "page": 50, "quote": "Absence of collateral is one of the major reasons which prevents the poor from getting bank loans.", "supports": ["eco3_t7c1_kp1"] },
+            { "page": 51, "quote": "the moneylenders charge very high rates of interest, keep no records of the transactions and harass the poor borrowers", "supports": ["eco3_t7c1_kp1"] },
+            { "page": 51, "quote": "The idea is to organise rural poor, in particular women, into small Self Help Groups (SHGs) and pool (collect) their savings.", "supports": ["eco3_t7c1_kp2"] },
+            { "page": 51, "quote": "A typical SHG has 15-20 members", "supports": ["eco3_t7c1_kp2"] },
+            { "page": 51, "quote": "Most of the important decisions regarding the savings and loan activities are taken by the group members.", "supports": ["eco3_t7c1_kp3"] },
+            { "page": 51, "quote": "Thus, the SHGs help borrowers overcome the problem of lack of collateral.", "supports": ["eco3_t7c1_kp3"] },
+            { "page": 51, "quote": "SHGs are the building blocks of organisation of the rural poor.", "supports": ["eco3_t7c1_kp4"] },
+            { "page": 52, "quote": "Grameen Bank in 2018 had over 9 million members in about 81,600 villages", "supports": ["eco3_t7c1_kp5"] },
+            { "page": 52, "quote": "What is the basic idea behind the SHGs for the poor? Explain in your own words.", "supports": ["eco3_t7c1_kp2"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

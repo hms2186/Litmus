@@ -1,0 +1,2826 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 10,
+  "chapterName": "Sound Waves: Characteristics and Applications",
+  "sourceStatus": "Built from the NCERT PDF iesc110 (edition as supplied). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Exploration, Science (Grade 9), edition as supplied, chapter pp. 184-207",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. Equations, figures and Table 10.1 are lost in the PDF text and are not quoted. Pause and Ponder prompts and the Revise, Reflect, Refine questions (pp. 204-206) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c10_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci9c10_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example vibration, medium, vacuum, compression, rarefaction, sound wave, longitudinal wave, mechanical wave.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "vibration",
+    "medium",
+    "vacuum",
+    "compression",
+    "rarefaction",
+    "sound wave",
+    "longitudinal wave",
+    "mechanical wave",
+    "wavelength",
+    "frequency",
+    "time period",
+    "amplitude",
+    "intensity",
+    "pitch",
+    "loudness",
+    "echo",
+    "reverberation",
+    "ultrasonic",
+    "infrasonic",
+    "echolocation",
+    "sonar"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_sci_9_ch10_t1",
+      "title": "Production and propagation of sound",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t1_c1",
+          "label": "Production of Sound by Vibrations",
+          "headingType": "heading",
+          "sourcePages": [185, 186],
+          "cardText": "In Activity 10.1 a rubber band stretched across an open box produces sound when plucked, as long as it is stretched and vibrating; once the vibration stops, so does the sound. So sound is produced by vibrations. Vibration refers to the periodic to and fro motion (oscillations) of an object. Sound can be produced by vibrating strings, membranes, air columns and many other vibrating objects, and the object that produces sound is called the source of the sound. In humans and some other animals sound is produced by the vibration of vocal cords, tightly stretched muscular flaps inside the voice box or larynx in the throat. Grasshoppers and crickets rub their wings or legs to produce sound. A tuning fork is a U-shaped metal bar with a stem, whose prongs are struck on a rubber pad to make them vibrate; a vibrating prong touching water makes waves on the surface, indicating that the prongs are vibrating.",
+          "hint": "What do all sound sources have in common?",
+          "probe": "How is sound produced, and what do the rubber band and tuning fork activities show?",
+          "causeChain": "A plucked rubber band vibrates and produces sound, and the sound stops when the vibration stops -> so sound is produced by vibrating objects, the source -> a vibrating tuning fork prong makes waves on water, showing it is vibrating",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_vibrate_sound",
+              "linksChecks": [
+                "chk_sci9c10_pr_vibration",
+                "chk_sci9c10_pr_fork"
+              ],
+              "criterion": "Connects the rubber band vibrating to sound being produced, and the sound stopping when the vibration stops, to the conclusion that sound is produced by vibrations.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "You may have noticed that as long as the rubber band is stretched and vibrating, sound is produced. Once the vibration stops, so does the sound. From this activity, we conclude that sound is produced by vibrations.",
+              "followUp": "What do you notice about a stretched band when sound is heard and when it stops moving?",
+              "assessment": {
+                "requiredEvidence": [
+                  "stretched and vibrating",
+                  "sound is produced",
+                  "vibration stops",
+                  "sound is produced by vibrations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pr_vibration",
+                    "criterion": "States that sound is produced as long as the rubber band is vibrating and stops when the vibration stops, so sound is produced by vibrations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_pr_continues"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Vibration refers to the periodic to and fro motion (oscillations) of an object.",
+              "followUp": "What kind of back and forth motion is meant when we say something produces sound?",
+              "assessment": {
+                "requiredEvidence": [
+                  "periodic to and fro motion",
+                  "oscillations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pr_define",
+                    "criterion": "Defines vibration as the periodic to and fro motion (oscillations) of an object.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Sound can be produced by vibrating strings membranes, air columns, and many other vibrating objects. The object that produces sound is called the ‘source’ of the sound.",
+              "assessment": {
+                "requiredEvidence": [
+                  "vibrating strings",
+                  "membranes",
+                  "air columns",
+                  "source"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pr_source",
+                    "criterion": "States that sound can be produced by vibrating strings, membranes, air columns and other objects, and the object producing it is the source.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In humans and some other animals, sound is produced by the vibration of vocal cords, which are tightly stretched muscular flaps located inside the voice box or larynx, in the throat",
+              "assessment": {
+                "requiredEvidence": [
+                  "vibration of vocal cords",
+                  "muscular flaps",
+                  "voice box or larynx",
+                  "throat"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pr_vocal",
+                    "criterion": "States that in humans sound is produced by the vibration of vocal cords, tightly stretched muscular flaps in the voice box or larynx.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "When the prong touches the surface of water, waves form on the surface of water, indicating that the prongs of the tuning fork are indeed vibrating (Fig. 10.4c). These observations support the idea that sound is produced by vibrating objects.",
+              "followUp": "A struck fork is touched to water and ripples appear. What does this tell you about its prongs?",
+              "assessment": {
+                "requiredEvidence": [
+                  "prong touches the surface of water",
+                  "waves form",
+                  "prongs of the tuning fork are indeed vibrating",
+                  "sound is produced by vibrating objects"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pr_fork",
+                    "criterion": "Explains that a vibrating tuning fork prong touching water forms waves on the surface, showing the prongs vibrate and supporting that sound is produced by vibrating objects.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: sound can be produced by plucking, striking, blowing or rubbing, and the vibrating part of a musical instrument can be a string, a membrane or an air column",
+            "Threads: grasshoppers and crickets produce sound by rubbing their wings or legs"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_pr_continues",
+              "wrong": "Sound continues after the vibration of the source stops.",
+              "fix": "As long as the rubber band is stretched and vibrating, sound is produced; once the vibration stops, so does the sound."
+            }
+          ],
+          "verify": [
+            { "page": 185, "quote": "You may have noticed that as long as the rubber band is stretched and vibrating, sound is produced.", "supports": ["sci9c10_t1c1_kp1"] },
+            { "page": 185, "quote": "Once the vibration stops, so does the sound.", "supports": ["sci9c10_t1c1_kp1"] },
+            { "page": 185, "quote": "From this activity, we conclude that sound is produced by vibrations.", "supports": ["sci9c10_t1c1_kp1"] },
+            { "page": 185, "quote": "Vibration refers to the periodic to and fro motion (oscillations) of an object.", "supports": ["sci9c10_t1c1_kp2"] },
+            { "page": 185, "quote": "Sound can be produced by vibrating strings membranes, air columns, and many other vibrating objects.", "supports": ["sci9c10_t1c1_kp3"] },
+            { "page": 185, "quote": "The object that produces sound is called the ‘source’ of the sound.", "supports": ["sci9c10_t1c1_kp3"] },
+            { "page": 185, "quote": "In humans and some other animals, sound is produced by the vibration of vocal cords, which are tightly stretched muscular flaps", "supports": ["sci9c10_t1c1_kp4"] },
+            { "page": 185, "quote": "located inside the voice box or larynx, in the throat", "supports": ["sci9c10_t1c1_kp4"] },
+            { "page": 186, "quote": "When the prong touches the surface of water, waves form on the surface of water, indicating that the prongs of the tuning fork are indeed vibrating (Fig. 10.4c).", "supports": ["sci9c10_t1c1_kp5"] },
+            { "page": 186, "quote": "These observations support the idea that sound is produced by vibrating objects.", "supports": ["sci9c10_t1c1_kp5"] },
+            { "page": 185, "quote": "Some animals produce sound by striking or rubbing certain body parts.", "supports": ["sci9c10_t1c1_kp3"] },
+            { "page": 186, "quote": "Make a list of different types of musical instruments and identify their", "supports": ["sci9c10_t1c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t1_c2",
+          "label": "Sound Needs a Medium to Propagate",
+          "headingType": "heading",
+          "sourcePages": [187],
+          "cardText": "Sound can also travel through solids: with an ear against a desk you can hear a knock on it. It also travels through liquids: tapped spoons submerged in water can still be heard. Sound can travel or propagate through solids, liquids and gases. The material through which sound propagates is called a medium, and a space where there is no medium (matter) is referred to as vacuum. In the vacuum bell jar experiment an electric bell is kept in a bell jar and as air is sucked out the sound becomes fainter; once a near vacuum is reached almost no sound can be heard even though the bell can be seen ringing, and when air is let back in the sound can be heard again and gradually becomes as loud as before. This experiment shows that sound cannot propagate in vacuum: sound needs a medium, which can be a solid, a liquid or a gas. In outer space, which is a near vacuum, sound cannot propagate, so astronauts doing spacewalks cannot directly hear each other speak or hear metal objects clanking, and communicate through special devices fitted into their spacesuits.",
+          "hint": "What did the bell jar experiment show about sound?",
+          "probe": "What does sound need to travel, and how does the bell jar experiment show it?",
+          "causeChain": "Sound travels through solids, liquids and gases, the medium -> in a bell jar with air pumped out the sound fades although the bell still rings -> so sound cannot travel in vacuum, which is why astronauts in space cannot hear each other directly",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_remove_air",
+              "linksChecks": [
+                "chk_sci9c10_md_bell",
+                "chk_sci9c10_md_space"
+              ],
+              "criterion": "Connects removing air from the bell jar to the sound fading though the bell still rings, and so to sound needing a medium.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t1c2_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "This shows that sound can also travel through solids. The sound of the submerged spoons tells you that the sound has reached you after travelling through water and air.",
+              "assessment": {
+                "requiredEvidence": [
+                  "travel through solids",
+                  "submerged spoons",
+                  "water and air"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_solid_liquid",
+                    "criterion": "States that sound can travel through solids (a desk) and through liquids (spoons tapped under water).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Sound can travel or propagate through solids, liquids and gases. The material through which sound propagates is called a medium.",
+              "followUp": "Through which states of matter can sound travel, and what is the substance carrying it called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "solids, liquids and gases",
+                  "material through which sound propagates",
+                  "medium"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_medium",
+                    "criterion": "States that sound can propagate through solids, liquids and gases, and the material through which it propagates is called a medium.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A space where there is no medium (matter) is referred to as vacuum.",
+              "assessment": {
+                "requiredEvidence": [
+                  "no medium",
+                  "vacuum"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_vacuum",
+                    "criterion": "Defines a vacuum as a space where there is no medium (matter).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "As air is sucked out from the bell jar using a vacuum pump, the sound becomes fainter. Once a near vacuum is reached, almost no sound can be heard even though the bell can be seen ringing. When air is let back into the jar, the sound can be heard again and it gradually becomes as loud as before.",
+              "followUp": "A ringing bell is placed under a glass cover and the air is pumped out. What happens to the loudness as the air goes?",
+              "assessment": {
+                "requiredEvidence": [
+                  "air is sucked out",
+                  "sound becomes fainter",
+                  "near vacuum",
+                  "bell can be seen ringing",
+                  "air is let back"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_bell",
+                    "criterion": "Describes the bell jar experiment: as air is pumped out the sound fades to almost nothing though the bell is seen ringing, and returns when air is let back in.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c2_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "This experiment shows that sound cannot propagate in vacuum. Sound needs a medium to propagate. The medium can be a solid, a liquid, or a gas.",
+              "followUp": "What conclusion can be drawn about sound travelling where there is no matter?",
+              "assessment": {
+                "requiredEvidence": [
+                  "cannot propagate in vacuum",
+                  "needs a medium",
+                  "solid, a liquid, or a gas"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_need",
+                    "criterion": "Concludes that sound cannot propagate in vacuum and needs a medium, which can be a solid, a liquid or a gas.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t1c2_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "In outer space, there is a near vacuum, and thus, sound cannot propagate. Hence, astronauts in spacesuits doing spacewalks cannot directly hear each other speak or hear sounds like two metal objects clanking together. Instead, they communicate through special devices fitted into their spacesuits.",
+              "followUp": "Why can people working outside a spacecraft not speak to each other directly?",
+              "assessment": {
+                "requiredEvidence": [
+                  "outer space",
+                  "near vacuum",
+                  "sound cannot propagate",
+                  "astronauts",
+                  "special devices fitted into their spacesuits"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_md_space",
+                    "criterion": "Explains that outer space is a near vacuum, so astronauts cannot directly hear each other and communicate through special devices in their spacesuits.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_md_space"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: we cannot hear the sound of a bell ringing in a closed jar after most of the air is pumped out because sound requires a medium to travel"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_md_space",
+              "wrong": "Astronauts can hear each other directly in space because sound travels easily there.",
+              "fix": "In outer space, a near vacuum, sound cannot propagate, so astronauts cannot directly hear each other speak."
+            }
+          ],
+          "verify": [
+            { "page": 187, "quote": "This shows that sound can also travel through solids.", "supports": ["sci9c10_t1c2_kp1"] },
+            { "page": 187, "quote": "The sound of the submerged spoons tells you that the sound has reached you after travelling through water and air.", "supports": ["sci9c10_t1c2_kp1"] },
+            { "page": 187, "quote": "Sound can travel or propagate through solids, liquids and gases.", "supports": ["sci9c10_t1c2_kp2"] },
+            { "page": 187, "quote": "The material through which sound propagates is called a medium.", "supports": ["sci9c10_t1c2_kp2"] },
+            { "page": 187, "quote": "A space where there is no medium (matter) is referred to as vacuum.", "supports": ["sci9c10_t1c2_kp3"] },
+            { "page": 187, "quote": "As air is sucked out from the bell jar using a vacuum pump, the sound becomes fainter.", "supports": ["sci9c10_t1c2_kp4"] },
+            { "page": 187, "quote": "Once a near vacuum is reached, almost no sound can be heard even though the bell can be seen ringing.", "supports": ["sci9c10_t1c2_kp4"] },
+            { "page": 187, "quote": "When air is let back into the jar, the sound can be heard again and it gradually becomes as loud as before.", "supports": ["sci9c10_t1c2_kp4"] },
+            { "page": 187, "quote": "This experiment shows that sound cannot propagate in vacuum.", "supports": ["sci9c10_t1c2_kp5"] },
+            { "page": 187, "quote": "Sound needs a medium to propagate. The medium can be a solid, a liquid, or a gas.", "supports": ["sci9c10_t1c2_kp5"] },
+            { "page": 187, "quote": "In outer space, there is a near vacuum, and thus, sound cannot propagate.", "supports": ["sci9c10_t1c2_kp6"] },
+            { "page": 187, "quote": "Hence, astronauts in spacesuits doing spacewalks cannot directly hear each other speak or hear sounds like two metal objects clanking together.", "supports": ["sci9c10_t1c2_kp6"] },
+            { "page": 187, "quote": "Instead, they communicate through special devices fitted into their spacesuits.", "supports": ["sci9c10_t1c2_kp6"] },
+            { "page": 188, "quote": "We cannot hear the sound of a bell ringing in a closed jar", "supports": ["sci9c10_t1c2_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch10_t2",
+      "title": "Sound waves",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t2_c1",
+          "label": "Compressions, Rarefactions and the Sound Wave",
+          "headingType": "heading",
+          "sourcePages": [189],
+          "cardText": "In the slinky activity a push and pull at one end creates regions where the turns are closer together than usual and other regions where they are more spread out, and these regions travel along the slinky, but a mark on a turn does not travel; it only oscillates about its position of rest parallel to the direction of the disturbance. Sound moves similarly through a medium, the closeness or spreading out of the turns representing the higher or lower density of air. In a tube with an oscillating piston, a forward motion pushes nearby air particles and compresses the air in a small region, increasing its density: this region of higher density is a compression (C). A backward motion makes the air in that region less dense: a region of lower density is a rarefaction (R). As the piston oscillates, compressions and rarefactions are produced alternately and travel away from the source. The disturbance consisting of a series of alternating compressions and rarefactions propagating through a medium, without the actual flow of the particles of the medium, is called a sound wave, and the direction in which it travels is the direction of propagation. The particles of the medium do not travel with the wave; they just vibrate about their mean positions.",
+          "hint": "What travels along the medium in a sound wave, and what does not?",
+          "probe": "Explain compressions and rarefactions and what is meant by a sound wave.",
+          "causeChain": "A vibrating source pushes air particles together (a compression, higher density) and then leaves them spread apart (a rarefaction, lower density) -> particles pass the disturbance on by collisions -> the pattern of compressions and rarefactions travels while the particles only vibrate about their mean positions",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_collisions_pass_on",
+              "linksChecks": [
+                "chk_sci9c10_cr_compression",
+                "chk_sci9c10_cr_wave"
+              ],
+              "criterion": "Connects particles colliding with their neighbours to the compression moving forward even though the particles themselves do not travel.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "the mark does not travel along the slinky, it only oscillates about its position of rest parallel to the direction of the disturbance. Each turn oscillates about its own position while the disturbance travels from one end of the slinky to the other.",
+              "followUp": "When a coil is pushed and a marked loop is watched, does the mark travel along or move about its place? In which direction?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mark does not travel",
+                  "oscillates about its position of rest",
+                  "disturbance travels from one end"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_slinky",
+                    "criterion": "Explains that in the slinky each turn only oscillates about its own position of rest while the disturbance travels from one end to the other.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This region of air with higher density (compared to the average density) is called a compression (C).",
+              "followUp": "What is a region of air called where the density is above the average?",
+              "assessment": {
+                "requiredEvidence": [
+                  "higher density",
+                  "compression"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_compression",
+                    "criterion": "Defines a compression (C) as a region of air with higher density than the average density, produced as the piston moves forward.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "This region of air with lower density (compared to the average density) is called a rarefaction (R).",
+              "followUp": "What is a region of air called where the density is below the average?",
+              "assessment": {
+                "requiredEvidence": [
+                  "lower density",
+                  "rarefaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_rarefaction",
+                    "criterion": "Defines a rarefaction (R) as a region of air with lower density than the average density, produced as the piston moves backward.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "As a result, the higher density compression moves forward through the air even though the air particles themselves do not travel with it.",
+              "assessment": {
+                "requiredEvidence": [
+                  "higher density compression moves forward",
+                  "air particles themselves do not travel"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_moves",
+                    "criterion": "States that the compression moves forward through the air even though the air particles themselves do not travel with it.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_cr_particles_travel"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t2c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "The disturbance consisting of a series of alternating compressions and rarefactions propagating through a medium, without the actual flow of the particles of medium, is called a sound wave. The direction in which the wave travels is known as the direction of propagation of the wave.",
+              "followUp": "What do we call the alternating high and low density regions moving through a medium, and does matter flow along with them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "alternating compressions and rarefactions",
+                  "without the actual flow of the particles",
+                  "sound wave",
+                  "direction of propagation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_wave",
+                    "criterion": "Defines a sound wave as a disturbance of alternating compressions and rarefactions propagating through a medium without the actual flow of its particles, travelling in the direction of propagation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c1_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The particles of the medium do not travel with the wave. They just vibrate about their mean positions.",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not travel with the wave",
+                  "vibrate about their mean positions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_cr_note",
+                    "criterion": "States that the particles of the medium do not travel with the wave and only vibrate about their mean positions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: compressions and rarefactions move through the medium, but the individual particles do not continuously move forward with the wave"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_cr_particles_travel",
+              "wrong": "In a sound wave air particles travel from the source to the listener.",
+              "fix": "The particles of the medium do not travel with the wave; they just vibrate about their mean positions while the disturbance moves."
+            }
+          ],
+          "verify": [
+            { "page": 189, "quote": "However, the mark does not travel along the slinky, it only oscillates about its position of rest parallel to the direction of the disturbance.", "supports": ["sci9c10_t2c1_kp1"] },
+            { "page": 189, "quote": "Each turn oscillates about its own position while the disturbance travels from one end of the slinky to the other.", "supports": ["sci9c10_t2c1_kp1"] },
+            { "page": 189, "quote": "This region of air with higher density (compared to the average density) is called a compression (C).", "supports": ["sci9c10_t2c1_kp2"] },
+            { "page": 189, "quote": "This region of air with lower density (compared to the average density) is called a rarefaction (R).", "supports": ["sci9c10_t2c1_kp3"] },
+            { "page": 189, "quote": "As a result, the higher density compression moves forward through the air even though the air particles themselves do not travel with it.", "supports": ["sci9c10_t2c1_kp4"] },
+            { "page": 189, "quote": "The disturbance consisting of a series of alternating compressions and rarefactions propagating through a medium, without the actual flow of the particles of medium, is called a sound wave.", "supports": ["sci9c10_t2c1_kp5"] },
+            { "page": 189, "quote": "The direction in which the wave travels is known as the direction of propagation of the wave.", "supports": ["sci9c10_t2c1_kp5"] },
+            { "page": 189, "quote": "The particles of the medium do not travel with the wave. They just vibrate about their mean positions.", "supports": ["sci9c10_t2c1_kp6"] },
+            { "page": 191, "quote": "Compressions and rarefactions move through the medium.", "supports": ["sci9c10_t2c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t2_c2",
+          "label": "Longitudinal and Mechanical Waves",
+          "headingType": "heading",
+          "sourcePages": [190, 191],
+          "cardText": "In sound waves the particles of the medium vibrate back and forth parallel to the direction of propagation of the disturbance. Waves in which the particles vibrate in a direction parallel to the direction of wave propagation are known as longitudinal waves. Without a material medium sound waves cannot propagate; waves that require a material medium for propagation are called mechanical waves, and sound is a type of mechanical wave. Mechanical waves are of two types, longitudinal and transverse; in a transverse wave the particles vibrate in a direction perpendicular to the direction of wave propagation. Not all waves need a medium: light, which is a transverse wave, can travel through vacuum, which is why light from the Sun and other stars can reach the Earth. A small source producing sound in all directions causes compressions and rarefactions that spread through the surrounding medium as spherical waves. Sudden loud sounds such as thunder arise when air or gases heated rapidly expand very rapidly, creating a sudden disturbance in the air density that travels outward.",
+          "hint": "In which direction do the particles vibrate in a sound wave compared with the direction the wave travels?",
+          "probe": "Why is sound called a longitudinal mechanical wave, and how does it differ from a transverse wave like light?",
+          "causeChain": "Particles of the medium vibrate parallel to the direction the wave travels -> that makes sound a longitudinal wave -> it needs a medium, so it is a mechanical wave, unlike light, a transverse wave that can travel through vacuum",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_parallel_longitudinal",
+              "linksChecks": [
+                "chk_sci9c10_lw_long",
+                "chk_sci9c10_lw_mech"
+              ],
+              "criterion": "Connects particles vibrating parallel to the direction of propagation to sound being a longitudinal wave, and its need for a medium to its being a mechanical wave.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In sound waves, the particles of the medium vibrate back and forth parallel to the direction of propagation of disturbance (Fig. 10.12). Such waves where the particles vibrate in a direction parallel to the direction of the wave propagation are known as longitudinal waves.",
+              "followUp": "Relative to the direction the disturbance moves, how do the particles of the medium move in sound, and what type of wave is that?",
+              "assessment": {
+                "requiredEvidence": [
+                  "back and forth parallel to the direction of propagation",
+                  "longitudinal waves"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_lw_long",
+                    "criterion": "States that in sound waves the particles of the medium vibrate back and forth parallel to the direction of propagation, so sound is a longitudinal wave.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Without a material medium, sound waves cannot propagate. Waves that require a material medium for propagation are called mechanical waves. Sound wave is a type of a mechanical wave.",
+              "followUp": "Why can sound not cross empty space, and what are waves of this kind named?",
+              "assessment": {
+                "requiredEvidence": [
+                  "without a material medium",
+                  "require a material medium",
+                  "mechanical waves"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_lw_mech",
+                    "criterion": "States that waves needing a material medium for propagation are mechanical waves, and sound is a mechanical wave.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In a transverse wave, the particles vibrate in a direction perpendicular to the direction of wave propagation (Fig. 10.13).",
+              "assessment": {
+                "requiredEvidence": [
+                  "transverse wave",
+                  "perpendicular to the direction of wave propagation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_lw_trans",
+                    "criterion": "States that in a transverse wave the particles vibrate perpendicular to the direction of wave propagation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Not all waves are mechanical waves, i.e., not all waves need a medium to propagate. Light, which is a transverse wave, can travel through vacuum. This is why light from the Sun and other stars can reach the Earth.",
+              "assessment": {
+                "requiredEvidence": [
+                  "not all waves are mechanical waves",
+                  "light",
+                  "transverse wave",
+                  "travel through vacuum"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_lw_light",
+                    "criterion": "States that not all waves need a medium: light, a transverse wave, can travel through vacuum, so sunlight and starlight reach the Earth.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_lw_light"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t2c2_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A small sound source continuously producing sound in all directions causes compressions and rarefactions that spread through the surrounding medium in all directions as spherical waves (Fig. 10.10).",
+              "assessment": {
+                "requiredEvidence": [
+                  "small sound source",
+                  "all directions",
+                  "spherical waves"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_lw_sphere",
+                    "criterion": "States that a small source producing sound in all directions causes compressions and rarefactions that spread through the medium as spherical waves.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_lw_light",
+              "wrong": "Light is a mechanical wave that needs a medium like sound.",
+              "fix": "Not all waves need a medium to propagate; light, a transverse wave, can travel through vacuum."
+            }
+          ],
+          "verify": [
+            { "page": 190, "quote": "In sound waves, the particles of the medium vibrate back and forth parallel to the direction of propagation of disturbance (Fig. 10.12).", "supports": ["sci9c10_t2c2_kp1"] },
+            { "page": 190, "quote": "Such waves where the particles vibrate in a direction parallel to the direction of the wave propagation are known as longitudinal waves.", "supports": ["sci9c10_t2c2_kp1"] },
+            { "page": 190, "quote": "Without a material medium, sound waves cannot propagate.", "supports": ["sci9c10_t2c2_kp2"] },
+            { "page": 190, "quote": "Waves that require a material medium for propagation are called mechanical waves.", "supports": ["sci9c10_t2c2_kp2"] },
+            { "page": 190, "quote": "Sound wave is a type of a mechanical wave.", "supports": ["sci9c10_t2c2_kp2"] },
+            { "page": 191, "quote": "In a transverse wave, the particles vibrate in a direction perpendicular to the direction of wave propagation (Fig. 10.13).", "supports": ["sci9c10_t2c2_kp3"] },
+            { "page": 191, "quote": "Not all waves are mechanical waves, i.e., not all waves need a medium to propagate.", "supports": ["sci9c10_t2c2_kp4"] },
+            { "page": 191, "quote": "Light, which is a transverse wave, can travel through vacuum.", "supports": ["sci9c10_t2c2_kp4"] },
+            { "page": 191, "quote": "This is why light from the Sun and other stars can reach the Earth.", "supports": ["sci9c10_t2c2_kp4"] },
+            { "page": 190, "quote": "A small sound source continuously producing sound in all directions causes compressions and rarefactions that spread through the surrounding medium in all directions as spherical waves (Fig. 10.10).", "supports": ["sci9c10_t2c2_kp5"] },
+            { "page": 204, "quote": "Which observation best supports the idea that sound is a mechanical", "supports": ["sci9c10_t2c2_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t2_c3",
+          "label": "Sound Carries Energy",
+          "headingType": "heading",
+          "sourcePages": [191, 192],
+          "cardText": "In Activity 10.6 grains sprinkled on a stretched sheet jump when a loud sound is produced near it, though the source does not touch the sheet: the sound propagating through air reaches the sheet and makes it vibrate, and this vibration causes the grains to move. This shows that sound is a form of energy. When the source of sound vibrates it transfers energy to the surrounding medium, and as sound waves propagate the vibration of particles of the medium and their collisions with other particles result in the transfer of energy. In the propagation of a sound wave it is the energy that is transferred, not the particles of the medium. A microphone converts sound energy to electrical energy: sound waves make a thin membrane called a diaphragm vibrate and the vibrations are converted into an electrical signal. A speaker does the opposite: an electrical signal makes a cone or diaphragm vibrate, which produces sound.",
+          "hint": "What reaches your ear when sound travels from a tuning fork?",
+          "probe": "How does the grain experiment show that sound is energy, and what do a microphone and a speaker do?",
+          "causeChain": "Sound makes a sheet vibrate and its grains jump -> so sound transfers energy through vibrations and collisions of particles -> energy, not the particles, is transferred; a microphone changes sound energy into an electrical signal and a speaker does the reverse",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_energy_not_particles",
+              "linksChecks": [
+                "chk_sci9c10_se_grains",
+                "chk_sci9c10_se_transfer"
+              ],
+              "criterion": "Connects the sheet and grains moving without contact to sound being a form of energy, and to energy rather than particles being transferred along the wave.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "As sound propagates through air, it reaches the sheet and makes it vibrate. This vibration causes the grains to move.",
+              "followUp": "Grains rest on a sheet and a loudspeaker plays nearby. What happens to the sheet and the grains?",
+              "assessment": {
+                "requiredEvidence": [
+                  "reaches the sheet",
+                  "makes it vibrate",
+                  "grains to move"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_se_grains",
+                    "criterion": "Explains that sound propagating through air makes the sheet vibrate, and this vibration moves the grains, even though the source does not touch the sheet.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This shows that sound is a form of energy. When the source of sound vibrates, it transfers energy to the surrounding medium. As sound waves propagate in a medium, the vibration of particles of the medium and their collisions with other particles result in the transfer of energy.",
+              "followUp": "What does that show about sound, and what does a vibrating source give to its surroundings?",
+              "assessment": {
+                "requiredEvidence": [
+                  "form of energy",
+                  "transfers energy to the surrounding medium",
+                  "collisions with other particles",
+                  "transfer of energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_se_form",
+                    "criterion": "States that sound is a form of energy: the vibrating source transfers energy to the medium, and vibrations and collisions of particles transfer it along.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "In the propagation of a sound wave, it is the energy that is transferred, not the particles of the medium.",
+              "followUp": "When a sound wave moves through air, what is carried from place to place and what is not?",
+              "assessment": {
+                "requiredEvidence": [
+                  "energy that is transferred",
+                  "not the particles of the medium"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_se_transfer",
+                    "criterion": "States that in the propagation of a sound wave it is the energy that is transferred, not the particles of the medium.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_se_particles"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t2c3_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Microphones (Fig. 10.15a) that help us capture sound from various sources convert sound energy to electrical energy. When we speak or sing into a microphone, the sound waves make a thin membrane, called a diaphragm, vibrate.",
+              "assessment": {
+                "requiredEvidence": [
+                  "microphones",
+                  "sound energy to electrical energy",
+                  "diaphragm",
+                  "vibrate"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_se_mic",
+                    "criterion": "States that a microphone converts sound energy to electrical energy: sound waves make a thin diaphragm vibrate and the vibrations become an electrical signal.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c3_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A speaker (Fig. 10.15b) does the opposite; an electrical signal makes a cone or diaphragm attached inside the speaker vibrate, which produces sound.",
+              "assessment": {
+                "requiredEvidence": [
+                  "speaker",
+                  "opposite",
+                  "electrical signal",
+                  "cone or diaphragm",
+                  "produces sound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_se_speaker",
+                    "criterion": "States that a speaker does the opposite: an electrical signal makes a cone or diaphragm vibrate, producing sound.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: when sound travels from a tuning fork to your ear, the energy carried by sound waves reaches your ear, not the air particles near the fork"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_se_particles",
+              "wrong": "Air particles from the tuning fork travel all the way to your ear.",
+              "fix": "In the propagation of a sound wave, it is the energy that is transferred, not the particles of the medium."
+            }
+          ],
+          "verify": [
+            { "page": 192, "quote": "As sound propagates through air, it reaches the sheet and makes it vibrate.", "supports": ["sci9c10_t2c3_kp1"] },
+            { "page": 192, "quote": "This vibration causes the grains to move.", "supports": ["sci9c10_t2c3_kp1"] },
+            { "page": 192, "quote": "This shows that sound is a form of energy.", "supports": ["sci9c10_t2c3_kp2"] },
+            { "page": 192, "quote": "When the source of sound vibrates, it transfers energy to the surrounding medium.", "supports": ["sci9c10_t2c3_kp2"] },
+            { "page": 192, "quote": "As sound waves propagate in a medium, the vibration of particles of the medium and their collisions with other particles result in the transfer of energy.", "supports": ["sci9c10_t2c3_kp2"] },
+            { "page": 192, "quote": "In the propagation of a sound wave, it is the energy that is transferred, not the particles of the medium.", "supports": ["sci9c10_t2c3_kp3"] },
+            { "page": 192, "quote": "Microphones (Fig. 10.15a) that help us capture sound from various sources convert sound energy to electrical energy.", "supports": ["sci9c10_t2c3_kp4"] },
+            { "page": 192, "quote": "When we speak or sing into a microphone, the sound waves make a thin membrane, called a diaphragm, vibrate.", "supports": ["sci9c10_t2c3_kp4"] },
+            { "page": 192, "quote": "A speaker (Fig. 10.15b) does the opposite; an electrical signal makes a", "supports": ["sci9c10_t2c3_kp5"] },
+            { "page": 192, "quote": "cone or diaphragm attached inside the speaker vibrate, which produces sound.", "supports": ["sci9c10_t2c3_kp5"] },
+            { "page": 192, "quote": "When sound travels from a tuning fork to your ear, which of the", "supports": ["sci9c10_t2c3_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t2_c4",
+          "label": "Graphical Representation of a Sound Wave",
+          "headingType": "heading",
+          "sourcePages": [192, 193],
+          "cardText": "As a sound wave propagates, at any given instant of time the density of the medium varies periodically with distance from the source. When this is graphed, the distance is plotted on the x-axis and the density of the medium on the y-axis, with the average density marked as a horizontal dashed line, and the density varies above and below it. In the region of a compression the density increases above the average density and the highest point represents the maximum density; thereafter the density decreases and falls below the average density in the region of rarefaction, with the lowest point representing the minimum density. The highest point is called the crest and the lowest point is called the trough of the wave. Another way to represent a sound wave is to plot the variation of density of the medium with time at a particular location.",
+          "hint": "What do the crest and the trough of the density graph represent?",
+          "probe": "How is a sound wave represented on a graph, and what are the crest and the trough?",
+          "causeChain": "The density of the medium varies periodically with distance -> the graph of density against distance rises above the average at compressions and falls below it at rarefactions -> the highest point is the crest and the lowest point is the trough",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_compression_crest",
+              "linksChecks": [
+                "chk_sci9c10_gr_graph",
+                "chk_sci9c10_gr_crest"
+              ],
+              "criterion": "Connects a compression to the highest point (crest) of the density graph and a rarefaction to the lowest point (trough).",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t2c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "As a sound wave propagates, at any given instant of time the density of the medium varies periodically with distance from the source.",
+              "followUp": "At one instant, how does the density of the medium change as you move away from the source?",
+              "assessment": {
+                "requiredEvidence": [
+                  "density of the medium varies periodically",
+                  "distance from the source"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_gr_vary",
+                    "criterion": "States that at any instant the density of the medium varies periodically with distance from the source.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The graph corresponding to it is shown in Fig. 10.16b where the distance is plotted on the x-axis, while the density of the medium is plotted on the y-axis. The average density is marked as a horizontal dashed line.",
+              "followUp": "On the graph of density against distance, which quantity is on each axis?",
+              "assessment": {
+                "requiredEvidence": [
+                  "distance is plotted on the x-axis",
+                  "density of the medium is plotted on the y-axis",
+                  "average density",
+                  "horizontal dashed line"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_gr_graph",
+                    "criterion": "Describes the graph: distance on the x-axis, density of the medium on the y-axis, with the average density as a horizontal dashed line.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t2c4_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "In the region of a compression, the density of the medium increases above the average density and the highest point represents the maximum density (Fig. 10.16b). Thereafter, the density decreases and eventually falls below the average density in the region of rarefaction and the lowest point represents the minimum density. The highest point is called the crest and the lowest point is called the trough of the wave.",
+              "followUp": "What do the highest and lowest points on the graph correspond to?",
+              "assessment": {
+                "requiredEvidence": [
+                  "compression",
+                  "above the average density",
+                  "maximum density",
+                  "rarefaction",
+                  "minimum density",
+                  "crest",
+                  "trough"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_gr_crest",
+                    "criterion": "States that in a compression the density rises above average to a maximum (the crest) and in a rarefaction it falls below average to a minimum (the trough).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_gr_swap"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t2c4_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Another way to make a graphical representation of a sound wave is to plot the variation of density of the medium with time, at a particular location in the medium.",
+              "assessment": {
+                "requiredEvidence": [
+                  "variation of density",
+                  "with time",
+                  "particular location"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_gr_time",
+                    "criterion": "States that a sound wave can also be represented by plotting the variation of density with time at a particular location.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: draw a graph of a sound wave with density amplitude of 3 units and wavelength of 4 cm",
+            "Pause: label compression and rarefaction on density-distance graphs by marking crests as compressions and troughs as rarefactions"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_gr_swap",
+              "wrong": "The crest of a sound wave graph is a rarefaction.",
+              "fix": "In the region of a compression the density is above average and the highest point, the crest, represents the maximum density; the lowest point, the trough, represents the minimum density."
+            }
+          ],
+          "verify": [
+            { "page": 192, "quote": "As a sound wave propagates, at any given instant of time the density of the medium varies periodically with distance from the source.", "supports": ["sci9c10_t2c4_kp1"] },
+            { "page": 192, "quote": "The graph corresponding to it is shown in Fig. 10.16b where the distance is plotted on the x-axis, while the density of the medium is plotted on the y-axis.", "supports": ["sci9c10_t2c4_kp2"] },
+            { "page": 192, "quote": "The average density is marked as a horizontal dashed line.", "supports": ["sci9c10_t2c4_kp2"] },
+            { "page": 193, "quote": "In the region of a compression, the density of the medium increases above the average density and the highest point represents the maximum density (Fig. 10.16b).", "supports": ["sci9c10_t2c4_kp3"] },
+            { "page": 193, "quote": "Thereafter, the density decreases and eventually falls below the average density in the region of rarefaction and the lowest point represents the minimum density.", "supports": ["sci9c10_t2c4_kp3"] },
+            { "page": 193, "quote": "The highest point is called the crest and the lowest point is called the trough of the wave.", "supports": ["sci9c10_t2c4_kp3"] },
+            { "page": 193, "quote": "Another way to make a graphical representation of a sound wave is to plot the variation of density of the medium with time, at a particular location in the medium.", "supports": ["sci9c10_t2c4_kp4"] },
+            { "page": 205, "quote": "Draw a graph to represent a sound wave for which the density", "supports": ["sci9c10_t2c4_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch10_t3",
+      "title": "Characteristics of a sound wave",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t3_c1",
+          "label": "Wavelength, Frequency and Time Period",
+          "headingType": "heading",
+          "sourcePages": [194, 195],
+          "cardText": "The distance between two consecutive crests or two consecutive troughs is called the wavelength of a wave, usually represented by the Greek letter lambda, with SI unit the metre. The change in the density of the medium at a fixed point from maximum to minimum and then again to maximum makes one complete oscillation. The number of density oscillations at a fixed point per unit time is the frequency of the sound wave, with SI unit per second, also called the hertz (Hz). The time taken for one complete density oscillation at a fixed point is the time period, represented by T, with SI unit second. The time period and frequency are inversely related; a shorter time period corresponds to a higher frequency. Everyday sounds contain a mixture of many frequencies, while nearly single frequency sounds can be made by striking a tuning fork or by oral whistling. Each musical note has a distinct frequency: in the Sa, Re, Ga activity the frequency is lowest for Sa and gradually increases for the other notes.",
+          "hint": "How are wavelength, frequency and time period defined, and how are the last two related?",
+          "probe": "Define wavelength, frequency and time period of a sound wave and state how frequency and time period are related.",
+          "causeChain": "Wavelength is the distance between consecutive crests (or troughs) -> frequency is the number of density oscillations per second at a point, in hertz -> time period is the time for one oscillation -> a shorter time period means a higher frequency",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_period_frequency_inverse",
+              "linksChecks": [
+                "chk_sci9c10_wf_freq",
+                "chk_sci9c10_wf_period"
+              ],
+              "criterion": "Connects the time for one oscillation to the number of oscillations per second: a shorter time period means a higher frequency.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The distance between the two consecutive crests or two consecutive troughs is called the wavelength of a wave.",
+              "followUp": "What is the span from one high point of a wave to the next one called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "distance between",
+                  "consecutive crests",
+                  "consecutive troughs",
+                  "wavelength"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_wavelength",
+                    "criterion": "Defines the wavelength as the distance between two consecutive crests or two consecutive troughs of a wave (SI unit: metre).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_wf_same"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The change in the density of the medium at a fixed point, from maximum to minimum and then again to maximum (or vice versa), makes one complete oscillation. The number of density oscillations at a fixed point per unit time is the frequency of the sound wave.",
+              "followUp": "At a fixed point, what counts as a full cycle of change in density?",
+              "assessment": {
+                "requiredEvidence": [
+                  "one complete oscillation",
+                  "number of density oscillations",
+                  "fixed point per unit time",
+                  "frequency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_freq",
+                    "criterion": "Defines the frequency as the number of density oscillations at a fixed point per unit time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Its SI unit is per second ( or s–1) also called a hertz (symbol Hz).",
+              "assessment": {
+                "requiredEvidence": [
+                  "per second",
+                  "hertz",
+                  "Hz"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_hertz",
+                    "criterion": "States that the SI unit of frequency is per second, also called the hertz (Hz).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The time taken for one complete density oscillation at a fixed point is defined as the time period of the wave. The time period of the wave is represented by the symbol T. Its SI unit is second (s).",
+              "followUp": "How is the duration of one complete oscillation described?",
+              "assessment": {
+                "requiredEvidence": [
+                  "time taken for one complete density oscillation",
+                  "time period",
+                  "symbol T",
+                  "second"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_period",
+                    "criterion": "Defines the time period as the time taken for one complete density oscillation at a fixed point, represented by T, in seconds.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "The time period and frequency are inversely related; a shorter time period corresponds to a higher frequency.",
+              "followUp": "How are the duration of one oscillation and the number of oscillations per second related?",
+              "assessment": {
+                "requiredEvidence": [
+                  "inversely related",
+                  "shorter time period",
+                  "higher frequency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_inverse",
+                    "criterion": "States that time period and frequency are inversely related: a shorter time period corresponds to a higher frequency.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c1_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In this activity, you would have noticed that the frequency is lowest for the ‘Sa’ and gradually increases for the other notes. Each musical note has a distinct frequency, which makes it sound different.",
+              "assessment": {
+                "requiredEvidence": [
+                  "frequency is lowest for the",
+                  "gradually increases for the other notes",
+                  "distinct frequency"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_wf_notes",
+                    "criterion": "States that in the musical-notes activity the frequency is lowest for Sa and increases for the other notes, each note having a distinct frequency.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Example 10.1: 10 density oscillations in 2 seconds give a frequency of 5 Hz and a time period of 0.2 s",
+            "Pause: a thin rubber band vibrates faster than a thick one, so it has a higher frequency and a shorter time period",
+            "Pause: a sound wave of 20 Hz means the piston completes 20 oscillations every second",
+            "Exercise: if 20 compressions pass a point in 4 seconds, the frequency is 5 Hz"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_wf_same",
+              "wrong": "Wavelength and frequency are the same thing measured in different units.",
+              "fix": "Wavelength is a distance between consecutive crests, while frequency is the number of density oscillations per unit time at a fixed point."
+            }
+          ],
+          "verify": [
+            { "page": 194, "quote": "The distance between the two consecutive crests or two consecutive troughs is called the wavelength of a wave.", "supports": ["sci9c10_t3c1_kp1"] },
+            { "page": 194, "quote": "The change in the density of the medium at a fixed point, from maximum to minimum and then again to maximum (or vice versa), makes one complete oscillation.", "supports": ["sci9c10_t3c1_kp2"] },
+            { "page": 194, "quote": "The number of density oscillations at a fixed point per unit time is the frequency of the sound wave.", "supports": ["sci9c10_t3c1_kp2"] },
+            { "page": 194, "quote": "also called a hertz (symbol Hz).", "supports": ["sci9c10_t3c1_kp3"] },
+            { "page": 194, "quote": "The time taken for one complete density oscillation at a fixed point is defined as the time period of the wave.", "supports": ["sci9c10_t3c1_kp4"] },
+            { "page": 194, "quote": "The time period of the wave is represented by the symbol T. Its SI unit is second (s).", "supports": ["sci9c10_t3c1_kp4"] },
+            { "page": 194, "quote": "The time period and frequency are inversely related; a shorter time period corresponds to a higher frequency.", "supports": ["sci9c10_t3c1_kp5"] },
+            { "page": 195, "quote": "In this activity, you would have noticed that the frequency is lowest for the ‘Sa’ and gradually increases for the other notes.", "supports": ["sci9c10_t3c1_kp6"] },
+            { "page": 195, "quote": "Each musical note has a distinct frequency, which makes it sound different.", "supports": ["sci9c10_t3c1_kp6"] },
+            { "page": 195, "quote": "If there are 10 density oscillations in 2 seconds at a given position, then calculate the (i) frequency of sound wave, and (ii) its time", "supports": ["sci9c10_t3c1_kp1"] },
+            { "page": 205, "quote": "If 20 compressions pass a point in 4 seconds, the frequency is", "supports": ["sci9c10_t3c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t3_c2",
+          "label": "Amplitude and Intensity",
+          "headingType": "heading",
+          "sourcePages": [195, 196],
+          "cardText": "The amplitude of a sound wave is the maximum change in the density of air in a compression (or a rarefaction) compared to the average density; a larger change in density corresponds to a larger amplitude. The amplitude and the amount of energy a wave carries are related: a wave with a larger amplitude carries more energy than one with a smaller amplitude, as seen when the plate is struck harder and the grains jump higher. The amount of sound energy passing through a unit area perpendicular to the direction of propagation in a unit time is called the intensity of sound. As the sound wave travels away from the source it spreads over a larger area, and since the energy must be conserved, the same energy is spread over a larger area, so the intensity decreases with distance from the source. Sounds produced with initial larger amplitude carry more energy and can travel a larger distance before the intensity reduces to zero.",
+          "hint": "How are amplitude, energy and intensity of a sound wave related, and why does intensity fall with distance?",
+          "probe": "Define amplitude and intensity and explain why a sound becomes fainter as you move away from the source.",
+          "causeChain": "A larger change in density means a larger amplitude, which carries more energy -> intensity is the sound energy through a unit area per unit time -> the wave spreads over a larger area as it moves away, so the same energy is spread thinner and the intensity falls",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_spread_area_intensity",
+              "linksChecks": [
+                "chk_sci9c10_ai_intensity",
+                "chk_sci9c10_ai_distance"
+              ],
+              "criterion": "Connects the same energy spreading over a larger area at greater distance to the intensity decreasing with distance.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The amplitude of a sound wave is the maximum change in the density of air in a compression (or a rarefaction) compared to the average density. A larger change in density corresponds to a larger amplitude (Fig. 10.20).",
+              "followUp": "How is the largest change in density, measured against the average, described for a sound wave?",
+              "assessment": {
+                "requiredEvidence": [
+                  "maximum change in the density",
+                  "compression (or a rarefaction)",
+                  "average density",
+                  "larger amplitude"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ai_amp",
+                    "criterion": "Defines the amplitude of a sound wave as the maximum change in the density of air in a compression or rarefaction compared to the average density.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_ai_amp_freq"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The amplitude and the amount of energy a wave carries are related. A wave with a larger amplitude carries more energy than the one with a smaller amplitude.",
+              "followUp": "How is the size of this quantity related to the energy a wave carries?",
+              "assessment": {
+                "requiredEvidence": [
+                  "amount of energy a wave carries",
+                  "larger amplitude carries more energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ai_energy",
+                    "criterion": "States that a wave with a larger amplitude carries more energy than one with a smaller amplitude.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The amount of sound energy passing through a unit area perpendicular to the direction of the propagation of sound wave in a unit time is called the intensity of sound.",
+              "followUp": "What do we call the wave's energy crossing a unit area each second, perpendicular to the way it moves?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sound energy",
+                  "unit area perpendicular",
+                  "unit time",
+                  "intensity of sound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ai_intensity",
+                    "criterion": "Defines the intensity of sound as the amount of sound energy passing through a unit area perpendicular to the direction of propagation in a unit time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "As sound wave travels away from its source, it spreads over a larger area (Fig. 10.21). Since the energy must be conserved, the same amount of energy is now spread over a larger area. Hence, the intensity decreases with distance from the source.",
+              "followUp": "As a sound spreads from its source, over what does the energy get shared, and what happens to the energy at each place?",
+              "assessment": {
+                "requiredEvidence": [
+                  "spreads over a larger area",
+                  "energy must be conserved",
+                  "same amount of energy",
+                  "intensity decreases with distance"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ai_distance",
+                    "criterion": "Explains that as the wave travels it spreads over a larger area, so the same energy is spread over more area and the intensity decreases with distance from the source.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c2_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Sounds produced with initial larger amplitude carry more energy and can travel a larger distance before intensity reduces to zero.",
+              "assessment": {
+                "requiredEvidence": [
+                  "larger amplitude",
+                  "carry more energy",
+                  "larger distance",
+                  "intensity reduces to zero"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ai_far",
+                    "criterion": "States that sounds with an initially larger amplitude carry more energy and travel a larger distance before the intensity reduces to zero.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_ai_amp_freq",
+              "wrong": "A larger amplitude means a higher frequency.",
+              "fix": "The amplitude is the maximum change in density compared with the average density; the frequency is the number of oscillations per unit time. A larger amplitude means more energy carried."
+            }
+          ],
+          "verify": [
+            { "page": 195, "quote": "The amplitude of a sound wave is the maximum change in the density of air in a compression (or a rarefaction) compared to the average density.", "supports": ["sci9c10_t3c2_kp1"] },
+            { "page": 195, "quote": "A larger change in density corresponds to a larger amplitude (Fig. 10.20).", "supports": ["sci9c10_t3c2_kp1"] },
+            { "page": 195, "quote": "The amplitude and the amount of energy a wave carries are related.", "supports": ["sci9c10_t3c2_kp2"] },
+            { "page": 195, "quote": "A wave with a larger amplitude carries more energy than the one with a smaller amplitude.", "supports": ["sci9c10_t3c2_kp2"] },
+            { "page": 195, "quote": "The amount of sound energy passing through a unit area perpendicular to the direction of the propagation of sound wave in a unit time is called the intensity of sound.", "supports": ["sci9c10_t3c2_kp3"] },
+            { "page": 196, "quote": "As sound wave travels away from its source, it spreads over a larger area (Fig. 10.21).", "supports": ["sci9c10_t3c2_kp4"] },
+            { "page": 196, "quote": "Since the energy must be conserved, the same amount of energy is now spread over a larger area.", "supports": ["sci9c10_t3c2_kp4"] },
+            { "page": 196, "quote": "Hence, the intensity decreases with distance from the source.", "supports": ["sci9c10_t3c2_kp4"] },
+            { "page": 196, "quote": "Sounds produced with initial larger amplitude carry more energy and can travel a larger distance before intensity reduces to zero.", "supports": ["sci9c10_t3c2_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t3_c3",
+          "label": "Speed of Sound",
+          "headingType": "heading",
+          "sourcePages": [196, 197],
+          "cardText": "The speed of sound describes how fast sound waves propagate through a medium, that is how fast the density disturbances propagate. It can be defined as the distance which a point on a wave, such as a crest or a trough, travels in unit time. In one time period the disturbance covers one wavelength, so speed equals wavelength multiplied by frequency. The speed of sound depends on the medium through which it travels: it travels fastest in solids, slower in liquids and slowest in gases; sound travels about 4 to 5 times faster in water and typically 15 to 20 times faster in solids than in air. In air, the speed also depends on temperature and humidity, and increases as they increase. In most media the speed depends only on the medium and not on the source or frequency: if the frequency of the source changes, the wavelength changes while the speed remains constant. Lightning is seen before thunder is heard because sound travels much slower than light.",
+          "hint": "What does the speed of sound depend on, and how is it related to wavelength and frequency?",
+          "probe": "How is the speed of sound defined and related to wavelength and frequency, and what factors affect it?",
+          "causeChain": "Speed is the distance a crest travels in unit time -> in one time period it travels one wavelength, so speed = wavelength x frequency -> the medium decides the speed (fastest in solids, slowest in gases), and temperature and humidity raise it in air, while changing the frequency changes only the wavelength",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_frequency_wavelength_speed",
+              "linksChecks": [
+                "chk_sci9c10_sp_formula",
+                "chk_sci9c10_sp_constant"
+              ],
+              "criterion": "Connects a change in the source frequency to a change in wavelength while the speed stays constant, since speed = wavelength x frequency.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t3c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The speed of sound can be defined as the distance which a point on a wave, such as a crest (or a trough), travels in unit time.",
+              "followUp": "How is the rate at which a crest moves defined?",
+              "assessment": {
+                "requiredEvidence": [
+                  "distance which a point on a wave",
+                  "crest (or a trough)",
+                  "unit time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_def",
+                    "criterion": "Defines the speed of sound as the distance which a point on a wave, such as a crest or a trough, travels in unit time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "speed = wavelength × frequency",
+              "followUp": "Which two quantities multiply to give the speed of a wave?",
+              "assessment": {
+                "requiredEvidence": [
+                  "speed",
+                  "wavelength",
+                  "frequency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_formula",
+                    "criterion": "States that the speed of sound equals the wavelength multiplied by the frequency.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The speed of sound depends on the medium through which it travels. It travels fastest in solids, slower in liquids, and slowest in gases.",
+              "followUp": "In which states of matter does sound go fastest and slowest?",
+              "assessment": {
+                "requiredEvidence": [
+                  "depends on the medium",
+                  "fastest in solids",
+                  "slower in liquids",
+                  "slowest in gases"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_medium",
+                    "criterion": "States that the speed of sound depends on the medium: fastest in solids, slower in liquids and slowest in gases.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c3_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "For example, sound travels about 4 – 5 times faster in water and typically 15 – 20 times faster in solids than in the air.",
+              "assessment": {
+                "requiredEvidence": [
+                  "4 – 5 times faster in water",
+                  "15 – 20 times faster in solids"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_times",
+                    "criterion": "States that sound travels about 4 to 5 times faster in water and typically 15 to 20 times faster in solids than in air.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c3_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "The speed of sound in air also depends on the temperature and humidity. As we increase the temperature or humidity, the speed of sound increases.",
+              "followUp": "How do warm or damp conditions affect sound in air?",
+              "assessment": {
+                "requiredEvidence": [
+                  "temperature and humidity",
+                  "speed of sound increases"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_temp",
+                    "criterion": "States that the speed of sound in air also depends on temperature and humidity, and increases as either increases.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t3c3_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "In most media, such as air the speed of sound depends only on the medium and not the source or the frequency. If the frequency of the source changes, the wavelength of the sound wave in the medium changes, while the speed remains constant.",
+              "followUp": "In air, if the pitch of the source is changed, does the speed change? What does the speed depend on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "depends only on the medium",
+                  "not the source or the frequency",
+                  "wavelength of the sound wave",
+                  "speed remains constant"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_sp_constant",
+                    "criterion": "States that in most media the speed depends only on the medium, not the source or frequency: if the frequency changes, the wavelength changes while the speed stays constant.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_sp_freq"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Example 10.2: at a speed of 344 m s-1 the wavelengths for 20 Hz and 20 kHz are 17.2 m and 1.72 cm",
+            "Example 10.3: lightning is seen before thunder is heard because sound travels much slower than light, so a 5 s delay at 340 m s-1 puts the strike about 1.7 km away",
+            "Exercise: a source producing a 3.44 m wave travelling at 344 m s-1 has a time period of 0.01 s",
+            "Exercise: sound takes longer to cover 1720 m at 0 °C than at 22 °C because the speed is lower at the lower temperature",
+            "Pause: the ratios of the speeds of sound in water to air and in steel to water are found by dividing the values in the table"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_sp_freq",
+              "wrong": "Sound of higher frequency travels faster in the same medium.",
+              "fix": "In most media, such as air, the speed of sound depends only on the medium and not the source or the frequency; if the frequency changes, the wavelength changes while the speed remains constant."
+            }
+          ],
+          "verify": [
+            { "page": 196, "quote": "The speed of sound describes how fast sound waves propagate through a medium.", "supports": ["sci9c10_t3c3_kp1"] },
+            { "page": 196, "quote": "The speed of sound can be defined as the distance which a point on a wave, such as a crest (or a trough), travels in unit time.", "supports": ["sci9c10_t3c3_kp1"] },
+            { "page": 196, "quote": "speed = wavelength × frequency", "supports": ["sci9c10_t3c3_kp2"] },
+            { "page": 196, "quote": "The speed of sound depends on the medium through which it travels. It travels fastest in solids, slower in liquids, and slowest in gases.", "supports": ["sci9c10_t3c3_kp3"] },
+            { "page": 196, "quote": "For example, sound travels about 4 – 5 times faster in water and typically 15 – 20 times faster in solids than in the air.", "supports": ["sci9c10_t3c3_kp4"] },
+            { "page": 196, "quote": "The speed of sound in air also depends on the temperature and humidity.", "supports": ["sci9c10_t3c3_kp5"] },
+            { "page": 196, "quote": "As we increase the temperature or humidity, the speed of sound increases.", "supports": ["sci9c10_t3c3_kp5"] },
+            { "page": 196, "quote": "In most media, such as air the speed of sound depends only on the medium and not the source or the frequency.", "supports": ["sci9c10_t3c3_kp6"] },
+            { "page": 196, "quote": "If the frequency of the source changes, the wavelength of the sound wave in the medium changes, while the speed remains constant.", "supports": ["sci9c10_t3c3_kp6"] },
+            { "page": 197, "quote": "During a thunderstorm, lightning is seen before thunder is heard because sound travels much slower than light.", "supports": ["sci9c10_t3c3_kp5"] },
+            { "page": 206, "quote": "The speed of sound in air is about 331 m s–1 at 0 ºC and nearly", "supports": ["sci9c10_t3c3_kp5"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch10_t4",
+      "title": "Human perception of sound",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t4_c1",
+          "label": "Pitch and the Audible Range",
+          "headingType": "heading",
+          "sourcePages": [198, 199],
+          "cardText": "The physical properties of sound, such as time period, wavelength, frequency, amplitude and speed, are well-defined and can be measured, but how we experience sound is subjective, described by terms such as loudness and pitch which do not have simple relations with the physical properties. How frequency is perceived by humans is called pitch. Sounds perceived to be shrill, such as a whistle or a siren, have high pitch, while deep sounds like thunder or an aircraft rumble have low pitch. In general high pitch sounds have higher frequency and low pitch sounds lower frequency, although the exact relation is complicated. The audible range of human hearing is from 20 Hz to 20,000 Hz (20 kHz), varying from person to person and decreasing with age. Sound waves with frequency below 20 Hz are called infrasonic waves, and those above 20 kHz are called ultrasonic waves. Humans cannot hear infrasound or ultrasound but some animals can: dogs, cats, bats and dolphins can detect ultrasound, while elephants can detect infrasound.",
+          "hint": "What is pitch, and what range of frequencies can humans hear?",
+          "probe": "Define pitch and the audible range, and say what infrasonic and ultrasonic waves are.",
+          "causeChain": "Pitch is how frequency is perceived -> shrill sounds have higher frequency and deep sounds lower -> humans hear 20 Hz to 20 kHz; below that is infrasound and above it is ultrasound, which some animals can detect",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_frequency_pitch",
+              "linksChecks": [
+                "chk_sci9c10_pi_pitch",
+                "chk_sci9c10_pi_range"
+              ],
+              "criterion": "Connects higher frequency to higher perceived pitch, and frequencies outside 20 Hz to 20 kHz to sounds humans cannot hear.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t4c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The physical properties of sound, such as time period, wavelength, frequency, amplitude and speed are well-defined and can be measured. However, how we experience sound is subjective.",
+              "assessment": {
+                "requiredEvidence": [
+                  "physical properties of sound",
+                  "well-defined and can be measured",
+                  "subjective"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pi_subjective",
+                    "criterion": "States that physical properties of sound such as frequency and amplitude can be measured, but how we experience sound is subjective.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "How frequency is perceived by humans is called pitch. Sounds perceived to be shrill, such as a whistle or a siren are said to have high pitch, while deep sounds like thunder or an aircraft rumble have low pitch.",
+              "followUp": "How is the way humans sense a vibration rate described, and which sounds have higher and lower values?",
+              "assessment": {
+                "requiredEvidence": [
+                  "frequency is perceived by humans",
+                  "pitch",
+                  "shrill",
+                  "whistle or a siren",
+                  "high pitch",
+                  "low pitch"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pi_pitch",
+                    "criterion": "Defines pitch as how frequency is perceived by humans: shrill sounds have high pitch and deep sounds low pitch.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_pi_loud"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t4c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In general, high pitch sounds have higher frequency and low pitch sounds have lower frequency, although the exact mathematical relation is complicated.",
+              "assessment": {
+                "requiredEvidence": [
+                  "high pitch sounds have higher frequency",
+                  "low pitch sounds have lower frequency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pi_relation",
+                    "criterion": "States that, in general, high pitch sounds have higher frequency and low pitch sounds lower frequency.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The audible range or the human hearing range is from 20 Hz to 20,000 Hz (20 kHz). However, this range varies from person to person and decreases with age.",
+              "followUp": "Between what limits can an average person hear, and how does this change with age?",
+              "assessment": {
+                "requiredEvidence": [
+                  "audible range",
+                  "20 Hz to 20,000 Hz",
+                  "varies from person to person",
+                  "decreases with age"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pi_range",
+                    "criterion": "States that the audible range of humans is 20 Hz to 20,000 Hz (20 kHz), varying between persons and decreasing with age.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "Sound waves with frequency below 20 Hz are called infrasonic waves, while sound waves with frequency above 20 kHz are called ultrasonic waves. Humans cannot hear infrasound or ultrasound but some animals can. Dogs, cats, bats, dolphins can detect ultrasound, while elephants can detect infrasound.",
+              "followUp": "What names are given to vibrations below and above the limits of human hearing?",
+              "assessment": {
+                "requiredEvidence": [
+                  "below 20 Hz",
+                  "infrasonic waves",
+                  "above 20 kHz",
+                  "ultrasonic waves",
+                  "elephants can detect infrasound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_pi_infra_ultra",
+                    "criterion": "Defines infrasonic waves (below 20 Hz) and ultrasonic waves (above 20 kHz), which humans cannot hear but some animals can, e.g. dogs and bats detect ultrasound and elephants infrasound.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Threads: during adolescence boys' vocal cords lengthen and thicken and vibrate less frequently, deepening the voice"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_pi_loud",
+              "wrong": "A high-pitched sound is the same as a loud sound.",
+              "fix": "Pitch is how frequency is perceived (shrill sounds have high pitch); loudness is how the amplitude of a sound wave is perceived."
+            }
+          ],
+          "verify": [
+            { "page": 198, "quote": "The physical properties of sound, such as time period, wavelength, frequency, amplitude and speed are well-defined and can be measured.", "supports": ["sci9c10_t4c1_kp1"] },
+            { "page": 198, "quote": "However, how we experience sound is subjective.", "supports": ["sci9c10_t4c1_kp1"] },
+            { "page": 198, "quote": "How frequency is perceived by humans is called pitch.", "supports": ["sci9c10_t4c1_kp2"] },
+            { "page": 198, "quote": "Sounds perceived to be shrill, such as a whistle or a siren are said to have high pitch, while deep sounds like thunder or an aircraft rumble have low pitch.", "supports": ["sci9c10_t4c1_kp2"] },
+            { "page": 198, "quote": "In general, high pitch sounds have higher frequency and low pitch sounds have lower frequency, although the exact mathematical relation is complicated.", "supports": ["sci9c10_t4c1_kp3"] },
+            { "page": 199, "quote": "The audible range or the human hearing range is from 20 Hz to 20,000 Hz (20 kHz).", "supports": ["sci9c10_t4c1_kp4"] },
+            { "page": 199, "quote": "However, this range varies from person to person and decreases with age.", "supports": ["sci9c10_t4c1_kp4"] },
+            { "page": 199, "quote": "Sound waves with frequency below 20 Hz are called infrasonic waves, while sound waves with frequency above", "supports": ["sci9c10_t4c1_kp5"] },
+            { "page": 199, "quote": "20 kHz are called ultrasonic waves.", "supports": ["sci9c10_t4c1_kp5"] },
+            { "page": 199, "quote": "Humans cannot hear infrasound or ultrasound but some animals can.", "supports": ["sci9c10_t4c1_kp5"] },
+            { "page": 199, "quote": "Dogs, cats, bats, dolphins can detect ultrasound, while elephants can detect infrasound.", "supports": ["sci9c10_t4c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t4_c2",
+          "label": "Loudness, Noise and Hearing",
+          "headingType": "heading",
+          "sourcePages": [199],
+          "cardText": "Humans perceive the amplitude of a sound wave as loudness. Sounds with larger amplitude are heard louder, while those with smaller amplitude sound softer, and the loudness decreases as we move farther from the source. In everyday language loudness and intensity are used interchangeably, but intensity is a measurable quantity whereas loudness depends on the listener's hearing ability. Loudness is commonly measured in decibels (dB): very soft sounds like rustling leaves are a few dB, normal conversation is about 60 dB, and very loud sounds such as firecrackers can exceed 100 dB, and even a small increase in the dB level means a large increase in sound intensity. Unwanted or harmful sound is called noise, and noise pollution is a severe problem; exposure above recommended limits, especially for long durations, can affect health, sleep and hearing, and prolonged exposure to loud sound can lead to hearing loss, which can be tested using audiograms. People with hearing loss may use hearing aids, which consist of a microphone, amplifier and speaker.",
+          "hint": "What is loudness, how is it measured, and what is noise?",
+          "probe": "Define loudness and noise, and explain why loudness and intensity are not the same.",
+          "causeChain": "Loudness is how humans perceive amplitude, measured in decibels -> intensity is measurable but loudness depends on the listener -> unwanted or harmful sound is noise, and long exposure to loud sound can cause hearing loss",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_amplitude_loudness",
+              "linksChecks": [
+                "chk_sci9c10_ld_loud",
+                "chk_sci9c10_ld_diff"
+              ],
+              "criterion": "Connects larger amplitude to a louder perceived sound, and loudness decreasing with distance from the source.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Humans perceive the amplitude of a sound wave as loudness. Sounds with larger amplitude are heard louder, while those with smaller amplitude sound softer. The loudness decreases as we move farther away from the source.",
+              "followUp": "What is the human sensation of a wave's maximum change called, and which sounds appear louder?",
+              "assessment": {
+                "requiredEvidence": [
+                  "perceive the amplitude",
+                  "loudness",
+                  "larger amplitude are heard louder",
+                  "smaller amplitude sound softer"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ld_loud",
+                    "criterion": "States that humans perceive the amplitude of a sound wave as loudness: larger amplitude sounds louder, smaller amplitude softer, and loudness decreases with distance from the source.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In everyday language, loudness and intensity are often used interchangeably. However, intensity is a measurable quantity, whereas loudness depends on the listener’s hearing ability.",
+              "followUp": "Why are the energy per unit area and the sensation of volume not the same thing?",
+              "assessment": {
+                "requiredEvidence": [
+                  "used interchangeably",
+                  "intensity is a measurable quantity",
+                  "loudness depends on the listener's hearing ability"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ld_diff",
+                    "criterion": "States that intensity is a measurable quantity whereas loudness depends on the listener's hearing ability, though they are often used interchangeably.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_ld_same"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t4c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Sound loudness is commonly measured in decibels (dB). Even a small increase in the dB level means a large increase in the sound intensity.",
+              "assessment": {
+                "requiredEvidence": [
+                  "decibels",
+                  "dB",
+                  "small increase in the dB level",
+                  "large increase in the sound intensity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ld_db",
+                    "criterion": "States that loudness is commonly measured in decibels (dB), and even a small increase in the dB level means a large increase in intensity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Unwanted or harmful sound is called noise. Noise pollution is a severe problem. Exposure to sound levels above recommended limits, especially for long durations can affect health, sleep, and hearing.",
+              "followUp": "What do we call sound that is unwanted or harmful, and what can long exposure do?",
+              "assessment": {
+                "requiredEvidence": [
+                  "unwanted or harmful sound",
+                  "noise",
+                  "noise pollution",
+                  "health, sleep, and hearing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ld_noise",
+                    "criterion": "Defines noise as unwanted or harmful sound; noise pollution is a severe problem and exposure above recommended limits can affect health, sleep and hearing.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c2_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Prolonged exposure to loud sound can lead to hearing loss, which can be tested using audiograms. People with hearing loss may use hearing aids, which consist of a microphone, amplifier, and speaker to help the wearer hear and communicate better.",
+              "assessment": {
+                "requiredEvidence": [
+                  "hearing loss",
+                  "audiograms",
+                  "hearing aids",
+                  "microphone, amplifier, and speaker"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ld_aid",
+                    "criterion": "States that prolonged loud sound can cause hearing loss, tested with audiograms, and hearing aids consist of a microphone, amplifier and speaker.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_ld_same",
+              "wrong": "Loudness and intensity mean exactly the same thing.",
+              "fix": "Intensity is a measurable quantity, whereas loudness depends on the listener's hearing ability."
+            }
+          ],
+          "verify": [
+            { "page": 199, "quote": "Humans perceive the amplitude of a sound wave as loudness.", "supports": ["sci9c10_t4c2_kp1"] },
+            { "page": 199, "quote": "Sounds with larger amplitude are heard louder, while those with smaller amplitude sound softer.", "supports": ["sci9c10_t4c2_kp1"] },
+            { "page": 199, "quote": "The loudness decreases as we move farther away from the source.", "supports": ["sci9c10_t4c2_kp1"] },
+            { "page": 199, "quote": "In everyday language, loudness and intensity are often used interchangeably.", "supports": ["sci9c10_t4c2_kp2"] },
+            { "page": 199, "quote": "However, intensity is a measurable quantity, whereas loudness depends on the listener’s hearing ability.", "supports": ["sci9c10_t4c2_kp2"] },
+            { "page": 199, "quote": "Sound loudness is commonly measured in decibels (dB).", "supports": ["sci9c10_t4c2_kp3"] },
+            { "page": 199, "quote": "Even a small increase in the dB level means a large increase in the sound intensity.", "supports": ["sci9c10_t4c2_kp3"] },
+            { "page": 199, "quote": "Unwanted or harmful sound is called noise.", "supports": ["sci9c10_t4c2_kp4"] },
+            { "page": 199, "quote": "Noise pollution is a severe problem.", "supports": ["sci9c10_t4c2_kp4"] },
+            { "page": 199, "quote": "Exposure to sound levels above recommended limits, especially for long durations can affect health, sleep, and hearing.", "supports": ["sci9c10_t4c2_kp4"] },
+            { "page": 199, "quote": "Prolonged exposure to loud sound can lead to hearing loss, which can be tested using audiograms.", "supports": ["sci9c10_t4c2_kp5"] },
+            { "page": 199, "quote": "People with hearing loss may use hearing aids, which consist of a microphone, amplifier, and speaker to help the wearer hear and communicate better.", "supports": ["sci9c10_t4c2_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t4_c3",
+          "label": "Tone, Musical Note, Timbre and Octave",
+          "headingType": "heading",
+          "sourcePages": [200],
+          "cardText": "A tone is a sound of a single frequency, like that produced by a tuning fork or by oral whistling. A musical note, like the sound produced by plucking a tanpura string or singing, is a combination of a lowest frequency called the fundamental and higher frequencies called overtones, which together create a rich and pleasant sound. Even when different instruments such as a flute, ektara or tabla play the same note at the same loudness, each sounds unique; this quality is called timbre, and it comes from the shape, material and construction of the instrument, which determine the pattern and intensity of the overtones. An octave is the interval between two notes where one has double the frequency of the other, for example 200 Hz and 400 Hz, measured between their fundamental frequencies.",
+          "hint": "How does a musical note differ from a tone, and what gives each instrument its timbre?",
+          "probe": "Define tone, musical note, timbre and octave.",
+          "causeChain": "A tone has a single frequency -> a musical note combines a fundamental with higher frequency overtones -> the pattern and intensity of the overtones, set by the instrument's shape, material and construction, give each instrument its timbre",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_overtones_timbre",
+              "linksChecks": [
+                "chk_sci9c10_tt_note",
+                "chk_sci9c10_tt_timbre"
+              ],
+              "criterion": "Connects the pattern and intensity of overtones, set by the shape, material and construction of an instrument, to its timbre.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t4c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "A tone is a sound of a single frequency like that produced by a tuning fork or by oral whistling (Fig. 10.25a).",
+              "followUp": "What do we call a sound with just one vibration rate, and what is an example?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sound of a single frequency",
+                  "tuning fork",
+                  "oral whistling"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_tt_tone",
+                    "criterion": "Defines a tone as a sound of a single frequency, like that produced by a tuning fork or by oral whistling.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A musical note like the sound produced by plucking a tanpura string or singing (Fig. 10.25b) is a combination of a lowest frequency called the fundamental and higher frequencies called overtones, which together create a rich and pleasant sound.",
+              "followUp": "What is a pleasant combination of a lowest vibration rate along with higher multiples called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "combination of a lowest frequency",
+                  "fundamental",
+                  "higher frequencies called overtones",
+                  "rich and pleasant sound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_tt_note",
+                    "criterion": "Defines a musical note as a combination of a lowest frequency called the fundamental and higher frequencies called overtones, which together create a rich and pleasant sound.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_tt_note"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t4c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Even when different instruments like a flute, ektara, or tabla play the same note at the same loudness each sounds unique. This quality is called timbre, and comes from their shape, material and construction, which determine the pattern and intensity of the overtones.",
+              "followUp": "Different instruments can play the same note equally loudly yet sound distinct. What quality of sound explains this?",
+              "assessment": {
+                "requiredEvidence": [
+                  "same note at the same loudness",
+                  "each sounds unique",
+                  "timbre",
+                  "shape, material and construction",
+                  "pattern and intensity of the overtones"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_tt_timbre",
+                    "criterion": "Explains that different instruments playing the same note at the same loudness each sound unique; this quality is timbre, which comes from the pattern and intensity of overtones set by shape, material and construction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t4c3_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "An octave is the interval between two notes where one has double the frequency of the other (for example, 200 Hz and 400 Hz), measured between their fundamental frequencies.",
+              "assessment": {
+                "requiredEvidence": [
+                  "octave",
+                  "interval between two notes",
+                  "double the frequency",
+                  "200 Hz and 400 Hz"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_tt_octave",
+                    "criterion": "Defines an octave as the interval between two notes where one has double the frequency of the other (e.g. 200 Hz and 400 Hz), measured between their fundamental frequencies.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_tt_note",
+              "wrong": "A musical note is a tone of a single frequency.",
+              "fix": "A tone is a sound of a single frequency, whereas a musical note is a combination of a fundamental and higher-frequency overtones."
+            }
+          ],
+          "verify": [
+            { "page": 200, "quote": "A tone is a sound of a single frequency like that produced by a tuning fork or by oral whistling (Fig. 10.25a).", "supports": ["sci9c10_t4c3_kp1"] },
+            { "page": 200, "quote": "A musical note like the sound produced by plucking a tanpura string or singing (Fig. 10.25b) is a combination of a lowest frequency called the fundamental and higher frequencies called overtones, which together create a rich and pleasant sound.", "supports": ["sci9c10_t4c3_kp2"] },
+            { "page": 200, "quote": "Even when different instruments like a flute, ektara, or tabla play the same note at the same loudness each sounds unique.", "supports": ["sci9c10_t4c3_kp3"] },
+            { "page": 200, "quote": "This quality is called timbre, and comes from their shape, material and construction, which determine the pattern and intensity of the overtones.", "supports": ["sci9c10_t4c3_kp3"] },
+            { "page": 200, "quote": "An octave is the interval between two notes where one has double the frequency of the other (for example, 200 Hz and 400 Hz), measured between their fundamental frequencies.", "supports": ["sci9c10_t4c3_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch10_t5",
+      "title": "Reflection of sound",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t5_c1",
+          "label": "Reflection of Sound and Echo",
+          "headingType": "heading",
+          "sourcePages": [200, 201],
+          "cardText": "Sound waves can bounce off obstacles like solids or liquids, which is known as the reflection of sound, and sound follows the same laws of reflection as light: the directions in which the sound is incident and reflected make equal angles with the normal to the reflecting surface at the point of incidence, with all three in the same plane. One of the most common examples is an echo: if we shout near a mountain, a cliff or in a long corridor we may hear our voice again after some time because the sound reflects off the hard surface of a distant object and comes back to us. If the time gap between two sounds reaching us is at least 0.1 s we hear them as separate sounds; if it is less than 0.1 s we cannot clearly distinguish them, which is why echoes are not heard in a small room. Taking the speed of sound as 340 m per second, sound travels 34 m in 0.1 s, and since this covers the distance to the surface and back, the minimum distance for an echo is half of this, or 17 m. Echoes are stronger from hard, smooth surfaces; soft surfaces like curtains absorb sound and rough surfaces scatter it, so echoes are not heard clearly.",
+          "hint": "Why is the minimum distance for hearing an echo 17 m?",
+          "probe": "What is an echo, and why is a minimum distance needed to hear one?",
+          "causeChain": "Sound reflects from a hard surface and returns -> we hear it as an echo only if the gap is at least 0.1 s -> in 0.1 s sound travels 34 m there and back, so the surface must be at least 17 m away",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_gap_distance",
+              "linksChecks": [
+                "chk_sci9c10_ec_gap",
+                "chk_sci9c10_ec_distance"
+              ],
+              "criterion": "Connects the 0.1 s minimum time gap to sound covering 34 m there and back, giving a minimum reflecting distance of 17 m.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t5c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Sound waves can bounce off obstacles like solids or liquids and this is known as the reflection of sound. Sound follow the same laws of reflection as those of light which you have learned earlier.",
+              "followUp": "What happens when sound waves meet a hard surface, and which rules do they follow?",
+              "assessment": {
+                "requiredEvidence": [
+                  "bounce off obstacles",
+                  "reflection of sound",
+                  "same laws of reflection as those of light"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_reflect",
+                    "criterion": "States that sound waves can bounce off obstacles like solids or liquids (reflection of sound) and follow the same laws of reflection as light.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The directions in which the sound is incident and is thereafter reflected make equal angles with the normal to the reflecting surface at the point of incidence, with all three lying in the same plane.",
+              "assessment": {
+                "requiredEvidence": [
+                  "equal angles with the normal",
+                  "reflecting surface",
+                  "all three lying in the same plane"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_law",
+                    "criterion": "States that the incident and reflected directions of sound make equal angles with the normal at the point of incidence, all three lying in the same plane.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "If we shout near a mountain, a cliff, or in a long corridor we may hear our voice again after some time. This is known as an echo. The sound reflects off the hard surface of a distant object and comes back to us.",
+              "followUp": "If you shout near a cliff and hear your voice later, what is this repeated sound?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mountain, a cliff, or in a long corridor",
+                  "hear our voice again",
+                  "echo",
+                  "hard surface of a distant object"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_echo",
+                    "criterion": "Defines an echo: shouting near a mountain, cliff or long corridor, the sound reflects off the hard surface of a distant object and we hear our voice again.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "If the time gap between two sounds reaching us is at least 0.1 s, we can hear them as separate sounds. If it is less than 0.1 s, then we cannot clearly distinguish between them.",
+              "followUp": "What smallest time gap lets the ear tell two sounds apart?",
+              "assessment": {
+                "requiredEvidence": [
+                  "at least 0.1 s",
+                  "separate sounds",
+                  "less than 0.1 s",
+                  "cannot clearly distinguish"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_gap",
+                    "criterion": "States that two sounds are heard as separate if the time gap is at least 0.1 s, and cannot be clearly distinguished if it is less.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "Note that 34 m would be the distance travelled by sound from the source to the reflecting surface and back. Hence, the minimum echo distance is half of this or 17 m.",
+              "followUp": "Sound travels to the obstacle and back. How does the one-way distance compare with the total distance covered?",
+              "assessment": {
+                "requiredEvidence": [
+                  "34 m",
+                  "source to the reflecting surface and back",
+                  "half",
+                  "17 m"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_distance",
+                    "criterion": "States that sound travels 34 m in 0.1 s, to the surface and back, so the minimum echo distance is half of this, 17 m.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_ec_34"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t5c1_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Echoes are stronger from hard and smooth surfaces that reflect sound. Soft surfaces like curtains tend to absorb sound, while rough surfaces scatter it in different directions, and in such cases it is not possible to hear the echoes clearly.",
+              "assessment": {
+                "requiredEvidence": [
+                  "hard and smooth surfaces",
+                  "soft surfaces like curtains",
+                  "absorb sound",
+                  "rough surfaces scatter it"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ec_surfaces",
+                    "criterion": "States that echoes are stronger from hard, smooth surfaces, while soft surfaces absorb sound and rough surfaces scatter it, so echoes are not heard clearly.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Example 10.5: a clap in an empty corridor with an echo after 0.5 s at 340 m s-1 puts the wall at half the distance sound travels",
+            "Exercise: an experiment needing echoes at least 0.2 s after emission requires a reflecting surface at a minimum distance of half the speed times 0.2 s",
+            "Exercise: a reflected sound that reaches the ear 0.05 s after its production produces reverberation, not an echo"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_ec_34",
+              "wrong": "The reflecting surface must be 34 m away for an echo.",
+              "fix": "34 m is the distance travelled by sound from the source to the reflecting surface and back, so the minimum echo distance is half of this, or 17 m."
+            }
+          ],
+          "verify": [
+            { "page": 200, "quote": "Sound waves can bounce off obstacles like solids or liquids and this is known as the reflection of sound.", "supports": ["sci9c10_t5c1_kp1"] },
+            { "page": 200, "quote": "Sound follow the same laws of reflection as those of light which you have learned earlier.", "supports": ["sci9c10_t5c1_kp1"] },
+            { "page": 200, "quote": "The directions in which the sound is incident and is thereafter reflected make equal angles with the", "supports": ["sci9c10_t5c1_kp2"] },
+            { "page": 200, "quote": "normal to the reflecting surface at the point of incidence, with all three lying in the same plane.", "supports": ["sci9c10_t5c1_kp2"] },
+            { "page": 201, "quote": "If we shout near a mountain, a cliff, or in a long corridor we may hear our voice again after some time. This is known as an echo.", "supports": ["sci9c10_t5c1_kp3"] },
+            { "page": 201, "quote": "The sound reflects off the hard surface of a distant object and comes back to us.", "supports": ["sci9c10_t5c1_kp3"] },
+            { "page": 201, "quote": "If the time gap between two sounds reaching us is at least 0.1 s, we can hear them as separate sounds.", "supports": ["sci9c10_t5c1_kp4"] },
+            { "page": 201, "quote": "If it is less than 0.1 s, then we cannot clearly distinguish between them.", "supports": ["sci9c10_t5c1_kp4"] },
+            { "page": 201, "quote": "Note that 34 m would be the distance travelled by sound from the source to the reflecting surface and back.", "supports": ["sci9c10_t5c1_kp5"] },
+            { "page": 201, "quote": "Hence, the minimum echo distance is half of this or 17 m.", "supports": ["sci9c10_t5c1_kp5"] },
+            { "page": 201, "quote": "Echoes are stronger from hard and smooth surfaces that reflect sound.", "supports": ["sci9c10_t5c1_kp6"] },
+            { "page": 201, "quote": "Soft surfaces like curtains tend to absorb sound, while rough surfaces scatter it in different directions, and in such cases it is not possible to hear the echoes clearly.", "supports": ["sci9c10_t5c1_kp6"] },
+            { "page": 205, "quote": "In a room, the reflected sound reaches the ear 0.05 s after its production.", "supports": ["sci9c10_t5c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t5_c2",
+          "label": "Reverberation",
+          "headingType": "heading",
+          "sourcePages": [201, 202],
+          "cardText": "Sometimes emitted sound undergoes multiple reflections from the walls in a large hall or auditorium. Multiple reflections make sound persist after the source stops emitting sound, a phenomenon called reverberation. It occurs when sound reflections from surfaces arrive with a time difference less than 0.05 s. Modern auditoriums and large concert halls are architecturally designed to have desirable reverberations, which allow the audience everywhere to hear speech, music and other sounds clearly without distortions. Sound absorbing panels, upholstered chairs, curtains and other soft, porous surfaces reduce reverberations from unwanted sources, which otherwise could lead to a garbled sound. The Whispering Gallery of the Gol Gumbaz in Bijapur has a design that allows even a faint whisper to be heard multiple times across the large dome.",
+          "hint": "What is reverberation, and how do halls reduce unwanted reverberation?",
+          "probe": "Define reverberation and say how it is controlled in auditoriums.",
+          "causeChain": "Multiple reflections from walls make sound persist after the source stops -> this is reverberation, when reflections arrive less than 0.05 s apart -> auditoriums are designed for desirable reverberation and use soft, porous, absorbing surfaces to reduce unwanted reverberation",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_reflections_persist",
+              "linksChecks": [
+                "chk_sci9c10_rv_def",
+                "chk_sci9c10_rv_control"
+              ],
+              "criterion": "Connects multiple reflections arriving close together to sound persisting after the source stops, and soft absorbing surfaces to reducing unwanted reverberation.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t5c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Sometimes the emitted sound can undergo multiple reflections from the walls in a large hall or auditorium. Multiple reflections make sound persist after the source stops emitting sound, a phenomenon called reverberation.",
+              "followUp": "What happens to sound in a big hall when it repeatedly bounces off walls?",
+              "assessment": {
+                "requiredEvidence": [
+                  "multiple reflections",
+                  "walls in a large hall or auditorium",
+                  "persist after the source stops",
+                  "reverberation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_rv_def",
+                    "criterion": "Defines reverberation as the persistence of sound after the source stops emitting, caused by multiple reflections from the walls of a large hall or auditorium.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_rv_echo"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t5c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This occurs when sound reflections from surfaces arrive with a time difference less than 0.05 s.",
+              "followUp": "How close in time must reflections arrive for this to occur?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sound reflections from surfaces",
+                  "time difference less than 0.05 s"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_rv_time",
+                    "criterion": "States that reverberation occurs when sound reflections from surfaces arrive with a time difference less than 0.05 s.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Modern auditoriums and large concert halls are architecturally designed to have desirable reverberations, which allow the audience everywhere to hear speech, music, and other sounds clearly without any distortions.",
+              "assessment": {
+                "requiredEvidence": [
+                  "desirable reverberations",
+                  "audience everywhere",
+                  "hear speech, music, and other sounds clearly"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_rv_design",
+                    "criterion": "States that auditoriums and concert halls are designed to have desirable reverberations so the audience everywhere hears sounds clearly without distortion.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t5c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Sound absorbing panels, upholstered chairs, curtains and other soft, porous surfaces reduce reverberations by unwanted sources otherwise it could lead to a garbled sound.",
+              "followUp": "Which soft materials help to reduce it in a hall?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sound absorbing panels",
+                  "upholstered chairs",
+                  "curtains",
+                  "soft, porous surfaces",
+                  "garbled sound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_rv_control",
+                    "criterion": "States that sound absorbing panels, upholstered chairs, curtains and other soft, porous surfaces reduce unwanted reverberation, which could otherwise lead to a garbled sound.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_rv_echo",
+              "wrong": "Reverberation is the same as an echo.",
+              "fix": "Reverberation occurs when reflections arrive with a time difference less than 0.05 s so the sound persists, whereas an echo is heard as a separate repeat after at least 0.1 s."
+            }
+          ],
+          "verify": [
+            { "page": 201, "quote": "Sometimes the emitted sound can undergo multiple reflections from the walls in a large hall or auditorium.", "supports": ["sci9c10_t5c2_kp1"] },
+            { "page": 201, "quote": "Multiple reflections make sound persist after the source stops emitting sound, a phenomenon called reverberation.", "supports": ["sci9c10_t5c2_kp1"] },
+            { "page": 201, "quote": "This occurs when sound reflections from surfaces arrive with a time difference less than 0.05 s.", "supports": ["sci9c10_t5c2_kp2"] },
+            { "page": 201, "quote": "Modern auditoriums and large concert halls are architecturally designed to have desirable reverberations, which allow the audience everywhere to hear speech, music, and other sounds clearly without any distortions.", "supports": ["sci9c10_t5c2_kp3"] },
+            { "page": 201, "quote": "Sound absorbing panels, upholstered chairs, curtains and other soft, porous surfaces reduce reverberations by unwanted sources otherwise it could lead to a garbled sound.", "supports": ["sci9c10_t5c2_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch10_t6",
+      "title": "Ultrasonic and infrasonic waves and their applications",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch10_t6_c1",
+          "label": "Applications of Ultrasonic and Infrasonic Waves",
+          "headingType": "heading",
+          "sourcePages": [202],
+          "cardText": "Sound waves with frequencies outside the human audible range have important applications in science, medicine and technology. Infrasonic waves (less than 20 Hz) are used for detecting natural events such as earthquakes and volcanic eruptions, and for detecting severe storms since such waves travel long distances through air and the Earth. Ultrasonic waves (more than 20 kHz) are used for imaging internal organs without surgery, known as ultrasonography; for breaking kidney stones into smaller pieces which can then be passed out of the body; for ultrasonic welding and for cleaning delicate machine parts in industries; for detecting defects inside metal blocks during construction and industrial testing; and for locating objects when sound waves get reflected off them.",
+          "hint": "Name some uses of ultrasonic and infrasonic waves.",
+          "probe": "Give applications of infrasonic and ultrasonic waves.",
+          "causeChain": "Waves outside the audible range have important uses -> infrasonic waves, which travel far through air and the Earth, detect earthquakes, volcanoes and storms -> ultrasonic waves are used in medicine (imaging, kidney stones), industry (welding, cleaning, defect detection) and locating objects",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t6c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Sound waves with frequencies outside the human audible range have important applications in science, medicine, and technology.",
+              "assessment": {
+                "requiredEvidence": [
+                  "frequencies outside the human audible range",
+                  "science, medicine, and technology"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ap_outside",
+                    "criterion": "States that sound waves with frequencies outside the human audible range have important applications in science, medicine and technology.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Used for detecting natural events, such as earthquakes and volcanic eruptions Used for detecting severe storms as such waves travel long distances through air and the Earth",
+              "followUp": "How can waves below human hearing help in sensing natural disasters?",
+              "assessment": {
+                "requiredEvidence": [
+                  "infrasonic",
+                  "earthquakes and volcanic eruptions",
+                  "severe storms",
+                  "travel long distances through air and the Earth"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ap_infra",
+                    "criterion": "States that infrasonic waves are used for detecting natural events such as earthquakes and volcanic eruptions and severe storms, since they travel long distances through air and the Earth.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Used for imaging internal organs without surgery (known as ultrasonography) Used for breaking kidney stones into smaller pieces, which can then be passed out of the body",
+              "followUp": "Name medical uses of waves above human hearing.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ultrasonic",
+                  "imaging internal organs without surgery",
+                  "ultrasonography",
+                  "breaking kidney stones"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ap_medical",
+                    "criterion": "States that ultrasonic waves are used for imaging internal organs without surgery (ultrasonography) and for breaking kidney stones into smaller pieces.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Used for ultrasonic welding and for cleaning delicate machine parts in industries Used for detecting defects inside metal blocks during construction and industrial testing",
+              "followUp": "Name industrial uses of waves above human hearing.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ultrasonic welding",
+                  "cleaning delicate machine parts",
+                  "detecting defects inside metal blocks"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ap_industry",
+                    "criterion": "States that ultrasonic waves are used in industry for ultrasonic welding, cleaning delicate machine parts and detecting defects inside metal blocks.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Used for locating objects when sound waves get reflected off them",
+              "assessment": {
+                "requiredEvidence": [
+                  "locating objects",
+                  "reflected"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_ap_locate",
+                    "criterion": "States that ultrasonic waves are used for locating objects when sound waves get reflected off them.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 202, "quote": "Sound waves with frequencies outside the human audible range have important applications in science, medicine, and technology.", "supports": ["sci9c10_t6c1_kp1"] },
+            { "page": 202, "quote": "Used for detecting natural events, such as earthquakes and volcanic eruptions", "supports": ["sci9c10_t6c1_kp2"] },
+            { "page": 202, "quote": "Used for detecting severe storms as such waves travel long distances through air and the Earth", "supports": ["sci9c10_t6c1_kp2"] },
+            { "page": 202, "quote": "Used for imaging internal organs without surgery (known as ultrasonography)", "supports": ["sci9c10_t6c1_kp3"] },
+            { "page": 202, "quote": "Used for breaking kidney stones into smaller pieces, which can then be passed out of the body", "supports": ["sci9c10_t6c1_kp3"] },
+            { "page": 202, "quote": "Used for ultrasonic welding and for cleaning delicate machine parts in industries", "supports": ["sci9c10_t6c1_kp4"] },
+            { "page": 202, "quote": "Used for detecting defects inside metal blocks during construction and industrial testing", "supports": ["sci9c10_t6c1_kp4"] },
+            { "page": 202, "quote": "Used for locating objects when sound waves get reflected off them", "supports": ["sci9c10_t6c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch10_t6_c2",
+          "label": "Echolocation and Sonar",
+          "headingType": "heading",
+          "sourcePages": [202, 203],
+          "cardText": "Bats are nocturnal creatures that fly and search for prey in the dark without colliding with objects. Most bats emit short bursts of ultrasonic waves which are reflected from nearby objects, and by sensing the echoes the bat can determine the position of obstacles and prey. This ability to locate objects using reflected sound waves is called echolocation. Besides bats, dolphins, whales and some birds also use echolocation for navigation and hunting. Humans have adapted the same principle in underwater exploration through sonar (sound navigation and ranging): ultrasonic waves are sent into water and the reflected waves are analysed to determine the distance, direction and speed of underwater objects such as submarines or shipwrecks. For the distance, only half the time between sending and receiving the signal is used, because it travels to the object and back. Drones and aircraft produce characteristic low frequency sounds that sensitive sound sensors can detect, a method called audio surveillance.",
+          "hint": "How do bats find prey in the dark, and how is the same idea used by sonar?",
+          "probe": "Explain echolocation in bats and sonar, and how the distance of an object is found.",
+          "causeChain": "Bats send out ultrasonic bursts which reflect off objects, and sense the echoes -> this is echolocation, also used by dolphins, whales and some birds -> sonar sends ultrasonic waves into water and analyses the reflected waves; the distance uses half of the round-trip time",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c10_echo_position",
+              "linksChecks": [
+                "chk_sci9c10_el_bat",
+                "chk_sci9c10_el_sonar"
+              ],
+              "criterion": "Connects sensing reflected ultrasonic waves to locating the position of obstacles or underwater objects, using half the round-trip time.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c10_t6c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Most bats emit short bursts of ultrasonic waves which are reflected from nearby objects. By sensing the echoes the bat can determine the position of obstacles and prey (Fig. 10.27).",
+              "followUp": "How do most bats find nearby objects in the dark?",
+              "assessment": {
+                "requiredEvidence": [
+                  "short bursts of ultrasonic waves",
+                  "reflected from nearby objects",
+                  "sensing the echoes",
+                  "position of obstacles and prey"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_el_bat",
+                    "criterion": "Explains that most bats emit short bursts of ultrasonic waves which are reflected from nearby objects, and by sensing the echoes they determine the position of obstacles and prey.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c10_el_light"
+                ]
+              }
+            },
+            {
+              "id": "sci9c10_t6c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This ability to locate objects using reflected sound waves is called echolocation. Besides bats, animals such as dolphins, whales, and some birds also use echolocation for navigation and hunting.",
+              "followUp": "What is this ability called, and which other animals have it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "locate objects using reflected sound waves",
+                  "echolocation",
+                  "dolphins, whales, and some birds",
+                  "navigation and hunting"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_el_def",
+                    "criterion": "Defines echolocation as the ability to locate objects using reflected sound waves, used by bats and also by dolphins, whales and some birds for navigation and hunting.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Humans have adapted the same principle in underwater exploration through sonar (sound navigation and ranging). In sonar, ultrasonic waves are sent into water and the reflected waves are analysed to determine the distance, direction, and speed of underwater objects, such as submarines or shipwrecks (Fig. 10.28).",
+              "followUp": "What device uses the same principle under water, and what does its name stand for?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sonar",
+                  "sound navigation and ranging",
+                  "ultrasonic waves are sent into water",
+                  "reflected waves are analysed",
+                  "distance, direction, and speed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_el_sonar",
+                    "criterion": "Explains that in sonar (sound navigation and ranging), ultrasonic waves are sent into water and the reflected waves are analysed to find the distance, direction and speed of underwater objects such as submarines or shipwrecks.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Time taken to reach the object is half of above time Thus, distance = speed × time = 1530 m s–1 × 0.45 s = 688.5 m",
+              "assessment": {
+                "requiredEvidence": [
+                  "time taken for the signal to reach the object and travel back",
+                  "half",
+                  "distance = speed × time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_el_half",
+                    "criterion": "States that for the distance of an object the time to reach the object is half of the round-trip time of the signal.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c10_t6c2_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Even when they are hard to see, the low frequency humming they generate can be detected using sensitive sound sensors. This method, called audio surveillance, helps monitor airspace for safety and security.",
+              "assessment": {
+                "requiredEvidence": [
+                  "low frequency humming",
+                  "sensitive sound sensors",
+                  "audio surveillance",
+                  "monitor airspace"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c10_el_drone",
+                    "criterion": "States that drones and aircraft make low frequency humming detected by sensitive sound sensors, a method called audio surveillance, which helps monitor airspace.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a sonar signal that takes 4 s to return from the ocean floor gives a depth equal to the speed times half the time",
+            "Exercise: a vehicle parking sensor works by echolocation: the ultrasonic wave goes to the obstacle and back, covering twice the distance",
+            "Exercise: in a movie an explosion of a spacecraft in space should be shown with no sound, and the flash of light is seen first"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c10_el_light",
+              "wrong": "Bats find prey in the dark by seeing in infrared light.",
+              "fix": "Most bats emit short bursts of ultrasonic waves which are reflected from nearby objects, and sense the echoes to determine the position of obstacles and prey."
+            }
+          ],
+          "verify": [
+            { "page": 202, "quote": "Most bats emit short bursts of ultrasonic waves which are reflected from nearby objects.", "supports": ["sci9c10_t6c2_kp1"] },
+            { "page": 202, "quote": "By sensing the echoes the bat can determine the position of obstacles and prey (Fig. 10.27).", "supports": ["sci9c10_t6c2_kp1"] },
+            { "page": 202, "quote": "This ability to locate objects using reflected sound waves is called echolocation.", "supports": ["sci9c10_t6c2_kp2"] },
+            { "page": 202, "quote": "Besides bats, animals such as dolphins, whales, and some birds also use echolocation for navigation and hunting.", "supports": ["sci9c10_t6c2_kp2"] },
+            { "page": 203, "quote": "Humans have adapted the same principle in underwater exploration through sonar (sound navigation and ranging).", "supports": ["sci9c10_t6c2_kp3"] },
+            { "page": 203, "quote": "In sonar, ultrasonic waves are sent into water and the reflected waves are analysed to determine the distance, direction, and speed of underwater objects, such as submarines or shipwrecks (Fig. 10.28).", "supports": ["sci9c10_t6c2_kp3"] },
+            { "page": 203, "quote": "Time taken to reach the object is half of above time", "supports": ["sci9c10_t6c2_kp4"] },
+            { "page": 203, "quote": "Even when they are hard to see, the low frequency humming they generate can be detected using sensitive sound sensors.", "supports": ["sci9c10_t6c2_kp5"] },
+            { "page": 203, "quote": "This method, called audio surveillance, helps monitor airspace for safety and security.", "supports": ["sci9c10_t6c2_kp5"] },
+            { "page": 203, "quote": "A sonar signal sent to find the depth of ocean takes 4 s", "supports": ["sci9c10_t6c2_kp1"] },
+            { "page": 205, "quote": "In a movie, while showing the explosion of a spacecraft in space, a", "supports": ["sci9c10_t6c2_kp3"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

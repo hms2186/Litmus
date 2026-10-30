@@ -1,0 +1,806 @@
+{
+  "version": 1,
+  "note": "DRY RUN ONLY: Milestone 0 answers written by Claude, used for tuning. Checks the pipeline; says nothing about release readiness.",
+  "answers": [
+    {
+      "id": "D001",
+      "conceptId": "civ10_ch1_t3_c2",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "text": "Power can be shared among governments at different levels. There is a general government for the entire country and governments at the provincial or regional level. In India we call them the Central or Union Government and the State Governments. The constitution clearly lays down the powers of the different levels of government, so power is divided between higher and lower levels. This is called federal division of power, and it is also called vertical division of power.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D002",
+      "conceptId": "civ10_ch1_t3_c2",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "paraphrase",
+      "text": "In our country there is one government sitting in Delhi that looks after the whole nation, and every state like Kerala or Punjab has its own government too. Our constitution writes down exactly what each of them is allowed to do, and that is why power is split between the top level and the lower levels. Even villages have their own panchayat and towns have a municipality.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D003",
+      "conceptId": "civ10_ch1_t3_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Power is shared between the Central Government and the State Governments.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D004",
+      "conceptId": "civ10_ch1_t3_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Vertical division of power means power is divided between the legislature, the executive and the judiciary. Each level checks the others.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D005",
+      "conceptId": "civ10_ch1_t3_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Photosynthesis is the process by which green plants make food using sunlight, water and carbon dioxide.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D006",
+      "conceptId": "civ10_ch2_t1_c3",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "text": "There are two routes. In coming together federations, independent States come together on their own and pool their sovereignty to form a bigger unit, so the States usually have equal power, like the USA, Switzerland and Australia. In holding together federations, a large country decides to divide its power between the States and the national government, so the central government tends to be more powerful, as in India, Spain and Belgium.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D007",
+      "conceptId": "civ10_ch2_t1_c3",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "paraphrase",
+      "text": "Some countries are made when separate independent countries decide by themselves to join and become one big country, and since they joined as equals, each of them keeps equal strength. America is like this. Others start as one big country that later hands out some of its power to its states, so the centre stays stronger; India and Spain are like this.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D008",
+      "conceptId": "civ10_ch2_t1_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Federations can be coming together or holding together. USA is coming together and India is holding together.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D009",
+      "conceptId": "civ10_ch2_t1_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "India is a coming together federation because the states came together to form the country. In coming together federations the states have equal power.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D010",
+      "conceptId": "civ10_ch2_t1_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Money acts as a medium of exchange and removes the double coincidence of wants.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D011",
+      "conceptId": "civ10_ch3_t2_c4",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "Communalism was seen as a major challenge to democracy, so the makers of our Constitution chose the model of a secular state. There is no official religion for the Indian state, and the Constitution does not give a special status to any religion. It gives all individuals the freedom to profess, practice and propagate any religion, or not to follow any, and it prohibits discrimination on grounds of religion.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D012",
+      "conceptId": "civ10_ch3_t2_c4",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "paraphrase",
+      "text": "India does not have a state religion, unlike Pakistan which has Islam. Every person can follow, preach or practise whatever religion they like, or no religion at all, and nobody can be treated unfairly by the government because of their religion.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D013",
+      "conceptId": "civ10_ch3_t2_c4",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "India is a secular state.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D014",
+      "conceptId": "civ10_ch3_t2_c4",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "A secular state means the government has nothing to do with religion at all, so it can never interfere in any religious matter.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D015",
+      "conceptId": "civ10_ch3_t2_c4",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Alluvial soil is found in the northern plains and is very fertile.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D016",
+      "conceptId": "eco10_ch1_t2_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "For comparing countries, income is considered one of the most important attributes, because more income means more of all things people need. Total income is not useful for comparison since countries have different populations, so we use average income, which is the total income of the country divided by its total population. It is also called per capita income.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D017",
+      "conceptId": "eco10_ch1_t2_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "paraphrase",
+      "text": "If you just add up all the money a country earns, a country with lots of people will look rich even if each person is poor. So we divide the country's total earnings by the number of people living there and compare that number instead.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D018",
+      "conceptId": "eco10_ch1_t2_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Per capita income is used to compare countries.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D019",
+      "conceptId": "eco10_ch1_t2_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "The country with the biggest total income is the most developed, so we just compare total income of countries.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D020",
+      "conceptId": "eco10_ch1_t2_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Dams fragment rivers and make it hard for fish to migrate.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D021",
+      "conceptId": "eco10_ch2_t2_c5",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "text": "There are more people in agriculture than necessary, so even if a few people move out, production will not be affected. Such workers are underemployed: they apparently work but all of them work less than their potential, and this hidden underemployment is called disguised unemployment.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D022",
+      "conceptId": "eco10_ch2_t2_c5",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "paraphrase",
+      "text": "On many farms there are too many hands for the work. If two brothers left to work in a factory, the farm would still produce just as much, which shows they were not really needed there. Everyone looks busy, but each person is doing less than they could, so this unemployment stays hidden.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D023",
+      "conceptId": "eco10_ch2_t2_c5",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Disguised unemployment is a type of unemployment in agriculture.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D024",
+      "conceptId": "eco10_ch2_t2_c5",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Disguised unemployment means people are lazy and do not want to work, so they sit idle.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D025",
+      "conceptId": "eco10_ch2_t2_c5",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Federalism has two routes: coming together and holding together.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D026",
+      "conceptId": "eco10_ch3_t1_c1",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "text": "In a barter system, both parties have to agree to sell and buy each other's commodities. This is called double coincidence of wants. Money acts as an intermediate in the exchange process, so it eliminates the need for double coincidence of wants. That is why money is called a medium of exchange.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D027",
+      "conceptId": "eco10_ch3_t1_c1",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "paraphrase",
+      "text": "A shoe maker who wants wheat has to find a farmer who has wheat and also wants shoes. Both must want what the other has. With money, the shoe maker sells shoes to anyone for money and then buys wheat from anyone, so he no longer needs that exact match. Money sits in the middle of every trade.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D028",
+      "conceptId": "eco10_ch3_t1_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Money is used to buy things.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D029",
+      "conceptId": "eco10_ch3_t1_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Money is useful only because the notes and coins are valuable in themselves, like gold.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D030",
+      "conceptId": "eco10_ch3_t1_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Joint forest management involves local communities in protecting degraded forests.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D031",
+      "conceptId": "geo10_ch1_t6_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "Alluvial soil covers the entire northern plains. It was deposited by the Indus, the Ganga and the Brahmaputra, and it is also found in the deltas of the Mahanadi, Godavari, Krishna and Kaveri. Alluvial soils are very fertile and contain potash, phosphoric acid and lime, which are ideal for sugarcane, paddy and wheat. Due to its high fertility, these regions are intensively cultivated and densely populated.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D032",
+      "conceptId": "geo10_ch1_t6_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "paraphrase",
+      "text": "The rivers coming from the Himalayas, the Indus, Ganga and Brahmaputra, dropped this soil across the whole of north India, and you also find it where rivers like the Godavari and Krishna meet the sea on the east coast. It is so good for farming that lots of people live and grow crops there.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D033",
+      "conceptId": "geo10_ch1_t6_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Alluvial soil is found in north India.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D034",
+      "conceptId": "geo10_ch1_t6_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Bangar is more fertile than Khadar because it is older and has more kanker.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D035",
+      "conceptId": "geo10_ch1_t6_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Per capita income is total income divided by population.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D036",
+      "conceptId": "geo10_ch1_t7_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "The denudation of the soil cover and subsequent washing down is described as soil erosion. Soil formation and erosion usually balance each other, but human activities like deforestation, over-grazing, construction and mining disturb this balance, and that leads to gullies and bad land.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D037",
+      "conceptId": "geo10_ch1_t7_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "paraphrase",
+      "text": "Soil erosion is when the top layer of soil is stripped off and carried away. Normally new soil forms as fast as it is lost, but when people cut forests, let animals overgraze, build or mine, that balance breaks and the land gets cut into deep channels.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D038",
+      "conceptId": "geo10_ch1_t7_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Soil erosion is caused by wind and water.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D039",
+      "conceptId": "geo10_ch1_t7_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Gully erosion and sheet erosion are the same thing; both are just water taking soil away.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D040",
+      "conceptId": "geo10_ch1_t7_c1",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Coming together federations are formed when independent states pool their sovereignty.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D041",
+      "conceptId": "geo10_ch2_t4_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "Joint forest management is a programme that involves local communities in the management and restoration of degraded forests. It has been in formal existence since 1988, when Odisha passed the first resolution for it.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D042",
+      "conceptId": "geo10_ch2_t4_c2",
+      "slot": "D",
+      "intent": "shouldPass",
+      "category": "paraphrase",
+      "text": "In JFM the villagers living near a damaged forest form a committee and guard it along with the forest department. Because they protect it, they are allowed to collect things like fruits and leaves from the forest and they also get part of the wood when trees are cut.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "pass",
+        "B": "pass"
+      },
+      "final": "pass",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D043",
+      "conceptId": "geo10_ch2_t4_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "JFM is about forests.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D044",
+      "conceptId": "geo10_ch2_t4_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Under joint forest management only the forest department protects the forest and the villagers get nothing from it.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D045",
+      "conceptId": "geo10_ch2_t4_c2",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Tankas are underground tanks in Rajasthan used to store rainwater.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D046",
+      "conceptId": "geo10_ch3_t3_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "textbook",
+      "text": "Regulating and damming of rivers affects their natural flow, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir. This results in rockier stream beds and poorer habitats for aquatic life. Dams also fragment rivers, making it difficult for aquatic fauna to migrate for spawning. Ironically, the dams built to control floods have triggered floods due to sedimentation in the reservoir.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D047",
+      "conceptId": "geo10_ch3_t3_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "paraphrase",
+      "text": "When a river is blocked, the mud it normally carries piles up behind the dam instead of moving downstream, so the riverbed below becomes stony and fish lose their homes. Because the reservoir fills up with this mud, it can overflow and actually cause floods.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D048",
+      "conceptId": "geo10_ch3_t3_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "text": "Big dams have many problems.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D049",
+      "conceptId": "geo10_ch3_t3_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "text": "Building dams does not change how a river flows or how much sediment it carries; dams only store water.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    },
+    {
+      "id": "D050",
+      "conceptId": "geo10_ch3_t3_c3",
+      "slot": "D",
+      "intent": "shouldNotPass",
+      "category": "offtopic",
+      "text": "Gandhiji said there is enough for everybody's need and not for anybody's greed.",
+      "writtenBy": "claude (dry run)",
+      "source": "claude",
+      "labels": {
+        "A": "fail",
+        "B": "fail"
+      },
+      "final": "fail",
+      "note": "label from the compiled rules: pass only if every required core check is covered"
+    }
+  ]
+}

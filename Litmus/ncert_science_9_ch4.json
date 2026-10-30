@@ -1,0 +1,2032 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 4,
+  "chapterName": "Describing Motion Around Us",
+  "sourceStatus": "Built from the NCERT PDF iesc104 (edition as supplied). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Exploration, Science (Grade 9), edition as supplied, chapter pp. 48-71",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. Equations and tables are images or lost symbols in the PDF and are not quoted. Pause and Ponder prompts and the Revise, Reflect, Refine questions (pp. 68-70) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c4_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci9c4_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example reference point, position, distance, displacement, average speed, average velocity, average acceleration, uniform motion.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "reference point",
+    "position",
+    "distance",
+    "displacement",
+    "average speed",
+    "average velocity",
+    "average acceleration",
+    "uniform motion",
+    "position-time graph",
+    "velocity-time graph",
+    "slope",
+    "kinematic equations",
+    "uniform circular motion",
+    "tangent"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_sci_9_ch4_t1",
+      "title": "Position, distance and displacement",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch4_t1_c1",
+          "label": "Motion in a Straight Line and Describing Position",
+          "headingType": "heading",
+          "sourcePages": [49, 50],
+          "cardText": "When an object moves in a straight line its motion is called linear motion, the simplest kind of motion. To describe the position of an object we first specify a fixed point as the reference point. The distance and direction of the object from the reference point at any instant describe its position at that instant. For an object moving in a straight line there are only two directions, forward and backward, represented by plus and minus signs, with positions to the right of the reference point O generally taken as positive and to the left as negative. If the position of the object with respect to the reference point changes with time, the object is in motion; if it does not change with time, the object is at rest.",
+          "hint": "What do you need to state to describe where an object is?",
+          "probe": "How do we describe the position of an object, and how do we decide whether it is in motion or at rest?",
+          "causeChain": "A fixed reference point is chosen -> position is the distance and direction from it at an instant -> if that position changes with time the object is in motion, and if not it is at rest",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_position_motion",
+              "linksChecks": [
+                "chk_sci9c4_pos_describe",
+                "chk_sci9c4_pos_motion"
+              ],
+              "criterion": "Connects the position being measured from a reference point to an object being in motion when that position changes with time.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "we first need to specify a fixed point as the reference point. The distance and direction of the object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time.",
+              "followUp": "What must you choose first before you can say where an object is, and what two things then fix its place?",
+              "assessment": {
+                "requiredEvidence": [
+                  "fixed point",
+                  "reference point",
+                  "distance and direction",
+                  "position of the object"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pos_describe",
+                    "criterion": "States that position is described by the distance and direction of the object from a fixed reference point at an instant of time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_pos_distance_only"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "If the position of the object with respect to the reference point changes with time, the object is said to be in motion. On the other hand, the object is said to be at rest if its position with respect to the reference point does not change with time.",
+              "followUp": "How do you decide whether an object is moving or not?",
+              "assessment": {
+                "requiredEvidence": [
+                  "changes with time",
+                  "in motion",
+                  "at rest",
+                  "does not change with time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pos_motion",
+                    "criterion": "States that an object is in motion if its position with respect to the reference point changes with time, and at rest if it does not.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t1c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "For the object moving in a straight line, the object can move only in one of the two directions — forward and backward. Positions to the right of the reference point O are generally taken as positive, and to the left of O as negative",
+              "assessment": {
+                "requiredEvidence": [
+                  "two directions",
+                  "forward and backward",
+                  "plus",
+                  "minus",
+                  "right of the reference point",
+                  "positive"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pos_sign",
+                    "criterion": "States that for straight-line motion there are two directions, indicated by plus and minus signs, with positions to the right of the reference point generally positive and to the left negative.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t1c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "You have learnt that when an object moves in a straight line, its motion is called linear motion. It can also be called motion in a straight line. It is the simplest kind of motion.",
+              "assessment": {
+                "requiredEvidence": [
+                  "moves in a straight line",
+                  "linear motion",
+                  "simplest kind of motion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pos_linear",
+                    "criterion": "States that when an object moves in a straight line its motion is called linear motion, the simplest kind of motion.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: an object kept on the Earth can be considered at rest relative to the Earth although the Earth moves around the Sun, because the reference point decides whether it is at rest"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_pos_distance_only",
+              "wrong": "Distance from the reference point alone is enough to describe position.",
+              "fix": "Apart from the distance, we also specify the direction from the reference point in which the object is located to describe its position."
+            }
+          ],
+          "verify": [
+            { "page": 49, "quote": "You have learnt that when an object moves in a straight line, its motion is called linear motion.", "supports": ["sci9c4_t1c1_kp4"] },
+            { "page": 49, "quote": "It is the simplest kind of motion.", "supports": ["sci9c4_t1c1_kp4"] },
+            { "page": 49, "quote": "we first need to specify a fixed point as the reference point.", "supports": ["sci9c4_t1c1_kp1"] },
+            { "page": 49, "quote": "The distance and direction of the object with respect to the reference point, at any instant of time, describes the position of the object at that instant of time.", "supports": ["sci9c4_t1c1_kp1"] },
+            { "page": 49, "quote": "Note that apart from the distance, we also specify the direction from the reference point", "supports": ["sci9c4_t1c1_kp1"] },
+            { "page": 49, "quote": "If the position of the object with respect to the reference point changes with time, the object is said to be", "supports": ["sci9c4_t1c1_kp2"] },
+            { "page": 49, "quote": "in motion. On the other hand, the object is said to be at rest if its position with respect to the reference point does not change with time.", "supports": ["sci9c4_t1c1_kp2"] },
+            { "page": 50, "quote": "For the object moving in a straight line, the object can move only in one of the two directions — forward and backward.", "supports": ["sci9c4_t1c1_kp3"] },
+            { "page": 50, "quote": "Positions to the right of the reference point O are generally taken as positive, and to the left of O as negative", "supports": ["sci9c4_t1c1_kp3"] },
+            { "page": 70, "quote": "A student said, “The Earth moves around the Sun”.", "supports": ["sci9c4_t1c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t1_c2",
+          "label": "Distance Travelled and Displacement",
+          "headingType": "heading",
+          "sourcePages": [50, 51],
+          "cardText": "The total distance travelled by an athlete who runs from O to A (100 m) and back to B (60 m) is OA + AB = 160 m, but the distance between the starting and stopping positions is OB = 40 m. Displacement is the net change in the position of an object between two given instants of time. A complete description of displacement requires specifying both a direction and its numerical value with units, called its magnitude. The magnitude of displacement is the distance between the object's positions at the two instants, and its direction is from the position at the first instant towards the position at the second instant. To describe total distance travelled only the numerical value is needed, not the direction, and the SI unit for both is the metre. In the example the athlete's total distance travelled is 160 m but her displacement is 40 m in the positive direction. For motion in a straight line the total distance travelled and the magnitude of displacement are equal if the object moves without turning back, in one direction.",
+          "hint": "Why can an athlete have a distance of 160 m but a displacement of only 40 m?",
+          "probe": "What is the difference between distance travelled and displacement? When are they equal?",
+          "causeChain": "Distance adds up the whole path with no direction -> displacement is the net change in position, with magnitude and direction -> they differ when the object turns back, and are equal in magnitude only if it moves in one direction",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_turn_back",
+              "linksChecks": [
+                "chk_sci9c4_dd_example",
+                "chk_sci9c4_dd_equal"
+              ],
+              "criterion": "Connects an object turning back along its path to total distance travelled being greater than the magnitude of displacement.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Displacement is the net change in the position of an object between the two given instants of time.",
+              "followUp": "How is the change in an object's place between two moments described?",
+              "assessment": {
+                "requiredEvidence": [
+                  "net change in the position",
+                  "two given instants of time",
+                  "displacement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_dd_def",
+                    "criterion": "Defines displacement as the net change in the position of an object between two given instants of time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_dd_same"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t1c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A complete description of physical quantities like displacement requires specifying both a direction and its numerical value (with units). The numerical value (with units) of such a physical quantity is called its magnitude. The magnitude of displacement is the distance between the object’s positions at the two instants.",
+              "followUp": "What two things are needed to describe this change completely, and how is its size related to the two places?",
+              "assessment": {
+                "requiredEvidence": [
+                  "direction",
+                  "numerical value",
+                  "magnitude",
+                  "distance between the object's positions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_dd_magnitude",
+                    "criterion": "States that displacement needs both a direction and a magnitude, and its magnitude is the distance between the object's positions at the two instants.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t1c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "To describe the total distance travelled, only the numerical value (with units) is required, not the direction of motion. The SI unit for both is the metre (m).",
+              "followUp": "What do you need to state for the whole path covered, and in what unit is it measured?",
+              "assessment": {
+                "requiredEvidence": [
+                  "total distance travelled",
+                  "only the numerical value",
+                  "not the direction",
+                  "metre"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_dd_dist",
+                    "criterion": "States that total distance travelled needs only a numerical value and no direction, and the SI unit for both distance and displacement is the metre.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t1c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The total distance travelled is OA + AB = 100 m + 60 m = 160 m. between t = 0 s and t = 16 s, the total distance travelled by the athlete is 160 m, but her displacement is 40 m in the positive direction.",
+              "followUp": "An athlete goes 100 m out and comes back part of the way. What are her path length and her net change in place?",
+              "assessment": {
+                "requiredEvidence": [
+                  "160 m",
+                  "40 m",
+                  "positive direction",
+                  "not equal"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_dd_example",
+                    "criterion": "Works the athlete example: total distance 160 m but displacement 40 m in the positive direction, so the two are not equal.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_dd_round"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t1c2_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "For motion in a straight line, the total distance travelled and the magnitude of displacement are equal if the object moves without turning back, i.e., if it moves in one direction.",
+              "followUp": "When does the size of the net change equal the whole path length?",
+              "assessment": {
+                "requiredEvidence": [
+                  "equal",
+                  "without turning back",
+                  "one direction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_dd_equal",
+                    "criterion": "States that for straight-line motion distance travelled and the magnitude of displacement are equal only if the object moves without turning back, in one direction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a person goes 250 m to a shop, returns home for a bag, goes to the shop again and comes back home, so the total distance travelled is the sum of the legs while the displacement from home is zero",
+            "Exercise: a student runs from the ground floor to the fourth floor and comes down to the second floor, so the vertical distance is the sum of both trips while the displacement is only the net change in height",
+            "Exercise: the tip of a clock's minute hand over 90 minutes travels a distance along the circle but its displacement depends only on the start and end positions",
+            "Pause: displacement of the athlete is zero when she returns to the starting point, while the total distance travelled is not zero",
+            "Pause: fuel used up in a vehicle depends on the total distance travelled, not the displacement"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_dd_same",
+              "wrong": "Distance travelled and displacement always mean the same thing.",
+              "fix": "Between t = 0 s and t = 16 s, the total distance travelled by the athlete is 160 m, but her displacement is 40 m in the positive direction; the two quantities are not equal."
+            },
+            {
+              "id": "misc_sci9c4_dd_round",
+              "wrong": "If an object returns to where it started, its displacement equals the distance it travelled.",
+              "fix": "Displacement is the net change in position between two instants, so it is zero for a child who comes back to the original position after one revolution, while the distance travelled is not zero."
+            }
+          ],
+          "verify": [
+            { "page": 50, "quote": "Displacement is the net change in the position of an object between the", "supports": ["sci9c4_t1c2_kp1"] },
+            { "page": 50, "quote": "two given instants of time.", "supports": ["sci9c4_t1c2_kp1"] },
+            { "page": 50, "quote": "A complete description of physical quantities like displacement requires specifying both a direction and its numerical", "supports": ["sci9c4_t1c2_kp2"] },
+            { "page": 50, "quote": "value (with units). The numerical value (with units) of such a physical quantity is called its magnitude.", "supports": ["sci9c4_t1c2_kp2"] },
+            { "page": 50, "quote": "The magnitude of displacement is the", "supports": ["sci9c4_t1c2_kp2"] },
+            { "page": 50, "quote": "distance between the object’s positions at the two instants.", "supports": ["sci9c4_t1c2_kp2"] },
+            { "page": 51, "quote": "only the numerical value (with units) is required, not the direction of", "supports": ["sci9c4_t1c2_kp3"] },
+            { "page": 51, "quote": "motion. The SI unit for both is the metre (m).", "supports": ["sci9c4_t1c2_kp3"] },
+            { "page": 50, "quote": "The total distance travelled is OA + AB = 100 m + 60 m = 160 m.", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 51, "quote": "between t = 0 s and t = 16 s, the total distance travelled by the athlete is 160 m, but her displacement is 40 m in the positive direction.", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 51, "quote": "the total distance travelled and the magnitude of displacement are equal if the object moves without turning back, i.e., if it moves in one direction.", "supports": ["sci9c4_t1c2_kp5"] },
+            { "page": 66, "quote": "On the other hand, the displacement is zero, since the child comes back to its original position after making one revolution.", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 51, "quote": "when will the displacement of the athlete be zero?", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 51, "quote": "Fuel used up in a vehicle depends on which of the following?", "supports": ["sci9c4_t1c2_kp1"] },
+            { "page": 68, "quote": "My father went to a shop from home which is located at a distance of 250 m on a straight road.", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 68, "quote": "A student runs from the ground floor to the fourth floor of a school", "supports": ["sci9c4_t1c2_kp4"] },
+            { "page": 70, "quote": "Consider the tip of the minute’s hand of the wall clock.", "supports": ["sci9c4_t1c2_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch4_t2",
+      "title": "Speed, velocity and acceleration",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch4_t2_c1",
+          "label": "Average Speed and Uniform Motion",
+          "headingType": "heading",
+          "sourcePages": [52],
+          "cardText": "The average speed of an object is the total distance travelled divided by the time interval during which this distance is covered. Since distance travelled has no direction, the average speed also has no direction but only a numerical value. If an object moving in a straight line travels equal distances in equal intervals of time, for all possible choices of time intervals, it is in uniform motion in a straight line and moves at a constant speed. If it travels unequal distances in equal intervals of time it is in non-uniform motion, moving with increasing speed, decreasing speed, or a combination of both. The speed tells how fast an object moves but gives no information about the direction of motion. The idea of speed as distance travelled divided by time taken dates back to ancient times in India, as in the Aryabhatiya.",
+          "hint": "When is the motion in a straight line called uniform?",
+          "probe": "Define average speed and say what uniform and non-uniform motion mean.",
+          "causeChain": "Average speed is total distance divided by the time interval -> equal distances in equal intervals mean uniform motion at constant speed -> unequal distances mean non-uniform motion -> speed alone says nothing about direction",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_equal_intervals_constant",
+              "linksChecks": [
+                "chk_sci9c4_spd_uniform"
+              ],
+              "criterion": "Connects travelling equal distances in equal intervals of time to uniform motion at a constant speed.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The average speed of an object is the total distance travelled divided by the time interval during which this distance is covered.",
+              "followUp": "How is the rate at which an object covers its path calculated?",
+              "assessment": {
+                "requiredEvidence": [
+                  "total distance travelled",
+                  "divided by the time interval"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_spd_def",
+                    "criterion": "Defines average speed as the total distance travelled divided by the time interval during which it is covered.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Since distance travelled has no direction (but only a numerical value), the average speed, which is calculated from distance travelled, also has no direction but only a numerical value.",
+              "assessment": {
+                "requiredEvidence": [
+                  "no direction",
+                  "numerical value"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_spd_nodir",
+                    "criterion": "States that since distance travelled has no direction, average speed also has no direction, only a numerical value.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "If an object moving in a straight line travels equal distances in equal intervals of time (for all possible choices of time intervals), it is said to be in uniform motion in a straight line. In this case, the object moves at a constant speed.",
+              "followUp": "What do we call movement covering equal path lengths in equal times, and how fast is the object going?",
+              "assessment": {
+                "requiredEvidence": [
+                  "equal distances in equal intervals of time",
+                  "uniform motion",
+                  "constant speed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_spd_uniform",
+                    "criterion": "States that travelling equal distances in equal intervals of time is uniform motion in a straight line, at a constant speed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "if the object travels unequal distances in equal intervals of time, then it is in non-uniform motion in a straight line. In this case, the object moves with increasing speed or decreasing speed, or a combination of both.",
+              "followUp": "What do we call movement covering different path lengths in equal times, and what can happen to its rate?",
+              "assessment": {
+                "requiredEvidence": [
+                  "unequal distances in equal intervals of time",
+                  "non-uniform motion",
+                  "increasing speed or decreasing speed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_spd_nonuniform",
+                    "criterion": "States that unequal distances in equal intervals of time is non-uniform motion, with increasing or decreasing speed or both.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The speed tells us how fast an object is moving but it provides no information about the direction of motion.",
+              "assessment": {
+                "requiredEvidence": [
+                  "how fast an object is moving",
+                  "no information about the direction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_spd_limit",
+                    "criterion": "States that speed tells how fast an object moves but gives no information about its direction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_spd_direction"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_spd_direction",
+              "wrong": "Average speed tells both how fast an object moves and in which direction.",
+              "fix": "The speed tells us how fast an object is moving but it provides no information about the direction of motion."
+            }
+          ],
+          "verify": [
+            { "page": 52, "quote": "The average speed of an object is the total distance travelled divided by the time interval during which this distance is covered.", "supports": ["sci9c4_t2c1_kp1"] },
+            { "page": 52, "quote": "Since distance travelled has no direction (but only a numerical value), the average speed, which is calculated from distance travelled, also has no direction but only a numerical value.", "supports": ["sci9c4_t2c1_kp2"] },
+            { "page": 52, "quote": "If an object moving in a straight line travels equal distances in equal", "supports": ["sci9c4_t2c1_kp3"] },
+            { "page": 52, "quote": "intervals of time (for all possible choices of time intervals), it is said to be in uniform motion in a straight line.", "supports": ["sci9c4_t2c1_kp3"] },
+            { "page": 52, "quote": "In this case, the object moves at a constant speed.", "supports": ["sci9c4_t2c1_kp3"] },
+            { "page": 52, "quote": "if the object travels unequal distances in equal intervals of time, then it is in non-uniform motion in a straight line.", "supports": ["sci9c4_t2c1_kp4"] },
+            { "page": 52, "quote": "In this case, the object moves with increasing speed or decreasing speed, or a combination of both.", "supports": ["sci9c4_t2c1_kp4"] },
+            { "page": 52, "quote": "The speed tells us how fast an object is moving but it provides no information about the direction of motion.", "supports": ["sci9c4_t2c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t2_c2",
+          "label": "Average Velocity and Rate of Change",
+          "headingType": "heading",
+          "sourcePages": [53, 54],
+          "cardText": "The average velocity of an object in a time interval is the change in position, or displacement, divided by the time interval in which the change occurs. To express average velocity we specify its magnitude as well as direction, and the direction of velocity is the same as the direction of displacement, indicated by a plus or minus sign. The SI unit of average speed and average velocity is metre per second, also commonly measured in kilometre per hour. The ratio of change in one quantity to the corresponding change in time is called the rate of change, so average velocity is the average rate of change of position with respect to time. In Example 4.2, Sarang swims 50 m in 50 s, up and back, so his total distance is 50 m, displacement is 0 m, average speed is about 1 m per second and average velocity is 0. For motion in a straight line the average speed and the magnitude of average velocity are equal if the object moves in one direction. The average velocity over a large interval may differ from the velocity at a particular instant.",
+          "hint": "Why can a swimmer have an average speed but zero average velocity?",
+          "probe": "How does average velocity differ from average speed, and when is its magnitude equal to the average speed?",
+          "causeChain": "Average velocity is displacement divided by time interval, with the direction of displacement -> a round trip has distance but zero displacement -> so average speed is not zero while average velocity is zero -> they match in magnitude only for motion in one direction",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_zero_displacement",
+              "linksChecks": [
+                "chk_sci9c4_vel_def",
+                "chk_sci9c4_vel_example"
+              ],
+              "criterion": "Connects a zero displacement over a round trip to a zero average velocity even though the average speed is not zero.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The average velocity of an object in a time interval is the change in the position (or displacement) divided by the time interval in which the change in position (or displacement) occurs.",
+              "followUp": "How is the rate of change of an object's place worked out over a time interval?",
+              "assessment": {
+                "requiredEvidence": [
+                  "change in the position",
+                  "displacement",
+                  "divided by the time interval"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_def",
+                    "criterion": "Defines average velocity as the change in position (displacement) divided by the time interval in which it occurs.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_vel_same"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "To express the average velocity, you need to specify its magnitude as well as the direction. The direction of the velocity is the same as the direction of displacement",
+              "followUp": "What two features are needed to describe this quantity completely, and how is its orientation related to the net change?",
+              "assessment": {
+                "requiredEvidence": [
+                  "magnitude",
+                  "direction",
+                  "same as the direction of displacement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_direction",
+                    "criterion": "States that average velocity has magnitude and direction, and its direction is the same as the direction of displacement.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The SI unit of average speed and average velocity are the same. It is metre per second which is represented by m s–1 or m/s. It is also commonly measured in kilometre per hour",
+              "assessment": {
+                "requiredEvidence": [
+                  "metre per second",
+                  "m/s",
+                  "kilometre per hour"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_unit",
+                    "criterion": "States that average speed and average velocity share the SI unit metre per second (m/s), also commonly measured in kilometre per hour.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The ratio of change in one quantity to the corresponding change in time is called the rate of change. So, we can say that average velocity is the average rate of change of position of an object with respect to time.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ratio of change in one quantity",
+                  "corresponding change in time",
+                  "rate of change",
+                  "average rate of change of position"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_rate",
+                    "criterion": "States that the ratio of change in a quantity to the corresponding change in time is the rate of change, so average velocity is the average rate of change of position with time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "Total distance travelled by Sarang in 50 s = 50 m displacement of Sarang in 50 s = 0 m",
+              "followUp": "A swimmer goes up and back a pool in 50 s. What are her path length, net change and the two averages?",
+              "assessment": {
+                "requiredEvidence": [
+                  "50 m",
+                  "displacement",
+                  "0 m",
+                  "average speed",
+                  "average velocity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_example",
+                    "criterion": "Works the swimmer example: distance 50 m but displacement 0 m in 50 s, so the average speed is about 1 m per second while the average velocity is zero.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "For motion in a straight line, the average speed and the magnitude of average velocity in a time interval are equal if the object moves in one direction.",
+              "assessment": {
+                "requiredEvidence": [
+                  "average speed",
+                  "magnitude of average velocity",
+                  "equal",
+                  "one direction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_equal",
+                    "criterion": "States that for straight-line motion average speed and the magnitude of average velocity are equal if the object moves in one direction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c2_kp7",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The average velocity of an object over a large time interval may differ from its velocity at a particular instant. Throughout this chapter, we will use the term ‘velocity’ to mean the velocity of an object at a particular instant.",
+              "assessment": {
+                "requiredEvidence": [
+                  "large time interval",
+                  "particular instant",
+                  "velocity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vel_instant",
+                    "criterion": "States that average velocity over a large time interval may differ from the velocity at a particular instant, and 'velocity' in this chapter means velocity at an instant.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: on a family road trip driving 200 km north in three hours and then 200 km south in two hours, the average speed is the total distance divided by the total time while the average velocity is zero",
+            "Pause: the magnitude of average velocity equals the average speed when the object moves in one direction, and the average velocity is zero while the average speed is not when it returns to the start"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_vel_same",
+              "wrong": "Average speed and average velocity are always the same.",
+              "fix": "In the swimmer example the average speed is about 1 m per second while the average velocity is 0 m per second because the displacement is 0."
+            }
+          ],
+          "verify": [
+            { "page": 53, "quote": "The average velocity of an object in a time interval is the change in the", "supports": ["sci9c4_t2c2_kp1"] },
+            { "page": 53, "quote": "position (or displacement) divided by the time interval in which the change in position (or displacement) occurs.", "supports": ["sci9c4_t2c2_kp1"] },
+            { "page": 53, "quote": "To express the average velocity, you need to specify its magnitude as", "supports": ["sci9c4_t2c2_kp2"] },
+            { "page": 53, "quote": "well as the direction.", "supports": ["sci9c4_t2c2_kp2"] },
+            { "page": 53, "quote": "The direction of the velocity is the same as the direction of displacement", "supports": ["sci9c4_t2c2_kp2"] },
+            { "page": 53, "quote": "The SI unit of average speed and average velocity are the same.", "supports": ["sci9c4_t2c2_kp3"] },
+            { "page": 53, "quote": "It is metre per second which is represented by", "supports": ["sci9c4_t2c2_kp3"] },
+            { "page": 53, "quote": "The ratio of change in one quantity to the corresponding change in time is called the rate of change.", "supports": ["sci9c4_t2c2_kp4"] },
+            { "page": 53, "quote": "So, we can say that average velocity is the average rate of change of position of an object with respect to time.", "supports": ["sci9c4_t2c2_kp4"] },
+            { "page": 53, "quote": "Total distance travelled by Sarang in 50 s = 50 m", "supports": ["sci9c4_t2c2_kp5"] },
+            { "page": 53, "quote": "displacement of Sarang in 50 s = 0 m", "supports": ["sci9c4_t2c2_kp5"] },
+            { "page": 53, "quote": "For motion in a straight line, the average speed and the magnitude of average velocity in a time interval are equal if the object moves in one direction.", "supports": ["sci9c4_t2c2_kp6"] },
+            { "page": 54, "quote": "The average velocity of an object over a large time interval may differ", "supports": ["sci9c4_t2c2_kp7"] },
+            { "page": 54, "quote": "from its velocity at a particular instant.", "supports": ["sci9c4_t2c2_kp7"] },
+            { "page": 54, "quote": "Throughout this chapter, we will use the term ‘velocity’ to mean the velocity of an object at a particular instant.", "supports": ["sci9c4_t2c2_kp7"] },
+            { "page": 53, "quote": "During a family road trip, you drive 200 km north in three hours.", "supports": ["sci9c4_t2c2_kp5"] },
+            { "page": 53, "quote": "magnitude of average velocity of an object zero while its average speed is not zero?", "supports": ["sci9c4_t2c2_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t2_c3",
+          "label": "Average Acceleration",
+          "headingType": "heading",
+          "sourcePages": [54, 55, 56],
+          "cardText": "The average acceleration of an object over a time interval is the change in its velocity divided by the time interval. Like displacement and velocity, acceleration has both magnitude and direction. For motion in a straight line, if the magnitude of velocity is increasing the average acceleration is in the direction of velocity, whereas it is opposite to the direction of velocity if the magnitude of velocity is decreasing, shown by a minus sign. Acceleration can result from a change in the magnitude of velocity, a change in its direction, or both. An object can be moving very fast and yet have zero acceleration, because acceleration depends not on how fast an object is moving but on how quickly its velocity is changing. If the magnitude of velocity increases or decreases by equal amounts in equal intervals of time the acceleration is constant. A dropped object has a constant average acceleration of 9.8 metres per second squared in the direction of motion, called the acceleration due to gravity, denoted by g.",
+          "hint": "When is acceleration in the direction of velocity, and when is it opposite?",
+          "probe": "What is average acceleration, and can an object moving very fast have zero acceleration?",
+          "causeChain": "Average acceleration is change in velocity divided by the time interval -> speeding up gives acceleration along the velocity and slowing down gives it opposite -> acceleration depends on how quickly velocity changes, not on how fast the object moves -> a dropped object has constant acceleration g",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_change_not_speed",
+              "linksChecks": [
+                "chk_sci9c4_acc_def",
+                "chk_sci9c4_acc_zero"
+              ],
+              "criterion": "Connects acceleration depending on how quickly velocity changes to an object at constant high velocity having zero acceleration.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The average acceleration of an object over a time interval is the change in its velocity divided by the time interval.",
+              "followUp": "How do we measure how quickly the rate of motion is itself changing?",
+              "assessment": {
+                "requiredEvidence": [
+                  "change in its velocity",
+                  "divided by the time interval"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_def",
+                    "criterion": "Defines average acceleration as the change in velocity divided by the time interval.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "For motion in a straight line, if the magnitude of velocity is increasing in a given time interval, the average acceleration is in the direction of velocity (Fig. 4.8). Whereas, the average acceleration is opposite to the direction of velocity if the magnitude of velocity is decreasing.",
+              "followUp": "When is this quantity along the motion, and when is it against it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "magnitude of velocity is increasing",
+                  "in the direction of velocity",
+                  "opposite to the direction of velocity",
+                  "decreasing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_direction",
+                    "criterion": "States that when the magnitude of velocity increases the acceleration is in the direction of velocity, and when it decreases the acceleration is opposite to the velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_acc_dir"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t2c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The average acceleration can result from change in the magnitude of velocity or change in its direction, or both.",
+              "assessment": {
+                "requiredEvidence": [
+                  "change in the magnitude of velocity",
+                  "change in its direction",
+                  "or both"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_cause",
+                    "criterion": "States that acceleration can result from a change in the magnitude of velocity, a change in its direction, or both.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c3_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "An object can be moving very fast and yet have zero acceleration. Acceleration depends not on how fast an object is moving, but on how quickly its velocity is changing.",
+              "followUp": "Can a very quick object have none of this quantity? Explain.",
+              "assessment": {
+                "requiredEvidence": [
+                  "very fast",
+                  "zero acceleration",
+                  "how quickly its velocity is changing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_zero",
+                    "criterion": "States that an object can move very fast and still have zero acceleration, because acceleration depends on how quickly velocity changes, not on how fast the object moves.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_acc_fast"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t2c3_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "if the magnitude of its velocity increases or decreases by equal amounts in equal intervals of time (for all possible choices of time intervals), the acceleration of the object is constant.",
+              "assessment": {
+                "requiredEvidence": [
+                  "equal amounts in equal intervals of time",
+                  "acceleration of the object is constant"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_constant",
+                    "criterion": "States that if the magnitude of velocity increases or decreases by equal amounts in equal intervals of time, the acceleration is constant.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t2c3_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "We note that the average acceleration is constant and equal to 9.8 m s–2. As the velocity is increasing in the direction of motion, the acceleration is in the direction of motion. This acceleration is called the acceleration due to gravitational force by the Earth and is denoted by g.",
+              "followUp": "What value does a dropped object have for this quantity, and what is it called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "constant",
+                  "9.8",
+                  "in the direction of motion",
+                  "acceleration due to gravitational force",
+                  "denoted by g"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_acc_gravity",
+                    "criterion": "States that for a dropped object the average acceleration is constant at 9.8 m per second squared in the direction of motion, called the acceleration due to gravity, denoted by g.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a scooter with a constant speedometer reading can still be accelerating if the direction of its velocity changes",
+            "Exercise: a bus at a steady 90 km/h has zero acceleration, while a stone released from rest has an acceleration of 9.8 m s-2",
+            "Exercise: a car starts from rest and reaches 24 m s-1 in 6 s, so its average acceleration is the change in velocity divided by 6 s"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_acc_fast",
+              "wrong": "A faster object always has a larger acceleration.",
+              "fix": "Acceleration depends not on how fast an object is moving, but on how quickly its velocity is changing; a bus at constant velocity has zero acceleration even if its velocity is high."
+            },
+            {
+              "id": "misc_sci9c4_acc_dir",
+              "wrong": "Acceleration is always in the direction of motion.",
+              "fix": "If the magnitude of velocity is decreasing, the average acceleration is opposite to the direction of velocity."
+            }
+          ],
+          "verify": [
+            { "page": 54, "quote": "The average acceleration of an object over a time interval is the change in its velocity divided by the time interval.", "supports": ["sci9c4_t2c3_kp1"] },
+            { "page": 54, "quote": "if the magnitude of velocity is increasing in a given time interval, the average acceleration is in the direction of velocity (Fig. 4.8).", "supports": ["sci9c4_t2c3_kp2"] },
+            { "page": 54, "quote": "Whereas, the average acceleration is opposite to the direction of velocity if the magnitude of velocity is decreasing.", "supports": ["sci9c4_t2c3_kp2"] },
+            { "page": 55, "quote": "The average acceleration can result from change in the magnitude of velocity or change in its direction, or both.", "supports": ["sci9c4_t2c3_kp3"] },
+            { "page": 55, "quote": "An object can be moving very fast and yet have zero acceleration.", "supports": ["sci9c4_t2c3_kp4"] },
+            { "page": 55, "quote": "Acceleration depends not on how fast an object is moving, but on how quickly its velocity is changing.", "supports": ["sci9c4_t2c3_kp4"] },
+            { "page": 56, "quote": "if the magnitude of its velocity increases or decreases by equal amounts in equal intervals of time (for all possible choices of time intervals), the acceleration of the object is constant.", "supports": ["sci9c4_t2c3_kp5"] },
+            { "page": 56, "quote": "We note that the average acceleration is constant and equal to", "supports": ["sci9c4_t2c3_kp6"] },
+            { "page": 56, "quote": "As the velocity is increasing in the direction of motion, the acceleration is in the direction of motion.", "supports": ["sci9c4_t2c3_kp6"] },
+            { "page": 56, "quote": "This acceleration is called the acceleration due to gravitational force by the Earth and is denoted by g.", "supports": ["sci9c4_t2c3_kp6"] },
+            { "page": 69, "quote": "Is it possible for her scooter to be accelerating and if so, how?", "supports": ["sci9c4_t2c3_kp3"] },
+            { "page": 69, "quote": "A car starts from rest and its velocity reaches 24 m s–1 in 6 s.", "supports": ["sci9c4_t2c3_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch4_t3",
+      "title": "Graphs of motion",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch4_t3_c1",
+          "label": "Position-Time Graphs",
+          "headingType": "heading",
+          "sourcePages": [58, 59, 60],
+          "cardText": "A position-time graph represents the change in position of an object with time; a graph is not a route map but shows how the position changes with time with respect to the origin. A straight-line position-time graph indicates that the object is moving with a constant velocity, whereas a curved graph indicates that the velocity is not constant and the object is in accelerated motion. The slope of a line is its steepness, and the slope of a graph gives the rate of change of the quantity on the Y-axis with respect to the quantity on the X-axis, so the slope of a position-time graph gives the average velocity. A straight line parallel to the time axis represents a stationary object. When two objects are compared, the one with the steeper line has the higher velocity.",
+          "hint": "What does a straight line, a curve and a horizontal line on a position-time graph tell you?",
+          "probe": "How do you read an object's motion from a position-time graph?",
+          "causeChain": "A position-time graph shows position against time -> a straight line means constant velocity and a curve means changing velocity -> slope gives the rate of change of position, the velocity -> a horizontal line means at rest and a steeper line means a higher velocity",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_slope_velocity",
+              "linksChecks": [
+                "chk_sci9c4_pt_slope",
+                "chk_sci9c4_pt_compare"
+              ],
+              "criterion": "Connects the slope of a position-time graph being the rate of change of position to the velocity of the object, steeper meaning faster.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t3c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Remember, a graph is not a route map. It does not show the route but how the position of the object changes with time with respect to the origin.",
+              "assessment": {
+                "requiredEvidence": [
+                  "not a route map",
+                  "does not show the route",
+                  "position of the object changes with time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pt_route_note",
+                    "criterion": "States that a position-time graph is not a route map; it shows how the position changes with time with respect to the origin.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_pt_route"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "a straight line position-time graph indicates that the object is moving with a constant velocity. On the other hand, a curved position-time graph as in Fig. 4.13b, indicates that the velocity is not constant, and thus, the object is in accelerated motion.",
+              "followUp": "What do a graph line that runs straight and one that bends tell you about the motion?",
+              "assessment": {
+                "requiredEvidence": [
+                  "straight line",
+                  "constant velocity",
+                  "curved",
+                  "velocity is not constant",
+                  "accelerated motion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pt_shape",
+                    "criterion": "States that a straight-line position-time graph means constant velocity, while a curved graph means velocity is not constant and the object is accelerating.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t3c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The slope of a line is the steepness of the line. The slope of a graph gives information about the rate of change of the quantity shown on Y-axis with respect to the quantity shown on X-axis.",
+              "followUp": "What does the angle at which a graph line climbs tell you about how quickly one quantity changes with the other?",
+              "assessment": {
+                "requiredEvidence": [
+                  "slope",
+                  "steepness",
+                  "rate of change",
+                  "Y-axis",
+                  "X-axis"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pt_slope",
+                    "criterion": "States that the slope of a line is its steepness and gives the rate of change of the Y-axis quantity with respect to the X-axis quantity; for a position-time graph it gives the average velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t3c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "A straight line parallel to the time axis on a position-time graph represents a stationary object",
+              "followUp": "What does a flat line along the time axis on this graph represent?",
+              "assessment": {
+                "requiredEvidence": [
+                  "parallel to the time axis",
+                  "stationary object"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pt_rest",
+                    "criterion": "States that a straight line parallel to the time axis on a position-time graph represents a stationary object.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_pt_flat"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t3c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "That is, the slope of line for B is steeper than the slope for line A. Thus, the velocity of B is higher than that of A.",
+              "followUp": "Two lines are drawn for objects A and B and B's line is steeper. Which object is faster and why?",
+              "assessment": {
+                "requiredEvidence": [
+                  "slope of line for B is steeper",
+                  "velocity of B is higher"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_pt_compare",
+                    "criterion": "States that the object whose position-time line has the steeper slope has the higher velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: two objects with different position-time lines have equal velocity only where their slopes are equal",
+            "Exercise: a car with a curved position-time graph is accelerating, whereas a straight sloping line shows constant velocity"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_pt_route",
+              "wrong": "A position-time graph shows the actual route taken by the object.",
+              "fix": "A graph is not a route map; it does not show the route but how the position of the object changes with time with respect to the origin."
+            },
+            {
+              "id": "misc_sci9c4_pt_flat",
+              "wrong": "A horizontal line on a position-time graph means the object moves at constant speed.",
+              "fix": "A straight line parallel to the time axis on a position-time graph represents a stationary object."
+            }
+          ],
+          "verify": [
+            { "page": 58, "quote": "Remember, a graph is not a route map. It does not show the route but how the position of the object changes with time with respect to the origin.", "supports": ["sci9c4_t3c1_kp1"] },
+            { "page": 59, "quote": "a straight line position-time graph indicates that the object is moving with a constant velocity.", "supports": ["sci9c4_t3c1_kp2"] },
+            { "page": 59, "quote": "On the other hand, a curved position-time graph as in Fig. 4.13b, indicates that the velocity is not constant, and thus, the object is in accelerated motion.", "supports": ["sci9c4_t3c1_kp2"] },
+            { "page": 60, "quote": "The slope of a line is the steepness of the line.", "supports": ["sci9c4_t3c1_kp3"] },
+            { "page": 60, "quote": "The slope of a graph gives information about the rate of change of the quantity shown on Y-axis with respect to the quantity shown on X-axis.", "supports": ["sci9c4_t3c1_kp3"] },
+            { "page": 60, "quote": "A straight line parallel to the time axis on a position-time graph represents a stationary object", "supports": ["sci9c4_t3c1_kp4"] },
+            { "page": 60, "quote": "That is, the slope of line for B is steeper than the slope for line A.", "supports": ["sci9c4_t3c1_kp5"] },
+            { "page": 60, "quote": "Thus, the velocity of B is higher than that of A.", "supports": ["sci9c4_t3c1_kp5"] },
+            { "page": 69, "quote": "Do objects A and B ever have equal velocity? Justify your answer.", "supports": ["sci9c4_t3c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t3_c2",
+          "label": "Velocity-Time Graphs: Shape and Slope",
+          "headingType": "heading",
+          "sourcePages": [61, 62],
+          "cardText": "A velocity-time graph represents the change in velocity of an object with time. When the velocity is constant the graph is a straight line parallel to the X-axis and the acceleration is zero. A straight-line velocity-time graph that rises indicates that the velocity is increasing with a constant acceleration in the direction of velocity, whereas a straight line that falls indicates that the velocity is decreasing with a constant acceleration opposite to the direction of velocity. The slope of the line on a velocity-time graph gives how fast the velocity is changing with time, that is the acceleration; a slope of zero means constant velocity and zero acceleration, and a minus sign means the acceleration is opposite to the velocity because the velocity is decreasing.",
+          "hint": "What does the slope of a velocity-time graph give?",
+          "probe": "How do you tell constant velocity, speeding up and slowing down from a velocity-time graph, and what does its slope give?",
+          "causeChain": "A flat velocity-time line means constant velocity and zero acceleration -> a rising straight line means increasing velocity with constant acceleration along it, and a falling one means decreasing velocity with acceleration opposite to it -> the slope of the line is the acceleration",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_flat_zero_slope",
+              "linksChecks": [
+                "chk_sci9c4_vt_shape",
+                "chk_sci9c4_vt_slope"
+              ],
+              "criterion": "Connects a velocity-time line with zero slope to constant velocity and zero acceleration.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The velocity-time graph of an object in motion represents the change in its velocity with time.",
+              "followUp": "What does a graph of rate of motion against time show?",
+              "assessment": {
+                "requiredEvidence": [
+                  "velocity-time graph",
+                  "change in its velocity with time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vt_def",
+                    "criterion": "States that a velocity-time graph represents the change in velocity of an object with time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "When the velocity of the car is constant, the velocity-time graph is a straight line parallel to the X-axis (Fig. 4.17a) and acceleration is zero. A straight line velocity-time graph as shown in Fig. 4.17b indicates that the velocity is increasing with a constant acceleration (in the direction of velocity).",
+              "followUp": "What do a flat line and a rising straight line show on this graph?",
+              "assessment": {
+                "requiredEvidence": [
+                  "constant",
+                  "parallel to the X-axis",
+                  "acceleration is zero",
+                  "increasing with a constant acceleration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vt_shape",
+                    "criterion": "States that a constant velocity gives a straight line parallel to the X-axis with zero acceleration, and a straight line showing increasing velocity means constant acceleration in the direction of velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c4_vt_decrease",
+                    "criterion": "States that a straight line showing decreasing velocity means a constant acceleration opposite to the direction of velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t3c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The slope of the line on velocity-time graph gives how fast the velocity is changing with time, i.e., the acceleration.",
+              "followUp": "What does the steepness of the line on this graph give?",
+              "assessment": {
+                "requiredEvidence": [
+                  "slope of the line",
+                  "velocity-time graph",
+                  "how fast the velocity is changing",
+                  "acceleration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vt_slope",
+                    "criterion": "States that the slope of the line on a velocity-time graph gives how fast the velocity is changing with time, the acceleration.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_vt_slope_vel"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t3c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Hence, the velocity is constant and the acceleration is zero in this case. The minus sign indicates that the direction of acceleration is opposite to the direction of velocity (as the velocity is decreasing).",
+              "assessment": {
+                "requiredEvidence": [
+                  "velocity is constant",
+                  "acceleration is zero",
+                  "minus sign",
+                  "opposite to the direction of velocity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vt_sign",
+                    "criterion": "States that a zero slope means constant velocity and zero acceleration, and a minus sign on the acceleration means it is opposite to the velocity because the velocity is decreasing.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a car that accelerates from rest to 20 m s-1 in 5 s, travels at that speed for 10 s and brakes uniformly to stop in 6 s would show a rising line, a flat line and a falling line on a velocity-time graph"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_vt_slope_vel",
+              "wrong": "The slope of a velocity-time graph gives the displacement.",
+              "fix": "The slope of the line on a velocity-time graph gives how fast the velocity is changing with time, i.e., the acceleration; the area gives displacement."
+            }
+          ],
+          "verify": [
+            { "page": 61, "quote": "The velocity-time graph of an object in motion represents the change in its", "supports": ["sci9c4_t3c2_kp1"] },
+            { "page": 61, "quote": "velocity with time.", "supports": ["sci9c4_t3c2_kp1"] },
+            { "page": 61, "quote": "When the velocity of the car is constant, the velocity-time graph is", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 61, "quote": "a straight line parallel to the X-axis (Fig. 4.17a) and acceleration is zero.", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 61, "quote": "A straight line velocity-time graph as shown in Fig. 4.17b indicates that", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 61, "quote": "the velocity is increasing with a constant acceleration (in the direction of velocity).", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 61, "quote": "Whereas, a straight line velocity-time graph as shown in Fig. 4.17c indicates that the velocity is decreasing with a constant acceleration", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 61, "quote": "(opposite to the direction of velocity).", "supports": ["sci9c4_t3c2_kp2"] },
+            { "page": 62, "quote": "The slope of the line on velocity-time graph gives how fast the velocity is changing with time, i.e., the acceleration.", "supports": ["sci9c4_t3c2_kp3"] },
+            { "page": 62, "quote": "Hence, the velocity is constant and the acceleration is zero in this case.", "supports": ["sci9c4_t3c2_kp4"] },
+            { "page": 62, "quote": "The minus sign indicates that the direction of acceleration is opposite to the direction of velocity (as the velocity is decreasing).", "supports": ["sci9c4_t3c2_kp4"] },
+            { "page": 69, "quote": "A car starts from rest and accelerates uniformly to 20 m s–1 in 5 seconds.", "supports": ["sci9c4_t3c2_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t3_c3",
+          "label": "Velocity-Time Graphs: Area and Displacement",
+          "headingType": "heading",
+          "sourcePages": [62, 63],
+          "cardText": "The area enclosed by a velocity-time graph and the time axis for a desired time interval is equal to the displacement in that time interval. For constant velocity the area of the rectangle is velocity times time interval, which equals the displacement, for example 120 m between 0 s and 6 s at 20 m per second. For motion with constant acceleration the area is a rectangle plus a triangle, so between 10 s and 20 s the displacement is the area of the rectangle plus the area of the triangle, 50 m plus 25 m, which is 75 m. By finding the slope and the area from the velocity-time graph for motion with constant acceleration we can determine acceleration and displacement, respectively.",
+          "hint": "What does the area under a velocity-time graph give?",
+          "probe": "How can you find the displacement of an object from its velocity-time graph?",
+          "causeChain": "Area of a rectangle under the line is velocity times time interval -> this equals the displacement -> for changing velocity the area is a rectangle plus a triangle -> so slope gives acceleration and area gives displacement",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_area_displacement",
+              "linksChecks": [
+                "chk_sci9c4_vta_rule",
+                "chk_sci9c4_vta_example"
+              ],
+              "criterion": "Connects the area under the velocity-time line (rectangle plus triangle) to the displacement over that time interval.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t3c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "You have found that the area enclosed by the velocity-time graph and the time axis for a desired time interval is equal to the displacement in that time interval.",
+              "followUp": "What does the region between the line of this graph and the horizontal axis give?",
+              "assessment": {
+                "requiredEvidence": [
+                  "area enclosed",
+                  "velocity-time graph",
+                  "time axis",
+                  "displacement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vta_rule",
+                    "criterion": "States that the area enclosed by the velocity-time graph and the time axis for a time interval equals the displacement in that interval.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_vta_accel"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t3c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "displacement between 10 s to 20 s = area of ABDE = area of the rectangle ACDE + area of the triangle ABC",
+              "followUp": "How would you find the net change of place when the rate rises steadily over an interval?",
+              "assessment": {
+                "requiredEvidence": [
+                  "area of the rectangle",
+                  "area of the triangle",
+                  "50 m",
+                  "25 m",
+                  "75 m"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vta_example",
+                    "criterion": "States that for constant acceleration the displacement is the area of a rectangle plus the area of a triangle, e.g. 50 m + 25 m = 75 m between 10 s and 20 s.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t3c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "We learnt that by finding the slope and area from velocity-time graph for motion with constant acceleration, we can determine acceleration and displacement, respectively.",
+              "assessment": {
+                "requiredEvidence": [
+                  "slope",
+                  "area",
+                  "acceleration",
+                  "displacement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_vta_both",
+                    "criterion": "States that the slope of the velocity-time graph gives acceleration and the area gives displacement.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: the displacement of a cyclist is the area under the velocity-time graph, shaded separately for the constant-velocity and slowing-down portions",
+            "Exercise: the distance a marathon runner ran is estimated from the area under the velocity-time graph"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_vta_accel",
+              "wrong": "The area under a velocity-time graph gives the acceleration.",
+              "fix": "The area enclosed by the velocity-time graph and the time axis gives the displacement; the slope gives the acceleration."
+            }
+          ],
+          "verify": [
+            { "page": 63, "quote": "You have found that the area enclosed by the velocity-time graph and the time axis for a desired time interval is equal to the displacement in that time interval.", "supports": ["sci9c4_t3c3_kp1"] },
+            { "page": 63, "quote": "displacement between 10 s to 20 s = area of ABDE", "supports": ["sci9c4_t3c3_kp2"] },
+            { "page": 63, "quote": "= area of the rectangle ACDE + area of the triangle ABC", "supports": ["sci9c4_t3c3_kp2"] },
+            { "page": 63, "quote": "= 50 m + 25 m = 75 m", "supports": ["sci9c4_t3c3_kp2"] },
+            { "page": 63, "quote": "We learnt that by finding the slope and area from velocity-time graph for motion with constant acceleration, we can determine acceleration and displacement, respectively.", "supports": ["sci9c4_t3c3_kp3"] },
+            { "page": 62, "quote": "displacement between 0 s and 6 s = area of OABC", "supports": ["sci9c4_t3c3_kp1"] },
+            { "page": 70, "quote": "Shade the areas (in different colours) representing the displacement of", "supports": ["sci9c4_t3c3_kp1"] },
+            { "page": 70, "quote": "Estimate the distance she ran based on the graph.", "supports": ["sci9c4_t3c3_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch4_t4",
+      "title": "Kinematic equations and road safety",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch4_t4_c1",
+          "label": "Kinematic Equations for Constant Acceleration",
+          "headingType": "heading",
+          "sourcePages": [63, 64, 65],
+          "cardText": "For the special case of motion with constant acceleration, the acceleration at each instant equals the average acceleration over any time interval. From the definition of average acceleration the first equation is v = u + at, which lets us calculate the velocity at all times if the initial velocity and acceleration are known. The displacement s during time t is given by the area under the velocity-time graph, a rectangle plus a triangle, which gives the second equation. These two are the primary equations; combining them in different ways gives three more, of which one, v squared equals u squared plus 2as, is derived by eliminating t. For motion in a straight line with constant acceleration the five physical quantities displacement, time interval, initial velocity, final velocity and acceleration are related by these kinematic equations, which describe how the motion changes with time and let us predict position or velocity at a future time. They are valid only when the acceleration is constant, and in straight-line motion in both directions the signs of u, v, a and s tell their directions.",
+          "hint": "What are the five quantities the kinematic equations connect, and when do they apply?",
+          "probe": "State the kinematic equations for straight-line motion and say when they can be used.",
+          "causeChain": "With constant acceleration the average acceleration equals the acceleration at each instant -> this gives v = u + at, and the area under the velocity-time graph gives the displacement equation -> combining them gives v squared = u squared + 2as -> they relate s, t, u, v and a, but hold only if acceleration is constant",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_constant_a_valid",
+              "linksChecks": [
+                "chk_sci9c4_ke_basis",
+                "chk_sci9c4_ke_valid"
+              ],
+              "criterion": "Connects the equations being derived from constant acceleration to their validity only when the acceleration is constant.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Let us consider the special case of motion with constant acceleration and try to derive some equations for analysing such motions. Since the acceleration is constant, acceleration at each instant will be equal to the average acceleration over any time interval.",
+              "followUp": "What is special about the rate of change of the rate of motion when it is constant?",
+              "assessment": {
+                "requiredEvidence": [
+                  "constant acceleration",
+                  "acceleration at each instant",
+                  "average acceleration over any time interval"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_basis",
+                    "criterion": "States that when acceleration is constant, the acceleration at each instant equals the average acceleration over any time interval.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This equation allows us to calculate velocity (v ) at all times if initial velocity (u ) and acceleration (a ) are known.",
+              "followUp": "What does the first equation let you find, and what must you know first?",
+              "assessment": {
+                "requiredEvidence": [
+                  "velocity",
+                  "initial velocity",
+                  "acceleration",
+                  "known"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_first",
+                    "criterion": "States that the first equation, v = u + at, lets us calculate the velocity at all times if the initial velocity and acceleration are known.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "As learnt in the earlier section, the displacement s of the object during the time interval t is given by the area enclosed within OABD. These two equations (Eq. 4.4a and Eq. 4.4b) are the primary equations.",
+              "followUp": "Where does the second equation of motion come from?",
+              "assessment": {
+                "requiredEvidence": [
+                  "displacement",
+                  "area enclosed",
+                  "primary equations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_second",
+                    "criterion": "States that the displacement during a time interval is given by the area under the velocity-time graph, giving the second primary equation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "For the motion of an object in a straight line with constant acceleration, the five physical quantities-displacement (s ), time interval (t ), initial velocity (u ), final velocity (v ) and acceleration (a ), can be related by the following set of equations,",
+              "followUp": "Which five quantities do the equations of motion link?",
+              "assessment": {
+                "requiredEvidence": [
+                  "displacement",
+                  "time interval",
+                  "initial velocity",
+                  "final velocity",
+                  "acceleration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_five",
+                    "criterion": "Names the five quantities related by the kinematic equations: displacement, time interval, initial velocity, final velocity and acceleration.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "These kinematic equations are valid only when the acceleration is constant.",
+              "followUp": "Under what condition can these equations be used?",
+              "assessment": {
+                "requiredEvidence": [
+                  "valid only",
+                  "acceleration is constant"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_valid",
+                    "criterion": "States that the kinematic equations are valid only when the acceleration is constant.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_ke_any"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t4c1_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Using these equations, it is possible to predict position or velocity of the object at a future time. In motion in a straight line in both directions, the sign of u, v, a, and s in these equations tells us about the direction of that particular quantity.",
+              "assessment": {
+                "requiredEvidence": [
+                  "predict position or velocity",
+                  "future time",
+                  "sign of u, v, a, and s",
+                  "direction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ke_use",
+                    "criterion": "States that the equations can predict position or velocity at a future time, and the signs of u, v, a and s tell their directions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a motorbike moving at 28 m s-1 stops after travelling 98 m, so the acceleration and stopping time follow from the kinematic equations",
+            "Exercise: a truck slowing from 54 km/h to 36 km/h in 36 s uses the equations with constant acceleration to give the distance travelled"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_ke_any",
+              "wrong": "The kinematic equations hold for any motion, whatever the acceleration.",
+              "fix": "These kinematic equations are valid only when the acceleration is constant."
+            }
+          ],
+          "verify": [
+            { "page": 63, "quote": "Let us consider the special case of motion with constant acceleration", "supports": ["sci9c4_t4c1_kp1"] },
+            { "page": 63, "quote": "Since the acceleration is constant, acceleration at each instant will be equal to the average acceleration over any time interval.", "supports": ["sci9c4_t4c1_kp1"] },
+            { "page": 63, "quote": "This equation allows us to calculate velocity (v ) at all times if initial velocity (u ) and acceleration (a ) are known.", "supports": ["sci9c4_t4c1_kp2"] },
+            { "page": 64, "quote": "the displacement s of the object during the time interval t is given by the area enclosed within OABD.", "supports": ["sci9c4_t4c1_kp3"] },
+            { "page": 64, "quote": "These two equations (Eq. 4.4a and Eq. 4.4b) are the primary equations.", "supports": ["sci9c4_t4c1_kp3"] },
+            { "page": 64, "quote": "the five physical quantities-displacement (s ), time interval (t ), initial velocity (u ), final velocity (v ) and acceleration (a ), can be related by the following set of equations,", "supports": ["sci9c4_t4c1_kp4"] },
+            { "page": 64, "quote": "These are known as kinematic equations.", "supports": ["sci9c4_t4c1_kp4"] },
+            { "page": 65, "quote": "These kinematic equations are valid only when the acceleration is constant.", "supports": ["sci9c4_t4c1_kp5"] },
+            { "page": 65, "quote": "Using these equations, it is possible to predict position or velocity of the object at a future time.", "supports": ["sci9c4_t4c1_kp6"] },
+            { "page": 65, "quote": "the sign of u, v, a, and s in these equations tells us about the direction of that particular quantity.", "supports": ["sci9c4_t4c1_kp6"] },
+            { "page": 69, "quote": "A motorbike moving with initial velocity 28 m s–1 and constant acceleration stops after travelling 98 m.", "supports": ["sci9c4_t4c1_kp1"] },
+            { "page": 69, "quote": "Assume the acceleration to be constant while slowing down.", "supports": ["sci9c4_t4c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch4_t4_c2",
+          "label": "Braking Distance and Road Safety",
+          "headingType": "example",
+          "sourcePages": [65],
+          "cardText": "In Example 4.8 a car brakes with an acceleration of -4 m per second squared. Starting from 54 km per hour the distance travelled before stopping is 28.1 m, and starting from 108 km per hour it is 112.5 m. When brakes are applied the vehicle moves some distance before stopping, and this distance depends upon the velocity of the vehicle when the brakes are applied, the road surface, the braking capacity of the vehicle, and the driver's reaction time. This is why it is important to maintain a safe distance from the vehicle ahead and adjust it according to your initial velocity. Vehicle-to-vehicle communication technology, being developed in many countries including India, lets vehicles exchange signals and warns drivers of possible collisions.",
+          "hint": "What does the stopping distance depend on?",
+          "probe": "Why must we keep a safe distance from the vehicle ahead, and what affects the distance a vehicle needs to stop?",
+          "causeChain": "The kinematic equations give the stopping distance for a given braking acceleration and speed -> 54 km/h gives 28.1 m while 108 km/h gives 112.5 m -> the distance also depends on road surface, braking capacity and reaction time, so the safe gap must be adjusted to the initial velocity",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_speed_distance",
+              "linksChecks": [
+                "chk_sci9c4_brk_example",
+                "chk_sci9c4_brk_factors"
+              ],
+              "criterion": "Connects the larger initial velocity to the much longer distance travelled before stopping, and so to the need for a larger safe distance.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Substituting the value of u, we obtain (i) 28.1 m, and (ii) 112.5 m.",
+              "followUp": "A car brakes the same way from two speeds. How far does it go before stopping in each case?",
+              "assessment": {
+                "requiredEvidence": [
+                  "28.1 m",
+                  "112.5 m",
+                  "54 km/h",
+                  "108 km/h"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_brk_example",
+                    "criterion": "Gives the Example 4.8 results: with braking acceleration of -4 m per second squared, the car stops after 28.1 m from 54 km/h and after 112.5 m from 108 km/h.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_brk_double"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The distance travelled depends upon the velocity of the vehicle when the brakes are applied, the road surface (wet/dry, etc.), the braking capacity of the vehicle (the negative acceleration caused by the brakes) as well as the driver’s reaction time.",
+              "followUp": "What factors decide how far a vehicle runs after the brakes are applied?",
+              "assessment": {
+                "requiredEvidence": [
+                  "velocity of the vehicle",
+                  "road surface",
+                  "braking capacity",
+                  "reaction time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_brk_factors",
+                    "criterion": "Names what the stopping distance depends on: the velocity when braking, the road surface, the braking capacity, and the driver's reaction time.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Can you now understand why it is important to maintain a safe distance from the vehicle moving ahead of your vehicle (Fig. 4.20) and how this distance needs to be adjusted given your initial velocity?",
+              "assessment": {
+                "requiredEvidence": [
+                  "safe distance",
+                  "vehicle moving ahead",
+                  "adjusted",
+                  "initial velocity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_brk_safe",
+                    "criterion": "States that it is important to maintain a safe distance from the vehicle ahead and adjust it according to your initial velocity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t4c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "There is a vehicle-to-vehicle (V2V) communication technology, now being developed in many countries including India, which allows vehicles to exchange signals and warns drivers of possible collisions.",
+              "assessment": {
+                "requiredEvidence": [
+                  "vehicle-to-vehicle",
+                  "V2V",
+                  "exchange signals",
+                  "warns drivers of possible collisions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_brk_v2v",
+                    "criterion": "States that vehicle-to-vehicle communication technology allows vehicles to exchange signals and warns drivers of possible collisions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a bus travelling at 36 km/h whose driver reacts after 0.5 s and then brakes at 2.5 m s-2 may or may not stop before an obstacle 30 m ahead, which needs the reaction distance plus the braking distance",
+            "Think It Over: the distance to keep from a truck ahead that suddenly brakes depends on the speed with which we are moving"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_brk_double",
+              "wrong": "Doubling the speed just doubles the stopping distance, so the safe gap need not change much.",
+              "fix": "In Example 4.8 the stopping distance for 108 km/h (112.5 m) is far more than that for 54 km/h (28.1 m), so the safe distance needs to be adjusted given your initial velocity."
+            }
+          ],
+          "verify": [
+            { "page": 65, "quote": "Substituting the value of u, we obtain (i) 28.1 m, and (ii) 112.5 m.", "supports": ["sci9c4_t4c2_kp1"] },
+            { "page": 65, "quote": "The distance travelled depends upon the velocity of the vehicle when the brakes are applied, the road surface (wet/dry, etc.), the braking capacity of the vehicle (the negative acceleration caused by the brakes) as well as the driver’s reaction time.", "supports": ["sci9c4_t4c2_kp2"] },
+            { "page": 65, "quote": "Can you now understand why it is important to maintain a safe distance from the vehicle moving ahead of your vehicle", "supports": ["sci9c4_t4c2_kp3"] },
+            { "page": 65, "quote": "how this distance needs to be adjusted given your initial velocity?", "supports": ["sci9c4_t4c2_kp3"] },
+            { "page": 65, "quote": "There is a vehicle-to-vehicle (V2V) communication technology, now being developed in many countries including India", "supports": ["sci9c4_t4c2_kp4"] },
+            { "page": 65, "quote": "which allows vehicles to exchange signals and warns drivers of possible collisions.", "supports": ["sci9c4_t4c2_kp4"] },
+            { "page": 69, "quote": "The driver takes 0.5 seconds to react before pressing the", "supports": ["sci9c4_t4c2_kp1"] },
+            { "page": 48, "quote": "Does this distance depend upon the speed with which we are moving?", "supports": ["sci9c4_t4c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch4_t5",
+      "title": "Motion in a plane",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch4_t5_c1",
+          "label": "Uniform Circular Motion",
+          "headingType": "heading",
+          "sourcePages": [66, 67, 68],
+          "cardText": "Motion in a plane, such as a vehicle overtaking another, the path of a kicked ball or a satellite moving in a circular path, is called motion in two dimensions. When an object moves in a circular path its motion is called circular motion. For a child on a merry-go-round moving from A to B to C the distance travelled is the curve ABC and the displacement is the straight line AC, which are not equal; after one full revolution the distance is the circumference of the circle but the displacement is zero, so the average velocity is zero. When an object moves in a circular path with constant (uniform) speed, its motion is called uniform circular motion. As the number of sides of a track increases the track approaches a circle and the direction of the athlete's velocity changes continuously. A marble released from a ring moves in a straight line, continuing in the direction it was moving at that instant: the velocity at a point is along the tangent to the circle at that point. In uniform circular motion the speed is constant but the motion is accelerated because the direction of velocity continuously changes. It is an idealised model, useful as a foundation for planets revolving around the Sun or a vehicle making a circular turn.",
+          "hint": "Why is circular motion at constant speed still accelerated?",
+          "probe": "What is uniform circular motion and why is it an accelerated motion?",
+          "causeChain": "In circular motion at constant speed the speed stays the same -> but the velocity points along the tangent, which changes direction at every point -> since velocity changes in direction, the motion is accelerated even though speed is constant",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c4_direction_acceleration",
+              "linksChecks": [
+                "chk_sci9c4_ucm_def",
+                "chk_sci9c4_ucm_accel"
+              ],
+              "criterion": "Connects the direction of velocity (along the tangent) changing continuously on a circle to the motion being accelerated although the speed is constant.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c4_t5c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Motion in a plane, such as a vehicle overtaking another, the path of a kicked ball or a satellite moving in a circular path, is called motion in two dimensions (Fig. 4.21).",
+              "assessment": {
+                "requiredEvidence": [
+                  "motion in a plane",
+                  "vehicle overtaking another",
+                  "kicked ball",
+                  "satellite",
+                  "two dimensions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_plane",
+                    "criterion": "States that motion in a plane, such as a kicked ball or a satellite in a circular path, is motion in two dimensions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The distance travelled by the child is the curve ABC and displacement is the straight-line AC. As you can see both are not equal. On the other hand, the displacement is zero, since the child comes back to its original position after making one revolution.",
+              "followUp": "On a round path, how do the path length and the straight-line distance between two points compare, and what happens over one full lap?",
+              "assessment": {
+                "requiredEvidence": [
+                  "curve ABC",
+                  "straight-line AC",
+                  "not equal",
+                  "displacement is zero",
+                  "one revolution"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_disp",
+                    "criterion": "States that on a circular path the distance is the curve while the displacement is the straight line between the points, and after one full revolution the displacement is zero.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "When an object moves in a circular path with constant (uniform) speed, its motion is called uniform circular motion.",
+              "followUp": "What name is given to travel along a round path at an unchanging rate?",
+              "assessment": {
+                "requiredEvidence": [
+                  "circular path",
+                  "constant",
+                  "uniform speed",
+                  "uniform circular motion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_def",
+                    "criterion": "Defines uniform circular motion as motion in a circular path with constant (uniform) speed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Finally, the track approaches a circle, with each side decreasing to a point and the direction of athlete’s velocity changes continuously.",
+              "followUp": "What happens to an athlete's track as it gets more and more sides?",
+              "assessment": {
+                "requiredEvidence": [
+                  "number of sides",
+                  "approaches a circle",
+                  "direction of athlete's velocity changes continuously"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_track",
+                    "criterion": "Explains that as the number of sides of a track increases it approaches a circle and the direction of the athlete's velocity changes continuously.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "When the marble is released by lifting the ring, it moves in a straight line. This is because once the marble is released, it continues to move in the direction it has been moving at the instant the ring was removed. The velocity at a point is along the tangent to the circle at that point, in the direction of motion.",
+              "followUp": "What does a marble do when the ring is lifted, and along which line does its velocity point?",
+              "assessment": {
+                "requiredEvidence": [
+                  "moves in a straight line",
+                  "direction it has been moving",
+                  "tangent to the circle",
+                  "direction of motion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_tangent",
+                    "criterion": "States that a marble released from the ring moves in a straight line in the direction it was moving at that instant, so the velocity at a point is along the tangent to the circle.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_ucm_inward"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "In uniform circular motion, the motion of the object is accelerated because the direction of its velocity continuously changes. In uniform circular motion, the speed is constant at every point on the circle, it is only the direction of velocity that changes.",
+              "followUp": "Why is circular motion at an unchanging rate still an accelerated motion?",
+              "assessment": {
+                "requiredEvidence": [
+                  "accelerated",
+                  "direction of its velocity continuously changes",
+                  "speed is constant",
+                  "only the direction of velocity that changes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_accel",
+                    "criterion": "States that uniform circular motion is accelerated because the direction of velocity continuously changes, while the speed is constant at every point.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c4_ucm_noaccel"
+                ]
+              }
+            },
+            {
+              "id": "sci9c4_t5c1_kp7",
+              "weight": 1,
+              "role": "supporting",
+              "text": "uniform circular motion is an idealised model of the real-world situations. Still, it is a useful model as it serves as the foundation for more complex real-world situations, such as motion of planets revolving around the Sun or a vehicle making a circular turn.",
+              "assessment": {
+                "requiredEvidence": [
+                  "idealised model",
+                  "foundation",
+                  "planets revolving around the Sun",
+                  "vehicle making a circular turn"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c4_ucm_model",
+                    "criterion": "States that uniform circular motion is an idealised model, useful as a foundation for situations such as planets revolving around the Sun or a vehicle making a circular turn.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: a girl's scooter with a constant speedometer reading can be accelerating if it turns, because the direction of its velocity changes",
+            "Exercise: an athlete running at a constant 5 m s-1 around a circular track is accelerating because the direction of her velocity changes at every instant",
+            "Activity: on a spinning disc the numbers at 7 cm from the centre and the letters at 4 cm do not have the same speed"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c4_ucm_noaccel",
+              "wrong": "Constant speed means no acceleration, so uniform circular motion is not accelerated.",
+              "fix": "In uniform circular motion the object's motion is accelerated because the direction of its velocity continuously changes, even though its speed is constant."
+            },
+            {
+              "id": "misc_sci9c4_ucm_inward",
+              "wrong": "The velocity in circular motion points towards the centre.",
+              "fix": "The velocity at a point is along the tangent to the circle at that point, in the direction of motion."
+            }
+          ],
+          "verify": [
+            { "page": 66, "quote": "Motion in a plane, such as a vehicle overtaking another, the path of a kicked ball or a satellite moving in a circular path, is called motion in two dimensions (Fig. 4.21).", "supports": ["sci9c4_t5c1_kp1"] },
+            { "page": 66, "quote": "The distance travelled by the child is the curve ABC and displacement is the straight-line AC.", "supports": ["sci9c4_t5c1_kp2"] },
+            { "page": 66, "quote": "As you can see both are not equal.", "supports": ["sci9c4_t5c1_kp2"] },
+            { "page": 66, "quote": "On the other hand, the displacement is zero, since the child comes back to its original position after making one revolution.", "supports": ["sci9c4_t5c1_kp2"] },
+            { "page": 66, "quote": "When an object moves in a circular path with constant (uniform) speed, its motion is called uniform circular motion.", "supports": ["sci9c4_t5c1_kp3"] },
+            { "page": 67, "quote": "As the number of sides increases, the athlete has to take turns more and more frequently.", "supports": ["sci9c4_t5c1_kp4"] },
+            { "page": 67, "quote": "Finally, the track approaches a circle, with each side decreasing to a point and the direction of athlete’s velocity changes continuously.", "supports": ["sci9c4_t5c1_kp4"] },
+            { "page": 67, "quote": "When the marble is released by lifting the ring, it moves in a straight line.", "supports": ["sci9c4_t5c1_kp5"] },
+            { "page": 67, "quote": "This is because once the marble is released, it continues to move in the direction it has been moving at the instant the ring was removed.", "supports": ["sci9c4_t5c1_kp5"] },
+            { "page": 67, "quote": "The velocity at a point is along the tangent to the circle at that point, in the direction of motion.", "supports": ["sci9c4_t5c1_kp5"] },
+            { "page": 67, "quote": "In uniform circular motion, the motion of the object is accelerated because the direction of its velocity continuously changes.", "supports": ["sci9c4_t5c1_kp6"] },
+            { "page": 67, "quote": "it is only the direction of velocity that changes.", "supports": ["sci9c4_t5c1_kp6"] },
+            { "page": 68, "quote": "uniform circular motion is an idealised model of the real-world situations.", "supports": ["sci9c4_t5c1_kp7"] },
+            { "page": 68, "quote": "such as motion of planets revolving around the Sun or a vehicle making a circular turn.", "supports": ["sci9c4_t5c1_kp7"] },
+            { "page": 69, "quote": "A girl is riding her scooter and finds that its speedometer reading is", "supports": ["sci9c4_t5c1_kp6"] },
+            { "page": 71, "quote": "Are the speeds of the numbers and letters the same or different?", "supports": ["sci9c4_t5c1_kp6"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

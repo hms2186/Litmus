@@ -1,0 +1,1366 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_10_ch12.json",
+  "sourceSha256": "c24465f1dcc98ace28053dd7ccd2781eb332b4094b32205a98a2d37fc51b3c0c",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 12,
+  "chapterName": "Magnetic Effects of Electric Current",
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c12_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci10c12_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example magnetic effect, Oersted, magnetic field, field lines, north pole, south pole, right-hand thumb rule, solenoid.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "magnetic effect",
+    "Oersted",
+    "magnetic field",
+    "field lines",
+    "north pole",
+    "south pole",
+    "right-hand thumb rule",
+    "solenoid",
+    "electromagnet",
+    "Fleming's left-hand rule",
+    "force",
+    "domestic circuit",
+    "live wire",
+    "neutral wire",
+    "earth wire",
+    "fuse",
+    "overloading",
+    "short-circuiting"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci10_ch12_t1_c1",
+      "topicId": "ncert_science_10_ch12_t1",
+      "topicTitle": "Magnetic Field and Field Lines",
+      "label": "Oersted's Discovery and the Magnetic Effect of Current",
+      "headingType": "heading",
+      "sourcePages": [
+        195
+      ],
+      "conceptHash": "3510f16b2b4b11ca1f042681252f1ecc0a3dd39ab6adb1c37459f11494d8a864",
+      "cardText": "A compass placed near a straight copper wire in a circuit is deflected when current is passed. This means that the electric current through the wire has produced a magnetic effect, so electricity and magnetism are linked to each other. Hans Christian Oersted accidentally discovered in 1820 that a compass needle got deflected when an electric current passed through a metallic wire placed nearby, showing that electricity and magnetism were related phenomena. His research later led to technologies such as the radio, television and fibre optics.",
+      "hint": "What did the deflection of a compass needle by a current-carrying wire show?",
+      "probe": "Explain what Oersted's observation showed about electricity and magnetism.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Oersted's Discovery and the Magnetic Effect of Current, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A compass sits next to a wire. When the key is closed the needle swings. What do you conclude about the wire?",
+          "requiredEvidence": [
+            "compass needle",
+            "deflected",
+            "electric current",
+            "magnetic effect",
+            "electricity and magnetism are linked"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_oe_deflect",
+              "criterion": "States that a compass needle is deflected by a current-carrying wire, which means that the current produces a magnetic effect, linking electricity and magnetism.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A compass sits next to a wire. When the key is closed the needle swings. What do you conclude about the wire?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_oe_always"
+          ]
+        },
+        {
+          "id": "sci10c12_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who first noticed this effect of a current on a compass and what did it show?",
+          "requiredEvidence": [
+            "Oersted",
+            "1820",
+            "compass needle got deflected",
+            "electric current",
+            "related phenomena"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_oe_oersted",
+              "criterion": "States that Oersted discovered in 1820 that a compass needle is deflected by an electric current in a nearby wire, showing electricity and magnetism are related.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who first noticed this effect of a current on a compass and what did it show?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_oersted_chain",
+          "linksChecks": [
+            "chk_sci10c12_oe_deflect",
+            "chk_sci10c12_oe_oersted"
+          ],
+          "criterion": "Connects the deflection of the compass needle to the conclusion that electricity and magnetism are linked.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_oe_always",
+          "wrong": "A current-carrying wire has no effect on a nearby compass.",
+          "fix": "The compass needle is deflected on passing an electric current through a metallic conductor, which means the current has produced a magnetic effect.",
+          "checkId": "mchk_misc_sci10c12_oe_always",
+          "checkCriterion": "The answer states or implies this wrong idea: A current-carrying wire has no effect on a nearby compass.",
+          "fixCheckId": "mfix_misc_sci10c12_oe_always",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The compass needle is deflected on passing an electric current through a metallic conductor, which means the current has produced a magnetic effect.",
+          "keyPointIds": [
+            "sci10c12_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_oe_always"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_oe_deflect"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c12_oe_oersted",
+            "lnk_sci10c12_oersted_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t1_c2",
+      "topicId": "ncert_science_10_ch12_t1",
+      "topicTitle": "Magnetic Field and Field Lines",
+      "label": "Magnetic Field and Magnetic Field Lines",
+      "headingType": "heading",
+      "sourcePages": [
+        196,
+        197
+      ],
+      "conceptHash": "0ca9b23f45c3b75aa1063b5fd12349d1484b1bb5c5a2aec3974c9e12b8e14ba9",
+      "cardText": "A compass needle is a small bar magnet whose north-seeking end is the north pole and south-seeking end is the south pole. Like poles repel and unlike poles attract. The region surrounding a magnet in which its force can be detected is said to have a magnetic field. Iron filings sprinkled around a bar magnet line up along magnetic field lines. A magnetic field has both direction and magnitude. Its direction is the direction in which a north pole of a compass needle moves inside it, so by convention field lines emerge from the north pole and merge at the south pole outside the magnet, and run from south to north inside it: they are closed curves. Closer field lines show a stronger field, and no two field lines cross, since at a crossing the needle would have to point two ways.",
+      "hint": "What is a magnetic field and what are the properties of magnetic field lines?",
+      "probe": "Explain magnetic field and list the properties of magnetic field lines.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Magnetic Field and Magnetic Field Lines, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do tiny pieces of iron sprinkled around a bar magnet form a pattern instead of staying scattered?",
+          "requiredEvidence": [
+            "region surrounding a magnet",
+            "force of the magnet can be detected",
+            "magnetic field",
+            "iron filings",
+            "field lines",
+            "like poles repel"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_ml_field",
+              "criterion": "States that a magnetic field is the region around a magnet where its force can be detected, and that iron filings align along magnetic field lines.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do tiny pieces of iron sprinkled around a bar magnet form a pattern instead of staying scattered?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c12_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Outside a bar magnet, which pole do the lines leave from and where do they end, and what happens within it?",
+          "requiredEvidence": [
+            "direction and magnitude",
+            "north pole of the compass needle",
+            "emerge from north pole",
+            "merge at the south pole",
+            "inside the magnet",
+            "south pole to its north pole",
+            "closed curves"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_ml_direction",
+              "criterion": "States that field direction is that in which a compass north pole moves, so lines emerge from the north pole and merge at the south pole outside the magnet, and run south to north inside, forming closed curves.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Outside a bar magnet, which pole do the lines leave from and where do they end, and what happens within it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c12_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where around a magnet would you find the lines packed most tightly, and what does that tell you? Why can two lines never meet?",
+          "requiredEvidence": [
+            "relative strength",
+            "closeness of the field lines",
+            "stronger",
+            "crowded",
+            "no two field lines",
+            "cross each other",
+            "two directions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_ml_properties",
+              "criterion": "States that closely spaced (crowded) field lines indicate a stronger field, and that no two field lines cross because the compass needle cannot point in two directions at one point.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where around a magnet would you find the lines packed most tightly, and what does that tell you? Why can two lines never meet?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_ml_cross"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_fieldlines_chain",
+          "linksChecks": [
+            "chk_sci10c12_ml_field",
+            "chk_sci10c12_ml_direction",
+            "chk_sci10c12_ml_properties"
+          ],
+          "criterion": "Connects the idea of a field to the direction, closeness and non-crossing properties of field lines.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_ml_cross",
+          "wrong": "Magnetic field lines can cross each other at strong points.",
+          "fix": "No two field lines cross each other: if they did, the compass needle would point towards two directions at the point of intersection, which is not possible.",
+          "checkId": "mchk_misc_sci10c12_ml_cross",
+          "checkCriterion": "The answer states or implies this wrong idea: Magnetic field lines can cross each other at strong points.",
+          "fixCheckId": "mfix_misc_sci10c12_ml_cross",
+          "fixCheckCriterion": "Answer 2 states the correct idea: No two field lines cross each other: if they did, the compass needle would point towards two directions at the point of intersection, which is not possible.",
+          "keyPointIds": [
+            "sci10c12_t1c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_ml_cross"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_ml_field",
+            "chk_sci10c12_ml_direction",
+            "chk_sci10c12_ml_properties"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_fieldlines_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t2_c1",
+      "topicId": "ncert_science_10_ch12_t2",
+      "topicTitle": "Magnetic Field Due to a Current-Carrying Straight Conductor and the Right-Hand Thumb Rule",
+      "label": "Magnetic Field Around a Straight Current-Carrying Wire",
+      "headingType": "heading",
+      "sourcePages": [
+        198,
+        199
+      ],
+      "conceptHash": "4d26d0eaf8c00ca955e0336a035006f6c934131be4b16144e836a14fc9bf732a",
+      "cardText": "Reversing the direction of current in a wire placed over a compass reverses the deflection of the needle, so the direction of the magnetic field produced by the current is also reversed. Iron filings around a straight wire carrying current arrange in concentric circles around it: these represent the magnetic field lines, and the north pole of a compass gives their direction. When the current in the wire is increased, the deflection increases, so the magnitude of the magnetic field at a given point increases as the current increases. When the compass is moved farther from the wire with the current unchanged, the deflection decreases, so the field produced by a given current decreases as the distance from the wire increases. The concentric circles become larger and larger as we move away from the wire.",
+      "hint": "What does the field around a straight current-carrying wire look like and how does it change with current and distance?",
+      "probe": "Explain the magnetic field around a straight current-carrying conductor and how it depends on the current and the distance.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Magnetic Field Around a Straight Current-Carrying Wire, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What shape do iron filings make around a vertical wire carrying current, and what happens to the direction if you reverse the battery?",
+          "requiredEvidence": [
+            "concentric circles",
+            "around the copper wire",
+            "magnetic field lines",
+            "north pole of the compass needle",
+            "direction of the current is reversed",
+            "direction of the magnetic field"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_sw_pattern",
+              "criterion": "States that the field around a straight current-carrying wire consists of concentric circles around the wire, whose direction is given by a compass and reverses when the current is reversed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What shape do iron filings make around a vertical wire carrying current, and what happens to the direction if you reverse the battery?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c12_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Predict what a compass needle would do if you doubled the current, and what it would do if you moved the compass further away.",
+          "requiredEvidence": [
+            "current is increased",
+            "deflection also increases",
+            "magnitude of the magnetic field",
+            "increases as the current",
+            "farther",
+            "decreases as the distance",
+            "concentric circles become larger"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_sw_dependence",
+              "criterion": "States that the magnetic field of a straight wire increases with current and decreases with distance from the wire, so the concentric circles get larger away from it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Predict what a compass needle would do if you doubled the current, and what it would do if you moved the compass further away."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_sw_far"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_straightwire_chain",
+          "linksChecks": [
+            "chk_sci10c12_sw_pattern",
+            "chk_sci10c12_sw_dependence"
+          ],
+          "criterion": "Connects the concentric-circle pattern to its reversal with current direction and to its dependence on current and distance.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_sw_far",
+          "wrong": "The magnetic field of a current-carrying wire is the same strength at any distance.",
+          "fix": "The magnetic field produced by a given current in the conductor decreases as the distance from it increases.",
+          "checkId": "mchk_misc_sci10c12_sw_far",
+          "checkCriterion": "The answer states or implies this wrong idea: The magnetic field of a current-carrying wire is the same strength at any distance.",
+          "fixCheckId": "mfix_misc_sci10c12_sw_far",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The magnetic field produced by a given current in the conductor decreases as the distance from it increases.",
+          "keyPointIds": [
+            "sci10c12_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_sw_far"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_sw_pattern",
+            "chk_sci10c12_sw_dependence"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_straightwire_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t2_c2",
+      "topicId": "ncert_science_10_ch12_t2",
+      "topicTitle": "Magnetic Field Due to a Current-Carrying Straight Conductor and the Right-Hand Thumb Rule",
+      "label": "The Right-Hand Thumb Rule",
+      "headingType": "heading",
+      "sourcePages": [
+        199,
+        200
+      ],
+      "conceptHash": "d9c0cab6d397fe6eb9514ac7c652c0d7dd7f5950413ba49e16adfc9091a399b8",
+      "cardText": "A convenient way of finding the direction of the magnetic field associated with a current-carrying conductor is the right-hand thumb rule. Imagine holding a current-carrying straight conductor in your right hand with the thumb pointing in the direction of the current. Then your fingers wrap around the conductor in the direction of the field lines of the magnetic field. This rule is also called Maxwell's corkscrew rule: if we imagine driving a corkscrew in the direction of the current, the direction of rotation of the corkscrew is the direction of the magnetic field. For a current flowing east to west in a horizontal power line, the field at any point above or below turns clockwise in a plane perpendicular to the wire when viewed from the east end, and anti-clockwise when viewed from the west end.",
+      "hint": "How do you use the right-hand thumb rule to find the direction of the field around a wire?",
+      "probe": "State the right-hand thumb rule and how it is used.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Right-Hand Thumb Rule, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A vertical wire carries current upwards. Describe how you would use your hand to work out which way the field circles around it.",
+          "requiredEvidence": [
+            "right hand",
+            "thumb points towards the direction of current",
+            "fingers will wrap around the conductor",
+            "direction of the field lines",
+            "right-hand thumb rule"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_rh_rule",
+              "criterion": "States the right-hand thumb rule: holding the straight conductor in the right hand with the thumb along the current, the fingers wrap around it in the direction of the magnetic field lines.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A vertical wire carries current upwards. Describe how you would use your hand to work out which way the field circles around it."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_rh_left"
+          ]
+        },
+        {
+          "id": "sci10c12_t2c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "Is there another everyday picture, with a screw, that gives the same direction as the thumb rule?",
+          "requiredEvidence": [
+            "Maxwell's corkscrew rule",
+            "driving a corkscrew",
+            "direction of the current",
+            "direction of the rotation",
+            "direction of the magnetic field"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_rh_corkscrew",
+              "criterion": "States that the rule is also called Maxwell's corkscrew rule: turning a corkscrew in the direction of the current, its rotation gives the direction of the magnetic field.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Is there another everyday picture, with a screw, that gives the same direction as the thumb rule?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_thumb_chain",
+          "linksChecks": [
+            "chk_sci10c12_rh_rule",
+            "chk_sci10c12_rh_corkscrew"
+          ],
+          "criterion": "Connects the thumb pointing along the current to the fingers giving the field direction.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_rh_left",
+          "wrong": "The thumb rule uses the left hand with the thumb pointing along the field.",
+          "fix": "In the right-hand thumb rule the thumb of the right hand points in the direction of the current and the fingers wrap in the direction of the field lines.",
+          "checkId": "mchk_misc_sci10c12_rh_left",
+          "checkCriterion": "The answer states or implies this wrong idea: The thumb rule uses the left hand with the thumb pointing along the field.",
+          "fixCheckId": "mfix_misc_sci10c12_rh_left",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In the right-hand thumb rule the thumb of the right hand points in the direction of the current and the fingers wrap in the direction of the field lines.",
+          "keyPointIds": [
+            "sci10c12_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_rh_left"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_rh_rule"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c12_rh_corkscrew",
+            "lnk_sci10c12_thumb_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t3_c1",
+      "topicId": "ncert_science_10_ch12_t3",
+      "topicTitle": "Magnetic Field Due to a Current Through a Circular Loop and a Solenoid",
+      "label": "Magnetic Field Due to a Current-Carrying Circular Loop",
+      "headingType": "heading",
+      "sourcePages": [
+        200,
+        201
+      ],
+      "conceptHash": "368c576871bf1ab366b5b73fd1f8a45b5ba6bc20718304339e3bccb5fdcc61e2",
+      "cardText": "When a straight wire is bent into a circular loop carrying current, the concentric circles of the field around every point of the wire become larger and larger as we move away from the wire. By the time we reach the centre of the loop, the arcs of these big circles appear as straight lines. Every section of the wire contributes to the field lines in the same direction within the loop, by the right-hand rule. The field produced by a current-carrying wire at a given point depends directly on the current, so a circular coil with n turns produces a field n times as large as a single turn, because the current in each turn has the same direction and the fields of the turns add up.",
+      "hint": "What is the field at the centre of a circular loop and how does the number of turns change it?",
+      "probe": "Explain the magnetic field produced by a current-carrying circular loop and a coil of many turns.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Magnetic Field Due to a Current-Carrying Circular Loop, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the pattern of the field lines at the centre of a current-carrying circular loop and why every part of the loop helps.",
+          "requiredEvidence": [
+            "circular loop",
+            "concentric circles",
+            "larger and larger",
+            "centre of the circular loop",
+            "appear as straight lines",
+            "same direction within the loop"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_lp_centre",
+              "criterion": "States that for a circular loop the field circles grow larger away from the wire, appear as straight lines at the centre, and every section of the wire contributes in the same direction within the loop.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the pattern of the field lines at the centre of a current-carrying circular loop and why every part of the loop helps."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_lp_cancel"
+          ]
+        },
+        {
+          "id": "sci10c12_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How could you make the magnetic field at the centre of a loop ten times as strong without changing the current?",
+          "requiredEvidence": [
+            "depends directly on the current",
+            "circular coil",
+            "n turns",
+            "n times as large",
+            "single turn",
+            "same direction",
+            "adds up"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_lp_turns",
+              "criterion": "States that a circular coil of n turns produces a magnetic field n times as large as a single turn, because the current has the same direction in every turn so the fields add up.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How could you make the magnetic field at the centre of a loop ten times as strong without changing the current?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_loop_chain",
+          "linksChecks": [
+            "chk_sci10c12_lp_centre",
+            "chk_sci10c12_lp_turns"
+          ],
+          "criterion": "Connects the field of each part of the loop to the straight lines at the centre and to the n-fold field of a coil.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_lp_cancel",
+          "wrong": "The fields of different sections of a circular loop cancel each other inside the loop.",
+          "fix": "Every section of the wire contributes to the magnetic field lines in the same direction within the loop, so the contributions add up.",
+          "checkId": "mchk_misc_sci10c12_lp_cancel",
+          "checkCriterion": "The answer states or implies this wrong idea: The fields of different sections of a circular loop cancel each other inside the loop.",
+          "fixCheckId": "mfix_misc_sci10c12_lp_cancel",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Every section of the wire contributes to the magnetic field lines in the same direction within the loop, so the contributions add up.",
+          "keyPointIds": [
+            "sci10c12_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_lp_cancel"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_lp_centre",
+            "chk_sci10c12_lp_turns"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_loop_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t3_c2",
+      "topicId": "ncert_science_10_ch12_t3",
+      "topicTitle": "Magnetic Field Due to a Current Through a Circular Loop and a Solenoid",
+      "label": "Magnetic Field in a Solenoid and the Electromagnet",
+      "headingType": "heading",
+      "sourcePages": [
+        201
+      ],
+      "conceptHash": "00f2a0124061bedcecf610a45a700eb346bb917b4d9a0537dd998d20f86ac998",
+      "cardText": "A coil of many circular turns of insulated copper wire wrapped closely in the shape of a cylinder is a solenoid. The field pattern around a current-carrying solenoid is similar to that around a bar magnet: one end behaves as a magnetic north pole and the other as the south pole. The field lines inside the solenoid are parallel straight lines, so the magnetic field is the same at all points inside, that is, it is uniform. A strong magnetic field produced inside a solenoid can magnetise a piece of magnetic material, like soft iron, placed inside the coil. The magnet so formed is called an electromagnet.",
+      "hint": "How is a solenoid's field like that of a bar magnet and what is an electromagnet?",
+      "probe": "Explain the magnetic field of a current-carrying solenoid and how an electromagnet is made.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Magnetic Field in a Solenoid and the Electromagnet, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A long coil of wire carries a current. How would its outside field compare with a bar magnet's, and what is the field like inside?",
+          "requiredEvidence": [
+            "solenoid",
+            "many circular turns of insulated copper wire",
+            "similar to a bar magnet",
+            "north pole",
+            "south pole",
+            "parallel straight lines",
+            "uniform"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_so_field",
+              "criterion": "States that a solenoid is a close coil of many turns whose field is like a bar magnet's (one end north, the other south) with parallel straight lines, a uniform field, inside it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A long coil of wire carries a current. How would its outside field compare with a bar magnet's, and what is the field like inside?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_so_zero"
+          ]
+        },
+        {
+          "id": "sci10c12_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Explain how you could turn an iron nail into a magnet that works only when you want it to.",
+          "requiredEvidence": [
+            "strong magnetic field",
+            "magnetise",
+            "soft iron",
+            "inside the coil",
+            "electromagnet",
+            "core of soft iron",
+            "coil of insulated copper wire"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_so_electromagnet",
+              "criterion": "States that soft iron placed inside a current-carrying solenoid is magnetised by its strong field, forming an electromagnet (a soft iron core wrapped with a coil of insulated copper wire).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Explain how you could turn an iron nail into a magnet that works only when you want it to."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_solenoid_chain",
+          "linksChecks": [
+            "chk_sci10c12_so_field",
+            "chk_sci10c12_so_electromagnet"
+          ],
+          "criterion": "Connects the bar-magnet-like field and uniform interior field of a solenoid to the making of an electromagnet.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_so_zero",
+          "wrong": "The magnetic field inside a long solenoid is zero.",
+          "fix": "The field lines inside the solenoid are parallel straight lines, indicating that the magnetic field is the same at all points inside the solenoid; it is uniform.",
+          "checkId": "mchk_misc_sci10c12_so_zero",
+          "checkCriterion": "The answer states or implies this wrong idea: The magnetic field inside a long solenoid is zero.",
+          "fixCheckId": "mfix_misc_sci10c12_so_zero",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The field lines inside the solenoid are parallel straight lines, indicating that the magnetic field is the same at all points inside the solenoid; it is uniform.",
+          "keyPointIds": [
+            "sci10c12_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_so_zero"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_so_field",
+            "chk_sci10c12_so_electromagnet"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_solenoid_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t4_c1",
+      "topicId": "ncert_science_10_ch12_t4",
+      "topicTitle": "Force on a Current-Carrying Conductor in a Magnetic Field and Fleming's Left-Hand Rule",
+      "label": "Force on a Current-Carrying Conductor in a Magnetic Field",
+      "headingType": "heading",
+      "sourcePages": [
+        202,
+        203
+      ],
+      "conceptHash": "e3441c851cd6bc953341fcf5d4e060bcff2995826e663b8912d21426a400c978",
+      "cardText": "A current-carrying conductor produces a magnetic field that exerts a force on a magnet near it. André-Marie Ampère suggested that the magnet must also exert an equal and opposite force on the current-carrying conductor. In an aluminium rod suspended between the poles of a horse-shoe magnet, passing a current displaces the rod. Reversing the current reverses the direction of the displacement, and interchanging the magnet's poles, which reverses the field, also reverses the force. So the force on the conductor depends on the direction of the current and the direction of the field. The displacement is largest, or the force highest, when the current is at right angles to the magnetic field.",
+      "hint": "What did the displaced aluminium rod show about the force on a current-carrying conductor in a magnetic field?",
+      "probe": "Explain the force on a current-carrying conductor placed in a magnetic field and what it depends on.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Force on a Current-Carrying Conductor in a Magnetic Field, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A rod hanging between the poles of a strong magnet is pushed sideways as soon as a current flows through it. What does this tell you?",
+          "requiredEvidence": [
+            "magnetic field",
+            "force",
+            "equal and opposite force",
+            "current-carrying conductor",
+            "displacement of the rod",
+            "placed in a magnetic field"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_fo_force",
+              "criterion": "States that a current-carrying conductor placed in a magnetic field experiences a force (an equal and opposite force to that on the magnet), shown by the displacement of a current-carrying rod.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A rod hanging between the poles of a strong magnet is pushed sideways as soon as a current flows through it. What does this tell you?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_fo_none"
+          ]
+        },
+        {
+          "id": "sci10c12_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which two things can you reverse to make the push on the rod change direction, and at what angle between current and field is the push strongest?",
+          "requiredEvidence": [
+            "direction of force is reversed",
+            "current is reversed",
+            "direction of the magnetic field",
+            "depends upon the direction of current",
+            "largest",
+            "right angles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_fo_depends",
+              "criterion": "States that the force direction reverses when either the current or the magnetic field is reversed, and that the force is greatest when the current is at right angles to the field.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which two things can you reverse to make the push on the rod change direction, and at what angle between current and field is the push strongest?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_force_chain",
+          "linksChecks": [
+            "chk_sci10c12_fo_force",
+            "chk_sci10c12_fo_depends"
+          ],
+          "criterion": "Connects the displacement of the rod to the dependence of the force on the current and field directions and to the maximum at right angles.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_fo_none",
+          "wrong": "A magnet exerts no force on a conductor carrying current because the conductor is not magnetic.",
+          "fix": "A force is exerted on a current-carrying aluminium rod when it is placed in a magnetic field, as seen from the displacement of the rod, even though aluminium is not a magnet.",
+          "checkId": "mchk_misc_sci10c12_fo_none",
+          "checkCriterion": "The answer states or implies this wrong idea: A magnet exerts no force on a conductor carrying current because the conductor is not magnetic.",
+          "fixCheckId": "mfix_misc_sci10c12_fo_none",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A force is exerted on a current-carrying aluminium rod when it is placed in a magnetic field, as seen from the displacement of the rod, even though aluminium is not a magnet.",
+          "keyPointIds": [
+            "sci10c12_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_fo_none"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_fo_force",
+            "chk_sci10c12_fo_depends"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_force_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t4_c2",
+      "topicId": "ncert_science_10_ch12_t4",
+      "topicTitle": "Force on a Current-Carrying Conductor in a Magnetic Field and Fleming's Left-Hand Rule",
+      "label": "Fleming's Left-Hand Rule and Devices Using the Force",
+      "headingType": "heading",
+      "sourcePages": [
+        203
+      ],
+      "conceptHash": "27ed922173f8427d980e013bf3ee408afdd21c5df5c145df186e3310133b491d",
+      "cardText": "When the current and the magnetic field are perpendicular to each other, the force is perpendicular to both. These three directions are given by Fleming's left-hand rule: stretch the thumb, forefinger and middle finger of the left hand so that they are mutually perpendicular. If the forefinger points in the direction of the magnetic field and the middle finger in the direction of the current, then the thumb points in the direction of motion or force acting on the conductor. Devices that use current-carrying conductors and magnetic fields include the electric motor, electric generator, loudspeakers, microphones and measuring instruments. Remember that the direction of current is taken opposite to the motion of electrons.",
+      "hint": "How do you use Fleming's left-hand rule to find the direction of force on a conductor?",
+      "probe": "State Fleming's left-hand rule and give devices that use the force on current-carrying conductors.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Fleming's Left-Hand Rule and Devices Using the Force, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A current flows in a wire placed across the space between two magnet poles. How would you use the fingers of one hand to work out which way the wire is pushed?",
+          "requiredEvidence": [
+            "Fleming's left-hand rule",
+            "thumb, forefinger and middle finger",
+            "mutually perpendicular",
+            "first finger",
+            "magnetic field",
+            "second finger",
+            "current",
+            "thumb will point in the direction of motion or the force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_fl_rule",
+              "criterion": "States Fleming's left-hand rule: with the left thumb, forefinger and middle finger mutually perpendicular, forefinger points along the field, middle finger along the current, and thumb along the force or motion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A current flows in a wire placed across the space between two magnet poles. How would you use the fingers of one hand to work out which way the wire is pushed?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_fl_right"
+          ]
+        },
+        {
+          "id": "sci10c12_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name some everyday devices that depend on a magnet pushing on a wire that carries current.",
+          "requiredEvidence": [
+            "electric motor",
+            "electric generator",
+            "loudspeakers",
+            "microphones",
+            "measuring instruments",
+            "opposite to the direction of motion of electrons"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_fl_devices",
+              "criterion": "Names devices that use current-carrying conductors in magnetic fields (electric motor, generator, loudspeakers, microphones, measuring instruments), and notes current is taken opposite to electron motion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some everyday devices that depend on a magnet pushing on a wire that carries current."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_fleming_chain",
+          "linksChecks": [
+            "chk_sci10c12_fl_rule",
+            "chk_sci10c12_fl_devices"
+          ],
+          "criterion": "Connects the perpendicular directions to the finger assignments of Fleming's rule and its applications.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_fl_right",
+          "wrong": "Fleming's left-hand rule is used with the right hand for the force on a conductor.",
+          "fix": "According to Fleming's left-hand rule, the thumb, forefinger and middle finger of the left hand are stretched mutually perpendicular: forefinger for field, middle finger for current, thumb for force.",
+          "checkId": "mchk_misc_sci10c12_fl_right",
+          "checkCriterion": "The answer states or implies this wrong idea: Fleming's left-hand rule is used with the right hand for the force on a conductor.",
+          "fixCheckId": "mfix_misc_sci10c12_fl_right",
+          "fixCheckCriterion": "Answer 2 states the correct idea: According to Fleming's left-hand rule, the thumb, forefinger and middle finger of the left hand are stretched mutually perpendicular: forefinger for field, middle finger for current, thumb for force.",
+          "keyPointIds": [
+            "sci10c12_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_fl_right"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_fl_rule"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c12_fl_devices",
+            "lnk_sci10c12_fleming_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t5_c1",
+      "topicId": "ncert_science_10_ch12_t5",
+      "topicTitle": "Domestic Electric Circuits, Earthing, Overloading and Short-Circuiting",
+      "label": "Domestic Circuits: Live, Neutral and Earth Wires",
+      "headingType": "heading",
+      "sourcePages": [
+        204,
+        205
+      ],
+      "conceptHash": "946b0055da8311127c5e7324697c07eb7bf7b7273a625aab33b03945a998282e",
+      "cardText": "Homes receive electric power through the mains, by overhead poles or underground cables. One wire, usually with red insulation, is the live (positive) wire, and another with black insulation is the neutral (negative) wire. In our country the potential difference between them is 220 V. They pass into an electricity meter through a main fuse and, via the main switch, to line wires supplying separate circuits: often one of 15 A rating for high-power appliances like geysers and air coolers and another of 5 A for bulbs and fans. The earth wire, with green insulation, is connected to a metal plate deep in the earth near the house, as a safety measure for appliances with a metallic body. It provides a low-resistance path for current, so any leakage of current to the metallic body keeps its potential at that of the earth and the user does not get a severe shock. Appliances are connected in parallel so each has an equal potential difference, with its own switch.",
+      "hint": "What are the live, neutral and earth wires and why is the earth wire used?",
+      "probe": "Explain the wires in a domestic circuit and the safety role of the earth wire.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Domestic Circuits: Live, Neutral and Earth Wires, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which colours mark the two supply wires in a house, what voltage is between them, and how are the fan and bulb connected to them?",
+          "requiredEvidence": [
+            "live wire",
+            "red insulation",
+            "neutral wire",
+            "black insulation",
+            "220 V",
+            "across the live and neutral wires",
+            "parallel to each other",
+            "separate switch"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_dw_wires",
+              "criterion": "States that the mains has a live wire (red) and a neutral wire (black) with a 220 V potential difference, and that appliances are connected across them in parallel, each with its own switch, so they get equal potential difference.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which colours mark the two supply wires in a house, what voltage is between them, and how are the fan and bulb connected to them?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_dw_series"
+          ]
+        },
+        {
+          "id": "sci10c12_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A faulty toaster's metal body becomes live. How does the earth wire stop you from getting a dangerous shock when you touch it?",
+          "requiredEvidence": [
+            "earth wire",
+            "green",
+            "metal plate deep in the earth",
+            "safety measure",
+            "metallic body",
+            "low-resistance conducting path",
+            "leakage of current",
+            "potential to that of the earth",
+            "severe electric shock"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_dw_earth",
+              "criterion": "States that the earth wire (green) is connected to a metal plate deep in the earth and to the metallic body of appliances, providing a low-resistance path so leakage current keeps the body at earth's potential and the user is not severely shocked.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A faulty toaster's metal body becomes live. How does the earth wire stop you from getting a dangerous shock when you touch it?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_domestic_wires_chain",
+          "linksChecks": [
+            "chk_sci10c12_dw_wires",
+            "chk_sci10c12_dw_earth"
+          ],
+          "criterion": "Connects the live and neutral wires and parallel appliances to the safety function of the earth wire.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_dw_series",
+          "wrong": "Household appliances are connected in series so they share the current.",
+          "fix": "In order that each appliance has equal potential difference, the appliances are connected parallel to each other, each with a separate switch.",
+          "checkId": "mchk_misc_sci10c12_dw_series",
+          "checkCriterion": "The answer states or implies this wrong idea: Household appliances are connected in series so they share the current.",
+          "fixCheckId": "mfix_misc_sci10c12_dw_series",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In order that each appliance has equal potential difference, the appliances are connected parallel to each other, each with a separate switch.",
+          "keyPointIds": [
+            "sci10c12_t5c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_dw_series"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_dw_wires",
+            "chk_sci10c12_dw_earth"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_domestic_wires_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch12_t5_c2",
+      "topicId": "ncert_science_10_ch12_t5",
+      "topicTitle": "Domestic Electric Circuits, Earthing, Overloading and Short-Circuiting",
+      "label": "Overloading, Short-Circuiting and the Fuse",
+      "headingType": "heading",
+      "sourcePages": [
+        205
+      ],
+      "conceptHash": "53b60cdab1066be2d7db9ae6ba08aafecaa235e7c065c64e5638006a82868b65",
+      "cardText": "Electric fuse is an important component of all domestic circuits. A fuse prevents damage to the appliances and the circuit due to overloading. Overloading can occur when the live wire and the neutral wire come into direct contact, which happens when the insulation of wires is damaged or there is a fault in the appliance; the current in the circuit then abruptly increases, which is called short-circuiting. The fuse prevents damage by stopping the flow of unduly high electric current: the Joule heating in the fuse melts it and breaks the circuit. Overloading can also occur due to an accidental hike in the supply voltage, or by connecting too many appliances to a single socket.",
+      "hint": "What causes overloading and short-circuiting and how does a fuse protect a circuit?",
+      "probe": "Explain overloading, short-circuiting and how a fuse protects a domestic circuit.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Overloading, Short-Circuiting and the Fuse, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c12_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "List ways in which the current in a home circuit can suddenly become dangerously high.",
+          "requiredEvidence": [
+            "live wire and the neutral wire come into direct contact",
+            "insulation of wires is damaged",
+            "current abruptly increases",
+            "short-circuiting",
+            "accidental hike in the supply voltage",
+            "too many appliances to a single socket"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_ov_causes",
+              "criterion": "States that short-circuiting occurs when the live and neutral wires touch (damaged insulation or a faulty appliance), making the current increase abruptly, and that overloading can also come from a voltage hike or too many appliances on one socket.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "List ways in which the current in a home circuit can suddenly become dangerously high."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c12_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Explain how a thin wire in a cartridge can save an appliance from being destroyed when too much current flows.",
+          "requiredEvidence": [
+            "fuse",
+            "prevents damage",
+            "overloading",
+            "stopping the flow of unduly high electric current",
+            "Joule heating",
+            "melts",
+            "break the electric circuit"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c12_ov_fuse",
+              "criterion": "States that a fuse protects appliances and the circuit from overloading: unduly high current heats and melts the fuse (Joule heating), breaking the circuit.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Explain how a thin wire in a cartridge can save an appliance from being destroyed when too much current flows."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c12_ov_fuse_series"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c12_short_chain",
+          "linksChecks": [
+            "chk_sci10c12_ov_causes",
+            "chk_sci10c12_ov_fuse"
+          ],
+          "criterion": "Connects causes of overloading and short-circuiting to the fuse breaking the circuit.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c12_ov_fuse_series",
+          "wrong": "A fuse reduces the current in an overloaded circuit but never breaks it.",
+          "fix": "A fuse stops the flow of unduly high electric current: the Joule heating in the fuse melts it to break the electric circuit.",
+          "checkId": "mchk_misc_sci10c12_ov_fuse_series",
+          "checkCriterion": "The answer states or implies this wrong idea: A fuse reduces the current in an overloaded circuit but never breaks it.",
+          "fixCheckId": "mfix_misc_sci10c12_ov_fuse_series",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A fuse stops the flow of unduly high electric current: the Joule heating in the fuse melts it to break the electric circuit.",
+          "keyPointIds": [
+            "sci10c12_t5c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c12_ov_fuse_series"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c12_ov_causes",
+            "chk_sci10c12_ov_fuse"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c12_short_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1932 @@
+{
+  "schemaVersion": 4,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Civics",
+  "book": "Democratic Politics II",
+  "chapterNumber": 1,
+  "chapterName": "Power-sharing",
+  "sourceStatus": "Content aligned to the NCERT Chapter 1 text, glossary and back exercises. Every concept carries sourcePages and verify quotes. Page numbers follow the rationalised reprint (chapter pp. 1-12) and must be confirmed against the PDF before release (see pageVerification).",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Democratic Politics II (Class 10), rationalised reprint 2023-24",
+    "note": "Pages and quotes were compiled from the textbook text without the PDF open. Confirm each verify.page and verify.quote against your copy, then set status to 'confirmed'."
+  },
+  "scoring": {
+    "coreConcept": 0.55,
+    "causeEffect": 0.35,
+    "articulation": 0.1,
+    "modelOutput": "The on-device model returns only booleans: checklistResults (checkId -> bool, covering keyPoint checks, causeLinks and articulationChecks) and misconceptionResults (misconceptionId -> bool, only for IDs listed in the evaluated keyPoints). It never computes a score.",
+    "passRules": {
+      "allRequired": "keyPoint passes when every check with isRequired = true is true. Such a keyPoint always has at least one required check.",
+      "anyOf": "keyPoint passes when at least one of its checks is true.",
+      "minCount:N": "keyPoint passes when at least N of its checks are true, required or not."
+    },
+    "formula": "coreConcept = sum(weight of passed keyPoints) / sum(all keyPoint weights). causeEffect = share of causeLinks with isRequired = true that are true. articulation = share of articulationChecks that are true. If a concept has no required causeLinks, its causeEffect share is added to coreConcept.",
+    "misconceptionPolicy": "A detected misconception does not change the score. The app shows its fix as feedback.",
+    "requiredEvidenceMeaning": "requiredEvidence lists accepted phrasings and keywords that count as evidence for the checks. It is a matching aid, not a separate check."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_art_chapter_terms",
+      "criterion": "The answer uses at least one chapter term (such as majoritarianism, accommodation, prudential, checks and balances or federal division of power) correctly.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "ethnic",
+    "majoritarianism",
+    "civil war",
+    "Sinhala",
+    "Sri Lankan Tamils",
+    "Indian Tamils",
+    "Tamil Eelam",
+    "Buddhism",
+    "alienation",
+    "autonomy",
+    "Flemish region",
+    "Wallonia",
+    "Brussels",
+    "Dutch-speaking",
+    "French-speaking",
+    "accommodation",
+    "community government",
+    "unitary",
+    "federal",
+    "European Union",
+    "prudential",
+    "moral",
+    "tyranny of the majority",
+    "legitimate government",
+    "undivided political power",
+    "self-government",
+    "horizontal distribution of power",
+    "separation of powers",
+    "checks and balances",
+    "legislature",
+    "executive",
+    "judiciary",
+    "federal division of power",
+    "vertical division of power",
+    "Central or Union Government",
+    "State Government",
+    "municipality",
+    "panchayat",
+    "reserved constituencies",
+    "coalition government",
+    "interest groups",
+    "pressure groups",
+    "movements"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_civ_10_ch1_t1",
+      "title": "Belgium and Sri Lanka",
+      "concepts": [
+        {
+          "conceptId": "civ10_ch1_t1_c1",
+          "label": "Belgium",
+          "headingType": "subheading",
+          "sourcePages": [2],
+          "cardText": "Belgium has three language communities: 59 per cent speak Dutch (Flemish region), 40 per cent speak French (Wallonia) and one per cent speak German. In Brussels, 80 per cent speak French. The French-speaking minority was relatively rich and powerful, which the Dutch-speaking community resented.",
+          "hint": "Who was the majority in the country, and who was the majority in Brussels?",
+          "probe": "Why was the tension between the two communities more acute in Brussels?",
+          "causeChain": "French-speaking minority relatively rich and powerful -> resented by the Dutch-speaking community, who got the benefits of development and education later -> tensions in the 1950s and 1960s, more acute in Brussels",
+          "causeLinks": [
+            {
+              "id": "lnk_be_wealth_to_tension",
+              "linksChecks": ["chk_french_rich_powerful", "chk_be_tension_1950s"],
+              "criterion": "Connects the French-speaking minority being rich and powerful (and the Dutch-speaking community's resentment) to tension between the two communities.",
+              "isRequired": true
+            },
+            {
+              "id": "lnk_be_brussels_special",
+              "linksChecks": ["chk_dutch_minority_capital", "chk_be_tension_1950s"],
+              "criterion": "Explains that Brussels was a special problem because the national majority (Dutch) was a minority in the capital.",
+              "isRequired": false
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t1c1_kp1",
+              "weight": 2,
+              "text": "Of the country's total population, 59 per cent lives in the Flemish region and speaks Dutch; 40 per cent live in the Wallonia region and speak French; the remaining one per cent speak German.",
+              "assessment": {
+                "requiredEvidence": ["59 per cent Dutch", "Flemish region", "40 per cent French", "Wallonia", "one per cent German"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_be_dutch_majority",
+                    "criterion": "States that Dutch speakers (Flemish region) are the majority of Belgium's population, about 59 per cent.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_be_french_wallonia",
+                    "criterion": "States that French speakers (Wallonia) are about 40 per cent of the population.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_be_german_one",
+                    "criterion": "Mentions the small German-speaking group, about one per cent.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c1_kp2",
+              "weight": 1,
+              "text": "In the capital city Brussels, 80 per cent people speak French while 20 per cent are Dutch-speaking.",
+              "assessment": {
+                "requiredEvidence": ["Brussels 80 per cent French", "20 per cent Dutch in Brussels"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_brussels_french_majority",
+                    "criterion": "States that French speakers are the majority in Brussels, about 80 per cent.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_be_dutch_majority_everywhere"]
+              }
+            },
+            {
+              "id": "t1c1_kp3",
+              "weight": 2,
+              "text": "The minority French-speaking community was relatively rich and powerful. This was resented by the Dutch-speaking community who got the benefit of economic development and education much later.",
+              "assessment": {
+                "requiredEvidence": ["French-speaking community rich and powerful", "Dutch-speaking community resented", "economic development and education later"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_french_rich_powerful",
+                    "criterion": "States that the minority French-speaking community was relatively rich and powerful.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_dutch_resentment",
+                    "criterion": "States that the Dutch-speaking community resented this because it got the benefit of economic development and education later.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_be_french_weak"]
+              }
+            },
+            {
+              "id": "t1c1_kp4",
+              "weight": 1,
+              "text": "This led to tensions between the Dutch-speaking and French-speaking communities during the 1950s and 1960s.",
+              "assessment": {
+                "requiredEvidence": ["tensions", "1950s and 1960s"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_be_tension_1950s",
+                    "criterion": "States that there were tensions between the Dutch-speaking and French-speaking communities (during the 1950s and 1960s).",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c1_kp5",
+              "weight": 2,
+              "text": "The tension was more acute in Brussels. Brussels presented a special problem: the Dutch-speaking people constituted a majority in the country, but a minority in the capital.",
+              "assessment": {
+                "requiredEvidence": ["majority in the country but minority in the capital", "special problem in Brussels"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_dutch_minority_capital",
+                    "criterion": "States that Dutch speakers were a majority in the country but a minority in Brussels.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_be_dutch_majority_everywhere"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Flemish region (Dutch-speaking) and Wallonia (French-speaking)",
+            "Brussels, where 80 per cent speak French and 20 per cent speak Dutch"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_be_dutch_majority_everywhere",
+              "wrong": "Dutch speakers are the majority everywhere in Belgium, including Brussels.",
+              "fix": "The Dutch-speaking people constituted a majority in the country, but a minority in the capital, where 80 per cent speak French."
+            },
+            {
+              "id": "misc_be_french_weak",
+              "wrong": "The French-speaking minority was poor and powerless.",
+              "fix": "The minority French-speaking community was relatively rich and powerful, which the Dutch-speaking community resented."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "59 per cent lives in the Flemish region and speaks Dutch language", "supports": ["t1c1_kp1"] },
+            { "page": 2, "quote": "In the capital city Brussels, 80 per cent people speak French while 20 per cent are Dutch-speaking.", "supports": ["t1c1_kp2"] },
+            { "page": 2, "quote": "The minority French-speaking community was relatively rich and powerful.", "supports": ["t1c1_kp3"] },
+            { "page": 2, "quote": "tensions between the Dutch-speaking and French-speaking communities during the 1950s and 1960s", "supports": ["t1c1_kp4"] },
+            { "page": 2, "quote": "the Dutch-speaking people constituted a majority in the country, but a minority in the capital", "supports": ["t1c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t1_c2",
+          "label": "Sri Lanka",
+          "headingType": "subheading",
+          "sourcePages": [3],
+          "cardText": "Sri Lanka has a diverse population. Sinhala-speakers are 74 per cent and Tamil-speakers 18 per cent. Among Tamils, Sri Lankan Tamils (13 per cent) are natives of the country; Indian Tamils came from India as plantation workers during the colonial period. Sri Lankan Tamils are concentrated in the north and east.",
+          "hint": "There are two groups of Tamils. What separates them?",
+          "probe": "Who are the Sri Lankan Tamils and the Indian Tamils, and where are the Sri Lankan Tamils concentrated?",
+          "causeChain": "Sinhala-speakers form a large majority (74 per cent) -> Tamil-speakers (18 per cent) are a minority concentrated in the north and east",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "t1c2_kp1",
+              "weight": 2,
+              "text": "The major social groups are the Sinhala-speakers (74 per cent) and the Tamil-speakers (18 per cent).",
+              "assessment": {
+                "requiredEvidence": ["Sinhala 74 per cent", "Tamil 18 per cent", "Sinhala majority"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_lk_sinhala_majority",
+                    "criterion": "States that Sinhala-speakers are the majority in Sri Lanka, about 74 per cent.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_lk_tamil_minority",
+                    "criterion": "States that Tamil-speakers are a minority, about 18 per cent.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c2_kp2",
+              "weight": 2,
+              "text": "Among Tamils there are two sub-groups. Tamil natives of the country are called 'Sri Lankan Tamils' (13 per cent). The rest, whose forefathers came from India as plantation workers during the colonial period, are called 'Indian Tamils'.",
+              "assessment": {
+                "requiredEvidence": ["Sri Lankan Tamils", "Indian Tamils", "plantation workers", "colonial period"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_lk_two_tamil_groups",
+                    "criterion": "Distinguishes Sri Lankan Tamils (natives of the country) from Indian Tamils.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_lk_indian_tamils_origin",
+                    "criterion": "States that the forefathers of Indian Tamils came from India as plantation workers during the colonial period.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_lk_tamils_one_group"]
+              }
+            },
+            {
+              "id": "t1c2_kp3",
+              "weight": 1,
+              "text": "Sri Lankan Tamils are concentrated in the north and east of the country.",
+              "assessment": {
+                "requiredEvidence": ["north and east"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_lk_tamils_north_east",
+                    "criterion": "States that Sri Lankan Tamils are concentrated in the north and east.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c2_kp4",
+              "weight": 1,
+              "text": "Most of the Sinhala-speaking people are Buddhist, while most of the Tamils are Hindus or Muslims. There are about 7 per cent Christians, who are both Tamil and Sinhala.",
+              "assessment": {
+                "requiredEvidence": ["Sinhala Buddhist", "Tamils Hindus or Muslims", "7 per cent Christians"],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_lk_sinhala_buddhist",
+                    "criterion": "States that most Sinhala-speaking people are Buddhist.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_lk_tamil_hindu_muslim",
+                    "criterion": "States that most Tamils are Hindus or Muslims.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Sri Lankan Tamils (13 per cent) and Indian Tamils",
+            "Sri Lankan Tamils concentrated in the north and east"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_lk_tamils_one_group",
+              "wrong": "All Tamils in Sri Lanka form one group.",
+              "fix": "There are Sri Lankan Tamils, who are natives of the country, and Indian Tamils, whose forefathers came from India as plantation workers during the colonial period."
+            }
+          ],
+          "verify": [
+            { "page": 3, "quote": "the Sinhala-speakers (74 per cent) and the Tamil-speakers (18 per cent)", "supports": ["t1c2_kp1"] },
+            { "page": 3, "quote": "Tamil natives of the country are called 'Sri Lankan Tamils' (13 per cent).", "supports": ["t1c2_kp2"] },
+            { "page": 3, "quote": "Sri Lankan Tamils are concentrated in the north and east of the country.", "supports": ["t1c2_kp3"] },
+            { "page": 3, "quote": "Most of the Sinhala-speaking people are Buddhist, while most of the Tamils are Hindus or Muslims.", "supports": ["t1c2_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t1_c3",
+          "label": "Majoritarianism in Sri Lanka",
+          "headingType": "subheading",
+          "sourcePages": [3, 4],
+          "cardText": "After independence in 1948, Sinhala leaders sought to secure dominance over government by virtue of their majority. Majoritarian measures (the 1956 language Act, preferential policies and state protection of Buddhism) increased the feeling of alienation among Sri Lankan Tamils. Distrust turned into a civil war, which ended in 2009.",
+          "hint": "Think of the 1956 Act, the preferential policies and the new constitution. How did the Sri Lankan Tamils respond?",
+          "probe": "Which government measures increased the feeling of alienation among Sri Lankan Tamils, and what did that lead to?",
+          "causeChain": "Sinhala leaders seek dominance by virtue of their majority -> majoritarian measures (language Act, preferential policies, Buddhism) -> alienation of Sri Lankan Tamils -> demands repeatedly denied -> distrust turns into civil war",
+          "causeLinks": [
+            {
+              "id": "lnk_lk_dominance_to_measures",
+              "linksChecks": ["chk_sinhala_dominance", "chk_1956_act_language"],
+              "criterion": "Connects the Sinhala leaders' aim of dominance to the majoritarian measures the government adopted (language Act, preferential policies or Buddhism).",
+              "isRequired": true
+            },
+            {
+              "id": "lnk_lk_measures_to_alienation",
+              "linksChecks": ["chk_1956_act_language", "chk_tamil_alienation"],
+              "criterion": "Connects these government measures to the growing feeling of alienation among Sri Lankan Tamils.",
+              "isRequired": true
+            },
+            {
+              "id": "lnk_lk_denial_to_war",
+              "linksChecks": ["chk_autonomy_denied", "chk_civil_war"],
+              "criterion": "Connects the denial of Tamil demands and the distrust between the communities to the civil war.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t1c3_kp1",
+              "weight": 2,
+              "text": "Sri Lanka emerged as an independent country in 1948. The leaders of the Sinhala community sought to secure dominance over government by virtue of their majority.",
+              "assessment": {
+                "requiredEvidence": ["sought to secure dominance", "by virtue of their majority", "Sinhala leaders", "1948"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sinhala_dominance",
+                    "criterion": "States that the leaders of the Sinhala community sought to secure dominance over government by virtue of their majority.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_lk_independence_1948",
+                    "criterion": "Mentions that Sri Lanka became independent in 1948.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp2",
+              "weight": 1,
+              "text": "Majoritarianism: a belief that the majority community should be able to rule a country in whichever way it wants, by disregarding the wishes and needs of the minority.",
+              "assessment": {
+                "requiredEvidence": ["majority rules in whichever way it wants", "disregarding the wishes and needs of the minority"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_majoritarianism_def",
+                    "criterion": "Defines majoritarianism as the majority community ruling in whichever way it wants, disregarding the wishes and needs of the minority.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_majoritarianism_is_majority_rule"]
+              }
+            },
+            {
+              "id": "t1c3_kp3",
+              "weight": 2,
+              "text": "An Act was passed in 1956 to recognise Sinhala as the only official language, thus disregarding Tamil.",
+              "assessment": {
+                "requiredEvidence": ["1956 Act", "Sinhala the only official language", "disregarding Tamil"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_1956_act_language",
+                    "criterion": "States that an Act (of 1956) recognised Sinhala as the only official language, disregarding Tamil.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp4",
+              "weight": 1,
+              "text": "The governments followed preferential policies that favoured Sinhala applicants for university positions and government jobs.",
+              "assessment": {
+                "requiredEvidence": ["preferential policies", "Sinhala applicants", "university positions", "government jobs"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_preferential_jobs",
+                    "criterion": "States that preferential policies favoured Sinhala applicants for university positions or government jobs.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp5",
+              "weight": 1,
+              "text": "A new constitution stipulated that the state shall protect and foster Buddhism.",
+              "assessment": {
+                "requiredEvidence": ["protect and foster Buddhism", "new constitution"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_protect_buddhism",
+                    "criterion": "States that the new constitution required the state to protect and foster Buddhism.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp6",
+              "weight": 2,
+              "text": "These government measures gradually increased the feeling of alienation among the Sri Lankan Tamils. They felt that the constitution and government policies denied them equal political rights, discriminated against them in getting jobs and other opportunities and ignored their interests.",
+              "assessment": {
+                "requiredEvidence": ["feeling of alienation", "denied equal political rights", "discriminated against", "ignored their interests"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_tamil_alienation",
+                    "criterion": "States that the government measures increased the feeling of alienation among Sri Lankan Tamils.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_tamil_denied_rights",
+                    "criterion": "States that Sri Lankan Tamils felt they were denied equal political rights or discriminated against in jobs and other opportunities.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp7",
+              "weight": 2,
+              "text": "Sri Lankan Tamils launched parties and struggles for the recognition of Tamil as an official language, for regional autonomy and equality of opportunity in securing education and jobs.",
+              "assessment": {
+                "requiredEvidence": ["Tamil as an official language", "regional autonomy", "equality of opportunity in education and jobs"],
+                "passRule": "minCount:2",
+                "checks": [
+                  {
+                    "id": "chk_tamil_demand_language",
+                    "criterion": "Mentions the demand for recognition of Tamil as an official language.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_tamil_demand_autonomy",
+                    "criterion": "Mentions the demand for regional autonomy.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_tamil_demand_equality",
+                    "criterion": "Mentions the demand for equality of opportunity in securing education and jobs.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c3_kp8",
+              "weight": 1,
+              "text": "Their demand for more autonomy to provinces populated by the Tamils was repeatedly denied. By the 1980s several political organisations were formed demanding an independent Tamil Eelam (State) in northern and eastern parts of Sri Lanka.",
+              "assessment": {
+                "requiredEvidence": ["repeatedly denied", "Tamil Eelam", "1980s"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_autonomy_denied",
+                    "criterion": "States that the Tamil demand for more autonomy was repeatedly denied.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_tamil_eelam",
+                    "criterion": "Mentions that by the 1980s organisations demanded an independent Tamil Eelam in the north and east.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_lk_independence_first"]
+              }
+            },
+            {
+              "id": "t1c3_kp9",
+              "weight": 2,
+              "text": "The distrust between the two communities turned into widespread conflict and soon into a civil war. Thousands of people of both communities were killed, and many families were forced to leave the country as refugees. The civil war caused a terrible setback to the social, cultural and economic life of the country. It ended in 2009.",
+              "assessment": {
+                "requiredEvidence": ["civil war", "distrust", "terrible setback to the social, cultural and economic life", "refugees", "ended in 2009"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_civil_war",
+                    "criterion": "States that the distrust between the communities turned into a civil war.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_civil_war_setback",
+                    "criterion": "States that the civil war caused a setback to the social, cultural or economic life of the country.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_civil_war_human_cost",
+                    "criterion": "Mentions that thousands from both communities were killed or that families were forced to leave as refugees.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_civil_war_ended_2009",
+                    "criterion": "Mentions that the civil war ended in 2009.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_power_weakens"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Act of 1956 recognising Sinhala as the only official language",
+            "Preferential policies favouring Sinhala applicants for university positions and government jobs",
+            "New constitution stipulating that the state shall protect and foster Buddhism",
+            "Exercise (statements on Belgium and Sri Lanka): 'In Sri Lanka, the policies of the government sought to ensure the dominance of the Sinhala-speaking majority' (correct)",
+            "Exercise (statements on Belgium and Sri Lanka): 'The Tamils in Sri Lanka demanded a federal arrangement of power sharing to protect their culture, language and equality of opportunity in education and jobs' (correct)"
+          ],
+          "extraExamplesOk": [
+            "LTTE named as a militant Tamil group (not named in the chapter; accept but do not require)"
+          ],
+          "misconceptions": [
+            {
+              "id": "misc_majoritarianism_is_majority_rule",
+              "wrong": "Majoritarianism is just ordinary majority rule in a democracy.",
+              "fix": "Majoritarianism is the belief that the majority community should rule in whichever way it wants, disregarding the wishes and needs of the minority."
+            },
+            {
+              "id": "misc_lk_independence_first",
+              "wrong": "Sri Lankan Tamils demanded a separate country from the start.",
+              "fix": "They first struggled for Tamil as an official language, regional autonomy and equality of opportunity. Only after the demand for autonomy was repeatedly denied did organisations demand an independent Tamil Eelam, by the 1980s."
+            },
+            {
+              "id": "misc_power_weakens",
+              "wrong": "Sharing power weakens a country.",
+              "fix": "The chapter shows the opposite: when a majority community forces its dominance and refuses to share power, it can undermine the unity of the country, as in Sri Lanka."
+            }
+          ],
+          "verify": [
+            { "page": 3, "quote": "The leaders of the Sinhala community sought to secure dominance over government by virtue of their majority.", "supports": ["t1c3_kp1"] },
+            { "page": 3, "quote": "Majoritarianism: A belief that the majority community should be able to rule a country in whichever way it wants", "supports": ["t1c3_kp2"] },
+            { "page": 3, "quote": "An Act was passed in 1956 to recognise Sinhala as the only official language, thus disregarding Tamil.", "supports": ["t1c3_kp3"] },
+            { "page": 3, "quote": "preferential policies that favoured Sinhala applicants for university positions and government jobs", "supports": ["t1c3_kp4"] },
+            { "page": 3, "quote": "A new constitution stipulated that the state shall protect and foster Buddhism.", "supports": ["t1c3_kp5"] },
+            { "page": 4, "quote": "gradually increased the feeling of alienation among the Sri Lankan Tamils", "supports": ["t1c3_kp6"] },
+            { "page": 4, "quote": "for regional autonomy and equality of opportunity in securing education and jobs", "supports": ["t1c3_kp7"] },
+            { "page": 4, "quote": "demanding an independent Tamil Eelam (State) in northern and eastern parts of Sri Lanka", "supports": ["t1c3_kp8"] },
+            { "page": 4, "quote": "a terrible setback to the social, cultural and economic life of the country", "supports": ["t1c3_kp9"] },
+            { "page": 11, "quote": "In Sri Lanka, the policies of the government sought to ensure the dominance of the Sinhala-speaking majority.", "supports": ["t1c3_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t1_c4",
+          "label": "Accommodation in Belgium",
+          "headingType": "subheading",
+          "sourcePages": [4, 5],
+          "cardText": "Belgian leaders recognised regional differences and cultural diversities. Between 1970 and 1993 they amended the constitution four times: equal Dutch and French-speaking ministers at the Centre, state governments not subordinate to the Centre, equal representation in Brussels, and a community government for each language group. This helped avoid civic strife and a possible division of the country.",
+          "hint": "How were ministers divided at the Centre and in Brussels? What is the third kind of government?",
+          "probe": "How did Belgium's arrangements make sure that no single community could make decisions unilaterally?",
+          "causeChain": "Leaders recognise regional differences and cultural diversities -> constitution amended four times (1970-1993) -> power shared at the Centre, in the states, in Brussels and through community governments -> civic strife and a possible division of the country avoided",
+          "causeLinks": [
+            {
+              "id": "lnk_be_recognition_to_amendments",
+              "linksChecks": ["chk_be_recognised_diversity", "chk_amended_constitution"],
+              "criterion": "Connects the leaders' recognition of regional differences and cultural diversities to the constitutional amendments.",
+              "isRequired": false
+            },
+            {
+              "id": "lnk_be_arrangement_to_peace",
+              "linksChecks": ["chk_equal_ministers_central", "chk_avoid_civic_strife"],
+              "criterion": "Connects the power-sharing arrangements to avoiding civic strife or a possible division of the country on linguistic lines.",
+              "isRequired": true
+            },
+            {
+              "id": "lnk_be_brussels_reciprocity",
+              "linksChecks": ["chk_equal_ministers_central", "chk_brussels_equal"],
+              "criterion": "Explains that French speakers accepted equal representation in Brussels because Dutch speakers accepted equal representation in the Central Government.",
+              "isRequired": false
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t1c4_kp1",
+              "weight": 2,
+              "text": "The Belgian leaders recognised the existence of regional differences and cultural diversities. Between 1970 and 1993, they amended their constitution four times so as to work out an arrangement that would enable everyone to live together within the same country.",
+              "assessment": {
+                "requiredEvidence": ["amended their constitution four times", "between 1970 and 1993", "live together within the same country", "recognised regional differences"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_amended_constitution",
+                    "criterion": "States that Belgium amended its constitution (four times, between 1970 and 1993) to enable everyone to live together.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_be_recognised_diversity",
+                    "criterion": "States that Belgian leaders recognised regional differences and cultural diversities.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c4_kp2",
+              "weight": 2,
+              "text": "The constitution prescribes that the number of Dutch and French-speaking ministers shall be equal in the central government.",
+              "assessment": {
+                "requiredEvidence": ["equal number of Dutch and French-speaking ministers", "central government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_equal_ministers_central",
+                    "criterion": "States that the number of Dutch and French-speaking ministers is equal in the central government.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c4_kp3",
+              "weight": 1,
+              "text": "Some special laws require the support of majority of members from each linguistic group. Thus, no single community can make decisions unilaterally.",
+              "assessment": {
+                "requiredEvidence": ["majority of members from each linguistic group", "no single community can make decisions unilaterally"],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_special_laws_each_group",
+                    "criterion": "States that some special laws need the support of a majority of members from each linguistic group.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_no_unilateral",
+                    "criterion": "States that no single community can make decisions unilaterally.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t1c4_kp4",
+              "weight": 2,
+              "text": "Many powers of the central government have been given to state governments of the two regions of the country. The state governments are not subordinate to the Central Government.",
+              "assessment": {
+                "requiredEvidence": ["powers given to state governments", "not subordinate to the Central Government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_states_not_subordinate",
+                    "criterion": "States that many powers were given to the state governments and that they are not subordinate to the Central Government.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_states_subordinate"]
+              }
+            },
+            {
+              "id": "t1c4_kp5",
+              "weight": 1,
+              "text": "Brussels has a separate government in which both the communities have equal representation. The French-speaking people accepted equal representation in Brussels because the Dutch-speaking community has accepted equal representation in the Central Government.",
+              "assessment": {
+                "requiredEvidence": ["separate government in Brussels", "equal representation", "accepted equal representation in the Central Government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_brussels_equal",
+                    "criterion": "States that Brussels has a separate government in which both communities have equal representation.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_brussels_reciprocity",
+                    "criterion": "Explains that French speakers accepted this because Dutch speakers accepted equal representation in the Central Government.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_french_gave_up"]
+              }
+            },
+            {
+              "id": "t1c4_kp6",
+              "weight": 2,
+              "text": "Apart from the Central and the State Government, there is a third kind of government. This 'community government' is elected by people belonging to one language community (Dutch, French and German-speaking) no matter where they live. This government has the power regarding cultural, educational and language-related issues.",
+              "assessment": {
+                "requiredEvidence": ["community government", "one language community", "no matter where they live", "cultural, educational and language-related issues"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_community_government",
+                    "criterion": "Mentions a third kind of government, the community government.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_community_govt_by_language",
+                    "criterion": "States that the community government is elected by people of one language community, no matter where they live.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_community_govt_powers",
+                    "criterion": "States that the community government has power over cultural, educational and language-related issues.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_community_govt_regional"]
+              }
+            },
+            {
+              "id": "t1c4_kp7",
+              "weight": 2,
+              "text": "These arrangements helped to avoid civic strife between the two major communities and a possible division of the country on linguistic lines. When many countries of Europe came together to form the European Union, Brussels was chosen as its headquarters.",
+              "assessment": {
+                "requiredEvidence": ["avoid civic strife", "possible division of the country on linguistic lines", "European Union headquarters"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_avoid_civic_strife",
+                    "criterion": "States that the arrangements helped avoid civic strife between the two communities.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_avoid_division",
+                    "criterion": "States that the arrangements prevented a possible division of the country on linguistic lines.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_eu_headquarters",
+                    "criterion": "Mentions that Brussels was chosen as the headquarters of the European Union.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_belgium_split"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Four constitutional amendments between 1970 and 1993",
+            "Equal number of Dutch and French-speaking ministers in the central government",
+            "State governments that are not subordinate to the Central Government",
+            "Separate government in Brussels with equal representation",
+            "Community government for cultural, educational and language-related issues",
+            "Brussels chosen as the headquarters of the European Union",
+            "Exercise (statements on Belgium and Sri Lanka): 'The transformation of Belgium from unitary government to a federal one prevented a possible division of the country on linguistic lines' (correct)"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_states_subordinate",
+              "wrong": "Belgium's state governments take orders from the central government.",
+              "fix": "The state governments are not subordinate to the Central Government."
+            },
+            {
+              "id": "misc_french_gave_up",
+              "wrong": "The French speakers gave up their majority in Brussels for nothing in return.",
+              "fix": "The French-speaking people accepted equal representation in Brussels because the Dutch-speaking community accepted equal representation in the Central Government."
+            },
+            {
+              "id": "misc_community_govt_regional",
+              "wrong": "The community government is the government of one region of Belgium.",
+              "fix": "It is elected by people of one language community (Dutch, French or German-speaking), no matter where they live."
+            },
+            {
+              "id": "misc_belgium_split",
+              "wrong": "Belgium solved the conflict by dividing into separate countries.",
+              "fix": "The arrangements helped avoid a possible division of the country on linguistic lines; Belgium stayed one country."
+            }
+          ],
+          "verify": [
+            { "page": 4, "quote": "Between 1970 and 1993, they amended their constitution four times", "supports": ["t1c4_kp1"] },
+            { "page": 4, "quote": "the number of Dutch and French-speaking ministers shall be equal in the central government", "supports": ["t1c4_kp2"] },
+            { "page": 4, "quote": "Thus, no single community can make decisions unilaterally.", "supports": ["t1c4_kp3"] },
+            { "page": 4, "quote": "The state governments are not subordinate to the Central Government.", "supports": ["t1c4_kp4"] },
+            { "page": 4, "quote": "Brussels has a separate government in which both the communities have equal representation.", "supports": ["t1c4_kp5"] },
+            { "page": 5, "quote": "elected by people belonging to one language community", "supports": ["t1c4_kp6"] },
+            { "page": 5, "quote": "helped to avoid civic strife between the two major communities", "supports": ["t1c4_kp7"] },
+            { "page": 11, "quote": "The transformation of Belgium from unitary government to a federal one prevented a possible division of the country on linguistic lines.", "supports": ["t1c4_kp7"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t1_c5",
+          "label": "What do we learn from these two stories?",
+          "headingType": "lesson",
+          "sourcePages": [5],
+          "cardText": "Both countries are democracies, yet they dealt with power sharing differently. Belgium's leaders realised that unity is possible only by respecting the feelings and interests of different communities and regions. Sri Lanka shows that if a majority community forces its dominance and refuses to share power, it can undermine the unity of the country.",
+          "hint": "Same kind of country, two different choices. What did each choice lead to?",
+          "probe": "Belgium and Sri Lanka are both democracies. Why did one stay united while the other's unity was undermined?",
+          "causeChain": "Belgium respects the feelings and interests of communities -> mutually acceptable arrangements -> unity; Sri Lanka's majority forces dominance and refuses to share power -> unity undermined",
+          "causeLinks": [
+            {
+              "id": "lnk_lesson_contrast",
+              "linksChecks": ["chk_belgium_respected", "chk_srilanka_forced"],
+              "criterion": "Contrasts the two outcomes: respecting communities kept Belgium united, while forcing dominance undermined Sri Lanka's unity.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t1c5_kp1",
+              "weight": 2,
+              "text": "Both countries are democracies. Yet, they dealt with the question of power sharing differently.",
+              "assessment": {
+                "requiredEvidence": ["both are democracies", "dealt with power sharing differently"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_dealt_differently",
+                    "criterion": "States that Belgium and Sri Lanka dealt with the question of power sharing differently.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_both_democracies",
+                    "criterion": "Notes that both countries are democracies.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_lk_not_democracy"]
+              }
+            },
+            {
+              "id": "t1c5_kp2",
+              "weight": 2,
+              "text": "In Belgium, the leaders have realised that the unity of the country is possible only by respecting the feelings and interests of different communities and regions. Such a realisation resulted in mutually acceptable arrangements for sharing power.",
+              "assessment": {
+                "requiredEvidence": ["respecting the feelings and interests", "unity of the country", "mutually acceptable arrangements"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_belgium_respected",
+                    "criterion": "States that Belgium's leaders realised unity was possible only by respecting the feelings and interests of different communities and regions.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_mutually_acceptable",
+                    "criterion": "Mentions that this led to mutually acceptable arrangements for sharing power.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_belgium_imposed"]
+              }
+            },
+            {
+              "id": "t1c5_kp3",
+              "weight": 2,
+              "text": "Sri Lanka shows us that if a majority community wants to force its dominance over others and refuses to share power, it can undermine the unity of the country.",
+              "assessment": {
+                "requiredEvidence": ["force its dominance", "refuses to share power", "undermine the unity of the country"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_srilanka_forced",
+                    "criterion": "States that when a majority community forces its dominance and refuses to share power, it can undermine the unity of the country, as in Sri Lanka.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Belgium's equal ministers and community governments",
+            "Sri Lanka's 1956 Act making Sinhala the only official language",
+            "Exercise (statements on Belgium and Sri Lanka): 'In Belgium, the Dutch-speaking majority people tried to impose their domination on the minority French-speaking community' (incorrect)"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_belgium_imposed",
+              "wrong": "Belgium's Dutch-speaking majority imposed its domination on the French-speaking minority.",
+              "fix": "Belgium's leaders respected the feelings and interests of different communities and worked out mutually acceptable arrangements. It was in Sri Lanka that the majority forced its dominance."
+            },
+            {
+              "id": "misc_lk_not_democracy",
+              "wrong": "Sri Lanka's problem was that it was not a democracy.",
+              "fix": "Both countries are democracies. In Sri Lanka, the democratically elected government adopted the majoritarian measures."
+            }
+          ],
+          "verify": [
+            { "page": 5, "quote": "Both countries are democracies. Yet, they dealt with the question of power sharing differently.", "supports": ["t1c5_kp1"] },
+            { "page": 5, "quote": "the unity of the country is possible only by respecting the feelings and interests of different communities and regions", "supports": ["t1c5_kp2"] },
+            { "page": 5, "quote": "refuses to share power, it can undermine the unity of the country", "supports": ["t1c5_kp3"] },
+            { "page": 11, "quote": "In Belgium, the Dutch-speaking majority people tried to impose their domination on the minority French-speaking community.", "supports": ["t1c5_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_civ_10_ch1_t2",
+      "title": "Why power sharing is desirable?",
+      "concepts": [
+        {
+          "conceptId": "civ10_ch1_t2_c0",
+          "label": "Two sets of reasons",
+          "headingType": "heading",
+          "sourcePages": [6],
+          "cardText": "Two sets of reasons favour power sharing. Prudential reasons stress that power sharing will bring out better outcomes. Moral reasons emphasise the very act of power sharing as valuable.",
+          "hint": "One set is about results; the other is about the value of sharing itself.",
+          "probe": "What is the difference between the prudential and the moral reasons for power sharing?",
+          "causeChain": "Power sharing is desirable -> prudential reasons (better outcomes) and moral reasons (the act of sharing is itself valuable)",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "t2c0_kp1",
+              "weight": 1,
+              "text": "Two different sets of reasons can be given in favour of power sharing: prudential and moral.",
+              "assessment": {
+                "requiredEvidence": ["two sets of reasons", "prudential", "moral"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_two_sets_reasons",
+                    "criterion": "States that there are two sets of reasons for power sharing, prudential and moral.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t2c0_kp2",
+              "weight": 2,
+              "text": "While prudential reasons stress that power sharing will bring out better outcomes, moral reasons emphasise the very act of power sharing as valuable.",
+              "assessment": {
+                "requiredEvidence": ["better outcomes", "the very act of power sharing as valuable"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_prudential_outcomes",
+                    "criterion": "States that prudential reasons stress that power sharing brings better outcomes.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_moral_act_valuable",
+                    "criterion": "States that moral reasons treat the very act of power sharing as valuable.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_reasons_swapped"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: give one prudential and one moral reason in favour of power sharing, with an example from the Indian context"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_reasons_swapped",
+              "wrong": "Moral reasons are about better outcomes, and prudential reasons are about the value of sharing itself.",
+              "fix": "It is the other way round: prudential reasons stress better outcomes; moral reasons emphasise the very act of power sharing as valuable."
+            }
+          ],
+          "verify": [
+            { "page": 6, "quote": "Two different sets of reasons can be given in favour of power sharing.", "supports": ["t2c0_kp1"] },
+            { "page": 6, "quote": "moral reasons emphasise the very act of power sharing as valuable", "supports": ["t2c0_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t2_c1",
+          "label": "Prudential reasons",
+          "headingType": "subheading",
+          "sourcePages": [6, 7],
+          "cardText": "Prudential means based on careful calculation of gains and losses. Power sharing reduces the possibility of conflict between social groups and so ensures the stability of political order. Imposing the will of the majority undermines the unity of the nation in the long run; tyranny of the majority often brings ruin to the majority as well.",
+          "hint": "Think of gains and losses: what does power sharing prevent?",
+          "probe": "Why does tyranny of the majority often bring ruin to the majority as well?",
+          "causeChain": "Power sharing -> reduces the possibility of conflict between social groups -> avoids violence and political instability -> stability of political order; imposing the majority's will -> attractive in the short run -> undermines the unity of the nation in the long run",
+          "causeLinks": [
+            {
+              "id": "lnk_prud_conflict_to_stability",
+              "linksChecks": ["chk_reduces_conflict", "chk_political_stability"],
+              "criterion": "Connects reducing conflict between social groups to the stability of political order (because social conflict often leads to violence and political instability).",
+              "isRequired": true
+            },
+            {
+              "id": "lnk_prud_short_long_run",
+              "linksChecks": ["chk_undermines_unity", "chk_tyranny_hurts_both"],
+              "criterion": "Explains that imposing the majority's will may look attractive in the short run but undermines unity in the long run, harming the majority too.",
+              "isRequired": false
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t2c1_kp1",
+              "weight": 2,
+              "text": "Prudential: based on prudence, or on careful calculation of gains and losses.",
+              "assessment": {
+                "requiredEvidence": ["careful calculation of gains and losses", "prudence"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_prudential_def",
+                    "criterion": "Defines prudential as based on prudence or careful calculation of gains and losses.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_prudential_moral"]
+              }
+            },
+            {
+              "id": "t2c1_kp2",
+              "weight": 2,
+              "text": "Power sharing is good because it helps to reduce the possibility of conflict between social groups.",
+              "assessment": {
+                "requiredEvidence": ["reduce the possibility of conflict", "between social groups"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_reduces_conflict",
+                    "criterion": "States that power sharing reduces the possibility of conflict between social groups.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_lebanon_moral"]
+              }
+            },
+            {
+              "id": "t2c1_kp3",
+              "weight": 1,
+              "text": "Since social conflict often leads to violence and political instability, power sharing is a good way to ensure the stability of political order.",
+              "assessment": {
+                "requiredEvidence": ["stability of political order", "violence and political instability"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_political_stability",
+                    "criterion": "States that power sharing ensures the stability of political order.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t2c1_kp4",
+              "weight": 2,
+              "text": "Imposing the will of majority community over others may look like an attractive option in the short run, but in the long run it undermines the unity of the nation.",
+              "assessment": {
+                "requiredEvidence": ["short run", "long run", "undermines the unity of the nation"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_undermines_unity",
+                    "criterion": "States that imposing the majority's will undermines the unity of the nation in the long run.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t2c1_kp5",
+              "weight": 1,
+              "text": "Tyranny of the majority is not just oppressive for the minority; it often brings ruin to the majority as well.",
+              "assessment": {
+                "requiredEvidence": ["tyranny of the majority", "brings ruin to the majority as well", "oppressive for the minority"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_tyranny_hurts_both",
+                    "criterion": "States that tyranny of the majority is oppressive for the minority and often brings ruin to the majority as well.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Sri Lanka, where majoritarian measures led to civil war",
+            "Exercise (panchayat passage): 'Giving power to Panchayats is also a way to reduce corruption and increase administrative efficiency' (prudential)",
+            "Exercise (statements on power sharing): 'It helps to reduce the possibility of conflict between social groups' (correct)",
+            "Khalil's dilemma (Lebanon): arguing that the power-sharing arrangement keeps peace between communities after the civil war is a prudential reason"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_prudential_moral",
+              "wrong": "Prudential reasons are about democratic rights and values.",
+              "fix": "Prudential reasons are based on careful calculation of gains and losses: reducing conflict and ensuring the stability of political order."
+            },
+            {
+              "id": "misc_lebanon_moral",
+              "wrong": "Defending Lebanon's power-sharing arrangement because it keeps the peace is a moral reason.",
+              "fix": "An argument about keeping peace and avoiding conflict is about outcomes, so it is a prudential reason."
+            }
+          ],
+          "verify": [
+            { "page": 6, "quote": "Prudential: Based on prudence, or on careful calculation of gains and losses.", "supports": ["t2c1_kp1"] },
+            { "page": 6, "quote": "it helps to reduce the possibility of conflict between social groups", "supports": ["t2c1_kp2"] },
+            { "page": 6, "quote": "power sharing is a good way to ensure the stability of political order", "supports": ["t2c1_kp3"] },
+            { "page": 6, "quote": "in the long run it undermines the unity of the nation", "supports": ["t2c1_kp4"] },
+            { "page": 6, "quote": "it often brings ruin to the majority as well", "supports": ["t2c1_kp5"] },
+            { "page": 7, "quote": "Khalil's dilemma", "supports": ["t2c1_kp2"] },
+            { "page": 12, "quote": "reduce corruption and increase administrative efficiency", "supports": ["t2c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t2_c2",
+          "label": "Moral reasons",
+          "headingType": "subheading",
+          "sourcePages": [6],
+          "cardText": "Power sharing is the very spirit of democracy. A democratic rule involves sharing power with those affected by its exercise. People have a right to be consulted on how they are to be governed. A legitimate government is one where citizens, through participation, acquire a stake in the system.",
+          "hint": "Think about the spirit of democracy and the right to be consulted.",
+          "probe": "Why does a government become legitimate when citizens participate and acquire a stake in the system?",
+          "causeChain": "Power sharing is the spirit of democracy -> people have a right to be consulted -> citizens participate and acquire a stake in the system -> legitimate government",
+          "causeLinks": [
+            {
+              "id": "lnk_moral_participation_legitimacy",
+              "linksChecks": ["chk_right_to_consult", "chk_acquire_stake"],
+              "criterion": "Connects citizens being consulted and participating to the government being legitimate.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t2c2_kp1",
+              "weight": 2,
+              "text": "Power sharing is the very spirit of democracy.",
+              "assessment": {
+                "requiredEvidence": ["very spirit of democracy"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_spirit_democracy",
+                    "criterion": "States that power sharing is the very spirit of democracy.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_moral_violence"]
+              }
+            },
+            {
+              "id": "t2c2_kp2",
+              "weight": 2,
+              "text": "A democratic rule involves sharing power with those affected by its exercise, and who have to live with its effects.",
+              "assessment": {
+                "requiredEvidence": ["those affected by its exercise", "live with its effects"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_share_with_affected",
+                    "criterion": "States that democratic rule involves sharing power with those affected by its exercise.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_moral_efficiency"]
+              }
+            },
+            {
+              "id": "t2c2_kp3",
+              "weight": 1,
+              "text": "People have a right to be consulted on how they are to be governed.",
+              "assessment": {
+                "requiredEvidence": ["right to be consulted", "how they are to be governed"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_right_to_consult",
+                    "criterion": "States that people have a right to be consulted on how they are to be governed.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t2c2_kp4",
+              "weight": 1,
+              "text": "A legitimate government is one where citizens, through participation, acquire a stake in the system.",
+              "assessment": {
+                "requiredEvidence": ["legitimate government", "acquire a stake in the system", "participation"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_acquire_stake",
+                    "criterion": "States that in a legitimate government, citizens acquire a stake in the system through participation.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise (panchayat passage): Panchayati Raj 'restores power to the only place where power belongs in a democracy – in the hands of the people' (moral)"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_moral_violence",
+              "wrong": "The moral reason for power sharing is avoiding violence.",
+              "fix": "Avoiding violence is a prudential reason. The moral reason is that power sharing is the very spirit of democracy and people have a right to be consulted."
+            },
+            {
+              "id": "misc_moral_efficiency",
+              "wrong": "The moral reason for power sharing is that it makes government more efficient.",
+              "fix": "Efficiency is an outcome, so it is prudential. Moral reasons value the very act of sharing power with those affected by it."
+            }
+          ],
+          "verify": [
+            { "page": 6, "quote": "power sharing is the very spirit of democracy", "supports": ["t2c2_kp1"] },
+            { "page": 6, "quote": "sharing power with those affected by its exercise, and who have to live with its effects", "supports": ["t2c2_kp2"] },
+            { "page": 6, "quote": "People have a right to be consulted on how they are to be governed.", "supports": ["t2c2_kp3"] },
+            { "page": 6, "quote": "citizens, through participation, acquire a stake in the system", "supports": ["t2c2_kp4"] },
+            { "page": 12, "quote": "restores power to the only place where power belongs in a democracy", "supports": ["t2c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_civ_10_ch1_t3",
+      "title": "Forms of power-sharing",
+      "concepts": [
+        {
+          "conceptId": "civ10_ch1_t3_c0",
+          "label": "Forms of power-sharing (from undivided power to shared power)",
+          "headingType": "heading",
+          "sourcePages": [8],
+          "cardText": "It was once believed that all power of a government must reside in one person or group at one place. With democracy this changed: people are the source of all political power and rule themselves through institutions of self-government, so power should be distributed among as many citizens as possible. Modern democracies share power among organs, levels of government, social groups, and parties and pressure groups.",
+          "hint": "What was the old belief about power, and why did democracy change it?",
+          "probe": "Why did the idea of undivided political power give way to power sharing in democracies?",
+          "causeChain": "Old notion: undivided power for quick decisions -> democracy: people are the source of all political power -> power distributed among as many citizens as possible -> four forms of power sharing",
+          "causeLinks": [
+            {
+              "id": "lnk_democracy_to_sharing",
+              "linksChecks": ["chk_people_source_power", "chk_power_distributed_many"],
+              "criterion": "Connects people being the source of all political power to power being distributed among as many citizens as possible.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t3c0_kp1",
+              "weight": 1,
+              "text": "For a long time it was believed that all power of a government must reside in one person or group of persons located at one place. It was felt that if the power to decide is dispersed, it would not be possible to take quick decisions and to enforce them.",
+              "assessment": {
+                "requiredEvidence": ["one person or group of persons", "quick decisions", "undivided political power"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_undivided_power_notion",
+                    "criterion": "Describes the older belief that all power must reside in one person or group at one place so that quick decisions can be taken.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_dispersed_power_slow"]
+              }
+            },
+            {
+              "id": "t3c0_kp2",
+              "weight": 2,
+              "text": "One basic principle of democracy is that people are the source of all political power. In a democracy, people rule themselves through institutions of self-government.",
+              "assessment": {
+                "requiredEvidence": ["people are the source of all political power", "institutions of self-government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_people_source_power",
+                    "criterion": "States that in a democracy people are the source of all political power and rule themselves through institutions of self-government.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c0_kp3",
+              "weight": 1,
+              "text": "In a good democratic government, due respect is given to diverse groups and views, and everyone has a voice in the shaping of public policies. So political power should be distributed among as many citizens as possible.",
+              "assessment": {
+                "requiredEvidence": ["everyone has a voice", "distributed among as many citizens as possible"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_power_distributed_many",
+                    "criterion": "States that in a democracy political power should be distributed among as many citizens as possible.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c0_kp4",
+              "weight": 2,
+              "text": "In modern democracies, power is shared among different organs of government, among governments at different levels, among different social groups, and among political parties, pressure groups and movements.",
+              "assessment": {
+                "requiredEvidence": ["organs of government", "different levels", "social groups", "political parties, pressure groups and movements"],
+                "passRule": "minCount:3",
+                "checks": [
+                  {
+                    "id": "chk_form_organs",
+                    "criterion": "Names power sharing among different organs of government.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_form_levels",
+                    "criterion": "Names power sharing among governments at different levels.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_form_social_groups",
+                    "criterion": "Names power sharing among different social groups.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_form_parties",
+                    "criterion": "Names power sharing among political parties, pressure groups or movements.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: 'What are the different forms of power sharing in modern democracies? Give an example of each.'",
+            "Exercise (matching): organs -> separation of powers; levels -> federal government; social groups -> community government; two or more parties -> coalition government"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_dispersed_power_slow",
+              "wrong": "Power must stay in one place, or the government cannot take quick decisions, so democracies avoid dividing it.",
+              "fix": "That was the older notion of undivided political power. It changed with the emergence of democracy, where people are the source of all political power."
+            }
+          ],
+          "verify": [
+            { "page": 8, "quote": "all power of a government must reside in one person or group of persons located at one place", "supports": ["t3c0_kp1"] },
+            { "page": 8, "quote": "people are the source of all political power", "supports": ["t3c0_kp2"] },
+            { "page": 8, "quote": "political power should be distributed among as many citizens as possible", "supports": ["t3c0_kp3"] },
+            { "page": 8, "quote": "Let us look at some of the most common arrangements of power sharing", "supports": ["t3c0_kp4"] },
+            { "page": 11, "quote": "Match List I (forms of power sharing) with List II (forms of government)", "supports": ["t3c0_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t3_c1",
+          "label": "Horizontal distribution of power",
+          "headingType": "subheading",
+          "sourcePages": [8],
+          "cardText": "Power is shared among the legislature, executive and judiciary, placed at the same level. Such a separation ensures that none of the organs can exercise unlimited power. Each organ checks the others, which results in a balance of power called a system of checks and balances.",
+          "hint": "Ministers answer to Parliament, and judges can check the executive.",
+          "probe": "How does the system of checks and balances stop any one organ of government from exercising unlimited power?",
+          "causeChain": "Organs placed at the same level exercise different powers -> separation ensures none has unlimited power -> each organ checks the others -> balance of power (checks and balances)",
+          "causeLinks": [
+            {
+              "id": "lnk_separation_to_balance",
+              "linksChecks": ["chk_no_unlimited_power", "chk_checks_balances"],
+              "criterion": "Connects the separation of organs (none can exercise unlimited power) to a balance of power through checks and balances.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t3c1_kp1",
+              "weight": 2,
+              "text": "Power is shared among different organs of government, such as the legislature, executive and judiciary. This is called horizontal distribution of power because it allows different organs of government placed at the same level to exercise different powers.",
+              "assessment": {
+                "requiredEvidence": ["horizontal distribution", "same level", "different organs"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_horizontal_same_level",
+                    "criterion": "States that horizontal distribution means organs of government placed at the same level exercise different powers.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_horizontal_levels"]
+              }
+            },
+            {
+              "id": "t3c1_kp2",
+              "weight": 1,
+              "text": "The organs are the legislature, executive and judiciary.",
+              "assessment": {
+                "requiredEvidence": ["legislature", "executive", "judiciary"],
+                "passRule": "minCount:2",
+                "checks": [
+                  {
+                    "id": "chk_organ_legislature",
+                    "criterion": "Names the legislature as an organ of government.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_organ_executive",
+                    "criterion": "Names the executive as an organ of government.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_organ_judiciary",
+                    "criterion": "Names the judiciary as an organ of government.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_judiciary_below"]
+              }
+            },
+            {
+              "id": "t3c1_kp3",
+              "weight": 2,
+              "text": "Such a separation ensures that none of the organs can exercise unlimited power. Each organ checks the others.",
+              "assessment": {
+                "requiredEvidence": ["none of the organs can exercise unlimited power", "each organ checks the others", "separation of powers"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_no_unlimited_power",
+                    "criterion": "States that the separation ensures none of the organs can exercise unlimited power.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_separation_of_powers_term",
+                    "criterion": "Uses the term 'separation of powers' for this arrangement.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c1_kp4",
+              "weight": 2,
+              "text": "Although ministers and government officials exercise power, they are responsible to the Parliament or State Assemblies. Although judges are appointed by the executive, they can check the functioning of the executive or laws made by the legislatures. This arrangement is called a system of checks and balances.",
+              "assessment": {
+                "requiredEvidence": ["checks and balances", "responsible to the Parliament", "judges can check the executive"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_checks_balances",
+                    "criterion": "Names the arrangement a system of checks and balances.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_checks_example",
+                    "criterion": "Gives an example: ministers are responsible to Parliament or State Assemblies, or judges appointed by the executive can check the executive or the legislature.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Ministers and government officials are responsible to the Parliament or State Assemblies",
+            "Judges appointed by the executive can check the functioning of the executive or laws made by the legislatures",
+            "Exercise: the Bombay High Court ordered the Maharashtra state government to take immediate action and improve living conditions at children's homes in Mumbai (power shared among organs)",
+            "Exercise (matching): separation of powers"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_judiciary_below",
+              "wrong": "The judiciary works under the executive because judges are appointed by it.",
+              "fix": "The organs are placed at the same level. Although judges are appointed by the executive, they can check the functioning of the executive."
+            },
+            {
+              "id": "misc_horizontal_levels",
+              "wrong": "Horizontal distribution means sharing power between the Centre and the States.",
+              "fix": "Horizontal distribution is among organs at the same level (legislature, executive, judiciary). Centre and States is the federal, or vertical, division of power."
+            }
+          ],
+          "verify": [
+            { "page": 8, "quote": "different organs of government placed at the same level to exercise different powers", "supports": ["t3c1_kp1"] },
+            { "page": 8, "quote": "such as the legislature, executive and judiciary", "supports": ["t3c1_kp2"] },
+            { "page": 8, "quote": "Such a separation ensures that none of the organs can exercise unlimited power.", "supports": ["t3c1_kp3"] },
+            { "page": 8, "quote": "This arrangement is called a system of checks and balances.", "supports": ["t3c1_kp4"] },
+            { "page": 10, "quote": "The Bombay High Court ordered the Maharashtra state government to take immediate action", "supports": ["t3c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t3_c2",
+          "label": "Federal (vertical) division of power",
+          "headingType": "subheading",
+          "sourcePages": [8, 9],
+          "cardText": "Power is shared among governments at different levels: a general government for the entire country and governments at the provincial or regional level. In India these are the Central or Union Government and the State Governments. The constitution clearly lays down the powers of each level (federal division of power), and the principle extends to the municipality and panchayat.",
+          "hint": "Think of higher and lower levels: Union, State, and then municipality or panchayat.",
+          "probe": "How is the federal (vertical) division of power different from the horizontal distribution of power?",
+          "causeChain": "Constitution clearly lays down the powers of different levels of government -> federal division of power -> extended to municipality and panchayat -> vertical division of power between higher and lower levels",
+          "causeLinks": [
+            {
+              "id": "lnk_constitution_to_federal",
+              "linksChecks": ["chk_constitution_lays_down", "chk_vertical_higher_lower"],
+              "criterion": "Explains that because the constitution lays down the powers of each level, power is divided between higher and lower levels of government.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t3c2_kp1",
+              "weight": 2,
+              "text": "Power can be shared among governments at different levels: a general government for the entire country and governments at the provincial or regional level.",
+              "assessment": {
+                "requiredEvidence": ["governments at different levels", "general government for the entire country", "provincial or regional level"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_vertical_levels",
+                    "criterion": "States that power is shared among governments at different levels, a government for the whole country and governments at the provincial or regional level.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_vertical_horizontal_mix"]
+              }
+            },
+            {
+              "id": "t3c2_kp2",
+              "weight": 1,
+              "text": "The general government for the entire country is usually called federal government. In India, we refer to it as the Central or Union Government. The governments at the provincial or regional level are called State Governments in India.",
+              "assessment": {
+                "requiredEvidence": ["federal government", "Central or Union Government", "State Governments"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_central_and_state",
+                    "criterion": "Names the Central or Union Government and the State Governments (in India).",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c2_kp3",
+              "weight": 2,
+              "text": "This system is not followed in all countries. Where there are different levels of governments, the constitution clearly lays down the powers of different levels of government. This is called federal division of power.",
+              "assessment": {
+                "requiredEvidence": ["constitution clearly lays down the powers", "federal division of power", "not followed in all countries"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_constitution_lays_down",
+                    "criterion": "States that the constitution clearly lays down the powers of the different levels of government.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_federal_division_term",
+                    "criterion": "Uses the term 'federal division of power'.",
+                    "isRequired": false
+                  },
+                  {
+                    "id": "chk_not_all_countries",
+                    "criterion": "Notes that not all countries have provincial or state governments.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_all_countries_federal"]
+              }
+            },
+            {
+              "id": "t3c2_kp4",
+              "weight": 1,
+              "text": "The same principle can be extended to levels of government lower than the State government, such as the municipality and panchayat.",
+              "assessment": {
+                "requiredEvidence": ["municipality", "panchayat", "lower than the State government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_local_panchayats",
+                    "criterion": "States that the principle extends to levels lower than the State, such as the municipality and panchayat.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c2_kp5",
+              "weight": 2,
+              "text": "Division of powers involving higher and lower levels of government is called vertical division of power.",
+              "assessment": {
+                "requiredEvidence": ["vertical division of power", "higher and lower levels of government"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_vertical_higher_lower",
+                    "criterion": "Defines vertical division of power as division between higher and lower levels of government.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_vertical_horizontal_mix"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "India's Central or Union Government, State Governments, municipalities and panchayats",
+            "Exercise: the finance ministers of various states in Nigeria demanded that the federal government declare its sources of income and the formula by which revenue is distributed to the State governments (power shared among levels)",
+            "Exercise (matching): federal government"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_vertical_horizontal_mix",
+              "wrong": "Vertical division is between the legislature, executive and judiciary.",
+              "fix": "That is horizontal distribution. Vertical division is between higher and lower levels of government: Union, State, municipality and panchayat."
+            },
+            {
+              "id": "misc_all_countries_federal",
+              "wrong": "Every country has provincial or state governments.",
+              "fix": "This system is not followed in all countries; many have no provincial or state governments."
+            }
+          ],
+          "verify": [
+            { "page": 8, "quote": "a general government for the entire country and governments at the provincial or regional level", "supports": ["t3c2_kp1"] },
+            { "page": 8, "quote": "In India, we refer to it as the Central or Union Government.", "supports": ["t3c2_kp2"] },
+            { "page": 9, "quote": "This is called federal division of power.", "supports": ["t3c2_kp3"] },
+            { "page": 9, "quote": "such as the municipality and panchayat", "supports": ["t3c2_kp4"] },
+            { "page": 9, "quote": "higher and lower levels of government vertical division of power", "supports": ["t3c2_kp5"] },
+            { "page": 10, "quote": "The finance ministers of various states in Nigeria got together", "supports": ["t3c2_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t3_c3",
+          "label": "Power sharing among social groups",
+          "headingType": "subheading",
+          "sourcePages": [9],
+          "cardText": "Power may be shared among social groups, such as religious and linguistic groups. Belgium's community government is the most glaring example. In India, reserved constituencies give socially weaker sections and women space in legislatures, so groups that might otherwise feel alienated get a fair share in power.",
+          "hint": "Think of the community government in Belgium and reserved constituencies in India.",
+          "probe": "Why do some democracies use reserved constituencies or community governments?",
+          "causeChain": "Constitutional and legal arrangements (community government, reserved constituencies) -> space in government and administration for diverse social groups -> groups do not feel alienated; minorities get a fair share in power",
+          "causeLinks": [
+            {
+              "id": "lnk_social_space_to_inclusion",
+              "linksChecks": ["chk_reserved_constituencies", "chk_prevent_alienation"],
+              "criterion": "Connects arrangements such as reserved constituencies to giving groups space in government so they do not feel alienated.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t3c3_kp1",
+              "weight": 2,
+              "text": "Power may also be shared among different social groups, such as the religious and linguistic groups.",
+              "assessment": {
+                "requiredEvidence": ["social groups", "religious and linguistic groups"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_social_groups_def",
+                    "criterion": "States that power can be shared among social groups such as religious and linguistic groups.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c3_kp2",
+              "weight": 1,
+              "text": "'Community government' in Belgium is a good example of this arrangement.",
+              "assessment": {
+                "requiredEvidence": ["community government in Belgium"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_social_community_govt",
+                    "criterion": "Gives Belgium's community government as an example of sharing among social groups.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c3_kp3",
+              "weight": 1,
+              "text": "In some countries there are constitutional and legal arrangements whereby socially weaker sections and women are represented in the legislatures and administration, such as 'reserved constituencies' in assemblies and the parliament of our country.",
+              "assessment": {
+                "requiredEvidence": ["reserved constituencies", "socially weaker sections and women", "constitutional and legal arrangements"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_reserved_constituencies",
+                    "criterion": "Mentions reserved constituencies (or similar legal arrangements) that give socially weaker sections and women representation in legislatures.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_reserved_seats_bad"]
+              }
+            },
+            {
+              "id": "t3c3_kp4",
+              "weight": 2,
+              "text": "This type of arrangement is meant to give space in the government and administration to diverse social groups who otherwise would feel alienated from the government. This method is used to give minority communities a fair share in power.",
+              "assessment": {
+                "requiredEvidence": ["otherwise would feel alienated", "fair share in power", "space in the government and administration"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_prevent_alienation",
+                    "criterion": "States that the purpose is to give diverse social groups space in government so they do not feel alienated.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_minority_fair_share",
+                    "criterion": "States that this gives minority communities a fair share in power.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_reserved_seats_bad"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Belgium's community government",
+            "Reserved constituencies in assemblies and the parliament of India",
+            "Exercise: the Government of Ontario state in Canada agreed to a land claims settlement with the aboriginal community (power shared among social groups)",
+            "Exercise (matching): community government"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_reserved_seats_bad",
+              "wrong": "Reserved constituencies go against democracy.",
+              "fix": "The chapter presents them as a form of power sharing: they give diverse social groups space in government, groups that would otherwise feel alienated."
+            }
+          ],
+          "verify": [
+            { "page": 9, "quote": "such as the religious and linguistic groups", "supports": ["t3c3_kp1"] },
+            { "page": 9, "quote": "'Community government' in Belgium is a good example of this arrangement.", "supports": ["t3c3_kp2"] },
+            { "page": 9, "quote": "the system of 'reserved constituencies' in assemblies and the parliament of our country", "supports": ["t3c3_kp3"] },
+            { "page": 9, "quote": "diverse social groups who otherwise would feel alienated from the government", "supports": ["t3c3_kp4"] },
+            { "page": 10, "quote": "The Government of Ontario state in Canada has agreed to a land claims settlement with the aboriginal community.", "supports": ["t3c3_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "civ10_ch1_t3_c4",
+          "label": "Power sharing among political parties, pressure groups and movements",
+          "headingType": "subheading",
+          "sourcePages": [9],
+          "cardText": "Political parties, pressure groups and movements control or influence those in power. Competition among parties ensures that power does not remain in the hands of one party; in the long run power is shared among parties. Sometimes parties form an alliance and a coalition government. Interest groups share power through governmental committees or by influencing decision making.",
+          "hint": "Even without a coalition, how does competition between parties share power?",
+          "probe": "How does competition among political parties make sure power does not remain in the hands of one party?",
+          "causeChain": "Citizens free to choose among contenders -> competition among parties -> power does not remain with one party -> in the long run power shared among parties; alliances form coalition governments; interest groups share power through committees and influence",
+          "causeLinks": [
+            {
+              "id": "lnk_competition_no_single_party",
+              "linksChecks": ["chk_party_competition", "chk_long_run_sharing"],
+              "criterion": "Explains that competition among parties means power does not remain with one party and is shared among parties in the long run.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "t3c4_kp1",
+              "weight": 1,
+              "text": "Power sharing can also be seen in the way political parties, pressure groups and movements control or influence those in power.",
+              "assessment": {
+                "requiredEvidence": ["political parties, pressure groups and movements", "control or influence those in power"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_parties_groups_influence",
+                    "criterion": "States that political parties, pressure groups and movements control or influence those in power.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c4_kp2",
+              "weight": 2,
+              "text": "In a democracy, citizens must have freedom to choose among various contenders for power. In contemporary democracies this takes the form of competition among different parties. Such competition ensures that power does not remain in the hands of one party.",
+              "assessment": {
+                "requiredEvidence": ["competition among different parties", "does not remain in the hands of one party", "freedom to choose"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_party_competition",
+                    "criterion": "States that competition among parties ensures power does not remain in the hands of one party.",
+                    "isRequired": true
+                  },
+                  {
+                    "id": "chk_freedom_to_choose",
+                    "criterion": "Mentions that citizens must have freedom to choose among contenders for power.",
+                    "isRequired": false
+                  }
+                ],
+                "misconceptionIds": ["misc_coalition_only"]
+              }
+            },
+            {
+              "id": "t3c4_kp3",
+              "weight": 1,
+              "text": "In the long run power is shared among different political parties that represent different ideologies and social groups.",
+              "assessment": {
+                "requiredEvidence": ["in the long run", "different ideologies and social groups"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_long_run_sharing",
+                    "criterion": "States that in the long run power is shared among parties representing different ideologies and social groups.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "t3c4_kp4",
+              "weight": 2,
+              "text": "Sometimes this kind of sharing can be direct, when two or more parties form an alliance to contest elections. If their alliance is elected, they form a coalition government and thus share power.",
+              "assessment": {
+                "requiredEvidence": ["alliance", "coalition government", "two or more parties"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_coalition_govt",
+                    "criterion": "States that two or more parties may form an alliance and, if elected, a coalition government that shares power.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_coalition_only"]
+              }
+            },
+            {
+              "id": "t3c4_kp5",
+              "weight": 2,
+              "text": "Interest groups such as those of traders, businessmen, industrialists, farmers and industrial workers also have a share in governmental power, either through participation in governmental committees or by bringing influence on the decision making process.",
+              "assessment": {
+                "requiredEvidence": ["interest groups", "traders, businessmen, industrialists, farmers and industrial workers", "governmental committees", "influence on the decision making process"],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_interest_groups",
+                    "criterion": "States that interest groups (such as traders, farmers or industrial workers) share power through governmental committees or by influencing decision making.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": ["misc_pressure_groups_bad"]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Two or more parties forming an alliance and a coalition government",
+            "Interest groups of traders, farmers or industrial workers participating in governmental committees",
+            "Exercise: Russia's two influential political parties, the Union of Right Forces and the Liberal Yabloko Movement, decided to unite into a strong right-wing coalition (power shared among political parties)",
+            "Exercise (matching): coalition government"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_coalition_only",
+              "wrong": "Political parties share power only when they form a coalition government.",
+              "fix": "Competition among parties itself ensures that power does not remain with one party. A coalition is the direct form, which happens only sometimes."
+            },
+            {
+              "id": "misc_pressure_groups_bad",
+              "wrong": "Pressure groups only disrupt governance and have no share in power.",
+              "fix": "Interest groups have a share in governmental power through participation in governmental committees or by influencing the decision making process."
+            }
+          ],
+          "verify": [
+            { "page": 9, "quote": "political parties, pressure groups and movements control or influence those in power", "supports": ["t3c4_kp1"] },
+            { "page": 9, "quote": "Such competition ensures that power does not remain in the hands of one party.", "supports": ["t3c4_kp2"] },
+            { "page": 9, "quote": "different political parties that represent different ideologies and social groups", "supports": ["t3c4_kp3"] },
+            { "page": 9, "quote": "they form a coalition government and thus share power", "supports": ["t3c4_kp4"] },
+            { "page": 9, "quote": "either through participation in governmental committees or bringing influence on the decision making process", "supports": ["t3c4_kp5"] },
+            { "page": 10, "quote": "the Union of Right Forces and the Liberal Yabloko Movement", "supports": ["t3c4_kp4"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

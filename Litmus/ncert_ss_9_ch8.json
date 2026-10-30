@@ -1,0 +1,825 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Economics",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 1)",
+  "chapterNumber": 8,
+  "chapterName": "Building Blocks in Economics: The Problem of Choice",
+  "sourceStatus": "Built from the NCERT PDF iest108 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Understanding Society: India and Beyond, Grade 9 Part 1, Reprint 2026-27, chapter pp. 183-194",
+    "note": "Pages are the printed page numbers (the PDF page label is the printed page minus 182). Quotes were checked automatically against the PDF text. Figures, tables, 'Let's explore' boxes and the end-of-chapter questions are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_ss9a8_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_ss9a8_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example economics, needs, wants, scarcity, resources, opportunity cost, Production Possibility Curve, what to produce.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "economics",
+    "needs",
+    "wants",
+    "scarcity",
+    "resources",
+    "opportunity cost",
+    "Production Possibility Curve",
+    "what to produce",
+    "how to produce",
+    "for whom to produce",
+    "labour-intensive",
+    "capital-intensive",
+    "factors of production",
+    "economic system",
+    "planned economy",
+    "market economy",
+    "mixed economy",
+    "public goods"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_ss9a_ch8_t1",
+      "title": "Scarcity, Unlimited Wants and the Problem of Economic Choice",
+      "concepts": [
+        {
+          "conceptId": "soc9a_ch8_t1_c1",
+          "label": "Needs, Wants, Limited Resources and Scarcity",
+          "headingType": "heading",
+          "sourcePages": [183, 184],
+          "cardText": "Choices such as spending pocket money, sharing library books, which crop a farmer should grow or whether the government should build highways or hospitals are economic choices that individuals, enterprises and governments have to make. Some preferences are needs, essentials like food, water and shelter, while others are wants, like gadgets, vacations or luxury items. Human wants are unlimited and keep changing: people may want to upgrade from a bicycle to a motorbike and then to a car. Resources are required to satisfy needs and wants: the factors of production are land, labour, capital and technology. But both natural and human-made resources are limited in quantity, and they can be put to many alternative uses. Not just households but economies must decide how to use their scarce resources in the best possible way to meet unlimited wants and improve people's quality of life.",
+          "hint": "Why is economic choice necessary?",
+          "probe": "Explain needs and wants, limited resources and why choices have to be made.",
+          "causeChain": "People have needs and unlimited, changing wants -> resources used to satisfy them are limited in quantity but have many alternative uses -> so individuals, enterprises and governments must choose how to use scarce resources best",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_scarcity_chain",
+              "linksChecks": [
+                "chk_ss9a8_sc_wants",
+                "chk_ss9a8_sc_resources"
+              ],
+              "criterion": "Connects unlimited wants and limited resources with alternative uses to the need for choice.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Some of our preferences are needs, such as essentials like food, water, and shelter, while others are wants, like gadgets, vacations, or luxury items. Human wants are unlimited and keep changing; for instance, people may want to upgrade from a bicycle to a motorbike and then to a car.",
+              "followUp": "Sort food, a gaming console and a holiday abroad into needs and wants, and say what is special about wants over time.",
+              "assessment": {
+                "requiredEvidence": [
+                  "needs",
+                  "food, water, and shelter",
+                  "wants",
+                  "gadgets, vacations, or luxury items",
+                  "unlimited",
+                  "keep changing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_sc_wants",
+                    "criterion": "Distinguishes needs (essentials like food, water and shelter) from wants (gadgets, vacations, luxuries) and states that human wants are unlimited and keep changing.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_sc_all"
+                ]
+              }
+            },
+            {
+              "id": "ss9a8_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Resources are required to satisfy human needs and wants. The factors of production are land, labour, capital, and technology. However, both natural and human-made resources are limited in quantity, and they can be put to many alternative uses. Not just households, economies also have to decide how to use their scarce resources in the best possible way to meet unlimited wants and improve people's quality of life.",
+              "followUp": "Steel can make medical equipment, aircraft or refrigerators. What does that show about the choices a country faces?",
+              "assessment": {
+                "requiredEvidence": [
+                  "resources",
+                  "factors of production",
+                  "land, labour, capital, and technology",
+                  "limited in quantity",
+                  "alternative uses",
+                  "scarce resources",
+                  "unlimited wants"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_sc_resources",
+                    "criterion": "States that resources (factors of production: land, labour, capital, technology) are limited but have alternative uses, so households and economies must decide how best to use scarce resources to meet unlimited wants.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Opening examples: pocket money on snacks or shoes, five library copies for 20 students, a farmer's crop choice, highways or hospitals",
+            "Let's Explore: classifying three things bought this month into needs or wants",
+            "Exercise 1: why people's wants keep changing and how this affects production",
+            "Exercise 2: how unlimited wants create pressure on the environment",
+            "Market: a place of buying and selling, physical or virtual"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_sc_all",
+              "wrong": "All wants can eventually be satisfied if enough is produced.",
+              "fix": "Human wants are unlimited and keep changing, while both natural and human-made resources are limited in quantity, so not all wants can be satisfied."
+            }
+          ],
+          "verify": [
+            { "page": 183, "quote": "Some of our preferences are needs, such as essentials like food, water, and shelter, while others are wants, like gadgets, vacations, or luxury items.", "supports": ["ss9a8_t1c1_kp1"] },
+            { "page": 183, "quote": "Human wants are unlimited and keep changing", "supports": ["ss9a8_t1c1_kp1"] },
+            { "page": 184, "quote": "Resources are required to satisfy human needs and wants.", "supports": ["ss9a8_t1c1_kp2"] },
+            { "page": 184, "quote": "factors of production—land, labour, capital, and technology", "supports": ["ss9a8_t1c1_kp2"] },
+            { "page": 184, "quote": "both natural and human-made resources are limited in quantity.", "supports": ["ss9a8_t1c1_kp2"] },
+            { "page": 184, "quote": "They can be put to many alternative uses", "supports": ["ss9a8_t1c1_kp2"] },
+            { "page": 184, "quote": "Not just households, economies also have to decide how to use their scarce resources in the best possible way to meet unlimited wants and improve people’s quality of life.", "supports": ["ss9a8_t1c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "soc9a_ch8_t1_c2",
+          "label": "What Economics Deals With and the Work of Economists",
+          "headingType": "heading",
+          "sourcePages": [186, 187],
+          "cardText": "The word economics comes from the Greek oikonomia, from oikos, 'household', and nemein, 'management', so economics refers to household management. With limited resources and unlimited wants, not just families but nations must plan how to use resources efficiently. The discipline of Economics deals with how choices are made by optimising the use of limited resources to satisfy needs and wants, and explains how consumers, producers, governments and financial institutions interact in an economy. Good decisions rely on data and analysis, not guesswork: families allocate money to essentials, non-essentials and savings; governments use tax revenue to plan expenditure on infrastructure and welfare; enterprises study market trends. Economists study alternatives, opportunity costs and likely outcomes using data from economic surveys and company statements, and work in policy-making, business consulting, research and education, and finance. The Economic Survey is an annual document by the Ministry of Finance presented before the Union Budget, reviewing the economy.",
+          "hint": "What does economics study and how do economists help decisions?",
+          "probe": "Explain what economics deals with, the origin of the word and what economists do.",
+          "causeChain": "Economics means household management applied to families and nations with limited resources and unlimited wants -> it studies how choices are made by optimising the use of limited resources and how consumers, producers, governments and financial institutions interact -> economists use data on alternatives, opportunity costs and outcomes to guide policy, business, research and finance, as in the annual Economic Survey",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_economics_chain",
+              "linksChecks": [
+                "chk_ss9a8_ed_deals",
+                "chk_ss9a8_ed_economists"
+              ],
+              "criterion": "Connects the meaning of economics to optimising choices and to the data-based work of economists.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The word Economics comes from the Greek word oikonomia, composed of oikos, which is usually translated as household, and nemein, best translated as management. So, economics refers to household management. The discipline of Economics deals with how choices are made by optimising the use of limited resources to satisfy the needs and wants. It explains how different economic entities, consumers, producers, governments, and financial institutions, interact in an economy.",
+              "followUp": "What does the Greek root of 'economics' mean, and what kind of decisions does the subject study?",
+              "assessment": {
+                "requiredEvidence": [
+                  "oikonomia",
+                  "household",
+                  "management",
+                  "household management",
+                  "how choices are made",
+                  "optimising the use of limited resources",
+                  "consumers, producers, governments, and financial institutions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_ed_deals",
+                    "criterion": "States that economics (from Greek oikonomia, household management) deals with how choices are made by optimising the use of limited resources to satisfy needs and wants, and how consumers, producers, governments and financial institutions interact.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "ss9a8_t1c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "However, good decisions rely on data and analysis, not guesswork. Economists study the available alternatives, associated opportunity costs, and potential outcomes to help individuals, enterprises, and institutions make decisions. They use data from government reports such as economic surveys and financial statements of companies. The scope of their work includes policy-making, business consulting, research and education, and finance.",
+              "followUp": "Why do economists rely on data, and in what fields do they work?",
+              "assessment": {
+                "requiredEvidence": [
+                  "data and analysis, not guesswork",
+                  "alternatives",
+                  "opportunity costs",
+                  "potential outcomes",
+                  "economic surveys",
+                  "policy-making",
+                  "business consulting",
+                  "research and education",
+                  "finance"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_ed_economists",
+                    "criterion": "States that good decisions rely on data and analysis, and that economists study alternatives, opportunity costs and outcomes using sources like economic surveys, working in policy-making, business consulting, research and education, and finance.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_ed_guess"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Economic Survey: an annual document by the Ministry of Finance presented in Parliament before the Union Budget",
+            "Exercise 8: whether effective economic decisions can be made without reliable data",
+            "Exercise 10: a news article about a production decision for a product"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_ed_guess",
+              "wrong": "Good economic decisions can be made by guesswork and intuition alone.",
+              "fix": "Good decisions rely on data and analysis, not guesswork."
+            }
+          ],
+          "verify": [
+            { "page": 186, "quote": "The word Economics comes from the Greek word oikonomia", "supports": ["ss9a8_t1c2_kp1"] },
+            { "page": 186, "quote": "So, economics refers to household management.", "supports": ["ss9a8_t1c2_kp1"] },
+            { "page": 186, "quote": "The discipline of Economics deals with how choices are made by optimising the use of limited resources to satisfy the needs and wants.", "supports": ["ss9a8_t1c2_kp1"] },
+            { "page": 186, "quote": "It explains how different economic entities—consumers, producers, governments, and financial institutions—interact in an economy.", "supports": ["ss9a8_t1c2_kp1"] },
+            { "page": 186, "quote": "However, good decisions rely on data and analysis, not guesswork.", "supports": ["ss9a8_t1c2_kp2"] },
+            { "page": 186, "quote": "Economists study the available alternatives, associated opportunity costs, and potential outcomes to help individuals, enterprises, and institutions make decisions.", "supports": ["ss9a8_t1c2_kp2"] },
+            { "page": 186, "quote": "They use data from government reports such as economic surveys and financial statements of companies", "supports": ["ss9a8_t1c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_ss9a_ch8_t2",
+      "title": "Opportunity Cost and the Production Possibility Curve (PPC)",
+      "concepts": [
+        {
+          "conceptId": "soc9a_ch8_t2_c1",
+          "label": "Opportunity Cost and the Production Possibility Curve",
+          "headingType": "heading",
+          "sourcePages": [184, 185],
+          "cardText": "When one alternative is chosen, the other options are given up. The value of what is given up is known as the opportunity cost. Imagine a farmer with a piece of land who can grow barley or wheat; with limited land, water and labour, the farmer must decide how much of each to produce. The combinations of barley and wheat that can be grown, plotted on a graph with barley on the x-axis and wheat on the y-axis, give a downward-sloping curve called the Production Possibility Curve (PPC), which shows the trade-off between the two. As the farmer moves from point A to E, more barley and less wheat is produced: to grow more barley some wheat must be sacrificed, and that is the opportunity cost of growing barley. All points on the PPC show the maximum output that can be produced through efficient use of resources by avoiding wastage, which helps enterprises and governments plan and decide.",
+          "hint": "What is opportunity cost and what does the Production Possibility Curve show?",
+          "probe": "Explain opportunity cost and the Production Possibility Curve using the farmer's barley and wheat example.",
+          "causeChain": "Choosing one alternative means giving up others, and the value of what is given up is the opportunity cost -> a farmer with limited land can grow barley or wheat in different combinations, which plot as a downward-sloping curve, the PPC -> moving along it, more barley means less wheat, and every point shows maximum output with no wastage, aiding planning",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_ppc_chain",
+              "linksChecks": [
+                "chk_ss9a8_oc_def",
+                "chk_ss9a8_oc_ppc"
+              ],
+              "criterion": "Connects opportunity cost to the trade-off shown on the PPC and its use in planning.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When one alternative is chosen, the other options are given up. The value of what is given up is known as the opportunity cost. For example, a farmer with limited land, water, and labour must decide how much barley and wheat to produce, and to grow more barley, some wheat must be sacrificed; this is the opportunity cost of growing barley.",
+              "followUp": "A student has money for a notebook or for saving towards a racket. What does choosing one cost the student, in economic terms?",
+              "assessment": {
+                "requiredEvidence": [
+                  "alternative is chosen",
+                  "other options are given up",
+                  "value of what is given up",
+                  "opportunity cost",
+                  "limited land, water, and labour",
+                  "to grow more barley, some wheat must be sacrificed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_oc_def",
+                    "criterion": "Defines opportunity cost as the value of what is given up when one alternative is chosen, e.g. the wheat sacrificed to grow more barley on limited land.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_oc_free"
+                ]
+              }
+            },
+            {
+              "id": "ss9a8_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "When these combinations are plotted on a graph, a downward sloping curve is derived. This is called the Production Possibility Curve (PPC), which shows the trade-off between barley and wheat produced. As the farmer moves from point A to E, they produce more barley and lesser wheat. All the points on the PPC show the maximum output that can be produced through efficient use of resources by avoiding wastage. This helps in better planning and decision-making by enterprises and the governments.",
+              "followUp": "What does a downward-sloping production possibility curve tell you about producing more of one good, and what do the points on it represent?",
+              "assessment": {
+                "requiredEvidence": [
+                  "downward sloping curve",
+                  "Production Possibility Curve",
+                  "trade-off",
+                  "more barley and lesser wheat",
+                  "maximum output",
+                  "efficient use of resources",
+                  "avoiding wastage",
+                  "planning and decision-making"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_oc_ppc",
+                    "criterion": "States that the Production Possibility Curve is a downward-sloping curve showing the trade-off between two goods, each point being the maximum output from efficient use of resources without wastage, which helps enterprises and governments plan.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Fig. 8.2: alternative uses of steel (medical equipment, aircraft, refrigerators)",
+            "Fig. 8.3: the PPC for barley and wheat with combinations A to E",
+            "Exercise 6: a student with Rs 100 choosing between a notebook and saving for a racket illustrates opportunity cost",
+            "Exercise 7: how understanding opportunity cost improves economic decision-making",
+            "Let's Explore: the opportunity cost of everyday decisions and whether time is a scarce resource"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_oc_free",
+              "wrong": "Choosing one option costs nothing because you still have the others.",
+              "fix": "When one alternative is chosen, the other options are given up; the value of what is given up is the opportunity cost."
+            }
+          ],
+          "verify": [
+            { "page": 184, "quote": "When one alternative is chosen, the other options are given up.", "supports": ["ss9a8_t2c1_kp1"] },
+            { "page": 184, "quote": "The value of what is given up is known as the opportunity cost.", "supports": ["ss9a8_t2c1_kp1"] },
+            { "page": 185, "quote": "to grow more barley, some wheat must be sacrificed—this is the opportunity cost of growing barley.", "supports": ["ss9a8_t2c1_kp1"] },
+            { "page": 185, "quote": "a downward sloping curve is derived.", "supports": ["ss9a8_t2c1_kp2"] },
+            { "page": 185, "quote": "This is called the Production Possibility Curve (PPC), which shows the trade-off between barley and wheat produced.", "supports": ["ss9a8_t2c1_kp2"] },
+            { "page": 185, "quote": "All the points on the PPC show the maximum output that can be produced through efficient use of resources by avoiding wastage.", "supports": ["ss9a8_t2c1_kp2"] },
+            { "page": 185, "quote": "This helps in better planning and decision-making by enterprises and the governments.", "supports": ["ss9a8_t2c1_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_ss9a_ch8_t3",
+      "title": "Central Questions in Economics: What, How and For Whom to Produce",
+      "concepts": [
+        {
+          "conceptId": "soc9a_ch8_t3_c1",
+          "label": "What to Produce and For Whom to Produce",
+          "headingType": "heading",
+          "sourcePages": [188, 189],
+          "cardText": "Any mismatch between unlimited wants and limited resources gives rise to scarcity and choices, and to three key questions: what to produce, how to produce and for whom to produce. 'What to produce' concerns which goods and services, and in what quantities, should be produced to meet the economy's needs over a period. For example, should farmers produce water-intensive crops such as sugarcane and paddy, or drought-resistant crops such as millets and pulses? Sugarcane yields high profits and supports industries, whereas millets and pulses save water, improve soil health and promote sustainable agriculture; the opportunity cost of sugarcane is the forgone gains from saved water and improved soil health, a trade-off between short-term gains and long-term sustainability. 'For whom to produce' concerns the purpose of goods and who benefits. Since resources are limited and people differ in needs, income, tastes and lifestyles, producers decide which consumers to serve, as in school, office, sports and casual shoes made for different groups, analysing preferences, income and demand so limited resources are used well.",
+          "hint": "What do 'what to produce' and 'for whom to produce' ask?",
+          "probe": "Explain the questions of what to produce and for whom to produce with examples.",
+          "causeChain": "Unlimited wants and limited resources cause scarcity and three key questions -> 'what to produce' decides which goods in what quantities, involving trade-offs such as profitable sugarcane versus water-saving millets and pulses -> 'for whom to produce' decides which consumers to serve, as with different shoes for students, professionals and athletes, using analysis of income, tastes and demand",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_what_whom_chain",
+              "linksChecks": [
+                "chk_ss9a8_wp_what",
+                "chk_ss9a8_wp_whom"
+              ],
+              "criterion": "Connects scarcity to the questions of what and for whom to produce and the trade-offs in each.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Any mismatch between unlimited wants and limited resources gives rise to three key questions: what to produce, how to produce, and for whom to produce. What to produce concerns which goods and services, and in what quantities, should be produced to meet the needs of the economy over a given period. For instance, producing sugarcane yields high profits, whereas producing millets and pulses saves water, improves soil health, and promotes sustainable agriculture, so the choice reflects the trade-off between short-term economic gains and long-term sustainability.",
+              "followUp": "Why might a farmer who chooses a very profitable water-hungry crop be paying a hidden price, and what is that price called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mismatch between unlimited wants and limited resources",
+                  "what to produce",
+                  "how to produce",
+                  "for whom to produce",
+                  "which goods and services, and in what quantities",
+                  "sugarcane",
+                  "millets and pulses",
+                  "short-term economic gains and long-term sustainability"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_wp_what",
+                    "criterion": "States that scarcity gives rise to three key questions (what, how and for whom to produce), and that 'what to produce' decides which goods and how much, e.g. profitable sugarcane versus water-saving millets and pulses, a trade-off between short-term gains and long-term sustainability.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "ss9a8_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The question of for whom to produce delves into the purpose of goods and services produced, how they are produced and distributed, and who benefits from their production. Since resources are limited and people have different needs, income levels, tastes, and lifestyles, producers decide which group of consumers they want to serve. For example, school shoes are simple, durable, and affordable, while office-wear shoes focus on comfort and formal appearance, and sports shoes use special rubber soles. Producers analyse what consumers like, how much money they have, and how much demand there is, before deciding what to make.",
+              "followUp": "Why are shoes for students, for office workers and for athletes all different even though they are all footwear?",
+              "assessment": {
+                "requiredEvidence": [
+                  "for whom to produce",
+                  "purpose of goods and services",
+                  "who benefits",
+                  "different needs, income levels, tastes",
+                  "which group of consumers",
+                  "school shoes",
+                  "office-wear shoes",
+                  "sports shoes",
+                  "how much demand"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_wp_whom",
+                    "criterion": "States that 'for whom to produce' means deciding which consumer group to serve according to their needs, income, tastes and demand, as different shoes are made for students, professionals and athletes, so that limited resources are used well.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_wp_all"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Fig. 8.5: unlimited wants and limited resources giving scarcity, choices and the three key questions",
+            "Think About It: whether to spend more on healthcare and education or defence and space exploration",
+            "Exercise 3: a scarce resource in your region that is wasted, and how to manage it better"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_wp_all",
+              "wrong": "Producers should make the same product for every consumer group.",
+              "fix": "Different types of shoes are produced for different groups of people depending on their needs and purchasing power; producers decide which group of consumers they want to serve."
+            }
+          ],
+          "verify": [
+            { "page": 188, "quote": "Any mismatch between unlimited wants and limited resources gives rise to three key questions that the discipline of economics seeks to address.", "supports": ["ss9a8_t3c1_kp1"] },
+            { "page": 188, "quote": "This fundamental question concerns which goods and services, and in what quantities, should be produced to meet the needs of the economy over a given period.", "supports": ["ss9a8_t3c1_kp1"] },
+            { "page": 188, "quote": "Producing sugarcane yields high profits and supports industries such as sugar, whereas producing millets and pulses saves water, improves soil health, and promotes sustainable agriculture.", "supports": ["ss9a8_t3c1_kp1"] },
+            { "page": 188, "quote": "This type of decision reflects the trade-off between short-term economic gains and long-term sustainability", "supports": ["ss9a8_t3c1_kp1"] },
+            { "page": 188, "quote": "The question of ‘for whom to produce’ delves into the purpose of goods and services produced, how they are produced and distributed, and who benefits from their production.", "supports": ["ss9a8_t3c1_kp2"] },
+            { "page": 189, "quote": "people have different needs, income levels, tastes, and lifestyles, producers decide which group of consumers they want to serve.", "supports": ["ss9a8_t3c1_kp2"] },
+            { "page": 189, "quote": "Producers analyse what consumers like, how much money they have, and how much demand there is, before deciding what to make.", "supports": ["ss9a8_t3c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "soc9a_ch8_t3_c2",
+          "label": "How to Produce: Labour-intensive and Capital-intensive Methods",
+          "headingType": "heading",
+          "sourcePages": [189, 190],
+          "cardText": "After deciding what to produce, the next question is how to produce it: which methods, resources and technologies to use, for example whether to automate or employ more labour. Producers must select the right mix of the factors of production: land, labour, capital and technology. Production can be labour-intensive (more workers, less machinery) or capital-intensive (more machines and technology, fewer workers). Agriculture and handicrafts usually rely more on labour, while steel and automobile manufacturing depend more on machinery. The choice depends on the cost of capital, the technology available, the nature of the product, the availability and relative cost of factors, and laws and regulations. A garment maker will rely more on labour if machines are expensive and shift to automation if they become affordable; customised clothes need skilled labour while mass-produced garments suit machines; cheap labour favours labour-intensive methods; labour laws or incentives for machinery also influence the decision.",
+          "hint": "How do producers choose between labour-intensive and capital-intensive production?",
+          "probe": "Explain the question 'how to produce' and the factors that decide between labour-intensive and capital-intensive methods.",
+          "causeChain": "After choosing what to produce, producers choose how, selecting a mix of land, labour, capital and technology -> production may be labour-intensive (agriculture, handicrafts) or capital-intensive (steel, automobiles) -> the choice depends on the relative costs of labour and machines, technology, the product and government laws and incentives",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_how_chain",
+              "linksChecks": [
+                "chk_ss9a8_hp_methods",
+                "chk_ss9a8_hp_factors"
+              ],
+              "criterion": "Connects the how-to-produce question to labour- and capital-intensive methods and the factors that decide between them.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "After deciding what to produce, the next question is how to produce it: which methods, resources, and technologies should be used. To answer this question, producers must select the right mix of factors of production: land, labour, capital, and technology. Production can be labour-intensive, using more workers and less machinery, or capital-intensive, using more machines and technology and fewer workers. Usually, agriculture and handicrafts rely more on labour, whereas industries such as steel and automobile manufacturing depend more on machinery.",
+              "followUp": "Compare how a handicraft workshop and a steel plant are staffed and equipped, and what each is called.",
+              "assessment": {
+                "requiredEvidence": [
+                  "how to produce",
+                  "methods, resources, and technologies",
+                  "right mix of factors of production",
+                  "labour-intensive",
+                  "capital-intensive",
+                  "agriculture and handicrafts",
+                  "steel and automobile manufacturing",
+                  "machinery"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_hp_methods",
+                    "criterion": "States that 'how to produce' means choosing the mix of factors of production (land, labour, capital, technology), and distinguishes labour-intensive (more workers; agriculture, handicrafts) from capital-intensive (more machines; steel, automobiles) production.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "ss9a8_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The choice of the production technique employed depends on the cost of capital, choice of technology, and the nature of the product. The availability of various factors of production and their relative cost, and the laws as well as regulations in the country determine the decision by enterprises. If machines are expensive, the firm will rely more on labour, but if machines become affordable, it may shift to automation. Customised or designer clothes require skilled labour, whereas mass-produced garments are better suited for machines. If labour is cheap and easily available, labour-intensive methods are preferred, but if labour is costly or scarce, machines become more efficient.",
+              "followUp": "A garment factory owner finds machines have become much cheaper. What is likely to change, and what other things would affect that decision?",
+              "assessment": {
+                "requiredEvidence": [
+                  "cost of capital",
+                  "choice of technology",
+                  "nature of the product",
+                  "relative cost",
+                  "laws as well as regulations",
+                  "machines are expensive",
+                  "shift to automation",
+                  "customised or designer clothes",
+                  "labour is cheap",
+                  "labour is costly or scarce"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_hp_factors",
+                    "criterion": "States that the production method depends on the cost of capital and labour, the available technology, the nature of the product (customised versus mass-produced) and laws and regulations: expensive machines or cheap labour favour labour-intensive methods, while affordable machines or costly labour favour automation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_hp_always"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Fig. 8.6: factors of production (land, labour, capital, technology)",
+            "Exercise 4 and 5: which economic system gives most freedom and promotes innovation"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_hp_always",
+              "wrong": "Machines are always cheaper and better than labour, so every firm should automate.",
+              "fix": "If machines are expensive or labour is cheap and easily available, firms rely more on labour; machines are preferred only when they become affordable or labour is costly or scarce."
+            }
+          ],
+          "verify": [
+            { "page": 189, "quote": "After deciding what to produce, the next question is how to produce it—which methods, resources, and technologies should be used.", "supports": ["ss9a8_t3c2_kp1"] },
+            { "page": 189, "quote": "producers must select the right mix of factors of production—land, labour, capital, and technology.", "supports": ["ss9a8_t3c2_kp1"] },
+            { "page": 189, "quote": "Production can be labour-intensive (using more workers and less machinery) or capital-intensive (using more machines and technology and less workers).", "supports": ["ss9a8_t3c2_kp1"] },
+            { "page": 189, "quote": "Usually, economic activities related to agriculture and handicrafts rely more on labour, whereas industries such as steel and automobile manufacturing depend more on machinery.", "supports": ["ss9a8_t3c2_kp1"] },
+            { "page": 190, "quote": "the choice of the production technique employed depends on the cost of capital, choice of technology, and the nature of the product.", "supports": ["ss9a8_t3c2_kp2"] },
+            { "page": 190, "quote": "If machines are expensive, the firm will rely more on labour, but if machines become affordable, it may shift to automation.", "supports": ["ss9a8_t3c2_kp2"] },
+            { "page": 190, "quote": "customised or designer clothes require skilled labour, whereas mass-produced garments are better suited for machines.", "supports": ["ss9a8_t3c2_kp2"] },
+            { "page": 190, "quote": "if labour is cheap and easily available, labour-intensive methods are preferred, but if labour is costly or scarce, machines become more efficient.", "supports": ["ss9a8_t3c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_ss9a_ch8_t4",
+      "title": "Economic Systems: Planned, Market and Mixed Economies",
+      "concepts": [
+        {
+          "conceptId": "soc9a_ch8_t4_c1",
+          "label": "Planned and Market Economies",
+          "headingType": "heading",
+          "sourcePages": [190, 191],
+          "cardText": "The system that defines the mechanisms for the production, consumption and distribution of goods, services and resources is the economic system of a country, and the answers to the three key questions depend on how resources are organised and who controls decisions. In a planned economy a central planning authority of the government, such as the planning commission, makes all major economic decisions: what and how much to produce, how, and who gets it at what prices. The government owns most resources and sectors, and enterprises follow central targets under strict permits and licences. This restricts competition and gives little motivation to improve quality or innovate; examples are the former Soviet Union, North Korea and Cuba. In a market economy the questions are addressed mainly by the forces of demand and supply with little government intervention: the government acts like a referee, ensuring safety and law and order without controlling prices or production. Ownership rests largely with individuals and private companies, and competition encourages better quality, lower prices and innovation, as in the USA, Japan and Hong Kong.",
+          "hint": "How do planned and market economies answer the key economic questions?",
+          "probe": "Explain planned and market economies and give an example of each.",
+          "causeChain": "An economic system decides who controls the answers to the three key questions -> in a planned economy a central authority decides everything and owns most resources, so competition and innovation are limited -> in a market economy demand and supply decide with little government interference and mostly private ownership, encouraging quality, lower prices and innovation",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_systems_chain",
+              "linksChecks": [
+                "chk_ss9a8_pm_planned",
+                "chk_ss9a8_pm_market"
+              ],
+              "criterion": "Connects who controls decisions to the features and results of planned and market economies.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In a planned economy, a central planning authority of the government, such as the planning commission, makes all major economic decisions: what and how much will be produced, how they will be produced, and who will get to use them and at what prices. The government has ownership in most resources and sectors like land, factories, banks, and transport. Enterprises usually follow the central authority's targets rather than market demand, which restricts competition, so there is little motivation among enterprises to improve quality or innovate. Examples are the former Soviet Union, North Korea, and Cuba.",
+              "followUp": "Who decides what, how much and for whom to produce when a central authority runs everything, and what is the downside for quality and innovation?",
+              "assessment": {
+                "requiredEvidence": [
+                  "planned economy",
+                  "central planning authority",
+                  "all major economic decisions",
+                  "ownership in most resources",
+                  "central authority's targets",
+                  "restricts competition",
+                  "little motivation",
+                  "Soviet Union, North Korea, and Cuba"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_pm_planned",
+                    "criterion": "Describes a planned economy: a central planning authority makes all major decisions and owns most resources, enterprises follow its targets, competition is restricted and there is little motivation to improve quality or innovate (e.g. the former Soviet Union, North Korea, Cuba).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "ss9a8_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In a market economy, the questions of what, how, and how much to produce are addressed mainly by the forces of demand and supply with little government intervention. Often, the government acts like a referee in a football match: it ensures safety and law and order, and it does not control prices or production. The ownership of factories, shops, land, and other resources largely rests with individuals and private companies. Many producers offer similar products, which encourages better quality, lower prices, and innovation. Examples include the United States of America, Japan, and Hong Kong.",
+              "followUp": "What forces decide production when private buyers and sellers lead, what role does the government keep, and why does competition help consumers?",
+              "assessment": {
+                "requiredEvidence": [
+                  "market economy",
+                  "forces of demand and supply",
+                  "little government intervention",
+                  "referee",
+                  "law and order",
+                  "does not control prices or production",
+                  "individuals and private companies",
+                  "better quality, lower prices, and innovation",
+                  "United States"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_pm_market",
+                    "criterion": "Describes a market economy: demand and supply decide what, how and how much to produce with little government intervention (the government acts as a referee for safety and law and order), private ownership dominates, and competition encourages quality, lower prices and innovation (e.g. USA, Japan, Hong Kong).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_pm_govt"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Fig. 8.7: role of government and private ownership in a market economy",
+            "Let's Explore: should the government stay out of enterprise decisions entirely",
+            "Public goods: parks, roads, police services, street lights and basic education available to all"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_pm_govt",
+              "wrong": "In a market economy the government plays no role at all.",
+              "fix": "In a market economy the government acts like a referee, ensuring safety and law and order and providing public goods and infrastructure, though it does not control prices or production."
+            }
+          ],
+          "verify": [
+            { "page": 190, "quote": "The system that defines the mechanisms for the production, consumption, and distribution of goods, services, and resources is known as the economic system of a country.", "supports": [] },
+            { "page": 191, "quote": "In a planned economy, a central planning authority of the government, such as the planning commission, makes all major economic decisions in the market", "supports": ["ss9a8_t4c1_kp1"] },
+            { "page": 191, "quote": "The government has ownership in most resources and sectors like land, factories, banks, and transport.", "supports": ["ss9a8_t4c1_kp1"] },
+            { "page": 191, "quote": "enterprises usually follow the central authority’s targets rather than market demand", "supports": ["ss9a8_t4c1_kp1"] },
+            { "page": 191, "quote": "As a result, there is little motivation among enterprises to improve quality or innovate.", "supports": ["ss9a8_t4c1_kp1"] },
+            { "page": 191, "quote": "Some examples of planned economies are the former Soviet Union, North Korea, and Cuba.", "supports": ["ss9a8_t4c1_kp1"] },
+            { "page": 191, "quote": "In a market economy, the questions of what, how, and how much to produce are addressed mainly by the forces of demand and supply with little government intervention.", "supports": ["ss9a8_t4c1_kp2"] },
+            { "page": 191, "quote": "Often, the government acts like a referee in a football match.", "supports": ["ss9a8_t4c1_kp2"] },
+            { "page": 191, "quote": "It ensures safety and law and order, and it does not control prices or production.", "supports": ["ss9a8_t4c1_kp2"] },
+            { "page": 191, "quote": "Many producers offer similar products, which encourages better quality, lower prices, and innovation", "supports": ["ss9a8_t4c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "soc9a_ch8_t4_c2",
+          "label": "Mixed Economy and India's Shift in 1991",
+          "headingType": "heading",
+          "sourcePages": [192, 193],
+          "cardText": "A mixed economy combines features of both market and planned economies: private individuals, enterprises and the government all play important roles in making economic choices, with private ownership and some degree of government regulation, and large public sector companies are important. Examples include India (post-1991), China (post-1978), Germany and Sweden; even market economies like the USA and Singapore have significant government involvement. Almost all economies are mixed. India's system evolved: in the decades after Independence it followed a more state-led approach similar to a planned economy, with the government controlling industries and regulating production through licences and permits and key sectors like banking, transport and heavy industry dominated by the public sector. By 1991 the country faced serious economic difficulties, and major reforms reduced excessive regulation, encouraged private enterprise, opened the economy to global trade and investment and increased competition, shifting India towards a more market-oriented system while keeping an important role for the government.",
+          "hint": "What is a mixed economy and how did India's economic system change?",
+          "probe": "Explain mixed economies and how India moved from a state-led approach to a more market-oriented one.",
+          "causeChain": "A mixed economy blends private enterprise with government regulation and a public sector, and almost all economies are mixed -> after Independence India followed a state-led, licence-based approach with a strong public sector -> serious difficulties by 1991 led to reforms that cut regulation, encouraged private enterprise and opened trade, moving India towards a market-oriented system while keeping a government role",
+          "causeLinks": [
+            {
+              "id": "lnk_ss9a8_mixed_chain",
+              "linksChecks": [
+                "chk_ss9a8_mx_def",
+                "chk_ss9a8_mx_india"
+              ],
+              "criterion": "Connects the mix of market and planned features to India's evolution from state-led to more market-oriented.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "ss9a8_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "A mixed economy combines features of both market and planned economies. In this system, private individuals, enterprises, and the government play important roles in making economic choices and decisions. In reality, most economies have features of mixed economic systems that allow the existence of private ownership, with some degree of government regulation. A few examples of mixed economies include India (post-1991), China (post-1978), Germany, and Sweden. Even market economies like the United States of America and Singapore have significant government involvement in the market.",
+              "followUp": "Why do economists say that almost every real economy is a mixture, even those called market economies?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mixed economy",
+                  "features of both market and planned economies",
+                  "private individuals, enterprises, and the government",
+                  "private ownership",
+                  "some degree of government regulation",
+                  "India (post-1991)",
+                  "Germany, and Sweden"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_mx_def",
+                    "criterion": "Defines a mixed economy as combining market and planned features, with private ownership alongside government regulation and a public sector (e.g. India after 1991, China after 1978, Germany, Sweden), and notes that most economies are mixed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_ss9a8_mx_pure"
+                ]
+              }
+            },
+            {
+              "id": "ss9a8_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In the decades after Independence, India followed a more state-led approach similar to a planned economy. The government played a major role in controlling industries, allocating resources, and regulating production through licenses and permits, while many key sectors, such as banking, transport, and heavy industries were dominated by the public sector. By 1991 the country faced serious economic difficulties, and the government introduced major economic reforms that reduced excessive regulations, encouraged private enterprise, opened the economy to global trade and investment, and increased competition. These reforms gradually shifted India towards a more market-oriented system while still retaining an important role for the government.",
+              "followUp": "How did the way India ran its economy change after 1991, and what was it like before?",
+              "assessment": {
+                "requiredEvidence": [
+                  "state-led approach",
+                  "planned economy",
+                  "licenses and permits",
+                  "public sector",
+                  "1991",
+                  "serious economic difficulties",
+                  "economic reforms",
+                  "reduced excessive regulations",
+                  "encouraged private enterprise",
+                  "global trade and investment",
+                  "more market-oriented system"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_ss9a8_mx_india",
+                    "criterion": "States that after Independence India followed a state-led, licence-and-permit approach with a dominant public sector, and that reforms after the 1991 difficulties cut regulation, encouraged private enterprise, opened the economy to trade and investment and increased competition, shifting India towards a more market-oriented system with a continuing government role.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Fig. 8.8: the role of government and market in a mixed economy (rules, consumer protection, public goods, welfare, competition, innovation)",
+            "Exercise 4: critically examine why pure economic systems rarely exist and why a mixed economy is practical",
+            "Before we move on: three central questions and how different systems answer them"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_ss9a8_mx_pure",
+              "wrong": "Most modern economies are purely market or purely planned.",
+              "fix": "Almost all economies are mixed: most economies have features of mixed systems, with private ownership and some degree of government regulation, even market economies like the USA and Singapore."
+            }
+          ],
+          "verify": [
+            { "page": 192, "quote": "A mixed economy combines features of both market and planned economies.", "supports": ["ss9a8_t4c2_kp1"] },
+            { "page": 192, "quote": "private individuals, enterprises, and the government play important roles in making economic choices and decisions.", "supports": ["ss9a8_t4c2_kp1"] },
+            { "page": 192, "quote": "most economies have features of mixed economic systems that allow the existence of private ownership, with some degree of government regulation.", "supports": ["ss9a8_t4c2_kp1"] },
+            { "page": 192, "quote": "A few examples of mixed economies include India (post-1991), China (post-1978), Germany, and Sweden.", "supports": ["ss9a8_t4c2_kp1"] },
+            { "page": 192, "quote": "Even market economies like the United States of America and Singapore have significant government involvement in the market.", "supports": ["ss9a8_t4c2_kp1"] },
+            { "page": 192, "quote": "In the decades after Independence, India followed a more state-led approach similar to a planned economy.", "supports": ["ss9a8_t4c2_kp2"] },
+            { "page": 192, "quote": "regulating production through licenses and permits", "supports": ["ss9a8_t4c2_kp2"] },
+            { "page": 192, "quote": "However, by 1991 the country faced serious economic difficulties.", "supports": ["ss9a8_t4c2_kp2"] },
+            { "page": 193, "quote": "These reforms gradually shifted India towards a more market-oriented system while still retaining an important role for the government.", "supports": ["ss9a8_t4c2_kp2"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

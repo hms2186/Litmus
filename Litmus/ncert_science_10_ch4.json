@@ -1,0 +1,2879 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 4,
+  "chapterName": "Carbon and its Compounds",
+  "sourceStatus": "Built from the NCERT PDF jesc104 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Science (Class 10), Reprint 2026-27, chapter pp. 58-78",
+    "note": "Pages are the printed page numbers (the PDF page label is the printed page minus 57). Quotes were checked automatically against the PDF text. Structures, tables and equations are images or partly lost symbols in the PDF and are not quoted. Activity questions, the QUESTIONS boxes and the Exercises (pp. 77-78) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c4_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci10c4_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example covalent bond, valence electrons, allotrope, diamond, graphite, fullerene, catenation, tetravalency.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "covalent bond",
+    "valence electrons",
+    "allotrope",
+    "diamond",
+    "graphite",
+    "fullerene",
+    "catenation",
+    "tetravalency",
+    "saturated compound",
+    "unsaturated compound",
+    "hydrocarbon",
+    "alkane",
+    "alkene",
+    "alkyne",
+    "structural isomer",
+    "functional group",
+    "homologous series",
+    "combustion",
+    "oxidising agent",
+    "hydrogenation",
+    "substitution reaction",
+    "ethanol",
+    "ethanoic acid",
+    "esterification",
+    "saponification",
+    "soap",
+    "micelle",
+    "detergent",
+    "scum"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_sci_10_ch4_t1",
+      "title": "Covalent Bonding in Carbon",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t1_c1",
+          "label": "Properties of Carbon Compounds and Why Carbon Does Not Form Ions",
+          "headingType": "heading",
+          "sourcePages": [59],
+          "cardText": "Most carbon compounds are poor conductors of electricity, and from the data on melting and boiling points we find that they have low melting and boiling points as compared to ionic compounds. We can conclude that the forces of attraction between the molecules are not very strong. Since these compounds are largely non-conductors of electricity, the bonding in these compounds does not give rise to any ions. Carbon has four electrons in its outermost shell and needs to gain or lose four electrons to attain noble gas configuration. It could gain four electrons forming C4- anion, but it would be difficult for the nucleus with six protons to hold on to ten electrons. It could lose four electrons forming C4+ cation, but that would require a large amount of energy. Carbon overcomes this problem by sharing its valence electrons with other atoms of carbon or with atoms of other elements.",
+          "hint": "Why does carbon neither gain nor lose electrons to form ions?",
+          "probe": "Explain why carbon compounds are poor conductors with low melting points and why carbon shares electrons.",
+          "causeChain": "Carbon compounds have low melting and boiling points and are poor conductors, so their bonding gives no ions -> carbon has four outer electrons, and gaining four (C4-) or losing four (C4+) is very difficult for a nucleus of six protons -> so carbon overcomes this by sharing its valence electrons with other atoms",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_carbon_share",
+              "linksChecks": [
+                "chk_sci10c4_cb_ions",
+                "chk_sci10c4_cb_share"
+              ],
+              "criterion": "Connects carbon being unable to gain or lose four electrons easily to its sharing of valence electrons.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon compounds have low melting and boiling points as compared to ionic compounds, so the forces of attraction between the molecules are not very strong. Since these compounds are largely non-conductors of electricity, the bonding in these compounds does not give rise to any ions.",
+              "followUp": "Compared with salts, how do the melting points and conduction of carbon compounds look, and what does that say about ions?",
+              "assessment": {
+                "requiredEvidence": [
+                  "low melting and boiling points",
+                  "compared to ionic compounds",
+                  "forces of attraction between the molecules are not very strong",
+                  "non-conductors of electricity",
+                  "does not give rise to any ions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cb_props",
+                    "criterion": "States that carbon compounds have low melting and boiling points and are largely non-conductors of electricity, so the bonding in them does not give rise to ions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t1c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon has four electrons in its outermost shell and needs to gain or lose four electrons to attain noble gas configuration. Gaining four electrons (C4-) is difficult for a nucleus of six protons holding ten electrons, and losing four (C4+) needs a large amount of energy.",
+              "followUp": "Why does an atom with four outer electrons not simply give them up or take four more?",
+              "assessment": {
+                "requiredEvidence": [
+                  "four electrons in its outermost shell",
+                  "gain or lose four electrons",
+                  "C4-",
+                  "six protons",
+                  "ten electrons",
+                  "large amount of energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cb_ions",
+                    "criterion": "States that carbon has four outer electrons and it is difficult to gain four (C4- anion, six protons holding ten electrons) or lose four (C4+ cation, needing a large amount of energy).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_cb_ionic"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t1c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon overcomes this problem by sharing its valence electrons with other atoms of carbon or with atoms of other elements. The shared electrons belong to the outermost shells of both the atoms and lead to both attaining the noble gas configuration.",
+              "followUp": "What does carbon do instead, and what does each atom end up with?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sharing its valence electrons",
+                  "atoms of carbon or with atoms of other elements",
+                  "belong to the outermost shells of both the atoms",
+                  "noble gas configuration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cb_share",
+                    "criterion": "States that carbon overcomes the problem by sharing its valence electrons with other carbon atoms or atoms of other elements, so both atoms attain noble gas configuration.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Table 4.1: ethanol melts at 156 K and boils at 351 K, far lower than ionic compounds",
+            "Chapter opener: carbon compounds form food, clothes, medicines, books and all living structures"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_cb_ionic",
+              "wrong": "Carbon forms ionic compounds by gaining or losing four electrons.",
+              "fix": "Carbon cannot easily gain or lose four electrons; instead it shares its valence electrons."
+            }
+          ],
+          "verify": [
+            { "page": 59, "quote": "we find that these compounds have low melting and boiling points as compared to ionic compounds (Chapter 3).", "supports": ["sci10c4_t1c1_kp1"] },
+            { "page": 59, "quote": "We can conclude that the forces of attraction between the molecules are not very strong.", "supports": ["sci10c4_t1c1_kp1"] },
+            { "page": 59, "quote": "Since these compounds are largely non-conductors of electricity, we can conclude that the bonding in these compounds does not give rise to any ions.", "supports": ["sci10c4_t1c1_kp1"] },
+            { "page": 59, "quote": "In the case of carbon, it has four electrons in its outermost shell and needs to gain or lose four electrons to attain noble gas configuration.", "supports": ["sci10c4_t1c1_kp2"] },
+            { "page": 59, "quote": "But it would be difficult for the nucleus with six protons to hold on to ten electrons, that is, four extra electrons.", "supports": ["sci10c4_t1c1_kp2"] },
+            { "page": 59, "quote": "But it would require a large amount of energy to remove four electrons", "supports": ["sci10c4_t1c1_kp2"] },
+            { "page": 59, "quote": "Carbon overcomes this problem by sharing its valence electrons with other atoms of carbon or with atoms of other elements.", "supports": ["sci10c4_t1c1_kp3"] },
+            { "page": 59, "quote": "The shared electrons ‘belong’ to the outermost shells of both the atoms and lead to both atoms attaining the noble gas configuration.", "supports": ["sci10c4_t1c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t1_c2",
+          "label": "The Covalent Bond: Single, Double and Triple Bonds",
+          "headingType": "heading",
+          "sourcePages": [59, 60, 61, 77],
+          "cardText": "Many elements form molecules by sharing electrons. Hydrogen has one electron in its K shell and needs one more, so two hydrogen atoms share their electrons to form a molecule of hydrogen, H2; the shared pair constitutes a single covalent bond. Each oxygen atom has six electrons in its L shell and needs two more, so two oxygen atoms share two pairs of electrons, giving a double bond. In nitrogen each atom contributes three electrons, giving three shared pairs and a triple bond. Methane, CH4, is formed because carbon is tetravalent with four valence electrons and shares them with four hydrogen atoms. Bonds formed by the sharing of an electron pair between two atoms are covalent bonds. Covalently bonded molecules have strong bonds within the molecule but weak inter-molecular forces, which gives them low melting and boiling points; since no charged particles are formed they are generally poor conductors of electricity.",
+          "hint": "How do atoms share electrons to form single, double and triple bonds, and what does this mean for properties?",
+          "probe": "Explain what a covalent bond is, with hydrogen, oxygen, nitrogen and methane, and what it means for the properties of covalent compounds.",
+          "causeChain": "Atoms share electrons so both attain a filled outer shell: one pair in hydrogen (single), two in oxygen (double), three in nitrogen (triple), and four in methane with carbon tetravalent -> bonds within the molecule are strong but forces between molecules are weak -> so covalent compounds have low melting and boiling points and are poor conductors, as no charged particles are formed",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_covalent_props",
+              "linksChecks": [
+                "chk_sci10c4_cv_def",
+                "chk_sci10c4_cv_props"
+              ],
+              "criterion": "Connects strong bonds within molecules but weak inter-molecular forces to low melting and boiling points and poor conduction.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Bonds formed by the sharing of an electron pair between two atoms are known as covalent bonds. Two hydrogen atoms share their electrons to form H2, and the shared pair is a single covalent bond.",
+              "followUp": "How is a bond formed when two hydrogen atoms come together?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sharing of an electron pair between two atoms",
+                  "covalent bonds",
+                  "two hydrogen atoms share",
+                  "single covalent bond"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cv_def",
+                    "criterion": "Defines covalent bonds as bonds formed by the sharing of an electron pair between two atoms, as two hydrogen atoms share a pair to form H2 with a single bond.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t1c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Each oxygen atom has six electrons in its L shell and needs two more, so two oxygen atoms share two pairs of electrons, giving a double bond. In nitrogen each atom contributes three electrons, giving three shared pairs and a triple bond.",
+              "followUp": "How many pairs of electrons are shared between two oxygen atoms and between two nitrogen atoms, and what are those bonds called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "oxygen",
+                  "two shared pairs of electrons",
+                  "double bond",
+                  "nitrogen",
+                  "three shared pairs",
+                  "triple bond"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cv_multi",
+                    "criterion": "States that oxygen forms a double bond (two shared pairs) and nitrogen a triple bond (three shared pairs) so each atom completes its octet.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t1c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Carbon is tetravalent because it has four valence electrons. In methane, CH4, carbon shares these electrons with four atoms of hydrogen to achieve noble gas configuration.",
+              "assessment": {
+                "requiredEvidence": [
+                  "tetravalent",
+                  "four valence electrons",
+                  "methane",
+                  "four atoms of hydrogen"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cv_methane",
+                    "criterion": "States that carbon is tetravalent, sharing its four valence electrons with four hydrogen atoms in methane (CH4).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t1c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Covalently bonded molecules have strong bonds within the molecule, but inter-molecular forces are weak. This gives rise to the low melting and boiling points of these compounds. Since the electrons are shared and no charged particles are formed, covalent compounds are generally poor conductors of electricity.",
+              "followUp": "Why are molecules with strong inner bonds still easy to melt, and why do they conduct poorly?",
+              "assessment": {
+                "requiredEvidence": [
+                  "strong bonds within the molecule",
+                  "inter-molecular forces are weak",
+                  "low melting and boiling points",
+                  "no charged particles",
+                  "poor conductors of electricity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cv_props",
+                    "criterion": "States that covalent compounds have strong bonds within molecules but weak inter-molecular forces, giving low melting and boiling points, and no charged particles so they are poor conductors.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_cv_strong"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: carbon dioxide has double bonds between carbon and each oxygen atom",
+            "Exercise 4: the covalent bond in CH3Cl is formed by sharing electron pairs between carbon and hydrogen and chlorine atoms",
+            "Exercise 1: ethane, C2H6, has 7 covalent bonds"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_cv_strong",
+              "wrong": "Covalent compounds have low melting points because the bonds inside the molecules are weak.",
+              "fix": "Covalently bonded molecules have strong bonds within the molecule, but inter-molecular forces are weak, which gives the low melting and boiling points."
+            }
+          ],
+          "verify": [
+            { "page": 59, "quote": "So two hydrogen atoms share their electrons to form a molecule of hydrogen, H2.", "supports": ["sci10c4_t1c2_kp1"] },
+            { "page": 60, "quote": "The shared pair of electrons is said to constitute a single covalent bond between the two hydrogen atoms.", "supports": ["sci10c4_t1c2_kp1"] },
+            { "page": 60, "quote": "Such bonds which are formed by the sharing of an electron pair between two atoms are known as covalent bonds.", "supports": ["sci10c4_t1c2_kp1"] },
+            { "page": 60, "quote": "So each atom of oxygen shares two electrons with another atom of oxygen to give us the structure shown in Fig. 4.3.", "supports": ["sci10c4_t1c2_kp2"] },
+            { "page": 60, "quote": "This is said to constitute a double bond between the two atoms.", "supports": ["sci10c4_t1c2_kp2"] },
+            { "page": 60, "quote": "This is said to constitute a triple bond between the two atoms.", "supports": ["sci10c4_t1c2_kp2"] },
+            { "page": 60, "quote": "Carbon is tetravalent because it has four valence electrons.", "supports": ["sci10c4_t1c2_kp3"] },
+            { "page": 60, "quote": "shares these electrons with four atoms of hydrogen as shown in Fig. 4.5.", "supports": ["sci10c4_t1c2_kp3"] },
+            { "page": 60, "quote": "Covalently bonded molecules are seen to have strong bonds within the molecule, but inter-molecular forces are weak.", "supports": ["sci10c4_t1c2_kp4"] },
+            { "page": 61, "quote": "points of these compounds. Since the electrons are shared between atoms and no charged particles are formed, such covalent compounds are generally poor conductors of electricity.", "supports": ["sci10c4_t1c2_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t2",
+      "title": "Allotropes of Carbon",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t2_c1",
+          "label": "Diamond, Graphite and Fullerenes",
+          "headingType": "heading",
+          "sourcePages": [61],
+          "cardText": "The element carbon occurs in different forms in nature with widely varying physical properties. Both diamond and graphite are formed by carbon atoms; the difference lies in the manner in which the carbon atoms are bonded to one another. In diamond, each carbon atom is bonded to four other carbon atoms forming a rigid three-dimensional structure. In graphite, each carbon atom is bonded to three other carbon atoms in the same plane giving a hexagonal array, one of the bonds being a double bond, and the hexagonal arrays are placed in layers one above the other. These two different structures give very different physical properties even though their chemical properties are the same: diamond is the hardest substance known while graphite is smooth and slippery, and graphite is also a very good conductor of electricity unlike other non-metals. Fullerenes form another class of allotropes; the first to be identified was C-60, with carbon atoms arranged in the shape of a football.",
+          "hint": "How do the structures of diamond and graphite explain their different properties?",
+          "probe": "Explain how diamond and graphite differ in structure and properties and name another allotrope.",
+          "causeChain": "Diamond and graphite are both made only of carbon atoms and differ in how the atoms are bonded -> diamond has each atom bonded to four others in a rigid 3D structure and is the hardest substance, while graphite has hexagonal layers, is slippery and conducts electricity -> fullerenes such as C-60 are another class of carbon allotropes",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_allotrope_struct",
+              "linksChecks": [
+                "chk_sci10c4_al_struct",
+                "chk_sci10c4_al_props"
+              ],
+              "criterion": "Connects the different bonding arrangement of carbon atoms in diamond and graphite to their different physical properties.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The element carbon occurs in different forms in nature with widely varying physical properties. Both diamond and graphite are formed by carbon atoms; the difference lies in the manner in which the carbon atoms are bonded to one another.",
+              "followUp": "Diamond and graphite are both made of the same atoms. What makes them so different?",
+              "assessment": {
+                "requiredEvidence": [
+                  "different forms",
+                  "widely varying physical properties",
+                  "diamond and graphite",
+                  "manner in which the carbon atoms are bonded"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_al_same",
+                    "criterion": "States that diamond and graphite are both formed only by carbon atoms and differ in the manner in which the carbon atoms are bonded to one another.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_al_diff_atoms"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In diamond, each carbon atom is bonded to four other carbon atoms forming a rigid three-dimensional structure. In graphite, each carbon atom is bonded to three other carbon atoms in the same plane giving a hexagonal array, with the arrays placed in layers one above the other.",
+              "followUp": "How is each carbon atom connected in diamond and how in graphite?",
+              "assessment": {
+                "requiredEvidence": [
+                  "four other carbon atoms",
+                  "rigid three-dimensional structure",
+                  "three other carbon atoms",
+                  "same plane",
+                  "hexagonal array",
+                  "layers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_al_struct",
+                    "criterion": "States that in diamond each carbon is bonded to four others in a rigid three-dimensional structure, and in graphite each is bonded to three others in a hexagonal array arranged in layers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "These two structures give diamond and graphite very different physical properties even though their chemical properties are the same. Diamond is the hardest substance known while graphite is smooth and slippery, and graphite is a very good conductor of electricity unlike other non-metals.",
+              "followUp": "How do hardness and electrical conduction compare in the two, and do their chemical properties differ?",
+              "assessment": {
+                "requiredEvidence": [
+                  "very different physical properties",
+                  "chemical properties are the same",
+                  "diamond is the hardest substance known",
+                  "graphite is smooth and slippery",
+                  "very good conductor of electricity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_al_props",
+                    "criterion": "States that diamond is the hardest substance known while graphite is smooth, slippery and a very good conductor of electricity, though their chemical properties are the same.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t2c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Fullerenes form another class of carbon allotropes. The first one to be identified was C-60 which has carbon atoms arranged in the shape of a football. Diamonds can be synthesised by subjecting pure carbon to very high pressure and temperature.",
+              "assessment": {
+                "requiredEvidence": [
+                  "fullerenes",
+                  "C-60",
+                  "shape of a football",
+                  "very high pressure and temperature"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_al_fullerene",
+                    "criterion": "Names fullerenes, such as C-60 with carbon atoms arranged like a football, as another class of carbon allotropes.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question: graphite is slippery because its layers slide over each other, while diamond is hard because of its rigid 3D structure",
+            "Buckminsterfullerene was named after the geodesic dome designed by the architect Buckminster Fuller"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_al_diff_atoms",
+              "wrong": "Diamond and graphite are different because they are made of different elements.",
+              "fix": "Both diamond and graphite are formed by carbon atoms; the difference lies in the manner in which the carbon atoms are bonded to one another."
+            }
+          ],
+          "verify": [
+            { "page": 61, "quote": "The element carbon occurs in different forms in nature with widely varying physical properties.", "supports": ["sci10c4_t2c1_kp1"] },
+            { "page": 61, "quote": "Both diamond and graphite are formed by carbon atoms, the difference lies in the manner in which the carbon atoms are bonded to one another.", "supports": ["sci10c4_t2c1_kp1"] },
+            { "page": 61, "quote": "In diamond, each carbon atom is bonded to four other carbon atoms forming a rigid three-dimensional structure.", "supports": ["sci10c4_t2c1_kp2"] },
+            { "page": 61, "quote": "In graphite, each carbon atom is bonded to three other carbon atoms in the same plane giving a hexagonal array.", "supports": ["sci10c4_t2c1_kp2"] },
+            { "page": 61, "quote": "Graphite structure is formed by the hexagonal arrays being placed in layers one above the other.", "supports": ["sci10c4_t2c1_kp2"] },
+            { "page": 61, "quote": "These two different structures result in diamond and graphite having very different physical properties even though their chemical properties are the same.", "supports": ["sci10c4_t2c1_kp3"] },
+            { "page": 61, "quote": "Diamond is the hardest substance known while graphite is smooth and slippery.", "supports": ["sci10c4_t2c1_kp3"] },
+            { "page": 61, "quote": "Graphite is also a very good conductor of electricity unlike other non-metals that you studied in the", "supports": ["sci10c4_t2c1_kp3"] },
+            { "page": 61, "quote": "Fullerenes form another class of carbon allotropes.", "supports": ["sci10c4_t2c1_kp4"] },
+            { "page": 61, "quote": "The first one to be identified was C-60 which has carbon atoms arranged in the shape of a football.", "supports": ["sci10c4_t2c1_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t3",
+      "title": "The Versatile Nature of Carbon",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t3_c1",
+          "label": "Catenation",
+          "headingType": "heading",
+          "sourcePages": [62],
+          "cardText": "The numbers of carbon compounds known to chemists are estimated to be in millions, outnumbering the compounds formed by all the other elements put together. The nature of the covalent bond enables carbon to form a large number of compounds. One factor is that carbon has the unique ability to form bonds with other atoms of carbon, giving rise to large molecules. This property is called catenation. These compounds may have long chains of carbon, branched chains of carbon or even carbon atoms arranged in rings. No other element shows catenation to the extent seen in carbon compounds: silicon forms compounds with hydrogen with chains of up to seven or eight atoms, but these are very reactive. The carbon-carbon bond is very strong and hence stable, which gives the large number of compounds with many carbon atoms linked to each other.",
+          "hint": "What is catenation, and why does only carbon show it so strongly?",
+          "probe": "Explain catenation and why carbon shows it more than any other element.",
+          "causeChain": "Carbon can form bonds with other carbon atoms giving large molecules, called catenation -> the chains can be long, branched or in rings, held by carbon-carbon bonds that are very strong and stable -> silicon's hydrogen compounds reach only seven or eight atoms and are very reactive, so carbon alone gives millions of compounds",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_caten_strong",
+              "linksChecks": [
+                "chk_sci10c4_ca_def",
+                "chk_sci10c4_ca_strong"
+              ],
+              "criterion": "Connects the strong, stable carbon-carbon bond to the very large number of carbon compounds, unlike silicon's reactive short chains.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon has the unique ability to form bonds with other atoms of carbon, giving rise to large molecules. This property is called catenation. These compounds may have long chains of carbon, branched chains of carbon or even carbon atoms arranged in rings.",
+              "followUp": "What is the name for carbon atoms linking to one another to build big molecules in straight, branched or closed shapes?",
+              "assessment": {
+                "requiredEvidence": [
+                  "unique ability to form bonds with other atoms of carbon",
+                  "large molecules",
+                  "catenation",
+                  "long chains",
+                  "branched chains",
+                  "rings"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ca_def",
+                    "criterion": "Defines catenation as carbon's unique ability to form bonds with other carbon atoms giving large molecules in long chains, branched chains or rings.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "No other element exhibits the property of catenation to the extent seen in carbon compounds. Silicon forms compounds with hydrogen which have chains of up to seven or eight atoms, but these compounds are very reactive. The carbon-carbon bond is very strong and hence stable.",
+              "followUp": "Why do other elements fail to match carbon's ability to link up with itself, even the one that comes closest below it in the periodic table?",
+              "assessment": {
+                "requiredEvidence": [
+                  "no other element",
+                  "silicon",
+                  "seven or eight atoms",
+                  "very reactive",
+                  "carbon-carbon bond is very strong",
+                  "stable"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ca_strong",
+                    "criterion": "States that no other element shows catenation as carbon does (silicon's hydrogen compounds have short, very reactive chains) because the carbon-carbon bond is very strong and stable.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_ca_other"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The numbers of carbon compounds whose formulae are known to chemists was recently estimated to be in millions, outnumbering the compounds formed by all the other elements put together. The nature of the covalent bond enables carbon to form a large number of compounds.",
+              "assessment": {
+                "requiredEvidence": [
+                  "millions",
+                  "outnumbers",
+                  "all the other elements put together",
+                  "nature of the covalent bond"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ca_millions",
+                    "criterion": "States that carbon compounds number in millions, outnumbering those of all other elements put together, because of the nature of the covalent bond.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: the two properties of carbon leading to a huge number of compounds are catenation and tetravalency"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_ca_other",
+              "wrong": "Many elements show catenation as much as carbon does.",
+              "fix": "No other element exhibits catenation to the extent seen in carbon compounds."
+            }
+          ],
+          "verify": [
+            { "page": 62, "quote": "Carbon has the unique ability to form bonds with other atoms of carbon, giving rise to large molecules.", "supports": ["sci10c4_t3c1_kp1"] },
+            { "page": 62, "quote": "This property is called catenation.", "supports": ["sci10c4_t3c1_kp1"] },
+            { "page": 62, "quote": "These compounds may have long chains of carbon, branched chains of carbon or even carbon atoms arranged in rings.", "supports": ["sci10c4_t3c1_kp1"] },
+            { "page": 62, "quote": "No other element exhibits the property of catenation to the extent seen in carbon compounds.", "supports": ["sci10c4_t3c1_kp2"] },
+            { "page": 62, "quote": "Silicon forms compounds with hydrogen which have chains of upto seven or eight atoms, but these compounds are very reactive.", "supports": ["sci10c4_t3c1_kp2"] },
+            { "page": 62, "quote": "The carbon-carbon bond is very strong and hence stable.", "supports": ["sci10c4_t3c1_kp2"] },
+            { "page": 62, "quote": "The nature of the covalent bond enables carbon to form a large number of compounds.", "supports": ["sci10c4_t3c1_kp3"] },
+            { "page": 62, "quote": "This outnumbers by a large margin the compounds formed by all the other elements put together.", "supports": ["sci10c4_t3c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t3_c2",
+          "label": "Tetravalency and the Strength of Carbon's Bonds",
+          "headingType": "heading",
+          "sourcePages": [62, 63, 77],
+          "cardText": "Since carbon has a valency of four, it is capable of bonding with four other atoms of carbon or atoms of some other mono-valent element. Compounds of carbon are formed with oxygen, hydrogen, nitrogen, sulphur, chlorine and many other elements, giving compounds with specific properties which depend on the elements other than carbon present in the molecule. The bonds that carbon forms with most other elements are very strong, making these compounds exceptionally stable. One reason for the formation of strong bonds is carbon's small size, which enables the nucleus to hold on to the shared pairs of electrons strongly; bonds formed by elements having bigger atoms are much weaker. Tetravalency and catenation together give rise to a large number of compounds.",
+          "hint": "Why does carbon bond with so many elements, and why are its bonds so strong?",
+          "probe": "Explain tetravalency, why carbon's bonds are strong, and how tetravalency and catenation give so many compounds.",
+          "causeChain": "Carbon has a valency of four so it can bond with four other atoms, including oxygen, hydrogen, nitrogen, sulphur and chlorine -> its small size lets the nucleus hold the shared electron pairs strongly, so its bonds are very strong and the compounds stable -> tetravalency and catenation together give a very large number of compounds",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_small_size",
+              "linksChecks": [
+                "chk_sci10c4_tv_valency",
+                "chk_sci10c4_tv_size"
+              ],
+              "criterion": "Connects carbon's small size to its nucleus holding shared electron pairs strongly and forming very stable compounds.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Since carbon has a valency of four, it is capable of bonding with four other atoms of carbon or atoms of some other mono-valent element. Compounds are formed with oxygen, hydrogen, nitrogen, sulphur, chlorine and many other elements, with specific properties that depend on the elements other than carbon present.",
+              "followUp": "How many other atoms can one carbon atom bond to, and with which other elements?",
+              "assessment": {
+                "requiredEvidence": [
+                  "valency of four",
+                  "bonding with four other atoms",
+                  "oxygen, hydrogen, nitrogen, sulphur, chlorine",
+                  "specific properties"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_tv_valency",
+                    "criterion": "States that carbon has a valency of four so it can bond with four other atoms, forming compounds with oxygen, hydrogen, nitrogen, sulphur, chlorine and other elements.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The bonds that carbon forms with most other elements are very strong, making these compounds exceptionally stable. One reason is its small size, which enables the nucleus to hold on to the shared pairs of electrons strongly. The bonds formed by elements having bigger atoms are much weaker.",
+              "followUp": "How does the size of a carbon atom affect how tightly it holds shared electrons, and why does that make its compounds stable?",
+              "assessment": {
+                "requiredEvidence": [
+                  "very strong",
+                  "exceptionally stable",
+                  "small size",
+                  "nucleus to hold on to the shared pairs",
+                  "bigger atoms are much weaker"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_tv_size",
+                    "criterion": "States that carbon's bonds with most elements are very strong because its small size lets the nucleus hold the shared electron pairs strongly, unlike bigger atoms.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_tv_big"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t3c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The two characteristic features seen in carbon, tetravalency and catenation, put together give rise to a large number of compounds. This large variety is formed by carbon because of its tetravalency and catenation.",
+              "assessment": {
+                "requiredEvidence": [
+                  "tetravalency",
+                  "catenation",
+                  "large number of compounds"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_tv_both",
+                    "criterion": "States that tetravalency and catenation together give carbon its large variety of compounds.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: the two properties of carbon that lead to the huge number of carbon compounds are tetravalency and catenation",
+            "More to Know: Friedrich Wohler prepared urea from ammonium cyanate in 1828, disproving the need for a vital force"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_tv_big",
+              "wrong": "Bigger atoms form stronger bonds than carbon does.",
+              "fix": "Carbon's small size lets the nucleus hold the shared pairs strongly, while bonds formed by elements with bigger atoms are much weaker."
+            }
+          ],
+          "verify": [
+            { "page": 62, "quote": "Since carbon has a valency of four, it is capable of bonding with four other atoms of carbon or atoms of some other mono-valent element.", "supports": ["sci10c4_t3c2_kp1"] },
+            { "page": 62, "quote": "Compounds of carbon are formed with oxygen, hydrogen, nitrogen, sulphur, chlorine and many other elements", "supports": ["sci10c4_t3c2_kp1"] },
+            { "page": 62, "quote": "Again the bonds that carbon forms with most other elements are very strong making these compounds exceptionally stable.", "supports": ["sci10c4_t3c2_kp2"] },
+            { "page": 62, "quote": "One reason for the formation of strong bonds by carbon is its small size.", "supports": ["sci10c4_t3c2_kp2"] },
+            { "page": 62, "quote": "This enables the nucleus to hold on to the shared pairs of electrons strongly.", "supports": ["sci10c4_t3c2_kp2"] },
+            { "page": 62, "quote": "The bonds formed by elements having bigger atoms are much weaker.", "supports": ["sci10c4_t3c2_kp2"] },
+            { "page": 63, "quote": "The two characteristic features seen in carbon, that is, tetravalency and catenation, put together give rise to a large number of compounds.", "supports": ["sci10c4_t3c2_kp3"] },
+            { "page": 77, "quote": "This large variety of compounds is formed by carbon because of its tetravalency and the property of catenation that it exhibits.", "supports": ["sci10c4_t3c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t4",
+      "title": "Saturated, Unsaturated Compounds and Isomers",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t4_c1",
+          "label": "Saturated and Unsaturated Carbon Compounds",
+          "headingType": "heading",
+          "sourcePages": [62, 63, 64],
+          "cardText": "Compounds of carbon which are linked by only single bonds between the carbon atoms are called saturated compounds. Ethane, C2H6, and propane, C3H8, are examples: all the valencies of the atoms are satisfied by single bonds. Saturated compounds are normally not very reactive. Another compound of carbon and hydrogen has the formula C2H4 and is called ethene, with a double bond between the two carbons, and C2H2, called ethyne, has a triple bond. Compounds of carbon having double or triple bonds between their carbon atoms are called unsaturated compounds, and they are more reactive than the saturated carbon compounds.",
+          "hint": "What kinds of bonds make a carbon compound saturated or unsaturated, and which is more reactive?",
+          "probe": "Explain saturated and unsaturated carbon compounds with examples and say which is more reactive.",
+          "causeChain": "In ethane and propane all valencies are satisfied by single bonds, so they are saturated and not very reactive -> in ethene a double bond and in ethyne a triple bond is needed to satisfy the valencies -> compounds with double or triple bonds are unsaturated and are more reactive",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_sat_reactive",
+              "linksChecks": [
+                "chk_sci10c4_su_sat",
+                "chk_sci10c4_su_unsat"
+              ],
+              "criterion": "Connects single bonds only to saturated compounds that are normally unreactive, and double or triple bonds to unsaturated compounds that are more reactive.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Compounds of carbon which are linked by only single bonds between the carbon atoms are called saturated compounds. Ethane (C2H6) and propane (C3H8) are examples, and such compounds are normally not very reactive.",
+              "followUp": "Carbon compounds in which all links between carbon atoms are single bonds are what kind, and how reactive are they?",
+              "assessment": {
+                "requiredEvidence": [
+                  "only single bonds",
+                  "saturated compounds",
+                  "ethane",
+                  "propane",
+                  "not very reactive"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_su_sat",
+                    "criterion": "Defines saturated compounds as those with only single bonds between the carbon atoms, such as ethane and propane, which are normally not very reactive.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Compounds of carbon having double or triple bonds between their carbon atoms are called unsaturated compounds, and they are more reactive than the saturated carbon compounds. Ethene (C2H4) has a double bond and ethyne (C2H2) a triple bond.",
+              "followUp": "If a compound has a double or triple bond between carbons, what kind is it and how reactive is it compared with the other?",
+              "assessment": {
+                "requiredEvidence": [
+                  "double or triple bonds",
+                  "unsaturated compounds",
+                  "more reactive",
+                  "ethene",
+                  "C2H4",
+                  "ethyne",
+                  "C2H2"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_su_unsat",
+                    "criterion": "Defines unsaturated compounds as those with double or triple bonds between carbon atoms, such as ethene and ethyne, and says they are more reactive than saturated ones.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_su_reactive"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t4c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "To arrive at the structure of simple carbon compounds, the carbon atoms are first linked with a single bond and the hydrogen atoms then satisfy the remaining valencies of carbon, as in ethane. In ethene one valency per carbon remains unsatisfied, which can only be satisfied by a double bond.",
+              "assessment": {
+                "requiredEvidence": [
+                  "link the carbon atoms together",
+                  "single bond",
+                  "remaining valencies",
+                  "double bond between the two carbons"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_su_steps",
+                    "criterion": "States how structures are built: link carbon atoms by a single bond and satisfy the remaining valencies with hydrogen, with a double bond needed in ethene.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 15: a test to differentiate saturated from unsaturated hydrocarbons is the flame, which is clean for saturated and sooty for unsaturated",
+            "propane has the molecular formula C3H8 with all valencies satisfied by single bonds"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_su_reactive",
+              "wrong": "Saturated compounds are more reactive than unsaturated ones.",
+              "fix": "Unsaturated carbon compounds, with double or triple bonds, are more reactive than saturated ones."
+            }
+          ],
+          "verify": [
+            { "page": 62, "quote": "Compounds of carbon, which are linked by only single bonds between the carbon atoms are called saturated compounds.", "supports": ["sci10c4_t4c1_kp1"] },
+            { "page": 63, "quote": "Such carbon compounds are called saturated compounds. These compounds are normally not very reactive.", "supports": ["sci10c4_t4c1_kp1"] },
+            { "page": 62, "quote": "Compounds of carbon having double or triple bonds between their carbon atoms are called unsaturated compounds.", "supports": ["sci10c4_t4c1_kp2"] },
+            { "page": 63, "quote": "However, another compound of carbon and hydrogen has the formula C2H4 and is called ethene.", "supports": ["sci10c4_t4c1_kp2"] },
+            { "page": 64, "quote": "are known as unsaturated carbon compounds", "supports": ["sci10c4_t4c1_kp2"] },
+            { "page": 64, "quote": "and they are more reactive than the saturated carbon", "supports": ["sci10c4_t4c1_kp2"] },
+            { "page": 63, "quote": "In order to arrive at the structure of simple carbon", "supports": ["sci10c4_t4c1_kp3"] },
+            { "page": 63, "quote": "We see that one valency per carbon atom remains unsatisfied", "supports": ["sci10c4_t4c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t4_c2",
+          "label": "Chains, Branches, Rings and Hydrocarbons",
+          "headingType": "heading",
+          "sourcePages": [64, 65],
+          "cardText": "Chains of carbon atoms can contain many more carbon atoms than methane, ethane and propane, with 1, 2 and 3 carbon atoms: butane has four, pentane five and hexane six. In addition to straight and branched carbon chains, some compounds have carbon atoms arranged in the form of a ring; for example, cyclohexane has the formula C6H12. Straight chain, branched chain and cyclic carbon compounds may all be saturated or unsaturated; benzene, C6H6, is an example of a ring compound. All these carbon compounds which contain only carbon and hydrogen are called hydrocarbons. The saturated hydrocarbons are called alkanes, the unsaturated hydrocarbons with one or more double bonds are called alkenes, and those with one or more triple bonds are called alkynes.",
+          "hint": "What shapes can carbon chains take, and what are alkanes, alkenes and alkynes?",
+          "probe": "Explain the kinds of carbon chains and what hydrocarbons, alkanes, alkenes and alkynes are.",
+          "causeChain": "Carbon atoms can form straight chains, branched chains or rings, and each may be saturated or unsaturated -> compounds of only carbon and hydrogen are hydrocarbons -> saturated hydrocarbons are alkanes, those with double bonds alkenes and those with triple bonds alkynes",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_hydrocarbon_types",
+              "linksChecks": [
+                "chk_sci10c4_hc_shapes",
+                "chk_sci10c4_hc_types"
+              ],
+              "criterion": "Connects the kind of carbon-carbon bonds in a hydrocarbon to whether it is an alkane, alkene or alkyne.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t4c2_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Chains of carbon atoms can contain many more carbon atoms than methane, ethane and propane (1, 2 and 3 carbon atoms); butane has four, pentane five and hexane six.",
+              "assessment": {
+                "requiredEvidence": [
+                  "methane, ethane and propane",
+                  "butane",
+                  "pentane",
+                  "hexane"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hc_chain",
+                    "criterion": "States that carbon chains can have many carbon atoms, as in methane (1), ethane (2), propane (3), butane (4), pentane (5) and hexane (6).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In addition to straight and branched carbon chains, some compounds have carbon atoms arranged in the form of a ring, such as cyclohexane (C6H12). Straight chain, branched chain and cyclic compounds may all be saturated or unsaturated, for example benzene (C6H6).",
+              "followUp": "Besides straight chains, what other shapes can carbon skeletons take, and can each of these have single bonds only or also double bonds?",
+              "assessment": {
+                "requiredEvidence": [
+                  "straight and branched carbon chains",
+                  "ring",
+                  "cyclohexane",
+                  "C6H12",
+                  "saturated or unsaturated",
+                  "benzene"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hc_shapes",
+                    "criterion": "States that carbon compounds can have straight chains, branched chains or rings (like cyclohexane and benzene), each of which may be saturated or unsaturated.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t4c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "All these carbon compounds which contain only carbon and hydrogen are called hydrocarbons. The saturated hydrocarbons are called alkanes. The unsaturated hydrocarbons which contain one or more double bonds are called alkenes. Those containing one or more triple bonds are called alkynes.",
+              "followUp": "What name is given to compounds built from just these two elements, and how are the three families of them distinguished?",
+              "assessment": {
+                "requiredEvidence": [
+                  "only carbon and hydrogen",
+                  "hydrocarbons",
+                  "saturated hydrocarbons are called alkanes",
+                  "double bonds",
+                  "alkenes",
+                  "triple bonds",
+                  "alkynes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hc_types",
+                    "criterion": "States that compounds with only carbon and hydrogen are hydrocarbons: saturated ones are alkanes, those with double bonds alkenes and those with triple bonds alkynes.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_hc_alkene"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 3: the formula of cyclopentane is C5H10",
+            "Exercise 13: hydrocarbons with double or triple bonds, like C3H6 and C2H2, undergo addition reactions while the alkanes C2H6, C3H8 and CH4 do not"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_hc_alkene",
+              "wrong": "Alkenes have triple bonds and alkynes have double bonds.",
+              "fix": "Alkenes contain one or more double bonds and alkynes one or more triple bonds."
+            }
+          ],
+          "verify": [
+            { "page": 64, "quote": "In the earlier section, we mentioned the carbon compounds methane, ethane and propane, containing respectively 1, 2 and 3 carbon atoms.", "supports": ["sci10c4_t4c2_kp1"] },
+            { "page": 64, "quote": "Such ‘chains’ of carbon atoms can contain many more carbon atoms.", "supports": ["sci10c4_t4c2_kp1"] },
+            { "page": 65, "quote": "In addition to straight and branched carbon chains, some compounds have carbon atoms arranged in the form of a ring.", "supports": ["sci10c4_t4c2_kp2"] },
+            { "page": 65, "quote": "Straight chain, branched chain and cyclic carbon compounds, all may be saturated or unsaturated.", "supports": ["sci10c4_t4c2_kp2"] },
+            { "page": 65, "quote": "All these carbon compounds which contain only carbon and hydrogen are called hydrocarbons.", "supports": ["sci10c4_t4c2_kp3"] },
+            { "page": 65, "quote": "Among these, the saturated hydrocarbons are called alkanes.", "supports": ["sci10c4_t4c2_kp3"] },
+            { "page": 65, "quote": "The unsaturated hydrocarbons which contain one or more double bonds are called alkenes.", "supports": ["sci10c4_t4c2_kp3"] },
+            { "page": 65, "quote": "Those containing one or more triple bonds are called alkynes.", "supports": ["sci10c4_t4c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t4_c3",
+          "label": "Structural Isomers",
+          "headingType": "heading",
+          "sourcePages": [65],
+          "cardText": "If we make the carbon skeleton with four carbon atoms, two different skeletons are possible: a straight chain of four carbons and a branched chain. Filling the remaining valencies with hydrogen gives two complete molecules, and both structures have the same formula C4H10. Such compounds with identical molecular formula but different structures are called structural isomers.",
+          "hint": "What do we call molecules with the same formula but a different arrangement of atoms?",
+          "probe": "Explain structural isomers using butane.",
+          "causeChain": "Four carbon atoms can be arranged in two different skeletons, straight and branched -> filling the valencies with hydrogen gives two molecules, both C4H10 -> compounds with identical molecular formula but different structures are structural isomers",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_isomer_butane",
+              "linksChecks": [
+                "chk_sci10c4_is_skeleton",
+                "chk_sci10c4_is_def"
+              ],
+              "criterion": "Connects the two possible skeletons of four carbon atoms to two structures with the same formula C4H10 being structural isomers.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t4c3_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "If we make the carbon skeleton with four carbon atoms, two different possible skeletons are a straight chain and a branched chain. Filling the remaining valencies with hydrogen gives two structures, both with the formula C4H10.",
+              "assessment": {
+                "requiredEvidence": [
+                  "four carbon atoms",
+                  "two different possible skeletons",
+                  "C4H10"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_is_skeleton",
+                    "criterion": "States that four carbon atoms can form two different skeletons, a straight chain and a branched chain, and filling the valencies with hydrogen gives two structures both with the formula C4H10.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t4c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Such compounds with identical molecular formula but different structures are called structural isomers.",
+              "followUp": "Two molecules have the same formula but different shapes. What are they called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "identical molecular formula",
+                  "different structures",
+                  "structural isomers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_is_def",
+                    "criterion": "Defines structural isomers as compounds with identical molecular formula but different structures, such as the two forms of C4H10.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_is_diff_formula"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: pentane, C5H12, has three structural isomers",
+            "Exercise 4 footnote: bromopentane can have structural isomers"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_is_diff_formula",
+              "wrong": "Structural isomers have different molecular formulae.",
+              "fix": "Structural isomers have identical molecular formulae but different structures."
+            }
+          ],
+          "verify": [
+            { "page": 65, "quote": "If we make the carbon ‘skeleton’ with four carbon atoms, we see that two different possible", "supports": ["sci10c4_t4c3_kp1"] },
+            { "page": 65, "quote": "We see that both these structures have the same formula C4H10.", "supports": ["sci10c4_t4c3_kp1"] },
+            { "page": 65, "quote": "Such compounds with identical molecular formula but different structures are called structural isomers.", "supports": ["sci10c4_t4c3_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t5",
+      "title": "Functional Groups, Homologous Series and Nomenclature",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t5_c1",
+          "label": "Heteroatoms and Functional Groups",
+          "headingType": "heading",
+          "sourcePages": [65, 66, 77],
+          "cardText": "Carbon also forms bonds with other elements such as halogens, oxygen, nitrogen and sulphur. In a hydrocarbon chain one or more hydrogens can be replaced by these elements, such that the valency of carbon remains satisfied. The element replacing hydrogen is referred to as a heteroatom. These heteroatoms, and the group containing them, confer specific properties to the compound regardless of the length and nature of the carbon chain, and hence are called functional groups. Important functional groups include halo groups (chloro, bromo), alcohol (-OH), aldehyde, ketone and carboxylic acid. The functional group is attached to the carbon chain through its free valency by replacing one hydrogen atom or atoms.",
+          "hint": "What is a heteroatom, and what is a functional group?",
+          "probe": "Explain heteroatoms and functional groups and name some functional groups.",
+          "causeChain": "Carbon bonds with halogens, oxygen, nitrogen and sulphur, replacing hydrogens in a chain -> the replacing element is a heteroatom -> the heteroatom and its group give the compound specific properties whatever the chain length, so they are called functional groups, such as alcohol, aldehyde, ketone and carboxylic acid",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_fg_props",
+              "linksChecks": [
+                "chk_sci10c4_fg_hetero",
+                "chk_sci10c4_fg_def"
+              ],
+              "criterion": "Connects heteroatoms replacing hydrogen to functional groups that decide the properties regardless of the carbon chain.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t5c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon forms bonds with other elements such as halogens, oxygen, nitrogen and sulphur. In a hydrocarbon chain, one or more hydrogens can be replaced by these elements such that the valency of carbon remains satisfied. The element replacing hydrogen is referred to as a heteroatom.",
+              "followUp": "What do you call an atom that takes the place of hydrogen in a carbon chain, such as oxygen or a halogen?",
+              "assessment": {
+                "requiredEvidence": [
+                  "halogens, oxygen, nitrogen and sulphur",
+                  "replaced",
+                  "valency of carbon remains satisfied",
+                  "heteroatom"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_fg_hetero",
+                    "criterion": "States that one or more hydrogens of a hydrocarbon chain can be replaced by halogens, oxygen, nitrogen or sulphur, and the replacing element is called a heteroatom.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t5c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "These heteroatoms and the group containing them confer specific properties to the compound, regardless of the length and nature of the carbon chain, and hence are called functional groups.",
+              "followUp": "Why do some groups of atoms decide a compound's properties whatever the length of the carbon chain?",
+              "assessment": {
+                "requiredEvidence": [
+                  "specific properties",
+                  "regardless of the length and nature of the carbon chain",
+                  "functional groups"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_fg_def",
+                    "criterion": "Defines functional groups as heteroatoms and the groups containing them that confer specific properties to a compound regardless of the length and nature of the carbon chain.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_fg_chain"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t5c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Some important functional groups are halo (chloro, bromo), alcohol, aldehyde, ketone and carboxylic acid. The functional groups such as alcohols, aldehydes, ketones and carboxylic acids bestow characteristic properties to the carbon compounds that contain them.",
+              "assessment": {
+                "requiredEvidence": [
+                  "halo",
+                  "alcohol",
+                  "aldehyde",
+                  "ketone",
+                  "carboxylic acid"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_fg_examples",
+                    "criterion": "Names some functional groups, such as alcohol, aldehyde, ketone, carboxylic acid and the halo group.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 2: butanone is a four-carbon compound with the ketone functional group",
+            "Exercise 5: draw structures for ethanoic acid, bromopentane, butanone and hexanal"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_fg_chain",
+              "wrong": "The properties of a carbon compound depend only on the length of its carbon chain.",
+              "fix": "The functional group confers specific properties to the compound regardless of the length and nature of the carbon chain."
+            }
+          ],
+          "verify": [
+            { "page": 66, "quote": "bonds with other elements such as halogens, oxygen, nitrogen and sulphur.", "supports": ["sci10c4_t5c1_kp1"] },
+            { "page": 66, "quote": "In a hydrocarbon chain, one or more hydrogens can be replaced by these elements, such that the valency of carbon remains satisfied.", "supports": ["sci10c4_t5c1_kp1"] },
+            { "page": 66, "quote": "In such compounds, the element replacing hydrogen is referred to as a heteroatom.", "supports": ["sci10c4_t5c1_kp1"] },
+            { "page": 66, "quote": "the group containing these confer specific properties to the compound, regardless of the length and nature of the carbon chain and hence are called functional groups.", "supports": ["sci10c4_t5c1_kp2"] },
+            { "page": 66, "quote": "2. Aldehyde 3. Ketone 4. Carboxylic acid", "supports": ["sci10c4_t5c1_kp3"] },
+            { "page": 77, "quote": "The functional groups such as alcohols, aldehydes, ketones and carboxylic acids bestow characteristic properties to the carbon compounds that contain them.", "supports": ["sci10c4_t5c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t5_c2",
+          "label": "Homologous Series",
+          "headingType": "heading",
+          "sourcePages": [66, 67, 77],
+          "cardText": "The presence of a functional group such as alcohol decides the properties of the carbon compound, regardless of the length of the carbon chain. For example, the chemical properties of CH3OH, C2H5OH, C3H7OH and C4H9OH are all very similar. Hence such a series of compounds in which the same functional group substitutes for hydrogen in a carbon chain is called a homologous series. Successive members differ by a -CH2- unit: CH4 and C2H6, and C2H6 and C3H8, differ by one -CH2- unit. As the molecular mass increases in any homologous series, a gradation in physical properties is seen, because the melting and boiling points increase with increasing molecular mass, and solubility in a solvent shows a similar gradation. But the chemical properties, which are determined solely by the functional group, remain similar.",
+          "hint": "What do members of a homologous series share, and what changes along the series?",
+          "probe": "Explain what a homologous series is and how physical and chemical properties vary along it.",
+          "causeChain": "The same functional group on carbon chains of different lengths gives compounds with similar chemical properties -> such a series is a homologous series, with successive members differing by a -CH2- unit -> physical properties like melting and boiling points change gradually with molecular mass, but chemical properties stay similar as the functional group decides them",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_series_props",
+              "linksChecks": [
+                "chk_sci10c4_hs_def",
+                "chk_sci10c4_hs_props"
+              ],
+              "criterion": "Connects the shared functional group to similar chemical properties and the gradual change in physical properties with molecular mass.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t5c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "A series of compounds in which the same functional group substitutes for hydrogen in a carbon chain is called a homologous series. For example, the chemical properties of CH3OH, C2H5OH, C3H7OH and C4H9OH are all very similar.",
+              "followUp": "What do you call a series of compounds with the same group on chains of different lengths, such as the four simplest alcohols?",
+              "assessment": {
+                "requiredEvidence": [
+                  "same functional group substitutes for hydrogen",
+                  "carbon chain",
+                  "homologous series",
+                  "chemical properties",
+                  "very similar"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hs_def",
+                    "criterion": "Defines a homologous series as a series of compounds in which the same functional group substitutes for hydrogen in a carbon chain, such as CH3OH, C2H5OH, C3H7OH and C4H9OH with very similar chemical properties.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t5c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Successive members of a homologous series differ by a -CH2- unit: CH4 and C2H6, and C2H6 and C3H8, each differ by one -CH2- unit.",
+              "assessment": {
+                "requiredEvidence": [
+                  "differ by a -CH2- unit",
+                  "CH4 and C2H6",
+                  "C2H6 and C3H8"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hs_ch2",
+                    "criterion": "States that successive members of a homologous series differ by a -CH2- unit, as CH4 and C2H6 do.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t5c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "As the molecular mass increases in any homologous series, a gradation in physical properties is seen, because melting and boiling points increase with molecular mass. But the chemical properties, which are determined solely by the functional group, remain similar.",
+              "followUp": "As the chain gets longer along the series, which properties change gradually and which stay similar?",
+              "assessment": {
+                "requiredEvidence": [
+                  "molecular mass increases",
+                  "gradation in physical properties",
+                  "melting and boiling points increase",
+                  "chemical properties",
+                  "determined solely by the functional group"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hs_props",
+                    "criterion": "States that along a homologous series physical properties like melting and boiling points change gradually with molecular mass, while chemical properties stay similar because they depend only on the functional group.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_hs_chem_vary"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t5c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The ability of carbon to form chains gives rise to a homologous series of compounds in which the same functional group is attached to carbon chains of different lengths.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ability of carbon to form chains",
+                  "homologous series",
+                  "same functional group",
+                  "different lengths"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hs_summary",
+                    "criterion": "States that carbon's ability to form chains gives a homologous series with the same functional group attached to chains of different lengths.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 6: a homologous series is a family of compounds with the same functional group and successive members differing by CH2, such as methanol, ethanol and propanol",
+            "Activity 4.2: CH3OH and C2H5OH, C2H5OH and C3H7OH differ by CH2 with a mass difference of 14 u"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_hs_chem_vary",
+              "wrong": "Chemical properties change along a homologous series as the chain gets longer.",
+              "fix": "Chemical properties, determined solely by the functional group, remain similar in a homologous series; physical properties show a gradation."
+            }
+          ],
+          "verify": [
+            { "page": 66, "quote": "The presence of a functional group such as alcohol decides the properties of the carbon compound, regardless of the length of the carbon chain.", "supports": ["sci10c4_t5c2_kp1"] },
+            { "page": 66, "quote": "For example, the chemical properties of CH3OH, C2H5OH, C3H7OH and C4H9OH are all very similar.", "supports": ["sci10c4_t5c2_kp1"] },
+            { "page": 66, "quote": "Hence, such a series of compounds in which the same functional group substitutes for hydrogen in a carbon chain is called a homologous series.", "supports": ["sci10c4_t5c2_kp1"] },
+            { "page": 66, "quote": "these differ by a –CH2- unit", "supports": ["sci10c4_t5c2_kp2"] },
+            { "page": 67, "quote": "As the molecular mass increases in any homologous series, a gradation in physical properties is seen.", "supports": ["sci10c4_t5c2_kp3"] },
+            { "page": 67, "quote": "This is because the melting and boiling points increase with increasing molecular mass.", "supports": ["sci10c4_t5c2_kp3"] },
+            { "page": 67, "quote": "But the chemical properties, which are determined solely by the functional group, remain similar in a homologous series.", "supports": ["sci10c4_t5c2_kp3"] },
+            { "page": 77, "quote": "The ability of carbon to form chains gives rise to a homologous series of compounds in which the same functional group is attached to carbon chains of different lengths.", "supports": ["sci10c4_t5c2_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t5_c3",
+          "label": "Nomenclature of Carbon Compounds",
+          "headingType": "heading",
+          "sourcePages": [67, 68],
+          "cardText": "The names of compounds in a homologous series are based on the name of the basic carbon chain, modified by a prefix or a suffix indicating the nature of the functional group. To name a compound, identify the number of carbon atoms: a compound having three carbon atoms would have the name propane. If a functional group is present it is shown in the name with a prefix or suffix. If the suffix begins with a vowel a, e, i, o or u, the final e of the chain name is deleted before adding the suffix; for example propane minus e is propan, plus one gives propanone. If the carbon chain is unsaturated, the final ane is replaced by ene or yne: a three-carbon chain with a double bond would be called propene. The suffix for alcohol is ol, aldehyde al, ketone one and carboxylic acid oic acid, with prefix chloro or bromo for halo alkanes.",
+          "hint": "How do prefixes and suffixes show the chain and functional group in a name?",
+          "probe": "Explain how carbon compounds are named, with examples such as propanone and propene.",
+          "causeChain": "Count the carbon atoms to get the base name, like propane for three -> add a prefix or suffix for the functional group, deleting the final e if the suffix starts with a vowel, so propan + one gives propanone -> for unsaturated chains the ane becomes ene or yne, so a three-carbon chain with a double bond is propene",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_naming_steps",
+              "linksChecks": [
+                "chk_sci10c4_nm_base",
+                "chk_sci10c4_nm_suffix"
+              ],
+              "criterion": "Connects counting the chain, adding the functional group suffix and changing ane to ene or yne to naming a compound.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t5c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The names of compounds in a homologous series are based on the name of the basic carbon chain modified by a prefix or suffix indicating the nature of the functional group. Identify the number of carbon atoms; a compound with three carbon atoms would have the name propane.",
+              "followUp": "How do you choose the root of a compound's name from its carbon count, and what two kinds of additions can show the attached group?",
+              "assessment": {
+                "requiredEvidence": [
+                  "name of the basic carbon chain",
+                  "prefix",
+                  "suffix",
+                  "nature of the functional group",
+                  "three carbon atoms",
+                  "propane"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_nm_base",
+                    "criterion": "States that the name of a carbon compound is based on the number of carbon atoms in the basic chain (three gives propane), modified by a prefix or suffix for the functional group.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t5c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "If the functional group is given as a suffix beginning with a vowel a, e, i, o or u, the final e of the chain name is deleted and the suffix added, so propane gives propanone. Table 4.4 gives suffix ol for alcohol, al for aldehyde, one for ketone, oic acid for carboxylic acid, and prefix chloro or bromo for halo alkanes.",
+              "followUp": "How are the names for the ketone with three carbons and for the alkene with three carbons built?",
+              "assessment": {
+                "requiredEvidence": [
+                  "deleting the final 'e'",
+                  "propanone",
+                  "suffix - ol",
+                  "suffix - al",
+                  "suffix - one",
+                  "oic acid",
+                  "prefix chloro, bromo"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_nm_suffix",
+                    "criterion": "States that the functional group is shown by a prefix (chloro, bromo) or suffix (ol alcohol, al aldehyde, one ketone, oic acid carboxylic acid), deleting the final e of the chain name before a vowel suffix, as propane giving propanone.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_nm_keep_e"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t5c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "If the carbon chain is unsaturated, the final ane in the name is substituted by ene or yne. A three-carbon chain with a double bond would be called propene.",
+              "assessment": {
+                "requiredEvidence": [
+                  "unsaturated",
+                  "ane",
+                  "ene",
+                  "yne",
+                  "propene"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_nm_unsat",
+                    "criterion": "States that for unsaturated chains the ending ane becomes ene (double bond) or yne (triple bond), as propene for three carbons with a double bond.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 5 and Question 4: ethanoic acid, bromopentane, butanone and hexanal have the structures named by these rules",
+            "Activity 4.2: the alcohols with one to four carbons are methanol, ethanol, propanol and butanol"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_nm_keep_e",
+              "wrong": "The final e of the chain is always kept when adding a suffix.",
+              "fix": "If the suffix begins with a vowel the final e of the carbon chain name is deleted, so propane gives propanone."
+            }
+          ],
+          "verify": [
+            { "page": 67, "quote": "The names of compounds in a homologous series are based on the name of the basic carbon chain modified by a “prefix” “phrase before” or “suffix” “phrase after” indicating the nature of the functional group.", "supports": ["sci10c4_t5c3_kp1"] },
+            { "page": 67, "quote": "Identify the number of carbon atoms in the compound. A compound having three carbon atoms would have the name propane.", "supports": ["sci10c4_t5c3_kp1"] },
+            { "page": 67, "quote": "In case a functional group is present, it is indicated in the name of the compound with either a prefix or a suffix (as given in Table 4.4).", "supports": ["sci10c4_t5c3_kp2"] },
+            { "page": 67, "quote": "then the name of the carbon chain is modified by deleting the final ‘e’ and adding the appropriate suffix.", "supports": ["sci10c4_t5c3_kp2"] },
+            { "page": 67, "quote": "Propane – ‘e’ = propan + ‘one’ = propanone.", "supports": ["sci10c4_t5c3_kp2"] },
+            { "page": 68, "quote": "2. Alcohol Suffix - ol Propanol", "supports": ["sci10c4_t5c3_kp2"] },
+            { "page": 67, "quote": "If the carbon chain is unsaturated, then the final ‘ane’ in the name of the carbon chain is substituted by ‘ene’ or ‘yne’ as given in", "supports": ["sci10c4_t5c3_kp3"] },
+            { "page": 67, "quote": "a three-carbon chain with a double bond would be called propene and if it has a triple bond, it would be", "supports": ["sci10c4_t5c3_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t6",
+      "title": "Combustion and Oxidation",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t6_c1",
+          "label": "Combustion of Carbon and Its Compounds",
+          "headingType": "heading",
+          "sourcePages": [69, 70, 77],
+          "cardText": "Carbon, in all its allotropic forms, burns in oxygen to give carbon dioxide along with the release of heat and light. Most carbon compounds also release a large amount of heat and light on burning; these are oxidation reactions. Saturated hydrocarbons will generally give a clean flame, while unsaturated carbon compounds give a yellow flame with lots of black smoke, leaving a sooty deposit. Limiting the supply of air results in incomplete combustion of even saturated hydrocarbons, giving a sooty flame. Gas and kerosene stoves have air inlets so that a sufficiently oxygen-rich mixture burns with a clean blue flame; if the bottoms of cooking vessels get blackened, the air holes are blocked and fuel is wasted. Fuels such as coal and petroleum contain some nitrogen and sulphur, and their combustion forms oxides of sulphur and nitrogen, which are major pollutants. A flame is only produced when gaseous substances burn.",
+          "hint": "What does carbon give when it burns, and what decides whether the flame is clean or sooty?",
+          "probe": "Explain the combustion of carbon compounds, the difference between clean and sooty flames, and why stoves have air holes.",
+          "causeChain": "Carbon and its compounds burn in oxygen to give carbon dioxide with heat and light -> saturated hydrocarbons give a clean flame, unsaturated compounds a yellow sooty flame, and limited air gives incomplete combustion and soot -> so stoves have air inlets for a clean blue flame, and sulphur and nitrogen in coal and petroleum make polluting oxides",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_flame_air",
+              "linksChecks": [
+                "chk_sci10c4_cm_burn",
+                "chk_sci10c4_cm_flame"
+              ],
+              "criterion": "Connects the supply of air to complete or incomplete combustion and to a clean blue flame or a sooty one.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t6c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon, in all its allotropic forms, burns in oxygen to give carbon dioxide along with the release of heat and light. Most carbon compounds also release a large amount of heat and light on burning. These are oxidation reactions.",
+              "followUp": "What does carbon give when it burns in air, and what else is released?",
+              "assessment": {
+                "requiredEvidence": [
+                  "burns in oxygen",
+                  "carbon dioxide",
+                  "release of heat and light",
+                  "oxidation reactions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cm_burn",
+                    "criterion": "States that carbon and most carbon compounds burn in oxygen giving carbon dioxide with a large release of heat and light, which are oxidation reactions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t6c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Saturated hydrocarbons will generally give a clean flame while unsaturated carbon compounds give a yellow flame with lots of black smoke, leaving a sooty deposit. Limiting the supply of air results in incomplete combustion of even saturated hydrocarbons, giving a sooty flame.",
+              "followUp": "How do flames of saturated and unsaturated compounds differ, and what happens when the air supply is limited?",
+              "assessment": {
+                "requiredEvidence": [
+                  "saturated hydrocarbons",
+                  "clean flame",
+                  "unsaturated carbon compounds",
+                  "yellow flame",
+                  "black smoke",
+                  "limiting the supply of air",
+                  "incomplete combustion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cm_flame",
+                    "criterion": "States that saturated hydrocarbons burn with a clean flame and unsaturated compounds with a yellow, sooty flame, and that limited air gives incomplete combustion and a sooty flame even for saturated ones.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t6c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Gas and kerosene stoves have inlets for air so that a sufficiently oxygen-rich mixture burns with a clean blue flame. If the bottoms of cooking vessels get blackened, the air holes are blocked and fuel is wasted.",
+              "followUp": "If the bottom of a cooking vessel turns black, what does that tell you about the stove?",
+              "assessment": {
+                "requiredEvidence": [
+                  "inlets for air",
+                  "oxygen-rich mixture",
+                  "clean blue flame",
+                  "bottoms of cooking vessels",
+                  "blackened",
+                  "air holes are blocked",
+                  "fuel is getting wasted"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cm_stove",
+                    "criterion": "States that stoves have air inlets so an oxygen-rich mixture burns with a clean blue flame, and blackened vessel bottoms mean the air holes are blocked and fuel is wasted.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_cm_blackened"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t6c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Fuels such as coal and petroleum have some nitrogen and sulphur in them. Their combustion results in oxides of sulphur and nitrogen, which are major pollutants in the environment. Carbon and its compounds are some of our major sources of fuels.",
+              "assessment": {
+                "requiredEvidence": [
+                  "coal and petroleum",
+                  "nitrogen and sulphur",
+                  "oxides of sulphur and nitrogen",
+                  "major pollutants",
+                  "major sources of fuels"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_cm_pollute",
+                    "criterion": "States that coal and petroleum contain some nitrogen and sulphur, so burning them forms oxides of sulphur and nitrogen, major pollutants.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 3: if the bottom of a cooking vessel gets blackened on the outside, the fuel is not burning completely",
+            "Exercise 8: carbon and its compounds are used as fuels because they burn in oxygen and release a large amount of heat and light",
+            "Question 2: a mixture of oxygen and ethyne is burnt for welding because ethyne with air would burn incompletely and give a sooty flame"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_cm_blackened",
+              "wrong": "Blackened vessels mean the food is not cooked completely.",
+              "fix": "Blackened bottoms of cooking vessels mean the air holes are blocked and the fuel is not burning completely and is being wasted."
+            }
+          ],
+          "verify": [
+            { "page": 69, "quote": "Carbon, in all its allotropic forms, burns in oxygen to give carbon dioxide along with the release of heat and light.", "supports": ["sci10c4_t6c1_kp1"] },
+            { "page": 69, "quote": "Most carbon compounds also release a large amount of heat and light on burning.", "supports": ["sci10c4_t6c1_kp1"] },
+            { "page": 69, "quote": "Saturated hydrocarbons will generally give a clean flame while unsaturated carbon compounds will give a yellow flame with lots of black smoke.", "supports": ["sci10c4_t6c1_kp2"] },
+            { "page": 69, "quote": "However, limiting the supply of air results in incomplete combustion of even saturated hydrocarbons giving a sooty flame.", "supports": ["sci10c4_t6c1_kp2"] },
+            { "page": 70, "quote": "mixture is burnt to give a clean blue flame.", "supports": ["sci10c4_t6c1_kp3"] },
+            { "page": 70, "quote": "it means that the air holes are blocked and fuel is getting wasted.", "supports": ["sci10c4_t6c1_kp3"] },
+            { "page": 70, "quote": "Fuels such as coal and petroleum have some amount of nitrogen and sulphur in them.", "supports": ["sci10c4_t6c1_kp4"] },
+            { "page": 70, "quote": "Their combustion results in the formation of oxides of sulphur and nitrogen which are major pollutants in the environment.", "supports": ["sci10c4_t6c1_kp4"] },
+            { "page": 77, "quote": "Carbon and its compounds are some of our major sources of fuels.", "supports": ["sci10c4_t6c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t6_c2",
+          "label": "Oxidation of Alcohols and Oxidising Agents",
+          "headingType": "heading",
+          "sourcePages": [70, 71],
+          "cardText": "Carbon compounds can be easily oxidised on combustion. In addition to this complete oxidation, there are reactions in which alcohols are converted to carboxylic acids, such as ethanol being oxidised to ethanoic acid. In the activity, alkaline potassium permanganate is added drop by drop to warm ethanol and its colour does not persist at first because it is used up in the reaction. Some substances are capable of adding oxygen to others, and these substances are known as oxidising agents. Alkaline potassium permanganate and acidified potassium dichromate oxidise alcohols to acids, that is, they add oxygen to the starting material, so they are known as oxidising agents.",
+          "hint": "What turns an alcohol into an acid, and what are such substances called?",
+          "probe": "Explain how alcohols are oxidised to carboxylic acids and what an oxidising agent is.",
+          "causeChain": "Besides burning, carbon compounds can be oxidised so that alcohols become carboxylic acids -> substances that add oxygen to others are oxidising agents -> alkaline potassium permanganate or acidified potassium dichromate add oxygen to alcohols and turn them into acids",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_oxidise_alcohol",
+              "linksChecks": [
+                "chk_sci10c4_ox_alcohol",
+                "chk_sci10c4_ox_agent"
+              ],
+              "criterion": "Connects adding oxygen to an alcohol to the oxidising agents that convert it into a carboxylic acid.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t6c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Carbon compounds can be easily oxidised on combustion. In addition to this complete oxidation, we have reactions in which alcohols are converted to carboxylic acids.",
+              "followUp": "Besides burning, what other change can turn an alcohol into something acidic?",
+              "assessment": {
+                "requiredEvidence": [
+                  "easily oxidised on combustion",
+                  "alcohols are converted to carboxylic acids"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ox_alcohol",
+                    "criterion": "States that besides complete oxidation on combustion, alcohols can be oxidised to carboxylic acids.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_ox_reduction"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t6c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Some substances are capable of adding oxygen to others. These substances are known as oxidising agents. Alkaline potassium permanganate or acidified potassium dichromate oxidise alcohols to acids, adding oxygen to the starting material.",
+              "followUp": "What do you call a substance that adds oxygen, and name two used to turn alcohols into acids.",
+              "assessment": {
+                "requiredEvidence": [
+                  "adding oxygen to others",
+                  "oxidising agents",
+                  "alkaline potassium permanganate",
+                  "acidified potassium dichromate",
+                  "alcohols to acids"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ox_agent",
+                    "criterion": "Defines oxidising agents as substances that add oxygen to others, such as alkaline potassium permanganate or acidified potassium dichromate that oxidise alcohols to acids.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: the conversion of ethanol to ethanoic acid is an oxidation reaction because oxygen is added",
+            "Question 2: oxidising agents are substances that add oxygen to other substances"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_ox_reduction",
+              "wrong": "Converting ethanol to ethanoic acid is a reduction because it forms an acid.",
+              "fix": "Converting ethanol to ethanoic acid is an oxidation, because oxygen is added to the starting material."
+            }
+          ],
+          "verify": [
+            { "page": 70, "quote": "Carbon compounds can be easily oxidised on combustion. In addition to this complete oxidation, we have reactions in which alcohols are converted to carboxylic acids", "supports": ["sci10c4_t6c2_kp1"] },
+            { "page": 71, "quote": "We see that some substances are capable of adding oxygen to others.", "supports": ["sci10c4_t6c2_kp2"] },
+            { "page": 71, "quote": "These substances are known as oxidising agents.", "supports": ["sci10c4_t6c2_kp2"] },
+            { "page": 71, "quote": "Alkaline potassium permanganate or acidified potassium dichromate", "supports": ["sci10c4_t6c2_kp2"] },
+            { "page": 71, "quote": "are oxidising alcohols to acids, that is, adding oxygen to the starting material.", "supports": ["sci10c4_t6c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t7",
+      "title": "Addition and Substitution Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t7_c1",
+          "label": "Addition Reaction and Hydrogenation",
+          "headingType": "heading",
+          "sourcePages": [71],
+          "cardText": "Unsaturated hydrocarbons add hydrogen in the presence of catalysts such as palladium or nickel to give saturated hydrocarbons. Catalysts are substances that cause a reaction to occur or proceed at a different rate without the reaction itself being affected. This reaction is commonly used in the hydrogenation of vegetable oils using a nickel catalyst. Vegetable oils generally have long unsaturated carbon chains while animal fats have saturated carbon chains. Animal fats generally contain saturated fatty acids which are said to be harmful for health, and oils containing unsaturated fatty acids should be chosen for cooking.",
+          "hint": "What does an unsaturated hydrocarbon add, with what catalyst, and what is it used for?",
+          "probe": "Explain the addition reaction, hydrogenation of vegetable oils and the role of a catalyst.",
+          "causeChain": "Unsaturated hydrocarbons add hydrogen in the presence of a palladium or nickel catalyst to become saturated -> the catalyst changes the rate without being affected itself -> this hydrogenation of vegetable oils with nickel turns long unsaturated chains into saturated ones",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_hydrogenate",
+              "linksChecks": [
+                "chk_sci10c4_ad_react",
+                "chk_sci10c4_ad_oil"
+              ],
+              "criterion": "Connects adding hydrogen over a nickel catalyst to turning unsaturated vegetable oils into saturated fats.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t7c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Unsaturated hydrocarbons add hydrogen in the presence of catalysts such as palladium or nickel to give saturated hydrocarbons. Catalysts are substances that cause a reaction to occur or proceed at a different rate without the reaction itself being affected.",
+              "followUp": "What does an unsaturated compound take up with a nickel or palladium helper, and what helps the helper stay unchanged?",
+              "assessment": {
+                "requiredEvidence": [
+                  "unsaturated hydrocarbons add hydrogen",
+                  "palladium or nickel",
+                  "saturated hydrocarbons",
+                  "catalysts",
+                  "different rate",
+                  "without the reaction itself being affected"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ad_react",
+                    "criterion": "States that unsaturated hydrocarbons add hydrogen in the presence of a catalyst such as nickel or palladium to give saturated hydrocarbons, and that a catalyst changes the rate without being affected itself.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_ad_catalyst_used"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t7c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This reaction is commonly used in the hydrogenation of vegetable oils using a nickel catalyst. Vegetable oils generally have long unsaturated carbon chains while animal fats have saturated carbon chains.",
+              "followUp": "How is a liquid vegetable oil turned into a solid fat, and how do the carbon chains of oils compare with those of fats from animals?",
+              "assessment": {
+                "requiredEvidence": [
+                  "hydrogenation of vegetable oils",
+                  "nickel catalyst",
+                  "long unsaturated carbon chains",
+                  "animal fats",
+                  "saturated carbon chains"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ad_oil",
+                    "criterion": "States that hydrogenation of vegetable oils uses a nickel catalyst, since vegetable oils have long unsaturated chains while animal fats have saturated chains.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t7c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Animal fats generally contain saturated fatty acids which are said to be harmful for health. Oils containing unsaturated fatty acids should be chosen for cooking.",
+              "assessment": {
+                "requiredEvidence": [
+                  "animal fats",
+                  "saturated fatty acids",
+                  "harmful for health",
+                  "unsaturated fatty acids",
+                  "cooking"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ad_health",
+                    "criterion": "States that animal fats contain saturated fatty acids said to be harmful, and oils with unsaturated fatty acids should be chosen for cooking.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 12: hydrogenation is the addition of hydrogen to unsaturated oils using nickel, used to make vegetable ghee",
+            "Exercise 13: C3H6 and C2H2 undergo addition reactions as they are unsaturated"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_ad_catalyst_used",
+              "wrong": "A catalyst is used up and changed during the reaction.",
+              "fix": "Catalysts cause a reaction to occur or proceed at a different rate without the reaction itself being affected."
+            }
+          ],
+          "verify": [
+            { "page": 71, "quote": "Unsaturated hydrocarbons add hydrogen in the presence of catalysts such as palladium or nickel to give saturated hydrocarbons.", "supports": ["sci10c4_t7c1_kp1"] },
+            { "page": 71, "quote": "Catalysts are substances that cause a reaction to occur or proceed at a different rate without the reaction itself being affected.", "supports": ["sci10c4_t7c1_kp1"] },
+            { "page": 71, "quote": "This reaction is commonly used in the hydrogenation of vegetable oils using a nickel catalyst.", "supports": ["sci10c4_t7c1_kp2"] },
+            { "page": 71, "quote": "Vegetable oils generally have long unsaturated carbon chains while animal fats have saturated carbon chains.", "supports": ["sci10c4_t7c1_kp2"] },
+            { "page": 71, "quote": "Animal fats generally contain saturated fatty acids which are said to be harmful for health.", "supports": ["sci10c4_t7c1_kp3"] },
+            { "page": 71, "quote": "Oils containing unsaturated fatty acids should be chosen for cooking.", "supports": ["sci10c4_t7c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t7_c2",
+          "label": "Substitution Reaction",
+          "headingType": "heading",
+          "sourcePages": [71],
+          "cardText": "Saturated hydrocarbons are fairly unreactive and are inert in the presence of most reagents. However, in the presence of sunlight, chlorine is added to hydrocarbons in a very fast reaction. Chlorine can replace the hydrogen atoms one by one. It is called a substitution reaction because one type of atom or a group of atoms takes the place of another. For example, methane with chlorine in sunlight gives CH3Cl and HCl. A number of products are usually formed with the higher homologues of alkanes.",
+          "hint": "Why is it called a substitution reaction, and what is needed for chlorine to react with alkanes?",
+          "probe": "Explain the substitution reaction of saturated hydrocarbons with chlorine.",
+          "causeChain": "Saturated hydrocarbons are fairly unreactive and inert to most reagents -> in sunlight chlorine reacts very fast and replaces the hydrogen atoms one by one -> one type of atom takes the place of another, so it is a substitution reaction, giving CH3Cl and HCl from methane",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_substitution_sun",
+              "linksChecks": [
+                "chk_sci10c4_sb_inert",
+                "chk_sci10c4_sb_def"
+              ],
+              "criterion": "Connects sunlight making chlorine react with an otherwise inert hydrocarbon to chlorine replacing hydrogen one by one.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t7c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Saturated hydrocarbons are fairly unreactive and are inert in the presence of most reagents. However, in the presence of sunlight, chlorine is added to hydrocarbons in a very fast reaction.",
+              "followUp": "Why does a saturated hydrocarbon normally not react with common chemicals, and what is needed for chlorine to react with it quickly?",
+              "assessment": {
+                "requiredEvidence": [
+                  "fairly unreactive",
+                  "inert",
+                  "most reagents",
+                  "presence of sunlight",
+                  "chlorine",
+                  "very fast reaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_sb_inert",
+                    "criterion": "States that saturated hydrocarbons are fairly unreactive, but in the presence of sunlight chlorine reacts with them in a very fast reaction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_sb_dark"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t7c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Chlorine can replace the hydrogen atoms one by one. It is called a substitution reaction because one type of atom or a group of atoms takes the place of another, as in CH4 + Cl2 giving CH3Cl + HCl in sunlight.",
+              "followUp": "Why is the reaction of methane with chlorine in sunlight called a swapping reaction?",
+              "assessment": {
+                "requiredEvidence": [
+                  "replace the hydrogen atoms one by one",
+                  "substitution reaction",
+                  "one type of atom or a group of atoms takes the place of another",
+                  "CH3Cl"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_sb_def",
+                    "criterion": "Defines a substitution reaction as one in which one type of atom or group of atoms takes the place of another, as chlorine replaces hydrogen atoms one by one in methane.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: substitution reaction of methane with chlorine in sunlight gives chloromethane and hydrogen chloride"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_sb_dark",
+              "wrong": "Alkanes react with chlorine in the dark just as readily.",
+              "fix": "Saturated hydrocarbons are inert to most reagents; chlorine reacts in a very fast reaction only in the presence of sunlight."
+            }
+          ],
+          "verify": [
+            { "page": 71, "quote": "Saturated hydrocarbons are fairly unreactive and are inert in the presence of most reagents.", "supports": ["sci10c4_t7c2_kp1"] },
+            { "page": 71, "quote": "However, in the presence of sunlight, chlorine is added to hydrocarbons in a very fast reaction.", "supports": ["sci10c4_t7c2_kp1"] },
+            { "page": 71, "quote": "Chlorine can replace the hydrogen atoms one by one.", "supports": ["sci10c4_t7c2_kp2"] },
+            { "page": 71, "quote": "It is called a substitution reaction because one type of atom or a group of atoms takes the place of another.", "supports": ["sci10c4_t7c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t8",
+      "title": "Properties and Reactions of Ethanol",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t8_c1",
+          "label": "Properties of Ethanol",
+          "headingType": "heading",
+          "sourcePages": [72, 73],
+          "cardText": "Ethanol is a liquid at room temperature. It is commonly called alcohol and is the active ingredient of all alcoholic drinks. Because it is a good solvent, it is also used in medicines such as tincture iodine, cough syrups and many tonics, and it is soluble in water in all proportions. Consumption of small quantities of dilute ethanol causes drunkenness, and intake of even a small quantity of pure ethanol, called absolute alcohol, can be lethal; long-term consumption of alcohol leads to many health problems. To prevent misuse of ethanol produced for industrial use, it is made unfit for drinking by adding poisonous substances like methanol and a blue dye; this is called denatured alcohol. Alcohol is also used as an additive in petrol since it is a cleaner fuel which gives only carbon dioxide and water on burning in sufficient air.",
+          "hint": "What is ethanol like and what is it used for, and why is industrial alcohol denatured?",
+          "probe": "Explain the properties and uses of ethanol, the dangers of alcohol, and what denatured alcohol is.",
+          "causeChain": "Ethanol is a liquid that is soluble in water in all proportions and a good solvent, so it is used in medicines -> pure ethanol can be lethal and long-term consumption causes health problems -> so industrial ethanol is denatured with poisonous methanol and a blue dye, and ethanol is also a cleaner fuel additive for petrol",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_ethanol_uses",
+              "linksChecks": [
+                "chk_sci10c4_et_props",
+                "chk_sci10c4_et_denature"
+              ],
+              "criterion": "Connects ethanol being a good solvent to its use in medicines, and the danger of drinking it to industrial alcohol being denatured.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t8c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Ethanol is a liquid at room temperature, commonly called alcohol. Because it is a good solvent, it is used in medicines such as tincture iodine, cough syrups and many tonics. Ethanol is also soluble in water in all proportions.",
+              "followUp": "Is ethanol a solid, liquid or gas at room temperature, and what is it used for in medicine?",
+              "assessment": {
+                "requiredEvidence": [
+                  "liquid at room temperature",
+                  "good solvent",
+                  "tincture iodine",
+                  "cough syrups",
+                  "soluble in water in all proportions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_et_props",
+                    "criterion": "States that ethanol is a liquid at room temperature, soluble in water in all proportions and a good solvent used in medicines such as tincture iodine and cough syrups.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t8c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Intake of even a small quantity of pure ethanol (called absolute alcohol) can be lethal. Also, long-term consumption of alcohol leads to many health problems.",
+              "followUp": "What can even a small amount of the pure form do to a person, and why is that dangerous for health?",
+              "assessment": {
+                "requiredEvidence": [
+                  "small quantity of pure ethanol",
+                  "absolute alcohol",
+                  "lethal",
+                  "long-term consumption",
+                  "health problems"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_et_harm",
+                    "criterion": "States that even a small quantity of pure ethanol (absolute alcohol) can be lethal and long-term consumption of alcohol leads to many health problems.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_et_safe"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t8c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "To prevent misuse of ethanol produced for industrial use, it is made unfit for drinking by adding poisonous substances like methanol, and dyes colour it blue. This is called denatured alcohol.",
+              "followUp": "Why is alcohol meant for industry made undrinkable and coloured?",
+              "assessment": {
+                "requiredEvidence": [
+                  "industrial use",
+                  "unfit for drinking",
+                  "poisonous substances like methanol",
+                  "colour the alcohol blue",
+                  "denatured alcohol"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_et_denature",
+                    "criterion": "States that industrial ethanol is made unfit for drinking by adding poisonous substances like methanol and a blue dye, called denatured alcohol.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t8c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Some countries now use alcohol as an additive in petrol since it is a cleaner fuel which gives rise to only carbon dioxide and water on burning in sufficient air (oxygen).",
+              "assessment": {
+                "requiredEvidence": [
+                  "additive in petrol",
+                  "cleaner fuel",
+                  "carbon dioxide and water",
+                  "sufficient air"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_et_fuel",
+                    "criterion": "States that alcohol is used as an additive in petrol because it is a cleaner fuel giving only carbon dioxide and water on burning in sufficient air.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Do You Know: methanol in very small quantities can cause death and affects the optic nerve, causing blindness",
+            "Sugarcane juice is used to prepare molasses, which is fermented to give ethanol"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_et_safe",
+              "wrong": "Pure ethanol is safe to drink in small amounts.",
+              "fix": "Intake of even a small quantity of pure ethanol (absolute alcohol) can be lethal, and long-term consumption of alcohol leads to many health problems."
+            }
+          ],
+          "verify": [
+            { "page": 72, "quote": "Ethanol is a liquid at room temperature", "supports": ["sci10c4_t8c1_kp1"] },
+            { "page": 72, "quote": "In addition, because it is a good solvent, it is also used in medicines such as tincture iodine, cough syrups, and many tonics.", "supports": ["sci10c4_t8c1_kp1"] },
+            { "page": 72, "quote": "Ethanol is also soluble in water in all proportions.", "supports": ["sci10c4_t8c1_kp1"] },
+            { "page": 72, "quote": "However, intake of even a small quantity of pure ethanol (called absolute alcohol) can be lethal.", "supports": ["sci10c4_t8c1_kp2"] },
+            { "page": 72, "quote": "Also, long-term consumption of alcohol leads to many health problems.", "supports": ["sci10c4_t8c1_kp2"] },
+            { "page": 72, "quote": "it is made unfit for drinking by adding poisonous substances like methanol to it.", "supports": ["sci10c4_t8c1_kp3"] },
+            { "page": 72, "quote": "Dyes are also added to colour the alcohol blue so that it can be identified easily. This is called denatured alcohol.", "supports": ["sci10c4_t8c1_kp3"] },
+            { "page": 73, "quote": "Some countries now use alcohol as an additive in petrol since it is a cleaner fuel", "supports": ["sci10c4_t8c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t8_c2",
+          "label": "Reactions of Ethanol with Sodium and Concentrated Sulphuric Acid",
+          "headingType": "heading",
+          "sourcePages": [72],
+          "cardText": "Alcohols react with sodium leading to the evolution of hydrogen; with ethanol the other product is sodium ethoxide. This is similar to other substances that produce hydrogen on reacting with metals. Heating ethanol at 443 K with excess concentrated sulphuric acid results in the dehydration of ethanol to give ethene. The concentrated sulphuric acid can be regarded as a dehydrating agent which removes water from ethanol.",
+          "hint": "What gas does sodium release from ethanol, and what does hot concentrated sulphuric acid do to ethanol?",
+          "probe": "Explain the reaction of ethanol with sodium and with excess hot concentrated sulphuric acid.",
+          "causeChain": "Sodium reacts with ethanol, giving sodium ethoxide and releasing hydrogen gas -> heating ethanol at 443 K with excess concentrated sulphuric acid removes water from it -> so the acid acts as a dehydrating agent and ethene is formed",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_ethanol_react",
+              "linksChecks": [
+                "chk_sci10c4_er_sodium",
+                "chk_sci10c4_er_dehydrate"
+              ],
+              "criterion": "Connects the dehydrating action of concentrated sulphuric acid to ethanol losing water to give ethene.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t8c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Alcohols react with sodium leading to the evolution of hydrogen. With ethanol, the other product is sodium ethoxide.",
+              "followUp": "What gas is given off when sodium is added to ethanol, and what other product forms?",
+              "assessment": {
+                "requiredEvidence": [
+                  "react with sodium",
+                  "evolution of hydrogen",
+                  "sodium ethoxide"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_er_sodium",
+                    "criterion": "States that ethanol reacts with sodium to evolve hydrogen gas and form sodium ethoxide.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t8c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Heating ethanol at 443 K with excess concentrated sulphuric acid results in the dehydration of ethanol to give ethene. The concentrated sulphuric acid can be regarded as a dehydrating agent which removes water from ethanol.",
+              "followUp": "What does strong heating of ethanol with the very concentrated acid used in labs produce, and what role does the acid play?",
+              "assessment": {
+                "requiredEvidence": [
+                  "443 K",
+                  "excess concentrated sulphuric acid",
+                  "dehydration",
+                  "ethene",
+                  "dehydrating agent",
+                  "removes water from ethanol"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_er_dehydrate",
+                    "criterion": "States that heating ethanol at 443 K with excess concentrated sulphuric acid dehydrates it to ethene, the acid acting as a dehydrating agent that removes water.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_er_oxidise"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 4.6: a small piece of sodium dropped into ethanol gives bubbles of hydrogen, which burns with a pop sound",
+            "Exercise 7: alcohols react with sodium to evolve hydrogen, whereas ethanoic acid also gives carbon dioxide with carbonates"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_er_oxidise",
+              "wrong": "Hot concentrated sulphuric acid oxidises ethanol to ethanoic acid.",
+              "fix": "Hot concentrated sulphuric acid removes water from ethanol, dehydrating it to give ethene."
+            }
+          ],
+          "verify": [
+            { "page": 72, "quote": "Alcohols react with sodium leading to the evolution of hydrogen.", "supports": ["sci10c4_t8c2_kp1"] },
+            { "page": 72, "quote": "With ethanol, the other product is sodium ethoxide.", "supports": ["sci10c4_t8c2_kp1"] },
+            { "page": 72, "quote": "Heating ethanol at 443 K with excess concentrated sulphuric acid results in the dehydration of ethanol to give ethene", "supports": ["sci10c4_t8c2_kp2"] },
+            { "page": 72, "quote": "The concentrated sulphuric acid can be regarded as a dehydrating agent which removes water from ethanol.", "supports": ["sci10c4_t8c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t9",
+      "title": "Ethanoic Acid and Esterification",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t9_c1",
+          "label": "Properties of Ethanoic Acid",
+          "headingType": "heading",
+          "sourcePages": [73, 74],
+          "cardText": "Ethanoic acid is commonly called acetic acid and belongs to a group of acids called carboxylic acids. A 5-8% solution of acetic acid in water is called vinegar and is used widely as a preservative in pickles. The melting point of pure ethanoic acid is 290 K, so it often freezes during winter in cold climates, which gave rise to its name glacial acetic acid. Carboxylic acids are characterised by their acidic nature, but unlike mineral acids like HCl, which are completely ionised, carboxylic acids are weak acids. Like mineral acids, ethanoic acid reacts with a base such as sodium hydroxide to give a salt, sodium ethanoate or sodium acetate, and water.",
+          "hint": "What is vinegar, why is pure ethanoic acid called glacial, and is it a strong acid?",
+          "probe": "Explain the properties of ethanoic acid, including vinegar, glacial acetic acid and its strength.",
+          "causeChain": "Ethanoic (acetic) acid is a carboxylic acid, and a 5-8% solution in water is vinegar used as a pickle preservative -> pure acid has a melting point of 290 K so it freezes in winter, giving the name glacial acetic acid -> unlike completely ionised mineral acids like HCl it is a weak acid, yet reacts with a base such as sodium hydroxide to give sodium acetate and water",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_acetic_weak",
+              "linksChecks": [
+                "chk_sci10c4_ea_vinegar",
+                "chk_sci10c4_ea_weak"
+              ],
+              "criterion": "Connects carboxylic acids being only partly ionised to their being weak acids, and their reaction with bases like mineral acids.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t9c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Ethanoic acid is commonly called acetic acid and belongs to a group of acids called carboxylic acids. A 5-8% solution of acetic acid in water is called vinegar and is used widely as a preservative in pickles.",
+              "followUp": "What is the other name of ethanoic acid, and what is a dilute water solution of it used for?",
+              "assessment": {
+                "requiredEvidence": [
+                  "acetic acid",
+                  "carboxylic acids",
+                  "5-8% solution",
+                  "vinegar",
+                  "preservative in pickles"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ea_vinegar",
+                    "criterion": "States that ethanoic acid is acetic acid, a carboxylic acid, and a 5-8% solution of it in water is vinegar used as a preservative in pickles.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t9c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The melting point of pure ethanoic acid is 290 K and hence it often freezes during winter in cold climates. This gave rise to its name glacial acetic acid.",
+              "followUp": "Why does pure ethanoic acid sometimes turn into ice in winter, and what name did that give it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "290 K",
+                  "freezes during winter",
+                  "glacial acetic acid"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ea_glacial",
+                    "criterion": "States that pure ethanoic acid has a melting point of 290 K so it often freezes in winter, giving it the name glacial acetic acid.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t9c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Carboxylic acids are characterised by their acidic nature, but unlike mineral acids like HCl, which are completely ionised, carboxylic acids are weak acids.",
+              "followUp": "How does ethanoic acid compare with hydrochloric acid in how fully it breaks into ions?",
+              "assessment": {
+                "requiredEvidence": [
+                  "acidic nature",
+                  "mineral acids like HCl",
+                  "completely ionised",
+                  "weak acids"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ea_weak",
+                    "criterion": "States that carboxylic acids are weak acids, unlike mineral acids like HCl, which are completely ionised.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_ea_strong"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t9c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Like mineral acids, ethanoic acid reacts with a base such as sodium hydroxide to give a salt (sodium ethanoate, commonly called sodium acetate) and water.",
+              "assessment": {
+                "requiredEvidence": [
+                  "base such as sodium hydroxide",
+                  "sodium ethanoate",
+                  "sodium acetate",
+                  "water"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ea_base",
+                    "criterion": "States that ethanoic acid reacts with a base such as sodium hydroxide to give sodium ethanoate (sodium acetate) and water.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 4.7: dilute acetic acid and dilute hydrochloric acid both turn blue litmus red, but universal indicator shows acetic acid as a weaker acid",
+            "Exercise 7: ethanol and ethanoic acid can be differentiated by their physical state, smell, litmus test and reaction with sodium hydrogencarbonate"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_ea_strong",
+              "wrong": "Ethanoic acid is a strong acid like HCl.",
+              "fix": "Unlike mineral acids like HCl, which are completely ionised, carboxylic acids are weak acids."
+            }
+          ],
+          "verify": [
+            { "page": 73, "quote": "Ethanoic acid is commonly called acetic acid and belongs to a group of acids called carboxylic acids.", "supports": ["sci10c4_t9c1_kp1"] },
+            { "page": 73, "quote": "5-8% solution of acetic acid in water is called vinegar and is used widely as a preservative in pickles.", "supports": ["sci10c4_t9c1_kp1"] },
+            { "page": 73, "quote": "The melting point of pure ethanoic acid is 290 K and hence it often freezes during winter in cold climates.", "supports": ["sci10c4_t9c1_kp2"] },
+            { "page": 73, "quote": "This gave rise to its name glacial acetic acid.", "supports": ["sci10c4_t9c1_kp2"] },
+            { "page": 73, "quote": "However, unlike mineral acids like HCl, which are completely ionised, carboxylic acids are weak acids.", "supports": ["sci10c4_t9c1_kp3"] },
+            { "page": 74, "quote": "Like mineral acids, ethanoic acid reacts with a base such as sodium hydroxide to give a salt (sodium ethanoate", "supports": ["sci10c4_t9c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t9_c2",
+          "label": "Esterification and Saponification",
+          "headingType": "heading",
+          "sourcePages": [73, 74],
+          "cardText": "Esters are most commonly formed by the reaction of an acid and an alcohol. Ethanoic acid reacts with absolute ethanol in the presence of an acid catalyst to give an ester, in the esterification reaction. Generally, esters are sweet-smelling substances, used in making perfumes and as flavouring agents. On treating with sodium hydroxide, an alkali, the ester is converted back to alcohol and the sodium salt of the carboxylic acid. This reaction is known as saponification because it is used in the preparation of soap. Soaps are sodium or potassium salts of long chain carboxylic acids.",
+          "hint": "What do an acid and an alcohol form, and what happens when that is treated with an alkali?",
+          "probe": "Explain esterification and saponification and what esters and soaps are.",
+          "causeChain": "Ethanoic acid reacts with absolute ethanol in the presence of an acid catalyst to give a sweet-smelling ester -> esters are used in perfumes and as flavouring agents -> treating the ester with sodium hydroxide gives back the alcohol and the sodium salt of the acid, saponification, which is how soap is prepared",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_ester_soap",
+              "linksChecks": [
+                "chk_sci10c4_es_ester",
+                "chk_sci10c4_es_saponify"
+              ],
+              "criterion": "Connects the ester reverting with sodium hydroxide to alcohol and a sodium salt of a carboxylic acid, the basis of making soap.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t9c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Esters are most commonly formed by reaction of an acid and an alcohol. Ethanoic acid reacts with absolute ethanol in the presence of an acid catalyst to give an ester.",
+              "followUp": "What forms when an acid and an alcohol are warmed together with a few drops of a strong acid?",
+              "assessment": {
+                "requiredEvidence": [
+                  "esters",
+                  "reaction of an acid and an alcohol",
+                  "ethanoic acid",
+                  "absolute ethanol",
+                  "acid catalyst"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_es_ester",
+                    "criterion": "States that esters are formed by the reaction of an acid and an alcohol, as ethanoic acid reacts with absolute ethanol in the presence of an acid catalyst.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t9c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Generally, esters are sweet-smelling substances. These are used in making perfumes and as flavouring agents.",
+              "assessment": {
+                "requiredEvidence": [
+                  "sweet-smelling",
+                  "perfumes",
+                  "flavouring agents"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_es_smell",
+                    "criterion": "States that esters are generally sweet-smelling and are used in perfumes and as flavouring agents.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_es_sour"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t9c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "On treating with sodium hydroxide, which is an alkali, the ester is converted back to alcohol and sodium salt of carboxylic acid. This reaction is known as saponification because it is used in the preparation of soap. Soaps are sodium or potassium salts of long chain carboxylic acid.",
+              "followUp": "What happens when this product is treated with an alkali, and why is the reaction named after soap?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sodium hydroxide",
+                  "converted back to alcohol",
+                  "sodium salt of carboxylic acid",
+                  "saponification",
+                  "preparation of soap"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_es_saponify",
+                    "criterion": "States that treating an ester with sodium hydroxide gives back the alcohol and the sodium salt of the carboxylic acid, called saponification, used to prepare soap.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 4.8: warming ethanol with glacial acetic acid and concentrated sulphuric acid gives a sweet-smelling ester",
+            "Group Activity II: heating oil with sodium hydroxide and adding common salt makes soap"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_es_sour",
+              "wrong": "Esters are sour-smelling like acids.",
+              "fix": "Generally, esters are sweet-smelling substances used in perfumes and as flavouring agents."
+            }
+          ],
+          "verify": [
+            { "page": 73, "quote": "Esters are most commonly formed by reaction of an acid and an alcohol.", "supports": ["sci10c4_t9c2_kp1"] },
+            { "page": 73, "quote": "Ethanoic acid reacts with absolute ethanol in the presence of an acid catalyst to give an ester", "supports": ["sci10c4_t9c2_kp1"] },
+            { "page": 73, "quote": "Generally, esters are sweet-smelling substances. These are used in making perfumes and as flavouring agents.", "supports": ["sci10c4_t9c2_kp2"] },
+            { "page": 73, "quote": "On treating with sodium hydroxide, which is an alkali, the ester is converted back to alcohol", "supports": ["sci10c4_t9c2_kp3"] },
+            { "page": 73, "quote": "This reaction is known as saponification because it is used in the preparation of soap.", "supports": ["sci10c4_t9c2_kp3"] },
+            { "page": 73, "quote": "Soaps are sodium or potassium salts of long chain carboxylic acid.", "supports": ["sci10c4_t9c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t10",
+      "title": "Ethanoic Acid with Carbonates",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t10_c1",
+          "label": "Reaction of Ethanoic Acid with Carbonates and Hydrogencarbonates",
+          "headingType": "heading",
+          "sourcePages": [74],
+          "cardText": "Ethanoic acid reacts with carbonates and hydrogencarbonates to give rise to a salt, carbon dioxide and water. The salt produced is commonly called sodium acetate. In the activity, a spatula full of sodium carbonate is treated with dilute ethanoic acid and the gas produced is passed through freshly prepared lime-water, which identifies it as carbon dioxide. The activity is repeated with sodium hydrogencarbonate. The reaction with sodium hydrogencarbonate can be used to tell a carboxylic acid from an alcohol.",
+          "hint": "What gas fizzes out when ethanoic acid meets a carbonate, and how is it identified?",
+          "probe": "Explain what happens when ethanoic acid reacts with sodium carbonate or sodium hydrogencarbonate and how to identify the gas.",
+          "causeChain": "Ethanoic acid reacts with carbonates and hydrogencarbonates to give a salt, carbon dioxide and water -> the salt is sodium acetate and the gas escapes with fizzing -> passing the gas through freshly prepared lime-water identifies it as carbon dioxide, so the test also separates a carboxylic acid from an alcohol",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_acetic_carbonate",
+              "linksChecks": [
+                "chk_sci10c4_ec_products",
+                "chk_sci10c4_ec_test"
+              ],
+              "criterion": "Connects the fizzing with carbonates and the lime-water test to the products salt, carbon dioxide and water.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t10c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Ethanoic acid reacts with carbonates and hydrogencarbonates to give rise to a salt, carbon dioxide and water. The salt produced is commonly called sodium acetate.",
+              "followUp": "What gas is formed when the weak organic acid meets baking soda, and how can you show it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "carbonates and hydrogencarbonates",
+                  "a salt, carbon dioxide and water",
+                  "sodium acetate"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ec_products",
+                    "criterion": "States that ethanoic acid reacts with carbonates and hydrogencarbonates to give a salt (commonly sodium acetate), carbon dioxide and water.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_ec_h2"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t10c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In the activity, the gas produced by the reaction of dilute ethanoic acid with sodium carbonate or sodium hydrogencarbonate is passed through freshly prepared lime-water to identify it.",
+              "assessment": {
+                "requiredEvidence": [
+                  "dilute ethanoic acid",
+                  "sodium carbonate",
+                  "freshly prepared lime-water",
+                  "gas produced"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_ec_test",
+                    "criterion": "States that the gas produced from ethanoic acid with sodium carbonate or hydrogencarbonate is passed through freshly prepared lime-water to identify it as carbon dioxide.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: an alcohol and a carboxylic acid can be distinguished by adding sodium hydrogencarbonate; only the acid fizzes",
+            "Exercise: baking soda reacts with ethanoic acid to produce carbon dioxide gas"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_ec_h2",
+              "wrong": "Ethanoic acid with sodium carbonate gives hydrogen gas.",
+              "fix": "Ethanoic acid reacts with carbonates and hydrogencarbonates to give a salt, carbon dioxide and water."
+            }
+          ],
+          "verify": [
+            { "page": 74, "quote": "Ethanoic acid reacts with carbonates and hydrogencarbonates to give rise to a salt, carbon dioxide and water.", "supports": ["sci10c4_t10c1_kp1"] },
+            { "page": 74, "quote": "The salt produced is commonly called sodium acetate.", "supports": ["sci10c4_t10c1_kp1"] },
+            { "page": 74, "quote": "Pass the gas produced through freshly prepared lime-water.", "supports": ["sci10c4_t10c1_kp2"] },
+            { "page": 74, "quote": "Repeat this Activity with sodium hydrogencarbonate instead of sodium carbonate.", "supports": ["sci10c4_t10c1_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_10_ch4_t11",
+      "title": "Soaps, Micelles and Detergents",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch4_t11_c1",
+          "label": "How Soap Cleans: Micelles",
+          "headingType": "heading",
+          "sourcePages": [75, 77],
+          "cardText": "Most dirt is oily in nature and oil does not dissolve in water. The molecules of soap are sodium or potassium salts of long-chain carboxylic acids. The ionic end of soap interacts with water while the carbon chain interacts with oil. Soap molecules thus form structures called micelles, where one end of the molecules is towards the oil droplet while the ionic end faces outside. This forms an emulsion in water, and the soap micelle helps in pulling out the dirt in water so that clothes can be washed clean. Soaps have two ends with differing properties: one is hydrophilic, interacting with water, and the other hydrophobic, interacting with hydrocarbons. In a micelle the hydrophobic tails are in the interior of the cluster and the ionic ends are on the surface; the oily dirt collects in the centre. The micelles stay in solution as a colloid and do not come together to precipitate because of ion-ion repulsion, and they are large enough to scatter light, so a soap solution appears cloudy.",
+          "hint": "Which end of a soap molecule goes towards the oil and which towards the water in a micelle?",
+          "probe": "Explain how soap cleans oily dirt through the formation of micelles.",
+          "causeChain": "Oily dirt does not dissolve in water, but a soap molecule has an ionic end that interacts with water and a carbon chain that interacts with oil -> soap molecules cluster into micelles with the hydrophobic tails inside around the oil and the ionic ends facing the water -> the dirt trapped in the micelle stays suspended as a colloid because of ion-ion repulsion and is rinsed away",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_micelle_clean",
+              "linksChecks": [
+                "chk_sci10c4_mi_ends",
+                "chk_sci10c4_mi_micelle"
+              ],
+              "criterion": "Connects the two different ends of a soap molecule to the micelle that traps oily dirt and lets it be rinsed away.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t11c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Most dirt is oily in nature and oil does not dissolve in water. The molecules of soap are sodium or potassium salts of long-chain carboxylic acids. The ionic end of soap interacts with water while the carbon chain interacts with oil.",
+              "followUp": "Why does oily dirt not wash off with water alone, and which end of a soap molecule faces which?",
+              "assessment": {
+                "requiredEvidence": [
+                  "dirt is oily",
+                  "oil does not dissolve in water",
+                  "sodium or potassium salts of long-chain carboxylic acids",
+                  "ionic-end",
+                  "interacts with water",
+                  "carbon chain interacts with oil"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_mi_ends",
+                    "criterion": "States that dirt is oily and does not dissolve in water, and a soap molecule has an ionic end that interacts with water and a carbon chain that interacts with oil.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t11c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Soap molecules form micelles: clusters in which the hydrophobic tails are in the interior of the cluster, around the oil droplet, and the ionic ends are on the surface facing the water. This forms an emulsion in water, and the micelle helps pull out the dirt so clothes are washed clean.",
+              "followUp": "In a cluster of soap molecules around dirt, which end faces inwards and which outwards, and what does the cluster do to the dirt?",
+              "assessment": {
+                "requiredEvidence": [
+                  "micelles",
+                  "hydrophobic tails are in the interior",
+                  "ionic ends are on the surface",
+                  "oil droplet",
+                  "emulsion",
+                  "pulling out the dirt"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_mi_micelle",
+                    "criterion": "States that soap forms micelles with the hydrophobic tails inside, around the oil droplet, and the ionic ends outside facing the water, forming an emulsion that carries the dirt away.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_mi_reversed"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t11c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Soaps have two ends with differing properties: one is hydrophilic, interacting with water, and the other is hydrophobic, interacting with hydrocarbons.",
+              "assessment": {
+                "requiredEvidence": [
+                  "hydrophilic",
+                  "interacts with water",
+                  "hydrophobic",
+                  "interacts with hydrocarbons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_mi_philic",
+                    "criterion": "Defines the hydrophilic end of soap as the one that interacts with water and the hydrophobic end as the one that interacts with hydrocarbons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t11c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The micelles stay in solution as a colloid and will not come together to precipitate because of ion-ion repulsion. The soap micelles are large enough to scatter light, so a soap solution appears cloudy.",
+              "assessment": {
+                "requiredEvidence": [
+                  "colloid",
+                  "ion-ion repulsion",
+                  "scatter light",
+                  "cloudy"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_mi_colloid",
+                    "criterion": "States that micelles stay in solution as a colloid because of ion-ion repulsion and scatter light, so a soap solution appears cloudy.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 9: micelles form when soap is added to water because of the ionic end and hydrocarbon tail, but not in solvents like ethanol",
+            "Exercise 15: the cleaning action of soap works through micelles that trap oily dirt",
+            "Question 2: agitation is needed so the micelles pull out the dirt and clothes get clean"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_mi_reversed",
+              "wrong": "In a micelle the ionic ends point towards the oil and the tails towards the water.",
+              "fix": "In a micelle the hydrophobic tails are in the interior around the oil, and the ionic ends are on the surface facing the water."
+            }
+          ],
+          "verify": [
+            { "page": 75, "quote": "Most dirt is oily in nature and as you know, oil does not dissolve in water.", "supports": ["sci10c4_t11c1_kp1"] },
+            { "page": 75, "quote": "The molecules of soap are sodium or potassium salts of long-chain carboxylic", "supports": ["sci10c4_t11c1_kp1"] },
+            { "page": 75, "quote": "The ionic-end of soap interacts with water while the carbon chain interacts with oil.", "supports": ["sci10c4_t11c1_kp1"] },
+            { "page": 75, "quote": "The soap molecules, thus form structures called micelles", "supports": ["sci10c4_t11c1_kp2"] },
+            { "page": 75, "quote": "This forms an emulsion in water.", "supports": ["sci10c4_t11c1_kp2"] },
+            { "page": 75, "quote": "clusters of molecules in which the hydrophobic tails are in the interior of the cluster and the ionic ends are on the surface of the cluster.", "supports": ["sci10c4_t11c1_kp2"] },
+            { "page": 75, "quote": "Soaps are molecules in which the two ends have differing properties, one is hydrophilic, that is, it interacts with water, while the other end is hydrophobic, that is, it interacts with hydrocarbons.", "supports": ["sci10c4_t11c1_kp3"] },
+            { "page": 75, "quote": "The micelles stay in solution as a colloid and will not come together to precipitate because of ion-ion repulsion.", "supports": ["sci10c4_t11c1_kp4"] },
+            { "page": 75, "quote": "The soap micelles are large enough to scatter light. Hence a soap solution appears cloudy.", "supports": ["sci10c4_t11c1_kp4"] },
+            { "page": 77, "quote": "The action of soaps and detergents is based on the presence of both hydrophobic", "supports": ["sci10c4_t11c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch4_t11_c2",
+          "label": "Hard Water, Scum and Detergents",
+          "headingType": "heading",
+          "sourcePages": [76],
+          "cardText": "While bathing, foam is formed with difficulty and an insoluble substance, scum, remains after washing with hard water. This is caused by the reaction of soap with the calcium and magnesium salts which cause the hardness of water, so a larger amount of soap is needed. This problem is overcome by using another class of compounds called detergents as cleansing agents. Detergents are generally sodium salts of sulphonic acids or ammonium salts with chloride or bromide ions, and both have a long hydrocarbon chain. The charged ends of these compounds do not form insoluble precipitates with the calcium and magnesium ions in hard water, so they remain effective in hard water. Detergents are usually used to make shampoos and products for cleaning clothes.",
+          "hint": "Why does soap leave scum in hard water, and why do detergents not?",
+          "probe": "Explain the formation of scum with soap in hard water and why detergents work in hard water.",
+          "causeChain": "Soap reacts with the calcium and magnesium salts that make water hard -> this forms an insoluble scum and little foam, so more soap is needed -> detergents have charged ends that do not form insoluble precipitates with calcium and magnesium ions, so they stay effective in hard water",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c4_scum_detergent",
+              "linksChecks": [
+                "chk_sci10c4_hw_scum",
+                "chk_sci10c4_hw_detergent"
+              ],
+              "criterion": "Connects soap reacting with calcium and magnesium salts to scum, and detergents not forming precipitates to their working in hard water.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c4_t11c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Foam is formed with difficulty and an insoluble substance (scum) remains after washing with hard water. This is caused by the reaction of soap with the calcium and magnesium salts, which cause the hardness of water, so a larger amount of soap is needed.",
+              "followUp": "Why does soap form a sticky solid and little foam in hard water?",
+              "assessment": {
+                "requiredEvidence": [
+                  "foam is formed with difficulty",
+                  "insoluble substance (scum)",
+                  "reaction of soap",
+                  "calcium and magnesium salts",
+                  "hardness of water",
+                  "larger amount of soap"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hw_scum",
+                    "criterion": "States that soap reacts with the calcium and magnesium salts that cause hardness of water, forming an insoluble scum and little foam so more soap is needed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c4_t11c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This problem is overcome by using detergents as cleansing agents. Detergents are generally sodium salts of sulphonic acids or ammonium salts with chloride or bromide ions, with a long hydrocarbon chain. Their charged ends do not form insoluble precipitates with the calcium and magnesium ions in hard water, so they remain effective in hard water.",
+              "followUp": "Why can cleaners that are not soaps still work in hard water?",
+              "assessment": {
+                "requiredEvidence": [
+                  "detergents",
+                  "sodium salts of sulphonic acids",
+                  "ammonium salts",
+                  "long hydrocarbon chain",
+                  "do not form insoluble precipitates",
+                  "effective in hard water"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hw_detergent",
+                    "criterion": "States that detergents (sodium salts of sulphonic acids or ammonium salts with a long hydrocarbon chain) have charged ends that do not form insoluble precipitates with calcium and magnesium ions, so they remain effective in hard water.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c4_hw_detergent_scum"
+                ]
+              }
+            },
+            {
+              "id": "sci10c4_t11c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Detergents are usually used to make shampoos and products for cleaning clothes. The action of soaps and detergents is based on both hydrophobic and hydrophilic groups in the molecule, which helps emulsify the oily dirt.",
+              "assessment": {
+                "requiredEvidence": [
+                  "shampoos",
+                  "cleaning clothes",
+                  "hydrophobic and hydrophilic groups",
+                  "emulsify the oily dirt"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c4_hw_uses",
+                    "criterion": "States that detergents are used for shampoos and cleaning clothes, and that soaps and detergents work through hydrophobic and hydrophilic groups that emulsify oily dirt.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 4.11: distilled water gives more foam with soap than hard water, which gives a white curdy precipitate",
+            "Exercise 10: the formation of scum when hard water is treated with soap is due to calcium and magnesium salts",
+            "Question 1: whether water is hard can be checked using detergent, which foams in both"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c4_hw_detergent_scum",
+              "wrong": "Detergents also form scum with the salts in hard water.",
+              "fix": "The charged ends of detergents do not form insoluble precipitates with the calcium and magnesium ions in hard water."
+            }
+          ],
+          "verify": [
+            { "page": 76, "quote": "foam is formed with difficulty and an insoluble substance (scum) remains after washing with", "supports": ["sci10c4_t11c2_kp1"] },
+            { "page": 76, "quote": "This is caused by the reaction of soap with the calcium and magnesium salts, which cause the hardness of water.", "supports": ["sci10c4_t11c2_kp1"] },
+            { "page": 76, "quote": "Hence you need to use a larger amount of soap.", "supports": ["sci10c4_t11c2_kp1"] },
+            { "page": 76, "quote": "This problem is overcome by using another class of compounds called detergents as cleansing agents.", "supports": ["sci10c4_t11c2_kp2"] },
+            { "page": 76, "quote": "Detergents are generally sodium salts of sulphonic acids or ammonium salts with chlorides or bromides ions, etc.", "supports": ["sci10c4_t11c2_kp2"] },
+            { "page": 76, "quote": "The charged ends of these compounds do not form insoluble precipitates with the calcium and magnesium ions in hard water.", "supports": ["sci10c4_t11c2_kp2"] },
+            { "page": 76, "quote": "Thus, they remain effective in hard water.", "supports": ["sci10c4_t11c2_kp2"] },
+            { "page": 76, "quote": "Detergents are usually used to make shampoos and products for cleaning clothes.", "supports": ["sci10c4_t11c2_kp3"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

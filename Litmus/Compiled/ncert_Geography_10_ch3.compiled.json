@@ -1,0 +1,1835 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_Geography_10_ch3.json",
+  "sourceSha256": "3117c0510d177d64d73aa62be01738a91637e2a5634d3a8a1937b7327abe1fa6",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Geography",
+  "book": "Contemporary India II",
+  "chapterNumber": 3,
+  "chapterName": "Water Resources",
+  "articulationChecks": [
+    {
+      "id": "chk_geo3_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_geo3_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example hydrological cycle, water scarcity, groundwater, dam, multi-purpose project, sedimentation, rainwater harvesting, rooftop rainwater harvesting or tanka.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "hydrological cycle",
+    "renewable resource",
+    "freshwater",
+    "groundwater",
+    "water scarcity",
+    "over-exploitation",
+    "irrigated agriculture",
+    "Jal Jeevan Mission",
+    "Atal Jal",
+    "hydraulic structures",
+    "dam",
+    "reservoir",
+    "spillway",
+    "multi-purpose project",
+    "integrated water resources management",
+    "temples of modern India",
+    "sedimentation",
+    "salinisation",
+    "inter-state water disputes",
+    "rainwater harvesting",
+    "guls",
+    "kuls",
+    "inundation channels",
+    "khadins",
+    "johads",
+    "tankas",
+    "palar pani",
+    "rooftop rainwater harvesting",
+    "bamboo drip irrigation"
+  ],
+  "concepts": [
+    {
+      "conceptId": "geo10_ch3_t1_c1",
+      "topicId": "ncert_geo_10_ch3_t1",
+      "topicTitle": "Water as a resource",
+      "label": "Water as a Renewable Resource",
+      "headingType": "heading",
+      "sourcePages": [
+        19
+      ],
+      "conceptHash": "d01426d1a2e452b9fcd850ef7321342bbab42d47563af0c2fc7e49fd319d231c",
+      "cardText": "Three-fourth of the earth's surface is covered with water, but only a small proportion of it is freshwater that can be put to use. This freshwater is mainly obtained from surface run off and ground water, which is continually renewed and recharged through the hydrological cycle. All water moves within the hydrological cycle, ensuring that water is a renewable resource. Even so, it is predicted that by 2025 nearly two billion people will live in absolute water scarcity.",
+      "hint": "Where does usable freshwater come from, and what keeps renewing it?",
+      "probe": "Explain how water becomes a renewable resource.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Water as a Renewable Resource, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t1c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "three-fourth",
+            "small proportion",
+            "freshwater"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_small_freshwater",
+              "criterion": "States that although three-fourth of the earth's surface is water, only a small proportion is usable freshwater.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does usable freshwater come from, and what keeps renewing it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_all_usable"
+          ]
+        },
+        {
+          "id": "geo3_t1c1_kp2",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does usable fresh water come from, and what keeps renewing it?",
+          "requiredEvidence": [
+            "surface run off",
+            "ground water",
+            "renewed and recharged",
+            "hydrological cycle",
+            "renewable resource"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_hydrological_cycle",
+              "criterion": "Explains that freshwater from surface run off and ground water is continually renewed and recharged through the hydrological cycle.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does usable fresh water come from, and what keeps renewing it?"
+            },
+            {
+              "id": "chk_geo3_renewable",
+              "criterion": "Concludes that because all water moves within the hydrological cycle, water is a renewable resource.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does usable fresh water come from, and what keeps renewing it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t1c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "2025",
+            "two billion",
+            "absolute water scarcity"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_two_billion",
+              "criterion": "Mentions the prediction that by 2025 nearly two billion people will live in absolute water scarcity.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Where does usable freshwater come from, and what keeps renewing it?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_cycle_to_renewable",
+          "linksChecks": [
+            "chk_geo3_hydrological_cycle",
+            "chk_geo3_renewable"
+          ],
+          "criterion": "Connects the renewal and recharge of water through the hydrological cycle to water being a renewable resource.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_all_usable",
+          "wrong": "Since three-fourth of the earth is covered with water, there is plenty of usable water for everyone.",
+          "fix": "Only a small proportion of the earth's water is freshwater that can be put to use.",
+          "checkId": "mchk_misc_geo3_all_usable",
+          "checkCriterion": "The answer states or implies this wrong idea: Since three-fourth of the earth is covered with water, there is plenty of usable water for everyone.",
+          "fixCheckId": "mfix_misc_geo3_all_usable",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Only a small proportion of the earth's water is freshwater that can be put to use.",
+          "keyPointIds": [
+            "geo3_t1c1_kp1"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 3,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_all_usable"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_hydrological_cycle",
+            "chk_geo3_renewable"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_small_freshwater",
+            "chk_geo3_two_billion",
+            "lnk_geo3_cycle_to_renewable"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t2_c1",
+      "topicId": "ncert_geo_10_ch3_t2",
+      "topicTitle": "Water scarcity and the need for water conservation and management",
+      "label": "Causes of Water Scarcity",
+      "headingType": "heading",
+      "sourcePages": [
+        19,
+        20,
+        21
+      ],
+      "conceptHash": "9c4d0eb00963f6c6027f07b489bb2d6347f221a0e2f161c9f4771658915b11ab",
+      "cardText": "Water availability varies over space and time, mainly due to variations in seasonal and annual precipitation, but water scarcity in most cases is caused by over-exploitation, excessive use and unequal access to water among different social groups. A region may have ample water yet face scarcity, as many cities do. A large and growing population needs more water for domestic use and to produce more food, so water resources are over-exploited to expand irrigated areas for dry-season agriculture. Irrigated agriculture is the largest consumer of water, so agriculture needs drought resistant crops and dry farming techniques. Farmers' own wells and tube-wells may lead to falling groundwater levels, affecting water availability and food security.",
+      "hint": "Is scarcity only about low rainfall? Think of over-exploitation, excessive use and unequal access.",
+      "probe": "What is water scarcity and what are its main causes?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Causes of Water Scarcity, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t2c1_kp1",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is water scarcity mostly caused by low rainfall? What usually causes it?",
+          "requiredEvidence": [
+            "over-exploitation",
+            "excessive use",
+            "unequal access",
+            "social groups"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_scarcity_causes",
+              "criterion": "States that water scarcity in most cases is caused by over-exploitation, excessive use and unequal access to water among different social groups.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is water scarcity mostly caused by low rainfall? What usually causes it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_only_low_rainfall"
+          ]
+        },
+        {
+          "id": "geo3_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a growing population add to water scarcity?",
+          "requiredEvidence": [
+            "large and growing population",
+            "greater demands",
+            "produce more food",
+            "irrigated areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_population_demand",
+              "criterion": "Explains that a large and growing population needs more water for domestic use and to produce more food, leading to over-exploitation to expand irrigated areas.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a growing population add to water scarcity?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which activity uses the most water, and what happens when farmers rely on their own wells?",
+          "requiredEvidence": [
+            "largest consumer of water",
+            "drought resistant crops",
+            "dry farming",
+            "falling groundwater levels"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_irrigation_largest",
+              "criterion": "States that irrigated agriculture is the largest consumer of water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which activity uses the most water, and what happens when farmers rely on their own wells?"
+            },
+            {
+              "id": "chk_geo3_falling_groundwater",
+              "criterion": "Explains that farmers' wells and tube-wells for irrigation may lead to falling groundwater levels, affecting water availability and food security.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which activity uses the most water, and what happens when farmers rely on their own wells?"
+            },
+            {
+              "id": "chk_geo3_drought_resistant",
+              "criterion": "Mentions the need for drought resistant crops and dry farming techniques.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which activity uses the most water, and what happens when farmers rely on their own wells?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_population_to_overuse",
+          "linksChecks": [
+            "chk_geo3_population_demand",
+            "chk_geo3_irrigation_largest"
+          ],
+          "criterion": "Connects a large and growing population needing more food to over-exploitation of water for irrigation.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_geo3_wells_to_groundwater",
+          "linksChecks": [
+            "chk_geo3_irrigation_largest",
+            "chk_geo3_falling_groundwater"
+          ],
+          "criterion": "Connects farmers' wells and tube-wells for irrigation to falling groundwater levels that threaten water availability and food security.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_only_low_rainfall",
+          "wrong": "Water scarcity happens only in regions with low rainfall or drought.",
+          "fix": "Water scarcity in most cases is caused by over-exploitation, excessive use and unequal access to water among different social groups; even areas with ample water can face scarcity.",
+          "checkId": "mchk_misc_geo3_only_low_rainfall",
+          "checkCriterion": "The answer states or implies this wrong idea: Water scarcity happens only in regions with low rainfall or drought.",
+          "fixCheckId": "mfix_misc_geo3_only_low_rainfall",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Water scarcity in most cases is caused by over-exploitation, excessive use and unequal access to water among different social groups; even areas with ample water can face scarcity.",
+          "keyPointIds": [
+            "geo3_t2c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 7,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_only_low_rainfall"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_scarcity_causes",
+            "chk_geo3_population_demand",
+            "chk_geo3_irrigation_largest",
+            "chk_geo3_falling_groundwater",
+            "chk_geo3_drought_resistant"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_geo3_population_to_overuse",
+            "lnk_geo3_wells_to_groundwater"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t2_c2",
+      "topicId": "ncert_geo_10_ch3_t2",
+      "topicTitle": "Water scarcity and the need for water conservation and management",
+      "label": "Industrialisation, Urbanisation and Water",
+      "headingType": "subheading",
+      "sourcePages": [
+        21
+      ],
+      "conceptHash": "17f284f7d021b6e5748aa61ce9af9d9f13d6d94ba0f1ad1c8d9843a3760159d4",
+      "cardText": "Post-independent India witnessed intensive industrialisation and urbanisation. The ever-increasing number of industries has made matters worse by exerting pressure on freshwater resources; industries are heavy users of water and also need power, much of which comes from hydroelectric power. Multiplying urban centres with large, dense populations and urban lifestyles have added to water and energy requirements. Most housing societies in cities have their own groundwater pumping devices, so fragile water resources are being over-exploited and have caused their depletion in several cities.",
+      "hint": "Why are industries a double burden on water? What do city housing societies do to get water?",
+      "probe": "How have industrialisation and urbanisation added to water scarcity in India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Industrialisation, Urbanisation and Water, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does industrial growth put pressure on water resources?",
+          "requiredEvidence": [
+            "industries",
+            "pressure on existing freshwater resources",
+            "heavy users of water",
+            "hydroelectric power"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_industries",
+              "criterion": "Explains that industries put pressure on freshwater: they are heavy users of water and also need power, much of it from hydroelectric power.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does industrial growth put pressure on water resources?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How have growing cities added to the water problem?",
+          "requiredEvidence": [
+            "urban centres",
+            "urban lifestyles",
+            "groundwater pumping devices",
+            "depletion"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_urban_centres",
+              "criterion": "Explains that multiplying urban centres with dense populations and urban lifestyles have added to water and energy requirements.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How have growing cities added to the water problem?"
+            },
+            {
+              "id": "chk_geo3_city_depletion",
+              "criterion": "Mentions that housing societies use their own groundwater pumping devices, over-exploiting and depleting fragile water resources in cities.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How have growing cities added to the water problem?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_cities_help"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_cities_to_depletion",
+          "linksChecks": [
+            "chk_geo3_urban_centres",
+            "chk_geo3_city_depletion"
+          ],
+          "criterion": "Connects growing urban centres and their own groundwater pumping devices to over-exploitation and depletion of water in cities.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_cities_help",
+          "wrong": "Multiplying urban centres with large and dense populations have helped in proper utilisation of water resources.",
+          "fix": "Multiplying urban centres and urban lifestyles have added to water and energy requirements and aggravated the problem, over-exploiting and depleting water resources.",
+          "checkId": "mchk_misc_geo3_cities_help",
+          "checkCriterion": "The answer states or implies this wrong idea: Multiplying urban centres with large and dense populations have helped in proper utilisation of water resources.",
+          "fixCheckId": "mfix_misc_geo3_cities_help",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Multiplying urban centres and urban lifestyles have added to water and energy requirements and aggravated the problem, over-exploiting and depleting water resources.",
+          "keyPointIds": [
+            "geo3_t2c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_cities_help"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_industries",
+            "chk_geo3_urban_centres",
+            "chk_geo3_city_depletion"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_geo3_cities_to_depletion"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t2_c3",
+      "topicId": "ncert_geo_10_ch3_t2",
+      "topicTitle": "Water scarcity and the need for water conservation and management",
+      "label": "Water Quality and Scarcity",
+      "headingType": "subheading",
+      "sourcePages": [
+        21
+      ],
+      "conceptHash": "254e17bf496440050cabdaf6be224837353fd2716678d6c128ea5086788726c9",
+      "cardText": "Water scarcity is not only about quantity. An area may have enough water to meet people's needs but still suffer from water scarcity because of bad quality of water. Even where water is ample, much of it may be polluted by domestic and industrial wastes, chemicals, pesticides and fertilisers used in agriculture, making it hazardous for human use. The Jal Jeevan Mission aims to give every rural household an assured supply of potable piped water at 55 litres per capita per day.",
+      "hint": "Can a place with plenty of water still face scarcity? What pollutes the water?",
+      "probe": "How can a region with sufficient water still suffer from water scarcity?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Water Quality and Scarcity, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can a place with enough water still face water scarcity? How?",
+          "requiredEvidence": [
+            "sufficiently available",
+            "still suffers from water scarcity",
+            "bad quality of water"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_quality_scarcity",
+              "criterion": "Explains that an area may have sufficient water but still suffer scarcity because of bad quality of water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can a place with enough water still face water scarcity? How?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What pollutes water and makes it unsafe to use?",
+          "requiredEvidence": [
+            "domestic and industrial wastes",
+            "chemicals, pesticides and fertilisers",
+            "hazardous for human use"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_pollutants",
+              "criterion": "Names sources of water pollution: domestic and industrial wastes, chemicals, pesticides and fertilisers used in agriculture, making water hazardous for human use.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What pollutes water and makes it unsafe to use?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Jal Jeevan Mission",
+            "rural household",
+            "potable piped water",
+            "55 litres"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_jjm",
+              "criterion": "Mentions the Jal Jeevan Mission's goal of assured potable piped water for every rural household (55 litres per capita per day).",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Can a place with plenty of water still face scarcity? What pollutes the water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_pollution_to_scarcity",
+          "linksChecks": [
+            "chk_geo3_pollutants",
+            "chk_geo3_quality_scarcity"
+          ],
+          "criterion": "Connects pollution by wastes, chemicals, pesticides and fertilisers to water becoming hazardous and scarce despite being ample.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_quality_scarcity",
+            "chk_geo3_pollutants"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_jjm",
+            "lnk_geo3_pollution_to_scarcity"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t2_c4",
+      "topicId": "ncert_geo_10_ch3_t2",
+      "topicTitle": "Water scarcity and the need for water conservation and management",
+      "label": "Need for Water Conservation and Management",
+      "headingType": "subheading",
+      "sourcePages": [
+        21
+      ],
+      "conceptHash": "1a2fe321ee2b8a2654c3ab623b01a4017741615b430be2873ec43b74c0996e01",
+      "cardText": "The need of the hour is to conserve and manage our water resources: to safeguard ourselves from health hazards, to ensure food security, to continue our livelihoods and productive activities, and to prevent degradation of our natural ecosystems. Over exploitation and mismanagement of water will impoverish this resource and cause an ecological crisis with profound impact on our lives. Atal Bhujal Yojana (Atal Jal), in water stressed Gram Panchayats of seven states, aims to bring behavioural change in the community from consumption to conservation and smart water management.",
+      "hint": "Give the reasons to conserve water: health, food, livelihoods and ecosystems.",
+      "probe": "Why is it necessary to conserve and manage water resources?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Need for Water Conservation and Management, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t2c4_kp1",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do we need to conserve and manage water? Give some reasons.",
+          "requiredEvidence": [
+            "health hazards",
+            "food security",
+            "livelihoods",
+            "natural ecosystems"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_why_conserve_water",
+              "criterion": "Gives reasons to conserve water: safeguarding from health hazards, ensuring food security, continuing livelihoods and productive activities, or preventing degradation of natural ecosystems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we need to conserve and manage water? Give some reasons."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What will happen if water continues to be over-used and badly managed?",
+          "requiredEvidence": [
+            "over exploitation and mismanagement",
+            "impoverish",
+            "ecological crisis"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_crisis",
+              "criterion": "States that over exploitation and mismanagement of water will impoverish the resource and cause an ecological crisis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What will happen if water continues to be over-used and badly managed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t2c4_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Atal Jal",
+            "water stressed",
+            "consumption to conservation"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_atal_jal",
+              "criterion": "Mentions Atal Bhujal Yojana (Atal Jal), which aims to change community attitudes from consumption to conservation and smart water management.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Give the reasons to conserve water: health, food, livelihoods and ecosystems."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_mismanagement_to_crisis",
+          "linksChecks": [
+            "chk_geo3_crisis",
+            "chk_geo3_why_conserve_water"
+          ],
+          "criterion": "Connects over-exploitation and mismanagement of water to an ecological crisis, and so to the need to conserve and manage water.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 5,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_why_conserve_water",
+            "chk_geo3_crisis"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_atal_jal",
+            "lnk_geo3_mismanagement_to_crisis"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t3_c1",
+      "topicId": "ncert_geo_10_ch3_t3",
+      "topicTitle": "Multi-purpose river projects and integrated water resources management",
+      "label": "Hydraulic Structures in Ancient India",
+      "headingType": "heading",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "conceptHash": "9df0543e84dad2d519191d2a0d66c4b6692b00d74c6d6b6d098eefc7c039a4b4",
+      "cardText": "Archaeological and historical records show that from ancient times India built sophisticated hydraulic structures like dams of stone rubble, reservoirs or lakes, embankments and canals for irrigation, a tradition continued by building dams in most river basins. In the first century B.C., Sringaverapura near Allahabad had a water harvesting system channelling the flood water of the Ganga. Under Chandragupta Maurya, dams, lakes and irrigation systems were extensively built. Irrigation works have been found in Kalinga (Odisha), Nagarjunakonda (Andhra Pradesh), Bennur (Karnataka) and Kolhapur (Maharashtra). Bhopal Lake was built in the 11th century, and the tank in Hauz Khas, Delhi, by Allauddin Khilji in the 13th-14th century.",
+      "hint": "Name one ancient hydraulic structure and the time or ruler linked to it.",
+      "probe": "What evidence shows that Indians built sophisticated hydraulic structures in ancient times?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Hydraulic Structures in Ancient India, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kinds of water structures were built in ancient India?",
+          "requiredEvidence": [
+            "hydraulic structures",
+            "dams built of stone rubble",
+            "embankments and canals",
+            "irrigation"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_ancient_structures",
+              "criterion": "States that since ancient times Indians built sophisticated hydraulic structures like stone rubble dams, reservoirs or lakes, embankments and canals for irrigation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kinds of water structures were built in ancient India?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_dams_modern_only"
+          ]
+        },
+        {
+          "id": "geo3_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "Give one example of an ancient water structure and when or by whom it was built.",
+          "requiredEvidence": [
+            "Sringaverapura",
+            "Chandragupta Maurya",
+            "Bhopal Lake",
+            "Hauz Khas"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_ancient_example",
+              "criterion": "Gives an example: Sringaverapura's flood water harvesting, dams and irrigation under Chandragupta Maurya, irrigation works in Kalinga, Nagarjunakonda, Bennur or Kolhapur, Bhopal Lake, or the Hauz Khas tank.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Give one example of an ancient water structure and when or by whom it was built."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_dams_modern_only",
+          "wrong": "India started building dams only after Independence.",
+          "fix": "From ancient times India has built sophisticated hydraulic structures like stone rubble dams, reservoirs, embankments and canals; modern dams continue this tradition.",
+          "checkId": "mchk_misc_geo3_dams_modern_only",
+          "checkCriterion": "The answer states or implies this wrong idea: India started building dams only after Independence.",
+          "fixCheckId": "mfix_misc_geo3_dams_modern_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: From ancient times India has built sophisticated hydraulic structures like stone rubble dams, reservoirs, embankments and canals; modern dams continue this tradition.",
+          "keyPointIds": [
+            "geo3_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_dams_modern_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_ancient_structures",
+            "chk_geo3_ancient_example"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t3_c2",
+      "topicId": "ncert_geo_10_ch3_t3",
+      "topicTitle": "Multi-purpose river projects and integrated water resources management",
+      "label": "Dams and Multi-purpose Projects",
+      "headingType": "subheading",
+      "sourcePages": [
+        22
+      ],
+      "conceptHash": "aa53de7c9052f21bb722eff4940b2d9c38efc6e219fba151af6da7beeb6841fb",
+      "cardText": "A dam is a barrier across flowing water that obstructs, directs or retards the flow, often creating a reservoir, lake or impoundment. Dams were traditionally built to impound rivers and rainwater for later irrigation. Today they are built for irrigation, electricity generation, water supply for domestic and industrial uses, flood control, recreation, inland navigation and fish breeding, so they are called multi-purpose projects, where the many uses of the impounded water are integrated. The Bhakra-Nangal project in the Satluj-Beas basin is used for both hydel power and irrigation; the Hirakud project in the Mahanadi basin integrates water conservation with flood control. Multi-purpose projects launched after Independence were seen as the vehicle for development; Jawaharlal Nehru called dams the 'temples of modern India' because they would integrate agriculture and the village economy with rapid industrialisation and urban growth.",
+      "hint": "List some uses of dams today. Why did Nehru call them temples of modern India?",
+      "probe": "What are multi-purpose river projects? Why did Nehru call dams the 'temples of modern India'?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Dams and Multi-purpose Projects, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a dam, and what were dams first built for?",
+          "requiredEvidence": [
+            "barrier across flowing water",
+            "obstructs, directs or retards",
+            "reservoir"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_dam_def",
+              "criterion": "Defines a dam as a barrier across flowing water that obstructs, directs or retards the flow, often creating a reservoir, lake or impoundment.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a dam, and what were dams first built for?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t3c2_kp2",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are dams today called multi-purpose projects? Give an example.",
+          "requiredEvidence": [
+            "electricity generation",
+            "flood control",
+            "inland navigation",
+            "fish breeding",
+            "multi-purpose projects",
+            "integrated"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_multipurpose_def",
+              "criterion": "Explains that dams are called multi-purpose projects because the many uses of impounded water (irrigation, electricity, water supply, flood control, recreation, navigation, fish breeding) are integrated.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are dams today called multi-purpose projects? Give an example."
+            },
+            {
+              "id": "chk_geo3_bhakra_hirakud",
+              "criterion": "Gives an example: Bhakra-Nangal (hydel power and irrigation) or Hirakud (water conservation with flood control).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why are dams today called multi-purpose projects? Give an example."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why did Nehru see dams as so important for the new nation?",
+          "requiredEvidence": [
+            "Jawaharlal Nehru",
+            "temples of modern India",
+            "agriculture and the village economy",
+            "rapid industrialisation"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_temples",
+              "criterion": "States that Nehru called dams the 'temples of modern India' because they would integrate agriculture and the village economy with rapid industrialisation and urban growth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why did Nehru see dams as so important for the new nation?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_integration_to_temples",
+          "linksChecks": [
+            "chk_geo3_multipurpose_def",
+            "chk_geo3_temples"
+          ],
+          "criterion": "Connects the integrated many uses of dam water to Nehru's view that dams would integrate agriculture and the village economy with industrialisation (temples of modern India).",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 7,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_dam_def",
+            "chk_geo3_multipurpose_def",
+            "chk_geo3_bhakra_hirakud",
+            "chk_geo3_temples"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_geo3_integration_to_temples"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t3_c3",
+      "topicId": "ncert_geo_10_ch3_t3",
+      "topicTitle": "Multi-purpose river projects and integrated water resources management",
+      "label": "Opposition to Multi-purpose Projects",
+      "headingType": "subheading",
+      "sourcePages": [
+        23,
+        29
+      ],
+      "conceptHash": "807931989bf7641e9c1632544aea67d73db157e0879119f6c636497ccd5fecf0",
+      "cardText": "Multi-purpose projects and large dams have come under great scrutiny and opposition. Damming rivers affects their natural flow, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir, giving rockier stream beds and poorer habitats for aquatic life. Dams fragment rivers, making it hard for aquatic fauna to migrate for spawning, and reservoirs submerge vegetation and soil. Floodplains are deprived of silt, a natural fertiliser, adding to land degradation. The projects induced earthquakes, caused water-borne diseases, pests and pollution. Irrigation changed cropping patterns towards water intensive commercial crops, causing salinisation of the soil. Ironically, dams built to control floods have triggered floods due to sedimentation. Projects also cause inter-state disputes, such as the Krishna-Godavari dispute over diverting water at Koyna.",
+      "hint": "Think of sediment flow, aquatic life, silt on floodplains, and floods caused by dams.",
+      "probe": "Why have multi-purpose projects and large dams faced opposition? Compare their advantages and disadvantages.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Opposition to Multi-purpose Projects, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t3c3_kp1",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do dams change a river's flow, and how does that affect river life?",
+          "requiredEvidence": [
+            "natural flow",
+            "poor sediment flow",
+            "excessive sedimentation",
+            "aquatic life",
+            "fragment rivers",
+            "submerge the existing vegetation"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_sediment",
+              "criterion": "Explains that damming affects a river's natural flow, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir, with rockier stream beds and poorer habitats for aquatic life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do dams change a river's flow, and how does that affect river life?"
+            },
+            {
+              "id": "chk_geo3_fragment",
+              "criterion": "Mentions that dams fragment rivers, making it hard for aquatic fauna to migrate for spawning, or that reservoirs submerge vegetation and soil.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do dams change a river's flow, and how does that affect river life?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_dams_no_effect"
+          ]
+        },
+        {
+          "id": "geo3_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 1
+          },
+          "followUp": "How can dams make flooding and farmland worse instead of better?",
+          "requiredEvidence": [
+            "triggered floods",
+            "sedimentation in the reservoir",
+            "deprived of silt",
+            "natural fertiliser"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_triggered_floods",
+              "criterion": "States that dams built to control floods have triggered floods due to sedimentation in the reservoir, and have mostly failed to control floods during excessive rainfall.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How can dams make flooding and farmland worse instead of better?"
+            },
+            {
+              "id": "chk_geo3_silt_deprived",
+              "criterion": "States that sedimentation deprived floodplains of silt, a natural fertiliser, adding to land degradation.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How can dams make flooding and farmland worse instead of better?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 1
+          },
+          "followUp": "What other problems have multi-purpose projects caused for people and soil?",
+          "requiredEvidence": [
+            "induced earthquakes",
+            "water-borne diseases",
+            "water intensive and commercial crops",
+            "salinisation of the soil"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_earthquakes_disease",
+              "criterion": "Mentions that multi-purpose projects induced earthquakes, or caused water-borne diseases, pests and pollution.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What other problems have multi-purpose projects caused for people and soil?"
+            },
+            {
+              "id": "chk_geo3_cropping_salinisation",
+              "criterion": "Explains that irrigation shifted farmers to water intensive and commercial crops, causing salinisation of the soil.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What other problems have multi-purpose projects caused for people and soil?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Krishna-Godavari dispute",
+            "Koyna",
+            "downstream flow",
+            "displacements"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_interstate_dispute",
+              "criterion": "Mentions inter-state water disputes, such as the Krishna-Godavari dispute over Maharashtra diverting more water at Koyna, reducing downstream flow.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Think of sediment flow, aquatic life, silt on floodplains, and floods caused by dams."
+            },
+            {
+              "id": "chk_geo3_displacement",
+              "criterion": "Mentions that multi-purpose projects lead to large scale displacements and loss of livelihood.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Think of sediment flow, aquatic life, silt on floodplains, and floods caused by dams."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_sediment_to_floods",
+          "linksChecks": [
+            "chk_geo3_sediment",
+            "chk_geo3_triggered_floods"
+          ],
+          "criterion": "Connects sedimentation in reservoirs caused by damming to dams triggering floods (or floodplains being deprived of silt).",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_geo3_crops_to_salinity",
+          "linksChecks": [
+            "chk_geo3_cropping_salinisation",
+            "chk_geo3_sediment"
+          ],
+          "criterion": "Connects irrigation from dams shifting farmers to water intensive crops to salinisation of the soil.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_dams_no_effect",
+          "wrong": "Regulating and damming of rivers does not affect the river's natural flow and its sediment flow.",
+          "fix": "Damming rivers affects their natural flow, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir.",
+          "checkId": "mchk_misc_geo3_dams_no_effect",
+          "checkCriterion": "The answer states or implies this wrong idea: Regulating and damming of rivers does not affect the river's natural flow and its sediment flow.",
+          "fixCheckId": "mfix_misc_geo3_dams_no_effect",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Damming rivers affects their natural flow, causing poor sediment flow and excessive sedimentation at the bottom of the reservoir.",
+          "keyPointIds": [
+            "geo3_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 7,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_dams_no_effect"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_sediment",
+            "chk_geo3_fragment",
+            "chk_geo3_triggered_floods",
+            "chk_geo3_silt_deprived",
+            "chk_geo3_earthquakes_disease",
+            "chk_geo3_cropping_salinisation"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_interstate_dispute",
+            "chk_geo3_displacement",
+            "lnk_geo3_sediment_to_floods",
+            "lnk_geo3_crops_to_salinity"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t3_c4",
+      "topicId": "ncert_geo_10_ch3_t3",
+      "topicTitle": "Multi-purpose river projects and integrated water resources management",
+      "label": "Sardar Sarovar Project and PMKSY",
+      "headingType": "subheading",
+      "sourcePages": [
+        23
+      ],
+      "conceptHash": "ffda028947c66624c0afa3e11fe5421166c959326bed58123a3ce16bd309a93e",
+      "cardText": "The Sardar Sarovar Dam over the Narmada River in Gujarat is one of India's largest water resource projects, covering Maharashtra, Madhya Pradesh, Gujarat and Rajasthan. It is meant to meet the water needs of drought-prone and desert areas, providing irrigation to 18.45 lakh hectares in Gujarat and to the desert districts of Barmer and Jalore in Rajasthan. The Pradhan Mantri Krishi Sinchayee Yojana aims to give all farms access to protective irrigation: expanding cultivable area under assured irrigation (har khet ko pani), improving on-farm water use efficiency (per drop more crop) and introducing sustainable water conservation practices.",
+      "hint": "Which river is the Sardar Sarovar Dam on? What do 'har khet ko pani' and 'per drop more crop' mean?",
+      "probe": "What are the aims of the Sardar Sarovar Project and the Pradhan Mantri Krishi Sinchayee Yojana?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sardar Sarovar Project and PMKSY, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which river is the Sardar Sarovar Dam on, and which areas is it meant to help?",
+          "requiredEvidence": [
+            "Sardar Sarovar",
+            "Narmada",
+            "Gujarat",
+            "drought-prone and desert areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_sardar_sarovar",
+              "criterion": "States that the Sardar Sarovar Dam on the Narmada in Gujarat is one of India's largest water projects, meant to supply water to drought-prone and desert areas.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which river is the Sardar Sarovar Dam on, and which areas is it meant to help?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the Pradhan Mantri Krishi Sinchayee Yojana aim to do for farms?",
+          "requiredEvidence": [
+            "Pradhan Mantri Krishi Sinchayee Yojana",
+            "protective irrigation",
+            "har khet ko pani",
+            "per drop more crop"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_pmksy",
+              "criterion": "Explains PMKSY: protective irrigation for all farms, expanding assured irrigation (har khet ko pani) and improving water use efficiency (per drop more crop).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the Pradhan Mantri Krishi Sinchayee Yojana aim to do for farms?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_sardar_sarovar",
+            "chk_geo3_pmksy"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t4_c1",
+      "topicId": "ncert_geo_10_ch3_t4",
+      "topicTitle": "Rainwater harvesting",
+      "label": "Traditional Rainwater Harvesting Systems",
+      "headingType": "heading",
+      "sourcePages": [
+        25
+      ],
+      "conceptHash": "5668c3fd74ea0cd1e38fdb4c96aa36bd662e4b87edef73118953c2ee5ab3d920",
+      "cardText": "Given the disadvantages of and rising resistance to multi-purpose projects, many thought water harvesting was a viable alternative, both socio-economically and environmentally. Ancient India had an extraordinary tradition of water harvesting: people had in-depth knowledge of rainfall regimes and soil types and harvested rainwater, groundwater, river water and flood water to suit local ecological conditions. In the hills, people built diversion channels like the 'guls' or 'kuls' of the Western Himalayas for agriculture. Rooftop rainwater harvesting was common in Rajasthan. In the flood plains of Bengal, people built inundation channels to irrigate fields. In arid and semi-arid regions, fields were turned into rain fed storage structures, like the 'khadins' in Jaisalmer and 'Johads' in other parts of Rajasthan.",
+      "hint": "Match each method to its region: guls or kuls, inundation channels, khadins and johads.",
+      "probe": "Why is rainwater harvesting seen as an alternative to multi-purpose projects? Describe traditional methods used in different regions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Traditional Rainwater Harvesting Systems, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why did people start seeing rainwater harvesting as an alternative to big dams?",
+          "requiredEvidence": [
+            "viable alternative",
+            "rainfall regimes and soil types",
+            "local ecological conditions"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_viable_alternative",
+              "criterion": "States that water harvesting was seen as a viable socio-economic and environmental alternative to multi-purpose projects.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why did people start seeing rainwater harvesting as an alternative to big dams?"
+            },
+            {
+              "id": "chk_geo3_local_conditions",
+              "criterion": "Explains that people used their knowledge of rainfall regimes and soil types to develop harvesting techniques suited to local ecological conditions and water needs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why did people start seeing rainwater harvesting as an alternative to big dams?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c1_kp2",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": "Describe a traditional water-harvesting method from one region of India.",
+          "requiredEvidence": [
+            "guls",
+            "kuls",
+            "Western Himalayas",
+            "inundation channels",
+            "Bengal",
+            "khadins",
+            "Johads"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_traditional_methods",
+              "criterion": "Names diversion channels like the guls or kuls of the Western Himalayas for agriculture.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Describe a traditional water-harvesting method from one region of India."
+            },
+            {
+              "id": "chk_geo3_inundation_channels",
+              "criterion": "Names inundation channels built in the flood plains of Bengal to irrigate fields.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Describe a traditional water-harvesting method from one region of India."
+            },
+            {
+              "id": "chk_geo3_khadins_johads",
+              "criterion": "Names rain fed storage structures in arid and semi-arid regions, like khadins in Jaisalmer and johads in other parts of Rajasthan.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Describe a traditional water-harvesting method from one region of India."
+            },
+            {
+              "id": "chk_geo3_rooftop_rajasthan",
+              "criterion": "Mentions rooftop rainwater harvesting to store drinking water, particularly in Rajasthan.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Describe a traditional water-harvesting method from one region of India."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_local_knowledge",
+          "linksChecks": [
+            "chk_geo3_local_conditions",
+            "chk_geo3_traditional_methods"
+          ],
+          "criterion": "Connects people's knowledge of local rainfall regimes and soil types to the different harvesting methods developed in each region.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 5,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_viable_alternative",
+            "chk_geo3_local_conditions",
+            "chk_geo3_traditional_methods",
+            "chk_geo3_inundation_channels",
+            "chk_geo3_khadins_johads",
+            "chk_geo3_rooftop_rajasthan"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_geo3_local_knowledge"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t4_c2",
+      "topicId": "ncert_geo_10_ch3_t4",
+      "topicTitle": "Rainwater harvesting",
+      "label": "Tankas: Rooftop Harvesting in Rajasthan",
+      "headingType": "subheading",
+      "sourcePages": [
+        25,
+        26,
+        27
+      ],
+      "conceptHash": "4c69da38871e7bf9a45d0b32badd5bb1f9add1f0c17047a5ba48bcda5e19010d",
+      "cardText": "In the semi-arid and arid regions of Rajasthan, particularly Bikaner, Phalodi and Barmer, almost all houses traditionally had underground tanks or tankas for storing drinking water. The tankas were part of a rooftop rainwater harvesting system, built inside the main house or courtyard and connected to the sloping roofs by a pipe. The first spell of rain was usually not collected, as it cleaned the roofs and pipes; water from later showers was stored. Stored till the next rainfall, it was an extremely reliable source of drinking water when other sources dried up in summer. Rainwater, or palar pani, is considered the purest form of natural water, and underground rooms beside the tanka kept cool in summer. Today the practice is declining in western Rajasthan because the perennial Indira Gandhi Canal supplies plenty of water.",
+      "hint": "How did rain reach the tanka? Why was the first spell of rain not collected?",
+      "probe": "Discuss how rainwater harvesting in the semi-arid regions of Rajasthan is carried out.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Tankas: Rooftop Harvesting in Rajasthan, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t4c2_kp1",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How did houses in dry parts of Rajasthan collect and store rainwater?",
+          "requiredEvidence": [
+            "Bikaner, Phalodi and Barmer",
+            "underground tanks",
+            "tankas",
+            "sloping roofs",
+            "pipe",
+            "first spell of rain"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_tanka_system",
+              "criterion": "Explains that houses had underground tankas connected by a pipe to sloping roofs, so rain from the rooftops was stored in them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How did houses in dry parts of Rajasthan collect and store rainwater?"
+            },
+            {
+              "id": "chk_geo3_first_spell",
+              "criterion": "Mentions that the first spell of rain was not collected because it cleaned the roofs and pipes.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How did houses in dry parts of Rajasthan collect and store rainwater?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why was the stored rainwater so valuable to people in Rajasthan?",
+          "requiredEvidence": [
+            "till the next rainfall",
+            "reliable source of drinking water",
+            "palar pani",
+            "purest form"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_tanka_reliable",
+              "criterion": "States that water stored in tankas till the next rainfall is an extremely reliable source of drinking water when other sources dry up in summer.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why was the stored rainwater so valuable to people in Rajasthan?"
+            },
+            {
+              "id": "chk_geo3_palar_pani",
+              "criterion": "Mentions that rainwater, called palar pani, is considered the purest form of natural water, or that rooms beside the tanka kept cool.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why was the stored rainwater so valuable to people in Rajasthan?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "on the decline",
+            "Indira Gandhi Canal"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_decline_canal",
+              "criterion": "States that rooftop harvesting is declining in western Rajasthan because the perennial Indira Gandhi Canal supplies plenty of water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How did rain reach the tanka? Why was the first spell of rain not collected?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_geo3_harvesting_gaining"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_roof_to_tanka",
+          "linksChecks": [
+            "chk_geo3_tanka_system",
+            "chk_geo3_tanka_reliable"
+          ],
+          "criterion": "Connects collecting roof rainwater into underground tankas to having a reliable drinking water source in summer when other sources dry up.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_geo3_harvesting_gaining",
+          "wrong": "Today in Rajasthan, rooftop rainwater harvesting has gained popularity despite high water availability from the Indira Gandhi Canal.",
+          "fix": "In western Rajasthan the practice is on the decline because plenty of water is available from the perennial Indira Gandhi Canal.",
+          "checkId": "mchk_misc_geo3_harvesting_gaining",
+          "checkCriterion": "The answer states or implies this wrong idea: Today in Rajasthan, rooftop rainwater harvesting has gained popularity despite high water availability from the Indira Gandhi Canal.",
+          "fixCheckId": "mfix_misc_geo3_harvesting_gaining",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In western Rajasthan the practice is on the decline because plenty of water is available from the perennial Indira Gandhi Canal.",
+          "keyPointIds": [
+            "geo3_t4c2_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 5,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_geo3_harvesting_gaining"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_tanka_system",
+            "chk_geo3_first_spell",
+            "chk_geo3_tanka_reliable",
+            "chk_geo3_palar_pani"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_decline_canal",
+            "lnk_geo3_roof_to_tanka"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "geo10_ch3_t4_c3",
+      "topicId": "ncert_geo_10_ch3_t4",
+      "topicTitle": "Rainwater harvesting",
+      "label": "Modern Adaptations of Rainwater Harvesting",
+      "headingType": "subheading",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "conceptHash": "a0fd3e46883364129830dd58f72ccaf31bdca08890ddf25a6b3c3e0919935ecc",
+      "cardText": "In many parts of rural and urban India, rooftop rainwater harvesting is being successfully adapted to store and conserve water. In Gendathur, a remote backward village in Mysuru, Karnataka, nearly 200 households have installed rooftop rainwater harvesting, and the village has earned the rare distinction of being rich in rainwater. In Shillong, Meghalaya, though nearby Cherapunjee and Mawsynram receive the highest rainfall in the world, the city faces acute water shortage, and nearly every household has a rooftop harvesting structure, meeting 15-25 per cent of its water needs. Tamil Nadu is the first state to make rooftop rainwater harvesting compulsory for all houses, with legal provisions to punish defaulters. In Meghalaya, a 200-year-old bamboo drip irrigation system carries stream and spring water through bamboo pipes to plants.",
+      "hint": "Name a village in Karnataka, a city in Meghalaya and a state that made rooftop harvesting compulsory.",
+      "probe": "Describe how modern adaptations of traditional rainwater harvesting methods are being carried out to conserve and store water.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Modern Adaptations of Rainwater Harvesting, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "geo3_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Give an example of a village where people now collect rain from their roofs successfully.",
+          "requiredEvidence": [
+            "rooftop rainwater harvesting",
+            "Gendathur",
+            "Mysuru, Karnataka",
+            "rich in rainwater"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_rooftop_adapted",
+              "criterion": "States that rooftop rainwater harvesting is being successfully adapted in rural and urban India to store and conserve water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Give an example of a village where people now collect rain from their roofs successfully."
+            },
+            {
+              "id": "chk_geo3_gendathur",
+              "criterion": "Gives the example of Gendathur in Mysuru, Karnataka, where about 200 households installed rooftop harvesting and the village became rich in rainwater.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Give an example of a village where people now collect rain from their roofs successfully."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "Why does Shillong collect rain from rooftops even though it is near very wet places?",
+          "requiredEvidence": [
+            "Shillong",
+            "Cherapunjee and Mawsynram",
+            "acute shortage of water",
+            "15-25 per cent"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_shillong",
+              "criterion": "Explains that Shillong faces acute water shortage despite Cherapunjee and Mawsynram nearby having the highest rainfall, so almost every household uses rooftop rainwater harvesting.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why does Shillong collect rain from rooftops even though it is near very wet places?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "What has Tamil Nadu done about collecting rain from rooftops?",
+          "requiredEvidence": [
+            "Tamil Nadu",
+            "first state",
+            "compulsory",
+            "legal provisions"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_tamil_nadu",
+              "criterion": "States that Tamil Nadu was the first state to make rooftop rainwater harvesting compulsory for all houses, with legal provisions to punish defaulters.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What has Tamil Nadu done about collecting rain from rooftops?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "geo3_t4c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Meghalaya",
+            "200-year-old",
+            "bamboo pipes",
+            "stream and spring water"
+          ],
+          "checks": [
+            {
+              "id": "chk_geo3_bamboo_drip",
+              "criterion": "Describes Meghalaya's 200-year-old bamboo drip irrigation system, which carries stream and spring water through bamboo pipes to plants.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Name a village in Karnataka, a city in Meghalaya and a state that made rooftop harvesting compulsory."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_geo3_shillong_paradox",
+          "linksChecks": [
+            "chk_geo3_shillong",
+            "chk_geo3_rooftop_adapted"
+          ],
+          "criterion": "Explains that Shillong faces acute water shortage despite nearby record rainfall, so households adopted rooftop rainwater harvesting.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_geo3_rooftop_adapted",
+            "chk_geo3_gendathur",
+            "chk_geo3_shillong",
+            "chk_geo3_tamil_nadu"
+          ]
+        ],
+        "b": [
+          [
+            "chk_geo3_bamboo_drip",
+            "lnk_geo3_shillong_paradox"
+          ]
+        ]
+      }
+    }
+  ]
+}

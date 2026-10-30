@@ -1,0 +1,3131 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch5.json",
+  "sourceSha256": "9cbdce0a83043d980a4f1e9d2a7ddb11544711a918d7d3773478c0f86fe1ddaf",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 5,
+  "chapterName": "Exploring Mixtures and their Separation",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c5_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c5_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example homogeneous mixture, heterogeneous mixture, solute, solvent, concentration, saturated solution, solubility, crystallization.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "homogeneous mixture",
+    "heterogeneous mixture",
+    "solute",
+    "solvent",
+    "concentration",
+    "saturated solution",
+    "solubility",
+    "crystallization",
+    "distillation",
+    "chromatography",
+    "sublimation",
+    "centrifugation",
+    "coagulation",
+    "suspension",
+    "colloid",
+    "Tyndall effect",
+    "emulsion",
+    "alloy"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch5_t1_c1",
+      "topicId": "ncert_sci_9_ch5_t1",
+      "topicTitle": "Classifying mixtures and solutions",
+      "label": "Homogeneous and Heterogeneous Mixtures",
+      "headingType": "heading",
+      "sourcePages": [
+        73
+      ],
+      "conceptHash": "2703261cba7a8a69bdc75bc338f99b00a353eff63738e15a34ee4e20c4643434",
+      "cardText": "A mixture of sugar and water has a uniform composition throughout, and a well-stirred mixture is equally sweet in the first and the last sip. Such a mixture is called a homogeneous mixture, or a solution. Other examples are vinegar (acetic acid in water) and aerated drinks like soda (carbon dioxide in water), and a solution always remains homogeneous. A stirred mixture of sand and water is not uniform: the sand particles are easily visible in the water and settle with time. Such a mixture is called a heterogeneous mixture.",
+      "hint": "How can you tell a homogeneous mixture from a heterogeneous one?",
+      "probe": "What is the difference between a homogeneous and a heterogeneous mixture? Give an example of each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Homogeneous and Heterogeneous Mixtures, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do you notice about every sip of a well-stirred sugar drink, and what is such a blend called?",
+          "requiredEvidence": [
+            "uniform composition",
+            "equally sweet",
+            "homogeneous mixture",
+            "solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_mix_homo",
+              "criterion": "States that a mixture with uniform composition throughout, such as well-stirred sugar and water, is a homogeneous mixture or solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do you notice about every sip of a well-stirred sugar drink, and what is such a blend called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "vinegar",
+            "acetic acid in water",
+            "aerated drinks",
+            "carbon dioxide in water",
+            "always remains homogeneous"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_mix_examples",
+              "criterion": "Gives examples of homogeneous mixtures, such as vinegar (acetic acid in water) and aerated drinks like soda (carbon dioxide in water).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can you tell a homogeneous mixture from a heterogeneous one?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is sand stirred into water treated as a different type of blend?",
+          "requiredEvidence": [
+            "not uniform",
+            "easily visible",
+            "settle with time",
+            "heterogeneous mixture"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_mix_hetero",
+              "criterion": "States that a mixture like sand and water is not uniform, its particles are visible and settle with time, and it is a heterogeneous mixture.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is sand stirred into water treated as a different type of blend?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_mix_stir"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_uniform_visible",
+          "linksChecks": [
+            "chk_sci9c5_mix_homo",
+            "chk_sci9c5_mix_hetero"
+          ],
+          "criterion": "Connects uniform composition to a homogeneous mixture and visible, settling particles to a heterogeneous mixture.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_mix_stir",
+          "wrong": "Stirring well can turn sand and water into a homogeneous mixture.",
+          "fix": "A stirred mixture of sand and water is not uniform; the sand particles are easily visible in the water and settle with time, so it is heterogeneous.",
+          "checkId": "mchk_misc_sci9c5_mix_stir",
+          "checkCriterion": "The answer states or implies this wrong idea: Stirring well can turn sand and water into a homogeneous mixture.",
+          "fixCheckId": "mfix_misc_sci9c5_mix_stir",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A stirred mixture of sand and water is not uniform; the sand particles are easily visible in the water and settle with time, so it is heterogeneous.",
+          "keyPointIds": [
+            "sci9c5_t1c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_mix_stir"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_mix_homo",
+            "chk_sci9c5_mix_hetero"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_mix_examples",
+            "lnk_sci9c5_uniform_visible"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t1_c2",
+      "topicId": "ncert_sci_9_ch5_t1",
+      "topicTitle": "Classifying mixtures and solutions",
+      "label": "Solutions: Solute, Solvent and Concentration",
+      "headingType": "heading",
+      "sourcePages": [
+        74
+      ],
+      "conceptHash": "c6461ae3b29e19a93e1f080f54ef45045fceaa535f9627b659de73b2671ce735",
+      "cardText": "Solutions are prepared when a solute, the substance that gets dissolved, is mixed with a solvent, the substance that dissolves the solute. In the mixture of sugar and water, sugar is the solute and water is the solvent. The right proportion is always essential when preparing a solution: Oral Rehydration Solution (ORS) needs specified amounts of salt and sugar added to a fixed amount of water, and not all sugary drinks prepared at home or sold in the market are ORS. When farmers spray pesticides they must mix the right amount of pesticide with a fixed amount of water, as too little may not protect crops while too much can damage crops, soil and the environment. The amount of solute dissolved in a given amount of solvent or solution is termed the concentration of the solution.",
+      "hint": "Why does the proportion of solute and solvent matter?",
+      "probe": "What are a solute and a solvent, and what is the concentration of a solution?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Solutions: Solute, Solvent and Concentration, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the two parts of a dissolved blend, and what does each do?",
+          "requiredEvidence": [
+            "solute",
+            "substance that gets dissolved",
+            "solvent",
+            "substance that dissolves the solute"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sol_def",
+              "criterion": "Defines the solute as the substance that gets dissolved and the solvent as the substance that dissolves the solute, e.g. sugar (solute) in water (solvent).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the two parts of a dissolved blend, and what does each do?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the ratio of the two parts matter when making ORS or a spray for crops?",
+          "requiredEvidence": [
+            "right proportion",
+            "preparing a solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sol_proportion",
+              "criterion": "States that the right proportion of solute and solvent is always essential when preparing a solution, as for ORS.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the ratio of the two parts matter when making ORS or a spray for crops?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_sol_any_sweet"
+          ]
+        },
+        {
+          "id": "sci9c5_t1c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "too little pesticide",
+            "may not protect crops",
+            "too much",
+            "damage crops, soil and the environment"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sol_pesticide",
+              "criterion": "States that too little pesticide may not protect crops while too much can damage crops, soil and the environment.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the proportion of solute and solvent matter?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t1c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What word do we use for how much of the dissolved part is present?",
+          "requiredEvidence": [
+            "amount of solute dissolved",
+            "given amount of solvent or solution",
+            "concentration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sol_conc",
+              "criterion": "Defines the concentration of a solution as the amount of solute dissolved in a given amount of solvent or solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What word do we use for how much of the dissolved part is present?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_proportion_use",
+          "linksChecks": [
+            "chk_sci9c5_sol_proportion",
+            "chk_sci9c5_sol_conc"
+          ],
+          "criterion": "Connects the need for the right proportion of solute and solvent in ORS or pesticide spray to the idea of concentration.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_sol_any_sweet",
+          "wrong": "Any sweet drink made at home is ORS.",
+          "fix": "Not all sugary drinks prepared at home or sold in the market are ORS; ORS needs specified amounts of salt and sugar in a fixed amount of water.",
+          "checkId": "mchk_misc_sci9c5_sol_any_sweet",
+          "checkCriterion": "The answer states or implies this wrong idea: Any sweet drink made at home is ORS.",
+          "fixCheckId": "mfix_misc_sci9c5_sol_any_sweet",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Not all sugary drinks prepared at home or sold in the market are ORS; ORS needs specified amounts of salt and sugar in a fixed amount of water.",
+          "keyPointIds": [
+            "sci9c5_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_sol_any_sweet"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_sol_def",
+            "chk_sci9c5_sol_proportion",
+            "chk_sci9c5_sol_conc"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_sol_pesticide",
+            "lnk_sci9c5_proportion_use"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t2_c1",
+      "topicId": "ncert_sci_9_ch5_t2",
+      "topicTitle": "Concentration and solubility",
+      "label": "Expressing Concentration as a Percentage",
+      "headingType": "heading",
+      "sourcePages": [
+        75,
+        76
+      ],
+      "conceptHash": "f40b5dafdedb98628b60e89508edb26ce7528609f579f0bc7a337f846ea27025",
+      "cardText": "Concentration can be expressed in several ways, a common one being the percentage. Mass by mass percentage (% m/m) tells how many grams of solute are present in 100 grams of the total solution; it is commonly used for homogeneous mixtures, and for heterogeneous mixtures like milk powder and spice mixtures and for labelling packaged foods. Mass by volume percentage (% m/v) is used where measuring the volume of a liquid is easier than weighing it, as in medicines and laboratories, and tells how many grams of solute are present in 100 millilitres of solution, as in a 5% glucose solution. Volume by volume percentage (% v/v) is used when two miscible liquids are mixed, as in perfumes, cosmetics and vinegar, and tells how many millilitres of solute are present in 100 millilitres of solution. A hospital saline drip is usually 0.9 % m/v sodium chloride in water, that is 0.9 g of salt in 100 mL of solution, which is safe for blood and replaces lost fluids in the body.",
+      "hint": "Which percentage method suits solids, which suits medicines, and which suits two liquids?",
+      "probe": "Name the three percentage methods of expressing concentration and say when each is used.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Expressing Concentration as a Percentage, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which percentage method counts grams in 100 grams of the whole blend?",
+          "requiredEvidence": [
+            "mass by mass percentage",
+            "homogeneous mixtures",
+            "grams of solute",
+            "100 grams of the total solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_pct_mm",
+              "criterion": "States that mass by mass percentage tells how many grams of solute are present in 100 grams of the total solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which percentage method counts grams in 100 grams of the whole blend?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which percentage method counts grams in 100 mL, and why is it handy for medicines?",
+          "requiredEvidence": [
+            "mass by volume percentage",
+            "volume of a liquid is easier than weighing",
+            "medicines and laboratories",
+            "100 millilitres of the solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_pct_mv",
+              "criterion": "States that mass by volume percentage is used where measuring volume is easier than weighing, as in medicines, and tells how many grams of solute are in 100 millilitres of solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which percentage method counts grams in 100 mL, and why is it handy for medicines?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_pct_mv_mass"
+          ]
+        },
+        {
+          "id": "sci9c5_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which percentage method is used when both parts are liquids that mix completely?",
+          "requiredEvidence": [
+            "volume by volume percentage",
+            "two miscible liquids",
+            "perfumes, cosmetics and vinegar",
+            "millilitres of the solute"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_pct_vv",
+              "criterion": "States that volume by volume percentage is used when two miscible liquids are mixed and tells how many millilitres of solute are in 100 millilitres of solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which percentage method is used when both parts are liquids that mix completely?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t2c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "saline drip",
+            "0.9",
+            "m/v",
+            "100 mL of solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_pct_saline",
+              "criterion": "States that a hospital saline drip is usually 0.9 % m/v sodium chloride, meaning 0.9 g of salt in 100 mL of solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which percentage method suits solids, which suits medicines, and which suits two liquids?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t2c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "several ways",
+            "percentage"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_pct_ways",
+              "criterion": "States that concentration can be expressed in several ways, a common one being the percentage.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which percentage method suits solids, which suits medicines, and which suits two liquids?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_method_choice",
+          "linksChecks": [
+            "chk_sci9c5_pct_mm",
+            "chk_sci9c5_pct_mv",
+            "chk_sci9c5_pct_vv"
+          ],
+          "criterion": "Connects the choice of percentage method to what is easier to measure: mass for solids, volume for liquids, and volumes of two miscible liquids.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_pct_mv_mass",
+          "wrong": "A 0.9% m/v saline solution has 0.9 g of salt in 100 g of solution.",
+          "fix": "A saline drip is 0.9 % m/v, which means 0.9 g of salt in 100 mL of solution.",
+          "checkId": "mchk_misc_sci9c5_pct_mv_mass",
+          "checkCriterion": "The answer states or implies this wrong idea: A 0.9% m/v saline solution has 0.9 g of salt in 100 g of solution.",
+          "fixCheckId": "mfix_misc_sci9c5_pct_mv_mass",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A saline drip is 0.9 % m/v, which means 0.9 g of salt in 100 mL of solution.",
+          "keyPointIds": [
+            "sci9c5_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_pct_mv_mass"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_pct_mm",
+            "chk_sci9c5_pct_mv",
+            "chk_sci9c5_pct_vv"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_pct_saline",
+            "chk_sci9c5_pct_ways",
+            "lnk_sci9c5_method_choice"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t2_c2",
+      "topicId": "ncert_sci_9_ch5_t2",
+      "topicTitle": "Concentration and solubility",
+      "label": "Solubility, Saturated Solutions and Solubility Curves",
+      "headingType": "heading",
+      "sourcePages": [
+        76,
+        77
+      ],
+      "conceptHash": "2b8bb73ac891b50c7b2e9ded788566fc3834e5ccb0100b63ef04501a76309054",
+      "cardText": "The maximum amount of solute that dissolves in a fixed quantity of the solvent (100 mL or 100 g) is called its solubility at a given temperature. A solution that cannot dissolve any more solute at that temperature is a saturated solution. Temperature is mentioned because the solubility of a solid solute in a liquid solvent generally increases with temperature, whereas the solubility of gases dissolved in liquids generally decreases with an increase in temperature. Solubility is an important property used to separate substances from mixtures. A graph of solubility versus temperature is called a solubility curve, with temperature in degrees Celsius on the x-axis and solubility in grams per 100 g of water on the y-axis.",
+      "hint": "Why is the temperature always stated with a solubility, and what does a solubility curve show?",
+      "probe": "Define solubility and a saturated solution, and say how temperature affects the solubility of solids and gases.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Solubility, Saturated Solutions and Solubility Curves, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the most that can dissolve in a fixed amount of solvent at one particular temperature, and what is the resulting blend called?",
+          "requiredEvidence": [
+            "maximum amount of solute",
+            "fixed quantity of the solvent",
+            "solubility",
+            "given temperature",
+            "saturated solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sb_def",
+              "criterion": "Defines solubility as the maximum amount of solute that dissolves in a fixed quantity of solvent at a given temperature, and a saturated solution as one that cannot dissolve any more solute at that temperature.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the most that can dissolve in a fixed amount of solvent at one particular temperature, and what is the resulting blend called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does warming change how much of a solid or a gas can stay dissolved in a liquid?",
+          "requiredEvidence": [
+            "solid solute",
+            "generally increases with temperature",
+            "gases dissolved in liquids",
+            "generally decreases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sb_temp",
+              "criterion": "States that the solubility of a solid in a liquid generally increases with temperature, while the solubility of a gas in a liquid generally decreases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does warming change how much of a solid or a gas can stay dissolved in a liquid?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_sb_gas_up"
+          ]
+        },
+        {
+          "id": "sci9c5_t2c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "important property",
+            "separate substances from mixtures"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sb_use",
+              "criterion": "States that solubility is an important property used to separate substances from mixtures.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the temperature always stated with a solubility, and what does a solubility curve show?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t2c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "solubility curve",
+            "x-axis shows temperature",
+            "y-axis indicates the solubility",
+            "grams per 100 g of water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sb_curve",
+              "criterion": "Describes a solubility curve as a graph of solubility versus temperature, with temperature on the x-axis and grams of solute per 100 g of water on the y-axis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the temperature always stated with a solubility, and what does a solubility curve show?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_temperature_solubility",
+          "linksChecks": [
+            "chk_sci9c5_sb_def",
+            "chk_sci9c5_sb_temp"
+          ],
+          "criterion": "Connects a change in temperature to a change in solubility, rising for solids and falling for gases in liquids, which is why the temperature must be stated.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_sb_gas_up",
+          "wrong": "Gases dissolve more in a liquid as the temperature rises, just like solids.",
+          "fix": "In the case of gases dissolved in liquids, their solubility generally decreases with an increase in temperature.",
+          "checkId": "mchk_misc_sci9c5_sb_gas_up",
+          "checkCriterion": "The answer states or implies this wrong idea: Gases dissolve more in a liquid as the temperature rises, just like solids.",
+          "fixCheckId": "mfix_misc_sci9c5_sb_gas_up",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In the case of gases dissolved in liquids, their solubility generally decreases with an increase in temperature.",
+          "keyPointIds": [
+            "sci9c5_t2c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_sb_gas_up"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_sb_def",
+            "chk_sci9c5_sb_temp"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_sb_use",
+            "chk_sci9c5_sb_curve",
+            "lnk_sci9c5_temperature_solubility"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t3_c1",
+      "topicId": "ncert_sci_9_ch5_t3",
+      "topicTitle": "Separating homogeneous mixtures",
+      "label": "Crystallization",
+      "headingType": "heading",
+      "sourcePages": [
+        77,
+        78,
+        79
+      ],
+      "conceptHash": "664c56b8cc553010a367f352a3585fe76d646d966c061ea89abcc572f2aa6b82",
+      "cardText": "If a saturated solution of compound B made at 60 degrees Celsius is cooled gradually to 40 degrees, only the amount that matches its lower solubility remains in solution (241 g per 100 g of water) and the rest separates out as a pure solid, often as crystals. A crystal is a solid made up of particles arranged in a regular geometric pattern. Crystals form naturally, for example rock salt, candy sugar (mishri) and snowflakes formed when water vapour freezes in the air. In laboratories the process of forming crystals from a saturated solution is called crystallization. It can separate two solids when one is present in small quantity and both are soluble in the same solvent, and it can purify solids; its principle is the difference in the solubility of a substance at different temperatures. To make copper sulfate crystals the hot saturated solution is filtered to remove insoluble impurities and then cooled slowly without disturbing it, which gives the particles enough time to come together as larger, shiny, well-shaped crystals. Crystallization separates the desired pure substance from undesired impurities.",
+      "hint": "Why do crystals separate out when a hot saturated solution cools, and why cool it slowly?",
+      "probe": "Explain how crystallization purifies a solid from a solution.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Crystallization, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the extra dissolved part when a hot, full solution is cooled, and what shape do the pieces take?",
+          "requiredEvidence": [
+            "separate out as a pure solid",
+            "crystals",
+            "regular geometric pattern"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_cool",
+              "criterion": "States that on cooling a saturated solution the amount above the lower solubility separates out as a pure solid, often as crystals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the extra dissolved part when a hot, full solution is cooled, and what shape do the pieces take?"
+            },
+            {
+              "id": "chk_sci9c5_cr_crystal",
+              "criterion": "Defines a crystal as a solid made up of particles arranged in a regular geometric pattern.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the extra dissolved part when a hot, full solution is cooled, and what shape do the pieces take?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "rock salt",
+            "candy sugar",
+            "snowflakes",
+            "water vapour freezes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_natural",
+              "criterion": "Gives natural examples of crystals: rock salt, candy sugar (mishri), snowflakes formed when water vapour freezes in air, and frost.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do crystals separate out when a hot saturated solution cools, and why cool it slowly?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the process that makes crystals from a full solution defined, and what is it used for?",
+          "requiredEvidence": [
+            "forming crystals from a saturated solution",
+            "crystallization",
+            "separation of two solids",
+            "small quantity",
+            "purification of solids"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_def",
+              "criterion": "Defines crystallization as forming crystals from a saturated solution, used to separate two solids soluble in the same solvent when one is present in small quantity, and to purify solids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the process that makes crystals from a full solution defined, and what is it used for?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_cr_evap"
+          ]
+        },
+        {
+          "id": "sci9c5_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What property of a substance does this purification method depend on?",
+          "requiredEvidence": [
+            "principle",
+            "differences in the solubility",
+            "different temperatures"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_principle",
+              "criterion": "States that the principle of purification by crystallization is the difference in the solubility of a substance at different temperatures.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What property of a substance does this purification method depend on?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How would you grow big blue copper sulfate crystals?",
+          "requiredEvidence": [
+            "filter the hot solution",
+            "insoluble impurities",
+            "cool slowly",
+            "without disturbing",
+            "larger, shiny, well-shaped"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_method",
+              "criterion": "Describes the method: filter the hot saturated solution to remove insoluble impurities, then cool slowly without disturbing so particles have time to form larger, well-shaped crystals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How would you grow big blue copper sulfate crystals?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "separating pure substances",
+            "homogeneous mixtures",
+            "unwanted impurities",
+            "desired pure substance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cr_use",
+              "criterion": "States that crystallization is a common technique for separating pure substances from homogeneous mixtures and from unwanted impurities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do crystals separate out when a hot saturated solution cools, and why cool it slowly?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_cooling_deposit",
+          "linksChecks": [
+            "chk_sci9c5_cr_cool",
+            "chk_sci9c5_cr_principle"
+          ],
+          "criterion": "Connects the lower solubility of a solute at a lower temperature to the excess separating out as a pure solid when a hot saturated solution cools.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_cr_evap",
+          "wrong": "Crystallization and evaporation are the same process.",
+          "fix": "Crystallization forms crystals from a saturated solution and rests on differences in solubility at different temperatures; evaporation just removes the solvent.",
+          "checkId": "mchk_misc_sci9c5_cr_evap",
+          "checkCriterion": "The answer states or implies this wrong idea: Crystallization and evaporation are the same process.",
+          "fixCheckId": "mfix_misc_sci9c5_cr_evap",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Crystallization forms crystals from a saturated solution and rests on differences in solubility at different temperatures; evaporation just removes the solvent.",
+          "keyPointIds": [
+            "sci9c5_t3c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_cr_evap"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_cr_cool",
+            "chk_sci9c5_cr_crystal",
+            "chk_sci9c5_cr_def",
+            "chk_sci9c5_cr_principle",
+            "chk_sci9c5_cr_method"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_cr_natural",
+            "chk_sci9c5_cr_use",
+            "lnk_sci9c5_cooling_deposit"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t3_c2",
+      "topicId": "ncert_sci_9_ch5_t3",
+      "topicTitle": "Separating homogeneous mixtures",
+      "label": "Distillation",
+      "headingType": "heading",
+      "sourcePages": [
+        80,
+        81
+      ],
+      "conceptHash": "2836f0058cc63cda36740e81ea85e9b291f914eff0eaad1d9c92ec99e9cc085e",
+      "cardText": "A homogeneous mixture of two miscible liquids can be separated by heating the mixture until the liquid with the lower boiling point vaporises. The vapour is then cooled, turning back into liquid; this process is known as distillation. It allows the recovery of the solvent or the separation of liquids that differ in boiling point by at least about 25 degrees Celsius, and can also separate a liquid from a solution containing dissolved solids. The vapours of the lower-boiling liquid pass through a condenser where they are cooled, usually by circulating water or air, and condensed as a pure liquid collected in a separate vessel, while the solid or other liquid remains in the distillation flask. Acetone and water can be separated by distillation because acetone boils at about 56 degrees and water at 100 degrees, so one liquid vaporises before the vapours of the other form in significant amount. Distillation is used for extracting fragrances from flowers, as in Kannauj's Mitti ka Ittar by the Deg-Bhapka method. Fractional distillation separates components whose boiling points differ by less than 25 degrees, as in a petroleum refinery.",
+      "hint": "Why can acetone and water be separated by distillation?",
+      "probe": "How does distillation separate two miscible liquids, and what is the condition on their boiling points?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Distillation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is a blend of two liquids that mix completely separated by heating?",
+          "requiredEvidence": [
+            "two miscible liquids",
+            "lower boiling point vaporises",
+            "vapour is then cooled",
+            "distillation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_def",
+              "criterion": "Defines distillation as heating a mixture of miscible liquids until the lower-boiling liquid vaporises and then cooling the vapour back into liquid.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is a blend of two liquids that mix completely separated by heating?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How far apart must the boiling points be for this method, and what else can it recover?",
+          "requiredEvidence": [
+            "recovery of the solvent",
+            "differ in boiling point",
+            "at least about 25 °C",
+            "dissolved solids"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_condition",
+              "criterion": "States that distillation recovers the solvent or separates liquids that differ in boiling point by at least about 25 °C, and can separate a liquid from dissolved solids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How far apart must the boiling points be for this method, and what else can it recover?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_dist_same_bp"
+          ]
+        },
+        {
+          "id": "sci9c5_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the vapour in the cooled tube, and where does each part end up?",
+          "requiredEvidence": [
+            "condenser",
+            "circulating water or air",
+            "condensed as a pure liquid",
+            "separate vessel",
+            "distillation flask"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_condenser",
+              "criterion": "States that vapours pass through a condenser, are cooled and condense as a pure liquid collected in a separate vessel, while the solid or other liquid remains in the distillation flask.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the vapour in the cooled tube, and where does each part end up?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can the mixture of the two named liquids be split this way, and what are their boiling points?",
+          "requiredEvidence": [
+            "acetone",
+            "56 °C",
+            "100 °C",
+            "large difference in boiling points",
+            "vaporise before"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_acetone",
+              "criterion": "Explains that acetone (about 56 °C) and water (100 °C) can be separated by distillation because the large difference in boiling points lets one liquid vaporise before the other's vapours form in significant amount.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can the mixture of the two named liquids be split this way, and what are their boiling points?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fractional distillation",
+            "relatively small differences",
+            "less than 25 °C"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_fractional",
+              "criterion": "Defines fractional distillation as separating components with relatively small differences (less than 25 °C) in boiling points, as in a petroleum refinery.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can acetone and water be separated by distillation?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c2_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Kannauj",
+            "Deg-Bhapka",
+            "Mitti ka Ittar",
+            "fragrances"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_dist_ittar",
+              "criterion": "Mentions that distillation is used to extract fragrances, as in Kannauj's Mitti ka Ittar made by the traditional Deg-Bhapka method.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Why can acetone and water be separated by distillation?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_boiling_gap",
+          "linksChecks": [
+            "chk_sci9c5_dist_condition",
+            "chk_sci9c5_dist_acetone"
+          ],
+          "criterion": "Connects a large difference in boiling points to one liquid vaporising before the other, so the two can be separated by distillation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_dist_same_bp",
+          "wrong": "Distillation can separate two liquids even when they have the same boiling point.",
+          "fix": "Distillation separates liquids that differ in boiling point by at least about 25 °C; liquids with relatively small differences (less than 25 °C) are separated by fractional distillation.",
+          "checkId": "mchk_misc_sci9c5_dist_same_bp",
+          "checkCriterion": "The answer states or implies this wrong idea: Distillation can separate two liquids even when they have the same boiling point.",
+          "fixCheckId": "mfix_misc_sci9c5_dist_same_bp",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Distillation separates liquids that differ in boiling point by at least about 25 °C; liquids with relatively small differences (less than 25 °C) are separated by fractional distillation.",
+          "keyPointIds": [
+            "sci9c5_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_dist_same_bp"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_dist_def",
+            "chk_sci9c5_dist_condition",
+            "chk_sci9c5_dist_condenser",
+            "chk_sci9c5_dist_acetone"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_dist_fractional",
+            "chk_sci9c5_dist_ittar",
+            "lnk_sci9c5_boiling_gap"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t3_c3",
+      "topicId": "ncert_sci_9_ch5_t3",
+      "topicTitle": "Separating homogeneous mixtures",
+      "label": "Paper Chromatography",
+      "headingType": "heading",
+      "sourcePages": [
+        82
+      ],
+      "conceptHash": "a3b00446ed9b09ab5f579df3de791265e5ae16cda3725101fe35892979e8e1e3",
+      "cardText": "When a drop of water falls on writing made with a black sketch pen, different colours may spread out. In Activity 5.5 a spot of black sketch pen ink is marked on a chromatography paper strip, the strip is placed vertically with its lower end dipping in water, and the water level must be below the spot. As the water rises the ink separates into different colour spots. This method is known as paper chromatography. It uses differences in the interactions of the components with the solvent and the paper to separate them; the liquid carries the substances up the paper, separating them based on how fast they move. Water may not work as a solvent in every case, and sometimes alcohol or a mixture of solvents is needed. The word chromatography comes from Greek words chroma, meaning colour, and graphein, meaning to write.",
+      "hint": "Why do the colours of an ink spot separate on the paper?",
+      "probe": "What is paper chromatography and why do different components move to different heights?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Paper Chromatography, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the strip placed in the container, and where is the water level compared with the spot?",
+          "requiredEvidence": [
+            "paper strip",
+            "ink spot",
+            "vertically",
+            "water level should be below the spot"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_chr_setup",
+              "criterion": "Describes the set-up: the strip with the ink spot is placed vertically with its lower end dipping in water, with the water level below the spot.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the strip placed in the container, and where is the water level compared with the spot?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_chr_level"
+          ]
+        },
+        {
+          "id": "sci9c5_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do you see on the strip as the liquid climbs up?",
+          "requiredEvidence": [
+            "water rises",
+            "separate into different colour spots"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_chr_rise",
+              "criterion": "States that as the water rises the ink separates into different colour spots.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do you see on the strip as the liquid climbs up?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What name is given to this method, and why do the coloured parts separate?",
+          "requiredEvidence": [
+            "paper chromatography",
+            "interactions of the components",
+            "solvent and the paper",
+            "how fast they move"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_chr_def",
+              "criterion": "Defines paper chromatography as separating components using differences in their interactions with the solvent and the paper, the liquid carrying them up at different speeds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What name is given to this method, and why do the coloured parts separate?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "water work as a solvent",
+            "different solvent",
+            "alcohol",
+            "mixture of solvents"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_chr_solvent",
+              "criterion": "States that water will not work as the solvent in every case, and sometimes alcohol or a mixture of solvents is needed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the colours of an ink spot separate on the paper?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t3c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Greek",
+            "chroma",
+            "colour",
+            "graphein",
+            "to write"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_chr_word",
+              "criterion": "States that chromatography comes from the Greek chroma (colour) and graphein (to write).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why do the colours of an ink spot separate on the paper?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_speed_separate",
+          "linksChecks": [
+            "chk_sci9c5_chr_def",
+            "chk_sci9c5_chr_rise"
+          ],
+          "criterion": "Connects differing interactions with the solvent and the paper to components moving at different speeds and separating into colour spots.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_chr_level",
+          "wrong": "In paper chromatography the solvent level should be above the sample spot at the start.",
+          "fix": "The paper strip is placed so that its lower end dips into the water and the water level is below the spot.",
+          "checkId": "mchk_misc_sci9c5_chr_level",
+          "checkCriterion": "The answer states or implies this wrong idea: In paper chromatography the solvent level should be above the sample spot at the start.",
+          "fixCheckId": "mfix_misc_sci9c5_chr_level",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The paper strip is placed so that its lower end dips into the water and the water level is below the spot.",
+          "keyPointIds": [
+            "sci9c5_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_chr_level"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_chr_setup",
+            "chk_sci9c5_chr_rise",
+            "chk_sci9c5_chr_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_chr_solvent",
+            "chk_sci9c5_chr_word",
+            "lnk_sci9c5_speed_separate"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c1",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Separating Immiscible Liquids",
+      "headingType": "heading",
+      "sourcePages": [
+        83
+      ],
+      "conceptHash": "137c7f9faaa1bda692ec31d0404b550906d023e02f94b4c4df4461f3ecde5a43",
+      "cardText": "Oil and water form separate layers; they do not mix and are called immiscible liquids. Sand and water do not mix, nor do iron filings and sulfur; these are heterogeneous mixtures. To separate mustard oil from water, the mixture is poured into a separating funnel and left undisturbed, when two layers form, with the yellow mustard oil as the upper layer and water as the lower layer. The stopcock is opened slowly to collect the lower layer of water carefully, closed when the water is almost fully drained, the small portion containing both liquids is discarded, and the oil is then collected separately. A separating funnel separates two immiscible liquids based on their different densities. Gas particles are free to move in all directions, so most mixtures of gases are homogeneous, while smoke, fog and dust in the air are heterogeneous mixtures with gas as one of the components.",
+      "hint": "How does a separating funnel separate oil from water?",
+      "probe": "How can two immiscible liquids be separated, and why does this work?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Separating Immiscible Liquids, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens when oil is poured into water, and what are such liquids called?",
+          "requiredEvidence": [
+            "separate layers",
+            "do not mix",
+            "immiscible liquids"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_imm_def",
+              "criterion": "States that liquids that form separate layers and do not mix, like oil and water, are called immiscible liquids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens when oil is poured into water, and what are such liquids called?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_imm_mix"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which liquid ends up on top in the funnel, and how is the bottom one collected?",
+          "requiredEvidence": [
+            "mustard oil",
+            "upper layer",
+            "lower layer",
+            "stopcock",
+            "separating funnel"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_imm_method",
+              "criterion": "Describes the method: the oil forms the upper layer and water the lower layer, and the stopcock of the separating funnel is opened slowly to collect the lower layer first.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which liquid ends up on top in the funnel, and how is the bottom one collected?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "separating funnel",
+            "immiscible liquids",
+            "different densities"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_imm_density",
+              "criterion": "States that a separating funnel separates two immiscible liquids based on their different densities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a separating funnel separate oil from water?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "free to move in all directions",
+            "mix easily and uniformly",
+            "most mixtures of gases are homogeneous"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_imm_gas",
+              "criterion": "States that gas particles move freely and mix uniformly, so most mixtures of gases are homogeneous, while smoke, fog and dust in air are heterogeneous.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a separating funnel separate oil from water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_layers_funnel",
+          "linksChecks": [
+            "chk_sci9c5_imm_def",
+            "chk_sci9c5_imm_method"
+          ],
+          "criterion": "Connects immiscible liquids forming two separate layers to their being collected one after another through the stopcock of a separating funnel.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_imm_mix",
+          "wrong": "Stirring oil and water long enough turns them into a solution that cannot be separated by a funnel.",
+          "fix": "Oil and water form separate layers; they do not mix and are called immiscible liquids, and can be separated using a separating funnel.",
+          "checkId": "mchk_misc_sci9c5_imm_mix",
+          "checkCriterion": "The answer states or implies this wrong idea: Stirring oil and water long enough turns them into a solution that cannot be separated by a funnel.",
+          "fixCheckId": "mfix_misc_sci9c5_imm_mix",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Oil and water form separate layers; they do not mix and are called immiscible liquids, and can be separated using a separating funnel.",
+          "keyPointIds": [
+            "sci9c5_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_imm_mix"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_imm_def",
+            "chk_sci9c5_imm_method"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_imm_density",
+            "chk_sci9c5_imm_gas",
+            "lnk_sci9c5_layers_funnel"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c2",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Sublimation",
+      "headingType": "heading",
+      "sourcePages": [
+        84
+      ],
+      "conceptHash": "a26e4601d7df65b156f0c9df1519e7402de17b01f6135ef6f36538346be956a5",
+      "cardText": "In Activity 5.7 a mixture of crushed camphor and sand is heated gently in a china dish under an inverted funnel plugged with cotton. White solid camphor deposits on the inner wall of the funnel while the sand remains in the dish. Camphor, on heating below its melting point, changes directly from the solid state to the vapour state without passing through the liquid state; this process is called sublimation. On cooling, vapours condense back into a solid without becoming a liquid, which is called deposition. Camphor sublimes and separates from sand because sand does not sublime on heating. Naphthalene can be used in place of camphor, and solid carbon dioxide, known as dry ice, also undergoes sublimation.",
+      "hint": "Why does camphor separate from sand on heating, and what is deposition?",
+      "probe": "What is sublimation and how can it separate camphor from sand?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sublimation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to camphor on gentle heating, without it becoming a liquid?",
+          "requiredEvidence": [
+            "below its melting point",
+            "directly from the solid state to the vapour state",
+            "without passing through the liquid state",
+            "sublimation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sub_def",
+              "criterion": "Defines sublimation as a solid changing directly to vapour on heating (below its melting point) without passing through the liquid state.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to camphor on gentle heating, without it becoming a liquid?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_sub_melt"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the vapour when it meets a cool surface?",
+          "requiredEvidence": [
+            "vapours condense back into a solid",
+            "without becoming a liquid",
+            "deposition"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sub_dep",
+              "criterion": "Defines deposition as vapours condensing back into a solid on cooling without becoming a liquid.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the vapour when it meets a cool surface?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does only one of the two solids in a camphor and sand mixture leave the dish?",
+          "requiredEvidence": [
+            "camphor sublimes",
+            "separates from sand",
+            "sand does not sublime"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sub_separate",
+              "criterion": "Explains that camphor separates from sand because camphor sublimes on heating while sand does not.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does only one of the two solids in a camphor and sand mixture leave the dish?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "naphthalene",
+            "solid carbon dioxide",
+            "dry ice",
+            "sublimation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_sub_other",
+              "criterion": "Names other substances that sublime: naphthalene and solid carbon dioxide (dry ice).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does camphor separate from sand on heating, and what is deposition?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_sublimes_stays",
+          "linksChecks": [
+            "chk_sci9c5_sub_def",
+            "chk_sci9c5_sub_separate"
+          ],
+          "criterion": "Connects only the camphor subliming on heating to its separation from the sand, which does not sublime.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_sub_melt",
+          "wrong": "Camphor first melts into a liquid and then boils before it deposits on the funnel.",
+          "fix": "Camphor changes directly from the solid state to the vapour state without passing through the liquid state, and vapours condense back into a solid without becoming a liquid.",
+          "checkId": "mchk_misc_sci9c5_sub_melt",
+          "checkCriterion": "The answer states or implies this wrong idea: Camphor first melts into a liquid and then boils before it deposits on the funnel.",
+          "fixCheckId": "mfix_misc_sci9c5_sub_melt",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Camphor changes directly from the solid state to the vapour state without passing through the liquid state, and vapours condense back into a solid without becoming a liquid.",
+          "keyPointIds": [
+            "sci9c5_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_sub_melt"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_sub_def",
+            "chk_sci9c5_sub_dep",
+            "chk_sci9c5_sub_separate"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_sub_other",
+            "lnk_sci9c5_sublimes_stays"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c3",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Alloys: Solutions of Metals",
+      "headingType": "heading",
+      "sourcePages": [
+        84
+      ],
+      "conceptHash": "60ee8bd94f3e21f754627fa86403f4e86161ec6242a7dbd33b93d18041bc3435",
+      "cardText": "Metals do not dissolve into each other at room temperature, but when metals are melted at high temperatures they can be mixed to form a solution. When such a hot mixture of two or more metals cools, it solidifies into a new material that appears to be a single metal. A homogeneous mixture of two or more metals, or a metal and a non-metal, is called an alloy. Physical methods cannot separate the components of an alloy. Alloys are generally prepared to produce materials that are stronger, more rigid or more corrosion-resistant. Brass is approximately 80% copper and 20% zinc, bronze is approximately 80% copper and 20% tin, and stainless steel is usually iron with other elements such as carbon, chromium, nickel and molybdenum.",
+      "hint": "What is an alloy, and can its parts be separated by physical methods?",
+      "probe": "What is an alloy, why are alloys made and give examples.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Alloys: Solutions of Metals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can metals be made to mix with each other?",
+          "requiredEvidence": [
+            "do not dissolve into each other at room temperature",
+            "melted at high temperatures",
+            "mixed to form a solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_alloy_melt",
+              "criterion": "States that metals do not dissolve into each other at room temperature but, when melted at high temperatures, can be mixed to form a solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can metals be made to mix with each other?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name for a uniform mix of metals, and can filtering or a magnet separate it?",
+          "requiredEvidence": [
+            "homogeneous mixture",
+            "two or more metals",
+            "metal and a non-metal",
+            "alloy",
+            "physical methods cannot separate"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_alloy_def",
+              "criterion": "Defines an alloy as a homogeneous mixture of two or more metals, or a metal and a non-metal, whose components cannot be separated by physical methods.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name for a uniform mix of metals, and can filtering or a magnet separate it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_alloy_sep"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "stronger",
+            "more rigid",
+            "corrosion-resistant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_alloy_why",
+              "criterion": "States that alloys are generally prepared to give materials that are stronger, more rigid or more corrosion-resistant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is an alloy, and can its parts be separated by physical methods?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "brass",
+            "copper and zinc",
+            "bronze",
+            "copper and tin"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_alloy_examples",
+              "criterion": "Gives examples: brass (about 80% copper, 20% zinc) and bronze (about 80% copper, 20% tin).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is an alloy, and can its parts be separated by physical methods?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_alloy_sep",
+          "wrong": "The metals in an alloy can be separated by filtration or by a magnet.",
+          "fix": "Physical methods cannot separate the components of an alloy.",
+          "checkId": "mchk_misc_sci9c5_alloy_sep",
+          "checkCriterion": "The answer states or implies this wrong idea: The metals in an alloy can be separated by filtration or by a magnet.",
+          "fixCheckId": "mfix_misc_sci9c5_alloy_sep",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Physical methods cannot separate the components of an alloy.",
+          "keyPointIds": [
+            "sci9c5_t4c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_alloy_sep"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_alloy_melt",
+            "chk_sci9c5_alloy_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_alloy_why",
+            "chk_sci9c5_alloy_examples"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c4",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Suspensions",
+      "headingType": "heading",
+      "sourcePages": [
+        85
+      ],
+      "conceptHash": "2df0ac10467bd706bdc2322fae55fa6c50e75fa0ca861674f2174980ab95dbc9",
+      "cardText": "In a heterogeneous mixture in which solid particles, such as sand, do not dissolve but remain suspended throughout the bulk of the medium, such as water, the mixture is called a suspension. The particles of the undissolved substance are larger than the particles in a solution and are visible to the naked eye; sawdust in water and tea leaves in water are other examples. If muddy water is left undisturbed the heavier mud particles settle at the bottom, but the water may still appear cloudy. Filtering through cotton cloth or filter paper removes some larger particles but the water often remains cloudy, which shows that filtration is not always enough to separate tiny particles. In such cases techniques such as centrifugation and coagulation are used.",
+      "hint": "What is a suspension and why is filtering not always enough?",
+      "probe": "What is a suspension, and what happens when muddy water stands or is filtered?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Suspensions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of mixture has solid pieces that stay spread out in a liquid without dissolving?",
+          "requiredEvidence": [
+            "heterogeneous mixtures",
+            "do not dissolve",
+            "remain suspended",
+            "suspensions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_susp_def",
+              "criterion": "Defines a suspension as a heterogeneous mixture in which solid particles do not dissolve but remain suspended throughout the medium.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of mixture has solid pieces that stay spread out in a liquid without dissolving?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c4_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "larger in size",
+            "particles present in the solution",
+            "visible to the naked eye"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_susp_size",
+              "criterion": "States that particles of a suspension are larger than those of a solution and visible to the naked eye.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a suspension and why is filtering not always enough?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens when muddy water stands, and why is filtering sometimes not enough?",
+          "requiredEvidence": [
+            "heavier mud particles settle",
+            "may still appear cloudy",
+            "filtration is not always enough",
+            "tiny particles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_susp_muddy",
+              "criterion": "States that in muddy water the heavier particles settle but the water may stay cloudy, and filtration is not always enough to separate tiny particles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens when muddy water stands, and why is filtering sometimes not enough?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_susp_filter"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "centrifugation",
+            "coagulation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_susp_techniques",
+              "criterion": "Names centrifugation and coagulation as techniques to separate tiny suspended particles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a suspension and why is filtering not always enough?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_tiny_not_filtered",
+          "linksChecks": [
+            "chk_sci9c5_susp_muddy",
+            "chk_sci9c5_susp_techniques"
+          ],
+          "criterion": "Connects tiny particles that remain cloudy after settling and filtering to the need for centrifugation or coagulation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_susp_filter",
+          "wrong": "Filtering always makes muddy water completely clear.",
+          "fix": "Filtration is not always enough to separate tiny particles; the water often remains cloudy.",
+          "checkId": "mchk_misc_sci9c5_susp_filter",
+          "checkCriterion": "The answer states or implies this wrong idea: Filtering always makes muddy water completely clear.",
+          "fixCheckId": "mfix_misc_sci9c5_susp_filter",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Filtration is not always enough to separate tiny particles; the water often remains cloudy.",
+          "keyPointIds": [
+            "sci9c5_t4c4_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_susp_filter"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_susp_def",
+            "chk_sci9c5_susp_muddy"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_susp_size",
+            "chk_sci9c5_susp_techniques",
+            "lnk_sci9c5_tiny_not_filtered"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c5",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Centrifugation and the Paperfuge",
+      "headingType": "heading",
+      "sourcePages": [
+        85,
+        86
+      ],
+      "conceptHash": "e66cbc946d010921bce34246dcfb07941e407f634e7bb193e1bab880ec8fa48a",
+      "cardText": "Centrifugation involves spinning a mixture in a tube at a high speed. During centrifugation the tubes become horizontal and the centrifugal force, the outward force acting on a body moving in circular motion, causes the heavier particles to move outwards, where they settle at the bottom of the tube, while the lighter liquid remains at the top. It is widely used in laboratories to separate the components of blood, such as red blood cells and plasma, and in many chemical industries. A paperfuge is a simple hand-powered device, based on a common toy, that can perform the same process without electricity; by spinning blood samples at a very high speed it separates heavier components from lighter ones, and this low-cost tool can help detect diseases like malaria and anaemia in remote areas.",
+      "hint": "Which particles move outwards in a spinning tube, and what is a paperfuge?",
+      "probe": "How does centrifugation separate a mixture, and what is a paperfuge?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Centrifugation and the Paperfuge, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does spinning a tube very fast pull the contents apart?",
+          "requiredEvidence": [
+            "spinning a mixture",
+            "high speed",
+            "centrifugal force",
+            "heavier particles to move outwards",
+            "settle at the bottom",
+            "lighter liquid remains at the top"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cen_def",
+              "criterion": "States that centrifugation spins a mixture at high speed so the centrifugal force moves heavier particles outwards to the bottom of the tube while the lighter liquid stays on top.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does spinning a tube very fast pull the contents apart?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_cen_light"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c5_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "laboratories",
+            "components of blood",
+            "red blood cells",
+            "plasma",
+            "chemical industries"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cen_use",
+              "criterion": "States that centrifugation is widely used in laboratories to separate the components of blood, such as red blood cells and plasma, and in many chemical industries.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which particles move outwards in a spinning tube, and what is a paperfuge?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c5_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hand-powered",
+            "paperfuge",
+            "without electricity",
+            "low-cost",
+            "malaria and anaemia",
+            "remote areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_cen_paperfuge",
+              "criterion": "States that a paperfuge is a simple hand-powered, low-cost device that does centrifugation without electricity and can help detect diseases like malaria and anaemia in remote areas.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which particles move outwards in a spinning tube, and what is a paperfuge?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_outward_heavier",
+          "linksChecks": [
+            "chk_sci9c5_cen_def"
+          ],
+          "criterion": "Connects the outward centrifugal force in a spinning tube to the heavier particles settling at the bottom while the lighter liquid stays on top.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_cen_light",
+          "wrong": "In centrifugation the lighter particles are thrown to the bottom of the tube.",
+          "fix": "The centrifugal force causes the heavier particles to move outwards and settle at the bottom, while the lighter liquid remains at the top.",
+          "checkId": "mchk_misc_sci9c5_cen_light",
+          "checkCriterion": "The answer states or implies this wrong idea: In centrifugation the lighter particles are thrown to the bottom of the tube.",
+          "fixCheckId": "mfix_misc_sci9c5_cen_light",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The centrifugal force causes the heavier particles to move outwards and settle at the bottom, while the lighter liquid remains at the top.",
+          "keyPointIds": [
+            "sci9c5_t4c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_cen_light"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_cen_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_cen_use",
+            "chk_sci9c5_cen_paperfuge",
+            "lnk_sci9c5_outward_heavier"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c6",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Coagulation",
+      "headingType": "heading",
+      "sourcePages": [
+        86
+      ],
+      "conceptHash": "0464039c1d3dcdef25662068dc0fbbc821b8ee78e6d3d29bec53ffc52860f463",
+      "cardText": "Powdered alum (fitkari), a white crystalline chemical substance often used in water purification, can be added to muddy water. The alum causes the fine suspended particles to clump together. This process is called coagulation and the alum is said to act as a coagulant. The larger clumps settle by gravity (sedimentation) and can be separated from the water by decantation or filtration. The formation of cheese (paneer) from milk also involves coagulation, in which an acid such as lemon juice or vinegar is used as a coagulant, causing the coagulation of milk proteins.",
+      "hint": "Why does alum clear muddy water?",
+      "probe": "What is coagulation, and how does alum make muddy water clear?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Coagulation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the white crystalline powder do to muddy water?",
+          "requiredEvidence": [
+            "alum",
+            "fine suspended particles",
+            "clump together",
+            "coagulation",
+            "coagulant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_coag_def",
+              "criterion": "Defines coagulation: a coagulant such as alum causes fine suspended particles to clump together.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the white crystalline powder do to muddy water?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_coag_dissolve"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the lumps afterwards, and how is clear water then obtained?",
+          "requiredEvidence": [
+            "larger clumps",
+            "settle by gravity",
+            "sedimentation",
+            "decantation or filtration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_coag_settle",
+              "criterion": "States that the larger clumps settle by gravity (sedimentation) and can be separated from water by decantation or filtration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the lumps afterwards, and how is clear water then obtained?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c6_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "paneer",
+            "milk",
+            "acid",
+            "lemon juice or vinegar",
+            "milk proteins"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_coag_paneer",
+              "criterion": "States that making paneer from milk also involves coagulation, with an acid such as lemon juice or vinegar as the coagulant, coagulating milk proteins.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does alum clear muddy water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_clump_settle",
+          "linksChecks": [
+            "chk_sci9c5_coag_def",
+            "chk_sci9c5_coag_settle"
+          ],
+          "criterion": "Connects fine particles clumping together because of the coagulant to the larger clumps settling by gravity and being removed.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_coag_dissolve",
+          "wrong": "Alum clears muddy water by dissolving the mud.",
+          "fix": "The alum causes the fine suspended particles to clump together; the larger clumps then settle by gravity and are separated by decantation or filtration.",
+          "checkId": "mchk_misc_sci9c5_coag_dissolve",
+          "checkCriterion": "The answer states or implies this wrong idea: Alum clears muddy water by dissolving the mud.",
+          "fixCheckId": "mfix_misc_sci9c5_coag_dissolve",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The alum causes the fine suspended particles to clump together; the larger clumps then settle by gravity and are separated by decantation or filtration.",
+          "keyPointIds": [
+            "sci9c5_t4c6_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_coag_dissolve"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_coag_def",
+            "chk_sci9c5_coag_settle"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_coag_paneer",
+            "lnk_sci9c5_clump_settle"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c7",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Colloids",
+      "headingType": "heading",
+      "sourcePages": [
+        86,
+        87,
+        88
+      ],
+      "conceptHash": "8f5c7319fec6c4449b07c808c033f102c10e29dbf3ba9e6e481708fec74fff4b",
+      "cardText": "Blood can be separated by centrifugation and coagulates, yet its cells cannot be seen with the naked eye. Blood is neither a solution nor a true suspension; it is a colloid. Other examples of colloids are milk, tomato sauce and ice cream. Solutions, suspensions and colloids differ mainly in the size of the dissolved or suspended particles: the particle size is the smallest, less than 1 nm in diameter, in a solution; colloids have larger particles, 1 to 1000 nm; and suspensions have much larger particles, more than 1000 nm in diameter. Unlike a suspension, the particles in a colloid do not settle over time from the mixture and are uniformly dispersed throughout as in a solution. The components of a colloid are called the dispersed phase, the solute-like component or dispersed particles, and the dispersion medium, the component in which the dispersed phase is suspended.",
+      "hint": "How do colloids differ from solutions and suspensions in particle size and settling?",
+      "probe": "What is a colloid, and how do solutions, colloids and suspensions differ?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Colloids, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which type of mixture is blood, and what are some other everyday examples?",
+          "requiredEvidence": [
+            "neither a solution nor a true suspension",
+            "colloid",
+            "milk",
+            "tomato sauce",
+            "ice cream"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_col_examples",
+              "criterion": "States that blood is a colloid, neither a solution nor a true suspension, and gives other examples such as milk, tomato sauce and ice cream.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which type of mixture is blood, and what are some other everyday examples?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_col_suspension"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c7_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the sizes of the particles compare in a solution, a colloid and a suspension?",
+          "requiredEvidence": [
+            "particle size",
+            "less than 1 nm",
+            "1 – 1000 nm",
+            "more than 1000 nm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_col_size",
+              "criterion": "Compares particle sizes: less than 1 nm in a solution, 1 to 1000 nm in a colloid, and more than 1000 nm in a suspension.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the sizes of the particles compare in a solution, a colloid and a suspension?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c7_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the particles of a colloid if it is left alone for a long time?",
+          "requiredEvidence": [
+            "do not settle over time",
+            "uniformly dispersed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_col_settle",
+              "criterion": "States that, unlike a suspension, the particles in a colloid do not settle over time and are uniformly dispersed throughout the mixture.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the particles of a colloid if it is left alone for a long time?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c7_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "dispersed phase",
+            "dispersion medium",
+            "solute-like component",
+            "in which the dispersed phase is suspended"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_col_phases",
+              "criterion": "Defines the dispersed phase as the solute-like dispersed particles and the dispersion medium as the component in which they are suspended.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do colloids differ from solutions and suspensions in particle size and settling?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_size_settling",
+          "linksChecks": [
+            "chk_sci9c5_col_size",
+            "chk_sci9c5_col_settle"
+          ],
+          "criterion": "Connects the intermediate particle size of a colloid to its particles staying uniformly dispersed rather than settling like those of a suspension.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_col_suspension",
+          "wrong": "Blood is a true suspension because its cells can be separated by spinning.",
+          "fix": "Blood is neither a solution nor a true suspension; it is a colloid, whose particles do not settle over time.",
+          "checkId": "mchk_misc_sci9c5_col_suspension",
+          "checkCriterion": "The answer states or implies this wrong idea: Blood is a true suspension because its cells can be separated by spinning.",
+          "fixCheckId": "mfix_misc_sci9c5_col_suspension",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Blood is neither a solution nor a true suspension; it is a colloid, whose particles do not settle over time.",
+          "keyPointIds": [
+            "sci9c5_t4c7_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_col_suspension"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_col_examples",
+            "chk_sci9c5_col_size",
+            "chk_sci9c5_col_settle"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_col_phases",
+            "lnk_sci9c5_size_settling"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c8",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "The Tyndall Effect",
+      "headingType": "heading",
+      "sourcePages": [
+        87,
+        88
+      ],
+      "conceptHash": "f2d87b16f85ec06233a3c2e365662e56267cddba02dd1158f4836a712aa5f206",
+      "cardText": "When a laser beam is passed through three beakers, the path of the light beam is not visible in solution A, while the particles in suspension B scatter, or spread, the beam making its path visible. In mixture C too the path of light is visible, indicating that the particles scattered the light though the mixture appeared homogeneous. The scattering of light by particles is known as the Tyndall effect, called so because it was first explained by John Tyndall. It can also be seen when a fine beam of light enters a dark room through a small hole, because light gets scattered by the dust and smoke particles in the air, or in the floodlights of a stadium. Scattering of light occurs when it passes through a colloid or a suspension but not when it passes through a transparent solution.",
+      "hint": "Through which kinds of mixtures can you see the path of a light beam?",
+      "probe": "What is the Tyndall effect, and which mixtures show it?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Tyndall Effect, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c8_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Through which of the three beakers could you see the laser path, and which one looked uniform yet still showed it?",
+          "requiredEvidence": [
+            "not visible in solution",
+            "suspension B scattered",
+            "path visible",
+            "mixture C",
+            "appeared homogeneous"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_ty_obs",
+              "criterion": "Describes the laser observations: the path was not visible in the solution, but was visible in the suspension and in mixture C (a colloid) because their particles scattered the light.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Through which of the three beakers could you see the laser path, and which one looked uniform yet still showed it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_ty_solution"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c8_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the scattering of light by small particles called, and who explained it?",
+          "requiredEvidence": [
+            "scattering of light by particles",
+            "Tyndall effect",
+            "John Tyndall"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_ty_def",
+              "criterion": "Defines the Tyndall effect as the scattering of light by particles, named after John Tyndall.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the scattering of light by small particles called, and who explained it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c8_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Through which kinds of mixture does light scatter, and through which does it pass unseen?",
+          "requiredEvidence": [
+            "colloid or a suspension",
+            "not when it passes through a transparent solution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_ty_rule",
+              "criterion": "States that scattering of light occurs in a colloid or a suspension but not in a transparent solution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Through which kinds of mixture does light scatter, and through which does it pass unseen?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c8_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "dust and smoke particles",
+            "air",
+            "floodlights",
+            "sports stadium"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_ty_everyday",
+              "criterion": "Gives everyday examples of the Tyndall effect: a fine beam of light in a dark room showing dust and smoke in the air, and floodlights in a stadium.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Through which kinds of mixtures can you see the path of a light beam?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_scatter_visible",
+          "linksChecks": [
+            "chk_sci9c5_ty_obs",
+            "chk_sci9c5_ty_rule"
+          ],
+          "criterion": "Connects particles scattering light to the visible path of the beam, which occurs in colloids and suspensions but not in a transparent solution.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_ty_solution",
+          "wrong": "A salt solution shows the Tyndall effect because it contains dissolved particles.",
+          "fix": "Scattering of light occurs when it passes through a colloid or a suspension but not when it passes through a transparent solution.",
+          "checkId": "mchk_misc_sci9c5_ty_solution",
+          "checkCriterion": "The answer states or implies this wrong idea: A salt solution shows the Tyndall effect because it contains dissolved particles.",
+          "fixCheckId": "mfix_misc_sci9c5_ty_solution",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Scattering of light occurs when it passes through a colloid or a suspension but not when it passes through a transparent solution.",
+          "keyPointIds": [
+            "sci9c5_t4c8_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_ty_solution"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_ty_obs",
+            "chk_sci9c5_ty_def",
+            "chk_sci9c5_ty_rule"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_ty_everyday",
+            "lnk_sci9c5_scatter_visible"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c9",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Emulsions",
+      "headingType": "heading",
+      "sourcePages": [
+        88
+      ],
+      "conceptHash": "2e6459613cc916703ddf8fc5631ce99c950acb222a6f02b34484f840e9ae08f9",
+      "cardText": "Some common colloids have both the dispersed phase and the dispersion medium as liquids; these are called emulsions. Emulsions containing oil and water are classified as oil-in-water or water-in-oil, depending on the nature of the dispersed phase and the dispersion medium. Milk and vanishing creams are common examples of oil-in-water emulsions, whereas butter, body lotions and cold cream are examples of water-in-oil emulsions. Some medicines are prepared as emulsions to disperse them in water and make them easily palatable, which also reduces the greasy feeling of the liquid medicine. The presence of emulsifying agents stabilises emulsions; for example proteins in milk and butter act as emulsifying agents.",
+      "hint": "What makes a colloid an emulsion, and what stabilises it?",
+      "probe": "What is an emulsion, and what are oil-in-water and water-in-oil examples?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Emulsions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c9_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of blend is it when both parts of a colloid are liquids?",
+          "requiredEvidence": [
+            "both the dispersed phase and the dispersion medium as liquids",
+            "emulsions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_em_def",
+              "criterion": "Defines emulsions as colloids in which both the dispersed phase and the dispersion medium are liquids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of blend is it when both parts of a colloid are liquids?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c9_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In which type of oil-and-water blend is the oil the scattered part, and in which is it the surrounding liquid? Give a household example of each.",
+          "requiredEvidence": [
+            "oil-in-water",
+            "water-in-oil",
+            "milk",
+            "vanishing creams",
+            "butter",
+            "cold cream"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_em_types",
+              "criterion": "States that oil-and-water emulsions are oil-in-water (milk, vanishing creams) or water-in-oil (butter, body lotions, cold cream).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which type of oil-and-water blend is the oil the scattered part, and in which is it the surrounding liquid? Give a household example of each."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c5_em_butter"
+          ]
+        },
+        {
+          "id": "sci9c5_t4c9_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What keeps these liquid blends from separating?",
+          "requiredEvidence": [
+            "emulsifying agents",
+            "stabilises emulsions",
+            "proteins in milk and butter"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_em_agents",
+              "criterion": "States that emulsifying agents stabilise emulsions, for example proteins in milk and butter.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What keeps these liquid blends from separating?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c9_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "medicines",
+            "disperse them in water",
+            "easily palatable",
+            "greasy feeling"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_em_medicine",
+              "criterion": "States that some medicines are prepared as emulsions to disperse them in water, make them easily palatable and reduce their greasy feeling.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes a colloid an emulsion, and what stabilises it?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c5_agents_stable",
+          "linksChecks": [
+            "chk_sci9c5_em_agents"
+          ],
+          "criterion": "Connects the presence of emulsifying agents such as proteins in milk and butter to the stability of emulsions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c5_em_butter",
+          "wrong": "Butter is an oil-in-water emulsion like milk.",
+          "fix": "Milk and vanishing creams are oil-in-water emulsions, whereas butter, body lotions and cold cream are water-in-oil emulsions.",
+          "checkId": "mchk_misc_sci9c5_em_butter",
+          "checkCriterion": "The answer states or implies this wrong idea: Butter is an oil-in-water emulsion like milk.",
+          "fixCheckId": "mfix_misc_sci9c5_em_butter",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Milk and vanishing creams are oil-in-water emulsions, whereas butter, body lotions and cold cream are water-in-oil emulsions.",
+          "keyPointIds": [
+            "sci9c5_t4c9_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c5_em_butter"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_em_def",
+            "chk_sci9c5_em_types",
+            "chk_sci9c5_em_agents"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_em_medicine",
+            "lnk_sci9c5_agents_stable"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch5_t4_c10",
+      "topicId": "ncert_sci_9_ch5_t4",
+      "topicTitle": "Separating heterogeneous mixtures",
+      "label": "Separation of Mixtures in Daily Life and Nature",
+      "headingType": "heading",
+      "sourcePages": [
+        89
+      ],
+      "conceptHash": "cfbe9d7b6594cff6264a93b40b4960220ec41558509ab962fbf2c5703d84e6dc",
+      "cardText": "We use various properties, such as size, density and solubility, to separate mixtures, but separation is not always simple; it is hard to separate all the ingredients of a lemonade. Separation happens in nature and in our bodies too: our kidneys remove waste from our blood. Cleaning oceans and rivers by removing plastic waste and treating sewage before releasing it into the environment are bigger challenges. Sewage treatment involves steps such as sedimentation, coagulation and filtration, and the clean water can be reused for flushing toilets or watering plants. Dry waste such as plastic, paper, glass and metal can be recycled while wet waste like food scraps and vegetable peels can be composted, and researchers are finding ways to recover valuable materials such as lithium from old batteries.",
+      "hint": "Name some places where separation of mixtures matters outside the laboratory.",
+      "probe": "Give examples of how separation of mixtures matters in nature and in daily life.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Separation of Mixtures in Daily Life and Nature, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c5_t4c10_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "size, density and solubility",
+            "separate mixtures",
+            "not always simple"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_life_props",
+              "criterion": "States that properties such as size, density and solubility are used to separate mixtures, though separation is not always simple.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some places where separation of mixtures matters outside the laboratory."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c10_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where in your own body does a kind of separation of waste happen?",
+          "requiredEvidence": [
+            "separation happens in nature",
+            "our bodies",
+            "kidneys remove waste from our blood"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_life_kidney",
+              "criterion": "States that separation happens in nature and our bodies, for example our kidneys remove waste from our blood.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where in your own body does a kind of separation of waste happen?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c10_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What steps are used to clean wastewater, and what can the clean water then be used for again?",
+          "requiredEvidence": [
+            "sewage treatment",
+            "sedimentation, coagulation and filtration",
+            "reused",
+            "flushing toilets or watering plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_life_sewage",
+              "criterion": "States that sewage treatment involves sedimentation, coagulation and filtration, and the clean water can be reused for flushing toilets or watering plants.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What steps are used to clean wastewater, and what can the clean water then be used for again?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c10_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "dry waste",
+            "recycled",
+            "wet waste",
+            "composted"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_life_waste",
+              "criterion": "States that dry waste such as plastic, paper, glass and metal can be recycled, while wet waste like food scraps and vegetable peels can be composted.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some places where separation of mixtures matters outside the laboratory."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c5_t4c10_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "recover valuable materials",
+            "lithium",
+            "old batteries"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c5_life_lithium",
+              "criterion": "States that researchers are finding ways to recover valuable materials, such as lithium from old batteries.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Name some places where separation of mixtures matters outside the laboratory."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c5_life_kidney",
+            "chk_sci9c5_life_sewage"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c5_life_props",
+            "chk_sci9c5_life_waste",
+            "chk_sci9c5_life_lithium"
+          ]
+        ]
+      }
+    }
+  ]
+}

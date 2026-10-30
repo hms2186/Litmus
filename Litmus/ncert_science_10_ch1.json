@@ -1,0 +1,1865 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 1,
+  "chapterName": "Chemical Reactions and Equations",
+  "sourceStatus": "Built from the NCERT PDF jesc101 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Science (Class 10), Reprint 2026-27, chapter pp. 1-16",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. Equations, tables and figures are images or partly lost symbols in the PDF and are not quoted. Activity questions, the QUESTIONS boxes and the Exercises (pp. 14-16) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c1_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci10c1_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example chemical reaction, reactant, product, word-equation, skeletal equation, balanced equation, law of conservation of mass, combination reaction.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "chemical reaction",
+    "reactant",
+    "product",
+    "word-equation",
+    "skeletal equation",
+    "balanced equation",
+    "law of conservation of mass",
+    "combination reaction",
+    "decomposition reaction",
+    "exothermic",
+    "endothermic",
+    "displacement reaction",
+    "double displacement reaction",
+    "precipitate",
+    "oxidation",
+    "reduction",
+    "redox reaction",
+    "corrosion",
+    "rancidity"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_science_10_ch1_t1",
+      "title": "Chemical Reactions and Everyday Observations",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t1_c1",
+          "label": "What a Chemical Reaction Is and How We Know One Has Happened",
+          "headingType": "heading",
+          "sourcePages": [1, 2],
+          "cardText": "In everyday situations such as milk left at room temperature in summer, an iron tawa or nail left in humid air, grapes getting fermented, food being cooked or digested and respiration, the nature and identity of the initial substance have somewhat changed. Whenever a chemical change occurs, a chemical reaction has taken place. When a magnesium ribbon is burnt it burns with a dazzling white flame and changes into a white powder, magnesium oxide, formed by the reaction between magnesium and the oxygen in the air. From the activities with magnesium, lead nitrate with potassium iodide, and zinc with dilute acid, any of these observations helps us decide whether a chemical reaction has taken place: a change in state, a change in colour, evolution of a gas, or a change in temperature.",
+          "hint": "What stays the same and what changes in a chemical reaction, and what can you observe?",
+          "probe": "Explain what a chemical reaction is and the observations that show one has taken place.",
+          "causeChain": "A chemical change changes the nature and identity of the initial substance -> that is a chemical reaction, as when magnesium burns in air to give magnesium oxide -> so we recognise it from a change in state, a change in colour, evolution of a gas or a change in temperature",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_react_observe",
+              "linksChecks": [
+                "chk_sci10c1_cr_def",
+                "chk_sci10c1_cr_signs"
+              ],
+              "criterion": "Connects the identity of the substance changing to the observable signs (change in state, colour, gas or temperature) that show a chemical reaction.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In situations like milk left at room temperature, an iron nail in humid air or food being digested, the nature and the identity of the initial substance have somewhat changed. Whenever a chemical change occurs, a chemical reaction has taken place.",
+              "followUp": "When milk is left out in summer and turns sour, what has happened to the original substance, and what does that tell you about the kind of change?",
+              "assessment": {
+                "requiredEvidence": [
+                  "nature and the identity",
+                  "initial substance",
+                  "chemical change",
+                  "chemical reaction has taken place"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cr_def",
+                    "criterion": "States that when a chemical change occurs the nature and identity of the initial substance change, which means a chemical reaction has taken place.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_cr_physical"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t1c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A magnesium ribbon burns with a dazzling white flame and changes into a white powder, magnesium oxide, formed by the reaction between magnesium and the oxygen present in the air.",
+              "assessment": {
+                "requiredEvidence": [
+                  "dazzling white flame",
+                  "white powder",
+                  "magnesium oxide",
+                  "oxygen present in the air"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cr_mg",
+                    "criterion": "States that magnesium burns with a dazzling white flame to form white magnesium oxide by reacting with the oxygen in the air.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t1c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Any of the following observations helps us to determine whether a chemical reaction has taken place: change in state, change in colour, evolution of a gas, change in temperature.",
+              "followUp": "If you watched a test tube where two clear liquids were mixed, what are the things you could look for to decide whether something new had formed?",
+              "assessment": {
+                "requiredEvidence": [
+                  "change in state",
+                  "change in colour",
+                  "evolution of a gas",
+                  "change in temperature"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cr_signs",
+                    "criterion": "Names the observations that show a chemical reaction has taken place: a change in state, a change in colour, evolution of a gas, or a change in temperature.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 1.2: mixing lead nitrate solution with potassium iodide solution gives a coloured precipitate",
+            "Activity 1.3: zinc granules with dilute hydrochloric or sulphuric acid evolve a gas and the flask changes in temperature",
+            "milk turning sour, iron rusting and grapes fermenting are everyday chemical reactions"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_cr_physical",
+              "wrong": "Any change in a substance, such as a change of appearance, is a chemical reaction.",
+              "fix": "A chemical reaction happens when a chemical change occurs and the nature and identity of the initial substance change."
+            }
+          ],
+          "verify": [
+            { "page": 1, "quote": "In all the above situations, the nature and the identity of the initial substance have somewhat changed.", "supports": ["sci10c1_t1c1_kp1"] },
+            { "page": 1, "quote": "Whenever a chemical change occurs, we can say that a chemical reaction has taken place.", "supports": ["sci10c1_t1c1_kp1"] },
+            { "page": 2, "quote": "magnesium ribbon burns with a dazzling white flame and changes into a white powder.", "supports": ["sci10c1_t1c1_kp2"] },
+            { "page": 2, "quote": "It is formed due to the reaction between magnesium and oxygen present in the air.", "supports": ["sci10c1_t1c1_kp2"] },
+            { "page": 2, "quote": "any of the following observations helps us to determine whether a chemical reaction has taken place", "supports": ["sci10c1_t1c1_kp3"] },
+            { "page": 2, "quote": "change in state change in colour evolution of a gas change in temperature", "supports": ["sci10c1_t1c1_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t2",
+      "title": "Chemical Equations and Conservation of Mass",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t2_c1",
+          "label": "Word-Equations, Formulae and Skeletal Equations",
+          "headingType": "heading",
+          "sourcePages": [2, 3],
+          "cardText": "The burning of magnesium in oxygen can be written shorter as a word-equation: magnesium + oxygen gives magnesium oxide. The substances that undergo chemical change, magnesium and oxygen, are the reactants and the new substance formed, magnesium oxide, is the product. The reactants are written on the left-hand side with a plus sign between them and the products on the right-hand side, and the arrowhead points towards the products and shows the direction of the reaction. Chemical equations become more concise and useful when chemical formulae are used instead of words, as in Mg + O2 gives MgO. Such an equation that is not yet balanced is a skeletal chemical equation for a reaction.",
+          "hint": "How do you write a reaction in words and then with formulae?",
+          "probe": "Explain what a word-equation and a skeletal chemical equation are, and what reactants and products are.",
+          "causeChain": "A reaction described in a sentence is long -> a word-equation shows reactants on the left and products on the right of an arrow -> using formulae instead of words makes it concise and gives a skeletal chemical equation",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_eq_forms",
+              "linksChecks": [
+                "chk_sci10c1_we_word",
+                "chk_sci10c1_we_skeletal"
+              ],
+              "criterion": "Connects the word-equation, with reactants and products on either side of an arrow, to writing it with formulae as a skeletal equation.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The simplest way to describe a reaction shortly is to write it in the form of a word-equation. The substances that undergo chemical change are the reactants, and the new substance formed is the product.",
+              "followUp": "Burning magnesium in oxygen takes a whole sentence to describe. What is the shortest simple way to write it, and which substances go in which place?",
+              "assessment": {
+                "requiredEvidence": [
+                  "word-equation",
+                  "reactants",
+                  "product",
+                  "undergo chemical change"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_we_word",
+                    "criterion": "States that a word-equation is a short way of writing a reaction, with the substances that undergo chemical change as reactants and the new substance formed as the product.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A word-equation shows change of reactants to products through an arrow placed between them. Reactants are written on the left-hand side (LHS) and products on the right-hand side (RHS), with a plus sign between them, and the arrowhead points towards the products.",
+              "followUp": "In a written reaction, how do you show which substances are used up, which are formed, and which way the change goes?",
+              "assessment": {
+                "requiredEvidence": [
+                  "arrow",
+                  "left-hand side",
+                  "right-hand side",
+                  "plus sign",
+                  "direction of the reaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_we_sides",
+                    "criterion": "States that reactants are written on the left-hand side and products on the right-hand side with plus signs between them, and the arrowhead points towards the products showing the direction of the reaction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_we_arrow"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Chemical equations can be made more concise and useful if we use chemical formulae instead of words. If the number of atoms of each element is not the same on both sides, the equation is unbalanced and is a skeletal chemical equation.",
+              "followUp": "If you swap the names in a reaction for symbols, what do you gain, and what do we call it when the atom counts do not yet match?",
+              "assessment": {
+                "requiredEvidence": [
+                  "chemical formulae instead of words",
+                  "concise",
+                  "skeletal chemical equation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_we_skeletal",
+                    "criterion": "States that chemical equations are more concise and useful with chemical formulae instead of words, and that an equation not balanced is a skeletal chemical equation, such as Mg + O2 giving MgO.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 1.5: translating statements such as hydrogen combining with nitrogen to form ammonia into chemical equations",
+            "Magnesium + Oxygen gives Magnesium oxide, with magnesium and oxygen as reactants and magnesium oxide as the product"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_we_arrow",
+              "wrong": "The arrow in an equation means equals, like in a mathematical equation.",
+              "fix": "The arrowhead points towards the products and shows the direction of the reaction."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "The simplest way to do this is to write it in the form of a word-equation.", "supports": ["sci10c1_t2c1_kp1"] },
+            { "page": 2, "quote": "The substances that undergo chemical change in the reaction (1.1), magnesium and oxygen, are the reactants.", "supports": ["sci10c1_t2c1_kp1"] },
+            { "page": 2, "quote": "The new substance is magnesium oxide, formed during the reaction, as a product.", "supports": ["sci10c1_t2c1_kp1"] },
+            { "page": 2, "quote": "A word-equation shows change of reactants to products through an arrow placed between them.", "supports": ["sci10c1_t2c1_kp2"] },
+            { "page": 2, "quote": "The reactants are written on the left-hand side (LHS) with a plus sign (+) between them.", "supports": ["sci10c1_t2c1_kp2"] },
+            { "page": 2, "quote": "The arrowhead points towards the products, and shows the direction of the reaction.", "supports": ["sci10c1_t2c1_kp2"] },
+            { "page": 3, "quote": "Chemical equations can be made more concise and useful if we use chemical formulae instead of words.", "supports": ["sci10c1_t2c1_kp3"] },
+            { "page": 3, "quote": "Such a chemical equation is a skeletal chemical equation for a reaction.", "supports": ["sci10c1_t2c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch1_t2_c2",
+          "label": "Balanced Chemical Equations and the Law of Conservation of Mass",
+          "headingType": "heading",
+          "sourcePages": [3, 4, 5],
+          "cardText": "By the law of conservation of mass, mass can neither be created nor destroyed in a chemical reaction. The total mass of the elements in the products has to equal the total mass of the elements in the reactants, so the number of atoms of each element remains the same before and after a reaction. Hence a skeletal chemical equation has to be balanced. An equation is balanced when the number of atoms of each element is the same on both sides of the arrow. To balance, draw boxes around each formula and do not change anything inside them, list the atoms of each element, and start with the compound that contains the maximum number of atoms. Only coefficients are changed, never the formulae, so 4 H2O is used and not H2O4. Balancing Fe + H2O giving Fe3O4 + H2 gives 3Fe + 4H2O giving Fe3O4 + 4H2. This is called the hit-and-trial method, using the smallest whole number coefficient.",
+          "hint": "Why must equations be balanced, and how do you balance one step by step?",
+          "probe": "Explain what a balanced chemical equation is, why equations must be balanced, and how you balance one.",
+          "causeChain": "Mass cannot be created or destroyed in a reaction -> so the number of atoms of each element must stay the same before and after -> hence a skeletal equation is balanced by putting whole number coefficients in front of formulae, never changing the formulae, by hit-and-trial",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_bal_why_how",
+              "linksChecks": [
+                "chk_sci10c1_bal_law",
+                "chk_sci10c1_bal_method"
+              ],
+              "criterion": "Connects the law of conservation of mass to balancing an equation by changing only coefficients until the atoms of each element are equal on both sides.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The law of conservation of mass states that mass can neither be created nor destroyed in a chemical reaction. The number of atoms of each element remains the same before and after a reaction. Hence we need to balance a skeletal chemical equation.",
+              "followUp": "A burning log leaves a small pile of ash. Why can a reaction's atoms not simply vanish, and what must we therefore do to a written reaction?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mass can neither be created nor destroyed",
+                  "number of atoms of each element remains the same",
+                  "balance a skeletal chemical equation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_bal_law",
+                    "criterion": "States that by the law of conservation of mass the number of atoms of each element remains the same before and after a reaction, so a skeletal equation must be balanced.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "An equation is balanced when the number of atoms of each element is the same on both sides of the arrow.",
+              "followUp": "How would you check whether the number of atoms of each element matches on the two sides of an arrow?",
+              "assessment": {
+                "requiredEvidence": [
+                  "number of atoms of each element is the same on both sides",
+                  "balanced chemical equation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_bal_def",
+                    "criterion": "States that an equation is balanced when the number of atoms of each element is the same on both sides of the arrow.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t2c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "To balance, first draw boxes around each formula and do not change anything inside the boxes. It is convenient to start with the compound that contains the maximum number of atoms. We cannot alter the formulae of the compounds or elements involved, so oxygen is balanced with the coefficient 4 as 4 H2O, not H2O4.",
+              "followUp": "When you try to balance a reaction, which part of a formula are you allowed to change, which part must you leave alone, and where is it sensible to begin?",
+              "assessment": {
+                "requiredEvidence": [
+                  "draw boxes around each formula",
+                  "do not change anything inside the boxes",
+                  "maximum number of atoms",
+                  "cannot alter the formulae",
+                  "coefficient"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_bal_method",
+                    "criterion": "States how to balance: draw boxes around the formulae without changing anything inside them, start with the compound containing the most atoms, and change only coefficients, never the formulae.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_bal_subscript"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t2c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Balancing Fe + H2O giving Fe3O4 + H2 step by step gives 3Fe + 4H2O giving Fe3O4 + 4H2. This method is called the hit-and-trial method as we make trials to balance the equation using the smallest whole number coefficient.",
+              "assessment": {
+                "requiredEvidence": [
+                  "hit-and-trial",
+                  "smallest whole number coefficient",
+                  "3Fe + 4H2O"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_bal_trial",
+                    "criterion": "States that balancing by making trials with the smallest whole number coefficients is the hit-and-trial method, giving 3Fe + 4H2O to Fe3O4 + 4H2 for iron and steam.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 1.4: a balanced chemical equation shows the same number of atoms of each element on both sides, because mass is conserved",
+            "Question 2: hydrogen + chlorine giving hydrogen chloride is balanced as H2 + Cl2 giving 2HCl",
+            "Exercise 1.6: balancing HNO3 + Ca(OH)2 giving Ca(NO3)2 + H2O"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_bal_subscript",
+              "wrong": "To balance an equation you can change the small numbers in a formula, for example write H2O4 instead of 4 H2O.",
+              "fix": "We cannot alter the formulae of the compounds or elements involved; only the coefficient in front of a formula is changed, as in 4 H2O."
+            }
+          ],
+          "verify": [
+            { "page": 3, "quote": "mass can neither be created nor destroyed in a chemical reaction.", "supports": ["sci10c1_t2c2_kp1"] },
+            { "page": 3, "quote": "the number of atoms of each element remains the same, before and after a chemical reaction.", "supports": ["sci10c1_t2c2_kp1"] },
+            { "page": 3, "quote": "Hence, we need to balance a skeletal chemical equation.", "supports": ["sci10c1_t2c2_kp1"] },
+            { "page": 3, "quote": "As the number of atoms of each element is the same on both sides of the arrow, Eq. (1.3) is a balanced chemical equation.", "supports": ["sci10c1_t2c2_kp2"] },
+            { "page": 4, "quote": "Step I: To balance a chemical equation, first draw boxes around each formula. Do not change anything inside the boxes while balancing the equation.", "supports": ["sci10c1_t2c2_kp3"] },
+            { "page": 4, "quote": "It is often convenient to start balancing with the compound that contains the maximum number of atoms.", "supports": ["sci10c1_t2c2_kp3"] },
+            { "page": 4, "quote": "we cannot alter the formulae of the compounds or elements involved in the reactions.", "supports": ["sci10c1_t2c2_kp3"] },
+            { "page": 5, "quote": "This method of balancing chemical equations is called hit-and-trial method as we make trials to balance the equation by using the smallest whole number coefficient.", "supports": ["sci10c1_t2c2_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch1_t2_c3",
+          "label": "Physical States and Reaction Conditions in an Equation",
+          "headingType": "heading",
+          "sourcePages": [5],
+          "cardText": "A balanced equation does not by itself tell the physical state of each reactant and product. To make it more informative, the physical states are written with the formulae: the gaseous, liquid, aqueous and solid states are shown by (g), (l), (aq) and (s). Aqueous is written when the reactant or product is present as a solution in water. In 3Fe(s) + 4H2O(g) giving Fe3O4(s) + 4H2(g), the symbol (g) with H2O shows that water is used in the form of steam. Usually physical states are not included unless it is necessary to specify them. Sometimes reaction conditions such as temperature, pressure or a catalyst are indicated above and/or below the arrow.",
+          "hint": "What do (g), (l), (aq) and (s) show, and what can go above the arrow?",
+          "probe": "Explain how physical states and reaction conditions are shown in a chemical equation.",
+          "causeChain": "A balanced equation does not tell the physical state of the substances -> so symbols (g), (l), (aq) and (s) are written with the formulae to make it more informative -> and conditions such as temperature, pressure or a catalyst are written above or below the arrow",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_state_inform",
+              "linksChecks": [
+                "chk_sci10c1_ps_symbols",
+                "chk_sci10c1_ps_conditions"
+              ],
+              "criterion": "Connects the need for a more informative equation to writing state symbols and reaction conditions.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "To make a chemical equation more informative, the physical states of the reactants and products are mentioned along with their formulae. The gaseous, liquid, aqueous and solid states are represented by (g), (l), (aq) and (s). The word aqueous (aq) is written if the substance is present as a solution in water.",
+              "followUp": "A balanced equation does not say whether iron is a solid or water is steam. What small marks can be added to the formulae to show this?",
+              "assessment": {
+                "requiredEvidence": [
+                  "physical states",
+                  "(g), (l), (aq) and (s)",
+                  "aqueous",
+                  "solution in water"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ps_symbols",
+                    "criterion": "States that physical states are shown with the formulae using (g), (l), (aq) and (s) for gaseous, liquid, aqueous and solid, with aqueous meaning a solution in water.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_ps_aq"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t2c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In the balanced equation for iron and steam the symbol (g) is used with H2O to indicate that water is used in the form of steam. Usually physical states are not included unless it is necessary to specify them.",
+              "assessment": {
+                "requiredEvidence": [
+                  "(g) is used with H2O",
+                  "steam",
+                  "not included"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ps_steam",
+                    "criterion": "States that (g) with H2O shows water used as steam, and that physical states are usually left out unless it is necessary to specify them.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t2c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Sometimes the reaction conditions, such as temperature, pressure, catalyst, etc., for the reaction are indicated above and/or below the arrow in the equation.",
+              "followUp": "Some reactions only happen when heated or with a helper substance. Where in a written reaction can that information be placed?",
+              "assessment": {
+                "requiredEvidence": [
+                  "reaction conditions",
+                  "temperature",
+                  "pressure",
+                  "catalyst",
+                  "above and/or below the arrow"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ps_conditions",
+                    "criterion": "States that reaction conditions such as temperature, pressure or a catalyst are indicated above and/or below the arrow in the equation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 3: barium chloride solution and sodium sulphate solution give insoluble barium sulphate and sodium chloride solution, written with state symbols",
+            "photosynthesis with sunlight above the arrow and chlorophyll below it"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_ps_aq",
+              "wrong": "The symbol (aq) means the substance is a liquid.",
+              "fix": "The word aqueous (aq) is written if the reactant or product is present as a solution in water."
+            }
+          ],
+          "verify": [
+            { "page": 5, "quote": "To make a chemical equation more informative, the physical states of the reactants and products are mentioned along with their chemical formulae.", "supports": ["sci10c1_t2c3_kp1"] },
+            { "page": 5, "quote": "The gaseous, liquid, aqueous and solid states of reactants and products are represented by the notations (g), (l), (aq) and (s), respectively.", "supports": ["sci10c1_t2c3_kp1"] },
+            { "page": 5, "quote": "The word aqueous (aq) is written if the reactant or product is present as a solution in water.", "supports": ["sci10c1_t2c3_kp1"] },
+            { "page": 5, "quote": "Note that the symbol (g) is used with H2O to indicate that in this reaction water is used in the form of steam.", "supports": ["sci10c1_t2c3_kp2"] },
+            { "page": 5, "quote": "Usually physical states are not included in a chemical equation unless it is necessary to specify them.", "supports": ["sci10c1_t2c3_kp2"] },
+            { "page": 5, "quote": "Sometimes the reaction conditions, such as temperature, pressure, catalyst, etc., for the reaction are indicated above and/or below the arrow in the equation.", "supports": ["sci10c1_t2c3_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t3",
+      "title": "Combination Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t3_c1",
+          "label": "Combination Reactions",
+          "headingType": "heading",
+          "sourcePages": [6, 7],
+          "cardText": "When calcium oxide, quick lime, reacts vigorously with water it produces slaked lime, calcium hydroxide, releasing a large amount of heat. Calcium oxide and water combine to form a single product, calcium hydroxide. A reaction in which a single product is formed from two or more reactants is known as a combination reaction. A solution of slaked lime is used for whitewashing walls. Calcium hydroxide reacts slowly with the carbon dioxide in air to form a thin layer of calcium carbonate on the walls, formed after two to three days of whitewashing, which gives a shiny finish. Other examples are the burning of coal, C + O2 giving CO2, and the formation of water from hydrogen and oxygen. When two or more substances, elements or compounds, combine to form a single product, the reactions are called combination reactions.",
+          "hint": "What is formed when two or more reactants combine into one product?",
+          "probe": "Explain what a combination reaction is, using quick lime and water, and say what happens on whitewashed walls.",
+          "causeChain": "Calcium oxide and water combine to form a single product, calcium hydroxide, with a large amount of heat -> so two or more reactants forming a single product is a combination reaction -> slaked lime on walls slowly combines with carbon dioxide to form shiny calcium carbonate after two to three days",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_comb_walls",
+              "linksChecks": [
+                "chk_sci10c1_cb_lime",
+                "chk_sci10c1_cb_walls"
+              ],
+              "criterion": "Connects the combination of calcium hydroxide with carbon dioxide to the thin calcium carbonate layer that gives the walls a shiny finish.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Calcium oxide reacts vigorously with water to produce slaked lime (calcium hydroxide) releasing a large amount of heat. Calcium oxide and water combine to form a single product, calcium hydroxide.",
+              "followUp": "When quick lime is dropped into water, what happens to the beaker, and what single new substance forms?",
+              "assessment": {
+                "requiredEvidence": [
+                  "calcium oxide",
+                  "water",
+                  "slaked lime",
+                  "calcium hydroxide",
+                  "large amount of heat"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cb_lime",
+                    "criterion": "States that calcium oxide reacts vigorously with water to produce slaked lime (calcium hydroxide), releasing a large amount of heat.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A reaction in which a single product is formed from two or more reactants is known as a combination reaction. When two or more substances (elements or compounds) combine to form a single product, the reactions are called combination reactions.",
+              "followUp": "What is special about the number of products compared with the number of starting substances in this kind of reaction?",
+              "assessment": {
+                "requiredEvidence": [
+                  "single product",
+                  "two or more reactants",
+                  "combination reaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cb_def",
+                    "criterion": "Defines a combination reaction as one in which a single product is formed from two or more reactants.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_cb_two_products"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t3c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "A solution of slaked lime is used for whitewashing walls. Calcium hydroxide reacts slowly with the carbon dioxide in air to form a thin layer of calcium carbonate on the walls, formed after two to three days of whitewashing, which gives a shiny finish.",
+              "followUp": "Why does a whitewashed wall look dull at first and then shiny after a few days?",
+              "assessment": {
+                "requiredEvidence": [
+                  "whitewashing",
+                  "carbon dioxide in air",
+                  "calcium carbonate",
+                  "two to three days",
+                  "shiny finish"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cb_walls",
+                    "criterion": "States that slaked lime reacts slowly with carbon dioxide in air to form a thin layer of calcium carbonate on the walls after two to three days, giving a shiny finish.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t3c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Other examples of combination reactions are the burning of coal, C + O2 giving CO2, and the formation of water from hydrogen and oxygen, 2H2 + O2 giving 2H2O.",
+              "assessment": {
+                "requiredEvidence": [
+                  "burning of coal",
+                  "formation of water",
+                  "hydrogen",
+                  "oxygen"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_cb_examples",
+                    "criterion": "Gives an example of a combination reaction, such as the burning of coal or the formation of water from hydrogen and oxygen.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question: the reaction of magnesium burning in oxygen is a combination reaction that gives out heat",
+            "Exercise 2 and 7: calcium hydroxide + carbon dioxide giving calcium carbonate + water"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_cb_two_products",
+              "wrong": "In a combination reaction two reactants form two products.",
+              "fix": "In a combination reaction a single product is formed from two or more reactants."
+            }
+          ],
+          "verify": [
+            { "page": 6, "quote": "Calcium oxide reacts vigorously with water to produce slaked lime (calcium hydroxide) releasing a large amount of heat.", "supports": ["sci10c1_t3c1_kp1"] },
+            { "page": 6, "quote": "In this reaction, calcium oxide and water combine to form a single product, calcium hydroxide.", "supports": ["sci10c1_t3c1_kp1"] },
+            { "page": 6, "quote": "Such a reaction in which a single product is formed from two or more reactants is known as a combination reaction.", "supports": ["sci10c1_t3c1_kp2"] },
+            { "page": 7, "quote": "In simple language we can say that when two or more substances (elements or compounds) combine to form a single product, the reactions are called combination reactions.", "supports": ["sci10c1_t3c1_kp2"] },
+            { "page": 7, "quote": "A solution of slaked lime produced by the reaction 1.13 is used for whitewashing walls.", "supports": ["sci10c1_t3c1_kp3"] },
+            { "page": 7, "quote": "Calcium hydroxide reacts slowly with the carbon dioxide in air to form a thin layer of calcium carbonate on the walls.", "supports": ["sci10c1_t3c1_kp3"] },
+            { "page": 7, "quote": "Calcium carbonate is formed after two to three days of whitewashing and gives a shiny finish to the walls.", "supports": ["sci10c1_t3c1_kp3"] },
+            { "page": 7, "quote": "Let us discuss some more examples of combination reactions.", "supports": ["sci10c1_t3c1_kp4"] },
+            { "page": 7, "quote": "Burning of coal", "supports": ["sci10c1_t3c1_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t4",
+      "title": "Exothermic and Endothermic Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t4_c1",
+          "label": "Exothermic Reactions",
+          "headingType": "heading",
+          "sourcePages": [7],
+          "cardText": "In the reaction of quick lime with water a large amount of heat is evolved and the reaction mixture becomes warm. Reactions in which heat is released along with the formation of products are called exothermic chemical reactions. Other examples are the burning of natural gas, respiration and the decomposition of vegetable matter into compost. We get energy from the food we eat. During digestion, food such as rice, potatoes and bread, which contain carbohydrates, is broken down into simpler substances; the carbohydrates form glucose. This glucose combines with oxygen in the cells of our body and provides energy. The special name of this reaction is respiration, and respiration is an exothermic process.",
+          "hint": "Which reactions give out heat, and why is respiration one of them?",
+          "probe": "Explain what exothermic reactions are and why respiration is one.",
+          "causeChain": "Heat is released along with the products, making the mixture warm -> such reactions are exothermic, like burning natural gas or composting vegetable matter -> in respiration glucose from broken-down carbohydrates combines with oxygen in cells and gives energy, so respiration is exothermic",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_exo_resp",
+              "linksChecks": [
+                "chk_sci10c1_ex_def",
+                "chk_sci10c1_ex_resp"
+              ],
+              "criterion": "Connects glucose combining with oxygen in the cells to the energy released, making respiration an exothermic process.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In Activity 1.4 a large amount of heat is evolved, which makes the reaction mixture warm. Reactions in which heat is released along with the formation of products are called exothermic chemical reactions.",
+              "followUp": "If a reaction makes its surroundings warm, what do we call it, and what is being given out?",
+              "assessment": {
+                "requiredEvidence": [
+                  "heat is released",
+                  "formation of products",
+                  "exothermic chemical reactions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ex_def",
+                    "criterion": "Defines exothermic reactions as reactions in which heat is released along with the formation of products.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_ex_absorb"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t4c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Other examples of exothermic reactions are the burning of natural gas and the decomposition of vegetable matter into compost.",
+              "assessment": {
+                "requiredEvidence": [
+                  "burning of natural gas",
+                  "decomposition of vegetable matter",
+                  "compost"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ex_examples",
+                    "criterion": "Gives an example of an exothermic reaction, such as the burning of natural gas or the decomposition of vegetable matter into compost.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t4c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Respiration is an exothermic process. We get energy from the food we eat; carbohydrates in rice, potatoes and bread are broken down to form glucose, and this glucose combines with oxygen in the cells of our body and provides energy.",
+              "followUp": "How can the food we eat give us warmth, and what do we call the process in our cells that does this?",
+              "assessment": {
+                "requiredEvidence": [
+                  "respiration is an exothermic process",
+                  "carbohydrates",
+                  "glucose",
+                  "combines with oxygen",
+                  "cells of our body",
+                  "provides energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ex_resp",
+                    "criterion": "States that respiration is exothermic: glucose from broken-down carbohydrates combines with oxygen in the cells of the body and provides energy.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 10: respiration is exothermic because glucose combines with oxygen in the cells and gives out energy",
+            "Activity: slaking of quick lime makes the beaker warm"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_ex_absorb",
+              "wrong": "In an exothermic reaction heat is taken in from the surroundings.",
+              "fix": "Reactions in which heat is released along with the formation of products are called exothermic chemical reactions."
+            }
+          ],
+          "verify": [
+            { "page": 7, "quote": "In Activity 1.4, we also observed that a large amount of heat is evolved.", "supports": ["sci10c1_t4c1_kp1"] },
+            { "page": 7, "quote": "Reactions in which heat is released along with the formation of products are called exothermic chemical reactions.", "supports": ["sci10c1_t4c1_kp1"] },
+            { "page": 7, "quote": "Burning of natural gas", "supports": ["sci10c1_t4c1_kp2"] },
+            { "page": 7, "quote": "The decomposition of vegetable matter into compost is also an example of an exothermic reaction.", "supports": ["sci10c1_t4c1_kp2"] },
+            { "page": 7, "quote": "Do you know that respiration is an exothermic process?", "supports": ["sci10c1_t4c1_kp3"] },
+            { "page": 7, "quote": "These carbohydrates are broken down to form glucose.", "supports": ["sci10c1_t4c1_kp3"] },
+            { "page": 7, "quote": "This glucose combines with oxygen in the cells of our body and provides energy.", "supports": ["sci10c1_t4c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch1_t4_c2",
+          "label": "Endothermic Reactions",
+          "headingType": "heading",
+          "sourcePages": [10],
+          "cardText": "The decomposition reactions need energy, in the form of heat, light or electricity, to break down the reactants. Reactions in which energy is absorbed are known as endothermic reactions. In the activity with barium hydroxide and ammonium chloride mixed with a glass rod, touching the bottom of the test tube with the palm shows whether the reaction is exothermic or endothermic.",
+          "hint": "Which reactions take in energy from heat, light or electricity?",
+          "probe": "Explain what endothermic reactions are and how they differ from exothermic ones.",
+          "causeChain": "Decomposition reactions need energy as heat, light or electricity to break the reactants down -> reactions in which energy is absorbed are endothermic -> in contrast exothermic reactions give out heat",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_endo_energy",
+              "linksChecks": [
+                "chk_sci10c1_en_energy",
+                "chk_sci10c1_en_def"
+              ],
+              "criterion": "Connects the energy that decomposition needs to the definition of endothermic reactions as those that absorb energy.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t4c2_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "We have seen that the decomposition reactions require energy either in the form of heat, light or electricity for breaking down the reactants.",
+              "assessment": {
+                "requiredEvidence": [
+                  "require energy",
+                  "heat, light or electricity",
+                  "breaking down the reactants"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_en_energy",
+                    "criterion": "States that decomposition reactions require energy in the form of heat, light or electricity to break down the reactants.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Reactions in which energy is absorbed are known as endothermic reactions.",
+              "followUp": "Some reactions make a test tube feel cold when you touch it. What is happening to energy in them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "energy is absorbed",
+                  "endothermic reactions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_en_def",
+                    "criterion": "Defines endothermic reactions as reactions in which energy is absorbed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_en_release"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity: barium hydroxide with ammonium chloride makes the test tube feel cold, so it is endothermic",
+            "Exercise 9: difference between exothermic and endothermic reactions with examples",
+            "Group Activity: ammonium nitrate dissolving lowers the temperature"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_en_release",
+              "wrong": "Endothermic reactions release heat to the surroundings.",
+              "fix": "Reactions in which energy is absorbed are known as endothermic reactions."
+            }
+          ],
+          "verify": [
+            { "page": 10, "quote": "We have seen that the decomposition reactions require energy either in the form of heat, light or electricity for breaking down the reactants.", "supports": ["sci10c1_t4c2_kp1"] },
+            { "page": 10, "quote": "Reactions in which energy is absorbed are known as endothermic reactions.", "supports": ["sci10c1_t4c2_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t5",
+      "title": "Decomposition Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t5_c1",
+          "label": "Decomposition and Thermal Decomposition",
+          "headingType": "heading",
+          "sourcePages": [8, 9, 14],
+          "cardText": "When ferrous sulphate crystals are heated their green colour changes and the odour of burning sulphur can be smelt. In this reaction a single reactant breaks down to give simpler products: ferric oxide, sulphur dioxide and sulphur trioxide. This is a decomposition reaction. Decomposition reactions are opposite to combination reactions: a single substance decomposes to give two or more substances. Decomposition of calcium carbonate, limestone, to calcium oxide, quick lime, and carbon dioxide on heating is an important decomposition reaction used in various industries; quick lime is used in the manufacture of cement. When a decomposition reaction is carried out by heating, it is called thermal decomposition. Heating lead nitrate gives brown fumes of nitrogen dioxide.",
+          "hint": "What does a single substance do in a decomposition reaction, and what if heat is used?",
+          "probe": "Explain what decomposition and thermal decomposition reactions are, with examples.",
+          "causeChain": "A single reactant breaks down to give simpler products -> that is a decomposition reaction, the opposite of a combination reaction -> when it is carried out by heating it is thermal decomposition, as with limestone giving quick lime and carbon dioxide, or lead nitrate giving brown nitrogen dioxide fumes",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_dec_thermal",
+              "linksChecks": [
+                "chk_sci10c1_dc_def",
+                "chk_sci10c1_dc_thermal"
+              ],
+              "criterion": "Connects the breaking down of a single substance by heating to thermal decomposition, as in limestone giving quick lime used for cement.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t5c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In the reaction of ferrous sulphate a single reactant breaks down to give simpler products. This is a decomposition reaction. Decomposition reactions are opposite to combination reactions: a single substance decomposes to give two or more substances.",
+              "followUp": "When a green crystal is heated and breaks down into simpler substances, how is the number of starting substances different from the number of products?",
+              "assessment": {
+                "requiredEvidence": [
+                  "single reactant breaks down",
+                  "simpler products",
+                  "decomposition reaction",
+                  "opposite to combination reactions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dc_def",
+                    "criterion": "Defines a decomposition reaction as one in which a single substance breaks down to give two or more simpler substances, the opposite of a combination reaction.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_dc_combine"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t5c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Ferrous sulphate crystals lose water when heated and the colour of the crystals changes. It then decomposes to ferric oxide, sulphur dioxide and sulphur trioxide. Ferric oxide is a solid, while SO2 and SO3 are gases.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ferrous sulphate",
+                  "green colour",
+                  "ferric oxide",
+                  "sulphur dioxide",
+                  "sulphur trioxide"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dc_feso4",
+                    "criterion": "States that heating ferrous sulphate crystals changes their colour and decomposes them to ferric oxide, sulphur dioxide and sulphur trioxide.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t5c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "When a decomposition reaction is carried out by heating, it is called thermal decomposition. Decomposition of calcium carbonate (limestone) to calcium oxide (quick lime) and carbon dioxide on heating is an important decomposition reaction used in various industries, for example in the manufacture of cement.",
+              "followUp": "What do we call a breakdown that is caused by heating, and what two products form when the common calcium-containing rock used in building is heated?",
+              "assessment": {
+                "requiredEvidence": [
+                  "thermal decomposition",
+                  "calcium carbonate",
+                  "limestone",
+                  "calcium oxide",
+                  "quick lime",
+                  "carbon dioxide",
+                  "cement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dc_thermal",
+                    "criterion": "States that a decomposition carried out by heating is thermal decomposition, for example calcium carbonate (limestone) giving calcium oxide (quick lime) and carbon dioxide, which is used to make cement.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t5c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "On heating lead nitrate powder, brown fumes of nitrogen dioxide (NO2) are emitted.",
+              "assessment": {
+                "requiredEvidence": [
+                  "lead nitrate",
+                  "brown fumes",
+                  "nitrogen dioxide"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dc_pbno3",
+                    "criterion": "States that heating lead nitrate gives brown fumes of nitrogen dioxide.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 8(b): zinc carbonate giving zinc oxide and carbon dioxide is a decomposition reaction",
+            "Exercise 11: decomposition reactions are called the opposite of combination reactions",
+            "Question: calcium carbonate is heated to make quick lime for cement"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_dc_combine",
+              "wrong": "In a decomposition reaction two substances join to form one.",
+              "fix": "In a decomposition reaction a single substance decomposes to give two or more substances."
+            }
+          ],
+          "verify": [
+            { "page": 8, "quote": "In this reaction you can observe that a single reactant breaks down to give simpler products. This is a decomposition reaction.", "supports": ["sci10c1_t5c1_kp1"] },
+            { "page": 14, "quote": "Decomposition reactions are opposite to combination reactions. In a decomposition reaction, a single substance decomposes to give two or more substances.", "supports": ["sci10c1_t5c1_kp1"] },
+            { "page": 8, "quote": "Ferric oxide is a solid, while SO2 and SO3 are gases.", "supports": ["sci10c1_t5c1_kp2"] },
+            { "page": 8, "quote": "Decomposition of calcium carbonate to calcium oxide and carbon dioxide on heating is an important decomposition reaction used in various industries.", "supports": ["sci10c1_t5c1_kp3"] },
+            { "page": 8, "quote": "Calcium oxide is called lime or quick lime. It has many uses – one is in the manufacture of cement.", "supports": ["sci10c1_t5c1_kp3"] },
+            { "page": 8, "quote": "When a decomposition reaction is carried out by heating, it is called thermal decomposition.", "supports": ["sci10c1_t5c1_kp3"] },
+            { "page": 8, "quote": "You will observe the emission of brown fumes.", "supports": ["sci10c1_t5c1_kp4"] },
+            { "page": 8, "quote": "These fumes are of nitrogen dioxide (NO2).", "supports": ["sci10c1_t5c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch1_t5_c2",
+          "label": "Decomposition by Electricity and by Light",
+          "headingType": "heading",
+          "sourcePages": [9, 10],
+          "cardText": "Decomposition reactions need energy as heat, light or electricity. In the electrolysis of water, carbon electrodes in water with a few drops of dilute sulphuric acid connected to a 6 volt battery give bubbles at both electrodes, and the volume of gas collected in the two test tubes is not the same. White silver chloride turns grey in sunlight because it decomposes into silver and chlorine by light. Silver bromide also behaves in the same way, and these reactions are used in black and white photography. Heat, light and electricity can each break reactants down.",
+          "hint": "How do electricity and light break down a compound?",
+          "probe": "Explain decomposition by electric current and by light, with examples.",
+          "causeChain": "Electricity passed through acidified water gives bubbles of gas at both electrodes -> light makes white silver chloride grey as it decomposes into silver and chlorine -> silver bromide behaves the same way, which is used in black and white photography",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_dec_light",
+              "linksChecks": [
+                "chk_sci10c1_dl_agcl",
+                "chk_sci10c1_dl_photo"
+              ],
+              "criterion": "Connects light decomposing silver chloride and silver bromide to their use in black and white photography.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t5c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In the electrolysis of water, bubbles form at both the electrodes and displace water in the test tubes. The volume of gas collected is not the same in both test tubes.",
+              "followUp": "When current is passed through acidified water, what do you see at the two metal rods dipped in it, and are the amounts of gas collected the same?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electrodes",
+                  "bubbles at both the electrodes",
+                  "electrolysis of water",
+                  "volume of the gas"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dl_water",
+                    "criterion": "States that passing current through water (with dilute sulphuric acid) gives bubbles of gas at both electrodes, with unequal volumes in the two test tubes.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t5c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "White silver chloride turns grey in sunlight. This is due to the decomposition of silver chloride into silver and chlorine by light.",
+              "followUp": "Why does a white silver salt used in old photography slowly turn grey when left in sunlight, and what two things are formed?",
+              "assessment": {
+                "requiredEvidence": [
+                  "silver chloride",
+                  "turns grey in sunlight",
+                  "silver and chlorine",
+                  "decomposition"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dl_agcl",
+                    "criterion": "States that white silver chloride turns grey in sunlight because light decomposes it into silver and chlorine.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_dl_agcl_wrong"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t5c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Silver bromide also behaves in the same way. The above reactions are used in black and white photography.",
+              "assessment": {
+                "requiredEvidence": [
+                  "silver bromide",
+                  "black and white photography"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dl_photo",
+                    "criterion": "States that silver bromide also decomposes in light and that these reactions are used in black and white photography.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t5c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Decomposition reactions require energy either in the form of heat, light or electricity for breaking down the reactants.",
+              "assessment": {
+                "requiredEvidence": [
+                  "heat, light or electricity",
+                  "breaking down the reactants"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dl_energy",
+                    "criterion": "States that decomposition reactions need energy as heat, light or electricity.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: one of the two gases collected is double the other, and the gas of double volume is hydrogen",
+            "Exercise 12: decomposition with heat, with light and with electricity, one equation each"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_dl_agcl_wrong",
+              "wrong": "Silver chloride turns grey in sunlight because it melts.",
+              "fix": "White silver chloride turns grey in sunlight due to its decomposition into silver and chlorine by light."
+            }
+          ],
+          "verify": [
+            { "page": 9, "quote": "You will observe the formation of bubbles at both the electrodes.", "supports": ["sci10c1_t5c2_kp1"] },
+            { "page": 9, "quote": "These bubbles displace water in the test tubes.", "supports": ["sci10c1_t5c2_kp1"] },
+            { "page": 9, "quote": "Is the volume of the gas collected the same in both the test tubes?", "supports": ["sci10c1_t5c2_kp1"] },
+            { "page": 9, "quote": "You will see that white silver chloride turns grey in sunlight.", "supports": ["sci10c1_t5c2_kp2"] },
+            { "page": 9, "quote": "This is due to the decomposition of silver chloride into silver and chlorine by light.", "supports": ["sci10c1_t5c2_kp2"] },
+            { "page": 10, "quote": "Silver bromide also behaves in the same way.", "supports": ["sci10c1_t5c2_kp3"] },
+            { "page": 10, "quote": "The above reactions are used in black and white photography.", "supports": ["sci10c1_t5c2_kp3"] },
+            { "page": 10, "quote": "We have seen that the decomposition reactions require energy either in the form of heat, light or electricity for breaking down the reactants.", "supports": ["sci10c1_t5c2_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t6",
+      "title": "Displacement Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t6_c1",
+          "label": "Displacement Reactions",
+          "headingType": "heading",
+          "sourcePages": [10, 11, 14],
+          "cardText": "When iron nails are dipped in copper sulphate solution for about 20 minutes, the iron nails become brownish in colour and the blue colour of the copper sulphate solution fades. In this reaction iron has displaced or removed another element, copper, from copper sulphate solution. This reaction is known as a displacement reaction. Other examples are zinc with copper sulphate giving zinc sulphate and copper, and lead with copper chloride giving lead chloride and copper. Zinc and lead are more reactive elements than copper, so they displace copper from its compounds. When an element displaces another element from its compound, a displacement reaction occurs.",
+          "hint": "What happens when a more reactive element meets the compound of a less reactive one?",
+          "probe": "Explain what a displacement reaction is, using iron nails in copper sulphate solution.",
+          "causeChain": "Iron nails dipped in copper sulphate become brownish and the blue colour fades -> because iron has displaced the element copper from copper sulphate solution -> zinc and lead are more reactive than copper so they also displace it from its compounds",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_disp_why",
+              "linksChecks": [
+                "chk_sci10c1_dp_obs",
+                "chk_sci10c1_dp_def"
+              ],
+              "criterion": "Connects the colour changes in the nail and solution to iron displacing copper from copper sulphate.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t6c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The iron nail becomes brownish in colour and the blue colour of copper sulphate solution fades.",
+              "assessment": {
+                "requiredEvidence": [
+                  "brownish in colour",
+                  "blue colour of copper sulphate solution fades"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dp_obs",
+                    "criterion": "States that the iron nail turns brownish and the blue colour of the copper sulphate solution fades.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t6c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Iron has displaced or removed another element, copper, from copper sulphate solution. This reaction is known as displacement reaction. When an element displaces another element from its compound, a displacement reaction occurs.",
+              "followUp": "When a clean iron nail sits in blue copper sulphate solution, what happens to the nail and the solution, and what has swapped places?",
+              "assessment": {
+                "requiredEvidence": [
+                  "iron has displaced",
+                  "copper",
+                  "copper sulphate solution",
+                  "displacement reaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dp_def",
+                    "criterion": "Defines a displacement reaction as one in which an element displaces another element from its compound, as iron displaces copper from copper sulphate solution.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_dp_swap_both"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t6c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Zinc and lead are more reactive elements than copper. They displace copper from its compounds.",
+              "followUp": "Why can zinc or lead take the place of copper in a copper compound, but not the other way round?",
+              "assessment": {
+                "requiredEvidence": [
+                  "zinc and lead",
+                  "more reactive",
+                  "displace copper"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dp_reactive",
+                    "criterion": "States that zinc and lead are more reactive than copper, so they displace copper from its compounds.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 7(b): zinc + silver nitrate giving zinc nitrate + silver",
+            "Exercise 13: difference between displacement and double displacement reactions",
+            "Exercise 14: copper displaces silver from silver nitrate solution in refining silver"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_dp_swap_both",
+              "wrong": "In a displacement reaction two compounds exchange their ions.",
+              "fix": "In a displacement reaction one element displaces another element from its compound; exchange of ions between two compounds is a double displacement reaction."
+            }
+          ],
+          "verify": [
+            { "page": 11, "quote": "Why does the iron nail become brownish in colour and the blue colour of copper sulphate solution fades?", "supports": ["sci10c1_t6c1_kp1"] },
+            { "page": 11, "quote": "In this reaction, iron has displaced or removed another element, copper, from copper sulphate solution.", "supports": ["sci10c1_t6c1_kp2"] },
+            { "page": 11, "quote": "This reaction is known as displacement reaction.", "supports": ["sci10c1_t6c1_kp2"] },
+            { "page": 14, "quote": "When an element displaces another element from its compound, a displacement reaction occurs.", "supports": ["sci10c1_t6c1_kp2"] },
+            { "page": 11, "quote": "Zinc and lead are more reactive elements than copper.", "supports": ["sci10c1_t6c1_kp3"] },
+            { "page": 11, "quote": "They displace copper from its compounds.", "supports": ["sci10c1_t6c1_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t7",
+      "title": "Double Displacement and Precipitation Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t7_c1",
+          "label": "Double Displacement and Precipitation Reactions",
+          "headingType": "heading",
+          "sourcePages": [11, 12, 14],
+          "cardText": "When sodium sulphate solution and barium chloride solution are mixed, a white substance that is insoluble in water is formed. This insoluble substance is known as a precipitate, and any reaction that produces a precipitate can be called a precipitation reaction. The white precipitate of barium sulphate is formed by the reaction of sulphate ions and barium ions, and the other product, sodium chloride, remains in the solution. Such reactions in which there is an exchange of ions between the reactants are called double displacement reactions. Two different atoms or groups of atoms (ions) are exchanged in double displacement reactions, and precipitation reactions produce insoluble salts. Mixing lead nitrate and potassium iodide is another case.",
+          "hint": "What forms, and what is exchanged, when two solutions react to give a solid?",
+          "probe": "Explain what precipitation and double displacement reactions are, using sodium sulphate and barium chloride.",
+          "causeChain": "Mixing sodium sulphate and barium chloride solutions gives a white insoluble substance -> that insoluble substance is a precipitate, so the reaction is a precipitation reaction -> the sulphate and barium ions exchange partners, so it is also a double displacement reaction while sodium chloride stays in solution",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_dd_ions",
+              "linksChecks": [
+                "chk_sci10c1_dd_precip",
+                "chk_sci10c1_dd_double"
+              ],
+              "criterion": "Connects the exchange of ions between the reactants to the formation of the insoluble barium sulphate precipitate.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t7c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "On mixing sodium sulphate and barium chloride solutions a white substance, insoluble in water, is formed. This insoluble substance is known as a precipitate. Any reaction that produces a precipitate can be called a precipitation reaction.",
+              "followUp": "If two clear solutions are mixed and a white solid appears, what is that solid called and what kind of reaction is this?",
+              "assessment": {
+                "requiredEvidence": [
+                  "insoluble in water",
+                  "precipitate",
+                  "precipitation reaction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dd_precip",
+                    "criterion": "Defines a precipitate as an insoluble substance formed in a reaction and a precipitation reaction as any reaction that produces a precipitate.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t7c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The white precipitate of BaSO4 is formed by the reaction of sulphate ions and barium ions, and sodium chloride remains in the solution. Reactions in which there is an exchange of ions between the reactants are called double displacement reactions.",
+              "followUp": "In the reaction of sodium sulphate with barium chloride, what exactly passes between the two reacting solutions?",
+              "assessment": {
+                "requiredEvidence": [
+                  "exchange of ions between the reactants",
+                  "double displacement reactions",
+                  "sulphate",
+                  "Ba2+",
+                  "sodium chloride remains in the solution"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dd_double",
+                    "criterion": "Defines double displacement reactions as reactions in which there is an exchange of ions between the reactants, as barium and sulphate ions combine to form the barium sulphate precipitate.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_dd_element"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t7c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Two different atoms or groups of atoms (ions) are exchanged in double displacement reactions. Precipitation reactions produce insoluble salts.",
+              "assessment": {
+                "requiredEvidence": [
+                  "two different atoms or groups of atoms",
+                  "exchanged",
+                  "insoluble salts"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_dd_summary",
+                    "criterion": "States that in double displacement reactions two different atoms or groups of atoms (ions) are exchanged and that precipitation reactions produce insoluble salts.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Recall Activity 1.2: lead nitrate with potassium iodide gives a yellow precipitate of lead iodide, a double displacement reaction",
+            "Exercise 6(c): NaCl + AgNO3 giving AgCl + NaNO3",
+            "Exercise 16: precipitation reaction with examples"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_dd_element",
+              "wrong": "A double displacement reaction is when one element replaces another in a compound.",
+              "fix": "In a double displacement reaction there is an exchange of ions (atoms or groups of atoms) between the reactants."
+            }
+          ],
+          "verify": [
+            { "page": 11, "quote": "You will observe that a white substance, which is insoluble in water, is formed.", "supports": ["sci10c1_t7c1_kp1"] },
+            { "page": 11, "quote": "This insoluble substance formed is known as a precipitate.", "supports": ["sci10c1_t7c1_kp1"] },
+            { "page": 11, "quote": "Any reaction that produces a precipitate can be called a precipitation reaction.", "supports": ["sci10c1_t7c1_kp1"] },
+            { "page": 12, "quote": "The white precipitate of BaSO4 is formed by the reaction of", "supports": ["sci10c1_t7c1_kp2"] },
+            { "page": 12, "quote": "Such reactions in which there is an exchange of ions between the reactants are called double displacement reactions.", "supports": ["sci10c1_t7c1_kp2"] },
+            { "page": 14, "quote": "Two different atoms or groups of atoms (ions) are exchanged in double displacement reactions.", "supports": ["sci10c1_t7c1_kp3"] },
+            { "page": 14, "quote": "Precipitation reactions produce insoluble salts.", "supports": ["sci10c1_t7c1_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t8",
+      "title": "Oxidation, Reduction and Redox Reactions",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t8_c1",
+          "label": "Oxidation and Reduction",
+          "headingType": "heading",
+          "sourcePages": [12, 13, 14],
+          "cardText": "When copper powder is heated in a china dish its surface becomes coated with black copper(II) oxide, because oxygen is added to copper. If hydrogen gas is passed over this heated material the black coating turns brown as the reverse reaction takes place and copper is obtained. If a substance gains oxygen during a reaction, it is said to be oxidised, and if it loses oxygen it is reduced. Here copper(II) oxide loses oxygen and is reduced, and hydrogen gains oxygen and is oxidised. One reactant gets oxidised while the other gets reduced, so such reactions are called oxidation-reduction or redox reactions. A substance that gains oxygen or loses hydrogen is oxidised; one that loses oxygen or gains hydrogen is reduced.",
+          "hint": "What happens to oxygen and hydrogen in the substance oxidised and the substance reduced?",
+          "probe": "Explain oxidation, reduction and redox reactions using copper and copper oxide.",
+          "causeChain": "Heating copper adds oxygen to it and gives black copper(II) oxide -> passing hydrogen over it removes the oxygen and gives back brown copper -> the copper oxide is reduced while hydrogen is oxidised, so one reactant is oxidised while the other is reduced in a redox reaction",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_redox_pair",
+              "linksChecks": [
+                "chk_sci10c1_or_cu",
+                "chk_sci10c1_or_redox"
+              ],
+              "criterion": "Connects the copper oxide losing oxygen (reduction) and hydrogen gaining oxygen (oxidation) in the same reaction to a redox reaction.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t8c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "On heating copper powder its surface becomes coated with black copper(II) oxide because oxygen is added to copper. If hydrogen gas is passed over the heated copper(II) oxide the black coating turns brown as the reverse reaction takes place and copper is obtained.",
+              "assessment": {
+                "requiredEvidence": [
+                  "black copper(II) oxide",
+                  "oxygen is added to copper",
+                  "hydrogen gas",
+                  "turns brown",
+                  "copper is obtained"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_or_cu",
+                    "criterion": "States that heating copper gives a black coating of copper(II) oxide as oxygen is added to it, and passing hydrogen over it turns it brown again as copper is obtained.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t8c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "If a substance gains oxygen during a reaction, it is said to be oxidised. If a substance loses oxygen during a reaction, it is said to be reduced. If a substance gains oxygen or loses hydrogen it is oxidised; if it loses oxygen or gains hydrogen it is reduced.",
+              "followUp": "When a substance takes up oxygen, what is that process called, and what is the name for the opposite change where it gives up oxygen?",
+              "assessment": {
+                "requiredEvidence": [
+                  "gains oxygen",
+                  "loses oxygen",
+                  "loses hydrogen",
+                  "gains hydrogen",
+                  "oxidised",
+                  "reduced"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_or_def",
+                    "criterion": "Defines oxidation as the gain of oxygen or loss of hydrogen and reduction as the loss of oxygen or gain of hydrogen.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_or_reversed"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t8c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "In the reaction of copper(II) oxide with hydrogen, the copper(II) oxide is losing oxygen and is being reduced and the hydrogen is gaining oxygen and is being oxidised. One reactant gets oxidised while the other gets reduced; such reactions are called oxidation-reduction reactions or redox reactions.",
+              "followUp": "When hydrogen is passed over hot black copper oxide, which substance is oxidised and which is reduced, and why are such reactions grouped together?",
+              "assessment": {
+                "requiredEvidence": [
+                  "copper(II) oxide is losing oxygen",
+                  "being reduced",
+                  "hydrogen is gaining oxygen",
+                  "being oxidised",
+                  "redox reactions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_or_redox",
+                    "criterion": "States that in a redox reaction one reactant is oxidised while the other is reduced, as copper(II) oxide is reduced and hydrogen is oxidised.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t8c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In ZnO + C giving Zn + CO, carbon is oxidised to CO and ZnO is reduced to Zn. In MnO2 + HCl, HCl is oxidised to Cl2 whereas MnO2 is reduced to MnCl2.",
+              "assessment": {
+                "requiredEvidence": [
+                  "carbon is oxidised",
+                  "ZnO is reduced",
+                  "HCl is oxidised",
+                  "MnO2 is reduced"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_or_examples",
+                    "criterion": "Identifies what is oxidised and what is reduced in a redox example such as ZnO with carbon or MnO2 with HCl.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Recall Activity 1.1: magnesium gains oxygen on burning, so it is oxidised",
+            "Question 3: in 4Na + O2 giving 2Na2O sodium is oxidised and oxygen is reduced; in CuO + H2 giving Cu + H2O copper oxide is reduced and hydrogen is oxidised",
+            "Exercise 17: oxidation and reduction in terms of gain or loss of oxygen with two examples each",
+            "Exercise 18: a shiny brown element heated in air turns black, copper forming copper(II) oxide"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_or_reversed",
+              "wrong": "Oxidation is the loss of oxygen and reduction is the gain of oxygen.",
+              "fix": "A substance that gains oxygen or loses hydrogen is oxidised; a substance that loses oxygen or gains hydrogen is reduced."
+            }
+          ],
+          "verify": [
+            { "page": 12, "quote": "The surface of copper powder becomes coated with black copper(II) oxide.", "supports": ["sci10c1_t8c1_kp1"] },
+            { "page": 12, "quote": "This is because oxygen is added to copper and copper oxide is formed.", "supports": ["sci10c1_t8c1_kp1"] },
+            { "page": 12, "quote": "If hydrogen gas is passed over this heated material (CuO), the black coating on the surface turns brown as the reverse reaction takes place and copper is obtained.", "supports": ["sci10c1_t8c1_kp1"] },
+            { "page": 12, "quote": "If a substance gains oxygen during a reaction, it is said to be oxidised. If a substance loses oxygen during a reaction, it is said to be reduced.", "supports": ["sci10c1_t8c1_kp2"] },
+            { "page": 13, "quote": "if a substance gains oxygen or loses hydrogen during a reaction, it is oxidised. If a substance loses oxygen or gains hydrogen during a reaction, it is reduced.", "supports": ["sci10c1_t8c1_kp2"] },
+            { "page": 12, "quote": "During this reaction (1.29), the copper(II) oxide is losing oxygen and is being reduced. The hydrogen is gaining oxygen and is being oxidised.", "supports": ["sci10c1_t8c1_kp3"] },
+            { "page": 12, "quote": "one reactant gets oxidised while the other gets reduced during a reaction. Such reactions are called oxidation-reduction reactions or redox reactions.", "supports": ["sci10c1_t8c1_kp3"] },
+            { "page": 13, "quote": "In reaction (1.31) carbon is oxidised to CO and ZnO is reduced to Zn.", "supports": ["sci10c1_t8c1_kp4"] },
+            { "page": 13, "quote": "In reaction (1.32) HCl is oxidised to Cl2 whereas MnO2 is reduced to MnCl2.", "supports": ["sci10c1_t8c1_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch1_t9",
+      "title": "Everyday Effects of Oxidation: Corrosion and Rancidity",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch1_t9_c1",
+          "label": "Corrosion",
+          "headingType": "heading",
+          "sourcePages": [13, 16],
+          "cardText": "Iron articles are shiny when new but get coated with a reddish brown powder when left for some time. This is commonly known as rusting of iron. When a metal is attacked by substances around it such as moisture and acids, it is said to corrode, and this process is called corrosion. The black coating on silver and the green coating on copper are other examples of corrosion. Corrosion causes damage to car bodies, bridges, iron railings, ships and all objects made of metals, specially those of iron, and every year an enormous amount of money is spent to replace damaged iron. Applying paint on iron articles protects them.",
+          "hint": "What attacks metals slowly, and what colours do rust and the coatings on silver and copper have?",
+          "probe": "Explain what corrosion is, give examples, and say why it is a serious problem.",
+          "causeChain": "Moisture, acids and other substances around a metal attack it -> the metal is said to corrode, as iron rusts with a reddish brown coating, silver turns black and copper turns green -> corrosion damages car bodies, bridges, railings and ships and costs a lot of money to replace",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_corr_harm",
+              "linksChecks": [
+                "chk_sci10c1_co_def",
+                "chk_sci10c1_co_damage"
+              ],
+              "criterion": "Connects corrosion being the attack of a metal by substances around it to the damage it does to metal objects, especially iron.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t9c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When a metal is attacked by substances around it such as moisture, acids, etc., it is said to corrode and this process is called corrosion.",
+              "followUp": "What do we call the slow damage of a metal's surface by the things around it, such as damp air?",
+              "assessment": {
+                "requiredEvidence": [
+                  "attacked by substances around it",
+                  "moisture",
+                  "acids",
+                  "corrode",
+                  "corrosion"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_co_def",
+                    "criterion": "Defines corrosion as the process in which a metal is attacked by substances around it, such as moisture and acids.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_co_not_chem"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t9c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Iron articles are shiny when new but get coated with a reddish brown powder when left for some time, commonly known as rusting of iron. The black coating on silver and the green coating on copper are other examples of corrosion.",
+              "followUp": "What colours do iron, silver and copper develop when they are left exposed, and what is that on iron commonly called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "rusting of iron",
+                  "reddish brown powder",
+                  "black coating on silver",
+                  "green coating on copper"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_co_examples",
+                    "criterion": "Gives examples of corrosion: the reddish brown rust on iron, the black coating on silver and the green coating on copper.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c1_t9c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Corrosion causes damage to car bodies, bridges, iron railings, ships and to all objects made of metals, specially those of iron. Every year an enormous amount of money is spent to replace damaged iron.",
+              "assessment": {
+                "requiredEvidence": [
+                  "damage to car bodies",
+                  "bridges",
+                  "iron railings",
+                  "ships",
+                  "enormous amount of money"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_co_damage",
+                    "criterion": "States that corrosion damages objects such as car bodies, bridges, iron railings and ships, especially of iron, and costs an enormous amount of money to replace.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 19: paint is applied on iron articles to protect them from corrosion",
+            "Exercise 20(a): corrosion explained with the example of rusting of iron"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_co_not_chem",
+              "wrong": "Rusting is only a change of appearance and the metal is not changed.",
+              "fix": "When a metal is attacked by substances around it such as moisture or acids it is said to corrode; rust is a new reddish brown coating on iron."
+            }
+          ],
+          "verify": [
+            { "page": 13, "quote": "You must have observed that iron articles are shiny when new, but get coated with a reddish brown powder when left for some time.", "supports": ["sci10c1_t9c1_kp2"] },
+            { "page": 13, "quote": "This process is commonly known as rusting of iron.", "supports": ["sci10c1_t9c1_kp2"] },
+            { "page": 13, "quote": "When a metal is attacked by substances around it such as moisture, acids, etc., it is said to corrode and this process is called corrosion.", "supports": ["sci10c1_t9c1_kp1"] },
+            { "page": 13, "quote": "The black coating on silver and the green coating on copper are other examples of corrosion.", "supports": ["sci10c1_t9c1_kp2"] },
+            { "page": 13, "quote": "Corrosion causes damage to car bodies, bridges, iron railings, ships and to all objects made of metals, specially those of iron.", "supports": ["sci10c1_t9c1_kp3"] },
+            { "page": 13, "quote": "Every year an enormous amount of money is spent to replace damaged iron.", "supports": ["sci10c1_t9c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch1_t9_c2",
+          "label": "Rancidity",
+          "headingType": "heading",
+          "sourcePages": [13, 16],
+          "cardText": "Fat or oil containing food materials left for a long time change in smell and taste. When fats and oils are oxidised, they become rancid and their smell and taste change. Usually substances which prevent oxidation, called antioxidants, are added to foods containing fats and oil. Keeping food in air tight containers helps to slow down oxidation. Chips manufacturers usually flush bags of chips with a gas such as nitrogen to prevent the chips from getting oxidised.",
+          "hint": "What happens to fats and oils when they are oxidised, and how is it slowed?",
+          "probe": "Explain what rancidity is and how food is protected from it.",
+          "causeChain": "Fats and oils in food react with oxygen and are oxidised -> they become rancid and their smell and taste change -> antioxidants, air tight containers and flushing with nitrogen slow down this oxidation",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c1_ran_prevent",
+              "linksChecks": [
+                "chk_sci10c1_ra_def",
+                "chk_sci10c1_ra_prevent"
+              ],
+              "criterion": "Connects oxidation of fats and oils to rancidity and the ways of preventing it, such as flushing chips bags with nitrogen.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c1_t9c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When fats and oils are oxidised, they become rancid and their smell and taste change.",
+              "followUp": "What happens to the smell and taste of fats and oils when they are left for a long time, and why?",
+              "assessment": {
+                "requiredEvidence": [
+                  "fats and oils are oxidised",
+                  "rancid",
+                  "smell and taste change"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ra_def",
+                    "criterion": "States that when fats and oils are oxidised they become rancid, and their smell and taste change.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c1_ra_microbes_only"
+                ]
+              }
+            },
+            {
+              "id": "sci10c1_t9c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Substances which prevent oxidation (antioxidants) are added to foods containing fats and oil. Keeping food in air tight containers helps to slow down oxidation. Chips manufacturers flush bags of chips with a gas such as nitrogen to prevent the chips from getting oxidised.",
+              "followUp": "Name some ways in which food makers stop packaged chips and oily food from spoiling.",
+              "assessment": {
+                "requiredEvidence": [
+                  "antioxidants",
+                  "air tight containers",
+                  "slow down oxidation",
+                  "flush bags of chips",
+                  "nitrogen"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c1_ra_prevent",
+                    "criterion": "States how rancidity is slowed: antioxidants added to foods, air tight containers, or flushing bags of chips with nitrogen to prevent oxidation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 20(b): rancidity explained with the example of fried food smelling bad on keeping",
+            "Exercise 19: oil and fat containing food items are flushed with nitrogen so they do not get oxidised"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c1_ra_microbes_only",
+              "wrong": "Food becomes rancid only because it is old, and nothing is oxidised.",
+              "fix": "When fats and oils are oxidised they become rancid and their smell and taste change."
+            }
+          ],
+          "verify": [
+            { "page": 13, "quote": "When fats and oils are oxidised, they become rancid and their smell and taste change.", "supports": ["sci10c1_t9c2_kp1"] },
+            { "page": 13, "quote": "Usually substances which prevent oxidation (antioxidants) are added to foods containing fats and oil.", "supports": ["sci10c1_t9c2_kp2"] },
+            { "page": 13, "quote": "Keeping food in air tight containers helps to slow down oxidation.", "supports": ["sci10c1_t9c2_kp2"] },
+            { "page": 13, "quote": "chips manufacturers usually flush bags of chips with gas such as nitrogen to prevent the chips from getting oxidised", "supports": ["sci10c1_t9c2_kp2"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

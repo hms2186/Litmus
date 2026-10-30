@@ -1,0 +1,1326 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_ss2_9_ch1.json",
+  "sourceSha256": "23c41ecc1fc33232fcf5f779e2c31f8a19a1e91772580348deb103e1fa5cd82f",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Geography",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 2)",
+  "chapterNumber": 1,
+  "chapterName": "Oceans and Life",
+  "articulationChecks": [
+    {
+      "id": "chk_ss9b1_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ss9b1_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example submarine relief, continental shelf, mid-ocean ridge, trench, seamount, guyot, wave, tide.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "submarine relief",
+    "continental shelf",
+    "mid-ocean ridge",
+    "trench",
+    "seamount",
+    "guyot",
+    "wave",
+    "tide",
+    "spring tide",
+    "neap tide",
+    "ocean current",
+    "Coriolis force",
+    "tsunami",
+    "cyclone",
+    "early warning system",
+    "marine resources",
+    "Blue Economy",
+    "territorial waters",
+    "exclusive economic zone",
+    "high seas",
+    "UNCLOS",
+    "innocent passage"
+  ],
+  "concepts": [
+    {
+      "conceptId": "soc9b_ch1_t1_c1",
+      "topicId": "ncert_ss9b_ch1_t1",
+      "topicTitle": "Submarine Relief and Ocean Floor Features",
+      "label": "Ocean Relief: The Landscape of the Ocean Floor",
+      "headingType": "heading",
+      "sourcePages": [
+        2,
+        3
+      ],
+      "conceptHash": "54afdd4844e6bbf821142cc0149edcecf7b79544e33aa4c8ec5a345b49ad875b",
+      "cardText": "Oceans cover most of our planet and conceal many secrets. Just as land has mountains, valleys and plains, the ocean floor has landforms together known as submarine relief or ocean relief, including underwater mountains, valleys, plateaus and trenches. The Mariana Trench in the Pacific Ocean is the deepest place on Earth, while the Mid-Ocean Ridge is the world's longest mountain range, hidden beneath the ocean. Some underwater mountains like Mauna Kea (Hawai'i) are even taller than Mount Everest. Important features include seamounts, often volcanic, some of which are flattened by wave action over millennia into guyots; ocean trenches, the deepest parts of the ocean; the Mid-Ocean Ridge, an immense underwater range formed by volcanic activity; the abyssal plain, the vast, flat, deep ocean floor; the continental shelf, the shallow submerged edge of a continent rich in marine life and resources like oil and gas; and the steep continental slope marking the true edge of a continent.",
+      "hint": "What are the main features of the ocean floor?",
+      "probe": "Describe submarine relief and the main features of the ocean floor.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ocean Relief: The Landscape of the Ocean Floor, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If you could drain the ocean, what kinds of landscape would you see, and what would be the deepest and longest features?",
+          "requiredEvidence": [
+            "submarine relief",
+            "ocean relief",
+            "underwater mountains, valleys, plateaus, and trenches",
+            "Mariana Trench",
+            "deepest place on Earth",
+            "Mid-Ocean Ridge",
+            "longest mountain range",
+            "Mauna Kea"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_or_relief",
+              "criterion": "States that the ocean floor has landforms called submarine (ocean) relief (mountains, valleys, plateaus, trenches), with the Mariana Trench the deepest place on Earth and the Mid-Ocean Ridge the longest mountain range, and some underwater mountains taller than Everest.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If you could drain the ocean, what kinds of landscape would you see, and what would be the deepest and longest features?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_or_flat"
+          ]
+        },
+        {
+          "id": "ss9b1_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which part of the ocean floor is shallow and rich in fish and oil, and which is the steep drop beyond it?",
+          "requiredEvidence": [
+            "seamounts",
+            "guyots",
+            "ocean trenches",
+            "deepest parts",
+            "Mid-Ocean Ridge",
+            "volcanic activity",
+            "abyssal plain",
+            "continental shelf",
+            "marine life and resources like oil and gas",
+            "continental slope"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_or_features",
+              "criterion": "Describes the key ocean-floor features: seamounts and guyots, trenches (deepest parts), the volcanic Mid-Ocean Ridge, the flat abyssal plain, the shallow continental shelf rich in life, oil and gas, and the steep continental slope.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which part of the ocean floor is shallow and rich in fish and oil, and which is the steep drop beyond it?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_relief_chain",
+          "linksChecks": [
+            "chk_ss9b1_or_relief",
+            "chk_ss9b1_or_features"
+          ],
+          "criterion": "Connects the idea of submarine relief to its extreme and typical features.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_or_flat",
+          "wrong": "The ocean floor is a flat, featureless surface.",
+          "fix": "Just as land has mountains, valleys and plains, the ocean floor has several landforms, together known as submarine relief, including underwater mountains, valleys, plateaus and trenches.",
+          "checkId": "mchk_misc_ss9b1_or_flat",
+          "checkCriterion": "The answer states or implies this wrong idea: The ocean floor is a flat, featureless surface.",
+          "fixCheckId": "mfix_misc_ss9b1_or_flat",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Just as land has mountains, valleys and plains, the ocean floor has several landforms, together known as submarine relief, including underwater mountains, valleys, plateaus and trenches.",
+          "keyPointIds": [
+            "ss9b1_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_or_flat"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_or_relief",
+            "chk_ss9b1_or_features"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b1_relief_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t2_c1",
+      "topicId": "ncert_ss9b_ch1_t2",
+      "topicTitle": "Movements of Ocean Water: Waves, Tides and Currents",
+      "label": "Waves and the Coast They Shape",
+      "headingType": "heading",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "conceptHash": "3fbecbcc24e257bfeaa0a7cfe8dfde084b9582e4b757961944fa53b65b17ce21",
+      "cardText": "The water in the oceans is constantly in motion. Waves, tides and currents help shape the Earth's surface, support marine life, aid fishing and travel, and even influence climate. When the surface of the ocean rises and falls alternately, it is called a wave. Waves are primarily caused by winds blowing across the water, and they carry energy across the oceans over long distances, with crests (high peaks) and troughs (lower valleys). Waves are often called coastal architects as they shape the shoreline through erosion and sediment transport, creating erosional features such as sea caves, arches, sea stacks and stumps, and depositional features such as beaches. During storms, strong winds can generate huge waves that damage coastlines. The giant waves majorly caused by underwater earthquakes are called tsunamis, extremely destructive, which on reaching the shore may attain a run-up height of up to 30 metres or even more.",
+      "hint": "What are waves, what causes them and what do they do to the coast?",
+      "probe": "Explain what waves are, what causes them, how they shape the coast and what a tsunami is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Waves and the Coast They Shape, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What makes the sea surface rise and fall, and what do the high and low parts of a wave get called?",
+          "requiredEvidence": [
+            "surface of the ocean rises and falls alternately",
+            "wave",
+            "caused by winds",
+            "carry energy",
+            "long distances",
+            "crests",
+            "troughs"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_wv_what",
+              "criterion": "Defines a wave as the alternate rising and falling of the ocean surface, primarily caused by winds blowing across the water, carrying energy over long distances, with crests and troughs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes the sea surface rise and fall, and what do the high and low parts of a wave get called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b1_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which coastal landforms come from waves wearing the land away and which from waves laying material down?",
+          "requiredEvidence": [
+            "coastal architects",
+            "shape the shoreline",
+            "erosion and sediment transport",
+            "caves, arches, sea stacks, and stumps",
+            "depositional features",
+            "beaches"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_wv_coast",
+              "criterion": "States that waves are 'coastal architects': by erosion and sediment transport they form sea caves, arches, stacks and stumps, and by deposition they form beaches.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which coastal landforms come from waves wearing the land away and which from waves laying material down?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b1_t2c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What causes the giant destructive waves that sometimes follow an earthquake under the sea, and how high can they climb ashore?",
+          "requiredEvidence": [
+            "huge waves",
+            "damage along coastlines",
+            "tsunamis",
+            "underwater earthquakes",
+            "extremely destructive",
+            "run-up height",
+            "30 metres"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_wv_tsunami",
+              "criterion": "States that tsunamis are giant, extremely destructive waves majorly caused by underwater earthquakes, with a run-up height that can reach 30 metres or more.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What causes the giant destructive waves that sometimes follow an earthquake under the sea, and how high can they climb ashore?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_wv_tsunami"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_waves_chain",
+          "linksChecks": [
+            "chk_ss9b1_wv_what",
+            "chk_ss9b1_wv_coast",
+            "chk_ss9b1_wv_tsunami"
+          ],
+          "criterion": "Connects wind-driven waves to their shaping of coasts and to tsunamis.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_wv_tsunami",
+          "wrong": "Tsunamis are caused by strong winds like ordinary waves.",
+          "fix": "Tsunamis are giant waves majorly caused by underwater earthquakes, unlike ordinary waves which are primarily caused by winds blowing across the water.",
+          "checkId": "mchk_misc_ss9b1_wv_tsunami",
+          "checkCriterion": "The answer states or implies this wrong idea: Tsunamis are caused by strong winds like ordinary waves.",
+          "fixCheckId": "mfix_misc_ss9b1_wv_tsunami",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Tsunamis are giant waves majorly caused by underwater earthquakes, unlike ordinary waves which are primarily caused by winds blowing across the water.",
+          "keyPointIds": [
+            "ss9b1_t2c1_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_wv_tsunami"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_wv_what",
+            "chk_ss9b1_wv_coast"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b1_wv_tsunami",
+            "lnk_ss9b1_waves_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t2_c2",
+      "topicId": "ncert_ss9b_ch1_t2",
+      "topicTitle": "Movements of Ocean Water: Waves, Tides and Currents",
+      "label": "Tides: Spring and Neap Tides and Their Uses",
+      "headingType": "heading",
+      "sourcePages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "conceptHash": "da7c403fac474354f2b75b39772b0a6079758d2eaf2f348143d3578886ff3f58",
+      "cardText": "Tides are the rhythmic rise and fall of ocean water that occur twice a day in most parts of the world: high tide (flood tide) when water rises to its highest level and covers much of the shore, and low tide (ebb tide) when it falls to its lowest level. Spring tides occur when the Sun, the Earth and the Moon are aligned in a straight line, on full moon and new moon days: the combined gravitational pull of the Sun and Moon causes unusually high high tides and unusually low low tides. Neap tides occur when the Moon is in its first and third quarter, when the Sun's and Moon's pulls act in different directions, so the difference between high and low tide becomes smaller. Tides matter for navigation, as high tide raises the water level and lets ships enter harbours, with the Gulf of Khambhat having a tidal range of about 12 metres; high tides support fishing as fish move close to shore; and tidal energy can generate electricity, with the Gulf of Kutch, the Gulf of Khambhat and the Sundarbans identified as suitable sites in India.",
+      "hint": "What causes spring and neap tides and how do tides help people?",
+      "probe": "Explain high and low tide, spring and neap tides, and the uses of tides for navigation, fishing and energy.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Tides: Spring and Neap Tides and Their Uses, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "On which phases of the Moon is the sea's rise and fall greatest, and why is it smallest at half-moon?",
+          "requiredEvidence": [
+            "rhythmic rise and fall",
+            "twice a day",
+            "spring tides",
+            "Sun, the Earth, and the Moon are aligned",
+            "full moon and new moon",
+            "combined gravitational pull",
+            "neap tides",
+            "first- and third-quarter",
+            "different directions",
+            "difference between high tide and low tide becomes smaller"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_td_types",
+              "criterion": "Explains tides as the twice-daily rise and fall of the sea, with spring tides (Sun, Earth and Moon aligned on full and new moon: unusually high and low tides) and neap tides (first and third quarter, pulls in different directions: smaller difference).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "On which phases of the Moon is the sea's rise and fall greatest, and why is it smallest at half-moon?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_td_neap"
+          ]
+        },
+        {
+          "id": "ss9b1_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do ship captains check the tide table before docking, why do fishing communities care about high tide, and where might India generate power from tides?",
+          "requiredEvidence": [
+            "navigation",
+            "raise the water level",
+            "enter harbours",
+            "tidal ranges",
+            "Gulf of Khambhat",
+            "12 metres",
+            "fish move closer to the shore",
+            "better catch",
+            "generate electricity",
+            "tidal energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_td_uses",
+              "criterion": "States that high tides help ships enter harbours (tidal range matters, e.g. about 12 m in the Gulf of Khambhat), bring fish close to shore for fishing communities, and tidal rise and fall can generate electricity at sites like the Gulf of Kutch, Gulf of Khambhat and Sundarbans.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do ship captains check the tide table before docking, why do fishing communities care about high tide, and where might India generate power from tides?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_tides_chain",
+          "linksChecks": [
+            "chk_ss9b1_td_types",
+            "chk_ss9b1_td_uses"
+          ],
+          "criterion": "Connects the alignment of Sun, Earth and Moon to tidal range and to practical uses of tides.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_td_neap",
+          "wrong": "Neap tides occur on full moon and new moon days.",
+          "fix": "Spring tides occur on full moon and new moon days when the Sun, Earth and Moon are aligned; neap tides occur during the first and third quarter of the Moon.",
+          "checkId": "mchk_misc_ss9b1_td_neap",
+          "checkCriterion": "The answer states or implies this wrong idea: Neap tides occur on full moon and new moon days.",
+          "fixCheckId": "mfix_misc_ss9b1_td_neap",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Spring tides occur on full moon and new moon days when the Sun, Earth and Moon are aligned; neap tides occur during the first and third quarter of the Moon.",
+          "keyPointIds": [
+            "ss9b1_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_td_neap"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_td_types",
+            "chk_ss9b1_td_uses"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b1_tides_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t2_c3",
+      "topicId": "ncert_ss9b_ch1_t2",
+      "topicTitle": "Movements of Ocean Water: Waves, Tides and Currents",
+      "label": "Ocean Currents: Warm and Cold Streams and Their Effects",
+      "headingType": "heading",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "conceptHash": "e01b9cba807c9a5ce12307322bcb5f931d783bdf540c7677e023b5042cddc6df",
+      "cardText": "Ocean currents are continuous streams of water that flow across the ocean surface in definite directions. They are caused by winds, the Earth's rotation (Coriolis force), differences in temperature and salinity, and the shape of continents and ocean basins. The Coriolis force deflects any free moving object to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. Currents flowing from warmer regions are warm currents and those from colder regions are cold currents, shown on maps in red and blue. The Gulf Stream, a warm current from the Gulf of Mexico, flows towards Norway and keeps its waters relatively warm, so sea ice does not form easily there despite its high latitude. The Labrador Current, a cold current along the east coast of Canada, carries freezing water and supports sea ice and icebergs even at lower latitudes. Where warm and cold currents meet are fishing grounds, rich in nutrients and supporting a large variety of fish.",
+      "hint": "What are ocean currents and how do they affect climate and fishing?",
+      "probe": "Explain what causes ocean currents, the difference between warm and cold currents and their effects on climate and fishing.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ocean Currents: Warm and Cold Streams and Their Effects, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What drives the great rivers of water in the ocean, and what decides whether we call one warm or cold?",
+          "requiredEvidence": [
+            "continuous streams of water",
+            "definite directions",
+            "winds",
+            "Earth's rotation",
+            "Coriolis force",
+            "temperature and salinity",
+            "shape of continents",
+            "warm currents",
+            "cold currents"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_cu_causes",
+              "criterion": "States that ocean currents are continuous streams of water in definite directions caused by winds, the Earth's rotation (Coriolis force), temperature and salinity differences and the shape of continents and basins, and are warm or cold depending on where the water comes from.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What drives the great rivers of water in the ocean, and what decides whether we call one warm or cold?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_cu_tide"
+          ]
+        },
+        {
+          "id": "ss9b1_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does one northern harbour stay open to ships all winter while a port on a lower-latitude coast elsewhere can be blocked, and where are the richest fishing waters?",
+          "requiredEvidence": [
+            "Gulf Stream",
+            "warm current",
+            "Norway",
+            "sea ice does not form easily",
+            "Labrador Current",
+            "cold current",
+            "icebergs",
+            "warm and cold currents meet",
+            "fishing grounds",
+            "nutrients"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_cu_effects",
+              "criterion": "States how currents affect climate and fishing: the warm Gulf Stream keeps Norwegian waters ice-free despite high latitude, the cold Labrador Current supports sea ice and icebergs at lower latitudes, and where warm and cold currents meet nutrient-rich fishing grounds form.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does one northern harbour stay open to ships all winter while a port on a lower-latitude coast elsewhere can be blocked, and where are the richest fishing waters?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_currents_chain",
+          "linksChecks": [
+            "chk_ss9b1_cu_causes",
+            "chk_ss9b1_cu_effects"
+          ],
+          "criterion": "Connects the causes of ocean currents to their effects on climate and fishing.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_cu_tide",
+          "wrong": "Ocean currents are caused by the Moon's pull like tides.",
+          "fix": "Ocean currents are caused by winds, the Earth's rotation (Coriolis force), differences in temperature and salinity, and the shape of continents and ocean basins.",
+          "checkId": "mchk_misc_ss9b1_cu_tide",
+          "checkCriterion": "The answer states or implies this wrong idea: Ocean currents are caused by the Moon's pull like tides.",
+          "fixCheckId": "mfix_misc_ss9b1_cu_tide",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Ocean currents are caused by winds, the Earth's rotation (Coriolis force), differences in temperature and salinity, and the shape of continents and ocean basins.",
+          "keyPointIds": [
+            "ss9b1_t2c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_cu_tide"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_cu_causes",
+            "chk_ss9b1_cu_effects"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b1_currents_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t3_c1",
+      "topicId": "ncert_ss9b_ch1_t3",
+      "topicTitle": "Ocean Hazards and Early Warning Systems",
+      "label": "Cyclones, Tsunamis and Early Warning Systems",
+      "headingType": "heading",
+      "sourcePages": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "conceptHash": "10b3b66967bc7595a9520eb149c907e7ab88262509e03ecf1c5371c720397af6",
+      "cardText": "Oceans and seas can give rise to sudden hazards such as cyclones, large rotating storms, and tsunamis, giant waves caused by earthquakes. To protect people, scientists have developed Early Warning Systems that work like giant alarm systems for coastal areas: they help detect cyclones and tsunamis, predict disasters and issue timely warnings so that people can evacuate and stay safe. The 2004 Indian Ocean tsunami (26 December 2004) claimed around 2,30,000 lives, and the scale of the disaster led many countries to set up tsunami early warning systems. India set up the Indian Tsunami Early Warning Centre (ITEWC) with a real-time network of tsunami detection buoys. The tsunami warning system works through detection by seismic stations, tracking by tide gauges and radars, confirmation by ocean bottom pressure recorders, and warning dissemination via satellite, SMS and other channels. For cyclones, India uses cyclone warning services, the National Cyclone Risk Mitigation Project (NCRMP) for shelters, and INCOIS and IMD's Storm Surge Early Warning System; the GEMINI device sends alerts to fishermen. Public awareness and training are equally important.",
+      "hint": "How do early warning systems protect coastal people from tsunamis and cyclones?",
+      "probe": "Explain how early warning systems for tsunamis and cyclones work and why public awareness matters.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Cyclones, Tsunamis and Early Warning Systems, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the job of a coastal alarm system for sudden sea hazards, and what should people be able to do once it sounds?",
+          "requiredEvidence": [
+            "sudden natural hazards",
+            "cyclones",
+            "large rotating storms",
+            "tsunamis",
+            "giant waves caused by earthquakes",
+            "Early Warning Systems",
+            "detect",
+            "predict disasters",
+            "timely warnings",
+            "evacuate"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_ew_purpose",
+              "criterion": "States that cyclones (large rotating storms) and tsunamis (giant waves from earthquakes) are sudden ocean hazards, and early warning systems detect them, predict disasters and issue timely warnings so people can evacuate.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the job of a coastal alarm system for sudden sea hazards, and what should people be able to do once it sounds?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b1_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the sequence from an undersea earthquake to a warning on a coastal resident's phone.",
+          "requiredEvidence": [
+            "seismic stations",
+            "undersea earthquakes",
+            "tide gauges and radars",
+            "sea level",
+            "Ocean Bottom Pressure Recorders",
+            "confirming the threat",
+            "satellite",
+            "SMS",
+            "Indian Tsunami Early Warning Centre"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_ew_tsunami",
+              "criterion": "Describes the tsunami warning chain: seismic stations detect undersea earthquakes, tide gauges and radars track the waves, bottom pressure recorders confirm the threat, and alerts go by satellite, SMS and other channels from the Indian Tsunami Early Warning Centre to governments and the public.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the sequence from an undersea earthquake to a warning on a coastal resident's phone."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_ew_tech_only"
+          ]
+        },
+        {
+          "id": "ss9b1_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What has India built to protect people living on its coasts and those out at sea from cyclones?",
+          "requiredEvidence": [
+            "Cyclone Warning Services",
+            "National Cyclone Risk Mitigation Project",
+            "cyclone shelters",
+            "INCOIS",
+            "Storm Surge Early Warning System",
+            "GEMINI",
+            "fishermen",
+            "local language"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_ew_india",
+              "criterion": "States India's measures: cyclone warning and marine weather services, the National Cyclone Risk Mitigation Project (shelters, warning systems), the Storm Surge Early Warning System by INCOIS and IMD, and the GEMINI device giving fishermen alerts in local languages.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has India built to protect people living on its coasts and those out at sea from cyclones?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_ews_chain",
+          "linksChecks": [
+            "chk_ss9b1_ew_purpose",
+            "chk_ss9b1_ew_tsunami",
+            "chk_ss9b1_ew_india"
+          ],
+          "criterion": "Connects hazard detection and prediction to timely warning and to the public's ability to respond.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_ew_tech_only",
+          "wrong": "Technology alone is enough to protect people from tsunamis and cyclones.",
+          "fix": "Besides technology, public awareness and training programmes are equally important so that people know how to respond appropriately when warnings are issued.",
+          "checkId": "mchk_misc_ss9b1_ew_tech_only",
+          "checkCriterion": "The answer states or implies this wrong idea: Technology alone is enough to protect people from tsunamis and cyclones.",
+          "fixCheckId": "mfix_misc_ss9b1_ew_tech_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Besides technology, public awareness and training programmes are equally important so that people know how to respond appropriately when warnings are issued.",
+          "keyPointIds": [
+            "ss9b1_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_ew_tech_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_ew_purpose",
+            "chk_ss9b1_ew_tsunami"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b1_ew_india",
+            "lnk_ss9b1_ews_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t4_c1",
+      "topicId": "ncert_ss9b_ch1_t4",
+      "topicTitle": "Marine Resources and the Blue Economy",
+      "label": "Marine Resources and Their Significance",
+      "headingType": "heading",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "conceptHash": "3158b48a99779dc635868674503404408d79896d1b5818ee0d97db6fb9704e1a",
+      "cardText": "Oceans are vast storehouses of resources. The materials and features found in oceans that have intrinsic or economic value are called marine resources, broadly classified into marine living resources and marine non-living resources. They include fish and seafood, biodiversity, oil and natural gas, minerals, sand and gravel, renewable blue energy such as tidal and wave energy, tourism potential and ecosystems such as coral reefs. Marine resources are vital for food security, economic activities and a healthy environment. Fish are a major source of protein and fishing and aquaculture support livelihoods; offshore oil and gas and 'blue energy' from tides and waves provide energy; about 90% of global trade by volume is carried by sea and coastal tourism is a multi-billion dollar industry; sand, gravel and deep-sea minerals are materials; and the sacred conch and cowrie shells, once used as currency, show cultural significance. Marine resources must be used responsibly without disturbing marine ecosystems.",
+      "hint": "What are marine resources and why do they matter?",
+      "probe": "Explain what marine resources are, their classification and their significance.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Marine Resources and Their Significance, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name resources the sea provides that are alive and others that are not, and what makes something a marine resource.",
+          "requiredEvidence": [
+            "vast storehouses of resources",
+            "intrinsic or economic value",
+            "marine resources",
+            "Marine Living Resources",
+            "Marine Non-living Resources",
+            "fish and seafood",
+            "oil and natural gas",
+            "tidal and wave energy",
+            "coral reefs"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mr_kinds",
+              "criterion": "Defines marine resources as materials and features of the ocean with intrinsic or economic value, classified into living and non-living resources, including fish, biodiversity, oil and gas, minerals, sand and gravel, tidal and wave energy, tourism and coral reefs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name resources the sea provides that are alive and others that are not, and what makes something a marine resource."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b1_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do millions of coastal people depend on the sea, and what must we be careful about while using it?",
+          "requiredEvidence": [
+            "food security",
+            "economic activities",
+            "healthy environment",
+            "livelihoods to millions",
+            "fish are a major source of protein",
+            "blue energy",
+            "90% of global trade",
+            "conch",
+            "used responsibly"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mr_signif",
+              "criterion": "States that marine resources are vital for food security, livelihoods (fishing, trade, tourism), energy, materials, culture and a healthy environment (about 90% of global trade by volume goes by sea), but must be used responsibly without harming marine ecosystems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do millions of coastal people depend on the sea, and what must we be careful about while using it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_mr_unlimited"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_resources_chain",
+          "linksChecks": [
+            "chk_ss9b1_mr_kinds",
+            "chk_ss9b1_mr_signif"
+          ],
+          "criterion": "Connects the kinds of marine resources to their significance and the need for responsible use.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_mr_unlimited",
+          "wrong": "Marine resources are unlimited and can be used without any care.",
+          "fix": "Marine resources must be used responsibly without disturbing marine ecosystems.",
+          "checkId": "mchk_misc_ss9b1_mr_unlimited",
+          "checkCriterion": "The answer states or implies this wrong idea: Marine resources are unlimited and can be used without any care.",
+          "fixCheckId": "mfix_misc_ss9b1_mr_unlimited",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Marine resources must be used responsibly without disturbing marine ecosystems.",
+          "keyPointIds": [
+            "ss9b1_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_mr_unlimited"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_mr_kinds",
+            "chk_ss9b1_mr_signif"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b1_resources_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t4_c2",
+      "topicId": "ncert_ss9b_ch1_t4",
+      "topicTitle": "Marine Resources and the Blue Economy",
+      "label": "The Blue Economy and Sustainable Use of the Ocean",
+      "headingType": "heading",
+      "sourcePages": [
+        16
+      ],
+      "conceptHash": "59e972a3080ad9fc1ddf6da58b37524fbbe3833fcb22b542f4236389a2f176fd",
+      "cardText": "The World Bank defines the Blue Economy as 'the sustainable use of ocean resources to promote economic growth, improved livelihoods, and jobs, while preserving the health of the marine ecosystem'. It balances three aims: economic growth, improved livelihoods and jobs, and ecosystem health. This concept is enshrined in the UN's Sustainable Development Goal 14: Life Below Water, whose key aims include reducing marine pollution, protecting and conserving marine ecosystems and areas, addressing ocean acidification, regulating fishing, eliminating harmful subsidies and increasing economic benefits. Blue Economy is the future: sustainable growth powered by healthy oceans.",
+      "hint": "What is the Blue Economy?",
+      "probe": "Explain the Blue Economy and the aims of Sustainable Development Goal 14.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Blue Economy and Sustainable Use of the Ocean, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What three goals does a sustainable ocean-based economy try to balance?",
+          "requiredEvidence": [
+            "World Bank",
+            "Blue Economy",
+            "sustainable use of ocean resources",
+            "economic growth",
+            "improved livelihoods, and jobs",
+            "health of the marine ecosystem",
+            "healthy oceans"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_be_def",
+              "criterion": "Defines the Blue Economy as the sustainable use of ocean resources to promote economic growth, better livelihoods and jobs while preserving marine ecosystem health.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What three goals does a sustainable ocean-based economy try to balance?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_be_growth"
+          ]
+        },
+        {
+          "id": "ss9b1_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which global goal is about life in the oceans and what actions does it call for?",
+          "requiredEvidence": [
+            "Sustainable Development Goal 14",
+            "Life Below Water",
+            "reduce marine pollution",
+            "protect marine ecosystems",
+            "ocean acidification",
+            "regulate fishing",
+            "conserve marine areas",
+            "harmful subsidies"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_be_sdg",
+              "criterion": "States that the idea is part of UN Sustainable Development Goal 14 (Life Below Water), aiming to reduce marine pollution, protect ecosystems, address ocean acidification, regulate fishing, conserve marine areas and end harmful subsidies.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which global goal is about life in the oceans and what actions does it call for?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_blue_chain",
+          "linksChecks": [
+            "chk_ss9b1_be_def",
+            "chk_ss9b1_be_sdg"
+          ],
+          "criterion": "Connects the definition of the Blue Economy to the aims of SDG 14.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_be_growth",
+          "wrong": "The Blue Economy is only about earning more from the ocean, whatever the cost to ecosystems.",
+          "fix": "The Blue Economy is the sustainable use of ocean resources to promote economic growth, improved livelihoods and jobs, while preserving the health of the marine ecosystem.",
+          "checkId": "mchk_misc_ss9b1_be_growth",
+          "checkCriterion": "The answer states or implies this wrong idea: The Blue Economy is only about earning more from the ocean, whatever the cost to ecosystems.",
+          "fixCheckId": "mfix_misc_ss9b1_be_growth",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Blue Economy is the sustainable use of ocean resources to promote economic growth, improved livelihoods and jobs, while preserving the health of the marine ecosystem.",
+          "keyPointIds": [
+            "ss9b1_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_be_growth"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_be_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b1_be_sdg",
+            "lnk_ss9b1_blue_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t5_c1",
+      "topicId": "ncert_ss9b_ch1_t5",
+      "topicTitle": "Maritime Zones and Rules of the Sea",
+      "label": "Maritime Zones: Territorial Waters, Contiguous Zone, EEZ and High Seas",
+      "headingType": "heading",
+      "sourcePages": [
+        16,
+        17,
+        18
+      ],
+      "conceptHash": "8f3a3397d590a7d3e08c7dbfa31cf0c25b487c057e25254fe915d62561e6b3bf",
+      "cardText": "Maritime zones are different areas of the ocean defined by international law. The sea area closest to a country is its territorial waters, over which the country has near-complete control, subject to the right of innocent passage for foreign ships; the government can make laws relating to customs, immigration and pollution control there. Beyond lies the contiguous zone, extending from the baseline up to 24 nautical miles, where the country has limited control over customs, fiscal matters and illegal immigration. Beyond it are the Exclusive Economic Zones (EEZs), extending up to 200 nautical miles from the coast, defined under UNCLOS, where a country has special rights to use ocean resources such as fish, oil and gas, though other ships may pass peacefully and the country does not fully own the waters. Beyond all EEZs lie the high seas, international waters covering about 64 per cent of the world's oceans, part of the global commons, where all countries enjoy equal rights of navigation, fishing, overflight and laying cables; on the high seas the laws of the flag state apply.",
+      "hint": "What are the maritime zones and what rights does a country have in each?",
+      "probe": "Describe the maritime zones from a country's coast outward and the rights in each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Maritime Zones: Territorial Waters, Contiguous Zone, EEZ and High Seas, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What can a country do in the sea nearest its coast, under what condition can foreign ships cross it, and what rights does it hold a bit further out?",
+          "requiredEvidence": [
+            "territorial waters",
+            "near-complete control",
+            "innocent passage",
+            "customs, immigration, and pollution control",
+            "contiguous zone",
+            "24 nautical miles",
+            "limited control",
+            "do not threaten its peace, good order, or security"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mz_inner",
+              "criterion": "Describes the inner zones: territorial waters (near-complete control, subject to innocent passage by foreign ships that do not threaten peace, order or security) and the contiguous zone up to 24 nautical miles with limited control over customs, fiscal matters and illegal immigration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can a country do in the sea nearest its coast, under what condition can foreign ships cross it, and what rights does it hold a bit further out?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b1_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Out to what distance does a coastal country have special rights to fish and oil, and who governs the sea beyond all countries' zones?",
+          "requiredEvidence": [
+            "Exclusive Economic Zones",
+            "200 nautical miles",
+            "United Nations Convention on the Law of the Sea",
+            "special rights to use ocean resources",
+            "does not fully own or control",
+            "high seas",
+            "international waters",
+            "64 per cent",
+            "global commons",
+            "laws of the flag state"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mz_outer",
+              "criterion": "Describes the outer zones: the EEZ (to 200 nautical miles under UNCLOS) gives special rights to fish, oil and gas without full ownership of the waters, and the high seas (about 64% of the oceans, global commons) belong to no country and follow flag-state laws.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Out to what distance does a coastal country have special rights to fish and oil, and who governs the sea beyond all countries' zones?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_mz_eez_own"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_zones_chain",
+          "linksChecks": [
+            "chk_ss9b1_mz_inner",
+            "chk_ss9b1_mz_outer"
+          ],
+          "criterion": "Connects the zones from coast outward to the changing rights of the coastal state.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_mz_eez_own",
+          "wrong": "A country fully owns and controls the waters of its Exclusive Economic Zone.",
+          "fix": "In the EEZ a country has special rights to use ocean resources, but it does not fully own or control the waters of the EEZ, and ships from other countries may still pass through peacefully.",
+          "checkId": "mchk_misc_ss9b1_mz_eez_own",
+          "checkCriterion": "The answer states or implies this wrong idea: A country fully owns and controls the waters of its Exclusive Economic Zone.",
+          "fixCheckId": "mfix_misc_ss9b1_mz_eez_own",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In the EEZ a country has special rights to use ocean resources, but it does not fully own or control the waters of the EEZ, and ships from other countries may still pass through peacefully.",
+          "keyPointIds": [
+            "ss9b1_t5c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_mz_eez_own"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_mz_inner",
+            "chk_ss9b1_mz_outer"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b1_zones_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch1_t5_c2",
+      "topicId": "ncert_ss9b_ch1_t5",
+      "topicTitle": "Maritime Zones and Rules of the Sea",
+      "label": "International Maritime Rules and Why They Matter",
+      "headingType": "heading",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "conceptHash": "e6d43fb253832cd50149b34521b74187d22c576a3daa3ded7bb10d0ca158f6d0",
+      "cardText": "To ensure that activities at sea remain safe, fair and peaceful, countries follow international rules and agreements known as maritime law. These laws regulate how ships operate and move; protect the marine environment; address piracy, terrorism, natural disasters and accidents; safeguard trade routes; and help settle disputes between countries. Just as there are traffic rules on land, ships follow the 'rules of the road at sea', COLREGs (Convention on the International Regulations for Preventing Collisions at Sea), including a proper lookout, which side to pass, give-way and stand-on vessels, safe speed and the use of lights and sound signals. The MARPOL Convention aims at reducing pollution from ships. These rules help keep the oceans safe and ensure the fair and sustainable use of resources, enabling cooperation without conflict while protecting marine life, ships, sailors and coastal communities; without them the oceans could become dangerous and chaotic. UNCLOS helps define maritime zones and settle disputes.",
+      "hint": "Why do ships and countries follow international maritime rules?",
+      "probe": "Explain the purpose of maritime law, COLREGs and MARPOL and why the rules are important.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain International Maritime Rules and Why They Matter, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b1_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the 'traffic rules' for ships, and which agreement tries to stop ships polluting the sea?",
+          "requiredEvidence": [
+            "safe, fair, and peaceful",
+            "maritime law",
+            "regulate how ships operate",
+            "protect the marine environment",
+            "piracy",
+            "settle disputes",
+            "COLREGs",
+            "avoid accidents",
+            "MARPOL",
+            "reducing pollution from ships"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mrule_what",
+              "criterion": "States that international maritime law keeps the sea safe, fair and peaceful by regulating ships, protecting the marine environment, safeguarding trade routes and settling disputes, with COLREGs as the rules of the road at sea and MARPOL reducing pollution from ships.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the 'traffic rules' for ships, and which agreement tries to stop ships polluting the sea?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b1_mrule_free"
+          ]
+        },
+        {
+          "id": "ss9b1_t5c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What might happen at sea if there were no common rules for ships and countries?",
+          "requiredEvidence": [
+            "keep the oceans safe",
+            "fair and sustainable use",
+            "cooperate",
+            "without conflict",
+            "dangerous and chaotic",
+            "pollution, accidents, collisions",
+            "UNCLOS",
+            "define maritime zones",
+            "settle disputes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b1_mrule_why",
+              "criterion": "States that maritime rules keep the oceans safe and ensure fair, sustainable use, let countries cooperate without conflict, protect marine life and people, and that without them the oceans could become dangerous and chaotic; UNCLOS defines maritime zones and settles disputes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What might happen at sea if there were no common rules for ships and countries?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b1_maritime_rules_chain",
+          "linksChecks": [
+            "chk_ss9b1_mrule_what",
+            "chk_ss9b1_mrule_why"
+          ],
+          "criterion": "Connects maritime law's purposes to COLREGs, MARPOL and the safe, fair use of the oceans.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b1_mrule_free",
+          "wrong": "Ships on the sea can do as they like because no country owns the ocean.",
+          "fix": "Ships must follow international rules such as COLREGs and MARPOL, and must meet safety standards and not pollute the seas.",
+          "checkId": "mchk_misc_ss9b1_mrule_free",
+          "checkCriterion": "The answer states or implies this wrong idea: Ships on the sea can do as they like because no country owns the ocean.",
+          "fixCheckId": "mfix_misc_ss9b1_mrule_free",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Ships must follow international rules such as COLREGs and MARPOL, and must meet safety standards and not pollute the seas.",
+          "keyPointIds": [
+            "ss9b1_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b1_mrule_free"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b1_mrule_what"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b1_mrule_why",
+            "lnk_ss9b1_maritime_rules_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

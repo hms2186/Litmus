@@ -1,0 +1,1395 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_Economics_10_ch1.json",
+  "sourceSha256": "9268e33fd2e89ce01be94e5ee95711eb808e2ccd7b82ed985973f335a226ce07",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Economics",
+  "book": "Understanding Economic Development",
+  "chapterNumber": 1,
+  "chapterName": "Development",
+  "articulationChecks": [
+    {
+      "id": "chk_eco1_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_eco1_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example developmental goals, per capita income, average income, Infant Mortality Rate, Human Development Index, public facilities or sustainability.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "development",
+    "developmental goals",
+    "national development",
+    "average income",
+    "per capita income",
+    "World Development Report",
+    "low-income countries",
+    "Infant Mortality Rate",
+    "Literacy Rate",
+    "Net Attendance Ratio",
+    "public facilities",
+    "Public Distribution System",
+    "Human Development Report",
+    "Human Development Index",
+    "life expectancy",
+    "sustainability",
+    "renewable resources",
+    "non-renewable resources"
+  ],
+  "concepts": [
+    {
+      "conceptId": "eco10_ch1_t1_c1",
+      "topicId": "ncert_eco_10_ch1_t1",
+      "topicTitle": "What development promises: different people, different goals",
+      "label": "Different People, Different Developmental Goals",
+      "headingType": "heading",
+      "sourcePages": [
+        4,
+        5
+      ],
+      "conceptHash": "f65f64c036cdb49545212607e417df92772f6a8304b629995d4b3920686199d5",
+      "cardText": "Different persons seek different things: what is most important for them, given their aspirations. Landless rural labourers want more days of work and better wages; prosperous farmers from Punjab want higher support prices for their crops. Goals can even conflict: industrialists may want more dams for electricity, but dams may submerge land and displace people such as tribals. So different persons can have different developmental goals, and what is development for one may not be development for another; it may even be destructive.",
+      "hint": "Would a landless labourer and a rich farmer want the same thing? Can one person's development hurt another?",
+      "probe": "Why do different persons have different notions of development, and how can their goals conflict?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Different People, Different Developmental Goals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do different people, like a landless labourer and a rich farmer, want different things from development?",
+          "requiredEvidence": [
+            "seeks different things",
+            "aspirations",
+            "landless rural labourers",
+            "prosperous farmers"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_different_goals",
+              "criterion": "States that different persons seek different things, depending on what can fulfil their own aspirations (for example landless labourers versus prosperous farmers).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do different people, like a landless labourer and a rich farmer, want different things from development?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_same_goals"
+          ]
+        },
+        {
+          "id": "eco1_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can one group's development be bad for another group? Give an example.",
+          "requiredEvidence": [
+            "conflicting",
+            "more dams",
+            "displaced",
+            "may not be development for the other",
+            "destructive"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_conflicting_goals",
+              "criterion": "Explains that what is development for one person may not be development for another, and may even be destructive.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can one group's development be bad for another group? Give an example."
+            },
+            {
+              "id": "chk_eco1_dam_example",
+              "criterion": "Gives an example of conflicting goals, such as industrialists wanting dams for electricity while displaced tribals lose their land.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Can one group's development be bad for another group? Give an example."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_situations_to_goals",
+          "linksChecks": [
+            "chk_eco1_different_goals",
+            "chk_eco1_conflicting_goals"
+          ],
+          "criterion": "Connects people's different life situations and goals to the possibility that development for one group may not be development, or may even be destructive, for another.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_same_goals",
+          "wrong": "Development means the same thing for everyone.",
+          "fix": "Different persons can have different developmental goals, and what may be development for one may not be development for the other.",
+          "checkId": "mchk_misc_eco1_same_goals",
+          "checkCriterion": "The answer states or implies this wrong idea: Development means the same thing for everyone.",
+          "fixCheckId": "mfix_misc_eco1_same_goals",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Different persons can have different developmental goals, and what may be development for one may not be development for the other.",
+          "keyPointIds": [
+            "eco1_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_same_goals"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_different_goals",
+            "chk_eco1_conflicting_goals",
+            "chk_eco1_dam_example"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_eco1_situations_to_goals"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t1_c2",
+      "topicId": "ncert_eco_10_ch1_t1",
+      "topicTitle": "What development promises: different people, different goals",
+      "label": "Income and Other Goals",
+      "headingType": "subheading",
+      "sourcePages": [
+        5,
+        6
+      ],
+      "conceptHash": "c07ddd5895ee1664bd53d966bf5d2a326216087c171f0775e14662b10c72e20d",
+      "cardText": "Most people want more income: regular work, better wages and decent prices for their crops. But people also seek equal treatment, freedom, security and respect of others, and resent discrimination. In some cases these matter more than income, because material goods are not all that you need to live. The quality of our life also depends on non-material things, and it is wrong to conclude that what cannot be measured is not important. So developmental goals are about better income and other important things in life.",
+      "hint": "Would you take a job with high pay but no security and no time for your family?",
+      "probe": "Besides income, what other goals do people seek, and why do they matter?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Income and Other Goals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t1c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "regular work",
+            "better wages",
+            "more income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_want_income",
+              "criterion": "States that a common goal of people is more income (regular work, better wages, decent prices).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Would you take a job with high pay but no security and no time for your family?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Apart from money, what other things do people want from their lives?",
+          "requiredEvidence": [
+            "equal treatment, freedom, security, and respect",
+            "non-material",
+            "what cannot be measured is not important"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_other_goals",
+              "criterion": "Names non-income goals such as equal treatment, freedom, security or respect of others, and explains that quality of life depends on non-material things too.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Apart from money, what other things do people want from their lives?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_income_only"
+          ]
+        },
+        {
+          "id": "eco1_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might someone choose a job that pays less? What else can a job give a person?",
+          "requiredEvidence": [
+            "job security",
+            "dignity",
+            "safe and secure environment",
+            "not only about better income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_mix_of_goals",
+              "criterion": "Concludes that people look at a mix of goals: development is not only about better income but also about other important things in life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might someone choose a job that pays less? What else can a job give a person?"
+            },
+            {
+              "id": "chk_eco1_goal_example",
+              "criterion": "Gives an example such as choosing a lower-paid but secure job, or women's dignity rising with paid work and a safe environment.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why might someone choose a job that pays less? What else can a job give a person?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_nonmaterial_to_mix",
+          "linksChecks": [
+            "chk_eco1_other_goals",
+            "chk_eco1_mix_of_goals"
+          ],
+          "criterion": "Connects the importance of non-material things like security, freedom and respect to people's developmental goals being a mix of income and other goals.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_income_only",
+          "wrong": "Development only means earning more money.",
+          "fix": "People also seek equal treatment, freedom, security and respect of others. The quality of our life also depends on non-material things.",
+          "checkId": "mchk_misc_eco1_income_only",
+          "checkCriterion": "The answer states or implies this wrong idea: Development only means earning more money.",
+          "fixCheckId": "mfix_misc_eco1_income_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: People also seek equal treatment, freedom, security and respect of others. The quality of our life also depends on non-material things.",
+          "keyPointIds": [
+            "eco1_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_income_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_other_goals",
+            "chk_eco1_mix_of_goals",
+            "chk_eco1_goal_example"
+          ]
+        ],
+        "b": [
+          [
+            "chk_eco1_want_income",
+            "lnk_eco1_nonmaterial_to_mix"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t1_c3",
+      "topicId": "ncert_eco_10_ch1_t1",
+      "topicTitle": "What development promises: different people, different goals",
+      "label": "National Development",
+      "headingType": "subheading",
+      "sourcePages": [
+        6,
+        7
+      ],
+      "conceptHash": "baea73af5151b693493cc6919816c0f3623b878ab380d44e5f8e6f22be1563fd",
+      "cardText": "If individuals seek different goals, their notions of national development will also differ, and may even conflict. National development means thinking about questions such as: can all ideas be considered equally important; if there are conflicts, how does one decide; what would be a fair and just path for all; is there a better way of doing things; and would the idea benefit a large number of people or only a small group?",
+      "hint": "If people disagree about what India should do, how would you decide what is fair?",
+      "probe": "What questions does thinking about national development involve?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain National Development, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Will everyone in a country agree on what progress for the nation should mean?",
+          "requiredEvidence": [
+            "different as well as conflicting notions",
+            "country's development"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_national_conflicting",
+              "criterion": "States that different persons can have different and even conflicting notions of a country's development.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Will everyone in a country agree on what progress for the nation should mean?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t1c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What questions should we ask when different ideas of development clash?",
+          "requiredEvidence": [
+            "fair and just path for all",
+            "large number of people or only a small group"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_fair_just_path",
+              "criterion": "Explains that national development means asking what is a fair and just path for all, or whether an idea benefits many people or only a small group.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What questions should we ask when different ideas of development clash?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_national_conflicting",
+            "chk_eco1_fair_just_path"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t2_c1",
+      "topicId": "ncert_eco_10_ch1_t2",
+      "topicTitle": "How to compare different countries or states?",
+      "label": "Per Capita Income and the World Bank",
+      "headingType": "heading",
+      "sourcePages": [
+        8
+      ],
+      "conceptHash": "49941f4acb8b26b419c424d23148862e3f1482c0417ec74fd18cb161183ab030",
+      "cardText": "For comparing countries, income is considered one of the most important attributes, since more income is understood to mean more of all things people need. Total income is not useful for comparison because countries have different populations, so we compare average income: the total income of the country divided by its total population, also called per capita income. The World Bank's World Development Reports use this to classify countries: in 2024, countries with per capita income of US$ 66,500 and above are high income, and those with about US$ 2,300 or less are low-income. India, at about US$ 11,000, is a low middle income country.",
+      "hint": "Why divide a country's total income by its population before comparing?",
+      "probe": "What is per capita income, and how does the World Bank use it to classify countries?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Per Capita Income and the World Bank, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t2c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "income",
+            "most important attributes",
+            "more of all things"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_income_attribute",
+              "criterion": "States that income is considered one of the most important attributes for comparing countries, because more income is taken to mean more of all things people need.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why divide a country's total income by its population before comparing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is total income not a good way to compare countries, and what do we use instead?",
+          "requiredEvidence": [
+            "different populations",
+            "total income of the country divided by its total population",
+            "per capita income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_total_not_useful",
+              "criterion": "Explains that total income is not useful for comparing countries because they have different populations.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why is total income not a good way to compare countries, and what do we use instead?"
+            },
+            {
+              "id": "chk_eco1_per_capita_def",
+              "criterion": "Defines average or per capita income as the total income of the country divided by its total population.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is total income not a good way to compare countries, and what do we use instead?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_total_income"
+          ]
+        },
+        {
+          "id": "eco1_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the World Bank use income to group countries, and where does India fall?",
+          "requiredEvidence": [
+            "World Development Reports",
+            "World Bank",
+            "high income",
+            "low-income countries",
+            "low middle income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_world_bank",
+              "criterion": "States that the World Bank's World Development Reports classify countries by per capita income into high income (rich) and low-income countries.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the World Bank use income to group countries, and where does India fall?"
+            },
+            {
+              "id": "chk_eco1_india_category",
+              "criterion": "Mentions that India is a low middle income country.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does the World Bank use income to group countries, and where does India fall?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_population_to_average",
+          "linksChecks": [
+            "chk_eco1_total_not_useful",
+            "chk_eco1_per_capita_def"
+          ],
+          "criterion": "Connects countries having different populations to the need to compare average (per capita) income rather than total income.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_total_income",
+          "wrong": "The country with the biggest total income is the most developed.",
+          "fix": "Countries have different populations, so total income does not tell us what an average person earns. We compare per capita income: total income divided by total population.",
+          "checkId": "mchk_misc_eco1_total_income",
+          "checkCriterion": "The answer states or implies this wrong idea: The country with the biggest total income is the most developed.",
+          "fixCheckId": "mfix_misc_eco1_total_income",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Countries have different populations, so total income does not tell us what an average person earns. We compare per capita income: total income divided by total population.",
+          "keyPointIds": [
+            "eco1_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_total_income"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_total_not_useful",
+            "chk_eco1_per_capita_def",
+            "chk_eco1_world_bank",
+            "chk_eco1_india_category"
+          ]
+        ],
+        "b": [
+          [
+            "chk_eco1_income_attribute",
+            "lnk_eco1_population_to_average"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t2_c2",
+      "topicId": "ncert_eco_10_ch1_t2",
+      "topicTitle": "How to compare different countries or states?",
+      "label": "Averages Hide Disparities",
+      "headingType": "subheading",
+      "sourcePages": [
+        9
+      ],
+      "conceptHash": "030eb57c50e460ea25f3b87a80e58efd8b8923d9a0ae33cdc25401cfa8d0cdbd",
+      "cardText": "Averages are useful for comparison, but they also hide disparities. Countries A and B can have the same average income: in A, citizens are neither very rich nor extremely poor; in B, most citizens are poor and one person is extremely rich. Most of us would prefer to live in A because it has a more equitable distribution. So while average income is useful for comparison, it does not tell us how income is distributed among people.",
+      "hint": "Two countries have the same average income. Would you be equally happy to live in both?",
+      "probe": "Why can average income mislead us about how well off people in a country are?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Averages Hide Disparities, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If two countries have the same average income, why might we still prefer one of them?",
+          "requiredEvidence": [
+            "identical average income",
+            "equitable distribution",
+            "extremely rich"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_same_average_example",
+              "criterion": "Explains that two countries can have the same average income while one has an equitable distribution and the other has many poor people and one very rich person.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If two countries have the same average income, why might we still prefer one of them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What important thing does an average not tell us about a country's income?",
+          "requiredEvidence": [
+            "hide disparities",
+            "does not tell us how this income is distributed"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_average_hides",
+              "criterion": "States that averages are useful for comparison but hide disparities: average income does not show how income is distributed among people.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What important thing does an average not tell us about a country's income?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_rising_average"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_same_average_to_distribution",
+          "linksChecks": [
+            "chk_eco1_same_average_example",
+            "chk_eco1_average_hides"
+          ],
+          "criterion": "Uses the example of two countries with the same average income but different distributions to explain why averages hide disparities.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_rising_average",
+          "wrong": "If average income rises, every section of the economy must be better off.",
+          "fix": "Average income does not tell us how income is distributed among people; most may be poor while a few are very rich.",
+          "checkId": "mchk_misc_eco1_rising_average",
+          "checkCriterion": "The answer states or implies this wrong idea: If average income rises, every section of the economy must be better off.",
+          "fixCheckId": "mfix_misc_eco1_rising_average",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Average income does not tell us how income is distributed among people; most may be poor while a few are very rich.",
+          "keyPointIds": [
+            "eco1_t2c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_rising_average"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_same_average_example",
+            "chk_eco1_average_hides"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_eco1_same_average_to_distribution"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t3_c1",
+      "topicId": "ncert_eco_10_ch1_t3",
+      "topicTitle": "Income and other criteria",
+      "label": "Income and Other Criteria: Kerala and Haryana",
+      "headingType": "heading",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "conceptHash": "87f0e19ec7875bdcabe5a81018f814dadcb3670a2c61788e4f3d382bd4208aa8",
+      "cardText": "Haryana has the highest per capita income of Haryana, Kerala and Bihar, and Bihar the lowest. By income alone, Haryana would be the most developed. But in Kerala, 6 of every 1000 children die before age one, against 28 in Haryana, nearly three times more. About one-third of children aged 15-17 in Bihar are not attending school. So, besides average income, we must consider other attributes like health and education. The Infant Mortality Rate is the number of children who die before age one per 1000 live births.",
+      "hint": "Haryana earns more per person than Kerala. Who does better on infant deaths?",
+      "probe": "Why is per capita income alone not enough to compare the development of Haryana and Kerala?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Income and Other Criteria: Kerala and Haryana, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t3c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "besides average income",
+            "Haryana has the highest per capita",
+            "Bihar is at the bottom"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_haryana_income",
+              "criterion": "Notes that Haryana has a higher per capita income than Kerala (and Bihar the lowest), so by income alone Haryana would seem most developed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Haryana earns more per person than Kerala. Who does better on infant deaths?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do Kerala and Haryana compare on children's health, and what does that show about using income alone?",
+          "requiredEvidence": [
+            "Kerala",
+            "6 died",
+            "28",
+            "one-third",
+            "Bihar"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_kerala_imr",
+              "criterion": "States that Kerala has a much lower Infant Mortality Rate than Haryana (6 against 28 per 1000 live births).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do Kerala and Haryana compare on children's health, and what does that show about using income alone?"
+            },
+            {
+              "id": "chk_eco1_bihar_attendance",
+              "criterion": "Mentions that about one-third of children aged 15-17 in Bihar are not attending school.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "How do Kerala and Haryana compare on children's health, and what does that show about using income alone?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_pci_useless"
+          ]
+        },
+        {
+          "id": "eco1_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 1
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Infant Mortality Rate",
+            "before the age of one year",
+            "1000 live children",
+            "Literacy Rate",
+            "Net Attendance Ratio"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_imr_def",
+              "criterion": "Defines the Infant Mortality Rate as the number of children who die before the age of one per 1000 live births.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Haryana earns more per person than Kerala. Who does better on infant deaths?"
+            },
+            {
+              "id": "chk_eco1_literacy_def",
+              "criterion": "Defines the Literacy Rate as the proportion of literate population aged 7 and above, or the Net Attendance Ratio.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Haryana earns more per person than Kerala. Who does better on infant deaths?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_income_vs_imr",
+          "linksChecks": [
+            "chk_eco1_haryana_income",
+            "chk_eco1_kerala_imr"
+          ],
+          "criterion": "Contrasts Haryana's higher per capita income with Kerala's much lower Infant Mortality Rate to show that income alone is not enough.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_pci_useless",
+          "wrong": "Because Kerala does better than Haryana, per capita income is useless and should not be used.",
+          "fix": "Income remains an important criterion; it is just not completely adequate on its own. Health and education indicators are used along with income.",
+          "checkId": "mchk_misc_eco1_pci_useless",
+          "checkCriterion": "The answer states or implies this wrong idea: Because Kerala does better than Haryana, per capita income is useless and should not be used.",
+          "fixCheckId": "mfix_misc_eco1_pci_useless",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Income remains an important criterion; it is just not completely adequate on its own. Health and education indicators are used along with income.",
+          "keyPointIds": [
+            "eco1_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_pci_useless"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_kerala_imr",
+            "chk_eco1_bihar_attendance"
+          ]
+        ],
+        "b": [
+          [
+            "chk_eco1_haryana_income",
+            "chk_eco1_imr_def",
+            "chk_eco1_literacy_def",
+            "lnk_eco1_income_vs_imr"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t3_c2",
+      "topicId": "ncert_eco_10_ch1_t3",
+      "topicTitle": "Income and other criteria",
+      "label": "Public Facilities",
+      "headingType": "subheading",
+      "sourcePages": [
+        11,
+        12
+      ],
+      "conceptHash": "bf2ff7da1ad50420f90ac4ba80342596f4be5093ec75fdb90bf3e74700cfb104",
+      "cardText": "Money in your pocket cannot buy all the goods and services you need to live well. It cannot normally buy a pollution-free environment or ensure unadulterated medicines, or protect you from infectious diseases unless the whole community takes preventive steps. For many important things, the best and cheapest way is to provide them collectively, like security for a whole locality or schools for all children. Kerala has a low Infant Mortality Rate because it has adequate basic health and educational facilities; where the Public Distribution System functions well, health and nutrition are likely to be better.",
+      "hint": "Can your own money buy you clean air or protection from an epidemic?",
+      "probe": "Why is income not a completely adequate indicator of the goods and services citizens can use? Explain with public facilities.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Public Facilities, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can money in your pocket buy everything you need to live well? Give examples.",
+          "requiredEvidence": [
+            "cannot buy all the goods and services",
+            "pollution-free environment",
+            "unadulterated medicines",
+            "infectious diseases"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_money_cannot_buy",
+              "criterion": "Explains that money cannot buy all goods and services needed to live well, for example a pollution-free environment, unadulterated medicines or protection from infectious diseases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can money in your pocket buy everything you need to live well? Give examples."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is it often better for some goods and services to be provided for everyone together?",
+          "requiredEvidence": [
+            "best way, also the cheapest way",
+            "collectively",
+            "collective security",
+            "open schools"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_collective_provision",
+              "criterion": "States that for many important things the best and cheapest way is to provide goods and services collectively (for example security for a locality or government schools).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is it often better for some goods and services to be provided for everyone together?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do some states, like Kerala, do well on health even without very high incomes?",
+          "requiredEvidence": [
+            "adequate provision of basic health and educational facilities",
+            "Public Distribution System"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_kerala_facilities",
+              "criterion": "Explains that Kerala has a low Infant Mortality Rate because it has adequate basic health and educational facilities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do some states, like Kerala, do well on health even without very high incomes?"
+            },
+            {
+              "id": "chk_eco1_pds",
+              "criterion": "Mentions that where the Public Distribution System functions well, people's health and nutrition are likely to be better.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Why do some states, like Kerala, do well on health even without very high incomes?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_facilities_to_kerala",
+          "linksChecks": [
+            "chk_eco1_collective_provision",
+            "chk_eco1_kerala_facilities"
+          ],
+          "criterion": "Connects collective provision of health and education facilities to Kerala's low Infant Mortality Rate.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_money_cannot_buy",
+            "chk_eco1_collective_provision",
+            "chk_eco1_kerala_facilities",
+            "chk_eco1_pds"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_eco1_facilities_to_kerala"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t3_c3",
+      "topicId": "ncert_eco_10_ch1_t3",
+      "topicTitle": "Income and other criteria",
+      "label": "Human Development Report",
+      "headingType": "subheading",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "conceptHash": "c1960fcfd743ee29303d1f75ba12cb62a8025730902d77c3162f4ebe10c7ff31",
+      "cardText": "Income is important but an inadequate measure of development, so health and education indicators are now widely used along with income. The Human Development Report published by UNDP compares countries based on the educational levels of the people, their health status and per capita income. Sri Lanka, a small neighbour, is much ahead of India in every respect, and Nepal and Bangladesh have lower per capita income than India but better life expectancy. By prefixing 'Human' to development, the report makes clear that what matters is what happens to the citizens of a country.",
+      "hint": "What three things does UNDP look at? How is that different from the World Bank?",
+      "probe": "How is the UNDP's measure of development different from the World Bank's? What does it show about India and its neighbours?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Human Development Report, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is income enough to measure how developed a country is? What else is now used?",
+          "requiredEvidence": [
+            "inadequate measure",
+            "health and education indicators",
+            "along with income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_income_inadequate",
+              "criterion": "States that income is important but an inadequate measure of development, so health and education indicators are used along with income.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is income enough to measure how developed a country is? What else is now used?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which organisation publishes the Human Development Report, and what does it compare countries on?",
+          "requiredEvidence": [
+            "Human Development Report",
+            "UNDP",
+            "educational levels",
+            "health status",
+            "per capita income"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_hdr_components",
+              "criterion": "States that the UNDP's Human Development Report compares countries on educational levels, health status and per capita income.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which organisation publishes the Human Development Report, and what does it compare countries on?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_hdi_income_only"
+          ]
+        },
+        {
+          "id": "eco1_t3c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Sri Lanka",
+            "ahead of India",
+            "Nepal and Bangladesh",
+            "life expectancy"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_srilanka_ahead",
+              "criterion": "Mentions that Sri Lanka is much ahead of India in human development.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "What three things does UNDP look at? How is that different from the World Bank?"
+            },
+            {
+              "id": "chk_eco1_nepal_bangladesh",
+              "criterion": "Mentions that Nepal and Bangladesh have lower per capita income than India but better life expectancy.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "What three things does UNDP look at? How is that different from the World Bank?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Human",
+            "citizens of a country",
+            "health",
+            "well being"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_people_most_important",
+              "criterion": "States that human development makes clear that people, their health and well-being are what matter most in development.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What three things does UNDP look at? How is that different from the World Bank?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_inadequate_to_hdr",
+          "linksChecks": [
+            "chk_eco1_income_inadequate",
+            "chk_eco1_hdr_components"
+          ],
+          "criterion": "Connects income being an inadequate measure of development to the UNDP comparing countries on education and health along with per capita income.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_hdi_income_only",
+          "wrong": "The Human Development Report ranks countries only by their income, like the World Bank.",
+          "fix": "The UNDP compares countries on educational levels, health status and per capita income, not on income alone.",
+          "checkId": "mchk_misc_eco1_hdi_income_only",
+          "checkCriterion": "The answer states or implies this wrong idea: The Human Development Report ranks countries only by their income, like the World Bank.",
+          "fixCheckId": "mfix_misc_eco1_hdi_income_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The UNDP compares countries on educational levels, health status and per capita income, not on income alone.",
+          "keyPointIds": [
+            "eco1_t3c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_hdi_income_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_income_inadequate",
+            "chk_eco1_hdr_components"
+          ]
+        ],
+        "b": [
+          [
+            "chk_eco1_srilanka_ahead",
+            "chk_eco1_nepal_bangladesh",
+            "chk_eco1_people_most_important",
+            "lnk_eco1_inadequate_to_hdr"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "eco10_ch1_t4_c1",
+      "topicId": "ncert_eco_10_ch1_t4",
+      "topicTitle": "Sustainability of development",
+      "label": "Sustainability of Development",
+      "headingType": "heading",
+      "sourcePages": [
+        14,
+        15,
+        16
+      ],
+      "conceptHash": "f7a800ad545a8ba3d624fc23bf1be48e0e802c332ff47193889d9f5d1a8757d3",
+      "cardText": "We want development to go up, or at least be maintained for future generations, but scientists warn that the present type and levels of development are not sustainable. Groundwater is a renewable resource, replenished by rain, but it can be overused: nearly one-third of India is overusing its groundwater, especially in Punjab and Western U.P. Non-renewable resources, like crude oil, have a fixed stock and will be exhausted; world reserves would last only about 50 years more. Environmental degradation does not respect national or state boundaries.",
+      "hint": "What happens if we use more groundwater than the rain replaces? Can crude oil be replaced?",
+      "probe": "Why is the issue of sustainability important for development? Explain with groundwater and crude oil.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sustainability of Development, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "eco1_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What warnings have been given about the way we are developing today?",
+          "requiredEvidence": [
+            "future generations",
+            "not sustainable",
+            "scientists"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_not_sustainable",
+              "criterion": "States that development should be maintained for future generations, but scientists warn the present type and levels of development are not sustainable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What warnings have been given about the way we are developing today?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can a resource that nature renews, like groundwater, still run short?",
+          "requiredEvidence": [
+            "renewable resources",
+            "replenished by rain",
+            "overusing",
+            "one-third",
+            "Punjab and Western U.P."
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_renewable_overuse",
+              "criterion": "Explains that renewable resources like groundwater can be overused if we use more than is replenished by rain.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can a resource that nature renews, like groundwater, still run short?"
+            },
+            {
+              "id": "chk_eco1_groundwater_example",
+              "criterion": "Mentions groundwater overuse in India, for example nearly one-third of the country or Punjab and Western U.P.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "How can a resource that nature renews, like groundwater, still run short?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_eco1_renewable_unlimited"
+          ]
+        },
+        {
+          "id": "eco1_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to resources that nature cannot renew, like crude oil?",
+          "requiredEvidence": [
+            "non-renewable",
+            "fixed stock",
+            "crude oil",
+            "50 years"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_non_renewable",
+              "criterion": "Explains that non-renewable resources such as crude oil have a fixed stock and will get exhausted (world reserves would last only about 50 years more).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to resources that nature cannot renew, like crude oil?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "eco1_t4c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "environmental degradation",
+            "national or state boundaries",
+            "future is linked together"
+          ],
+          "checks": [
+            {
+              "id": "chk_eco1_no_boundaries",
+              "criterion": "States that the consequences of environmental degradation do not respect national or state boundaries; our future is linked together.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens if we use more groundwater than the rain replaces? Can crude oil be replaced?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_eco1_overuse_to_unsustainable",
+          "linksChecks": [
+            "chk_eco1_renewable_overuse",
+            "chk_eco1_not_sustainable"
+          ],
+          "criterion": "Connects using resources faster than they are replenished (or exhausting a fixed stock) to development not being sustainable for future generations.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_eco1_renewable_unlimited",
+          "wrong": "Renewable resources like groundwater can never run out.",
+          "fix": "Renewable resources are replenished by nature, but they can be overused: if we use more groundwater than rain replenishes, we are overusing it.",
+          "checkId": "mchk_misc_eco1_renewable_unlimited",
+          "checkCriterion": "The answer states or implies this wrong idea: Renewable resources like groundwater can never run out.",
+          "fixCheckId": "mfix_misc_eco1_renewable_unlimited",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Renewable resources are replenished by nature, but they can be overused: if we use more groundwater than rain replenishes, we are overusing it.",
+          "keyPointIds": [
+            "eco1_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_eco1_renewable_unlimited"
+          ]
+        ],
+        "a": [
+          [
+            "chk_eco1_not_sustainable",
+            "chk_eco1_renewable_overuse",
+            "chk_eco1_groundwater_example",
+            "chk_eco1_non_renewable"
+          ]
+        ],
+        "b": [
+          [
+            "chk_eco1_no_boundaries",
+            "lnk_eco1_overuse_to_unsustainable"
+          ]
+        ]
+      }
+    }
+  ]
+}
