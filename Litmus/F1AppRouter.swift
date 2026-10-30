@@ -90,6 +90,8 @@ struct F1AppRouter: View {
 
                 Tab(AppNavigationTab.teamRadio.shortTitle, systemImage: AppNavigationTab.teamRadio.iconName, value: AppNavigationTab.teamRadio) {
                     tabScreen(.teamRadio)
+                        // The tab bar steps away while the student is explaining (the canvas, or the mic page)
+                        .toolbarVisibility(isActivelyExplaining ? .hidden : .visible, for: .tabBar)
                 }
                 .badge(isRecording ? Text("Live") : nil)
 
@@ -97,8 +99,8 @@ struct F1AppRouter: View {
                     tabScreen(.flashcards)
                 }
             }
-            // The tab bar on top, which the system turns into a sidebar on request (and in wide windows)
-            .tabViewStyle(.sidebarAdaptable)
+            // The tab bar on top, with no sidebar button
+            .tabViewStyle(.tabBarOnly)
 
             // In-race cockpit: full screen, above the tab bar (Figma "Stay on track")
             if isLapActive {
@@ -338,6 +340,8 @@ struct F1AppRouter: View {
                         .padding(.horizontal, horizontalSizeClass == .regular ? 24 : 16)
                         .padding(.vertical, 16)
                     }
+                    // The tab bar and the corner buttons float over the page, so the top edge fades into them
+                    .scrollEdgeEffectStyle(.automatic, for: .top)
                 }
             }
             .background { AppleMusicDarkGradientBackground() }
@@ -352,6 +356,7 @@ struct F1AppRouter: View {
                     HStack(spacing: 12) {
                         // Switching profile is a Home screen thing; Settings is on every screen
                         if selectedTab == .pitWall { F1ProfileSwitcherButton() }
+                        if selectedTab == .teamRadio { F1CoinCounter(count: progress.coins) }
                         settingsButton
                     }
                     .padding(.top, 24)

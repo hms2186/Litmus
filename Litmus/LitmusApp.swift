@@ -107,7 +107,7 @@ private struct LaunchContainer: View {
         // Full screen: no system clock or date over the app
         .persistentSystemOverlays(.hidden)
         // One scroll edge style for every scroll view in the app, covers and sheets included
-        .scrollEdgeEffectStyle(.soft, for: .all)
+        .scrollEdgeEffectStyle(.automatic, for: .all)
         }
     }
 }

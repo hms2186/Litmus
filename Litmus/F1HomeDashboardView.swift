@@ -22,6 +22,12 @@ struct F1HomeDashboardView: View {
     @ObservedObject private var progressManager = F1SessionProgressManager.shared
     @State private var subject: Subject = .science
     @State private var chapterName = ""
+    /// The chapter whose topics are open (pushed on the navigation stack)
+    @State private var openChapter: OpenChapter?
+    @State private var topicSearch = ""
+    @StateObject private var voiceSearch = LiveSpeechRecorder()
+    private struct OpenChapter: Identifiable { let id: String }
+    @State private var startButtonWidth: CGFloat = 146
     @State private var revisePage = 0
     @State private var reviseChapters: [F1DeckChapter] = []
     @State private var chapterCovers: [String: String] = [:]
@@ -111,15 +117,11 @@ struct F1HomeDashboardView: View {
             if isPortrait {
                 VStack(alignment: .leading, spacing: d(20)) {
                     greetingHeader
-                    subjectPicker
                     weeklyStreaksCard.frame(height: d(140))
                 }
             } else {
                 HStack(alignment: .top, spacing: d(36)) {
-                    VStack(alignment: .leading, spacing: d(28)) {
-                        greetingHeader
-                        subjectPicker
-                    }
+                    greetingHeader
                     Spacer(minLength: 0)
                     weeklyStreaksCard
                         .frame(width: d(480), height: d(140))
@@ -128,10 +130,14 @@ struct F1HomeDashboardView: View {
 
             chapterSection
             // Room above the box for the engineer, who leans on its top edge and points down at it
-            topicSection
-                .id("topic_section")
+            continueSection
                 .padding(.top, d(isPortrait ? 110 : 120))
-                .overlay(alignment: .topLeading) { engineerPointing.padding(.leading, d(26)).padding(.top, d(isPortrait ? 110 : 120)) }
+                .overlay(alignment: .topTrailing) {
+                    // Centred over the Start button, leaning on the box's top edge
+                    engineerPointing
+                        .padding(.trailing, d(22) + startButtonWidth / 2 - d(170) * 1.02 / 2)
+                        .padding(.top, d(isPortrait ? 110 : 120))
+                }
 
             HStack(alignment: .top, spacing: d(24)) {
                 reviseCard
@@ -171,13 +177,10 @@ struct F1HomeDashboardView: View {
             let social = F1FlashcardLibrary.chapters(subject: "Social Science", grade: grade)
             chapterCovers = Dictionary(uniqueKeysWithValues: (science + social).compactMap { chapter in chapter.coverImage.map { (chapter.title, $0) } })
         }
-        .onChange(of: chapterName) { _, name in
-            // Choosing a chapter takes the page straight down to its topics
-            guard !name.isEmpty else { return }
-            Task {
-                try? await Task.sleep(for: .milliseconds(250))
-                withAnimation(.smooth(duration: 0.55)) { proxy.scrollTo("topic_section", anchor: .center) }
-            }
+        .sheet(item: $openChapter) { chapter in
+            chapterSheet(named: chapter.id)
+                .presentationSizing(.page)
+                .presentationCornerRadius(36)
         }
         .onAppear { isVisible = true }
         .onDisappear { isVisible = false }
@@ -241,7 +244,7 @@ struct F1HomeDashboardView: View {
     private var weeklyStreaksCard: some View {
         VStack(alignment: .leading, spacing: d(14)) {
             (Text("Weekly ").foregroundStyle(.white) + Text("Streaks").foregroundStyle(yellow))
-                .f1Font(size: d(34), weight: .semibold)
+                .f1Font(size: d(32), weight: .semibold)
                 .lineLimit(1)
             HStack(spacing: 0) {
                 ForEach(dayLabels.indices, id: \.self) { index in
@@ -379,23 +382,29 @@ struct F1HomeDashboardView: View {
         })
     }
 
-    private var subjectPicker: some View {
+    private func subjectPicker(width: CGFloat) -> some View {
         Picker("Subject", selection: subjectBinding) {
             ForEach(Subject.allCases) { Text($0.rawValue).tag($0) }
         }
         .pickerStyle(.segmented)
-        .frame(width: d(330))
+        .frame(width: width)
     }
 
     // MARK: - Chapters
 
     private var chapterSection: some View {
         VStack(alignment: .leading, spacing: d(16)) {
-            Text("Which Chapter do you wanna study?")
-                .f1Font(size: d(32), weight: .semibold)
-                .foregroundStyle(Color(red: 255/255, green: 240/255, blue: 225/255))
-                .lineLimit(2)
+            HStack(alignment: .center, spacing: d(20)) {
+                Text("What chapter do you want to study")
+                    .f1Font(size: d(32), weight: .semibold)
+                    .foregroundStyle(Color(red: 255/255, green: 240/255, blue: 225/255))
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                Spacer(minLength: 0)
+                subjectPicker(width: d(330))
+            }
             let list = chapters(in: subject)
+            // The glass shelf is the width of the screen's content, and the tiles scroll inside it
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: d(20)) {
                     ForEach(Array(list.enumerated()), id: \.element.chapterName) { index, chapter in
@@ -405,8 +414,9 @@ struct F1HomeDashboardView: View {
                 .padding(.vertical, 6)
                 .padding(.horizontal, 6)
             }
-            .scrollClipDisabled()
-            .padding(.horizontal, -6)
+            .padding(d(16))
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .glassEffect(.clear, in: RoundedRectangle(cornerRadius: d(40), style: .continuous))
         }
     }
 
@@ -415,10 +425,11 @@ struct F1HomeDashboardView: View {
         let cover = chapterCovers[chapter.chapterName]
         let titled = F1DeckChapter.coverHasTitle(chapter.chapterName)
         let side = d(isPortrait ? 250 : 290)
-        let width = side * 1.2
+        let width = side
         let shape = RoundedRectangle(cornerRadius: d(26), style: .continuous)
         return Button {
             withAnimation(.smooth(duration: 0.25)) { choose(chapter: chapter, in: subject, thenTopic: false) }
+            openChapter = OpenChapter(id: chapter.chapterName)
         } label: {
             ZStack(alignment: .bottomLeading) {
                 if let cover, titled {
@@ -470,38 +481,130 @@ struct F1HomeDashboardView: View {
         .accessibilityAddTraits(selected ? .isSelected : [])
     }
 
-    // MARK: - Topics and Start
+    // MARK: - Chapter sheet: pick a topic (Choose Activities style: a search field, a list with selection circles, a tick)
 
-    private var topicSection: some View {
-        HStack(alignment: .center, spacing: d(20)) {
-            VStack(alignment: .leading, spacing: d(12)) {
-                Text(chapterName.isEmpty ? "Pick a chapter, then a topic" : "Which topic would you like to study?")
-                    .f1Font(size: d(22), weight: .medium)
-                    .foregroundStyle(.white.opacity(0.85))
-                if chapterName.isEmpty {
-                    EmptyView()
-                } else {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: d(12)) {
-                            ForEach(topicEntries) { entry in
-                                let picked = entry.id == topicEntryID
-                                Button { withAnimation(.smooth(duration: 0.2)) { choose(entry) } } label: {
-                                    Text(entry.topic.title)
-                                        .f1Font(size: d(18), weight: .medium)
-                                        .foregroundStyle(picked ? Color.black.opacity(0.85) : .white)
-                                        .padding(.horizontal, d(18)).padding(.vertical, d(10))
-                                        .background(picked ? yellow : Color.white.opacity(0.12), in: Capsule())
-                                }
-                                .buttonStyle(.f1Spring)
-                                .accessibilityAddTraits(picked ? .isSelected : [])
-                            }
+    private func chapterSheet(named name: String) -> some View {
+        let matches = topicEntries.filter { topicSearch.isEmpty || $0.topic.title.localizedCaseInsensitiveContains(topicSearch) }
+        return NavigationStack {
+            List {
+                ForEach(matches) { entry in
+                    let picked = entry.id == topicEntryID
+                    Button { withAnimation(.smooth(duration: 0.2)) { choose(entry) } } label: {
+                        HStack(spacing: 14) {
+                            Image(systemName: picked ? "checkmark.circle.fill" : "circle")
+                                .font(.system(size: 24))
+                                .foregroundStyle(picked ? Color.blue : Color.white.opacity(0.35))
+                            Text(entry.topic.title)
+                                .f1Font(size: 19)
+                                .foregroundStyle(.white)
+                                .multilineTextAlignment(.leading)
+                            Spacer(minLength: 0)
                         }
+                        .padding(.vertical, 4)
+                        .contentShape(Rectangle())
                     }
+                    .buttonStyle(.plain)
+                    .accessibilityAddTraits(picked ? .isSelected : [])
+                }
+                if matches.isEmpty {
+                    Text("No topics match \u{201C}\(topicSearch)\u{201D}")
+                        .foregroundStyle(.white.opacity(0.6))
+                }
+            }
+            .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .navigationTitle(name)
+            .navigationBarTitleDisplayMode(.inline)
+            .safeAreaInset(edge: .top, spacing: 0) { topicSearchField }
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button(role: .cancel) { openChapter = nil } label: { Image(systemName: "xmark") }
+                        .tint(.white)
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    // Not the system confirm role, which takes the app's red accent
+                    Button {
+                        onStartLap()
+                        if !customTopicText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty { openChapter = nil }
+                    } label: { Image(systemName: "checkmark").fontWeight(.semibold) }
+                    .buttonStyle(.glassProminent)
+                    .buttonBorderShape(.circle)
+                    .tint(Color(red: 10/255, green: 132/255, blue: 255/255))
+                    .disabled(topicEntryID.isEmpty)
+                    .accessibilityLabel("Start")
+                }
+            }
+            .background { AppleMusicDarkGradientBackground().ignoresSafeArea() }
+        }
+        .tint(.blue)
+        .preferredColorScheme(.dark)
+        .onDisappear { topicSearch = ""; voiceSearch.stopRecording() }
+    }
+
+    /// The search field of the topic sheet: type, or tap the mic and say the topic.
+    private var topicSearchField: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "magnifyingglass").foregroundStyle(.white.opacity(0.6))
+            TextField("Search topics", text: $topicSearch)
+                .textInputAutocapitalization(.never)
+                .autocorrectionDisabled(false)
+                .submitLabel(.search)
+                .foregroundStyle(.white)
+            if !topicSearch.isEmpty {
+                Button { topicSearch = "" } label: { Image(systemName: "xmark.circle.fill").foregroundStyle(.white.opacity(0.5)) }
+                    .accessibilityLabel("Clear search")
+            }
+            Button {
+                voiceSearch.toggleRecording { text in topicSearch = text }
+            } label: {
+                Image(systemName: voiceSearch.isRecording ? "mic.fill" : "mic")
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundStyle(voiceSearch.isRecording ? Color.red : .white.opacity(0.8))
+                    .symbolEffect(.pulse, isActive: voiceSearch.isRecording)
+            }
+            .accessibilityLabel(voiceSearch.isRecording ? "Stop voice search" : "Search by voice")
+        }
+        .padding(.horizontal, 16)
+        .frame(height: 44)
+        .glassEffect(.regular, in: Capsule())
+        .padding(.horizontal, 20)
+        .padding(.vertical, 8)
+    }
+
+    // MARK: - Continue where you left off
+
+    /// The latest session whose explanation needed another look.
+    private var pendingReview: F1SessionRecord? {
+        progressManager.sessions.first(where: { $0.reviewNote != nil })
+    }
+
+    private var continueSection: some View {
+        let pending = pendingReview
+        return HStack(alignment: .center, spacing: d(20)) {
+            VStack(alignment: .leading, spacing: d(8)) {
+                Text("Continue where you left off")
+                    .f1Font(size: d(32), weight: .semibold)
+                    .foregroundStyle(Color(red: 255/255, green: 240/255, blue: 225/255))
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                if let pending {
+                    Text(pending.topic)
+                        .f1Font(size: d(22), weight: .medium)
+                        .foregroundStyle(yellow)
+                        .lineLimit(1)
+                    Text(pending.reviewNote ?? "")
+                        .f1Font(size: d(17))
+                        .foregroundStyle(.white.opacity(0.7))
+                        .lineLimit(2)
+                } else {
+                    Text("Nothing to revisit yet. Pick a chapter above to begin.")
+                        .f1Font(size: d(20))
+                        .foregroundStyle(.white.opacity(0.7))
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
-            Button(action: onStartLap) {
+            Button { continueLastSession() } label: {
                 Text("Start")
                     .f1Font(size: d(18), weight: .semibold)
                     .frame(minWidth: d(146) - 40, minHeight: d(70) - 28)
@@ -510,10 +613,24 @@ struct F1HomeDashboardView: View {
             .buttonBorderShape(.capsule)
             .controlSize(.extraLarge)
             .tint(Color(red: 0/255, green: 102/255, blue: 255/255))
+            .disabled(pending == nil)
+            .onGeometryChange(for: CGFloat.self) { $0.size.width } action: { startButtonWidth = $0 }
         }
         .padding(d(22))
         .frame(maxWidth: .infinity)
         .glassCard(cornerRadius: 28)
+    }
+
+    /// Start: straight to the topic the student explained last and was told to review again.
+    private func continueLastSession() {
+        guard let record = pendingReview else { return }
+        let catalog = CurriculumCatalog.shared
+        let all = catalog.allChapters.flatMap { catalog.topics(forChapter: $0) }
+        guard let topic = all.first(where: { $0.title == record.topic && $0.chapter == record.chapter })
+            ?? all.first(where: { $0.title == record.topic }) else { return }
+        chosenTopic = topic
+        customTopicText = topic.title
+        Task { @MainActor in onStartLap() }
     }
 
     // MARK: - Revise
@@ -556,7 +673,7 @@ struct F1HomeDashboardView: View {
         return Button {
             if let page = pages.indices.contains(revisePage) ? pages[revisePage] : pages.first, !page.chapter.isEmpty { onNavigateToRevise?(page.chapter, page.subject) }
         } label: {
-            ZStack(alignment: .bottom) {
+            ZStack(alignment: .top) {
                 TabView(selection: $revisePage) {
                     ForEach(Array(pages.enumerated()), id: \.element.id) { index, page in
                         revisePage(title: page.title, subtitle: page.subtitle, image: page.image).tag(index)
@@ -564,23 +681,34 @@ struct F1HomeDashboardView: View {
                 }
                 .tabViewStyle(.page(indexDisplayMode: .always))
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
-
-                Text("REVISE")
-                    .f1Font(size: d(40), weight: .heavy)
-                    .tracking(1.5)
-                    .foregroundStyle(.white)
-                    .shadow(color: .black.opacity(0.45), radius: 8, y: 2)
-                    .padding(.bottom, d(46))
+                // The same soft shade the chapter cards have behind their labels, then the word raised off the picture
+                LinearGradient(colors: [.black.opacity(0.5), .clear], startPoint: .top, endPoint: .init(x: 0.5, y: 0.28))
+                    .allowsHitTesting(false)
+                reviseWord
+                    .padding(.top, d(18))
                     .allowsHitTesting(false)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(LinearGradient(colors: [Color(red: 250/255, green: 232/255, blue: 210/255), Color(red: 214/255, green: 228/255, blue: 252/255)], startPoint: .top, endPoint: .bottom))
-            .clipShape(RoundedRectangle(cornerRadius: 36, style: .continuous))
+            .background(Color(red: 0.07, green: 0.07, blue: 0.08))
+            .clipShape(RoundedRectangle(cornerRadius: d(26), style: .continuous))
             .shadow(color: .black.opacity(0.3), radius: 14, y: 8)
         }
         .buttonStyle(.f1CardSpring)
         .onChange(of: pages.count) { _, count in if revisePage >= count { revisePage = 0 } }
         .accessibilityLabel("Revise flashcards")
+    }
+
+    /// REVISE with depth: stacked darker copies make the thickness, a light-to-warm face sits on top, and a soft shadow lifts it.
+    private var reviseWord: some View {
+        let word = Text("REVISE").f1Font(size: d(40), weight: .heavy).tracking(1.5)
+        return ZStack {
+            ForEach(1..<7, id: \.self) { layer in
+                word.foregroundStyle(Color(red: 0.45, green: 0.05, blue: 0.08).opacity(0.9)).offset(y: CGFloat(layer) * 1.4)
+            }
+            word.foregroundStyle(LinearGradient(colors: [.white, Color(red: 1, green: 0.86, blue: 0.7)], startPoint: .top, endPoint: .bottom))
+        }
+        .shadow(color: .black.opacity(0.5), radius: 10, y: 10)
+        .compositingGroup()
     }
 
     private func revisePage(title: String, subtitle: String, image: String?) -> some View {
@@ -614,13 +742,15 @@ struct F1HomeDashboardView: View {
         let minutes = progressManager.dailyStudyMinutes
         let values = dayLabels.indices.map { minutes.indices.contains($0) ? minutes[$0] : 0 }
         let top = max(100.0, values.max() ?? 100)
-        return VStack(alignment: .leading, spacing: 20) {
+        // The chart takes what is left of the card under the title
+        let chartH = max(80, reviseSide - 150)
+        return VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 12) {
                 Image(systemName: "stopwatch")
-                    .font(.system(size: 32, weight: .bold))
+                    .font(.system(size: 26, weight: .bold))
                     .foregroundStyle(Color(red: 255/255, green: 24/255, blue: 36/255))
                 Text("Study analysis")
-                    .f1Font(size: 32, weight: .semibold)
+                    .f1Font(size: 26, weight: .semibold)
                     .foregroundStyle(.white)
                     .lineLimit(1)
                     .minimumScaleFactor(0.6)
@@ -635,14 +765,14 @@ struct F1HomeDashboardView: View {
                             .frame(maxHeight: .infinity, alignment: tick == 0 ? .bottom : .top)
                     }
                 }
-                .frame(width: 56, height: 200)
+                .frame(width: 56, height: chartH)
                 HStack(alignment: .bottom, spacing: 0) {
                     ForEach(dayLabels.indices, id: \.self) { index in
                         VStack(spacing: 8) {
                             Spacer(minLength: 0)
                             RoundedRectangle(cornerRadius: 2, style: .continuous)
                                 .fill(teal)
-                                .frame(maxWidth: 28, minHeight: 0).frame(height: values[index] > 0 ? max(3, CGFloat(values[index] / top) * 200) : 0)
+                                .frame(maxWidth: 28, minHeight: 0).frame(height: values[index] > 0 ? max(3, CGFloat(values[index] / top) * chartH) : 0)
                             Text(dayLabels[index])
                                 .f1Font(size: 13, weight: .medium)
                                 .foregroundStyle(.white)
@@ -650,7 +780,7 @@ struct F1HomeDashboardView: View {
                         .frame(maxWidth: .infinity)
                     }
                 }
-                .frame(height: 228)
+                .frame(height: chartH + 28)
                 .background(alignment: .top) {
                     VStack(spacing: 0) {
                         ForEach(0..<6) { _ in
@@ -658,14 +788,14 @@ struct F1HomeDashboardView: View {
                             Spacer()
                         }
                     }
-                    .frame(height: 200)
+                    .frame(height: chartH)
                 }
             }
             .animation(AppMotionSystem.smooth, value: values)
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Minutes studied per day this week")
         }
-        .padding(28)
+        .padding(22)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .glassCard(cornerRadius: 32)
     }
@@ -675,5 +805,35 @@ private extension View {
     /// A tile in the system's Liquid Glass (regular variant), with the system's own edge and highlights.
     func glassCard(cornerRadius: CGFloat) -> some View {
         glassEffect(.regular, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+    }
+}
+
+/// Lays the topics out as wrapping rows, so all of them show at once without scrolling.
+private struct TopicFlowLayout: Layout {
+    var spacing: CGFloat = 10
+
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        arrange(in: proposal.width ?? 700, subviews: subviews).size
+    }
+
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        let result = arrange(in: bounds.width, subviews: subviews)
+        for (index, origin) in result.origins.enumerated() {
+            subviews[index].place(at: CGPoint(x: bounds.minX + origin.x, y: bounds.minY + origin.y), proposal: .unspecified)
+        }
+    }
+
+    private func arrange(in width: CGFloat, subviews: Subviews) -> (size: CGSize, origins: [CGPoint]) {
+        var origins: [CGPoint] = []
+        var x: CGFloat = 0, y: CGFloat = 0, rowHeight: CGFloat = 0, maxX: CGFloat = 0
+        for subview in subviews {
+            let size = subview.sizeThatFits(.unspecified)
+            if x > 0, x + size.width > width { x = 0; y += rowHeight + spacing; rowHeight = 0 }
+            origins.append(CGPoint(x: x, y: y))
+            x += size.width + spacing
+            rowHeight = max(rowHeight, size.height)
+            maxX = max(maxX, x - spacing)
+        }
+        return (CGSize(width: maxX, height: y + rowHeight), origins)
     }
 }

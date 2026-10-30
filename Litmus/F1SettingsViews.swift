@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import FamilyControls
 import UserNotifications
 
 private let settingsRed = Color(red: 255/255, green: 24/255, blue: 48/255)
@@ -37,15 +36,14 @@ struct F1SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @ObservedObject private var progress = F1SessionProgressManager.shared
 
-    @AppStorage("settings_app_blocking") private var appBlocking = false
-    @ObservedObject private var blocker = F1AppBlocker.shared
-    @State private var showsAppPicker = false
-    @State private var showBlockingDenied = false
+    @ObservedObject private var blocker = ScreenTimeManager.shared
+    @ObservedObject private var profileStore = F1ProfileStore.shared
+    @State private var showDeleteProfile = false
     @AppStorage("settings_widget_timer") private var widgetTimer = true
     @AppStorage("settings_study_reminders") private var reminders = false
     @AppStorage(F1EngineerVoice.soundSettingKey) private var soundEffects = true
 
-    private enum Screen: Hashable { case about, accessibility, privacy }
+    private enum Screen: Hashable { case about, accessibility, appBlocking, privacy }
     /// Pushed on a navigation stack that already exists (from the gear): the stack's own back button returns. Presented
     /// on its own (from Revise): it brings a stack, with a back button that closes it.
     var embedded = false
@@ -76,6 +74,7 @@ struct F1SettingsView: View {
                 .navigationBarTitleDisplayMode(.large)
         }
         .preferredColorScheme(.dark)
+        .toolbarVisibility(.hidden, for: .tabBar)
         .alert("Language", isPresented: $showLanguageNote) {
             Button("OK") {}
         } message: {
@@ -99,6 +98,8 @@ struct F1SettingsView: View {
                 .navigationBarTitleDisplayMode(.inline)
         case .accessibility:
             F1AccessibilitySettingsView()
+        case .appBlocking:
+            F1AppBlockingSettingsView()
         case .privacy:
             F1PrivacyView()
                 .padding(.horizontal, 32).padding(.bottom, 24)
@@ -113,15 +114,12 @@ struct F1SettingsView: View {
             VStack(spacing: 10) {
                 row(icon: "person", title: "About You", link: .about) { chevron }
                 row(icon: "accessibility", title: "Accessibility", link: .accessibility) { chevron }
-                row(icon: "iphone", title: "App Blocking") { toggle($appBlocking) }
-                if appBlocking && blocker.isAuthorized {
-                    row(icon: "apps.iphone", title: "Choose Apps to Block", onTap: { showsAppPicker = true }) {
-                        HStack(spacing: 12) {
-                            Text(blocker.hasSelection ? "\(blocker.selectionCount) chosen" : "None chosen").foregroundStyle(.white.opacity(0.7))
-                            chevron
-                        }
-                        .f1Font(size: 20)
+                row(icon: "iphone", title: "App Blocking", link: .appBlocking) {
+                    HStack(spacing: 12) {
+                        Text(blocker.isAppBlockingEnabled ? "On" : "Off").foregroundStyle(.white.opacity(0.7))
+                        chevron
                     }
+                    .f1Font(size: 20)
                 }
                 row(icon: "square.grid.2x2", title: "Widget Timer") { toggle($widgetTimer) }
                 row(icon: "bell", title: "Study Reminders") {
@@ -136,24 +134,20 @@ struct F1SettingsView: View {
                     }
                     .f1Font(size: 20)
                 }
+                deleteProfileRow
             }
             .padding(.horizontal, 32)
             .padding(.bottom, 24)
         }
         .scrollContentBackground(.hidden)
-        .familyActivityPicker(isPresented: $showsAppPicker, selection: $blocker.selection)
-        .onChange(of: appBlocking) { _, enabled in
-            guard enabled else { F1AppBlocker.shared.stopBlocking(); return }
-            Task {
-                // Screen Time access first; the apps to block are chosen right after
-                if await F1AppBlocker.shared.requestAuthorization() { showsAppPicker = !blocker.hasSelection }
-                else { appBlocking = false; showBlockingDenied = true }
+        .scrollEdgeEffectStyle(.automatic, for: .top)
+        .confirmationDialog("Delete this profile?", isPresented: $showDeleteProfile, titleVisibility: .visible) {
+            Button("Delete \(profileStore.active.name.isEmpty ? "Profile" : profileStore.active.name)", role: .destructive) {
+                profileStore.deleteActive()
+                dismiss()
             }
-        }
-        .alert("Screen Time access needed", isPresented: $showBlockingDenied) {
-            Button("OK", role: .cancel) {}
         } message: {
-            Text("App Blocking uses Screen Time. Allow Litmus in Settings > Screen Time, then turn App Blocking on again.")
+            Text("Its coins, streaks and sessions are removed too. You switch to another profile.")
         }
         .onChange(of: reminders) { _, enabled in
             Task {
@@ -161,6 +155,37 @@ struct F1SettingsView: View {
                 if enabled && !ok { reminders = false; showReminderDenied = true }
             }
         }
+    }
+
+    /// The last row: removes the profile in use (only when another profile exists to move to).
+    private var deleteProfileRow: some View {
+        Button { showDeleteProfile = true } label: {
+            HStack(spacing: 22) {
+                Image(systemName: "trash")
+                    .font(.system(size: 20))
+                    .foregroundStyle(.white.opacity(0.9))
+                    .frame(width: 50, height: 50)
+                    .background(settingsRed.opacity(0.28), in: Circle())
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Delete Profile")
+                        .f1Font(size: 21)
+                        .foregroundStyle(profileStore.canDeleteActive ? Color(red: 255/255, green: 69/255, blue: 58/255) : .white.opacity(0.4))
+                    if !profileStore.canDeleteActive {
+                        Text("Add another profile first")
+                            .f1Font(size: 14)
+                            .foregroundStyle(.white.opacity(0.5))
+                    }
+                }
+                Spacer()
+            }
+            .padding(.horizontal, 20)
+            .frame(height: 66)
+            .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
+        }
+        .buttonStyle(.f1CardSpring)
+        .disabled(!profileStore.canDeleteActive)
+        .padding(.top, 14)
     }
 
     private var chevron: some View {

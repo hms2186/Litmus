@@ -109,8 +109,19 @@ final class F1ProfileStore: ObservableObject {
         profiles.count > 1 && profile.id != activeID
     }
 
-    func delete(_ profile: F1LearnerProfile) {
-        guard canDelete(profile) else { return }
+    /// The profile in use can be deleted when another one exists to move to.
+    var canDeleteActive: Bool { profiles.count > 1 }
+
+    func deleteActive() {
+        guard canDeleteActive, let next = profiles.first(where: { $0.id != activeID }) else { return }
+        let leaving = active
+        apply(next)
+        activeID = next.id
+        delete(leaving, force: true)
+    }
+
+    func delete(_ profile: F1LearnerProfile, force: Bool = false) {
+        guard force || canDelete(profile) else { return }
         profiles.removeAll { $0.id == profile.id }
         // Its progress goes with it
         let suffix = profile.storageKey.isEmpty ? "" : "_" + profile.storageKey

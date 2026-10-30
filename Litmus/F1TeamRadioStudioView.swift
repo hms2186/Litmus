@@ -77,6 +77,7 @@ struct F1TeamRadioStudioView: View {
     @State private var showNotEnoughCoins: Bool = false
     /// The radio box's reply on the Write and Type screens when the answer is not enough to check yet.
     @State private var inputNotice: String?
+    @State private var canvasFullscreen = false
     /// The stage's width, so the dock fits a narrow window.
     @State private var explainSeconds: Int = 0
     @State private var explainStartedAt = Date()
@@ -549,12 +550,12 @@ struct F1TeamRadioStudioView: View {
                     // pushing the card off the edge
                     .frame(maxWidth: .infinity, alignment: .topLeading)
                     VStack(alignment: .trailing, spacing: 14) {
-                        coinBadge(count: coins)
                         radioCard(message: currentRadioMessage ?? "")
                             .frame(width: 330)
                     }
                 }
                 .padding(.horizontal, 28)
+                // Clear of the settings button the app keeps in the top-right corner
                 .padding(.top, 8)
 
                 Spacer()
@@ -676,7 +677,7 @@ struct F1TeamRadioStudioView: View {
             .frame(maxWidth: .infinity)
             .frame(height: 206)
             .opacity(isListeningStage ? 1 : 0)
-            .allowsHitTesting(false)
+            .allowsHitTesting(isListeningStage)
 
             micButton
                 .frame(maxWidth: .infinity, alignment: isListeningStage ? .trailing : .center)
@@ -849,11 +850,12 @@ struct F1TeamRadioStudioView: View {
                     .font(.system(size: 22, weight: .semibold))
                     .foregroundStyle(.white)
                     .frame(width: 52, height: 52)
-                    .background(target == .speak ? Color(red: 10/255, green: 110/255, blue: 255/255) : Color.white.opacity(0.14), in: Circle())
+                    .background(target == .speak ? Color(red: 10/255, green: 110/255, blue: 255/255) : Color.clear, in: Circle())
+                    .glassEffect(.regular.interactive(), in: Circle())
                 Text(label)
-                    .font(.system(size: 14, weight: .regular).italic())
-                    .foregroundStyle(.white.opacity(0.7))
-                    .frame(width: 52, alignment: .leading)
+                    .font(.system(size: 17, weight: .regular))
+                    .foregroundStyle(.white.opacity(0.85))
+                    .frame(width: 56, alignment: .leading)
             }
         }
         .buttonStyle(.f1Spring)
@@ -906,33 +908,23 @@ struct F1TeamRadioStudioView: View {
             )
             .ignoresSafeArea()
             
-            // The question comes first, then the place to answer it: the topic and the engineer's radio box
-            // across the top, the writing or typing card below. The card gives up height when the keyboard is up.
-            VStack(alignment: .leading, spacing: 18) {
-                HStack(alignment: .top, spacing: 24) {
-                    VStack(alignment: .leading, spacing: 10) {
-                        topicTitleHeader
-                        Text("Your answer")
-                            .f1Font(size: 15, weight: .medium)
-                            .foregroundStyle(.white.opacity(0.6))
-                    }
-                    Spacer(minLength: 0)
-                    radioCard(message: currentRadioMessage ?? "“\(stageRadioMessage)”", compact: true)
-                        .frame(width: 380)
-                }
-                workstationCard
-                    .frame(minHeight: 240, maxHeight: 560)
-            }
-            .frame(maxWidth: 1020, maxHeight: .infinity, alignment: .top)
-            .padding(.horizontal, 40)
-            .padding(.top, F1BackButton.top + 56 + 12)
-            .padding(.bottom, 24)
+            // A Freeform-style canvas: the topic and the engineer's radio box are notes on it, Done and full screen sit in the corner
+            freeformCanvas
+                .padding(.horizontal, canvasFullscreen ? 0 : 40)
+                .padding(.top, canvasFullscreen ? 0 : F1BackButton.top + 56 + 12)
+                .padding(.bottom, canvasFullscreen ? 0 : 24)
+                .ignoresSafeArea(edges: canvasFullscreen ? .all : [])
         }
+        .overlay(alignment: .topTrailing) { canvasControls }
+        .statusBarHidden(canvasFullscreen)
+        .animation(.smooth(duration: 0.35), value: canvasFullscreen)
         // The same back button, in the same place, as every other screen
         .overlay(alignment: .topLeading) {
-            F1BackButton(label: "Back to Explain") { activeInputMode = nil }
-                .padding(.leading, F1BackButton.leading)
-                .padding(.top, F1BackButton.top)
+            if !canvasFullscreen {
+                F1BackButton(label: "Back to Explain") { activeInputMode = nil }
+                    .padding(.leading, F1BackButton.leading)
+                    .padding(.top, F1BackButton.top)
+            }
         }
         // Checking happens here, and the screen leaves only for the analysis, never back to the mic page
         .overlay {
@@ -962,53 +954,106 @@ struct F1TeamRadioStudioView: View {
         }
     }
     
-    // MARK: - Workstation Card (Canvas / Text / Voice)
-    private var workstationCard: some View {
-        VStack(spacing: 0) {
-            // Main Content Area (Unified Canvas for Pencil & Keyboard)
+    // MARK: - Freeform-style canvas (Sketch and Type)
+
+    private var freeformCanvas: some View {
+        let shape = RoundedRectangle(cornerRadius: canvasFullscreen ? 0 : 28, style: .continuous)
+        return ZStack(alignment: .topLeading) {
+            canvasDotGrid
             canvasInteractiveContent
+                .padding(.top, inputMode == .keyboard ? 110 : 0)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             if inputMode == .pencil {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("Recognised handwriting")
-                        .f1Font(size: 13, weight: .semibold)
-                        .foregroundStyle(.white.opacity(0.6))
-                    Text(sketchText.isEmpty ? "Your handwriting appears here as you write" : sketchText)
-                        .f1Font(size: 17)
-                        .foregroundStyle(sketchText.isEmpty ? .white.opacity(0.45) : .white)
-                        .lineLimit(3)
+                // What the handwriting reads as, kept short; it scrolls when it is longer
+                VStack {
+                    Spacer()
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Recognised handwriting")
+                            .f1Font(size: 13, weight: .semibold)
+                            .foregroundStyle(.white.opacity(0.6))
+                        ScrollView(.vertical, showsIndicators: true) {
+                            Text(sketchText.isEmpty ? "Your handwriting appears here as you write" : sketchText)
+                                .f1Font(size: 17)
+                                .foregroundStyle(sketchText.isEmpty ? .white.opacity(0.45) : .white)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .frame(maxHeight: 72)
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(Color.black.opacity(0.35))
                 }
-                .frame(maxWidth: .infinity, minHeight: 64, alignment: .leading)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 10)
-                .background(Color.black.opacity(0.3))
             }
-            
-            // Bottom Action Area: Official Apple HIG Done Button
+
+            // Notes on the canvas, which can be dragged anywhere on it
+            FreeformNote(alignment: .topLeading) {
+                VStack(alignment: .leading, spacing: 6) {
+                    topicTitleHeader
+                    Text("Your answer")
+                        .f1Font(size: 15, weight: .medium)
+                        .foregroundStyle(.white.opacity(0.6))
+                }
+                .padding(.horizontal, 20).padding(.vertical, 14)
+                .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
+            }
+            FreeformNote(alignment: .topTrailing) {
+                radioCard(message: currentRadioMessage ?? "“\(stageRadioMessage)”", compact: true)
+                    .frame(width: 340)
+            }
+        }
+        .background(shape.fill(Color(white: 0.08).opacity(0.94)))
+        .clipShape(shape)
+        .overlay(shape.stroke(Color.white.opacity(canvasFullscreen ? 0 : 0.18), lineWidth: 0.75))
+        .shadow(color: Color.black.opacity(canvasFullscreen ? 0 : 0.35), radius: 24, y: 10)
+    }
+
+    /// The faint dot grid of a Freeform board
+    private var canvasDotGrid: some View {
+        Canvas { context, size in
+            let spacing: CGFloat = 28
+            var y: CGFloat = spacing / 2
+            while y < size.height {
+                var x: CGFloat = spacing / 2
+                while x < size.width {
+                    context.fill(Path(ellipseIn: CGRect(x: x - 1.2, y: y - 1.2, width: 2.4, height: 2.4)), with: .color(.white.opacity(0.14)))
+                    x += spacing
+                }
+                y += spacing
+            }
+        }
+        .allowsHitTesting(false)
+    }
+
+    /// Full screen and Done, top right where Settings is on the other screens.
+    private var canvasControls: some View {
+        HStack(spacing: 12) {
             Button {
-                submitWrittenAnswer()
+                canvasFullscreen.toggle()
             } label: {
+                Image(systemName: canvasFullscreen ? "arrow.down.right.and.arrow.up.left" : "arrow.up.left.and.arrow.down.right")
+                    .font(.system(size: 20, weight: .semibold))
+                    .foregroundStyle(.white)
+                    .frame(width: 52, height: 52)
+                    .glassEffect(.regular.interactive(), in: Circle())
+            }
+            .buttonStyle(.f1Spring)
+            .contentShape(Circle())
+            .accessibilityLabel(canvasFullscreen ? "Exit full screen" : "Full screen")
+
+            Button { submitWrittenAnswer() } label: {
                 Text("Done")
                     .f1Font(size: 17, weight: .semibold)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 4)
+                    .frame(minWidth: 72, minHeight: 28)
             }
             .buttonStyle(.glassProminent)
             .buttonBorderShape(.capsule)
             .controlSize(.large)
-            .contentShape(Capsule())
-            .hoverEffect(.lift)
             .tint(Color.blue)
-            .padding(.horizontal, 20)
-            .padding(.bottom, 16)
+            .hoverEffect(.lift)
         }
-        .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 28, style: .continuous))
-        .overlay(
-            RoundedRectangle(cornerRadius: 28, style: .continuous)
-                .stroke(Color.white.opacity(0.18), lineWidth: 0.75)
-        )
-        .shadow(color: Color.black.opacity(0.35), radius: 24, y: 10)
+        .padding(.top, 24)
+        .padding(.trailing, 24)
     }
 
     // MARK: - Canvas Interactive Content (Accepts Pencil Drawing & Keyboard Text)
@@ -1142,48 +1187,6 @@ struct F1TeamRadioStudioView: View {
                 .lineLimit(1)
                 .truncationMode(.tail)
         }
-    }
-    
-    private func coinBadge(count: Int) -> some View {
-        HStack(spacing: 8) {
-            ZStack {
-                Circle()
-                    .fill(
-                        AngularGradient(
-                            gradient: Gradient(colors: [
-                                Color(red: 188/255, green: 144/255, blue: 62/255),
-                                Color(red: 217/255, green: 188/255, blue: 114/255),
-                                Color(red: 255/255, green: 197/255, blue: 89/255),
-                                Color(red: 175/255, green: 126/255, blue: 29/255),
-                                Color(red: 188/255, green: 144/255, blue: 62/255)
-                            ]),
-                            center: .center
-                        )
-                    )
-                    .frame(width: 32, height: 32)
-                
-                Circle()
-                    .fill(Color(red: 176/255, green: 119/255, blue: 13/255))
-                    .frame(width: 28, height: 28)
-                
-                Text("$")
-                    .f1Font(size: 18, weight: .bold)
-                    .foregroundStyle(Color(red: 203/255, green: 167/255, blue: 89/255))
-            }
-            
-            Text("\(count)")
-                .f1Font(size: 22, weight: .bold)
-                .foregroundStyle(Color(red: 255/255, green: 197/255, blue: 89/255))
-                .contentTransition(.numericText())
-                .animation(.smooth, value: count)
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 7)
-        .glassEffect(.regular, in: Capsule())
-        .overlay(
-            Capsule()
-                .stroke(Color.white.opacity(0.18), lineWidth: 0.75)
-        )
     }
     
     private var resolvedConcepts: [(title: String, isMastered: Bool)] {
@@ -1346,11 +1349,6 @@ struct F1TeamRadioStudioView: View {
                 topicTitleHeader
                     .padding(.leading, width * 0.06)
                     .padding(.top, height * 0.04)
-
-                coinBadge(count: coins)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                    .padding(.trailing, width * 0.045)
-                    .padding(.top, height * 0.045)
 
                 debriefPanel
                     .frame(width: width * 0.63, height: height * 0.72)
@@ -1564,7 +1562,6 @@ struct F1TeamRadioStudioView: View {
                     }
                     Spacer()
                     VStack(alignment: .trailing, spacing: 14) {
-                        coinBadge(count: coins)
                         radioCard(message: "“\(summaryRadioLine)”")
                             .frame(width: 330)
                         VStack(spacing: 2) {
@@ -1985,4 +1982,74 @@ struct StudioDebrief {
     var passedParakh: Bool
     var feynmanGap: String
     var nextGuidingQuestion: String
+}
+
+/// The coin balance, next to Settings in the corner of the Explain tab.
+struct F1CoinCounter: View {
+    let count: Int
+    var body: some View {
+
+        HStack(spacing: 8) {
+            ZStack {
+                Circle()
+                    .fill(
+                        AngularGradient(
+                            gradient: Gradient(colors: [
+                                Color(red: 188/255, green: 144/255, blue: 62/255),
+                                Color(red: 217/255, green: 188/255, blue: 114/255),
+                                Color(red: 255/255, green: 197/255, blue: 89/255),
+                                Color(red: 175/255, green: 126/255, blue: 29/255),
+                                Color(red: 188/255, green: 144/255, blue: 62/255)
+                            ]),
+                            center: .center
+                        )
+                    )
+                    .frame(width: 32, height: 32)
+                
+                Circle()
+                    .fill(Color(red: 176/255, green: 119/255, blue: 13/255))
+                    .frame(width: 28, height: 28)
+                
+                Text("$")
+                    .f1Font(size: 18, weight: .bold)
+                    .foregroundStyle(Color(red: 203/255, green: 167/255, blue: 89/255))
+            }
+            
+            Text("\(count)")
+                .f1Font(size: 22, weight: .bold)
+                .foregroundStyle(Color(red: 255/255, green: 197/255, blue: 89/255))
+                .contentTransition(.numericText())
+                .animation(.smooth, value: count)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 7)
+        .glassEffect(.regular, in: Capsule())
+        .overlay(
+            Capsule()
+                .stroke(Color.white.opacity(0.18), lineWidth: 0.75)
+        )
+    }
+}
+
+
+/// A note on the Freeform-style canvas: starts in its corner and can be dragged anywhere.
+private struct FreeformNote<Content: View>: View {
+    let alignment: Alignment
+    @ViewBuilder let content: Content
+    @State private var offset: CGSize = .zero
+    @GestureState private var drag: CGSize = .zero
+
+    var body: some View {
+        content
+            .padding(20)
+            .offset(x: offset.width + drag.width, y: offset.height + drag.height)
+            .gesture(
+                DragGesture()
+                    .updating($drag) { value, state, _ in state = value.translation }
+                    .onEnded { value in offset.width += value.translation.width; offset.height += value.translation.height }
+            )
+            // Beside the corner controls rather than under them
+            .padding(.top, alignment == .topTrailing ? 70 : 0)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: alignment)
+    }
 }

@@ -32,18 +32,32 @@ struct F1DeckChapter: Identifiable, Hashable {
 
     /// Which cover (in Assets, `cover_…`) belongs to which Class 9 Science chapter.
     private static let covers: [String: String] = [
-        "Cell: The Building Block of Life": "cover_the_fundamental_unit_of_life",
-        "Tissues in Action": "cover_tissues",
-        "Describing Motion Around Us": "cover_motion",
-        "Exploring Mixtures and their Separation": "cover_is_matter_around_us_pure",
-        "How Forces Affect Motion": "cover_force_and_laws_of_motion",
-        "Work, Energy, and Simple Machines": "cover_work_and_energy",
-        "Journey Inside the Atom": "cover_structure_of_the_atom",
-        "Atomic Foundations of Matter": "cover_atoms_and_molecules",
-        "Sound Waves: Characteristics and Applications": "cover_sound",
-        "Reproduction: How Life Continues": "cover_reproduction",
-        "Patterns in Life: Diversity and Classification": "cover_diversity_in_living_organisms",
-        "Earth as a System: Energy, Matter, and Life": "cover_earth_as_a_system"
+        "Exploration: Entering the World of Secondary Science": "cover_ch1",
+        "Cell: The Building Block of Life": "cover_ch2",
+        "Tissues in Action": "cover_ch3",
+        "Describing Motion Around Us": "cover_ch4",
+        "Exploring Mixtures and their Separation": "cover_ch5",
+        "How Forces Affect Motion": "cover_ch6",
+        "Work, Energy, and Simple Machines": "cover_ch7",
+        "Journey Inside the Atom": "cover_ch8",
+        "Atomic Foundations of Matter": "cover_ch9",
+        "Sound Waves: Characteristics and Applications": "cover_ch10",
+        "Reproduction: How Life Continues": "cover_ch11",
+        "Patterns in Life: Diversity and Classification": "cover_ch12",
+        "Earth as a System: Energy, Matter, and Life": "cover_ch13",
+        "Chemical Reactions and Equations": "cover_c10_ch1",
+        "Acids, Bases and Salts": "cover_c10_ch2",
+        "Metals and Non-metals": "cover_c10_ch3",
+        "Carbon and its Compounds": "cover_c10_ch4",
+        "Life Processes": "cover_c10_ch5",
+        "Control and Coordination": "cover_c10_ch6",
+        "How do Organisms Reproduce?": "cover_c10_ch7",
+        "Heredity": "cover_c10_ch8",
+        "Light – Reflection and Refraction": "cover_c10_ch9",
+        "The Human Eye and the Colourful World": "cover_c10_ch10",
+        "Electricity": "cover_c10_ch11",
+        "Magnetic Effects of Electric Current": "cover_c10_ch12",
+        "Our Environment": "cover_c10_ch13"
     ]
 
     /// The cover is a finished picture with the chapter's name on it.

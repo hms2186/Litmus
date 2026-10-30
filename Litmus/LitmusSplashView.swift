@@ -169,13 +169,12 @@ struct LitmusSplashView: View {
         try? await Task.sleep(for: .seconds(0.35))
         withAnimation(.smooth(duration: 0.9)) { taglineIn = true }
 
-        // 4. Rest while the dashboard is built behind the scene (building it can stall the screen for a moment on
-        // a device, so it is not started until the animation has nothing left to show), then zoom into the light
-        // and fade to the dashboard
+        // 4. Let the tagline finish and be read before the dashboard is built behind the scene (building it can stall
+        // the screen for a moment, which would swallow the animation), then rest a beat, zoom into the light and fade
+        try? await Task.sleep(for: .seconds(1.8))
         onHold()
-        try? await Task.sleep(for: .seconds(1.6))
         while !dashboardReady && !Task.isCancelled { try? await Task.sleep(for: .seconds(0.1)) }
-        try? await Task.sleep(for: .seconds(0.4))
+        try? await Task.sleep(for: .seconds(0.9))
         withAnimation(.easeIn(duration: 0.85)) { leaving = true }
         try? await Task.sleep(for: .seconds(0.85))
         onFinished()

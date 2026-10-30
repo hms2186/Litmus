@@ -94,8 +94,6 @@ public struct F1TimerSetupView: View {
         )
     ]
 
-    private let customMinuteOptions: [Int] = [10, 15, 20, 25, 30, 45, 60, 80]
-    @State private var customMinutesInput: String = "45"
 
     public init(
         selectedCircuit: Binding<F1Circuit> = .constant(.silverstone),
@@ -123,18 +121,29 @@ public struct F1TimerSetupView: View {
         else { selectedTyre = .wet }
     }
 
+    private func setWheel(hours: Int, minutes: Int) {
+        let total = min(max(hours * 60 + minutes, 1), 180)
+        focusMinutes = Double(total)
+        updateCompoundForMinutes(total)
+    }
+
+    private var wheelHours: Binding<Int> {
+        Binding(get: { Int(focusMinutes) / 60 },
+                set: { setWheel(hours: $0, minutes: Int(focusMinutes) % 60) })
+    }
+
+    private var wheelMinutes: Binding<Int> {
+        Binding(get: { Int(focusMinutes) % 60 },
+                set: { setWheel(hours: Int(focusMinutes) / 60, minutes: $0) })
+    }
+
     private func selectStrategy(_ preset: PresetStrategy) {
         selectedTyre = preset.compound
         focusMinutes = Double(preset.minutes)
-        customMinutesInput = "\(preset.minutes)"
     }
 
     public var body: some View {
         timerBody
-            .onAppear { customMinutesInput = "\(Int(focusMinutes))" }
-            .onChange(of: focusMinutes) { _, minutes in
-                if customMinutesInput != "\(Int(minutes))" { customMinutesInput = "\(Int(minutes))" }
-            }
     }
 
     private var timerBody: some View {
@@ -156,90 +165,37 @@ public struct F1TimerSetupView: View {
                     Spacer()
                 }
 
-                // Choose Custom Timer Capsule with Direct Numeric Input + Menu Picker
+                // Clock-style wheel picker (hours + minutes)
                 HStack {
                     Spacer()
-                    
-                    HStack(spacing: 16) {
-                        Text("Choose Custom Timer")
+                    HStack(spacing: 8) {
+                        Text("Custom Timer")
                             .f1Font(size: 17, weight: .regular)
                             .foregroundStyle(Color(white: 0.75))
-                        
-                        // Direct Numeric Input TextField
-                        HStack(spacing: 6) {
-                            TextField("45", text: $customMinutesInput)
-                                .keyboardType(.numberPad)
-                                .f1Font(size: 18, weight: .bold)
-                                .foregroundStyle(F1Theme.typographyYellow)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 48)
-                                .padding(.vertical, 6)
-                                .padding(.horizontal, 8)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                        .fill(Color.white.opacity(0.10))
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                        .stroke(Color.white.opacity(0.18), lineWidth: 1)
-                                )
-                                .onChange(of: customMinutesInput) { _, newValue in
-                                    let filtered = newValue.filter { "0123456789".contains($0) }
-                                    if filtered != newValue {
-                                        customMinutesInput = filtered
-                                    }
-                                    if let val = Double(filtered), val > 0 && val <= 180 {
-                                        focusMinutes = val
-                                        updateCompoundForMinutes(Int(val))
-                                    }
-                                }
-
-                            Text("mins")
-                                .f1Font(size: 15, weight: .medium)
-                                .foregroundStyle(Color(white: 0.60))
+                            .padding(.trailing, 12)
+                        Picker("Hours", selection: wheelHours) {
+                            ForEach(0...3, id: \.self) { Text("\($0)").tag($0) }
                         }
-
-                        Divider()
-                            .frame(height: 24)
-                            .background(Color.white.opacity(0.2))
-
-                        // Quick Presets Dropdown Menu
-                        Menu {
-                            ForEach(customMinuteOptions, id: \.self) { mins in
-                                Button {
-                                    focusMinutes = Double(mins)
-                                    customMinutesInput = "\(mins)"
-                                    updateCompoundForMinutes(mins)
-                                } label: {
-                                    if Int(focusMinutes) == mins {
-                                        Label("\(mins) mins", systemImage: "checkmark")
-                                    } else {
-                                        Text("\(mins) mins")
-                                    }
-                                }
-                            }
-                        } label: {
-                            HStack(spacing: 4) {
-                                Image(systemName: "chevron.up.chevron.down")
-                                    .font(.system(size: 12, weight: .semibold))
-                                    .foregroundStyle(F1Theme.typographyYellow)
-                            }
-                            .padding(.horizontal, 10)
-                            .padding(.vertical, 8)
-                            .glassEffect(.regular.interactive(), in: Capsule())
+                        .pickerStyle(.wheel)
+                        .frame(width: 70, height: 120)
+                        .clipped()
+                        Text("hr").f1Font(size: 15, weight: .medium).foregroundStyle(Color(white: 0.6))
+                        Picker("Minutes", selection: wheelMinutes) {
+                            ForEach(0...59, id: \.self) { Text("\($0)").tag($0) }
                         }
-                        .buttonStyle(.f1Spring)
-                        .contentShape(Capsule())
-                        .hoverEffect(.highlight)
+                        .pickerStyle(.wheel)
+                        .frame(width: 70, height: 120)
+                        .clipped()
+                        Text("min").f1Font(size: 15, weight: .medium).foregroundStyle(Color(white: 0.6))
                     }
+                    .environment(\.colorScheme, .dark)
                     .padding(.horizontal, 24)
-                    .padding(.vertical, 12)
+                    .padding(.vertical, 8)
                     .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 22, style: .continuous))
                     .overlay(
                         RoundedRectangle(cornerRadius: 22, style: .continuous)
                             .stroke(Color.white.opacity(0.18), lineWidth: 0.75)
                     )
-                    
                     Spacer()
                 }
 
@@ -391,7 +347,6 @@ public struct F1TimerSetupView: View {
             if focusMinutes <= 0 {
                 focusMinutes = 45
             }
-            customMinutesInput = "\(Int(focusMinutes))"
             if let matching = presets.first(where: { $0.minutes == Int(focusMinutes) }) {
                 selectedTyre = matching.compound
             }

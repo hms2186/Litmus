@@ -109,9 +109,6 @@ public struct F1HintsCarouselView: View {
                     .padding(.leading, 40)
                     
                     Spacer()
-                    
-                    coinBadge(count: coinBalance)
-                        .padding(.trailing, 40)
                 }
                 .padding(.top, 88)
                 
@@ -120,7 +117,7 @@ public struct F1HintsCarouselView: View {
                 // 3D Horizontal Carousel (Figma 1264:2792)
                 carouselCardsView
                     .frame(height: 440)
-                        .offset(x: -rootWidth * 0.066)
+                        .offset(x: -rootWidth * 0.17, y: -48)
                 
                 Spacer(minLength: 20)
                 
@@ -143,14 +140,13 @@ public struct F1HintsCarouselView: View {
                             .f1Font(size: 17, weight: .semibold)
                             .frame(width: 160, height: 48)
                     }
-                    .buttonStyle(.glassProminent)
+                    .buttonStyle(.glass)
                     .buttonBorderShape(.capsule)
                     .controlSize(.large)
-                    .tint(Color(red: 0/255, green: 145/255, blue: 255/255))
                     .contentShape(Capsule())
                     .hoverEffect(.lift)
                 }
-                .offset(x: -rootWidth * 0.16)
+                .offset(x: -rootWidth * 0.17, y: -48)
                 .padding(.bottom, 48)
             }
         }
@@ -163,47 +159,6 @@ public struct F1HintsCarouselView: View {
             cards: hintCards.map { F1DeckCard(id: "\($0.id)", title: $0.title, body: $0.bodyText, imageName: nil, pitfall: nil, keywords: $0.keywords) },
             index: $activeIndex,
             size: CGSize(width: 450, height: 380)
-        )
-    }
-    
-    // MARK: - Coin Badge Helper
-    private func coinBadge(count: Int) -> some View {
-        HStack(spacing: 8) {
-            ZStack {
-                Circle()
-                    .fill(
-                        AngularGradient(
-                            gradient: Gradient(colors: [
-                                Color(red: 188/255, green: 144/255, blue: 62/255),
-                                Color(red: 217/255, green: 188/255, blue: 114/255),
-                                Color(red: 255/255, green: 197/255, blue: 89/255),
-                                Color(red: 175/255, green: 126/255, blue: 29/255),
-                                Color(red: 188/255, green: 144/255, blue: 62/255)
-                            ]),
-                            center: .center
-                        )
-                    )
-                    .frame(width: 32, height: 32)
-                
-                Circle()
-                    .fill(Color(red: 176/255, green: 119/255, blue: 13/255))
-                    .frame(width: 28, height: 28)
-                
-                Text("$")
-                    .f1Font(size: 18, weight: .bold)
-                    .foregroundStyle(Color(red: 203/255, green: 167/255, blue: 89/255))
-            }
-            
-            Text("\(count)")
-                .f1Font(size: 22, weight: .bold)
-                .foregroundStyle(Color(red: 255/255, green: 197/255, blue: 89/255))
-        }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 7)
-        .glassEffect(.regular, in: Capsule())
-        .overlay(
-            Capsule()
-                .stroke(Color.white.opacity(0.18), lineWidth: 0.75)
         )
     }
 }

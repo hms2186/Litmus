@@ -275,27 +275,24 @@ public struct F1SuperLicenseOnboardingView: View {
                     .frame(height: 58)
                     .glassEffect(.regular.interactive(), in: Capsule())
 
-                    Menu {
+                    HStack {
+                        Text("Choose your driver number")
+                            .f1Font(size: 19)
+                            .foregroundStyle(.white.opacity(0.75))
+                        Spacer()
                         Picker("Driver number", selection: $driverNumber) {
-                            ForEach(availableDriverNumbers, id: \.self) { Text("\($0)").tag($0) }
+                            ForEach(availableDriverNumbers, id: \.self) {
+                                Text("\($0)").f1Font(size: 22, weight: .semibold).foregroundStyle(Color(red: 255/255, green: 56/255, blue: 60/255)).tag($0)
+                            }
                         }
-                    } label: {
-                        HStack {
-                            Text("Choose your driver number")
-                                .f1Font(size: 19)
-                                .foregroundStyle(.white.opacity(0.75))
-                            Spacer()
-                            Text("\(driverNumber)")
-                                .f1Font(size: 19, weight: .semibold)
-                                .foregroundStyle(Color(red: 255/255, green: 56/255, blue: 60/255))
-                            Image(systemName: "chevron.up.chevron.down")
-                                .font(.system(size: 14, weight: .semibold))
-                                .foregroundStyle(Color(red: 255/255, green: 56/255, blue: 60/255))
-                        }
-                        .padding(.horizontal, 22)
-                        .frame(height: 58)
-                        .glassEffect(.regular.interactive(), in: Capsule())
+                        .pickerStyle(.wheel)
+                        .frame(width: 96, height: 112)
+                        .clipped()
+                        .environment(\.colorScheme, .dark)
                     }
+                    .padding(.leading, 22)
+                    .padding(.trailing, 14)
+                    .glassEffect(.regular, in: RoundedRectangle(cornerRadius: 29, style: .continuous))
                 }
                 .frame(width: formWidth - 40)
 
@@ -472,7 +469,7 @@ public struct F1SuperLicenseOnboardingView: View {
                         .background(Circle().fill(index == 3 ? onboardingYellow : (index < 3 ? Color(red: 26/255, green: 188/255, blue: 156/255) : Color.white.opacity(0.12))))
                 }
             }
-            Image("cover_motion")
+            Image("cover_ch4")
                 .resizable()
                 .scaledToFill()
                 .frame(height: 96)

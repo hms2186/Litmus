@@ -159,6 +159,8 @@ private struct DeckStrip<Face: View>: View {
                         .scaleEffect(1 - 0.1 * min(distance, 1) - 0.05 * max(0, distance - 1))
                         .rotation3DEffect(.degrees(reduceMotion ? 0 : Double(-pos) * 9), axis: (x: 0, y: 1, z: 0), perspective: 0.6)
                         .opacity(1 - 0.2 * Double(max(0, distance - 1)))
+                        // Only the card in front is sharp; the ones behind it are soft
+                        .blur(radius: reduceMotion ? 0 : 9 * min(distance, 1))
                         .offset(x: pos * step)
                         .zIndex(10 - Double(distance))
                         .onTapGesture { onMove(position) }
