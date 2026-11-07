@@ -1,0 +1,4086 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch3.json",
+  "sourceSha256": "3991d64eeaa68491e0c2c754cca2d3bf2c8560a2ecc1a15079c13ed42edf95b7",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 3,
+  "chapterName": "Tissues in Action",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c3_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c3_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example tissue, meristematic tissue, apical meristem, lateral meristem, intercalary meristem, differentiation, permanent tissue, parenchyma.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "tissue",
+    "meristematic tissue",
+    "apical meristem",
+    "lateral meristem",
+    "intercalary meristem",
+    "differentiation",
+    "permanent tissue",
+    "parenchyma",
+    "collenchyma",
+    "sclerenchyma",
+    "xylem",
+    "phloem",
+    "epithelial tissue",
+    "connective tissue",
+    "muscle fibres",
+    "neuron",
+    "joint",
+    "tendon",
+    "ligament",
+    "totipotency"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch3_t1_c1",
+      "topicId": "ncert_sci_9_ch3_t1",
+      "topicTitle": "Tissues and why plant and animal tissues differ",
+      "label": "Tissues and the Hierarchy of Organisation",
+      "headingType": "heading",
+      "sourcePages": [
+        28,
+        29
+      ],
+      "conceptHash": "e543c7561e3d878a2d9064bf417177e37c6d40c3815622f1c9cd06b598d21c2f",
+      "cardText": "In all multicellular organisms there is a hierarchy of organisation. Cells of similar type performing similar function group together to form a tissue, more than one type of tissue forms organs, different organs form organ systems and organ systems form an organism. In unicellular organisms such as amoeba a single cell performs all the functions of life, but in multicellular organisms different groups of cells perform different functions. A tissue is a group of cells, similar in structure, that work together to perform a specific function. Different types of tissues lead to division of labour, which increases the efficiency of the body and enables it to carry out complex life processes. In animals muscle tissue enables movement and nervous tissue carries messages; in plants xylem transports water and minerals while phloem transports food.",
+      "hint": "How do cells build up to an organism, and what does a tissue do?",
+      "probe": "What is a tissue, and how does having different tissues help a multicellular organism?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Tissues and the Hierarchy of Organisation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In what order do these building blocks combine, from the smallest unit up to the whole living thing?",
+          "requiredEvidence": [
+            "similar type",
+            "tissue",
+            "organs",
+            "organ systems",
+            "organism"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_hier_order",
+              "criterion": "Gives the order of organisation: cells form a tissue, tissues form organs, organs form organ systems, and organ systems form an organism.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In what order do these building blocks combine, from the smallest unit up to the whole living thing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How would you define the term for a team of cells in a body?",
+          "requiredEvidence": [
+            "group of cells",
+            "similar in structure",
+            "work together",
+            "specific function"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_hier_tissue",
+              "criterion": "Defines a tissue as a group of cells, similar in structure, that work together to perform a specific function.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How would you define the term for a team of cells in a body?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_hier_amoeba"
+          ]
+        },
+        {
+          "id": "sci9c3_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What advantage does a body get from having several kinds of these cell teams?",
+          "requiredEvidence": [
+            "division of labour",
+            "efficiency of the body",
+            "complex life processes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_hier_labour",
+              "criterion": "States that different types of tissues lead to division of labour, which increases the efficiency of the body and enables complex life processes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What advantage does a body get from having several kinds of these cell teams?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t1c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "muscle tissue enables movement",
+            "nervous tissue carries messages",
+            "xylem transports water and minerals",
+            "phloem transports food"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_hier_examples",
+              "criterion": "Gives examples: muscle tissue enables movement and nervous tissue carries messages in animals; xylem transports water and minerals and phloem transports food in plants.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do cells build up to an organism, and what does a tissue do?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_labour_efficiency",
+          "linksChecks": [
+            "chk_sci9c3_hier_tissue",
+            "chk_sci9c3_hier_labour"
+          ],
+          "criterion": "Connects different types of tissues to division of labour, which increases the efficiency of the body for complex life processes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_hier_amoeba",
+          "wrong": "Amoeba has tissues, just like plants and animals.",
+          "fix": "In unicellular organisms such as amoeba, a single cell performs all functions of life; tissues are found in multicellular organisms.",
+          "checkId": "mchk_misc_sci9c3_hier_amoeba",
+          "checkCriterion": "The answer states or implies this wrong idea: Amoeba has tissues, just like plants and animals.",
+          "fixCheckId": "mfix_misc_sci9c3_hier_amoeba",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In unicellular organisms such as amoeba, a single cell performs all functions of life; tissues are found in multicellular organisms.",
+          "keyPointIds": [
+            "sci9c3_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_hier_amoeba"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_hier_order",
+            "chk_sci9c3_hier_tissue",
+            "chk_sci9c3_hier_labour"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_hier_examples",
+            "lnk_sci9c3_labour_efficiency"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t1_c2",
+      "topicId": "ncert_sci_9_ch3_t1",
+      "topicTitle": "Tissues and why plant and animal tissues differ",
+      "label": "Why Are Plant and Animal Tissues Different?",
+      "headingType": "heading",
+      "sourcePages": [
+        29
+      ],
+      "conceptHash": "33874038f201eea6b11963b80c802bb133a236f946620acee69a886612d3870c",
+      "cardText": "Most plants are fixed in one place and do not move like animals, so they need support to stay firm and upright; plant cells have a cell wall that provides rigidity and strength. In general animals can move, and without a rigid cell wall animal cells can change shape easily, a flexibility that helps make their bodies suitable for locomotion. Modes of nutrition also differ: animals have tissues that help digest food from different sources, while plants have tissues that use solar energy to make food by photosynthesis. Plants and animals have distinct tissues for transporting food and water, and their growth patterns vary because the tissues responsible for growth differ in structure and function.",
+      "hint": "Name two reasons plant tissues are not the same as animal tissues.",
+      "probe": "Why do plants and animals have different kinds of tissues?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why Are Plant and Animal Tissues Different?, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do plants need extra stiffness that animals do not?",
+          "requiredEvidence": [
+            "fixed in one place",
+            "support",
+            "firm and upright",
+            "cell wall",
+            "rigidity and strength"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_diff_support",
+              "criterion": "States that plants are fixed in one place, so they need support to stay upright, and plant cells have a cell wall that provides rigidity and strength.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do plants need extra stiffness that animals do not?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can animal cells alter their form more easily than plant cells?",
+          "requiredEvidence": [
+            "without a rigid cell wall",
+            "change shape easily",
+            "flexibility",
+            "locomotion"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_diff_flex",
+              "criterion": "States that without a rigid cell wall animal cells can change shape easily, making their bodies suitable for locomotion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can animal cells alter their form more easily than plant cells?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_diff_all_move"
+          ]
+        },
+        {
+          "id": "sci9c3_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the ways plants and animals get their food lead to different cell teams?",
+          "requiredEvidence": [
+            "digest food",
+            "utilise solar energy",
+            "synthesising the food components",
+            "photosynthesis"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_diff_nutrition",
+              "criterion": "States that animals have tissues to digest food from different sources, while plants have tissues that use solar energy to make food by photosynthesis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the ways plants and animals get their food lead to different cell teams?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t1c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "distinct tissues for transporting",
+            "growth patterns",
+            "differ in structure and function"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_diff_transport_growth",
+              "criterion": "States that plants and animals have distinct transport tissues, and their growth patterns vary because the growth tissues differ in structure and function.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name two reasons plant tissues are not the same as animal tissues."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_fixed_rigid_tissue",
+          "linksChecks": [
+            "chk_sci9c3_diff_support"
+          ],
+          "criterion": "Connects plants being fixed in one place to their needing the rigidity of a cell wall, and animal cells without a wall to flexibility for locomotion.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_diff_all_move",
+          "wrong": "All animals move, so all animals have the same flexible tissues.",
+          "fix": "In general animals can move, although some, such as sponges, are immobile.",
+          "checkId": "mchk_misc_sci9c3_diff_all_move",
+          "checkCriterion": "The answer states or implies this wrong idea: All animals move, so all animals have the same flexible tissues.",
+          "fixCheckId": "mfix_misc_sci9c3_diff_all_move",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In general animals can move, although some, such as sponges, are immobile.",
+          "keyPointIds": [
+            "sci9c3_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_diff_all_move"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_diff_support",
+            "chk_sci9c3_diff_flex",
+            "chk_sci9c3_diff_nutrition"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_diff_transport_growth",
+            "lnk_sci9c3_fixed_rigid_tissue"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t2_c1",
+      "topicId": "ncert_sci_9_ch3_t2",
+      "topicTitle": "Growth tissues in plants: meristems",
+      "label": "Meristematic Tissue and Plant Growth",
+      "headingType": "heading",
+      "sourcePages": [
+        29
+      ],
+      "conceptHash": "21d1ea693d7487b17a1dc46a743fa7bb46a97aabda8429016d6a6005f591bf64",
+      "cardText": "A small seedling grows into a tall tree, roots grow deep into the soil, stems become thicker with time and grass grows again after being eaten by grazing animals. Plants grow in three ways: an increase in length (height of stem and depth of roots), an increase in girth (thickness of stem), and regrowth after cutting the branches or grazing by animals. This growth requires actively dividing cells that together form a tissue called a meristematic tissue.",
+      "hint": "In what three ways do plants grow, and which cells make this growth possible?",
+      "probe": "How do plants grow, and which kind of tissue is responsible?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Meristematic Tissue and Plant Growth, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In what three ways can a plant increase in size or recover?",
+          "requiredEvidence": [
+            "increase in length",
+            "increase in girth",
+            "regrowth after cutting",
+            "grazing by animals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mer_ways",
+              "criterion": "Names the three kinds of plant growth: increase in length, increase in girth (thickness of stem), and regrowth after cutting or grazing.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In what three ways can a plant increase in size or recover?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of cells does this growth depend on, and what is the tissue called?",
+          "requiredEvidence": [
+            "actively dividing cells",
+            "meristematic tissue"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mer_def",
+              "criterion": "States that plant growth requires actively dividing cells, which together form a meristematic tissue.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of cells does this growth depend on, and what is the tissue called?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_mer_ways",
+            "chk_sci9c3_mer_def"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t2_c2",
+      "topicId": "ncert_sci_9_ch3_t2",
+      "topicTitle": "Growth tissues in plants: meristems",
+      "label": "Apical Meristem: Growth in Length",
+      "headingType": "heading",
+      "sourcePages": [
+        29,
+        30
+      ],
+      "conceptHash": "e73ab720da6fb18b5721411fa79001220d37ea7149ad50598364eb90e3f04df0",
+      "cardText": "In Activity 3.1 two onion bulbs are placed in jars of water and their roots measured; on day 3 the root tips of the bulb in Jar B are cut by about 1 cm. Roots in Jar A continue to grow in length while roots in Jar B stop growing after the tips are cut. This shows that roots grow only from their tips, which consist of cells that divide continuously, as seen earlier as mitosis in onion root tips. Shoot tips also contain actively dividing cells that help the shoots to grow in length. So plants have growth zones at the tips of their roots and shoots, called the apical meristems, which help the plants grow in length.",
+      "hint": "What did cutting the onion root tips show about where roots grow?",
+      "probe": "What does the onion root experiment show, and what is an apical meristem?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Apical Meristem: Growth in Length, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happened to the roots of the two onion bulbs, and what does that show about where roots grow?",
+          "requiredEvidence": [
+            "Jar A continue to grow",
+            "Jar B stop growing",
+            "tips are cut",
+            "grow only from their tips",
+            "divide continuously"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_apical_result",
+              "criterion": "States that roots in Jar A kept growing while roots in Jar B stopped after the tips were cut, showing roots grow only from their tips, which consist of continuously dividing cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happened to the roots of the two onion bulbs, and what does that show about where roots grow?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_apical_anywhere"
+          ]
+        },
+        {
+          "id": "sci9c3_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which parts of a plant contain such growing regions, and what are they named?",
+          "requiredEvidence": [
+            "shoot tips",
+            "actively dividing cells",
+            "growth zones",
+            "apical meristems",
+            "grow in length"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_apical_def",
+              "criterion": "States that plants have growth zones at the tips of roots and shoots, called apical meristems, which help them grow in length.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which parts of a plant contain such growing regions, and what are they named?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "onion bulb",
+            "Jar B",
+            "cut the root tips",
+            "1 cm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_apical_setup",
+              "criterion": "Describes the experiment: root tips of the onion bulb in Jar B were cut by about 1 cm on day 3 while Jar A was left uncut.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What did cutting the onion root tips show about where roots grow?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_tips_apical",
+          "linksChecks": [
+            "chk_sci9c3_apical_result",
+            "chk_sci9c3_apical_def"
+          ],
+          "criterion": "Connects roots stopping growth after their tips are cut to growth zones at the tips, called the apical meristems, that make plants grow in length.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_apical_anywhere",
+          "wrong": "Roots grow in length from any part along the root.",
+          "fix": "Roots grow only from their tips, which consist of cells that divide continuously.",
+          "checkId": "mchk_misc_sci9c3_apical_anywhere",
+          "checkCriterion": "The answer states or implies this wrong idea: Roots grow in length from any part along the root.",
+          "fixCheckId": "mfix_misc_sci9c3_apical_anywhere",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Roots grow only from their tips, which consist of cells that divide continuously.",
+          "keyPointIds": [
+            "sci9c3_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_apical_anywhere"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_apical_result",
+            "chk_sci9c3_apical_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_apical_setup",
+            "lnk_sci9c3_tips_apical"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t2_c3",
+      "topicId": "ncert_sci_9_ch3_t2",
+      "topicTitle": "Growth tissues in plants: meristems",
+      "label": "Lateral Meristem and Annual Rings: Growth in Girth",
+      "headingType": "heading",
+      "sourcePages": [
+        30,
+        31
+      ],
+      "conceptHash": "bfe3a16f9ee8a30ea728a58d3006ec5b95969e22c7548a42d6553e8b381cc356",
+      "cardText": "The stems of dicot plants not only grow in length but also increase in diameter or girth over time. On the cut trunk of a tree there are ring-like patterns called annual growth rings. Some rings are wide and some narrow, reflecting favourable or unfavourable growth conditions during a particular year, and by counting them scientists can estimate the age of a tree and understand the climatic conditions under which it grew. The increase in girth occurs due to actively dividing cells arranged in a ring in the stem. These cells divide and produce new cells inside and outside in a concentric manner, leading to an increase in diameter of the stem. This meristematic tissue is called the lateral meristem.",
+      "hint": "What makes a stem thicker, and what do the rings in a trunk tell us?",
+      "probe": "How do plants grow in girth, and what can annual rings tell scientists?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Lateral Meristem and Annual Rings: Growth in Girth, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What lets a stem become thicker with time, and how are the new cells added?",
+          "requiredEvidence": [
+            "girth",
+            "actively dividing cells",
+            "ring in the stem",
+            "inside and outside",
+            "concentric",
+            "lateral meristem"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_lat_def",
+              "criterion": "States that actively dividing cells arranged in a ring in the stem produce new cells inside and outside concentrically, increasing the diameter, and this tissue is the lateral meristem.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What lets a stem become thicker with time, and how are the new cells added?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_lat_tip"
+          ]
+        },
+        {
+          "id": "sci9c3_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What can you see on a cut trunk, and what do differences between its bands tell us?",
+          "requiredEvidence": [
+            "ring-like patterns",
+            "annual growth rings",
+            "wide",
+            "narrow",
+            "favourable or unfavourable growth conditions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_lat_rings",
+              "criterion": "States that the cut surface of a trunk shows annual growth rings, some wide and some narrow, reflecting favourable or unfavourable growth conditions in a year.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can you see on a cut trunk, and what do differences between its bands tell us?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "counting",
+            "age of a tree",
+            "climatic conditions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_lat_age",
+              "criterion": "States that by counting annual rings scientists can estimate the age of a tree and understand the climatic conditions under which it grew.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes a stem thicker, and what do the rings in a trunk tell us?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_ring_girth",
+          "linksChecks": [
+            "chk_sci9c3_lat_def",
+            "chk_sci9c3_lat_rings"
+          ],
+          "criterion": "Connects a ring of dividing cells adding new cells inside and outside to the increase in diameter of the stem and to annual growth rings.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_lat_tip",
+          "wrong": "Stems become thicker because the apical meristem at the tip divides.",
+          "fix": "The increase in girth occurs due to actively dividing cells arranged in a ring in the stem, called the lateral meristem.",
+          "checkId": "mchk_misc_sci9c3_lat_tip",
+          "checkCriterion": "The answer states or implies this wrong idea: Stems become thicker because the apical meristem at the tip divides.",
+          "fixCheckId": "mfix_misc_sci9c3_lat_tip",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The increase in girth occurs due to actively dividing cells arranged in a ring in the stem, called the lateral meristem.",
+          "keyPointIds": [
+            "sci9c3_t2c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_lat_tip"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_lat_def",
+            "chk_sci9c3_lat_rings"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_lat_age",
+            "lnk_sci9c3_ring_girth"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t2_c4",
+      "topicId": "ncert_sci_9_ch3_t2",
+      "topicTitle": "Growth tissues in plants: meristems",
+      "label": "Intercalary Meristem: Regrowth After Cutting",
+      "headingType": "heading",
+      "sourcePages": [
+        31
+      ],
+      "conceptHash": "974d6fc4dbfc160a32cda8aa05802353360b68836745027c7cb9ac792e7b69e9",
+      "cardText": "If the tip of a young stem is cut, the stem stops growing in length but new branches arise from the nodes. The node is the point on a plant stem where branches or leaves arise, and the part of the stem between two nodes is the internode. The intercalary meristem is located at the base of the internode or just above the node. When a garden hedge is cut more branches appear again, and grass reappears after being mowed or grazed, because of the intercalary meristem at the nodes of its stem. So plants have three types of meristematic tissue: the apical meristem at the root and shoot tips increases length, the lateral meristem along the circumference of stems increases girth, and the intercalary meristem at the base of certain plants such as grasses helps them regenerate after cutting. Together these account for growth in length, girth and branching.",
+      "hint": "Why does grass come back after mowing, and where is the intercalary meristem found?",
+      "probe": "Name the three meristems and say what each does for the plant.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Intercalary Meristem: Regrowth After Cutting, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t2c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where is the regrowth tissue found on a stem?",
+          "requiredEvidence": [
+            "intercalary meristem",
+            "base of internode",
+            "just above the node",
+            "node",
+            "internode"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_int_def",
+              "criterion": "States that the intercalary meristem is located at the base of the internode or just above the node, where branches or leaves arise.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where is the regrowth tissue found on a stem?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a lawn come back after being cut?",
+          "requiredEvidence": [
+            "grass",
+            "mowed",
+            "grazed by animals",
+            "intercalary meristem at the nodes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_int_grass",
+              "criterion": "States that grass grows again after being mowed or grazed because of the intercalary meristem at the nodes of its stem.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a lawn come back after being cut?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_int_all_tip"
+          ]
+        },
+        {
+          "id": "sci9c3_t2c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which three kinds of growth tissue does a plant have, and where is each found?",
+          "requiredEvidence": [
+            "apical",
+            "lateral",
+            "intercalary",
+            "root and shoot tips",
+            "circumference of stems",
+            "regenerate after cutting"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_int_three",
+              "criterion": "Names the three meristems and their jobs: apical (length, at root and shoot tips), lateral (girth, along the circumference of stems) and intercalary (regeneration after cutting, at the base in plants such as grasses).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which three kinds of growth tissue does a plant have, and where is each found?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "stops growing in length",
+            "new branches",
+            "hedge",
+            "bushy appearance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_int_cut",
+              "criterion": "States that when a young stem tip is cut it stops growing in length but new branches arise from the nodes, and a cut hedge gives more branches and a bushy appearance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does grass come back after mowing, and where is the intercalary meristem found?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_regrow_node",
+          "linksChecks": [
+            "chk_sci9c3_int_def",
+            "chk_sci9c3_int_grass"
+          ],
+          "criterion": "Connects grass and hedges regrowing after cutting to the intercalary meristem at the nodes of the stem.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_int_all_tip",
+          "wrong": "Grass regrows after mowing because of the meristem at its tip.",
+          "fix": "Grass appears again after being mowed or grazed because of the presence of intercalary meristem at the nodes of its stem.",
+          "checkId": "mchk_misc_sci9c3_int_all_tip",
+          "checkCriterion": "The answer states or implies this wrong idea: Grass regrows after mowing because of the meristem at its tip.",
+          "fixCheckId": "mfix_misc_sci9c3_int_all_tip",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Grass appears again after being mowed or grazed because of the presence of intercalary meristem at the nodes of its stem.",
+          "keyPointIds": [
+            "sci9c3_t2c4_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_int_all_tip"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_int_def",
+            "chk_sci9c3_int_grass",
+            "chk_sci9c3_int_three"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_int_cut",
+            "lnk_sci9c3_regrow_node"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t2_c5",
+      "topicId": "ncert_sci_9_ch3_t2",
+      "topicTitle": "Growth tissues in plants: meristems",
+      "label": "Meristematic Cells and Differentiation",
+      "headingType": "heading",
+      "sourcePages": [
+        31
+      ],
+      "conceptHash": "23a1b28764bf8fdcd22f44be03dfe64b88570ef08f8a4ea9d4c09d5f39458069",
+      "cardText": "The cells of meristematic tissues are small, have thin cell walls, a large and prominent nucleus, and dense cytoplasm with many organelles. Vacuoles are generally absent and the cells are tightly packed with little or no intercellular space. These characteristics allow continuous and rapid cell division. Due to continuous division, meristematic tissue adds new cells to the plant body. Some of the newly formed cells remain meristematic while others lose the ability to divide. The cells that lose the ability to divide change in structure and function and become permanent tissues, specialised to perform functions such as support, transport or storage. This process, by which meristematic tissue becomes specialised to perform specific functions, is called differentiation.",
+      "hint": "What features let meristematic cells divide, and what happens to cells that stop dividing?",
+      "probe": "Describe meristematic cells and explain what differentiation is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Meristematic Cells and Differentiation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t2c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the cells of this growth tissue look like inside?",
+          "requiredEvidence": [
+            "thin cell walls",
+            "large and prominent nucleus",
+            "dense cytoplasm",
+            "vacuoles are generally absent",
+            "tightly packed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_dif_cells",
+              "criterion": "States that meristematic cells are small with thin walls, a large prominent nucleus and dense cytoplasm, generally lack vacuoles and are tightly packed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the cells of this growth tissue look like inside?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_dif_vacuole"
+          ]
+        },
+        {
+          "id": "sci9c3_t2c5_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "continuous and rapid cell division"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_dif_rapid",
+              "criterion": "States that these characteristics allow continuous and rapid cell division.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What features let meristematic cells divide, and what happens to cells that stop dividing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to new cells once they stop dividing?",
+          "requiredEvidence": [
+            "remain meristematic",
+            "lose the ability to divide",
+            "changes in structure and function",
+            "permanent tissues"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_dif_lose",
+              "criterion": "States that some new cells remain meristematic while others lose the ability to divide, change in structure and function and become permanent tissues.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to new cells once they stop dividing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t2c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name of the process that makes cells fit a particular job?",
+          "requiredEvidence": [
+            "specialised",
+            "support, transport or storage",
+            "differentiation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_dif_term",
+              "criterion": "Defines differentiation as the process by which meristematic tissue becomes specialised to perform specific functions such as support, transport or storage.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name of the process that makes cells fit a particular job?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_stop_divide_permanent",
+          "linksChecks": [
+            "chk_sci9c3_dif_lose",
+            "chk_sci9c3_dif_term"
+          ],
+          "criterion": "Connects cells losing the ability to divide to their becoming specialised permanent tissues through differentiation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_dif_vacuole",
+          "wrong": "Meristematic cells have large vacuoles to store nutrients.",
+          "fix": "In meristematic tissue vacuoles are generally absent and the cells are tightly packed with little or no intercellular space.",
+          "checkId": "mchk_misc_sci9c3_dif_vacuole",
+          "checkCriterion": "The answer states or implies this wrong idea: Meristematic cells have large vacuoles to store nutrients.",
+          "fixCheckId": "mfix_misc_sci9c3_dif_vacuole",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In meristematic tissue vacuoles are generally absent and the cells are tightly packed with little or no intercellular space.",
+          "keyPointIds": [
+            "sci9c3_t2c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_dif_vacuole"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_dif_cells",
+            "chk_sci9c3_dif_lose",
+            "chk_sci9c3_dif_term"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_dif_rapid",
+            "lnk_sci9c3_stop_divide_permanent"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c1",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Permanent Tissues: Simple and Complex",
+      "headingType": "heading",
+      "sourcePages": [
+        32
+      ],
+      "conceptHash": "57822905be6c7f3baf839e0e563f87f4e3ec92e56f24c176489db6ee07b8494a",
+      "cardText": "A transverse section of a sunflower stem shows different groups of cells, and each tissue is specialised to perform a specific function. These are permanent tissues. Permanent tissues can be simple, composed of only one type of cell, or complex, composed of more than one type of cell. Functionally, the chapter studies protective tissue (epidermis), supporting tissue (the simple permanent tissues parenchyma, collenchyma and sclerenchyma) and conducting tissues (the complex permanent tissues xylem and phloem).",
+      "hint": "What is the difference between a simple and a complex permanent tissue?",
+      "probe": "What are permanent tissues, and how are simple and complex permanent tissues different?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Permanent Tissues: Simple and Complex, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does a slice of a sunflower stem show about how its cells are arranged?",
+          "requiredEvidence": [
+            "different groups of cells",
+            "specialised",
+            "specific function",
+            "permanent tissues"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_perm_def",
+              "criterion": "States that a stem section shows different groups of cells, each tissue specialised for a specific function, and these are permanent tissues.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a slice of a sunflower stem show about how its cells are arranged?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the two kinds of non-dividing tissue differ in the cells they contain?",
+          "requiredEvidence": [
+            "simple",
+            "only one type of cell",
+            "complex",
+            "more than one"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_perm_simple_complex",
+              "criterion": "States that simple permanent tissues are composed of only one type of cell, while complex ones are composed of more than one type of cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the two kinds of non-dividing tissue differ in the cells they contain?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_perm_all_same"
+          ]
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_perm_all_same",
+          "wrong": "All plant tissues are made of one type of cell.",
+          "fix": "Permanent tissues can be simple (composed of only one type of cell) or complex (composed of more than one type of cell).",
+          "checkId": "mchk_misc_sci9c3_perm_all_same",
+          "checkCriterion": "The answer states or implies this wrong idea: All plant tissues are made of one type of cell.",
+          "fixCheckId": "mfix_misc_sci9c3_perm_all_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Permanent tissues can be simple (composed of only one type of cell) or complex (composed of more than one type of cell).",
+          "keyPointIds": [
+            "sci9c3_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_perm_all_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_perm_def",
+            "chk_sci9c3_perm_simple_complex"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c2",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Epidermis: Protective Tissue",
+      "headingType": "heading",
+      "sourcePages": [
+        32
+      ],
+      "conceptHash": "5abd959baa99b3e387d283bedd2367c9a78c9e4c12d86906b5f2450e6ecc259b",
+      "cardText": "The epidermis forms the outermost layer of the plant body. It consists of a tightly packed, single layer of flat and rectangular cells and protects all parts of the plant. These cells are covered with a waxy layer of cutin called the cuticle. In plants of very dry habitats the cuticle may be thick to reduce water loss through transpiration. In roots, hair-like projections called root hair increase the surface area for absorption of water and minerals from the soil. In leaves the epidermis has pores called stomata, which apart from gaseous exchange help in transpiration, the evaporation of water vapour. Transpiration helps water transportation by creating a transpiration pull in xylem, and also helps eliminate wastes from the plant body.",
+      "hint": "What does the epidermis do, and how does a thick cuticle help in dry places?",
+      "probe": "Describe the epidermis and name its parts and their functions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Epidermis: Protective Tissue, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the outermost covering of a plant like, and what coats it?",
+          "requiredEvidence": [
+            "outermost layer",
+            "tightly packed",
+            "single layer",
+            "protects",
+            "waxy layer of cutin",
+            "cuticle"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_layer",
+              "criterion": "States that the epidermis is the outermost, tightly packed single layer of flat rectangular cells that protects all parts of the plant and is covered with a waxy cuticle of cutin.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the outermost covering of a plant like, and what coats it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "thick layer of cuticle",
+            "very dry habitat",
+            "reduce the water loss"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_cuticle",
+              "criterion": "States that in plants of very dry habitats a thick cuticle reduces water loss.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the epidermis do, and how does a thick cuticle help in dry places?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "root hair",
+            "surface area",
+            "absorption of water and minerals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_roothair",
+              "criterion": "States that root hairs increase the surface area for absorption of water and minerals from the soil.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the epidermis do, and how does a thick cuticle help in dry places?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_epi_root_stomata"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the small openings in a leaf's covering, and what do they allow to happen?",
+          "requiredEvidence": [
+            "pores called stomata",
+            "gaseous exchange",
+            "transpiration",
+            "evaporation of water vapours",
+            "transpiration pull in xylem",
+            "elimination of wastes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_stomata",
+              "criterion": "States that stomata in the leaf epidermis help in gaseous exchange and transpiration (evaporation of water vapour), and transpiration creates a pull in xylem and helps eliminate wastes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the small openings in a leaf's covering, and what do they allow to happen?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_transpiration_pull",
+          "linksChecks": [
+            "chk_sci9c3_epi_stomata"
+          ],
+          "criterion": "Connects stomata allowing evaporation of water vapour in leaves to the transpiration pull that helps water transportation in xylem.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_epi_root_stomata",
+          "wrong": "Root hairs are pores that let gases move in and out.",
+          "fix": "In roots the hair-like projections are called root hair and increase the surface area for absorption of water and minerals; the pores in leaves are the stomata.",
+          "checkId": "mchk_misc_sci9c3_epi_root_stomata",
+          "checkCriterion": "The answer states or implies this wrong idea: Root hairs are pores that let gases move in and out.",
+          "fixCheckId": "mfix_misc_sci9c3_epi_root_stomata",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In roots the hair-like projections are called root hair and increase the surface area for absorption of water and minerals; the pores in leaves are the stomata.",
+          "keyPointIds": [
+            "sci9c3_t3c2_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_epi_root_stomata"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_epi_layer",
+            "chk_sci9c3_epi_stomata"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_epi_cuticle",
+            "chk_sci9c3_epi_roothair",
+            "lnk_sci9c3_transpiration_pull"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c3",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Parenchyma: Storage and Floating",
+      "headingType": "heading",
+      "sourcePages": [
+        32
+      ],
+      "conceptHash": "763d1078f84431ed915bbc568f8c6b126b0476e9dc07685c4b535d5c0e1a3659",
+      "cardText": "Supporting tissues, which are simple permanent tissues, are of three types: parenchyma, collenchyma and sclerenchyma. Parenchyma consists of living cells with thin walls that are loosely packed with intercellular spaces. It mainly stores food but also performs photosynthesis in the green parts of plants. In aquatic plants specialised parenchyma forms air spaces, which help them float.",
+      "hint": "What does parenchyma do, and how does it help aquatic plants?",
+      "probe": "Describe parenchyma and its functions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Parenchyma: Storage and Floating, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the cells of this soft supporting tissue like?",
+          "requiredEvidence": [
+            "living cells",
+            "thin walls",
+            "loosely packed",
+            "intercellular spaces"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_par_struct",
+              "criterion": "States that parenchyma consists of living cells with thin walls that are loosely packed with intercellular spaces.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the cells of this soft supporting tissue like?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_par_dead"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What jobs does this tissue do, and how does it help water plants stay up?",
+          "requiredEvidence": [
+            "stores food",
+            "photosynthesis",
+            "green parts",
+            "aquatic plants",
+            "air spaces",
+            "float"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_par_func",
+              "criterion": "States that parenchyma mainly stores food and photosynthesises in green parts, and in aquatic plants forms air spaces that help them float.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What jobs does this tissue do, and how does it help water plants stay up?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "three types",
+            "supporting tissues",
+            "parenchyma",
+            "collenchyma",
+            "sclerenchyma"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_par_three",
+              "criterion": "Names the three simple permanent (supporting) tissues: parenchyma, collenchyma and sclerenchyma.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does parenchyma do, and how does it help aquatic plants?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_par_dead",
+          "wrong": "Parenchyma is made of dead cells with thick walls.",
+          "fix": "Parenchyma consists of living cells with thin walls, loosely packed with intercellular spaces.",
+          "checkId": "mchk_misc_sci9c3_par_dead",
+          "checkCriterion": "The answer states or implies this wrong idea: Parenchyma is made of dead cells with thick walls.",
+          "fixCheckId": "mfix_misc_sci9c3_par_dead",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Parenchyma consists of living cells with thin walls, loosely packed with intercellular spaces.",
+          "keyPointIds": [
+            "sci9c3_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_par_dead"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_par_struct",
+            "chk_sci9c3_par_func"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_par_three"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c4",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Collenchyma: Flexible Support",
+      "headingType": "heading",
+      "sourcePages": [
+        32,
+        33
+      ],
+      "conceptHash": "4c563879689d3ddc62f0254155090526ffaac02b3a8505abc1fd56513a3f667c",
+      "cardText": "Collenchyma consists of living cells with unevenly thickened corners due to deposition of pectin, a chemical that gives flexibility like rubber. This tissue provides support and flexibility, allowing parts of the plant like stems and tendrils to bend without breaking. It explains why a fresh twig bends while a dry twig breaks and why a young sapling's stem can bend in strong winds without breaking.",
+      "hint": "What gives collenchyma its flexibility?",
+      "probe": "Describe collenchyma and explain why parts of a plant can bend without breaking.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Collenchyma: Flexible Support, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the cells of this flexible tissue like at their corners, and what causes it?",
+          "requiredEvidence": [
+            "living cells",
+            "unevenly thickened corners",
+            "pectin",
+            "flexibility like rubber"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_col_struct",
+              "criterion": "States that collenchyma consists of living cells with unevenly thickened corners due to pectin deposition, a chemical that gives flexibility like rubber.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the cells of this flexible tissue like at their corners, and what causes it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_col_lignin"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can a stem or a climbing tip bend without snapping?",
+          "requiredEvidence": [
+            "support and flexibility",
+            "stems and tendrils",
+            "bend without breaking"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_col_func",
+              "criterion": "States that collenchyma provides support and flexibility, allowing stems and tendrils to bend without breaking.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can a stem or a climbing tip bend without snapping?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_pectin_bend",
+          "linksChecks": [
+            "chk_sci9c3_col_struct",
+            "chk_sci9c3_col_func"
+          ],
+          "criterion": "Connects pectin deposition in the corners of collenchyma cells to flexibility that lets stems and tendrils bend without breaking.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_col_lignin",
+          "wrong": "Collenchyma is hard because its walls are thickened with lignin.",
+          "fix": "Collenchyma has unevenly thickened corners due to pectin, which gives flexibility; lignin thickening is found in sclerenchyma.",
+          "checkId": "mchk_misc_sci9c3_col_lignin",
+          "checkCriterion": "The answer states or implies this wrong idea: Collenchyma is hard because its walls are thickened with lignin.",
+          "fixCheckId": "mfix_misc_sci9c3_col_lignin",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Collenchyma has unevenly thickened corners due to pectin, which gives flexibility; lignin thickening is found in sclerenchyma.",
+          "keyPointIds": [
+            "sci9c3_t3c4_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_col_lignin"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_col_struct",
+            "chk_sci9c3_col_func"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_pectin_bend"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c5",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Sclerenchyma: Hard and Strong",
+      "headingType": "heading",
+      "sourcePages": [
+        33
+      ],
+      "conceptHash": "c8fb7f6afa08e61e95eef111d464c80cbb08ab3e0fc170d9200d81a299d25b9a",
+      "cardText": "Sclerenchyma cells have thick walls due to deposition of lignin, making them hard and strong and forming the woody structure. Most of these cells are dead. This tissue is found in stems, leaf veins, and the hard coverings of seeds and nuts, such as coconut husk and walnut shell.",
+      "hint": "What makes sclerenchyma hard, and where is it found?",
+      "probe": "Describe sclerenchyma and say where it is found.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Sclerenchyma: Hard and Strong, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What makes this tissue hard and strong, and are its cells alive?",
+          "requiredEvidence": [
+            "thick walls",
+            "lignin",
+            "hard and strong",
+            "woody structure",
+            "dead"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_scl_struct",
+              "criterion": "States that sclerenchyma cells have thick walls due to lignin deposition, making them hard and strong, and most of these cells are dead.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes this tissue hard and strong, and are its cells alive?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_scl_living"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In which parts of a plant, or which familiar hard coverings, is this tissue found?",
+          "requiredEvidence": [
+            "stems",
+            "leaf veins",
+            "hard coverings of seeds and nuts",
+            "coconut husk",
+            "walnut shell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_scl_where",
+              "criterion": "States that sclerenchyma is found in stems, leaf veins and hard coverings of seeds and nuts such as coconut husk and walnut shell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which parts of a plant, or which familiar hard coverings, is this tissue found?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_lignin_hard",
+          "linksChecks": [
+            "chk_sci9c3_scl_struct",
+            "chk_sci9c3_scl_where"
+          ],
+          "criterion": "Connects lignin deposition in thick walls to sclerenchyma being hard and strong, forming woody structures and hard coverings.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_scl_living",
+          "wrong": "Sclerenchyma cells are living cells that store food.",
+          "fix": "Most sclerenchyma cells are dead; storing food is mainly done by living parenchyma.",
+          "checkId": "mchk_misc_sci9c3_scl_living",
+          "checkCriterion": "The answer states or implies this wrong idea: Sclerenchyma cells are living cells that store food.",
+          "fixCheckId": "mfix_misc_sci9c3_scl_living",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Most sclerenchyma cells are dead; storing food is mainly done by living parenchyma.",
+          "keyPointIds": [
+            "sci9c3_t3c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_scl_living"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_scl_struct",
+            "chk_sci9c3_scl_where"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_lignin_hard"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c6",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Xylem: Conducting Water and Minerals",
+      "headingType": "heading",
+      "sourcePages": [
+        33
+      ],
+      "conceptHash": "33b5abfde98fb2d9c8091db7399c53e752b0644c4ca9c16c7947a0ac011e4f54",
+      "cardText": "Plants have specialised conducting tissues called xylem and phloem, together known as complex permanent tissues because they are made up of different types of cells working together. Xylem is the tissue that transports water and minerals from the roots to other parts of the plant, and it also provides strength. Xylem consists of tracheids, vessels, xylem parenchyma and xylem fibres. Tracheids and vessels are tubular and thick-walled. Xylem parenchyma are the only living component of xylem, while tracheids, vessels and xylem fibres are primarily sclerenchymatous.",
+      "hint": "What does xylem carry, and which of its cells are living?",
+      "probe": "Describe xylem: its job, its parts and which parts are living.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Xylem: Conducting Water and Minerals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are the two transport tissues called complex?",
+          "requiredEvidence": [
+            "conducting tissues",
+            "xylem and phloem",
+            "complex permanent tissues",
+            "different types of cells working together"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_xyl_complex",
+              "criterion": "States that xylem and phloem are complex permanent tissues because they are made up of different types of cells working together.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are the two transport tissues called complex?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the upward transport tissue carry, and what else does it provide?",
+          "requiredEvidence": [
+            "transports water and minerals",
+            "from the roots",
+            "other parts of the plant",
+            "strength"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_xyl_func",
+              "criterion": "States that xylem transports water and minerals from the roots to other parts of the plant and also provides strength.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the upward transport tissue carry, and what else does it provide?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_xyl_food"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c6_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which cell types make up this tissue, and which one of them is alive?",
+          "requiredEvidence": [
+            "tracheids",
+            "vessels",
+            "xylem parenchyma",
+            "xylem fibres",
+            "only living component"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_xyl_parts",
+              "criterion": "Names the cells of xylem: tracheids, vessels, xylem parenchyma and xylem fibres.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which cell types make up this tissue, and which one of them is alive?"
+            },
+            {
+              "id": "chk_sci9c3_xyl_living",
+              "criterion": "States that xylem parenchyma are the only living component of xylem, while tracheids, vessels and fibres are primarily sclerenchymatous.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which cell types make up this tissue, and which one of them is alive?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_complex_cells",
+          "linksChecks": [
+            "chk_sci9c3_xyl_complex",
+            "chk_sci9c3_xyl_parts"
+          ],
+          "criterion": "Connects xylem being made of different types of cells working together to its being called a complex permanent tissue.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_xyl_food",
+          "wrong": "Xylem carries food made in the leaves to the rest of the plant.",
+          "fix": "Xylem transports water and minerals from the roots to other parts of the plant; phloem transports food.",
+          "checkId": "mchk_misc_sci9c3_xyl_food",
+          "checkCriterion": "The answer states or implies this wrong idea: Xylem carries food made in the leaves to the rest of the plant.",
+          "fixCheckId": "mfix_misc_sci9c3_xyl_food",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Xylem transports water and minerals from the roots to other parts of the plant; phloem transports food.",
+          "keyPointIds": [
+            "sci9c3_t3c6_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_xyl_food"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_xyl_complex",
+            "chk_sci9c3_xyl_func",
+            "chk_sci9c3_xyl_parts",
+            "chk_sci9c3_xyl_living"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_complex_cells"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c7",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Phloem: Conducting Food",
+      "headingType": "heading",
+      "sourcePages": [
+        33
+      ],
+      "conceptHash": "e6fca1a35909554d33fd121944b6917ea5f5fd169887ea65b08fb55885782ffa",
+      "cardText": "Unlike the xylem, phloem is mostly made up of living cells. It consists of sieve tubes, companion cells, phloem parenchyma and phloem fibres. Some cells are long and tubular, joined end to end by perforated walls, and these form sieve tubes, which transport food from leaves to other parts of the plant. The cellular functions of the sieve tube cells are regulated by companion cells, which are specialised parenchyma cells whose main function is to monitor loading and unloading of sugars in sieve tubes. Phloem parenchyma store food materials, and resin, tannins and latex. The sieve tubes are also supported by phloem fibres, which provide strength.",
+      "hint": "What do sieve tubes carry, and what do companion cells do?",
+      "probe": "Describe phloem: its parts and what each does.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Phloem: Conducting Food, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of cells mostly make up the food transport tissue, and what are its four parts?",
+          "requiredEvidence": [
+            "mostly made up of living cells",
+            "sieve tubes",
+            "companion cells",
+            "phloem parenchyma",
+            "phloem fibres"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_phl_parts",
+              "criterion": "States that phloem is mostly made of living cells and consists of sieve tubes, companion cells, phloem parenchyma and phloem fibres.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of cells mostly make up the food transport tissue, and what are its four parts?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_phl_dead"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c7_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are the long tube cells arranged, and what do they carry?",
+          "requiredEvidence": [
+            "long and tubular",
+            "joined end to end",
+            "perforated walls",
+            "sieve tubes",
+            "transport food from leaves"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_phl_sieve",
+              "criterion": "States that long tubular cells joined end to end by perforated walls form sieve tubes, which transport food from leaves to other parts of the plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are the long tube cells arranged, and what do they carry?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c7_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What controls the tube cells, and what is its main task?",
+          "requiredEvidence": [
+            "regulated by companion cells",
+            "specialised parenchyma cells",
+            "loading and unloading of sugars"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_phl_companion",
+              "criterion": "States that companion cells regulate the sieve tube cells and monitor the loading and unloading of sugars in sieve tubes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What controls the tube cells, and what is its main task?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c7_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "phloem parenchyma",
+            "store food materials",
+            "phloem fibres",
+            "provide strength"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_phl_other",
+              "criterion": "States that phloem parenchyma store food materials, resin, tannins and latex, and phloem fibres support the sieve tubes and provide strength.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do sieve tubes carry, and what do companion cells do?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_companion_sieve",
+          "linksChecks": [
+            "chk_sci9c3_phl_sieve",
+            "chk_sci9c3_phl_companion"
+          ],
+          "criterion": "Connects companion cells regulating the sieve tube cells and monitoring sugar loading to the transport of food through sieve tubes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_phl_dead",
+          "wrong": "Phloem is made mostly of dead cells, like xylem.",
+          "fix": "Unlike the xylem, phloem is mostly made up of living cells.",
+          "checkId": "mchk_misc_sci9c3_phl_dead",
+          "checkCriterion": "The answer states or implies this wrong idea: Phloem is made mostly of dead cells, like xylem.",
+          "fixCheckId": "mfix_misc_sci9c3_phl_dead",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Unlike the xylem, phloem is mostly made up of living cells.",
+          "keyPointIds": [
+            "sci9c3_t3c7_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_phl_dead"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_phl_parts",
+            "chk_sci9c3_phl_sieve",
+            "chk_sci9c3_phl_companion"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_phl_other",
+            "lnk_sci9c3_companion_sieve"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t3_c8",
+      "topicId": "ncert_sci_9_ch3_t3",
+      "topicTitle": "Permanent tissues in plants",
+      "label": "Tissue Systems in Plants",
+      "headingType": "heading",
+      "sourcePages": [
+        33,
+        34
+      ],
+      "conceptHash": "511eb75ffb85b7b5ea18d63bc1a91c70e64b6a8d6c3975e8f068695d8686451a",
+      "cardText": "In a plant body the tissues do not work alone; they are organised together into larger groups called tissue systems. Plant tissues are organised into three tissue systems. The dermal tissue system forms the outer covering of the plant, protects the inner parts and reduces water loss. The ground tissue system forms the main body of a plant between the dermal and conducting tissues and includes parenchyma, collenchyma and sclerenchyma. The vascular tissue system consists of the conducting tissues, xylem and phloem. Plant tissues are also broadly classified into meristematic and permanent tissues, depending on their ability to divide.",
+      "hint": "Name the three tissue systems of a plant and what each includes.",
+      "probe": "Name the three tissue systems in plants and say what each does or contains.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Tissue Systems in Plants, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t3c8_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "do not work alone",
+            "larger groups",
+            "tissue systems"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sys_def",
+              "criterion": "States that plant tissues do not work alone but are organised together into larger groups called tissue systems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the three tissue systems of a plant and what each includes."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c8_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the outer system of a plant do?",
+          "requiredEvidence": [
+            "dermal tissue system",
+            "outer covering",
+            "protects the inner parts",
+            "reduces water loss"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sys_dermal",
+              "criterion": "States that the dermal tissue system forms the outer covering of the plant, protecting the inner parts and reducing water loss.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the outer system of a plant do?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t3c8_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does the middle system lie, and which tissues does it include?",
+          "requiredEvidence": [
+            "ground tissue system",
+            "main body of a plant",
+            "between the dermal and conducting tissues",
+            "parenchyma, collenchyma and sclerenchyma"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sys_ground",
+              "criterion": "States that the ground tissue system forms the main body of the plant between the dermal and conducting tissues and includes parenchyma, collenchyma and sclerenchyma.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does the middle system lie, and which tissues does it include?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_sys_ground"
+          ]
+        },
+        {
+          "id": "sci9c3_t3c8_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the third system made of?",
+          "requiredEvidence": [
+            "vascular tissue system",
+            "conducting tissues",
+            "xylem and phloem"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sys_vascular",
+              "criterion": "States that the vascular tissue system consists of the conducting tissues xylem and phloem.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the third system made of?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_sys_ground",
+          "wrong": "The ground tissue system is the outer covering of the plant.",
+          "fix": "The dermal tissue system forms the outer covering; the ground tissue system forms the main body between the dermal and conducting tissues.",
+          "checkId": "mchk_misc_sci9c3_sys_ground",
+          "checkCriterion": "The answer states or implies this wrong idea: The ground tissue system is the outer covering of the plant.",
+          "fixCheckId": "mfix_misc_sci9c3_sys_ground",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The dermal tissue system forms the outer covering; the ground tissue system forms the main body between the dermal and conducting tissues.",
+          "keyPointIds": [
+            "sci9c3_t3c8_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_sys_ground"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_sys_dermal",
+            "chk_sci9c3_sys_ground",
+            "chk_sci9c3_sys_vascular"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_sys_def"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t4_c1",
+      "topicId": "ncert_sci_9_ch3_t4",
+      "topicTitle": "Animal tissues",
+      "label": "Epithelial Tissue",
+      "headingType": "heading",
+      "sourcePages": [
+        34,
+        35
+      ],
+      "conceptHash": "502688e6f1b8854d8275d8446d9433c003a98db4fe8bc0b9e6cce73d4916c3de",
+      "cardText": "Epithelial tissue forms the outer covering of the body (skin) and also lines the internal organs, such as the mouth, lungs, blood vessels and intestine. It is composed of closely packed cells with very little space between them. This structure prevents the entry of germs, reduces water loss, and also helps in the absorption, secretion and movement of substances. Different types of epithelial tissue are structurally adapted to perform different functions. In the lungs the epithelium is suited to gas exchange, and epithelial tissue lining internal organs is usually only one or a few cells thick to allow quick exchange of materials.",
+      "hint": "Where is epithelial tissue found, and why are its cells packed closely?",
+      "probe": "Describe epithelial tissue: where it is found and how its structure suits its functions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Epithelial Tissue, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where in the body do we find this covering tissue?",
+          "requiredEvidence": [
+            "outer covering of the body",
+            "skin",
+            "lines the internal organs",
+            "mouth, lungs, blood vessels and intestine"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_a_where",
+              "criterion": "States that epithelial tissue forms the outer covering of the body (skin) and lines internal organs such as the mouth, lungs, blood vessels and intestine.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where in the body do we find this covering tissue?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are the cells of this covering arranged?",
+          "requiredEvidence": [
+            "closely packed cells",
+            "very little space"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_a_struct",
+              "criterion": "States that epithelial tissue is composed of closely packed cells with very little space between them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are the cells of this covering arranged?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_epi_a_thick"
+          ]
+        },
+        {
+          "id": "sci9c3_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does this arrangement protect against, and what else does the tissue help with?",
+          "requiredEvidence": [
+            "prevents the entry of the germs",
+            "reduces water loss",
+            "absorption, secretion and movement"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_epi_a_func",
+              "criterion": "States that this structure prevents the entry of germs and reduces water loss, and the tissue helps in absorption, secretion and movement of substances.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does this arrangement protect against, and what else does the tissue help with?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_packed_protect",
+          "linksChecks": [
+            "chk_sci9c3_epi_a_struct",
+            "chk_sci9c3_epi_a_func"
+          ],
+          "criterion": "Connects closely packed cells with very little space between them to preventing entry of germs and reducing water loss.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_epi_a_thick",
+          "wrong": "Epithelium lining the lungs is made of many thick layers to give strength.",
+          "fix": "Epithelial tissues lining internal organs are usually only one or a few cells thick, to allow quick exchange of materials across them.",
+          "checkId": "mchk_misc_sci9c3_epi_a_thick",
+          "checkCriterion": "The answer states or implies this wrong idea: Epithelium lining the lungs is made of many thick layers to give strength.",
+          "fixCheckId": "mfix_misc_sci9c3_epi_a_thick",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Epithelial tissues lining internal organs are usually only one or a few cells thick, to allow quick exchange of materials across them.",
+          "keyPointIds": [
+            "sci9c3_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_epi_a_thick"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_epi_a_where",
+            "chk_sci9c3_epi_a_struct",
+            "chk_sci9c3_epi_a_func"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_packed_protect"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t4_c2",
+      "topicId": "ncert_sci_9_ch3_t4",
+      "topicTitle": "Animal tissues",
+      "label": "Connective Tissue: Blood and Bone",
+      "headingType": "heading",
+      "sourcePages": [
+        35,
+        36
+      ],
+      "conceptHash": "f7c0ebfc42f3969e0af3ed08d1976671a7f2498fa712509d7ca4a4b81f93df2a",
+      "cardText": "A tissue that connects and supports other tissues is called a connective tissue. Blood and bones are both connective tissues, but they differ in composition and consistency: blood is fluid while bone is hard, a difference due to the matrix, which is soft and jelly-like in blood but hard, solid and rigid in bones. The red colour of blood is due to haemoglobin, an iron-rich protein in the Red Blood Cells (RBCs), which live for about 4 months and are replaced regularly. Platelets help in blood clotting at the site of an injury. During exercise muscles need more oxygen, so breathing becomes faster and blood flow increases. White Blood Cells (WBCs) collect at infected areas, causing pus formation and inflammation.",
+      "hint": "What makes blood fluid and bone hard, though both are connective tissues?",
+      "probe": "What is a connective tissue, and why do blood and bone differ although both are connective tissues?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Connective Tissue: Blood and Bone, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the job of this kind of tissue, and which two body parts are examples?",
+          "requiredEvidence": [
+            "connects and supports other tissues",
+            "connective tissue",
+            "blood and bones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_con_def",
+              "criterion": "States that a tissue that connects and supports other tissues is a connective tissue, and blood and bone are both connective tissues.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the job of this kind of tissue, and which two body parts are examples?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_con_blood_epi"
+          ]
+        },
+        {
+          "id": "sci9c3_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is one of these two examples runny and the other solid?",
+          "requiredEvidence": [
+            "blood is fluid",
+            "bone is hard",
+            "matrix",
+            "rigid in bones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_con_matrix",
+              "criterion": "States that blood is fluid and bone is hard because of a difference in matrix, which is watery and soft in blood but hard, solid and rigid in bones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is one of these two examples runny and the other solid?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is blood red, how long do its red cells last, and what helps it clot?",
+          "requiredEvidence": [
+            "haemoglobin",
+            "iron-rich protein",
+            "Red Blood Cells",
+            "4 months",
+            "platelets",
+            "blood clotting"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_con_rbc",
+              "criterion": "States that the red colour of blood is due to haemoglobin, an iron-rich protein in RBCs, which live about 4 months and are replaced regularly.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is blood red, how long do its red cells last, and what helps it clot?"
+            },
+            {
+              "id": "chk_sci9c3_con_platelet",
+              "criterion": "States that platelets help in blood clotting at the site of an injury.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is blood red, how long do its red cells last, and what helps it clot?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "White Blood Cells",
+            "infected areas",
+            "pus formation",
+            "inflammation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_con_wbc",
+              "criterion": "States that White Blood Cells collect at infected areas, causing pus formation and inflammation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes blood fluid and bone hard, though both are connective tissues?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_matrix_consistency",
+          "linksChecks": [
+            "chk_sci9c3_con_def",
+            "chk_sci9c3_con_matrix"
+          ],
+          "criterion": "Connects the difference in matrix, soft and watery in blood but hard and rigid in bone, to blood being fluid and bone being hard.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_con_blood_epi",
+          "wrong": "Blood is a type of epithelial tissue because it covers the inside of vessels.",
+          "fix": "Blood is a connective tissue: a tissue that connects and supports other tissues; blood connects different parts of the body by transporting nutrients, gases and hormones.",
+          "checkId": "mchk_misc_sci9c3_con_blood_epi",
+          "checkCriterion": "The answer states or implies this wrong idea: Blood is a type of epithelial tissue because it covers the inside of vessels.",
+          "fixCheckId": "mfix_misc_sci9c3_con_blood_epi",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Blood is a connective tissue: a tissue that connects and supports other tissues; blood connects different parts of the body by transporting nutrients, gases and hormones.",
+          "keyPointIds": [
+            "sci9c3_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_con_blood_epi"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_con_def",
+            "chk_sci9c3_con_matrix",
+            "chk_sci9c3_con_rbc",
+            "chk_sci9c3_con_platelet"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_con_wbc",
+            "lnk_sci9c3_matrix_consistency"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t4_c3",
+      "topicId": "ncert_sci_9_ch3_t4",
+      "topicTitle": "Animal tissues",
+      "label": "Bone, Cartilage, Tendons and Ligaments",
+      "headingType": "heading",
+      "sourcePages": [
+        37
+      ],
+      "conceptHash": "b33eb4f181d6e9173c5403da17dba24535225e5b367bf0763aa806c1b38c2e57",
+      "cardText": "Bones have a rigid matrix containing calcium and phosphorus compounds, giving them strength and rigidity. In contrast, cartilage has a soft, jelly-like matrix and provides flexibility and cushioning. Other connective tissues include tendons and ligaments. Tendons connect muscles to bones, while ligaments connect bones to bones and prevent excessive movement.",
+      "hint": "Which connective tissue joins muscle to bone, and which joins bone to bone?",
+      "probe": "Compare bone, cartilage, tendons and ligaments by what they are made of and what they do.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Bone, Cartilage, Tendons and Ligaments, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the material between bone cells like, and what does it contain?",
+          "requiredEvidence": [
+            "rigid matrix",
+            "calcium and phosphorus compounds",
+            "strength and rigidity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_bone_matrix",
+              "criterion": "States that bones have a rigid matrix containing calcium and phosphorus compounds, giving strength and rigidity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the material between bone cells like, and what does it contain?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the bendy gristle in your ear differ from bone?",
+          "requiredEvidence": [
+            "cartilage",
+            "soft",
+            "jelly-like matrix",
+            "flexibility and cushioning"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_bone_cartilage",
+              "criterion": "States that cartilage has a soft, jelly-like matrix and provides flexibility and cushioning.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the bendy gristle in your ear differ from bone?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which band joins muscle to bone, and which joins one bone to another?",
+          "requiredEvidence": [
+            "tendons connect muscles to bones",
+            "ligaments connect bones to bones",
+            "prevent excessive movement"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_bone_tendon",
+              "criterion": "States that tendons connect muscles to bones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which band joins muscle to bone, and which joins one bone to another?"
+            },
+            {
+              "id": "chk_sci9c3_bone_ligament",
+              "criterion": "States that ligaments connect bones to bones and prevent excessive movement.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which band joins muscle to bone, and which joins one bone to another?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_bone_swap"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_matrix_role",
+          "linksChecks": [
+            "chk_sci9c3_bone_matrix",
+            "chk_sci9c3_bone_cartilage"
+          ],
+          "criterion": "Connects a rigid matrix with calcium and phosphorus to bone's strength, and a soft jelly-like matrix to cartilage's flexibility and cushioning.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_bone_swap",
+          "wrong": "Tendons connect bone to bone and ligaments connect muscle to bone.",
+          "fix": "Tendons connect muscles to bones, while ligaments connect bones to bones and prevent excessive movement.",
+          "checkId": "mchk_misc_sci9c3_bone_swap",
+          "checkCriterion": "The answer states or implies this wrong idea: Tendons connect bone to bone and ligaments connect muscle to bone.",
+          "fixCheckId": "mfix_misc_sci9c3_bone_swap",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Tendons connect muscles to bones, while ligaments connect bones to bones and prevent excessive movement.",
+          "keyPointIds": [
+            "sci9c3_t4c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_bone_swap"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_bone_matrix",
+            "chk_sci9c3_bone_cartilage",
+            "chk_sci9c3_bone_tendon",
+            "chk_sci9c3_bone_ligament"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_matrix_role"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t4_c4",
+      "topicId": "ncert_sci_9_ch3_t4",
+      "topicTitle": "Animal tissues",
+      "label": "Muscle Tissue: Skeletal, Smooth and Cardiac",
+      "headingType": "heading",
+      "sourcePages": [
+        37,
+        38
+      ],
+      "conceptHash": "2025d1283534afe672b3d6ccf352f4897a7371cbbc7bcff121939984d6c3ad8a",
+      "cardText": "Movements under our conscious control, such as running, writing or lifting objects, are voluntary movements carried out by skeletal muscles, which are attached to the skeleton. They are made of bundles of long cylindrical muscle fibres that are unbranched, multinucleate and striated. Many movements occur automatically without conscious control, such as the movement of food in the intestine and the beating of the heart; these are involuntary movements. Smooth muscles are found in organs like the stomach and intestines; their cells are spindle-shaped, have a single nucleus and lack striations, and they help in slow, continuous movements like digestion. Cardiac muscles are found only in the heart; their fibres are cylindrical and branched with a single nucleus and have faint striations, and they work tirelessly and rhythmically so the heart beats throughout life without fatigue.",
+      "hint": "Which muscle is voluntary, and which two work without our control?",
+      "probe": "Compare skeletal, smooth and cardiac muscle in structure and function.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Muscle Tissue: Skeletal, Smooth and Cardiac, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t4c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which muscle moves the body when we decide to move?",
+          "requiredEvidence": [
+            "conscious control",
+            "voluntary movements",
+            "skeletal muscles",
+            "attached to the skeleton"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mus_voluntary",
+              "criterion": "States that voluntary movements, under conscious control, are carried out by skeletal muscles attached to the skeleton.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which muscle moves the body when we decide to move?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the fibres of this muscle look like under a microscope?",
+          "requiredEvidence": [
+            "muscle fibres",
+            "unbranched",
+            "multinucleate",
+            "striated"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mus_skeletal",
+              "criterion": "States that skeletal muscle is made of bundles of long cylindrical muscle fibres that are unbranched, multinucleate and striated.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the fibres of this muscle look like under a microscope?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of movements occur without our deciding, and can you name two?",
+          "requiredEvidence": [
+            "automatically",
+            "without conscious control",
+            "movement of food in the intestine",
+            "beating of the heart",
+            "involuntary movements"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mus_involuntary",
+              "criterion": "States that involuntary movements occur automatically without conscious control, such as the movement of food in the intestine and the beating of the heart.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of movements occur without our deciding, and can you name two?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where is the slow, steady muscle found and what do its cells look like?",
+          "requiredEvidence": [
+            "smooth muscles",
+            "stomach and intestines",
+            "spindle-shaped",
+            "single nucleus",
+            "lack striations"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mus_smooth",
+              "criterion": "States that smooth muscles, in organs like the stomach and intestines, have spindle-shaped cells with a single nucleus and no striations, helping slow continuous movements like digestion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where is the slow, steady muscle found and what do its cells look like?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_mus_cardiac_smooth"
+          ]
+        },
+        {
+          "id": "sci9c3_t4c4_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where is the muscle that works all through life found, and why does it never tire?",
+          "requiredEvidence": [
+            "cardiac muscles",
+            "only in the heart",
+            "branched",
+            "faint striations",
+            "without fatigue"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_mus_cardiac",
+              "criterion": "States that cardiac muscles are found only in the heart, with cylindrical branched fibres and faint striations, and work rhythmically without fatigue.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where is the muscle that works all through life found, and why does it never tire?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_voluntary_skeletal",
+          "linksChecks": [
+            "chk_sci9c3_mus_skeletal",
+            "chk_sci9c3_mus_smooth",
+            "chk_sci9c3_mus_cardiac"
+          ],
+          "criterion": "Connects movements under conscious control to skeletal muscle attached to the skeleton, and movements without conscious control to smooth and cardiac muscle.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_mus_cardiac_smooth",
+          "wrong": "Cardiac muscle is spindle-shaped with no striations, like the muscle of the intestine.",
+          "fix": "Smooth muscle cells are spindle-shaped with a single nucleus and lack striations, while cardiac muscle fibres are cylindrical and branched with faint striations.",
+          "checkId": "mchk_misc_sci9c3_mus_cardiac_smooth",
+          "checkCriterion": "The answer states or implies this wrong idea: Cardiac muscle is spindle-shaped with no striations, like the muscle of the intestine.",
+          "fixCheckId": "mfix_misc_sci9c3_mus_cardiac_smooth",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Smooth muscle cells are spindle-shaped with a single nucleus and lack striations, while cardiac muscle fibres are cylindrical and branched with faint striations.",
+          "keyPointIds": [
+            "sci9c3_t4c4_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 10,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_mus_cardiac_smooth"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_mus_voluntary",
+            "chk_sci9c3_mus_skeletal",
+            "chk_sci9c3_mus_involuntary",
+            "chk_sci9c3_mus_smooth",
+            "chk_sci9c3_mus_cardiac"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_voluntary_skeletal"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t4_c5",
+      "topicId": "ncert_sci_9_ch3_t4",
+      "topicTitle": "Animal tissues",
+      "label": "Nervous Tissue and Neurons",
+      "headingType": "heading",
+      "sourcePages": [
+        38
+      ],
+      "conceptHash": "b7371788fb2f38476c0ea6a9ed3024b187a8f6df1cd85df7f9cd39cd863d5271",
+      "cardText": "Actions such as pulling your hand away from something hot are controlled by nervous tissue, which forms the body's control and coordination network. The brain acts as the control centre, coordinating activities, memory and responses across the body. Muscles, both voluntary and involuntary, cannot function independently; they receive instructions from the nervous tissue, for example the brain signals the heart to beat faster during exercise to meet the body's increased oxygen demand. The cells of nervous tissue are neurons, or nerve cells, specialised to receive, process and transmit messages. Each neuron has a cell body that contains the nucleus and controls cell activities, dendrites that receive signals from other neurons, and an axon, a long fibre that carries messages from the cell and ends at axon terminals, which transmit the messages to other cells.",
+      "hint": "What are the three parts of a neuron, and what does each do?",
+      "probe": "What does nervous tissue do, and what are the parts of a neuron?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Nervous Tissue and Neurons, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t4c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which tissue is the body's control network, and which organ leads it?",
+          "requiredEvidence": [
+            "nervous tissue",
+            "control and coordination network",
+            "brain",
+            "control centre"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ner_control",
+              "criterion": "States that nervous tissue forms the body's control and coordination network, with the brain as the control centre.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which tissue is the body's control network, and which organ leads it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can muscles work by themselves, and what happens to the heart during exercise?",
+          "requiredEvidence": [
+            "cannot function independently",
+            "receive instructions",
+            "nervous tissue",
+            "brain signals the heart",
+            "increased oxygen demand"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ner_muscle",
+              "criterion": "States that muscles cannot function independently and receive instructions from nervous tissue, for example the brain signals the heart to beat faster during exercise.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can muscles work by themselves, and what happens to the heart during exercise?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_ner_independent"
+          ]
+        },
+        {
+          "id": "sci9c3_t4c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the cells of this tissue named, and what is their job?",
+          "requiredEvidence": [
+            "neurons",
+            "nerve cells",
+            "receive, process and transmit messages"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ner_neuron",
+              "criterion": "States that the cells of nervous tissue are neurons, or nerve cells, specialised to receive, process and transmit messages.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the cells of this tissue named, and what is their job?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t4c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the three parts of one of these cells and what does each do?",
+          "requiredEvidence": [
+            "cell body",
+            "nucleus",
+            "dendrites",
+            "receive signals",
+            "axon",
+            "axon terminals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ner_parts",
+              "criterion": "Names the three main parts of a neuron: the cell body (contains the nucleus), dendrites (receive signals) and an axon (carries messages away, ending at axon terminals).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the three parts of one of these cells and what does each do?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_instructions_muscle",
+          "linksChecks": [
+            "chk_sci9c3_ner_control",
+            "chk_sci9c3_ner_muscle"
+          ],
+          "criterion": "Connects the nervous tissue sending instructions to muscles to coordinated responses such as the heart beating faster during exercise.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_ner_independent",
+          "wrong": "Muscles can work on their own without any instruction from the nervous system.",
+          "fix": "Muscles, both voluntary and involuntary, cannot function independently; they receive instructions from the nervous tissue.",
+          "checkId": "mchk_misc_sci9c3_ner_independent",
+          "checkCriterion": "The answer states or implies this wrong idea: Muscles can work on their own without any instruction from the nervous system.",
+          "fixCheckId": "mfix_misc_sci9c3_ner_independent",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Muscles, both voluntary and involuntary, cannot function independently; they receive instructions from the nervous tissue.",
+          "keyPointIds": [
+            "sci9c3_t4c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_ner_independent"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_ner_control",
+            "chk_sci9c3_ner_muscle",
+            "chk_sci9c3_ner_neuron",
+            "chk_sci9c3_ner_parts"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_instructions_muscle"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t5_c1",
+      "topicId": "ncert_sci_9_ch3_t5",
+      "topicTitle": "The musculoskeletal system",
+      "label": "The Musculoskeletal System",
+      "headingType": "heading",
+      "sourcePages": [
+        38,
+        39
+      ],
+      "conceptHash": "30b5ac08cf51642d3607ce34bf735407e4012b460c3be0cac7163c7be5b126e3",
+      "cardText": "The musculoskeletal system is made up of bones, muscles, joints, cartilage, tendons and ligaments. It helps us stand upright, move, maintain posture and protect delicate organs, and it functions under the control of the nervous system. Muscles pull on bones to produce movement. They are attached to bones by strong, flexible bands called tendons. When a muscle contracts, the tendon transmits this force to the bone, resulting in movement at a joint. On average the adult human skeleton makes up about 12 to 15 per cent of body weight. A joint is a junction between two or more bones; joints allow movement but cannot move the bones on their own.",
+      "hint": "How does a muscle make a bone move?",
+      "probe": "How do muscles, tendons, bones and joints work together to produce movement?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Musculoskeletal System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What organs and parts make up this body system and what does it do for us?",
+          "requiredEvidence": [
+            "bones, muscles, joints, cartilage, tendons and ligaments",
+            "stand upright",
+            "maintain posture",
+            "protect delicate organs",
+            "control of the nervous system"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ms_parts",
+              "criterion": "States that the musculoskeletal system is made of bones, muscles, joints, cartilage, tendons and ligaments, helps us stand upright, move and protect organs, and works under the control of the nervous system.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What organs and parts make up this body system and what does it do for us?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a contracting muscle end up moving a bone?",
+          "requiredEvidence": [
+            "muscles pull on bones",
+            "tendons",
+            "muscle contracts",
+            "transmits this force to the bone",
+            "movement at a joint"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ms_pull",
+              "criterion": "States that muscles pull on bones and are attached to them by tendons, and when a muscle contracts the tendon transmits the force to the bone.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a contracting muscle end up moving a bone?"
+            },
+            {
+              "id": "chk_sci9c3_ms_joint",
+              "criterion": "States that this results in movement at a joint.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a contracting muscle end up moving a bone?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "junction between two or more bones",
+            "allow movement",
+            "cannot move the bones on their own"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ms_define_joint",
+              "criterion": "States that a joint is a junction between two or more bones, which allows movement but cannot move the bones on its own.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a muscle make a bone move?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_ms_joint_moves"
+          ]
+        },
+        {
+          "id": "sci9c3_t5c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "adult human skeleton",
+            "12 – 15 per cent",
+            "body weight"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_ms_weight",
+              "criterion": "States that the adult human skeleton makes up about 12 to 15 per cent of body weight, varying with age, gender and body composition.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does a muscle make a bone move?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_contract_move",
+          "linksChecks": [
+            "chk_sci9c3_ms_pull",
+            "chk_sci9c3_ms_joint"
+          ],
+          "criterion": "Connects a muscle contracting and its tendon transmitting force to the bone to movement at a joint.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_ms_joint_moves",
+          "wrong": "Joints move the bones on their own.",
+          "fix": "Joints allow movement but they cannot move the bones on their own; muscles pull on bones through tendons.",
+          "checkId": "mchk_misc_sci9c3_ms_joint_moves",
+          "checkCriterion": "The answer states or implies this wrong idea: Joints move the bones on their own.",
+          "fixCheckId": "mfix_misc_sci9c3_ms_joint_moves",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Joints allow movement but they cannot move the bones on their own; muscles pull on bones through tendons.",
+          "keyPointIds": [
+            "sci9c3_t5c1_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_ms_joint_moves"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_ms_parts",
+            "chk_sci9c3_ms_pull",
+            "chk_sci9c3_ms_joint"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_ms_define_joint",
+            "chk_sci9c3_ms_weight",
+            "lnk_sci9c3_contract_move"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t5_c2",
+      "topicId": "ncert_sci_9_ch3_t5",
+      "topicTitle": "The musculoskeletal system",
+      "label": "Types of Joints",
+      "headingType": "heading",
+      "sourcePages": [
+        39,
+        40
+      ],
+      "conceptHash": "e36fbd538c27a36f20ca190a2482e5712ba1d0a668883e25f7b9503c691f63e5",
+      "cardText": "Some parts of the body move easily in many directions while others move only in one direction, and the difference is due to the types of joints present. The shoulder is a ball and socket joint: the rounded top of the upper arm bone fits into a shallow hollow of the shoulder bone, allowing forward, backwards, sideways and circular movements. The elbow is a hinge joint, bending and straightening in one direction only like a door hinge; the knee is also a hinge joint, where the kneecap protects the joint. The skull is connected to the backbone through a pivot joint, which allows the head to move side to side like a doorknob turning in its socket. The bones of the skull are connected by fixed joints, which cannot move, keeping the brain safe even when the body moves.",
+      "hint": "Why can the shoulder move in many directions but the elbow in only one?",
+      "probe": "Name four types of joints with an example of each and the movement it allows.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Types of Joints, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can the arm swing freely in many directions at its top joint?",
+          "requiredEvidence": [
+            "ball and socket joint",
+            "rounded top of the upper arm bone",
+            "shallow hollow of the shoulder bone",
+            "circular movements"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_jt_ball",
+              "criterion": "States that the shoulder is a ball and socket joint, where the rounded top of the upper arm bone fits into a shallow hollow of the shoulder bone, allowing movement forward, backwards, sideways and in circles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can the arm swing freely in many directions at its top joint?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do the middle joints of the arm and leg move only one way?",
+          "requiredEvidence": [
+            "elbow",
+            "one direction only",
+            "door hinge",
+            "hinge joint",
+            "knee",
+            "kneecap"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_jt_hinge",
+              "criterion": "States that the elbow and knee are hinge joints that move in one direction only, like a door hinge, and the kneecap protects the knee joint.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the middle joints of the arm and leg move only one way?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_jt_elbow_ball"
+          ]
+        },
+        {
+          "id": "sci9c3_t5c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the head turn left and right at the top of the spine?",
+          "requiredEvidence": [
+            "pivot joint",
+            "skull",
+            "backbone",
+            "side to side",
+            "doorknob"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_jt_pivot",
+              "criterion": "States that the skull is connected to the backbone by a pivot joint, which lets the head move side to side like a doorknob turning in its socket.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the head turn left and right at the top of the spine?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fixed joints",
+            "bones of the skull cannot move",
+            "brain safe"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_jt_fixed",
+              "criterion": "States that the bones of the skull are connected by fixed joints that cannot move, keeping the brain safe when the body moves.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can the shoulder move in many directions but the elbow in only one?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_shape_movement",
+          "linksChecks": [
+            "chk_sci9c3_jt_ball",
+            "chk_sci9c3_jt_hinge"
+          ],
+          "criterion": "Connects the shape of the bones at a joint, such as a rounded end fitting into a hollow, to the directions in which a body part can move.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_jt_elbow_ball",
+          "wrong": "The elbow is a ball and socket joint because it bends.",
+          "fix": "The elbow bends and straightens in one direction only like a door hinge, so it is a hinge joint; the shoulder is the ball and socket joint.",
+          "checkId": "mchk_misc_sci9c3_jt_elbow_ball",
+          "checkCriterion": "The answer states or implies this wrong idea: The elbow is a ball and socket joint because it bends.",
+          "fixCheckId": "mfix_misc_sci9c3_jt_elbow_ball",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The elbow bends and straightens in one direction only like a door hinge, so it is a hinge joint; the shoulder is the ball and socket joint.",
+          "keyPointIds": [
+            "sci9c3_t5c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_jt_elbow_ball"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_jt_ball",
+            "chk_sci9c3_jt_hinge",
+            "chk_sci9c3_jt_pivot"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_jt_fixed",
+            "lnk_sci9c3_shape_movement"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t5_c3",
+      "topicId": "ncert_sci_9_ch3_t5",
+      "topicTitle": "The musculoskeletal system",
+      "label": "The Skeletal System",
+      "headingType": "heading",
+      "sourcePages": [
+        41
+      ],
+      "conceptHash": "8a6ae5fc2b1e832a2f3b357db342bf019b88328e2827aad5d62109d8117b7af0",
+      "cardText": "The skeletal system consists of a framework of bones that provides strength and protects delicate internal organs. It includes the skull, vertebral column and rib cage. The backbone or vertebral column (spine) is made up of a series of small bones called vertebrae, supports the body and helps us stand upright. Between each vertebra is a cartilage disc that acts as a cushion and allows flexibility, so we can bend and twist without injuring the internal spinal cord. There are 12 pairs of ribs, which together form the rib cage that protects vital organs such as the heart and lungs. The ribs are attached to the spine at the back and to the breast bone (sternum) in front and are joined by flexible cartilage, which allows the rib cage to expand and contract during breathing so that air moves in and out of the lungs.",
+      "hint": "What do the cartilage discs and rib cartilage let the body do?",
+      "probe": "Describe the skeletal system: the backbone, the rib cage, and why the rib cage needs to move.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Skeletal System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t5c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the bony framework for, and which three parts form it?",
+          "requiredEvidence": [
+            "framework of bones",
+            "strength",
+            "protects delicate internal organs",
+            "skull, vertebral column and rib cage"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sk_def",
+              "criterion": "States that the skeletal system is a framework of bones that provides strength and protects delicate internal organs, including the skull, vertebral column and rib cage.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the bony framework for, and which three parts form it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the spine built so we can bend without hurting what runs through it?",
+          "requiredEvidence": [
+            "backbone",
+            "vertebrae",
+            "stand upright",
+            "cartilage disc",
+            "cushion",
+            "spinal cord"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sk_spine",
+              "criterion": "States that the backbone is a column of small bones called vertebrae, with a cartilage disc between each that cushions and allows flexibility without injuring the spinal cord.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the spine built so we can bend without hurting what runs through it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many pairs of ribs are there and what do they guard?",
+          "requiredEvidence": [
+            "12 pairs of ribs",
+            "rib cage",
+            "protective cage",
+            "heart and lungs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sk_cage",
+              "criterion": "States that 12 pairs of ribs together form the rib cage, which protects vital organs such as the heart and lungs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many pairs of ribs are there and what do they guard?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t5c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why must the ribs be joined by something bendy to the chest bone?",
+          "requiredEvidence": [
+            "breast bone",
+            "sternum",
+            "flexible cartilage",
+            "expand and contract during breathing",
+            "air to move in and out of the lungs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_sk_ribs",
+              "criterion": "States that the ribs are joined by flexible cartilage, so the rib cage expands and contracts during breathing, changing space in the chest so air moves in and out of the lungs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why must the ribs be joined by something bendy to the chest bone?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_sk_rigid_cage"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_cartilage_flex",
+          "linksChecks": [
+            "chk_sci9c3_sk_spine",
+            "chk_sci9c3_sk_ribs"
+          ],
+          "criterion": "Connects flexible cartilage in the spine and the ribs to bending without injury and to the rib cage expanding and contracting during breathing.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_sk_rigid_cage",
+          "wrong": "The rib cage is completely rigid and does not move.",
+          "fix": "The ribs are joined by flexible cartilage, which allows the rib cage to expand and contract during breathing.",
+          "checkId": "mchk_misc_sci9c3_sk_rigid_cage",
+          "checkCriterion": "The answer states or implies this wrong idea: The rib cage is completely rigid and does not move.",
+          "fixCheckId": "mfix_misc_sci9c3_sk_rigid_cage",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The ribs are joined by flexible cartilage, which allows the rib cage to expand and contract during breathing.",
+          "keyPointIds": [
+            "sci9c3_t5c3_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_sk_rigid_cage"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_sk_def",
+            "chk_sci9c3_sk_spine",
+            "chk_sci9c3_sk_cage",
+            "chk_sci9c3_sk_ribs"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_cartilage_flex"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t6_c1",
+      "topicId": "ncert_sci_9_ch3_t6",
+      "topicTitle": "Totipotency and plant tissue culture",
+      "label": "Totipotency: From One Cell to an Organism",
+      "headingType": "heading",
+      "sourcePages": [
+        42
+      ],
+      "conceptHash": "118cc23e7eeefa0af07b3f921e7e4359ad5a241b914db2669885e55e52d42437",
+      "cardText": "In 1958 F. C. Steward demonstrated that even single cells from the vascular phloem of carrot retain the ability to regenerate whole plants. He grew these cells in a nutrient medium containing simple sugars and hormones under appropriate conditions, and the phloem cells divided to form a mass of cells, which gradually divided and differentiated into a complete plant. This shows that phloem cells first dedifferentiated, regaining the ability to divide, to form an undifferentiated mass of unspecialised cells, which with nutrients and growth chemicals further divided and redifferentiated to form roots, shoot and eventually the complete plant. Thus some mature plant cells can undifferentiate, divide and redifferentiate to develop into a new plant under specific conditions. This is known as totipotency and such cells are totipotent cells, similar to the ability of a zygote to divide and differentiate into an entire organism.",
+      "hint": "What did Steward show with carrot phloem cells, and what is totipotency?",
+      "probe": "Describe Steward's carrot experiment and explain totipotency.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Totipotency: From One Cell to an Organism, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t6c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did Steward show about carrot cells, and when?",
+          "requiredEvidence": [
+            "1958",
+            "F. C. Steward",
+            "single cells",
+            "phloem of carrot",
+            "regenerate whole plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_toti_who",
+              "criterion": "States that in 1958 F. C. Steward showed that single cells from the vascular phloem of carrot retain the ability to regenerate whole plants.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Steward show about carrot cells, and when?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t6c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How did he grow the carrot cells?",
+          "requiredEvidence": [
+            "nutrient medium",
+            "simple sugars and hormones",
+            "mass of cells",
+            "differentiated into a complete plant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_toti_method",
+              "criterion": "States that he grew the cells in a nutrient medium containing simple sugars and hormones, and they divided into a mass of cells that differentiated into a complete plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How did he grow the carrot cells?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t6c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did the carrot cells do first, before they became a whole plant?",
+          "requiredEvidence": [
+            "dedifferentiated",
+            "regain the ability to divide",
+            "undifferentiated mass",
+            "unspecialised cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_toti_steps",
+              "criterion": "States that phloem cells first dedifferentiated (regained the ability to divide) into an undifferentiated mass of unspecialised cells, which redifferentiated into roots, shoot and a complete plant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did the carrot cells do first, before they became a whole plant?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t6c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name for the ability of such a cell to form a whole organism, and what does it resemble?",
+          "requiredEvidence": [
+            "totipotency",
+            "totipotent cells",
+            "zygote",
+            "entire organism"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_toti_term",
+              "criterion": "Names this ability of some mature plant cells to undifferentiate, divide and redifferentiate into a new plant as totipotency, similar to a zygote developing into an entire organism.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name for the ability of such a cell to form a whole organism, and what does it resemble?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_toti_animal"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_dedifferentiate_regrow",
+          "linksChecks": [
+            "chk_sci9c3_toti_steps",
+            "chk_sci9c3_toti_term"
+          ],
+          "criterion": "Connects phloem cells dedifferentiating into a mass of unspecialised cells and then redifferentiating to the idea of totipotency.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_toti_animal",
+          "wrong": "Mature animal cells can regenerate a whole animal in the same way that carrot cells regenerate a plant.",
+          "fix": "The chapter shows totipotency for some mature plant cells; it leaves open the question of whether a complete animal can be obtained from an animal cell like plants.",
+          "checkId": "mchk_misc_sci9c3_toti_animal",
+          "checkCriterion": "The answer states or implies this wrong idea: Mature animal cells can regenerate a whole animal in the same way that carrot cells regenerate a plant.",
+          "fixCheckId": "mfix_misc_sci9c3_toti_animal",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The chapter shows totipotency for some mature plant cells; it leaves open the question of whether a complete animal can be obtained from an animal cell like plants.",
+          "keyPointIds": [
+            "sci9c3_t6c1_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_toti_animal"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_toti_who",
+            "chk_sci9c3_toti_method",
+            "chk_sci9c3_toti_steps",
+            "chk_sci9c3_toti_term"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c3_dedifferentiate_regrow"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch3_t6_c2",
+      "topicId": "ncert_sci_9_ch3_t6",
+      "topicTitle": "Totipotency and plant tissue culture",
+      "label": "Crown Gall Disease and Agrobacterium",
+      "headingType": "example",
+      "sourcePages": [
+        43
+      ],
+      "conceptHash": "0b4dea017b1359b5723f0f1750f741f69969d010fb041e98048af93fcd0532aa",
+      "cardText": "In crown gall disease, tumour-like swellings develop on plant stems due to rapid and uncontrolled cell division, caused by a bacterium called Agrobacterium tumefaciens. Instead of only trying to cure the disease, scientists studied how the bacterium transfers its genetic material into plant cells. This knowledge was later used in plant tissue culture and genetic engineering. Today Agrobacterium is used as a tool to introduce useful genes into plants for the production of valuable phytochemicals, improved crops and disease-resistant varieties.",
+      "hint": "What does the bacterium do to the plant, and how do scientists use that today?",
+      "probe": "What causes crown gall disease, and how has the study of it been put to use?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Crown Gall Disease and Agrobacterium, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c3_t6c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What disease did the bacterium cause, and how did the plant stems look?",
+          "requiredEvidence": [
+            "tumour-like swellings",
+            "uncontrolled cell division",
+            "Agrobacterium tumefaciens"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_gall_disease",
+              "criterion": "States that in crown gall disease tumour-like swellings develop on stems due to rapid, uncontrolled cell division, caused by the bacterium Agrobacterium tumefaciens.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What disease did the bacterium cause, and how did the plant stems look?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c3_t6c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did scientists do instead of only looking for a cure, and what did it lead to?",
+          "requiredEvidence": [
+            "studied how a bacterium transfers its genetic material",
+            "plant tissue culture",
+            "genetic engineering"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_gall_study",
+              "criterion": "States that scientists studied how the bacterium transfers its genetic material into plant cells, and this knowledge was later used in plant tissue culture and genetic engineering.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did scientists do instead of only looking for a cure, and what did it lead to?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c3_gall_only_cure"
+          ]
+        },
+        {
+          "id": "sci9c3_t6c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "tool to introduce useful genes",
+            "phytochemicals",
+            "improved crops",
+            "disease-resistant varieties"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c3_gall_use",
+              "criterion": "States that Agrobacterium is used as a tool to introduce useful genes into plants for valuable phytochemicals, improved crops and disease-resistant varieties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the bacterium do to the plant, and how do scientists use that today?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c3_study_tool",
+          "linksChecks": [
+            "chk_sci9c3_gall_disease",
+            "chk_sci9c3_gall_use"
+          ],
+          "criterion": "Connects studying how the bacterium transfers genetic material into plant cells to its use as a tool for introducing useful genes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c3_gall_only_cure",
+          "wrong": "Scientists studied crown gall only to find a cure for the disease.",
+          "fix": "Instead of only trying to cure the disease, scientists studied how the bacterium transfers its genetic material into plant cells, and this knowledge was later used in plant tissue culture and genetic engineering.",
+          "checkId": "mchk_misc_sci9c3_gall_only_cure",
+          "checkCriterion": "The answer states or implies this wrong idea: Scientists studied crown gall only to find a cure for the disease.",
+          "fixCheckId": "mfix_misc_sci9c3_gall_only_cure",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Instead of only trying to cure the disease, scientists studied how the bacterium transfers its genetic material into plant cells, and this knowledge was later used in plant tissue culture and genetic engineering.",
+          "keyPointIds": [
+            "sci9c3_t6c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c3_gall_only_cure"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c3_gall_disease",
+            "chk_sci9c3_gall_study"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c3_gall_use",
+            "lnk_sci9c3_study_tool"
+          ]
+        ]
+      }
+    }
+  ]
+}

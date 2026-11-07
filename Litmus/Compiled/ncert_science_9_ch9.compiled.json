@@ -1,0 +1,2918 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch9.json",
+  "sourceSha256": "e54195b811921f1afb52e3326543ca0037450754b6c3f34e1950ba19dd14ce0a",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 9,
+  "chapterName": "Atomic Foundations of Matter",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c9_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c9_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example law of conservation of mass, law of constant proportions, Dalton's atomic theory, molecule, chemical bond, covalent bond, ionic bond, cation.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "law of conservation of mass",
+    "law of constant proportions",
+    "Dalton's atomic theory",
+    "molecule",
+    "chemical bond",
+    "covalent bond",
+    "ionic bond",
+    "cation",
+    "anion",
+    "ion",
+    "polyatomic ion",
+    "chemical formula",
+    "molecular mass",
+    "formula unit mass"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch9_t1_c1",
+      "topicId": "ncert_sci_9_ch9_t1",
+      "topicTitle": "Laws of chemical combination",
+      "label": "Mass in Physical and Chemical Changes",
+      "headingType": "heading",
+      "sourcePages": [
+        163,
+        164,
+        165
+      ],
+      "conceptHash": "ed89b47b2e9b6e5ab23d588fb4cdb8d53d28f4b90fb1453b339ccf9bd326d9fd",
+      "cardText": "In Activity 9.1 the mass of a salt solution is equal to the sum of the masses of the water and salt taken, so there is practically no change in mass during the formation of a solution, which is a physical change; this is true for all physical changes. In Activity 9.2, vinegar and baking soda react to form carbon dioxide and other substances. In set-up 1, with the balloon not attached, brisk effervescence occurs and the final reading does not match the initial reading. In set-up 2, with the balloon fixed to the flask so the gas stays in, the final reading matches the initial reading. The total mass of vinegar and baking soda before the reaction equals the total mass of carbon dioxide and other substances formed after it, and in set-up 1 the difference occurs because the gas produced escapes.",
+      "hint": "Why did the weighing balance show a lower reading in set-up 1 but the same reading in set-up 2?",
+      "probe": "What do the salt and the vinegar-baking soda activities show about mass in physical and chemical changes?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Mass in Physical and Chemical Changes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When salt dissolves in water, how does the total weight of the liquid compare with the separate weights, and what does this suggest?",
+          "requiredEvidence": [
+            "mass of the solution",
+            "sum of the masses of water and salt",
+            "no change in the mass",
+            "physical change"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mp_physical",
+              "criterion": "States that the mass of a salt solution equals the sum of the masses of water and salt taken, so there is practically no change in mass in a physical change.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When salt dissolves in water, how does the total weight of the liquid compare with the separate weights, and what does this suggest?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When vinegar is poured onto baking soda in an open container, what do the balance readings show, and what is happening?",
+          "requiredEvidence": [
+            "brisk effervescence",
+            "final reading does not match the initial reading"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mp_setup1",
+              "criterion": "States that in set-up 1 a brisk effervescence occurs and the final reading does not match the initial reading because the gas produced escapes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When vinegar is poured onto baking soda in an open container, what do the balance readings show, and what is happening?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_mp_lost"
+          ]
+        },
+        {
+          "id": "sci9c9_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When the same reaction is done in a closed container, how do the balance readings compare, and what does that tell you?",
+          "requiredEvidence": [
+            "final reading matches the initial reading",
+            "total mass of vinegar and baking soda",
+            "before the chemical reaction",
+            "after the reaction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mp_setup2",
+              "criterion": "States that in set-up 2, with the balloon trapping the gas, the final reading matches the initial reading: the total mass before the reaction equals the total mass of carbon dioxide and other substances after it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When the same reaction is done in a closed container, how do the balance readings compare, and what does that tell you?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "mass difference",
+            "gas produced",
+            "escapes",
+            "initial and the final readings"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mp_reason",
+              "criterion": "Explains that the mass difference in set-up 1 occurs because the gas produced by the reaction escapes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why did the weighing balance show a lower reading in set-up 1 but the same reading in set-up 2?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_gas_escapes",
+          "linksChecks": [
+            "chk_sci9c9_mp_setup1",
+            "chk_sci9c9_mp_setup2"
+          ],
+          "criterion": "Connects the carbon dioxide escaping in set-up 1 to the lower final reading, and its being trapped in set-up 2 to an unchanged reading.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_mp_lost",
+          "wrong": "Mass is lost in the vinegar and baking soda reaction because a gas is formed.",
+          "fix": "In set-up 1 the mass difference occurs because the gas produced escapes; when the gas is trapped the final reading matches the initial reading.",
+          "checkId": "mchk_misc_sci9c9_mp_lost",
+          "checkCriterion": "The answer states or implies this wrong idea: Mass is lost in the vinegar and baking soda reaction because a gas is formed.",
+          "fixCheckId": "mfix_misc_sci9c9_mp_lost",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In set-up 1 the mass difference occurs because the gas produced escapes; when the gas is trapped the final reading matches the initial reading.",
+          "keyPointIds": [
+            "sci9c9_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_mp_lost"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_mp_physical",
+            "chk_sci9c9_mp_setup1",
+            "chk_sci9c9_mp_setup2"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_mp_reason",
+            "lnk_sci9c9_gas_escapes"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t1_c2",
+      "topicId": "ncert_sci_9_ch9_t1",
+      "topicTitle": "Laws of chemical combination",
+      "label": "The Law of Conservation of Mass",
+      "headingType": "heading",
+      "sourcePages": [
+        165,
+        166
+      ],
+      "conceptHash": "33a0434bba2afee2d0eea28bec7af3fdc48e0d0ae6076b229ae1de4d3bd2c8c7",
+      "cardText": "The activities show that the total mass remains the same before and after a chemical reaction, so matter can neither be created nor destroyed in a chemical reaction. This is known as the Law of Conservation of Mass, proposed by Antoine Lavoisier in 1789; Lavoisier is known as the Father of Modern Chemistry and the law applies to every chemical reaction. In Activity 9.3 solutions of sodium sulfate and barium chloride are mixed in an open system, since no gas is formed, and a white precipitate of barium sulfate forms along with sodium chloride; the mass is unchanged. In Example 9.1, 4.0 g of calcium carbonate and 2.92 g of hydrochloric acid, a total of 6.92 g, give 1.76 g of carbon dioxide, 0.72 g of water and 4.44 g of calcium chloride, also 6.92 g, so the mass of reactants equals the mass of products and the law is obeyed.",
+      "hint": "What does the law of conservation of mass say, and how can it be checked?",
+      "probe": "State the Law of Conservation of Mass and show how it is verified.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Law of Conservation of Mass, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the activity show about the total mass on either side of a reaction, and what can matter not do?",
+          "requiredEvidence": [
+            "total mass remains the same",
+            "before and after a chemical reaction",
+            "neither be created nor destroyed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcm_law",
+              "criterion": "States the Law of Conservation of Mass: the total mass remains the same before and after a chemical reaction; matter can neither be created nor destroyed in a chemical reaction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the activity show about the total mass on either side of a reaction, and what can matter not do?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_lcm_some"
+          ]
+        },
+        {
+          "id": "sci9c9_t1c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Law of Conservation of Mass",
+            "Antoine Lavoisier",
+            "1789",
+            "Father of Modern Chemistry"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcm_who",
+              "criterion": "States that the law was proposed by Antoine Lavoisier in 1789, who is known as the Father of Modern Chemistry.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the law of conservation of mass say, and how can it be checked?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two clear solutions are mixed and a white solid forms. How can you check the masses before and after?",
+          "requiredEvidence": [
+            "sodium sulfate and barium chloride",
+            "white precipitate of barium sulfate",
+            "sodium chloride",
+            "mass is conserved"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcm_ppt",
+              "criterion": "Describes the verification: mixing sodium sulfate and barium chloride solutions gives a white precipitate of barium sulfate and sodium chloride, with mass conserved.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two clear solutions are mixed and a white solid forms. How can you check the masses before and after?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If the reactants and products have equal masses, which law is followed?",
+          "requiredEvidence": [
+            "mass of reactants",
+            "mass of products",
+            "Law of Conservation of Mass is obeyed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcm_verify",
+              "criterion": "Shows how to verify the law by comparing the total mass of reactants with the total mass of products, as in the calcium carbonate example (6.92 g each).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If the reactants and products have equal masses, which law is followed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "open system",
+            "no gas is formed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcm_open",
+              "criterion": "States that the sodium sulfate and barium chloride reaction can be carried out in an open system since no gas is formed.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What does the law of conservation of mass say, and how can it be checked?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_equal_totals",
+          "linksChecks": [
+            "chk_sci9c9_lcm_law",
+            "chk_sci9c9_lcm_verify"
+          ],
+          "criterion": "Connects equal total masses of reactants and products to matter being neither created nor destroyed in a chemical reaction.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_lcm_some",
+          "wrong": "The Law of Conservation of Mass applies only to some chemical reactions, such as precipitation.",
+          "fix": "The law applies to every chemical reaction; matter can neither be created nor destroyed in a chemical reaction.",
+          "checkId": "mchk_misc_sci9c9_lcm_some",
+          "checkCriterion": "The answer states or implies this wrong idea: The Law of Conservation of Mass applies only to some chemical reactions, such as precipitation.",
+          "fixCheckId": "mfix_misc_sci9c9_lcm_some",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The law applies to every chemical reaction; matter can neither be created nor destroyed in a chemical reaction.",
+          "keyPointIds": [
+            "sci9c9_t1c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_lcm_some"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_lcm_law",
+            "chk_sci9c9_lcm_ppt",
+            "chk_sci9c9_lcm_verify"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_lcm_who",
+            "chk_sci9c9_lcm_open",
+            "lnk_sci9c9_equal_totals"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t1_c3",
+      "topicId": "ncert_sci_9_ch9_t1",
+      "topicTitle": "Laws of chemical combination",
+      "label": "The Law of Constant Proportions",
+      "headingType": "heading",
+      "sourcePages": [
+        167
+      ],
+      "conceptHash": "ed99379482a8e490579aba981ef24e7755e96564432b24bb0aac063142fe0368",
+      "cardText": "Soon after Lavoisier, Joseph Proust proposed that in any compound formed by two or more elements, the elements combine in a fixed ratio by mass; in other words, elements in a compound have definite proportions irrespective of its source. Water collected from rivers, borewells or the ocean, once purified and analysed, always contains hydrogen and oxygen in a mass ratio of 1:8, so 9 g of purified water from any source gives 1 g of hydrogen and 8 g of oxygen. This is known as the Law of Constant Proportions, the Law of Definite Proportions or Proust's Law. Over the centuries many civilisations found that heating cinnabar (hingula) yields mercury and sulfur in mass percentages of about 86.22% and 13.78%, and that grinding them together in this ratio forms cinnabar. In Example 9.3, sodium chloride contains sodium and chlorine in the mass ratio of 23:35.5.",
+      "hint": "Does water from different sources contain hydrogen and oxygen in different ratios?",
+      "probe": "State the Law of Constant Proportions and give the example of water.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Law of Constant Proportions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who proposed after Lavoisier that the elements in a compound are combined in a fixed way, and how?",
+          "requiredEvidence": [
+            "Joseph Proust",
+            "two or more elements",
+            "fixed ratio by mass",
+            "definite proportions",
+            "irrespective of its source"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcp_law",
+              "criterion": "States that Proust proposed that in any compound the elements combine in a fixed ratio by mass, with definite proportions irrespective of its source.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who proposed after Lavoisier that the elements in a compound are combined in a fixed way, and how?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_lcp_mixture"
+          ]
+        },
+        {
+          "id": "sci9c9_t1c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Water from a river, a borewell and the ocean is purified and analysed. What does each sample show about its composition?",
+          "requiredEvidence": [
+            "rivers, borewells or the ocean",
+            "mass ratio of 1:8",
+            "9 g of purified water",
+            "1 g of hydrogen and 8 g of oxygen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcp_water",
+              "criterion": "Gives the water example: water from any source always contains hydrogen and oxygen in a mass ratio of 1:8, so 9 g of water gives 1 g of hydrogen and 8 g of oxygen.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Water from a river, a borewell and the ocean is purified and analysed. What does each sample show about its composition?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Law of Constant Proportions",
+            "Law of Definite Proportions",
+            "Proust's Law"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcp_names",
+              "criterion": "Names the law: the Law of Constant Proportions, the Law of Definite Proportions or Proust's Law.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Does water from different sources contain hydrogen and oxygen in different ratios?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t1c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "cinnabar",
+            "mercury and sulfur",
+            "86.22%",
+            "13.78%"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_lcp_cinnabar",
+              "criterion": "Gives the cinnabar example: heating it yields mercury and sulfur in mass percentages of about 86.22% and 13.78%.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Does water from different sources contain hydrogen and oxygen in different ratios?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_fixed_ratio_any_source",
+          "linksChecks": [
+            "chk_sci9c9_lcp_law",
+            "chk_sci9c9_lcp_water"
+          ],
+          "criterion": "Connects a compound containing its elements in a fixed mass ratio to the same ratio being found irrespective of the source, as for water 1:8.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_lcp_mixture",
+          "wrong": "The Law of Constant Proportions holds for mixtures as well as compounds.",
+          "fix": "The Law of Definite Proportions holds true for compounds but not for mixtures.",
+          "checkId": "mchk_misc_sci9c9_lcp_mixture",
+          "checkCriterion": "The answer states or implies this wrong idea: The Law of Constant Proportions holds for mixtures as well as compounds.",
+          "fixCheckId": "mfix_misc_sci9c9_lcp_mixture",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Law of Definite Proportions holds true for compounds but not for mixtures.",
+          "keyPointIds": [
+            "sci9c9_t1c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_lcp_mixture"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_lcp_law",
+            "chk_sci9c9_lcp_water"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_lcp_names",
+            "chk_sci9c9_lcp_cinnabar",
+            "lnk_sci9c9_fixed_ratio_any_source"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t2_c1",
+      "topicId": "ncert_sci_9_ch9_t2",
+      "topicTitle": "Dalton's atomic theory",
+      "label": "Dalton's Postulates",
+      "headingType": "heading",
+      "sourcePages": [
+        168
+      ],
+      "conceptHash": "9bae56e7864cc7a2fdcb979a2b12747dbb8d6f6271e175c069320d4bb902a40b",
+      "cardText": "The two laws discussed formed the basis of Dalton's Atomic Theory, which attempts to explain why substances combine in fixed proportions and why there is no loss or gain of mass in a chemical reaction. Dalton explained these by proposing that during a chemical reaction atoms are indivisible and merely rearrange, rather than being created or destroyed. A postulate is a fundamental assumption accepted as truth without formal proof from which further ideas are formed. Dalton postulated that all matter is made up of very tiny particles called atoms which participate in chemical reactions; atoms are indivisible and cannot be created or destroyed in a chemical reaction; atoms of a given element are identical in mass and chemical properties; atoms of different elements have different masses and chemical properties; atoms combine in the ratio of simple whole numbers to form compounds; and the relative number and kinds of atoms are constant in a given compound. For example, when magnesium burns in air a white powder of magnesium oxide forms, which shows that magnesium atoms have combined with oxygen atoms.",
+      "hint": "How does Dalton's theory explain the two laws of chemical combination?",
+      "probe": "State Dalton's postulates and explain how they account for the Law of Conservation of Mass and the Law of Constant Proportions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Dalton's Postulates, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did the two earlier laws lead to, and what does the later theory try to explain?",
+          "requiredEvidence": [
+            "two laws",
+            "basis of Dalton's Atomic Theory",
+            "fixed proportions",
+            "no loss or gain of mass"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_laws",
+              "criterion": "States that the two laws formed the basis of Dalton's Atomic Theory, which explains why substances combine in fixed proportions and why there is no loss or gain of mass in a reaction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did the two earlier laws lead to, and what does the later theory try to explain?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How did the scientist explain these laws in terms of what atoms do during reactions?",
+          "requiredEvidence": [
+            "atoms are indivisible",
+            "merely rearrange",
+            "rather than being created or destroyed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_rearrange",
+              "criterion": "States that Dalton explained these by proposing that during a chemical reaction atoms are indivisible and merely rearrange, not being created or destroyed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How did the scientist explain these laws in terms of what atoms do during reactions?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_dp_destroyed"
+          ]
+        },
+        {
+          "id": "sci9c9_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are all substances made of, according to the first postulates, and can these be split or made?",
+          "requiredEvidence": [
+            "very tiny particles called atoms",
+            "indivisible particles",
+            "cannot be created or destroyed",
+            "identical in mass and chemical properties"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_postulates",
+              "criterion": "States Dalton's postulates that matter is made of tiny atoms that are indivisible and cannot be created or destroyed in a reaction, and that atoms of a given element are identical in mass and chemical properties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are all substances made of, according to the first postulates, and can these be split or made?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t2c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do atoms of different elements differ, and in what numerical ratios do they form compounds?",
+          "requiredEvidence": [
+            "different elements have different masses",
+            "ratio of simple whole numbers",
+            "relative number and kinds of atoms are constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_postulates2",
+              "criterion": "States that atoms of different elements have different masses and chemical properties, atoms combine in the ratio of simple whole numbers, and the relative number and kinds of atoms are constant in a compound.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do atoms of different elements differ, and in what numerical ratios do they form compounds?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t2c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fundamental assumption",
+            "accepted as truth",
+            "without formal proof"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_def",
+              "criterion": "Defines a postulate as a fundamental assumption accepted as truth without formal proof, from which further ideas are developed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does Dalton's theory explain the two laws of chemical combination?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t2c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "magnesium burns in air",
+            "white powder of magnesium oxide",
+            "atoms of magnesium have combined with those of oxygen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_dp_mg",
+              "criterion": "Gives an example: when magnesium burns in air, a white powder of magnesium oxide forms, showing magnesium atoms combined with oxygen atoms.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does Dalton's theory explain the two laws of chemical combination?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_atoms_explain_laws",
+          "linksChecks": [
+            "chk_sci9c9_dp_laws",
+            "chk_sci9c9_dp_postulates"
+          ],
+          "criterion": "Connects atoms being neither created nor destroyed in a reaction to conservation of mass, and constant numbers and kinds of atoms in a compound to fixed proportions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_dp_destroyed",
+          "wrong": "In a chemical reaction atoms are destroyed and new atoms are created.",
+          "fix": "According to Dalton, atoms are indivisible and merely rearrange during a chemical reaction rather than being created or destroyed.",
+          "checkId": "mchk_misc_sci9c9_dp_destroyed",
+          "checkCriterion": "The answer states or implies this wrong idea: In a chemical reaction atoms are destroyed and new atoms are created.",
+          "fixCheckId": "mfix_misc_sci9c9_dp_destroyed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: According to Dalton, atoms are indivisible and merely rearrange during a chemical reaction rather than being created or destroyed.",
+          "keyPointIds": [
+            "sci9c9_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_dp_destroyed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_dp_laws",
+            "chk_sci9c9_dp_rearrange",
+            "chk_sci9c9_dp_postulates",
+            "chk_sci9c9_dp_postulates2"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_dp_def",
+            "chk_sci9c9_dp_mg",
+            "lnk_sci9c9_atoms_explain_laws"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c1",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Molecules and Chemical Bonds",
+      "headingType": "heading",
+      "sourcePages": [
+        169
+      ],
+      "conceptHash": "e9178f46eb47d0e05be68f059f39d375d7bd6008d04a95ac2ac0c05dafb45619",
+      "cardText": "Atoms of an element can combine to form a molecule of that element, for example a hydrogen molecule consists of two hydrogen atoms, and atoms of different elements combine to form a molecule of a compound, for example one hydrogen atom and one chlorine atom combine to form hydrogen chloride. A molecule is an electrically neutral entity consisting of more than one atom that is capable of independent existence and shows all the properties of that substance. Some elements such as helium exist only as atoms because their atoms are stable. Atoms with 8 electrons in the outermost shell (2 if the K shell is the outermost) are stable; if the valence shell has fewer than eight, atoms may share, gain or lose electrons to complete it, and in this process atoms of elements combine to form compounds. This generally takes place in two ways: sharing of electrons, and transfer of electrons. When atoms combine the total energy of the system becomes lower than the sum of the energies of the individual atoms, making the arrangement more stable. The force that holds atoms together is called a chemical bond.",
+      "hint": "Why do atoms combine, and in what two ways?",
+      "probe": "What is a molecule, why do atoms combine, and what is a chemical bond?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Molecules and Chemical Bonds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is a particle containing several bonded atoms and able to exist alone described?",
+          "requiredEvidence": [
+            "electrically neutral",
+            "more than one atom",
+            "independent existence",
+            "all the properties of that substance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_molecule",
+              "criterion": "Defines a molecule as an electrically neutral entity of more than one atom that is capable of independent existence and shows all the properties of that substance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is a particle containing several bonded atoms and able to exist alone described?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "molecule of that element",
+            "hydrogen molecule",
+            "two hydrogen atoms",
+            "molecule of a compound"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_types",
+              "criterion": "States that atoms of an element form a molecule of that element (e.g. two hydrogen atoms) and atoms of different elements form a molecule of a compound.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do atoms combine, and in what two ways?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "helium",
+            "exist only as atoms",
+            "atoms are stable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_he",
+              "criterion": "States that some elements, such as helium, exist only as atoms because their atoms are stable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do atoms combine, and in what two ways?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_mb_helium"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If the outer shell holds fewer than eight, what can atoms do to complete it?",
+          "requiredEvidence": [
+            "less than eight",
+            "share, gain or lose electrons",
+            "complete their valence shell",
+            "two ways"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_ways",
+              "criterion": "States that if the valence shell has fewer than eight electrons atoms share, gain or lose electrons to complete it and become stable, and in this process atoms combine to form compounds, in two ways.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If the outer shell holds fewer than eight, what can atoms do to complete it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the two main ways atoms can adjust their outer electrons when they combine?",
+          "requiredEvidence": [
+            "sharing of electrons",
+            "share a few or all of their valence electrons",
+            "transfer of electrons",
+            "accept one or more electrons"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_share_transfer",
+              "criterion": "Names the two ways atoms combine: sharing of valence electrons with another atom, and transfer of electrons to or from another atom.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the two main ways atoms can adjust their outer electrons when they combine?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c1_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When atoms join, how does the energy of the combined system compare with the energy of the separate atoms, and why does that matter?",
+          "requiredEvidence": [
+            "total energy of the system becomes lower",
+            "more stable",
+            "force that holds atoms together",
+            "chemical bond"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mb_bond",
+              "criterion": "States that when atoms combine the total energy becomes lower than the sum of the energies of the individual atoms, making the arrangement more stable, and the force holding atoms together is called a chemical bond.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When atoms join, how does the energy of the combined system compare with the energy of the separate atoms, and why does that matter?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_lower_energy_bond",
+          "linksChecks": [
+            "chk_sci9c9_mb_ways",
+            "chk_sci9c9_mb_bond"
+          ],
+          "criterion": "Connects atoms completing their valence shells by sharing or transferring electrons to a lower-energy, more stable arrangement held together by a chemical bond.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_mb_helium",
+          "wrong": "All elements exist as molecules of two or more atoms.",
+          "fix": "Some elements, such as helium, exist only as atoms because their atoms are stable.",
+          "checkId": "mchk_misc_sci9c9_mb_helium",
+          "checkCriterion": "The answer states or implies this wrong idea: All elements exist as molecules of two or more atoms.",
+          "fixCheckId": "mfix_misc_sci9c9_mb_helium",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Some elements, such as helium, exist only as atoms because their atoms are stable.",
+          "keyPointIds": [
+            "sci9c9_t3c1_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_mb_helium"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_mb_molecule",
+            "chk_sci9c9_mb_ways",
+            "chk_sci9c9_mb_share_transfer",
+            "chk_sci9c9_mb_bond"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_mb_types",
+            "chk_sci9c9_mb_he",
+            "lnk_sci9c9_lower_energy_bond"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c2",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Covalent Bond: Molecules of Elements",
+      "headingType": "heading",
+      "sourcePages": [
+        169,
+        170
+      ],
+      "conceptHash": "166933add92330bfc7d9521601102536d5b3ee6a27a359e1b7d0ec21ce9123ad",
+      "cardText": "Hydrogen has only one electron in its K shell, and since the K shell can have two electrons it needs one more to become stable, so a hydrogen atom shares one electron with another hydrogen atom to form a hydrogen molecule, H2. The shared pair of electrons attracts both the nuclei and makes the molecule stable. This interaction between atoms through a shared pair of electrons is called a covalent bond; if two atoms are joined by sharing one electron each they are joined by a single bond, depicted as H-H. A chlorine atom has seven valence electrons and needs one electron, so two chlorine atoms share one electron each to form a chlorine molecule, Cl-Cl, joined by a single covalent bond. An oxygen atom has six valence electrons and needs two more to complete its octet, so two oxygen atoms share two electrons each to form an oxygen molecule, held together by two pairs of shared electrons in a double bond, O=O.",
+      "hint": "How do two hydrogen atoms, two chlorine atoms and two oxygen atoms bond?",
+      "probe": "Explain the formation of hydrogen, chlorine and oxygen molecules by sharing of electrons.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Covalent Bond: Molecules of Elements, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do two atoms of the lightest element join to form its two-atom particle?",
+          "requiredEvidence": [
+            "shares one electron",
+            "hydrogen molecule",
+            "shared pair of electrons",
+            "attracts both the nuclei",
+            "stable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cv_h",
+              "criterion": "Explains that a hydrogen atom shares one electron with another to form H2, and the shared pair attracts both nuclei and makes the molecule stable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do two atoms of the lightest element join to form its two-atom particle?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_cv_transfer"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name for the attraction between atoms through a shared pair, and what does it get called when one pair is shared?",
+          "requiredEvidence": [
+            "shared pair of electrons",
+            "covalent bond",
+            "single bond"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cv_def",
+              "criterion": "Defines a covalent bond as the interaction between atoms through a shared pair of electrons; two atoms sharing one electron each are joined by a single bond.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name for the attraction between atoms through a shared pair, and what does it get called when one pair is shared?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many outer electrons does a chlorine atom have, and what does each need to be stable?",
+          "requiredEvidence": [
+            "seven electrons in its valence shell",
+            "requires one electron",
+            "chlorine molecule",
+            "sharing of one electron each"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cv_cl",
+              "criterion": "Explains that a chlorine atom has seven valence electrons and needs one more, so two chlorine atoms share one electron each to form a Cl2 molecule with a single covalent bond.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many outer electrons does a chlorine atom have, and what does each need to be stable?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many more electrons does an oxygen atom need to be stable, and how do two such atoms manage this?",
+          "requiredEvidence": [
+            "valence shell is six",
+            "two more electrons",
+            "two oxygen atoms share two electrons each",
+            "oxygen molecule"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cv_o",
+              "criterion": "Explains that an oxygen atom has six valence electrons and needs two more, so two oxygen atoms share two electrons each to form O2.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many more electrons does an oxygen atom need to be stable, and how do two such atoms manage this?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "two pairs of shared electrons",
+            "double bond",
+            "O=O"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cv_double",
+              "criterion": "States that in O2 the two atoms are joined by two pairs of shared electrons, a double bond, depicted O=O.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do two hydrogen atoms, two chlorine atoms and two oxygen atoms bond?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_need_share",
+          "linksChecks": [
+            "chk_sci9c9_cv_h",
+            "chk_sci9c9_cv_o"
+          ],
+          "criterion": "Connects the number of electrons an atom needs to complete its shell to the number of shared pairs: one for hydrogen and chlorine, two for oxygen.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_cv_transfer",
+          "wrong": "In an H2 molecule one hydrogen atom gives its electron to the other.",
+          "fix": "A hydrogen atom shares one electron with another hydrogen atom; the shared pair of electrons attracts both nuclei and makes the molecule stable.",
+          "checkId": "mchk_misc_sci9c9_cv_transfer",
+          "checkCriterion": "The answer states or implies this wrong idea: In an H2 molecule one hydrogen atom gives its electron to the other.",
+          "fixCheckId": "mfix_misc_sci9c9_cv_transfer",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A hydrogen atom shares one electron with another hydrogen atom; the shared pair of electrons attracts both nuclei and makes the molecule stable.",
+          "keyPointIds": [
+            "sci9c9_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_cv_transfer"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_cv_h",
+            "chk_sci9c9_cv_def",
+            "chk_sci9c9_cv_cl",
+            "chk_sci9c9_cv_o"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_cv_double",
+            "lnk_sci9c9_need_share"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c3",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Covalent Compounds: Hydrogen Chloride and Water",
+      "headingType": "heading",
+      "sourcePages": [
+        170,
+        171
+      ],
+      "conceptHash": "e3fc39200a5c029fcada7b92fcba48668af25f9e3d7f496958ba21bbfdf4c549",
+      "cardText": "When atoms of two different elements combine, as in hydrogen chloride, both hydrogen and chlorine need one electron each to attain a stable configuration (hydrogen to complete its duplet and chlorine its octet), so they share one electron each to form a molecule of hydrogen chloride. Since the hydrogen and chlorine atoms bond by sharing electrons, it is a covalent compound, and since they share one pair of electrons they are bonded by a single bond, H-Cl. Hydrogen needs one electron while oxygen needs two, so oxygen cannot simply share two with an atom that needs only one; this is achieved by two hydrogen atoms each sharing an electron with one oxygen atom, forming a water molecule, H2O, which indicates the presence of two hydrogen atoms and one oxygen atom. Atoms can also release enormous energy when their nuclei split or combine, which is atomic or nuclear energy.",
+      "hint": "How can oxygen, which needs two electrons, bond with hydrogen, which needs one?",
+      "probe": "Explain the formation of hydrogen chloride and water molecules by sharing electrons.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Covalent Compounds: Hydrogen Chloride and Water, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Hydrogen and chlorine each need one electron. How can they both become stable together?",
+          "requiredEvidence": [
+            "hydrogen and chlorine need one electron each",
+            "stable electronic configurations",
+            "share one electron each",
+            "hydrogen chloride"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cc_hcl",
+              "criterion": "Explains that hydrogen and chlorine each need one electron, so they share one electron each to form a hydrogen chloride molecule.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Hydrogen and chlorine each need one electron. How can they both become stable together?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is hydrogen chloride a compound of the shared-electron kind, and how is the charge distributed in it?",
+          "requiredEvidence": [
+            "bond by sharing electrons",
+            "covalent compound",
+            "one pair of electrons",
+            "single bond"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cc_covalent",
+              "criterion": "States that HCl is a covalent compound because the atoms bond by sharing electrons, and a single bond because they share one pair.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is hydrogen chloride a compound of the shared-electron kind, and how is the charge distributed in it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_cc_ionic"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Hydrogen needs one electron while oxygen needs two. How can they combine to give water?",
+          "requiredEvidence": [
+            "hydrogen needs only one electron",
+            "oxygen needs two electrons",
+            "two hydrogen atoms sharing an electron each",
+            "oxygen atom"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cc_water",
+              "criterion": "Explains that oxygen needs two electrons and hydrogen only one, so two hydrogen atoms each share an electron with an oxygen atom to form water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Hydrogen needs one electron while oxygen needs two. How can they combine to give water?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "H2O",
+            "two hydrogen atoms",
+            "one oxygen atom"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cc_h2o",
+              "criterion": "States that the water molecule is represented as H2O, showing two hydrogen atoms and one oxygen atom.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can oxygen, which needs two electrons, bond with hydrogen, which needs one?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "release enormous energy",
+            "nuclei split or combine",
+            "atomic or nuclear energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cc_nuclear",
+              "criterion": "States that atoms can release enormous energy when their nuclei split or combine to form new elements, called atomic or nuclear energy.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How can oxygen, which needs two electrons, bond with hydrogen, which needs one?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_two_hydrogens",
+          "linksChecks": [
+            "chk_sci9c9_cc_hcl",
+            "chk_sci9c9_cc_water"
+          ],
+          "criterion": "Connects oxygen needing two electrons and hydrogen only one to two hydrogen atoms each sharing an electron with one oxygen atom in H2O.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_cc_ionic",
+          "wrong": "Hydrogen chloride is an ionic compound because it has two different elements.",
+          "fix": "Since the hydrogen and chlorine atoms in HCl bond by sharing electrons, it is a covalent compound.",
+          "checkId": "mchk_misc_sci9c9_cc_ionic",
+          "checkCriterion": "The answer states or implies this wrong idea: Hydrogen chloride is an ionic compound because it has two different elements.",
+          "fixCheckId": "mfix_misc_sci9c9_cc_ionic",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Since the hydrogen and chlorine atoms in HCl bond by sharing electrons, it is a covalent compound.",
+          "keyPointIds": [
+            "sci9c9_t3c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_cc_ionic"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_cc_hcl",
+            "chk_sci9c9_cc_covalent",
+            "chk_sci9c9_cc_water"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_cc_h2o",
+            "chk_sci9c9_cc_nuclear",
+            "lnk_sci9c9_two_hydrogens"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c4",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Naming Covalent Compounds",
+      "headingType": "heading",
+      "sourcePages": [
+        171,
+        172
+      ],
+      "conceptHash": "4383716a2c6aa2f3f84be47a6555d8b5c54f178d73eda7973a3e10e38094e067",
+      "cardText": "Covalent compounds are named by indicating the number of atoms of each element using a prefix system. The first element retains its regular name, while the second element ends in -ide. Prefixes such as mono- (1), di- (2), tri- (3), tetra- (4), penta- (5) and hexa- (6) indicate the number of atoms. Mono- is usually omitted for the first element but used for the second. If a prefix ends with o or a and the element starts with a vowel the last vowel is dropped, as in monoxide and pentoxide; if the prefix ends with i it is kept, as in dioxide and trioxide. CO is carbon monoxide, CO2 is carbon dioxide, CS2 is carbon disulfide, PCl3 is phosphorus trichloride, SF6 is sulfur hexafluoride, N2O4 is dinitrogen tetroxide and N2O5 is dinitrogen pentoxide. When hydrogen is the first element no prefix is added before it, so H2S is hydrogen sulfide. A few binary compounds are known only by common names: H2O is water and NH3 is ammonia.",
+      "hint": "How are prefixes used to name a covalent compound?",
+      "probe": "State the rules for naming covalent compounds with examples.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Naming Covalent Compounds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are the names of compounds made of non-metals built to show their composition?",
+          "requiredEvidence": [
+            "number of atoms of each element",
+            "prefix system",
+            "first element retains its regular name",
+            "ends in -ide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_prefix",
+              "criterion": "States that covalent compounds are named with a prefix system showing the number of atoms of each element, the first element keeping its regular name and the second ending in -ide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are the names of compounds made of non-metals built to show their composition?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which prefixes denote one, two, three and four atoms, and when is the first of these usually left out?",
+          "requiredEvidence": [
+            "mono- (1)",
+            "di- (2)",
+            "tri- (3)",
+            "mono- is usually omitted for the first element"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_list",
+              "criterion": "Lists prefixes mono- (1), di- (2), tri- (3), tetra- (4), penta- (5), hexa- (6), and notes that mono- is usually omitted for the first element but used for the second.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which prefixes denote one, two, three and four atoms, and when is the first of these usually left out?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_nm_mono"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c4_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "drop the last vowel",
+            "monoxide, pentoxide",
+            "keep it for pronunciation",
+            "dioxide, trioxide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_vowel",
+              "criterion": "States that if a prefix ending in o or a precedes an element starting with a vowel the last vowel is dropped (monoxide), but a prefix ending in i is kept (dioxide).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are prefixes used to name a covalent compound?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are the oxides of carbon with one and with two oxygen atoms named?",
+          "requiredEvidence": [
+            "carbon monoxide",
+            "carbon dioxide",
+            "not monooxide",
+            "not monocarbon dioxide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_examples",
+              "criterion": "Gives examples: CO is carbon monoxide (not monooxide) and CO2 is carbon dioxide (not monocarbon dioxide).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are the oxides of carbon with one and with two oxygen atoms named?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c4_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hydrogen is the first element",
+            "no prefix",
+            "H2S",
+            "hydrogen sulfide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_hydrogen",
+              "criterion": "States that when hydrogen is the first element no prefix is used, so H2S is hydrogen sulfide, not dihydrogen sulfide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are prefixes used to name a covalent compound?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c4_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "common names",
+            "H2O",
+            "water",
+            "NH3",
+            "ammonia"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_nm_common",
+              "criterion": "States that a few binary compounds keep common names, e.g. H2O is water and NH3 is ammonia.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are prefixes used to name a covalent compound?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_prefix_count",
+          "linksChecks": [
+            "chk_sci9c9_nm_prefix",
+            "chk_sci9c9_nm_examples"
+          ],
+          "criterion": "Connects prefixes such as mono-, di-, tri- to the number of atoms of each element in the covalent compound's name.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_nm_mono",
+          "wrong": "CO is named monocarbon monooxide.",
+          "fix": "mono- is usually omitted for the first element and a vowel is dropped, so CO is carbon monoxide (not monooxide).",
+          "checkId": "mchk_misc_sci9c9_nm_mono",
+          "checkCriterion": "The answer states or implies this wrong idea: CO is named monocarbon monooxide.",
+          "fixCheckId": "mfix_misc_sci9c9_nm_mono",
+          "fixCheckCriterion": "Answer 2 states the correct idea: mono- is usually omitted for the first element and a vowel is dropped, so CO is carbon monoxide (not monooxide).",
+          "keyPointIds": [
+            "sci9c9_t3c4_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_nm_mono"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_nm_prefix",
+            "chk_sci9c9_nm_list",
+            "chk_sci9c9_nm_examples"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_nm_vowel",
+            "chk_sci9c9_nm_hydrogen",
+            "chk_sci9c9_nm_common",
+            "lnk_sci9c9_prefix_count"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c5",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Ionic Bond: Transfer of Electrons",
+      "headingType": "heading",
+      "sourcePages": [
+        172,
+        173
+      ],
+      "conceptHash": "61dd628890d41277640bcdbe9fc4a8a4d02f2eb4e078d6c669df2c83fb17d521",
+      "cardText": "If the valence shell of an atom has fewer than four electrons it generally donates its valence electrons to achieve a stable configuration, and atoms with more than four valence electrons usually gain or share electrons to complete an octet. Sodium (atomic number 11) has one valence electron and attains a stable configuration by losing it; it then has 11 protons and 10 electrons and becomes a positively charged sodium cation, Na+. A chlorine atom has seven valence electrons and attains a stable configuration by gaining one electron from another atom; after gaining it, it acquires a negative charge and is called a chloride anion, Cl-. Cations and anions are collectively called ions. Once formed, the sodium and chloride ions are held together by the electrostatic force of attraction due to their opposite charges, and this force of attraction between oppositely charged ions is called an ionic bond. Atoms such as sulfur gain two electrons to form S2-.",
+      "hint": "What happens to a sodium atom and a chlorine atom when they form sodium chloride?",
+      "probe": "Explain how sodium and chlorine form sodium chloride, defining cation, anion and ionic bond.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ionic Bond: Transfer of Electrons, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c5_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "less than four electrons",
+            "donate its valence electrons",
+            "more than 4 valence electrons",
+            "gain or share electrons"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ib_rule",
+              "criterion": "States that atoms with fewer than four valence electrons generally donate them, while those with more than four usually gain or share electrons to complete an octet.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to a sodium atom and a chlorine atom when they form sodium chloride?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call a sodium atom after it loses its outer electron, and how is it written?",
+          "requiredEvidence": [
+            "loses its valence electron",
+            "positively charged",
+            "sodium cation",
+            "Na+",
+            "11 protons and 10 electrons"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ib_na",
+              "criterion": "Explains that a sodium atom loses its valence electron and becomes a positively charged sodium cation, Na+, with 11 protons and 10 electrons.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call a sodium atom after it loses its outer electron, and how is it written?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_ib_share"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call a chlorine atom once it gains an extra electron, and how is it written?",
+          "requiredEvidence": [
+            "gaining one extra electron",
+            "negative charge",
+            "chloride anion",
+            "Cl"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ib_cl",
+              "criterion": "Explains that a chlorine atom gains one electron, acquires a negative charge and becomes a chloride anion, Cl-.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call a chlorine atom once it gains an extra electron, and how is it written?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the collective name for positive and negative charged species, and what holds them together?",
+          "requiredEvidence": [
+            "cations and anions",
+            "ions",
+            "electrostatic force of attraction",
+            "oppositely charged ions",
+            "ionic bond"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ib_bond",
+              "criterion": "Defines an ionic bond as the electrostatic force of attraction between oppositely charged ions (cations and anions, collectively called ions) that holds them together.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the collective name for positive and negative charged species, and what holds them together?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_transfer_attract",
+          "linksChecks": [
+            "chk_sci9c9_ib_na",
+            "chk_sci9c9_ib_bond"
+          ],
+          "criterion": "Connects the transfer of an electron from sodium to chlorine, forming oppositely charged ions, to the electrostatic attraction that is the ionic bond.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_ib_share",
+          "wrong": "In sodium chloride the sodium and chlorine atoms share an electron pair.",
+          "fix": "In sodium chloride sodium transfers its valence electron to chlorine, forming Na+ and Cl- ions held together by an ionic bond.",
+          "checkId": "mchk_misc_sci9c9_ib_share",
+          "checkCriterion": "The answer states or implies this wrong idea: In sodium chloride the sodium and chlorine atoms share an electron pair.",
+          "fixCheckId": "mfix_misc_sci9c9_ib_share",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In sodium chloride sodium transfers its valence electron to chlorine, forming Na+ and Cl- ions held together by an ionic bond.",
+          "keyPointIds": [
+            "sci9c9_t3c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_ib_share"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_ib_na",
+            "chk_sci9c9_ib_cl",
+            "chk_sci9c9_ib_bond"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_ib_rule",
+            "lnk_sci9c9_transfer_attract"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c6",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Crystal Structure of Ionic Compounds",
+      "headingType": "heading",
+      "sourcePages": [
+        173
+      ],
+      "conceptHash": "6841254e23e1e99a5cf1e6bf949cdc72c6cb2cc131c130215786153ed9b70c17",
+      "cardText": "Ionic compounds usually do not remain as single units; they form three-dimensional crystals in which ions are arranged in a repeating pattern. In sodium chloride each sodium ion is surrounded by six chloride ions, and each chloride ion is surrounded by six sodium ions. These oppositely charged ions are arranged in a regular, repeating 3-D pattern known as a crystal structure. The crystal structure is represented as a crystal lattice, with ions depicted as points or dots, which helps to visualise the arrangement of ions in the crystal.",
+      "hint": "Do ionic compounds exist as single molecules?",
+      "probe": "Describe the structure of an ionic compound such as sodium chloride.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Crystal Structure of Ionic Compounds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Do compounds of this kind exist as single units? How are their particles organised?",
+          "requiredEvidence": [
+            "do not remain as single units",
+            "three-dimensional",
+            "crystals",
+            "repeating pattern"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cs_crystal",
+              "criterion": "States that ionic compounds usually do not remain as single units but form three-dimensional crystals in which ions are arranged in a repeating pattern.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Do compounds of this kind exist as single units? How are their particles organised?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_cs_molecule"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In common salt, how many neighbours of the opposite charge surround each ion?",
+          "requiredEvidence": [
+            "sodium chloride",
+            "each sodium ion",
+            "surrounded by six chloride ions",
+            "each chloride ion is surrounded by six sodium ions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cs_nacl",
+              "criterion": "Gives the example of sodium chloride: each sodium ion is surrounded by six chloride ions and each chloride ion by six sodium ions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In common salt, how many neighbours of the opposite charge surround each ion?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c6_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "regular, repeating 3-D pattern",
+            "crystal structure",
+            "crystal lattice",
+            "points or dots"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_cs_lattice",
+              "criterion": "States that the regular repeating 3-D arrangement of ions is the crystal structure, represented as a crystal lattice with ions as points or dots.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Do ionic compounds exist as single molecules?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_surrounded_pattern",
+          "linksChecks": [
+            "chk_sci9c9_cs_crystal",
+            "chk_sci9c9_cs_nacl"
+          ],
+          "criterion": "Connects each ion being surrounded by six oppositely charged ions to a regular repeating 3-D crystal structure, drawn as a lattice.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_cs_molecule",
+          "wrong": "An ionic compound like NaCl exists as separate NaCl molecules.",
+          "fix": "Ionic compounds usually do not remain as single units; they form three-dimensional crystals, so ionic compounds do not form molecules.",
+          "checkId": "mchk_misc_sci9c9_cs_molecule",
+          "checkCriterion": "The answer states or implies this wrong idea: An ionic compound like NaCl exists as separate NaCl molecules.",
+          "fixCheckId": "mfix_misc_sci9c9_cs_molecule",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Ionic compounds usually do not remain as single units; they form three-dimensional crystals, so ionic compounds do not form molecules.",
+          "keyPointIds": [
+            "sci9c9_t3c6_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_cs_molecule"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_cs_crystal",
+            "chk_sci9c9_cs_nacl"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_cs_lattice",
+            "lnk_sci9c9_surrounded_pattern"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t3_c7",
+      "topicId": "ncert_sci_9_ch9_t3",
+      "topicTitle": "How atoms combine",
+      "label": "Naming Ionic Compounds and Polyatomic Ions",
+      "headingType": "heading",
+      "sourcePages": [
+        174
+      ],
+      "conceptHash": "d38fea4ded5f6a926a32a3a0a9655f442d65507ede43e27803a7443e97a2f107",
+      "cardText": "In naming ionic compounds, the name of the cation is written first, followed by the name of the anion. Names of simple anions end with -ide. Generally metals form cations and non-metals form anions, and ionic compounds are typically formed when metals combine with non-metals, for example sodium chloride, calcium oxide and magnesium sulfide. Some ions are formed by the combination of atoms of two or more elements and are called polyatomic ions; the names of polyatomic ions generally do not end with -ide.",
+      "hint": "Which ion is named first in an ionic compound, and which elements usually form ionic compounds?",
+      "probe": "State how ionic compounds are named and what polyatomic ions are.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Naming Ionic Compounds and Polyatomic Ions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t3c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In naming these compounds, which part is written first, and how do names of simple negative species end?",
+          "requiredEvidence": [
+            "name of the cation is written first",
+            "followed by the name of the anion",
+            "simple anions end with -ide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ni_name",
+              "criterion": "States that in naming ionic compounds the cation is named first, followed by the anion, and names of simple anions end with -ide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In naming these compounds, which part is written first, and how do names of simple negative species end?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_ni_order"
+          ]
+        },
+        {
+          "id": "sci9c9_t3c7_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which kind of elements typically form positive species and which negative, and what kinds of elements combine to form such compounds?",
+          "requiredEvidence": [
+            "metals form cations",
+            "non-metals form anions",
+            "metals combine with non-metals",
+            "sodium chloride"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ni_metals",
+              "criterion": "States that metals generally form cations and non-metals anions, so ionic compounds typically form when metals combine with non-metals, e.g. sodium chloride and calcium oxide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which kind of elements typically form positive species and which negative, and what kinds of elements combine to form such compounds?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t3c7_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are charged species made of atoms of more than one element called, and how are their names generally formed?",
+          "requiredEvidence": [
+            "atoms of two or more elements",
+            "polyatomic ions",
+            "do not end with -ide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_ni_poly",
+              "criterion": "States that ions formed from atoms of two or more elements are polyatomic ions, whose names generally do not end with -ide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are charged species made of atoms of more than one element called, and how are their names generally formed?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_ni_order",
+          "wrong": "In naming an ionic compound the anion is named first.",
+          "fix": "In naming ionic compounds, the name of the cation is written first, followed by the name of the anion.",
+          "checkId": "mchk_misc_sci9c9_ni_order",
+          "checkCriterion": "The answer states or implies this wrong idea: In naming an ionic compound the anion is named first.",
+          "fixCheckId": "mfix_misc_sci9c9_ni_order",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In naming ionic compounds, the name of the cation is written first, followed by the name of the anion.",
+          "keyPointIds": [
+            "sci9c9_t3c7_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_ni_order"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_ni_name",
+            "chk_sci9c9_ni_metals",
+            "chk_sci9c9_ni_poly"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t4_c1",
+      "topicId": "ncert_sci_9_ch9_t4",
+      "topicTitle": "Writing chemical formulae",
+      "label": "Writing Formulae of Covalent Compounds",
+      "headingType": "heading",
+      "sourcePages": [
+        175
+      ],
+      "conceptHash": "0adfb65c96640ada8e280af509191e6110b9371fd08b4245f357c6b247b9099b",
+      "cardText": "A chemical formula for a covalent compound can be written quickly in three steps: write the symbols of the constituent elements of the compound; write the valencies of these elements; and cross over the valencies of the combining atoms and write them as subscripts after the symbols. For hydrogen chloride, hydrogen and chlorine each have a valency of one, so the formula is HCl; if the valency is one after criss-crossing it is not written. For hydrogen sulfide, hydrogen has valency 1 and sulfur 2, so the formula is H2S. For carbon tetrachloride, carbon has valency 4 and chlorine 1, so the formula is CCl4.",
+      "hint": "How does the criss-cross method give the formula of a covalent compound?",
+      "probe": "Describe the steps for writing the formula of a covalent compound, with an example.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Writing Formulae of Covalent Compounds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What steps do you follow to write a formula starting from symbols, using the combining capacities of the elements?",
+          "requiredEvidence": [
+            "symbols of the constituent elements",
+            "valencies of these elements",
+            "crossover the valencies",
+            "subscripts after the symbols"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wc_steps",
+              "criterion": "Gives the steps: write the symbols of the elements, write their valencies, then cross over the valencies and write them as subscripts after the symbols.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What steps do you follow to write a formula starting from symbols, using the combining capacities of the elements?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t4c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "valency is one",
+            "criss-crossing",
+            "not written"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wc_one",
+              "criterion": "States that if the valency is one after criss-crossing, it is not written.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the criss-cross method give the formula of a covalent compound?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_wc_one"
+          ]
+        },
+        {
+          "id": "sci9c9_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Following the steps for hydrogen combined with the element of atomic number 16, what formula results?",
+          "requiredEvidence": [
+            "H2S",
+            "hydrogen sulfide",
+            "valency",
+            "sulfur"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wc_examples",
+              "criterion": "Gives examples: hydrogen (valency 1) and chlorine (1) give HCl, hydrogen (1) and sulfur (2) give H2S, and carbon (4) and chlorine (1) give CCl4.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Following the steps for hydrogen combined with the element of atomic number 16, what formula results?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_crossover_subscripts",
+          "linksChecks": [
+            "chk_sci9c9_wc_steps",
+            "chk_sci9c9_wc_examples"
+          ],
+          "criterion": "Connects crossing over the valencies of the combining atoms to the subscripts in the formula, with a valency of one left unwritten.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_wc_one",
+          "wrong": "The formula of hydrogen chloride is written H1Cl1.",
+          "fix": "If the valency is one after criss-crossing, it is not written, so the formula of hydrogen chloride is HCl.",
+          "checkId": "mchk_misc_sci9c9_wc_one",
+          "checkCriterion": "The answer states or implies this wrong idea: The formula of hydrogen chloride is written H1Cl1.",
+          "fixCheckId": "mfix_misc_sci9c9_wc_one",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If the valency is one after criss-crossing, it is not written, so the formula of hydrogen chloride is HCl.",
+          "keyPointIds": [
+            "sci9c9_t4c1_kp2"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_wc_one"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_wc_steps",
+            "chk_sci9c9_wc_examples"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_wc_one",
+            "lnk_sci9c9_crossover_subscripts"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t4_c2",
+      "topicId": "ncert_sci_9_ch9_t4",
+      "topicTitle": "Writing chemical formulae",
+      "label": "Writing Formulae of Ionic Compounds",
+      "headingType": "heading",
+      "sourcePages": [
+        175,
+        176,
+        177
+      ],
+      "conceptHash": "a27c473158151466dd80ae3074bcdfcecf0043a13b1b25c984232eee3bb1adab",
+      "cardText": "To write the formula of an ionic compound, write the symbol of the cation first, followed by the symbol of the anion; write the charges under the symbols rather than as superscripts; and cross over the charges, only the numbers, to obtain the formula. The chemical formula gives the simplest ratio of the elements in a compound, so after criss-crossing the subscripts are divided by a common factor, if any. In calcium chloride (Ca2+ and Cl-) the formula is CaCl2, with two chloride ions for each calcium ion, so the positive and negative charges balance and the overall structure is neutral. In aluminium oxide (Al3+ and O2-) the formula is Al2O3. For magnesium oxide, criss-crossing gives Mg2O2, which is simply written as MgO. The same method works for polyatomic ions: magnesium hydroxide is Mg(OH)2 and calcium carbonate is CaCO3. Brackets are used when two or more polyatomic ions of the same type are present, as in Al(OH)3, and not required when only one polyatomic anion is present. The charges on the ions are not indicated in the formula.",
+      "hint": "How are charges used to write the formula of an ionic compound?",
+      "probe": "Explain, with examples, how the formula of an ionic compound is written, including when brackets are needed.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Writing Formulae of Ionic Compounds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In which order are the symbols written, and where are the charges placed before you crisscross?",
+          "requiredEvidence": [
+            "symbol of the cation first",
+            "followed by the symbol of the anion",
+            "charges under the symbols",
+            "crossover the charges"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_steps",
+              "criterion": "Gives the steps: write the symbol of the cation first and then the anion, write the charges under the symbols, and cross over the charges (only the numbers) to get the formula.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which order are the symbols written, and where are the charges placed before you crisscross?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After crisscrossing, what must you do if the subscripts have a common factor, and why?",
+          "requiredEvidence": [
+            "simplest ratio",
+            "criss-crossing",
+            "divided by a common factor"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_simplest",
+              "criterion": "States that the formula gives the simplest ratio, so after criss-crossing the subscripts are divided by a common factor, if any.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After crisscrossing, what must you do if the subscripts have a common factor, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do calcium and chlorine combine in the ratio they do in their compound?",
+          "requiredEvidence": [
+            "two chloride ions",
+            "each calcium ion",
+            "positive and negative charges must balance",
+            "overall structure must be neutral"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_balance",
+              "criterion": "Explains that in CaCl2 there are two chloride ions for each calcium ion, since the positive and negative charges must balance and the overall structure must be neutral.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do calcium and chlorine combine in the ratio they do in their compound?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t4c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "valencies of the two elements are the same",
+            "Mg2O2",
+            "MgO"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_mgo",
+              "criterion": "Gives the example that criss-crossing for magnesium oxide gives Mg2O2, which is simply written as MgO.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are charges used to write the formula of an ionic compound?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t4c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When are brackets needed in a formula containing a charged group, and when not?",
+          "requiredEvidence": [
+            "brackets",
+            "two or more polyatomic ions of the same type",
+            "not required when only one polyatomic anion"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_bracket",
+              "criterion": "States that brackets are used when two or more polyatomic ions of the same type are present in a formula, as in Al(OH)3, and are not required with only one polyatomic anion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When are brackets needed in a formula containing a charged group, and when not?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_wi_bracket"
+          ]
+        },
+        {
+          "id": "sci9c9_t4c2_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "charges on the ions",
+            "not indicated in the formula"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_wi_charge_note",
+              "criterion": "States that the charges on the ions are not indicated in the formula of the compound.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How are charges used to write the formula of an ionic compound?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_charges_balance",
+          "linksChecks": [
+            "chk_sci9c9_wi_steps",
+            "chk_sci9c9_wi_balance"
+          ],
+          "criterion": "Connects the criss-crossed charges giving the simplest ratio to the positive and negative charges balancing, so the compound is neutral.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_wi_bracket",
+          "wrong": "The formula of aluminium hydroxide is AlOH3.",
+          "fix": "The formula of aluminium hydroxide is Al(OH)3, not AlOH3, since brackets are used when two or more polyatomic ions of the same type are present.",
+          "checkId": "mchk_misc_sci9c9_wi_bracket",
+          "checkCriterion": "The answer states or implies this wrong idea: The formula of aluminium hydroxide is AlOH3.",
+          "fixCheckId": "mfix_misc_sci9c9_wi_bracket",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The formula of aluminium hydroxide is Al(OH)3, not AlOH3, since brackets are used when two or more polyatomic ions of the same type are present.",
+          "keyPointIds": [
+            "sci9c9_t4c2_kp5"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_wi_bracket"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_wi_steps",
+            "chk_sci9c9_wi_simplest",
+            "chk_sci9c9_wi_balance",
+            "chk_sci9c9_wi_bracket"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_wi_mgo",
+            "chk_sci9c9_wi_charge_note",
+            "lnk_sci9c9_charges_balance"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t5_c1",
+      "topicId": "ncert_sci_9_ch9_t5",
+      "topicTitle": "Properties of compounds and their masses",
+      "label": "Properties of Ionic and Covalent Compounds",
+      "headingType": "heading",
+      "sourcePages": [
+        178,
+        179
+      ],
+      "conceptHash": "c541c6b7279477094c5374b355f03f1a26f0f1341a465545061b8663fcf08d48",
+      "cardText": "Ionic compounds such as sodium chloride and copper sulfate are generally soluble in water but insoluble in solvents such as kerosene and petrol. In contrast, most covalent compounds, such as camphor and naphthalene, are insoluble in water but dissolve in kerosene and petrol. Ionic compounds do not conduct electricity in the solid state because their ions are held in fixed positions by strong forces; to conduct, ions must be free to move, which occurs only when ionic compounds are dissolved in water. Some covalent compounds, such as sugar, are soluble in water but do not provide ions in solution and so do not conduct electricity, and other covalent compounds such as camphor and naphthalene also do not conduct electricity. Ionic compounds generally have high melting and boiling points due to strong inter-ionic attractions, whereas covalent compounds usually have low melting and boiling points.",
+      "hint": "How do ionic and covalent compounds differ in solubility, conductivity and melting points?",
+      "probe": "Compare the properties of ionic and covalent compounds and explain why ionic compounds conduct electricity only in solution.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Properties of Ionic and Covalent Compounds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do compounds like common salt and blue vitriol behave in water compared with other kinds of liquid?",
+          "requiredEvidence": [
+            "soluble in water",
+            "insoluble in solvents",
+            "kerosene and petrol",
+            "camphor",
+            "naphthalene"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_pr_solubility",
+              "criterion": "States that ionic compounds such as sodium chloride and copper sulfate are generally soluble in water but not in kerosene or petrol, while most covalent compounds such as camphor and naphthalene are the opposite.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do compounds like common salt and blue vitriol behave in water compared with other kinds of liquid?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can a solid of this kind not carry current, and when can it?",
+          "requiredEvidence": [
+            "do not conduct electricity in the solid state",
+            "held in fixed positions",
+            "free to move",
+            "dissolved in water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_pr_conduct",
+              "criterion": "Explains that ionic compounds do not conduct electricity in the solid state because their ions are held in fixed positions, and conduct only when the ions are free to move, as when dissolved in water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can a solid of this kind not carry current, and when can it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t5c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a common kitchen sweetener dissolve in water yet not carry current?",
+          "requiredEvidence": [
+            "covalent compounds",
+            "sugar",
+            "do not provide ions in solution",
+            "do not conduct electricity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_pr_covalent",
+              "criterion": "States that covalent compounds do not conduct electricity: sugar dissolves in water but gives no ions, and camphor and naphthalene also do not conduct.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a common kitchen sweetener dissolve in water yet not carry current?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_pr_sugar"
+          ]
+        },
+        {
+          "id": "sci9c9_t5c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do melting and boiling points compare between the two types of compounds, and why?",
+          "requiredEvidence": [
+            "high melting and boiling points",
+            "strong inter-ionic attractions",
+            "covalent compounds usually have low"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_pr_mp",
+              "criterion": "States that ionic compounds generally have high melting and boiling points due to strong inter-ionic attractions, whereas covalent compounds usually have low ones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do melting and boiling points compare between the two types of compounds, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_free_ions_conduct",
+          "linksChecks": [
+            "chk_sci9c9_pr_conduct",
+            "chk_sci9c9_pr_covalent"
+          ],
+          "criterion": "Connects ions being held in fixed positions in the solid to the lack of conduction, and free-moving ions in solution to electrical conduction.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_pr_sugar",
+          "wrong": "Sugar solution conducts electricity because sugar dissolves in water.",
+          "fix": "Some covalent compounds, such as sugar, dissolve in water but do not provide ions in solution; therefore, they do not conduct electricity.",
+          "checkId": "mchk_misc_sci9c9_pr_sugar",
+          "checkCriterion": "The answer states or implies this wrong idea: Sugar solution conducts electricity because sugar dissolves in water.",
+          "fixCheckId": "mfix_misc_sci9c9_pr_sugar",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Some covalent compounds, such as sugar, dissolve in water but do not provide ions in solution; therefore, they do not conduct electricity.",
+          "keyPointIds": [
+            "sci9c9_t5c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_pr_sugar"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_pr_solubility",
+            "chk_sci9c9_pr_conduct",
+            "chk_sci9c9_pr_covalent",
+            "chk_sci9c9_pr_mp"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c9_free_ions_conduct"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch9_t5_c2",
+      "topicId": "ncert_sci_9_ch9_t5",
+      "topicTitle": "Properties of compounds and their masses",
+      "label": "Molecular Mass and Formula Unit Mass",
+      "headingType": "heading",
+      "sourcePages": [
+        179,
+        180
+      ],
+      "conceptHash": "4bf9baea37f614d8f52671132df7db5b1006c98fb7f21f8e138b0f2800d842f5",
+      "cardText": "Since the formulae of covalent compounds are known, the mass of a molecule is found by adding up the masses of the atoms present in it; this is the molecular mass. For water, with H = 1 u and O = 16 u, the molecular mass is (1 u times 2) plus (16 u times 1) which is 18 u, and for carbon dioxide with C = 12 u it is 12 + 32 = 44 u. In ionic compounds the ions form 3-D crystals, so ionic compounds do not form molecules. Instead, the collection of the simplest whole number ratio of ions is termed a formula unit, and the mass of a formula unit is called the formula unit mass. For sodium oxide, Na2O, with Na = 23 u and O = 16 u, the formula unit mass is 62 u, and for calcium nitrate, Ca(NO3)2, it is 164 u.",
+      "hint": "Why do we use formula unit mass instead of molecular mass for ionic compounds?",
+      "probe": "Define molecular mass and formula unit mass and calculate one of each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Molecular Mass and Formula Unit Mass, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c9_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can you find the mass of a molecule from its formula?",
+          "requiredEvidence": [
+            "formulae of the covalent compounds",
+            "masses of their molecules",
+            "adding up the masses of the atoms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mm_molecular",
+              "criterion": "States that the mass of a molecule of a covalent compound is found by adding up the masses of the atoms present in it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can you find the mass of a molecule from its formula?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Show how you would find the mass of a water molecule using the atomic masses of hydrogen and oxygen.",
+          "requiredEvidence": [
+            "H2O",
+            "1 u",
+            "16 u",
+            "18 u"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mm_water",
+              "criterion": "Works the example: molecular mass of H2O = (1 u x 2) + (16 u x 1) = 18 u.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Show how you would find the mass of a water molecule using the atomic masses of hydrogen and oxygen."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t5c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is meant by the simplest ratio of ions as a unit, and how is its mass found?",
+          "requiredEvidence": [
+            "simplest whole number ratio of ions",
+            "formula unit",
+            "mass of a formula unit"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mm_formula",
+              "criterion": "Defines a formula unit as the collection of the simplest whole-number ratio of ions in an ionic compound, and the formula unit mass as the mass of a formula unit.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is meant by the simplest ratio of ions as a unit, and how is its mass found?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c9_mm_ionic"
+          ]
+        },
+        {
+          "id": "sci9c9_t5c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "ions form 3-D crystals",
+            "ionic compounds do not form molecules"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mm_ionic",
+              "criterion": "States that in ionic compounds the ions form 3-D crystals, so ionic compounds do not form molecules.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we use formula unit mass instead of molecular mass for ionic compounds?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c9_t5c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Na2O",
+            "23 u",
+            "16 u",
+            "62 u"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c9_mm_na2o",
+              "criterion": "Works the example: formula unit mass of Na2O = (23 u x 2) + (16 u x 1) = 62 u.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we use formula unit mass instead of molecular mass for ionic compounds?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c9_crystal_formula_unit",
+          "linksChecks": [
+            "chk_sci9c9_mm_ionic",
+            "chk_sci9c9_mm_formula"
+          ],
+          "criterion": "Connects ionic compounds forming 3-D crystals rather than molecules to the use of the formula unit and formula unit mass.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c9_mm_ionic",
+          "wrong": "An ionic compound like NaCl has a molecular mass because it has molecules.",
+          "fix": "In ionic compounds the ions form 3-D crystals, i.e., ionic compounds do not form molecules, so the formula unit mass is used.",
+          "checkId": "mchk_misc_sci9c9_mm_ionic",
+          "checkCriterion": "The answer states or implies this wrong idea: An ionic compound like NaCl has a molecular mass because it has molecules.",
+          "fixCheckId": "mfix_misc_sci9c9_mm_ionic",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In ionic compounds the ions form 3-D crystals, i.e., ionic compounds do not form molecules, so the formula unit mass is used.",
+          "keyPointIds": [
+            "sci9c9_t5c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c9_mm_ionic"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c9_mm_molecular",
+            "chk_sci9c9_mm_water",
+            "chk_sci9c9_mm_formula"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c9_mm_ionic",
+            "chk_sci9c9_mm_na2o",
+            "lnk_sci9c9_crystal_formula_unit"
+          ]
+        ]
+      }
+    }
+  ]
+}

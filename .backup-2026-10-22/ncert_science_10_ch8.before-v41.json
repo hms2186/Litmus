@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 4,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 8,
+  "chapterName": "Heredity",
+  "sourceStatus": "Built from the NCERT PDF jesc108 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Science (Class 10), Reprint 2026-27, chapter pp. 128-133",
+    "note": "Pages are the printed page numbers (the PDF page label is the printed page minus 127). Quotes were checked automatically against the PDF text. Figures are images in the PDF and are not quoted. Activity questions, the QUESTIONS boxes and the Exercises are used as accepted examples only."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c8_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci10c8_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example variation, heredity, trait, inheritance, dominant, recessive, gene, chromosome.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "variation",
+    "heredity",
+    "trait",
+    "inheritance",
+    "dominant",
+    "recessive",
+    "gene",
+    "chromosome",
+    "F1",
+    "F2",
+    "Mendel",
+    "germ-cell",
+    "sex chromosomes",
+    "independent inheritance",
+    "protein",
+    "enzyme",
+    "DNA",
+    "zygote",
+    "genetically determined"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_science_10_ch8_t1",
+      "title": "Accumulation of Variation and Its Survival Advantage",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t1_c1",
+          "label": "Accumulation of Variation During Reproduction",
+          "headingType": "heading",
+          "sourcePages": [
+            128
+          ],
+          "cardText": "Inheritance from the previous generation provides both a common basic body design and subtle changes in it for the next generation. The second generation has differences inherited from the first as well as newly created ones. If a single individual reproduces, as in asexual reproduction, the diversity is small: if one bacterium divides and the two resultant bacteria divide again, the four would be very similar, with only very minor differences due to small inaccuracies in DNA copying. If sexual reproduction is involved, even greater diversity is generated. A field of sugarcane shows very little variation, but sexually reproducing animals, including humans, show quite distinct variations.",
+          "hint": "Why do sexually reproducing species show more distinct variation than asexual ones?",
+          "probe": "Explain how variations accumulate over generations and why sexual reproduction creates greater diversity.",
+          "causeChain": "Each generation inherits the basic body design with subtle changes and adds new differences -> in asexual reproduction these are only small copying inaccuracies, so the individuals are very similar -> sexual reproduction creates even greater diversity",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_accum_chain",
+              "linksChecks": [
+                "chk_sci10c8_ac_accum",
+                "chk_sci10c8_ac_compare"
+              ],
+              "criterion": "Connects inherited differences plus new ones to the small variation of asexual reproduction and the greater diversity of sexual reproduction.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t1c1_kp1",
+              "weight": 2,
+              "text": "Inheritance from the previous generation provides both a common basic body design and subtle changes in it for the next generation. The second generation will have differences that they inherit from the first generation as well as newly created differences.",
+              "assessment": {
+                "requiredEvidence": [
+                  "common basic body design",
+                  "subtle changes",
+                  "inherit from the first generation",
+                  "newly created differences"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ac_accum",
+                    "criterion": "States that each generation inherits a common body design with subtle changes, and adds newly created differences, so variations accumulate.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t1c1_kp2",
+              "weight": 2,
+              "text": "If one bacterium divides and the resultant two bacteria divide again, the four bacteria would be very similar, with only very minor differences generated due to small inaccuracies in DNA copying. However, if sexual reproduction is involved, even greater diversity will be generated.",
+              "assessment": {
+                "requiredEvidence": [
+                  "one bacterium divides",
+                  "very similar",
+                  "minor differences",
+                  "inaccuracies in DNA copying",
+                  "sexual reproduction",
+                  "greater diversity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ac_compare",
+                    "criterion": "States that asexual reproduction (e.g. bacteria) gives very similar individuals with minor differences from copying inaccuracies, while sexual reproduction generates greater diversity.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_ac_asexual_none"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "a field of sugarcane shows very little variation while sexually reproducing animals show distinct variations",
+            "Question 1: which trait arose earlier in an asexually reproducing population, one found in 10% or one found in 60%",
+            "Figure 8.1: creation of diversity over succeeding generations"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_ac_asexual_none",
+              "wrong": "Asexually reproducing organisms show no variation at all.",
+              "fix": "Some amount of variation is produced even during asexual reproduction, due to small inaccuracies in DNA copying, but sexual reproduction creates much greater diversity."
+            }
+          ],
+          "verify": [
+            {
+              "page": 128,
+              "quote": "Inheritance from the previous generation provides both a common basic body design, and subtle changes in it, for the next generation.",
+              "supports": [
+                "sci10c8_t1c1_kp1"
+              ]
+            },
+            {
+              "page": 128,
+              "quote": "The second generation will have differences that they inherit from the first generation, as well as newly created differences",
+              "supports": [
+                "sci10c8_t1c1_kp1"
+              ]
+            },
+            {
+              "page": 128,
+              "quote": "the four individual bacteria generated would be very similar.",
+              "supports": [
+                "sci10c8_t1c1_kp2"
+              ]
+            },
+            {
+              "page": 128,
+              "quote": "generated due to small inaccuracies in DNA copying.",
+              "supports": [
+                "sci10c8_t1c1_kp2"
+              ]
+            },
+            {
+              "page": 128,
+              "quote": "if sexual reproduction is involved, even greater diversity will be generated",
+              "supports": [
+                "sci10c8_t1c1_kp2"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch8_t1_c2",
+          "label": "Survival Advantage of Variation",
+          "headingType": "heading",
+          "sourcePages": [
+            128,
+            129
+          ],
+          "cardText": "Do all variations in a species have equal chances of surviving in the environment where they find themselves? Obviously not. Depending on the nature of the variations, different individuals will have different kinds of advantages. Bacteria that can withstand heat will survive better in a heat wave. Selection of variants by environmental factors forms the basis for evolutionary processes.",
+          "hint": "Why do some variants survive better than others, and what is this called?",
+          "probe": "Explain how variation promotes survival and what forms the basis of evolution.",
+          "causeChain": "Variations do not have equal chances of surviving -> different variants give different advantages, such as heat-resistant bacteria in a heat wave -> selection of variants by environmental factors forms the basis for evolutionary processes",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_survival_chain",
+              "linksChecks": [
+                "chk_sci10c8_sa_unequal",
+                "chk_sci10c8_sa_selection"
+              ],
+              "criterion": "Connects unequal variation advantages to selection by the environment and evolution.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t1c2_kp1",
+              "weight": 2,
+              "text": "Do all these variations in a species have equal chances of surviving in the environment in which they find themselves? Obviously not. Depending on the nature of variations, different individuals would have different kinds of advantages. Bacteria that can withstand heat will survive better in a heat wave.",
+              "assessment": {
+                "requiredEvidence": [
+                  "not equal chances",
+                  "different kinds of advantages",
+                  "bacteria that can withstand heat",
+                  "survive better in a heat wave"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_sa_unequal",
+                    "criterion": "States that variations do not have equal chances of surviving; different variants give different advantages, e.g. heat-resistant bacteria survive better in a heat wave.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_sa_equal"
+                ]
+              }
+            },
+            {
+              "id": "sci10c8_t1c2_kp2",
+              "weight": 1,
+              "text": "Selection of variants by environmental factors forms the basis for evolutionary processes.",
+              "assessment": {
+                "requiredEvidence": [
+                  "selection of variants",
+                  "environmental factors",
+                  "basis for evolutionary processes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_sa_selection",
+                    "criterion": "States that the selection of variants by environmental factors forms the basis for evolutionary processes.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: how the creation of variations in a species promotes survival",
+            "What you have learnt: variations may lead to increased survival of the individuals"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_sa_equal",
+              "wrong": "All variations in a species have an equal chance of surviving.",
+              "fix": "Obviously not: depending on the nature of the variations, different individuals have different kinds of advantages."
+            }
+          ],
+          "verify": [
+            {
+              "page": 128,
+              "quote": "Do all these variations in a species have equal chances of surviving in the environment in which they find themselves?",
+              "supports": [
+                "sci10c8_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 128,
+              "quote": "Depending on the nature of variations, different individuals would have",
+              "supports": [
+                "sci10c8_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "different kinds of advantages.",
+              "supports": [
+                "sci10c8_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "Bacteria that can withstand heat will survive better in a heat wave",
+              "supports": [
+                "sci10c8_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "Selection of variants by environmental factors forms the basis for evolutionary processes",
+              "supports": [
+                "sci10c8_t1c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch8_t2",
+      "title": "Heredity and Inherited Traits",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t2_c1",
+          "label": "Heredity: Similarity and Difference Between Parents and Child",
+          "headingType": "heading",
+          "sourcePages": [
+            129
+          ],
+          "cardText": "The most obvious outcome of reproduction is individuals of similar design. The rules of heredity determine the process by which traits and characteristics are reliably inherited. A child bears all the basic features of a human being, yet does not look exactly like its parents, and human populations show a great deal of variation. Free and attached earlobes are two variants found in human populations. Both the father and the mother contribute practically equal amounts of genetic material to the child, so each trait can be influenced by both paternal and maternal DNA, and for each trait there will be two versions in each child.",
+          "hint": "What are the rules of heredity and why does each child have two versions of every trait?",
+          "probe": "Explain what heredity is and why a child has two versions of each trait.",
+          "causeChain": "Reproduction gives individuals of similar design, and the rules of heredity make traits reliably inherited -> both parents contribute practically equal genetic material -> each trait can be influenced by both paternal and maternal DNA, so there are two versions in each child",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_heredity_chain",
+              "linksChecks": [
+                "chk_sci10c8_he_rules",
+                "chk_sci10c8_he_two"
+              ],
+              "criterion": "Connects the rules of heredity to equal contributions from both parents and two versions of every trait.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t2c1_kp1",
+              "weight": 1,
+              "text": "The rules of heredity determine the process by which traits and characteristics are reliably inherited. A child bears all the basic features of a human being, but does not look exactly like its parents, and human populations show a great deal of variation.",
+              "assessment": {
+                "requiredEvidence": [
+                  "rules of heredity",
+                  "traits and characteristics",
+                  "reliably inherited",
+                  "does not look exactly like its parents",
+                  "variation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_he_rules",
+                    "criterion": "States that the rules of heredity determine how traits are reliably inherited, so a child bears basic human features yet does not look exactly like its parents.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t2c1_kp2",
+              "weight": 2,
+              "text": "Both the father and the mother contribute practically equal amounts of genetic material to the child. This means each trait can be influenced by both paternal and maternal DNA. Thus, for each trait there will be two versions in each child.",
+              "assessment": {
+                "requiredEvidence": [
+                  "father and the mother",
+                  "equal amounts of genetic material",
+                  "paternal and maternal DNA",
+                  "two versions",
+                  "each trait"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_he_two",
+                    "criterion": "States that both parents contribute practically equal genetic material, so each trait is influenced by both paternal and maternal DNA and there are two versions of each trait in a child.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_he_mother"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity 8.1: free and attached earlobes in the class and in their parents",
+            "Figure 8.2: free and attached earlobes"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_he_mother",
+              "wrong": "The child inherits most of its traits from only one parent.",
+              "fix": "Both the father and the mother contribute practically equal amounts of genetic material, so each trait can be influenced by both paternal and maternal DNA."
+            }
+          ],
+          "verify": [
+            {
+              "page": 129,
+              "quote": "The rules of heredity determine the process by which traits and characteristics are reliably inherited.",
+              "supports": [
+                "sci10c8_t2c1_kp1"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "However, it does not look exactly like its parents, and human populations show a great deal of variation.",
+              "supports": [
+                "sci10c8_t2c1_kp1"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "both the father and the mother contribute practically equal amounts of genetic material to the child.",
+              "supports": [
+                "sci10c8_t2c1_kp2"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "each trait can be influenced by both paternal and maternal DNA.",
+              "supports": [
+                "sci10c8_t2c1_kp2"
+              ]
+            },
+            {
+              "page": 129,
+              "quote": "for each trait there will be two versions in each child.",
+              "supports": [
+                "sci10c8_t2c1_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch8_t3",
+      "title": "Mendel's Experiments: Dominant and Recessive Traits",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t3_c1",
+          "label": "Mendel's Monohybrid Cross: Dominant and Recessive Traits",
+          "headingType": "heading",
+          "sourcePages": [
+            130
+          ],
+          "cardText": "Gregor Mendel grew garden peas using contrasting visible characters such as round or wrinkled seeds, tall or short plants and white or violet flowers. He was the first to keep count of individuals showing a trait in each generation. Crossing a tall plant and a short plant gave first-generation (F1) plants that were all tall, with no halfway 'medium-height' plants: only one of the parental traits was seen. When the F1 tall plants were self-pollinated, one quarter of the second-generation (F2) plants were short. So both the tallness and shortness traits were inherited in the F1 plants, but only tallness was expressed. Mendel proposed that two copies of a factor (now called genes) control a trait. A single copy of T is enough for a tall plant, while both copies must be t for it to be short. T is dominant and t recessive.",
+          "hint": "Why were all F1 plants tall and why did shortness reappear in a quarter of the F2 plants?",
+          "probe": "Explain Mendel's monohybrid cross and what dominant and recessive traits are.",
+          "causeChain": "Crossing tall and short plants gave only tall F1 plants -> self-pollinated F1 gave one quarter short F2, so both traits were inherited but only tallness was expressed -> two gene copies control a trait: a single T makes the plant tall (dominant) while short needs both copies t (recessive)",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_mendel_chain",
+              "linksChecks": [
+                "chk_sci10c8_mn_f1",
+                "chk_sci10c8_mn_f2",
+                "chk_sci10c8_mn_dom"
+              ],
+              "criterion": "Connects the all-tall F1 and the one-quarter short F2 to two gene copies and dominant versus recessive expression.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t3c1_kp1",
+              "weight": 2,
+              "text": "Mendel took pea plants with different characteristics, a tall plant and a short plant, produced progeny by crossing them and calculated percentages. There were no halfway characteristics in the first generation, or F1 progeny, and no medium-height plants. All plants were tall, which meant that only one of the parental traits was seen, not some mixture of the two.",
+              "assessment": {
+                "requiredEvidence": [
+                  "tall plant and a short plant",
+                  "no halfway characteristics",
+                  "F1",
+                  "all plants were tall",
+                  "only one of the parental traits"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_mn_f1",
+                    "criterion": "States that crossing tall and short pea plants gave F1 plants that were all tall, with no medium-height blends, so only one parental trait was seen.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_mn_blend"
+                ]
+              }
+            },
+            {
+              "id": "sci10c8_t3c1_kp2",
+              "weight": 2,
+              "text": "The F1 tall plants were reproduced by self-pollination. The second-generation, or F2, progeny of the F1 tall plants are not all tall; one quarter of them are short. This indicates that both the tallness and shortness traits were inherited in the F1 plants, but only the tallness trait was expressed.",
+              "assessment": {
+                "requiredEvidence": [
+                  "self-pollination",
+                  "F2",
+                  "not all tall",
+                  "one quarter",
+                  "short",
+                  "both the tallness and shortness traits were inherited",
+                  "only the tallness trait was expressed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_mn_f2",
+                    "criterion": "States that self-pollinating F1 tall plants gave F2 plants of which one quarter were short, showing that both traits were inherited but only tallness was expressed in F1.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t3c1_kp3",
+              "weight": 2,
+              "text": "Mendel proposed that two copies of factors, now called genes, controlling traits are present in a sexually reproducing organism. A single copy of T is enough to make the plant tall, while both copies have to be t for the plant to be short. Traits like T are called dominant traits, while those that behave like t are called recessive traits.",
+              "assessment": {
+                "requiredEvidence": [
+                  "two copies",
+                  "genes",
+                  "single copy of 'T'",
+                  "tall",
+                  "both copies have to be 't'",
+                  "dominant traits",
+                  "recessive traits"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_mn_dom",
+                    "criterion": "States that two gene copies control a trait; a single copy of the dominant allele (T) gives a tall plant, while both copies must be recessive (t) for a short plant.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: how Mendel's experiments show that traits may be dominant or recessive",
+            "Question 3: a man with blood group A and a woman with blood group O have a daughter with blood group O",
+            "Exercise 1: breeding tall violet-flowered pea plants with short white-flowered ones",
+            "Exercise 2: light eye colour in children of light-eyed parents",
+            "Figure 8.3: inheritance over two generations with the 1:2:1 ratio of TT, Tt and tt"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_mn_blend",
+              "wrong": "Crossing a tall and a short plant gives medium-height plants because the traits blend.",
+              "fix": "There were no halfway characteristics in the F1 generation: all plants were tall, so only one of the parental traits was seen, not a mixture of the two."
+            }
+          ],
+          "verify": [
+            {
+              "page": 130,
+              "quote": "He took pea plants with different characteristics – a tall plant and a short plant, produced progeny by crossing them",
+              "supports": [
+                "sci10c8_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "there were no halfway characteristics in this first- generation, or F1 progeny",
+              "supports": [
+                "sci10c8_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "All plants were tall.",
+              "supports": [
+                "sci10c8_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "only one of the parental traits was seen, not some mixture of the two.",
+              "supports": [
+                "sci10c8_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "The progeny of the parental plants are, of course, all tall.",
+              "supports": [
+                "sci10c8_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "Instead, one quarter of them are short.",
+              "supports": [
+                "sci10c8_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "both the tallness and shortness traits were inherited in the F1 plants, but only the tallness trait was expressed.",
+              "supports": [
+                "sci10c8_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "two copies of factor (now called genes) controlling traits are present in sexually reproducing organism.",
+              "supports": [
+                "sci10c8_t3c1_kp3"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "a single copy of ‘T’ is enough to make the plant tall, while both copies have to be ‘t’ for the plant to be short.",
+              "supports": [
+                "sci10c8_t3c1_kp3"
+              ]
+            },
+            {
+              "page": 130,
+              "quote": "Traits like ‘T’ are called dominant traits, while those that behave like ‘t’ are called recessive traits.",
+              "supports": [
+                "sci10c8_t3c1_kp3"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch8_t3_c2",
+          "label": "Independent Inheritance of Two Traits",
+          "headingType": "heading",
+          "sourcePages": [
+            131
+          ],
+          "cardText": "What happens when pea plants differing in two characteristics are crossed? A tall plant with round seeds crossed with a short plant with wrinkled seeds gives F1 plants that are all tall with round seeds, so tallness and round seeds are dominant traits. When these F1 plants are self-pollinated, some F2 plants are tall with round seeds and some are short with wrinkled seeds, but there are also new combinations: tall with wrinkled seeds and short with round seeds. These new combinations form when the factors controlling seed shape and seed colour recombine to form the zygote. So the tall/short trait and the round/wrinkled seed trait are independently inherited.",
+          "hint": "Why do tall plants with wrinkled seeds appear in F2 when the parents were tall-round and short-wrinkled?",
+          "probe": "Explain what independent inheritance of two traits means using Mendel's two-trait cross.",
+          "causeChain": "A tall-round by short-wrinkled cross gives all tall-round F1, so tallness and round seeds are dominant -> in F2 new combinations such as tall-wrinkled and short-round appear -> factors for the two traits recombine in the zygote, so the traits are inherited independently",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_indep_chain",
+              "linksChecks": [
+                "chk_sci10c8_in_f1",
+                "chk_sci10c8_in_new"
+              ],
+              "criterion": "Connects the new trait combinations in F2 to the recombination of independent factors.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t3c2_kp1",
+              "weight": 1,
+              "text": "The progeny of a tall plant with round seeds and a short plant with wrinkled seeds are all tall and have round seeds. Tallness and round seeds are thus dominant traits.",
+              "assessment": {
+                "requiredEvidence": [
+                  "tall plant with round seeds",
+                  "short plant with wrinkled-seeds",
+                  "all tall",
+                  "round seeds",
+                  "dominant traits"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_in_f1",
+                    "criterion": "States that crossing a tall round-seeded plant with a short wrinkled-seeded plant gives F1 plants that are all tall with round seeds, so these are dominant traits.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t3c2_kp2",
+              "weight": 2,
+              "text": "Some F2 progeny are tall plants with round seeds and some are short plants with wrinkled seeds, but there are also F2 progeny that show new combinations: tall with wrinkled seeds, or short with round seeds. New combinations are formed when the factors controlling seed shape and seed colour recombine to form the zygote. Thus the tall/short trait and the round/wrinkled seed trait are independently inherited.",
+              "assessment": {
+                "requiredEvidence": [
+                  "new combinations",
+                  "tall, but have wrinkled seeds",
+                  "short, but have round seeds",
+                  "recombine to form zygote",
+                  "independently inherited"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_in_new",
+                    "criterion": "States that F2 plants show new combinations such as tall with wrinkled seeds because factors for different traits recombine in the zygote, so the traits are inherited independently.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_in_linked"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Figure 8.5: 315 round yellow, 108 round green, 101 wrinkled yellow and 32 wrinkled green seeds, a 9:3:3:1 ratio",
+            "Exercise 3: a project to find the dominant coat colour in dogs"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_in_linked",
+              "wrong": "Tallness always comes with round seeds because the two traits are linked.",
+              "fix": "New combinations such as tall with wrinkled seeds and short with round seeds appear in F2, so the traits are inherited independently."
+            }
+          ],
+          "verify": [
+            {
+              "page": 131,
+              "quote": "They are all tall and have round seeds.",
+              "supports": [
+                "sci10c8_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "Tallness and round seeds are thus dominant traits.",
+              "supports": [
+                "sci10c8_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "there would also be some F2 progeny that showed new combinations.",
+              "supports": [
+                "sci10c8_t3c2_kp2"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "Some of them would be tall, but have wrinkled seeds, while others would be short, but have round seeds.",
+              "supports": [
+                "sci10c8_t3c2_kp2"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "Thus, the tall/short trait and the round seed/wrinkled seed trait are independently inherited.",
+              "supports": [
+                "sci10c8_t3c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch8_t4",
+      "title": "How Traits Are Expressed: Genes, DNA and Proteins",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t4_c1",
+          "label": "Genes, Proteins and the Expression of a Trait",
+          "headingType": "heading",
+          "sourcePages": [
+            131
+          ],
+          "cardText": "Cellular DNA is the information source for making proteins in the cell. A section of DNA that provides information for one protein is called the gene for that protein. Take tallness as an example: plants have hormones that trigger growth, so plant height can depend on the amount of a particular plant hormone, which depends on the efficiency of the process for making it. If an enzyme important for this process works efficiently, a lot of hormone is made and the plant is tall. If the gene for that enzyme has an alteration that makes the enzyme less efficient, less hormone is made and the plant is short. Thus genes control characteristics, or traits.",
+          "hint": "How can a change in one gene make a plant short?",
+          "probe": "Explain how genes control traits using the example of plant height.",
+          "causeChain": "DNA gives information for proteins and a section for one protein is a gene -> an enzyme's efficiency decides how much growth hormone is made -> an altered gene gives a less efficient enzyme, less hormone and a short plant, so genes control traits",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_gene_chain",
+              "linksChecks": [
+                "chk_sci10c8_ge_gene",
+                "chk_sci10c8_ge_height"
+              ],
+              "criterion": "Connects genes as the information for proteins to enzyme efficiency, hormone amount and the resulting trait.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t4c1_kp1",
+              "weight": 2,
+              "text": "Cellular DNA is the information source for making proteins in the cell. A section of DNA that provides information for one protein is called the gene for that protein.",
+              "assessment": {
+                "requiredEvidence": [
+                  "DNA",
+                  "information source for making proteins",
+                  "section of DNA",
+                  "one protein",
+                  "gene"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ge_gene",
+                    "criterion": "States that DNA is the information source for making proteins and that a section of DNA giving information for one protein is called the gene for that protein.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_ge_direct"
+                ]
+              }
+            },
+            {
+              "id": "sci10c8_t4c1_kp2",
+              "weight": 2,
+              "text": "Plant height can depend on the amount of a particular plant hormone, which depends on the efficiency of the process for making it. If the enzyme important for this process works efficiently, a lot of hormone will be made and the plant will be tall. If the gene for that enzyme has an alteration that makes the enzyme less efficient, the amount of hormone will be less and the plant will be short. Thus, genes control characteristics, or traits.",
+              "assessment": {
+                "requiredEvidence": [
+                  "plant hormone",
+                  "enzyme",
+                  "efficiently",
+                  "a lot of hormone",
+                  "tall",
+                  "alteration",
+                  "less efficient",
+                  "short",
+                  "genes control characteristics"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ge_height",
+                    "criterion": "Explains that an efficient enzyme (from an unaltered gene) makes plenty of growth hormone and a tall plant, while an altered gene gives a less efficient enzyme, less hormone and a short plant, so genes control traits.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 1: genetic make-up of the tall parent in a Mendelian experiment with tall violet and short white pea plants"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_ge_direct",
+              "wrong": "A gene directly makes the plant tall without involving any protein.",
+              "fix": "A gene provides the information for making a protein, such as an enzyme, which controls the amount of hormone and so the trait."
+            }
+          ],
+          "verify": [
+            {
+              "page": 131,
+              "quote": "Cellular DNA is the information source for making proteins in the cell.",
+              "supports": [
+                "sci10c8_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "A section of DNA that provides information for one protein is called the gene for that protein.",
+              "supports": [
+                "sci10c8_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "Plant height can thus depend on the amount of a particular plant hormone.",
+              "supports": [
+                "sci10c8_t4c1_kp2"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "If this enzyme works efficiently, a lot of hormone will be made, and the plant will be tall.",
+              "supports": [
+                "sci10c8_t4c1_kp2"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "If the gene for that enzyme has an alteration that makes the enzyme less efficient, the amount of hormone will be less, and the plant will be short.",
+              "supports": [
+                "sci10c8_t4c1_kp2"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "Thus, genes control characteristics, or traits.",
+              "supports": [
+                "sci10c8_t4c1_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch8_t5",
+      "title": "Inheritance from Both Parents and Chromosomes in Germ-cells",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t5_c1",
+          "label": "Two Sets of Genes and the Role of Chromosomes in Germ-cells",
+          "headingType": "heading",
+          "sourcePages": [
+            131,
+            132
+          ],
+          "cardText": "If both parents help determine the trait in the progeny, both must contribute a copy of the same gene, so each pea plant has two sets of all genes, one from each parent. Each germ-cell must therefore have only one gene set. If progeny inherited a single whole gene set from each parent, characteristics like R and y would be linked and could not be independently inherited. This is explained by each gene set being present not as one long thread of DNA but as separate independent pieces, each called a chromosome. Each cell has two copies of each chromosome, one from each parent. Every germ-cell takes one chromosome from each pair, either of maternal or paternal origin. When two germ-cells combine they restore the normal number of chromosomes, ensuring the stability of the DNA of the species.",
+          "hint": "Why are genes carried on separate chromosomes and how do germ-cells and fertilisation keep the chromosome number steady?",
+          "probe": "Explain how an equal genetic contribution from both parents is ensured and why genes must be on separate chromosomes.",
+          "causeChain": "Each cell has two sets of genes, one from each parent, so germ-cells must carry only one set -> the gene set is in separate independent chromosomes, so each germ-cell takes one chromosome from each pair and traits can be independent -> combining two germ-cells restores the normal number of chromosomes and stabilises the species' DNA",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_chromosome_chain",
+              "linksChecks": [
+                "chk_sci10c8_ch_sets",
+                "chk_sci10c8_ch_chromosomes",
+                "chk_sci10c8_ch_restore"
+              ],
+              "criterion": "Connects two gene sets per cell to separate chromosomes in the germ-cells and to the restored chromosome number at fertilisation.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t5c1_kp1",
+              "weight": 2,
+              "text": "If both parents can help determine the trait in the progeny, both parents must be contributing a copy of the same gene. This means each pea plant must have two sets of all genes, one inherited from each parent. For this mechanism to work, each germ cell must have only one gene set.",
+              "assessment": {
+                "requiredEvidence": [
+                  "both parents",
+                  "a copy of the same gene",
+                  "two sets of all genes",
+                  "one inherited from each parent",
+                  "each germ cell",
+                  "only one gene set"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ch_sets",
+                    "criterion": "States that both parents contribute a copy of each gene, so each plant has two sets of all genes, one from each parent, and each germ-cell must therefore have only one gene set.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t5c1_kp2",
+              "weight": 2,
+              "text": "Each gene set is present not as a single long thread of DNA but as separate independent pieces, each called a chromosome. Each cell will have two copies of each chromosome, one each from the male and female parents. Every germ-cell will take one chromosome from each pair, and these may be of either maternal or paternal origin.",
+              "assessment": {
+                "requiredEvidence": [
+                  "separate independent pieces",
+                  "chromosome",
+                  "two copies of each chromosome",
+                  "male and female parents",
+                  "every germ-cell",
+                  "one chromosome from each pair",
+                  "maternal or paternal origin"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ch_chromosomes",
+                    "criterion": "States that genes are on separate independent chromosomes, each cell has two copies of each, and every germ-cell takes one chromosome from each pair, of either maternal or paternal origin.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_ch_linked"
+                ]
+              }
+            },
+            {
+              "id": "sci10c8_t5c1_kp3",
+              "weight": 1,
+              "text": "When two germ cells combine, they will restore the normal number of chromosomes in the progeny, ensuring the stability of the DNA of the species. Such a mechanism of inheritance explains the results of the Mendel experiments, and is used by all sexually reproducing organisms.",
+              "assessment": {
+                "requiredEvidence": [
+                  "two germ cells combine",
+                  "restore the normal number of chromosomes",
+                  "stability of the DNA of the species",
+                  "explains the results of the Mendel experiments"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_ch_restore",
+                    "criterion": "States that when two germ-cells combine the normal number of chromosomes is restored in the progeny, ensuring the stability of the species' DNA.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 4: how the equal genetic contribution of male and female parents is ensured in the progeny",
+            "Question 2: how Mendel's experiments show that traits are inherited independently"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_ch_linked",
+              "wrong": "A germ-cell carries one whole undivided gene set from one parent, so traits stay linked.",
+              "fix": "Each gene set is present as separate independent pieces called chromosomes, and every germ-cell takes one chromosome from each pair, which allows traits to be independently inherited."
+            }
+          ],
+          "verify": [
+            {
+              "page": 131,
+              "quote": "If both parents can help determine the trait in the progeny, both parents must be contributing a copy of the same gene.",
+              "supports": [
+                "sci10c8_t5c1_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "each pea plant must have two sets of all genes, one inherited from",
+              "supports": [
+                "sci10c8_t5c1_kp1"
+              ]
+            },
+            {
+              "page": 131,
+              "quote": "have only one gene set.",
+              "supports": [
+                "sci10c8_t5c1_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "This is explained by the fact that each gene set is present, not as a single long thread of DNA, but as separate independent pieces, each called a chromosome.",
+              "supports": [
+                "sci10c8_t5c1_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "each cell will have two copies of each chromosome, one each from the male and female parents.",
+              "supports": [
+                "sci10c8_t5c1_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "Every germ- cell will take one chromosome from each pair and these may be of either maternal or paternal origin.",
+              "supports": [
+                "sci10c8_t5c1_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "When two germ cells combine, they will restore the normal number of chromosomes in the progeny, ensuring the stability of the DNA of the species.",
+              "supports": [
+                "sci10c8_t5c1_kp3"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "is used by all sexually reproducing organisms.",
+              "supports": [
+                "sci10c8_t5c1_kp3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch8_t6",
+      "title": "Sex Determination",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch8_t6_c1",
+          "label": "How Sex Is Determined in Different Species",
+          "headingType": "heading",
+          "sourcePages": [
+            132
+          ],
+          "cardText": "Different species use very different strategies to determine the sex of a newborn. Some rely entirely on environmental cues: in a few reptiles, the temperature at which fertilised eggs are kept determines whether the animals developing in the eggs will be male or female. In snails, individuals can change sex, showing sex is not genetically determined. But in human beings the sex of the individual is largely genetically determined: the genes inherited from our parents decide whether we will be boys or girls.",
+          "hint": "Which species determine sex by temperature or by changing sex, and how is it different in humans?",
+          "probe": "Explain how sex determination differs between reptiles, snails and humans.",
+          "causeChain": "Species use very different strategies for deciding sex -> some reptiles use the temperature at which eggs are kept, and snails can change sex, so it is not genetic -> in humans sex is largely genetically determined by the genes inherited from the parents",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_sexstrat_chain",
+              "linksChecks": [
+                "chk_sci10c8_sd_strategies",
+                "chk_sci10c8_sd_human"
+              ],
+              "criterion": "Connects environmental and changeable sex determination in reptiles and snails to genetic sex determination in humans.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t6c1_kp1",
+              "weight": 2,
+              "text": "Different species use very different strategies for determining sex. Some rely entirely on environmental cues. In some animals like a few reptiles, the temperature at which fertilised eggs are kept determines whether the animals will be male or female. In other animals, such as snails, individuals can change sex, indicating that sex is not genetically determined.",
+              "assessment": {
+                "requiredEvidence": [
+                  "different strategies",
+                  "environmental cues",
+                  "reptiles",
+                  "temperature",
+                  "fertilised eggs",
+                  "snails",
+                  "change sex",
+                  "not genetically determined"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_sd_strategies",
+                    "criterion": "States that some species rely on environmental cues for sex, such as the temperature of incubation in a few reptiles, and that snails can change sex, so it is not genetically determined.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_sd_all"
+                ]
+              }
+            },
+            {
+              "id": "sci10c8_t6c1_kp2",
+              "weight": 1,
+              "text": "In human beings, the sex of the individual is largely genetically determined. In other words, the genes inherited from our parents decide whether we will be boys or girls.",
+              "assessment": {
+                "requiredEvidence": [
+                  "human beings",
+                  "largely genetically determined",
+                  "genes inherited from our parents",
+                  "boys or girls"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_sd_human",
+                    "criterion": "States that in humans sex is largely genetically determined by the genes inherited from the parents.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 4: how the sex of the child is determined in human beings"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_sd_all",
+              "wrong": "The sex of every animal is decided by its chromosomes.",
+              "fix": "In some animals, like a few reptiles, the temperature at which fertilised eggs are kept determines sex, and snails can change sex, so sex is not always genetically determined."
+            }
+          ],
+          "verify": [
+            {
+              "page": 132,
+              "quote": "Different species use very different strategies for this.",
+              "supports": [
+                "sci10c8_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "Some rely entirely on environmental cues.",
+              "supports": [
+                "sci10c8_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "the temperature at which fertilised eggs are kept determines whether the animals developing in the eggs will be male or female.",
+              "supports": [
+                "sci10c8_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "individuals can change sex, indicating that sex is not genetically determined.",
+              "supports": [
+                "sci10c8_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "in human beings, the sex of the individual is largely genetically determined.",
+              "supports": [
+                "sci10c8_t6c1_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "the genes inherited from our parents decide whether we will be boys or girls.",
+              "supports": [
+                "sci10c8_t6c1_kp2"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch8_t6_c2",
+          "label": "Sex Chromosomes: X and Y in Human Beings",
+          "headingType": "heading",
+          "sourcePages": [
+            132
+          ],
+          "cardText": "Most human chromosomes are paired, with a maternal and a paternal copy, and we have 22 such pairs. But one pair, the sex chromosomes, is not always a perfect pair. Women have a perfect pair, both called X, while men have a mismatched pair with one normal-sized X and one short Y. So women are XX and men are XY. Half the children will be boys and half girls. All children inherit an X chromosome from their mother, whether they are boys or girls, so the sex of children is determined by what they inherit from their father. A child inheriting an X from the father will be a girl, and one inheriting a Y will be a boy.",
+          "hint": "Which parent decides the sex of the child and why?",
+          "probe": "Explain how X and Y chromosomes determine the sex of a child.",
+          "causeChain": "Women are XX and men are XY, so every egg carries an X -> a sperm carries either X or Y -> the child's sex depends on the father's contribution: X gives a girl and Y gives a boy",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c8_xy_chain",
+              "linksChecks": [
+                "chk_sci10c8_xy_pairs",
+                "chk_sci10c8_xy_father"
+              ],
+              "criterion": "Connects XX and XY chromosomes to every child getting an X from the mother and the father's X or Y deciding the sex.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c8_t6c2_kp1",
+              "weight": 2,
+              "text": "Most human chromosomes have a maternal and a paternal copy, and we have 22 such pairs. But one pair, called the sex chromosomes, is odd in not always being a perfect pair. Women have a perfect pair of sex chromosomes, both called X. Men have a mismatched pair in which one is a normal-sized X while the other is a short one called Y. So women are XX, while men are XY.",
+              "assessment": {
+                "requiredEvidence": [
+                  "22 such pairs",
+                  "sex chromosomes",
+                  "perfect pair",
+                  "both called X",
+                  "mismatched pair",
+                  "short one called Y",
+                  "XX",
+                  "XY"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_xy_pairs",
+                    "criterion": "States that humans have 22 matched pairs plus a pair of sex chromosomes: women are XX (a perfect pair) and men are XY (one normal X and one short Y).",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c8_t6c2_kp2",
+              "weight": 2,
+              "text": "Half the children will be boys and half will be girls. All children will inherit an X chromosome from their mother regardless of whether they are boys or girls. Thus, the sex of the children will be determined by what they inherit from their father. A child who inherits an X chromosome from her father will be a girl, and one who inherits a Y chromosome from him will be a boy.",
+              "assessment": {
+                "requiredEvidence": [
+                  "half the children",
+                  "X chromosome from their mother",
+                  "determined by what they inherit from their father",
+                  "X chromosome",
+                  "girl",
+                  "Y chromosome",
+                  "boy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c8_xy_father",
+                    "criterion": "States that every child inherits an X from the mother, so the child's sex depends on the father: an X from him gives a girl and a Y gives a boy, in about equal numbers.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c8_xy_mother"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 4: how the sex of the child is determined in human beings",
+            "Figure 8.6: sex determination in human beings",
+            "What you have learnt: the sex of the child depends on whether the paternal chromosome is X (for girls) or Y (for boys)"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c8_xy_mother",
+              "wrong": "The mother decides whether the child will be a boy or a girl.",
+              "fix": "All children inherit an X chromosome from their mother, so the sex of the child is determined by what they inherit from their father, an X or a Y."
+            }
+          ],
+          "verify": [
+            {
+              "page": 132,
+              "quote": "Most human chromosomes have a maternal and a paternal copy, and we have 22 such pairs.",
+              "supports": [
+                "sci10c8_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "one pair, called the sex chromosomes, is odd in not always being a perfect pair.",
+              "supports": [
+                "sci10c8_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "Women have a perfect pair of sex chromosomes, both called X.",
+              "supports": [
+                "sci10c8_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "But men have a mismatched pair in which one is a normal-sized X while the other is a short one called Y.",
+              "supports": [
+                "sci10c8_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "So women are XX, while men are XY.",
+              "supports": [
+                "sci10c8_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "half the children will be boys and half will be girls.",
+              "supports": [
+                "sci10c8_t6c2_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "All children will inherit an X chromosome from their mother regardless of whether they are boys or girls.",
+              "supports": [
+                "sci10c8_t6c2_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "Thus, the sex of the children will be determined by what they inherit from their father.",
+              "supports": [
+                "sci10c8_t6c2_kp2"
+              ]
+            },
+            {
+              "page": 132,
+              "quote": "A child who inherits an X chromosome from her father will be a girl, and one who inherits a Y chromosome from him will be a boy.",
+              "supports": [
+                "sci10c8_t6c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4821 @@
+{
+  "version": 1,
+  "seed": 2026,
+  "concepts": [
+    "civ10_ch1_t1_c2",
+    "civ10_ch1_t2_c0",
+    "civ10_ch1_t2_c2",
+    "civ10_ch1_t3_c0",
+    "civ10_ch1_t3_c1",
+    "civ10_ch1_t3_c4",
+    "civ10_ch2_t3_c1",
+    "civ10_ch2_t3_c2",
+    "civ10_ch2_t3_c3",
+    "civ10_ch2_t4_c1",
+    "civ10_ch2_t4_c2",
+    "civ10_ch2_t4_c3",
+    "civ10_ch3_t1_c1",
+    "civ10_ch3_t1_c2",
+    "civ10_ch3_t1_c4",
+    "civ10_ch3_t3_c1",
+    "civ10_ch3_t3_c2",
+    "civ10_ch3_t3_c3",
+    "civ10_ch4_t1_c1",
+    "civ10_ch4_t1_c2",
+    "civ10_ch4_t2_c2",
+    "civ10_ch4_t2_c3",
+    "civ10_ch4_t3_c2",
+    "civ10_ch4_t4_c1",
+    "civ10_ch5_t2_c2",
+    "civ10_ch5_t2_c3",
+    "civ10_ch5_t3_c2",
+    "civ10_ch5_t5_c1",
+    "civ10_ch5_t5_c2",
+    "eco10_ch1_t2_c2",
+    "eco10_ch1_t3_c1",
+    "eco10_ch1_t3_c2",
+    "eco10_ch1_t3_c3",
+    "eco10_ch2_t1_c2",
+    "eco10_ch2_t2_c1",
+    "eco10_ch2_t2_c3",
+    "eco10_ch2_t2_c4",
+    "eco10_ch2_t5_c1",
+    "eco10_ch2_t5_c2",
+    "eco10_ch3_t3_c1",
+    "eco10_ch3_t5_c1",
+    "eco10_ch3_t5_c2",
+    "eco10_ch3_t6_c1",
+    "eco10_ch3_t6_c2",
+    "eco10_ch4_t1_c1",
+    "eco10_ch4_t4_c1",
+    "eco10_ch4_t5_c1",
+    "eco10_ch4_t5_c2",
+    "eco10_ch4_t6_c1",
+    "eco10_ch4_t6_c3",
+    "eco10_ch5_t2_c1",
+    "eco10_ch5_t3_c3",
+    "eco10_ch5_t3_c5",
+    "eco10_ch5_t4_c1",
+    "geo10_ch1_t2_c2",
+    "geo10_ch1_t3_c1",
+    "geo10_ch1_t3_c3",
+    "geo10_ch1_t4_c1",
+    "geo10_ch1_t4_c2",
+    "geo10_ch1_t4_c3",
+    "geo10_ch1_t6_c3",
+    "geo10_ch1_t6_c4",
+    "geo10_ch1_t6_c5",
+    "geo10_ch1_t7_c2",
+    "geo10_ch2_t1_c1",
+    "geo10_ch2_t2_c1",
+    "geo10_ch2_t2_c4",
+    "geo10_ch2_t4_c3",
+    "geo10_ch2_t4_c4",
+    "geo10_ch3_t1_c1",
+    "geo10_ch3_t2_c1",
+    "geo10_ch3_t2_c2",
+    "geo10_ch3_t2_c4",
+    "geo10_ch3_t3_c1",
+    "geo10_ch3_t4_c1"
+  ],
+  "slots": [
+    {
+      "id": "civ10_ch1_t1_c2.S1",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "All Tamils in Sri Lanka form one group."
+    },
+    {
+      "id": "civ10_ch1_t1_c2.S2",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t1_c2.S3",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t1_c2.S4",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t1_c2.P1",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t1_c2.P2",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t1_c2.P3",
+      "conceptId": "civ10_ch1_t1_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.S1",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Moral reasons are about better outcomes, and prudential reasons are about the value of sharing itself."
+    },
+    {
+      "id": "civ10_ch1_t2_c0.S2",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.S3",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.S4",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.P1",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.P2",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c0.P3",
+      "conceptId": "civ10_ch1_t2_c0",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.S1",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The moral reason for power sharing is avoiding violence."
+    },
+    {
+      "id": "civ10_ch1_t2_c2.S2",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.S3",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.S4",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.P1",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.P2",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t2_c2.P3",
+      "conceptId": "civ10_ch1_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.S1",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Power must stay in one place, or the government cannot take quick decisions, so democracies avoid dividing it."
+    },
+    {
+      "id": "civ10_ch1_t3_c0.S2",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.S3",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.S4",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.P1",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.P2",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c0.P3",
+      "conceptId": "civ10_ch1_t3_c0",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.S1",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The judiciary works under the executive because judges are appointed by it."
+    },
+    {
+      "id": "civ10_ch1_t3_c1.S2",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.S3",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.S4",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.P1",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.P2",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c1.P3",
+      "conceptId": "civ10_ch1_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.S1",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Political parties share power only when they form a coalition government."
+    },
+    {
+      "id": "civ10_ch1_t3_c4.S2",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.S3",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.S4",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.P1",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.P2",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch1_t3_c4.P3",
+      "conceptId": "civ10_ch1_t3_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.S1",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Drawing State borders on the basis of language divided the country."
+    },
+    {
+      "id": "civ10_ch2_t3_c1.S2",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.S3",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.S4",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.P1",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.P2",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c1.P3",
+      "conceptId": "civ10_ch2_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.S1",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Hindi is the national language of India."
+    },
+    {
+      "id": "civ10_ch2_t3_c2.S2",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.S3",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.S4",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.P1",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.P2",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c2.P3",
+      "conceptId": "civ10_ch2_t3_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.S1",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Coalition governments at the Centre made State governments weaker."
+    },
+    {
+      "id": "civ10_ch2_t3_c3.S2",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.S3",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.S4",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.P1",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.P2",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t3_c3.P3",
+      "conceptId": "civ10_ch2_t3_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.S1",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Decentralisation means sending State government officials to work in villages."
+    },
+    {
+      "id": "civ10_ch2_t4_c1.S2",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.S3",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.S4",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.P1",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.P2",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c1.P3",
+      "conceptId": "civ10_ch2_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.S1",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The gram panchayat and the gram sabha are the same thing."
+    },
+    {
+      "id": "civ10_ch2_t4_c2.S2",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.S3",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.S4",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.P1",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.P2",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c2.P3",
+      "conceptId": "civ10_ch2_t4_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.S1",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Local governments now have full powers and enough resources of their own."
+    },
+    {
+      "id": "civ10_ch2_t4_c3.S2",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.S3",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.S4",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.P1",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.P2",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch2_t4_c3.P3",
+      "conceptId": "civ10_ch2_t4_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.S1",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The gender division is natural because it comes from biological differences between men and women."
+    },
+    {
+      "id": "civ10_ch3_t1_c1.S2",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.S3",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.S4",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.P1",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.P2",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c1.P3",
+      "conceptId": "civ10_ch3_t1_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.S1",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Only women can be feminists."
+    },
+    {
+      "id": "civ10_ch3_t1_c2.S2",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.S3",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.S4",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.P1",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.P2",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c2.P3",
+      "conceptId": "civ10_ch3_t1_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.S1",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "All social divisions, including gender, should be kept out of politics."
+    },
+    {
+      "id": "civ10_ch3_t1_c4.S2",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.S3",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.S4",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.P1",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.P2",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t1_c4.P3",
+      "conceptId": "civ10_ch3_t1_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.S1",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.S2",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.S3",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.S4",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.P1",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.P2",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c1.P3",
+      "conceptId": "civ10_ch3_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.S1",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Caste no longer matters in modern India."
+    },
+    {
+      "id": "civ10_ch3_t3_c2.S2",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.S3",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.S4",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.P1",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.P2",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c2.P3",
+      "conceptId": "civ10_ch3_t3_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.S1",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.S2",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.S3",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.S4",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.P1",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.P2",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch3_t3_c3.P3",
+      "conceptId": "civ10_ch3_t3_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.S1",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Parties do nothing but divide people."
+    },
+    {
+      "id": "civ10_ch4_t1_c1.S2",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.S3",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.S4",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.P1",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.P2",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c1.P3",
+      "conceptId": "civ10_ch4_t1_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.S1",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.S2",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.S3",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.S4",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.P1",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.P2",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t1_c2.P3",
+      "conceptId": "civ10_ch4_t1_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.S1",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "India could switch to a two-party system by passing a law."
+    },
+    {
+      "id": "civ10_ch4_t2_c2.S2",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.S3",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.S4",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.P1",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.P2",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c2.P3",
+      "conceptId": "civ10_ch4_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.S1",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Indian citizens are indifferent to political parties."
+    },
+    {
+      "id": "civ10_ch4_t2_c3.S2",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.S3",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.S4",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.P1",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.P2",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t2_c3.P3",
+      "conceptId": "civ10_ch4_t2_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.S1",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "B.R. Ambedkar founded the Bahujan Samaj Party."
+    },
+    {
+      "id": "civ10_ch4_t3_c2.S2",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.S3",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.S4",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.P1",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.P2",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t3_c2.P3",
+      "conceptId": "civ10_ch4_t3_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.S1",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.S2",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.S3",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.S4",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.P1",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.P2",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch4_t4_c1.P3",
+      "conceptId": "civ10_ch4_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.S1",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Non-democratic governments are cleaner and more sensitive to people's needs."
+    },
+    {
+      "id": "civ10_ch5_t2_c2.S2",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.S3",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.S4",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.P1",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.P2",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c2.P3",
+      "conceptId": "civ10_ch5_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.S1",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.S2",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.S3",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.S4",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.P1",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.P2",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t2_c3.P3",
+      "conceptId": "civ10_ch5_t2_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.S1",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Democracy is majority rule, the poor are the majority, so democracy must be rule of the poor."
+    },
+    {
+      "id": "civ10_ch5_t3_c2.S2",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.S3",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.S4",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.P1",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.P2",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t3_c2.P3",
+      "conceptId": "civ10_ch5_t3_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.S1",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "In a democracy, women and disadvantaged castes are already treated equally."
+    },
+    {
+      "id": "civ10_ch5_t5_c1.S2",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.S3",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.S4",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.P1",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.P2",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c1.P3",
+      "conceptId": "civ10_ch5_t5_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.S1",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "People's complaints about democracy show that democracy has failed."
+    },
+    {
+      "id": "civ10_ch5_t5_c2.S2",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.S3",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.S4",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.P1",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.P2",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "civ10_ch5_t5_c2.P3",
+      "conceptId": "civ10_ch5_t5_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.S1",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "If average income rises, every section of the economy must be better off."
+    },
+    {
+      "id": "eco10_ch1_t2_c2.S2",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.S3",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.S4",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.P1",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.P2",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t2_c2.P3",
+      "conceptId": "eco10_ch1_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.S1",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Because Kerala does better than Haryana, per capita income is useless and should not be used."
+    },
+    {
+      "id": "eco10_ch1_t3_c1.S2",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.S3",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.S4",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.P1",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.P2",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c1.P3",
+      "conceptId": "eco10_ch1_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.S1",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.S2",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.S3",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.S4",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.P1",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.P2",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c2.P3",
+      "conceptId": "eco10_ch1_t3_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.S1",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The Human Development Report ranks countries only by their income, like the World Bank."
+    },
+    {
+      "id": "eco10_ch1_t3_c3.S2",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.S3",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.S4",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.P1",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.P2",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch1_t3_c3.P3",
+      "conceptId": "eco10_ch1_t3_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.S1",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The three sectors work independently of each other."
+    },
+    {
+      "id": "eco10_ch2_t1_c2.S2",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.S3",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.S4",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.P1",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.P2",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t1_c2.P3",
+      "conceptId": "eco10_ch2_t1_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.S1",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "GDP adds up the value of every good sold, including raw materials and intermediate goods."
+    },
+    {
+      "id": "eco10_ch2_t2_c1.S2",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.S3",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.S4",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.P1",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.P2",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c1.P3",
+      "conceptId": "eco10_ch2_t2_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.S1",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The tertiary sector plays no significant role in India's economy."
+    },
+    {
+      "id": "eco10_ch2_t2_c3.S2",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.S3",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.S4",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.P1",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.P2",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c3.P3",
+      "conceptId": "eco10_ch2_t2_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.S1",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.S2",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.S3",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.S4",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.P1",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.P2",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t2_c4.P3",
+      "conceptId": "eco10_ch2_t2_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.S1",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "The public sector, like the private sector, runs mainly to make profits."
+    },
+    {
+      "id": "eco10_ch2_t5_c1.S2",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.S3",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.S4",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.P1",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.P2",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c1.P3",
+      "conceptId": "eco10_ch2_t5_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.S1",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.S2",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.S3",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.S4",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.P1",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.P2",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch2_t5_c2.P3",
+      "conceptId": "eco10_ch2_t5_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.S1",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Banks keep all the money people deposit locked up in their vaults."
+    },
+    {
+      "id": "eco10_ch3_t3_c1.S2",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.S3",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.S4",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.P1",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.P2",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t3_c1.P3",
+      "conceptId": "eco10_ch3_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.S1",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.S2",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.S3",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.S4",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.P1",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.P2",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c1.P3",
+      "conceptId": "eco10_ch3_t5_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.S1",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.S2",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.S3",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.S4",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.P1",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.P2",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t5_c2.P3",
+      "conceptId": "eco10_ch3_t5_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.S1",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "A loan from an employer or a trader is formal credit."
+    },
+    {
+      "id": "eco10_ch3_t6_c1.S2",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.S3",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.S4",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.P1",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.P2",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c1.P3",
+      "conceptId": "eco10_ch3_t6_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.S1",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.S2",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.S3",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.S4",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.P1",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.P2",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch3_t6_c2.P3",
+      "conceptId": "eco10_ch3_t6_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.S1",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Any company that sells its products in other countries is an MNC."
+    },
+    {
+      "id": "eco10_ch4_t1_c1.S2",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.S3",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.S4",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.P1",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.P2",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t1_c1.P3",
+      "conceptId": "eco10_ch4_t1_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.S1",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Globalisation means people can move freely between countries."
+    },
+    {
+      "id": "eco10_ch4_t4_c1.S2",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.S3",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.S4",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.P1",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.P2",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t4_c1.P3",
+      "conceptId": "eco10_ch4_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.S1",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.S2",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.S3",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.S4",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.P1",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.P2",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c1.P3",
+      "conceptId": "eco10_ch4_t5_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.S1",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Trade barriers are always harmful."
+    },
+    {
+      "id": "eco10_ch4_t5_c2.S2",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.S3",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.S4",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.P1",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.P2",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t5_c2.P3",
+      "conceptId": "eco10_ch4_t5_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.S1",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Globalisation has improved the living conditions of all people in India."
+    },
+    {
+      "id": "eco10_ch4_t6_c1.S2",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.S3",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.S4",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.P1",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.P2",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c1.P3",
+      "conceptId": "eco10_ch4_t6_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.S1",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.S2",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.S3",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.S4",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.P1",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.P2",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch4_t6_c3.P3",
+      "conceptId": "eco10_ch4_t6_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.S1",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.S2",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.S3",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.S4",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.P1",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.P2",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t2_c1.P3",
+      "conceptId": "eco10_ch5_t2_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.S1",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "A seller can make you buy a second item as a condition for selling the first."
+    },
+    {
+      "id": "eco10_ch5_t3_c3.S2",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.S3",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.S4",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.P1",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.P2",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c3.P3",
+      "conceptId": "eco10_ch5_t3_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.S1",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "A consumer protection council is the court that decides consumer cases."
+    },
+    {
+      "id": "eco10_ch5_t3_c5.S2",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.S3",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.S4",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.P1",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.P2",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t3_c5.P3",
+      "conceptId": "eco10_ch5_t3_c5",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.S1",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Every product sold in India must carry an ISI or Agmark certification."
+    },
+    {
+      "id": "eco10_ch5_t4_c1.S2",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.S3",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.S4",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.P1",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.P2",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "eco10_ch5_t4_c1.P3",
+      "conceptId": "eco10_ch5_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.S1",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Sustainable development means stopping development to protect the environment."
+    },
+    {
+      "id": "geo10_ch1_t2_c2.S2",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.S3",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.S4",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.P1",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.P2",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t2_c2.P3",
+      "conceptId": "geo10_ch1_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.S1",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.S2",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.S3",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.S4",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.P1",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.P2",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c1.P3",
+      "conceptId": "geo10_ch1_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.S1",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Mass production and production by the masses mean the same thing."
+    },
+    {
+      "id": "geo10_ch1_t3_c3.S2",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.S3",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.S4",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.P1",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.P2",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t3_c3.P3",
+      "conceptId": "geo10_ch1_t3_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.S1",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.S2",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.S3",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.S4",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.P1",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.P2",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c1.P3",
+      "conceptId": "geo10_ch1_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.S1",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Net sown area and gross cropped area are the same."
+    },
+    {
+      "id": "geo10_ch1_t4_c2.S2",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.S3",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.S4",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.P1",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.P2",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c2.P3",
+      "conceptId": "geo10_ch1_t4_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.S1",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.S2",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.S3",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.S4",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.P1",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.P2",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t4_c3.P3",
+      "conceptId": "geo10_ch1_t4_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.S1",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.S2",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.S3",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.S4",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.P1",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.P2",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c3.P3",
+      "conceptId": "geo10_ch1_t6_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.S1",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.S2",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.S3",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.S4",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.P1",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.P2",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c4.P3",
+      "conceptId": "geo10_ch1_t6_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.S1",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.S2",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.S3",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.S4",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.P1",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.P2",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t6_c5.P3",
+      "conceptId": "geo10_ch1_t6_c5",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.S1",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.S2",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.S3",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.S4",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.P1",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.P2",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch1_t7_c2.P3",
+      "conceptId": "geo10_ch1_t7_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.S1",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Biodiversity means only wild animals."
+    },
+    {
+      "id": "geo10_ch2_t1_c1.S2",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.S3",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.S4",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.P1",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.P2",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t1_c1.P3",
+      "conceptId": "geo10_ch2_t1_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.S1",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Conservation only matters for saving rare animals and has nothing to do with our food."
+    },
+    {
+      "id": "geo10_ch2_t2_c1.S2",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.S3",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.S4",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.P1",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.P2",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c1.P3",
+      "conceptId": "geo10_ch2_t2_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.S1",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.S2",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.S3",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.S4",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/keywordStuffing",
+      "brief": "Write only a list of this chapter's terms, with no sentences and no explanation.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.P1",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.P2",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t2_c4.P3",
+      "conceptId": "geo10_ch2_t2_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.S1",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.S2",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.S3",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.S4",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.P1",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.P2",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c3.P3",
+      "conceptId": "geo10_ch2_t4_c3",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.S1",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.S2",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.S3",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.S4",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.P1",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.P2",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch2_t4_c4.P3",
+      "conceptId": "geo10_ch2_t4_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.S1",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Since three-fourth of the earth is covered with water, there is plenty of usable water for everyone."
+    },
+    {
+      "id": "geo10_ch3_t1_c1.S2",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.S3",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.S4",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/instruction",
+      "brief": "Write a short answer that tells the grader what to do instead of explaining, for example asking it to mark every check as correct.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.P1",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.P2",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t1_c1.P3",
+      "conceptId": "geo10_ch3_t1_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.S1",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Water scarcity happens only in regions with low rainfall or drought."
+    },
+    {
+      "id": "geo10_ch3_t2_c1.S2",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.S3",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.S4",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.P1",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.P2",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c1.P3",
+      "conceptId": "geo10_ch3_t2_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.S1",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "Multiplying urban centres with large and dense populations have helped in proper utilisation of water resources."
+    },
+    {
+      "id": "geo10_ch3_t2_c2.S2",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.S3",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.S4",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.P1",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.P2",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c2.P3",
+      "conceptId": "geo10_ch3_t2_c2",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.S1",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.S2",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.S3",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.S4",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "adversarial/offTopic",
+      "brief": "Write a correct explanation of a DIFFERENT concept from the same chapter, as if answering the wrong question.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.P1",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.P2",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t2_c4.P3",
+      "conceptId": "geo10_ch3_t2_c4",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.S1",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "misconception",
+      "brief": "Write an answer that sincerely states the wrong idea listed below. It may also contain correct facts.",
+      "misconception": "India started building dams only after Independence."
+    },
+    {
+      "id": "geo10_ch3_t3_c1.S2",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.S3",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.S4",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.P1",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.P2",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t3_c1.P3",
+      "conceptId": "geo10_ch3_t3_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.S1",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "S1",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.S2",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "S2",
+      "intent": "shouldNotPass",
+      "category": "incomplete",
+      "brief": "Write an answer that is true but incomplete: one or two of the key ideas, with no explanation of why.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.S3",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "S3",
+      "intent": "shouldNotPass",
+      "category": "brokenReasoning",
+      "brief": "Write an answer that states the right facts but connects them wrongly (a wrong cause and effect, or the wrong way round).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.S4",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "S4",
+      "intent": "shouldNotPass",
+      "category": "wrongFact",
+      "brief": "Write a fluent, plausible answer with at least one wrong factual claim about this concept (not the listed misconception, if any).",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.P1",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "P1",
+      "intent": "shouldPass",
+      "category": "textbook",
+      "brief": "Explain the concept completely, in the words of the textbook, covering every key idea.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.P2",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "P2",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    },
+    {
+      "id": "geo10_ch3_t4_c1.P3",
+      "conceptId": "geo10_ch3_t4_c1",
+      "slot": "P3",
+      "intent": "shouldPass",
+      "category": "ownWords",
+      "brief": "Explain the concept completely, as a student would say it aloud in everyday words. Avoid the textbook's technical terms where you can, but cover every key idea correctly.",
+      "misconception": ""
+    }
+  ],
+  "excludedConcepts": [
+    "civ10_ch1_t3_c2",
+    "civ10_ch2_t1_c3",
+    "civ10_ch3_t2_c4",
+    "eco10_ch1_t2_c1",
+    "eco10_ch2_t2_c5",
+    "eco10_ch3_t1_c1",
+    "geo10_ch1_t6_c2",
+    "geo10_ch1_t7_c1",
+    "geo10_ch2_t4_c2",
+    "geo10_ch3_t3_c3"
+  ],
+  "note": "Intent is the writer's aim; the final label is what the labellers decide. Answers must be written by students or teachers, never by the author of the prompts and rules."
+}

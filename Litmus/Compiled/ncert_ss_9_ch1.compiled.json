@@ -1,0 +1,1154 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_ss_9_ch1.json",
+  "sourceSha256": "de06d8b96ba1c29b5e9132c179478fd63bb72e92c07113ce2d525991124925b8",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Social Science",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 1)",
+  "chapterNumber": 1,
+  "chapterName": "Understanding Social Science",
+  "articulationChecks": [
+    {
+      "id": "chk_ss9a1_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ss9a1_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example Social Science, society, systematic study, disciplines, Geography, History, Political Science, Economics.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "Social Science",
+    "society",
+    "systematic study",
+    "disciplines",
+    "Geography",
+    "History",
+    "Political Science",
+    "Economics",
+    "evidence",
+    "Pañchamahābhūtas",
+    "vasudhaiva kuṭumbakam",
+    "Arthaśhāstra",
+    "archaeological sources",
+    "epigraphic",
+    "numismatic",
+    "Panchayati Raj",
+    "citizen"
+  ],
+  "concepts": [
+    {
+      "conceptId": "soc9a_ch1_t1_c1",
+      "topicId": "ncert_ss9a_ch1_t1",
+      "topicTitle": "Nature and Systems of Social Science in Daily Life",
+      "label": "What Social Science Is",
+      "headingType": "heading",
+      "sourcePages": [
+        1
+      ],
+      "conceptHash": "a67e8eda555eb7da7c8a526f55dd23715d7b39a571d9bdaa047411eb6e6ef773",
+      "cardText": "Human beings live in societies and depend on each other in many ways. Our lives are shaped by the environment, the institutions that govern us, the economic activities that meet our needs, and the traditions and ideas passed down through generations. Understanding these connections is the foundation of Social Science. In simple words, Social Science is the systematic study of human society. It tells us not only what happened or where things are located, but also why events occur, how people live together, how environments influence life, how governments function, how economies operate, and how the past and present shape the world. While Physics, Chemistry and Biology study the natural world, Social Science focuses on society, institutions, cultures and human interactions.",
+      "hint": "What does Social Science study and how is it different from the natural sciences?",
+      "probe": "Explain what Social Science is and how it differs from subjects like Physics, Chemistry and Biology.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain What Social Science Is, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Beyond giving facts like dates and locations, what kinds of 'why' and 'how' questions about society does this subject try to answer?",
+          "requiredEvidence": [
+            "systematic study of human society",
+            "why events occur",
+            "how people live together",
+            "how environments influence life",
+            "how governments function",
+            "how economies operate",
+            "past and the present"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_ss_def",
+              "criterion": "Defines Social Science as the systematic study of human society, explaining why events occur and how people, environments, governments, economies and the past and present are connected.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Beyond giving facts like dates and locations, what kinds of 'why' and 'how' questions about society does this subject try to answer?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_ss_memorise"
+          ]
+        },
+        {
+          "id": "ss9a1_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A physicist studies how a ball falls. What would a social scientist study about the same city street?",
+          "requiredEvidence": [
+            "natural world",
+            "society, institutions, cultures, and human interactions",
+            "environment",
+            "institutions that govern us",
+            "economic activities",
+            "traditions and ideas"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_ss_diff",
+              "criterion": "States that, unlike the natural sciences which study the natural world, Social Science studies society, institutions, cultures and human interactions, shaped by environment, institutions, economic activities and traditions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A physicist studies how a ball falls. What would a social scientist study about the same city street?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_social_chain",
+          "linksChecks": [
+            "chk_ss9a1_ss_def",
+            "chk_ss9a1_ss_diff"
+          ],
+          "criterion": "Connects the factors shaping human life to the definition of Social Science and its contrast with the natural sciences.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_ss_memorise",
+          "wrong": "Social Science is only about memorising dates and where places are located.",
+          "fix": "Social Science not only tells what happened or where things are located but also explains why events occur, how people live together and how the past and present shape the world.",
+          "checkId": "mchk_misc_ss9a1_ss_memorise",
+          "checkCriterion": "The answer states or implies this wrong idea: Social Science is only about memorising dates and where places are located.",
+          "fixCheckId": "mfix_misc_ss9a1_ss_memorise",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Social Science not only tells what happened or where things are located but also explains why events occur, how people live together and how the past and present shape the world.",
+          "keyPointIds": [
+            "ss9a1_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_ss_memorise"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_ss_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a1_ss_diff",
+            "lnk_ss9a1_social_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t1_c2",
+      "topicId": "ncert_ss9a_ch1_t1",
+      "topicTitle": "Nature and Systems of Social Science in Daily Life",
+      "label": "Social Science in Everyday Life: Society Does Not Function by Chance",
+      "headingType": "heading",
+      "sourcePages": [
+        1,
+        2
+      ],
+      "conceptHash": "949f869f2e27b5719c94864f1d76cbb4831d8ac69eb0ca2be6092a0a86e59023",
+      "cardText": "Think about a day in your life. You wake up in a house built with materials from different places. The food you eat may come from various regions, and before it reaches your plate it has been harvested, processed, transported, bought and sold by many people. You travel on roads planned and maintained by public authorities, study in a school shaped by educational policies, and use electricity generated at distant power stations and delivered through a vast network. Even the simplest daily activities rely on systems of governance, economic production, social cooperation and the natural environment. Questions about crowded cities, different languages, farming regions or floods show that society does not function by chance: it is shaped by history, geography, institutions, resources and human choices.",
+      "hint": "Why does everyday life depend on systems, and why does society not function by chance?",
+      "probe": "Explain how everyday activities depend on systems and why society does not function by chance.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Social Science in Everyday Life: Society Does Not Function by Chance, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Trace what had to happen for a meal to reach your table or a light to switch on, and what that tells you about how people depend on one another.",
+          "requiredEvidence": [
+            "systems of governance",
+            "economic production",
+            "social cooperation",
+            "natural environment",
+            "harvested, processed, transported, bought, and sold",
+            "power stations"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_dl_systems",
+              "criterion": "States that even simple daily activities rely on systems of governance, economic production, social cooperation and the natural environment, e.g. food reaching the plate or electricity from distant power stations.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Trace what had to happen for a meal to reach your table or a light to switch on, and what that tells you about how people depend on one another."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_dl_isolated"
+          ]
+        },
+        {
+          "id": "ss9a1_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do some regions farm, some trade and some build industries? What kinds of causes does that point to?",
+          "requiredEvidence": [
+            "does not function by chance",
+            "shaped by history, geography, institutions, resources, and human choices",
+            "careful observation",
+            "evidence",
+            "logical reasoning"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_dl_chance",
+              "criterion": "States that society does not function by chance but is shaped by history, geography, institutions, resources and human choices, and Social Science explores this through observation, evidence and logical reasoning.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do some regions farm, some trade and some build industries? What kinds of causes does that point to?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_daily_chain",
+          "linksChecks": [
+            "chk_ss9a1_dl_systems",
+            "chk_ss9a1_dl_chance"
+          ],
+          "criterion": "Connects everyday activities to the underlying systems and to the idea that society is shaped, not accidental.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_dl_isolated",
+          "wrong": "Everyday activities such as eating or travelling are independent of society's systems.",
+          "fix": "Even the simplest daily activities rely on systems of governance, economic production, social cooperation and the natural environment.",
+          "checkId": "mchk_misc_ss9a1_dl_isolated",
+          "checkCriterion": "The answer states or implies this wrong idea: Everyday activities such as eating or travelling are independent of society's systems.",
+          "fixCheckId": "mfix_misc_ss9a1_dl_isolated",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Even the simplest daily activities rely on systems of governance, economic production, social cooperation and the natural environment.",
+          "keyPointIds": [
+            "ss9a1_t1c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_dl_isolated"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_dl_systems",
+            "chk_ss9a1_dl_chance"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_daily_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t2_c1",
+      "topicId": "ncert_ss9a_ch1_t2",
+      "topicTitle": "Indian Knowledge Traditions, Environment and Ethical Governance",
+      "label": "Understanding Society Through Time and Traditions",
+      "headingType": "heading",
+      "sourcePages": [
+        3,
+        4
+      ],
+      "conceptHash": "f225f06d6cd303addfa9b9599b3c6dbbffd2091b5c3e3e9f45471842ff62da3e",
+      "cardText": "Society has not always been as it is today; over thousands of years it has changed greatly. Early communities depended directly on nature and learnt to grow crops, domesticate animals, build settlements, develop tools, exchange goods and organise governance. This spirit of inquiry has deep roots in India's knowledge traditions, where early thinkers valued discussion, questioning and logical reasoning. The Pañchamahābhūtas describes the natural world as an interconnected system in which human life is embedded, and the idea of vasudhaiva kuṭumbakam, 'the world is one family', expresses the interconnectedness of human societies. Early reflections on governance, such as the Arthaśhāstra attributed to Kauṭilya about 2,300 years ago, linked political authority with public welfare and ethical responsibility. Social scientists observe people's lives, conduct interviews and surveys, examine documents and compare times and places, developing explanations supported by evidence.",
+      "hint": "How do India's traditions of thought and the methods of social scientists help us understand society?",
+      "probe": "Explain how society changes over time and how India's knowledge traditions and modern methods help us understand it.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Understanding Society Through Time and Traditions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t2c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe how the lives of early human communities gradually changed over thousands of years.",
+          "requiredEvidence": [
+            "changed greatly",
+            "depended directly on nature",
+            "grow crops",
+            "domesticate animals",
+            "build settlements",
+            "develop tools",
+            "exchange goods",
+            "systems of governance"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_kt_change",
+              "criterion": "States that society has changed greatly over thousands of years: early communities depended on nature, then learnt to grow crops, domesticate animals, build settlements, develop tools, exchange goods and organise governance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe how the lives of early human communities gradually changed over thousands of years."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a1_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name an idea from Indian tradition that treats nature as one connected system and one that treats humanity as one family, and one early work on governance.",
+          "requiredEvidence": [
+            "discussion, questioning, and logical reasoning",
+            "Pañchamahābhūtas",
+            "interconnected system",
+            "vasudhaiva kuṭumbakam",
+            "the world is one family",
+            "Arthaśhāstra",
+            "Kauṭilya",
+            "duties of rulers"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_kt_traditions",
+              "criterion": "Describes India's knowledge traditions: early thinkers valued questioning and reasoning, the Pañchamahābhūtas sees nature as interconnected, vasudhaiva kuṭumbakam expresses the world as one family, and the Arthaśhāstra examined administration, economy, taxation and rulers' duties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name an idea from Indian tradition that treats nature as one connected system and one that treats humanity as one family, and one early work on governance."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_kt_new"
+          ]
+        },
+        {
+          "id": "ss9a1_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How would a researcher go about finding out how life in a village has changed, and why do they use more than one source?",
+          "requiredEvidence": [
+            "observe people's lives",
+            "interviews and surveys",
+            "examine documents",
+            "compare different times and places",
+            "multiple sources",
+            "supported by evidence",
+            "what endures and what changes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_kt_methods",
+              "criterion": "States that social scientists observe, interview, survey, examine documents and compare times and places, drawing on multiple sources to build evidence-based explanations of what endures and what changes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How would a researcher go about finding out how life in a village has changed, and why do they use more than one source?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_tradition_chain",
+          "linksChecks": [
+            "chk_ss9a1_kt_change",
+            "chk_ss9a1_kt_traditions",
+            "chk_ss9a1_kt_methods"
+          ],
+          "criterion": "Connects changing societies to Indian traditions of thought and to evidence-based modern methods.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_kt_new",
+          "wrong": "Systematic thinking about society and governance began only with modern academic disciplines.",
+          "fix": "Such works show that systematic thinking about governance and the economy existed long before modern academic disciplines developed.",
+          "checkId": "mchk_misc_ss9a1_kt_new",
+          "checkCriterion": "The answer states or implies this wrong idea: Systematic thinking about society and governance began only with modern academic disciplines.",
+          "fixCheckId": "mfix_misc_ss9a1_kt_new",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Such works show that systematic thinking about governance and the economy existed long before modern academic disciplines developed.",
+          "keyPointIds": [
+            "ss9a1_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_kt_new"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_kt_traditions",
+            "chk_ss9a1_kt_methods"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a1_kt_change",
+            "lnk_ss9a1_tradition_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t3_c1",
+      "topicId": "ncert_ss9a_ch1_t3",
+      "topicTitle": "Interdisciplinary Perspectives and Methodologies in Social Science",
+      "label": "Social Science as a Group of Disciplines",
+      "headingType": "heading",
+      "sourcePages": [
+        4
+      ],
+      "conceptHash": "f57d978e52c884a18de21782cbccfcc40283d085e03cdb5ce059ccece21e396b",
+      "cardText": "Human society is complex and no single field of study can fully explain it. A drought, for example, affects crops (environment), farmers' incomes (economy), government relief measures (politics), migration to cities (society) and traditional ways of coping with scarcity (culture). So Social Science is not a single subject but a group of related disciplines, each focusing on a different aspect of human life. In Grades 9 to 10 it primarily draws from four core disciplines: Geography, History, Political Science and Economics. Sociology, Philosophy, Anthropology and Psychology also form part of the broader family. Geography studies the Earth, its environments and the relationships between people and their surroundings; History examines the human past and how societies change; Political Science analyses systems of governance, power, and rights and responsibilities; Economics explores how societies produce, distribute and utilise resources.",
+      "hint": "Why is Social Science a group of disciplines and what does each of the four core disciplines study?",
+      "probe": "Explain why Social Science is a group of disciplines and what Geography, History, Political Science and Economics each study.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Social Science as a Group of Disciplines, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A long dry spell hits a district. Name the different kinds of effects it has and what that suggests about studying society from many angles.",
+          "requiredEvidence": [
+            "no single field of study",
+            "drought",
+            "environment",
+            "economy",
+            "politics",
+            "not a single subject",
+            "group of related disciplines",
+            "different aspect of human life"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_di_group",
+              "criterion": "States that society is too complex for one field, as a drought shows (affecting environment, economy, politics, society, culture), so Social Science is a group of related disciplines each focusing on a different aspect of human life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A long dry spell hits a district. Name the different kinds of effects it has and what that suggests about studying society from many angles."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_di_single"
+          ]
+        },
+        {
+          "id": "ss9a1_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which of the four disciplines would you turn to for questions about a river's course, a ruler's reforms, how a law is made and how prices are set?",
+          "requiredEvidence": [
+            "four core disciplines",
+            "Geography",
+            "Earth, its environments",
+            "History",
+            "human past",
+            "Political Science",
+            "systems of governance, power",
+            "Economics",
+            "produce, distribute, and utilise resources"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_di_four",
+              "criterion": "States the four core disciplines and what each studies: Geography (the Earth and people-environment relationships), History (the human past and change), Political Science (governance, power, rights and responsibilities), Economics (how societies produce, distribute and use resources).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which of the four disciplines would you turn to for questions about a river's course, a ruler's reforms, how a law is made and how prices are set?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_disciplines_chain",
+          "linksChecks": [
+            "chk_ss9a1_di_group",
+            "chk_ss9a1_di_four"
+          ],
+          "criterion": "Connects the complexity of society (the drought example) to the need for several disciplines and what each contributes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_di_single",
+          "wrong": "Social Science is a single subject that can be understood from one viewpoint.",
+          "fix": "Social Science is not a single subject but a group of related disciplines, each focusing on a different aspect of human life.",
+          "checkId": "mchk_misc_ss9a1_di_single",
+          "checkCriterion": "The answer states or implies this wrong idea: Social Science is a single subject that can be understood from one viewpoint.",
+          "fixCheckId": "mfix_misc_ss9a1_di_single",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Social Science is not a single subject but a group of related disciplines, each focusing on a different aspect of human life.",
+          "keyPointIds": [
+            "ss9a1_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_di_single"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_di_group",
+            "chk_ss9a1_di_four"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_disciplines_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t3_c2",
+      "topicId": "ncert_ss9a_ch1_t3",
+      "topicTitle": "Interdisciplinary Perspectives and Methodologies in Social Science",
+      "label": "Geography and History: Tools, Sources and Methods",
+      "headingType": "heading",
+      "sourcePages": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "conceptHash": "37869c4dc75702cc4f89c9b8efc2a7dbbb6c50d09615bbeaefa1c1e8cf553b6b",
+      "cardText": "Geography studies the location and distribution of places, objects, materials and people, and the relationships between human societies and their surroundings. It seeks to understand where things are, why they are found there, and how places affect one another over time, combining spatial and temporal perspectives. It uses maps, globes, atlases, GIS, infographics and other tools. History is the study of the human past, through which societies understand people's experiences, values and changes over time. Modern historiography relies increasingly on empirical evidence and tools such as carbon-14 dating and archaeology. Sources include literary sources such as travelogues, memoirs, folklore and revenue documents; archaeological sources such as monuments, artefacts and sculptures; epigraphic sources, inscriptions on durable materials; and numismatic sources, coins and currency.",
+      "hint": "What do Geography and History study and what tools and sources do they use?",
+      "probe": "Explain what Geography and History study and the tools and sources each uses.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Geography and History: Tools, Sources and Methods, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What three kinds of questions does a geographer ask about a place, and what tools help to answer them?",
+          "requiredEvidence": [
+            "location and distribution",
+            "relationships between human societies and their surroundings",
+            "where things are located",
+            "why they are found there",
+            "maps, globes, atlases",
+            "GIS"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_gh_geo",
+              "criterion": "States that Geography studies the location and distribution of places, objects and people and human-environment relationships, asking where things are, why, and how places affect one another, using maps, globes, atlases and GIS.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What three kinds of questions does a geographer ask about a place, and what tools help to answer them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a1_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do historians today fix dates and learn about people who left no written records?",
+          "requiredEvidence": [
+            "study of human past",
+            "experiences, values, and changes over time",
+            "empirical evidence",
+            "carbon-14 dating",
+            "archaeology",
+            "timelines"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_gh_hist",
+              "criterion": "States that History studies the human past, people's experiences, values and changes over time, and modern historiography relies on empirical evidence and scientific tools such as carbon-14 dating, genetics and archaeology.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do historians today fix dates and learn about people who left no written records?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_gh_only_text"
+          ]
+        },
+        {
+          "id": "ss9a1_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A historian finds a stone slab with carved text and a handful of old metal discs used as money. Which kinds of sources are these, and what can each reveal?",
+          "requiredEvidence": [
+            "archaeological",
+            "literary",
+            "travelogues",
+            "folklore",
+            "material remains",
+            "monuments",
+            "epigraphic source",
+            "inscribed on durable materials",
+            "numismatic source",
+            "coins"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_gh_sources",
+              "criterion": "Distinguishes types of historical sources: literary (travelogues, memoirs, folklore, revenue documents), archaeological (monuments, artefacts, sculptures), epigraphic (inscriptions on stone or metal) and numismatic (coins and currency).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A historian finds a stone slab with carved text and a handful of old metal discs used as money. Which kinds of sources are these, and what can each reveal?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_geohist_chain",
+          "linksChecks": [
+            "chk_ss9a1_gh_geo",
+            "chk_ss9a1_gh_hist",
+            "chk_ss9a1_gh_sources"
+          ],
+          "criterion": "Connects the focus of Geography and History to their tools and categories of sources.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_gh_only_text",
+          "wrong": "History relies only on written books for evidence.",
+          "fix": "History draws on archaeological and literary traditions, folklore and oral traditions, epigraphic and numismatic sources, and uses scientific methods like carbon-14 dating and archaeology.",
+          "checkId": "mchk_misc_ss9a1_gh_only_text",
+          "checkCriterion": "The answer states or implies this wrong idea: History relies only on written books for evidence.",
+          "fixCheckId": "mfix_misc_ss9a1_gh_only_text",
+          "fixCheckCriterion": "Answer 2 states the correct idea: History draws on archaeological and literary traditions, folklore and oral traditions, epigraphic and numismatic sources, and uses scientific methods like carbon-14 dating and archaeology.",
+          "keyPointIds": [
+            "ss9a1_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_gh_only_text"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_gh_geo",
+            "chk_ss9a1_gh_hist",
+            "chk_ss9a1_gh_sources"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_geohist_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t3_c3",
+      "topicId": "ncert_ss9a_ch1_t3",
+      "topicTitle": "Interdisciplinary Perspectives and Methodologies in Social Science",
+      "label": "Political Science and Economics",
+      "headingType": "heading",
+      "sourcePages": [
+        9,
+        10
+      ],
+      "conceptHash": "c633afc13dbb1c33aa1f354dcc0962780166f12226d2366b756bec285c048b9e",
+      "cardText": "Political Science is the study of governance: how and why power is distributed, decisions are made and policies implemented. It studies constitutions, governments and institutions, as well as social movements, nation building and foreign policy. In India's villages, the Panchayati Raj system embodies grassroots democracy by giving citizens a voice in local development planning. Indian political thought linked politics with dharma (moral duty), artha (economic well-being) and rājadharma (the duties of the ruler); the Arthaśhāstra is a foundational text on politics and administration, and power was viewed as a responsibility rather than merely a privilege. Economics helps us understand how individuals and societies decide how to use limited resources to meet their needs, studying how goods and services are produced, exchanged and distributed, and the decisions of consumers, producers and governments.",
+      "hint": "What do Political Science and Economics study?",
+      "probe": "Explain what Political Science and Economics study with an Indian example for each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Political Science and Economics, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which part of Social Science studies how decisions get made for a whole village or country, and what is a village-level example in India?",
+          "requiredEvidence": [
+            "study of governance",
+            "power is distributed",
+            "decisions are made",
+            "policies are implemented",
+            "constitutions, governments, and institutions",
+            "Panchayati Raj",
+            "grassroots democracy",
+            "responsibility rather than merely a privilege"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_pe_pol",
+              "criterion": "States that Political Science studies governance (how power is distributed, decisions made and policies implemented, through constitutions, governments and institutions), with the Panchayati Raj as grassroots democracy and power seen in Indian thought as a responsibility.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which part of Social Science studies how decisions get made for a whole village or country, and what is a village-level example in India?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a1_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which subject asks how a society should use scarce resources, and whose decisions does it study?",
+          "requiredEvidence": [
+            "limited resources",
+            "meet their needs",
+            "produced, exchanged, and distributed",
+            "consumers, producers, and governments",
+            "well-being, equity, and justice"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_pe_econ",
+              "criterion": "States that Economics studies how individuals and societies use limited resources to meet needs, how goods and services are produced, exchanged and distributed, and the decisions of consumers, producers and governments, aiming at well-being, equity and justice.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which subject asks how a society should use scarce resources, and whose decisions does it study?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_pe_numbers"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_polecon_chain",
+          "linksChecks": [
+            "chk_ss9a1_pe_pol",
+            "chk_ss9a1_pe_econ"
+          ],
+          "criterion": "Connects the study of governance and power to the study of resource decisions and their social purpose.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_pe_numbers",
+          "wrong": "Economics is only about numbers and markets.",
+          "fix": "Economics is not only about numbers and markets but also about well-being, equity, and justice.",
+          "checkId": "mchk_misc_ss9a1_pe_numbers",
+          "checkCriterion": "The answer states or implies this wrong idea: Economics is only about numbers and markets.",
+          "fixCheckId": "mfix_misc_ss9a1_pe_numbers",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Economics is not only about numbers and markets but also about well-being, equity, and justice.",
+          "keyPointIds": [
+            "ss9a1_t3c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_pe_numbers"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_pe_pol",
+            "chk_ss9a1_pe_econ"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_polecon_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t4_c1",
+      "topicId": "ncert_ss9a_ch1_t4",
+      "topicTitle": "Civic Responsibility, Democratic Decision-Making and Future Outlook",
+      "label": "Why We Should Study Social Science",
+      "headingType": "heading",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "conceptHash": "27134cf1067291166b0ec83048a5681199225960cdd7b828626e8c838ca1ee3e",
+      "cardText": "The house you live in, the water you use, the roads you travel on, the school you attend and even the digital spaces you use are part of systems created and managed by society. Social Science helps us understand how these systems developed, how they function and how they affect different groups. People speak different languages, follow diverse customs and practise varied occupations; Social Science explains such variations as outcomes of geographical, historical, cultural and economic factors, which builds respect and cooperation, while Indian culture binds diversity together through an underlying unity. In a democratic society citizens play an active role, and understanding how governments function prepares us to participate responsibly. It also strengthens our ability to ask informed questions about shared challenges such as environmental protection, public health, employment or urban growth, and connects the past, present and future.",
+      "hint": "How does studying Social Science help us understand differences, take part as citizens and face shared problems?",
+      "probe": "Explain why we should study Social Science.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why We Should Study Social Science, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do neighbouring regions of one country speak distinct tongues and follow different customs, and what does understanding that do for how people treat each other?",
+          "requiredEvidence": [
+            "different languages",
+            "diverse customs",
+            "varied occupations",
+            "geographical, historical, cultural, and economic factors",
+            "respect and cooperation",
+            "underlying unity",
+            "shared identity"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_wy_diversity",
+              "criterion": "States that Social Science explains differences in languages, customs and occupations as outcomes of geographical, historical, cultural and economic factors, building respect and cooperation, while Indian culture gives an underlying unity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do neighbouring regions of one country speak distinct tongues and follow different customs, and what does understanding that do for how people treat each other?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_wy_diff"
+          ]
+        },
+        {
+          "id": "ss9a1_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does a citizen need to know to take part responsibly in a democracy, and how would they approach a problem like polluted water?",
+          "requiredEvidence": [
+            "democratic society",
+            "active role in public life",
+            "how governments function",
+            "participate responsibly in civic life",
+            "shared challenges",
+            "informed questions",
+            "causes, effects, and possible solutions"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_wy_civic",
+              "criterion": "States that understanding how governments function and decisions are made prepares citizens to participate responsibly in civic life, and that Social Science teaches us to ask informed questions about the causes, effects and solutions of shared challenges.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a citizen need to know to take part responsibly in a democracy, and how would they approach a problem like polluted water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_why_chain",
+          "linksChecks": [
+            "chk_ss9a1_wy_diversity",
+            "chk_ss9a1_wy_civic"
+          ],
+          "criterion": "Connects understanding systems and diversity to civic participation and informed problem solving.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_wy_diff",
+          "wrong": "Differences in languages and customs within a country have no explainable causes.",
+          "fix": "Social Science explains such variations as outcomes of geographical, historical, cultural, and economic factors.",
+          "checkId": "mchk_misc_ss9a1_wy_diff",
+          "checkCriterion": "The answer states or implies this wrong idea: Differences in languages and customs within a country have no explainable causes.",
+          "fixCheckId": "mfix_misc_ss9a1_wy_diff",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Social Science explains such variations as outcomes of geographical, historical, cultural, and economic factors.",
+          "keyPointIds": [
+            "ss9a1_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_wy_diff"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_wy_diversity",
+            "chk_ss9a1_wy_civic"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_why_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch1_t4_c2",
+      "topicId": "ncert_ss9a_ch1_t4",
+      "topicTitle": "Civic Responsibility, Democratic Decision-Making and Future Outlook",
+      "label": "The Future of Social Science and the Two-Year Journey",
+      "headingType": "heading",
+      "sourcePages": [
+        11,
+        12
+      ],
+      "conceptHash": "a247e1ce9177f3fafe60e3f3efc49c08439c9650c9c2849492783b9c41875a9d",
+      "cardText": "As societies change rapidly, the importance of Social Science continues to grow. New technologies, expanding cities, environmental concerns, migration and global connections are reshaping how people live, and understanding them requires careful observation, asking questions, examining evidence and recognising connections. Social Science will help societies address climate change, sustainable development, social harmony and equitable use of resources, and guide the responsible use of new technologies. It prepares you not only to understand the world but to take part in shaping it as informed and thoughtful citizens. Social Science is not about memorising dates, maps or definitions; it is about understanding people, places, society, culture and power. Over Grades 9–10 you will explore history, geography, political systems and economies, learning to analyse evidence, compare perspectives and see how past, present and future are linked.",
+      "hint": "Why does Social Science matter more as societies change, and what skills does it build?",
+      "probe": "Explain the future importance of Social Science and the skills it builds.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Future of Social Science and the Two-Year Journey, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a1_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name some changes happening around us today and the habits of mind needed to understand them.",
+          "requiredEvidence": [
+            "importance of Social Science continues to grow",
+            "new technologies",
+            "expanding cities",
+            "environmental concerns",
+            "migration",
+            "global connections",
+            "careful observation",
+            "examining evidence",
+            "recognising connections"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_fs_change",
+              "criterion": "States that rapid change from new technologies, expanding cities, environmental concerns, migration and global connections makes Social Science more important, requiring careful observation, questions, evidence and recognising connections.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some changes happening around us today and the habits of mind needed to understand them."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a1_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What would you say to a friend who thinks this subject is just memorising dates and maps?",
+          "requiredEvidence": [
+            "climate change",
+            "sustainable development",
+            "social harmony",
+            "equitable use of resources",
+            "take part in shaping it",
+            "informed and thoughtful citizens",
+            "not about memorising"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a1_fs_skills",
+              "criterion": "States that Social Science helps address issues like climate change, sustainable development, social harmony and equitable resource use, prepares informed citizens to shape the world, and is about understanding people, places, society, culture and power rather than memorising.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What would you say to a friend who thinks this subject is just memorising dates and maps?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a1_fs_dates"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a1_future_chain",
+          "linksChecks": [
+            "chk_ss9a1_fs_change",
+            "chk_ss9a1_fs_skills"
+          ],
+          "criterion": "Connects the pace of change to the skills Social Science builds and the issues it addresses.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a1_fs_dates",
+          "wrong": "Social Science is mainly about memorising dates, maps and definitions.",
+          "fix": "Social Science is not about memorising dates, maps, or definitions; it is about understanding people, places, society, culture and power.",
+          "checkId": "mchk_misc_ss9a1_fs_dates",
+          "checkCriterion": "The answer states or implies this wrong idea: Social Science is mainly about memorising dates, maps and definitions.",
+          "fixCheckId": "mfix_misc_ss9a1_fs_dates",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Social Science is not about memorising dates, maps, or definitions; it is about understanding people, places, society, culture and power.",
+          "keyPointIds": [
+            "ss9a1_t4c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a1_fs_dates"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a1_fs_change",
+            "chk_ss9a1_fs_skills"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a1_future_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

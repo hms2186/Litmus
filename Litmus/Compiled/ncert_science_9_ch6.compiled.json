@@ -1,0 +1,2763 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch6.json",
+  "sourceSha256": "57c53ba52f8a9700b6100c0ce609615b4ee121a17469fc2556ac1d6cd187e8f6",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 6,
+  "chapterName": "How Forces Affect Motion",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c6_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c6_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example force, newton, balanced forces, unbalanced forces, net force, force of friction, normal force, inertia.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "force",
+    "newton",
+    "balanced forces",
+    "unbalanced forces",
+    "net force",
+    "force of friction",
+    "normal force",
+    "inertia",
+    "Newton's first law",
+    "Newton's second law",
+    "Newton's third law",
+    "acceleration",
+    "mass",
+    "weight",
+    "system"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch6_t1_c1",
+      "topicId": "ncert_sci_9_ch6_t1",
+      "topicTitle": "Force, and balanced and unbalanced forces",
+      "label": "The Concept of Force",
+      "headingType": "heading",
+      "sourcePages": [
+        94,
+        95
+      ],
+      "conceptHash": "3e4df62585739b5eec0bfcd74536ab8e3889d49b1b5f0566ba422fe7d841ed83",
+      "cardText": "A force can make an object move from rest, change the speed and direction of motion of a moving object, and can even change the shape of an object. Force is a physical quantity for which we need to specify direction along with its magnitude and unit, like position, displacement, velocity and acceleration. The SI unit of force is the newton, written with a small n, with the symbol N, and the magnitude of the force expresses its strength. If either the magnitude or direction, or both, of a force applied on an object changes, the effect of the force also changes. A spring balance can be used to measure the weight of an object, which is the gravitational force with which the Earth pulls the object, and more generally the magnitude of a force.",
+      "hint": "What can a force do, and what two things must you give to describe it?",
+      "probe": "What are the effects of a force, and how is a force described and measured?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Concept of Force, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What changes can a push or a pull bring about in an object?",
+          "requiredEvidence": [
+            "move from rest",
+            "change the speed and direction",
+            "change the shape"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_f_effects",
+              "criterion": "States that a force can make an object move from rest, change the speed and direction of a moving object, and change its shape.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What changes can a push or a pull bring about in an object?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Besides size and unit, what else must be given to describe a push or a pull completely?",
+          "requiredEvidence": [
+            "physical quantity",
+            "direction",
+            "magnitude and unit"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_f_vector",
+              "criterion": "States that force is a physical quantity for which direction must be specified along with magnitude and unit.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Besides size and unit, what else must be given to describe a push or a pull completely?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "SI unit of force",
+            "newton",
+            "symbol is N",
+            "strength"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_f_unit",
+              "criterion": "States that the SI unit of force is the newton (N), and the magnitude of the force expresses its strength.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can a force do, and what two things must you give to describe it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the effect on an object if the strength or the way of pushing is altered?",
+          "requiredEvidence": [
+            "magnitude or direction",
+            "effect of the force also changes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_f_change",
+              "criterion": "States that if the magnitude or direction (or both) of a force changes, its effect on the object also changes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the effect on an object if the strength or the way of pushing is altered?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "spring balance",
+            "weight of an object",
+            "magnitude of the force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_f_spring",
+              "criterion": "States that a spring balance measures the magnitude of a force in general, and the weight of an object is the gravitational force with which the Earth pulls it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can a force do, and what two things must you give to describe it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_f_weight_mass"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_direction_matters",
+          "linksChecks": [
+            "chk_sci9c6_f_vector",
+            "chk_sci9c6_f_change"
+          ],
+          "criterion": "Connects a force having both magnitude and direction to its effect changing when either one changes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_f_weight_mass",
+          "wrong": "Weight is the amount of matter in an object.",
+          "fix": "The weight of an object is the gravitational force with which the Earth pulls the object.",
+          "checkId": "mchk_misc_sci9c6_f_weight_mass",
+          "checkCriterion": "The answer states or implies this wrong idea: Weight is the amount of matter in an object.",
+          "fixCheckId": "mfix_misc_sci9c6_f_weight_mass",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The weight of an object is the gravitational force with which the Earth pulls the object.",
+          "keyPointIds": [
+            "sci9c6_t1c1_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_f_weight_mass"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_f_effects",
+            "chk_sci9c6_f_vector",
+            "chk_sci9c6_f_change"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_f_unit",
+            "chk_sci9c6_f_spring",
+            "lnk_sci9c6_direction_matters"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t1_c2",
+      "topicId": "ncert_sci_9_ch6_t1",
+      "topicTitle": "Force, and balanced and unbalanced forces",
+      "label": "Balanced and Unbalanced Forces; Net Force",
+      "headingType": "heading",
+      "sourcePages": [
+        95,
+        96,
+        97
+      ],
+      "conceptHash": "d5a1b5efe30630f359beb96d398db450d9a30e88150e75eb9c06c8036b2dd439",
+      "cardText": "In real life usually more than one force acts on an object: when you push a box, the force of friction also acts on it in the direction opposite to its motion, and a ball floating on water has the gravitational force downwards and the buoyant force upwards. Two forces that are equal in magnitude but opposite in direction are called balanced forces; in a tug of war the rope does not move if the forces are balanced but moves if they are unbalanced. If the forces on an object are not balanced, a non-zero net force acts on it. When two forces are opposite in direction but unequal in magnitude, the magnitude of the net force is the difference between the magnitudes and its direction is along the larger force. When two forces act in the same direction, the net force is the sum of the magnitudes in the same direction. Multiple forces may act on an object, but its motion depends only on the net force.",
+      "hint": "When do two forces balance, and how do you find the net force of two forces?",
+      "probe": "What are balanced and unbalanced forces, and how is the net force found in each case?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Balanced and Unbalanced Forces; Net Force, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a tug of war, what do we call two pulls that cancel, and what happens to the rope if one team pulls harder?",
+          "requiredEvidence": [
+            "equal in magnitude",
+            "opposite in direction",
+            "balanced forces",
+            "rope does not move",
+            "unbalanced"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_bal_def",
+              "criterion": "Defines balanced forces as two forces equal in magnitude but opposite in direction, under which the rope does not move, while unbalanced forces make it move.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a tug of war, what do we call two pulls that cancel, and what happens to the rope if one team pulls harder?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When two pulls oppose each other but are unequal, how large is the leftover pull and which way does it act?",
+          "requiredEvidence": [
+            "not balanced",
+            "non-zero net force",
+            "difference between the magnitudes",
+            "force of the larger magnitude"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_bal_net_opposite",
+              "criterion": "States that unbalanced forces give a non-zero net force, which for unequal opposite forces is the difference of the magnitudes in the direction of the larger force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When two pulls oppose each other but are unequal, how large is the leftover pull and which way does it act?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "sum of the magnitudes",
+            "same direction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_bal_net_same",
+              "criterion": "States that for two forces in the same direction the net force is the sum of their magnitudes, in the same direction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When do two forces balance, and how do you find the net force of two forces?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "gravitational force",
+            "downwards",
+            "buoyant force",
+            "upwards"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_bal_ball",
+              "criterion": "Gives the forces on a ball floating on water: gravitational force downwards and buoyant force upwards.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "When do two forces balance, and how do you find the net force of two forces?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t1c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If many pushes and pulls act on one object, which single quantity decides its motion?",
+          "requiredEvidence": [
+            "multiple forces",
+            "motion depends only on the net force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_bal_only_net",
+              "criterion": "States that although multiple forces may act on an object, its motion depends only on the net force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If many pushes and pulls act on one object, which single quantity decides its motion?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_bal_each"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_unbalanced_motion",
+          "linksChecks": [
+            "chk_sci9c6_bal_def",
+            "chk_sci9c6_bal_net_opposite"
+          ],
+          "criterion": "Connects unbalanced forces leaving a non-zero net force to the object moving in the direction of the larger force.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_bal_each",
+          "wrong": "Each force acting on an object separately decides how it moves.",
+          "fix": "Multiple forces may act on an object, but its motion depends only on the net force.",
+          "checkId": "mchk_misc_sci9c6_bal_each",
+          "checkCriterion": "The answer states or implies this wrong idea: Each force acting on an object separately decides how it moves.",
+          "fixCheckId": "mfix_misc_sci9c6_bal_each",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Multiple forces may act on an object, but its motion depends only on the net force.",
+          "keyPointIds": [
+            "sci9c6_t1c2_kp5"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_bal_each"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_bal_def",
+            "chk_sci9c6_bal_net_opposite",
+            "chk_sci9c6_bal_only_net"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_bal_net_same",
+            "chk_sci9c6_bal_ball",
+            "lnk_sci9c6_unbalanced_motion"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t2_c1",
+      "topicId": "ncert_sci_9_ch6_t2",
+      "topicTitle": "Friction",
+      "label": "The Force of Friction",
+      "headingType": "heading",
+      "sourcePages": [
+        97,
+        98
+      ],
+      "conceptHash": "c1719c3c5c04d40a9ec13192b41a09097f6cd8cb90218523d6357f637b24ab73",
+      "cardText": "When you push an object kept at rest on the floor, it may not move because of the force of friction arising between the bottom surface of the box and the floor, acting in a direction opposite to the force you apply. The box starts moving when the force applied is larger than the force of friction, so that a net force acts on the box in the direction of its motion. Other forces on a pushed object are the gravitational force (weight), acting downwards, and the force exerted by the surface on which it is placed, called the normal force, acting upwards perpendicular to the surface; these two are balanced. Air around the object also exerts friction, but in many cases it is so small it can be neglected. A moving object such as a bicycle or ball comes to rest after some distance because the force of friction acts against the direction of motion; to keep an object moving we must continuously apply a force to counter friction.",
+      "hint": "Why does a pushed box not move at first, and why does a rolling ball finally stop?",
+      "probe": "Explain how friction affects a pushed object and why a moving object comes to rest.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Force of Friction, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might a heavy box on the floor not budge when you push it?",
+          "requiredEvidence": [
+            "force of friction",
+            "bottom surface of the box",
+            "opposite to the direction of the force applied"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_fr_oppose",
+              "criterion": "States that the force of friction arising between the box and the floor acts opposite to the applied force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might a heavy box on the floor not budge when you push it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When does the box start to move?",
+          "requiredEvidence": [
+            "larger magnitude than the force of friction",
+            "net force",
+            "direction of its motion"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_fr_start",
+              "criterion": "States that the box starts moving when the applied force is larger than the force of friction, so a net force acts in the direction of motion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When does the box start to move?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Besides the push and the rubbing force, which two other forces act on a pushed box, and how do they compare?",
+          "requiredEvidence": [
+            "gravitational force",
+            "weight",
+            "normal force",
+            "upward direction perpendicular to the surface",
+            "balanced"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_fr_normal",
+              "criterion": "States that the weight acts downwards and the normal force from the surface acts upwards perpendicular to the surface, and these two forces are balanced.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Besides the push and the rubbing force, which two other forces act on a pushed box, and how do they compare?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t2c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a rolling ball eventually stop, and what would you have to do to keep a moving object going?",
+          "requiredEvidence": [
+            "continuously apply a force",
+            "counter the force of friction",
+            "against the direction of motion",
+            "brings the object to rest"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_fr_stop",
+              "criterion": "States that to keep an object moving we must continuously apply a force to counter friction, otherwise friction acting against the motion brings it to rest.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a rolling ball eventually stop, and what would you have to do to keep a moving object going?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_fr_force_to_move"
+          ]
+        },
+        {
+          "id": "sci9c6_t2c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "air",
+            "force of friction",
+            "so small that it can be neglected"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_fr_air",
+              "criterion": "States that air also exerts a force of friction on a moving object but it is often so small that it can be neglected.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why does a pushed box not move at first, and why does a rolling ball finally stop?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_friction_stop",
+          "linksChecks": [
+            "chk_sci9c6_fr_stop"
+          ],
+          "criterion": "Connects friction acting against the direction of motion to a rolling bicycle or ball slowing down and stopping after the push stops.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_fr_force_to_move",
+          "wrong": "A continuous force is always needed to keep an object moving, whatever the surface.",
+          "fix": "On a moving object, we have to continuously apply a force to counter the force of friction; otherwise the force of friction brings the object to rest.",
+          "checkId": "mchk_misc_sci9c6_fr_force_to_move",
+          "checkCriterion": "The answer states or implies this wrong idea: A continuous force is always needed to keep an object moving, whatever the surface.",
+          "fixCheckId": "mfix_misc_sci9c6_fr_force_to_move",
+          "fixCheckCriterion": "Answer 2 states the correct idea: On a moving object, we have to continuously apply a force to counter the force of friction; otherwise the force of friction brings the object to rest.",
+          "keyPointIds": [
+            "sci9c6_t2c1_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_fr_force_to_move"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_fr_oppose",
+            "chk_sci9c6_fr_start",
+            "chk_sci9c6_fr_normal",
+            "chk_sci9c6_fr_stop"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_fr_air",
+            "lnk_sci9c6_friction_stop"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t2_c2",
+      "topicId": "ncert_sci_9_ch6_t2",
+      "topicTitle": "Friction",
+      "label": "Friction Depends on the Surfaces: Coins and Spring Balance Activities",
+      "headingType": "heading",
+      "sourcePages": [
+        98,
+        99,
+        100
+      ],
+      "conceptHash": "439705af3b11f03693d5628d9364822389cc2b611d33efa28266806fa43384dc",
+      "cardText": "In Activity 6.1 a stack of coins is released by a stretched rubber band on surfaces of different materials, and its velocity decreases gradually until it comes to rest. Before release it is stationary, so the forces on it are balanced. On release the force from the stretched rubber band is larger than the force of friction, so a net force acts forward and gives an acceleration in the forward direction. When the coins lose contact with the rubber band, only the force of friction continues to act in the direction opposite to their motion, gradually decreasing the velocity and bringing them to rest. Even though the rubber band is stretched by the same amount each time, the distance travelled on different surfaces changes, which indicates that the force of friction on these surfaces is different. In Activity 6.2 the reading of a spring balance gives an approximate measure of the force of friction: a smaller reading means a smaller force of friction. When the force of friction is smaller, the velocity of the stack decreases more slowly and it travels a larger distance before coming to rest.",
+      "hint": "Why does the stack of coins travel farther on a smoother surface?",
+      "probe": "What do the coin and spring balance activities show about friction on different surfaces?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Friction Depends on the Surfaces: Coins and Spring Balance Activities, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When the stretched rubber band is let go, why does the stack of coins start to move?",
+          "requiredEvidence": [
+            "larger than the force of friction",
+            "net force",
+            "forward direction",
+            "acceleration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_act_start",
+              "criterion": "States that the stack starts moving because the rubber band's force exceeds friction, so a net force gives it an acceleration in the forward direction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When the stretched rubber band is let go, why does the stack of coins start to move?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After the coins leave the band, which force acts on them and what does it do?",
+          "requiredEvidence": [
+            "force of friction continues",
+            "opposite to their motion",
+            "gradually decreases its velocity",
+            "brings it to rest"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_act_slow",
+              "criterion": "States that after losing contact with the rubber band only friction acts, opposite to the motion, gradually decreasing the velocity and bringing the coins to rest.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After the coins leave the band, which force acts on them and what does it do?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "The band was stretched equally every time, yet the coins stopped at different places. What does that tell you?",
+          "requiredEvidence": [
+            "stretched by the same amount",
+            "distance travelled",
+            "different surfaces",
+            "force of friction on these surfaces is different"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_act_surfaces",
+              "criterion": "States that with the same stretch of the rubber band the distance travelled differs on different surfaces, indicating that the force of friction on these surfaces is different.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "The band was stretched equally every time, yet the coins stopped at different places. What does that tell you?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_act_same_friction"
+          ]
+        },
+        {
+          "id": "sci9c6_t2c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the spring balance readings tell you about how far the coins travel on a surface?",
+          "requiredEvidence": [
+            "smaller reading",
+            "smaller force of friction",
+            "decreases more slowly",
+            "larger distance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_act_conclusion",
+              "criterion": "Concludes that when the force of friction is smaller (a smaller spring balance reading), the velocity decreases more slowly and the stack travels a larger distance before stopping.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the spring balance readings tell you about how far the coins travel on a surface?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_smaller_friction_farther",
+          "linksChecks": [
+            "chk_sci9c6_act_conclusion"
+          ],
+          "criterion": "Connects a smaller force of friction to the velocity decreasing more slowly and the coins travelling a larger distance before stopping.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_act_same_friction",
+          "wrong": "The coins stop at different distances because the push from the rubber band differed.",
+          "fix": "The rubber band is stretched by the same amount in each case, so the different distances indicate that the force of friction on the surfaces is different.",
+          "checkId": "mchk_misc_sci9c6_act_same_friction",
+          "checkCriterion": "The answer states or implies this wrong idea: The coins stop at different distances because the push from the rubber band differed.",
+          "fixCheckId": "mfix_misc_sci9c6_act_same_friction",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The rubber band is stretched by the same amount in each case, so the different distances indicate that the force of friction on the surfaces is different.",
+          "keyPointIds": [
+            "sci9c6_t2c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_act_same_friction"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_act_start",
+            "chk_sci9c6_act_slow",
+            "chk_sci9c6_act_surfaces",
+            "chk_sci9c6_act_conclusion"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c6_smaller_friction_farther"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t3_c1",
+      "topicId": "ncert_sci_9_ch6_t3",
+      "topicTitle": "Newton's first law",
+      "label": "Galileo, Thought Experiments and Inertia",
+      "headingType": "heading",
+      "sourcePages": [
+        100
+      ],
+      "conceptHash": "c9ed776eac01bca2eaf10fc59313a320c294a52545d7ae7f525e123172e6c2a2",
+      "cardText": "In ancient times it was well recognised that a force was required to move a stationary object or to stop a moving object. But for ages it was mistakenly thought that a force was also required to keep an object moving with a constant velocity. Only in the 17th century did Galileo Galilei argue, through a series of thought experiments, that if a body moves along a horizontal plane and all impediments to its motion are removed, it will continue to move indefinitely. A thought experiment is done when the conditions required for the experiment are difficult to recreate in the real world, for example imagining an object and a floor so smooth that the force of friction between them is zero. Isaac Newton used the word inertia to describe the tendency of objects to resist change in their state of rest or uniform motion, and used this idea to frame his first law of motion; along with it he presented two more laws of motion in 1687.",
+      "hint": "What did Galileo argue about a body moving with all impediments removed?",
+      "probe": "What mistaken idea did Galileo overturn, and what did Newton name the tendency to resist a change of motion?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Galileo, Thought Experiments and Inertia, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did people long believe about keeping an object moving?",
+          "requiredEvidence": [
+            "force was required to move a stationary object",
+            "mistakenly thought",
+            "maintain an object in such a motion",
+            "constant velocity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gal_mistake",
+              "criterion": "States that it was long mistakenly thought that a force was required to keep an object moving with a constant velocity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did people long believe about keeping an object moving?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_gal_force"
+          ]
+        },
+        {
+          "id": "sci9c6_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did Galileo reason would happen to a body sliding on a smooth level surface?",
+          "requiredEvidence": [
+            "17th century",
+            "Galileo Galilei",
+            "thought experiments",
+            "all impediments",
+            "continue to move indefinitely"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gal_argue",
+              "criterion": "States that Galileo argued through thought experiments that if all impediments to its motion are removed, a body moving along a horizontal plane will continue to move indefinitely.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Galileo reason would happen to a body sliding on a smooth level surface?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "thought experiment",
+            "difficult to recreate in the real world"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gal_thought",
+              "criterion": "States that a thought experiment is done when the conditions required are difficult to recreate in the real world.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Galileo argue about a body moving with all impediments removed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What word did Newton use for the reluctance of objects to change how they move, and which law did it lead to?",
+          "requiredEvidence": [
+            "inertia",
+            "tendency of objects to resist change",
+            "state of rest or uniform motion",
+            "first law of motion",
+            "two more laws",
+            "1687"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gal_inertia",
+              "criterion": "States that Newton used the word inertia for the tendency of objects to resist change in their state of rest or uniform motion, and used it to frame his first law; he presented two more laws in 1687.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What word did Newton use for the reluctance of objects to change how they move, and which law did it lead to?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_remove_friction",
+          "linksChecks": [
+            "chk_sci9c6_gal_argue",
+            "chk_sci9c6_gal_inertia"
+          ],
+          "criterion": "Connects removing all impediments such as friction to a body continuing to move indefinitely, which led to the idea of inertia.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_gal_force",
+          "wrong": "A force is needed to keep an object moving at constant velocity.",
+          "fix": "It was mistakenly thought for ages that a force was required to maintain an object in constant-velocity motion; Galileo argued it would continue to move indefinitely if all impediments were removed.",
+          "checkId": "mchk_misc_sci9c6_gal_force",
+          "checkCriterion": "The answer states or implies this wrong idea: A force is needed to keep an object moving at constant velocity.",
+          "fixCheckId": "mfix_misc_sci9c6_gal_force",
+          "fixCheckCriterion": "Answer 2 states the correct idea: It was mistakenly thought for ages that a force was required to maintain an object in constant-velocity motion; Galileo argued it would continue to move indefinitely if all impediments were removed.",
+          "keyPointIds": [
+            "sci9c6_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_gal_force"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_gal_mistake",
+            "chk_sci9c6_gal_argue",
+            "chk_sci9c6_gal_inertia"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_gal_thought",
+            "lnk_sci9c6_remove_friction"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t3_c2",
+      "topicId": "ncert_sci_9_ch6_t3",
+      "topicTitle": "Newton's first law",
+      "label": "Newton's First Law of Motion",
+      "headingType": "heading",
+      "sourcePages": [
+        100,
+        101
+      ],
+      "conceptHash": "e8fff7d0c51a7aa0d88b441cafc3574ecd1a5844c7b0e1f6b71f53c739cb9e59",
+      "cardText": "Newton's first law of motion states that an object at rest remains at rest, and an object in motion continues to move with a constant velocity, unless a net force acts upon the object. In other words, if the net force acting on an object is zero, the body cannot begin to move or change its velocity, and its acceleration is zero. An object at rest has zero velocity, and constant velocity means no change in the magnitude or the direction of velocity. If a person pushes a moving box with a force equal to the force of friction, the two forces balance, the net force is zero, and the box continues moving with constant velocity. When no net force is acting, either the object is at rest or it moves with a constant velocity. If the force of friction were zero, a net force would be needed to set an object at rest moving, but once moving no further force would be required to keep it moving with a constant velocity; to change the velocity or stop a moving object, a force must be applied.",
+      "hint": "What does the first law say happens when the net force is zero?",
+      "probe": "State Newton's first law and apply it to a box pushed with a force equal to friction.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Newton's First Law of Motion, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the first law say an object behaves when nothing pushes or pulls it overall?",
+          "requiredEvidence": [
+            "at rest remains at rest",
+            "in motion continues to move with a constant velocity",
+            "unless a net force acts"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf1_law",
+              "criterion": "States Newton's first law: an object at rest remains at rest and an object in motion continues with a constant velocity unless a net force acts on it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the first law say an object behaves when nothing pushes or pulls it overall?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_nf1_motion_force"
+          ]
+        },
+        {
+          "id": "sci9c6_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What follows for the velocity and the acceleration when there is no overall push or pull?",
+          "requiredEvidence": [
+            "net force acting on an object is zero",
+            "cannot begin to move or change its velocity",
+            "acceleration is zero"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf1_zero",
+              "criterion": "States that if the net force on an object is zero it cannot begin to move or change its velocity, and its acceleration is zero.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What follows for the velocity and the acceleration when there is no overall push or pull?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t3c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "zero velocity",
+            "constant velocity",
+            "no change in the magnitude or the direction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf1_terms",
+              "criterion": "States that an object at rest has zero velocity and constant velocity means no change in the magnitude or the direction of velocity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the first law say happens when the net force is zero?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A box is pushed with exactly as much force as rubs against it. What happens to the box and why?",
+          "requiredEvidence": [
+            "equal and opposite",
+            "balance each other",
+            "net force",
+            "zero",
+            "continue moving with constant velocity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf1_example",
+              "criterion": "Applies the law: a push equal to the force of friction gives zero net force, so the box continues moving with constant velocity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A box is pushed with exactly as much force as rubs against it. What happens to the box and why?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t3c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "no further force is required",
+            "constant velocity",
+            "to change the velocity",
+            "stop a moving object"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf1_noforce",
+              "criterion": "States that, if friction is zero, no further force is needed to keep an object moving at constant velocity, but a force is needed to change the velocity or stop it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the first law say happens when the net force is zero?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_zero_net_constant",
+          "linksChecks": [
+            "chk_sci9c6_nf1_law",
+            "chk_sci9c6_nf1_example"
+          ],
+          "criterion": "Connects a zero net force, such as an applied force equal to friction, to an object continuing with constant velocity and zero acceleration.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_nf1_motion_force",
+          "wrong": "A moving object with no net force on it must eventually slow down.",
+          "fix": "If the net force acting on an object is zero, the body cannot change its velocity; an object in motion continues to move with a constant velocity.",
+          "checkId": "mchk_misc_sci9c6_nf1_motion_force",
+          "checkCriterion": "The answer states or implies this wrong idea: A moving object with no net force on it must eventually slow down.",
+          "fixCheckId": "mfix_misc_sci9c6_nf1_motion_force",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If the net force acting on an object is zero, the body cannot change its velocity; an object in motion continues to move with a constant velocity.",
+          "keyPointIds": [
+            "sci9c6_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_nf1_motion_force"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_nf1_law",
+            "chk_sci9c6_nf1_zero",
+            "chk_sci9c6_nf1_example"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_nf1_terms",
+            "chk_sci9c6_nf1_noforce",
+            "lnk_sci9c6_zero_net_constant"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t4_c1",
+      "topicId": "ncert_sci_9_ch6_t4",
+      "topicTitle": "Newton's second law",
+      "label": "Force, Mass and Acceleration: Newton's Second Law",
+      "headingType": "heading",
+      "sourcePages": [
+        102,
+        103,
+        104
+      ],
+      "conceptHash": "8dd0ea09f7a1a14703bd7664dd302c1a2410efce1b861f633ddafd6e2d260d15",
+      "cardText": "A force can set an object in motion, bring it to rest, or change its velocity; a change in velocity means the object is accelerating, so a force produces acceleration. In Activity 6.3 a cart is pulled by a cup of weights through a thread over a pulley; doubling the force on the same mass of the cart increases the acceleration, so the acceleration of an object of fixed mass increases as the net force applied on it increases. In Activity 6.4 the mass of the cart is doubled with the same force and the acceleration decreases, so for a given magnitude of force the acceleration produced is inversely related to the mass of the object. Newton's second law of motion states that when a net force acts on an object, the object accelerates in the direction of the net force; the magnitude of the acceleration is proportional to the magnitude of the net force and inversely proportional to the mass of the object, written F = ma, and the direction of acceleration is the same as the direction of the net force. One newton is defined as the force that produces an acceleration of 1 m per second squared on an object of mass 1 kg. In practice, the measured change may be a little less than expected because of friction between the cart's wheels and the surface and measurement errors.",
+      "hint": "How does acceleration depend on the net force and on the mass?",
+      "probe": "State Newton's second law and explain how force and mass affect acceleration.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Force, Mass and Acceleration: Newton's Second Law, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t4c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "change in velocity",
+            "accelerating",
+            "force produces acceleration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_intro",
+              "criterion": "States that a change in velocity means the object is accelerating, so a force produces acceleration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does acceleration depend on the net force and on the mass?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If you push the same trolley harder, what happens to its acceleration?",
+          "requiredEvidence": [
+            "fixed mass",
+            "acceleration",
+            "increases as the net force",
+            "increases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_force",
+              "criterion": "States that for an object of fixed mass the acceleration increases as the net force applied on it increases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If you push the same trolley harder, what happens to its acceleration?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If you push a heavier trolley with the same force, what happens to its acceleration?",
+          "requiredEvidence": [
+            "given magnitude of a force",
+            "inversely related to the mass"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_mass",
+              "criterion": "States that for a given force the acceleration produced is inversely related to the mass of the object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If you push a heavier trolley with the same force, what happens to its acceleration?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_nf2_heavier_faster"
+          ]
+        },
+        {
+          "id": "sci9c6_t4c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "State in words how acceleration depends on the overall push or pull and on the mass of the object.",
+          "requiredEvidence": [
+            "net force acts on an object",
+            "accelerates in the direction of the net force",
+            "proportional to the magnitude of the net force",
+            "inversely proportional to the mass"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_law",
+              "criterion": "States Newton's second law: a net force makes an object accelerate in the direction of the net force, with acceleration proportional to the net force and inversely proportional to the mass.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "State in words how acceleration depends on the overall push or pull and on the mass of the object."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the unit of force defined using mass and acceleration?",
+          "requiredEvidence": [
+            "one newton",
+            "acceleration of 1 m s",
+            "mass 1 kg"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_newton",
+              "criterion": "Defines one newton as the force that produces an acceleration of 1 m per second squared on an object of mass 1 kg.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the unit of force defined using mass and acceleration?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "measurement errors",
+            "friction between the cart's wheels and the surface",
+            "differences"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf2_errors",
+              "criterion": "States that measured values may differ a little from the ideal ratios because of measurement errors and friction between the cart's wheels and the surface.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does acceleration depend on the net force and on the mass?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_force_mass_acc",
+          "linksChecks": [
+            "chk_sci9c6_nf2_force",
+            "chk_sci9c6_nf2_mass",
+            "chk_sci9c6_nf2_law"
+          ],
+          "criterion": "Connects acceleration increasing with net force and decreasing with mass to the law that acceleration is proportional to net force and inversely proportional to mass.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_nf2_heavier_faster",
+          "wrong": "A heavier object accelerates faster under the same force.",
+          "fix": "For a given magnitude of force, the acceleration produced is inversely related to the mass of the object, so a larger mass has a smaller acceleration.",
+          "checkId": "mchk_misc_sci9c6_nf2_heavier_faster",
+          "checkCriterion": "The answer states or implies this wrong idea: A heavier object accelerates faster under the same force.",
+          "fixCheckId": "mfix_misc_sci9c6_nf2_heavier_faster",
+          "fixCheckCriterion": "Answer 2 states the correct idea: For a given magnitude of force, the acceleration produced is inversely related to the mass of the object, so a larger mass has a smaller acceleration.",
+          "keyPointIds": [
+            "sci9c6_t4c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_nf2_heavier_faster"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_nf2_force",
+            "chk_sci9c6_nf2_mass",
+            "chk_sci9c6_nf2_law",
+            "chk_sci9c6_nf2_newton"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_nf2_intro",
+            "chk_sci9c6_nf2_errors",
+            "lnk_sci9c6_force_mass_acc"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t4_c2",
+      "topicId": "ncert_sci_9_ch6_t4",
+      "topicTitle": "Newton's second law",
+      "label": "Gravitational Force and Weight",
+      "headingType": "heading",
+      "sourcePages": [
+        104,
+        105
+      ],
+      "conceptHash": "74cc79117140cea4575cef8885a2335fa3925eacf98c658cfcb2c6178063e95e",
+      "cardText": "Under the influence of the gravitational force an object falls towards the Earth, and the acceleration involved is called the acceleration due to the gravitational force by the Earth, denoted by g, with the same unit as acceleration. Using the second law, the gravitational force on an object of mass m is mg. The value of g is 9.8 m per second squared and can be taken to be nearly constant near the surface of the Earth; for quick estimations 10 m per second squared can be used. The acceleration due to gravity does not depend on the mass of the object. A force of 1 N is around the upward force your palm applies on a 100 g mass held in it. In Example 6.4 a barbell of total mass 30 kg has a downward gravitational force of 294 N, so to keep it steady the weightlifter applies an equal force of 294 N in the opposite, upward, direction.",
+      "hint": "How is the gravitational force on an object related to its mass?",
+      "probe": "What is g, and how do you find the gravitational force on an object?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Gravitational Force and Weight, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the acceleration of a freely falling object called, and what do we call the symbol used for it?",
+          "requiredEvidence": [
+            "gravitational force",
+            "falls towards the Earth",
+            "acceleration due to the gravitational force",
+            "denoted by g"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gw_g",
+              "criterion": "States that under gravitational force an object falls towards the Earth with an acceleration called the acceleration due to gravity, denoted by g.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the acceleration of a freely falling object called, and what do we call the symbol used for it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do you work out the pull of the Earth on an object from its mass?",
+          "requiredEvidence": [
+            "gravitational force",
+            "mass m",
+            "mg"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gw_force",
+              "criterion": "States that the gravitational force acting on an object of mass m is mg.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you work out the pull of the Earth on an object from its mass?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "nearly constant",
+            "surface of the Earth",
+            "does not depend on the mass"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gw_const",
+              "criterion": "States that g is nearly constant near the surface of the Earth and does not depend on the mass of the object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the gravitational force on an object related to its mass?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_gw_heavy_fast"
+          ]
+        },
+        {
+          "id": "sci9c6_t4c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why must a weightlifter push against a barbell's weight, and how hard?",
+          "requiredEvidence": [
+            "keep the barbell steady",
+            "equal force in the opposite direction",
+            "294 N",
+            "upward"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_gw_barbell",
+              "criterion": "Explains that to keep the barbell steady the weightlifter applies a force equal to its weight, 294 N upward, in the direction opposite to the gravitational force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why must a weightlifter push against a barbell's weight, and how hard?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_g_force",
+          "linksChecks": [
+            "chk_sci9c6_gw_force",
+            "chk_sci9c6_gw_barbell"
+          ],
+          "criterion": "Connects the constant acceleration g to the gravitational force on an object being mg, which a weightlifter must balance to hold a barbell steady.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_gw_heavy_fast",
+          "wrong": "Heavier objects fall with a larger acceleration due to gravity.",
+          "fix": "The acceleration due to gravitational force by the Earth (g) does not depend on the mass of the object.",
+          "checkId": "mchk_misc_sci9c6_gw_heavy_fast",
+          "checkCriterion": "The answer states or implies this wrong idea: Heavier objects fall with a larger acceleration due to gravity.",
+          "fixCheckId": "mfix_misc_sci9c6_gw_heavy_fast",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The acceleration due to gravitational force by the Earth (g) does not depend on the mass of the object.",
+          "keyPointIds": [
+            "sci9c6_t4c2_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_gw_heavy_fast"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_gw_g",
+            "chk_sci9c6_gw_force",
+            "chk_sci9c6_gw_barbell"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_gw_const",
+            "lnk_sci9c6_g_force"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t4_c3",
+      "topicId": "ncert_sci_9_ch6_t4",
+      "topicTitle": "Newton's second law",
+      "label": "Reducing Force by Increasing Time: Catching, Airbags and Coconuts",
+      "headingType": "heading",
+      "sourcePages": [
+        104,
+        105
+      ],
+      "conceptHash": "a780754103fa5a621687d6ba1273051d2a905bce5b20d085c059c6c92859ebdb",
+      "cardText": "A cricket fielder catching a fast ball gradually pulls their hands backwards with the ball after catching it. This increases the time during which the high velocity of the ball reduces to zero, which reduces the magnitude of the acceleration of the ball, so a smaller force is needed to stop it, which also minimises injury to the fielder. Airbags in vehicles work for a similar reason: in a collision the airbag inflates quickly into a soft compressible cushion, and the passenger's head and chest push into the bag instead of hitting the hard steering wheel or dashboard, so the time over which the hitting occurs increases. Smaller acceleration means a reduced force on the person, lowering the risk of serious injuries, particularly with seat belt use. In cracking a coconut, the coconut hits a hard surface and stops in a very short time; to change its velocity so quickly the ground must exert a very large force, which breaks the shell.",
+      "hint": "Why does pulling the hands back while catching a fast ball reduce the force?",
+      "probe": "Use Newton's second law to explain catching a ball by pulling back the hands, and airbags.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reducing Force by Increasing Time: Catching, Airbags and Coconuts, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a cricketer draw back the hands while catching a fast ball?",
+          "requiredEvidence": [
+            "pulls their hands backwards",
+            "time duration is increased",
+            "high velocity of the ball reduces to zero"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tim_cricket",
+              "criterion": "States that the fielder pulls the hands backwards with the ball, increasing the time during which the ball's high velocity reduces to zero.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a cricketer draw back the hands while catching a fast ball?"
+            },
+            {
+              "id": "chk_sci9c6_tim_force",
+              "criterion": "States that this reduces the magnitude of the acceleration of the ball, so a smaller force is needed to stop it, minimising injury to the fielder.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a cricketer draw back the hands while catching a fast ball?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_tim_force_same"
+          ]
+        },
+        {
+          "id": "sci9c6_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a car's inflating bag protect a person in a crash?",
+          "requiredEvidence": [
+            "airbag",
+            "soft compressible cushion",
+            "time over which the hitting occurs increases",
+            "smaller acceleration",
+            "reduced force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tim_airbag",
+              "criterion": "Explains that an airbag inflates into a soft cushion so the time of the hit increases, giving a smaller acceleration and a reduced force on the person.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a car's inflating bag protect a person in a crash?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t4c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "stops in a very short time",
+            "very large force",
+            "breaks the shell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tim_coconut",
+              "criterion": "Explains that a coconut stops in a very short time, so the ground exerts a very large force that breaks the shell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does pulling the hands back while catching a fast ball reduce the force?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_time_force",
+          "linksChecks": [
+            "chk_sci9c6_tim_cricket",
+            "chk_sci9c6_tim_airbag"
+          ],
+          "criterion": "Connects a longer time for the velocity to reduce to zero to a smaller acceleration and so a smaller force on the fielder or passenger.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_tim_force_same",
+          "wrong": "The force needed to stop a ball is the same however long the stopping takes.",
+          "fix": "Increasing the time during which the velocity reduces to zero reduces the magnitude of the acceleration, so a smaller force is needed to stop the ball.",
+          "checkId": "mchk_misc_sci9c6_tim_force_same",
+          "checkCriterion": "The answer states or implies this wrong idea: The force needed to stop a ball is the same however long the stopping takes.",
+          "fixCheckId": "mfix_misc_sci9c6_tim_force_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Increasing the time during which the velocity reduces to zero reduces the magnitude of the acceleration, so a smaller force is needed to stop the ball.",
+          "keyPointIds": [
+            "sci9c6_t4c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_tim_force_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_tim_cricket",
+            "chk_sci9c6_tim_force",
+            "chk_sci9c6_tim_airbag"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_tim_coconut",
+            "lnk_sci9c6_time_force"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t5_c1",
+      "topicId": "ncert_sci_9_ch6_t5",
+      "topicTitle": "Newton's third law",
+      "label": "Newton's Third Law of Motion",
+      "headingType": "heading",
+      "sourcePages": [
+        107,
+        108
+      ],
+      "conceptHash": "7b2672479877ceff2b8069581cd2e9dc5868a91e505523095b62535a569d2b67",
+      "cardText": "At least two objects must interact for a force to come into play: when you push a ball with your foot you feel a force applied by the ball on your foot. In Activity 6.5, pushing a heavy table while sitting on a wheeled chair makes you move in the opposite direction, and pulling the table moves you the other way; each time you apply a force on the table, the table applies a force on you in the opposite direction. In Activity 6.6 two spring balances connected hook to hook and pulled in opposite directions show the same readings every time, indicating that the forces they apply on each other are equal in magnitude. Newton's third law of motion states that whenever one object is exerting a force on a second object, the second object is simultaneously exerting an equal and opposite force on the first object. The forces always occur in pairs but these two forces act on two different objects. A pair of equal and opposite forces acts on two different objects, so they do not balance each other; if two equal and opposite forces act on the same object, they balance each other.",
+      "hint": "Why do the two forces of a pair not cancel each other?",
+      "probe": "State Newton's third law and explain why the two forces of an action-reaction pair do not cancel.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Newton's Third Law of Motion, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t5c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "at least two objects must interact",
+            "push a ball with your foot",
+            "force applied by the ball on your foot"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_two",
+              "criterion": "States that at least two objects must interact for a force to come into play, as when a ball pushed by the foot pushes back on the foot.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the two forces of a pair not cancel each other?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "You push a heavy table while sitting on a wheeled chair. What happens to you, and what does it show?",
+          "requiredEvidence": [
+            "applied a force on the table",
+            "table applied a force upon you",
+            "opposite direction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_table",
+              "criterion": "Describes Activity 6.5: each time you applied a force on the table, the table applied a force on you in the opposite direction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "You push a heavy table while sitting on a wheeled chair. What happens to you, and what does it show?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two balances with their hooks joined are pulled in opposite directions. What do the scales show about the forces?",
+          "requiredEvidence": [
+            "two spring balances",
+            "readings",
+            "same every time",
+            "equal in magnitude"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_spring",
+              "criterion": "Describes Activity 6.6: the two spring balances always show the same reading, showing the forces they apply on each other are equal in magnitude and opposite.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two balances with their hooks joined are pulled in opposite directions. What do the scales show about the forces?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "State the third law in your own words.",
+          "requiredEvidence": [
+            "one object is exerting a force on a second object",
+            "simultaneously",
+            "equal and opposite force",
+            "first object"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_law",
+              "criterion": "States Newton's third law: whenever one object exerts a force on a second object, the second simultaneously exerts an equal and opposite force on the first.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "State the third law in your own words."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do the forces of such a pair not cancel each other?",
+          "requiredEvidence": [
+            "occur in pairs",
+            "two different objects"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_different",
+              "criterion": "States that the forces always occur in pairs and the two forces act on two different objects.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the forces of such a pair not cancel each other?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_nf3_cancel"
+          ]
+        },
+        {
+          "id": "sci9c6_t5c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "two different objects",
+            "do not balance each other",
+            "same object",
+            "balance each other"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_nf3_balance",
+              "criterion": "States that a third-law pair acts on two different objects and does not balance, whereas two equal and opposite forces on the same object balance each other.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do the two forces of a pair not cancel each other?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_pair_not_cancel",
+          "linksChecks": [
+            "chk_sci9c6_nf3_law",
+            "chk_sci9c6_nf3_different"
+          ],
+          "criterion": "Connects the two equal and opposite forces acting on two different objects to their not cancelling each other, unlike two equal and opposite forces on the same object.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_nf3_cancel",
+          "wrong": "The forces in an action-reaction pair cancel each other, so nothing can ever move.",
+          "fix": "The two forces of the pair act on two different objects, so they do not balance each other; only equal and opposite forces on the same object balance.",
+          "checkId": "mchk_misc_sci9c6_nf3_cancel",
+          "checkCriterion": "The answer states or implies this wrong idea: The forces in an action-reaction pair cancel each other, so nothing can ever move.",
+          "fixCheckId": "mfix_misc_sci9c6_nf3_cancel",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The two forces of the pair act on two different objects, so they do not balance each other; only equal and opposite forces on the same object balance.",
+          "keyPointIds": [
+            "sci9c6_t5c1_kp5"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_nf3_cancel"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_nf3_table",
+            "chk_sci9c6_nf3_spring",
+            "chk_sci9c6_nf3_law",
+            "chk_sci9c6_nf3_different"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_nf3_two",
+            "chk_sci9c6_nf3_balance",
+            "lnk_sci9c6_pair_not_cancel"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t5_c2",
+      "topicId": "ncert_sci_9_ch6_t5",
+      "topicTitle": "Newton's third law",
+      "label": "Friction Helps Us Walk",
+      "headingType": "example",
+      "sourcePages": [
+        107
+      ],
+      "conceptHash": "8706349d5886737907749c1ebe5f0fb7a450dd85c21f99cdb50864135a04549f",
+      "cardText": "To move forward on a bicycle without pedalling you push the ground backwards with your feet, and the ground pushes your feet in the opposite direction, so both you and the bicycle move forward. This is how we walk or run: we push the ground backwards with our feet and the ground applies an opposite force, in the form of friction, to make us move forward. In this case friction helps us move rather than oppose us. When the foot tries to slide backwards the force of friction acts in the forward direction; without friction the foot would slip backwards and we would fall down. Grooves on the soles of footwear and treads on tyres increase the force of friction with the floor and road. That is why it is difficult to walk on wet polished floors or ice, and risky to drive on roads covered with water or snow.",
+      "hint": "In which direction does friction act on your foot while you walk?",
+      "probe": "How does friction help you walk, and why is it hard to walk on ice?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Friction Helps Us Walk, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do you move forward when you walk, and which force really pushes you ahead?",
+          "requiredEvidence": [
+            "push the ground backwards",
+            "ground applies an opposite force",
+            "form of friction",
+            "helps you move"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_walk_friction",
+              "criterion": "Explains that when we push the ground backwards with our feet, the ground applies an opposite, forward force in the form of friction, so friction helps us move.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you move forward when you walk, and which force really pushes you ahead?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_walk_oppose"
+          ]
+        },
+        {
+          "id": "sci9c6_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What would happen to your foot on a perfectly slippery floor?",
+          "requiredEvidence": [
+            "no force of friction",
+            "foot would have slipped backwards",
+            "fallen down"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_walk_slip",
+              "criterion": "States that without friction the foot would slip backwards while pushing the ground and we would fall down.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What would happen to your foot on a perfectly slippery floor?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "grooves",
+            "soles of footwear",
+            "treads on tyres",
+            "increase the force of friction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_walk_grooves",
+              "criterion": "States that grooves on footwear soles and treads on tyres increase the force of friction with the floor or road.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which direction does friction act on your foot while you walk?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "wet polished floors or ice",
+            "roads covered with water or snow"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_walk_ice",
+              "criterion": "States that it is difficult to walk on wet polished floors or ice and risky to drive on roads covered with water or snow because of low friction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which direction does friction act on your foot while you walk?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_push_back_forward",
+          "linksChecks": [
+            "chk_sci9c6_walk_friction",
+            "chk_sci9c6_walk_ice"
+          ],
+          "criterion": "Connects pushing the ground backwards to the ground's frictional force pushing you forward, and so to difficulty walking where friction is low.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_walk_oppose",
+          "wrong": "Friction always opposes movement, so it makes walking harder.",
+          "fix": "In walking, the force applied by the ground is in the form of friction, so friction helps you move rather than oppose you.",
+          "checkId": "mchk_misc_sci9c6_walk_oppose",
+          "checkCriterion": "The answer states or implies this wrong idea: Friction always opposes movement, so it makes walking harder.",
+          "fixCheckId": "mfix_misc_sci9c6_walk_oppose",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In walking, the force applied by the ground is in the form of friction, so friction helps you move rather than oppose you.",
+          "keyPointIds": [
+            "sci9c6_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_walk_oppose"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_walk_friction",
+            "chk_sci9c6_walk_slip"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_walk_grooves",
+            "chk_sci9c6_walk_ice",
+            "lnk_sci9c6_push_back_forward"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t5_c3",
+      "topicId": "ncert_sci_9_ch6_t5",
+      "topicTitle": "Newton's third law",
+      "label": "The Third Law at Work: Canoe, Balloon and Rocket",
+      "headingType": "heading",
+      "sourcePages": [
+        108,
+        109
+      ],
+      "conceptHash": "cf3b7d7b1bdfc6a4476333be661d05b5f58a43c86aba5eafc0919f8ea0cca4af",
+      "cardText": "A person climbing a coconut tree pushes down against the trunk and the friction between the trunk and the legs pushes the person upwards by an equal force, so it is harder to climb smooth trunks that have less friction. When a canoeist pushes the water backwards with the paddle, the water pushes the paddle forward with an equal force; the two forces are equal but act on different objects, the paddle and the water, so they do not cancel, and the force on the paddle moves the paddle and canoe forward. When the canoeist pushes harder the forward force is larger and the canoe's velocity increases. In the balloon activity the stretched balloon pushes the air out and the air rushing out exerts an equal force on the balloon in the opposite direction, so the balloon moves opposite to the air. A rocket engine produces gas and expels it downward, which exerts an equal and opposite upward force on the rocket; when this is larger than the weight of the rocket the net force is upward and the rocket lifts off. Firing the engine in the direction of motion slows the rocket, as the Vikram lander of Chandrayaan-3 did.",
+      "hint": "What pushes a canoe or a rocket forward?",
+      "probe": "Use Newton's third law to explain how a canoe, a balloon and a rocket move.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Third Law at Work: Canoe, Balloon and Rocket, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t5c3_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "push down against the trunk",
+            "friction between the trunk and the legs",
+            "upwards by an equal force",
+            "smooth tree trunks"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_tree",
+              "criterion": "Explains that a person climbing a tree pushes down on the trunk and the friction pushes them up by an equal force, so smooth trunks with less friction are harder to climb.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What pushes a canoe or a rocket forward?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does pushing the water back with a paddle move a canoe forward?",
+          "requiredEvidence": [
+            "pushes the water backwards",
+            "water pushes the paddle forward",
+            "equal in magnitude",
+            "different objects",
+            "do not cancel"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_canoe",
+              "criterion": "Explains that the canoeist pushes water backwards and the water pushes the paddle forward with an equal force; the forces act on different objects so they do not cancel, and the canoe moves forward.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does pushing the water back with a paddle move a canoe forward?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_ex_cancel"
+          ]
+        },
+        {
+          "id": "sci9c6_t5c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "pushes harder",
+            "forward force on the paddle is larger",
+            "velocity increases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_harder",
+              "criterion": "States that when the canoeist pushes harder on the water the forward force on the paddle is larger and the canoe's velocity increases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What pushes a canoe or a rocket forward?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "balloon",
+            "expel",
+            "air rushing out",
+            "equal force",
+            "opposite direction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_balloon",
+              "criterion": "Explains that the shrinking balloon pushes air out and the air rushing out exerts an equal force on the balloon in the opposite direction, so the balloon moves opposite to the air.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What pushes a canoe or a rocket forward?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c3_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a rocket leave the ground?",
+          "requiredEvidence": [
+            "expels it in the downward direction",
+            "equal and opposite force",
+            "upward direction",
+            "larger than the weight",
+            "lifts off"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_rocket",
+              "criterion": "Explains that a rocket engine expels gas downward, which exerts an equal and opposite upward force on the rocket; this force exceeds its weight so the net force is upward and it lifts off.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a rocket leave the ground?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c3_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fires in the direction of its motion",
+            "exhaust gases",
+            "slowing it down",
+            "Vikram lander",
+            "Chandrayaan-3"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_ex_slow",
+              "criterion": "States that a rocket firing in the direction of its motion is slowed by the exhaust gases, as the Vikram lander of Chandrayaan-3 did for a soft landing.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What pushes a canoe or a rocket forward?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_push_gas_lift",
+          "linksChecks": [
+            "chk_sci9c6_ex_rocket"
+          ],
+          "criterion": "Connects expelling gas downward to an equal and opposite upward force on the rocket, which lifts off when that force exceeds the rocket's weight.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_ex_cancel",
+          "wrong": "The paddle pushes the water backwards, and the equal force from the water cancels it, so the canoe cannot move.",
+          "fix": "The two forces are equal in magnitude but act on different objects, the paddle and the water, so they do not cancel each other.",
+          "checkId": "mchk_misc_sci9c6_ex_cancel",
+          "checkCriterion": "The answer states or implies this wrong idea: The paddle pushes the water backwards, and the equal force from the water cancels it, so the canoe cannot move.",
+          "fixCheckId": "mfix_misc_sci9c6_ex_cancel",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The two forces are equal in magnitude but act on different objects, the paddle and the water, so they do not cancel each other.",
+          "keyPointIds": [
+            "sci9c6_t5c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_ex_cancel"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_ex_canoe",
+            "chk_sci9c6_ex_rocket"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_ex_tree",
+            "chk_sci9c6_ex_harder",
+            "chk_sci9c6_ex_balloon",
+            "chk_sci9c6_ex_slow",
+            "lnk_sci9c6_push_gas_lift"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t5_c4",
+      "topicId": "ncert_sci_9_ch6_t5",
+      "topicTitle": "Newton's third law",
+      "label": "Third Law for All Forces; Equal Forces, Unequal Accelerations",
+      "headingType": "heading",
+      "sourcePages": [
+        110
+      ],
+      "conceptHash": "65ff9d87d4ba9dec61274cbf8094e344487a5d0e323b7be9eda98b7934e6c891",
+      "cardText": "Newton's third law applies to all types of forces, contact or non-contact, that we come across in everyday mechanical situations: two bar magnets apply equal and opposite magnetic forces on each other, two similarly charged balloons apply equal and opposite electrostatic forces, and the Earth and a fruit apply equal and opposite gravitational forces on each other. Though the forces on the Earth and the fruit are equal in magnitude, the mass of the Earth is so large that the acceleration of the Earth caused by the force is extremely small and its effect is too small to be noticed. In Example 6.8, when a 0.1 kg bullet is fired from a 5 kg gun the recoil force on the gun is equal to the force on the bullet, but the accelerations are not equal because their masses are different. Even though the forces on two interacting objects are always equal in magnitude they do not, in general, produce equal accelerations, because the masses of the objects may be different.",
+      "hint": "Why does a fruit fall towards the Earth, though the Earth is pulled by an equal force?",
+      "probe": "Why do equal and opposite forces on two objects not produce equal accelerations?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Third Law for All Forces; Equal Forces, Unequal Accelerations, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t5c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Does the third law work only for pushes you can touch? Give reasons.",
+          "requiredEvidence": [
+            "all types of forces",
+            "contact or non-contact",
+            "everyday mechanical situations"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tl_all",
+              "criterion": "States that Newton's third law applies to all types of forces, contact or non-contact, in everyday mechanical situations, such as magnetic, electrostatic and gravitational forces.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Does the third law work only for pushes you can touch? Give reasons."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_tl_contact"
+          ]
+        },
+        {
+          "id": "sci9c6_t5c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A fruit and the Earth pull on each other equally. Why do we see only the fruit fall?",
+          "requiredEvidence": [
+            "equal in magnitude",
+            "mass of the Earth is so large",
+            "acceleration of the Earth",
+            "extremely small"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tl_earth",
+              "criterion": "Explains that the forces on the Earth and the fruit are equal but the Earth's mass is so large that its acceleration is extremely small and unnoticed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A fruit and the Earth pull on each other equally. Why do we see only the fruit fall?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do two objects that push on each other with equal strength not speed up equally?",
+          "requiredEvidence": [
+            "always equal in magnitude",
+            "do not, in general, produce equal acceleration",
+            "masses of the objects",
+            "different"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tl_note",
+              "criterion": "States that although the forces on two interacting objects are always equal in magnitude, they do not in general produce equal accelerations because the masses may be different.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do two objects that push on each other with equal strength not speed up equally?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t5c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "pair of forces",
+            "equal in magnitude",
+            "accelerations are not equal",
+            "masses are different"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_tl_gun",
+              "criterion": "Applies it to a bullet and a gun: the pair of forces is equal but the accelerations are not equal because their masses are different.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a fruit fall towards the Earth, though the Earth is pulled by an equal force?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_equal_force_mass",
+          "linksChecks": [
+            "chk_sci9c6_tl_note",
+            "chk_sci9c6_tl_earth"
+          ],
+          "criterion": "Connects equal forces on two interacting objects to unequal accelerations through their different masses.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_tl_contact",
+          "wrong": "Newton's third law applies only to contact forces such as pushes and pulls.",
+          "fix": "Newton's third law applies to all types of forces, contact or non-contact, that we come across in everyday mechanical situations.",
+          "checkId": "mchk_misc_sci9c6_tl_contact",
+          "checkCriterion": "The answer states or implies this wrong idea: Newton's third law applies only to contact forces such as pushes and pulls.",
+          "fixCheckId": "mfix_misc_sci9c6_tl_contact",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Newton's third law applies to all types of forces, contact or non-contact, that we come across in everyday mechanical situations.",
+          "keyPointIds": [
+            "sci9c6_t5c4_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_tl_contact"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_tl_all",
+            "chk_sci9c6_tl_earth",
+            "chk_sci9c6_tl_note"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_tl_gun",
+            "lnk_sci9c6_equal_force_mass"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch6_t6_c1",
+      "topicId": "ncert_sci_9_ch6_t6",
+      "topicTitle": "Forces on a system of objects",
+      "label": "Forces Acting on a System of Objects",
+      "headingType": "heading",
+      "sourcePages": [
+        111
+      ],
+      "conceptHash": "87ca515f055213aa34da9b9cd0527084ce13ee648b5c309285cf695c70a972ae",
+      "cardText": "Newton's laws can be applied to two or more objects connected together. For two boxes connected by a string on a frictionless horizontal surface, with a force F pulling Box 1, Box 1 applies a force on Box 2 via the string, and by the third law Box 2 applies an equal and opposite force on Box 1; this force is called tension T. One approach is to calculate the net force on each box separately and then use the second law; a simpler way is to consider the two boxes and the string as a single system. In that approach the forces within the system (internal forces) need not be considered and only forces that act from the outside (external forces) matter: the tension T is the internal force and F is the external force. The system of two boxes accelerates just like a single object of mass m1 + m2. Treating connected objects as a system often simplifies the analysis, and gravitational force on the system is balanced by the normal force from the ground.",
+      "hint": "Which forces matter when two connected boxes are treated as one system?",
+      "probe": "How do you find the acceleration of two connected boxes by treating them as a system?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Forces Acting on a System of Objects, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c6_t6c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two boxes joined by a string are pulled. How do they push and pull on each other through the string?",
+          "requiredEvidence": [
+            "Box 1 applies a force on Box 2",
+            "Newton's third law",
+            "equal and opposite force",
+            "tension"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_sys_tension_pair",
+              "criterion": "States that Box 1 pulls Box 2 via the string and by the third law Box 2 applies an equal and opposite force on Box 1; this force is called tension T.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two boxes joined by a string are pulled. How do they push and pull on each other through the string?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t6c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the easier way to find how fast two joined boxes speed up, and which forces can you then leave out?",
+          "requiredEvidence": [
+            "single system",
+            "internal forces",
+            "need not be considered",
+            "external forces"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_sys_system",
+              "criterion": "States that the two boxes and string can be treated as a single system in which internal forces need not be considered and only external forces matter.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the easier way to find how fast two joined boxes speed up, and which forces can you then leave out?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c6_sys_tension"
+          ]
+        },
+        {
+          "id": "sci9c6_t6c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which pull is inside the group and which is outside, and how does the whole group accelerate?",
+          "requiredEvidence": [
+            "tension",
+            "internal force",
+            "external force",
+            "single object",
+            "m1 + m2"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_sys_accel",
+              "criterion": "States that the tension is the internal force and F the external force, and the system accelerates like a single object of mass m1 + m2.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which pull is inside the group and which is outside, and how does the whole group accelerate?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c6_t6c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "connected objects as a system",
+            "simplifies the analysis",
+            "power of Newton's laws"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c6_sys_simple",
+              "criterion": "States that treating connected objects as a system often simplifies the analysis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which forces matter when two connected boxes are treated as one system?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c6_internal_ignored",
+          "linksChecks": [
+            "chk_sci9c6_sys_system",
+            "chk_sci9c6_sys_accel"
+          ],
+          "criterion": "Connects treating connected boxes as one system to ignoring the internal tension and using only the external force on the total mass.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c6_sys_tension",
+          "wrong": "The tension in the string must be included as an external force on the system of two boxes.",
+          "fix": "The tension T acting on both the boxes is the internal force; only the external force F (and the balanced weight and normal force) matter for the system.",
+          "checkId": "mchk_misc_sci9c6_sys_tension",
+          "checkCriterion": "The answer states or implies this wrong idea: The tension in the string must be included as an external force on the system of two boxes.",
+          "fixCheckId": "mfix_misc_sci9c6_sys_tension",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The tension T acting on both the boxes is the internal force; only the external force F (and the balanced weight and normal force) matter for the system.",
+          "keyPointIds": [
+            "sci9c6_t6c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c6_sys_tension"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c6_sys_tension_pair",
+            "chk_sci9c6_sys_system",
+            "chk_sci9c6_sys_accel"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c6_sys_simple",
+            "lnk_sci9c6_internal_ignored"
+          ]
+        ]
+      }
+    }
+  ]
+}

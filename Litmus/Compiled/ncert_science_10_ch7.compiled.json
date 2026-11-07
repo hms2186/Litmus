@@ -1,0 +1,2189 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_10_ch7.json",
+  "sourceSha256": "124613d0b0553604009ec023c905e2b478ee3307f9b3b33e3178818ab5f5b7e9",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 7,
+  "chapterName": "How do Organisms Reproduce?",
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c7_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci10c7_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example reproduction, DNA copying, variation, fission, binary fission, multiple fission, fragmentation, regeneration.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "reproduction",
+    "DNA copying",
+    "variation",
+    "fission",
+    "binary fission",
+    "multiple fission",
+    "fragmentation",
+    "regeneration",
+    "budding",
+    "vegetative propagation",
+    "spore",
+    "asexual reproduction",
+    "sexual reproduction",
+    "meiosis",
+    "gamete",
+    "zygote",
+    "pollination",
+    "fertilisation",
+    "puberty",
+    "testes",
+    "ovary",
+    "placenta",
+    "menstruation",
+    "contraception"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci10_ch7_t1_c1",
+      "topicId": "ncert_science_10_ch7_t1",
+      "topicTitle": "DNA Copying and the Importance of Variation in Reproduction",
+      "label": "DNA Copying: The Basic Event of Reproduction",
+      "headingType": "heading",
+      "sourcePages": [
+        113,
+        114
+      ],
+      "conceptHash": "e91b74cd86d717b3fa49ffd008ae14cddabcf1d13f8f1bcc7ae0a6f4e5913066",
+      "cardText": "Organisms look similar because their body designs are similar, so the blueprints for those designs must be similar too. Reproduction at its most basic level therefore means making copies of the blueprints of body design. The chromosomes in the nucleus contain information for inheritance in the form of DNA molecules, and DNA is the information source for making proteins. If the information changes, different proteins are made and body designs alter. So a basic event in reproduction is the creation of a DNA copy. The two copies are separated along with an additional cellular apparatus, and the cell divides into two. Because no biochemical reaction is absolutely reliable, the copies are similar but may not be identical.",
+      "hint": "Why is making a copy of DNA the first step of reproduction, and why are copies not always identical?",
+      "probe": "Explain why DNA copying is essential to reproduction and why the copies show variations.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain DNA Copying: The Basic Event of Reproduction, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two dogs of the same breed look alike. What do they share inside their cells that makes this so, and what must a parent cell do about it before dividing?",
+          "requiredEvidence": [
+            "blueprints",
+            "body design",
+            "DNA",
+            "making proteins",
+            "creation of a DNA copy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_dc_blueprint",
+              "criterion": "States that reproduction involves copying the blueprint of body design, because DNA is the information for making proteins, so the creation of a DNA copy is a basic event.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two dogs of the same breed look alike. What do they share inside their cells that makes this so, and what must a parent cell do about it before dividing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would copying all of a cell's instructions never give a perfect result every single time?",
+          "requiredEvidence": [
+            "cellular apparatus",
+            "divides to give rise to two cells",
+            "not absolutely reliable",
+            "some variations",
+            "similar",
+            "not be identical"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_dc_variation",
+              "criterion": "States that DNA copying is accompanied by a cellular apparatus and is not absolutely reliable, so the copies are similar but may not be identical, and some may be too drastic for the cell to survive.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would copying all of a cell's instructions never give a perfect result every single time?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_dc_identical"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_dna_chain",
+          "linksChecks": [
+            "chk_sci10c7_dc_blueprint",
+            "chk_sci10c7_dc_variation"
+          ],
+          "criterion": "Connects DNA being the blueprint for proteins and body design to copying being essential and slightly inaccurate.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_dc_identical",
+          "wrong": "DNA copies made during reproduction are always exactly identical to the original.",
+          "fix": "No bio-chemical reaction is absolutely reliable, so DNA copies will be similar but may not be identical to the original.",
+          "checkId": "mchk_misc_sci10c7_dc_identical",
+          "checkCriterion": "The answer states or implies this wrong idea: DNA copies made during reproduction are always exactly identical to the original.",
+          "fixCheckId": "mfix_misc_sci10c7_dc_identical",
+          "fixCheckCriterion": "Answer 2 states the correct idea: No bio-chemical reaction is absolutely reliable, so DNA copies will be similar but may not be identical to the original.",
+          "keyPointIds": [
+            "sci10c7_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_dc_identical"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_dc_blueprint",
+            "chk_sci10c7_dc_variation"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_dna_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t1_c2",
+      "topicId": "ncert_science_10_ch7_t1",
+      "topicTitle": "DNA Copying and the Importance of Variation in Reproduction",
+      "label": "The Importance of Variation",
+      "headingType": "heading",
+      "sourcePages": [
+        114
+      ],
+      "conceptHash": "6992d1516d0af08387e960d75deb97ad3646eddff88c8091c7575fa8df49b78f",
+      "cardText": "Populations of organisms fill well-defined places, or niches, in the ecosystem using their ability to reproduce. Consistency of DNA copying maintains the body design features that suit a niche, so reproduction is linked to the stability of populations. But niches can change for reasons beyond the organisms' control: temperatures rise or fall, water levels vary, or meteorites hit. If a population suited to a niche were drastically changed it could be wiped out; but if some variations are present in a few individuals, there is a chance for them to survive. If bacteria in temperate water face global warming, most die but the few heat-resistant variants survive and grow. Variation is useful for survival of the species over time.",
+      "hint": "Why does a species benefit from variation even when an individual does not?",
+      "probe": "Explain why variation is beneficial to a species but not necessarily to the individual.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Importance of Variation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t1c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does a population gain from its offspring being very like their parents when the surroundings stay the same?",
+          "requiredEvidence": [
+            "niches",
+            "ecosystem",
+            "consistency of DNA copying",
+            "stability of populations"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_va_stability",
+              "criterion": "States that consistent DNA copying maintains body design features suited to a niche, linking reproduction to the stability of populations.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a population gain from its offspring being very like their parents when the surroundings stay the same?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Warm water arrives and most bacteria in a pond die. What would allow the pond to still have bacteria afterwards?",
+          "requiredEvidence": [
+            "niche",
+            "drastically altered",
+            "wiped out",
+            "variations",
+            "chance to survive",
+            "survival of species over time"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_va_survival",
+              "criterion": "States that when a niche is drastically altered a population without variation could be wiped out, whereas variants in a few individuals may survive, so variation helps the species survive over time.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Warm water arrives and most bacteria in a pond die. What would allow the pond to still have bacteria afterwards?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_va_individual"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_variation_chain",
+          "linksChecks": [
+            "chk_sci10c7_va_stability",
+            "chk_sci10c7_va_survival"
+          ],
+          "criterion": "Connects stable copying to niche stability and variation to survival after the niche changes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_va_individual",
+          "wrong": "Variation is beneficial to every individual that has it.",
+          "fix": "Variation is useful for the survival of species over time; it does not necessarily protect each individual, since only some variants survive a change.",
+          "checkId": "mchk_misc_sci10c7_va_individual",
+          "checkCriterion": "The answer states or implies this wrong idea: Variation is beneficial to every individual that has it.",
+          "fixCheckId": "mfix_misc_sci10c7_va_individual",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Variation is useful for the survival of species over time; it does not necessarily protect each individual, since only some variants survive a change.",
+          "keyPointIds": [
+            "sci10c7_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_va_individual"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_va_survival"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c7_va_stability",
+            "lnk_sci10c7_variation_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t2_c1",
+      "topicId": "ncert_science_10_ch7_t2",
+      "topicTitle": "Asexual Reproduction Modes: Fission, Fragmentation, Regeneration and Budding",
+      "label": "Fission in Single-celled Organisms",
+      "headingType": "heading",
+      "sourcePages": [
+        115,
+        116
+      ],
+      "conceptHash": "12045dc537fad039739e3f8eda5e2747f1d007fac9e973fc5f87b9e2a108e090",
+      "cardText": "The modes by which organisms reproduce depend on their body design. For unicellular organisms, cell division, or fission, creates new individuals. Many bacteria and protozoa simply split into two equal halves; in Amoeba the split can happen in any plane. Leishmania, which causes kala-azar, has a whip-like structure at one end and divides by binary fission in a definite orientation to it. The malarial parasite Plasmodium divides into many daughter cells simultaneously by multiple fission. Yeast puts out small buds that separate and grow further.",
+      "hint": "How do binary fission, multiple fission and the budding of yeast differ?",
+      "probe": "Explain binary fission and multiple fission, with an organism for each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Fission in Single-celled Organisms, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a single-celled organism make a new individual from itself, and how many does it make at a time in the simplest case?",
+          "requiredEvidence": [
+            "unicellular organisms",
+            "fission",
+            "split into two equal halves",
+            "Amoeba",
+            "any plane",
+            "Leishmania"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fi_binary",
+              "criterion": "States that unicellular organisms reproduce by fission, and that in binary fission (bacteria, protozoa, Amoeba, Leishmania) a cell splits into two equal halves.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a single-celled organism make a new individual from itself, and how many does it make at a time in the simplest case?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is different about how a malarial parasite divides compared with an amoeba, and how does a single-celled fungus used in baking differ again?",
+          "requiredEvidence": [
+            "Plasmodium",
+            "many daughter cells simultaneously",
+            "multiple fission",
+            "yeast",
+            "buds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fi_multiple",
+              "criterion": "States that Plasmodium divides into many daughter cells at once by multiple fission, while yeast puts out small buds that separate and grow.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is different about how a malarial parasite divides compared with an amoeba, and how does a single-celled fungus used in baking differ again?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_fi_same"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_fission_chain",
+          "linksChecks": [
+            "chk_sci10c7_fi_binary",
+            "chk_sci10c7_fi_multiple"
+          ],
+          "criterion": "Connects unicellular body design to binary and multiple fission and yeast budding.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_fi_same",
+          "wrong": "Binary fission and multiple fission are the same process.",
+          "fix": "In binary fission a cell splits into two, while in multiple fission, as in Plasmodium, it divides into many daughter cells simultaneously.",
+          "checkId": "mchk_misc_sci10c7_fi_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Binary fission and multiple fission are the same process.",
+          "fixCheckId": "mfix_misc_sci10c7_fi_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In binary fission a cell splits into two, while in multiple fission, as in Plasmodium, it divides into many daughter cells simultaneously.",
+          "keyPointIds": [
+            "sci10c7_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_fi_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_fi_binary",
+            "chk_sci10c7_fi_multiple"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_fission_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t2_c2",
+      "topicId": "ncert_science_10_ch7_t2",
+      "topicTitle": "Asexual Reproduction Modes: Fission, Fragmentation, Regeneration and Budding",
+      "label": "Fragmentation and Why Complex Organisms Cannot Divide Cell by Cell",
+      "headingType": "heading",
+      "sourcePages": [
+        116
+      ],
+      "conceptHash": "b4312e7011c3580d618f422977051b6d1b161f23e47aaa042c9d575759227f6f",
+      "cardText": "In multi-cellular organisms with relatively simple body organisation, simple reproductive methods can still work. Spirogyra simply breaks up into smaller pieces upon maturation, and these fragments grow into new individuals. This is not true for all multi-cellular organisms, which cannot simply divide cell by cell. Specialised cells are organised as tissues, and tissues as organs placed at definite positions in the body, so cell-by-cell division would be impractical. They need more complex ways of reproduction, so reproduction is the function of a specific cell type capable of growing, proliferating and making other cell types under the right circumstances.",
+      "hint": "Why can Spirogyra just break up, while a complex animal cannot divide cell by cell?",
+      "probe": "Explain fragmentation in Spirogyra and why complex multi-cellular organisms cannot reproduce by dividing cell by cell.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Fragmentation and Why Complex Organisms Cannot Divide Cell by Cell, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A pond alga's filament snaps into several parts. What can each part go on to become, and why does that work for such a simple body?",
+          "requiredEvidence": [
+            "relatively simple body organisation",
+            "Spirogyra",
+            "breaks up into smaller pieces",
+            "fragments grow into new individuals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fg_spiro",
+              "criterion": "States that Spirogyra, a multi-cellular organism with simple body organisation, reproduces by breaking into pieces (fragments) that grow into new individuals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A pond alga's filament snaps into several parts. What can each part go on to become, and why does that work for such a simple body?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would cutting a cat's body into cells and letting each grow be a poor way for it to reproduce?",
+          "requiredEvidence": [
+            "cannot simply divide cell-by-cell",
+            "specialised cells",
+            "tissues",
+            "organs",
+            "definite positions",
+            "impractical",
+            "specific cell type"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fg_complex",
+              "criterion": "States that complex multi-cellular organisms cannot divide cell by cell because their cells are organised into tissues and organs at definite positions, so a specific cell type does the reproducing.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would cutting a cat's body into cells and letting each grow be a poor way for it to reproduce?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_frag_chain",
+          "linksChecks": [
+            "chk_sci10c7_fg_spiro",
+            "chk_sci10c7_fg_complex"
+          ],
+          "criterion": "Connects the simple body of Spirogyra allowing fragmentation to the organised body of complex organisms needing a specific reproductive cell type.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_fg_spiro",
+            "chk_sci10c7_fg_complex"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_frag_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t2_c3",
+      "topicId": "ncert_science_10_ch7_t2",
+      "topicTitle": "Asexual Reproduction Modes: Fission, Fragmentation, Regeneration and Budding",
+      "label": "Regeneration and Budding",
+      "headingType": "heading",
+      "sourcePages": [
+        116,
+        117
+      ],
+      "conceptHash": "faa9c19fce050e5cc3579d55d32f38a5f6013f9ce01c34281b1395a460034e53",
+      "cardText": "Many fully differentiated organisms can give rise to new individuals from their body parts: simple animals such as Hydra and Planaria can be cut into any number of pieces and each grows into a complete organism. This is regeneration. It is carried out by specialised cells that proliferate and make large numbers of cells, which then change into various cell types and tissues in an organised sequence called development. Regeneration is not the same as reproduction, since most organisms would not normally depend on being cut up to reproduce. In budding, Hydra uses regenerative cells for reproduction: a bud develops as an outgrowth due to repeated cell division at one specific site, grows into a tiny individual and detaches when mature.",
+      "hint": "How are regeneration and budding in Hydra similar, and why is regeneration not the same as reproduction?",
+      "probe": "Explain regeneration and budding, and say why regeneration is not the same as reproduction.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Regeneration and Budding, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A flatworm is cut into several pieces and each becomes a whole worm. Which kind of cells make this possible, and why would you hesitate to call it normal reproduction?",
+          "requiredEvidence": [
+            "body parts",
+            "Hydra and Planaria",
+            "cut into any number of pieces",
+            "complete organism",
+            "regeneration",
+            "specialised cells",
+            "not the same as reproduction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_rg_regen",
+              "criterion": "States that in regeneration pieces of organisms such as Hydra and Planaria grow into complete organisms through specialised proliferating cells, and that regeneration is not the same as reproduction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A flatworm is cut into several pieces and each becomes a whole worm. Which kind of cells make this possible, and why would you hesitate to call it normal reproduction?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_rg_same"
+          ]
+        },
+        {
+          "id": "sci10c7_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the stages from a small bump on a freshwater polyp's body to a separate individual, and where the bump forms.",
+          "requiredEvidence": [
+            "Hydra",
+            "budding",
+            "outgrowth",
+            "repeated cell division",
+            "one specific site",
+            "detach from the parent body",
+            "new independent individuals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_rg_bud",
+              "criterion": "States that in budding Hydra grows a bud as an outgrowth by repeated cell division at one specific site, which matures, detaches and becomes a new independent individual.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the stages from a small bump on a freshwater polyp's body to a separate individual, and where the bump forms."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_regen_chain",
+          "linksChecks": [
+            "chk_sci10c7_rg_regen",
+            "chk_sci10c7_rg_bud"
+          ],
+          "criterion": "Connects specialised regenerative cells to regeneration and, used for reproduction at a specific site, to budding.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_rg_same",
+          "wrong": "Regeneration is the same as reproduction.",
+          "fix": "Regeneration is not the same as reproduction, since most organisms would not normally depend on being cut up to be able to reproduce.",
+          "checkId": "mchk_misc_sci10c7_rg_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Regeneration is the same as reproduction.",
+          "fixCheckId": "mfix_misc_sci10c7_rg_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Regeneration is not the same as reproduction, since most organisms would not normally depend on being cut up to be able to reproduce.",
+          "keyPointIds": [
+            "sci10c7_t2c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_rg_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_rg_regen",
+            "chk_sci10c7_rg_bud"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_regen_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t3_c1",
+      "topicId": "ncert_science_10_ch7_t3",
+      "topicTitle": "Vegetative Propagation and Spore Formation",
+      "label": "Vegetative Propagation: Growing New Plants from Plant Parts",
+      "headingType": "heading",
+      "sourcePages": [
+        117,
+        118
+      ],
+      "conceptHash": "6abf0aef33070ca669a9988aee45cdbc71a97415b3c2fc5073f197e5793737b2",
+      "cardText": "In many plants, parts like the root, stem and leaves develop into new plants under appropriate conditions. Unlike most animals, plants can use this mode for reproduction. Vegetative propagation is used in methods such as layering or grafting to grow plants like sugarcane, roses or grapes. Plants raised by it can bear flowers and fruits earlier than those from seeds, and it makes possible the propagation of plants such as banana, orange, rose and jasmine that have lost the capacity to produce seeds. All plants produced are genetically similar enough to the parent to have all its characteristics. Examples include buds in the notches of potato and the Bryophyllum leaf margin, and tissue culture.",
+      "hint": "What is vegetative propagation and why do growers use it?",
+      "probe": "Explain vegetative propagation and its advantages.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Vegetative Propagation: Growing New Plants from Plant Parts, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A gardener plants a piece of stem and gets a whole new plant. Which parts of a plant can do this?",
+          "requiredEvidence": [
+            "root, stem and leaves",
+            "develop into new plants",
+            "vegetative propagation",
+            "layering or grafting",
+            "sugarcane, roses or grapes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_vp_def",
+              "criterion": "States that in vegetative propagation parts such as the root, stem and leaves develop into new plants, used in methods like layering or grafting.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A gardener plants a piece of stem and gets a whole new plant. Which parts of a plant can do this?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_vp_seed"
+          ]
+        },
+        {
+          "id": "sci10c7_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might a farmer prefer to grow banana plants this way rather than from seed, and what will the new plants be like compared with the parent?",
+          "requiredEvidence": [
+            "bear flowers and fruits earlier",
+            "banana, orange, rose and jasmine",
+            "lost the capacity to produce seeds",
+            "genetically similar",
+            "all its characteristics"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_vp_adv",
+              "criterion": "States the advantages of vegetative propagation: earlier flowering and fruiting, propagating plants that have lost the capacity to produce seeds, and offspring genetically similar to the parent.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might a farmer prefer to grow banana plants this way rather than from seed, and what will the new plants be like compared with the parent?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "How can a laboratory grow many identical, healthy plants starting from only a tiny bit of tissue?",
+          "requiredEvidence": [
+            "tissue culture",
+            "growing tip",
+            "artificial medium",
+            "callus",
+            "hormones for growth and differentiation",
+            "disease-free conditions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_vp_tissue",
+              "criterion": "Describes tissue culture: cells from the growing tip are grown in an artificial medium into a callus and then, with hormones, into plantlets, giving many plants from one parent in disease-free conditions.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How can a laboratory grow many identical, healthy plants starting from only a tiny bit of tissue?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_veg_chain",
+          "linksChecks": [
+            "chk_sci10c7_vp_def",
+            "chk_sci10c7_vp_adv"
+          ],
+          "criterion": "Connects plant parts growing into new plants to the advantages growers get from it.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_vp_seed",
+          "wrong": "Vegetative propagation grows new plants only from seeds.",
+          "fix": "In vegetative propagation parts like the root, stem and leaves develop into new plants, so it even works for plants that have lost the capacity to produce seeds.",
+          "checkId": "mchk_misc_sci10c7_vp_seed",
+          "checkCriterion": "The answer states or implies this wrong idea: Vegetative propagation grows new plants only from seeds.",
+          "fixCheckId": "mfix_misc_sci10c7_vp_seed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In vegetative propagation parts like the root, stem and leaves develop into new plants, so it even works for plants that have lost the capacity to produce seeds.",
+          "keyPointIds": [
+            "sci10c7_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_vp_seed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_vp_def",
+            "chk_sci10c7_vp_adv"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c7_vp_tissue",
+            "lnk_sci10c7_veg_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t3_c2",
+      "topicId": "ncert_science_10_ch7_t3",
+      "topicTitle": "Vegetative Propagation and Spore Formation",
+      "label": "Spore Formation and Asexual Reproduction",
+      "headingType": "heading",
+      "sourcePages": [
+        118,
+        119
+      ],
+      "conceptHash": "d2378fb95caee17634d65b9634ed30aa25547fe2a00ee66283609f5651a5a271",
+      "cardText": "Even in many simple multi-cellular organisms, specific reproductive parts can be identified. The thread-like hyphae seen on the bread mould Rhizopus are not reproductive parts. The tiny blob-on-a-stick structures are, and the blobs are sporangia, which contain cells called spores that can eventually develop into new Rhizopus individuals. The spores are covered by thick walls that protect them until they come into contact with another moist surface and can begin to grow. All the modes so far allow new generations to be created from a single individual, which is known as asexual reproduction.",
+      "hint": "Which part of the bread mould makes new individuals and why are its spores protected?",
+      "probe": "Explain spore formation in Rhizopus and define asexual reproduction.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Spore Formation and Asexual Reproduction, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "On a mouldy bread slice, which structure makes the new mould and what keeps it safe until it can grow?",
+          "requiredEvidence": [
+            "hyphae",
+            "not reproductive parts",
+            "sporangia",
+            "spores",
+            "new Rhizopus individuals",
+            "thick walls",
+            "moist surface"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_sf_spore",
+              "criterion": "States that the sporangia of Rhizopus contain spores that grow into new individuals, protected by thick walls until they reach a moist surface, while the hyphae are not reproductive parts.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "On a mouldy bread slice, which structure makes the new mould and what keeps it safe until it can grow?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_sf_hyphae"
+          ]
+        },
+        {
+          "id": "sci10c7_t3c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do fission, budding, regeneration, vegetative propagation and spores all have in common about the number of parents?",
+          "requiredEvidence": [
+            "new generations",
+            "single individual",
+            "asexual reproduction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_sf_asexual",
+              "criterion": "Defines asexual reproduction as creating new generations from a single individual.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do fission, budding, regeneration, vegetative propagation and spores all have in common about the number of parents?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_spore_chain",
+          "linksChecks": [
+            "chk_sci10c7_sf_spore",
+            "chk_sci10c7_sf_asexual"
+          ],
+          "criterion": "Connects sporangia and protected spores to growth on a moist surface and to the idea of asexual reproduction from one individual.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_sf_hyphae",
+          "wrong": "The thread-like hyphae of bread mould are its reproductive parts.",
+          "fix": "The thread-like hyphae are not reproductive parts; the tiny blob-on-a-stick structures, the sporangia, contain the spores used in reproduction.",
+          "checkId": "mchk_misc_sci10c7_sf_hyphae",
+          "checkCriterion": "The answer states or implies this wrong idea: The thread-like hyphae of bread mould are its reproductive parts.",
+          "fixCheckId": "mfix_misc_sci10c7_sf_hyphae",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The thread-like hyphae are not reproductive parts; the tiny blob-on-a-stick structures, the sporangia, contain the spores used in reproduction.",
+          "keyPointIds": [
+            "sci10c7_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_sf_hyphae"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_sf_spore"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c7_sf_asexual",
+            "lnk_sci10c7_spore_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t4_c1",
+      "topicId": "ncert_science_10_ch7_t4",
+      "topicTitle": "Significance of Sexual Reproduction and Meiotic Chromosome Reduction",
+      "label": "Why Sexual Reproduction? Generating More Variation",
+      "headingType": "heading",
+      "sourcePages": [
+        119,
+        120
+      ],
+      "conceptHash": "ca588651fd8d2fc2cd0df4f4c7344fc9e257d1d878f4cdb21d16c761a76a68e0",
+      "cardText": "Sexual reproduction needs two individuals, males and females. The DNA copying mechanism cannot be absolutely accurate, and the resulting errors are a source of variation. Variation cannot protect every individual, but in a population it helps ensure the survival of the species. Copying errors make the generation of variation a fairly slow process. Each variation is made in a DNA copy that already has variations accumulated from previous generations, so two individuals have quite different patterns of accumulated variations. Combining variations from two or more individuals creates new combinations, each novel because it involves two individuals. The sexual mode of reproduction incorporates this combining of DNA from two different individuals.",
+      "hint": "How does combining DNA from two individuals speed up the creation of variation?",
+      "probe": "Explain why sexual reproduction creates more variation than asexual reproduction.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why Sexual Reproduction? Generating More Variation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a cell copied its DNA with many more mistakes to get more variation, what would likely happen to the new cells?",
+          "requiredEvidence": [
+            "cannot be absolutely accurate",
+            "source of variations",
+            "survival of the species",
+            "fairly slow process"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_sx_slow",
+              "criterion": "States that DNA copying errors are a source of variations useful for the species' survival, but copying is precise enough that variation arises only slowly.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a cell copied its DNA with many more mistakes to get more variation, what would likely happen to the new cells?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two parents each carry their own set of small differences. What does a child get that neither parent alone could produce?",
+          "requiredEvidence": [
+            "accumulated",
+            "quite different patterns",
+            "combining variations",
+            "new combinations",
+            "novel",
+            "two different individuals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_sx_combine",
+              "criterion": "States that combining variations accumulated in two different individuals creates novel combinations of variants, which is what the sexual mode of reproduction does.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two parents each carry their own set of small differences. What does a child get that neither parent alone could produce?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_sx_errors"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_sexual_chain",
+          "linksChecks": [
+            "chk_sci10c7_sx_slow",
+            "chk_sci10c7_sx_combine"
+          ],
+          "criterion": "Connects the slow pace of variation from copying errors to the faster production of novel combinations by joining DNA from two individuals.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_sx_errors",
+          "wrong": "Sexual reproduction speeds up variation by making DNA copying less accurate.",
+          "fix": "If DNA copying were less accurate many copies would not work with the cellular apparatus and would die; sexual reproduction instead combines the variations already present in two individuals.",
+          "checkId": "mchk_misc_sci10c7_sx_errors",
+          "checkCriterion": "The answer states or implies this wrong idea: Sexual reproduction speeds up variation by making DNA copying less accurate.",
+          "fixCheckId": "mfix_misc_sci10c7_sx_errors",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If DNA copying were less accurate many copies would not work with the cellular apparatus and would die; sexual reproduction instead combines the variations already present in two individuals.",
+          "keyPointIds": [
+            "sci10c7_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_sx_errors"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_sx_slow",
+            "chk_sci10c7_sx_combine"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_sexual_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t4_c2",
+      "topicId": "ncert_science_10_ch7_t4",
+      "topicTitle": "Significance of Sexual Reproduction and Meiotic Chromosome Reduction",
+      "label": "Meiosis, Germ-cells and the Male and Female Gametes",
+      "headingType": "heading",
+      "sourcePages": [
+        120
+      ],
+      "conceptHash": "236461b4d94ed9b22ec783fb5e17cdd95f5c25a007b37dddad90cfd3e4c0de95",
+      "cardText": "Combining DNA from two individuals creates a difficulty: each generation would have twice the amount of DNA of the previous one, which would mess up the control of the cellular apparatus. Many multi-cellular organisms solve this with special lineages of cells in specialised organs having only half the number of chromosomes and half the DNA of non-reproductive body cells, produced by a cell division called meiosis. When germ-cells from two individuals combine, the number of chromosomes and DNA content is re-established. As body designs become more complex, germ-cells specialise: one large and with food stores, the other smaller and motile. The motile one is the male gamete and the one with stored food the female gamete.",
+      "hint": "How does meiosis stop the amount of DNA doubling in every generation?",
+      "probe": "Explain the role of meiosis and the difference between male and female gametes.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Meiosis, Germ-cells and the Male and Female Gametes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a sperm and an egg each carried a full set of chromosomes, how many would the child cell have, and what would happen over generations?",
+          "requiredEvidence": [
+            "twice the amount of DNA",
+            "half the number of chromosomes",
+            "half the amount of DNA",
+            "meiosis",
+            "germ-cells",
+            "re-establishment"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_me_problem",
+              "criterion": "States that combining DNA from two individuals would double the DNA each generation, so germ-cells made by meiosis have half the chromosomes and DNA and the full number is restored when they combine.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a sperm and an egg each carried a full set of chromosomes, how many would the child cell have, and what would happen over generations?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_me_double"
+          ]
+        },
+        {
+          "id": "sci10c7_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would it help one of the two germ-cells to be big and full of food while the other is small and able to move?",
+          "requiredEvidence": [
+            "germ-cells specialise",
+            "large",
+            "food-stores",
+            "smaller",
+            "motile",
+            "male gamete",
+            "female gamete"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_me_gametes",
+              "criterion": "States that the male gamete is the smaller motile germ-cell and the female gamete is the large one containing stored food.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would it help one of the two germ-cells to be big and full of food while the other is small and able to move?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_meiosis_chain",
+          "linksChecks": [
+            "chk_sci10c7_me_problem",
+            "chk_sci10c7_me_gametes"
+          ],
+          "criterion": "Connects the doubling problem to meiosis halving chromosomes and the combined germ-cells restoring the number.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_me_double",
+          "wrong": "Each generation of sexually reproducing organisms has twice the DNA of the one before.",
+          "fix": "Germ-cells have half the number of chromosomes and half the DNA, produced by meiosis, so combining them re-establishes the original number.",
+          "checkId": "mchk_misc_sci10c7_me_double",
+          "checkCriterion": "The answer states or implies this wrong idea: Each generation of sexually reproducing organisms has twice the DNA of the one before.",
+          "fixCheckId": "mfix_misc_sci10c7_me_double",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Germ-cells have half the number of chromosomes and half the DNA, produced by meiosis, so combining them re-establishes the original number.",
+          "keyPointIds": [
+            "sci10c7_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_me_double"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_me_problem"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c7_me_gametes",
+            "lnk_sci10c7_meiosis_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t5_c1",
+      "topicId": "ncert_science_10_ch7_t5",
+      "topicTitle": "Sexual Reproduction in Flowering Plants (Angiosperms)",
+      "label": "Parts of a Flower and the Germ-cells",
+      "headingType": "heading",
+      "sourcePages": [
+        120,
+        121
+      ],
+      "conceptHash": "035eb2c1e0fd932c947788958d2b1626ea5174cc6d998c934560586862e46122",
+      "cardText": "The reproductive parts of angiosperms are in the flower, whose parts are sepals, petals, stamens and pistil. Stamens and pistil are the reproductive parts containing the germ-cells. A flower is unisexual (papaya, watermelon) if it has either stamens or pistil, and bisexual (Hibiscus, mustard) if it has both. The stamen is the male part and produces yellowish pollen grains. The pistil, in the centre, is the female part, made of the swollen ovary at the bottom, the elongated style in the middle and the sometimes sticky stigma at the top. The ovary contains ovules, and each ovule has an egg cell.",
+      "hint": "Which parts of a flower are reproductive and what does each contain?",
+      "probe": "Explain the reproductive parts of a flower and the difference between unisexual and bisexual flowers.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Parts of a Flower and the Germ-cells, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the male and female parts of a flower and say where the female germ-cell is found.",
+          "requiredEvidence": [
+            "stamens and pistil",
+            "germ-cells",
+            "stamen",
+            "pollen grains",
+            "pistil",
+            "ovary",
+            "style",
+            "stigma",
+            "ovules",
+            "egg cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fl_parts",
+              "criterion": "States that stamens (male, making pollen grains) and pistil (female, with ovary, style and stigma, the ovary holding ovules with egg cells) are the reproductive parts of a flower.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the male and female parts of a flower and say where the female germ-cell is found."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_fl_petals"
+          ]
+        },
+        {
+          "id": "sci10c7_t5c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How would you tell a flower that has only one reproductive part from one that carries two kinds?",
+          "requiredEvidence": [
+            "unisexual",
+            "papaya, watermelon",
+            "either stamens or pistil",
+            "bisexual",
+            "Hibiscus, mustard",
+            "both"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fl_types",
+              "criterion": "Distinguishes unisexual flowers (only stamens or only pistil) from bisexual flowers (both), with examples.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How would you tell a flower that has only one reproductive part from one that carries two kinds?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_flower_chain",
+          "linksChecks": [
+            "chk_sci10c7_fl_parts",
+            "chk_sci10c7_fl_types"
+          ],
+          "criterion": "Connects stamens and pistil to the male and female germ-cells and to unisexual versus bisexual flowers.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_fl_petals",
+          "wrong": "Petals and sepals are the reproductive parts of a flower.",
+          "fix": "Stamens and pistil are the reproductive parts of a flower which contain the germ-cells.",
+          "checkId": "mchk_misc_sci10c7_fl_petals",
+          "checkCriterion": "The answer states or implies this wrong idea: Petals and sepals are the reproductive parts of a flower.",
+          "fixCheckId": "mfix_misc_sci10c7_fl_petals",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Stamens and pistil are the reproductive parts of a flower which contain the germ-cells.",
+          "keyPointIds": [
+            "sci10c7_t5c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_fl_petals"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_fl_parts"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c7_fl_types",
+            "lnk_sci10c7_flower_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t5_c2",
+      "topicId": "ncert_science_10_ch7_t5",
+      "topicTitle": "Sexual Reproduction in Flowering Plants (Angiosperms)",
+      "label": "Pollination, Fertilisation and Seed Formation",
+      "headingType": "heading",
+      "sourcePages": [
+        121
+      ],
+      "conceptHash": "42a1fe58e6a9bcce1978537f50c624973f9dae6e4125f985e0f9194162db8b7c",
+      "cardText": "The male germ-cell from the pollen grain fuses with the female gamete in the ovule; this fusion is fertilisation, and it gives the zygote that can grow into a new plant. The pollen must therefore be transferred from the stamen to the stigma. If this happens in the same flower it is self-pollination; if from one flower to another it is cross-pollination, achieved by wind, water or animals. After the pollen lands on a suitable stigma, a tube grows out of the pollen grain through the style to reach the ovary. After fertilisation the zygote divides to form an embryo within the ovule. The ovule develops a tough coat and becomes a seed, while the ovary ripens into a fruit. The seed's embryo develops into a seedling by germination.",
+      "hint": "How does pollen on a stigma end up as a seed inside a fruit?",
+      "probe": "Explain pollination, fertilisation and how a seed and a fruit form.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Pollination, Fertilisation and Seed Formation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A bee carries yellow dust from one flower to the next. What is the name for what the bee has done, and what is it called if the dust lands on the flower it came from?",
+          "requiredEvidence": [
+            "transferred from the stamen to the stigma",
+            "self-pollination",
+            "same flower",
+            "cross-pollination",
+            "one flower to another",
+            "wind, water or animals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_pf_pollination",
+              "criterion": "States that pollination is the transfer of pollen from stamen to stigma, self-pollination within the same flower and cross-pollination between flowers by agents like wind, water or animals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A bee carries yellow dust from one flower to the next. What is the name for what the bee has done, and what is it called if the dust lands on the flower it came from?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_pf_same"
+          ]
+        },
+        {
+          "id": "sci10c7_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Once the pollen has reached the top of the pistil, how does its male cell travel down to the egg, and what is formed when they join?",
+          "requiredEvidence": [
+            "male germ-cell",
+            "fuses",
+            "female gamete",
+            "ovule",
+            "fertilisation",
+            "zygote",
+            "tube grows out of the pollen grain",
+            "style",
+            "ovary"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_pf_fertil",
+              "criterion": "States that a tube grows from the pollen grain through the style to the ovary, where the male germ-cell fuses with the female gamete in the ovule (fertilisation) to form the zygote.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Once the pollen has reached the top of the pistil, how does its male cell travel down to the egg, and what is formed when they join?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t5c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the part that held the egg turn into after fertilisation, what does the part around it turn into, and what happens when the seed is given suitable conditions?",
+          "requiredEvidence": [
+            "zygote divides",
+            "embryo",
+            "ovule",
+            "tough coat",
+            "seed",
+            "ovary",
+            "fruit",
+            "germination"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_pf_seed",
+              "criterion": "States that after fertilisation the zygote becomes an embryo in the ovule, the ovule becomes a seed with a tough coat, the ovary ripens into a fruit, and the seed's embryo grows into a seedling by germination.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the part that held the egg turn into after fertilisation, what does the part around it turn into, and what happens when the seed is given suitable conditions?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_fertil_chain",
+          "linksChecks": [
+            "chk_sci10c7_pf_pollination",
+            "chk_sci10c7_pf_fertil",
+            "chk_sci10c7_pf_seed"
+          ],
+          "criterion": "Connects pollination to the pollen tube and fertilisation, and to the embryo, seed and fruit that follow.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_pf_same",
+          "wrong": "Pollination and fertilisation are the same thing.",
+          "fix": "Pollination is the transfer of pollen to the stigma, while fertilisation is the fusion of the male germ-cell with the female gamete in the ovule, giving the zygote.",
+          "checkId": "mchk_misc_sci10c7_pf_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Pollination and fertilisation are the same thing.",
+          "fixCheckId": "mfix_misc_sci10c7_pf_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Pollination is the transfer of pollen to the stigma, while fertilisation is the fusion of the male germ-cell with the female gamete in the ovule, giving the zygote.",
+          "keyPointIds": [
+            "sci10c7_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_pf_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_pf_pollination",
+            "chk_sci10c7_pf_fertil",
+            "chk_sci10c7_pf_seed"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_fertil_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t6_c1",
+      "topicId": "ncert_science_10_ch7_t6",
+      "topicTitle": "Human Puberty and Secondary Sexual Characteristics",
+      "label": "Changes at Puberty",
+      "headingType": "heading",
+      "sourcePages": [
+        121,
+        122,
+        123
+      ],
+      "conceptHash": "3405a538d264ddb200dcef7abb606ab1be193be44d93f66bf28ed17ff65bc2c6",
+      "cardText": "Growth makes the body larger, but in early teenage years the appearance of the body changes in ways that cannot be explained by enlargement alone. Some changes are common to boys and girls: thick hair in new parts of the body such as armpits and the genital area, oily skin with pimples, and a new awareness of bodies. Girls' breast size begins to increase and they begin to menstruate; boys get thick facial hair and their voices crack. The changes are slow, take months and years, and vary between people in timing and pattern. They are aspects of sexual maturation. While the body is growing to adult size its resources go mainly to growth, so as general growth slows, reproductive tissues mature; this period of adolescence is called puberty. Many changes signal maturity to others.",
+      "hint": "What changes occur in boys and girls at puberty and why do they occur when growth slows?",
+      "probe": "Explain the changes seen at puberty and why reproductive tissues mature only when general growth slows.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Changes at Puberty, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t6c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name one change at around thirteen that happens to everyone, one that happens only to girls and one only to boys.",
+          "requiredEvidence": [
+            "thick hair",
+            "armpits",
+            "oily",
+            "pimples",
+            "breast size",
+            "menstruate",
+            "voices begin to crack",
+            "hair growth on the face"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_pu_changes",
+              "criterion": "States changes at puberty common to boys and girls (new hair growth, oily skin, pimples) and those specific to girls (breast growth, menstruation) and boys (facial hair, voice cracking).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name one change at around thirteen that happens to everyone, one that happens only to girls and one only to boys."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_pu_same"
+          ]
+        },
+        {
+          "id": "sci10c7_t6c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the body wait until general growth is slowing down before the reproductive system matures?",
+          "requiredEvidence": [
+            "resources of the body",
+            "growth",
+            "rate of general body growth begins to slow down",
+            "reproductive tissues begin to mature",
+            "adolescence",
+            "puberty",
+            "signals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_pu_why",
+              "criterion": "States that reproductive tissues mature as the rate of general body growth slows during adolescence, called puberty, and the changes signal sexual maturation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the body wait until general growth is slowing down before the reproductive system matures?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_puberty_chain",
+          "linksChecks": [
+            "chk_sci10c7_pu_changes",
+            "chk_sci10c7_pu_why"
+          ],
+          "criterion": "Connects the common and different changes at puberty to the timing of reproductive maturation as growth slows.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_pu_same",
+          "wrong": "Puberty changes happen all at once at one fixed age in everyone.",
+          "fix": "The changes take place slowly over months and years, they do not happen all at the same time in one person or at an exact age, and they differ between people.",
+          "checkId": "mchk_misc_sci10c7_pu_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Puberty changes happen all at once at one fixed age in everyone.",
+          "fixCheckId": "mfix_misc_sci10c7_pu_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The changes take place slowly over months and years, they do not happen all at the same time in one person or at an exact age, and they differ between people.",
+          "keyPointIds": [
+            "sci10c7_t6c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_pu_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_pu_changes",
+            "chk_sci10c7_pu_why"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_puberty_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t7_c1",
+      "topicId": "ncert_science_10_ch7_t7",
+      "topicTitle": "Human Male and Female Reproductive Systems and Fertilisation",
+      "label": "The Human Male Reproductive System and Sperm Transport",
+      "headingType": "heading",
+      "sourcePages": [
+        123
+      ],
+      "conceptHash": "bf02294218d830ec874f090b888e1fc9b2a6bd2e9f29c32dc2e7a79559592c03",
+      "cardText": "The male reproductive system consists of portions that produce germ-cells and portions that deliver them to the site of fertilisation. Sperms are formed in the testes, located outside the abdominal cavity in the scrotum because sperm formation requires a lower temperature than normal body temperature. The testes also secrete the hormone testosterone, which regulates the formation of sperms and brings about the changes of puberty. Sperms are delivered through the vas deferens, which unites with a tube from the urinary bladder, so the urethra is a common passage for sperms and urine. Glands such as the prostate and the seminal vesicles add secretions so the sperms are in a fluid which makes transport easier and provides nutrition. Sperms are tiny, mainly genetic material with a long tail for movement.",
+      "hint": "Where are sperms made and how are they delivered, and what do the seminal vesicles and prostate add?",
+      "probe": "Explain the parts of the male reproductive system and their functions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Human Male Reproductive System and Sperm Transport, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t7c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are the organs that make male germ-cells kept outside the main body cavity, and which hormone do they release?",
+          "requiredEvidence": [
+            "sperms",
+            "testes",
+            "outside the abdominal cavity",
+            "scrotum",
+            "lower temperature",
+            "testosterone",
+            "puberty"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_ma_testes",
+              "criterion": "States that sperms are formed in the testes, which lie in the scrotum outside the abdominal cavity because sperm formation needs a lower temperature, and that testosterone regulates sperm formation and puberty changes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are the organs that make male germ-cells kept outside the main body cavity, and which hormone do they release?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_ma_temp"
+          ]
+        },
+        {
+          "id": "sci10c7_t7c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Trace the route of a sperm from where it is made until it leaves the body, and say what the glands along the way contribute.",
+          "requiredEvidence": [
+            "vas deferens",
+            "urethra",
+            "common passage",
+            "sperms and urine",
+            "prostate",
+            "seminal vesicles",
+            "secretions",
+            "transport easier",
+            "nutrition"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_ma_delivery",
+              "criterion": "States that sperms travel through the vas deferens to the urethra (a common passage for sperm and urine), with the prostate and seminal vesicles adding a fluid that eases transport and gives nutrition.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Trace the route of a sperm from where it is made until it leaves the body, and say what the glands along the way contribute."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_male_chain",
+          "linksChecks": [
+            "chk_sci10c7_ma_testes",
+            "chk_sci10c7_ma_delivery"
+          ],
+          "criterion": "Connects sperm formation in the testes to delivery through the vas deferens and urethra, aided by the secretions of the glands.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_ma_temp",
+          "wrong": "The testes are outside the abdominal cavity only for convenience, not because of temperature.",
+          "fix": "The testes are located outside the abdominal cavity in the scrotum because sperm formation requires a lower temperature than the normal body temperature.",
+          "checkId": "mchk_misc_sci10c7_ma_temp",
+          "checkCriterion": "The answer states or implies this wrong idea: The testes are outside the abdominal cavity only for convenience, not because of temperature.",
+          "fixCheckId": "mfix_misc_sci10c7_ma_temp",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The testes are located outside the abdominal cavity in the scrotum because sperm formation requires a lower temperature than the normal body temperature.",
+          "keyPointIds": [
+            "sci10c7_t7c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_ma_temp"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_ma_testes",
+            "chk_sci10c7_ma_delivery"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_male_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t7_c2",
+      "topicId": "ncert_science_10_ch7_t7",
+      "topicTitle": "Human Male and Female Reproductive Systems and Fertilisation",
+      "label": "The Female Reproductive System, Fertilisation and Development of the Embryo",
+      "headingType": "heading",
+      "sourcePages": [
+        123,
+        124
+      ],
+      "conceptHash": "67bff1e68a96b038e96f3838f5f5b8dc42ef17760f2e00d4778a3ac4b2addd7c",
+      "cardText": "Eggs are made in the ovaries, which also produce some hormones. A girl is born with thousands of immature eggs in the ovaries; at puberty some start maturing and one egg is produced each month by one of the ovaries. The egg is carried through the oviduct (fallopian tube) to the uterus, which opens into the vagina through the cervix. Sperms enter the vagina and travel up to the oviduct where they may meet the egg. The zygote divides into a ball of cells, the embryo, which is implanted in the uterine lining and grows into a foetus. The embryo gets nutrition from the mother's blood through the placenta, a disc embedded in the uterine wall with villi on the embryo's side. Wastes pass back to the mother's blood. Development takes about nine months and birth happens through rhythmic contractions of the uterus.",
+      "hint": "How does the egg travel, where does fertilisation happen and how is the embryo fed?",
+      "probe": "Explain the path of the egg, where fertilisation occurs and how the embryo is nourished through the placenta.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Female Reproductive System, Fertilisation and Development of the Embryo, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t7c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When does a girl's body start releasing mature germ-cells, how often, and along which tube do they travel?",
+          "requiredEvidence": [
+            "eggs",
+            "ovaries",
+            "thousands of immature eggs",
+            "puberty",
+            "one egg is produced every month",
+            "oviduct or fallopian tube",
+            "womb"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fe_egg",
+              "criterion": "States that eggs are made in the ovaries (thousands of immature eggs at birth), that one egg is released each month after puberty and is carried through the oviduct to the womb.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When does a girl's body start releasing mature germ-cells, how often, and along which tube do they travel?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t7c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where do the sperm and egg meet, and where does the resulting early cluster settle to keep growing?",
+          "requiredEvidence": [
+            "vaginal passage",
+            "oviduct",
+            "encounter the egg",
+            "zygote",
+            "ball of cells",
+            "embryo",
+            "implanted",
+            "lining of the uterus",
+            "foetus"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fe_embryo",
+              "criterion": "States that sperms reach the egg in the oviduct, the zygote divides into an embryo, which is implanted in the uterine lining and develops into a foetus.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where do the sperm and egg meet, and where does the resulting early cluster settle to keep growing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t7c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A baby cannot eat or breathe in the womb. Through which structure does it get what it needs and get rid of waste, and why is that structure shaped as it is?",
+          "requiredEvidence": [
+            "placenta",
+            "uterine wall",
+            "villi",
+            "blood spaces",
+            "large surface area",
+            "glucose and oxygen",
+            "waste substances",
+            "mother's blood"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_fe_placenta",
+              "criterion": "States that the placenta, with villi on the embryo's side and the mother's blood spaces around them, gives a large surface for glucose and oxygen to reach the embryo and wastes to pass to the mother's blood.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A baby cannot eat or breathe in the womb. Through which structure does it get what it needs and get rid of waste, and why is that structure shaped as it is?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_fe_mix"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_female_chain",
+          "linksChecks": [
+            "chk_sci10c7_fe_egg",
+            "chk_sci10c7_fe_embryo",
+            "chk_sci10c7_fe_placenta"
+          ],
+          "criterion": "Connects the egg's passage and fertilisation in the oviduct to implantation and nourishment through the placenta.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_fe_mix",
+          "wrong": "The embryo's blood mixes directly with the mother's blood.",
+          "fix": "The placenta has villi on the embryo's side and blood spaces on the mother's side, giving a large surface area for glucose and oxygen to pass to the embryo and wastes to pass back.",
+          "checkId": "mchk_misc_sci10c7_fe_mix",
+          "checkCriterion": "The answer states or implies this wrong idea: The embryo's blood mixes directly with the mother's blood.",
+          "fixCheckId": "mfix_misc_sci10c7_fe_mix",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The placenta has villi on the embryo's side and blood spaces on the mother's side, giving a large surface area for glucose and oxygen to pass to the embryo and wastes to pass back.",
+          "keyPointIds": [
+            "sci10c7_t7c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_fe_mix"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_fe_egg",
+            "chk_sci10c7_fe_embryo",
+            "chk_sci10c7_fe_placenta"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_female_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t8_c1",
+      "topicId": "ncert_science_10_ch7_t8",
+      "topicTitle": "Menstrual Cycle and Reproductive Health: Contraception",
+      "label": "Menstruation: When the Egg Is Not Fertilised",
+      "headingType": "heading",
+      "sourcePages": [
+        124
+      ],
+      "conceptHash": "e514643020cbb60a0c9f8c49c763291548fb7ae2a0044c86f3f21a5e7a705fe4",
+      "cardText": "If the egg is not fertilised, it lives for about one day. Since the ovary releases one egg every month, the uterus also prepares itself every month to receive a fertilised egg, and its lining becomes thick and spongy and richly supplied with blood. This would be needed to nourish an embryo if fertilisation had taken place. When it is not, the lining is no longer needed, so it slowly breaks and comes out through the vagina as blood and mucous. This cycle takes place roughly every month and is known as menstruation. It usually lasts about two to eight days.",
+      "hint": "Why does the uterine lining break down roughly every month?",
+      "probe": "Explain why menstruation occurs.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Menstruation: When the Egg Is Not Fertilised, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t8c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Each month the womb gets ready for a possible baby. What does it build up and why?",
+          "requiredEvidence": [
+            "one egg every month",
+            "uterus prepares itself",
+            "thick and spongy",
+            "nourishing the embryo",
+            "not fertilised",
+            "about one day"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_mn_prepare",
+              "criterion": "States that the uterus prepares each month with a thick, spongy lining to nourish an embryo, but an unfertilised egg lives only about a day.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Each month the womb gets ready for a possible baby. What does it build up and why?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c7_t8c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the prepared womb lining when no fertilisation takes place, and how long does this usually last?",
+          "requiredEvidence": [
+            "lining is not needed",
+            "breaks",
+            "vagina",
+            "blood and mucous",
+            "roughly every month",
+            "menstruation",
+            "two to eight days"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_mn_shed",
+              "criterion": "States that when the egg is not fertilised the lining breaks and leaves through the vagina as blood and mucous, a monthly cycle called menstruation lasting about two to eight days.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the prepared womb lining when no fertilisation takes place, and how long does this usually last?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_mn_disease"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_mens_chain",
+          "linksChecks": [
+            "chk_sci10c7_mn_prepare",
+            "chk_sci10c7_mn_shed"
+          ],
+          "criterion": "Connects the monthly preparation of the uterine lining to its breakdown when there is no fertilisation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_mn_disease",
+          "wrong": "Menstruation is a sign of illness.",
+          "fix": "Menstruation is the roughly monthly breaking down of the uterine lining that was prepared for an embryo; it happens when the egg is not fertilised.",
+          "checkId": "mchk_misc_sci10c7_mn_disease",
+          "checkCriterion": "The answer states or implies this wrong idea: Menstruation is a sign of illness.",
+          "fixCheckId": "mfix_misc_sci10c7_mn_disease",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Menstruation is the roughly monthly breaking down of the uterine lining that was prepared for an embryo; it happens when the egg is not fertilised.",
+          "keyPointIds": [
+            "sci10c7_t8c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_mn_disease"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_mn_prepare",
+            "chk_sci10c7_mn_shed"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_mens_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch7_t8_c2",
+      "topicId": "ncert_science_10_ch7_t8",
+      "topicTitle": "Menstrual Cycle and Reproductive Health: Contraception",
+      "label": "Reproductive Health, Sexually Transmitted Infections and Contraception",
+      "headingType": "heading",
+      "sourcePages": [
+        124,
+        125
+      ],
+      "conceptHash": "1481e4d2414b407eb540ee857a6ad1a88ad62aef0ba3b270096a50cc13fcd218",
+      "cardText": "Sexual maturation is gradual and takes place while general body growth is still going on, so some maturation does not mean the body or mind is ready for sexual acts or for bringing up children. Many diseases can be sexually transmitted, including gonorrhoea and syphilis (bacterial) and warts and HIV-AIDS (viral). A condom helps prevent transmission of many of these to some extent. Contraceptive methods avoid pregnancy: mechanical barriers such as condoms, hormonal pills that stop eggs being released, devices such as the loop or copper-T placed in the uterus, and surgical methods blocking the vas deferens or the fallopian tube. Each has possible side-effects. Sex-selective abortion of female foetuses is illegal and declines the child sex ratio.",
+      "hint": "What are the main kinds of contraceptive methods and which one also protects against infections?",
+      "probe": "Explain the different methods of contraception and the health issues linked to sexual activity.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reproductive Health, Sexually Transmitted Infections and Contraception, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c7_t8c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the body being sexually mature not settle whether someone should become sexually active, and what is one protection against infections?",
+          "requiredEvidence": [
+            "not necessarily mean that the body or the mind is ready",
+            "sexually transmitted",
+            "gonorrhoea and syphilis",
+            "warts and HIV-AIDS",
+            "condom",
+            "prevent transmission"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_rh_sti",
+              "criterion": "States that sexual maturation does not mean readiness for sex or parenthood, that many diseases (gonorrhoea, syphilis, warts, HIV-AIDS) are sexually transmitted, and that a condom helps prevent many of them to some extent.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the body being sexually mature not settle whether someone should become sexually active, and what is one protection against infections?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c7_rh_coppert"
+          ]
+        },
+        {
+          "id": "sci10c7_t8c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Give three different ways pregnancy can be prevented and say what each does to stop it.",
+          "requiredEvidence": [
+            "mechanical barrier",
+            "condoms",
+            "hormonal balance",
+            "pills",
+            "loop or the copper-T",
+            "uterus",
+            "vas deferens",
+            "fallopian tube",
+            "side-effects"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c7_rh_methods",
+              "criterion": "Lists contraceptive methods: mechanical barriers (condoms), hormonal pills that stop release of eggs, devices placed in the uterus (loop, copper-T), and surgical blocking of the vas deferens or fallopian tube, with possible side effects.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Give three different ways pregnancy can be prevented and say what each does to stop it."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c7_health_chain",
+          "linksChecks": [
+            "chk_sci10c7_rh_sti",
+            "chk_sci10c7_rh_methods"
+          ],
+          "criterion": "Connects the risks of sexual contact to the choices of contraceptive methods and their limits.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c7_rh_coppert",
+          "wrong": "A copper-T protects a woman from sexually transmitted diseases.",
+          "fix": "Devices like the loop or copper-T are placed in the uterus to prevent pregnancy; only a covering such as a condom helps prevent transmission of many infections to some extent.",
+          "checkId": "mchk_misc_sci10c7_rh_coppert",
+          "checkCriterion": "The answer states or implies this wrong idea: A copper-T protects a woman from sexually transmitted diseases.",
+          "fixCheckId": "mfix_misc_sci10c7_rh_coppert",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Devices like the loop or copper-T are placed in the uterus to prevent pregnancy; only a covering such as a condom helps prevent transmission of many infections to some extent.",
+          "keyPointIds": [
+            "sci10c7_t8c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c7_rh_coppert"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c7_rh_sti",
+            "chk_sci10c7_rh_methods"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c7_health_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2887 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_Civics_10_ch2.json",
+  "sourceSha256": "da3ae813c97986af25a27afd0a4258a07b9ea18ccf47f681840d8cd00d5d73ae",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Civics",
+  "book": "Democratic Politics II",
+  "chapterNumber": 2,
+  "chapterName": "Federalism",
+  "articulationChecks": [
+    {
+      "id": "chk_ch2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ch2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example federalism, jurisdiction, Union List, Concurrent List, Scheduled Languages, official language, coalition government, decentralisation or gram sabha.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "federalism",
+    "unitary system",
+    "jurisdiction",
+    "financial autonomy",
+    "coming together federations",
+    "holding together federations",
+    "Union of States",
+    "Union List",
+    "State List",
+    "Concurrent List",
+    "residuary subjects",
+    "Union Territories",
+    "linguistic States",
+    "Scheduled Languages",
+    "official language",
+    "coalition government",
+    "decentralisation",
+    "local self-government",
+    "Panchayati Raj",
+    "Gram Sabha",
+    "Gram Panchayat",
+    "Panchayat Samiti",
+    "Zilla Parishad",
+    "municipal corporation",
+    "Mayor",
+    "State Election Commission"
+  ],
+  "concepts": [
+    {
+      "conceptId": "civ10_ch2_t1_c1",
+      "topicId": "ncert_civ_10_ch2_t1",
+      "topicTitle": "What is federalism?",
+      "label": "Federalism vs Unitary System",
+      "headingType": "heading",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "conceptHash": "722d10c887624dfae8efe884d77b5ae9597d1cf536473e10924757b64b158f0d",
+      "cardText": "Federalism is a system of government in which power is divided between a central authority and its various constituent units. Under a unitary system, the central government can pass on orders to the provincial or local government. In a federal system, it cannot: the state government has powers of its own for which it is not answerable to the central government.",
+      "hint": "In which system can the central government pass on orders to the provinces?",
+      "probe": "What is the main difference between a federal and a unitary form of government? Give an example.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Federalism vs Unitary System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a federal system, how is power arranged between the centre and the rest of the country?",
+          "requiredEvidence": [
+            "power is divided",
+            "central authority",
+            "constituent units"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_fed_def_division",
+              "criterion": "Defines federalism as a system where power is divided between a central authority and its constituent units.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a federal system, how is power arranged between the centre and the rest of the country?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_federal_is_organs"
+          ]
+        },
+        {
+          "id": "ch2_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a unitary system, what is the position of the provincial or local governments?",
+          "requiredEvidence": [
+            "one level of government",
+            "subordinate to the central government",
+            "pass on orders"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_unitary_def",
+              "criterion": "States that in a unitary system there is only one level of government or the sub-units are subordinate to the central government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a unitary system, what is the position of the provincial or local governments?"
+            },
+            {
+              "id": "chk_ch2_unitary_can_order",
+              "criterion": "Mentions that in a unitary system the central government can pass on orders to the provincial or local government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a unitary system, what is the position of the provincial or local governments?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_unitary_dictatorship"
+          ]
+        },
+        {
+          "id": "ch2_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a federal system, can the central government give orders to a state government? Why or why not?",
+          "requiredEvidence": [
+            "cannot order the state government",
+            "powers of its own",
+            "not answerable"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_fed_cannot_order_state",
+              "criterion": "States that in a federal system the central government cannot order the state government to do something.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a federal system, can the central government give orders to a state government? Why or why not?"
+            },
+            {
+              "id": "chk_ch2_fed_state_not_answerable",
+              "criterion": "Mentions that the state government has powers of its own for which it is not answerable to the central government.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "In a federal system, can the central government give orders to a state government? Why or why not?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Belgium shifted from a unitary to a federal form",
+            "1993",
+            "Sri Lanka continues to be a unitary system"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_belgium_shift",
+              "criterion": "Gives Belgium as an example of a country that shifted from a unitary to a federal form of government (in 1993).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "In which system can the central government pass on orders to the provinces?"
+            },
+            {
+              "id": "chk_ch2_srilanka_unitary",
+              "criterion": "Gives Sri Lanka as an example of a unitary system where the national government has all the powers.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "In which system can the central government pass on orders to the provinces?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_srilanka_federation"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_unitary_vs_federal_orders",
+          "linksChecks": [
+            "chk_ch2_unitary_can_order",
+            "chk_ch2_fed_cannot_order_state"
+          ],
+          "criterion": "Contrasts the two systems: in a unitary system the central government can pass on orders to the provinces, while in a federal system it cannot order the state government.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_unitary_dictatorship",
+          "wrong": "A unitary system means the country is ruled by a dictator.",
+          "fix": "A unitary system only means there is one level of government or the sub-units are subordinate to it. Sri Lanka, a democracy, is a unitary system.",
+          "checkId": "mchk_misc_ch2_unitary_dictatorship",
+          "checkCriterion": "The answer states or implies this wrong idea: A unitary system means the country is ruled by a dictator.",
+          "fixCheckId": "mfix_misc_ch2_unitary_dictatorship",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A unitary system only means there is one level of government or the sub-units are subordinate to it. Sri Lanka, a democracy, is a unitary system.",
+          "keyPointIds": [
+            "ch2_t1c1_kp2"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_srilanka_federation",
+          "wrong": "Sri Lanka is a federation because the country is divided into provinces.",
+          "fix": "Having provinces does not make a federation. Sri Lanka continues to be, for all practical purposes, a unitary system where the national government has all the powers.",
+          "checkId": "mchk_misc_ch2_srilanka_federation",
+          "checkCriterion": "The answer states or implies this wrong idea: Sri Lanka is a federation because the country is divided into provinces.",
+          "fixCheckId": "mfix_misc_ch2_srilanka_federation",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Having provinces does not make a federation. Sri Lanka continues to be, for all practical purposes, a unitary system where the national government has all the powers.",
+          "keyPointIds": [
+            "ch2_t1c1_kp4"
+          ],
+          "isRequired": false
+        },
+        {
+          "id": "misc_ch2_federal_is_organs",
+          "wrong": "Federalism means dividing power among the legislature, executive and judiciary.",
+          "fix": "That is the horizontal distribution of power from Chapter 1. Federalism divides power between a central authority and its constituent units, that is, between levels of government.",
+          "checkId": "mchk_misc_ch2_federal_is_organs",
+          "checkCriterion": "The answer states or implies this wrong idea: Federalism means dividing power among the legislature, executive and judiciary.",
+          "fixCheckId": "mfix_misc_ch2_federal_is_organs",
+          "fixCheckCriterion": "Answer 2 states the correct idea: That is the horizontal distribution of power from Chapter 1. Federalism divides power between a central authority and its constituent units, that is, between levels of government.",
+          "keyPointIds": [
+            "ch2_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_unitary_dictatorship",
+            "mchk_misc_ch2_srilanka_federation",
+            "mchk_misc_ch2_federal_is_organs"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_fed_def_division",
+            "chk_ch2_unitary_def",
+            "chk_ch2_unitary_can_order",
+            "chk_ch2_fed_cannot_order_state",
+            "chk_ch2_fed_state_not_answerable"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_belgium_shift",
+            "chk_ch2_srilanka_unitary",
+            "lnk_ch2_unitary_vs_federal_orders"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t1_c2",
+      "topicId": "ncert_civ_10_ch2_t1",
+      "topicTitle": "What is federalism?",
+      "label": "Key Features of Federalism",
+      "headingType": "subheading",
+      "sourcePages": [
+        15
+      ],
+      "conceptHash": "9d459b7ebfbd0433bab32709bd31cda49a0b46ee477e55e576272ddfbb15b50d",
+      "cardText": "In a federation there are two or more levels of government. They govern the same citizens, but each has its own jurisdiction in legislation, taxation and administration, specified in the constitution. Fundamental provisions cannot be changed by one level alone. Courts act as an umpire, sources of revenue are specified to ensure financial autonomy, and the system has dual objectives: unity and accommodating regional diversity.",
+      "hint": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives.",
+      "probe": "What are the key features of federalism?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Key Features of Federalism, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t1c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "two or more levels",
+            "same citizens",
+            "own jurisdiction",
+            "legislation, taxation and administration"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_levels",
+              "criterion": "States that there are two or more levels (tiers) of government.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives."
+            },
+            {
+              "id": "chk_ch2_feat_jurisdiction",
+              "criterion": "Mentions that each tier governs the same citizens but has its own jurisdiction in legislation, taxation or administration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_states_separate_countries"
+          ]
+        },
+        {
+          "id": "ch2_t1c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "specified in the constitution",
+            "constitutionally guaranteed"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_guaranteed",
+              "criterion": "States that the jurisdiction, existence and authority of each tier are specified in and guaranteed by the constitution.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can one level of government change the basic provisions of the constitution on its own?",
+          "requiredEvidence": [
+            "fundamental provisions",
+            "cannot be unilaterally changed",
+            "consent of both the levels"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_no_unilateral_change",
+              "criterion": "States that fundamental provisions cannot be changed by one level of government alone and need the consent of both levels.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can one level of government change the basic provisions of the constitution on its own?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "interpret the constitution",
+            "umpire",
+            "disputes arise"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_courts_umpire",
+              "criterion": "Mentions that courts interpret the constitution and the highest court acts as an umpire in disputes between levels of government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "sources of revenue",
+            "financial autonomy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_financial_autonomy",
+              "criterion": "States that sources of revenue for each level are clearly specified to ensure its financial autonomy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about levels, jurisdiction, the constitution, changes, courts, money and objectives."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c2_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What two aims does a federal system try to achieve at the same time?",
+          "requiredEvidence": [
+            "dual objectives",
+            "safeguard and promote unity",
+            "accommodate regional diversity"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_feat_dual_objectives",
+              "criterion": "Mentions the dual objectives of federalism: safeguarding and promoting unity, and accommodating regional diversity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What two aims does a federal system try to achieve at the same time?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_states_separate_countries"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_features_to_objectives",
+          "linksChecks": [
+            "chk_ch2_feat_guaranteed",
+            "chk_ch2_feat_dual_objectives"
+          ],
+          "criterion": "Connects the constitutional guarantees of each level's power to the dual objectives of safeguarding unity and accommodating regional diversity.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_states_separate_countries",
+          "wrong": "In a federation, each state works like a separate country.",
+          "fix": "Different tiers govern the same citizens, and the federal system has the objective of safeguarding and promoting the unity of the country while accommodating regional diversity.",
+          "checkId": "mchk_misc_ch2_states_separate_countries",
+          "checkCriterion": "The answer states or implies this wrong idea: In a federation, each state works like a separate country.",
+          "fixCheckId": "mfix_misc_ch2_states_separate_countries",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Different tiers govern the same citizens, and the federal system has the objective of safeguarding and promoting the unity of the country while accommodating regional diversity.",
+          "keyPointIds": [
+            "ch2_t1c2_kp1",
+            "ch2_t1c2_kp6"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_states_separate_countries"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_feat_no_unilateral_change",
+            "chk_ch2_feat_dual_objectives"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_feat_levels",
+            "chk_ch2_feat_jurisdiction",
+            "chk_ch2_feat_guaranteed",
+            "chk_ch2_feat_courts_umpire",
+            "chk_ch2_feat_financial_autonomy",
+            "lnk_ch2_features_to_objectives"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t1_c3",
+      "topicId": "ncert_civ_10_ch2_t1",
+      "topicTitle": "What is federalism?",
+      "label": "Routes of Federalism: Coming Together vs Holding Together",
+      "headingType": "subheading",
+      "sourcePages": [
+        15
+      ],
+      "conceptHash": "1af8b374548fd762a45379593274d161e167bc922b5ed641b32f0bc1adc1bd4f",
+      "cardText": "Federations are formed in two ways. In 'coming together' federations, independent States come together on their own and pool sovereignty to increase their security; the States usually have equal power (USA, Switzerland, Australia). In 'holding together' federations, a large country divides its power between the constituent States and the national government; the central government tends to be more powerful (India, Spain, Belgium).",
+      "hint": "Did independent States join together, or did one large country divide its power?",
+      "probe": "Compare 'coming together' and 'holding together' federations. How does the balance of power differ?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Routes of Federalism: Coming Together vs Holding Together, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a 'coming together' federation, how and why do the States form a bigger unit?",
+          "requiredEvidence": [
+            "independent States coming together",
+            "pooling sovereignty",
+            "increase their security",
+            "coming together"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_route_coming_pool",
+              "criterion": "States that in 'coming together' federations independent States come together on their own and pool sovereignty to form a bigger unit.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a 'coming together' federation, how and why do the States form a bigger unit?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "equal power",
+            "strong vis-à-vis the federal government",
+            "USA",
+            "Switzerland",
+            "Australia"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_route_coming_equal_power",
+              "criterion": "Mentions that in coming together federations the constituent States usually have equal power and are strong.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Did independent States join together, or did one large country divide its power?"
+            },
+            {
+              "id": "chk_ch2_route_coming_examples",
+              "criterion": "Gives an example of a coming together federation: USA, Switzerland or Australia.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Did independent States join together, or did one large country divide its power?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t1c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In a 'holding together' federation, how is the federation created?",
+          "requiredEvidence": [
+            "large country decides to divide its power",
+            "holding together"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_route_holding_divide",
+              "criterion": "States that in 'holding together' federations a large country decides to divide its power between the constituent States and the national government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In a 'holding together' federation, how is the federation created?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_india_coming_together"
+          ]
+        },
+        {
+          "id": "ch2_t1c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "central government tends to be more powerful",
+            "unequal powers",
+            "India",
+            "Spain",
+            "Belgium"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_route_holding_centre_powerful",
+              "criterion": "Mentions that in holding together federations the central government tends to be more powerful than the States.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Did independent States join together, or did one large country divide its power?"
+            },
+            {
+              "id": "chk_ch2_route_holding_examples",
+              "criterion": "Gives an example of a holding together federation: India, Spain or Belgium.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Did independent States join together, or did one large country divide its power?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_coming_together_logic",
+          "linksChecks": [
+            "chk_ch2_route_coming_pool",
+            "chk_ch2_route_coming_equal_power"
+          ],
+          "criterion": "Connects independent States coming together on their own to the States usually having equal power in such federations.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_ch2_holding_together_logic",
+          "linksChecks": [
+            "chk_ch2_route_holding_divide",
+            "chk_ch2_route_holding_centre_powerful"
+          ],
+          "criterion": "Connects a large country dividing its own power to the central government tending to be more powerful in such federations.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_india_coming_together",
+          "wrong": "India is a coming together federation.",
+          "fix": "India is a holding together federation: a large country decided to divide its power between the constituent States and the national government.",
+          "checkId": "mchk_misc_ch2_india_coming_together",
+          "checkCriterion": "The answer states or implies this wrong idea: India is a coming together federation.",
+          "fixCheckId": "mfix_misc_ch2_india_coming_together",
+          "fixCheckCriterion": "Answer 2 states the correct idea: India is a holding together federation: a large country decided to divide its power between the constituent States and the national government.",
+          "keyPointIds": [
+            "ch2_t1c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_india_coming_together"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_route_coming_pool",
+            "chk_ch2_route_holding_divide"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_route_coming_equal_power",
+            "chk_ch2_route_coming_examples",
+            "chk_ch2_route_holding_centre_powerful",
+            "chk_ch2_route_holding_examples",
+            "lnk_ch2_coming_together_logic",
+            "lnk_ch2_holding_together_logic"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t2_c1",
+      "topicId": "ncert_civ_10_ch2_t2",
+      "topicTitle": "What makes India a federal country?",
+      "label": "Union of States and Three-Fold Distribution",
+      "headingType": "heading",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "conceptHash": "340a5021fe707b419a6d13fe9030cbf2f37651afcca78df82218c9b0a9fecdec",
+      "cardText": "The Constitution declared India a Union of States based on the principles of federalism. It provided a three-fold distribution of legislative powers. The Union List has subjects of national importance (defence, foreign affairs, banking) that need a uniform policy. The State List has subjects of State and local importance (police, trade, agriculture). The Concurrent List has subjects of common interest (education, forest, marriage); if laws conflict, Union law prevails. The Union also legislates on 'residuary' subjects such as computer software.",
+      "hint": "Think about the three lists, and what happens if the Centre and a State make conflicting laws on a shared subject.",
+      "probe": "How does the Indian Constitution distribute legislative powers between the Union and State governments?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Union of States and Three-Fold Distribution, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t2c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Union of States",
+            "principles of federalism"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_union_of_states",
+              "criterion": "States that the Constitution declared India a Union of States based on the principles of federalism.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about the three lists, and what happens if the Centre and a State make conflicting laws on a shared subject."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of subjects are on the Union List, and who makes laws on them?",
+          "requiredEvidence": [
+            "three-fold distribution",
+            "Union List",
+            "defence",
+            "foreign affairs",
+            "uniform policy",
+            "Union Government alone"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_union_list",
+              "criterion": "Mentions the Union List (such as defence or foreign affairs) and that only the Union Government can make laws on it.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What kind of subjects are on the Union List, and who makes laws on them?"
+            },
+            {
+              "id": "chk_ch2_uniform_policy",
+              "criterion": "Mentions that these subjects need a uniform policy throughout the country.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What kind of subjects are on the Union List, and who makes laws on them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of subjects are on the State List, and who makes laws on them?",
+          "requiredEvidence": [
+            "State List",
+            "police",
+            "agriculture",
+            "State Governments alone"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_state_list",
+              "criterion": "Mentions the State List (such as police or agriculture) and that only State Governments can make laws on it.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What kind of subjects are on the State List, and who makes laws on them?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_centre_interferes_state_list"
+          ]
+        },
+        {
+          "id": "ch2_t2c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the Concurrent List, and what happens if laws made on it conflict?",
+          "requiredEvidence": [
+            "Concurrent List",
+            "common interest",
+            "education",
+            "both can make laws",
+            "Union Government will prevail"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_concurrent_list",
+              "criterion": "Mentions the Concurrent List (such as education or forest) on which both the Union and State governments can make laws.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What is the Concurrent List, and what happens if laws made on it conflict?"
+            },
+            {
+              "id": "chk_ch2_concurrent_conflict_union_prevails",
+              "criterion": "States that if Union and State laws on a Concurrent subject conflict, the Union law prevails.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the Concurrent List, and what happens if laws made on it conflict?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_concurrent_state_prevails"
+          ]
+        },
+        {
+          "id": "ch2_t2c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "residuary subjects",
+            "computer software",
+            "Union Government has the power"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_residuary_powers",
+              "criterion": "Mentions residuary subjects (such as computer software) and that the Union Government legislates on them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Think about the three lists, and what happens if the Centre and a State make conflicting laws on a shared subject."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_residuary_local"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_uniform_policy_to_union_list",
+          "linksChecks": [
+            "chk_ch2_union_list",
+            "chk_ch2_uniform_policy"
+          ],
+          "criterion": "Explains that the Union Government alone makes laws on Union List subjects because a uniform policy is needed on these matters throughout the country.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_centre_interferes_state_list",
+          "wrong": "The Union Government can make laws on State List subjects whenever it wants.",
+          "fix": "The State Governments alone can make laws relating to the subjects mentioned in the State List.",
+          "checkId": "mchk_misc_ch2_centre_interferes_state_list",
+          "checkCriterion": "The answer states or implies this wrong idea: The Union Government can make laws on State List subjects whenever it wants.",
+          "fixCheckId": "mfix_misc_ch2_centre_interferes_state_list",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The State Governments alone can make laws relating to the subjects mentioned in the State List.",
+          "keyPointIds": [
+            "ch2_t2c1_kp3"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_concurrent_state_prevails",
+          "wrong": "If Union and State laws on a Concurrent subject conflict, the State law prevails.",
+          "fix": "If their laws conflict with each other, the law made by the Union Government will prevail.",
+          "checkId": "mchk_misc_ch2_concurrent_state_prevails",
+          "checkCriterion": "The answer states or implies this wrong idea: If Union and State laws on a Concurrent subject conflict, the State law prevails.",
+          "fixCheckId": "mfix_misc_ch2_concurrent_state_prevails",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If their laws conflict with each other, the law made by the Union Government will prevail.",
+          "keyPointIds": [
+            "ch2_t2c1_kp4"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_residuary_local",
+          "wrong": "Residuary subjects belong to the States or to local governments.",
+          "fix": "The Union Government has the power to legislate on 'residuary' subjects.",
+          "checkId": "mchk_misc_ch2_residuary_local",
+          "checkCriterion": "The answer states or implies this wrong idea: Residuary subjects belong to the States or to local governments.",
+          "fixCheckId": "mfix_misc_ch2_residuary_local",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Union Government has the power to legislate on 'residuary' subjects.",
+          "keyPointIds": [
+            "ch2_t2c1_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_centre_interferes_state_list",
+            "mchk_misc_ch2_concurrent_state_prevails",
+            "mchk_misc_ch2_residuary_local"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_union_list",
+            "chk_ch2_uniform_policy",
+            "chk_ch2_state_list",
+            "chk_ch2_concurrent_list",
+            "chk_ch2_concurrent_conflict_union_prevails"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_union_of_states",
+            "chk_ch2_residuary_powers",
+            "lnk_ch2_uniform_policy_to_union_list"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t2_c2",
+      "topicId": "ncert_civ_10_ch2_t2",
+      "topicTitle": "What makes India a federal country?",
+      "label": "Amendment, Judiciary and Taxation",
+      "headingType": "subheading",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "conceptHash": "afa800275469155230041d7bef12bd5791694da77254accfee0f4681df7e8b6c",
+      "cardText": "The Constitution originally provided for a two-tier system; a third tier was added later in the form of Panchayats and Municipalities. Parliament cannot change the power-sharing arrangement on its own: a change needs a two-thirds majority in both Houses, then ratification by the legislatures of at least half of the States. The High Courts and the Supreme Court decide disputes about the division of powers, and both the Union and State governments can raise resources by levying taxes.",
+      "hint": "What has to happen before the power-sharing arrangement can be changed? Who settles disputes?",
+      "probe": "How does the Constitution make it hard to change the federal power-sharing arrangement?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Amendment, Judiciary and Taxation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t2c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "two-tier system",
+            "third tier",
+            "Panchayats and Municipalities"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_two_to_three_tiers",
+              "criterion": "Mentions that the Constitution began with two tiers and a third tier (Panchayats and Municipalities) was added later.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What has to happen before the power-sharing arrangement can be changed? Who settles disputes?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_devolution_ends_federation"
+          ]
+        },
+        {
+          "id": "ch2_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can the Parliament change the power-sharing arrangement by itself?",
+          "requiredEvidence": [
+            "Parliament cannot on its own change this arrangement",
+            "not easy to make changes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_cannot_change_alone",
+              "criterion": "States that the Parliament cannot change the power-sharing arrangement on its own.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can the Parliament change the power-sharing arrangement by itself?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_parliament_alone"
+          ]
+        },
+        {
+          "id": "ch2_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What steps does a change to the power-sharing arrangement have to go through?",
+          "requiredEvidence": [
+            "both the Houses of Parliament",
+            "two-thirds majority",
+            "ratified by the legislatures of at least half of the total States"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_amendment_procedure",
+              "criterion": "Explains that a change needs at least a two-thirds majority in both Houses of Parliament and ratification by the legislatures of at least half of the States.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What steps does a change to the power-sharing arrangement have to go through?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_parliament_alone"
+          ]
+        },
+        {
+          "id": "ch2_t2c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "judiciary",
+            "High Courts and the Supreme Court",
+            "dispute about the division of powers"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_judiciary_disputes",
+              "criterion": "States that the High Courts and the Supreme Court decide disputes about the division of powers.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has to happen before the power-sharing arrangement can be changed? Who settles disputes?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t2c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "raise resources",
+            "levying taxes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_both_levy_taxes",
+              "criterion": "Mentions that both the Union and State governments can raise resources by levying taxes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has to happen before the power-sharing arrangement can be changed? Who settles disputes?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_amendment_protection",
+          "linksChecks": [
+            "chk_ch2_cannot_change_alone",
+            "chk_ch2_amendment_procedure"
+          ],
+          "criterion": "Explains that Parliament cannot change the arrangement on its own because the change also needs ratification by the States.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_parliament_alone",
+          "wrong": "Parliament can change the division of powers between the Union and the States on its own.",
+          "fix": "The Parliament cannot on its own change this arrangement. A change needs a two-thirds majority in both Houses and ratification by the legislatures of at least half of the States.",
+          "checkId": "mchk_misc_ch2_parliament_alone",
+          "checkCriterion": "The answer states or implies this wrong idea: Parliament can change the division of powers between the Union and the States on its own.",
+          "fixCheckId": "mfix_misc_ch2_parliament_alone",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Parliament cannot on its own change this arrangement. A change needs a two-thirds majority in both Houses and ratification by the legislatures of at least half of the States.",
+          "keyPointIds": [
+            "ch2_t2c2_kp2",
+            "ch2_t2c2_kp3"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_devolution_ends_federation",
+          "wrong": "India is no longer a federation because some powers of the States have been devolved to local government bodies.",
+          "fix": "Panchayats and Municipalities were added as a third tier of federalism. The division of powers between the Union and the States still stands.",
+          "checkId": "mchk_misc_ch2_devolution_ends_federation",
+          "checkCriterion": "The answer states or implies this wrong idea: India is no longer a federation because some powers of the States have been devolved to local government bodies.",
+          "fixCheckId": "mfix_misc_ch2_devolution_ends_federation",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Panchayats and Municipalities were added as a third tier of federalism. The division of powers between the Union and the States still stands.",
+          "keyPointIds": [
+            "ch2_t2c2_kp1"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_parliament_alone",
+            "mchk_misc_ch2_devolution_ends_federation"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_cannot_change_alone",
+            "chk_ch2_amendment_procedure"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_two_to_three_tiers",
+            "chk_ch2_judiciary_disputes",
+            "chk_ch2_both_levy_taxes",
+            "lnk_ch2_amendment_protection"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t2_c3",
+      "topicId": "ncert_civ_10_ch2_t2",
+      "topicTitle": "What makes India a federal country?",
+      "label": "Special Status and Union Territories",
+      "headingType": "subheading",
+      "sourcePages": [
+        17
+      ],
+      "conceptHash": "b06ab6e43a927530d12e722de20cc57b209216944806803dd454fa704b115793",
+      "cardText": "All States in the Indian Union do not have identical powers. Assam, Nagaland, Arunachal Pradesh and Mizoram enjoy special powers under Article 371 due to their peculiar social and historical circumstances, especially to protect land rights of indigenous peoples, their culture and preferential employment in government service. Areas too small to become a State that could not be merged with existing States, like Chandigarh, Lakshadweep and Delhi, are Union Territories; the Central Government has special powers in running them.",
+      "hint": "Do all States in India have the same powers? What about areas too small to become a State?",
+      "probe": "Why do some States in India enjoy a special status, and how are Union Territories different from States?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Special Status and Union Territories, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Do all the States in India have exactly the same powers?",
+          "requiredEvidence": [
+            "do not have identical powers",
+            "special status"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_unequal_powers",
+              "criterion": "States that all States in the Indian Union do not have identical powers.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Do all the States in India have exactly the same powers?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_all_states_equal"
+          ]
+        },
+        {
+          "id": "ch2_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which States enjoy special powers, and why were these powers given?",
+          "requiredEvidence": [
+            "Article 371",
+            "Assam",
+            "Nagaland",
+            "land rights of indigenous peoples",
+            "culture",
+            "preferential employment"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_special_status_article371",
+              "criterion": "Mentions that some States (such as Assam, Nagaland, Arunachal Pradesh or Mizoram) enjoy special powers under Article 371.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Which States enjoy special powers, and why were these powers given?"
+            },
+            {
+              "id": "chk_ch2_protect_indigenous",
+              "criterion": "Explains that these special powers protect land rights of indigenous peoples, their culture or preferential employment in government service.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which States enjoy special powers, and why were these powers given?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t2c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are Union Territories, and why were they not made into States?",
+          "requiredEvidence": [
+            "Union Territories",
+            "too small to become an independent State",
+            "Chandigarh",
+            "Lakshadweep",
+            "Delhi"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_union_territories",
+              "criterion": "Describes Union Territories as areas too small to become a State that could not be merged with existing States (such as Chandigarh, Lakshadweep or Delhi).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are Union Territories, and why were they not made into States?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t2c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "do not have the powers of a State",
+            "special powers in running these areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_ut_central_admin",
+              "criterion": "States that Union Territories do not have the powers of a State and the Central Government has special powers in running them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Do all States in India have the same powers? What about areas too small to become a State?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_ut_are_states"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_special_status_logic",
+          "linksChecks": [
+            "chk_ch2_special_status_article371",
+            "chk_ch2_protect_indigenous"
+          ],
+          "criterion": "Connects the special status of some States under Article 371 to its purpose: protecting land rights of indigenous peoples, their culture or preferential employment.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_ch2_union_territories_logic",
+          "linksChecks": [
+            "chk_ch2_union_territories",
+            "chk_ch2_ut_central_admin"
+          ],
+          "criterion": "Connects these areas being too small to become a State to the Central Government having special powers in running them.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_all_states_equal",
+          "wrong": "Because India is a federation, every State has exactly the same powers.",
+          "fix": "All States in the Indian Union do not have identical powers. States such as Assam, Nagaland, Arunachal Pradesh and Mizoram enjoy special powers under Article 371.",
+          "checkId": "mchk_misc_ch2_all_states_equal",
+          "checkCriterion": "The answer states or implies this wrong idea: Because India is a federation, every State has exactly the same powers.",
+          "fixCheckId": "mfix_misc_ch2_all_states_equal",
+          "fixCheckCriterion": "Answer 2 states the correct idea: All States in the Indian Union do not have identical powers. States such as Assam, Nagaland, Arunachal Pradesh and Mizoram enjoy special powers under Article 371.",
+          "keyPointIds": [
+            "ch2_t2c3_kp1"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_ut_are_states",
+          "wrong": "Union Territories have the same powers as States.",
+          "fix": "These territories do not have the powers of a State. The Central Government has special powers in running these areas.",
+          "checkId": "mchk_misc_ch2_ut_are_states",
+          "checkCriterion": "The answer states or implies this wrong idea: Union Territories have the same powers as States.",
+          "fixCheckId": "mfix_misc_ch2_ut_are_states",
+          "fixCheckCriterion": "Answer 2 states the correct idea: These territories do not have the powers of a State. The Central Government has special powers in running these areas.",
+          "keyPointIds": [
+            "ch2_t2c3_kp4"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_all_states_equal",
+            "mchk_misc_ch2_ut_are_states"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_unequal_powers",
+            "chk_ch2_special_status_article371",
+            "chk_ch2_protect_indigenous",
+            "chk_ch2_union_territories"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_ut_central_admin",
+            "lnk_ch2_special_status_logic",
+            "lnk_ch2_union_territories_logic"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t3_c0",
+      "topicId": "ncert_civ_10_ch2_t3",
+      "topicTitle": "How is federalism practised?",
+      "label": "How Federalism Is Practised",
+      "headingType": "heading",
+      "sourcePages": [
+        19
+      ],
+      "conceptHash": "994bcc0824c8e3903a0dcca957e1f2201987c2cb4ff5dc1a19a1dd5a6465534e",
+      "cardText": "Constitutional provisions are necessary for federalism, but the real success of federalism in India can be attributed to the nature of democratic politics in our country. This ensured that the spirit of federalism, respect for diversity and desire for living together became shared ideals in our country.",
+      "hint": "Is the Constitution alone enough to make federalism work?",
+      "probe": "To what does the textbook attribute the real success of federalism in India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain How Federalism Is Practised, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t3c0_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Are constitutional provisions alone enough to make federalism work in India? What else matters?",
+          "requiredEvidence": [
+            "not sufficient",
+            "real success of federalism",
+            "nature of democratic politics"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_democratic_politics",
+              "criterion": "States that the real success of federalism in India comes from the nature of democratic politics, not constitutional provisions alone.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Are constitutional provisions alone enough to make federalism work in India? What else matters?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_constitution_enough"
+          ]
+        },
+        {
+          "id": "ch2_t3c0_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "respect for diversity",
+            "desire for living together",
+            "shared ideals"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_shared_ideals",
+              "criterion": "Mentions that the spirit of federalism, respect for diversity and the desire for living together became shared ideals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is the Constitution alone enough to make federalism work?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_democratic_politics_to_success",
+          "linksChecks": [
+            "chk_ch2_democratic_politics",
+            "chk_ch2_shared_ideals"
+          ],
+          "criterion": "Connects the nature of democratic politics to respect for diversity and the desire for living together becoming shared ideals.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_constitution_enough",
+          "wrong": "Federalism works in India simply because the Constitution says so.",
+          "fix": "Constitutional provisions are necessary but not sufficient. The real success of federalism in India comes from the nature of its democratic politics.",
+          "checkId": "mchk_misc_ch2_constitution_enough",
+          "checkCriterion": "The answer states or implies this wrong idea: Federalism works in India simply because the Constitution says so.",
+          "fixCheckId": "mfix_misc_ch2_constitution_enough",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Constitutional provisions are necessary but not sufficient. The real success of federalism in India comes from the nature of its democratic politics.",
+          "keyPointIds": [
+            "ch2_t3c0_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_constitution_enough"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_democratic_politics"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_shared_ideals",
+            "lnk_ch2_democratic_politics_to_success"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t3_c1",
+      "topicId": "ncert_civ_10_ch2_t3",
+      "topicTitle": "How is federalism practised?",
+      "label": "Linguistic States",
+      "headingType": "subheading",
+      "sourcePages": [
+        19,
+        20
+      ],
+      "conceptHash": "41146d7a9b6806848105f1350d3d3c980a445aafa7ddac5e447dbf357a139a66",
+      "cardText": "The creation of linguistic States was the first and a major test for democratic politics in India. Boundaries of several old States were changed so that people who spoke the same language lived in the same State. Some States were created on the basis of culture, ethnicity or geography (Nagaland, Uttarakhand, Jharkhand). Some national leaders feared this would lead to the disintegration of the country, but it has actually made the country more united and made administration easier.",
+      "hint": "What did some leaders fear would happen, and what actually happened?",
+      "probe": "How did the creation of linguistic States affect the unity and administration of India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Linguistic States, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why was the map of India's States redrawn to form new States?",
+          "requiredEvidence": [
+            "linguistic States",
+            "boundaries",
+            "spoke the same language lived in the same State"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_linguistic_states_created",
+              "criterion": "Mentions that State boundaries were changed to create linguistic States, so that people who spoke the same language lived in the same State.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Why was the map of India's States redrawn to form new States?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "culture, ethnicity or geography",
+            "Nagaland",
+            "Uttarakhand",
+            "Jharkhand"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_states_culture_geography",
+              "criterion": "Notes that some States were created on the basis of culture, ethnicity or geography (such as Nagaland, Uttarakhand or Jharkhand).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did some leaders fear would happen, and what actually happened?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did some leaders fear about forming States by language, and what actually happened?",
+          "requiredEvidence": [
+            "disintegration",
+            "more united",
+            "administration easier"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_ling_states_feared",
+              "criterion": "Mentions that some national leaders feared linguistic States would lead to the disintegration of the country.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What did some leaders fear about forming States by language, and what actually happened?"
+            },
+            {
+              "id": "chk_ch2_ling_states_increased_unity",
+              "criterion": "States that linguistic States actually made the country more united or made administration easier.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did some leaders fear about forming States by language, and what actually happened?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_linguistic_states_divided"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_ling_states_to_unity",
+          "linksChecks": [
+            "chk_ch2_linguistic_states_created",
+            "chk_ch2_ling_states_increased_unity"
+          ],
+          "criterion": "Connects the creation of linguistic States to the outcome that the country became more united and administration easier, despite the fears.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_linguistic_states_divided",
+          "wrong": "Drawing State borders on the basis of language divided the country.",
+          "fix": "Some leaders feared this, but the experience has shown that the formation of linguistic States has actually made the country more united and made administration easier.",
+          "checkId": "mchk_misc_ch2_linguistic_states_divided",
+          "checkCriterion": "The answer states or implies this wrong idea: Drawing State borders on the basis of language divided the country.",
+          "fixCheckId": "mfix_misc_ch2_linguistic_states_divided",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Some leaders feared this, but the experience has shown that the formation of linguistic States has actually made the country more united and made administration easier.",
+          "keyPointIds": [
+            "ch2_t3c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_linguistic_states_divided"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_linguistic_states_created",
+            "chk_ch2_ling_states_feared",
+            "chk_ch2_ling_states_increased_unity"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_states_culture_geography",
+            "lnk_ch2_ling_states_to_unity"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t3_c2",
+      "topicId": "ncert_civ_10_ch2_t3",
+      "topicTitle": "How is federalism practised?",
+      "label": "Language Policy",
+      "headingType": "subheading",
+      "sourcePages": [
+        20
+      ],
+      "conceptHash": "dc7a1829370b3f392e45362ee5ad2b654b93e43b768e091cfc32b481f40709da",
+      "cardText": "The Constitution did not give the status of national language to any one language. Hindi was identified as the official language, but it is the mother tongue of only about 40 per cent of Indians, so there are safeguards: 21 other Scheduled Languages, and States have their own official languages. English was to stop being used officially in 1965; non-Hindi speaking States demanded it continue, and in Tamil Nadu the movement took a violent form. The Centre agreed to continue English along with Hindi. This flexibility helped India avoid Sri Lanka's situation.",
+      "hint": "Why wasn't Hindi imposed on everyone? What happened about English in 1965?",
+      "probe": "How does India's language policy accommodate diversity?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Language Policy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Does India have a national language? What status was given to Hindi?",
+          "requiredEvidence": [
+            "did not give the status of national language",
+            "Hindi was identified as the official language"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_no_national_language",
+              "criterion": "States that the Constitution did not give any one language the status of national language; Hindi was identified as the official language.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Does India have a national language? What status was given to Hindi?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_hindi_national_language"
+          ]
+        },
+        {
+          "id": "ch2_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why did India need to protect languages other than Hindi, and how was this done?",
+          "requiredEvidence": [
+            "only about 40 per cent",
+            "safeguards",
+            "21 other languages",
+            "Scheduled Languages"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_hindi_forty_percent",
+              "criterion": "Mentions that Hindi is the mother tongue of only about 40 per cent of Indians.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Why did India need to protect languages other than Hindi, and how was this done?"
+            },
+            {
+              "id": "chk_ch2_scheduled_languages",
+              "criterion": "Mentions that besides Hindi, 21 other languages are recognised as Scheduled Languages.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Why did India need to protect languages other than Hindi, and how was this done?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "examination",
+            "any of these languages",
+            "States too have their own official languages"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_lang_policy_exams",
+              "criterion": "Mentions that candidates for Central Government examinations may take them in any of the Scheduled Languages.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why wasn't Hindi imposed on everyone? What happened about English in 1965?"
+            },
+            {
+              "id": "chk_ch2_state_official_languages",
+              "criterion": "Mentions that States have their own official languages.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why wasn't Hindi imposed on everyone? What happened about English in 1965?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What was supposed to happen to the use of English in 1965, and how did some States react?",
+          "requiredEvidence": [
+            "1965",
+            "non-Hindi speaking States demanded",
+            "Tamil Nadu",
+            "continue the use of English along with Hindi"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_english_1965_protest",
+              "criterion": "States that the official use of English was to stop in 1965 and non-Hindi speaking States demanded that it continue (in Tamil Nadu the movement took a violent form).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What was supposed to happen to the use of English in 1965, and how did some States react?"
+            },
+            {
+              "id": "chk_ch2_english_continued",
+              "criterion": "Mentions that the Central Government agreed to continue the use of English along with Hindi.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What was supposed to happen to the use of English in 1965, and how did some States react?"
+            },
+            {
+              "id": "chk_ch2_english_elite_critique",
+              "criterion": "Mentions that critics think this solution favoured the English-speaking elite.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What was supposed to happen to the use of English in 1965, and how did some States react?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "promotion of Hindi",
+            "does not mean",
+            "impose Hindi"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_promotion_not_imposition",
+              "criterion": "States that promoting Hindi does not mean the Central Government can impose it on States where people speak a different language.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why wasn't Hindi imposed on everyone? What happened about English in 1965?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_hindi_imposed"
+          ]
+        },
+        {
+          "id": "ch2_t3c2_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "flexibility",
+            "Sri Lanka"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_avoided_srilanka",
+              "criterion": "States that this flexibility helped India avoid the kind of situation Sri Lanka is in.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why wasn't Hindi imposed on everyone? What happened about English in 1965?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_hindi_minority_to_safeguards",
+          "linksChecks": [
+            "chk_ch2_hindi_forty_percent",
+            "chk_ch2_scheduled_languages"
+          ],
+          "criterion": "Connects Hindi being the mother tongue of only about 40 per cent of Indians to the safeguards for other languages, such as the 21 other Scheduled Languages.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_ch2_english_protest_to_flexibility",
+          "linksChecks": [
+            "chk_ch2_english_1965_protest",
+            "chk_ch2_english_continued"
+          ],
+          "criterion": "Connects the demand by non-Hindi speaking States that English continue to the Central Government agreeing to continue English along with Hindi.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_hindi_national_language",
+          "wrong": "Hindi is the national language of India.",
+          "fix": "Our Constitution did not give the status of national language to any one language. Hindi was identified as the official language, and 21 other languages are recognised as Scheduled Languages.",
+          "checkId": "mchk_misc_ch2_hindi_national_language",
+          "checkCriterion": "The answer states or implies this wrong idea: Hindi is the national language of India.",
+          "fixCheckId": "mfix_misc_ch2_hindi_national_language",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Our Constitution did not give the status of national language to any one language. Hindi was identified as the official language, and 21 other languages are recognised as Scheduled Languages.",
+          "keyPointIds": [
+            "ch2_t3c2_kp1"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_ch2_hindi_imposed",
+          "wrong": "Because Hindi is the official language, the Central Government can make every State use it.",
+          "fix": "Promotion of Hindi does not mean that the Central Government can impose Hindi on States where people speak a different language.",
+          "checkId": "mchk_misc_ch2_hindi_imposed",
+          "checkCriterion": "The answer states or implies this wrong idea: Because Hindi is the official language, the Central Government can make every State use it.",
+          "fixCheckId": "mfix_misc_ch2_hindi_imposed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Promotion of Hindi does not mean that the Central Government can impose Hindi on States where people speak a different language.",
+          "keyPointIds": [
+            "ch2_t3c2_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_hindi_national_language",
+            "mchk_misc_ch2_hindi_imposed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_no_national_language",
+            "chk_ch2_hindi_forty_percent",
+            "chk_ch2_scheduled_languages",
+            "chk_ch2_english_1965_protest",
+            "chk_ch2_english_continued",
+            "chk_ch2_english_elite_critique"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_lang_policy_exams",
+            "chk_ch2_state_official_languages",
+            "chk_ch2_promotion_not_imposition",
+            "chk_ch2_avoided_srilanka",
+            "lnk_ch2_hindi_minority_to_safeguards",
+            "lnk_ch2_english_protest_to_flexibility"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t3_c3",
+      "topicId": "ncert_civ_10_ch2_t3",
+      "topicTitle": "How is federalism practised?",
+      "label": "Centre-State Relations and Coalition Governments",
+      "headingType": "subheading",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "conceptHash": "30c0590ec0f14e84675f9bf8e9ab8e6c965c4d293d670feed2f5f4e0ae062cbd",
+      "cardText": "For a long time the same party ruled at the Centre and in most States, and the Central Government would often misuse the Constitution to dismiss State governments controlled by rival parties. After 1990, regional parties rose in many States. With no single party getting a clear majority in the Lok Sabha, national parties had to form alliances with regional parties, leading to an era of coalition governments. This led to a new culture of power sharing and respect for the autonomy of State Governments, supported by a major Supreme Court judgement.",
+      "hint": "What changed after 1990, when no single party won a clear majority in the Lok Sabha?",
+      "probe": "How did the rise of regional parties and coalition governments after 1990 change Centre-State relations?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Centre-State Relations and Coalition Governments, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t3c3_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "restructuring",
+            "Centre-State relations"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_restructuring_relations",
+              "criterion": "Mentions that restructuring Centre-State relations has strengthened federalism in practice.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What changed after 1990, when no single party won a clear majority in the Lok Sabha?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happened to Centre-State relations when one party ruled at the Centre and in most States?",
+          "requiredEvidence": [
+            "same party ruled",
+            "misuse the Constitution",
+            "dismiss the State governments",
+            "rival parties"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_past_misuse_dismissal",
+              "criterion": "States that the Central Government often misused the Constitution to dismiss State governments controlled by rival parties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happened to Centre-State relations when one party ruled at the Centre and in most States?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What changed in Indian politics after 1990, and what kind of governments did it lead to?",
+          "requiredEvidence": [
+            "after 1990",
+            "regional political parties",
+            "no single party got a clear majority",
+            "coalition governments"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_rise_regional_parties",
+              "criterion": "Mentions the rise of regional political parties in many States after 1990.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What changed in Indian politics after 1990, and what kind of governments did it lead to?"
+            },
+            {
+              "id": "chk_ch2_era_of_coalitions",
+              "criterion": "Mentions that with no single party getting a clear majority, national parties allied with regional parties, leading to coalition governments at the Centre.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What changed in Indian politics after 1990, and what kind of governments did it lead to?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_coalition_loses_power"
+          ]
+        },
+        {
+          "id": "ch2_t3c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How did coalition politics and a court judgement change the way the Centre treats State governments?",
+          "requiredEvidence": [
+            "new culture of power sharing",
+            "respect for the autonomy",
+            "Supreme Court",
+            "arbitrary manner"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_new_culture_power_sharing",
+              "criterion": "States that this led to a new culture of power sharing and respect for the autonomy of State Governments.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How did coalition politics and a court judgement change the way the Centre treats State governments?"
+            },
+            {
+              "id": "chk_ch2_supreme_court_protection",
+              "criterion": "Mentions a Supreme Court judgement that made it difficult for the Central Government to dismiss State governments arbitrarily.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "How did coalition politics and a court judgement change the way the Centre treats State governments?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_coalition_to_autonomy",
+          "linksChecks": [
+            "chk_ch2_era_of_coalitions",
+            "chk_ch2_new_culture_power_sharing"
+          ],
+          "criterion": "Connects the era of coalition governments at the Centre to a new culture of power sharing and respect for the autonomy of State Governments.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_coalition_loses_power",
+          "wrong": "Coalition governments at the Centre made State governments weaker.",
+          "fix": "The era of coalition governments led to a new culture of power sharing and respect for the autonomy of State Governments.",
+          "checkId": "mchk_misc_ch2_coalition_loses_power",
+          "checkCriterion": "The answer states or implies this wrong idea: Coalition governments at the Centre made State governments weaker.",
+          "fixCheckId": "mfix_misc_ch2_coalition_loses_power",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The era of coalition governments led to a new culture of power sharing and respect for the autonomy of State Governments.",
+          "keyPointIds": [
+            "ch2_t3c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_coalition_loses_power"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_past_misuse_dismissal",
+            "chk_ch2_rise_regional_parties",
+            "chk_ch2_era_of_coalitions",
+            "chk_ch2_new_culture_power_sharing",
+            "chk_ch2_supreme_court_protection"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_restructuring_relations",
+            "lnk_ch2_coalition_to_autonomy"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t4_c1",
+      "topicId": "ncert_civ_10_ch2_t4",
+      "topicTitle": "Decentralisation in India",
+      "label": "Decentralisation and the 1992 Amendment",
+      "headingType": "heading",
+      "sourcePages": [
+        24
+      ],
+      "conceptHash": "9095c2f56109d3311406ee2e4b46bf06bcf9bae8c6f958c83b65a3383a078f3f",
+      "cardText": "When power is taken away from Central and State governments and given to local government, it is called decentralisation. Many problems are best settled at the local level: people know local problems and have better ideas on where to spend money. People can also participate directly in decision making, which builds a habit of democratic participation. Local government realises the principle of local self-government. Before 1992, local bodies were under the direct control of State governments, without regular elections or resources of their own. The 1992 amendment made elections regular, reserved seats (one-third for women), created State Election Commissions and required States to share some powers and revenue.",
+      "hint": "Why settle local problems locally? What did the 1992 amendment change?",
+      "probe": "What is decentralisation, why is it needed, and how did the 1992 amendment strengthen local government?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Decentralisation and the 1992 Amendment, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does decentralisation mean, and what is the basic idea behind it?",
+          "requiredEvidence": [
+            "taken away from Central and State governments",
+            "given to local government",
+            "best settled at the local level"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_decentralisation_def",
+              "criterion": "Defines decentralisation as taking power away from Central and State governments and giving it to local government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does decentralisation mean, and what is the basic idea behind it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_decentralisation_officials"
+          ]
+        },
+        {
+          "id": "ch2_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can local people often manage local problems better?",
+          "requiredEvidence": [
+            "better knowledge of problems",
+            "where to spend money",
+            "more efficiently"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_local_ideas_efficiency",
+              "criterion": "States that local people know the problems of their localities better or have better ideas on where to spend money and how to manage things efficiently.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can local people often manage local problems better?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "directly participate in decision making",
+            "habit of democratic participation",
+            "local self-government"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_direct_participation",
+              "criterion": "Mentions that at the local level people can directly participate in decision making.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            },
+            {
+              "id": "chk_ch2_habit_democratic_participation",
+              "criterion": "Mentions that this helps build a habit of democratic participation.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            },
+            {
+              "id": "chk_ch2_local_self_government",
+              "criterion": "Mentions that local government is the best way to realise the democratic principle of local self-government.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "directly under the control of State governments",
+            "not held regularly",
+            "powers or resources of their own"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_before_1992_weak",
+              "criterion": "Notes that before 1992 local governments were directly under the control of State governments, elections were not held regularly, or they had no powers or resources of their own.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did the Constitution amendment of 1992 change for local governments?",
+          "requiredEvidence": [
+            "1992",
+            "Constitution was amended",
+            "regular elections"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_1992_amendment",
+              "criterion": "Mentions that the Constitution was amended in 1992 to make the third tier more powerful and effective.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "What did the Constitution amendment of 1992 change for local governments?"
+            },
+            {
+              "id": "chk_ch2_regular_elections",
+              "criterion": "States that it is now constitutionally mandatory to hold regular elections to local government bodies.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did the Constitution amendment of 1992 change for local governments?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c1_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the amendment make sure that groups who were often left out get seats in local bodies?",
+          "requiredEvidence": [
+            "reserved",
+            "Scheduled Castes",
+            "Scheduled Tribes",
+            "one-third",
+            "women"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_seats_reserved",
+              "criterion": "Mentions reservation of seats for Scheduled Castes, Scheduled Tribes or Other Backward Classes.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "How does the amendment make sure that groups who were often left out get seats in local bodies?"
+            },
+            {
+              "id": "chk_ch2_women_reservation",
+              "criterion": "States that at least one-third of all positions are reserved for women.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the amendment make sure that groups who were often left out get seats in local bodies?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c1_kp7",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "State Election Commission",
+            "share some powers and revenue"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_state_election_commission",
+              "criterion": "Mentions the independent State Election Commission created in each State to conduct panchayat and municipal elections.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            },
+            {
+              "id": "chk_ch2_share_revenue",
+              "criterion": "States that State governments are required to share some powers and revenue with local government bodies.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why settle local problems locally? What did the 1992 amendment change?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_local_problems_to_decentralisation",
+          "linksChecks": [
+            "chk_ch2_local_ideas_efficiency",
+            "chk_ch2_decentralisation_def"
+          ],
+          "criterion": "Connects local people's better knowledge of local problems and better ideas on spending to the reason for giving power to local government.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_ch2_participation_to_habit",
+          "linksChecks": [
+            "chk_ch2_direct_participation",
+            "chk_ch2_habit_democratic_participation"
+          ],
+          "criterion": "Connects people participating directly in decision making to building a habit of democratic participation.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_decentralisation_officials",
+          "wrong": "Decentralisation means sending State government officials to work in villages.",
+          "fix": "Decentralisation means power is taken away from Central and State governments and given to local government.",
+          "checkId": "mchk_misc_ch2_decentralisation_officials",
+          "checkCriterion": "The answer states or implies this wrong idea: Decentralisation means sending State government officials to work in villages.",
+          "fixCheckId": "mfix_misc_ch2_decentralisation_officials",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Decentralisation means power is taken away from Central and State governments and given to local government.",
+          "keyPointIds": [
+            "ch2_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 11
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_decentralisation_officials"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_decentralisation_def",
+            "chk_ch2_local_ideas_efficiency",
+            "chk_ch2_1992_amendment",
+            "chk_ch2_regular_elections",
+            "chk_ch2_seats_reserved",
+            "chk_ch2_women_reservation"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_direct_participation",
+            "chk_ch2_habit_democratic_participation",
+            "chk_ch2_local_self_government",
+            "chk_ch2_before_1992_weak",
+            "chk_ch2_state_election_commission",
+            "chk_ch2_share_revenue"
+          ],
+          [
+            "lnk_ch2_local_problems_to_decentralisation",
+            "lnk_ch2_participation_to_habit"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t4_c2",
+      "topicId": "ncert_civ_10_ch2_t4",
+      "topicTitle": "Decentralisation in India",
+      "label": "Panchayati Raj and Urban Local Bodies",
+      "headingType": "subheading",
+      "sourcePages": [
+        24,
+        25
+      ],
+      "conceptHash": "5e1d0f49bd47d04489e54e09f50179e51a59257ff3e5e163267f41a916347600",
+      "cardText": "Rural local government is known as Panchayati Raj. Each village, or group of villages, has a gram panchayat: ward members (panch) and a president (sarpanch), directly elected by the adult population. It works under the supervision of the gram sabha, made up of all the voters in the village. A few gram panchayats form a panchayat samiti (block or mandal), whose members are elected by all the panchayat members in that area. All the panchayat samitis in a district form the zilla parishad. Towns have municipalities and big cities have municipal corporations, controlled by elected bodies and headed by the chairperson or mayor.",
+      "hint": "Start from the village and go up to the district. Who supervises the gram panchayat?",
+      "probe": "Describe the structure of Panchayati Raj, from the village to the district.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Panchayati Raj and Urban Local Bodies, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the rural local government called, and who sits on a village council?",
+          "requiredEvidence": [
+            "Panchayati Raj",
+            "gram panchayat",
+            "panch",
+            "sarpanch",
+            "directly elected"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_gram_panchayat",
+              "criterion": "Describes the gram panchayat as the village council of ward members (panch) and a president (sarpanch) that makes decisions for the village.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the rural local government called, and who sits on a village council?"
+            },
+            {
+              "id": "chk_ch2_panchayat_directly_elected",
+              "criterion": "Mentions that the panch and sarpanch are directly elected by the adult population of the ward or village.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is the rural local government called, and who sits on a village council?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who supervises the village panchayat, and what does that body do?",
+          "requiredEvidence": [
+            "gram sabha",
+            "all the voters in the village",
+            "approve the annual budget",
+            "review the performance"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_gram_sabha",
+              "criterion": "Explains that the gram sabha is made up of all the voters in the village and supervises the gram panchayat (approving its budget and reviewing its performance).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who supervises the village panchayat, and what does that body do?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_gram_sabha_panchayat_same"
+          ]
+        },
+        {
+          "id": "ch2_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the level of rural local government just above the village panchayat?",
+          "requiredEvidence": [
+            "grouped together",
+            "panchayat samiti",
+            "block",
+            "mandal"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_panchayat_samiti",
+              "criterion": "Mentions that a few gram panchayats are grouped together to form a panchayat samiti (block or mandal).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the level of rural local government just above the village panchayat?"
+            },
+            {
+              "id": "chk_ch2_samiti_elected_by_panchayat",
+              "criterion": "Mentions that panchayat samiti members are elected by all the panchayat members in that area.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is the level of rural local government just above the village panchayat?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the highest level of rural local government in a district, and who are its members?",
+          "requiredEvidence": [
+            "district",
+            "zilla parishad",
+            "panchayat samitis",
+            "chairperson"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_zilla_parishad",
+              "criterion": "Mentions that all the panchayat samitis in a district together constitute the zilla parishad.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the highest level of rural local government in a district, and who are its members?"
+            },
+            {
+              "id": "chk_ch2_zilla_members_head",
+              "criterion": "Mentions that most zilla parishad members are elected, that MPs and MLAs of the district are members, or that its chairperson is its political head.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is the highest level of rural local government in a district, and who are its members?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "municipalities",
+            "towns",
+            "municipal corporations",
+            "big cities",
+            "mayor"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_urban_local_gov",
+              "criterion": "Mentions municipalities in towns and municipal corporations in big cities, controlled by elected bodies (headed by a chairperson or mayor).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Start from the village and go up to the district. Who supervises the gram panchayat?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_gram_sabha_panchayat_same",
+          "wrong": "The gram panchayat and the gram sabha are the same thing.",
+          "fix": "The gram panchayat is the elected council of ward members and the sarpanch. The gram sabha is made up of all the voters in the village and supervises the panchayat.",
+          "checkId": "mchk_misc_ch2_gram_sabha_panchayat_same",
+          "checkCriterion": "The answer states or implies this wrong idea: The gram panchayat and the gram sabha are the same thing.",
+          "fixCheckId": "mfix_misc_ch2_gram_sabha_panchayat_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The gram panchayat is the elected council of ward members and the sarpanch. The gram sabha is made up of all the voters in the village and supervises the panchayat.",
+          "keyPointIds": [
+            "ch2_t4c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_gram_sabha_panchayat_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_gram_panchayat",
+            "chk_ch2_panchayat_directly_elected",
+            "chk_ch2_gram_sabha",
+            "chk_ch2_panchayat_samiti",
+            "chk_ch2_samiti_elected_by_panchayat"
+          ],
+          [
+            "chk_ch2_zilla_parishad",
+            "chk_ch2_zilla_members_head"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_urban_local_gov"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch2_t4_c3",
+      "topicId": "ncert_civ_10_ch2_t4",
+      "topicTitle": "Decentralisation in India",
+      "label": "Local Government: Achievements and Shortcomings",
+      "headingType": "lesson",
+      "sourcePages": [
+        26
+      ],
+      "conceptHash": "75bee11f539dd26574a08cdcb2a82434eecbb9d1689dbcc16e4f38dc91b49253",
+      "cardText": "The new system of local government is the largest experiment in democracy conducted anywhere in the world, with about 36 lakh elected representatives. Constitutional status has helped deepen democracy and increased women's representation and voice. But gram sabhas are not held regularly, and most State governments have not transferred significant powers or adequate resources to local governments. We are still a long way from realising the ideal of self-government.",
+      "hint": "What has worked about local government, and what is still holding it back?",
+      "probe": "What are the achievements and the shortcomings of local government in India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Local Government: Achievements and Shortcomings, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch2_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is India's local government system described as a huge experiment in democracy?",
+          "requiredEvidence": [
+            "largest experiment in democracy",
+            "36 lakh"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_largest_experiment",
+              "criterion": "States that local government in India is the largest experiment in democracy conducted anywhere in the world.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is India's local government system described as a huge experiment in democracy?"
+            },
+            {
+              "id": "chk_ch2_36_lakh_reps",
+              "criterion": "Mentions about 36 lakh elected representatives in panchayats and municipalities.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "Why is India's local government system described as a huge experiment in democracy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "deepen democracy",
+            "women's representation and voice"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_increased_womens_voice",
+              "criterion": "States that constitutional status for local government has deepened democracy or increased women's representation and voice.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has worked about local government, and what is still holding it back?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which meetings of local government are not happening as they should?",
+          "requiredEvidence": [
+            "gram sabhas are not held regularly"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_gram_sabhas_irregular",
+              "criterion": "Notes that although elections are held regularly, gram sabhas are not held regularly.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which meetings of local government are not happening as they should?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch2_t4c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What have most State governments failed to give to local governments?",
+          "requiredEvidence": [
+            "not transferred significant powers",
+            "adequate resources"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_states_no_transfer",
+              "criterion": "States that most State governments have not transferred significant powers or adequate resources to local governments.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What have most State governments failed to give to local governments?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch2_local_has_full_power"
+          ]
+        },
+        {
+          "id": "ch2_t4c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "still a long way",
+            "ideal of self-government"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch2_long_way_self_gov",
+              "criterion": "Concludes that India is still a long way from realising the ideal of self-government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has worked about local government, and what is still holding it back?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch2_shortcomings_to_ideal",
+          "linksChecks": [
+            "chk_ch2_states_no_transfer",
+            "chk_ch2_long_way_self_gov"
+          ],
+          "criterion": "Connects States not transferring significant powers or adequate resources to the conclusion that we are still a long way from the ideal of self-government.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch2_local_has_full_power",
+          "wrong": "Local governments now have full powers and enough resources of their own.",
+          "fix": "Most State governments have not transferred significant powers to the local governments, nor have they given adequate resources.",
+          "checkId": "mchk_misc_ch2_local_has_full_power",
+          "checkCriterion": "The answer states or implies this wrong idea: Local governments now have full powers and enough resources of their own.",
+          "fixCheckId": "mfix_misc_ch2_local_has_full_power",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Most State governments have not transferred significant powers to the local governments, nor have they given adequate resources.",
+          "keyPointIds": [
+            "ch2_t4c3_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch2_local_has_full_power"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch2_largest_experiment",
+            "chk_ch2_36_lakh_reps",
+            "chk_ch2_gram_sabhas_irregular",
+            "chk_ch2_states_no_transfer"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch2_increased_womens_voice",
+            "chk_ch2_long_way_self_gov",
+            "lnk_ch2_shortcomings_to_ideal"
+          ]
+        ]
+      }
+    }
+  ]
+}

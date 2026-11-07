@@ -1,0 +1,1368 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_ss_9_ch2.json",
+  "sourceSha256": "de4aa99fbc4fcb28c71cf148b8c0c3304d8b63adade2746c929a2f17bfcd380e",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Geography",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 1)",
+  "chapterNumber": 2,
+  "chapterName": "Shaping of the Earth’s Surface",
+  "articulationChecks": [
+    {
+      "id": "chk_ss9a2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ss9a2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example plate tectonics, crust, mantle, core, lithosphere, asthenosphere, convection currents, convergent boundary.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "plate tectonics",
+    "crust",
+    "mantle",
+    "core",
+    "lithosphere",
+    "asthenosphere",
+    "convection currents",
+    "convergent boundary",
+    "divergent boundary",
+    "transform boundary",
+    "Ring of Fire",
+    "weathering",
+    "erosion",
+    "agents of gradation",
+    "delta",
+    "meander",
+    "moraine",
+    "dune",
+    "landslide",
+    "avalanche"
+  ],
+  "concepts": [
+    {
+      "conceptId": "soc9a_ch2_t1_c1",
+      "topicId": "ncert_ss9a_ch2_t1",
+      "topicTitle": "Earth's Interior and Tectonic Plate Dynamics",
+      "label": "Earth's Layers and the Theory of Plate Tectonics",
+      "headingType": "heading",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "conceptHash": "a86dbdf8b0f6079029edc8b9145662ab5364e1a783d7d15c29a64266824fdb14",
+      "cardText": "The Earth's surface is constantly being transformed by powerful forces acting from within and on the surface of the planet. Plate tectonics, a theory given by W.J. Morgan, explains the movement of the Earth's crust: the outermost layer is not a single piece but is broken into large and small pieces called tectonic plates, which move slowly over the semi-molten layer beneath them and are responsible for mountains, earthquakes and volcanoes. The Earth is made up of three main layers: the crust, the thick hot mantle, and the extremely hot and heavy core. The crust with the upper part of the mantle forms the lithosphere, which is broken into plates; beneath it lies the semi-molten asthenosphere, which allows the plates to move. There are continental, oceanic and mixed plates, moving a few centimetres a year.",
+      "hint": "What are the layers of the Earth and what does the theory of plate tectonics say?",
+      "probe": "Explain the layers of the Earth and the theory of plate tectonics.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Earth's Layers and the Theory of Plate Tectonics, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Starting at the surface and going down, describe each layer of the Earth and which parts make up the rigid outer shell.",
+          "requiredEvidence": [
+            "crust, mantle, and core",
+            "outermost layer",
+            "mantle",
+            "very thick and hot",
+            "innermost layer",
+            "lithosphere",
+            "asthenosphere",
+            "semi-molten"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_pt_layers",
+              "criterion": "Names the Earth's layers (crust, thick hot mantle, hot heavy core), and states that the crust plus upper mantle forms the lithosphere, which sits on the semi-molten asthenosphere that lets the plates move.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Starting at the surface and going down, describe each layer of the Earth and which parts make up the rigid outer shell."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do we say the ground beneath our feet is slowly moving, and what large features come from that movement?",
+          "requiredEvidence": [
+            "plate tectonics",
+            "movement of the Earth's crust",
+            "not one single piece",
+            "tectonic plates",
+            "move slowly",
+            "mountains, earthquakes, and volcanoes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_pt_theory",
+              "criterion": "States that according to plate tectonics the Earth's outer layer is broken into tectonic plates that move slowly over the semi-molten layer below and are responsible for mountains, earthquakes and volcanoes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we say the ground beneath our feet is slowly moving, and what large features come from that movement?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_pt_solid"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_tectonics_chain",
+          "linksChecks": [
+            "chk_ss9a2_pt_layers",
+            "chk_ss9a2_pt_theory"
+          ],
+          "criterion": "Connects the layers of the Earth to the lithosphere's plates moving on the asthenosphere.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_pt_solid",
+          "wrong": "The Earth's outermost layer is a single solid piece that does not move.",
+          "fix": "The outermost layer of the Earth is not one single piece but is broken into several large and small pieces called tectonic plates, which move slowly over the semi-molten layer beneath them.",
+          "checkId": "mchk_misc_ss9a2_pt_solid",
+          "checkCriterion": "The answer states or implies this wrong idea: The Earth's outermost layer is a single solid piece that does not move.",
+          "fixCheckId": "mfix_misc_ss9a2_pt_solid",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The outermost layer of the Earth is not one single piece but is broken into several large and small pieces called tectonic plates, which move slowly over the semi-molten layer beneath them.",
+          "keyPointIds": [
+            "ss9a2_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_pt_solid"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_pt_layers",
+            "chk_ss9a2_pt_theory"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_tectonics_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t1_c2",
+      "topicId": "ncert_ss9a_ch2_t1",
+      "topicTitle": "Earth's Interior and Tectonic Plate Dynamics",
+      "label": "Why Plates Move and the Three Types of Plate Boundaries",
+      "headingType": "heading",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "conceptHash": "3a04abefed3d5f882024873095dd01a0aa93791c67d44f1ececc0b6b4b5ed28b",
+      "cardText": "The movement of tectonic plates is caused by convection currents in the mantle: heat from the Earth's core causes molten material in the mantle to rise, while cooler material sinks. This continuous movement pushes and pulls the plates in different directions. The edges where plates meet are plate boundaries, of three types. At a convergent boundary two plates move towards each other: colliding continental plates form fold mountains such as the Himalaya, while an oceanic plate colliding with a continental plate sinks beneath it, causing volcanic activity and earthquakes. At a divergent boundary plates move away from each other and magma rises to form new crust, as at the Mid-Atlantic Ridge. At a transform boundary plates slide past each other without creating or destroying crust, mainly causing earthquakes, as along the San Andreas Fault.",
+      "hint": "What moves the plates and what happens at convergent, divergent and transform boundaries?",
+      "probe": "Explain what makes tectonic plates move and describe the three types of plate boundary.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why Plates Move and the Three Types of Plate Boundaries, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What drives the slow drift of continents from deep inside the Earth?",
+          "requiredEvidence": [
+            "convection currents",
+            "mantle",
+            "heat from the Earth's core",
+            "molten material",
+            "rise",
+            "cooler material sinks",
+            "push and pull"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_pb_cause",
+              "criterion": "States that tectonic plates are moved by convection currents in the mantle: heat from the core makes molten material rise while cooler material sinks, pushing and pulling the plates.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What drives the slow drift of continents from deep inside the Earth?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of landscape results when two continents collide, and what happens when two plates pull apart under an ocean?",
+          "requiredEvidence": [
+            "plate boundaries",
+            "convergent boundary",
+            "move towards each other",
+            "fold mountains",
+            "Himalaya",
+            "sinks beneath",
+            "volcanic activity",
+            "divergent boundary",
+            "move away from each other",
+            "new crust",
+            "mid-ocean ridges"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_pb_convdiv",
+              "criterion": "Describes convergent boundaries (plates collide: fold mountains like the Himalaya, or an oceanic plate sinks causing volcanoes and earthquakes) and divergent boundaries (plates move apart, magma forms new crust, e.g. mid-ocean ridges).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of landscape results when two continents collide, and what happens when two plates pull apart under an ocean?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_pb_crust"
+          ]
+        },
+        {
+          "id": "ss9a2_t1c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of boundary produces mainly ground-shaking without making new crust or mountains?",
+          "requiredEvidence": [
+            "transform boundary",
+            "slide past each other",
+            "without creating or destroying crust",
+            "earthquakes",
+            "San Andreas Fault"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_pb_transform",
+              "criterion": "States that at a transform boundary plates slide past each other without creating or destroying crust, mainly causing earthquakes, as along the San Andreas Fault.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of boundary produces mainly ground-shaking without making new crust or mountains?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_boundaries_chain",
+          "linksChecks": [
+            "chk_ss9a2_pb_cause",
+            "chk_ss9a2_pb_convdiv",
+            "chk_ss9a2_pb_transform"
+          ],
+          "criterion": "Connects mantle convection to the three plate boundary types and their landforms or hazards.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_pb_crust",
+          "wrong": "Crust is destroyed at all types of plate boundaries.",
+          "fix": "At a divergent boundary new crust is formed as magma rises, and at a transform boundary plates slide past each other without creating or destroying crust.",
+          "checkId": "mchk_misc_ss9a2_pb_crust",
+          "checkCriterion": "The answer states or implies this wrong idea: Crust is destroyed at all types of plate boundaries.",
+          "fixCheckId": "mfix_misc_ss9a2_pb_crust",
+          "fixCheckCriterion": "Answer 2 states the correct idea: At a divergent boundary new crust is formed as magma rises, and at a transform boundary plates slide past each other without creating or destroying crust.",
+          "keyPointIds": [
+            "ss9a2_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_pb_crust"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_pb_cause",
+            "chk_ss9a2_pb_convdiv"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a2_pb_transform",
+            "lnk_ss9a2_boundaries_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t2_c1",
+      "topicId": "ncert_ss9a_ch2_t2",
+      "topicTitle": "Internal Forces: Volcanism and Seismic Disasters",
+      "label": "Plate Tectonics, the Ring of Fire and Earthquake and Volcano Zones",
+      "headingType": "heading",
+      "sourcePages": [
+        16,
+        17
+      ],
+      "conceptHash": "000760f82d3202542170ef4df9d68071f3666b7f00282e50071e3454d710ec77",
+      "cardText": "Plate tectonics plays a major role in shaping the Earth's surface. The movement of plates leads to the formation of mountains, valleys, ocean basins, volcanoes and earthquakes, and explains the distribution of continents and oceans. Most earthquakes and volcanoes occur along plate boundaries, especially around the Pacific Ocean, an area known as the Ring of Fire. The theory helps us understand how the Earth's surface is constantly changing, explains the origin of many landforms and natural disasters, and is very important for identifying earthquake and volcano-prone regions and managing the disasters arising from them. India has experienced some major earthquakes in the past, and a large earthquake in a densely populated country can cause severe damage to life and environment.",
+      "hint": "Where do most earthquakes and volcanoes occur and why does that knowledge matter?",
+      "probe": "Explain how plate tectonics relates to earthquakes and volcanoes and what the Ring of Fire is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Plate Tectonics, the Ring of Fire and Earthquake and Volcano Zones, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "List the landforms and events that come from the slow drifting of the Earth's rigid slabs.",
+          "requiredEvidence": [
+            "shaping the Earth's surface",
+            "movement of plates",
+            "mountains, valleys, ocean basins, volcanoes, and earthquakes",
+            "distribution of continents and oceans"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_rf_surface",
+              "criterion": "States that plate movement forms mountains, valleys, ocean basins, volcanoes and earthquakes and explains the distribution of continents and oceans.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "List the landforms and events that come from the slow drifting of the Earth's rigid slabs."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Looking at a map of earthquakes and volcanoes beside a plate map, what pattern do you see and why would it help planners?",
+          "requiredEvidence": [
+            "earthquakes and volcanoes",
+            "along plate boundaries",
+            "Pacific Ocean",
+            "Ring of Fire",
+            "earthquake and volcano-prone regions",
+            "managing disasters"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_rf_ring",
+              "criterion": "States that most earthquakes and volcanoes occur along plate boundaries, especially around the Pacific in the Ring of Fire, and that the theory helps identify prone regions and manage disasters.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Looking at a map of earthquakes and volcanoes beside a plate map, what pattern do you see and why would it help planners?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_rf_random"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_ring_chain",
+          "linksChecks": [
+            "chk_ss9a2_rf_surface",
+            "chk_ss9a2_rf_ring"
+          ],
+          "criterion": "Connects plate movement to the location of earthquakes and volcanoes and to hazard management.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_rf_random",
+          "wrong": "Earthquakes and volcanoes occur at random places over the Earth.",
+          "fix": "Most earthquakes and volcanoes occur along plate boundaries, especially around the Pacific Ocean, an area known as the Ring of Fire.",
+          "checkId": "mchk_misc_ss9a2_rf_random",
+          "checkCriterion": "The answer states or implies this wrong idea: Earthquakes and volcanoes occur at random places over the Earth.",
+          "fixCheckId": "mfix_misc_ss9a2_rf_random",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Most earthquakes and volcanoes occur along plate boundaries, especially around the Pacific Ocean, an area known as the Ring of Fire.",
+          "keyPointIds": [
+            "ss9a2_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_rf_random"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_rf_surface",
+            "chk_ss9a2_rf_ring"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_ring_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t3_c1",
+      "topicId": "ncert_ss9a_ch2_t3",
+      "topicTitle": "External Processes: Physical, Chemical and Biological Weathering",
+      "label": "Weathering: Physical, Chemical and Biological",
+      "headingType": "heading",
+      "sourcePages": [
+        19,
+        20
+      ],
+      "conceptHash": "10f33d2b013b1cdca37ff04227e608e36ddfd794fc3c527ece0da700d9f237db",
+      "cardText": "Weathering and erosion play a vital role in the development of landforms by continuously breaking down and reshaping the Earth's surface. Weathering is the process through which rocks on the Earth's surface break down into smaller pieces; it does not involve movement of the broken material, only the breaking down. There are three main types: physical weathering, in which rocks break into smaller pieces due to temperature changes, frost or wind; chemical weathering, in which minerals in rocks change because of reactions with water, air or acids, leading to new substances; and biological weathering, caused by plants, animals or micro-organisms, for example plant roots growing into cracks of rocks and splitting them apart. Weathering plays an important role in shaping the Earth's surface and forming soil.",
+      "hint": "What is weathering and what are its three types?",
+      "probe": "Explain weathering and the three types of weathering with an example for each.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Weathering: Physical, Chemical and Biological, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After a rock cracks into pieces and the pieces just lie where they fell, which process has acted and which has not?",
+          "requiredEvidence": [
+            "rocks on the Earth's surface break down into smaller pieces",
+            "does not involve movement",
+            "only the breaking down",
+            "forming soil"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_wt_def",
+              "criterion": "Defines weathering as the breaking down of surface rocks into smaller pieces without moving the broken material, which helps shape the surface and form soil.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After a rock cracks into pieces and the pieces just lie where they fell, which process has acted and which has not?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_wt_move"
+          ]
+        },
+        {
+          "id": "ss9a2_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A tree root splits a boulder, rainwater dissolves a limestone cliff and daily heat and cold crack a desert rock. Which kind of weathering is each?",
+          "requiredEvidence": [
+            "physical weathering",
+            "temperature changes, frost, or wind",
+            "chemical weathering",
+            "reactions with water, air, or acids",
+            "new substances",
+            "biological weathering",
+            "plant roots",
+            "split them apart"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_wt_types",
+              "criterion": "Distinguishes physical weathering (temperature changes, frost, wind), chemical weathering (reactions with water, air or acids forming new substances) and biological weathering (plant roots, animals, micro-organisms splitting rocks).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A tree root splits a boulder, rainwater dissolves a limestone cliff and daily heat and cold crack a desert rock. Which kind of weathering is each?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_weathering_chain",
+          "linksChecks": [
+            "chk_ss9a2_wt_def",
+            "chk_ss9a2_wt_types"
+          ],
+          "criterion": "Connects the definition of weathering to its three types and to soil formation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_wt_move",
+          "wrong": "Weathering involves carrying the broken rock material away.",
+          "fix": "Weathering does not involve movement of the broken material, only the breaking down; movement of broken material is erosion.",
+          "checkId": "mchk_misc_ss9a2_wt_move",
+          "checkCriterion": "The answer states or implies this wrong idea: Weathering involves carrying the broken rock material away.",
+          "fixCheckId": "mfix_misc_ss9a2_wt_move",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Weathering does not involve movement of the broken material, only the breaking down; movement of broken material is erosion.",
+          "keyPointIds": [
+            "ss9a2_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_wt_move"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_wt_def",
+            "chk_ss9a2_wt_types"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_weathering_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t3_c2",
+      "topicId": "ncert_ss9a_ch2_t3",
+      "topicTitle": "External Processes: Physical, Chemical and Biological Weathering",
+      "label": "Erosion and Its Effect on Human Livelihoods",
+      "headingType": "heading",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "conceptHash": "643546635940ac8a5900403b34b79400c1cf039fa19eb6b27fab60da9d1ee05e",
+      "cardText": "Erosion is the process by which soil, rocks and other surface materials are worn away and carried from one place to another by natural agents like water, wind, ice or waves. Unlike weathering, which only breaks down rocks, erosion involves movement of the broken material. Types include water erosion by rivers, rain or waves; wind erosion in dry sandy areas; glacial erosion by moving ice; and coastal erosion by sea waves. Erosion can both create and destroy features. It affects human occupations: it removes the fertile topsoil farmers need, so yields fall; it washes away land, houses and roads near rivers and coasts; it destabilises land in construction and mining; and it harms tourism and fishing by destroying beaches, rivers and fertile land. Traditional conservation includes contouring, bunding, terracing and check dams.",
+      "hint": "How is erosion different from weathering and how does it affect people's livelihoods?",
+      "probe": "Explain how erosion differs from weathering and how it affects human occupations.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Erosion and Its Effect on Human Livelihoods, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Explain the difference between rocks breaking up on the spot and the broken material being carried off, and name the carriers.",
+          "requiredEvidence": [
+            "worn away and carried from one place to another",
+            "natural agents",
+            "water, wind, ice, or waves",
+            "involves movement of the broken material",
+            "water erosion",
+            "wind erosion",
+            "glacial erosion",
+            "coastal erosion"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_er_def",
+              "criterion": "Defines erosion as the wearing away and carrying of soil and rock by water, wind, ice or waves (movement of broken material, unlike weathering), with types including water, wind, glacial and coastal erosion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Explain the difference between rocks breaking up on the spot and the broken material being carried off, and name the carriers."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_er_same"
+          ]
+        },
+        {
+          "id": "ss9a2_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A village on a riverbank loses fields and houses every monsoon. Which occupations and properties are affected and how?",
+          "requiredEvidence": [
+            "human occupations",
+            "fertile topsoil",
+            "lower yields",
+            "wash away land, houses, and roads",
+            "construction and mining",
+            "tourism and fishing",
+            "livelihoods"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_er_impact",
+              "criterion": "States how erosion affects livelihoods: it strips fertile topsoil (lower crop yields), washes away land, houses and roads near rivers and coasts, destabilises land for construction and mining, and damages tourism and fishing.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A village on a riverbank loses fields and houses every monsoon. Which occupations and properties are affected and how?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_erosion_chain",
+          "linksChecks": [
+            "chk_ss9a2_er_def",
+            "chk_ss9a2_er_impact"
+          ],
+          "criterion": "Connects erosion by natural agents to its effects on soil, property and occupations and to conservation measures.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_er_same",
+          "wrong": "Erosion and weathering are the same process.",
+          "fix": "Unlike weathering that only breaks down rocks, erosion involves movement of the broken material, carried away by agents like water, wind, ice or waves.",
+          "checkId": "mchk_misc_ss9a2_er_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Erosion and weathering are the same process.",
+          "fixCheckId": "mfix_misc_ss9a2_er_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Unlike weathering that only breaks down rocks, erosion involves movement of the broken material, carried away by agents like water, wind, ice or waves.",
+          "keyPointIds": [
+            "ss9a2_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_er_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_er_def",
+            "chk_ss9a2_er_impact"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_erosion_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t4_c1",
+      "topicId": "ncert_ss9a_ch2_t4",
+      "topicTitle": "Exogenic Agents of Gradation and Landscape Sculpting",
+      "label": "Agents of Gradation and Landforms Made by Running Water",
+      "headingType": "heading",
+      "sourcePages": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "conceptHash": "679fa82029aba377d02c33a23aaa6df32893ceb8ba4984ee2b541a5fe78215bf",
+      "cardText": "Agents of gradation are natural forces that wear down, transport and deposit materials on the Earth's surface, helping to level it over time. The main ones are running water, glaciers, wind, waves and groundwater. Rivers shape the land by erosion, transportation and deposition. In the upper course they form V-shaped valleys, waterfalls and rapids; in the middle course they meander and form oxbow lakes and floodplains; in the lower course they deposit large amounts of sediment, forming deltas, levees and alluvial fans. A waterfall forms where hard rock resists erosion and softer rock below is worn away. A meander is a winding bend made by erosion of the outer bank and deposition on the inner bank. A delta is a fan-shaped or triangular area of land formed at the river's mouth, highly fertile and good for crops like rice and jute but prone to flooding.",
+      "hint": "What are agents of gradation and which landforms do rivers make along their course?",
+      "probe": "Explain the agents of gradation and describe the landforms made by a river in its upper, middle and lower course.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Agents of Gradation and Landforms Made by Running Water, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the five natural agents that keep reshaping the land, and what do they do to hills and low ground over time?",
+          "requiredEvidence": [
+            "natural forces",
+            "wear down, transport, and deposit",
+            "level or smooth",
+            "running water, glaciers, wind, waves, and groundwater",
+            "lowering high areas",
+            "filling up low areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_ag_agents",
+              "criterion": "States that agents of gradation (running water, glaciers, wind, waves, groundwater) wear down, transport and deposit material, lowering high areas and filling low ones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the five natural agents that keep reshaping the land, and what do they do to hills and low ground over time?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Follow a river from its mountain source to the sea and name the typical landforms at each stage.",
+          "requiredEvidence": [
+            "erosion, transportation, and deposition",
+            "upper course",
+            "V-shaped valleys",
+            "waterfalls",
+            "middle course",
+            "meander",
+            "oxbow lakes",
+            "floodplains",
+            "lower course",
+            "deltas, levees, and alluvial fans"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_ag_river",
+              "criterion": "Describes river landforms by course: V-shaped valleys, waterfalls and rapids in the upper course; meanders, oxbow lakes and floodplains in the middle; deltas, levees and alluvial fans in the lower course.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Follow a river from its mountain source to the sea and name the typical landforms at each stage."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do many people settle on river deltas even though they flood, and how does a delta form?",
+          "requiredEvidence": [
+            "mouth of a river",
+            "deposits the sediments",
+            "fan-shaped or triangular",
+            "highly fertile",
+            "alluvial soil",
+            "rice and jute",
+            "prone to flooding",
+            "meander",
+            "outer bank",
+            "inner bank"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_ag_delta",
+              "criterion": "States that a delta forms at a river's mouth by deposition of sediment into a fertile fan-shaped area good for crops and fishing but prone to flooding, and that a meander is a bend formed by erosion of the outer bank and deposition on the inner bank.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do many people settle on river deltas even though they flood, and how does a delta form?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_ag_delta"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_gradation_chain",
+          "linksChecks": [
+            "chk_ss9a2_ag_agents",
+            "chk_ss9a2_ag_river",
+            "chk_ss9a2_ag_delta"
+          ],
+          "criterion": "Connects agents of gradation to the sequence of river landforms and their human significance.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_ag_delta",
+          "wrong": "A delta forms in the upper course of a river where the slope is steep.",
+          "fix": "A delta forms at the mouth of a river where it flows into a sea, ocean or lake, depositing the sediments carried from upstream; waterfalls and V-shaped valleys belong to the upper course.",
+          "checkId": "mchk_misc_ss9a2_ag_delta",
+          "checkCriterion": "The answer states or implies this wrong idea: A delta forms in the upper course of a river where the slope is steep.",
+          "fixCheckId": "mfix_misc_ss9a2_ag_delta",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A delta forms at the mouth of a river where it flows into a sea, ocean or lake, depositing the sediments carried from upstream; waterfalls and V-shaped valleys belong to the upper course.",
+          "keyPointIds": [
+            "ss9a2_t4c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_ag_delta"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_ag_agents",
+            "chk_ss9a2_ag_river",
+            "chk_ss9a2_ag_delta"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_gradation_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t4_c2",
+      "topicId": "ncert_ss9a_ch2_t4",
+      "topicTitle": "Exogenic Agents of Gradation and Landscape Sculpting",
+      "label": "Landforms of Waves, Glaciers, Wind and Underground Water",
+      "headingType": "heading",
+      "sourcePages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "conceptHash": "74625a073f866495ee01bd7f4f4ca85b203e279ecdd0aefda74f23d053cb2fe7",
+      "cardText": "Waves and currents reshape the coast, creating beaches, sand bars, sea cliffs, caves, arches and stacks. A beach is sand, pebbles or rocks along a shoreline created by deposition by waves; coastal erosion forms cliffs, wave-cut platforms, caves, arches and stacks. Glaciers carve U-shaped valleys, cirques, aretes, hanging valleys and fjords, and deposit moraines (rocks, soil and debris called till) carried along and left behind when a glacier melts. Wind erosion makes yardangs, ventifacts, deflation hollows and desert pavements, and wind deposits form dunes such as barchan, longitudinal, star and parabolic dunes. Underground water in limestone areas creates Karst topography through chemical weathering and erosion, with caves, stalactites, stalagmites, sinkholes and underground rivers. These landforms matter to humans for tourism, fresh water, fertile soil, harbours and natural protection.",
+      "hint": "Which landforms do waves, glaciers, wind and underground water make and why do they matter to people?",
+      "probe": "Describe the characteristic landforms made by waves, glaciers, wind and underground water and their importance to humans.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Landforms of Waves, Glaciers, Wind and Underground Water, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Trace how a rocky point jutting into the sea is slowly turned into an isolated rock pillar by the waves.",
+          "requiredEvidence": [
+            "waves and currents",
+            "beaches",
+            "deposition of sediments",
+            "cliffs",
+            "wave-cut platforms",
+            "caves",
+            "arches",
+            "stacks",
+            "headland"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_al_coast",
+              "criterion": "Describes coastal landforms: beaches made by wave deposition, and by erosion cliffs, wave-cut platforms, caves, arches (caves meeting through a headland) and stacks (pillars left after arches collapse).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Trace how a rocky point jutting into the sea is slowly turned into an isolated rock pillar by the waves."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_al_arch"
+          ]
+        },
+        {
+          "id": "ss9a2_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What shapes remain in a mountain valley after a glacier has retreated, and what happens to the rock and debris it carried?",
+          "requiredEvidence": [
+            "glacial erosion",
+            "U-shaped valleys",
+            "cirques",
+            "bowl-shaped depressions",
+            "aretes",
+            "fjords",
+            "moraines",
+            "deposition",
+            "till"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_al_glacier",
+              "criterion": "Names glacial landforms: U-shaped valleys, cirques, aretes, hanging valleys and fjords from erosion, and moraines (till deposited when a glacier melts).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What shapes remain in a mountain valley after a glacier has retreated, and what happens to the rock and debris it carried?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which landforms would you expect in a sandy desert, and which in a region of soluble rock with acidic groundwater?",
+          "requiredEvidence": [
+            "wind erosion",
+            "yardangs",
+            "ventifacts",
+            "deflation hollows",
+            "dunes",
+            "barchan",
+            "Karst topography",
+            "limestone",
+            "stalactites",
+            "stalagmites",
+            "sinkholes",
+            "underground rivers"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_al_wind_ground",
+              "criterion": "Names wind landforms (yardangs, ventifacts, deflation hollows, desert pavements, dunes of various types) and underground-water landforms in limestone Karst topography (caves, stalactites, stalagmites, sinkholes, underground rivers).",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Which landforms would you expect in a sandy desert, and which in a region of soluble rock with acidic groundwater?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_agents_landforms_chain",
+          "linksChecks": [
+            "chk_ss9a2_al_coast",
+            "chk_ss9a2_al_glacier",
+            "chk_ss9a2_al_wind_ground"
+          ],
+          "criterion": "Connects each agent to its erosional and depositional landforms and to their value for people.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_al_arch",
+          "wrong": "Sea stacks form before sea arches.",
+          "fix": "Arches are created when caves on opposite sides of a headland meet, and stacks are isolated pillars of rock left standing after the arches collapse.",
+          "checkId": "mchk_misc_ss9a2_al_arch",
+          "checkCriterion": "The answer states or implies this wrong idea: Sea stacks form before sea arches.",
+          "fixCheckId": "mfix_misc_ss9a2_al_arch",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Arches are created when caves on opposite sides of a headland meet, and stacks are isolated pillars of rock left standing after the arches collapse.",
+          "keyPointIds": [
+            "ss9a2_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_al_arch"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_al_coast",
+            "chk_ss9a2_al_glacier",
+            "chk_ss9a2_al_wind_ground"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_agents_landforms_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t5_c1",
+      "topicId": "ncert_ss9a_ch2_t5",
+      "topicTitle": "Landform Hazards, Slope Instability and Human Impact",
+      "label": "Landslides and Avalanches",
+      "headingType": "heading",
+      "sourcePages": [
+        32,
+        33,
+        34
+      ],
+      "conceptHash": "0c70ecfe3f4068cce1ba33e736aa2dad210fbb21c3ae35c61121971419aa0364",
+      "cardText": "Several disasters are associated with different landforms: landslides, avalanches, glacial lake outburst floods and dust storms. Landslides are caused by a combination of natural and human factors that make slopes unstable. Heavy continuous rainfall seeps into soil and rocks, increasing their weight and reducing friction; earthquakes and volcanic eruptions shake the ground and weaken slopes; steep slopes and loose or weathered rocks increase the risk. Human activities such as deforestation, mining, road construction and unplanned construction on hillsides, plus poor drainage and improper land use, disturb the balance. Avalanches are caused by sudden instability of snow on steep mountain slopes: heavy snowfall adds weight to the snowpack, a sudden rise in temperature partly melts it and reduces friction, and winds pile snow unevenly. Earthquakes, skiing, trekking or construction can trigger them.",
+      "hint": "What natural and human causes make slopes unstable, and what triggers avalanches?",
+      "probe": "Explain the causes of landslides and avalanches.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Landslides and Avalanches, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After days of heavy rain, a hillside where trees were cut and a road was built gives way. Explain the natural and human causes together.",
+          "requiredEvidence": [
+            "natural and human factors",
+            "slopes unstable",
+            "heavy and continuous rainfall",
+            "increasing their weight and reducing friction",
+            "earthquakes and volcanic eruptions",
+            "deforestation, mining, road construction"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_la_landslide",
+              "criterion": "States that landslides come from natural factors (heavy rain adding weight and reducing friction, earthquakes, eruptions, steep or weathered slopes) and human factors (deforestation, mining, road and unplanned construction), which make slopes unstable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After days of heavy rain, a hillside where trees were cut and a road was built gives way. Explain the natural and human causes together."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_la_natural"
+          ]
+        },
+        {
+          "id": "ss9a2_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might a mountain slope that held snow for weeks suddenly slide after one warm afternoon or a vibration?",
+          "requiredEvidence": [
+            "sudden instability of snow",
+            "steep mountain slopes",
+            "heavy snowfall",
+            "snowpack",
+            "sudden rise in temperature",
+            "reducing the friction",
+            "winds",
+            "skiing, trekking, or construction"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_la_avalanche",
+              "criterion": "States that avalanches are caused by sudden instability of snow on steep slopes: heavy snowfall adds weight, a sudden temperature rise reduces friction, winds pile snow unevenly, and earthquakes or activities like skiing and construction can trigger them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might a mountain slope that held snow for weeks suddenly slide after one warm afternoon or a vibration?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_slope_chain",
+          "linksChecks": [
+            "chk_ss9a2_la_landslide",
+            "chk_ss9a2_la_avalanche"
+          ],
+          "criterion": "Connects natural and human causes of slope instability to landslides and avalanches.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_la_natural",
+          "wrong": "Landslides are caused only by natural forces, never by human activity.",
+          "fix": "Landslides are caused by a combination of natural and human factors: human activities such as deforestation, mining and road construction disturb the natural balance of slopes.",
+          "checkId": "mchk_misc_ss9a2_la_natural",
+          "checkCriterion": "The answer states or implies this wrong idea: Landslides are caused only by natural forces, never by human activity.",
+          "fixCheckId": "mfix_misc_ss9a2_la_natural",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Landslides are caused by a combination of natural and human factors: human activities such as deforestation, mining and road construction disturb the natural balance of slopes.",
+          "keyPointIds": [
+            "ss9a2_t5c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_la_natural"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_la_landslide",
+            "chk_ss9a2_la_avalanche"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a2_slope_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch2_t5_c2",
+      "topicId": "ncert_ss9a_ch2_t5",
+      "topicTitle": "Landform Hazards, Slope Instability and Human Impact",
+      "label": "Glacial Lake Outburst Floods, Dust Storms and How Surface Forces Shape Life",
+      "headingType": "heading",
+      "sourcePages": [
+        35,
+        36,
+        37
+      ],
+      "conceptHash": "4c14cbdc8c45382cc8022541c6fae464b816ebfb305e446cf478074eaf1d8b40",
+      "cardText": "Glacial Lake Outburst Floods (GLOFs) are caused by the sudden release of large volumes of water from glacial lakes. Rapid melting of glaciers because of rising temperatures raises lake levels and pressures their natural dams of ice or loose moraines; heavy rain or snowfall adds water; earthquakes, avalanches or landslides can strike the lake or weaken the dam, so it suddenly collapses and destructive floods hit downstream areas. Dust storms are caused by strong winds lifting large amounts of loose, dry soil and sand: prolonged drought dries the soil, they are common in desert and semi-arid regions, sparse vegetation from deforestation, overgrazing or poor farming leaves land exposed, and climate change can increase their frequency. Overall, internal forces such as earthquakes, volcanoes, folding and faulting create mountains, valleys and ocean basins, while external forces like weathering, erosion and deposition wear them down and reshape them.",
+      "hint": "How do GLOFs and dust storms happen and how do internal and external forces together shape the Earth?",
+      "probe": "Explain GLOFs and dust storms, and how internal and external forces together shape the Earth's surface.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Glacial Lake Outburst Floods, Dust Storms and How Surface Forces Shape Life, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a2_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What chain of events can turn a quiet high-altitude lake into a flood that devastates a valley far below?",
+          "requiredEvidence": [
+            "sudden release of large volumes of water",
+            "glacial lakes",
+            "rapid melting of glaciers",
+            "rising temperatures",
+            "natural dams",
+            "ice or loose moraines",
+            "earthquakes, avalanches, or landslides",
+            "sudden collapse",
+            "downstream areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_gd_glof",
+              "criterion": "States that GLOFs result when melting glaciers raise glacial lake levels, stressing natural ice or moraine dams, and heavy rain or snow, earthquakes, avalanches or landslides cause the dam to collapse and flood downstream areas.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What chain of events can turn a quiet high-altitude lake into a flood that devastates a valley far below?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a2_gd_rain_only"
+          ]
+        },
+        {
+          "id": "ss9a2_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do some regions get blinded by dust storms while others do not, and how can people make it worse?",
+          "requiredEvidence": [
+            "strong winds lifting",
+            "loose, dry soil and sand",
+            "prolonged drought",
+            "low rainfall",
+            "desert and semi-arid regions",
+            "sparse vegetation",
+            "deforestation, overgrazing, or poor farming practices"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_gd_dust",
+              "criterion": "States that dust storms occur when strong winds lift loose dry soil, helped by prolonged drought and low rainfall in desert and semi-arid regions and by sparse vegetation from deforestation, overgrazing or poor farming.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do some regions get blinded by dust storms while others do not, and how can people make it worse?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a2_t5c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which forces build the highest peaks and which wear them down again, and why do people care about both?",
+          "requiredEvidence": [
+            "internal forces",
+            "earthquakes, volcanic eruptions, folding, and faulting",
+            "mountains, valleys, and ocean basins",
+            "external forces",
+            "weathering, erosion, and deposition",
+            "human life",
+            "settlements"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a2_gd_forces",
+              "criterion": "States that internal forces (earthquakes, eruptions, folding, faulting) build mountains, valleys and ocean basins while external forces (weathering, erosion, deposition) wear them down and reshape them, and human life is connected to these landforms.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which forces build the highest peaks and which wear them down again, and why do people care about both?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a2_hazards_chain",
+          "linksChecks": [
+            "chk_ss9a2_gd_glof",
+            "chk_ss9a2_gd_dust",
+            "chk_ss9a2_gd_forces"
+          ],
+          "criterion": "Connects the causes of GLOFs and dust storms to the interplay of internal and external forces shaping landforms.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a2_gd_rain_only",
+          "wrong": "A GLOF is caused only by heavy rain falling on the valley.",
+          "fix": "GLOFs are caused by the sudden release of water from glacial lakes, mainly from rapid melting due to rising temperatures, with heavy rain or snow and earthquakes, avalanches or landslides weakening the natural dams.",
+          "checkId": "mchk_misc_ss9a2_gd_rain_only",
+          "checkCriterion": "The answer states or implies this wrong idea: A GLOF is caused only by heavy rain falling on the valley.",
+          "fixCheckId": "mfix_misc_ss9a2_gd_rain_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: GLOFs are caused by the sudden release of water from glacial lakes, mainly from rapid melting due to rising temperatures, with heavy rain or snow and earthquakes, avalanches or landslides weakening the natural dams.",
+          "keyPointIds": [
+            "ss9a2_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a2_gd_rain_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a2_gd_glof",
+            "chk_ss9a2_gd_dust"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a2_gd_forces",
+            "lnk_ss9a2_hazards_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

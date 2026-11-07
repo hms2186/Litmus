@@ -1,0 +1,1352 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_ss2_9_ch5.json",
+  "sourceSha256": "dee998a11add8613b3b5c44b925f56d31f77c93bb99f6cf0d99696eb35276dbb",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Economics",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 2)",
+  "chapterNumber": 5,
+  "chapterName": "Managing Your Personal Finances",
+  "articulationChecks": [
+    {
+      "id": "chk_ss9b5_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ss9b5_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example personal finance, income, budget, saving, investing, inflation, liquidity, purchasing power.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "personal finance",
+    "income",
+    "budget",
+    "saving",
+    "investing",
+    "inflation",
+    "liquidity",
+    "purchasing power",
+    "compounding",
+    "fixed deposit",
+    "bond",
+    "shares",
+    "mutual fund",
+    "diversification",
+    "insurance",
+    "premium",
+    "EMI",
+    "risk",
+    "return",
+    "time horizon",
+    "tax",
+    "direct tax",
+    "indirect tax",
+    "progressive taxation",
+    "tax slab"
+  ],
+  "concepts": [
+    {
+      "conceptId": "soc9b_ch5_t1_c1",
+      "topicId": "ncert_ss9b_ch5_t1",
+      "topicTitle": "Pillars of Personal Finance and Budgeting",
+      "label": "Personal Finance and Its Five Pillars",
+      "headingType": "heading",
+      "sourcePages": [
+        107,
+        108,
+        121
+      ],
+      "conceptHash": "7ada0ee0c15e6f7ed626c36186e2ae395b33414e338f62c1375f10a3cc1d8df5",
+      "cardText": "We earn income and spend it to fulfil our needs and wants, and we save and invest to achieve goals such as buying a house or funding higher education. Because money is an important resource that should be used efficiently, personal finance matters. Personal finance is the planning and management of an individual's money to meet their needs and wants: how much to spend, how much to save, where to invest and how to prepare for future needs. It rests on five pillars. Income is money received regularly or occasionally for products sold or services rendered, such as a salary, business profit, rent, interest or dividends; it is the starting point because without income one cannot spend, save or invest. Budgeting decides how income is spent on needs and wants. Saving sets money aside for future needs or emergencies. Investing deploys savings in assets such as stocks and mutual funds. Protection and risk management safeguards money and assets through insurance and debt management.",
+      "hint": "What is personal finance and what are its five pillars?",
+      "probe": "Explain what personal finance is and name and describe its five pillars.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Personal Finance and Its Five Pillars, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A family wants to buy a house in five years. What kinds of money decisions must they make from now?",
+          "requiredEvidence": [
+            "planning and management of an individual’s money",
+            "needs and wants",
+            "how much to spend",
+            "where to invest",
+            "prepare for future financial needs"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_pf_def",
+              "criterion": "Defines personal finance as the planning and management of an individual's money to meet needs and wants, involving decisions on how much to spend, save and invest and how to prepare for future financial needs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A family wants to buy a house in five years. What kinds of money decisions must they make from now?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_pf_save_only"
+          ]
+        },
+        {
+          "id": "ss9b5_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which pillar comes first, and why can none of the others work without it?",
+          "requiredEvidence": [
+            "five pillars",
+            "income, budgeting, saving, investing, and protection",
+            "products sold or services rendered",
+            "starting point of personal finance",
+            "future needs or emergencies",
+            "insurance and debt management"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_pf_pillars",
+              "criterion": "Names the five pillars (income, budgeting, saving, investing, protection and risk management), explains income as money received for products sold or services rendered and as the starting point, and gives the purpose of each other pillar.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which pillar comes first, and why can none of the others work without it?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_pillars_chain",
+          "linksChecks": [
+            "chk_ss9b5_pf_def",
+            "chk_ss9b5_pf_pillars"
+          ],
+          "criterion": "Connects the meaning of personal finance to its five pillars and the role of income as the starting point.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_pf_save_only",
+          "wrong": "Personal finance is only about saving money.",
+          "fix": "Personal finance involves deciding how much to spend, how much to save, where to invest and how to prepare for future needs, and it rests on five pillars.",
+          "checkId": "mchk_misc_ss9b5_pf_save_only",
+          "checkCriterion": "The answer states or implies this wrong idea: Personal finance is only about saving money.",
+          "fixCheckId": "mfix_misc_ss9b5_pf_save_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Personal finance involves deciding how much to spend, how much to save, where to invest and how to prepare for future needs, and it rests on five pillars.",
+          "keyPointIds": [
+            "ss9b5_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_pf_save_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_pf_def",
+            "chk_ss9b5_pf_pillars"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_pillars_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t1_c2",
+      "topicId": "ncert_ss9b_ch5_t1",
+      "topicTitle": "Pillars of Personal Finance and Budgeting",
+      "label": "Budgeting: Planning How Income Will Be Spent",
+      "headingType": "heading",
+      "sourcePages": [
+        109,
+        110
+      ],
+      "conceptHash": "9bf1ff4fd2cce568d073c3b648ac4f0c90358c88def12177c54e5987ae25a27e",
+      "cardText": "Budgeting means planning in advance how income will be spent. A budget is a written plan that aims to balance income and expenses, for example a family deciding how much to save each month and how much to spend on food, rent, school fees and transport. Setting financial goals, such as saving for a school trip, sports equipment, higher education or emergencies, helps people prioritise needs and make careful choices; a simple way is to ask what you want to achieve, how much money you need, by when, and what steps will help. Budgeting controls unnecessary spending such as excessive eating out or impulse shopping, enables people to prioritise important expenses and helps them live within their means. The steps are: identify your expenses, set a savings goal (for example, saving ₹3,000 in six months for a bicycle needs ₹500 a month), track your spending against the budget, and review and adjust the budget as income, expenses or goals change.",
+      "hint": "What is a budget and how do you make one?",
+      "probe": "Explain what budgeting is, why it helps and the steps in making a budget.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Budgeting: Planning How Income Will Be Spent, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can writing down a plan stop a family from overspending on things they do not really need?",
+          "requiredEvidence": [
+            "planning in advance how income will be spent",
+            "written plan",
+            "balance income and expenses",
+            "prioritise their needs",
+            "control unnecessary spending",
+            "live within their means"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_bg_purpose",
+              "criterion": "Defines a budget as a written plan, made in advance, that aims to balance income and expenses, and explains that it helps set goals, prioritise needs, control unnecessary spending and live within one's means.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can writing down a plan stop a family from overspending on things they do not really need?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b5_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "To buy a ₹3,000 bicycle in six months, how much goes aside each month, and what should you do if bus fares suddenly rise?",
+          "requiredEvidence": [
+            "listing all your monthly expenses",
+            "savings goal",
+            "₹500 each month",
+            "compare your actual spending",
+            "reviewed periodically",
+            "changes in income, expenses, or financial goals"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_bg_steps",
+              "criterion": "Gives the four steps in budgeting: identify expenses, set a savings goal (e.g. ₹3,000 in six months means ₹500 a month), track actual spending against the budget, and review and adjust it when income, expenses or goals change.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "To buy a ₹3,000 bicycle in six months, how much goes aside each month, and what should you do if bus fares suddenly rise?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_bg_once"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_budget_chain",
+          "linksChecks": [
+            "chk_ss9b5_bg_purpose",
+            "chk_ss9b5_bg_steps"
+          ],
+          "criterion": "Connects the purpose of budgeting to the four steps of preparing and maintaining a budget.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_bg_once",
+          "wrong": "A budget is made once and never needs to change.",
+          "fix": "A budget should be reviewed periodically to reflect changes in income, expenses or financial goals, such as rising transport costs or unexpected medical expenses.",
+          "checkId": "mchk_misc_ss9b5_bg_once",
+          "checkCriterion": "The answer states or implies this wrong idea: A budget is made once and never needs to change.",
+          "fixCheckId": "mfix_misc_ss9b5_bg_once",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A budget should be reviewed periodically to reflect changes in income, expenses or financial goals, such as rising transport costs or unexpected medical expenses.",
+          "keyPointIds": [
+            "ss9b5_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_bg_once"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_bg_purpose",
+            "chk_ss9b5_bg_steps"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_budget_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t2_c1",
+      "topicId": "ncert_ss9b_ch5_t2",
+      "topicTitle": "Saving, Investing, and the Power of Compounding",
+      "label": "Saving and Investing: Protecting and Growing Money",
+      "headingType": "heading",
+      "sourcePages": [
+        110,
+        111
+      ],
+      "conceptHash": "566bb21243c3ed874455ebe7a9f535d1d900276ec517c0fb39e7e29603c57d89",
+      "cardText": "Saving means keeping aside a part of one's income for future use; it is a financial surplus built up over time. Savings matter for comfortable living and because life is uncertain and emergencies can arise at any time; people also save to make later investments. Investing means putting savings into assets with the aim of protecting their value and generating returns. Priya keeps her ₹500 in a piggy bank and a year later still has ₹500, while Sameer puts his into a scheme earning 8% a year and has ₹540: both are being responsible, but they are not doing the same thing. Cash gives greater liquidity, but investing helps increase wealth and lets money grow faster than inflation, the rise in prices over time that reduces purchasing power. If a ₹1,000 school bag rises 6% a year it costs about ₹1,060 next year; money kept at home that does not grow can no longer buy it.",
+      "hint": "Why is saving not enough, and how does investing help?",
+      "probe": "Explain the difference between saving and investing and why inflation makes investing important.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Saving and Investing: Protecting and Growing Money, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t2c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would a family set aside money even in a month when nothing seems to be needed?",
+          "requiredEvidence": [
+            "keeping aside a part of one’s income",
+            "future use",
+            "financial surplus",
+            "life is uncertain",
+            "emergencies",
+            "future investments"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_sv_saving",
+              "criterion": "Defines saving as keeping aside part of income for future use (a financial surplus built up over time) and explains why it matters: comfortable living, emergencies and funds for future investments.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would a family set aside money even in a month when nothing seems to be needed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b5_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Priya's money stayed ₹500 for a year while Sameer's grew. Why might her ₹500 buy less than before?",
+          "requiredEvidence": [
+            "putting your savings into assets",
+            "protecting their value and generating returns",
+            "greater liquidity",
+            "faster than the rate of inflation",
+            "inflation is 6% per year",
+            "purchasing power will fall"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_sv_investing",
+              "criterion": "Defines investing as putting savings into assets to protect value and generate returns, notes that cash is more liquid but investing lets money grow faster than inflation, and shows with the ₹1,000 bag (about ₹1,060 at 6% inflation) that idle money loses purchasing power.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Priya's money stayed ₹500 for a year while Sameer's grew. Why might her ₹500 buy less than before?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_sv_cash"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_save_invest_chain",
+          "linksChecks": [
+            "chk_ss9b5_sv_saving",
+            "chk_ss9b5_sv_investing"
+          ],
+          "criterion": "Connects saving to investing through the effect of inflation on money that does not grow.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_sv_cash",
+          "wrong": "Keeping all savings as cash at home keeps their value safe.",
+          "fix": "If money simply kept at home does not grow, rising prices reduce its purchasing power, so you may not be able to buy what you could earlier.",
+          "checkId": "mchk_misc_ss9b5_sv_cash",
+          "checkCriterion": "The answer states or implies this wrong idea: Keeping all savings as cash at home keeps their value safe.",
+          "fixCheckId": "mfix_misc_ss9b5_sv_cash",
+          "fixCheckCriterion": "Answer 2 states the correct idea: If money simply kept at home does not grow, rising prices reduce its purchasing power, so you may not be able to buy what you could earlier.",
+          "keyPointIds": [
+            "ss9b5_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_sv_cash"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_sv_investing"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b5_sv_saving",
+            "lnk_ss9b5_save_invest_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t2_c2",
+      "topicId": "ncert_ss9b_ch5_t2",
+      "topicTitle": "Saving, Investing, and the Power of Compounding",
+      "label": "Compounding and the Advantage of Investing Early",
+      "headingType": "heading",
+      "sourcePages": [
+        111,
+        112
+      ],
+      "conceptHash": "8d60c3d1c47cb0126ca5bff0902d06a60332bdc7478b8faa2495e4aabeac7675",
+      "cardText": "Compounding is the principle where returns are earned not only on the original investment (the principal) but also on the returns already earned, so that high returns accumulate over time; it is the process in which an investment's earnings, such as interest or dividends, are reinvested to generate their own additional earnings. Take Bhavisha and Dhruv, who each save ₹1,000 at the end of every year and earn 7% annual interest. The only difference is that Bhavisha starts at 25 and Dhruv at 35. Although both save the same amount each year, by 65 Dhruv has only about 40% as much money as Bhavisha (about ₹94,460 against ₹1,99,635). Compounding lets earlier investments earn returns for a longer period, and those returns continue to generate more returns, which is why the growth curve is flat at first and steeper later.",
+      "hint": "What is compounding and why does starting early matter?",
+      "probe": "Explain compounding using the example of two people who start saving at different ages.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Compounding and the Advantage of Investing Early, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "After the first year's interest is added, what exactly earns interest in the second year?",
+          "requiredEvidence": [
+            "not only on the original investment",
+            "the principal",
+            "returns already earned",
+            "accumulating high returns over time",
+            "reinvested",
+            "additional earnings"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_cp_def",
+              "criterion": "Defines compounding as earning returns not only on the original investment (principal) but also on the returns already earned, with earnings reinvested to generate further earnings, so returns accumulate over time.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "After the first year's interest is added, what exactly earns interest in the second year?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_cp_simple"
+          ]
+        },
+        {
+          "id": "ss9b5_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two friends save equally every year but one starts ten years later. Who ends up with more at the finish, and why does the gap look so big?",
+          "requiredEvidence": [
+            "Bhavisha starts saving at the age of 25",
+            "Dhruv begins at the age of 35",
+            "same amount each year",
+            "about 40% as much money",
+            "earlier investments",
+            "longer period",
+            "additional returns"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_cp_early",
+              "criterion": "Explains, with Bhavisha (starts at 25) and Dhruv (starts at 35) saving the same ₹1,000 a year at 7%, that Dhruv ends with only about 40% as much by age 65 because earlier investments earn returns for longer and those returns earn more returns.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two friends save equally every year but one starts ten years later. Who ends up with more at the finish, and why does the gap look so big?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_compounding_chain",
+          "linksChecks": [
+            "chk_ss9b5_cp_def",
+            "chk_ss9b5_cp_early"
+          ],
+          "criterion": "Connects the meaning of compounding to the result of starting investment early.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_cp_simple",
+          "wrong": "Returns are earned only on the original amount invested.",
+          "fix": "With compounding, returns are earned not only on the original investment (the principal) but also on the returns already earned.",
+          "checkId": "mchk_misc_ss9b5_cp_simple",
+          "checkCriterion": "The answer states or implies this wrong idea: Returns are earned only on the original amount invested.",
+          "fixCheckId": "mfix_misc_ss9b5_cp_simple",
+          "fixCheckCriterion": "Answer 2 states the correct idea: With compounding, returns are earned not only on the original investment (the principal) but also on the returns already earned.",
+          "keyPointIds": [
+            "ss9b5_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_cp_simple"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_cp_def",
+            "chk_ss9b5_cp_early"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_compounding_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t3_c1",
+      "topicId": "ncert_ss9b_ch5_t3",
+      "topicTitle": "Investment Avenues and Risk-Return Dynamics",
+      "label": "Common Investment Options",
+      "headingType": "heading",
+      "sourcePages": [
+        113,
+        114,
+        115
+      ],
+      "conceptHash": "717efeb8009c602fcf4a3da405004cc9083516dc7e06ce2c54f378e6c2f676a9",
+      "cardText": "Common investment options include fixed deposits, bonds, stocks and mutual funds. A fixed deposit (FD) is among the most common and safest options offered by banks and post offices: a lump sum is deposited for a fixed period, such as one, three or five years, and earns a fixed rate of interest that stays unchanged, giving assured returns suited to people who prefer safety over high returns. Government-backed options include the Public Provident Fund, the National Savings Certificate and the Sukanya Samriddhi Yojana. Bonds are lending to the government or companies for a fixed period for regular interest; a ₹10,000 bond at 5% pays ₹500 a year and government bonds are generally safer than corporate bonds. Shares represent ownership in a company and may earn returns through dividends and rising share prices; they carry higher risk because prices fluctuate, but have the potential for higher long-term returns. Mutual funds pool money from many investors into a basket of shares, bonds or other assets run by professional fund managers; they reduce risk through portfolio diversification.",
+      "hint": "What are the common investment options and how do they differ?",
+      "probe": "Describe fixed deposits, bonds, shares and mutual funds and who each suits.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Common Investment Options, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which two options would suit someone who cannot afford any surprises in their income, and why?",
+          "requiredEvidence": [
+            "safest investment options",
+            "fixed rate of interest",
+            "unchanged throughout the investment period",
+            "assured returns",
+            "safety over high returns",
+            "lend money to the government or companies",
+            "government bonds are generally considered safer"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_io_safe",
+              "criterion": "Describes fixed deposits as a lump sum held for a fixed period at an unchanged fixed interest rate with assured returns for those preferring safety, and bonds as loans to the government or companies for regular interest, with government bonds generally safer than corporate bonds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which two options would suit someone who cannot afford any surprises in their income, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b5_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might someone without time or experience prefer a managed pool over picking individual company stakes?",
+          "requiredEvidence": [
+            "ownership in a company",
+            "share prices fluctuate",
+            "higher returns over the long term",
+            "pool money from many investors",
+            "basket of shares, bonds",
+            "professional fund managers",
+            "portfolio diversification"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_io_market",
+              "criterion": "Explains that shares are ownership in a company with higher risk (prices fluctuate) but higher long-term return potential, and that mutual funds pool investors' money in a basket of assets run by professional managers, reducing risk through portfolio diversification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might someone without time or experience prefer a managed pool over picking individual company stakes?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_io_shares_safe"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_options_chain",
+          "linksChecks": [
+            "chk_ss9b5_io_safe",
+            "chk_ss9b5_io_market"
+          ],
+          "criterion": "Connects the main investment options along a range from safe assured returns to market-linked higher-risk returns.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_io_shares_safe",
+          "wrong": "Shares give guaranteed returns like a fixed deposit.",
+          "fix": "Investing in shares involves higher risk because share prices fluctuate due to market conditions, company performance and broader economic changes.",
+          "checkId": "mchk_misc_ss9b5_io_shares_safe",
+          "checkCriterion": "The answer states or implies this wrong idea: Shares give guaranteed returns like a fixed deposit.",
+          "fixCheckId": "mfix_misc_ss9b5_io_shares_safe",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Investing in shares involves higher risk because share prices fluctuate due to market conditions, company performance and broader economic changes.",
+          "keyPointIds": [
+            "ss9b5_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_io_shares_safe"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_io_safe",
+            "chk_ss9b5_io_market"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_options_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t3_c2",
+      "topicId": "ncert_ss9b_ch5_t3",
+      "topicTitle": "Investment Avenues and Risk-Return Dynamics",
+      "label": "Risk, Return, Time Horizon and Liquidity",
+      "headingType": "heading",
+      "sourcePages": [
+        117,
+        118
+      ],
+      "conceptHash": "1c6d588b0322dddbbe0759b41189607d4022de179e6cd401c0d97feaf97f093c",
+      "cardText": "When deciding where to invest, four factors matter: risk (the chance of losing money), return (the profit earned from an investment), time horizon (how long money can remain invested) and liquidity (how easily an asset can be converted into cash when needed). Different investments score differently: fixed deposits are generally low-risk, with steady but relatively lower returns; mutual funds may offer higher returns; and shares have the potential for the highest returns over the long term but also the highest risk. In general, lower-risk investments tend to offer lower returns, while higher-risk investments may offer higher returns, which is the risk-return trade-off. People should therefore choose investments based on their financial goals, the amount of risk they are willing to take and when they are likely to need the money.",
+      "hint": "What should you consider before investing, and how are risk and return related?",
+      "probe": "Name the four factors to consider before investing and explain the risk-return trade-off.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Risk, Return, Time Horizon and Liquidity, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A family needs money for a wedding in two years. Which of the four things must they think about first?",
+          "requiredEvidence": [
+            "four factors",
+            "chance of losing money",
+            "profit earned from an investment",
+            "length of time for which money can remain invested",
+            "converted into cash when needed"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_rr_factors",
+              "criterion": "Names and defines the four factors for an investment decision: risk (chance of losing money), return (profit earned), time horizon (how long money can stay invested) and liquidity (how easily an asset converts to cash).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A family needs money for a wedding in two years. Which of the four things must they think about first?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b5_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is the choice that promises the biggest payoff automatically the best one for every person? What else should be weighed?",
+          "requiredEvidence": [
+            "low-risk options",
+            "steady but relatively lower returns",
+            "highest returns over the long term",
+            "highest level of risk",
+            "lower-risk investments tend to offer lower returns",
+            "financial goals",
+            "when they are likely to need the money"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_rr_tradeoff",
+              "criterion": "Explains the risk-return trade-off (fixed deposits low risk and lower steady returns, mutual funds possibly higher, shares highest potential and highest risk; lower risk usually means lower return) and that choices should match goals, risk tolerance and timing of need.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is the choice that promises the biggest payoff automatically the best one for every person? What else should be weighed?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_rr_high_best"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_risk_return_chain",
+          "linksChecks": [
+            "chk_ss9b5_rr_factors",
+            "chk_ss9b5_rr_tradeoff"
+          ],
+          "criterion": "Connects the four factors for investment decisions to the trade-off between risk and return.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_rr_high_best",
+          "wrong": "Taking the highest risk is always the best way to earn higher returns.",
+          "fix": "Higher-risk investments may offer higher returns, but people should choose investments based on their financial goals, the risk they are willing to take and when they need the money.",
+          "checkId": "mchk_misc_ss9b5_rr_high_best",
+          "checkCriterion": "The answer states or implies this wrong idea: Taking the highest risk is always the best way to earn higher returns.",
+          "fixCheckId": "mfix_misc_ss9b5_rr_high_best",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Higher-risk investments may offer higher returns, but people should choose investments based on their financial goals, the risk they are willing to take and when they need the money.",
+          "keyPointIds": [
+            "ss9b5_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_rr_high_best"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_rr_factors",
+            "chk_ss9b5_rr_tradeoff"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_risk_return_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t4_c1",
+      "topicId": "ncert_ss9b_ch5_t4",
+      "topicTitle": "Risk Protection, Insurance, and Responsible Credit",
+      "label": "Insurance: Protection Through Risk Sharing",
+      "headingType": "heading",
+      "sourcePages": [
+        115,
+        116
+      ],
+      "conceptHash": "9b2e79078e6a1ed74a6f3e145d0863ab4ca2e2988c275a89b4df12e0d752154f",
+      "cardText": "Life is full of uncertainties such as illness, accidents, loss of income or damage to property, and these can cause significant financial losses. Protection, safeguarding income, savings and assets against such risks, is therefore an important part of personal finance, and insurance is one of the most effective ways to achieve it. Insurance is a legal contract in which an individual pays a regular amount, called a premium, to an insurance company, which in return agrees to provide financial compensation for specific losses or expenses covered under the policy. It works on risk sharing: many people pay premiums into a common pool, and those who suffer an unexpected loss receive support. Types include health insurance (medical expenses; Ayushman Bharat PM-JAY covers eligible low-income households), life insurance (support for dependents if the policyholder passes away) and general insurance (vehicles, homes, businesses and other property, including motor, property, crop and cattle insurance).",
+      "hint": "What is insurance and how does it protect people?",
+      "probe": "Explain how insurance works and describe the main types of insurance.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Insurance: Protection Through Risk Sharing, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a small payment every month from many people let a few of them recover from a very large loss?",
+          "requiredEvidence": [
+            "uncertainties",
+            "safeguarding your income, savings, and assets",
+            "legal contract",
+            "regular amount, called a premium",
+            "financial compensation",
+            "risk sharing",
+            "common pool"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_in_principle",
+              "criterion": "Explains that insurance protects income, savings and assets against uncertain losses: a legal contract in which a person pays a regular premium and the insurer provides compensation for covered losses, working by risk sharing through a common pool of premiums.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a small payment every month from many people let a few of them recover from a very large loss?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_in_waste"
+          ]
+        },
+        {
+          "id": "ss9b5_t4c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A farmer's harvest is destroyed by flood and the family's earner falls ill in the same year. Which kinds of cover would matter?",
+          "requiredEvidence": [
+            "health insurance",
+            "medical expenses",
+            "life insurance",
+            "breadwinner",
+            "general insurance",
+            "vehicles, homes, businesses",
+            "crop insurance",
+            "Ayushman Bharat"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_in_types",
+              "criterion": "Distinguishes health insurance (medical expenses; Ayushman Bharat PM-JAY for eligible low-income households), life insurance (support for dependents if the policyholder dies) and general insurance (vehicles, homes, businesses, crops and cattle).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A farmer's harvest is destroyed by flood and the family's earner falls ill in the same year. Which kinds of cover would matter?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_insurance_chain",
+          "linksChecks": [
+            "chk_ss9b5_in_principle",
+            "chk_ss9b5_in_types"
+          ],
+          "criterion": "Connects the need for protection to the working of insurance and its main types.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_in_waste",
+          "wrong": "Insurance is wasted money if you never face a major loss.",
+          "fix": "Insurance works on risk sharing: many people pay into a common pool, and it provides financial security during emergencies and encourages people to save and plan through regular premium payments.",
+          "checkId": "mchk_misc_ss9b5_in_waste",
+          "checkCriterion": "The answer states or implies this wrong idea: Insurance is wasted money if you never face a major loss.",
+          "fixCheckId": "mfix_misc_ss9b5_in_waste",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Insurance works on risk sharing: many people pay into a common pool, and it provides financial security during emergencies and encourages people to save and plan through regular premium payments.",
+          "keyPointIds": [
+            "ss9b5_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_in_waste"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_in_principle"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b5_in_types",
+            "lnk_ss9b5_insurance_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t4_c2",
+      "topicId": "ncert_ss9b_ch5_t4",
+      "topicTitle": "Risk Protection, Insurance, and Responsible Credit",
+      "label": "Borrowing, Credit and EMIs",
+      "headingType": "heading",
+      "sourcePages": [
+        116,
+        117
+      ],
+      "conceptHash": "f3b085513dcd811bcfa38cb635997ca84301510c991316c7e7d5135d4fa685cb",
+      "cardText": "Sometimes people need to borrow money from banks, relatives or other sources as loans. Borrowing or using credit can be helpful when used for productive purposes, but harmful if misused: an education loan can help a student pursue higher education, whereas borrowing to buy unnecessary consumer goods may lead to a debt burden and financial difficulties. Responsible borrowing means taking loans only when necessary and ensuring they can be repaid on time. An EMI (equated monthly instalment) is the fixed amount a person pays every month to repay a loan, and each EMI includes part of the original loan (the principal) as well as the interest charged by the lender. For example, a family buying a ₹30,000 refrigerator may repay it through an EMI of ₹3,000 for 12 months. Too many EMIs can affect savings and emergency funds.",
+      "hint": "When is borrowing helpful and what is an EMI?",
+      "probe": "Explain when borrowing is useful or harmful and what an EMI is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Borrowing, Credit and EMIs, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two people each take a loan of the same size: one to study, one to buy a gadget they barely need. How do their futures differ?",
+          "requiredEvidence": [
+            "productive purposes",
+            "harmful if misused",
+            "education loan",
+            "unnecessary consumer goods",
+            "debt burden",
+            "only when necessary",
+            "repaid on time"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_bc_credit",
+              "criterion": "States that credit is helpful for productive purposes (e.g. an education loan) but harmful if misused (borrowing for unnecessary consumer goods leads to a debt burden), so responsible borrowing means taking loans only when necessary and repaying on time.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two people each take a loan of the same size: one to study, one to buy a gadget they barely need. How do their futures differ?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_bc_always_bad"
+          ]
+        },
+        {
+          "id": "ss9b5_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A family pays for an appliance in twelve equal monthly payments. What two things does each payment cover?",
+          "requiredEvidence": [
+            "equated monthly instalment",
+            "fixed amount of money",
+            "every month to repay a loan",
+            "original loan amount",
+            "interest charged by the lender",
+            "₹3,000 every month for 12 months"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_bc_emi",
+              "criterion": "Defines an EMI as the fixed amount paid every month to repay a loan, made up of part of the original loan (principal) plus the interest charged by the lender, e.g. ₹3,000 a month for 12 months on a ₹30,000 refrigerator.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A family pays for an appliance in twelve equal monthly payments. What two things does each payment cover?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_credit_chain",
+          "linksChecks": [
+            "chk_ss9b5_bc_credit",
+            "chk_ss9b5_bc_emi"
+          ],
+          "criterion": "Connects productive versus harmful borrowing to the way loans are repaid through EMIs.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_bc_always_bad",
+          "wrong": "Borrowing money is always harmful.",
+          "fix": "Borrowing or using credit can be helpful when it is used for productive purposes, but it can become harmful if misused.",
+          "checkId": "mchk_misc_ss9b5_bc_always_bad",
+          "checkCriterion": "The answer states or implies this wrong idea: Borrowing money is always harmful.",
+          "fixCheckId": "mfix_misc_ss9b5_bc_always_bad",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Borrowing or using credit can be helpful when it is used for productive purposes, but it can become harmful if misused.",
+          "keyPointIds": [
+            "ss9b5_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_bc_always_bad"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_bc_credit"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9b5_bc_emi",
+            "lnk_ss9b5_credit_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t5_c1",
+      "topicId": "ncert_ss9b_ch5_t5",
+      "topicTitle": "Taxation and Personal Income Tax in India",
+      "label": "Taxes: Direct, Indirect and Progressive",
+      "headingType": "heading",
+      "sourcePages": [
+        118,
+        119,
+        121
+      ],
+      "conceptHash": "0036aaf2912048f9b1092003199b45c7ae52ded964590ab200cd7cda9bfb8b04",
+      "cardText": "Taxes are compulsory payments made by individuals and businesses to the government to fund public services such as schools, hospitals, transport, defence and other essential facilities. There are two main types: direct taxes, paid directly on a person's or organisation's income or profits, such as income tax, and indirect taxes, added to the price of goods and services, such as the Goods and Services Tax (GST). Personal income tax is a tax paid on the income a person earns in a financial year, and all citizens of India with a personal income must pay it, except those earning below a certain limit. As income increases the tax payable also increases: this is progressive taxation, which aims to reduce income inequality by imposing higher rates on higher incomes, because people with greater financial capacity can afford to contribute more towards public services. Paying taxes honestly and on time is an important responsibility of every citizen.",
+      "hint": "What are taxes, what are their types, and why is income tax progressive?",
+      "probe": "Explain what taxes are, the difference between direct and indirect taxes, and what progressive taxation means.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Taxes: Direct, Indirect and Progressive, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When you buy a notebook, which kind of tax is hidden in the price, and which kind do salaried workers pay on what they earn?",
+          "requiredEvidence": [
+            "compulsory payments",
+            "fund public services",
+            "two main types",
+            "direct taxes",
+            "paid directly on a person’s or organisation’s income",
+            "indirect taxes",
+            "added to the price of goods and services",
+            "Goods and Services Tax"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_tx_types",
+              "criterion": "Defines taxes as compulsory payments to the government to fund public services, and distinguishes direct taxes (paid directly on income or profits, e.g. income tax) from indirect taxes (added to the price of goods and services, e.g. GST).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When you buy a notebook, which kind of tax is hidden in the price, and which kind do salaried workers pay on what they earn?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9b5_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why might a system ask people earning more to give a larger share, and what does the whole society gain?",
+          "requiredEvidence": [
+            "tax paid on the income a person earns in a year",
+            "tax payable to the government also increases",
+            "progressive taxation",
+            "reduce income inequality",
+            "higher tax rates on individuals with higher incomes",
+            "greater financial capacity",
+            "important responsibility of every citizen"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_tx_progressive",
+              "criterion": "Explains that personal income tax is paid on income earned in a year and is progressive: higher incomes face higher rates to reduce income inequality, because those with greater financial capacity can contribute more to public services; paying tax honestly and on time is a citizen's responsibility.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why might a system ask people earning more to give a larger share, and what does the whole society gain?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_tx_flat"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_tax_chain",
+          "linksChecks": [
+            "chk_ss9b5_tx_types",
+            "chk_ss9b5_tx_progressive"
+          ],
+          "criterion": "Connects the purpose and types of taxes to the principle of progressive income tax.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_tx_flat",
+          "wrong": "Everyone pays the same rate of income tax regardless of income.",
+          "fix": "As income increases, the tax payable also increases; progressive taxation imposes higher tax rates on individuals with higher incomes.",
+          "checkId": "mchk_misc_ss9b5_tx_flat",
+          "checkCriterion": "The answer states or implies this wrong idea: Everyone pays the same rate of income tax regardless of income.",
+          "fixCheckId": "mfix_misc_ss9b5_tx_flat",
+          "fixCheckCriterion": "Answer 2 states the correct idea: As income increases, the tax payable also increases; progressive taxation imposes higher tax rates on individuals with higher incomes.",
+          "keyPointIds": [
+            "ss9b5_t5c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_tx_flat"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_tx_types",
+            "chk_ss9b5_tx_progressive"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_tax_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9b_ch5_t5_c2",
+      "topicId": "ncert_ss9b_ch5_t5",
+      "topicTitle": "Taxation and Personal Income Tax in India",
+      "label": "Tax Slabs and Calculating Income Tax",
+      "headingType": "heading",
+      "sourcePages": [
+        119,
+        120
+      ],
+      "conceptHash": "8214312b45e34808850632f4c38e67188d1756c08e46acdbd3fd799c07379dae",
+      "cardText": "India follows a slab system for income tax: taxable income is divided into ranges, called tax slabs, and each slab is taxed at a specified rate. The slabs are proposed by the Ministry of Finance as part of the Union Budget presented to Parliament every year, and the Central Board of Direct Taxes (CBDT), under the Ministry of Finance, administers the laws relating to direct taxes. Under the New Tax Regime for FY 2025-26, income up to ₹4 lakh is taxed at nil, then 5%, 10%, 15%, 20%, 25% and 30% above ₹24 lakh. Take Priya, who earns ₹14 lakh a year. After a standard deduction of ₹75,000 her taxable income is ₹13,25,000. Different portions of income are taxed at different rates: nil on the first ₹4 lakh, 5% of the next ₹4 lakh is ₹20,000, 10% of the next ₹4 lakh is ₹40,000 and 15% of the remaining ₹1,25,000 is ₹18,750, so her total tax is ₹78,750.",
+      "hint": "How is income tax calculated using tax slabs?",
+      "probe": "Explain the tax slab system and how Priya's income tax is calculated.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Tax Slabs and Calculating Income Tax, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9b5_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who decides the ranges and rates each year, and which body looks after direct tax laws?",
+          "requiredEvidence": [
+            "slab system",
+            "divided into different ranges, called tax slabs",
+            "taxed at a specified rate",
+            "Ministry of Finance",
+            "Union Budget",
+            "Central Board of Direct Taxes"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_sl_system",
+              "criterion": "Explains that India uses a slab system in which taxable income is divided into ranges (tax slabs) each taxed at a specified rate, with slabs proposed by the Ministry of Finance in the annual Union Budget and direct tax laws administered by the Central Board of Direct Taxes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who decides the ranges and rates each year, and which body looks after direct tax laws?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9b5_sl_whole"
+          ]
+        },
+        {
+          "id": "ss9b5_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Walk through the steps from a yearly salary to a final tax figure; what is subtracted first, and how are the portions combined?",
+          "requiredEvidence": [
+            "taxable income",
+            "standard deduction",
+            "75,000",
+            "13,25,000",
+            "different portions of income are taxed at different rates",
+            "₹20,000",
+            "₹40,000",
+            "₹18,750",
+            "₹78,750"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9b5_sl_calc",
+              "criterion": "Works through Priya's tax: salary ₹14,00,000 minus the ₹75,000 standard deduction gives taxable income ₹13,25,000; each portion is taxed at its slab rate (nil on ₹4 lakh, 5% on next ₹4 lakh = ₹20,000, 10% on next ₹4 lakh = ₹40,000, 15% on remaining ₹1,25,000 = ₹18,750), giving ₹78,750 in total.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Walk through the steps from a yearly salary to a final tax figure; what is subtracted first, and how are the portions combined?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9b5_slab_chain",
+          "linksChecks": [
+            "chk_ss9b5_sl_system",
+            "chk_ss9b5_sl_calc"
+          ],
+          "criterion": "Connects the slab system and who sets it to the step-by-step calculation of tax.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9b5_sl_whole",
+          "wrong": "The highest slab rate is charged on the whole income once a person crosses into it.",
+          "fix": "Different portions of income are taxed at different rates, each slab being taxed at its specified rate.",
+          "checkId": "mchk_misc_ss9b5_sl_whole",
+          "checkCriterion": "The answer states or implies this wrong idea: The highest slab rate is charged on the whole income once a person crosses into it.",
+          "fixCheckId": "mfix_misc_ss9b5_sl_whole",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Different portions of income are taxed at different rates, each slab being taxed at its specified rate.",
+          "keyPointIds": [
+            "ss9b5_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9b5_sl_whole"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9b5_sl_system",
+            "chk_ss9b5_sl_calc"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9b5_slab_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

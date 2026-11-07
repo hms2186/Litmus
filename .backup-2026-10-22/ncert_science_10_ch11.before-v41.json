@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": 4,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 11,
+  "chapterName": "Electricity",
+  "sourceStatus": "Built from the NCERT PDF jesc111 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Science (Class 10), Reprint 2026-27, chapter pp. 171-194",
+    "note": "Pages are the printed page numbers (the PDF page label is the printed page minus 170). Quotes were checked automatically against the PDF text. Figures, tables and equations are images or symbols in the PDF and are not quoted. Activity questions, worked examples, the QUESTIONS boxes and the Exercises are used as accepted examples only."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c11_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci10c11_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example electric current, electric circuit, coulomb, ampere, ammeter, potential difference, volt, voltmeter.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "electric current",
+    "electric circuit",
+    "coulomb",
+    "ampere",
+    "ammeter",
+    "potential difference",
+    "volt",
+    "voltmeter",
+    "Ohm's law",
+    "resistance",
+    "ohm",
+    "rheostat",
+    "resistivity",
+    "series",
+    "parallel",
+    "equivalent resistance",
+    "heating effect",
+    "Joule's law",
+    "fuse",
+    "electric power",
+    "watt",
+    "kilowatt hour"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_science_10_ch11_t1",
+      "title": "Electric Current and Closed Electric Circuits",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t1_c1",
+          "label": "Electric Current and the Electric Circuit",
+          "headingType": "heading",
+          "sourcePages": [
+            171
+          ],
+          "cardText": "If electric charge flows through a conductor such as a metallic wire, there is an electric current in it, just as flowing water makes a water current. In a torch, the cells provide the flow of charges through the bulb, which glows only when the switch is on. A switch makes a conducting link between the cell and the bulb. A continuous and closed path of an electric current is an electric circuit; if it is broken anywhere, the current stops and the bulb does not glow. Electric current is the amount of charge flowing through a particular area in unit time, the rate of flow of electric charges. In metallic wires electrons carry the charge, but conventionally the direction of current is taken opposite to the flow of electrons, because electricity was observed before electrons were known.",
+          "hint": "What is an electric current and what must a circuit look like for it to flow?",
+          "probe": "Explain what an electric current and an electric circuit are and what the conventional direction of current is.",
+          "causeChain": "Flowing electric charge in a conductor is a current, expressed as charge per unit time -> a continuous closed path, the circuit, is needed, and a switch makes or breaks it -> conventionally the current direction is opposite to the electron flow since electrons were unknown when it was first defined",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_current_chain",
+              "linksChecks": [
+                "chk_sci10c11_ec_current",
+                "chk_sci10c11_ec_circuit",
+                "chk_sci10c11_ec_direction"
+              ],
+              "criterion": "Connects charge flow to a closed circuit and to the convention for current direction.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t1c1_kp1",
+              "weight": 2,
+              "text": "If the electric charge flows through a conductor, for example a metallic wire, we say there is an electric current in the conductor. Electric current is expressed by the amount of charge flowing through a particular area in unit time; in other words, it is the rate of flow of electric charges.",
+              "assessment": {
+                "requiredEvidence": [
+                  "electric charge flows through a conductor",
+                  "electric current",
+                  "amount of charge",
+                  "unit time",
+                  "rate of flow of electric charges"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ec_current",
+                    "criterion": "States that electric current is the flow of electric charge through a conductor, measured as the amount of charge flowing per unit time (rate of flow of charge).",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t1c1_kp2",
+              "weight": 2,
+              "text": "A switch makes a conducting link between the cell and the bulb. A continuous and closed path of an electric current is called an electric circuit. If the circuit is broken anywhere, or the switch is turned off, the current stops flowing and the bulb does not glow.",
+              "assessment": {
+                "requiredEvidence": [
+                  "switch",
+                  "conducting link",
+                  "continuous and closed path",
+                  "electric circuit",
+                  "broken",
+                  "current stops flowing"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ec_circuit",
+                    "criterion": "States that an electric circuit is a continuous closed path for current, that a switch makes a conducting link, and that breaking the circuit anywhere stops the current.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t1c1_kp3",
+              "weight": 1,
+              "text": "In circuits using metallic wires, electrons constitute the flow of charges. However, electrons were not known when electricity was first observed, so electric current was considered to be the flow of positive charges. Conventionally, in an electric circuit the direction of electric current is taken as opposite to the direction of the flow of electrons, which are negative charges.",
+              "assessment": {
+                "requiredEvidence": [
+                  "electrons",
+                  "flow of charges",
+                  "positive charges",
+                  "conventionally",
+                  "opposite to the direction of the flow of electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ec_direction",
+                    "criterion": "States that current is conventionally taken in the direction opposite to the flow of electrons (negative charges), because current was first thought to be a flow of positive charge.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_ec_direction"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: what an electric circuit means",
+            "air current and water current analogy"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_ec_direction",
+              "wrong": "Electric current flows in the same direction as the electrons.",
+              "fix": "Conventionally, in an electric circuit the direction of electric current is taken as opposite to the direction of flow of electrons, which are negative charges."
+            }
+          ],
+          "verify": [
+            {
+              "page": 171,
+              "quote": "if the electric charge flows through a conductor (for example, through a metallic wire), we say that there is an electric current in the conductor.",
+              "supports": [
+                "sci10c11_t1c1_kp1"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "Electric current is expressed by the amount of charge flowing through a particular area in unit time.",
+              "supports": [
+                "sci10c11_t1c1_kp1"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "it is the rate of flow of electric charges.",
+              "supports": [
+                "sci10c11_t1c1_kp1"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "A switch makes a conducting link between the cell and the bulb.",
+              "supports": [
+                "sci10c11_t1c1_kp2"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "A continuous and closed path of an electric current is called an electric circuit.",
+              "supports": [
+                "sci10c11_t1c1_kp2"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "the current stops flowing and the bulb does not glow.",
+              "supports": [
+                "sci10c11_t1c1_kp2"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "In circuits using metallic wires, electrons constitute the flow of charges.",
+              "supports": [
+                "sci10c11_t1c1_kp3"
+              ]
+            },
+            {
+              "page": 171,
+              "quote": "Conventionally, in an electric circuit the direction of electric current is taken as opposite to the direction of the flow of electrons, which are negative charges.",
+              "supports": [
+                "sci10c11_t1c1_kp3"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch11_t1_c2",
+          "label": "Measuring Current: Coulomb, Ampere and the Ammeter",
+          "headingType": "heading",
+          "sourcePages": [
+            172
+          ],
+          "cardText": "If a net charge Q flows across any cross-section of a conductor in time t, the current is I = Q/t. The SI unit of electric charge is the coulomb (C), the charge in nearly 6 × 10^18 electrons. Current is expressed in amperes (A): one ampere is the flow of one coulomb of charge per second, 1 A = 1 C/1 s. Small currents are expressed in milliampere and microampere. An instrument called an ammeter measures electric current in a circuit, and it is always connected in series. In a circuit, current flows from the positive terminal of the cell to the negative terminal through the bulb and ammeter.",
+          "hint": "What is the unit of charge and of current and how is an ammeter connected?",
+          "probe": "Explain the coulomb, the ampere and how an ammeter is connected.",
+          "causeChain": "Current is the charge crossing a section per unit time, I = Q/t -> charge is measured in coulombs and 1 ampere is 1 coulomb per second -> an ammeter measures current and must be connected in series",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_ampere_chain",
+              "linksChecks": [
+                "chk_sci10c11_am_units",
+                "chk_sci10c11_am_ammeter"
+              ],
+              "criterion": "Connects I = Q/t to the units coulomb and ampere and to the series connection of the ammeter.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t1c2_kp1",
+              "weight": 2,
+              "text": "If a net charge Q flows across any cross-section of a conductor in time t, then the current I through the cross-section is Q divided by t. The SI unit of electric charge is coulomb, equivalent to the charge contained in nearly 6 × 10^18 electrons. One ampere is constituted by the flow of one coulomb of charge per second.",
+              "assessment": {
+                "requiredEvidence": [
+                  "net charge Q",
+                  "cross-section",
+                  "time t",
+                  "coulomb",
+                  "6 × 10^18 electrons",
+                  "one ampere",
+                  "one coulomb of charge per second"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_am_units",
+                    "criterion": "States that current I = Q/t, charge is measured in coulombs (about 6 × 10^18 electrons), and one ampere is a flow of one coulomb of charge per second.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t1c2_kp2",
+              "weight": 1,
+              "text": "An instrument called an ammeter measures electric current in a circuit. It is always connected in series in a circuit through which the current is to be measured. In an electric circuit the current flows from the positive terminal of the cell to the negative terminal through the bulb and ammeter.",
+              "assessment": {
+                "requiredEvidence": [
+                  "ammeter",
+                  "measures electric current",
+                  "always connected in series",
+                  "positive terminal",
+                  "negative terminal"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_am_ammeter",
+                    "criterion": "States that an ammeter measures current and is always connected in series in the circuit, with current flowing from the cell's positive terminal to its negative terminal through the circuit.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_am_parallel"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: define the unit of current",
+            "Question 3: the number of electrons constituting one coulomb of charge",
+            "Example 11.1: charge from a current of 0.5 A for 10 minutes"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_am_parallel",
+              "wrong": "An ammeter should be connected in parallel across the component.",
+              "fix": "An ammeter is always connected in series in a circuit through which the current is to be measured."
+            }
+          ],
+          "verify": [
+            {
+              "page": 172,
+              "quote": "If a net charge Q, flows across any cross-section of a conductor in time t, then the current I, through the cross-section is",
+              "supports": [
+                "sci10c11_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 172,
+              "quote": "The SI unit of electric charge is coulomb (C), which is equivalent to the charge contained in nearly 6 × 1018 electrons.",
+              "supports": [
+                "sci10c11_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 172,
+              "quote": "One ampere is constituted by the flow of one coulomb of charge per second",
+              "supports": [
+                "sci10c11_t1c2_kp1"
+              ]
+            },
+            {
+              "page": 172,
+              "quote": "An instrument called ammeter measures electric current in a circuit.",
+              "supports": [
+                "sci10c11_t1c2_kp2"
+              ]
+            },
+            {
+              "page": 172,
+              "quote": "It is always connected in series in a circuit through which the current is to be measured.",
+              "supports": [
+                "sci10c11_t1c2_kp2"
+              ]
+            },
+            {
+              "page": 172,
+              "quote": "the electric current flows in the circuit from the positive terminal of the cell to the negative terminal of the cell through the bulb and ammeter.",
+              "supports": [
+                "sci10c11_t1c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t2",
+      "title": "Electric Potential and Potential Difference",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t2_c1",
+          "label": "Potential Difference: What Makes Charge Flow",
+          "headingType": "heading",
+          "sourcePages": [
+            173
+          ],
+          "cardText": "Charges do not flow in a copper wire by themselves, just as water in a perfectly horizontal tube does not flow. If one end of the tube is connected to a tank at a higher level, the pressure difference makes water flow. For charges in a conducting wire the electrons move only if there is a difference of electric pressure, called the potential difference, along the conductor. It may be produced by a battery of one or more cells. The chemical action within a cell generates the potential difference across its terminals, even when no current is drawn. When the cell is connected to a conducting element, the potential difference sets the charges in motion and produces a current, and to maintain it the cell expends its stored chemical energy.",
+          "hint": "Why do charges flow in a wire only when there is a potential difference?",
+          "probe": "Explain what makes electric charge flow in a conductor using the water analogy.",
+          "causeChain": "Water flows in a tube only with a pressure difference, and charges flow in a wire only with a potential difference -> a cell's chemical action generates the potential difference across its terminals -> connecting a circuit lets it set charges in motion, using up the cell's chemical energy",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_pd_chain",
+              "linksChecks": [
+                "chk_sci10c11_pd_need",
+                "chk_sci10c11_pd_cell"
+              ],
+              "criterion": "Connects the water-pressure analogy to potential difference and the cell's role in driving current.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t2c1_kp1",
+              "weight": 2,
+              "text": "Charges do not flow in a copper wire by themselves, just as water in a perfectly horizontal tube does not flow. For the flow of charges in a conducting metallic wire, the electrons move only if there is a difference of electric pressure, called the potential difference, along the conductor.",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not flow in a copper wire by themselves",
+                  "horizontal tube",
+                  "difference of electric pressure",
+                  "potential difference",
+                  "along the conductor"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pd_need",
+                    "criterion": "States that charges flow in a wire only if there is a potential difference (electric pressure difference) along it, like water needing a pressure difference to flow in a tube.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_pd_gravity"
+                ]
+              }
+            },
+            {
+              "id": "sci10c11_t2c1_kp2",
+              "weight": 2,
+              "text": "The difference of potential may be produced by a battery consisting of one or more electric cells. The chemical action within a cell generates the potential difference across its terminals, even when no current is drawn from it. When the cell is connected to a conducting circuit element, the potential difference sets the charges in motion and produces an electric current, and to maintain the current the cell has to expend its stored chemical energy.",
+              "assessment": {
+                "requiredEvidence": [
+                  "battery",
+                  "electric cells",
+                  "chemical action within a cell",
+                  "potential difference across the terminals",
+                  "sets the charges in motion",
+                  "expend its chemical energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pd_cell",
+                    "criterion": "States that a cell's chemical action generates a potential difference across its terminals which sets charges in motion in a closed circuit, and the cell expends its stored chemical energy to maintain the current.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: a device that helps to maintain a potential difference across a conductor"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_pd_gravity",
+              "wrong": "Gravity makes electric charges flow along a wire.",
+              "fix": "For flow of charges in a metallic wire gravity has no role to play; the electrons move only if there is a difference of electric pressure, the potential difference, along the conductor."
+            }
+          ],
+          "verify": [
+            {
+              "page": 173,
+              "quote": "Charges do not flow in a copper wire by themselves, just as water in a perfectly horizontal tube does not flow.",
+              "supports": [
+                "sci10c11_t2c1_kp1"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "the electrons move only if there is a difference of electric pressure – called the potential difference – along the conductor.",
+              "supports": [
+                "sci10c11_t2c1_kp1"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "This difference of potential may be produced by a battery, consisting of one or more electric cells.",
+              "supports": [
+                "sci10c11_t2c1_kp2"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "The chemical action within a cell generates the potential difference across the terminals of the cell, even when no current is drawn from it.",
+              "supports": [
+                "sci10c11_t2c1_kp2"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "the potential difference sets the charges in motion in the conductor and produces an electric current.",
+              "supports": [
+                "sci10c11_t2c1_kp2"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "the cell has to expend its chemical energy stored in it.",
+              "supports": [
+                "sci10c11_t2c1_kp2"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch11_t2_c2",
+          "label": "The Volt and the Voltmeter",
+          "headingType": "heading",
+          "sourcePages": [
+            173,
+            174
+          ],
+          "cardText": "The electric potential difference between two points in a current carrying circuit is the work done to move a unit charge from one point to the other: V = W/Q. The SI unit is the volt (V), named after Alessandro Volta. One volt is the potential difference between two points of a current carrying conductor when 1 joule of work is done to move a charge of 1 coulomb from one point to the other, so 1 V = 1 J per C. The potential difference is measured by an instrument called a voltmeter, which is always connected in parallel across the points between which the potential difference is to be measured. A circuit comprises a cell or battery, a plug key, components and wires, and is drawn as a schematic diagram using conventional symbols.",
+          "hint": "How is potential difference defined, what is a volt and how is a voltmeter connected?",
+          "probe": "Explain potential difference, the volt and how it is measured.",
+          "causeChain": "Potential difference is the work done to move a unit charge between two points -> one volt is one joule of work per coulomb of charge -> a voltmeter measures it and is connected in parallel across the two points",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_volt_chain",
+              "linksChecks": [
+                "chk_sci10c11_vo_def",
+                "chk_sci10c11_vo_meter"
+              ],
+              "criterion": "Connects the definition of potential difference as work per charge to the volt and the parallel connection of a voltmeter.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t2c2_kp1",
+              "weight": 2,
+              "text": "We define the electric potential difference between two points in an electric circuit carrying some current as the work done to move a unit charge from one point to the other. The SI unit is the volt. One volt is the potential difference between two points in a current carrying conductor when 1 joule of work is done to move a charge of 1 coulomb from one point to the other.",
+              "assessment": {
+                "requiredEvidence": [
+                  "work done",
+                  "unit charge",
+                  "one point to the other",
+                  "volt",
+                  "1 joule of work",
+                  "1 coulomb"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_vo_def",
+                    "criterion": "States that potential difference is the work done to move a unit charge between two points, and that one volt is one joule of work per coulomb of charge moved.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t2c2_kp2",
+              "weight": 1,
+              "text": "The potential difference is measured by means of an instrument called the voltmeter. The voltmeter is always connected in parallel across the points between which the potential difference is to be measured.",
+              "assessment": {
+                "requiredEvidence": [
+                  "voltmeter",
+                  "always connected in parallel",
+                  "across the points",
+                  "potential difference is to be measured"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_vo_meter",
+                    "criterion": "States that a voltmeter measures potential difference and is always connected in parallel across the two points being measured.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_vo_series"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 2: what is meant by saying that the potential difference between two points is 1 V",
+            "Question 3: the energy given to each coulomb of charge passing through a 6 V battery",
+            "Example 11.2: work done moving a charge of 2 C across a potential difference of 12 V",
+            "Table 11.1: symbols of common components in circuit diagrams"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_vo_series",
+              "wrong": "A voltmeter is connected in series with the component.",
+              "fix": "The voltmeter is always connected in parallel across the points between which the potential difference is to be measured."
+            }
+          ],
+          "verify": [
+            {
+              "page": 173,
+              "quote": "We define the electric potential difference between two points in an electric circuit carrying some current as the work done to move a unit charge from one point to the other",
+              "supports": [
+                "sci10c11_t2c2_kp1"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "One volt is the potential difference between two points in a current carrying conductor when 1 joule of work is done to move a charge of 1 coulomb from one point to the other.",
+              "supports": [
+                "sci10c11_t2c2_kp1"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "The potential difference is measured by means of an instrument called the voltmeter.",
+              "supports": [
+                "sci10c11_t2c2_kp2"
+              ]
+            },
+            {
+              "page": 173,
+              "quote": "The voltmeter is always connected in parallel across the points between which the potential difference is to be measured.",
+              "supports": [
+                "sci10c11_t2c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t3",
+      "title": "Ohm's Law and Electrical Resistance",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t3_c1",
+          "label": "Ohm's Law: Potential Difference and Current",
+          "headingType": "heading",
+          "sourcePages": [
+            175,
+            176
+          ],
+          "cardText": "In an activity with a nichrome wire, an ammeter, a voltmeter and cells, the ratio V/I is approximately the same each time, and the V–I graph is a straight line through the origin: V/I is a constant ratio. In 1827 the German physicist Georg Simon Ohm found the relationship between the current flowing in a metallic wire and the potential difference across its terminals. The potential difference across the ends of a given metallic wire is directly proportional to the current flowing through it, provided its temperature remains the same. This is Ohm's law, V = IR, where R is a constant for the given wire at a given temperature, called its resistance.",
+          "hint": "State Ohm's law and what the V–I graph of a metallic wire looks like.",
+          "probe": "Explain Ohm's law and what the V–I graph shows.",
+          "causeChain": "Measuring V and I for a wire gives a constant V/I and a straight line through the origin on a V–I graph -> the potential difference across a metallic wire is directly proportional to the current if the temperature stays the same -> this is Ohm's law, V = IR, with the constant R the resistance",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_ohm_chain",
+              "linksChecks": [
+                "chk_sci10c11_ol_graph",
+                "chk_sci10c11_ol_law"
+              ],
+              "criterion": "Connects the straight-line V–I graph to Ohm's law and the constant resistance.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t3c1_kp1",
+              "weight": 1,
+              "text": "The V–I graph for a nichrome wire is a straight line that passes through the origin. A straight line plot shows that as the current through a wire increases, the potential difference across the wire increases linearly. Thus V/I is a constant ratio.",
+              "assessment": {
+                "requiredEvidence": [
+                  "V–I graph",
+                  "straight line",
+                  "passes through the origin",
+                  "increases linearly",
+                  "constant ratio"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ol_graph",
+                    "criterion": "States that the V–I graph of a metallic wire is a straight line through the origin, so V/I is a constant ratio.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t3c1_kp2",
+              "weight": 2,
+              "text": "In 1827 Georg Simon Ohm found out the relationship between the current I flowing in a metallic wire and the potential difference across its terminals. The potential difference V across the ends of a given metallic wire in an electric circuit is directly proportional to the current flowing through it, provided its temperature remains the same. This is called Ohm's law. R is a constant for the given metallic wire at a given temperature and is called its resistance.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Ohm",
+                  "potential difference",
+                  "directly proportional to the current",
+                  "provided its temperature remains the same",
+                  "Ohm's law",
+                  "resistance",
+                  "constant"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ol_law",
+                    "criterion": "States Ohm's law: the potential difference across a metallic wire is directly proportional to the current through it, provided its temperature is constant, V = IR, with the constant R called resistance.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_ol_temp"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Activity: nichrome wire, ammeter, voltmeter and four 1.5 V cells for studying Ohm's law",
+            "Figure 11.3: V–I graph for a nichrome wire",
+            "Example 11.4: current when the potential difference across a heater is doubled",
+            "Exercise 7: plotting V against I and finding the resistance",
+            "Exercise 8: a 12 V battery and a current of 2.5 mA"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_ol_temp",
+              "wrong": "Ohm's law holds for a wire whatever its temperature.",
+              "fix": "The potential difference across the ends of a given metallic wire is directly proportional to the current flowing through it, provided its temperature remains the same."
+            }
+          ],
+          "verify": [
+            {
+              "page": 176,
+              "quote": "Thus the V–I graph is a straight line that passes through the origin of the graph",
+              "supports": [
+                "sci10c11_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "as the current through a wire increases, the potential difference across the wire increases linearly",
+              "supports": [
+                "sci10c11_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "Thus, V/I is a constant ratio.",
+              "supports": [
+                "sci10c11_t3c1_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "In 1827, a German physicist Georg Simon Ohm (1787–1854) found out the relationship between the current I, flowing in a metallic wire and the potential difference across its terminals.",
+              "supports": [
+                "sci10c11_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "is directly proportional to the current flowing through it, provided its temperature remains the same.",
+              "supports": [
+                "sci10c11_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "This is called Ohm’s law.",
+              "supports": [
+                "sci10c11_t3c1_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "R is a constant for the given metallic wire at a given temperature and is called its resistance.",
+              "supports": [
+                "sci10c11_t3c1_kp2"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch11_t3_c2",
+          "label": "Electrical Resistance, the Ohm and the Rheostat",
+          "headingType": "heading",
+          "sourcePages": [
+            176,
+            177
+          ],
+          "cardText": "Resistance is the property of a conductor to resist the flow of charges through it. Its SI unit is the ohm (Ω): if the potential difference across a conductor is 1 V and the current through it is 1 A, its resistance is 1 Ω. From Ohm's law, the current through a resistor is inversely proportional to its resistance; if the resistance is doubled, the current gets halved. A component that regulates current without changing the voltage source is a variable resistance, and a rheostat is often used to change the resistance in a circuit. Electrons are not completely free to move within a conductor; they are restrained by the attraction of the atoms among which they move. A good conductor of a given size offers low resistance, a resistor has appreciable resistance, and an insulator offers even higher resistance.",
+          "hint": "What is resistance, what is its unit and how does current change when resistance changes?",
+          "probe": "Explain resistance, the ohm, how current depends on resistance and what a rheostat does.",
+          "causeChain": "Resistance is the property of a conductor to resist charge flow because electrons are restrained by atoms -> one ohm is 1 volt per ampere, and since I = V/R, doubling the resistance halves the current -> a rheostat varies the resistance to regulate current without changing the source voltage",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_resistance_chain",
+              "linksChecks": [
+                "chk_sci10c11_rs_def",
+                "chk_sci10c11_rs_effect"
+              ],
+              "criterion": "Connects the cause of resistance to its unit, its inverse effect on current and the rheostat.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t3c2_kp1",
+              "weight": 2,
+              "text": "Resistance is the property of a conductor to resist the flow of charges through it. Its SI unit is the ohm. If the potential difference across the two ends of a conductor is 1 V and the current through it is 1 A, then the resistance of the conductor is 1 ohm. The electrons are not completely free to move within a conductor, since they are restrained by the attraction of the atoms among which they move.",
+              "assessment": {
+                "requiredEvidence": [
+                  "property of a conductor to resist the flow of charges",
+                  "ohm",
+                  "1 V",
+                  "1 A",
+                  "restrained by the attraction of the atoms"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_rs_def",
+                    "criterion": "States that resistance is the property of a conductor to resist the flow of charge (electrons are restrained by atoms), with the SI unit ohm: 1 ohm is 1 volt per ampere.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_rs_free"
+                ]
+              }
+            },
+            {
+              "id": "sci10c11_t3c2_kp2",
+              "weight": 2,
+              "text": "The current through a resistor is inversely proportional to its resistance. If the resistance is doubled the current gets halved. A component used to regulate current without changing the voltage source is called variable resistance, and a device called a rheostat is often used to change the resistance in the circuit.",
+              "assessment": {
+                "requiredEvidence": [
+                  "inversely proportional to its resistance",
+                  "doubled",
+                  "current gets halved",
+                  "variable resistance",
+                  "rheostat",
+                  "regulate current"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_rs_effect",
+                    "criterion": "States that current is inversely proportional to resistance (doubling the resistance halves the current) and that a rheostat is used to change resistance and so regulate the current without changing the voltage source.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 3: the change in current when the potential difference across a component of constant resistance is halved",
+            "Activity: comparing the current with a nichrome wire, a torch bulb and a 10 W bulb",
+            "good conductor, resistor, poor conductor and insulator of the same size"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_rs_free",
+              "wrong": "Electrons move completely freely through a conductor, so there is no resistance in a good conductor.",
+              "fix": "The electrons are not completely free to move within a conductor: they are restrained by the attraction of the atoms among which they move, so their motion is retarded by resistance."
+            }
+          ],
+          "verify": [
+            {
+              "page": 176,
+              "quote": "It is the property of a conductor to resist the flow of charges through it.",
+              "supports": [
+                "sci10c11_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "Its SI unit is ohm",
+              "supports": [
+                "sci10c11_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "If the potential difference across the two ends of a conductor is 1 V and the current through it is 1 A, then the resistance R, of the conductor is 1 Ω.",
+              "supports": [
+                "sci10c11_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 177,
+              "quote": "The electrons, however, are not completely free to move within a conductor.",
+              "supports": [
+                "sci10c11_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 177,
+              "quote": "They are restrained by the attraction of the atoms among which they move.",
+              "supports": [
+                "sci10c11_t3c2_kp1"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "the current through a resistor is inversely proportional to its resistance.",
+              "supports": [
+                "sci10c11_t3c2_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "If the resistance is doubled the current gets halved.",
+              "supports": [
+                "sci10c11_t3c2_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "A component used to regulate current without changing the voltage source is called variable resistance.",
+              "supports": [
+                "sci10c11_t3c2_kp2"
+              ]
+            },
+            {
+              "page": 176,
+              "quote": "a device called rheostat is often used to change the resistance in the circuit.",
+              "supports": [
+                "sci10c11_t3c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t4",
+      "title": "Factors Affecting Resistance and Electrical Resistivity",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t4_c1",
+          "label": "Factors on Which the Resistance of a Conductor Depends",
+          "headingType": "heading",
+          "sourcePages": [
+            178
+          ],
+          "cardText": "Experiments with nichrome and copper wires show that the ammeter reading decreases to one-half when the length of the wire is doubled, increases when a thicker wire of the same material and length is used, and changes when a wire of different material of the same length and cross-section is used. Applying Ohm's law, the resistance of a conductor depends on its length, its area of cross-section and the nature of its material. Precise measurements show that the resistance of a uniform metallic conductor is directly proportional to its length and inversely proportional to its area of cross-section: R = ρ l/A, where ρ (rho) is a constant of proportionality called the electrical resistivity of the material.",
+          "hint": "Which three things decide the resistance of a wire and how does it vary with length and thickness?",
+          "probe": "Explain the factors on which the resistance of a conductor depends.",
+          "causeChain": "Doubling the length halves the current, a thicker wire lets more current flow and a different material changes the current -> so resistance depends on length, cross-sectional area and material -> it is directly proportional to length and inversely proportional to area, R = ρl/A, with ρ the resistivity",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_factors_chain",
+              "linksChecks": [
+                "chk_sci10c11_fc_factors",
+                "chk_sci10c11_fc_formula"
+              ],
+              "criterion": "Connects the experimental observations to the three factors and to R = ρl/A.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t4c1_kp1",
+              "weight": 2,
+              "text": "It is observed that the ammeter reading decreases to one-half when the length of the wire is doubled. The ammeter reading is increased when a thicker wire of the same material and of the same length is used. A change in ammeter reading is observed when a wire of different material of the same length and the same area of cross-section is used. The resistance of the conductor depends on its length, on its area of cross-section, and on the nature of its material.",
+              "assessment": {
+                "requiredEvidence": [
+                  "length",
+                  "doubled",
+                  "one-half",
+                  "thicker wire",
+                  "area of cross-section",
+                  "nature of its material"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_fc_factors",
+                    "criterion": "States that the resistance of a conductor depends on its length, its area of cross-section and the nature of its material, from observations such as halved current when the length is doubled and more current in a thicker wire.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_fc_thick"
+                ]
+              }
+            },
+            {
+              "id": "sci10c11_t4c1_kp2",
+              "weight": 2,
+              "text": "Precise measurements have shown that the resistance of a uniform metallic conductor is directly proportional to its length and inversely proportional to the area of cross-section. Combining these, R = ρ l/A, where ρ is a constant of proportionality called the electrical resistivity of the material of the conductor.",
+              "assessment": {
+                "requiredEvidence": [
+                  "uniform metallic conductor",
+                  "directly proportional to its length",
+                  "inversely proportional to the area of cross-section",
+                  "ρ",
+                  "electrical resistivity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_fc_formula",
+                    "criterion": "States that resistance is directly proportional to length and inversely proportional to cross-sectional area, R = ρl/A, where ρ is the electrical resistivity of the material.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: factors on which the resistance of a conductor depends",
+            "Question 2: current flows more easily through a thick wire than a thin wire of the same material",
+            "Example 11.6: resistance of a wire of half the length and double the cross-section",
+            "Exercise 18(d): how the resistance of a wire varies with its area of cross-section",
+            "Exercise 6: length of a copper wire for a resistance of 10 ohm"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_fc_thick",
+              "wrong": "A thicker wire has a higher resistance than a thin one of the same material.",
+              "fix": "A thicker wire of the same material and length lets more current flow: resistance is inversely proportional to the area of cross-section."
+            }
+          ],
+          "verify": [
+            {
+              "page": 178,
+              "quote": "It is observed that the ammeter reading decreases to one-half when the length of the wire is doubled.",
+              "supports": [
+                "sci10c11_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "The ammeter reading is increased when a thicker wire of the same material and of the same length is used in the circuit.",
+              "supports": [
+                "sci10c11_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "A change in ammeter reading is observed when a wire of different material of the same length and the same area of cross-section is used.",
+              "supports": [
+                "sci10c11_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "the resistance of the conductor depends (i) on its length, (ii) on its area of cross-section, and (iii) on the nature of its material.",
+              "supports": [
+                "sci10c11_t4c1_kp1"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "resistance of a uniform metallic conductor is directly proportional to its length (l) and inversely proportional to the area of cross-section (A).",
+              "supports": [
+                "sci10c11_t4c1_kp2"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "is called the electrical resistivity of the material of the conductor.",
+              "supports": [
+                "sci10c11_t4c1_kp2"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch11_t4_c2",
+          "label": "Electrical Resistivity and the Choice of Materials",
+          "headingType": "heading",
+          "sourcePages": [
+            178,
+            179
+          ],
+          "cardText": "Resistivity is a characteristic property of a material, with SI unit ohm metre. Metals and alloys have very low resistivity, in the range 10^-8 to 10^-6 ohm metre, and are good conductors; insulators like rubber and glass have resistivity of the order of 10^12 to 10^17 ohm metre. Both resistance and resistivity vary with temperature. The resistivity of an alloy is generally higher than that of its constituent metals, and alloys do not oxidise (burn) readily at high temperatures, so they are commonly used in electrical heating devices like electric irons and toasters. Tungsten is used almost exclusively for filaments of electric bulbs, whereas copper and aluminium are generally used for electrical transmission lines.",
+          "hint": "Why are alloys used in heaters, tungsten in bulb filaments and copper or aluminium in transmission lines?",
+          "probe": "Explain resistivity and why different materials are chosen for heaters, filaments and transmission lines.",
+          "causeChain": "Resistivity is a property of the material, very low for metals and alloys and very high for insulators -> an alloy has higher resistivity than its metals and does not oxidise readily when hot -> so alloys suit heating devices, tungsten suits bulb filaments and copper or aluminium suit transmission lines",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_resistivity_chain",
+              "linksChecks": [
+                "chk_sci10c11_rv_property",
+                "chk_sci10c11_rv_uses"
+              ],
+              "criterion": "Connects the resistivity values of conductors and insulators to the choice of materials for different uses.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t4c2_kp1",
+              "weight": 2,
+              "text": "Resistivity is a characteristic property of the material and its SI unit is ohm metre. Metals and alloys have very low resistivity and are good conductors of electricity, while insulators like rubber and glass have resistivity of the order of 10^12 to 10^17 ohm metre. Both the resistance and resistivity of a material vary with temperature.",
+              "assessment": {
+                "requiredEvidence": [
+                  "characteristic property of the material",
+                  "ohm metre",
+                  "very low resistivity",
+                  "good conductors",
+                  "rubber and glass",
+                  "vary with temperature"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_rv_property",
+                    "criterion": "States that resistivity is a characteristic property of a material (unit ohm metre), very low for metals and alloys and very high for insulators like rubber and glass, and varies with temperature.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t4c2_kp2",
+              "weight": 2,
+              "text": "The resistivity of an alloy is generally higher than that of its constituent metals. Alloys do not oxidise (burn) readily at high temperatures, so they are commonly used in electrical heating devices like electric iron and toasters. Tungsten is used almost exclusively for filaments of electric bulbs, whereas copper and aluminium are generally used for electrical transmission lines.",
+              "assessment": {
+                "requiredEvidence": [
+                  "alloy",
+                  "higher than that of its constituent metals",
+                  "do not oxidise readily at high temperatures",
+                  "heating devices",
+                  "tungsten",
+                  "filaments",
+                  "copper and aluminium",
+                  "transmission lines"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_rv_uses",
+                    "criterion": "States that alloys have higher resistivity than their metals and do not oxidise readily when hot (so they are used in heaters), tungsten is used for bulb filaments, and copper and aluminium for transmission lines.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_rv_pure"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Table 11.2: electrical resistivity of some substances at 20 degrees Celsius",
+            "Question 4: why coils of electric toasters and irons are made of an alloy rather than a pure metal",
+            "Question 5: which of iron and mercury is a better conductor and which material is the best conductor",
+            "Exercise 18(a), (b) and (e): tungsten for filaments, alloys for heating devices, copper and aluminium for transmission",
+            "Example 11.5: resistivity of a wire of resistance 26 ohm"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_rv_pure",
+              "wrong": "Heating coils are made of pure metals because they conduct best.",
+              "fix": "The resistivity of an alloy is generally higher than that of its constituent metals, and alloys do not oxidise readily at high temperatures, so they are used in electrical heating devices."
+            }
+          ],
+          "verify": [
+            {
+              "page": 178,
+              "quote": "It is a characteristic property of the material.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 178,
+              "quote": "The SI unit of resistivity is Ω m.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "have very low resistivity in the range of 10–8 Ω m to 10–6 Ω m.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "They are good conductors of electricity.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "Insulators like rubber and glass have resistivity of the order of 1012 to 1017 Ω m.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "Both the resistance and resistivity of a material vary with temperature.",
+              "supports": [
+                "sci10c11_t4c2_kp1"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "the resistivity of an alloy is generally higher than that of its constituent metals.",
+              "supports": [
+                "sci10c11_t4c2_kp2"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "Alloys do not oxidise (burn) readily at high temperatures.",
+              "supports": [
+                "sci10c11_t4c2_kp2"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "they are commonly used in electrical heating devices, like electric iron, toasters etc.",
+              "supports": [
+                "sci10c11_t4c2_kp2"
+              ]
+            },
+            {
+              "page": 179,
+              "quote": "Tungsten is used almost exclusively for filaments of electric bulbs, whereas copper and aluminium are generally used for electrical transmission lines.",
+              "supports": [
+                "sci10c11_t4c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t5",
+      "title": "Series Combination of Resistors",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t5_c1",
+          "label": "Resistors in Series: Current, Potential Difference and Equivalent Resistance",
+          "headingType": "heading",
+          "sourcePages": [
+            181,
+            182,
+            183,
+            184
+          ],
+          "cardText": "There are two methods of joining resistors. When resistors are joined end to end, they are connected in series. In a series combination the current is the same in every part of the circuit: the same current flows through each resistor, whatever the ammeter's position. The total potential difference across a series combination equals the sum of the potential differences across the individual resistors, V = V1 + V2 + V3. Applying Ohm's law gives the equivalent resistance: when several resistors are joined in series, the resistance of the combination equals the sum of the individual resistances, Rs = R1 + R2 + R3, and is thus greater than any individual resistance.",
+          "hint": "What stays the same, what adds up and what is the equivalent resistance in a series circuit?",
+          "probe": "Explain current, potential difference and equivalent resistance in a series combination of resistors.",
+          "causeChain": "Resistors joined end to end are in series and carry the same current -> the total potential difference is the sum of the potential differences across the individual resistors -> applying Ohm's law the equivalent resistance is the sum of the resistances, greater than any single one",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_series_chain",
+              "linksChecks": [
+                "chk_sci10c11_sr_current",
+                "chk_sci10c11_sr_voltage",
+                "chk_sci10c11_sr_resistance"
+              ],
+              "criterion": "Connects equal current and summing potential differences to the sum of resistances.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t5c1_kp1",
+              "weight": 2,
+              "text": "Resistors joined end to end are said to be connected in series. In a series combination of resistors the current is the same in every part of the circuit, or the same current through each resistor, independent of the ammeter's position in the circuit.",
+              "assessment": {
+                "requiredEvidence": [
+                  "joined end to end",
+                  "in series",
+                  "current is the same in every part of the circuit",
+                  "same current through each resistor"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_sr_current",
+                    "criterion": "States that resistors joined end to end are in series and carry the same current through each resistor and in every part of the circuit.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_sr_split"
+                ]
+              }
+            },
+            {
+              "id": "sci10c11_t5c1_kp2",
+              "weight": 2,
+              "text": "The total potential difference across a combination of resistors in series is equal to the sum of the potential differences across the individual resistors. The potential difference V is equal to the sum of V1, V2 and V3.",
+              "assessment": {
+                "requiredEvidence": [
+                  "total potential difference",
+                  "combination of resistors in series",
+                  "sum of potential difference",
+                  "individual resistors"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_sr_voltage",
+                    "criterion": "States that the total potential difference across resistors in series equals the sum of the potential differences across each resistor.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t5c1_kp3",
+              "weight": 2,
+              "text": "When several resistors are joined in series, the resistance of the combination equals the sum of their individual resistances, and is thus greater than any individual resistance. It is possible to replace the resistors joined in series by an equivalent single resistor such that the potential difference across it and the current through the circuit remain the same.",
+              "assessment": {
+                "requiredEvidence": [
+                  "resistors are joined in series",
+                  "sum of their individual resistances",
+                  "greater than any individual resistance",
+                  "equivalent single resistor"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_sr_resistance",
+                    "criterion": "States that the equivalent resistance of resistors in series is the sum of the individual resistances, greater than any individual resistance.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Example 11.7: a lamp of 20 ohm in series with a 4 ohm conductor across a 6 V battery",
+            "Question 1 and 2 (Section 11.6.2): drawing a series circuit of three 2 V cells with 5, 8 and 12 ohm resistors",
+            "Exercise 9: a 9 V battery in series with resistors of 0.2, 0.3, 0.4, 0.5 and 12 ohm",
+            "Figure 11.6: resistors in series"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_sr_split",
+              "wrong": "In a series circuit the current divides among the resistors.",
+              "fix": "In a series combination of resistors the current is the same in every part of the circuit, or the same current through each resistor."
+            }
+          ],
+          "verify": [
+            {
+              "page": 181,
+              "quote": "Here the resistors are said to be connected in series.",
+              "supports": [
+                "sci10c11_t5c1_kp1"
+              ]
+            },
+            {
+              "page": 182,
+              "quote": "in a series combination of resistors the current is the same in every part of the circuit or the same current through each resistor.",
+              "supports": [
+                "sci10c11_t5c1_kp1"
+              ]
+            },
+            {
+              "page": 183,
+              "quote": "the total potential difference across a combination of resistors in series is equal to the sum of potential difference across the individual resistors.",
+              "supports": [
+                "sci10c11_t5c1_kp2"
+              ]
+            },
+            {
+              "page": 184,
+              "quote": "when several resistors are joined in series, the resistance of the combination R s equals the sum of their individual resistances",
+              "supports": [
+                "sci10c11_t5c1_kp3"
+              ]
+            },
+            {
+              "page": 184,
+              "quote": "is thus greater than any individual resistance.",
+              "supports": [
+                "sci10c11_t5c1_kp3"
+              ]
+            },
+            {
+              "page": 183,
+              "quote": "It is possible to replace the three resistors joined in series by an equivalent single resistor",
+              "supports": [
+                "sci10c11_t5c1_kp3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t6",
+      "title": "Parallel Combination of Resistors and Domestic Circuits",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t6_c1",
+          "label": "Resistors in Parallel: Potential Difference, Currents and Equivalent Resistance",
+          "headingType": "heading",
+          "sourcePages": [
+            182,
+            185,
+            186
+          ],
+          "cardText": "When resistors are connected together between two points X and Y, they are connected in parallel. The potential difference across each resistor in a parallel combination is the same as the potential difference across the whole combination. The total current is equal to the sum of the separate currents through each branch, I = I1 + I2 + I3, since each resistor carries V/R. Applying Ohm's law, the reciprocal of the equivalent resistance of a group of resistances joined in parallel is equal to the sum of the reciprocals of the individual resistances, so the equivalent resistance is smaller than any one of them.",
+          "hint": "What is common to resistors in parallel, how does the current divide and how is the equivalent resistance found?",
+          "probe": "Explain potential difference, current and equivalent resistance in a parallel combination.",
+          "causeChain": "Resistors connected between the same two points are in parallel and each has the same potential difference across it -> the total current is the sum of the branch currents, each given by V/R -> the reciprocal of the equivalent resistance is the sum of the reciprocals of the individual resistances",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_parallel_chain",
+              "linksChecks": [
+                "chk_sci10c11_pl_voltage",
+                "chk_sci10c11_pl_current",
+                "chk_sci10c11_pl_resistance"
+              ],
+              "criterion": "Connects equal potential difference and summing branch currents to the reciprocal rule for equivalent resistance.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t6c1_kp1",
+              "weight": 2,
+              "text": "Three resistors connected together between points X and Y are said to be connected in parallel. The potential difference across each resistor in the parallel combination is also V, the potential difference across the combination.",
+              "assessment": {
+                "requiredEvidence": [
+                  "connected together between points",
+                  "in parallel",
+                  "potential difference across each resistor",
+                  "same"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pl_voltage",
+                    "criterion": "States that resistors connected between the same two points are in parallel, and the potential difference across each resistor equals the potential difference across the whole combination.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t6c1_kp2",
+              "weight": 2,
+              "text": "The total current I is equal to the sum of the separate currents through each branch of the combination: I = I1 + I2 + I3. On applying Ohm's law to each resistor, the current through each is V divided by its resistance.",
+              "assessment": {
+                "requiredEvidence": [
+                  "total current",
+                  "sum of the separate currents",
+                  "each branch",
+                  "Ohm's law",
+                  "V/R"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pl_current",
+                    "criterion": "States that the total current in a parallel combination equals the sum of the currents through each branch, each branch current being V/R.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t6c1_kp3",
+              "weight": 2,
+              "text": "The reciprocal of the equivalent resistance of a group of resistances joined in parallel is equal to the sum of the reciprocals of the individual resistances.",
+              "assessment": {
+                "requiredEvidence": [
+                  "reciprocal of the equivalent resistance",
+                  "group of resistances joined in parallel",
+                  "sum of the reciprocals",
+                  "individual resistances"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pl_resistance",
+                    "criterion": "States that for resistors in parallel the reciprocal of the equivalent resistance equals the sum of the reciprocals of the individual resistances.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_pl_sum"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Example 11.8: resistors of 5, 10 and 30 ohm in parallel across a 12 V battery",
+            "Example 11.9: a series-parallel arrangement with a 12 V battery",
+            "Question 1 (Section 11.6.2): equivalent resistance of 1 ohm and 10^6 ohm in parallel",
+            "Question 4: connecting 2, 3 and 6 ohm resistors for 4 ohm and 1 ohm",
+            "Exercise 11: connecting three 6 ohm resistors for 9 ohm and 4 ohm"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_pl_sum",
+              "wrong": "The equivalent resistance of resistors in parallel is the sum of their resistances.",
+              "fix": "The reciprocal of the equivalent resistance of resistors joined in parallel is equal to the sum of the reciprocals of the individual resistances."
+            }
+          ],
+          "verify": [
+            {
+              "page": 182,
+              "quote": "Here, the resistors are said to be connected in parallel.",
+              "supports": [
+                "sci10c11_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 185,
+              "quote": "The potential difference across each resistor is also V.",
+              "supports": [
+                "sci10c11_t6c1_kp1"
+              ]
+            },
+            {
+              "page": 186,
+              "quote": "It is observed that the total current I, is equal to the sum of the separate currents through each branch of the combination.",
+              "supports": [
+                "sci10c11_t6c1_kp2"
+              ]
+            },
+            {
+              "page": 186,
+              "quote": "On applying Ohm’s law to each resistor, we have",
+              "supports": [
+                "sci10c11_t6c1_kp2"
+              ]
+            },
+            {
+              "page": 186,
+              "quote": "the reciprocal of the equivalent resistance of a group of resistances joined in parallel is equal to the sum of the reciprocals of the individual resistances.",
+              "supports": [
+                "sci10c11_t6c1_kp3"
+              ]
+            }
+          ]
+        },
+        {
+          "conceptId": "sci10_ch11_t6_c2",
+          "label": "Why Domestic Circuits Use Parallel Connections",
+          "headingType": "heading",
+          "sourcePages": [
+            187
+          ],
+          "cardText": "In a series circuit the current is constant throughout, so it is impracticable to connect an electric bulb and an electric heater in series, because they need widely different currents to operate properly. Another major disadvantage is that when one component fails the circuit is broken and none of the components works, as with fairy lights, where the electrician has to test each bulb to find the dead one. A parallel circuit, on the other hand, divides the current through the electrical gadgets. The total resistance in a parallel circuit is decreased, which is helpful particularly when each gadget has a different resistance and requires a different current to operate properly.",
+          "hint": "What are the disadvantages of a series circuit and the advantages of a parallel circuit for household gadgets?",
+          "probe": "Explain why household gadgets are connected in parallel rather than in series.",
+          "causeChain": "In a series circuit all components carry the same current and one failure breaks the whole circuit -> appliances need widely different currents, which series cannot give -> a parallel circuit divides the current among gadgets, each gets what it needs and each works independently",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_domestic_chain",
+              "linksChecks": [
+                "chk_sci10c11_dm_series",
+                "chk_sci10c11_dm_parallel"
+              ],
+              "criterion": "Connects the limits of series circuits to the advantages of parallel connection for domestic gadgets.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t6c2_kp1",
+              "weight": 2,
+              "text": "In a series circuit the current is constant throughout the circuit, so it is impracticable to connect an electric bulb and an electric heater in series, because they need currents of widely different values to operate properly. Another major disadvantage of a series circuit is that when one component fails the circuit is broken and none of the components works.",
+              "assessment": {
+                "requiredEvidence": [
+                  "current is constant throughout",
+                  "impracticable",
+                  "widely different values",
+                  "one component fails",
+                  "circuit is broken",
+                  "none of the components works"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_dm_series",
+                    "criterion": "States the disadvantages of a series circuit: the same current flows through all (unsuitable for appliances needing widely different currents), and if one component fails the circuit breaks and none works.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_dm_series_ok"
+                ]
+              }
+            },
+            {
+              "id": "sci10c11_t6c2_kp2",
+              "weight": 2,
+              "text": "A parallel circuit divides the current through the electrical gadgets. The total resistance in a parallel circuit is decreased. This is helpful particularly when each gadget has a different resistance and requires a different current to operate properly.",
+              "assessment": {
+                "requiredEvidence": [
+                  "parallel circuit divides the current",
+                  "total resistance",
+                  "decreased",
+                  "different resistance",
+                  "different current",
+                  "operate properly"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_dm_parallel",
+                    "criterion": "States that in a parallel circuit the current divides among the gadgets and the total resistance decreases, which helps when each gadget has a different resistance and needs a different current.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 3: the advantages of connecting electrical devices in parallel instead of in series",
+            "Question 2: a lamp of 100 ohm, a toaster of 50 ohm and a water filter of 500 ohm in parallel across 220 V",
+            "Exercise 18(c): why the series arrangement is not used for domestic circuits",
+            "Exercise 12: how many 10 W lamps can be connected in parallel across a 220 V line with a maximum of 5 A"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_dm_series_ok",
+              "wrong": "A bulb and a heater can be run properly in series.",
+              "fix": "It is impracticable to connect an electric bulb and an electric heater in series because they need currents of widely different values to operate properly."
+            }
+          ],
+          "verify": [
+            {
+              "page": 187,
+              "quote": "Thus it is obviously impracticable to connect an electric bulb and an electric heater in series, because they need currents of widely different values to operate properly",
+              "supports": [
+                "sci10c11_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 187,
+              "quote": "Another major disadvantage of a series circuit is that when one component fails the circuit is broken and none of the components works.",
+              "supports": [
+                "sci10c11_t6c2_kp1"
+              ]
+            },
+            {
+              "page": 187,
+              "quote": "On the other hand, a parallel circuit divides the current through the electrical gadgets.",
+              "supports": [
+                "sci10c11_t6c2_kp2"
+              ]
+            },
+            {
+              "page": 187,
+              "quote": "The total resistance in a parallel circuit is decreased as per Eq. (11.18).",
+              "supports": [
+                "sci10c11_t6c2_kp2"
+              ]
+            },
+            {
+              "page": 187,
+              "quote": "each gadget has different resistance and requires different current to operate properly.",
+              "supports": [
+                "sci10c11_t6c2_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t7",
+      "title": "Heating Effect of Electric Current and Joule's Law of Heating",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t7_c1",
+          "label": "The Heating Effect of Electric Current and Joule's Law",
+          "headingType": "heading",
+          "sourcePages": [
+            188,
+            189
+          ],
+          "cardText": "A cell's chemical reaction generates the potential difference that sets electrons in motion, and to maintain the current the source keeps expending energy. A part may be consumed in useful work, like rotating the blades of a fan; the rest is expended as heat, so a fan becomes warm if used for long. If the circuit is purely resistive, the source energy is dissipated entirely as heat: the heating effect of electric current, used in the electric heater and iron. For a steady current I through a resistor R for time t, the heat produced is H = VIt, and with Ohm's law H = I²Rt. This is Joule's law of heating: the heat produced in a resistor is directly proportional to the square of the current for a given resistance, directly proportional to the resistance for a given current, and directly proportional to the time for which the current flows.",
+          "hint": "Why does a current heat a resistor and what does Joule's law say about the heat produced?",
+          "probe": "Explain the heating effect of electric current and state Joule's law of heating.",
+          "causeChain": "The source must keep expending energy to maintain a current, and in a purely resistive circuit it is all dissipated as heat -> the heat produced in time t is H = VIt, which with Ohm's law becomes H = I²Rt -> this is Joule's law: heat is proportional to the square of the current, to the resistance and to the time",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_joule_chain",
+              "linksChecks": [
+                "chk_sci10c11_jh_effect",
+                "chk_sci10c11_jh_law"
+              ],
+              "criterion": "Connects energy expended by the source to heat in a resistor and Joule's law.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t7c1_kp1",
+              "weight": 2,
+              "text": "To maintain the current the source has to keep expending its energy. A part of the source energy may be consumed in useful work, and the rest may be expended in heat to raise the temperature of the gadget. If the electric circuit is purely resistive, the source energy continually gets dissipated entirely in the form of heat. This is known as the heating effect of electric current.",
+              "assessment": {
+                "requiredEvidence": [
+                  "source has to keep expending its energy",
+                  "useful work",
+                  "expended in heat",
+                  "purely resistive",
+                  "dissipated entirely in the form of heat",
+                  "heating effect of electric current"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_jh_effect",
+                    "criterion": "States that the source's energy maintaining a current is partly useful work and partly heat, and that in a purely resistive circuit it is entirely dissipated as heat, which is the heating effect of electric current.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t7c1_kp2",
+              "weight": 2,
+              "text": "For a steady current I, the heat produced in time t is H = VIt, and applying Ohm's law H = I²Rt. This is known as Joule's law of heating. The heat produced in a resistor is directly proportional to the square of current for a given resistance, directly proportional to resistance for a given current, and directly proportional to the time for which the current flows through the resistor.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Joule's law of heating",
+                  "directly proportional to the square of current",
+                  "given resistance",
+                  "directly proportional to resistance",
+                  "directly proportional to the time"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_jh_law",
+                    "criterion": "States Joule's law of heating: heat H = I²Rt is directly proportional to the square of the current for a given resistance, to the resistance for a given current and to the time the current flows.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_jh_linear"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: why the cord of an electric heater does not glow while the heating element does",
+            "Question 2: heat generated by 96000 coulomb in one hour through 50 V",
+            "Question 3: heat developed in 30 s by an iron of 20 ohm taking 5 A",
+            "Example 11.10 and 11.11: current and resistance of an iron and the potential difference giving 100 J per second in 4 ohm",
+            "Exercise 4: ratio of heat produced in series and parallel combinations of two identical wires",
+            "Exercise 17: rate of heat in a 44 ohm heater drawing 5 A for 2 hours"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_jh_linear",
+              "wrong": "The heat produced in a resistor is directly proportional to the current, not its square.",
+              "fix": "Joule's law says heat produced is directly proportional to the square of the current for a given resistance, H = I²Rt."
+            }
+          ],
+          "verify": [
+            {
+              "page": 188,
+              "quote": "to maintain the current, the source has to keep expending its energy.",
+              "supports": [
+                "sci10c11_t7c1_kp1"
+              ]
+            },
+            {
+              "page": 188,
+              "quote": "A part of the source energy in maintaining the current may be consumed into useful work (like in rotating the blades of an electric fan).",
+              "supports": [
+                "sci10c11_t7c1_kp1"
+              ]
+            },
+            {
+              "page": 188,
+              "quote": "the source energy continually gets dissipated entirely in the form of heat.",
+              "supports": [
+                "sci10c11_t7c1_kp1"
+              ]
+            },
+            {
+              "page": 188,
+              "quote": "This is known as the heating effect of electric current.",
+              "supports": [
+                "sci10c11_t7c1_kp1"
+              ]
+            },
+            {
+              "page": 188,
+              "quote": "Thus for a steady current I, the amount of heat H produced in time t is",
+              "supports": [
+                "sci10c11_t7c1_kp2"
+              ]
+            },
+            {
+              "page": 189,
+              "quote": "This is known as Joule’s law of heating.",
+              "supports": [
+                "sci10c11_t7c1_kp2"
+              ]
+            },
+            {
+              "page": 189,
+              "quote": "directly proportional to the square of current for a given resistance",
+              "supports": [
+                "sci10c11_t7c1_kp2"
+              ]
+            },
+            {
+              "page": 189,
+              "quote": "(ii) directly proportional to resistance for a given current",
+              "supports": [
+                "sci10c11_t7c1_kp2"
+              ]
+            },
+            {
+              "page": 189,
+              "quote": "(iii) directly proportional to the time for which the current flows through the resistor.",
+              "supports": [
+                "sci10c11_t7c1_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t8",
+      "title": "Practical Applications of Heating Effects: Electric Fuse and Lighting",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t8_c1",
+          "label": "Applications of Joule Heating: Heaters, Bulb Filaments and Fuses",
+          "headingType": "heading",
+          "sourcePages": [
+            190
+          ],
+          "cardText": "The generation of heat in a conductor is an inevitable consequence of electric current. It is often undesirable because it converts useful electrical energy into heat, but it has many useful applications: the electric iron, toaster, oven, kettle and heater are based on Joule heating. It is also used to produce light, as in an electric bulb, where the filament must retain as much heat as possible so that it gets very hot and emits light; tungsten, with a melting point of 3380 degrees Celsius, is used for filaments, which are thermally isolated and kept in chemically inactive nitrogen and argon to prolong life. A fuse is placed in series with the device and protects circuits and appliances by stopping unduly high current: if a current larger than the specified value flows, its wire melts and breaks the circuit. Fuses are rated 1 A, 2 A, 3 A, 5 A, 10 A and so on; an iron using 1 kW at 220 V draws 4.54 A, so a 5 A fuse is used.",
+          "hint": "How are heating effects used in appliances, bulbs and fuses?",
+          "probe": "Explain the uses of the heating effect of current in heaters, bulb filaments and fuses.",
+          "causeChain": "Heat in a conductor is inevitable and useful in irons, toasters and bulbs -> a bulb filament must stay very hot without melting, so tungsten in an inert gas is used -> a fuse in series melts when the current exceeds its rating, breaking the circuit and protecting appliances",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_applications_chain",
+              "linksChecks": [
+                "chk_sci10c11_ap_devices",
+                "chk_sci10c11_ap_bulb",
+                "chk_sci10c11_ap_fuse"
+              ],
+              "criterion": "Connects Joule heating to appliances, bulb filaments and the protective fuse.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t8c1_kp1",
+              "weight": 1,
+              "text": "The generation of heat in a conductor is an inevitable consequence of electric current. In many cases it is undesirable as it converts useful electrical energy into heat. However, the heating effect of electric current has many useful applications. The electric laundry iron, electric toaster, electric oven, electric kettle and electric heater are familiar devices based on Joule's heating.",
+              "assessment": {
+                "requiredEvidence": [
+                  "inevitable consequence of electric current",
+                  "undesirable",
+                  "useful applications",
+                  "electric iron",
+                  "toaster",
+                  "oven",
+                  "kettle",
+                  "heater",
+                  "Joule's heating"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ap_devices",
+                    "criterion": "States that heat generation in a conductor is inevitable (often undesirable) but is used in devices such as the electric iron, toaster, oven, kettle and heater.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t8c1_kp2",
+              "weight": 2,
+              "text": "The electric heating is also used to produce light, as in an electric bulb. Here the filament must retain as much of the heat generated as possible, so that it gets very hot and emits light, and it must not melt at such a high temperature. A strong metal with a high melting point, such as tungsten, is used for making bulb filaments. The bulbs are usually filled with chemically inactive nitrogen and argon gases to prolong the life of the filament.",
+              "assessment": {
+                "requiredEvidence": [
+                  "produce light",
+                  "filament",
+                  "retain as much of the heat",
+                  "very hot and emits light",
+                  "must not melt",
+                  "tungsten",
+                  "high melting point",
+                  "nitrogen and argon"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ap_bulb",
+                    "criterion": "States that a bulb filament must stay very hot to emit light without melting, so it is made of high-melting-point tungsten and the bulb is filled with inactive nitrogen and argon to prolong its life.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t8c1_kp3",
+              "weight": 2,
+              "text": "The fuse is used in electric circuits to protect circuits and appliances by stopping the flow of any unduly high electric current. The fuse is placed in series with the device and consists of a piece of wire of a metal or alloy of appropriate melting point. If a current larger than the specified value flows through the circuit, the temperature of the fuse wire increases, melting the wire and breaking the circuit.",
+              "assessment": {
+                "requiredEvidence": [
+                  "fuse",
+                  "unduly high electric current",
+                  "placed in series",
+                  "appropriate melting point",
+                  "larger than the specified value",
+                  "melts",
+                  "breaks the circuit"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_ap_fuse",
+                    "criterion": "States that a fuse, placed in series with the device, melts when a current larger than its rating flows, breaking the circuit and protecting the appliance.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_ap_fuse_par"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise 18(a): why tungsten is used almost exclusively for filaments of electric lamps",
+            "fuse ratings of 1 A, 2 A, 3 A, 5 A and 10 A",
+            "an electric iron of 1 kW at 220 V draws 4.54 A, so a 5 A fuse is used"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_ap_fuse_par",
+              "wrong": "A fuse is connected in parallel with the appliance.",
+              "fix": "The fuse is placed in series with the device, so that all the current flows through it, and it melts if the current exceeds its rating."
+            }
+          ],
+          "verify": [
+            {
+              "page": 190,
+              "quote": "The generation of heat in a conductor is an inevitable consequence of electric current.",
+              "supports": [
+                "sci10c11_t8c1_kp1"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "However, heating effect of electric current has many useful applications.",
+              "supports": [
+                "sci10c11_t8c1_kp1"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "The electric laundry iron, electric toaster, electric oven, electric kettle and electric heater are some of the familiar devices based on Joule’s heating.",
+              "supports": [
+                "sci10c11_t8c1_kp1"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "The electric heating is also used to produce light, as in an electric bulb.",
+              "supports": [
+                "sci10c11_t8c1_kp2"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "the filament must retain as much of the heat generated as is possible, so that it gets very hot and emits light.",
+              "supports": [
+                "sci10c11_t8c1_kp2"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "It must not melt at such high temperature.",
+              "supports": [
+                "sci10c11_t8c1_kp2"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "A strong metal with high melting point such as tungsten (melting point 3380°C) is used for making bulb filaments.",
+              "supports": [
+                "sci10c11_t8c1_kp2"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "The bulbs are usually filled with chemically inactive nitrogen and argon gases to prolong the life of filament.",
+              "supports": [
+                "sci10c11_t8c1_kp2"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "It protects circuits and appliances by stopping the flow of any unduly high electric current.",
+              "supports": [
+                "sci10c11_t8c1_kp3"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "The fuse is placed in series with the device.",
+              "supports": [
+                "sci10c11_t8c1_kp3"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "If a current larger than the specified value flows through the circuit, the temperature of the fuse wire increases.",
+              "supports": [
+                "sci10c11_t8c1_kp3"
+              ]
+            },
+            {
+              "page": 190,
+              "quote": "This melts the fuse wire and breaks the circuit.",
+              "supports": [
+                "sci10c11_t8c1_kp3"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_science_10_ch11_t9",
+      "title": "Electric Power and Commercial Electrical Energy Consumption",
+      "concepts": [
+        {
+          "conceptId": "sci10_ch11_t9_c1",
+          "label": "Electric Power and the Commercial Unit of Energy",
+          "headingType": "heading",
+          "sourcePages": [
+            191
+          ],
+          "cardText": "Power is the rate of doing work, which is also the rate of consumption of energy. The rate at which electric energy is dissipated or consumed in an electric circuit is electric power: P = VI = I²R = V²/R. The SI unit of electric power is the watt (W), the power consumed by a device that carries 1 A of current when operated at a potential difference of 1 V. In practice the much larger unit kilowatt, 1000 watts, is used. Since electrical energy is the product of power and time, its unit is the watt hour, the energy consumed when 1 watt of power is used for 1 hour. The commercial unit of electric energy is the kilowatt hour (kW h), commonly known as a 'unit', and 1 kW h = 3.6 × 10^6 joule. Electrons are not consumed in a circuit: we pay for the energy used to move them through gadgets.",
+          "hint": "What is electric power, its unit, and what is the commercial unit of energy?",
+          "probe": "Explain electric power, the watt, the watt hour and the kilowatt hour.",
+          "causeChain": "Power is the rate at which electrical energy is consumed, P = VI = I²R = V²/R, measured in watts -> energy is power times time, so it is measured in watt hours -> the commercial unit is the kilowatt hour, 3.6 × 10^6 joule, and we pay for energy, not for electrons",
+          "causeLinks": [
+            {
+              "id": "lnk_sci10c11_power_energy_chain",
+              "linksChecks": [
+                "chk_sci10c11_pe_power",
+                "chk_sci10c11_pe_energy"
+              ],
+              "criterion": "Connects power as the rate of energy consumption to the watt, the watt hour and the kilowatt hour.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci10c11_t9c1_kp1",
+              "weight": 2,
+              "text": "The rate of doing work is power, which is also the rate of consumption of energy. The rate at which electric energy is dissipated or consumed in an electric circuit is termed electric power. The SI unit of electric power is the watt, the power consumed by a device that carries 1 A of current when operated at a potential difference of 1 V. In practice a much larger unit called the kilowatt, equal to 1000 watts, is used.",
+              "assessment": {
+                "requiredEvidence": [
+                  "rate of doing work",
+                  "rate of consumption of energy",
+                  "electric power",
+                  "watt",
+                  "1 A of current",
+                  "potential difference of 1 V",
+                  "kilowatt",
+                  "1000 watts"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pe_power",
+                    "criterion": "States that electric power is the rate at which electric energy is consumed, its SI unit is the watt (1 A at 1 V), and the larger kilowatt is 1000 watts.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci10c11_t9c1_kp2",
+              "weight": 2,
+              "text": "Since electrical energy is the product of power and time, the unit of electric energy is the watt hour, the energy consumed when 1 watt of power is used for 1 hour. The commercial unit of electric energy is the kilowatt hour, commonly known as a unit, and 1 kW h = 3.6 × 10^6 joule. Many people think that electrons are consumed in an electric circuit, which is wrong: we pay for the energy that we use.",
+              "assessment": {
+                "requiredEvidence": [
+                  "product of power and time",
+                  "watt hour",
+                  "1 watt of power is used for 1 hour",
+                  "commercial unit",
+                  "kilowatt hour",
+                  "3.6 × 10^6 joule",
+                  "electrons are not consumed"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci10c11_pe_energy",
+                    "criterion": "States that electrical energy is power × time, with units watt hour and the commercial kilowatt hour (a 'unit', 3.6 × 10^6 J), and that we pay for energy used, not for electrons consumed.",
+                    "isRequired": true
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci10c11_pe_electrons"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Question 1: what determines the rate at which energy is delivered by a current",
+            "Question 2: power and energy for a motor taking 5 A from a 220 V line for 2 hours",
+            "Examples 11.12 and 11.13: a 220 V, 0.50 A bulb and the cost of running a 400 W refrigerator for 30 days",
+            "Exercise 2: which term does not represent electrical power",
+            "Exercise 3: power of a 220 V, 100 W bulb on 110 V",
+            "Exercise 16: which uses more energy, a 250 W TV in 1 hour or a 1200 W toaster in 10 minutes"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci10c11_pe_electrons",
+              "wrong": "Electrons are used up in an electric circuit, and we pay for them.",
+              "fix": "Electrons are not consumed in an electric circuit; we pay the electricity board for the energy used to move electrons through the gadgets."
+            }
+          ],
+          "verify": [
+            {
+              "page": 191,
+              "quote": "the rate of doing work is power.",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "This is also the rate of consumption of energy.",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "This is also termed as electric power.",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "The SI unit of electric power is watt (W).",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "It is the power consumed by a device that carries 1 A of current when operated at a potential difference of 1 V.",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "It is equal to 1000 watts.",
+              "supports": [
+                "sci10c11_t9c1_kp1"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "Since electrical energy is the product of power and time, the unit of electric energy is, therefore, watt hour (W h).",
+              "supports": [
+                "sci10c11_t9c1_kp2"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "The commercial unit of electric energy is kilowatt hour (kW h), commonly known as ‘unit’.",
+              "supports": [
+                "sci10c11_t9c1_kp2"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "Many people think that electrons are consumed in an electric circuit.",
+              "supports": [
+                "sci10c11_t9c1_kp2"
+              ]
+            },
+            {
+              "page": 191,
+              "quote": "We pay for the energy that we use.",
+              "supports": [
+                "sci10c11_t9c1_kp2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

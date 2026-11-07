@@ -1,0 +1,1946 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_Civics_10_ch4.json",
+  "sourceSha256": "c1273f1167d59425391b6fcc4c9f1be7bdf072b083fd3fa0d5a6ae27ac4b7ea1",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Civics",
+  "book": "Democratic Politics II",
+  "chapterNumber": 4,
+  "chapterName": "Political Parties",
+  "articulationChecks": [
+    {
+      "id": "chk_ch4_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ch4_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example political party, partisan, ruling party, opposition, multiparty system, alliance, recognised party, defection or affidavit.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "political party",
+    "partisan",
+    "partisanship",
+    "ruling party",
+    "opposition",
+    "one-party system",
+    "two-party system",
+    "multiparty system",
+    "coalition",
+    "alliance",
+    "front",
+    "Election Commission",
+    "recognised political parties",
+    "national party",
+    "State party",
+    "internal democracy",
+    "dynastic succession",
+    "money and muscle power",
+    "defection",
+    "affidavit",
+    "state funding of elections"
+  ],
+  "concepts": [
+    {
+      "conceptId": "civ10_ch4_t1_c1",
+      "topicId": "ncert_civ_10_ch4_t1",
+      "topicTitle": "Why do we need political parties?",
+      "label": "Meaning and Components of a Political Party",
+      "headingType": "heading",
+      "sourcePages": [
+        47,
+        48
+      ],
+      "conceptHash": "bae25ed1fc6e73ca853451ab4235cd8064d47b05d1942e18129d0151b140d301",
+      "cardText": "A political party is a group of people who come together to contest elections and hold power in the government. They agree on some policies and programmes for the society with a view to promote the collective good, and try to persuade people that their policies are better. Parties reflect fundamental political divisions in a society and involve partisanship. A party has three components: the leaders, the active members and the followers.",
+      "hint": "What does a party come together to do, and what are its three parts?",
+      "probe": "What is a political party, and what are its three components?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Meaning and Components of a Political Party, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a political party, and what do its members agree on?",
+          "requiredEvidence": [
+            "group of people",
+            "contest elections",
+            "hold power in the government",
+            "policies and programmes",
+            "collective good"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_party_def",
+              "criterion": "Defines a political party as a group of people who come together to contest elections and hold power in the government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a political party, and what do its members agree on?"
+            },
+            {
+              "id": "chk_ch4_collective_good",
+              "criterion": "Mentions that party members agree on policies and programmes for society with a view to promote the collective good.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is a political party, and what do its members agree on?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "persuade people",
+            "popular support through elections",
+            "fundamental political divisions",
+            "partisanship"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_partisanship",
+              "criterion": "Explains that parties reflect fundamental political divisions in society, stand for a part of society, and so involve partisanship.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a party come together to do, and what are its three parts?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_parties_only_divide"
+          ]
+        },
+        {
+          "id": "ch4_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": "What are the three parts that make up a political party?",
+          "requiredEvidence": [
+            "leaders",
+            "active members",
+            "followers"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_comp_leaders",
+              "criterion": "Names the leaders as a component of a political party.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the three parts that make up a political party?"
+            },
+            {
+              "id": "chk_ch4_comp_members",
+              "criterion": "Names the active members as a component of a political party.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the three parts that make up a political party?"
+            },
+            {
+              "id": "chk_ch4_comp_followers",
+              "criterion": "Names the followers as a component of a political party.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the three parts that make up a political party?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_divisions_to_partisanship",
+          "linksChecks": [
+            "chk_ch4_party_def",
+            "chk_ch4_partisanship"
+          ],
+          "criterion": "Connects parties standing for a part of society to parties reflecting political divisions and involving partisanship.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_parties_only_divide",
+          "wrong": "Parties do nothing but divide people.",
+          "fix": "Parties do reflect political divisions and involve partisanship, but they come together to promote the collective good and perform functions that democracy needs.",
+          "checkId": "mchk_misc_ch4_parties_only_divide",
+          "checkCriterion": "The answer states or implies this wrong idea: Parties do nothing but divide people.",
+          "fixCheckId": "mfix_misc_ch4_parties_only_divide",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Parties do reflect political divisions and involve partisanship, but they come together to promote the collective good and perform functions that democracy needs.",
+          "keyPointIds": [
+            "ch4_t1c1_kp2"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_parties_only_divide"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_party_def",
+            "chk_ch4_collective_good",
+            "chk_ch4_comp_leaders",
+            "chk_ch4_comp_members",
+            "chk_ch4_comp_followers"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_partisanship",
+            "lnk_ch4_divisions_to_partisanship"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t1_c2",
+      "topicId": "ncert_civ_10_ch4_t1",
+      "topicTitle": "Why do we need political parties?",
+      "label": "Functions of Political Parties",
+      "headingType": "subheading",
+      "sourcePages": [
+        48,
+        49
+      ],
+      "conceptHash": "7f7406041457e542aa31d40dbacc359e6771d21daa9bcc4388703189b3a1b075",
+      "cardText": "Political parties fill political offices and exercise political power. They contest elections; put forward policies and programmes, reducing a vast multitude of opinions into a few basic positions; play a decisive role in making laws; form and run governments; act as the opposition when they lose; shape public opinion by raising issues and launching movements; and give people access to government machinery and welfare schemes.",
+      "hint": "Think about elections, policies, laws, government, opposition, public opinion and access to government.",
+      "probe": "What are the various functions that political parties perform in a democracy?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Functions of Political Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What part do parties play in elections, and who decides whom they put up?",
+          "requiredEvidence": [
+            "contest elections",
+            "candidates",
+            "USA",
+            "top party leaders"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_fn_elections",
+              "criterion": "Names contesting elections (putting up candidates) as a function of parties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What part do parties play in elections, and who decides whom they put up?"
+            },
+            {
+              "id": "chk_ch4_candidate_selection",
+              "criterion": "Mentions that in the USA party members and supporters choose candidates, while in India top party leaders choose them.",
+              "isRequired": false,
+              "lexical": "evidence",
+              "followUp": "What part do parties play in elections, and who decides whom they put up?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do parties help voters choose among so many different opinions?",
+          "requiredEvidence": [
+            "policies and programmes",
+            "vast multitude of opinions",
+            "few basic positions"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_fn_policies",
+              "criterion": "Names putting forward policies and programmes as a function, reducing many opinions into a few basic positions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do parties help voters choose among so many different opinions?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": "What role do parties play in the legislature and in running or opposing governments?",
+          "requiredEvidence": [
+            "making laws",
+            "form and run governments",
+            "opposition"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_fn_laws",
+              "criterion": "Names making laws as a function, since legislators go by the direction of the party leadership.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What role do parties play in the legislature and in running or opposing governments?"
+            },
+            {
+              "id": "chk_ch4_fn_government",
+              "criterion": "Names forming and running governments (recruiting and training leaders to be ministers) as a function.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What role do parties play in the legislature and in running or opposing governments?"
+            },
+            {
+              "id": "chk_ch4_fn_opposition",
+              "criterion": "Names playing the role of opposition (voicing different views, criticising the government) as a function of parties that lose.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What role do parties play in the legislature and in running or opposing governments?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t1c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 1
+          },
+          "followUp": "How do parties shape what people think, and how do they help ordinary citizens reach the government?",
+          "requiredEvidence": [
+            "shape public opinion",
+            "access to government machinery",
+            "welfare schemes",
+            "local party leader"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_fn_public_opinion",
+              "criterion": "Names shaping public opinion (raising issues, launching movements) as a function.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do parties shape what people think, and how do they help ordinary citizens reach the government?"
+            },
+            {
+              "id": "chk_ch4_fn_access",
+              "criterion": "Names giving people access to government machinery and welfare schemes as a function, since it is easier to approach a local party leader than an officer.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do parties shape what people think, and how do they help ordinary citizens reach the government?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_opinions_to_policies",
+          "linksChecks": [
+            "chk_ch4_fn_policies",
+            "chk_ch4_fn_elections"
+          ],
+          "criterion": "Explains that because no government can handle a large variety of views, parties group similar opinions into a few basic positions that voters can choose from.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_fn_elections",
+            "chk_ch4_candidate_selection",
+            "chk_ch4_fn_policies",
+            "chk_ch4_fn_laws",
+            "chk_ch4_fn_government",
+            "chk_ch4_fn_opposition"
+          ],
+          [
+            "chk_ch4_fn_public_opinion",
+            "chk_ch4_fn_access"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ch4_opinions_to_policies"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t1_c3",
+      "topicId": "ncert_civ_10_ch4_t1",
+      "topicTitle": "Why do we need political parties?",
+      "label": "Necessity of Political Parties",
+      "headingType": "subheading",
+      "sourcePages": [
+        49,
+        50
+      ],
+      "conceptHash": "5b657e23ed4a05ea922f43ece517d8bd3577ed2cc8a5012364f6df5471a2042b",
+      "cardText": "Without parties, every candidate would be independent, so no one could promise major policy changes, and no one would be responsible for how the country is run. Even in non-party panchayat elections, villages split into factions that put up 'panels' of candidates, which is exactly what a party does. The rise of parties is directly linked to representative democracy: large societies need an agency to gather views, form a responsible government, and support or restrain it. Parties are a necessary condition for a democracy.",
+      "hint": "Imagine an election where every candidate is independent. Who would be responsible for running the country?",
+      "probe": "Why can modern democracies not exist without political parties?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Necessity of Political Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What would elections and government be like if there were no parties?",
+          "requiredEvidence": [
+            "every candidate",
+            "independent",
+            "major policy changes",
+            "no one will be responsible"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_without_parties",
+              "criterion": "Explains that without parties every candidate would be independent, no one could promise major policy changes, or no one would be responsible for how the country is run.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What would elections and government be like if there were no parties?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_parties_unnecessary"
+          ]
+        },
+        {
+          "id": "ch4_t1c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "non-party based elections",
+            "panchayat",
+            "faction",
+            "panel"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_panchayat_panels",
+              "criterion": "Gives the example of non-party panchayat elections where villages split into factions that put up panels of candidates, which is what parties do.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Imagine an election where every candidate is independent. Who would be responsible for running the country?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t1c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why did political parties appear along with representative democracy?",
+          "requiredEvidence": [
+            "representative democracies",
+            "gather different views",
+            "responsible government",
+            "necessary condition for a democracy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_representative_needs",
+              "criterion": "Explains that large representative democracies need an agency to gather views, form a responsible government, or support and restrain the government.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why did political parties appear along with representative democracy?"
+            },
+            {
+              "id": "chk_ch4_necessary_condition",
+              "criterion": "Concludes that political parties are a necessary condition for a democracy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why did political parties appear along with representative democracy?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_representative_to_parties",
+          "linksChecks": [
+            "chk_ch4_representative_needs",
+            "chk_ch4_necessary_condition"
+          ],
+          "criterion": "Connects the needs of large representative democracies (gathering views, forming a responsible government) to parties being a necessary condition for democracy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_parties_unnecessary",
+          "wrong": "Democracy would work better if every candidate stood as an independent.",
+          "fix": "Without parties no one could promise major policy changes and no one would be responsible for how the country is run. Parties are a necessary condition for a democracy.",
+          "checkId": "mchk_misc_ch4_parties_unnecessary",
+          "checkCriterion": "The answer states or implies this wrong idea: Democracy would work better if every candidate stood as an independent.",
+          "fixCheckId": "mfix_misc_ch4_parties_unnecessary",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Without parties no one could promise major policy changes and no one would be responsible for how the country is run. Parties are a necessary condition for a democracy.",
+          "keyPointIds": [
+            "ch4_t1c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_parties_unnecessary"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_without_parties",
+            "chk_ch4_representative_needs",
+            "chk_ch4_necessary_condition"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_panchayat_panels",
+            "lnk_ch4_representative_to_parties"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t2_c1",
+      "topicId": "ncert_civ_10_ch4_t2",
+      "topicTitle": "How many parties should we have?",
+      "label": "One-Party, Two-Party and Multiparty Systems",
+      "headingType": "heading",
+      "sourcePages": [
+        50,
+        51
+      ],
+      "conceptHash": "89118567e6a75635750680cf407645c9a3700473030713a5c2f00b2cb3ccabd8",
+      "cardText": "In a one-party system, only one party is allowed to control and run the government, as in China; this is not a democratic option, since a democracy must allow at least two parties a fair chance to come to power. In a two-party system, power usually changes between two main parties, as in the USA and the UK. In a multiparty system, as in India, more than two parties have a reasonable chance of coming to power, often through coalitions, alliances or fronts. It can seem messy and unstable, but lets a variety of interests be represented.",
+      "hint": "Compare China, the USA and India. How many parties have a real chance of forming the government?",
+      "probe": "What are one-party, two-party and multiparty systems? Why is a one-party system not a democratic option?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain One-Party, Two-Party and Multiparty Systems, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a one-party system, and why is it not considered democratic?",
+          "requiredEvidence": [
+            "one-party systems",
+            "China",
+            "not a democratic option",
+            "at least two parties"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_one_party",
+              "criterion": "Describes a one-party system, where only one party is allowed to control and run the government (for example China).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a one-party system, and why is it not considered democratic?"
+            },
+            {
+              "id": "chk_ch4_two_needed",
+              "criterion": "States that a one-party system is not a democratic option, since democracy must allow at least two parties a fair chance to come to power.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a one-party system, and why is it not considered democratic?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a two-party system? Give an example of a country that has one.",
+          "requiredEvidence": [
+            "two main parties",
+            "serious chance",
+            "United States of America",
+            "United Kingdom"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_two_party",
+              "criterion": "Describes a two-party system, where power usually changes between two main parties (for example the USA or the UK).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a two-party system? Give an example of a country that has one."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_two_party_one_two"
+          ]
+        },
+        {
+          "id": "ch4_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a multiparty system, and what are its strengths and weaknesses?",
+          "requiredEvidence": [
+            "multiparty system",
+            "more than two parties",
+            "alliance or a front",
+            "political instability",
+            "variety of interests"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_multiparty",
+              "criterion": "Describes a multiparty system, where more than two parties have a reasonable chance of coming to power on their own or in alliance (for example India).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a multiparty system, and what are its strengths and weaknesses?"
+            },
+            {
+              "id": "chk_ch4_alliance_front",
+              "criterion": "Explains that parties joining hands to contest elections form an alliance or front (for example NDA, UPA or Left Front).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is a multiparty system, and what are its strengths and weaknesses?"
+            },
+            {
+              "id": "chk_ch4_multiparty_tradeoff",
+              "criterion": "Mentions that a multiparty system can appear messy and unstable but lets a variety of interests and opinions be represented.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What is a multiparty system, and what are its strengths and weaknesses?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_one_party_not_democratic",
+          "linksChecks": [
+            "chk_ch4_one_party",
+            "chk_ch4_two_needed"
+          ],
+          "criterion": "Explains that a one-party system is not democratic because democracy requires at least two parties with a fair chance to come to power.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_two_party_one_two",
+          "wrong": "In a two-party system, only two parties are allowed to exist.",
+          "fix": "Several other parties may exist, contest elections and win a few seats; only the two main parties have a serious chance of winning a majority.",
+          "checkId": "mchk_misc_ch4_two_party_one_two",
+          "checkCriterion": "The answer states or implies this wrong idea: In a two-party system, only two parties are allowed to exist.",
+          "fixCheckId": "mfix_misc_ch4_two_party_one_two",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Several other parties may exist, contest elections and win a few seats; only the two main parties have a serious chance of winning a majority.",
+          "keyPointIds": [
+            "ch4_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_two_party_one_two"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_one_party",
+            "chk_ch4_two_needed",
+            "chk_ch4_two_party",
+            "chk_ch4_multiparty",
+            "chk_ch4_alliance_front",
+            "chk_ch4_multiparty_tradeoff"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ch4_one_party_not_democratic"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t2_c2",
+      "topicId": "ncert_civ_10_ch4_t2",
+      "topicTitle": "How many parties should we have?",
+      "label": "Why a Party System Cannot Be Chosen",
+      "headingType": "subheading",
+      "sourcePages": [
+        51
+      ],
+      "conceptHash": "b4b7aca313df7bcfa9a6ea9355df497739e2e2735b747dbec818599dacb8ba55",
+      "cardText": "Which party system is better is not a very good question. A party system is not something any country can choose. It evolves over a long time, depending on the nature of society, its social and regional divisions, its history of politics and its system of elections. India evolved a multiparty system because its social and geographical diversity is not easily absorbed by two or even three parties. No system is ideal for all countries and all situations.",
+      "hint": "Can a country simply decide to have two parties? What shapes its party system?",
+      "probe": "Why can a country not simply choose its party system? Why does India have a multiparty system?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why a Party System Cannot Be Chosen, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can a country simply decide what party system it will have? Why or why not?",
+          "requiredEvidence": [
+            "not something any country can choose",
+            "evolves over a long time",
+            "social and regional divisions",
+            "system of elections"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_system_evolves",
+              "criterion": "States that a party system cannot be chosen; it evolves over a long time depending on society, its divisions, its political history and its electoral system.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can a country simply decide what party system it will have? Why or why not?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_choose_party_system"
+          ]
+        },
+        {
+          "id": "ch4_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why has India ended up with a multiparty system?",
+          "requiredEvidence": [
+            "social and geographical diversity",
+            "two or even three parties",
+            "No system is ideal"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_india_diversity",
+              "criterion": "Explains that India has a multiparty system because its social and geographical diversity is not easily absorbed by two or three parties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why has India ended up with a multiparty system?"
+            },
+            {
+              "id": "chk_ch4_no_ideal_system",
+              "criterion": "States that no party system is ideal for all countries and all situations.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why has India ended up with a multiparty system?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_diversity_to_multiparty",
+          "linksChecks": [
+            "chk_ch4_system_evolves",
+            "chk_ch4_india_diversity"
+          ],
+          "criterion": "Connects India's social and geographical diversity to its having evolved a multiparty system.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_choose_party_system",
+          "wrong": "India could switch to a two-party system by passing a law.",
+          "fix": "A party system is not something any country can choose. It evolves over a long time, depending on society, its divisions, its history of politics and its system of elections.",
+          "checkId": "mchk_misc_ch4_choose_party_system",
+          "checkCriterion": "The answer states or implies this wrong idea: India could switch to a two-party system by passing a law.",
+          "fixCheckId": "mfix_misc_ch4_choose_party_system",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A party system is not something any country can choose. It evolves over a long time, depending on society, its divisions, its history of politics and its system of elections.",
+          "keyPointIds": [
+            "ch4_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_choose_party_system"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_system_evolves",
+            "chk_ch4_india_diversity",
+            "chk_ch4_no_ideal_system"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ch4_diversity_to_multiparty"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t2_c3",
+      "topicId": "ncert_civ_10_ch4_t2",
+      "topicTitle": "How many parties should we have?",
+      "label": "Popular Participation in Political Parties",
+      "headingType": "subheading",
+      "sourcePages": [
+        52
+      ],
+      "conceptHash": "a34eb0c799f4ecf42d9f734fb306949b6dc1f5b3f2c19f2227e4b896621071bd",
+      "cardText": "It is often said that parties face a crisis because citizens are indifferent to them. Surveys show this is only partly true for India. Political parties do not enjoy much trust in South Asia, and are among the least trusted institutions all over the world. Yet participation in party activities is fairly high: the proportion of party members is higher in India than in many advanced countries like Canada, Japan, Spain and South Korea, and membership and feeling close to a party have gone up.",
+      "hint": "Do people trust parties? Do they still take part in them?",
+      "probe": "What does survey evidence show about trust in, and participation in, political parties in India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Popular Participation in Political Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How much do people trust political parties, in South Asia and around the world?",
+          "requiredEvidence": [
+            "do not enjoy much trust",
+            "least trusted institutions"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_low_trust",
+              "criterion": "States that political parties do not enjoy much trust, in South Asia and in most democracies.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How much do people trust political parties, in South Asia and around the world?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How actively do people in India take part in political parties compared with other countries?",
+          "requiredEvidence": [
+            "participation",
+            "fairly high",
+            "members",
+            "Canada, Japan, Spain and South Korea"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_high_participation",
+              "criterion": "States that participation in party activities in India is fairly high, with membership higher than in countries like Canada, Japan, Spain and South Korea, or rising.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How actively do people in India take part in political parties compared with other countries?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_indifferent_citizens"
+          ]
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_indifferent_citizens",
+          "wrong": "Indian citizens are indifferent to political parties.",
+          "fix": "Parties are not trusted much, but participation in their activities is fairly high in India, and party membership has gone up.",
+          "checkId": "mchk_misc_ch4_indifferent_citizens",
+          "checkCriterion": "The answer states or implies this wrong idea: Indian citizens are indifferent to political parties.",
+          "fixCheckId": "mfix_misc_ch4_indifferent_citizens",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Parties are not trusted much, but participation in their activities is fairly high in India, and party membership has gone up.",
+          "keyPointIds": [
+            "ch4_t2c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_indifferent_citizens"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_low_trust",
+            "chk_ch4_high_participation"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t3_c1",
+      "topicId": "ncert_civ_10_ch4_t3",
+      "topicTitle": "National and State parties",
+      "label": "Recognised National and State Parties",
+      "headingType": "heading",
+      "sourcePages": [
+        53
+      ],
+      "conceptHash": "ebdfbdf80900f8a8bd3b38d9538a2975ccc9561db0d850ff23abc761d052493f",
+      "cardText": "Federal democracies have parties present in only one federal unit and parties present in several or all units. Every party must register with the Election Commission, which gives large, established parties special facilities, such as a unique election symbol; these are 'recognised political parties'. A party with at least six per cent of the votes in a State Assembly election and at least two seats is a State party. A party with at least six per cent of the votes in Lok Sabha or Assembly elections in four States and at least four Lok Sabha seats is a national party.",
+      "hint": "What does the Election Commission give recognised parties? What vote share and seats are needed?",
+      "probe": "How does the Election Commission decide whether a party is a recognised State party or national party?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Recognised National and State Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t3c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "federal system",
+            "national parties",
+            "same policies, programmes and strategy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_two_kinds",
+              "criterion": "Explains that national parties have units in many states that follow the same policies and strategy decided at the national level.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the Election Commission give recognised parties? What vote share and seats are needed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What must every party do with the Election Commission, and what do established parties get?",
+          "requiredEvidence": [
+            "register with the Election Commission",
+            "unique symbol",
+            "recognised political parties"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_recognised_symbol",
+              "criterion": "States that every party registers with the Election Commission, and recognised parties get special facilities such as a unique election symbol.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What must every party do with the Election Commission, and what do established parties get?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What must a party achieve to be recognised as a State party, and as a national party?",
+          "requiredEvidence": [
+            "six per cent",
+            "two seats",
+            "four States",
+            "four seats in the Lok Sabha"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_state_party_criteria",
+              "criterion": "States the criteria for a State party: at least six per cent of votes in a State Assembly election and at least two seats.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What must a party achieve to be recognised as a State party, and as a national party?"
+            },
+            {
+              "id": "chk_ch4_national_party_criteria",
+              "criterion": "States the criteria for a national party: at least six per cent of votes in Lok Sabha or Assembly elections in four States and at least four Lok Sabha seats.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What must a party achieve to be recognised as a State party, and as a national party?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_national_by_name"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_criteria_to_symbol",
+          "linksChecks": [
+            "chk_ch4_recognised_symbol",
+            "chk_ch4_state_party_criteria"
+          ],
+          "criterion": "Connects meeting the Election Commission's vote and seat criteria to a party being recognised and getting a unique election symbol.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_national_by_name",
+          "wrong": "Any party that contests elections across India is automatically a national party.",
+          "fix": "Recognition depends on the Election Commission's criteria: at least six per cent of votes in Lok Sabha or Assembly elections in four States and at least four Lok Sabha seats.",
+          "checkId": "mchk_misc_ch4_national_by_name",
+          "checkCriterion": "The answer states or implies this wrong idea: Any party that contests elections across India is automatically a national party.",
+          "fixCheckId": "mfix_misc_ch4_national_by_name",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Recognition depends on the Election Commission's criteria: at least six per cent of votes in Lok Sabha or Assembly elections in four States and at least four Lok Sabha seats.",
+          "keyPointIds": [
+            "ch4_t3c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_national_by_name"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_recognised_symbol",
+            "chk_ch4_state_party_criteria",
+            "chk_ch4_national_party_criteria"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_two_kinds",
+            "lnk_ch4_criteria_to_symbol"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t3_c2",
+      "topicId": "ncert_civ_10_ch4_t3",
+      "topicTitle": "National and State parties",
+      "label": "National Parties of India",
+      "headingType": "subheading",
+      "sourcePages": [
+        53,
+        54,
+        55
+      ],
+      "conceptHash": "7121ba997cceb072d9a3da3c400e6660560d6040e4e1da402826abdc7a5b1905",
+      "cardText": "There are six recognised national parties (Election Commission notification, 2023): the Aam Aadmi Party (formed 2012, after the anti-corruption movement), the Bahujan Samaj Party (formed 1984 under Kanshi Ram, for the bahujan samaj), the Bharatiya Janata Party (founded 1980, inspired by integral humanism and Antyodaya, leads the NDA), the Communist Party of India (Marxist) (founded 1964, Marxism-Leninism), the Indian National Congress (founded 1885, centrist, led the UPA from 2004 to 2019) and the National People's Party (formed 2013, first national party from the North East).",
+      "hint": "Pick two national parties. When were they formed, and what do they stand for?",
+      "probe": "Describe any two national parties of India: when they were formed, their ideas and their support base.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain National Parties of India, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t3c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "six recognized national parties",
+            "2023"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_six_national",
+              "criterion": "States that there are six recognised national parties (Election Commission notification of 2023).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When were they formed, and what do they stand for?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t3c2_kp2",
+          "role": "core",
+          "weight": 3,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": "Pick two national parties. When was each formed, and what does each stand for?",
+          "requiredEvidence": [
+            "Aam Aadmi Party",
+            "Bahujan Samaj Party",
+            "Kanshi Ram",
+            "Bharatiya Janata Party",
+            "integral humanism",
+            "Marxism-Leninism",
+            "Indian National Congress",
+            "National People's Party"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_np_aap",
+              "criterion": "Correctly describes the Aam Aadmi Party (formed in 2012 after the anti-corruption movement; accountability and clean administration; governments in Punjab and Delhi).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            },
+            {
+              "id": "chk_ch4_np_bsp",
+              "criterion": "Correctly describes the Bahujan Samaj Party (formed in 1984 under Kanshi Ram; represents the bahujan samaj of dalits, adivasis, OBCs and religious minorities; base in Uttar Pradesh).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            },
+            {
+              "id": "chk_ch4_np_bjp",
+              "criterion": "Correctly describes the Bharatiya Janata Party (founded in 1980 reviving the Bharatiya Jana Sangh; integral humanism and Antyodaya; cultural nationalism; leads the NDA).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            },
+            {
+              "id": "chk_ch4_np_cpim",
+              "criterion": "Correctly describes the Communist Party of India (Marxist) (founded in 1964; Marxism-Leninism; support in West Bengal, Kerala and Tripura).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            },
+            {
+              "id": "chk_ch4_np_inc",
+              "criterion": "Correctly describes the Indian National Congress (founded in 1885; centrist; dominant after Independence; led the UPA from 2004 to 2019).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            },
+            {
+              "id": "chk_ch4_np_npp",
+              "criterion": "Correctly describes the National People's Party (formed in 2013 under P.A. Sangma; first national party from North East India).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Pick two national parties. When was each formed, and what does each stand for?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_bsp_founder"
+          ]
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_bsp_founder",
+          "wrong": "B.R. Ambedkar founded the Bahujan Samaj Party.",
+          "fix": "The BSP was formed in 1984 under the leadership of Kanshi Ram. It draws inspiration from the ideas of Sahu Maharaj, Mahatma Phule, Periyar Ramaswami Naicker and Babasaheb Ambedkar.",
+          "checkId": "mchk_misc_ch4_bsp_founder",
+          "checkCriterion": "The answer states or implies this wrong idea: B.R. Ambedkar founded the Bahujan Samaj Party.",
+          "fixCheckId": "mfix_misc_ch4_bsp_founder",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The BSP was formed in 1984 under the leadership of Kanshi Ram. It draws inspiration from the ideas of Sahu Maharaj, Mahatma Phule, Periyar Ramaswami Naicker and Babasaheb Ambedkar.",
+          "keyPointIds": [
+            "ch4_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 3,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_bsp_founder"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_np_aap",
+            "chk_ch4_np_bsp",
+            "chk_ch4_np_bjp",
+            "chk_ch4_np_cpim",
+            "chk_ch4_np_inc",
+            "chk_ch4_np_npp"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_six_national"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t3_c3",
+      "topicId": "ncert_civ_10_ch4_t3",
+      "topicTitle": "National and State parties",
+      "label": "State Parties",
+      "headingType": "subheading",
+      "sourcePages": [
+        55
+      ],
+      "conceptHash": "c6ac6bf3b2cece43aa00c17a4c9287c941263841cbcb9c7adbd045be3b3f4819",
+      "cardText": "Most of the major parties are classified as 'State parties', commonly called regional parties. They need not be regional in ideology: some, like the Samajwadi Party and Rashtriya Janata Dal, have national-level organisations, while others, like the Biju Janata Dal, Sikkim Democratic Front and Mizo National Front, are conscious about their State identity. Their number and strength have grown, making Parliament more diverse. No national party won a Lok Sabha majority on its own until 2014, so national parties formed alliances with State parties. This has strengthened federalism and democracy.",
+      "hint": "Are 'regional' parties always regional in outlook? Why did national parties need them after 1996?",
+      "probe": "How has the rise of State parties strengthened federalism and democracy in India?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain State Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are State parties, and are they always regional in their ideas?",
+          "requiredEvidence": [
+            "State parties",
+            "regional parties",
+            "need not be regional",
+            "Samajwadi Party",
+            "Biju Janata Dal"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_state_parties",
+              "criterion": "Explains that most major parties are State (regional) parties, which need not be regional in ideology or outlook.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are State parties, and are they always regional in their ideas?"
+            },
+            {
+              "id": "chk_ch4_state_party_examples",
+              "criterion": "Gives examples such as the Samajwadi Party or Rashtriya Janata Dal (national organisation) or the Biju Janata Dal or Mizo National Front (State identity).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are State parties, and are they always regional in their ideas?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_regional_outlook"
+          ]
+        },
+        {
+          "id": "ch4_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How has the growth of State parties changed the Parliament and the way governments are formed?",
+          "requiredEvidence": [
+            "more and more diverse",
+            "majority in the Lok Sabha",
+            "until 2014",
+            "alliances with State parties",
+            "Since 1996"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_no_majority_alliances",
+              "criterion": "Explains that since no national party could win a Lok Sabha majority on its own (until 2014), national parties had to form alliances with State parties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How has the growth of State parties changed the Parliament and the way governments are formed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What effect has the rise of State parties had on Indian democracy?",
+          "requiredEvidence": [
+            "strengthening of federalism and democracy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_strengthened_federalism",
+              "criterion": "States that the role of State parties in national coalitions has strengthened federalism and democracy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What effect has the rise of State parties had on Indian democracy?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_state_parties_to_federalism",
+          "linksChecks": [
+            "chk_ch4_no_majority_alliances",
+            "chk_ch4_strengthened_federalism"
+          ],
+          "criterion": "Connects national parties needing alliances with State parties to the strengthening of federalism and democracy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_regional_outlook",
+          "wrong": "State parties only care about their own region.",
+          "fix": "State parties need not be regional in their ideology or outlook; some are all-India parties that happen to have succeeded only in some states.",
+          "checkId": "mchk_misc_ch4_regional_outlook",
+          "checkCriterion": "The answer states or implies this wrong idea: State parties only care about their own region.",
+          "fixCheckId": "mfix_misc_ch4_regional_outlook",
+          "fixCheckCriterion": "Answer 2 states the correct idea: State parties need not be regional in their ideology or outlook; some are all-India parties that happen to have succeeded only in some states.",
+          "keyPointIds": [
+            "ch4_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_regional_outlook"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_state_parties",
+            "chk_ch4_state_party_examples",
+            "chk_ch4_no_majority_alliances",
+            "chk_ch4_strengthened_federalism"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ch4_state_parties_to_federalism"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t4_c1",
+      "topicId": "ncert_civ_10_ch4_t4",
+      "topicTitle": "Challenges to political parties",
+      "label": "Four Challenges to Political Parties",
+      "headingType": "heading",
+      "sourcePages": [
+        57,
+        58
+      ],
+      "conceptHash": "e76a435f75c6ca12ed9d155054791b4f14cf9589f3ab07e212444c940ccdaf57",
+      "cardText": "Popular dissatisfaction with parties focuses on four problem areas. First, lack of internal democracy: power is concentrated in one or few leaders, and parties keep no membership registers and hold no regular internal elections. Second, dynastic succession: top positions are controlled by one family, which is unfair to other members and bad for democracy. Third, the growing role of money and muscle power, especially during elections. Fourth, parties often do not offer a meaningful choice, as ideological differences between them have declined.",
+      "hint": "Think of four problems: internal democracy, family control, money and muscle, and choice.",
+      "probe": "What are the various challenges faced by political parties?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Four Challenges to Political Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the first challenge parties face in how they are run inside?",
+          "requiredEvidence": [
+            "internal democracy",
+            "concentration of power",
+            "membership registers",
+            "internal elections"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_internal_democracy",
+              "criterion": "Names lack of internal democracy as a challenge: power concentrated in one or few leaders, no membership registers, meetings or regular internal elections.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the first challenge parties face in how they are run inside?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do top positions in many parties get passed on, and why is that a problem?",
+          "requiredEvidence": [
+            "dynastic succession",
+            "one family",
+            "unfair",
+            "bad for democracy"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_dynastic",
+              "criterion": "Names dynastic succession as a challenge: top positions controlled by members of one family, unfair to other members and bad for democracy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do top positions in many parties get passed on, and why is that a problem?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What role do money and force play in parties, especially at election time?",
+          "requiredEvidence": [
+            "money and muscle power",
+            "raise lots of money",
+            "companies",
+            "criminals"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_money_muscle",
+              "criterion": "Names the growing role of money and muscle power as a challenge: rich candidates, influence of funders, or support for criminals who can win.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What role do money and force play in parties, especially at election time?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do voters sometimes feel that parties offer them no real choice?",
+          "requiredEvidence": [
+            "meaningful choice",
+            "ideological differences",
+            "Labour Party and the Conservative Party",
+            "shifting from one party to another"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_no_choice",
+              "criterion": "Names lack of meaningful choice as a challenge: ideological differences among parties have declined, or the same leaders keep shifting between parties.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do voters sometimes feel that parties offer them no real choice?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_internal_to_dynastic",
+          "linksChecks": [
+            "chk_ch4_internal_democracy",
+            "chk_ch4_dynastic"
+          ],
+          "criterion": "Connects the lack of open and transparent procedures inside parties to dynastic succession, since leaders can favour people close to them.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_internal_democracy",
+            "chk_ch4_dynastic",
+            "chk_ch4_money_muscle",
+            "chk_ch4_no_choice"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ch4_internal_to_dynastic"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t4_c2",
+      "topicId": "ncert_civ_10_ch4_t4",
+      "topicTitle": "Challenges to political parties",
+      "label": "Recent Efforts to Reform Parties",
+      "headingType": "subheading",
+      "sourcePages": [
+        59,
+        60
+      ],
+      "conceptHash": "4524c942d527942efa3da548ca4f2a22da12e423f848e7ff9855d065fcea5729",
+      "cardText": "Three recent efforts: the Constitution was amended so that an MLA or MP who changes parties loses the seat, which brought defection down but made dissent harder; a Supreme Court order made it mandatory for candidates to file an affidavit giving details of property and pending criminal cases, though there is no system to check it; and an Election Commission order requires parties to hold organisational elections and file income tax returns, though sometimes it is a mere formality.",
+      "hint": "Think of the anti-defection amendment, the Supreme Court's affidavit order, and the Election Commission's order.",
+      "probe": "What efforts have been made in India to reform political parties, and what are their limits?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Recent Efforts to Reform Parties, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What change was made to stop MLAs and MPs from switching parties, and what was its side effect?",
+          "requiredEvidence": [
+            "Constitution was amended",
+            "changing parties",
+            "lose the seat",
+            "defection down",
+            "dissent"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_anti_defection",
+              "criterion": "Explains the anti-defection amendment: an MLA or MP who changes parties loses the seat in the legislature.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What change was made to stop MLAs and MPs from switching parties, and what was its side effect?"
+            },
+            {
+              "id": "chk_ch4_anti_defection_effect",
+              "criterion": "Mentions that the law brought defection down but made dissent more difficult.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What change was made to stop MLAs and MPs from switching parties, and what was its side effect?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What must every candidate now tell voters before an election, and why?",
+          "requiredEvidence": [
+            "Supreme Court",
+            "affidavit",
+            "property",
+            "criminal cases"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_affidavit",
+              "criterion": "Explains the Supreme Court order requiring candidates to file an affidavit giving details of property and pending criminal cases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What must every candidate now tell voters before an election, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Election Commission",
+            "organisational elections",
+            "income tax returns"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_ec_order",
+              "criterion": "Mentions the Election Commission order requiring parties to hold organisational elections and file income tax returns.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Think of the anti-defection amendment, the Supreme Court's affidavit order, and the Election Commission's order."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_defection_to_amendment",
+          "linksChecks": [
+            "chk_ch4_anti_defection",
+            "chk_ch4_anti_defection_effect"
+          ],
+          "criterion": "Connects the anti-defection amendment (an MLA or MP who changes parties loses the seat) to defection coming down but dissent becoming more difficult.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_anti_defection",
+            "chk_ch4_anti_defection_effect",
+            "chk_ch4_affidavit"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_ec_order",
+            "lnk_ch4_defection_to_amendment"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "civ10_ch4_t4_c3",
+      "topicId": "ncert_civ_10_ch4_t4",
+      "topicTitle": "Challenges to political parties",
+      "label": "Suggested Reforms and the Role of Citizens",
+      "headingType": "subheading",
+      "sourcePages": [
+        60,
+        61
+      ],
+      "conceptHash": "aba75ad0eed7f886f62f42a8ccea6570a091aa09a1eec099ff1a6465cbb0ca5e",
+      "cardText": "Suggested reforms include a law to regulate parties' internal affairs (membership registers, an independent authority for disputes, open elections to top posts); giving about one-third of tickets to women; and state funding of elections. But we must be careful about legal solutions: over-regulation can be counter-productive, and parties will not pass laws they do not like. Parties can also be reformed through people's pressure, by petitions, publicity and agitations, and by citizens who want reform joining parties. The problem of bad politics can be solved by more and better politics.",
+      "hint": "Besides new laws, what can ordinary citizens do to reform parties?",
+      "probe": "Suggest some reforms to strengthen political parties. Why are laws alone not enough?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Suggested Reforms and the Role of Citizens, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ch4_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": "Suggest some changes in the law that could improve how political parties work.",
+          "requiredEvidence": [
+            "regulate the internal affairs",
+            "one-third",
+            "women candidates",
+            "state funding of elections"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_internal_affairs_law",
+              "criterion": "Suggests a law to regulate parties' internal affairs, such as membership registers, an independent authority for disputes or open elections to top posts.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Suggest some changes in the law that could improve how political parties work."
+            },
+            {
+              "id": "chk_ch4_women_tickets",
+              "criterion": "Suggests giving about one-third of tickets to women candidates, or a quota for women in parties' decision-making bodies.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Suggest some changes in the law that could improve how political parties work."
+            },
+            {
+              "id": "chk_ch4_state_funding",
+              "criterion": "Suggests state funding of elections, in kind (petrol, paper, telephone) or in cash based on votes.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Suggest some changes in the law that could improve how political parties work."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ch4_t4c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "legal solutions",
+            "Over-regulation",
+            "counter-productive",
+            "cheat the law"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_legal_limits",
+              "criterion": "Explains the limits of legal solutions: over-regulation can be counter-productive and parties will not pass laws they do not like.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Besides new laws, what can ordinary citizens do to reform parties?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ch4_laws_enough"
+          ]
+        },
+        {
+          "id": "ch4_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 1
+          },
+          "followUp": "Apart from laws, how can ordinary citizens push parties to improve?",
+          "requiredEvidence": [
+            "petitions, publicity and agitations",
+            "join political parties",
+            "public participation",
+            "more and better politics"
+          ],
+          "checks": [
+            {
+              "id": "chk_ch4_public_pressure",
+              "criterion": "Explains that people can pressure parties through petitions, publicity and agitations (citizens, pressure groups, movements and the media).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Apart from laws, how can ordinary citizens push parties to improve?"
+            },
+            {
+              "id": "chk_ch4_join_parties",
+              "criterion": "Explains that parties can improve if those who want reform join them; the problem of bad politics can be solved by more and better politics.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Apart from laws, how can ordinary citizens push parties to improve?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ch4_pressure_to_reform",
+          "linksChecks": [
+            "chk_ch4_public_pressure",
+            "chk_ch4_legal_limits"
+          ],
+          "criterion": "Explains that because legal solutions have limits, people's pressure and participation are needed to make parties reform.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ch4_laws_enough",
+          "wrong": "Passing strict laws is enough to reform political parties.",
+          "fix": "Over-regulation can be counter-productive and parties will not pass laws they do not like. People's pressure and participation are also needed.",
+          "checkId": "mchk_misc_ch4_laws_enough",
+          "checkCriterion": "The answer states or implies this wrong idea: Passing strict laws is enough to reform political parties.",
+          "fixCheckId": "mfix_misc_ch4_laws_enough",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Over-regulation can be counter-productive and parties will not pass laws they do not like. People's pressure and participation are also needed.",
+          "keyPointIds": [
+            "ch4_t4c3_kp2"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ch4_laws_enough"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ch4_internal_affairs_law",
+            "chk_ch4_women_tickets",
+            "chk_ch4_state_funding",
+            "chk_ch4_public_pressure",
+            "chk_ch4_join_parties"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ch4_legal_limits",
+            "lnk_ch4_pressure_to_reform"
+          ]
+        ]
+      }
+    }
+  ]
+}

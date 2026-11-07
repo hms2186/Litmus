@@ -1,0 +1,2792 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Geography",
+  "book": "Contemporary India II",
+  "chapterNumber": 4,
+  "chapterName": "Agriculture",
+  "sourceStatus": "Built from the NCERT PDF jess104 (Reprint 2026-27). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Contemporary India II (Class 10), Reprint 2026-27, chapter pp. 30-41",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. Exercise questions (p. 40) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_geo4_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_geo4_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example subsistence farming, slash and burn, jhumming, intensive subsistence farming, commercial farming, plantation, cropping pattern, rabi.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "subsistence farming",
+    "slash and burn",
+    "jhumming",
+    "intensive subsistence farming",
+    "commercial farming",
+    "plantation",
+    "cropping pattern",
+    "rabi",
+    "kharif",
+    "zaid",
+    "HYV seeds",
+    "millets",
+    "pulses",
+    "leguminous crops",
+    "horticulture",
+    "sericulture",
+    "land reform",
+    "consolidation of holdings",
+    "Green Revolution",
+    "White Revolution",
+    "minimum support price",
+    "Kisan Credit Card",
+    "Bhoodan",
+    "Gramdan"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_geo_10_ch4_t1",
+      "title": "Types of farming",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch4_t1_c1",
+          "label": "Agriculture in India",
+          "headingType": "heading",
+          "sourcePages": [30],
+          "cardText": "India is an agriculturally important country. Two-thirds of its population is engaged in agricultural activities. Agriculture is a primary activity, which produces most of the food that we consume. Besides food grains, it also produces raw material for various industries, and some agricultural products like tea, coffee and spices are exported.",
+          "hint": "How much of India's population depends on agriculture, and what does it supply besides food?",
+          "probe": "Why is agriculture important for India?",
+          "causeChain": "Two-thirds of the population works in agriculture -> it produces most of our food and raw material for industries -> some products are exported",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Two-thirds of its population is engaged in agricultural activities. Agriculture is a primary activity, which produces most of the food that we consume.",
+              "followUp": "What share of India's people depend on agriculture, and what kind of activity is it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "two-thirds",
+                  "primary activity",
+                  "food"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_two_thirds",
+                    "criterion": "States that about two-thirds of India's population is engaged in agricultural activities.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_primary_food",
+                    "criterion": "States that agriculture is a primary activity that produces most of the food we consume.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Besides food grains, it also produces raw material for various industries. Some agricultural products like tea, coffee, spices, etc. are also exported.",
+              "assessment": {
+                "requiredEvidence": [
+                  "raw material",
+                  "industries",
+                  "exported"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_raw_material",
+                    "criterion": "Mentions that agriculture supplies raw material for various industries.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_exports",
+                    "criterion": "Mentions that products like tea, coffee and spices are exported.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 30, "quote": "Two-thirds of its population is engaged in agricultural activities.", "supports": ["geo4_t1c1_kp1"] },
+            { "page": 30, "quote": "Agriculture is a primary activity, which produces most of the food that we consume.", "supports": ["geo4_t1c1_kp1"] },
+            { "page": 30, "quote": "it also produces raw material for various industries", "supports": ["geo4_t1c1_kp2"] },
+            { "page": 30, "quote": "some agricultural products like tea, coffee, spices, etc. are also exported", "supports": ["geo4_t1c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t1_c2",
+          "label": "Farming Systems in India",
+          "headingType": "heading",
+          "sourcePages": [30],
+          "cardText": "Agriculture is an age-old economic activity in our country. Over the years cultivation methods have changed significantly depending upon the characteristics of the physical environment, technological know-how and socio-cultural practices. Farming varies from subsistence to commercial type.",
+          "hint": "What three things have changed cultivation methods, and between which two types does farming vary?",
+          "probe": "What are the different farming systems in India, and why do cultivation methods differ?",
+          "causeChain": "Physical environment, technology and socio-cultural practices differ -> cultivation methods have changed -> farming varies from subsistence to commercial",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Over these years, cultivation methods have changed significantly depending upon the characteristics of physical environment, technological know-how and socio-cultural practices. Farming varies from subsistence to commercial type.",
+              "followUp": "What has changed the way farming is done in India, and what is the range of farming from one end to the other?",
+              "assessment": {
+                "requiredEvidence": [
+                  "physical environment",
+                  "technological know-how",
+                  "socio-cultural practices",
+                  "subsistence to commercial"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_methods_depend",
+                    "criterion": "Explains that cultivation methods depend on the physical environment, technological know-how and socio-cultural practices.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_sub_to_comm",
+                    "criterion": "States that farming varies from subsistence to commercial type.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 30, "quote": "depending upon the characteristics of physical environment, technological know-how and socio-cultural practices", "supports": ["geo4_t1c2_kp1"] },
+            { "page": 30, "quote": "Farming varies from subsistence to commercial type.", "supports": ["geo4_t1c2_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t1_c3",
+          "label": "Primitive Subsistence Farming",
+          "headingType": "heading",
+          "sourcePages": [30],
+          "cardText": "Primitive subsistence agriculture is practised on small patches of land with primitive tools like hoe, dao and digging sticks, and family or community labour. It depends upon monsoon and the natural fertility of the soil. It is 'slash and burn' agriculture: farmers clear a patch, grow food crops, and when the soil fertility decreases they shift to a fresh patch, which lets nature replenish the soil. Productivity is low because no fertilisers or modern inputs are used. It is called jhumming in the north-eastern states.",
+          "hint": "Why do the farmers shift to a fresh patch, and what happens to the old one?",
+          "probe": "What is primitive subsistence farming? Why do farmers keep shifting their fields?",
+          "causeChain": "Farmers clear and burn a patch and grow crops -> soil fertility decreases -> they shift to a fresh patch -> nature replenishes the old soil; no fertilisers means low productivity",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_shift_replenish",
+              "linksChecks": [
+                "chk_geo4_shift",
+                "chk_geo4_replenish"
+              ],
+              "criterion": "Connects falling soil fertility to farmers shifting to a fresh patch, which lets nature replenish the soil.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Primitive subsistence agriculture is practised on small patches of land with the help of primitive tools like hoe, dao and digging sticks, and family/community labour. This type of farming depends upon monsoon, natural fertility of the soil and suitability of other environmental conditions to the crops grown.",
+              "followUp": "On what kind of land, with what kind of tools and labour, is this type of farming practised, and what does it depend on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "small patches",
+                  "primitive tools",
+                  "hoe, dao and digging sticks",
+                  "monsoon",
+                  "natural fertility"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_prim_features",
+                    "criterion": "Describes primitive subsistence farming: small patches of land, primitive tools like hoe, dao and digging sticks, and family or community labour.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_prim_depends",
+                    "criterion": "States that it depends on the monsoon and the natural fertility of the soil.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "It is a 'slash and burn' agriculture. Farmers clear a patch of land and produce cereals and other food crops to sustain their family. When the soil fertility decreases, the farmers shift and clear a fresh patch of land for cultivation. This type of shifting allows Nature to replenish the fertility of the soil through natural processes; land productivity in this type of agriculture is low as the farmer does not use fertilisers or other modern inputs.",
+              "followUp": "What do farmers do when a cleared plot stops giving good crops, why does this work, and why are yields low?",
+              "assessment": {
+                "requiredEvidence": [
+                  "slash and burn",
+                  "soil fertility decreases",
+                  "fresh patch",
+                  "replenish",
+                  "does not use fertilisers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_slash_burn",
+                    "criterion": "Names the system as 'slash and burn' agriculture, in which farmers clear a patch of land to grow food crops for their family.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_shift",
+                    "criterion": "Explains that when the soil fertility decreases, the farmers shift to a fresh patch of land.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_replenish",
+                    "criterion": "Explains that shifting allows nature to replenish the fertility of the soil through natural processes.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_low_productivity",
+                    "criterion": "States that productivity is low because the farmer does not use fertilisers or other modern inputs.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_uses_fertiliser"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t1c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "It is jhumming in north-eastern states like Assam, Meghalaya, Mizoram and Nagaland; Pamlou in Manipur, Dipa in Bastar district of Chhattishgarh. The 'slash and burn' agriculture is known as 'Milpa' in Mexico and Central America.",
+              "assessment": {
+                "requiredEvidence": [
+                  "jhumming",
+                  "Assam, Meghalaya, Mizoram and Nagaland",
+                  "Pamlou",
+                  "Dipa",
+                  "Milpa"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_jhum_names",
+                    "criterion": "Mentions that it is called jhumming in north-eastern states like Assam, Meghalaya, Mizoram and Nagaland, or gives another local name such as Pamlou in Manipur or Dipa in Bastar.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  },
+                  {
+                    "id": "chk_geo4_milpa",
+                    "criterion": "Mentions that it is known as 'Milpa' in Mexico and Central America.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Jhumming in the north-eastern states"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_uses_fertiliser",
+              "wrong": "Primitive subsistence farmers use fertilisers and modern inputs, so their productivity is high.",
+              "fix": "Land productivity in this type of agriculture is low as the farmer does not use fertilisers or other modern inputs."
+            }
+          ],
+          "verify": [
+            { "page": 30, "quote": "primitive tools like hoe, dao and digging sticks", "supports": ["geo4_t1c3_kp1"] },
+            { "page": 30, "quote": "depends upon monsoon, natural fertility of the soil and suitability of other environmental conditions to the crops grown", "supports": ["geo4_t1c3_kp1"] },
+            { "page": 30, "quote": "It is a 'slash and burn' agriculture.", "supports": ["geo4_t1c3_kp2"] },
+            { "page": 30, "quote": "When the soil fertility decreases, the farmers shift and clear a fresh patch of land for cultivation.", "supports": ["geo4_t1c3_kp2"] },
+            { "page": 30, "quote": "This type of shifting allows Nature to replenish the fertility of the soil through natural processes", "supports": ["geo4_t1c3_kp2"] },
+            { "page": 30, "quote": "land productivity in this type of agriculture is low as the farmer does not use fertilisers or other modern inputs", "supports": ["geo4_t1c3_kp2"] },
+            { "page": 30, "quote": "It is jhumming in north-eastern states like Assam, Meghalaya, Mizoram and Nagaland", "supports": ["geo4_t1c3_kp3"] },
+            { "page": 30, "quote": "known as 'Milpa' in Mexico and Central America", "supports": ["geo4_t1c3_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t1_c4",
+          "label": "Intensive Subsistence Farming",
+          "headingType": "heading",
+          "sourcePages": [31],
+          "cardText": "Intensive subsistence farming is practised in areas of high population pressure on land. It is labour-intensive farming, where high doses of biochemical inputs and irrigation are used for obtaining higher production. The right of inheritance divides land among successive generations and has made land-holding size uneconomical, yet farmers continue to take maximum output from the limited land in the absence of an alternative source of livelihood, so there is enormous pressure on agricultural land.",
+          "hint": "Why do farmers with very small holdings still try to take the maximum output from the land?",
+          "probe": "What is intensive subsistence farming, and why is there so much pressure on agricultural land?",
+          "causeChain": "Right of inheritance divides land among generations -> holdings become uneconomical -> no alternative livelihood -> farmers take maximum output with heavy inputs -> enormous pressure on land",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_inheritance_pressure",
+              "linksChecks": [
+                "chk_geo4_inheritance",
+                "chk_geo4_pressure"
+              ],
+              "criterion": "Connects the right of inheritance dividing land among generations to uneconomical holdings and enormous pressure on agricultural land.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "This type of farming is practised in areas of high population pressure on land. It is labour-intensive farming, where high doses of biochemical inputs and irrigation are used for obtaining higher production.",
+              "followUp": "Where is this type of farming practised, and what does it rely on to get more from the land?",
+              "assessment": {
+                "requiredEvidence": [
+                  "high population pressure",
+                  "labour-intensive",
+                  "biochemical inputs",
+                  "irrigation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_intensive_def",
+                    "criterion": "Describes intensive subsistence farming as labour-intensive farming in areas of high population pressure on land.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_intensive_inputs",
+                    "criterion": "States that high doses of biochemical inputs and irrigation are used to get higher production.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Though the 'right of inheritance' leading to the division of land among successive generations has rendered land-holding size uneconomical, the farmers continue to take maximum output from the limited land in the absence of alternative source of livelihood. Thus, there is enormous pressure on agricultural land.",
+              "followUp": "Why are land-holdings so small here, and why do farmers still try to take as much as they can from them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "right of inheritance",
+                  "division of land",
+                  "uneconomical",
+                  "alternative source of livelihood",
+                  "enormous pressure"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_inheritance",
+                    "criterion": "Explains that the right of inheritance divides land among successive generations and makes land-holdings uneconomical.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_max_output",
+                    "criterion": "States that farmers keep taking maximum output from the limited land because they have no alternative source of livelihood.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_pressure",
+                    "criterion": "Concludes that there is enormous pressure on agricultural land.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_large_holdings"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_large_holdings",
+              "wrong": "Intensive subsistence farmers have large land-holdings.",
+              "fix": "The right of inheritance has divided land among successive generations and rendered land-holding size uneconomical."
+            }
+          ],
+          "verify": [
+            { "page": 31, "quote": "This type of farming is practised in areas of high population pressure on land.", "supports": ["geo4_t1c4_kp1"] },
+            { "page": 31, "quote": "high doses of biochemical inputs and irrigation are used for obtaining higher production", "supports": ["geo4_t1c4_kp1"] },
+            { "page": 31, "quote": "'right of inheritance' leading to the division of land among successive generations has rendered land-holding size uneconomical", "supports": ["geo4_t1c4_kp2"] },
+            { "page": 31, "quote": "the farmers continue to take maximum output from the limited land in the absence of alternative source of livelihood", "supports": ["geo4_t1c4_kp2"] },
+            { "page": 31, "quote": "there is enormous pressure on agricultural land", "supports": ["geo4_t1c4_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t1_c5",
+          "label": "Commercial Farming",
+          "headingType": "heading",
+          "sourcePages": [31],
+          "cardText": "The main characteristic of commercial farming is the use of higher doses of modern inputs, such as high yielding variety (HYV) seeds, chemical fertilisers, insecticides and pesticides, in order to obtain higher productivity. The degree of commercialisation of agriculture varies from one region to another. For example, rice is a commercial crop in Haryana and Punjab, but in Odisha it is a subsistence crop.",
+          "hint": "Which modern inputs mark commercial farming, and how can the same crop be commercial in one place and subsistence in another?",
+          "probe": "What is commercial farming? Why can one crop be commercial in one region and subsistence in another?",
+          "causeChain": "Modern inputs (HYV seeds, fertilisers, pesticides) -> higher productivity -> degree of commercialisation varies by region -> rice commercial in Punjab and Haryana, subsistence in Odisha",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c5_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The main characteristic of this type of farming is the use of higher doses of modern inputs, e.g. high yielding variety (HYV) seeds, chemical fertilisers, insecticides and pesticides in order to obtain higher productivity.",
+              "followUp": "What is the main feature of this type of farming, and what is it meant to achieve?",
+              "assessment": {
+                "requiredEvidence": [
+                  "higher doses of modern inputs",
+                  "HYV seeds",
+                  "chemical fertilisers",
+                  "insecticides and pesticides",
+                  "higher productivity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_comm_inputs",
+                    "criterion": "States that commercial farming uses higher doses of modern inputs such as HYV seeds, chemical fertilisers, insecticides and pesticides to get higher productivity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c5_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The degree of commercialisation of agriculture varies from one region to another. For example, rice is a commercial crop in Haryana and Punjab, but in Odisha, it is a subsistence crop.",
+              "followUp": "Is a crop's commercial character the same everywhere? Give an example of a crop that differs between regions.",
+              "assessment": {
+                "requiredEvidence": [
+                  "degree of commercialisation",
+                  "varies from one region to another",
+                  "rice",
+                  "Haryana and Punjab",
+                  "Odisha"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_degree_varies",
+                    "criterion": "States that the degree of commercialisation of agriculture varies from one region to another.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rice_example",
+                    "criterion": "Gives the example that rice is a commercial crop in Haryana and Punjab but a subsistence crop in Odisha.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_fixed_type"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_fixed_type",
+              "wrong": "A crop is either always commercial or always subsistence, wherever it is grown.",
+              "fix": "The degree of commercialisation of agriculture varies from one region to another: rice is a commercial crop in Haryana and Punjab but a subsistence crop in Odisha."
+            }
+          ],
+          "verify": [
+            { "page": 31, "quote": "use of higher doses of modern inputs", "supports": ["geo4_t1c5_kp1"] },
+            { "page": 31, "quote": "high yielding variety (HYV) seeds, chemical fertilisers, insecticides and pesticides in order to obtain higher productivity", "supports": ["geo4_t1c5_kp1"] },
+            { "page": 31, "quote": "The degree of commercialisation of agriculture varies from one region to another.", "supports": ["geo4_t1c5_kp2"] },
+            { "page": 31, "quote": "rice is a commercial crop in Haryana and Punjab, but in Odisha, it is a subsistence crop", "supports": ["geo4_t1c5_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t1_c6",
+          "label": "Plantation Agriculture",
+          "headingType": "heading",
+          "sourcePages": [31],
+          "cardText": "Plantation is also a type of commercial farming. A single crop is grown on a large area. The plantation has an interface of agriculture and industry. Plantations cover large tracts of land, using capital intensive inputs, with the help of migrant labourers, and all the produce is used as raw material in the respective industries. Tea, coffee, rubber, sugarcane and banana are important plantation crops. Since production is mainly for the market, a well-developed network of transport and communication connecting the plantation areas, processing industries and markets plays an important role.",
+          "hint": "What links a plantation to industry, and why does it need good transport and communication?",
+          "probe": "What is plantation agriculture, and what does it need to develop?",
+          "causeChain": "A single crop on a large area with capital and migrant labour -> all produce goes to industries as raw material -> production is for the market -> transport and communication links to industries and markets are essential",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_market_transport",
+              "linksChecks": [
+                "chk_geo4_plant_market",
+                "chk_geo4_plant_transport"
+              ],
+              "criterion": "Connects plantation production being mainly for the market to the importance of a well-developed network of transport and communication.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t1c6_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Plantation is also a type of commercial farming. In this type of farming, a single crop is grown on a large area. The plantation has an interface of agriculture and industry. Plantations cover large tracts of land, using capital intensive inputs, with the help of migrant labourers. All the produce is used as raw material in respective industries.",
+              "followUp": "How many crops are grown in a plantation, on how much land, and how are plantations linked to industry?",
+              "assessment": {
+                "requiredEvidence": [
+                  "commercial farming",
+                  "single crop",
+                  "large area",
+                  "interface of agriculture and industry",
+                  "capital intensive",
+                  "migrant labourers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_plant_def",
+                    "criterion": "States that in plantation farming a single crop is grown on a large area.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_plant_features",
+                    "criterion": "Mentions that plantations use capital intensive inputs and migrant labourers, and that all the produce is used as raw material by industries.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_plant_interface",
+                    "criterion": "States that the plantation is an interface of agriculture and industry.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c6_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In India, tea, coffee, rubber, sugarcane, banana, etc., are important plantation crops. Tea in Assam and North Bengal, coffee in Karnataka are some of the important plantation crops grown in these states.",
+              "assessment": {
+                "requiredEvidence": [
+                  "tea",
+                  "coffee",
+                  "rubber",
+                  "sugarcane",
+                  "banana",
+                  "Assam",
+                  "Karnataka"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_plant_crops",
+                    "criterion": "Names important plantation crops such as tea, coffee, rubber, sugarcane or banana.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_plant_regions",
+                    "criterion": "Mentions that tea is grown in Assam and North Bengal and coffee in Karnataka.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t1c6_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Since the production is mainly for market, a well-developed network of transport and communication connecting the plantation areas, processing industries and markets plays an important role in the development of plantations.",
+              "assessment": {
+                "requiredEvidence": [
+                  "mainly for market",
+                  "network of transport and communication",
+                  "processing industries"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_plant_market",
+                    "criterion": "States that plantation production is mainly for the market.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_plant_transport",
+                    "criterion": "States that a well-developed network of transport and communication connecting plantation areas, processing industries and markets matters for plantations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: plantation agriculture is the system in which a single crop is grown on a large area"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 31, "quote": "In this type of farming, a single crop is grown on a large area.", "supports": ["geo4_t1c6_kp1"] },
+            { "page": 31, "quote": "The plantation has an interface of agriculture and industry.", "supports": ["geo4_t1c6_kp1"] },
+            { "page": 31, "quote": "Plantations cover large tracts of land, using capital intensive inputs, with the help of migrant labourers.", "supports": ["geo4_t1c6_kp1"] },
+            { "page": 31, "quote": "All the produce is used as raw material in respective industries.", "supports": ["geo4_t1c6_kp1"] },
+            { "page": 31, "quote": "In India, tea, coffee, rubber, sugarcane, banana, etc., are important plantation crops.", "supports": ["geo4_t1c6_kp2"] },
+            { "page": 31, "quote": "Tea in Assam and North Bengal coffee in Karnataka are some of the important plantation crops grown in these states.", "supports": ["geo4_t1c6_kp2"] },
+            { "page": 31, "quote": "a well-developed network of transport and communication connecting the plantation areas, processing industries and markets", "supports": ["geo4_t1c6_kp3"] },
+            { "page": 40, "quote": "Which one of the following describes a system of agriculture where a single crop is grown on a large area?", "supports": ["geo4_t1c6_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch4_t2",
+      "title": "Cropping pattern",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch4_t2_c1",
+          "label": "Cropping Seasons: Rabi, Kharif and Zaid",
+          "headingType": "heading",
+          "sourcePages": [32],
+          "cardText": "India has three cropping seasons: rabi, kharif and zaid. Rabi crops are sown in winter from October to December and harvested in summer from April to June; wheat, barley, peas, gram and mustard are important rabi crops, helped by winter precipitation from western temperate cyclones. Kharif crops are grown with the onset of monsoon and harvested in September-October; paddy, maize, jowar, bajra, tur, moong, urad, cotton, jute, groundnut and soyabean are important. In between, a short summer season called zaid produces watermelon, muskmelon, cucumber, vegetables and fodder crops.",
+          "hint": "When is each season's crop sown and harvested, and what helps rabi crops in winter?",
+          "probe": "Name India's three cropping seasons and explain how they differ.",
+          "causeChain": "Winter precipitation from western temperate cyclones -> rabi crops (sown Oct-Dec, harvested Apr-Jun) succeed; monsoon onset -> kharif crops; short summer season -> zaid crops",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_winter_rain_rabi",
+              "linksChecks": [
+                "chk_geo4_rabi_rain",
+                "chk_geo4_rabi_season"
+              ],
+              "criterion": "Connects winter precipitation from western temperate cyclones to the success of rabi crops.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "India has three cropping seasons: rabi, kharif and zaid. Rabi crops are sown in winter from October to December and harvested in summer from April to June. Some of the important rabi crops are wheat, barley, peas, gram and mustard.",
+              "followUp": "When are rabi crops sown and harvested, and what are some examples?",
+              "assessment": {
+                "requiredEvidence": [
+                  "three cropping seasons",
+                  "rabi",
+                  "winter",
+                  "October to December",
+                  "April to June",
+                  "wheat"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_three_seasons",
+                    "criterion": "Names the three cropping seasons: rabi, kharif and zaid.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rabi_season",
+                    "criterion": "States that rabi crops are sown in winter and harvested in summer.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rabi_crops",
+                    "criterion": "Names important rabi crops such as wheat, barley, peas, gram or mustard.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_rabi_monsoon"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t2c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Availability of precipitation during winter months due to the western temperate cyclones helps in the success of these crops.",
+              "assessment": {
+                "requiredEvidence": [
+                  "precipitation during winter",
+                  "western temperate cyclones"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rabi_rain",
+                    "criterion": "States that winter precipitation from western temperate cyclones helps rabi crops succeed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Kharif crops are grown with the onset of monsoon in different parts of the country and these are harvested in September-October. Important crops grown during this season are paddy, maize, jowar, bajra, tur (arhar), moong, urad, cotton, jute, groundnut and soyabean.",
+              "followUp": "What triggers the sowing of kharif crops, and when are they harvested?",
+              "assessment": {
+                "requiredEvidence": [
+                  "kharif",
+                  "onset of monsoon",
+                  "September-October",
+                  "paddy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_kharif_season",
+                    "criterion": "States that kharif crops are grown with the onset of monsoon and harvested in September-October.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_kharif_crops",
+                    "criterion": "Names important kharif crops such as paddy, maize, jowar, bajra, cotton, jute or groundnut.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t2c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In between the rabi and the kharif seasons, there is a short season during the summer months known as the Zaid season. Some of the crops produced during 'zaid' are watermelon, muskmelon, cucumber, vegetables and fodder crops.",
+              "assessment": {
+                "requiredEvidence": [
+                  "short season",
+                  "summer months",
+                  "Zaid",
+                  "watermelon"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_zaid_season",
+                    "criterion": "States that zaid is a short season during the summer months between rabi and kharif.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_zaid_crops",
+                    "criterion": "Names zaid crops such as watermelon, muskmelon, cucumber, vegetables or fodder crops.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: gram is a rabi crop"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_rabi_monsoon",
+              "wrong": "Rabi crops are sown with the onset of the monsoon and harvested in September-October.",
+              "fix": "Rabi crops are sown in winter (October to December) and harvested in summer (April to June); it is kharif crops that are grown with the onset of monsoon."
+            }
+          ],
+          "verify": [
+            { "page": 32, "quote": "India has three cropping seasons - rabi, kharif and zaid.", "supports": ["geo4_t2c1_kp1"] },
+            { "page": 32, "quote": "Rabi crops are sown in winter from October to December and harvested in summer from April to June.", "supports": ["geo4_t2c1_kp1"] },
+            { "page": 32, "quote": "Some of the important rabi crops are wheat, barley, peas, gram and mustard.", "supports": ["geo4_t2c1_kp1"] },
+            { "page": 32, "quote": "Availability of precipitation during winter months due to the western temperate cyclones helps in the success of these crops.", "supports": ["geo4_t2c1_kp2"] },
+            { "page": 32, "quote": "Kharif crops are grown with the onset of monsoon in different parts of the country and these are harvested in September-October.", "supports": ["geo4_t2c1_kp3"] },
+            { "page": 32, "quote": "Important crops grown during this season are paddy, maize, jowar, bajra, tur (arhar), moong, urad, cotton, jute, groundnut and soyabean.", "supports": ["geo4_t2c1_kp3"] },
+            { "page": 32, "quote": "there is a short season during the summer months known as the Zaid season", "supports": ["geo4_t2c1_kp4"] },
+            { "page": 32, "quote": "watermelon, muskmelon, cucumber, vegetables and fodder crops", "supports": ["geo4_t2c1_kp4"] },
+            { "page": 40, "quote": "Which one of the following is a rabi crop?", "supports": ["geo4_t2c1_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch4_t3",
+      "title": "Major crops",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch4_t3_c1",
+          "label": "Rice",
+          "headingType": "heading",
+          "sourcePages": [32, 34],
+          "cardText": "Rice is the staple food crop of a majority of the people in India. India is the second largest producer of rice in the world after China. It is a kharif crop that requires high temperature (above 25 degrees C), high humidity and annual rainfall above 100 cm; where rainfall is less it grows with the help of irrigation. Rice is grown in the plains of north and north-eastern India, coastal areas and deltaic regions, and a dense network of canal irrigation and tubewells has made it possible to grow it in Punjab, Haryana, western Uttar Pradesh and parts of Rajasthan.",
+          "hint": "What conditions does rice need, and how is it grown where rainfall is low?",
+          "probe": "Describe the geographical conditions required for the growth of rice and where it is grown.",
+          "causeChain": "Rice needs high temperature, humidity and rainfall above 100 cm -> where rainfall is less, irrigation is used -> canals and tubewells let it grow in Punjab, Haryana and western Uttar Pradesh",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_irrigation_rice",
+              "linksChecks": [
+                "chk_geo4_rice_irrigation",
+                "chk_geo4_rice_regions"
+              ],
+              "criterion": "Connects canal irrigation and tubewells to rice being grown in areas of less rainfall such as Punjab and Haryana.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Rice is the staple food crop of a majority of the people in India. Our country is the second largest producer of rice in the world after China.",
+              "followUp": "How important is rice as food in India, and where does India stand among world producers?",
+              "assessment": {
+                "requiredEvidence": [
+                  "staple food crop",
+                  "second largest producer",
+                  "China"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rice_staple",
+                    "criterion": "States that rice is the staple food crop of a majority of Indians.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rice_second",
+                    "criterion": "Mentions that India is the second largest producer of rice in the world after China.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "It is a kharif crop which requires high temperature, (above 25°C) and high humidity with annual rainfall above 100 cm. In the areas of less rainfall, it grows with the help of irrigation.",
+              "followUp": "Which season is rice grown in, what temperature, moisture and rainfall does it need, and how is it grown where rain is short?",
+              "assessment": {
+                "requiredEvidence": [
+                  "kharif",
+                  "above 25",
+                  "high humidity",
+                  "above 100 cm",
+                  "irrigation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rice_conditions",
+                    "criterion": "States that rice is a kharif crop needing high temperature (above 25°C), high humidity and annual rainfall above 100 cm.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rice_irrigation",
+                    "criterion": "States that in areas of less rainfall rice grows with the help of irrigation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_rice_only_rain"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Rice is grown in the plains of north and north-eastern India, coastal areas and the deltaic regions. Development of dense network of canal irrigation and tubewells have made it possible to grow rice in areas of less rainfall such as Punjab, Haryana and western Uttar Pradesh and parts of Rajasthan.",
+              "assessment": {
+                "requiredEvidence": [
+                  "plains of north and north-eastern India",
+                  "coastal areas",
+                  "deltaic regions",
+                  "canal irrigation and tubewells",
+                  "Punjab"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rice_regions",
+                    "criterion": "Mentions where rice is grown: the plains of north and north-eastern India, coastal areas and deltaic regions.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  },
+                  {
+                    "id": "chk_geo4_rice_punjab",
+                    "criterion": "Mentions that canal irrigation and tubewells made rice possible in Punjab, Haryana, western Uttar Pradesh and parts of Rajasthan.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: rice is a staple crop of India",
+            "Exercise: describe the geographical conditions required for the growth of rice"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_rice_only_rain",
+              "wrong": "Rice can be grown only in areas of very high rainfall.",
+              "fix": "In areas of less rainfall rice grows with the help of irrigation; canal networks and tubewells have made it possible in Punjab, Haryana, western Uttar Pradesh and parts of Rajasthan."
+            }
+          ],
+          "verify": [
+            { "page": 32, "quote": "It is the staple food crop of a majority of the people in India.", "supports": ["geo4_t3c1_kp1"] },
+            { "page": 32, "quote": "Our country is the second largest producer of rice in the world after China.", "supports": ["geo4_t3c1_kp1"] },
+            { "page": 32, "quote": "It is a kharif crop which requires high temperature, (above 25°C) and high humidity with annual rainfall above 100 cm.", "supports": ["geo4_t3c1_kp2"] },
+            { "page": 32, "quote": "In the areas of less rainfall, it grows with the help of irrigation.", "supports": ["geo4_t3c1_kp2"] },
+            { "page": 34, "quote": "Rice is grown in the plains of north and north-eastern India, coastal areas and the deltaic regions.", "supports": ["geo4_t3c1_kp3"] },
+            { "page": 34, "quote": "Development of dense network of canal irrigation and tubewells have made it possible to grow rice in areas of less rainfall such as Punjab, Haryana and western Uttar Pradesh and parts of Rajasthan.", "supports": ["geo4_t3c1_kp3"] },
+            { "page": 40, "quote": "Describe the geographical conditions required for the growth of rice.", "supports": ["geo4_t3c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c2",
+          "label": "Wheat",
+          "headingType": "heading",
+          "sourcePages": [34],
+          "cardText": "Wheat is the second most important cereal crop and the main food crop in the north and north-western part of the country. This rabi crop requires a cool growing season and bright sunshine at the time of ripening, and 50 to 75 cm of annual rainfall evenly distributed over the growing season. There are two important wheat-growing zones: the Ganga-Satluj plains in the north-west and the black soil region of the Deccan.",
+          "hint": "What kind of season and rainfall does wheat need, and where are its two main zones?",
+          "probe": "Describe the conditions needed for wheat and where it is grown.",
+          "causeChain": "Wheat is a rabi crop -> it needs a cool growing season, bright sunshine at ripening and 50 to 75 cm of rain -> grown in the Ganga-Satluj plains and the Deccan black soil region",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Wheat: This is the second most important cereal crop. It is the main food crop, in north and north-western part of the country.",
+              "followUp": "Where does wheat rank among India's cereals, and in which part of the country is it the main food?",
+              "assessment": {
+                "requiredEvidence": [
+                  "second most important cereal",
+                  "north and north-western"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_wheat_importance",
+                    "criterion": "States that wheat is the second most important cereal crop and the main food crop of the north and north-west.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This rabi crop requires a cool growing season and a bright sunshine at the time of ripening. It requires 50 to 75 cm of annual rainfall evenly-distributed over the growing season.",
+              "followUp": "In which cropping season is wheat grown, and what weather and rainfall does it need?",
+              "assessment": {
+                "requiredEvidence": [
+                  "rabi crop",
+                  "cool growing season",
+                  "bright sunshine",
+                  "50 to 75 cm"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_wheat_conditions",
+                    "criterion": "States that wheat is a rabi crop needing a cool growing season and bright sunshine at ripening.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_wheat_rain",
+                    "criterion": "States that wheat needs 50 to 75 cm of annual rainfall evenly distributed over the growing season.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "There are two important wheat-growing zones in the country - the Ganga-Satluj plains in the north-west and black soil region of the Deccan.",
+              "assessment": {
+                "requiredEvidence": [
+                  "two important wheat-growing zones",
+                  "Ganga-Satluj plains",
+                  "black soil region of the Deccan"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_wheat_zones",
+                    "criterion": "Names the two wheat-growing zones: the Ganga-Satluj plains in the north-west and the black soil region of the Deccan.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 34, "quote": "Wheat: This is the second most important cereal crop.", "supports": ["geo4_t3c2_kp1"] },
+            { "page": 34, "quote": "It is the main food crop, in north and north-western part of the country.", "supports": ["geo4_t3c2_kp1"] },
+            { "page": 34, "quote": "This rabi crop requires a cool growing season and a bright sunshine at the time of ripening.", "supports": ["geo4_t3c2_kp2"] },
+            { "page": 34, "quote": "It requires 50 to 75 cm of annual rainfall evenly-distributed over the growing season.", "supports": ["geo4_t3c2_kp2"] },
+            { "page": 34, "quote": "There are two important wheat-growing zones in the country - the Ganga-Satluj plains in the north-west and black soil region of the Deccan.", "supports": ["geo4_t3c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c3",
+          "label": "Millets",
+          "headingType": "heading",
+          "sourcePages": [34],
+          "cardText": "Jowar, bajra and ragi are the important millets grown in India. Though known as coarse grains, they have very high nutritional value; ragi is very rich in iron, calcium, other micro nutrients and roughage. Jowar is the third most important food crop with respect to area and production, a rain-fed crop mostly grown in moist areas which hardly needs irrigation. Bajra grows well on sandy soils and shallow black soil. Ragi is a crop of dry regions and grows well on red, black, sandy, loamy and shallow black soils.",
+          "hint": "Why are the 'coarse grains' still valuable, and which soils suit bajra and ragi?",
+          "probe": "Name the important millets, and explain why they are valuable even though they are called coarse grains.",
+          "causeChain": "Jowar, bajra and ragi are millets -> called coarse grains but very high in nutrition (ragi: iron, calcium) -> grow in rain-fed, dry or sandy-soil regions with little irrigation",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Millets: Jowar, bajra and ragi are the important millets grown in India. Though, these are known as coarse grains, they have very high nutritional value. For example, ragi is very rich in iron, calcium, other micro nutrients and roughage.",
+              "followUp": "Which crops are the important millets, and why are they valuable despite their common label?",
+              "assessment": {
+                "requiredEvidence": [
+                  "jowar, bajra and ragi",
+                  "coarse grains",
+                  "very high nutritional value",
+                  "ragi",
+                  "iron, calcium"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_millet_names",
+                    "criterion": "Names the important millets: jowar, bajra and ragi.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_millet_nutrition",
+                    "criterion": "States that millets are called coarse grains but have very high nutritional value, for example ragi is rich in iron, calcium and roughage.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_coarse_poor"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t3c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Jowar is the third most important food crop with respect to area and production. It is a rain-fed crop mostly grown in the moist areas which hardly needs irrigation.",
+              "assessment": {
+                "requiredEvidence": [
+                  "third most important food crop",
+                  "rain-fed",
+                  "hardly needs irrigation"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_jowar_facts",
+                    "criterion": "States that jowar is the third most important food crop by area and production and is a rain-fed crop that hardly needs irrigation.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Bajra grows well on sandy soils and shallow black soil. Ragi is a crop of dry regions and grows well on red, black, sandy, loamy and shallow black soils.",
+              "assessment": {
+                "requiredEvidence": [
+                  "bajra",
+                  "sandy soils",
+                  "shallow black soil",
+                  "ragi",
+                  "dry regions"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_bajra_ragi_soil",
+                    "criterion": "Mentions that bajra grows well on sandy soils and shallow black soil, or that ragi is a crop of dry regions growing on red, black, sandy and loamy soils.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_coarse_poor",
+              "wrong": "Millets are called coarse grains because they have little nutritional value.",
+              "fix": "Though known as coarse grains, millets have very high nutritional value; ragi is very rich in iron, calcium, other micro nutrients and roughage."
+            }
+          ],
+          "verify": [
+            { "page": 34, "quote": "Millets: Jowar, bajra and ragi are the important millets grown in India.", "supports": ["geo4_t3c3_kp1"] },
+            { "page": 34, "quote": "Though, these are known as coarse grains, they have very high nutritional value.", "supports": ["geo4_t3c3_kp1"] },
+            { "page": 34, "quote": "ragi is very rich in iron, calcium, other micro nutrients and roughage", "supports": ["geo4_t3c3_kp1"] },
+            { "page": 34, "quote": "Jowar is the third most important food crop with respect to area and production.", "supports": ["geo4_t3c3_kp2"] },
+            { "page": 34, "quote": "It is a rain-fed crop mostly grown in the moist areas which hardly needs irrigation.", "supports": ["geo4_t3c3_kp2"] },
+            { "page": 34, "quote": "Bajra grows well on sandy soils and shallow black soil.", "supports": ["geo4_t3c3_kp3"] },
+            { "page": 34, "quote": "Ragi is a crop of dry regions and grows well on red, black, sandy, loamy and shallow black soils.", "supports": ["geo4_t3c3_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c4",
+          "label": "Maize",
+          "headingType": "heading",
+          "sourcePages": [34],
+          "cardText": "Maize is used both as food and fodder. It is a kharif crop which requires a temperature between 21 degrees C and 27 degrees C and grows well in old alluvial soil. In some states like Bihar it is grown in the rabi season also. The use of modern inputs such as HYV seeds, fertilisers and irrigation has contributed to the increasing production of maize.",
+          "hint": "Is maize only a food crop? What helped its production to increase?",
+          "probe": "Describe maize: its uses, conditions and what raised its production.",
+          "causeChain": "Maize is a kharif crop needing 21-27 degrees C and old alluvial soil -> HYV seeds, fertilisers and irrigation -> increasing production",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Maize: It is a crop which is used both as food and fodder. It is a kharif crop which requires temperature between 21°C to 27°C and grows well in old alluvial soil. In some states like Bihar maize is grown in rabi season also.",
+              "followUp": "What is maize used for, in which season is it mainly grown, and what temperature and soil suit it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "food and fodder",
+                  "kharif",
+                  "21°C to 27°C",
+                  "old alluvial soil"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_maize_use",
+                    "criterion": "States that maize is used both as food and fodder.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_maize_conditions",
+                    "criterion": "States that maize is a kharif crop needing a temperature of 21°C to 27°C and growing well in old alluvial soil.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c4_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Use of modern inputs such as HYV seeds, fertilisers and irrigation have contributed to the increasing production of maize.",
+              "assessment": {
+                "requiredEvidence": [
+                  "modern inputs",
+                  "HYV seeds",
+                  "fertilisers",
+                  "irrigation",
+                  "increasing production"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_maize_inputs",
+                    "criterion": "States that modern inputs such as HYV seeds, fertilisers and irrigation have increased maize production.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 34, "quote": "It is a crop which is used both as food and fodder.", "supports": ["geo4_t3c4_kp1"] },
+            { "page": 34, "quote": "It is a kharif crop which requires temperature between 21°C to 27°C and grows well in old alluvial soil.", "supports": ["geo4_t3c4_kp1"] },
+            { "page": 34, "quote": "Use of modern inputs such as HYV seeds, fertilisers and irrigation have contributed to the increasing production of maize.", "supports": ["geo4_t3c4_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c5",
+          "label": "Pulses",
+          "headingType": "heading",
+          "sourcePages": [36],
+          "cardText": "India is the largest producer as well as the consumer of pulses in the world. Pulses are the major source of protein in a vegetarian diet; tur (arhar), urad, moong, masur, peas and gram are the major ones. Pulses need less moisture and survive even in dry conditions. Being leguminous crops, all of them except arhar help restore soil fertility by fixing nitrogen from the air, so they are mostly grown in rotation with other crops.",
+          "hint": "Why are pulses grown in rotation with other crops?",
+          "probe": "What are pulses, and why are they useful for soil fertility?",
+          "causeChain": "Pulses are leguminous crops -> they fix nitrogen from the air -> restore soil fertility -> so they are mostly grown in rotation with other crops",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_legume_rotation",
+              "linksChecks": [
+                "chk_geo4_pulse_nitrogen",
+                "chk_geo4_pulse_rotation"
+              ],
+              "criterion": "Connects pulses being leguminous and fixing nitrogen from the air to their being grown in rotation with other crops.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c5_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "India is the largest producer as well as the consumer of pulses in the world. These are the major source of protein in a vegetarian diet. Major pulses that are grown in India are tur (arhar), urad, moong, masur, peas and gram.",
+              "followUp": "Where does India stand in producing and eating pulses, and why are they important in a vegetarian diet?",
+              "assessment": {
+                "requiredEvidence": [
+                  "largest producer",
+                  "consumer of pulses",
+                  "protein in a vegetarian diet",
+                  "tur",
+                  "moong"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_pulse_protein",
+                    "criterion": "States that pulses are the major source of protein in a vegetarian diet.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_pulse_producer",
+                    "criterion": "Mentions that India is the largest producer as well as the consumer of pulses in the world.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_pulse_names",
+                    "criterion": "Names major pulses such as tur (arhar), urad, moong, masur, peas or gram.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c5_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Pulses need less moisture and survive even in dry conditions. Being leguminous crops, all these crops except arhar help in restoring soil fertility by fixing nitrogen from the air. Therefore, these are mostly grown in rotation with other crops.",
+              "followUp": "How much water do pulses need, what do they do for the soil, and how are they usually grown as a result?",
+              "assessment": {
+                "requiredEvidence": [
+                  "less moisture",
+                  "leguminous",
+                  "fixing nitrogen",
+                  "restoring soil fertility",
+                  "rotation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_pulse_moisture",
+                    "criterion": "States that pulses need less moisture and survive even in dry conditions.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_pulse_nitrogen",
+                    "criterion": "Explains that, being leguminous crops, pulses restore soil fertility by fixing nitrogen from the air.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_pulse_rotation",
+                    "criterion": "States that pulses are therefore mostly grown in rotation with other crops.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_pulses_deplete"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: pulses are leguminous crops"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_pulses_deplete",
+              "wrong": "Pulses exhaust the soil and need a lot of water.",
+              "fix": "Pulses need less moisture and, being leguminous crops, help restore soil fertility by fixing nitrogen from the air."
+            }
+          ],
+          "verify": [
+            { "page": 36, "quote": "India is the largest producer as well as the consumer of pulses in the world.", "supports": ["geo4_t3c5_kp1"] },
+            { "page": 36, "quote": "These are the major source of protein in a vegetarian diet.", "supports": ["geo4_t3c5_kp1"] },
+            { "page": 36, "quote": "Major pulses that are grown in India are tur (arhar), urad, moong, masur, peas and gram.", "supports": ["geo4_t3c5_kp1"] },
+            { "page": 36, "quote": "Pulses need less moisture and survive even in dry conditions.", "supports": ["geo4_t3c5_kp2"] },
+            { "page": 36, "quote": "Being leguminous crops, all these crops except arhar help in restoring soil fertility by fixing nitrogen from the air.", "supports": ["geo4_t3c5_kp2"] },
+            { "page": 36, "quote": "Therefore, these are mostly grown in rotation with other crops.", "supports": ["geo4_t3c5_kp2"] },
+            { "page": 40, "quote": "Which one of the following is a leguminous crop?", "supports": ["geo4_t3c5_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c6",
+          "label": "Sugarcane",
+          "headingType": "heading",
+          "sourcePages": [36],
+          "cardText": "Sugarcane is a tropical as well as a subtropical crop. It grows well in hot and humid climate with a temperature of 21 degrees C to 27 degrees C and an annual rainfall between 75 cm and 100 cm; irrigation is required in regions of low rainfall. It can be grown on a variety of soils and needs manual labour from sowing to harvesting. India is the second largest producer of sugarcane after Brazil. It is the main source of sugar, gur (jaggery), khandsari and molasses.",
+          "hint": "What climate does sugarcane need, and what products does it give?",
+          "probe": "Describe the conditions needed for sugarcane and what it is used for.",
+          "causeChain": "Hot and humid climate with 75-100 cm of rain (or irrigation) -> sugarcane grows on many soils with manual labour -> source of sugar, gur, khandsari and molasses",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c6_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "It is a tropical as well as a subtropical crop. It grows well in hot and humid climate with a temperature of 21°C to 27°C and an annual rainfall between 75cm. and 100cm. Irrigation is required in the regions of low rainfall.",
+              "followUp": "What kind of climate, temperature and rainfall does sugarcane need, and what helps where rain is low?",
+              "assessment": {
+                "requiredEvidence": [
+                  "tropical as well as a subtropical",
+                  "hot and humid",
+                  "21°C to 27°C",
+                  "75cm. and 100cm.",
+                  "irrigation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_cane_climate",
+                    "criterion": "States that sugarcane grows well in a hot and humid climate with a temperature of 21°C to 27°C and annual rainfall of 75 cm to 100 cm.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_cane_irrigation",
+                    "criterion": "States that irrigation is required where rainfall is low.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c6_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "It can be grown on a variety of soils and needs manual labour from sowing to harvesting. India is the second largest producer of sugarcane only after Brazil. It is the main source of sugar, gur (jaggary), khandsari and molasses.",
+              "assessment": {
+                "requiredEvidence": [
+                  "second largest producer",
+                  "Brazil",
+                  "sugar, gur",
+                  "khandsari",
+                  "molasses"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_cane_products",
+                    "criterion": "Mentions that sugarcane is the main source of sugar, gur, khandsari and molasses.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_cane_producer",
+                    "criterion": "Mentions that India is the second largest producer of sugarcane after Brazil.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 36, "quote": "It is a tropical as well as a subtropical crop.", "supports": ["geo4_t3c6_kp1"] },
+            { "page": 36, "quote": "It grows well in hot and humid climate with a temperature of 21°C to 27°C and an annual rainfall between 75cm. and 100cm.", "supports": ["geo4_t3c6_kp1"] },
+            { "page": 36, "quote": "Irrigation is required in the regions of low rainfall.", "supports": ["geo4_t3c6_kp1"] },
+            { "page": 36, "quote": "India is the second largest producer of sugarcane only after Brazil.", "supports": ["geo4_t3c6_kp2"] },
+            { "page": 36, "quote": "It is the main source of sugar, gur (jaggary), khandsari and molasses.", "supports": ["geo4_t3c6_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c7",
+          "label": "Oil Seeds",
+          "headingType": "heading",
+          "sourcePages": [36],
+          "cardText": "In 2020 India was the second largest producer of groundnut in the world after China. Different oil seeds are grown covering approximately 12 per cent of the total cropped area. The main oil seeds are groundnut, mustard, coconut, sesamum (til), soyabean, castor seeds, cotton seeds, linseed and sunflower. Most are edible and used as cooking mediums, but some are raw material for soap, cosmetics and ointments. Groundnut is a kharif crop and accounts for about half of the major oilseeds; linseed and mustard are rabi crops.",
+          "hint": "Which oil seeds are kharif and which are rabi, and what are oil seeds used for?",
+          "probe": "Name the main oil seeds of India and what they are used for.",
+          "causeChain": "Oil seeds cover about 12 per cent of cropped area -> most are edible cooking mediums -> some are raw material for soap, cosmetics and ointments",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c7_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Different oil seeds are grown covering approximately 12 per cent of the total cropped area of the country. Main oil-seeds produced in India are groundnut, mustard, coconut, sesamum (til), soyabean, castor seeds, cotton seeds, linseed and sunflower.",
+              "followUp": "What share of the cropped area do oil seeds cover, and which crops are the main ones?",
+              "assessment": {
+                "requiredEvidence": [
+                  "12 per cent",
+                  "groundnut",
+                  "mustard",
+                  "sesamum",
+                  "soyabean"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_oil_names",
+                    "criterion": "Names main oil seeds such as groundnut, mustard, coconut, sesamum, soyabean, castor, linseed or sunflower.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_oil_area",
+                    "criterion": "Mentions that oil seeds cover approximately 12 per cent of the total cropped area.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c7_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Most of these are edible and used as cooking mediums. However, some of these are also used as raw material in the production of soap, cosmetics and ointments.",
+              "followUp": "What are most oil seeds used for, and what else are some of them used for?",
+              "assessment": {
+                "requiredEvidence": [
+                  "edible",
+                  "cooking mediums",
+                  "soap, cosmetics and ointments"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_oil_use",
+                    "criterion": "States that most oil seeds are edible and used as cooking mediums, and some are raw material for soap, cosmetics and ointments.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c7_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Groundnut is a kharif crop and accounts for about half of the major oilseeds produced in the country. Linseed and mustard are rabi crops. Sesamum is a kharif crop in north and rabi crop in south India. Castor seed is grown both as rabi and kharif crop.",
+              "assessment": {
+                "requiredEvidence": [
+                  "groundnut",
+                  "kharif",
+                  "linseed and mustard",
+                  "rabi",
+                  "castor"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_oil_seasons",
+                    "criterion": "States which oil seeds are kharif (groundnut) and which are rabi (linseed, mustard).",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 36, "quote": "Different oil seeds are grown covering approximately 12 per cent of the total cropped area of the country.", "supports": ["geo4_t3c7_kp1"] },
+            { "page": 36, "quote": "Main oil-seeds produced in India are groundnut, mustard, coconut, sesamum (til), soyabean, castor seeds, cotton seeds, linseed and sunflower.", "supports": ["geo4_t3c7_kp1"] },
+            { "page": 36, "quote": "Most of these are edible and used as cooking mediums.", "supports": ["geo4_t3c7_kp2"] },
+            { "page": 36, "quote": "some of these are also used as raw material in the production of soap, cosmetics and ointments", "supports": ["geo4_t3c7_kp2"] },
+            { "page": 36, "quote": "Groundnut is a kharif crop and accounts for about half of the major oilseeds produced in the country.", "supports": ["geo4_t3c7_kp3"] },
+            { "page": 36, "quote": "Linseed and mustard are rabi crops.", "supports": ["geo4_t3c7_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c8",
+          "label": "Tea",
+          "headingType": "heading",
+          "sourcePages": [36, 37],
+          "cardText": "Tea cultivation is an example of plantation agriculture. It is an important beverage crop introduced in India initially by the British, and today most tea plantations are owned by Indians. The tea plant grows well in tropical and sub-tropical climates with deep, fertile, well-drained soil rich in humus and organic matter. Tea bushes require a warm and moist frost-free climate all through the year, and frequent showers evenly distributed over the year ensure continuous growth of tender leaves. Tea is labour-intensive and requires abundant, cheap and skilled labour, and it is processed within the tea garden to restore its freshness. Major tea-producing states are Assam, the hills of Darjeeling and Jalpaiguri in West Bengal, Tamil Nadu and Kerala.",
+          "hint": "What soil and climate does tea need, and why is it processed inside the garden?",
+          "probe": "Name an important beverage crop and describe the conditions needed for its growth.",
+          "causeChain": "Tea is a plantation crop needing a warm, moist, frost-free climate and humus-rich soil -> frequent showers keep tender leaves growing -> it needs cheap skilled labour and is processed in the garden to keep it fresh",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_showers_leaves",
+              "linksChecks": [
+                "chk_geo4_tea_climate",
+                "chk_geo4_tea_showers"
+              ],
+              "criterion": "Connects frequent showers evenly spread through the year to continuous growth of tender tea leaves.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c8_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Tea cultivation is an example of plantation agriculture. It is also an important beverage crop introduced in India initially by the British. Today, most of the tea plantations are owned by Indians.",
+              "followUp": "What kind of farming is tea, who brought it to India, and who owns most of the plantations today?",
+              "assessment": {
+                "requiredEvidence": [
+                  "plantation agriculture",
+                  "beverage crop",
+                  "British",
+                  "owned by Indians"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_tea_plantation",
+                    "criterion": "States that tea is a plantation crop and an important beverage crop.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_tea_history",
+                    "criterion": "Mentions that tea was introduced by the British but most plantations are now owned by Indians.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c8_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The tea plant grows well in tropical and sub-tropical climates endowed with deep and fertile well-drained soil, rich in humus and organic matter. Tea bushes require warm and moist frost-free climate all through the year. Frequent showers evenly distributed over the year ensure continuous growth of tender leaves.",
+              "followUp": "What soil and climate does the tea plant need, and what rainfall pattern keeps the leaves growing?",
+              "assessment": {
+                "requiredEvidence": [
+                  "tropical and sub-tropical",
+                  "well-drained soil",
+                  "humus",
+                  "warm and moist frost-free",
+                  "frequent showers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_tea_soil",
+                    "criterion": "States that tea needs deep, fertile, well-drained soil rich in humus and organic matter.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_tea_climate",
+                    "criterion": "States that tea needs a warm, moist, frost-free climate all through the year.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_tea_showers",
+                    "criterion": "States that frequent showers evenly distributed over the year ensure continuous growth of tender leaves.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_tea_dry"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t3c8_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Tea is a labour-intensive industry. It requires abundant, cheap and skilled labour. Tea is processed within the tea garden to restore its freshness. Major tea-producing states are Assam, hills of Darjeeling and Jalpaiguri districts, West Bengal, Tamil Nadu and Kerala.",
+              "assessment": {
+                "requiredEvidence": [
+                  "labour-intensive",
+                  "abundant, cheap and skilled labour",
+                  "processed within the tea garden",
+                  "Assam"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_tea_labour",
+                    "criterion": "States that tea is labour-intensive and needs abundant, cheap and skilled labour, and is processed within the tea garden to restore freshness.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_tea_states",
+                    "criterion": "Names major tea-producing states such as Assam, West Bengal (Darjeeling), Tamil Nadu or Kerala.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: name one important beverage crop (tea) and the geographical conditions required for its growth"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_tea_dry",
+              "wrong": "Tea grows well in a dry climate and needs little labour.",
+              "fix": "Tea bushes require a warm and moist frost-free climate all through the year, and tea is a labour-intensive industry requiring abundant, cheap and skilled labour."
+            }
+          ],
+          "verify": [
+            { "page": 36, "quote": "Tea cultivation is an example of plantation agriculture.", "supports": ["geo4_t3c8_kp1"] },
+            { "page": 36, "quote": "It is also an important beverage crop introduced in India initially by the British.", "supports": ["geo4_t3c8_kp1"] },
+            { "page": 36, "quote": "Today, most of the tea plantations are owned by Indians.", "supports": ["geo4_t3c8_kp1"] },
+            { "page": 36, "quote": "The tea plant grows well in tropical and sub-tropical climates endowed with deep and fertile well-drained soil, rich in humus and organic matter.", "supports": ["geo4_t3c8_kp2"] },
+            { "page": 36, "quote": "Tea bushes require warm and moist frost-free", "supports": ["geo4_t3c8_kp2"] },
+            { "page": 37, "quote": "climate all through the year. Frequent showers evenly distributed over the year ensure continuous growth of tender leaves.", "supports": ["geo4_t3c8_kp2"] },
+            { "page": 37, "quote": "Tea is a labour-intensive industry. It requires abundant, cheap and skilled labour.", "supports": ["geo4_t3c8_kp3"] },
+            { "page": 37, "quote": "Tea is processed within the tea garden to restore its freshness.", "supports": ["geo4_t3c8_kp3"] },
+            { "page": 37, "quote": "Major tea-producing states are Assam, hills of Darjeeling and Jalpaiguri districts, West Bengal, Tamil Nadu and Kerala.", "supports": ["geo4_t3c8_kp3"] },
+            { "page": 40, "quote": "Name one important beverage crop and specify the geographical conditions required for its growth.", "supports": ["geo4_t3c8_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c9",
+          "label": "Coffee",
+          "headingType": "heading",
+          "sourcePages": [37],
+          "cardText": "Indian coffee is known in the world for its good quality. The Arabica variety, initially brought from Yemen, is produced in the country and is in great demand all over the world. Its cultivation was first introduced on the Baba Budan Hills, and even today it is confined to the Nilgiri region in Karnataka, Kerala and Tamil Nadu.",
+          "hint": "Which variety of coffee does India produce, where did it come from, and where is it grown?",
+          "probe": "What do you know about coffee cultivation in India?",
+          "causeChain": "Arabica coffee brought from Yemen -> first grown on the Baba Budan Hills -> still confined to the Nilgiri region in Karnataka, Kerala and Tamil Nadu -> great demand worldwide",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c9_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Indian coffee is known in the world for its good quality. The Arabica variety initially brought from Yemen is produced in the country. This variety is in great demand all over the world.",
+              "followUp": "What variety of coffee does India produce, where was it first brought from, and how is it regarded in the world?",
+              "assessment": {
+                "requiredEvidence": [
+                  "good quality",
+                  "Arabica",
+                  "Yemen",
+                  "great demand"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_coffee_variety",
+                    "criterion": "States that India produces the Arabica variety of coffee, initially brought from Yemen, which is in great demand worldwide.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c9_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Initially its cultivation was introduced on the Baba Budan Hills and even today its cultivation is confined to the Nilgiri in Karnataka, Kerala and Tamil Nadu.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Baba Budan Hills",
+                  "Nilgiri",
+                  "Karnataka, Kerala and Tamil Nadu"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_coffee_region",
+                    "criterion": "Mentions that coffee was first grown on the Baba Budan Hills and is still confined to the Nilgiri region in Karnataka, Kerala and Tamil Nadu.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 37, "quote": "Indian coffee is known in the world for its good quality.", "supports": ["geo4_t3c9_kp1"] },
+            { "page": 37, "quote": "The Arabica variety initially brought from Yemen is produced in the country.", "supports": ["geo4_t3c9_kp1"] },
+            { "page": 37, "quote": "This variety is in great demand all over the world.", "supports": ["geo4_t3c9_kp1"] },
+            { "page": 37, "quote": "Initially its cultivation was introduced on the Baba Budan Hills", "supports": ["geo4_t3c9_kp2"] },
+            { "page": 37, "quote": "its cultivation is confined to the Nilgiri in Karnataka, Kerala and Tamil Nadu", "supports": ["geo4_t3c9_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c10",
+          "label": "Horticulture Crops",
+          "headingType": "heading",
+          "sourcePages": [37, 38],
+          "cardText": "In 2020 India was the second largest producer of fruits and vegetables in the world after China. India produces tropical as well as temperate fruits. Mangoes of Maharashtra, Andhra Pradesh, Telangana, Uttar Pradesh and West Bengal, oranges of Nagpur and Cherrapunjee, bananas of Kerala, Mizoram, Maharashtra and Tamil Nadu, pineapples of Meghalaya, grapes of Andhra Pradesh, Telangana and Maharashtra, and apples, pears, apricots and walnuts of Jammu and Kashmir and Himachal Pradesh are in great demand the world over. India is also an important producer of pea, cauliflower, onion, cabbage, tomato, brinjal and potato.",
+          "hint": "Where does India rank as a producer of fruits and vegetables, and which fruits come from which regions?",
+          "probe": "Describe India's horticulture crops, with examples of fruits and where they are grown.",
+          "causeChain": "India grows tropical and temperate fruits -> regional specialities (mangoes, oranges, bananas, apples) -> in great demand worldwide; also important vegetables",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c10_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In 2020, India was the second largest producer of fruits and vegetables in the world after China. India is a producer of tropical as well as temperate fruits.",
+              "followUp": "Where does India rank among world producers of fruit crops and vegetable crops, and what climatic range of fruits does it grow?",
+              "assessment": {
+                "requiredEvidence": [
+                  "second largest producer",
+                  "fruits and vegetables",
+                  "tropical as well as temperate"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_hort_rank",
+                    "criterion": "States that India is the second largest producer of fruits and vegetables in the world after China.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_hort_kinds",
+                    "criterion": "States that India produces tropical as well as temperate fruits.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c10_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Mangoes of Maharashtra, Andhra Pradesh, Telangana, Uttar Pradesh and West Bengal, oranges of Nagpur and Cherrapunjee (Meghalaya), bananas of Kerala, Mizoram, Maharashtra and Tamil Nadu, lichi and guava of Uttar Pradesh and Bihar, pineapples of Meghalaya, grapes of Andhra Pradesh, Telangana and Maharashtra, apples, pears, apricots and walnuts of Jammu and Kashmir and Himachal Pradesh are in great demand the world over.",
+              "assessment": {
+                "requiredEvidence": [
+                  "mangoes",
+                  "oranges of Nagpur",
+                  "bananas of Kerala",
+                  "apples",
+                  "Jammu and Kashmir"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_hort_examples",
+                    "criterion": "Gives an example of a fruit and the region it is grown in, such as mangoes of Maharashtra, oranges of Nagpur, bananas of Kerala or apples of Jammu and Kashmir.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c10_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "India is an important producer of pea, cauliflower, onion, cabbage, tomato, brinjal and potato.",
+              "assessment": {
+                "requiredEvidence": [
+                  "pea",
+                  "cauliflower",
+                  "onion",
+                  "cabbage",
+                  "tomato",
+                  "brinjal",
+                  "potato"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_hort_veg",
+                    "criterion": "Names important vegetables India produces, such as pea, cauliflower, onion, cabbage, tomato, brinjal or potato.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 37, "quote": "In 2020, India was the second largest producer of fruits and vegetables in the world after China.", "supports": ["geo4_t3c10_kp1"] },
+            { "page": 37, "quote": "India is a producer of tropical as well as temperate fruits.", "supports": ["geo4_t3c10_kp1"] },
+            { "page": 37, "quote": "Mangoes of Maharashtra, Andhra Pradesh, Telangana, Uttar Pradesh and West Bengal, oranges of Nagpur and Cherrapunjee (Meghalaya), bananas of Kerala, Mizoram, Maharashtra and Tamil Nadu", "supports": ["geo4_t3c10_kp2"] },
+            { "page": 37, "quote": "are in great demand the world over", "supports": ["geo4_t3c10_kp2"] },
+            { "page": 38, "quote": "India is an important producer of pea, cauliflower, onion, cabbage, tomato, brinjal and potato.", "supports": ["geo4_t3c10_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c11",
+          "label": "Rubber",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "Rubber is an equatorial crop, but under special conditions it is also grown in tropical and sub-tropical areas. It requires a moist and humid climate with rainfall of more than 200 cm and temperature above 25 degrees C. Rubber is an important industrial raw material. It is mainly grown in Kerala, Tamil Nadu, Karnataka, the Andaman and Nicobar Islands and the Garo hills of Meghalaya.",
+          "hint": "What climate does rubber need, and where is it mainly grown?",
+          "probe": "Describe the conditions and regions for growing rubber.",
+          "causeChain": "Rubber is an equatorial crop needing moist, humid climate with over 200 cm of rain -> grown in Kerala, Tamil Nadu, Karnataka -> used as industrial raw material",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c11_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "It is an equatorial crop, but under special conditions, it is also grown in tropical and sub-tropical areas. It requires moist and humid climate with rainfall of more than 200 cm. and temperature above 25°C.",
+              "followUp": "Where does rubber naturally belong climatically, and what moisture, rainfall and temperature does it need?",
+              "assessment": {
+                "requiredEvidence": [
+                  "equatorial crop",
+                  "moist and humid",
+                  "more than 200 cm",
+                  "above 25°C"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rubber_conditions",
+                    "criterion": "States that rubber is an equatorial crop needing a moist, humid climate with rainfall of more than 200 cm and temperature above 25°C.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c11_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Rubber is an important industrial raw material. It is mainly grown in Kerala, Tamil Nadu, Karnataka and Andaman and Nicobar islands and Garo hills of Meghalaya.",
+              "assessment": {
+                "requiredEvidence": [
+                  "industrial raw material",
+                  "Kerala",
+                  "Tamil Nadu",
+                  "Karnataka",
+                  "Garo hills"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_rubber_use",
+                    "criterion": "States that rubber is an important industrial raw material.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_rubber_regions",
+                    "criterion": "Names regions where rubber is mainly grown: Kerala, Tamil Nadu, Karnataka, Andaman and Nicobar Islands or the Garo hills of Meghalaya.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 38, "quote": "It is an equatorial crop, but under special conditions, it is also grown in tropical and sub-tropical areas.", "supports": ["geo4_t3c11_kp1"] },
+            { "page": 38, "quote": "It requires moist and humid climate with rainfall of more than 200 cm. and temperature above 25°C.", "supports": ["geo4_t3c11_kp1"] },
+            { "page": 38, "quote": "Rubber is an important industrial raw material.", "supports": ["geo4_t3c11_kp2"] },
+            { "page": 38, "quote": "It is mainly grown in Kerala, Tamil Nadu, Karnataka and Andaman and Nicobar islands and Garo hills of Meghalaya.", "supports": ["geo4_t3c11_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c12",
+          "label": "Fibre Crops",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "Cotton, jute, hemp and natural silk are the four major fibre crops grown in India. The first three are derived from crops grown in the soil; silk is obtained from the cocoons of silkworms fed on green leaves, specially mulberry. Rearing of silkworms for the production of silk fibre is known as sericulture.",
+          "hint": "Which four fibres are grown in India, and which one does not come from a crop grown in the soil?",
+          "probe": "Name the major fibre crops of India and explain how silk differs from the others.",
+          "causeChain": "Cotton, jute and hemp come from crops grown in the soil -> silk comes from cocoons of silkworms fed on mulberry leaves -> rearing silkworms is sericulture",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c12_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Cotton, jute, hemp and natural silk are the four major fibre crops grown in India. The first three are derived from the crops grown in the soil, the latter is obtained from cocoons of the silkworms fed on green leaves specially mulberry.",
+              "followUp": "Name India's major fibre crops, and say which one comes from an animal rather than from the soil.",
+              "assessment": {
+                "requiredEvidence": [
+                  "cotton, jute, hemp and natural silk",
+                  "four major fibre crops",
+                  "cocoons of the silkworms",
+                  "mulberry"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_fibre_four",
+                    "criterion": "Names the four major fibre crops: cotton, jute, hemp and natural silk.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_silk_source",
+                    "criterion": "States that silk is obtained from the cocoons of silkworms fed on mulberry leaves, unlike the other three fibres grown in the soil.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_silk_crop"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t3c12_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Rearing of silk worms for the production of silk fibre is known as sericulture.",
+              "assessment": {
+                "requiredEvidence": [
+                  "rearing of silk worms",
+                  "sericulture"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_sericulture",
+                    "criterion": "Names the rearing of silkworms for silk fibre as sericulture.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_silk_crop",
+              "wrong": "Natural silk is a fibre taken from a crop grown in the soil, like cotton and jute.",
+              "fix": "Natural silk is obtained from the cocoons of silkworms fed on green leaves, specially mulberry; rearing silkworms is called sericulture."
+            }
+          ],
+          "verify": [
+            { "page": 38, "quote": "Cotton, jute, hemp and natural silk are the four major fibre crops grown in India.", "supports": ["geo4_t3c12_kp1"] },
+            { "page": 38, "quote": "The first three are derived from the crops grown in the soil, the latter is obtained from cocoons of the silkworms fed on green leaves specially mulberry.", "supports": ["geo4_t3c12_kp1"] },
+            { "page": 38, "quote": "Rearing of silk worms for the production of silk fibre is known as", "supports": ["geo4_t3c12_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c13",
+          "label": "Cotton",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "India is believed to be the original home of the cotton plant, and cotton is one of the main raw materials for the cotton textile industry. India is the second largest producer of cotton after China. Cotton grows well in the drier parts of the black cotton soil of the Deccan plateau. It requires high temperature, light rainfall or irrigation, 210 frost-free days and bright sunshine. It is a kharif crop and requires 6 to 8 months to mature.",
+          "hint": "What soil, temperature and frost-free period does cotton need?",
+          "probe": "Describe the conditions needed for cotton and why it is an important crop.",
+          "causeChain": "Cotton needs high temperature, light rain or irrigation, 210 frost-free days and bright sunshine -> grows well on the drier black cotton soil of the Deccan -> raw material for the cotton textile industry",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c13_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "India is believed to be the original home of the cotton plant. Cotton is one of the main raw materials for cotton textile industry. India is second largest producer of cotton after China.",
+              "followUp": "Why is cotton important for industry, and where does India stand among cotton producers?",
+              "assessment": {
+                "requiredEvidence": [
+                  "original home of the cotton plant",
+                  "raw materials",
+                  "cotton textile industry",
+                  "second largest producer"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_cotton_raw",
+                    "criterion": "States that cotton is one of the main raw materials for the cotton textile industry.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_cotton_home",
+                    "criterion": "Mentions that India is believed to be the original home of the cotton plant, or the second largest producer after China.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t3c13_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Cotton grows well in drier parts of the black cotton soil of the Deccan plateau. It requires high temperature, light rainfall or irrigation, 210 frost-free days and bright sun-shine for its growth. It is a kharif crop and requires 6 to 8 months to mature.",
+              "followUp": "What soil does cotton grow best in, what weather does it need, and how long does it take to mature?",
+              "assessment": {
+                "requiredEvidence": [
+                  "black cotton soil",
+                  "Deccan plateau",
+                  "high temperature",
+                  "210 frost-free days",
+                  "kharif"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_cotton_soil",
+                    "criterion": "States that cotton grows well in the drier parts of the black cotton soil of the Deccan plateau.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_cotton_climate",
+                    "criterion": "States that cotton needs high temperature, light rainfall or irrigation, 210 frost-free days and bright sunshine.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_cotton_kharif",
+                    "criterion": "States that cotton is a kharif crop that takes 6 to 8 months to mature.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 38, "quote": "India is believed to be the original home of the cotton plant.", "supports": ["geo4_t3c13_kp1"] },
+            { "page": 38, "quote": "Cotton is one of the main raw materials for cotton textile industry.", "supports": ["geo4_t3c13_kp1"] },
+            { "page": 38, "quote": "India is second largest producer of cotton after China.", "supports": ["geo4_t3c13_kp1"] },
+            { "page": 38, "quote": "Cotton grows well in drier parts of the black cotton soil of the Deccan plateau.", "supports": ["geo4_t3c13_kp2"] },
+            { "page": 38, "quote": "It requires high temperature, light rainfall or irrigation, 210 frost-free days and bright sun-shine for its growth.", "supports": ["geo4_t3c13_kp2"] },
+            { "page": 38, "quote": "It is a kharif crop and requires 6 to 8 months to mature.", "supports": ["geo4_t3c13_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t3_c14",
+          "label": "Jute",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "Jute is known as the golden fibre. It grows well on well-drained fertile soils in the flood plains where soils are renewed every year, and needs high temperature during the time of growth. West Bengal, Bihar, Assam, Odisha and Meghalaya are the major jute-producing states. It is used in making gunny bags, mats, ropes, yarn, carpets and other artefacts.",
+          "hint": "Why is jute grown on flood plains, and what is it used for?",
+          "probe": "Describe jute: why it is called the golden fibre, where it grows and what it is used for.",
+          "causeChain": "Flood plains renew the soil every year -> jute grows well on fertile, well-drained soil with high temperature -> used for gunny bags, mats, ropes, yarn and carpets",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_flood_jute",
+              "linksChecks": [
+                "chk_geo4_jute_soil",
+                "chk_geo4_jute_flood"
+              ],
+              "criterion": "Connects soils in the flood plains being renewed every year to jute growing well there.",
+              "isRequired": false
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t3c14_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "It is known as the golden fibre. Jute grows well on well-drained fertile soils in the flood plains where soils are renewed every year. High temperature is required during the time of growth.",
+              "followUp": "What nickname does jute have, and what kind of land and temperature suit it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "golden fibre",
+                  "well-drained fertile soils",
+                  "flood plains",
+                  "renewed every year",
+                  "high temperature"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_jute_golden",
+                    "criterion": "States that jute is known as the golden fibre.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_jute_soil",
+                    "criterion": "States that jute grows well on well-drained fertile soils in the flood plains.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_jute_flood",
+                    "criterion": "States that the flood plain soils are renewed every year.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_jute_black_soil"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t3c14_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "West Bengal, Bihar, Assam, Odisha and Meghalaya are the major jute producing states. It is used in making gunny bags, mats, ropes, yarn, carpets and other artefacts.",
+              "assessment": {
+                "requiredEvidence": [
+                  "West Bengal",
+                  "Bihar",
+                  "Assam",
+                  "gunny bags",
+                  "ropes",
+                  "carpets"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_jute_states",
+                    "criterion": "Names major jute-producing states such as West Bengal, Bihar, Assam, Odisha or Meghalaya.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  },
+                  {
+                    "id": "chk_geo4_jute_uses",
+                    "criterion": "Mentions that jute is used to make gunny bags, mats, ropes, yarn or carpets.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_jute_black_soil",
+              "wrong": "Jute grows on dry black cotton soil like cotton.",
+              "fix": "Jute grows well on well-drained fertile soils in the flood plains where soils are renewed every year."
+            }
+          ],
+          "verify": [
+            { "page": 38, "quote": "It is known as the golden fibre.", "supports": ["geo4_t3c14_kp1"] },
+            { "page": 38, "quote": "Jute grows well on well-drained fertile soils in the flood plains where soils are renewed every year.", "supports": ["geo4_t3c14_kp1"] },
+            { "page": 38, "quote": "High temperature is required during the time of growth.", "supports": ["geo4_t3c14_kp1"] },
+            { "page": 38, "quote": "West Bengal, Bihar, Assam, Odisha and Meghalaya are the major jute producing states.", "supports": ["geo4_t3c14_kp2"] },
+            { "page": 38, "quote": "It is used in making gunny bags, mats, ropes, yarn, carpets and other artefacts.", "supports": ["geo4_t3c14_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_geo_10_ch4_t4",
+      "title": "Technological and institutional reforms",
+      "concepts": [
+        {
+          "conceptId": "geo10_ch4_t4_c1",
+          "label": "Need for Institutional Reforms in Agriculture",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "Sustained use of land without compatible techno-institutional changes has hindered the pace of agricultural development. Most farmers still depend on the monsoon and natural fertility, which is a serious challenge for a growing population. Agriculture, which provides livelihood for more than 60 per cent of the population, needs serious technical and institutional reforms. After Independence, collectivisation, consolidation of holdings, cooperation and abolition of zamindari were given priority. Land reform was the main focus of the First Five Year Plan; the right of inheritance had already fragmented holdings, so consolidation was needed, but the laws were enacted while implementation was lacking or lukewarm.",
+          "hint": "Why did Indian agriculture need reforms, and which institutional reforms were given priority after Independence?",
+          "probe": "Why did Indian agriculture need technical and institutional reforms, and what was done after Independence?",
+          "causeChain": "Using land for centuries without techno-institutional change -> slow agricultural development -> priority to collectivisation, consolidation, cooperation and abolition of zamindari after Independence -> but laws were weakly implemented",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_fragment_consolidate",
+              "linksChecks": [
+                "chk_geo4_fragmentation",
+                "chk_geo4_inst_reforms"
+              ],
+              "criterion": "Connects the right of inheritance fragmenting land holdings to the need for consolidation of holdings.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Sustained uses of land without compatible techno-institutional changes have hindered the pace of agricultural development. Agriculture which provides livelihood for more than 60 per cent of its population, needs some serious technical and institutional reforms.",
+              "followUp": "What slowed agricultural development, and what share of people depend on agriculture for a living?",
+              "assessment": {
+                "requiredEvidence": [
+                  "techno-institutional changes",
+                  "hindered the pace",
+                  "60 per cent",
+                  "technical and institutional reforms"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_need_reforms",
+                    "criterion": "States that using land for a long time without compatible techno-institutional changes hindered agricultural development, so serious reforms were needed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_sixty_percent",
+                    "criterion": "Mentions that agriculture provides livelihood for more than 60 per cent of the population.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Thus, collectivisation, consolidation of holdings, cooperation and abolition of zamindari, etc. were given priority to bring about institutional reforms in the country after Independence. 'Land reform' was the main focus of our First Five Year Plan.",
+              "followUp": "Which reforms were given priority after Independence, and what was the main focus of the first planning period?",
+              "assessment": {
+                "requiredEvidence": [
+                  "collectivisation",
+                  "consolidation of holdings",
+                  "cooperation",
+                  "abolition of zamindari",
+                  "First Five Year Plan"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_inst_reforms",
+                    "criterion": "Names institutional reforms given priority after Independence: collectivisation, consolidation of holdings, cooperation and abolition of zamindari.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_land_reform_plan",
+                    "criterion": "States that land reform was the main focus of the First Five Year Plan.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The right of inheritance had already led to fragmentation of land holdings necessitating consolidation of holdings. The laws of land reforms were enacted but the implementation was lacking or lukewarm.",
+              "assessment": {
+                "requiredEvidence": [
+                  "right of inheritance",
+                  "fragmentation",
+                  "consolidation",
+                  "implementation was lacking"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_fragmentation",
+                    "criterion": "States that the right of inheritance had fragmented land holdings, which made consolidation of holdings necessary.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_weak_implementation",
+                    "criterion": "States that the land reform laws were enacted but their implementation was lacking or lukewarm.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_reforms_worked"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: enlist the institutional reform programmes introduced by the government in the interest of farmers"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_reforms_worked",
+              "wrong": "The land reform laws were fully implemented and quickly transformed agriculture.",
+              "fix": "The laws of land reforms were enacted but the implementation was lacking or lukewarm."
+            }
+          ],
+          "verify": [
+            { "page": 38, "quote": "Sustained uses of land without compatible techno-institutional changes have hindered the pace of agricultural development.", "supports": ["geo4_t4c1_kp1"] },
+            { "page": 38, "quote": "Agriculture which provides livelihood for more than 60 per cent of its population, needs some serious technical and institutional reforms.", "supports": ["geo4_t4c1_kp1"] },
+            { "page": 38, "quote": "collectivisation, consolidation of holdings, cooperation and abolition of zamindari, etc. were given priority to bring about institutional reforms in the country after Independence", "supports": ["geo4_t4c1_kp2"] },
+            { "page": 38, "quote": "'Land reform' was the main focus of our First Five Year Plan.", "supports": ["geo4_t4c1_kp2"] },
+            { "page": 38, "quote": "The right of inheritance had already led to fragmentation of land holdings necessitating consolidation of holdings.", "supports": ["geo4_t4c1_kp3"] },
+            { "page": 38, "quote": "The laws of land reforms were enacted but the implementation was lacking or lukewarm.", "supports": ["geo4_t4c1_kp3"] },
+            { "page": 40, "quote": "Enlist the various institutional reform programmes introduced by the government in the interest of farmers.", "supports": ["geo4_t4c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t4_c2",
+          "label": "Green Revolution and White Revolution",
+          "headingType": "heading",
+          "sourcePages": [38],
+          "cardText": "The Government of India embarked upon agricultural reforms to improve Indian agriculture in the 1960s and 1970s. The Green Revolution, based on package technology, and the White Revolution (Operation Flood) were some of the strategies initiated to improve the lot of Indian agriculture. But this too led to the concentration of development in a few selected areas. Therefore, in the 1980s and 1990s a comprehensive land development programme was initiated, which included both institutional and technical reforms.",
+          "hint": "What were the Green and White Revolutions, and what problem did they leave behind?",
+          "probe": "What were the Green Revolution and the White Revolution, and why was a comprehensive programme started afterwards?",
+          "causeChain": "Reforms in the 1960s and 1970s (Green Revolution, White Revolution) -> development concentrated in a few selected areas -> comprehensive land development programme in the 1980s and 1990s",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_concentration_programme",
+              "linksChecks": [
+                "chk_geo4_concentrated",
+                "chk_geo4_comprehensive"
+              ],
+              "criterion": "Connects the concentration of development in a few areas after the Green Revolution to the comprehensive land development programme of the 1980s and 1990s.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The Government of India embarked upon introducing agricultural reforms to improve Indian agriculture in the 1960s and 1970s. The Green Revolution based on the use of package technology and the White Revolution (Operation Flood) were some of the strategies initiated to improve the lot of Indian agriculture.",
+              "followUp": "In which decades did the government begin agricultural reforms, and what approach did the first strategy rely on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1960s and 1970s",
+                  "Green Revolution",
+                  "package technology",
+                  "White Revolution",
+                  "Operation Flood"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_green_white",
+                    "criterion": "Names the Green Revolution (based on package technology) and the White Revolution (Operation Flood) as strategies of the 1960s and 1970s.",
+                    "isRequired": true,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "But, this too led to the concentration of development in few selected areas. Therefore, in the 1980s and 1990s, a comprehensive land development programme was initiated, which included both institutional and technical reforms.",
+              "followUp": "What problem did these strategies leave behind, and what was started afterwards to deal with it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "concentration of development",
+                  "few selected areas",
+                  "comprehensive land development programme",
+                  "1980s and 1990s"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_concentrated",
+                    "criterion": "States that the Green Revolution led to the concentration of development in a few selected areas.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_comprehensive",
+                    "criterion": "States that a comprehensive land development programme with institutional and technical reforms was started in the 1980s and 1990s.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_spread_evenly"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: suggest the initiative taken by the government to ensure the increase in agricultural production"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_spread_evenly",
+              "wrong": "The Green Revolution spread development evenly across all parts of the country.",
+              "fix": "The Green Revolution and White Revolution led to the concentration of development in a few selected areas."
+            }
+          ],
+          "verify": [
+            { "page": 38, "quote": "The Government of India embarked upon introducing agricultural reforms to improve Indian agriculture in the 1960s and 1970s.", "supports": ["geo4_t4c2_kp1"] },
+            { "page": 38, "quote": "The Green Revolution based on the use of package technology and the White Revolution (Operation Flood) were some of the strategies initiated to improve the lot of Indian agriculture.", "supports": ["geo4_t4c2_kp1"] },
+            { "page": 38, "quote": "But, this too led to the concentration of development in few selected areas.", "supports": ["geo4_t4c2_kp2"] },
+            { "page": 38, "quote": "in the 1980s and 1990s, a comprehensive land development programme was initiated, which included both institutional and technical", "supports": ["geo4_t4c2_kp2"] },
+            { "page": 40, "quote": "Suggest the initiative taken by the government to ensure the increase in agricultural production.", "supports": ["geo4_t4c2_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t4_c3",
+          "label": "Support Measures for Farmers",
+          "headingType": "heading",
+          "sourcePages": [39],
+          "cardText": "The land development programme included provision for crop insurance against drought, flood, cyclone, fire and disease, and the establishment of Grameen banks, cooperative societies and banks to give farmers loans at lower rates of interest. The Kisan Credit Card (KCC) and the Personal Accident Insurance Scheme (PAIS) were introduced for farmers' benefit, along with special weather bulletins and agricultural programmes on radio and television. The government also announces minimum support price, remunerative and procurement prices for important crops to check the exploitation of farmers by speculators and middlemen.",
+          "hint": "Which supports protect farmers against crop loss, costly loans and exploitation by middlemen?",
+          "probe": "What support measures has the government introduced for farmers?",
+          "causeChain": "Crop insurance, cheap loans and information reduce farmers' risks -> minimum support and procurement prices protect them from speculators and middlemen",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_msp_middlemen",
+              "linksChecks": [
+                "chk_geo4_msp"
+              ],
+              "criterion": "Connects minimum support, remunerative and procurement prices to protecting farmers from exploitation by speculators and middlemen.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t4c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Provision for crop insurance against drought, flood, cyclone, fire and disease, establishment of Grameen banks, cooperative societies and banks for providing loan facilities to the farmers at lower rates of interest were some important steps in this direction.",
+              "followUp": "How were farmers protected against losses and given access to loans?",
+              "assessment": {
+                "requiredEvidence": [
+                  "crop insurance",
+                  "Grameen banks",
+                  "cooperative societies",
+                  "lower rates of interest"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_insurance_credit",
+                    "criterion": "Names support measures such as crop insurance against drought, flood or disease, and Grameen banks and cooperatives giving loans at lower rates of interest.",
+                    "isRequired": true,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Kisan Credit Card (KCC), Personal Accident Insurance Scheme (PAIS) are some other schemes introduced by the Government of India for the benefit of the farmers. Moreover, special weather bulletins and agricultural programmes for farmers were introduced on the radio and television.",
+              "assessment": {
+                "requiredEvidence": [
+                  "Kisan Credit Card",
+                  "Personal Accident Insurance Scheme",
+                  "weather bulletins",
+                  "radio and television"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_geo4_kcc_pais",
+                    "criterion": "Names the Kisan Credit Card (KCC) or the Personal Accident Insurance Scheme (PAIS).",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  },
+                  {
+                    "id": "chk_geo4_bulletins",
+                    "criterion": "Mentions special weather bulletins and agricultural programmes on radio and television for farmers.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The government also announces minimum support price, remunerative and procurement prices for important crops to check the exploitation of farmers by speculators and middlemen.",
+              "followUp": "What does the government announce for important crops, and whom does it protect farmers from?",
+              "assessment": {
+                "requiredEvidence": [
+                  "minimum support price",
+                  "remunerative and procurement prices",
+                  "exploitation of farmers",
+                  "speculators and middlemen"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_msp",
+                    "criterion": "States that the government announces minimum support, remunerative and procurement prices to check the exploitation of farmers by speculators and middlemen.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 39, "quote": "Provision for crop insurance against drought, flood, cyclone, fire and disease, establishment of Grameen banks, cooperative societies and banks for providing loan facilities to the farmers at lower rates of interest were some important steps in this direction.", "supports": ["geo4_t4c3_kp1"] },
+            { "page": 39, "quote": "Kisan Credit Card (KCC), Personal Accident Insurance Scheme (PAIS) are some other schemes introduced by the Government of India for the benefit of the farmers.", "supports": ["geo4_t4c3_kp2"] },
+            { "page": 39, "quote": "special weather bulletins and agricultural programmes for farmers were introduced on the radio and television", "supports": ["geo4_t4c3_kp2"] },
+            { "page": 39, "quote": "The government also announces minimum support price, remunerative and procurement prices for important crops to check the exploitation of farmers by speculators and middlemen.", "supports": ["geo4_t4c3_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "geo10_ch4_t4_c4",
+          "label": "Bhoodan and Gramdan",
+          "headingType": "heading",
+          "sourcePages": [39],
+          "cardText": "Mahatma Gandhi declared Vinoba Bhave his spiritual heir. After Gandhiji's martyrdom, Vinoba Bhave undertook padyatra across almost the entire country to spread Gandhiji's message. At Pochampally in Telangana, poor landless villagers demanded land. Shri Ram Chandra Reddy stood up and offered 80 acres to be distributed among 80 landless villagers; this act was known as Bhoodan. Some zamindars, owners of many villages, offered to distribute villages among the landless, which was known as Gramdan, and many land-owners gave part of their land out of fear of the land ceiling act. The movement is also known as the Blood-less Revolution.",
+          "hint": "What did Shri Ram Chandra Reddy offer at Pochampally, and what was the movement called?",
+          "probe": "What was the Bhoodan-Gramdan movement and how did it begin?",
+          "causeChain": "Landless villagers ask for land at Pochampally -> Shri Ram Chandra Reddy offers 80 acres (Bhoodan) -> zamindars offer villages (Gramdan) and others give land fearing the ceiling act -> the Blood-less Revolution",
+          "causeLinks": [
+            {
+              "id": "lnk_geo4_pochampally_bhoodan",
+              "linksChecks": [
+                "chk_geo4_pochampally",
+                "chk_geo4_reddy_offer"
+              ],
+              "criterion": "Connects the landless villagers' demand at Pochampally to Ram Chandra Reddy's offer of 80 acres, which began Bhoodan.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "geo4_t4c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Mahatma Gandhi declared Vinoba Bhave as his spiritual heir. After Gandhiji's martyrdom, Vinoba Bhave undertook padyatra to spread Gandhiji's message covered almost the entire country.",
+              "followUp": "Whom did Gandhi name as his heir, and what did this person do after Gandhi's death?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Vinoba Bhave",
+                  "spiritual heir",
+                  "padyatra",
+                  "Gandhiji's message"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_vinoba",
+                    "criterion": "States that Vinoba Bhave, Gandhi's spiritual heir, undertook padyatra across the country to spread Gandhiji's message.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "geo4_t4c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Once, when he was delivering a lecture at Pochampally in Telangana, some poor landless villagers demanded some land for their economic well-being. Suddenly, Shri Ram Chandra Reddy stood up and offered 80 acres of land to be distributed among 80 land-less villagers. This act was known as 'Bhoodan'.",
+              "followUp": "What happened during a lecture in Telangana when poor villagers asked for land, and what was this act called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Pochampally",
+                  "landless villagers",
+                  "Shri Ram Chandra Reddy",
+                  "80 acres",
+                  "Bhoodan"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_pochampally",
+                    "criterion": "States that at Pochampally in Telangana poor landless villagers demanded land.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_reddy_offer",
+                    "criterion": "States that Shri Ram Chandra Reddy offered 80 acres of land to 80 landless villagers, an act known as Bhoodan.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_geo4_bhoodan_law"
+                ]
+              }
+            },
+            {
+              "id": "geo4_t4c4_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Some zamindars, owners of many villages offered to distribute some villages among the landless. It was known as Gramdan. However, many land-owners chose to provide some part of their land to the poor farmers due to the fear of land ceiling act. This Bhoodan-Gramdan movement initiated by Vinoba Bhave is also known as the Blood-less Revolution.",
+              "followUp": "Who offered whole villages for the landless, and why did many other land-owners give up part of their land?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Gramdan",
+                  "zamindars",
+                  "land ceiling act",
+                  "Blood-less Revolution"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_geo4_gramdan",
+                    "criterion": "States that some zamindars offered villages to the landless, which was known as Gramdan.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_ceiling_fear",
+                    "criterion": "Mentions that many land-owners gave part of their land out of fear of the land ceiling act.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_geo4_bloodless",
+                    "criterion": "Names the Bhoodan-Gramdan movement as the Blood-less Revolution.",
+                    "isRequired": false,
+                    "lexical": "evidence"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_geo4_bhoodan_law",
+              "wrong": "Bhoodan was a law passed by the government to take land from landlords.",
+              "fix": "Bhoodan began as an offer: Shri Ram Chandra Reddy offered 80 acres of land to landless villagers, and the movement under Vinoba Bhave is known as the Blood-less Revolution."
+            }
+          ],
+          "verify": [
+            { "page": 39, "quote": "Mahatma Gandhi declared Vinoba Bhave as his spiritual heir.", "supports": ["geo4_t4c4_kp1"] },
+            { "page": 39, "quote": "After Gandhiji's martyrdom, Vinoba Bhave undertook padyatra to spread Gandhiji's message covered almost the entire country.", "supports": ["geo4_t4c4_kp1"] },
+            { "page": 39, "quote": "Once, when he was delivering a lecture at Pochampally in Telangana, some poor landless villagers demanded some land for their economic well-being.", "supports": ["geo4_t4c4_kp2"] },
+            { "page": 39, "quote": "Suddenly, Shri Ram Chandra Reddy stood up and offered 80 acres of land to be distributed among 80 land-less villagers.", "supports": ["geo4_t4c4_kp2"] },
+            { "page": 39, "quote": "This act was known as 'Bhoodan'.", "supports": ["geo4_t4c4_kp2"] },
+            { "page": 39, "quote": "Some zamindars, owners of many villages offered to distribute some villages among the landless. It was known as Gramdan.", "supports": ["geo4_t4c4_kp3"] },
+            { "page": 39, "quote": "many land-owners chose to provide some part of their land to the poor farmers due to the fear of land ceiling act", "supports": ["geo4_t4c4_kp3"] },
+            { "page": 39, "quote": "This Bhoodan-Gramdan movement initiated by Vinoba Bhave is also known as the Blood-less Revolution.", "supports": ["geo4_t4c4_kp3"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

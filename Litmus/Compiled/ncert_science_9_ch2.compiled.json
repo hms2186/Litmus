@@ -1,0 +1,4576 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch2.json",
+  "sourceSha256": "1cfe60dda2a41ff360badfce7065691e70636a71721729cba89d0d7dbf6372d7",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 2,
+  "chapterName": "Cell: The Building Block of Life",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example cell, limit of resolution, microscope, cell membrane, selectively permeable, osmosis, diffusion, cell wall.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "cell",
+    "limit of resolution",
+    "microscope",
+    "cell membrane",
+    "selectively permeable",
+    "osmosis",
+    "diffusion",
+    "cell wall",
+    "prokaryotic cell",
+    "eukaryotic cell",
+    "nucleus",
+    "organelle",
+    "mitochondria",
+    "plastids",
+    "cell division",
+    "mitosis",
+    "meiosis",
+    "cell theory"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch2_t1_c1",
+      "topicId": "ncert_sci_9_ch2_t1",
+      "topicTitle": "Studying cells",
+      "label": "Life in Hot Springs: Where Cells May Have Begun",
+      "headingType": "heading",
+      "sourcePages": [
+        8
+      ],
+      "conceptHash": "477c6246f2deea5d87fb474511c54a054e51dc833a41cf520efcefbb9cf277a1",
+      "cardText": "It is widely accepted in the scientific community that life originated in water, and some researchers believe it may have begun in small water pools with changing conditions rather than in the oceans. Hot springs are examples: the Puga Valley hot springs in Ladakh stay near the boiling point of water even in a cold climate, conditions that seem similar to the early Earth about 3.5 billion years ago. Their organisms are mostly heat-loving unicellular bacteria called thermophiles. Calcium carbonate formed quickly around the springs; these deposits may have protected early organic molecules from radiation and extreme conditions and may have helped form the first protective membrane, the barrier that defines a cell.",
+      "hint": "Where is life widely accepted to have begun, and what may have helped form the first membrane?",
+      "probe": "What do hot springs like those of Puga Valley suggest about where life and cells may have begun?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Life in Hot Springs: Where Cells May Have Begun, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where do many scientists think life first started?",
+          "requiredEvidence": [
+            "widely accepted",
+            "life originated in water",
+            "small water pools",
+            "changing environmental conditions",
+            "rather than in the oceans"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_hot_water",
+              "criterion": "States that it is widely accepted that life originated in water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where do many scientists think life first started?"
+            },
+            {
+              "id": "chk_sci9c2_hot_pools",
+              "criterion": "States that some researchers believe life may have begun in small water pools with changing conditions, such as hot springs, rather than in the oceans.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Where do many scientists think life first started?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_hot_certain"
+          ]
+        },
+        {
+          "id": "sci9c2_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "heat-loving bacteria",
+            "thermophiles",
+            "unicellular",
+            "early Earth",
+            "3.5 billion years"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_hot_thermo",
+              "criterion": "States that the organisms in these hot springs are mostly heat-loving unicellular bacteria called thermophiles, in conditions similar to the early Earth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where is life widely accepted to have begun, and what may have helped form the first membrane?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What may the mineral crusts around the springs have done for the earliest molecules?",
+          "requiredEvidence": [
+            "deposits",
+            "protected early organic molecules",
+            "harmful radiation",
+            "first protective membrane",
+            "barrier that defines a cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_hot_membrane",
+              "criterion": "States that the calcium carbonate deposits may have protected early organic molecules and helped form the first protective membrane, the barrier that defines a cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What may the mineral crusts around the springs have done for the earliest molecules?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_hot_certain",
+          "wrong": "Scientists have proved that life began in the oceans.",
+          "fix": "It is widely accepted that life originated in water, and some researchers believe it may have originated in small water pools with changing conditions, such as hot springs, rather than in the oceans.",
+          "checkId": "mchk_misc_sci9c2_hot_certain",
+          "checkCriterion": "The answer states or implies this wrong idea: Scientists have proved that life began in the oceans.",
+          "fixCheckId": "mfix_misc_sci9c2_hot_certain",
+          "fixCheckCriterion": "Answer 2 states the correct idea: It is widely accepted that life originated in water, and some researchers believe it may have originated in small water pools with changing conditions, such as hot springs, rather than in the oceans.",
+          "keyPointIds": [
+            "sci9c2_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_hot_certain"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_hot_water",
+            "chk_sci9c2_hot_pools",
+            "chk_sci9c2_hot_membrane"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_hot_thermo"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t1_c2",
+      "topicId": "ncert_sci_9_ch2_t1",
+      "topicTitle": "Studying cells",
+      "label": "The Cell as the Basic Unit of Life",
+      "headingType": "heading",
+      "sourcePages": [
+        8,
+        9
+      ],
+      "conceptHash": "dfc5c2758d38fe1714de8996236001551db2c8fd2797b1bd16fb9f5526b0d971",
+      "cardText": "All living organisms are made up of cells, and the cell represents the basic level at which life exists. Some organisms, such as bacteria or yeast, consist of only one cell (unicellular), while plants, fish, birds or humans are made of millions of cells (multicellular) that work together. A group of similar cells performing similar functions forms tissues, different tissues form an organ, and several organs working together form an organ system. Even then the cell remains the fundamental unit of structure and function in all living organisms.",
+      "hint": "What does it mean to call the cell the basic level of life, and how do cells build up an organism?",
+      "probe": "How are cells related to tissues, organs and organ systems, and why is the cell called the basic unit of life?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Cell as the Basic Unit of Life, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the smallest level at which life exists?",
+          "requiredEvidence": [
+            "all living organisms",
+            "basic level at which life exists",
+            "unicellular",
+            "multicellular",
+            "millions of cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_unit_all",
+              "criterion": "States that all living organisms are made up of cells, the basic level at which life exists.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the smallest level at which life exists?"
+            },
+            {
+              "id": "chk_sci9c2_unit_uni_multi",
+              "criterion": "Distinguishes unicellular organisms such as bacteria or yeast from multicellular ones made of millions of cells that work together.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the smallest level at which life exists?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are groups of cells built up into larger working parts of the body?",
+          "requiredEvidence": [
+            "similar cells",
+            "tissues",
+            "organ",
+            "organ systems"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_unit_levels",
+              "criterion": "States that similar cells performing similar functions form tissues, tissues form an organ, and several organs working together form organ systems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are groups of cells built up into larger working parts of the body?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "At every level of body organisation, which unit still carries out structure and function?",
+          "requiredEvidence": [
+            "fundamental unit of structure and function",
+            "tissues, organs, and organ systems"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_unit_fundamental",
+              "criterion": "States that even when organised into tissues, organs and organ systems, the cell remains the fundamental unit of structure and function.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "At every level of body organisation, which unit still carries out structure and function?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_unit_organs"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_cells_to_systems",
+          "linksChecks": [
+            "chk_sci9c2_unit_levels",
+            "chk_sci9c2_unit_fundamental"
+          ],
+          "criterion": "Connects groups of similar cells forming tissues to tissues forming organs and organs forming organ systems, while the cell remains the fundamental unit.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_unit_organs",
+          "wrong": "Once cells form tissues and organs, the organ rather than the cell is the basic unit of life.",
+          "fix": "Even when cells are organised into tissues, organs, and organ systems the cell remains the fundamental unit of structure and function in all living organisms.",
+          "checkId": "mchk_misc_sci9c2_unit_organs",
+          "checkCriterion": "The answer states or implies this wrong idea: Once cells form tissues and organs, the organ rather than the cell is the basic unit of life.",
+          "fixCheckId": "mfix_misc_sci9c2_unit_organs",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Even when cells are organised into tissues, organs, and organ systems the cell remains the fundamental unit of structure and function in all living organisms.",
+          "keyPointIds": [
+            "sci9c2_t1c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_unit_organs"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_unit_all",
+            "chk_sci9c2_unit_uni_multi",
+            "chk_sci9c2_unit_levels",
+            "chk_sci9c2_unit_fundamental"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_cells_to_systems"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t1_c3",
+      "topicId": "ncert_sci_9_ch2_t1",
+      "topicTitle": "Studying cells",
+      "label": "Limit of Resolution and How Cells Are Studied",
+      "headingType": "heading",
+      "sourcePages": [
+        9
+      ],
+      "conceptHash": "fe4ad00dae8f976d49727b4549b998a3c40ded65f2f30c34ec507f526b570757",
+      "cardText": "When viewed from about 25 cm, the near point of the human eye, two points separated by about 0.1 mm can be seen as distinct; otherwise they appear as a single point. This is the limit of resolution of the human eye, 0.1 mm. A cell is usually too small to be seen by the unaided eye, so cell biologists use a convex lens or a combination of lenses, an objective lens and an eyepiece, to magnify objects. Robert Hooke was the first person to observe a cell, in 1665, using a self-designed microscope of about 200-300X magnification; examining a thin slice of cork, he saw small box-like compartments and named them cells.",
+      "hint": "Why can cells not be seen without help, and what did Hooke see in cork?",
+      "probe": "What is the limit of resolution of the human eye, and how have cells been studied despite it?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Limit of Resolution and How Cells Are Studied, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the smallest gap the human eye can tell apart, and from how far?",
+          "requiredEvidence": [
+            "25 cm",
+            "near point",
+            "0.1 mm",
+            "distinct",
+            "limit of resolution"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_res_limit",
+              "criterion": "States that two points about 0.1 mm apart, viewed from 25 cm, can just be seen as distinct, which is the limit of resolution of the human eye.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the smallest gap the human eye can tell apart, and from how far?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do we need lenses to study a cell?",
+          "requiredEvidence": [
+            "too small",
+            "unaided eye",
+            "convex lens",
+            "objective lens",
+            "eyepiece",
+            "magnification"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_res_small",
+              "criterion": "States that a cell is usually too small to be seen by the unaided eye.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we need lenses to study a cell?"
+            },
+            {
+              "id": "chk_sci9c2_res_lenses",
+              "criterion": "States that a convex lens, or an objective lens with an eyepiece, is used to magnify objects.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do we need lenses to study a cell?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who first saw cells, when, and in what material?",
+          "requiredEvidence": [
+            "Robert Hooke",
+            "1665",
+            "self-designed microscope",
+            "thin slice of cork",
+            "box-like compartments"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_res_hooke",
+              "criterion": "States that Robert Hooke was the first to observe a cell, in 1665, using a self-designed microscope.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who first saw cells, when, and in what material?"
+            },
+            {
+              "id": "chk_sci9c2_res_cork",
+              "criterion": "States that in a thin slice of cork he saw small box-like compartments and named them cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who first saw cells, when, and in what material?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_hooke_living"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_limit_lenses",
+          "linksChecks": [
+            "chk_sci9c2_res_limit",
+            "chk_sci9c2_res_lenses"
+          ],
+          "criterion": "Connects cells being smaller than the eye's limit of resolution to the need for lenses that magnify them.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_hooke_living",
+          "wrong": "Hooke saw living cells with nuclei in cork.",
+          "fix": "Hooke examined a thin slice of cork and saw small box-like compartments, which he named cells.",
+          "checkId": "mchk_misc_sci9c2_hooke_living",
+          "checkCriterion": "The answer states or implies this wrong idea: Hooke saw living cells with nuclei in cork.",
+          "fixCheckId": "mfix_misc_sci9c2_hooke_living",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Hooke examined a thin slice of cork and saw small box-like compartments, which he named cells.",
+          "keyPointIds": [
+            "sci9c2_t1c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_hooke_living"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_res_limit",
+            "chk_sci9c2_res_small",
+            "chk_sci9c2_res_lenses",
+            "chk_sci9c2_res_hooke",
+            "chk_sci9c2_res_cork"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_limit_lenses"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t1_c4",
+      "topicId": "ncert_sci_9_ch2_t1",
+      "topicTitle": "Studying cells",
+      "label": "The Light Microscope and Estimating Cell Size",
+      "headingType": "heading",
+      "sourcePages": [
+        9,
+        10
+      ],
+      "conceptHash": "dbe0dc6973db9783ec026b7059c72406e6d3f882f34a91682fe5f7c0e84ba749",
+      "cardText": "School laboratories use light microscopes with different objective lenses, such as 10X and 40X, for better magnification and resolution under visible light. To estimate the size of a cell (Activity 2.1), measure the diameter of the circular field of view using a ruler under the microscope and convert it to micrometres (1 mm = 1000 micrometres), then count the number of onion peel cells along the diameter. The estimated size of a cell is the diameter of the visible field in micrometres divided by the number of cells along the diameter: for a 5 mm field with 25 cells, 5000 micrometres divided by 25 gives 200 micrometres. The total magnification depends on the magnifying power of the eyepiece and the objective lens, so with 10X for both it is 100X, and a 200 micrometre cell appears 100 times larger.",
+      "hint": "How do you estimate the size of a cell from the field of view, and how is total magnification found?",
+      "probe": "Describe how to estimate the size of an onion peel cell and work out the total magnification of a microscope.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Light Microscope and Estimating Cell Size, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t1c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of microscope does a school laboratory use, and what lenses does it have?",
+          "requiredEvidence": [
+            "light microscopes",
+            "objective lenses",
+            "10X, 40X",
+            "visible light"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_est_light",
+              "criterion": "States that school laboratories use light microscopes with different objective lenses (such as 10X and 40X) to get better magnification and resolution under visible light.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of microscope does a school laboratory use, and what lenses does it have?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do you work out the size of one cell from what you see through the microscope?",
+          "requiredEvidence": [
+            "diameter of the visible field",
+            "number of cells along the diameter",
+            "micrometre",
+            "1000"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_est_formula",
+              "criterion": "States that the size of one cell is the diameter of the visible field in micrometres divided by the number of cells along the diameter.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you work out the size of one cell from what you see through the microscope?"
+            },
+            {
+              "id": "chk_sci9c2_est_units",
+              "criterion": "States that 1 millimetre equals 1000 micrometres, so the field diameter in mm is converted to micrometres.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do you work out the size of one cell from what you see through the microscope?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c4_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "25 cells",
+            "5000",
+            "200 µm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_est_example",
+              "criterion": "Works the example: a field of 5000 micrometres with 25 cells across gives a cell size of 200 micrometres.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you estimate the size of a cell from the field of view, and how is total magnification found?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the two lenses together decide how large an object appears?",
+          "requiredEvidence": [
+            "total magnification",
+            "eyepiece",
+            "objective lens",
+            "10X",
+            "100X",
+            "100 times larger"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_est_mag",
+              "criterion": "States that total magnification depends on the magnifying power of both the eyepiece and the objective lens, so 10X with 10X gives 100X.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the two lenses together decide how large an object appears?"
+            },
+            {
+              "id": "chk_sci9c2_est_larger",
+              "criterion": "States that with 100X a cell of 200 micrometres appears 100 times larger.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do the two lenses together decide how large an object appears?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mag_add"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_divide_size",
+          "linksChecks": [
+            "chk_sci9c2_est_formula",
+            "chk_sci9c2_est_example"
+          ],
+          "criterion": "Connects the diameter of the field of view and the number of cells across it to the estimated size of one cell.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mag_add",
+          "wrong": "Total magnification is found by adding the powers of the eyepiece and objective lens.",
+          "fix": "The total magnification depends on the magnifying power of the eyepiece and the objective lens: 10X and 10X give a total magnification of 100X.",
+          "checkId": "mchk_misc_sci9c2_mag_add",
+          "checkCriterion": "The answer states or implies this wrong idea: Total magnification is found by adding the powers of the eyepiece and objective lens.",
+          "fixCheckId": "mfix_misc_sci9c2_mag_add",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The total magnification depends on the magnifying power of the eyepiece and the objective lens: 10X and 10X give a total magnification of 100X.",
+          "keyPointIds": [
+            "sci9c2_t1c4_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mag_add"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_est_light",
+            "chk_sci9c2_est_formula",
+            "chk_sci9c2_est_units",
+            "chk_sci9c2_est_mag",
+            "chk_sci9c2_est_larger"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_est_example",
+            "lnk_sci9c2_divide_size"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t1_c5",
+      "topicId": "ncert_sci_9_ch2_t1",
+      "topicTitle": "Studying cells",
+      "label": "Improving Microscopes: Resolution, Contrast and Electron Microscopes",
+      "headingType": "heading",
+      "sourcePages": [
+        10,
+        11
+      ],
+      "conceptHash": "89968fe01bfed8aa2ade918c8fca7477615e3aa1a8732d732cdc63a9f9b8140d",
+      "cardText": "A microscope allows us to see very small structures clearly and is an essential tool for studying cell structure. Over the years scientists have improved the microscope by improving three main features: resolution (the measure of clarity), contrast (the difference in brightness between various parts of an object) and magnification. Electron microscopes use a beam of electrons instead of light to produce highly magnified images, allowing cell structure to be seen at the nanometre scale (a nanometre is one-billionth of a metre) with remarkable clarity. An example is the picture of the lower surface of a Colocasia leaf taken with a scanning electron microscope.",
+      "hint": "Which three features have scientists improved, and what do electron microscopes use instead of light?",
+      "probe": "How have technological improvements to the microscope helped us understand cells beyond what the naked eye can see?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Improving Microscopes: Resolution, Contrast and Electron Microscopes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t1c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What three things have scientists made better in microscopes?",
+          "requiredEvidence": [
+            "three main features",
+            "resolution",
+            "measure of clarity",
+            "contrast",
+            "difference in brightness",
+            "magnification"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mic_features",
+              "criterion": "Names the three features improved: resolution (clarity), contrast (difference in brightness between parts of an object) and magnification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What three things have scientists made better in microscopes?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t1c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a microscope that does not use light show cell details?",
+          "requiredEvidence": [
+            "electron microscopes",
+            "beam of electrons",
+            "instead of light",
+            "nanometre scale",
+            "one-billionth of a metre"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mic_electron",
+              "criterion": "States that electron microscopes use a beam of electrons instead of light to produce highly magnified images, showing cell structure at the nanometre scale.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a microscope that does not use light show cell details?"
+            },
+            {
+              "id": "chk_sci9c2_mic_nano",
+              "criterion": "States that a nanometre is one-billionth of a metre.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does a microscope that does not use light show cell details?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mic_electron_light"
+          ]
+        },
+        {
+          "id": "sci9c2_t1c5_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Colocasia leaf",
+            "lower surface",
+            "Scanning Electron Microscope"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mic_colocasia",
+              "criterion": "Mentions the picture of the lower surface of a Colocasia leaf seen under a scanning electron microscope.",
+              "isRequired": true,
+              "lexical": "evidence",
+              "followUp": "Which three features have scientists improved, and what do electron microscopes use instead of light?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_electrons_nano",
+          "linksChecks": [
+            "chk_sci9c2_mic_electron"
+          ],
+          "criterion": "Connects electron microscopes using a beam of electrons instead of light to seeing cell structure at the nanometre scale.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mic_electron_light",
+          "wrong": "Electron microscopes are just light microscopes with stronger lenses.",
+          "fix": "Electron microscopes use a beam of electrons instead of light to produce highly magnified images.",
+          "checkId": "mchk_misc_sci9c2_mic_electron_light",
+          "checkCriterion": "The answer states or implies this wrong idea: Electron microscopes are just light microscopes with stronger lenses.",
+          "fixCheckId": "mfix_misc_sci9c2_mic_electron_light",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Electron microscopes use a beam of electrons instead of light to produce highly magnified images.",
+          "keyPointIds": [
+            "sci9c2_t1c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mic_electron_light"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_mic_features",
+            "chk_sci9c2_mic_electron",
+            "chk_sci9c2_mic_nano"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_mic_colocasia",
+            "lnk_sci9c2_electrons_nano"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t2_c1",
+      "topicId": "ncert_sci_9_ch2_t2",
+      "topicTitle": "Cell membrane, osmosis and cell wall",
+      "label": "The Cell Membrane",
+      "headingType": "heading",
+      "sourcePages": [
+        11
+      ],
+      "conceptHash": "e289522f3da984ea0094f345def70ef990f4449a26c67d943493e13c14f063f3",
+      "cardText": "For cells to function as units they must interact with one another and with their surroundings, and these interactions occur at the cell boundary, where substances move between the cells and their external environment. Even single-celled organisms exchange materials and respond to their environment through the cell membrane. The cell membrane, also called the plasma membrane, is a thin boundary that surrounds a cell and protects its contents, and it defines the individuality of a cell. It is selectively permeable, which means it allows some substances to pass through it while blocking others.",
+      "hint": "What does the cell membrane do for the cell, and what does selectively permeable mean?",
+      "probe": "What is the cell membrane and what does it mean to say it is selectively permeable?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Cell Membrane, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the cell membrane and what other name does it have?",
+          "requiredEvidence": [
+            "thin boundary",
+            "protects its contents",
+            "individuality",
+            "plasma membrane"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mem_def",
+              "criterion": "States that the cell membrane is a thin boundary that surrounds a cell and protects its contents, defining the cell's individuality, and is also called the plasma membrane.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the cell membrane and what other name does it have?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does it mean that the membrane lets only some things through?",
+          "requiredEvidence": [
+            "selectively permeable",
+            "some substances to pass",
+            "blocking others"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mem_selective",
+              "criterion": "States that the cell membrane is selectively permeable: it allows some substances to pass through while blocking others.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does it mean that the membrane lets only some things through?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mem_all_pass"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "cell boundary",
+            "substances move",
+            "external environment",
+            "single-celled organisms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mem_exchange",
+              "criterion": "States that interactions occur at the cell boundary, where substances move between the cell and its environment, even in single-celled organisms.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the cell membrane do for the cell, and what does selectively permeable mean?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mem_all_pass",
+          "wrong": "The cell membrane lets every substance pass freely in and out.",
+          "fix": "The cell membrane is selectively permeable, which means it allows some substances to pass through it while blocking others.",
+          "checkId": "mchk_misc_sci9c2_mem_all_pass",
+          "checkCriterion": "The answer states or implies this wrong idea: The cell membrane lets every substance pass freely in and out.",
+          "fixCheckId": "mfix_misc_sci9c2_mem_all_pass",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The cell membrane is selectively permeable, which means it allows some substances to pass through it while blocking others.",
+          "keyPointIds": [
+            "sci9c2_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mem_all_pass"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_mem_def",
+            "chk_sci9c2_mem_selective"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_mem_exchange"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t2_c2",
+      "topicId": "ncert_sci_9_ch2_t2",
+      "topicTitle": "Cell membrane, osmosis and cell wall",
+      "label": "Diffusion and Osmosis: The Potato Experiment",
+      "headingType": "heading",
+      "sourcePages": [
+        11,
+        12
+      ],
+      "conceptHash": "0f8746ed76f75e482edccc99992a84287331a82bf063df91393436bd2681e7ec",
+      "cardText": "In Activity 2.2 two roughly equal potato pieces are weighed, one placed in plain water and one in 20 per cent salt or sugar solution. The piece in plain water swells and gains weight, while the piece in the solution shrinks and loses weight. This happens because the cell membrane allows water to move in and out of the cell but not the sugar or salt molecules. Water moves from an area with more water and less solute (a dilute solution) to an area with less water and more solute (a concentrated solution) until the concentrations in the two areas become equal. This movement of water through a selectively permeable membrane is osmosis. Diffusion is the net movement of particles from a higher to a lower concentration, which occurs even without a membrane, because particles of matter intermix due to a concentration gradient; osmosis is the diffusion of water across a selectively permeable membrane. In plants, water from the soil enters root cells by osmosis.",
+      "hint": "Why does the potato in plain water swell and the one in concentrated solution shrink, and how does osmosis differ from diffusion?",
+      "probe": "Explain the potato experiment and the difference between diffusion and osmosis.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Diffusion and Osmosis: The Potato Experiment, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happened to the two potato pieces in the two beakers?",
+          "requiredEvidence": [
+            "potato piece swells",
+            "potato piece shrinks",
+            "weight",
+            "increased",
+            "decreased"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_osm_result",
+              "criterion": "States that the potato piece in plain water swells and gains weight, while the piece in the concentrated solution shrinks and loses weight.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happened to the two potato pieces in the two beakers?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the membrane let across, and which way does that substance go?",
+          "requiredEvidence": [
+            "membrane allows water",
+            "not the sugar or salt molecules",
+            "dilute solution",
+            "concentrated solution",
+            "concentrations in the two areas become equal"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_osm_why",
+              "criterion": "States that the membrane lets water but not sugar or salt molecules move across.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the membrane let across, and which way does that substance go?"
+            },
+            {
+              "id": "chk_sci9c2_osm_direction",
+              "criterion": "States that water moves from the dilute solution (more water, less solute) to the concentrated solution (less water, more solute) until the concentrations become equal.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the membrane let across, and which way does that substance go?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_osm_solute_moves"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the movement of water across the membrane named, and how does it relate to the general movement of particles?",
+          "requiredEvidence": [
+            "osmosis",
+            "net movement of particles",
+            "higher to a lower concentration",
+            "even without a membrane",
+            "diffusion of water across a selectively permeable membrane"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_osm_def",
+              "criterion": "Defines osmosis as the movement or diffusion of water across a selectively permeable membrane.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the movement of water across the membrane named, and how does it relate to the general movement of particles?"
+            },
+            {
+              "id": "chk_sci9c2_osm_diffusion",
+              "criterion": "Defines diffusion as the net movement of particles from higher to lower concentration, occurring even without a membrane.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the movement of water across the membrane named, and how does it relate to the general movement of particles?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_osm_same"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "intermix",
+            "difference in their concentrations",
+            "concentration gradient",
+            "water from the soil enters root cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_osm_gradient",
+              "criterion": "States that particles intermix because of a difference in concentration, called a concentration gradient.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why does the potato in plain water swell and the one in concentrated solution shrink, and how does osmosis differ from diffusion?"
+            },
+            {
+              "id": "chk_sci9c2_osm_roots",
+              "criterion": "States that in plants water from the soil enters root cells by osmosis.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why does the potato in plain water swell and the one in concentrated solution shrink, and how does osmosis differ from diffusion?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_membrane_direction",
+          "linksChecks": [
+            "chk_sci9c2_osm_why",
+            "chk_sci9c2_osm_direction"
+          ],
+          "criterion": "Connects the membrane passing water but not solute to water moving towards the more concentrated solution, so the potato in plain water swells and the one in concentrated solution shrinks.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_osm_solute_moves",
+          "wrong": "The potato swells because sugar or salt molecules move into its cells.",
+          "fix": "The cell membrane allows water to move in and out of the cell but not the sugar or salt molecules, so it is water that moves.",
+          "checkId": "mchk_misc_sci9c2_osm_solute_moves",
+          "checkCriterion": "The answer states or implies this wrong idea: The potato swells because sugar or salt molecules move into its cells.",
+          "fixCheckId": "mfix_misc_sci9c2_osm_solute_moves",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The cell membrane allows water to move in and out of the cell but not the sugar or salt molecules, so it is water that moves.",
+          "keyPointIds": [
+            "sci9c2_t2c2_kp2"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_sci9c2_osm_same",
+          "wrong": "Diffusion and osmosis are the same thing, and both need a membrane.",
+          "fix": "Diffusion is the net movement of particles from higher to lower concentration even without a membrane; osmosis is the diffusion of water across a selectively permeable membrane.",
+          "checkId": "mchk_misc_sci9c2_osm_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Diffusion and osmosis are the same thing, and both need a membrane.",
+          "fixCheckId": "mfix_misc_sci9c2_osm_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Diffusion is the net movement of particles from higher to lower concentration even without a membrane; osmosis is the diffusion of water across a selectively permeable membrane.",
+          "keyPointIds": [
+            "sci9c2_t2c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_osm_solute_moves",
+            "mchk_misc_sci9c2_osm_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_osm_result",
+            "chk_sci9c2_osm_why",
+            "chk_sci9c2_osm_direction",
+            "chk_sci9c2_osm_def",
+            "chk_sci9c2_osm_diffusion"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_osm_gradient",
+            "chk_sci9c2_osm_roots",
+            "lnk_sci9c2_membrane_direction"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t2_c3",
+      "topicId": "ncert_sci_9_ch2_t2",
+      "topicTitle": "Cell membrane, osmosis and cell wall",
+      "label": "Isotonic, Hypotonic and Hypertonic Solutions",
+      "headingType": "heading",
+      "sourcePages": [
+        12
+      ],
+      "conceptHash": "70bc639589da5b30c3da5907ebbca38a53ce313879df2c5561cb39e64bde4eed",
+      "cardText": "A cell kept in salt or sugar solutions of different concentrations behaves differently according to the solute concentration outside compared with inside. When the solute concentration of the extracellular medium equals that of the intracellular medium, the solution is isotonic. When the extracellular solute concentration is lower than the intracellular, the solution is hypotonic. When the extracellular solute concentration is higher than the intracellular, the solution is hypertonic.",
+      "hint": "How is a solution called isotonic, hypotonic or hypertonic compared with the inside of the cell?",
+      "probe": "Distinguish isotonic, hypotonic and hypertonic solutions by comparing solute concentration outside and inside the cell.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Isotonic, Hypotonic and Hypertonic Solutions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call a solution whose solute level outside the cell matches the inside?",
+          "requiredEvidence": [
+            "extracellular medium",
+            "intracellular medium",
+            "equal",
+            "isotonic"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ton_iso",
+              "criterion": "States that when the solute concentration outside the cell equals that inside, the solution is isotonic.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call a solution whose solute level outside the cell matches the inside?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call a solution with less solute outside the cell than inside?",
+          "requiredEvidence": [
+            "extracellular",
+            "lower",
+            "intracellular",
+            "hypotonic"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ton_hypo",
+              "criterion": "States that when the solute concentration outside the cell is lower than inside, the solution is hypotonic.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call a solution with less solute outside the cell than inside?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_tonic_swapped"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call a solution with more solute outside the cell than inside?",
+          "requiredEvidence": [
+            "extracellular",
+            "higher",
+            "intracellular",
+            "hypertonic"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ton_hyper",
+              "criterion": "States that when the solute concentration outside the cell is higher than inside, the solution is hypertonic.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call a solution with more solute outside the cell than inside?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_tonic_swapped",
+          "wrong": "A hypertonic solution has a lower solute concentration outside the cell than inside.",
+          "fix": "In a hypertonic solution the solute concentration of the extracellular medium is higher than that of the intracellular medium; in a hypotonic solution it is lower.",
+          "checkId": "mchk_misc_sci9c2_tonic_swapped",
+          "checkCriterion": "The answer states or implies this wrong idea: A hypertonic solution has a lower solute concentration outside the cell than inside.",
+          "fixCheckId": "mfix_misc_sci9c2_tonic_swapped",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In a hypertonic solution the solute concentration of the extracellular medium is higher than that of the intracellular medium; in a hypotonic solution it is lower.",
+          "keyPointIds": [
+            "sci9c2_t2c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_tonic_swapped"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_ton_iso",
+            "chk_sci9c2_ton_hypo",
+            "chk_sci9c2_ton_hyper"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t2_c4",
+      "topicId": "ncert_sci_9_ch2_t2",
+      "topicTitle": "Cell membrane, osmosis and cell wall",
+      "label": "Structure of the Cell Membrane: The Fluid-Mosaic Model",
+      "headingType": "heading",
+      "sourcePages": [
+        12,
+        13
+      ],
+      "conceptHash": "6a250c91af4dc1e478825e07aaaae3a65251718b1b63e860443578870e72953a",
+      "cardText": "The cell membrane is extremely thin, about 7 to 10 nanometres thick, and is made up of lipids (fats) and proteins. The fluid-mosaic model explains its structure: the membrane has a lipid bilayer, two layers of special fat molecules with water-attracting heads outwards and water-repelling tails inwards, with proteins embedded in them. The molecules can move sideways, flip and rotate within the membrane, so it is fluid. Proteins in the membrane act like gatekeepers in helping substances pass through. Since the molecules are arranged like tiles in a mosaic, it is called the mosaic model.",
+      "hint": "What is the membrane made of, and why is the model called fluid and mosaic?",
+      "probe": "Describe the fluid-mosaic model of the cell membrane.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Structure of the Cell Membrane: The Fluid-Mosaic Model, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t2c4_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "extremely thin",
+            "7 to 10 nanometres",
+            "lipids",
+            "proteins",
+            "fluid-mosaic model"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_fm_made",
+              "criterion": "States that the cell membrane is extremely thin, about 7 to 10 nanometres, and made of lipids and proteins, explained by the fluid-mosaic model.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the membrane made of, and why is the model called fluid and mosaic?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are the fat molecules arranged in the membrane, and what is embedded in them?",
+          "requiredEvidence": [
+            "lipid bilayer",
+            "two layers",
+            "water attracting heads outwards",
+            "water repelling tails inwards",
+            "proteins embedded"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_fm_bilayer",
+              "criterion": "States that the membrane has a lipid bilayer, two layers of fat molecules with water-attracting heads outwards and water-repelling tails inwards, with proteins embedded in it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are the fat molecules arranged in the membrane, and what is embedded in them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is the membrane described by two words, and what does each mean?",
+          "requiredEvidence": [
+            "move sideways",
+            "flip and rotate",
+            "fluid",
+            "tiles in a mosaic",
+            "mosaic model"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_fm_fluid",
+              "criterion": "States that molecules can move sideways, flip and rotate, so the membrane is fluid, and being arranged like tiles it is called the mosaic model.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the membrane described by two words, and what does each mean?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_fm_rigid"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "proteins",
+            "gatekeepers",
+            "substances pass through"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_fm_gate",
+              "criterion": "States that proteins in the membrane act like gatekeepers in helping substances pass through.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the membrane made of, and why is the model called fluid and mosaic?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_move_fluid",
+          "linksChecks": [
+            "chk_sci9c2_fm_fluid"
+          ],
+          "criterion": "Connects molecules being able to move sideways, flip and rotate within the membrane to the membrane being described as fluid.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_fm_rigid",
+          "wrong": "The cell membrane is a rigid, fixed layer.",
+          "fix": "The molecules can move sideways, flip and rotate within the membrane; hence it is fluid.",
+          "checkId": "mchk_misc_sci9c2_fm_rigid",
+          "checkCriterion": "The answer states or implies this wrong idea: The cell membrane is a rigid, fixed layer.",
+          "fixCheckId": "mfix_misc_sci9c2_fm_rigid",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The molecules can move sideways, flip and rotate within the membrane; hence it is fluid.",
+          "keyPointIds": [
+            "sci9c2_t2c4_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_fm_rigid"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_fm_bilayer",
+            "chk_sci9c2_fm_fluid"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_fm_made",
+            "chk_sci9c2_fm_gate",
+            "lnk_sci9c2_move_fluid"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t2_c5",
+      "topicId": "ncert_sci_9_ch2_t2",
+      "topicTitle": "Cell membrane, osmosis and cell wall",
+      "label": "The Cell Wall",
+      "headingType": "heading",
+      "sourcePages": [
+        13,
+        14
+      ],
+      "conceptHash": "ff6f2ac38fd451656a5633a57dc90c92fca82eaff7faefb57667629248180676",
+      "cardText": "All living cells communicate with their surroundings through the cell membrane, but cells of plants, fungi and bacteria have an additional layer around the cell membrane, the cell wall. Plants cannot move from place to place, so they need a rigid structure to withstand environmental stresses like wind and rain; the cell wall also helps leaves and flowers remain firm and keeps plants upright. Although rigid, the cell wall is permeable, so water and some dissolved minerals pass through it, which with the membrane's selective permeability helps roots absorb water and nutrients. When a Rhoeo leaf or onion peel is put in concentrated sugar solution, the plant cells lose water by osmosis but do not shrink in size because the rigid cell wall maintains their shape; the inner content shrinks as the membrane pulls away from the wall. Animal cells such as cheek cells have no cell wall, so they lose water and shrink, and can easily change shape, which supports the movement of animal tissues. The plant cell wall is primarily made of cellulose, a carbohydrate of many glucose units, which in our diet acts as roughage; fungi and bacteria also have a cell wall.",
+      "hint": "Why do plant cells keep their shape in concentrated solution while cheek cells shrink, and what is the wall made of?",
+      "probe": "What is the cell wall, which cells have it, and why do plant cells not shrink in size in a concentrated sugar solution?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Cell Wall, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t2c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which kinds of cells have an extra outer layer beyond the membrane?",
+          "requiredEvidence": [
+            "communicate with their surroundings",
+            "plant, fungi, and bacteria",
+            "additional layer",
+            "cell wall"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_which",
+              "criterion": "States that cells of plants, fungi and bacteria have an additional layer, the cell wall, around the cell membrane.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which kinds of cells have an extra outer layer beyond the membrane?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_wall_all"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do plants need a stiff outer layer when they cannot move?",
+          "requiredEvidence": [
+            "cannot move from place to place",
+            "rigid structure",
+            "wind and rain",
+            "remain firm",
+            "stay upright"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_need",
+              "criterion": "States that plants cannot move, so they need a rigid structure to withstand stresses like wind and rain, and the wall helps leaves and flowers stay firm and the plant upright.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do plants need a stiff outer layer when they cannot move?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c5_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "permeable",
+            "water and some dissolved minerals",
+            "selective permeability",
+            "plant roots absorb water and nutrients"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_perm",
+              "criterion": "States that the cell wall is permeable, letting water and some dissolved minerals through, which helps roots absorb water and nutrients.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do plant cells keep their shape in concentrated solution while cheek cells shrink, and what is the wall made of?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_wall_impermeable"
+          ]
+        },
+        {
+          "id": "sci9c2_t2c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to a plant cell put in strong sugar solution, and why does its size stay the same?",
+          "requiredEvidence": [
+            "lose water due to osmosis",
+            "do not shrink in size",
+            "rigid cell wall maintains their shape",
+            "inner content",
+            "membrane pulls away from the cell wall"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_osmosis",
+              "criterion": "States that in concentrated sugar solution plant cells lose water by osmosis but do not shrink in size because the rigid cell wall maintains their shape, while the inner content shrinks as the membrane pulls away.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to a plant cell put in strong sugar solution, and why does its size stay the same?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c5_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to a cheek cell in the same solution, and why is it different?",
+          "requiredEvidence": [
+            "cheek cells",
+            "do not have a cell wall",
+            "lose water and shrink",
+            "change shape easily"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_cheek",
+              "criterion": "States that animal cells such as cheek cells have no cell wall, so in concentrated sugar solution they lose water and shrink, and they can change shape easily.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to a cheek cell in the same solution, and why is it different?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t2c5_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "cellulose",
+            "carbohydrate",
+            "glucose units",
+            "roughage",
+            "fungi and bacteria"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_wall_cellulose",
+              "criterion": "States that the plant cell wall is primarily made of cellulose, a carbohydrate of many glucose units, which acts as roughage in our diet.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do plant cells keep their shape in concentrated solution while cheek cells shrink, and what is the wall made of?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_wall_shape",
+          "linksChecks": [
+            "chk_sci9c2_wall_osmosis",
+            "chk_sci9c2_wall_cheek"
+          ],
+          "criterion": "Connects the rigid cell wall to plant cells keeping their outer shape in concentrated sugar solution while the inner content shrinks.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_sci9c2_fixed_rigid",
+          "linksChecks": [
+            "chk_sci9c2_wall_need"
+          ],
+          "criterion": "Connects plants being unable to move to their need for a rigid structure to withstand stresses like wind and rain.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_wall_all",
+          "wrong": "All cells, including animal cells, have a cell wall.",
+          "fix": "Cells of plants, fungi and bacteria have the cell wall; animal cells such as cheek cells do not.",
+          "checkId": "mchk_misc_sci9c2_wall_all",
+          "checkCriterion": "The answer states or implies this wrong idea: All cells, including animal cells, have a cell wall.",
+          "fixCheckId": "mfix_misc_sci9c2_wall_all",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Cells of plants, fungi and bacteria have the cell wall; animal cells such as cheek cells do not.",
+          "keyPointIds": [
+            "sci9c2_t2c5_kp1"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_sci9c2_wall_impermeable",
+          "wrong": "The cell wall blocks water and minerals completely.",
+          "fix": "Although rigid, the cell wall is permeable, so water and some dissolved minerals can pass through it.",
+          "checkId": "mchk_misc_sci9c2_wall_impermeable",
+          "checkCriterion": "The answer states or implies this wrong idea: The cell wall blocks water and minerals completely.",
+          "fixCheckId": "mfix_misc_sci9c2_wall_impermeable",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Although rigid, the cell wall is permeable, so water and some dissolved minerals can pass through it.",
+          "keyPointIds": [
+            "sci9c2_t2c5_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_wall_all",
+            "mchk_misc_sci9c2_wall_impermeable"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_wall_which",
+            "chk_sci9c2_wall_need",
+            "chk_sci9c2_wall_osmosis",
+            "chk_sci9c2_wall_cheek"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_wall_perm",
+            "chk_sci9c2_wall_cellulose",
+            "lnk_sci9c2_wall_shape",
+            "lnk_sci9c2_fixed_rigid"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c1",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Parts of the Cell: Prokaryotic and Eukaryotic Cells",
+      "headingType": "heading",
+      "sourcePages": [
+        14,
+        15,
+        16
+      ],
+      "conceptHash": "bc21a6e44e89328f6862f72510baffc2788ea21a06cb021dd72537891db2a555",
+      "cardText": "Most cells have three basic parts: a selectively permeable plasma membrane, a semi-fluid jelly-like cytoplasm, and a prominent nucleus. In addition to the nucleus, the cytoplasm contains sub-cellular components called organelles, most of which are visible only with an electron microscope. A bacterial cell lacks a well-defined nucleus and membrane-bound organelles (organelles surrounded by their own membranes); such cells are prokaryotic (pro means primitive, karyon means nucleus), and most of their cellular activities take place directly in the cytoplasm. Prokaryotic DNA is present as a single circular molecule associated with specific proteins, in a region called the nucleoid. Plant and animal cells have a well-defined nucleus and several membrane-bound organelles; they are eukaryotic (eu means true). In eukaryotic cells a network of fine fibres forms the cytoskeleton, which provides structural support, maintains cell shape and enables cell movement and internal transport. The cytoplasm may also store starch or crystals of calcium oxalate or silica, known as cell inclusions.",
+      "hint": "What do prokaryotic cells lack compared with eukaryotic cells, and where is their DNA?",
+      "probe": "Compare prokaryotic and eukaryotic cells in terms of nucleus and organelles.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Parts of the Cell: Prokaryotic and Eukaryotic Cells, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which basic parts do most cells share?",
+          "requiredEvidence": [
+            "three basic parts",
+            "plasma membrane",
+            "semi-fluid, jelly-like substance",
+            "cytoplasm",
+            "nucleus"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_three",
+              "criterion": "Names the three basic parts of most cells: the plasma membrane, the cytoplasm and the nucleus.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which basic parts do most cells share?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "sub-cellular components",
+            "organelles",
+            "electron microscope"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_organelles",
+              "criterion": "States that the cytoplasm contains sub-cellular components called organelles, most visible only with an electron microscope.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do prokaryotic cells lack compared with eukaryotic cells, and where is their DNA?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is missing in a bacterial cell, and where do its activities happen?",
+          "requiredEvidence": [
+            "lacks a well-defined nucleus",
+            "membrane-bound organelles",
+            "prokaryotic cells",
+            "directly in the cytoplasm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_prokaryote",
+              "criterion": "States that prokaryotic cells such as bacteria lack a well-defined nucleus and membrane-bound organelles, so most activities take place directly in the cytoplasm.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is missing in a bacterial cell, and where do its activities happen?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_pk_bacteria_organelles"
+          ]
+        },
+        {
+          "id": "sci9c2_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the cells of plants and animals have that bacteria lack?",
+          "requiredEvidence": [
+            "plant and animal cells",
+            "well-defined nucleus",
+            "membrane-bound organelles",
+            "eukaryotic cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_eukaryote",
+              "criterion": "States that eukaryotic cells, such as plant and animal cells, have a well-defined nucleus and several membrane-bound organelles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the cells of plants and animals have that bacteria lack?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "single circular molecule",
+            "specific proteins",
+            "nucleoid"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_nucleoid",
+              "criterion": "States that prokaryotic DNA is a single circular molecule associated with proteins, in a region called the nucleoid.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do prokaryotic cells lack compared with eukaryotic cells, and where is their DNA?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "network of fine fibres",
+            "cytoskeleton",
+            "structural support",
+            "cell inclusions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pk_cytoskeleton",
+              "criterion": "States that in eukaryotic cells a network of fine fibres forms the cytoskeleton, which gives structural support, maintains cell shape and enables movement and internal transport.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do prokaryotic cells lack compared with eukaryotic cells, and where is their DNA?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_no_nucleus_nucleoid",
+          "linksChecks": [
+            "chk_sci9c2_pk_prokaryote",
+            "chk_sci9c2_pk_nucleoid"
+          ],
+          "criterion": "Connects the absence of a well-defined nucleus in prokaryotic cells to their DNA lying in the nucleoid and activities occurring directly in the cytoplasm.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_pk_bacteria_organelles",
+          "wrong": "Bacterial cells have a nucleus and membrane-bound organelles like plant cells.",
+          "fix": "A bacterial cell lacks a well-defined nucleus and membrane-bound organelles; such cells are called prokaryotic cells.",
+          "checkId": "mchk_misc_sci9c2_pk_bacteria_organelles",
+          "checkCriterion": "The answer states or implies this wrong idea: Bacterial cells have a nucleus and membrane-bound organelles like plant cells.",
+          "fixCheckId": "mfix_misc_sci9c2_pk_bacteria_organelles",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A bacterial cell lacks a well-defined nucleus and membrane-bound organelles; such cells are called prokaryotic cells.",
+          "keyPointIds": [
+            "sci9c2_t3c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_pk_bacteria_organelles"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_pk_three",
+            "chk_sci9c2_pk_prokaryote",
+            "chk_sci9c2_pk_eukaryote"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_pk_organelles",
+            "chk_sci9c2_pk_nucleoid",
+            "chk_sci9c2_pk_cytoskeleton",
+            "lnk_sci9c2_no_nucleus_nucleoid"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c2",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Why Eukaryotic Cells Need Organelles",
+      "headingType": "heading",
+      "sourcePages": [
+        16
+      ],
+      "conceptHash": "2619e796eed382d2ab24a42ca0e00e8433f5dd45ecc832e0f5b4e594423c8d38",
+      "cardText": "Eukaryotic cells carry out various life processes in different cell organelles independently at the same time. Cell organelles help in building new materials, removing waste and providing energy to the cell, and they work together to perform all functions of a cell. In other words, a cell is like a tiny living factory, with each of its parts doing a specific job.",
+      "hint": "What advantage do separate organelles give a cell, and what is the factory comparison?",
+      "probe": "Why do eukaryotic cells need organelles?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why Eukaryotic Cells Need Organelles, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do separate compartments help a cell carry out its jobs?",
+          "requiredEvidence": [
+            "life processes",
+            "different cell organelles",
+            "independently",
+            "same time"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_org_parallel",
+              "criterion": "States that eukaryotic cells carry out various life processes in different organelles independently at the same time.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do separate compartments help a cell carry out its jobs?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What jobs do these compartments do, and how does the book describe a cell as a whole?",
+          "requiredEvidence": [
+            "building new materials",
+            "removing waste",
+            "providing energy",
+            "work together",
+            "tiny living factory"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_org_jobs",
+              "criterion": "States that organelles help in building new materials, removing waste and providing energy, and work together to perform all functions of a cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What jobs do these compartments do, and how does the book describe a cell as a whole?"
+            },
+            {
+              "id": "chk_sci9c2_org_factory",
+              "criterion": "Compares a cell to a tiny living factory in which each part does a specific job.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What jobs do these compartments do, and how does the book describe a cell as a whole?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_org_parallel",
+            "chk_sci9c2_org_jobs",
+            "chk_sci9c2_org_factory"
+          ]
+        ],
+        "b": []
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c3",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Nucleus: House of Coded Instructions",
+      "headingType": "heading",
+      "sourcePages": [
+        16
+      ],
+      "conceptHash": "4fc0a27b00971f621451f82412e6fe26114b9153148b34d6683117498753bc34",
+      "cardText": "The nucleus has a double-layered covering called the nuclear membrane with pores that allow transfer of material between the nucleus and the cytoplasm. The nucleolus is the dense round body in the nucleus where ribosomal subunits are synthesised; they exit to the cytoplasm and assemble into ribosomes. The nucleus contains chromosomes, visible as rod-shaped structures only when the cell is about to divide. Chromosomes carry information for inheritance of characters from parents to the next generation in the form of DNA, and are composed of DNA and specific proteins. DNA molecules contain the genetic information, and the functional segments of DNA are called genes. In a non-dividing cell the DNA is part of chromatin material, an entangled mass of thread-like structures, which is organised into chromosomes when the cell is about to divide. Mature human red blood cells have no nucleus, giving more space for haemoglobin to carry oxygen, but they cannot repair or divide and survive only about 120 days.",
+      "hint": "What is inside the nucleus, and when do chromosomes become visible?",
+      "probe": "Describe the nucleus and what it contains.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Nucleus: House of Coded Instructions, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What covers the nucleus, and what is the dense round body inside it?",
+          "requiredEvidence": [
+            "double-layered covering",
+            "nuclear membrane",
+            "pores",
+            "nucleolus",
+            "ribosomal subunits"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_nuc_membrane",
+              "criterion": "States that the nucleus has a double-layered nuclear membrane with pores for transfer of material between the nucleus and cytoplasm.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What covers the nucleus, and what is the dense round body inside it?"
+            },
+            {
+              "id": "chk_sci9c2_nuc_nucleolus",
+              "criterion": "States that the nucleolus is the dense round body in the nucleus where ribosomal subunits are synthesised.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What covers the nucleus, and what is the dense round body inside it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When can these threadlike carriers be seen as rods, and what do they pass on?",
+          "requiredEvidence": [
+            "chromosomes",
+            "rod-shaped structures",
+            "about to divide",
+            "inheritance of characters",
+            "DNA and specific proteins"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_nuc_chromosomes",
+              "criterion": "States that chromosomes are visible as rod-shaped structures only when the cell is about to divide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When can these threadlike carriers be seen as rods, and what do they pass on?"
+            },
+            {
+              "id": "chk_sci9c2_nuc_inherit",
+              "criterion": "States that chromosomes carry information for inheritance of characters in the form of DNA and are composed of DNA and specific proteins.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When can these threadlike carriers be seen as rods, and what do they pass on?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_nuc_always_chromosomes"
+          ]
+        },
+        {
+          "id": "sci9c2_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What carries the instructions of the cell, what are its working segments called, and what does it look like in a cell that is not dividing?",
+          "requiredEvidence": [
+            "genetic information",
+            "functional segments of DNA",
+            "genes",
+            "chromatin material",
+            "entangled mass of thread-like structures"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_nuc_genes",
+              "criterion": "States that DNA contains the genetic information and its functional segments are called genes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What carries the instructions of the cell, what are its working segments called, and what does it look like in a cell that is not dividing?"
+            },
+            {
+              "id": "chk_sci9c2_nuc_chromatin",
+              "criterion": "States that in a non-dividing cell DNA is part of chromatin material (an entangled mass of threads), which is organised into chromosomes when the cell is about to divide.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What carries the instructions of the cell, what are its working segments called, and what does it look like in a cell that is not dividing?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "red blood cells",
+            "do not have a nucleus",
+            "more space for haemoglobin",
+            "cannot repair or divide",
+            "120 days"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_nuc_rbc",
+              "criterion": "States that mature red blood cells have no nucleus, giving more space for haemoglobin to carry oxygen, but they cannot repair or divide and survive about 120 days.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is inside the nucleus, and when do chromosomes become visible?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_chromatin_chromosome",
+          "linksChecks": [
+            "chk_sci9c2_nuc_chromatin"
+          ],
+          "criterion": "Connects chromatin in a non-dividing cell being organised into rod-shaped chromosomes when the cell is about to divide.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_sci9c2_no_nucleus_lifespan",
+          "linksChecks": [
+            "chk_sci9c2_nuc_rbc"
+          ],
+          "criterion": "Connects red blood cells having no nucleus to their inability to repair or divide and so a short lifespan of about 120 days.",
+          "isRequired": false
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_nuc_always_chromosomes",
+          "wrong": "Chromosomes are always visible as rods in every cell.",
+          "fix": "The nucleus contains chromosomes, which are visible as rod-shaped structures only when the cell is about to divide; in a non-dividing cell the DNA is present as chromatin material.",
+          "checkId": "mchk_misc_sci9c2_nuc_always_chromosomes",
+          "checkCriterion": "The answer states or implies this wrong idea: Chromosomes are always visible as rods in every cell.",
+          "fixCheckId": "mfix_misc_sci9c2_nuc_always_chromosomes",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The nucleus contains chromosomes, which are visible as rod-shaped structures only when the cell is about to divide; in a non-dividing cell the DNA is present as chromatin material.",
+          "keyPointIds": [
+            "sci9c2_t3c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_nuc_always_chromosomes"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_nuc_membrane",
+            "chk_sci9c2_nuc_nucleolus",
+            "chk_sci9c2_nuc_chromosomes",
+            "chk_sci9c2_nuc_inherit",
+            "chk_sci9c2_nuc_genes",
+            "chk_sci9c2_nuc_chromatin"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_nuc_rbc",
+            "lnk_sci9c2_chromatin_chromosome",
+            "lnk_sci9c2_no_nucleus_lifespan"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c4",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Ribosomes and the Endoplasmic Reticulum",
+      "headingType": "heading",
+      "sourcePages": [
+        17
+      ],
+      "conceptHash": "321fd8914f728e63d87b0193c006bfa71db96775ff2976e0fe564bef4beeda1a",
+      "cardText": "Ribosomes are tiny structures, present freely in the cytoplasm or attached to the endoplasmic reticulum, and are the sites of protein synthesis. The Endoplasmic Reticulum (ER) is a large organelle that spreads like a network within the cytoplasm and is continuous with the outer membrane of the nuclear envelope. It plays a key role in the synthesis and transport of proteins, fats (lipids) and some hormones in some specialised cells, and its structure varies with its function. The Rough ER (RER) looks rough under an electron microscope because ribosomes are attached to its surface, and is mainly involved in protein synthesis and secretion, as in pancreatic gland cells. The Smooth ER (SER) has no ribosomes on its surface, looks smooth, and is involved in the synthesis and storage of fats and hormones.",
+      "hint": "What is the difference between rough and smooth ER?",
+      "probe": "Differentiate between RER and SER in structure and function.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ribosomes and the Endoplasmic Reticulum, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What makes proteins in the cell, and where is it found?",
+          "requiredEvidence": [
+            "tiny structures",
+            "freely in the cytoplasm",
+            "attached to the endoplasmic reticulum",
+            "sites of protein synthesis"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_er_ribosome",
+              "criterion": "States that ribosomes are tiny structures, free in the cytoplasm or attached to the ER, that are the sites of protein synthesis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What makes proteins in the cell, and where is it found?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the large network in the cytoplasm connected to, and what does it make and carry?",
+          "requiredEvidence": [
+            "network within the cytoplasm",
+            "continuous with the outer membrane",
+            "synthesis and transport",
+            "proteins, fats",
+            "hormones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_er_def",
+              "criterion": "States that the ER is a large network-like organelle in the cytoplasm, continuous with the outer membrane of the nuclear envelope.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the large network in the cytoplasm connected to, and what does it make and carry?"
+            },
+            {
+              "id": "chk_sci9c2_er_role",
+              "criterion": "States that the ER plays a key role in the synthesis and transport of proteins, fats (lipids) and some hormones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the large network in the cytoplasm connected to, and what does it make and carry?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does one kind of network look rough, and what is its job?",
+          "requiredEvidence": [
+            "Rough Endoplasmic Reticulum",
+            "looks rough",
+            "ribosomes attached",
+            "protein synthesis",
+            "protein secretion"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_er_rer",
+              "criterion": "States that the RER looks rough because ribosomes are attached to its surface, and is mainly involved in protein synthesis and secretion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does one kind of network look rough, and what is its job?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the other kind look smooth, and what is its job?",
+          "requiredEvidence": [
+            "Smooth Endoplasmic Reticulum",
+            "does not have ribosomes",
+            "looks smooth",
+            "fats and hormones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_er_ser",
+              "criterion": "States that the SER has no ribosomes on its surface, looks smooth, and is involved in the synthesis and storage of fats and hormones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the other kind look smooth, and what is its job?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_er_ser_protein"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_ribosomes_rough",
+          "linksChecks": [
+            "chk_sci9c2_er_rer"
+          ],
+          "criterion": "Connects ribosomes attached to the ER surface to the ER looking rough and being involved in protein synthesis and secretion.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_er_ser_protein",
+          "wrong": "Smooth ER makes proteins because it has ribosomes.",
+          "fix": "The Smooth ER does not have ribosomes on its surface and is involved in the synthesis and storage of fats and hormones; the Rough ER has ribosomes and is involved in protein synthesis.",
+          "checkId": "mchk_misc_sci9c2_er_ser_protein",
+          "checkCriterion": "The answer states or implies this wrong idea: Smooth ER makes proteins because it has ribosomes.",
+          "fixCheckId": "mfix_misc_sci9c2_er_ser_protein",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Smooth ER does not have ribosomes on its surface and is involved in the synthesis and storage of fats and hormones; the Rough ER has ribosomes and is involved in protein synthesis.",
+          "keyPointIds": [
+            "sci9c2_t3c4_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_er_ser_protein"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_er_ribosome",
+            "chk_sci9c2_er_def",
+            "chk_sci9c2_er_role",
+            "chk_sci9c2_er_rer",
+            "chk_sci9c2_er_ser"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_ribosomes_rough"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c5",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Golgi Apparatus and Lysosomes",
+      "headingType": "heading",
+      "sourcePages": [
+        17,
+        18
+      ],
+      "conceptHash": "3f1a09578831c441e16f04f4e0771871ab73f2faae99e3b1110b7303faae6232",
+      "cardText": "The Golgi apparatus is made of stacks of flattened, sac-like structures and is functionally linked to the ER, the cell membrane and other organelles. It acts like the cell's post office: it modifies, sorts and packages proteins and/or lipids into vesicles for transport, secretion or lysosome formation. Camillo Golgi first observed it in 1898 in the nerve cells of a barn owl; early microscopes could not resolve it clearly and many doubted its existence, but electron microscope observations confirmed it decades later. Cells produce waste and damaged, worn-out organelles, and lysosomes, single membrane-bound sacs filled with enzymes, break down unwanted proteins, carbohydrates, fats and damaged parts, keeping the cell clean and healthy; the breakdown products are released into the cytoplasm and may be reused. Sperm cells contain lysosomal enzymes that help break down the outer layer of the egg during fertilisation.",
+      "hint": "What does the Golgi apparatus do with ER products, and what do lysosomes do with waste?",
+      "probe": "Describe the roles of the Golgi apparatus and lysosomes.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Golgi Apparatus and Lysosomes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the stack of flat sacs look like and what is it linked to?",
+          "requiredEvidence": [
+            "stacks of flattened, sac-like structures",
+            "Golgi apparatus",
+            "functionally linked",
+            "ER"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_golgi_struct",
+              "criterion": "States that the Golgi apparatus is made of stacks of flattened sac-like structures and is functionally linked to the ER, the cell membrane and other organelles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the stack of flat sacs look like and what is it linked to?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which everyday service is this organelle compared to, and what does it do with proteins and lipids?",
+          "requiredEvidence": [
+            "post office",
+            "modifies",
+            "sorts",
+            "packages",
+            "vesicles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_golgi_role",
+              "criterion": "States that the Golgi apparatus acts like the cell's post office: it modifies, sorts and packages proteins and/or lipids into vesicles for transport, secretion or lysosome formation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which everyday service is this organelle compared to, and what does it do with proteins and lipids?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c5_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "1898",
+            "Camillo Golgi",
+            "barn owl",
+            "electron microscope observations confirmed"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_golgi_history",
+              "criterion": "States that Camillo Golgi first observed it in 1898 in the nerve cells of a barn owl, and electron microscope observations confirmed it decades later.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the Golgi apparatus do with ER products, and what do lysosomes do with waste?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the enzyme-filled sacs, and what do they do for the cell?",
+          "requiredEvidence": [
+            "waste materials",
+            "single membrane-bound sacs",
+            "enzymes",
+            "break down",
+            "clean and healthy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_lyso_role",
+              "criterion": "States that lysosomes are single membrane-bound sacs filled with enzymes that break down unwanted proteins, carbohydrates, fats and damaged parts, keeping the cell clean and healthy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the enzyme-filled sacs, and what do they do for the cell?"
+            },
+            {
+              "id": "chk_sci9c2_lyso_reuse",
+              "criterion": "States that the products of breakdown are released into the cytoplasm, where they may be reused.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the enzyme-filled sacs, and what do they do for the cell?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_lyso_make_energy"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_golgi_vesicles",
+          "linksChecks": [
+            "chk_sci9c2_golgi_role"
+          ],
+          "criterion": "Connects the Golgi apparatus modifying, sorting and packaging proteins and lipids to their leaving in vesicles for transport, secretion or lysosome formation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_lyso_make_energy",
+          "wrong": "Lysosomes produce energy for the cell.",
+          "fix": "Lysosomes are single membrane-bound sacs filled with enzymes that break down unwanted proteins, carbohydrates, fats and damaged parts of the cell; mitochondria supply the energy.",
+          "checkId": "mchk_misc_sci9c2_lyso_make_energy",
+          "checkCriterion": "The answer states or implies this wrong idea: Lysosomes produce energy for the cell.",
+          "fixCheckId": "mfix_misc_sci9c2_lyso_make_energy",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Lysosomes are single membrane-bound sacs filled with enzymes that break down unwanted proteins, carbohydrates, fats and damaged parts of the cell; mitochondria supply the energy.",
+          "keyPointIds": [
+            "sci9c2_t3c5_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_lyso_make_energy"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_golgi_struct",
+            "chk_sci9c2_golgi_role",
+            "chk_sci9c2_lyso_role",
+            "chk_sci9c2_lyso_reuse"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_golgi_history",
+            "lnk_sci9c2_golgi_vesicles"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c6",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Mitochondria: The Powerhouse of the Cell",
+      "headingType": "heading",
+      "sourcePages": [
+        18
+      ],
+      "conceptHash": "7ddec4bb4ef5c3525a67f69fb5de9021cc390a27c6649e0b42232380a716afeb",
+      "cardText": "Mitochondria are often called the powerhouses of the cell because they supply the energy needed for most cellular activities. Each mitochondrion is surrounded by two membranes: the outer membrane is smooth and porous, and the inner membrane is folded into finger-like projections called cristae, which increase the surface area for chemical reactions and facilitate energy production. In mitochondria glucose and other molecules are broken down to release energy during cellular respiration, and the energy is stored in Adenosine Triphosphate (ATP), which acts as the energy currency and is used for most cellular activities.",
+      "hint": "What do mitochondria make, and why is the inner membrane folded?",
+      "probe": "Why are mitochondria called the powerhouses of the cell?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Mitochondria: The Powerhouse of the Cell, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are mitochondria given their nickname?",
+          "requiredEvidence": [
+            "powerhouses of the cell",
+            "supply the energy",
+            "cellular activities"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mito_power",
+              "criterion": "States that mitochondria are called the powerhouses of the cell because they supply the energy needed for most cellular activities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are mitochondria given their nickname?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What covers a mitochondrion, and how are the two layers different?",
+          "requiredEvidence": [
+            "two membranes",
+            "outer membrane",
+            "smooth and porous",
+            "cristae",
+            "surface area"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mito_membranes",
+              "criterion": "States that a mitochondrion has two membranes: a smooth porous outer membrane and an inner membrane folded into cristae.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What covers a mitochondrion, and how are the two layers different?"
+            },
+            {
+              "id": "chk_sci9c2_mito_cristae",
+              "criterion": "States that the cristae increase the surface area for chemical reactions and facilitate energy production.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What covers a mitochondrion, and how are the two layers different?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c6_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to glucose in mitochondria, and where does the released energy go?",
+          "requiredEvidence": [
+            "broken down",
+            "release energy",
+            "cellular respiration",
+            "Adenosine Triphosphate",
+            "energy currency"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mito_resp",
+              "criterion": "States that in mitochondria glucose and other molecules are broken down to release energy in cellular respiration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to glucose in mitochondria, and where does the released energy go?"
+            },
+            {
+              "id": "chk_sci9c2_mito_atp",
+              "criterion": "States that the energy is stored as ATP, the energy currency used for most cellular activities.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to glucose in mitochondria, and where does the released energy go?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mito_make_atp_light"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_cristae_surface",
+          "linksChecks": [
+            "chk_sci9c2_mito_cristae"
+          ],
+          "criterion": "Connects the folded cristae of the inner membrane to a larger surface area for chemical reactions and energy production.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mito_make_atp_light",
+          "wrong": "Mitochondria make energy from sunlight.",
+          "fix": "In mitochondria glucose and other molecules are broken down to release energy during cellular respiration; sunlight is used by chloroplasts for photosynthesis.",
+          "checkId": "mchk_misc_sci9c2_mito_make_atp_light",
+          "checkCriterion": "The answer states or implies this wrong idea: Mitochondria make energy from sunlight.",
+          "fixCheckId": "mfix_misc_sci9c2_mito_make_atp_light",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In mitochondria glucose and other molecules are broken down to release energy during cellular respiration; sunlight is used by chloroplasts for photosynthesis.",
+          "keyPointIds": [
+            "sci9c2_t3c6_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mito_make_atp_light"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_mito_power",
+            "chk_sci9c2_mito_membranes",
+            "chk_sci9c2_mito_cristae",
+            "chk_sci9c2_mito_resp",
+            "chk_sci9c2_mito_atp"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_cristae_surface"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c7",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Plastids",
+      "headingType": "heading",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "conceptHash": "76115f8f47ac7083c810f2fa1eca62f3eb0358bf6ea3742920fc19b84feb6825",
+      "cardText": "Animals obtain food from their surroundings, but plants synthesise food in sunlight using special organelles called plastids, which are used for food synthesis and storage. The green pigment chlorophyll, present in the chloroplast (a type of plastid), absorbs sunlight for photosynthesis. Chloroplasts are double-membrane-bound like mitochondria; inside is a semi-fluid stroma with disc-shaped membrane structures containing chlorophyll, and the sugars made are stored in the stroma along with starch granules. In flower petals and fruits, plastids called chromoplasts contain yellow, orange or red pigments that give bright colours, attracting pollinators and fruit-eating animals that help seed dispersal. Colourless plastids called leucoplasts store food such as starch, oils or proteins, for example starch in potato and taro. Mitochondria and plastids have their own DNA and ribosomes and can make some of their own proteins, which suggests they share an evolutionary history with single-celled organisms like certain bacteria.",
+      "hint": "Where do plants make food, how do chromoplasts and leucoplasts differ, and what do plastids share with mitochondria?",
+      "probe": "Describe the types of plastids and what they do.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Plastids, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the organelles that plants use to make and store food, and which one traps sunlight?",
+          "requiredEvidence": [
+            "plastids",
+            "food synthesis and storage",
+            "photosynthesis",
+            "chlorophyll",
+            "chloroplast"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pl_def",
+              "criterion": "States that plants use special organelles called plastids for food synthesis and storage, and the chloroplast, a type of plastid, contains chlorophyll that absorbs sunlight for photosynthesis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the organelles that plants use to make and store food, and which one traps sunlight?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c7_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "double-membrane-bound",
+            "semi-fluid substance",
+            "stroma",
+            "disc-shaped membrane structures"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pl_struct",
+              "criterion": "States that a chloroplast is double-membrane-bound with a semi-fluid stroma containing disc-shaped membrane structures that hold chlorophyll.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where do plants make food, how do chromoplasts and leucoplasts differ, and what do plastids share with mitochondria?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c7_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which organelles give flowers and fruits their striking colours, and why does this matter?",
+          "requiredEvidence": [
+            "pigments other than chlorophyll",
+            "chromoplasts",
+            "yellow, orange or red",
+            "bright colours",
+            "attracting pollinators"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pl_chromo",
+              "criterion": "States that chromoplasts in flower petals and fruits contain yellow, orange or red pigments other than chlorophyll that give bright colours which attract pollinators and animals that disperse seeds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which organelles give flowers and fruits their striking colours, and why does this matter?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_pl_only_green"
+          ]
+        },
+        {
+          "id": "sci9c2_t3c7_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which organelles have no colour, and what do they hold?",
+          "requiredEvidence": [
+            "lack pigments",
+            "colourless",
+            "leucoplasts",
+            "store food material",
+            "starch, oils or proteins"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pl_leuco",
+              "criterion": "States that leucoplasts lack pigments and are colourless, and store food such as starch, oils or proteins, for example starch in potato and taro cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which organelles have no colour, and what do they hold?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_pl_roots"
+          ]
+        },
+        {
+          "id": "sci9c2_t3c7_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do mitochondria and plastids share with bacteria, and what does that suggest?",
+          "requiredEvidence": [
+            "similar to certain bacteria",
+            "their own DNA and ribosomes",
+            "make some of their own proteins",
+            "evolutionary history",
+            "single-celled organisms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_pl_dna",
+              "criterion": "States that mitochondria and plastids have their own DNA and ribosomes, so they can make some of their own proteins.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do mitochondria and plastids share with bacteria, and what does that suggest?"
+            },
+            {
+              "id": "chk_sci9c2_pl_history",
+              "criterion": "States that these features, similar to certain bacteria, suggest mitochondria and plastids share an evolutionary history with single-celled organisms.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do mitochondria and plastids share with bacteria, and what does that suggest?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_pigment_colour",
+          "linksChecks": [
+            "chk_sci9c2_pl_chromo"
+          ],
+          "criterion": "Connects chromoplasts containing yellow, orange or red pigments to the bright colours of flowers and fruits that attract pollinators and seed dispersers.",
+          "isRequired": true
+        },
+        {
+          "id": "lnk_sci9c2_own_dna_history",
+          "linksChecks": [
+            "chk_sci9c2_pl_dna",
+            "chk_sci9c2_pl_history"
+          ],
+          "criterion": "Connects mitochondria and plastids having their own DNA and ribosomes to their making some proteins themselves and sharing an evolutionary history with bacteria.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_pl_roots",
+          "wrong": "Plastids are absent in plant roots because roots are underground and do not photosynthesise.",
+          "fix": "Plastids include leucoplasts, which are colourless and store food such as starch; they occur in non-green parts like potato and taro cells, so roots can contain plastids.",
+          "checkId": "mchk_misc_sci9c2_pl_roots",
+          "checkCriterion": "The answer states or implies this wrong idea: Plastids are absent in plant roots because roots are underground and do not photosynthesise.",
+          "fixCheckId": "mfix_misc_sci9c2_pl_roots",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Plastids include leucoplasts, which are colourless and store food such as starch; they occur in non-green parts like potato and taro cells, so roots can contain plastids.",
+          "keyPointIds": [
+            "sci9c2_t3c7_kp4"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_sci9c2_pl_only_green",
+          "wrong": "All plastids contain chlorophyll and are green.",
+          "fix": "Chromoplasts contain pigments other than chlorophyll, and leucoplasts lack pigments and are colourless.",
+          "checkId": "mchk_misc_sci9c2_pl_only_green",
+          "checkCriterion": "The answer states or implies this wrong idea: All plastids contain chlorophyll and are green.",
+          "fixCheckId": "mfix_misc_sci9c2_pl_only_green",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Chromoplasts contain pigments other than chlorophyll, and leucoplasts lack pigments and are colourless.",
+          "keyPointIds": [
+            "sci9c2_t3c7_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_pl_roots",
+            "mchk_misc_sci9c2_pl_only_green"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_pl_def",
+            "chk_sci9c2_pl_chromo",
+            "chk_sci9c2_pl_leuco",
+            "chk_sci9c2_pl_dna",
+            "chk_sci9c2_pl_history"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_pl_struct",
+            "lnk_sci9c2_pigment_colour",
+            "lnk_sci9c2_own_dna_history"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c8",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "Vacuoles: Storage and Support",
+      "headingType": "heading",
+      "sourcePages": [
+        19
+      ],
+      "conceptHash": "8d94c74fd78e80b16157bdee7440f8e73080fb6340625afc81e6301fcc7117d0",
+      "cardText": "In a mature plant cell there is usually one large central vacuole surrounded by a single selectively permeable membrane and filled with a watery fluid called cell sap. The vacuole stores water, minerals, sugars and waste material. By storing large amounts of water, the vacuole helps maintain pressure inside the cell, which keeps a plant cell firm. When a plant does not get enough water, the vacuole loses water, the cells become less firm and the plant wilts. In animal cells vacuoles are sometimes present; they are not as large as plant vacuoles but help in temporary storage of materials.",
+      "hint": "Why does a plant wilt when it lacks water, and what does the vacuole store?",
+      "probe": "What does the vacuole do in a plant cell, and why do plants wilt?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Vacuoles: Storage and Support, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c8_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is found in the middle of a mature plant cell, and what does it hold?",
+          "requiredEvidence": [
+            "one large central vacuole",
+            "single selectively permeable membrane",
+            "cell sap",
+            "water, minerals, sugars and waste"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_vac_def",
+              "criterion": "States that a mature plant cell usually has one large central vacuole with a single selectively permeable membrane, filled with cell sap.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is found in the middle of a mature plant cell, and what does it hold?"
+            },
+            {
+              "id": "chk_sci9c2_vac_store",
+              "criterion": "States that the vacuole stores water, minerals, sugars and waste material.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is found in the middle of a mature plant cell, and what does it hold?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c8_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a plant droop when it is short of water?",
+          "requiredEvidence": [
+            "maintain pressure inside the cell",
+            "keeps a plant cell firm",
+            "loses water",
+            "less firm",
+            "wilted"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_vac_pressure",
+              "criterion": "States that the vacuole maintains pressure inside the cell by storing water, which keeps the plant cell firm, and when a plant lacks water the vacuole loses water, the cells become less firm and the plant wilts.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a plant droop when it is short of water?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c8_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "animal cells",
+            "sometimes present",
+            "not as large",
+            "temporary storage"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_vac_animal",
+              "criterion": "States that animal cells sometimes have vacuoles, smaller than plant vacuoles, for the temporary storage of materials.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a plant wilt when it lacks water, and what does the vacuole store?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_vac_animal_none"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_water_firm_wilt",
+          "linksChecks": [
+            "chk_sci9c2_vac_pressure"
+          ],
+          "criterion": "Connects the vacuole storing water and maintaining pressure inside the cell to the cell staying firm, and loss of that water to wilting.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_vac_animal_none",
+          "wrong": "Vacuoles are found only in plant cells.",
+          "fix": "In animal cells vacuoles are sometimes present; although not as large as plant vacuoles, they help in temporary storage of materials.",
+          "checkId": "mchk_misc_sci9c2_vac_animal_none",
+          "checkCriterion": "The answer states or implies this wrong idea: Vacuoles are found only in plant cells.",
+          "fixCheckId": "mfix_misc_sci9c2_vac_animal_none",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In animal cells vacuoles are sometimes present; although not as large as plant vacuoles, they help in temporary storage of materials.",
+          "keyPointIds": [
+            "sci9c2_t3c8_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_vac_animal_none"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_vac_def",
+            "chk_sci9c2_vac_store",
+            "chk_sci9c2_vac_pressure"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_vac_animal",
+            "lnk_sci9c2_water_firm_wilt"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t3_c9",
+      "topicId": "ncert_sci_9_ch2_t3",
+      "topicTitle": "The cell interior",
+      "label": "DNA Controls the Cell: The Synthetic DNA Experiment",
+      "headingType": "example",
+      "sourcePages": [
+        20
+      ],
+      "conceptHash": "6aacf48369f0f5b504a46c4c2270108b18f81f3b138ecfdace720db2ee6556a7",
+      "cardText": "In 2010 J. Craig Venter and his team studied the complete DNA sequence of the simple bacterium Mycoplasma mycoides using computer programming and chemically synthesised an exact copy of this DNA in the laboratory. They took another closely related bacterium, removed its DNA but kept the rest of the cell, such as the cytoplasm and cell membrane, intact, and inserted the synthetic DNA. The cell started to grow and divide following the instructions of the newly inserted synthetic DNA. This experiment showed that DNA controls the structure and activities of a cell. However, scientists did not create a completely new cell from scratch: only the DNA was synthetic and the other parts were taken from an already existing living cell.",
+      "hint": "What was synthetic in the experiment, and what did it show about DNA?",
+      "probe": "What did the synthetic DNA experiment show, and why was it not a completely new cell?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain DNA Controls the Cell: The Synthetic DNA Experiment, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t3c9_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did the team build in the laboratory?",
+          "requiredEvidence": [
+            "Mycoplasma mycoides",
+            "complete DNA sequence",
+            "chemically synthesised",
+            "exact copy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_syn_made",
+              "criterion": "States that the team studied the complete DNA sequence of a simple bacterium and chemically synthesised an exact copy of this DNA in the laboratory.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did the team build in the laboratory?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c9_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did the cell do after the new DNA was put in, and what did that show?",
+          "requiredEvidence": [
+            "inserted the synthetic DNA",
+            "grow and divide",
+            "instructions",
+            "DNA controls the structure and activities of a cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_syn_result",
+              "criterion": "States that the cell with the synthetic DNA inserted grew and divided following its instructions, showing that DNA controls the structure and activities of a cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did the cell do after the new DNA was put in, and what did that show?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t3c9_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What part of the cell was actually made by the scientists, and what was borrowed?",
+          "requiredEvidence": [
+            "did not create a completely new cell",
+            "only the DNA was synthetic",
+            "already existing living cell"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_syn_limit",
+              "criterion": "States that scientists did not create a completely new cell: only the DNA was synthetic and the rest of the cell came from an existing living cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What part of the cell was actually made by the scientists, and what was borrowed?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_syn_new_cell"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_instructions_control",
+          "linksChecks": [
+            "chk_sci9c2_syn_result"
+          ],
+          "criterion": "Connects the cell growing and dividing according to the inserted synthetic DNA to the conclusion that DNA controls the structure and activities of a cell.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_syn_new_cell",
+          "wrong": "Scientists created a completely new living cell from non-living chemicals in this experiment.",
+          "fix": "Scientists did not create a completely new cell from scratch; only the DNA was synthetic and the other parts of the cell were taken from an already existing living cell.",
+          "checkId": "mchk_misc_sci9c2_syn_new_cell",
+          "checkCriterion": "The answer states or implies this wrong idea: Scientists created a completely new living cell from non-living chemicals in this experiment.",
+          "fixCheckId": "mfix_misc_sci9c2_syn_new_cell",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Scientists did not create a completely new cell from scratch; only the DNA was synthetic and the other parts of the cell were taken from an already existing living cell.",
+          "keyPointIds": [
+            "sci9c2_t3c9_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_syn_new_cell"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_syn_made",
+            "chk_sci9c2_syn_result",
+            "chk_sci9c2_syn_limit"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_instructions_control"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c1",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "How Cells Grow and Divide",
+      "headingType": "heading",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "conceptHash": "e627c5b8681f7d990afccd051ac58ecb012230e4dcf87a7252b2a7f1771735a0",
+      "cardText": "When a cut on the skin heals or lost hair grows back, it is because cells in our body can grow and divide to replace old, dead or damaged cells. Growth of the body is not just because cells get bigger: cells can grow only up to a certain size, so growth happens because cells divide to form new cells. The cells of a growing onion root tip divide continuously, which is why they show different structures corresponding to different stages of cell division. Every day an estimated hundreds of billions of cells in our body, almost 1 per cent of the total, are replaced. Both prokaryotic and eukaryotic cells divide, but eukaryotic cells divide in a more controlled and orderly way by the cell cycle. Cell division is the process by which new cells are formed from pre-existing cells; it allows organisms to grow, repair damaged tissues and reproduce, and skin cells divide continuously to replace cells lost regularly. There are two major types, mitosis and meiosis: mitosis is important for normal growth, repair, maintenance and asexual reproduction, while meiosis is important for sexual reproduction and creates genetic diversity.",
+      "hint": "Why do organisms grow by cell division rather than cells just getting bigger, and what are the two types?",
+      "probe": "Why do cells divide, and what are the two major types of cell division?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain How Cells Grow and Divide, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a body grow, if the cells cannot just get larger without limit?",
+          "requiredEvidence": [
+            "grow and divide",
+            "replace the old, dead, or damaged cells",
+            "not just because cells get bigger",
+            "certain size",
+            "divide to form new cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_div_replace",
+              "criterion": "States that cells grow and divide to replace old, dead or damaged cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a body grow, if the cells cannot just get larger without limit?"
+            },
+            {
+              "id": "chk_sci9c2_div_growth",
+              "criterion": "States that body growth is not just cells getting bigger: cells can grow only up to a certain size, so growth happens because cells divide to form new cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a body grow, if the cells cannot just get larger without limit?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_div_bigger"
+          ]
+        },
+        {
+          "id": "sci9c2_t4c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "growing tip of root of onion",
+            "divide continuously",
+            "cell division",
+            "different stages"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_div_onion",
+              "criterion": "States that the cells of a growing onion root tip divide continuously and so show different structures corresponding to different stages of cell division.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do organisms grow by cell division rather than cells just getting bigger, and what are the two types?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "hundreds of billions of cells",
+            "1 per cent",
+            "prokaryotic and eukaryotic cells divide",
+            "controlled and orderly",
+            "cell cycle"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_div_daily",
+              "criterion": "States that hundreds of billions of cells in the body, almost 1 per cent, are replaced every day.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why do organisms grow by cell division rather than cells just getting bigger, and what are the two types?"
+            },
+            {
+              "id": "chk_sci9c2_div_cycle",
+              "criterion": "States that eukaryotic cells divide in a more controlled and orderly manner by the cell cycle.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why do organisms grow by cell division rather than cells just getting bigger, and what are the two types?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the process that makes new cells, and what is it useful for?",
+          "requiredEvidence": [
+            "new cells are formed from",
+            "grow, repair damaged tissues and reproduce",
+            "skin cells",
+            "two major types",
+            "mitosis and meiosis"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_div_def",
+              "criterion": "States that cell division is the process by which new cells are formed from existing cells, allowing organisms to grow, repair damaged tissues and reproduce.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the process that makes new cells, and what is it useful for?"
+            },
+            {
+              "id": "chk_sci9c2_div_types",
+              "criterion": "States that there are two major types of cell division: mitosis and meiosis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the process that makes new cells, and what is it useful for?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the two kinds of this process used for?",
+          "requiredEvidence": [
+            "normal growth, repair, maintenance",
+            "asexual reproduction",
+            "sexual reproduction",
+            "genetic diversity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_div_uses",
+              "criterion": "States that mitosis is important for normal growth, repair, maintenance and asexual reproduction, while meiosis is important for sexual reproduction and genetic diversity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the two kinds of this process used for?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_size_division",
+          "linksChecks": [
+            "chk_sci9c2_div_growth"
+          ],
+          "criterion": "Connects cells being able to grow only up to a certain size to growth of the body happening by cells dividing to form new cells.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_div_bigger",
+          "wrong": "A body grows because its cells become bigger and bigger.",
+          "fix": "When our body grows, it is not just because cells get bigger; cells can grow only up to a certain size, but growth happens because cells divide to form new cells.",
+          "checkId": "mchk_misc_sci9c2_div_bigger",
+          "checkCriterion": "The answer states or implies this wrong idea: A body grows because its cells become bigger and bigger.",
+          "fixCheckId": "mfix_misc_sci9c2_div_bigger",
+          "fixCheckCriterion": "Answer 2 states the correct idea: When our body grows, it is not just because cells get bigger; cells can grow only up to a certain size, but growth happens because cells divide to form new cells.",
+          "keyPointIds": [
+            "sci9c2_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_div_bigger"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_div_replace",
+            "chk_sci9c2_div_growth",
+            "chk_sci9c2_div_def",
+            "chk_sci9c2_div_types",
+            "chk_sci9c2_div_uses"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_div_onion",
+            "chk_sci9c2_div_daily",
+            "chk_sci9c2_div_cycle",
+            "lnk_sci9c2_size_division"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c2",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "Mitosis",
+      "headingType": "heading",
+      "sourcePages": [
+        21
+      ],
+      "conceptHash": "37f5a0a991541ba60a948dec0aee3d51d1ce90dbac966e1ed305a44d264834c6",
+      "cardText": "Every human begins life as a single fertilised egg, and this one cell divides repeatedly to form trillions of cells in the body. Cells increase in number through mitosis, the most common type of cell division. Mitosis produces two genetically identical daughter cells from one parent cell. Each new cell gets the same DNA and the same number of chromosomes as the parent cell, which ensures that genetic information is largely maintained across body cells.",
+      "hint": "What does mitosis produce, and what do the daughter cells inherit?",
+      "probe": "What is mitosis and what does it produce?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Mitosis, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a human body grow from its very first cell?",
+          "requiredEvidence": [
+            "single fertilised egg",
+            "divides repeatedly",
+            "trillions of cells",
+            "mitosis",
+            "most common type of cell division"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mit_egg",
+              "criterion": "States that every human begins as a single fertilised egg which divides repeatedly, mainly by mitosis, to form trillions of cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a human body grow from its very first cell?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the new cells from this kind of division get from the original cell?",
+          "requiredEvidence": [
+            "two genetically identical daughter cells",
+            "one parent cell",
+            "same DNA",
+            "same number of chromosomes",
+            "genetic information is largely maintained"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mit_two",
+              "criterion": "States that mitosis produces two genetically identical daughter cells from one parent cell.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the new cells from this kind of division get from the original cell?"
+            },
+            {
+              "id": "chk_sci9c2_mit_same",
+              "criterion": "States that each new cell gets the same DNA and the same number of chromosomes as the parent cell, so genetic information is maintained across body cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the new cells from this kind of division get from the original cell?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mit_half"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_same_dna_maintained",
+          "linksChecks": [
+            "chk_sci9c2_mit_same"
+          ],
+          "criterion": "Connects each daughter cell receiving the same DNA and chromosome number as the parent to genetic information being maintained across body cells.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mit_half",
+          "wrong": "Mitosis halves the number of chromosomes in each daughter cell.",
+          "fix": "Each new cell formed by mitosis gets the same DNA and the same number of chromosomes as the parent cell.",
+          "checkId": "mchk_misc_sci9c2_mit_half",
+          "checkCriterion": "The answer states or implies this wrong idea: Mitosis halves the number of chromosomes in each daughter cell.",
+          "fixCheckId": "mfix_misc_sci9c2_mit_half",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Each new cell formed by mitosis gets the same DNA and the same number of chromosomes as the parent cell.",
+          "keyPointIds": [
+            "sci9c2_t4c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mit_half"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_mit_egg",
+            "chk_sci9c2_mit_two",
+            "chk_sci9c2_mit_same"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c2_same_dna_maintained"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c3",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "Meiosis and Errors in Cell Division",
+      "headingType": "heading",
+      "sourcePages": [
+        22
+      ],
+      "conceptHash": "df6d9a9ab8ae6d85a87a40f6c3883431c0dc138fbc3178cae1dcc5b21bd6102b",
+      "cardText": "Meiosis is a type of cell division that produces gametes and occurs only in the cells of reproductive organs. Gametes produced for sexual reproduction create variations and diversity among living organisms, so children resemble their parents but are not exactly the same. In animals meiosis occurs only in the testes of males to produce sperm and the ovaries of females to produce eggs; in plants it occurs in anthers to form pollen grains and in ovaries to produce egg cells. In meiosis the parent cell divides twice, one after the other, to form four daughter cells. In the first division the cells divide into two daughter cells and the chromosome number in each is reduced to half; the second division is similar to mitosis, so each daughter cell divides into two, forming four cells with half the number of chromosomes. During fertilisation, when gametes from two individuals combine, the original chromosome number is restored. Errors in mitosis lead to uncontrolled cell divisions, tumours and abnormal numbers of chromosomes in body cells, while errors in meiosis may cause genetic disorders, early pregnancy loss or reduced fertility.",
+      "hint": "Why must gametes be made by meiosis, and what happens at fertilisation?",
+      "probe": "What happens in meiosis, and what would happen if gametes were formed by mitotic divisions?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Meiosis and Errors in Cell Division, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does this kind of division happen, and what does it produce?",
+          "requiredEvidence": [
+            "produces gametes",
+            "only in the cells of reproductive organs",
+            "testes",
+            "ovaries",
+            "sperm",
+            "eggs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mei_where",
+              "criterion": "States that meiosis produces gametes and occurs only in the cells of reproductive organs, such as the testes (sperm) and ovaries (eggs) in animals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does this kind of division happen, and what does it produce?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mei_somatic"
+          ]
+        },
+        {
+          "id": "sci9c2_t4c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "variations and diversity",
+            "resemble their parents",
+            "not exactly the same"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mei_diversity",
+              "criterion": "States that gametes from sexual reproduction create variation and diversity, so children resemble their parents but are not exactly the same.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why must gametes be made by meiosis, and what happens at fertilisation?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How many times does the parent cell divide here, and what happens to the number of chromosomes?",
+          "requiredEvidence": [
+            "divides twice",
+            "four daughter cells",
+            "reduced to half",
+            "second division is similar to mitosis",
+            "half the number of chromosomes"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mei_steps",
+              "criterion": "States that in meiosis the parent cell divides twice to form four daughter cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many times does the parent cell divide here, and what happens to the number of chromosomes?"
+            },
+            {
+              "id": "chk_sci9c2_mei_half",
+              "criterion": "States that in the first division the chromosome number in each daughter cell is reduced to half, and the four final cells have half the number of chromosomes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How many times does the parent cell divide here, and what happens to the number of chromosomes?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_mei_two_cells"
+          ]
+        },
+        {
+          "id": "sci9c2_t4c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the chromosome number when two gametes join?",
+          "requiredEvidence": [
+            "fertilisation",
+            "gametes from two individuals combine",
+            "original chromosome number is restored"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mei_fert",
+              "criterion": "States that during fertilisation, when gametes from two individuals combine, the original chromosome number is restored.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the chromosome number when two gametes join?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "minCount",
+            "n": 2
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "uncontrolled cell divisions",
+            "tumours",
+            "abnormal number of chromosomes",
+            "genetic disorders",
+            "early pregnancy loss or reduced fertility"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_mei_err_mitosis",
+              "criterion": "States that errors in mitosis lead to uncontrolled cell divisions, tumours and abnormal chromosome numbers in body cells.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why must gametes be made by meiosis, and what happens at fertilisation?"
+            },
+            {
+              "id": "chk_sci9c2_mei_err_meiosis",
+              "criterion": "States that errors in meiosis may result in genetic disorders, early pregnancy loss or reduced fertility.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why must gametes be made by meiosis, and what happens at fertilisation?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_half_restored",
+          "linksChecks": [
+            "chk_sci9c2_mei_half",
+            "chk_sci9c2_mei_fert"
+          ],
+          "criterion": "Connects gametes carrying half the chromosome number to the original chromosome number being restored when two gametes combine at fertilisation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_mei_somatic",
+          "wrong": "Meiosis occurs in all body cells such as skin cells.",
+          "fix": "Meiosis occurs only in the cells of reproductive organs, producing gametes; skin cells divide by mitosis.",
+          "checkId": "mchk_misc_sci9c2_mei_somatic",
+          "checkCriterion": "The answer states or implies this wrong idea: Meiosis occurs in all body cells such as skin cells.",
+          "fixCheckId": "mfix_misc_sci9c2_mei_somatic",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Meiosis occurs only in the cells of reproductive organs, producing gametes; skin cells divide by mitosis.",
+          "keyPointIds": [
+            "sci9c2_t4c3_kp1"
+          ],
+          "isRequired": true
+        },
+        {
+          "id": "misc_sci9c2_mei_two_cells",
+          "wrong": "Meiosis produces two identical daughter cells.",
+          "fix": "In meiosis the parent cell divides twice to form four daughter cells, each with half the number of chromosomes.",
+          "checkId": "mchk_misc_sci9c2_mei_two_cells",
+          "checkCriterion": "The answer states or implies this wrong idea: Meiosis produces two identical daughter cells.",
+          "fixCheckId": "mfix_misc_sci9c2_mei_two_cells",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In meiosis the parent cell divides twice to form four daughter cells, each with half the number of chromosomes.",
+          "keyPointIds": [
+            "sci9c2_t4c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_mei_somatic",
+            "mchk_misc_sci9c2_mei_two_cells"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_mei_where",
+            "chk_sci9c2_mei_steps",
+            "chk_sci9c2_mei_half",
+            "chk_sci9c2_mei_fert"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_mei_diversity",
+            "chk_sci9c2_mei_err_mitosis",
+            "chk_sci9c2_mei_err_meiosis",
+            "lnk_sci9c2_half_restored"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c4",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "Cell Culture and Totipotency",
+      "headingType": "heading",
+      "sourcePages": [
+        22,
+        23
+      ],
+      "conceptHash": "85c2c7e5888bfe899b5a917e6a52b4e433974670056b64770ff5fe9b6c5e8b36",
+      "cardText": "Scientists have developed methods to grow plant and animal cells outside the body in special conditions, called cell culture. Cells taken from an organism are placed in a nutrient-rich medium that lets them grow and multiply, with the right temperature, acidic or alkaline conditions and moisture kept under sterile conditions. Cell culture is crucial for studying how cells work and for producing biochemicals, food, medicines and vaccines. In 1902 the Austrian botanist Gottlieb Haberlandt proposed that any living plant cell, even a fully mature one, can develop into a complete plant given suitable nutrients and favourable conditions; this special ability of plant cells is called totipotency, and it laid the foundation for Plant Tissue Culture Technology.",
+      "hint": "What is cell culture, and what is totipotency?",
+      "probe": "What is cell culture, and what did Haberlandt propose about plant cells?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Cell Culture and Totipotency, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How are cells kept alive and multiplying away from the organism?",
+          "requiredEvidence": [
+            "outside the body",
+            "cell culture",
+            "nutrient-rich medium",
+            "grow and multiply"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_cc_def",
+              "criterion": "States that cell culture is growing plant and animal cells outside the body in special conditions, in a nutrient-rich medium that lets them grow and multiply.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are cells kept alive and multiplying away from the organism?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c4_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "studying how cells work",
+            "biochemicals",
+            "medicines",
+            "vaccines"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_cc_uses",
+              "criterion": "States that cell culture is crucial for studying how cells work and for producing biochemicals, food, medicines and vaccines.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is cell culture, and what is totipotency?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did Haberlandt propose about a living plant cell?",
+          "requiredEvidence": [
+            "any living plant cell",
+            "complete plant",
+            "suitable nutrients and favourable conditions",
+            "totipotency"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_cc_toti",
+              "criterion": "States that Haberlandt proposed that any living plant cell can develop into a complete plant given suitable nutrients and conditions, an ability called totipotency.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Haberlandt propose about a living plant cell?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [],
+      "misconceptions": [],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_cc_def",
+            "chk_sci9c2_cc_toti"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_cc_uses"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c5",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "Cell Theory",
+      "headingType": "heading",
+      "sourcePages": [
+        23
+      ],
+      "conceptHash": "686362b8758c98ac2e02f6e83805438c5b78103ba8eae6b4b433da00aff8d61f",
+      "cardText": "All organisms are made up of cells. In 1838 the German botanist Matthias Schleiden reported that all plants are made up of cells, and in 1839 the German zoologist Theodor Schwann found that all animals are also made up of cells. In 1855 Rudolf Virchow further expanded the Cell Theory by stating that new cells are formed only from pre-existing cells. According to the classical Cell Theory, all living organisms are made up of one or more cells, the cell is the basic unit of structure and function in living beings, and all cells arise from pre-existing cells. This unifies all biology, from bacteria to humans, and explains life's continuity through cell division.",
+      "hint": "Who contributed to the Cell Theory, and what are its three statements?",
+      "probe": "State the classical Cell Theory and name the scientists who developed it.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Cell Theory, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did Schleiden and Schwann each find, and when?",
+          "requiredEvidence": [
+            "Matthias Schleiden",
+            "1838",
+            "all plants",
+            "Theodor Schwann",
+            "1839",
+            "all animals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ct_schleiden",
+              "criterion": "States that in 1838 Matthias Schleiden reported that all plants are made up of cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Schleiden and Schwann each find, and when?"
+            },
+            {
+              "id": "chk_sci9c2_ct_schwann",
+              "criterion": "States that in 1839 Theodor Schwann found that all animals are also made up of cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Schleiden and Schwann each find, and when?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What did Virchow add, and when?",
+          "requiredEvidence": [
+            "Rudolf Virchow",
+            "1855",
+            "new cells are formed only from pre-existing cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ct_virchow",
+              "criterion": "States that in 1855 Rudolf Virchow expanded the Cell Theory by stating that new cells are formed only from pre-existing cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What did Virchow add, and when?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_ct_spontaneous"
+          ]
+        },
+        {
+          "id": "sci9c2_t4c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the three points of this theory?",
+          "requiredEvidence": [
+            "one or more cells",
+            "basic unit of structure and function",
+            "arise from pre-existing cells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ct_statements",
+              "criterion": "States the three points of the classical Cell Theory: all organisms are made of one or more cells, the cell is the basic unit of structure and function, and all cells arise from pre-existing cells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the three points of this theory?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c5_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "unifies all biology",
+            "bacteria to humans",
+            "life's continuity",
+            "cell division"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_ct_unify",
+              "criterion": "States that the Cell Theory unifies all biology, from bacteria to humans, and explains life's continuity through cell division.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who contributed to the Cell Theory, and what are its three statements?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_virchow_continuity",
+          "linksChecks": [
+            "chk_sci9c2_ct_virchow",
+            "chk_sci9c2_ct_unify"
+          ],
+          "criterion": "Connects Virchow's statement that new cells form only from pre-existing cells to the Cell Theory explaining life's continuity through cell division.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_ct_spontaneous",
+          "wrong": "According to the Cell Theory, new cells can arise from non-living matter.",
+          "fix": "All cells arise from pre-existing cells; Virchow stated that new cells are formed only from pre-existing cells.",
+          "checkId": "mchk_misc_sci9c2_ct_spontaneous",
+          "checkCriterion": "The answer states or implies this wrong idea: According to the Cell Theory, new cells can arise from non-living matter.",
+          "fixCheckId": "mfix_misc_sci9c2_ct_spontaneous",
+          "fixCheckCriterion": "Answer 2 states the correct idea: All cells arise from pre-existing cells; Virchow stated that new cells are formed only from pre-existing cells.",
+          "keyPointIds": [
+            "sci9c2_t4c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_ct_spontaneous"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_ct_schleiden",
+            "chk_sci9c2_ct_schwann",
+            "chk_sci9c2_ct_virchow",
+            "chk_sci9c2_ct_statements"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_ct_unify",
+            "lnk_sci9c2_virchow_continuity"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch2_t4_c6",
+      "topicId": "ncert_sci_9_ch2_t4",
+      "topicTitle": "Cell division, cell theory and the life of cells",
+      "label": "Life Span of Cells, Contact Inhibition and Cancer",
+      "headingType": "heading",
+      "sourcePages": [
+        23
+      ],
+      "conceptHash": "b0c9a9bb7151b4b21ac255aef7cb5f75784d59ed81551374265276b95bee9e07",
+      "cardText": "Cells grow and divide in a controlled way, stay in the right place, carry out their functions and eventually die when no longer needed, and dead cells are replaced by new cells doing the same function; every cell has a definite life span. In many animal cells, division usually stops when cells come in contact with neighbouring cells, called contact inhibition. Cancer cells lose this control and keep dividing uncontrollably, leading to tumours, which may be benign or malignant; cancerous tumours can invade nearby tissues and spread to other parts of the body to form new tumours. Plant cells, because of their rigid cell walls, do not show contact inhibition and follow a different pattern of growth. Programmed Cell Death (PCD) is a genetically regulated and organised process of selective cell destruction that is essential for normal development, cellular quality control and immune function; for example, it helps form fingers in an embryo by eliminating cells between the digits.",
+      "hint": "What stops normal animal cells from dividing endlessly, and what goes wrong in cancer?",
+      "probe": "Which phenomenon inhibits the formation of tumours in the human body, and what happens in cancer?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Life Span of Cells, Contact Inhibition and Cancer, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c2_t4c6_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to cells over their lifetime, and what is meant by a definite span?",
+          "requiredEvidence": [
+            "controlled way",
+            "eventually die",
+            "replaced by new cells",
+            "definite life span"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_can_lifespan",
+              "criterion": "States that cells grow and divide in a controlled way, carry out their functions and eventually die, being replaced by new cells, so every cell has a definite life span.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to cells over their lifetime, and what is meant by a definite span?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What usually stops an animal cell from dividing, and what goes wrong in cancer cells?",
+          "requiredEvidence": [
+            "division usually stops",
+            "contact with neighbouring cells",
+            "contact inhibition",
+            "cancer cells lose this control",
+            "tumours"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_can_contact",
+              "criterion": "States that in many animal cells division usually stops when cells contact neighbouring cells, called contact inhibition.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What usually stops an animal cell from dividing, and what goes wrong in cancer cells?"
+            },
+            {
+              "id": "chk_sci9c2_can_cancer",
+              "criterion": "States that cancer cells lose this control and keep dividing uncontrollably, forming tumours.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What usually stops an animal cell from dividing, and what goes wrong in cancer cells?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c6_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "plant cells grow differently",
+            "rigid cell walls",
+            "do not show contact inhibition",
+            "different pattern of growth"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_can_plant",
+              "criterion": "States that, due to their rigid cell walls, plant cells do not show contact inhibition and follow a different pattern of growth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What stops normal animal cells from dividing endlessly, and what goes wrong in cancer?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c2_can_plants"
+          ]
+        },
+        {
+          "id": "sci9c2_t4c6_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Programmed Cell Death",
+            "genetically regulated",
+            "selective cell destruction",
+            "normal development",
+            "fingers",
+            "webbed hands"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_can_pcd",
+              "criterion": "States that Programmed Cell Death is a genetically regulated, organised process of selective cell destruction essential for normal development, cellular quality control and immune function, such as forming fingers by removing cells between digits.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What stops normal animal cells from dividing endlessly, and what goes wrong in cancer?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c2_t4c6_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "system breaks down",
+            "abnormal cells",
+            "benign or malignant",
+            "invade nearby tissues",
+            "new tumours"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c2_can_spread",
+              "criterion": "States that when the control breaks down abnormal cells divide uncontrollably into tumours, and cancerous tumours can invade nearby tissues and spread to form new tumours.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What stops normal animal cells from dividing endlessly, and what goes wrong in cancer?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c2_lose_control_tumour",
+          "linksChecks": [
+            "chk_sci9c2_can_contact",
+            "chk_sci9c2_can_cancer"
+          ],
+          "criterion": "Connects cancer cells losing the control of contact inhibition to uncontrolled division and the formation of tumours.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c2_can_plants",
+          "wrong": "Plant cells show contact inhibition just like animal cells.",
+          "fix": "Due to their rigid cell walls plant cells do not show contact inhibition and follow a different pattern of growth.",
+          "checkId": "mchk_misc_sci9c2_can_plants",
+          "checkCriterion": "The answer states or implies this wrong idea: Plant cells show contact inhibition just like animal cells.",
+          "fixCheckId": "mfix_misc_sci9c2_can_plants",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Due to their rigid cell walls plant cells do not show contact inhibition and follow a different pattern of growth.",
+          "keyPointIds": [
+            "sci9c2_t4c6_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c2_can_plants"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c2_can_lifespan",
+            "chk_sci9c2_can_contact",
+            "chk_sci9c2_can_cancer"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c2_can_plant",
+            "chk_sci9c2_can_pcd",
+            "chk_sci9c2_can_spread",
+            "lnk_sci9c2_lose_control_tumour"
+          ]
+        ]
+      }
+    }
+  ]
+}
