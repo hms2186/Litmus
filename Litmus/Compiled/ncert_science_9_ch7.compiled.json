@@ -1,0 +1,2931 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch7.json",
+  "sourceSha256": "da3d036b9cb9259f502350d1276bff7dd38df3fb7947572dd02b6127491be6e2",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 7,
+  "chapterName": "Work, Energy, and Simple Machines",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c7_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c7_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example work, joule, energy, work-energy theorem, kinetic energy, potential energy, mechanical energy, conservation of mechanical energy.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "work",
+    "joule",
+    "energy",
+    "work-energy theorem",
+    "kinetic energy",
+    "potential energy",
+    "mechanical energy",
+    "conservation of mechanical energy",
+    "power",
+    "watt",
+    "simple machine",
+    "effort",
+    "load",
+    "mechanical advantage",
+    "pulley",
+    "inclined plane",
+    "lever",
+    "fulcrum"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch7_t1_c1",
+      "topicId": "ncert_sci_9_ch7_t1",
+      "topicTitle": "Work",
+      "label": "Work Done by a Constant Force",
+      "headingType": "heading",
+      "sourcePages": [
+        117,
+        118
+      ],
+      "conceptHash": "cb7176b59c713ad1ebecb1bcf10381a1a113c266010860a92c340cd2f1dc762d",
+      "cardText": "To lift a 5 kg bag of wheat slowly to a height of 1 m you must apply an upward force equal to mg, and the bag is displaced in the direction of the force; in everyday language you did some work. Lifting 3 bags, or applying a force 3 times larger over the same distance, does 3 times the work, and lifting a bag to 3 times the height with the same force also does 3 times the work. So the work done by a constant force is defined as the force applied multiplied by the displacement in the direction of the force, W = F x s. It is important to specify the force doing the work and the object on which the work is done. The SI unit of work is the joule (J): 1 joule of work is done when a constant force of 1 newton displaces an object by 1 metre in the direction of the force. On a force-displacement graph the work done equals the area under the graph, and this holds even when the force is not constant.",
+      "hint": "How is work defined, and in what unit is it measured?",
+      "probe": "Define work done by a constant force, give its unit, and say how it can be found from a graph.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Work Done by a Constant Force, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If you double the push on a crate but move it the same distance, what happens to the work, and what if the push stays the same but the distance doubles?",
+          "requiredEvidence": [
+            "larger force over the same distance",
+            "proportionally do more work",
+            "same force over a larger distance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wk_prop",
+              "criterion": "States that applying a larger force over the same distance, or the same force over a larger distance, allows proportionally more work to be done.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If you double the push on a crate but move it the same distance, what happens to the work, and what if the push stays the same but the distance doubles?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do you calculate the work done on an object by a steady push or pull?",
+          "requiredEvidence": [
+            "force applied",
+            "displacement in the direction of the force",
+            "constant force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wk_def",
+              "criterion": "Defines work done by a constant force as the force applied multiplied by the displacement in the direction of the force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you calculate the work done on an object by a steady push or pull?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_wk_tired"
+          ]
+        },
+        {
+          "id": "sci9c7_t1c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "specify the force",
+            "agency",
+            "object on which the work is done"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wk_specify",
+              "criterion": "States that in describing work done it is important to specify the force (agency) doing the work and the object on which it is done.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is work defined, and in what unit is it measured?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which quantity is used to measure work in the SI system, and how much work does it correspond to for a given force and distance?",
+          "requiredEvidence": [
+            "joule",
+            "1 newton",
+            "1 metre",
+            "direction of the force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wk_joule",
+              "criterion": "Defines the joule: 1 joule of work is done when a constant force of 1 newton displaces an object by 1 metre in the direction of the force.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which quantity is used to measure work in the SI system, and how much work does it correspond to for a given force and distance?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "force is not constant",
+            "area under the force-displacement graph",
+            "initial and the final positions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wk_graph",
+              "criterion": "States that work done, even by a non-constant force, can be found as the area under the force-displacement graph between the initial and final positions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is work defined, and in what unit is it measured?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_force_distance_work",
+          "linksChecks": [
+            "chk_sci9c7_wk_prop",
+            "chk_sci9c7_wk_def"
+          ],
+          "criterion": "Connects a larger force or a larger displacement to proportionally more work, as in the definition work = force x displacement in the direction of force.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_wk_tired",
+          "wrong": "Work is done whenever you apply a force and feel tired.",
+          "fix": "Work is defined as force times displacement in the direction of the force; with no displacement, no work is done in the scientific sense even if you feel tired.",
+          "checkId": "mchk_misc_sci9c7_wk_tired",
+          "checkCriterion": "The answer states or implies this wrong idea: Work is done whenever you apply a force and feel tired.",
+          "fixCheckId": "mfix_misc_sci9c7_wk_tired",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Work is defined as force times displacement in the direction of the force; with no displacement, no work is done in the scientific sense even if you feel tired.",
+          "keyPointIds": [
+            "sci9c7_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_wk_tired"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_wk_prop",
+            "chk_sci9c7_wk_def",
+            "chk_sci9c7_wk_joule"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_wk_specify",
+            "chk_sci9c7_wk_graph",
+            "lnk_sci9c7_force_distance_work"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t1_c2",
+      "topicId": "ncert_sci_9_ch7_t1",
+      "topicTitle": "Work",
+      "label": "When Is the Work Done Zero?",
+      "headingType": "heading",
+      "sourcePages": [
+        118
+      ],
+      "conceptHash": "99ad99a41503878506ec1551d24885487324be933435d1ceda1a3695974f9059",
+      "cardText": "No work is done on an object if the force acting on it is zero. The work done is also zero if there is no displacement of the object, regardless of the force applied; if you push a rigid wall there is no displacement in the wall and you have done no work on it. This may seem odd because you feel tired, but to apply a force the muscles in your body repeatedly expand and contract and use up the internal energy of your body, so in a scientific sense you have not done any work on the object. If a force acts in a direction perpendicular to the displacement, the work done by that force is zero because there is no displacement in the direction of the force; a girl carrying a box horizontally applies an upward force to balance its weight, so this force does no work on the box.",
+      "hint": "Name three situations in which the work done is zero.",
+      "probe": "Why is no work done when you push a wall, and when is the work done by a force zero?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain When Is the Work Done Zero?, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Under what circumstances could a force act on an object yet no work be counted?",
+          "requiredEvidence": [
+            "force acting on an object is zero",
+            "no work is done",
+            "no displacement",
+            "regardless of the force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_zw_zero",
+              "criterion": "States that no work is done if the force is zero, and also none if there is no displacement, whatever the force applied.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Under what circumstances could a force act on an object yet no work be counted?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "You strain against a heavy fixed object and it does not budge. Why do you do no work on it in the scientific sense?",
+          "requiredEvidence": [
+            "rigid wall",
+            "no displacement",
+            "no work on the wall"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_zw_displacement",
+              "criterion": "Gives the example that applying a force on a rigid wall causes no displacement, so no work is done on the wall.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "You strain against a heavy fixed object and it does not budge. Why do you do no work on it in the scientific sense?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "muscles",
+            "repeatedly expand and contract",
+            "internal energy",
+            "feel tired",
+            "scientific sense"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_zw_tired",
+              "criterion": "Explains that you feel tired because your muscles use up internal energy, even though in a scientific sense no work is done on the object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name three situations in which the work done is zero."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A porter carries a suitcase along a level floor holding it up. Why does the lifting force do no work on it?",
+          "requiredEvidence": [
+            "perpendicular to the displacement",
+            "work done by that force is zero",
+            "no displacement in the direction of the force"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_zw_perp",
+              "criterion": "States that a force perpendicular to the displacement does zero work because there is no displacement in the direction of the force, as when a girl carries a box horizontally.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A porter carries a suitcase along a level floor holding it up. Why does the lifting force do no work on it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_zw_carry"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_no_displacement_no_work",
+          "linksChecks": [
+            "chk_sci9c7_zw_displacement",
+            "chk_sci9c7_zw_perp"
+          ],
+          "criterion": "Connects the absence of displacement (or a perpendicular force) to zero work even when a force is applied and the person feels tired.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_zw_carry",
+          "wrong": "A girl carrying a box horizontally does work on the box with her upward force.",
+          "fix": "The upward force is perpendicular to the horizontal displacement, so no work is done by this force on the box.",
+          "checkId": "mchk_misc_sci9c7_zw_carry",
+          "checkCriterion": "The answer states or implies this wrong idea: A girl carrying a box horizontally does work on the box with her upward force.",
+          "fixCheckId": "mfix_misc_sci9c7_zw_carry",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The upward force is perpendicular to the horizontal displacement, so no work is done by this force on the box.",
+          "keyPointIds": [
+            "sci9c7_t1c2_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_zw_carry"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_zw_zero",
+            "chk_sci9c7_zw_displacement",
+            "chk_sci9c7_zw_perp"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_zw_tired",
+            "lnk_sci9c7_no_displacement_no_work"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t1_c3",
+      "topicId": "ncert_sci_9_ch7_t1",
+      "topicTitle": "Work",
+      "label": "Positive and Negative Work",
+      "headingType": "heading",
+      "sourcePages": [
+        118,
+        119
+      ],
+      "conceptHash": "faf4b8a5349ae594139db5afa7e766f638ef1ee41cad766e2e7a7a8d1d304750",
+      "cardText": "The work done by a force on an object can be positive or negative, depending on the relative directions of the force and the displacement. When the displacement is in the same direction as the applied force the work done is positive, as when you push a wheelchair. When the displacement is in the direction opposite to that of the force the work done is negative, as when a goalkeeper stops a ball by applying a force opposite to the motion of the football. Force and displacement have both magnitude and direction, but work does not have a direction; it can be described by a number with a positive or negative sign. When a girl lifts a dumbbell up the force is in the direction of displacement, so she does positive work, and when she lowers it the force she applies is opposite to the displacement, so she does negative work. In Example 7.2 the goalkeeper's hand moves back 15 cm as she applies 200 N, so the work done on the ball is 200 N times minus 0.15 m, which is minus 30 J. The ball and the goalkeeper apply equal and opposite forces on each other: the ball does positive work on the goalkeeper while she does negative work on the ball.",
+      "hint": "When is the work done by a force positive, and when negative?",
+      "probe": "Explain positive and negative work with the examples of a wheelchair and a goalkeeper.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Positive and Negative Work, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What term describes the effect of a force on an object when the object moves along the force's direction?",
+          "requiredEvidence": [
+            "same direction as the applied force",
+            "work done",
+            "positive"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pn_positive",
+              "criterion": "States that when the displacement is in the same direction as the applied force the work done is positive, e.g. pushing a wheelchair.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What term describes the effect of a force on an object when the object moves along the force's direction?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do we describe the work when the object moves against the way the force acts, and what is an everyday example?",
+          "requiredEvidence": [
+            "direction opposite to that of the force",
+            "negative",
+            "goalkeeper",
+            "opposite to the displacement"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pn_negative",
+              "criterion": "States that when the displacement is opposite to the force the work done is negative, e.g. a goalkeeper stopping a ball does negative work on it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do we describe the work when the object moves against the way the force acts, and what is an everyday example?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "work does not have a direction",
+            "number with a positive or a negative sign"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pn_scalar",
+              "criterion": "States that work does not have a direction and is described by a number with a positive or negative sign.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When is the work done by a force positive, and when negative?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_pn_vector"
+          ]
+        },
+        {
+          "id": "sci9c7_t1c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A person lifts a dumbbell and then lowers it slowly. How does the sign of the work done by her arm differ in the two stages?",
+          "requiredEvidence": [
+            "dumbbell up",
+            "positive work",
+            "dumbbell down",
+            "opposite to the displacement",
+            "negative work"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pn_dumbbell",
+              "criterion": "Applies the idea: lifting a dumbbell up is positive work, and lowering it is negative work because the holding force is opposite to the displacement.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A person lifts a dumbbell and then lowers it slowly. How does the sign of the work done by her arm differ in the two stages?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t1c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "equal and opposite forces",
+            "ball does positive work on the goalkeeper",
+            "goalkeeper does negative work on the ball"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pn_pair",
+              "criterion": "States that the ball and goalkeeper apply equal and opposite forces: the ball does positive work on the goalkeeper while she does negative work on the ball.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "When is the work done by a force positive, and when negative?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_direction_sign",
+          "linksChecks": [
+            "chk_sci9c7_pn_positive",
+            "chk_sci9c7_pn_negative"
+          ],
+          "criterion": "Connects the relative directions of force and displacement to the sign of the work done.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_pn_vector",
+          "wrong": "Work has a direction, like force and displacement.",
+          "fix": "Work does not have a direction; it can be described using a number with a positive or a negative sign.",
+          "checkId": "mchk_misc_sci9c7_pn_vector",
+          "checkCriterion": "The answer states or implies this wrong idea: Work has a direction, like force and displacement.",
+          "fixCheckId": "mfix_misc_sci9c7_pn_vector",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Work does not have a direction; it can be described using a number with a positive or a negative sign.",
+          "keyPointIds": [
+            "sci9c7_t1c3_kp3"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_pn_vector"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_pn_positive",
+            "chk_sci9c7_pn_negative",
+            "chk_sci9c7_pn_dumbbell"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_pn_scalar",
+            "chk_sci9c7_pn_pair",
+            "lnk_sci9c7_direction_sign"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t2_c1",
+      "topicId": "ncert_sci_9_ch7_t2",
+      "topicTitle": "Energy and its forms",
+      "label": "The Work-Energy Theorem",
+      "headingType": "heading",
+      "sourcePages": [
+        120
+      ],
+      "conceptHash": "7baa5b7bea84b3a25678ee4518636b7296e3ec1de6c2a1882cfc833e9441059d",
+      "cardText": "A cricket ball thrown towards the wicket can make the wicket fall, and a flowerpot raised to a height can damage an object below it when it falls; in each case the object has acquired a capacity to do work. An object having the capacity to do work is said to possess energy. The ball gained its energy from the work done by the fielder in throwing it, and the pot from the work done in raising it. When positive work is done on an object it gains energy, which it can transfer by applying a force on another object. Work done on an object appears as a change in its energy; this relation is called the work-energy theorem: work done on an object equals the change in its energy. The theorem also holds for a system of objects or when the forces are not constant. The SI unit of energy is the joule, the same as work. Mechanical work is one way of transferring energy, but energy can also be transferred as heat from a hotter to a colder object, through radiation like the Sun's energy, in electric circuits, by sound waves and in nuclear reactions.",
+      "hint": "How is the work done on an object related to its energy?",
+      "probe": "State the work-energy theorem and explain how energy is gained and transferred.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Work-Energy Theorem, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does a ball held high or a pot lifted onto a shelf come to have the ability to do work?",
+          "requiredEvidence": [
+            "capacity to do work",
+            "possess energy",
+            "work done by the fielder",
+            "raising it to a height"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wet_def",
+              "criterion": "Defines energy as the capacity to do work, with examples: the ball gained energy from the work done in throwing it, the pot from the work done in raising it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does a ball held high or a pot lifted onto a shelf come to have the ability to do work?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to an object when work is done on it that lets it then affect another object?",
+          "requiredEvidence": [
+            "positive work",
+            "gains energy",
+            "apply a force on another object",
+            "transferring energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wet_gain",
+              "criterion": "States that when positive work is done on an object it gains energy, which it can use to apply a force on another object, transferring energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to an object when work is done on it that lets it then affect another object?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the effect of a force over a distance related to what happens to an object's energy, and what is this relation named?",
+          "requiredEvidence": [
+            "work done on an object",
+            "change in its energy",
+            "work-energy theorem"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wet_theorem",
+              "criterion": "States the work-energy theorem: the work done on an object equals the change in its energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the effect of a force over a distance related to what happens to an object's energy, and what is this relation named?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "system of objects",
+            "forces applied on an object are not constant",
+            "SI unit of energy",
+            "joule"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wet_scope",
+              "criterion": "States that the theorem also holds for a system of objects and for non-constant forces, and the SI unit of energy is the joule, the same as work.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the work done on an object related to its energy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "mechanical work",
+            "one way of transferring energy",
+            "transferred as heat"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_wet_other",
+              "criterion": "States that mechanical work is one way of transferring energy, and energy can also be transferred as heat, by radiation, in circuits and by sound waves.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the work done on an object related to its energy?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_wet_work_only"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_work_to_energy",
+          "linksChecks": [
+            "chk_sci9c7_wet_theorem",
+            "chk_sci9c7_wet_gain"
+          ],
+          "criterion": "Connects positive work done on an object to a gain in its energy, which the object can transfer to another by doing work.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_wet_work_only",
+          "wrong": "Mechanical work is the only way energy can be transferred between objects.",
+          "fix": "Doing mechanical work is one way of transferring energy, but energy can also be transferred as heat, by radiation, in electric circuits, by sound waves and in nuclear reactions.",
+          "checkId": "mchk_misc_sci9c7_wet_work_only",
+          "checkCriterion": "The answer states or implies this wrong idea: Mechanical work is the only way energy can be transferred between objects.",
+          "fixCheckId": "mfix_misc_sci9c7_wet_work_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Doing mechanical work is one way of transferring energy, but energy can also be transferred as heat, by radiation, in electric circuits, by sound waves and in nuclear reactions.",
+          "keyPointIds": [
+            "sci9c7_t2c1_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_wet_work_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_wet_def",
+            "chk_sci9c7_wet_gain",
+            "chk_sci9c7_wet_theorem"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_wet_scope",
+            "chk_sci9c7_wet_other",
+            "lnk_sci9c7_work_to_energy"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t2_c2",
+      "topicId": "ncert_sci_9_ch7_t2",
+      "topicTitle": "Energy and its forms",
+      "label": "Forms of Energy",
+      "headingType": "heading",
+      "sourcePages": [
+        121
+      ],
+      "conceptHash": "3a4f34dae5a3a8eaa0036473152ff31064c009e65488e6179b028b44657769dd",
+      "cardText": "Energy is the capacity to do work. The examples so far correspond to mechanical energy, but energy can exist in many other forms: thermal, light, sound, electrical, chemical and nuclear energy. It is possible to change energy from one form to another. Electrical energy is converted into light energy in a bulb and into thermal energy of the water in an electric water heater. The chemical energy in the food we eat powers our muscles and gets converted into mechanical energy, and a ringing bell converts mechanical energy into sound energy. Mechanical energy is the energy that an object possesses due to its motion or position.",
+      "hint": "Name some forms of energy and give an example of one form changing into another.",
+      "probe": "List some forms of energy and give examples of energy changing from one form to another.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Forms of Energy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Apart from the examples of moving and raised objects, what is the broader idea of energy and what other forms exist?",
+          "requiredEvidence": [
+            "capacity to do work",
+            "mechanical energy",
+            "many other forms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_fe_forms",
+              "criterion": "States that energy is the capacity to do work and exists in many forms besides mechanical energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Apart from the examples of moving and raised objects, what is the broader idea of energy and what other forms exist?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_fe_only_mech"
+          ]
+        },
+        {
+          "id": "sci9c7_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Give an example of one form of energy being turned into other forms in a household device.",
+          "requiredEvidence": [
+            "change energy from one form to another",
+            "electrical energy",
+            "light energy in a bulb",
+            "thermal energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_fe_convert",
+              "criterion": "States that energy can change from one form to another, e.g. electrical energy becomes light in a bulb and thermal energy in a water heater.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Give an example of one form of energy being turned into other forms in a household device."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "chemical energy in the food",
+            "powers our muscles",
+            "mechanical energy into sound energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_fe_examples",
+              "criterion": "Gives examples: the chemical energy in food powers muscles and becomes mechanical energy, and a ringing bell converts mechanical energy into sound energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some forms of energy and give an example of one form changing into another."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t2c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which form of energy comes from an object's motion or its position?",
+          "requiredEvidence": [
+            "mechanical energy",
+            "motion or position"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_fe_mech",
+              "criterion": "Defines mechanical energy as the energy that an object possesses due to its motion or position.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which form of energy comes from an object's motion or its position?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_conversion_examples",
+          "linksChecks": [
+            "chk_sci9c7_fe_convert"
+          ],
+          "criterion": "Connects the possibility of changing energy from one form to another to examples such as a bulb, a food-powered muscle and a ringing bell.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_fe_only_mech",
+          "wrong": "Mechanical energy is the only form of energy.",
+          "fix": "The examples discussed so far correspond to mechanical energy, but energy can exist in many other forms.",
+          "checkId": "mchk_misc_sci9c7_fe_only_mech",
+          "checkCriterion": "The answer states or implies this wrong idea: Mechanical energy is the only form of energy.",
+          "fixCheckId": "mfix_misc_sci9c7_fe_only_mech",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The examples discussed so far correspond to mechanical energy, but energy can exist in many other forms.",
+          "keyPointIds": [
+            "sci9c7_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_fe_only_mech"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_fe_forms",
+            "chk_sci9c7_fe_convert",
+            "chk_sci9c7_fe_mech"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_fe_examples",
+            "lnk_sci9c7_conversion_examples"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t3_c1",
+      "topicId": "ncert_sci_9_ch7_t3",
+      "topicTitle": "Mechanical energy",
+      "label": "Kinetic Energy",
+      "headingType": "heading",
+      "sourcePages": [
+        121,
+        122,
+        123
+      ],
+      "conceptHash": "15562c92456af9c96309b7f25f32e2975bffb33839ff4ddc1d690295aa4fc024",
+      "cardText": "The energy possessed by an object due to its motion is called kinetic energy. All moving objects possess kinetic energy, such as a moving bicycle or a rolling ball, and an object that does not move is defined to have zero kinetic energy. For an object starting from rest and acquiring a velocity under a force, the work done by the force equals the energy gained, which is its kinetic energy. For an object of mass m moving with velocity v the kinetic energy is half m v squared, in joules. Kinetic energy has no direction. When positive work is done on an object and its velocity increases, its kinetic energy increases; if negative work is done and its velocity decreases, its kinetic energy decreases; and if no work is done and the velocity does not change, the kinetic energy remains constant. If the velocity of a vehicle doubles in magnitude, its kinetic energy becomes 4 times the original value. In Example 7.6 the wire of an aircraft carrier exerts a backward force on a landing jet, doing negative work that reduces its kinetic energy to zero.",
+      "hint": "What is kinetic energy, and how does it change with velocity?",
+      "probe": "Define kinetic energy and say how it changes when work is done on an object or its velocity doubles.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Kinetic Energy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call the energy an object has because it is moving, and which everyday moving things have it?",
+          "requiredEvidence": [
+            "due to its motion",
+            "kinetic energy",
+            "moving objects"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_def",
+              "criterion": "Defines kinetic energy as the energy possessed by an object due to its motion, e.g. a moving bicycle or rolling ball.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call the energy an object has because it is moving, and which everyday moving things have it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "does not move",
+            "zero kinetic energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_zero",
+              "criterion": "States that an object that does not move is defined to have zero kinetic energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is kinetic energy, and how does it change with velocity?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a steady force speeds up an object from rest, how does the energy gained compare with what the force supplied?",
+          "requiredEvidence": [
+            "work-energy theorem",
+            "work done by the force",
+            "energy gained by the object",
+            "kinetic energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_theorem",
+              "criterion": "States that, for an object starting from rest, the work done by the force equals the energy gained, which is its kinetic energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a steady force speeds up an object from rest, how does the energy gained compare with what the force supplied?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the energy of motion change when the work done is positive and the speed rises, and when the work done is negative?",
+          "requiredEvidence": [
+            "positive work",
+            "velocity increases",
+            "kinetic energy also increases",
+            "negative work",
+            "kinetic energy will also decrease",
+            "remains constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_work",
+              "criterion": "States that positive work increases velocity and kinetic energy, negative work decreases them, and with no work and no change in velocity the kinetic energy stays constant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the energy of motion change when the work done is positive and the speed rises, and when the work done is negative?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "no direction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_nodir",
+              "criterion": "States that kinetic energy has no direction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is kinetic energy, and how does it change with velocity?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_ke_direction"
+          ]
+        },
+        {
+          "id": "sci9c7_t3c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "4 times",
+            "velocity doubles",
+            "kinetic energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ke_double",
+              "criterion": "States that if the velocity of a vehicle doubles in magnitude its kinetic energy becomes 4 times the previous value.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is kinetic energy, and how does it change with velocity?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_work_changes_ke",
+          "linksChecks": [
+            "chk_sci9c7_ke_work",
+            "chk_sci9c7_ke_def"
+          ],
+          "criterion": "Connects positive work raising velocity and kinetic energy, and negative work lowering them, via the work-energy theorem.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_ke_direction",
+          "wrong": "Kinetic energy has a direction, the direction of the velocity.",
+          "fix": "The kinetic energy has no direction.",
+          "checkId": "mchk_misc_sci9c7_ke_direction",
+          "checkCriterion": "The answer states or implies this wrong idea: Kinetic energy has a direction, the direction of the velocity.",
+          "fixCheckId": "mfix_misc_sci9c7_ke_direction",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The kinetic energy has no direction.",
+          "keyPointIds": [
+            "sci9c7_t3c1_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_ke_direction"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_ke_def",
+            "chk_sci9c7_ke_theorem",
+            "chk_sci9c7_ke_work"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_ke_zero",
+            "chk_sci9c7_ke_nodir",
+            "chk_sci9c7_ke_double",
+            "lnk_sci9c7_work_changes_ke"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t3_c2",
+      "topicId": "ncert_sci_9_ch7_t3",
+      "topicTitle": "Mechanical energy",
+      "label": "Potential Energy",
+      "headingType": "heading",
+      "sourcePages": [
+        123,
+        124
+      ],
+      "conceptHash": "ec78daac6791b739bbfa4726e94605f14edadff22dc19dc4b0603b5fdee38c76",
+      "cardText": "When a stretched band or a bent bow is released it applies a force on the object in contact with it and sets it in motion. The stack of coins, the ball or the arrow gain kinetic energy they did not originally possess, and this must have come from the stretched band or bent bow, which have the capacity to do work due to their shape; the work done in deforming them was stored. A stretched or compressed spring likewise stores energy while it is in a deformed state, and when released transfers it to the kinetic energy of the object in contact. Internal forces allow energy to be stored in a deformed object. Energy can also be stored by changing the arrangement of objects in a system: separated unlike magnets, or separated electric charges, store energy due to their relative positions, and so does a ball lifted away from the Earth. Whenever a system of objects interacts through forces, such as gravitational, electric or magnetic forces, it can store energy due to the relative positions of the objects. The energy stored by an object as a result of its deformation or in a system of objects due to their relative positions is called potential energy.",
+      "hint": "What is potential energy and how can it be stored?",
+      "probe": "Define potential energy and give examples of how energy is stored by deformation and by relative positions.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Potential Energy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A stretched rubber band can shoot something away, and so can an archer's flexed weapon. Where does that ability come from?",
+          "requiredEvidence": [
+            "stretched band",
+            "bent bow",
+            "capacity to do work",
+            "due to their shape",
+            "work done",
+            "stored"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pe_band",
+              "criterion": "States that the kinetic energy of the object came from the stretched band or bent bow, which can do work due to their shape because the work done in deforming them was stored.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A stretched rubber band can shoot something away, and so can an archer's flexed weapon. Where does that ability come from?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A squeezed spring is held in place. Where is its energy while it is held, and what happens when it is let go?",
+          "requiredEvidence": [
+            "spring stores energy",
+            "deformed state",
+            "configuration or shape",
+            "released",
+            "original shape"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pe_spring",
+              "criterion": "States that a deformed spring stores energy due to its shape, and when released it returns to its original shape, transferring the energy to the kinetic energy of the object in contact.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A squeezed spring is held in place. Where is its energy while it is held, and what happens when it is let go?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "internal forces",
+            "stored in a deformed object"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pe_internal",
+              "criterion": "States that internal forces allow energy to be stored in a deformed object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is potential energy and how can it be stored?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Magnets are pulled apart from each other. Why is energy now stored in the pair?",
+          "requiredEvidence": [
+            "two magnets",
+            "separated",
+            "relative positions",
+            "electric charges",
+            "stored energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pe_arrange",
+              "criterion": "States that a system of separated magnets or electric charges can store energy due to their relative positions, which can do work when released.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Magnets are pulled apart from each other. Why is energy now stored in the pair?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_pe_deform_only"
+          ]
+        },
+        {
+          "id": "sci9c7_t3c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In what general situation can a group of objects store energy, and which kinds of forces are involved?",
+          "requiredEvidence": [
+            "system of objects interacts through forces",
+            "gravitational, electric or magnetic",
+            "relative positions",
+            "deformation",
+            "potential energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pe_def",
+              "criterion": "Defines potential energy as the energy stored by an object as a result of its deformation, or in a system of objects due to their relative positions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In what general situation can a group of objects store energy, and which kinds of forces are involved?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_stored_released",
+          "linksChecks": [
+            "chk_sci9c7_pe_def",
+            "chk_sci9c7_pe_spring"
+          ],
+          "criterion": "Connects work done in deforming an object or changing the arrangement of a system to energy being stored and later released as kinetic energy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_pe_deform_only",
+          "wrong": "Potential energy is stored only in stretched or compressed objects like springs.",
+          "fix": "Energy can be stored not only by deforming an object but also by changing the arrangement of objects in a system, such as separated magnets, charges or the ball and Earth.",
+          "checkId": "mchk_misc_sci9c7_pe_deform_only",
+          "checkCriterion": "The answer states or implies this wrong idea: Potential energy is stored only in stretched or compressed objects like springs.",
+          "fixCheckId": "mfix_misc_sci9c7_pe_deform_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Energy can be stored not only by deforming an object but also by changing the arrangement of objects in a system, such as separated magnets, charges or the ball and Earth.",
+          "keyPointIds": [
+            "sci9c7_t3c2_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_pe_deform_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_pe_band",
+            "chk_sci9c7_pe_spring",
+            "chk_sci9c7_pe_arrange",
+            "chk_sci9c7_pe_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_pe_internal",
+            "lnk_sci9c7_stored_released"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t3_c3",
+      "topicId": "ncert_sci_9_ch7_t3",
+      "topicTitle": "Mechanical energy",
+      "label": "Gravitational Potential Energy",
+      "headingType": "heading",
+      "sourcePages": [
+        125,
+        126
+      ],
+      "conceptHash": "6651f6f5a4c47ea3c770b307bed8b65f25cfba230e0fd7c164a44ee876b56ea4",
+      "cardText": "The stored energy of the Earth-ball system is often simply called the gravitational potential energy of the ball, and in this chapter potential energy usually means gravitational potential energy. In Activity 7.1 a heavy ball dropped on sand from a greater height makes a deeper depression, because raising a ball to a greater height requires more work and so the ball possesses more energy at a greater height: the greater the height of the ball above the Earth's surface, the greater is its potential energy. To raise an object of mass m gradually to a height h we apply a force equal to mg, so the work done is mgh, and by the work-energy theorem this appears as a change in potential energy, giving U = mgh. The unit of potential energy is the joule, the same as work or kinetic energy. Work done against gravitational, electric or magnetic forces can be stored as potential energy, but work done against friction does not lead to a storage of energy. The expression mgh is valid only near the Earth's surface.",
+      "hint": "How does the potential energy of a ball depend on its height and mass?",
+      "probe": "How is the gravitational potential energy of an object found, and what happens as the height increases?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Gravitational Potential Energy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t3c3_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Earth-ball system",
+            "stored energy",
+            "gravitational potential energy of the ball"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_system",
+              "criterion": "States that the stored energy of the Earth-ball system is often simply called the gravitational potential energy of the ball.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the potential energy of a ball depend on its height and mass?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A ball is dropped onto soft sand from different heights. What do you notice about the dent, and what does this tell you about raising it higher?",
+          "requiredEvidence": [
+            "depression is deepest",
+            "greatest height",
+            "requires more work",
+            "more energy at greater height"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_activity",
+              "criterion": "States that the depression in sand is deepest when the ball is dropped from the greatest height, because raising it higher needs more work so it has more energy there.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A ball is dropped onto soft sand from different heights. What do you notice about the dent, and what does this tell you about raising it higher?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the stored energy of an object change as it is lifted higher above the ground?",
+          "requiredEvidence": [
+            "greater the height",
+            "greater is its potential energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_height",
+              "criterion": "States that the greater the height of the ball above the Earth's surface, the greater is its potential energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the stored energy of an object change as it is lifted higher above the ground?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the work done in lifting an object relate to the energy it stores, and what quantities determine that stored energy?",
+          "requiredEvidence": [
+            "work-energy theorem",
+            "work done on the object",
+            "change in its potential energy",
+            "height"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_formula",
+              "criterion": "Explains that the work done in raising an object of mass m to height h (mgh) appears as a change in its potential energy, so U = mgh.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the work done in lifting an object relate to the energy it stores, and what quantities determine that stored energy?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "joule",
+            "same as the unit of work done",
+            "kinetic energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_unit",
+              "criterion": "States that the unit of potential energy is the joule, the same as that of work done and kinetic energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the potential energy of a ball depend on its height and mass?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c3_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "internal forces",
+            "gain of the potential energy",
+            "not true for all internal forces",
+            "work done against friction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_gpe_friction",
+              "criterion": "States that work done against gravitational, electric or magnetic forces can increase potential energy, but work done against friction does not lead to a storage of energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the potential energy of a ball depend on its height and mass?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_gpe_friction"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_height_work_energy",
+          "linksChecks": [
+            "chk_sci9c7_gpe_activity",
+            "chk_sci9c7_gpe_formula"
+          ],
+          "criterion": "Connects raising a ball to a greater height needing more work to the ball having more potential energy there, giving U = mgh.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_gpe_friction",
+          "wrong": "Work done against friction is stored as potential energy.",
+          "fix": "Work done against friction does not lead to a storage of energy.",
+          "checkId": "mchk_misc_sci9c7_gpe_friction",
+          "checkCriterion": "The answer states or implies this wrong idea: Work done against friction is stored as potential energy.",
+          "fixCheckId": "mfix_misc_sci9c7_gpe_friction",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Work done against friction does not lead to a storage of energy.",
+          "keyPointIds": [
+            "sci9c7_t3c3_kp6"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_gpe_friction"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_gpe_activity",
+            "chk_sci9c7_gpe_height",
+            "chk_sci9c7_gpe_formula"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_gpe_system",
+            "chk_sci9c7_gpe_unit",
+            "chk_sci9c7_gpe_friction",
+            "lnk_sci9c7_height_work_energy"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t3_c4",
+      "topicId": "ncert_sci_9_ch7_t3",
+      "topicTitle": "Mechanical energy",
+      "label": "Conservation of Mechanical Energy",
+      "headingType": "heading",
+      "sourcePages": [
+        126,
+        127,
+        128
+      ],
+      "conceptHash": "8a06a5da19b4b2078b8cca42b956ff17671146436cf112ccd6e0cd2674fea979",
+      "cardText": "The sum of the kinetic energy and the potential energy of an object is called its mechanical energy. For an object dropped from height h, at the top the potential energy is mgh and the kinetic energy is zero, so the mechanical energy is mgh. As it falls, its potential energy decreases while its kinetic energy increases; the increase in kinetic energy equals the decrease in potential energy, so the lost potential energy is converted into kinetic energy while the mechanical energy remains constant. As an object moves due to the gravitational force, its mechanical energy remains the same if no other external forces act on it; this is called the conservation of mechanical energy. A pendulum bob reaches almost the same height it started with, which shows its mechanical energy is conserved, but in real life it slows down and stops because of energy lost to friction at the support and air resistance. Using conservation of mechanical energy, the child at the bottom of a slide of height h has a velocity that depends only on the height, so the shape of the slide or the mass of the child should not matter, neglecting friction. Conservation of mechanical energy may offer a simpler route than Newton's laws, and the total energy of a system not acted upon by external forces stays constant.",
+      "hint": "What stays the same as a freely falling object loses height?",
+      "probe": "State the conservation of mechanical energy and explain it with a falling object and a pendulum.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Conservation of Mechanical Energy, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t3c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name for the total of the energy of motion and the stored energy due to position?",
+          "requiredEvidence": [
+            "sum of the kinetic energy and the potential energy",
+            "mechanical energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_def",
+              "criterion": "Defines mechanical energy as the sum of the kinetic energy and the potential energy of an object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name for the total of the energy of motion and the stored energy due to position?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "As an object falls freely, what happens to its stored energy and its energy of motion?",
+          "requiredEvidence": [
+            "potential energy decreases",
+            "kinetic energy increases",
+            "converted into kinetic energy",
+            "mechanical energy remains constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_fall",
+              "criterion": "States that as an object falls its potential energy decreases while its kinetic energy increases, the lost potential energy being converted to kinetic energy, so the mechanical energy remains constant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "As an object falls freely, what happens to its stored energy and its energy of motion?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When an object moves only under gravity, what can you say about its total of kinetic and stored energy over time?",
+          "requiredEvidence": [
+            "mechanical energy remains the same",
+            "conserved",
+            "no other external forces",
+            "conservation of mechanical energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_law",
+              "criterion": "States the conservation of mechanical energy: if no other external forces act on an object moving under gravity, its mechanical energy remains the same.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When an object moves only under gravity, what can you say about its total of kinetic and stored energy over time?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A swinging bob rises to nearly the height it started from. What does this tell you about its total energy during the swing?",
+          "requiredEvidence": [
+            "almost the same height",
+            "mechanical energy of the bob remains constant",
+            "slows down and eventually stops",
+            "friction at the support and air resistance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_pendulum",
+              "criterion": "Explains that a pendulum bob reaches almost the same height, showing its mechanical energy is conserved, but in real life it stops because of energy lost to friction at the support and air resistance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A swinging bob rises to nearly the height it started from. What does this tell you about its total energy during the swing?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_cme_pendulum"
+          ]
+        },
+        {
+          "id": "sci9c7_t3c4_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "depends only",
+            "height",
+            "shape of the slide",
+            "mass of the child should not matter"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_slide",
+              "criterion": "States that the child's velocity at the bottom of a slide depends only on the height, so the shape of the slide or the mass of the child should not matter (neglecting friction).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What stays the same as a freely falling object loses height?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c4_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "total energy",
+            "not acted upon by any external forces",
+            "stays constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_total",
+              "criterion": "States that the total energy of an object or system not acted upon by external forces stays constant.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What stays the same as a freely falling object loses height?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t3c4_kp7",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "water starts from the top",
+            "potential energy",
+            "converted to kinetic energy",
+            "gharat"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_cme_gharat",
+              "criterion": "Gives the example of a gharat (water mill) or dam in which the potential energy of falling water is converted to kinetic energy.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What stays the same as a freely falling object loses height?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_pe_to_ke",
+          "linksChecks": [
+            "chk_sci9c7_cme_fall",
+            "chk_sci9c7_cme_law"
+          ],
+          "criterion": "Connects the potential energy lost by a falling object to the kinetic energy gained, with the mechanical energy staying constant.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_cme_pendulum",
+          "wrong": "A pendulum stops because its mechanical energy is not conserved even in ideal conditions.",
+          "fix": "A pendulum slows down and eventually stops because of energy loss due to friction at the support and air resistance; it reaches almost the same height it started with, showing mechanical energy is conserved.",
+          "checkId": "mchk_misc_sci9c7_cme_pendulum",
+          "checkCriterion": "The answer states or implies this wrong idea: A pendulum stops because its mechanical energy is not conserved even in ideal conditions.",
+          "fixCheckId": "mfix_misc_sci9c7_cme_pendulum",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A pendulum slows down and eventually stops because of energy loss due to friction at the support and air resistance; it reaches almost the same height it started with, showing mechanical energy is conserved.",
+          "keyPointIds": [
+            "sci9c7_t3c4_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 11
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_cme_pendulum"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_cme_def",
+            "chk_sci9c7_cme_fall",
+            "chk_sci9c7_cme_law",
+            "chk_sci9c7_cme_pendulum"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_cme_slide",
+            "chk_sci9c7_cme_total",
+            "chk_sci9c7_cme_gharat",
+            "lnk_sci9c7_pe_to_ke"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t4_c1",
+      "topicId": "ncert_sci_9_ch7_t4",
+      "topicTitle": "Power",
+      "label": "Power",
+      "headingType": "heading",
+      "sourcePages": [
+        129,
+        130
+      ],
+      "conceptHash": "7628e68fbd74d2ee5405996fb9b8020ae330e8d7faf3dfb0c2cb1577b1f09134",
+      "cardText": "Running up the stairs in one minute feels very different from walking up slowly in five minutes, even though the same work is done in both cases; this difference is described by power. Power is defined as the rate at which work is done: the average power is the work done divided by the time taken. To do more work in the same time interval requires more power, and to do the same work in a shorter time also requires more power. The SI unit of power is the watt (W), where 1 watt is 1 joule of work done per second, named after James Watt, who invented an efficient steam engine. Another unit, the horsepower, equals 746 W and was used because early engines were compared with the power of horses.",
+      "hint": "How is power related to work and time?",
+      "probe": "Define power and its unit, and explain why running up stairs takes more power than walking up them.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Power, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the speed at which work is done described in physics?",
+          "requiredEvidence": [
+            "rate at which work is done"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pw_def",
+              "criterion": "Defines power as the rate at which work is done, the work done divided by the time taken.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the speed at which work is done described in physics?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_pw_work"
+          ]
+        },
+        {
+          "id": "sci9c7_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does racing up a flight of steps feel different from strolling up it, though the same task is done in both?",
+          "requiredEvidence": [
+            "running up the stairs",
+            "walking up slowly",
+            "same work is done",
+            "power"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pw_stairs",
+              "criterion": "Explains that running up stairs in one minute and walking up in five minutes involve the same work but different power.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does racing up a flight of steps feel different from strolling up it, though the same task is done in both?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What must be true of work and time for a greater value of this quantity to be needed?",
+          "requiredEvidence": [
+            "more work in the same time interval",
+            "requires more power",
+            "same amount of work",
+            "shorter time interval"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pw_compare",
+              "criterion": "States that more work in the same time, or the same work in a shorter time, requires more power.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What must be true of work and time for a greater value of this quantity to be needed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t4c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the SI unit for this quantity, and what amount of work per unit time does it stand for?",
+          "requiredEvidence": [
+            "watt",
+            "1 joule of work done per second"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pw_unit",
+              "criterion": "States that the SI unit of power is the watt, equal to 1 joule of work done per second.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the SI unit for this quantity, and what amount of work per unit time does it stand for?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t4c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "horsepower",
+            "746 W",
+            "powers of engines",
+            "compared to the power of actual horses"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pw_hp",
+              "criterion": "States that one horsepower equals 746 W and early engines' powers were compared with those of horses.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How is power related to work and time?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_shorter_time_more_power",
+          "linksChecks": [
+            "chk_sci9c7_pw_def",
+            "chk_sci9c7_pw_compare"
+          ],
+          "criterion": "Connects doing the same work in a shorter time to needing more power, as when running instead of walking up the stairs.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_pw_work",
+          "wrong": "Power is the same thing as the work done.",
+          "fix": "Power is the rate at which work is done, that is the work done divided by the time taken; running and walking up the same stairs do the same work but need different power.",
+          "checkId": "mchk_misc_sci9c7_pw_work",
+          "checkCriterion": "The answer states or implies this wrong idea: Power is the same thing as the work done.",
+          "fixCheckId": "mfix_misc_sci9c7_pw_work",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Power is the rate at which work is done, that is the work done divided by the time taken; running and walking up the same stairs do the same work but need different power.",
+          "keyPointIds": [
+            "sci9c7_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_pw_work"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_pw_def",
+            "chk_sci9c7_pw_stairs",
+            "chk_sci9c7_pw_compare",
+            "chk_sci9c7_pw_unit"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_pw_hp",
+            "lnk_sci9c7_shorter_time_more_power"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t5_c1",
+      "topicId": "ncert_sci_9_ch7_t5",
+      "topicTitle": "Simple machines",
+      "label": "Simple Machines and Mechanical Advantage",
+      "headingType": "heading",
+      "sourcePages": [
+        130,
+        135
+      ],
+      "conceptHash": "3b86265e47b0689e90d8ffe9f38ee195e285575061653dca814d6828d3688936",
+      "cardText": "Although the total work required for a task cannot be reduced, it can be made easier by changing the magnitude or direction of the force that needs to be applied. The devices that help us do this are called simple machines; the chapter studies the pulley, the inclined plane and the lever. The force we apply to a machine is called the effort, and the force that needs to be overcome is called the load. To describe how a machine changes the magnitude of the applied force, mechanical advantage is defined as the ratio of the load to the effort. Simple machines make work easier by changing the magnitude or direction of the force, though they do not reduce total work. Machines do not create energy; they only help us use it more effectively, and the work we put in equals the useful work done on the load, ignoring friction. Many machines in daily life are made up of two or more simple machines.",
+      "hint": "What do simple machines change, and what do they not change?",
+      "probe": "What is a simple machine, and how are effort, load and mechanical advantage defined?",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Simple Machines and Mechanical Advantage, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can a machine reduce the total work needed to do a task? If not, what can it do to make the task easier?",
+          "requiredEvidence": [
+            "total work required",
+            "cannot be reduced",
+            "magnitude or direction of the force",
+            "simple machines"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_sm_def",
+              "criterion": "States that the total work for a task cannot be reduced, but a simple machine makes it easier by changing the magnitude or direction of the force applied.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can a machine reduce the total work needed to do a task? If not, what can it do to make the task easier?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_sm_less_work"
+          ]
+        },
+        {
+          "id": "sci9c7_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "With a machine, what names are given to the force you apply and the force that has to be overcome?",
+          "requiredEvidence": [
+            "effort",
+            "load",
+            "force we apply",
+            "force that needs to be overcome"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_sm_effort_load",
+              "criterion": "Defines effort as the force we apply to a machine and load as the force that needs to be overcome.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "With a machine, what names are given to the force you apply and the force that has to be overcome?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What ratio is used to show how much a machine changes the force you apply?",
+          "requiredEvidence": [
+            "mechanical advantage",
+            "ratio of the load to the effort"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_sm_ma",
+              "criterion": "Defines mechanical advantage as the ratio of the load to the effort.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What ratio is used to show how much a machine changes the force you apply?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Do machines create energy? How do they help us then?",
+          "requiredEvidence": [
+            "do not create energy",
+            "use it more effectively"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_sm_noenergy",
+              "criterion": "States that machines do not create energy; they only help us use it more effectively.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Do machines create energy? How do they help us then?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "work we put in",
+            "useful work done on the load",
+            "ignoring friction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_sm_balance",
+              "criterion": "States that, ignoring friction, the work we put in equals the useful work done on the load.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do simple machines change, and what do they not change?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_force_not_work",
+          "linksChecks": [
+            "chk_sci9c7_sm_def",
+            "chk_sci9c7_sm_noenergy"
+          ],
+          "criterion": "Connects a machine reducing the force needed to the total work staying the same, because machines do not create energy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_sm_less_work",
+          "wrong": "A simple machine reduces the total work required for a task.",
+          "fix": "The total work required for a task cannot be reduced; a machine only changes the magnitude or direction of the force to be applied.",
+          "checkId": "mchk_misc_sci9c7_sm_less_work",
+          "checkCriterion": "The answer states or implies this wrong idea: A simple machine reduces the total work required for a task.",
+          "fixCheckId": "mfix_misc_sci9c7_sm_less_work",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The total work required for a task cannot be reduced; a machine only changes the magnitude or direction of the force to be applied.",
+          "keyPointIds": [
+            "sci9c7_t5c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_sm_less_work"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_sm_def",
+            "chk_sci9c7_sm_effort_load",
+            "chk_sci9c7_sm_ma",
+            "chk_sci9c7_sm_noenergy"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_sm_balance",
+            "lnk_sci9c7_force_not_work"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t5_c2",
+      "topicId": "ncert_sci_9_ch7_t5",
+      "topicTitle": "Simple machines",
+      "label": "The Pulley",
+      "headingType": "heading",
+      "sourcePages": [
+        130
+      ],
+      "conceptHash": "a6007e6a3f8e807ca7cad3cb1829122e25eb3337f1106e34f62cc5e89cee587a",
+      "cardText": "A pulley is a wheel with a groove that guides a rope. A fixed pulley, as used to raise a flag, does not reduce the magnitude of the force required; it only changes its direction. It is easier for us to pull downward than to lift a load by applying an upward force directly, so the pulley provides convenience by changing the direction of the effort. Since the effort and the load are equal in magnitude, the mechanical advantage of a fixed pulley is 1. Movable pulleys, or a system of pulleys, can have a mechanical advantage greater than 1 and can lift much heavier objects with much smaller effort; in a movable pulley system the load is attached to the movable pulley and one end of the rope is fixed. Pulleys are widely used in elevators and cranes.",
+      "hint": "What does a fixed pulley change, and what is its mechanical advantage?",
+      "probe": "Compare a fixed pulley with a movable pulley system.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Pulley, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t5c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "wheel with a groove",
+            "guides a rope"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pu_def",
+              "criterion": "Defines a pulley as a wheel with a groove that guides a rope.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a fixed pulley change, and what is its mechanical advantage?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does a fixed pulley change when you use it to lift something, and what does it leave unchanged?",
+          "requiredEvidence": [
+            "fixed pulley",
+            "does not reduce the magnitude",
+            "changes its direction",
+            "pull downward"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pu_fixed",
+              "criterion": "States that a fixed pulley does not reduce the force required but changes its direction, making it easier to pull downward than lift up.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a fixed pulley change when you use it to lift something, and what does it leave unchanged?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_pu_fixed_less"
+          ]
+        },
+        {
+          "id": "sci9c7_t5c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "For a fixed pulley, how do the effort and the load compare, and what number does that give for this ratio?",
+          "requiredEvidence": [
+            "effort and the load are equal in magnitude",
+            "mechanical advantage",
+            "fixed pulley is 1"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pu_ma",
+              "criterion": "States that the effort and load are equal in magnitude for a fixed pulley, so its mechanical advantage is 1.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "For a fixed pulley, how do the effort and the load compare, and what number does that give for this ratio?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of pulley arrangement allows a bigger load to be lifted with a smaller effort?",
+          "requiredEvidence": [
+            "movable pulleys",
+            "system of pulleys",
+            "mechanical advantage greater than 1",
+            "much smaller effort"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_pu_movable",
+              "criterion": "States that movable pulleys or a system of pulleys can have a mechanical advantage greater than 1 and lift heavier loads with much smaller effort.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of pulley arrangement allows a bigger load to be lifted with a smaller effort?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_direction_only",
+          "linksChecks": [
+            "chk_sci9c7_pu_fixed",
+            "chk_sci9c7_pu_ma"
+          ],
+          "criterion": "Connects the fixed pulley changing only the direction of the effort to effort equal to load and so a mechanical advantage of 1.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_pu_fixed_less",
+          "wrong": "A fixed pulley reduces the force needed to lift a load.",
+          "fix": "A fixed pulley does not reduce the magnitude of the force required, it only changes its direction.",
+          "checkId": "mchk_misc_sci9c7_pu_fixed_less",
+          "checkCriterion": "The answer states or implies this wrong idea: A fixed pulley reduces the force needed to lift a load.",
+          "fixCheckId": "mfix_misc_sci9c7_pu_fixed_less",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A fixed pulley does not reduce the magnitude of the force required, it only changes its direction.",
+          "keyPointIds": [
+            "sci9c7_t5c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_pu_fixed_less"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_pu_fixed",
+            "chk_sci9c7_pu_ma",
+            "chk_sci9c7_pu_movable"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_pu_def",
+            "lnk_sci9c7_direction_only"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t5_c3",
+      "topicId": "ncert_sci_9_ch7_t5",
+      "topicTitle": "Simple machines",
+      "label": "The Inclined Plane",
+      "headingType": "heading",
+      "sourcePages": [
+        131,
+        132
+      ],
+      "conceptHash": "b26fe369ce51d20e49e74a45afb4f983fbb9e0b6280f870b201f327e0d925d67",
+      "cardText": "An inclined plane is a simple machine that helps move a heavy load to a higher (or lower) level. In Activity 7.3 the force needed to pull a cart up to the height of a pile of books decreases as the plank becomes less steep, but the force must be applied over a larger distance to reach the same height. If an object is moved at constant speed up an inclined plane of length L to a height h, the work done is the effort times L and the potential energy gained is mgh; by the work-energy theorem, ignoring friction, effort times L equals mgh. Since L is larger than h, the effort is less than the load mg and the mechanical advantage of the inclined plane is greater than 1, and a longer, shallower plane reduces the effort further. The work done, the product of force and displacement, is the same in all cases: if the force decreases the displacement increases, so the work stays constant.",
+      "hint": "Why is it easier to push a load up a ramp than to lift it, and what is the price?",
+      "probe": "Explain how an inclined plane reduces the effort and what it does not reduce.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Inclined Plane, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t5c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the purpose of a ramp or slope as a machine?",
+          "requiredEvidence": [
+            "inclined plane",
+            "simple machine",
+            "heavy load",
+            "higher (or lower) level"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ip_def",
+              "criterion": "Defines an inclined plane as a simple machine that helps move a heavy load to a higher (or lower) level.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the purpose of a ramp or slope as a machine?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "As the plank used for pulling a cart upward is made gentler, how does the effort change, and what do you pay for that?",
+          "requiredEvidence": [
+            "force required",
+            "decreases as the plank becomes less steep",
+            "larger distance",
+            "same height"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ip_activity",
+              "criterion": "States that the force needed to pull the cart up decreases as the plank becomes less steep, but it must be applied over a larger distance to reach the same height.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "As the plank used for pulling a cart upward is made gentler, how does the effort change, and what do you pay for that?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Compare the length of the slope with the height it reaches. What does that tell you about the effort needed and the ratio of load to effort?",
+          "requiredEvidence": [
+            "L is larger than h",
+            "force",
+            "less than mg",
+            "mechanical advantage of inclined plane is greater than 1"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ip_ma",
+              "criterion": "States that since the length of the plane is larger than the height, the effort is less than the load mg, so the mechanical advantage of an inclined plane is greater than 1.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Compare the length of the slope with the height it reaches. What does that tell you about the effort needed and the ratio of load to effort?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_ip_less_work"
+          ]
+        },
+        {
+          "id": "sci9c7_t5c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Using a gentler slope, how does the product of force and distance compare with lifting the load straight up, and what happens to the distance as the force falls?",
+          "requiredEvidence": [
+            "work done",
+            "same in all cases",
+            "force decreases",
+            "displacement increases",
+            "remains constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_ip_work",
+              "criterion": "States that the work done (force times displacement) is the same in all cases: if the force decreases the displacement increases, so the work stays constant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Using a gentler slope, how does the product of force and distance compare with lifting the load straight up, and what happens to the distance as the force falls?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_longer_smaller",
+          "linksChecks": [
+            "chk_sci9c7_ip_activity",
+            "chk_sci9c7_ip_ma"
+          ],
+          "criterion": "Connects a longer inclined plane to a smaller effort over a larger distance, with the work done staying the same.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_ip_less_work",
+          "wrong": "Using a ramp reduces the work needed to raise the load.",
+          "fix": "The work done, the product of force and displacement, is the same in all cases; if the force decreases, the displacement increases, so the work stays constant.",
+          "checkId": "mchk_misc_sci9c7_ip_less_work",
+          "checkCriterion": "The answer states or implies this wrong idea: Using a ramp reduces the work needed to raise the load.",
+          "fixCheckId": "mfix_misc_sci9c7_ip_less_work",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The work done, the product of force and displacement, is the same in all cases; if the force decreases, the displacement increases, so the work stays constant.",
+          "keyPointIds": [
+            "sci9c7_t5c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_ip_less_work"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_ip_def",
+            "chk_sci9c7_ip_activity",
+            "chk_sci9c7_ip_ma",
+            "chk_sci9c7_ip_work"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c7_longer_smaller"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch7_t5_c4",
+      "topicId": "ncert_sci_9_ch7_t5",
+      "topicTitle": "Simple machines",
+      "label": "The Lever",
+      "headingType": "heading",
+      "sourcePages": [
+        133,
+        134,
+        135
+      ],
+      "conceptHash": "e34af1335f33ff74c95db34992a9063ca5a9dfbcf3ff7cab9472b0e81905a0c1",
+      "cardText": "A lever is a rigid bar that can rotate about a fixed point. It has three main parts: the fulcrum, a fixed point about which the lever rotates; the load, the force to be overcome; and the effort, the force applied. The distance of the load from the fulcrum is the load arm and the distance of the effort from the fulcrum is the effort arm. The end of the lever on which the smaller force is applied moves a larger distance, while the other end, which applies a larger force to lift a heavier object, moves a smaller distance; the work done on one end is transferred to the other, so F1 x d1 = F2 x d2. A beam balance is a lever, and it balances when effort x effort arm = load x load arm. If the effort arm is increased, the effort required to move the same load is reduced, and the mechanical advantage of a lever is the ratio of the effort arm to the load arm. The effort required is generally smaller but has to move a larger distance, so a lever reduces the force required but not the total work done. Levers are of three classes depending on the relative positions of the effort, fulcrum and load.",
+      "hint": "What are the parts of a lever, and what is its balancing rule?",
+      "probe": "Describe the parts of a lever, the condition for balance, and what a lever does and does not change.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Lever, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c7_t5c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is a lever, and what does it turn about?",
+          "requiredEvidence": [
+            "rigid bar",
+            "rotate about a fixed point"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_def",
+              "criterion": "Defines a lever as a rigid bar that can rotate about a fixed point.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a lever, and what does it turn about?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the three main parts of a lever.",
+          "requiredEvidence": [
+            "fulcrum",
+            "load",
+            "effort",
+            "load arm",
+            "effort arm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_parts",
+              "criterion": "Names the parts of a lever: fulcrum (fixed point), load (force to be overcome) and effort (force applied), with the load arm and effort arm being their distances from the fulcrum.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the three main parts of a lever."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "On a balanced lever, how do the distances moved by the two ends compare when the forces at the ends are unequal?",
+          "requiredEvidence": [
+            "smaller force",
+            "larger distance",
+            "larger force",
+            "smaller distance",
+            "work done on one end"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_dist",
+              "criterion": "States that the end with the smaller force moves a larger distance, while the end applying the larger force moves a smaller distance, since the work done on one end is transferred to the other.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "On a balanced lever, how do the distances moved by the two ends compare when the forces at the ends are unequal?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "For a lever at balance, how are the two forces and their distances from the pivot related?",
+          "requiredEvidence": [
+            "effort × effort arm",
+            "load × load arm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_balance",
+              "criterion": "States the balance condition for a lever: effort times effort arm equals load times load arm.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "For a lever at balance, how are the two forces and their distances from the pivot related?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c4_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If the distance from the pivot to where you push is made longer, what happens to the force you need for the same load?",
+          "requiredEvidence": [
+            "effort arm is increased",
+            "effort required",
+            "reduced"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_ma",
+              "criterion": "States that if the effort arm is increased, the effort required to move the same load is reduced, giving a mechanical advantage equal to the ratio of the arms.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If the distance from the pivot to where you push is made longer, what happens to the force you need for the same load?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c7_t5c4_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does a lever change about a task and what does it leave the same?",
+          "requiredEvidence": [
+            "reduces the force",
+            "not the total work"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_work",
+              "criterion": "States that a lever reduces the force required to perform a task but not the total work done.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does a lever change about a task and what does it leave the same?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c7_lev_work"
+          ]
+        },
+        {
+          "id": "sci9c7_t5c4_kp7",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "three classes",
+            "relative positions",
+            "effort, fulcrum and load"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c7_lev_class",
+              "criterion": "States that levers are of three classes depending on the relative positions of the effort, fulcrum and load.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What are the parts of a lever, and what is its balancing rule?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c7_arm_effort",
+          "linksChecks": [
+            "chk_sci9c7_lev_balance",
+            "chk_sci9c7_lev_ma"
+          ],
+          "criterion": "Connects a longer effort arm to a smaller effort needed for the same load, and so to a mechanical advantage equal to the ratio of the arms.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c7_lev_work",
+          "wrong": "A lever reduces the total work needed to lift a load.",
+          "fix": "A lever reduces the force required to perform a task but not the total work done.",
+          "checkId": "mchk_misc_sci9c7_lev_work",
+          "checkCriterion": "The answer states or implies this wrong idea: A lever reduces the total work needed to lift a load.",
+          "fixCheckId": "mfix_misc_sci9c7_lev_work",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A lever reduces the force required to perform a task but not the total work done.",
+          "keyPointIds": [
+            "sci9c7_t5c4_kp6"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 12,
+        "scored": 13
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c7_lev_work"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c7_lev_def",
+            "chk_sci9c7_lev_parts",
+            "chk_sci9c7_lev_dist",
+            "chk_sci9c7_lev_balance",
+            "chk_sci9c7_lev_ma",
+            "chk_sci9c7_lev_work"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c7_lev_class",
+            "lnk_sci9c7_arm_effort"
+          ]
+        ]
+      }
+    }
+  ]
+}

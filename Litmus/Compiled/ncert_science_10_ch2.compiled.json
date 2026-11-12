@@ -1,0 +1,3298 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_10_ch2.json",
+  "sourceSha256": "d05e11416455c5dd5ec4696472ea18595139d8886258f4fabf9e9f05f2e164fd",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 2,
+  "chapterName": "Acids, Bases and Salts",
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c2_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci10c2_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example acid, base, indicator, litmus, olfactory indicator, salt, neutralisation, hydrogen ion.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "acid",
+    "base",
+    "indicator",
+    "litmus",
+    "olfactory indicator",
+    "salt",
+    "neutralisation",
+    "hydrogen ion",
+    "hydronium ion",
+    "hydroxide ion",
+    "alkali",
+    "dilution",
+    "pH scale",
+    "universal indicator",
+    "strong acid",
+    "weak acid",
+    "acid rain",
+    "antacid",
+    "chlor-alkali process",
+    "bleaching powder",
+    "baking soda",
+    "washing soda",
+    "water of crystallisation",
+    "Plaster of Paris"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci10_ch2_t1_c1",
+      "topicId": "ncert_science_10_ch2_t1",
+      "topicTitle": "Acid-Base Indicators and Sensory Properties",
+      "label": "Acids, Bases and Indicators",
+      "headingType": "heading",
+      "sourcePages": [
+        17
+      ],
+      "conceptHash": "130737077d2d209778ddf6d2276b9a3188fd188e0646e63d21f97f77cacf303d",
+      "cardText": "Acids are sour in taste and change the colour of blue litmus to red, whereas bases are bitter and change the colour of red litmus to blue. Litmus is a natural indicator, a purple dye extracted from lichen; its colour is purple when it is neither acidic nor basic. Turmeric is another natural indicator, and so are red cabbage leaves and the coloured petals of flowers such as Hydrangea, Petunia and Geranium. A curry stain on a white cloth becomes reddish-brown when soap, which is basic, is scrubbed on it and turns yellow again when washed with plenty of water. Synthetic indicators such as methyl orange and phenolphthalein can also be used. These are called acid-base indicators, or simply indicators.",
+      "hint": "How do acids and bases change the colour of litmus, and what other indicators are there?",
+      "probe": "Explain how acids and bases are recognised with indicators such as litmus and turmeric.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Acids, Bases and Indicators, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How would you tell, without tasting, which of two solutions is an acid and which is a base, using the two colours of a natural dye paper?",
+          "requiredEvidence": [
+            "sour",
+            "blue litmus to red",
+            "bitter",
+            "red litmus to blue"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ib_litmus",
+              "criterion": "States that acids are sour and turn blue litmus red, whereas bases are bitter and turn red litmus blue.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How would you tell, without tasting, which of two solutions is an acid and which is a base, using the two colours of a natural dye paper?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ib_taste"
+          ]
+        },
+        {
+          "id": "sci10c2_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a yellow stain from a spicy dish change colour when scrubbed with a cleaning bar, and what brings the original colour back?",
+          "requiredEvidence": [
+            "litmus is a natural indicator",
+            "turmeric",
+            "reddish-brown",
+            "soap",
+            "basic in nature",
+            "turns yellow again"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ib_turmeric",
+              "criterion": "States that turmeric is a natural indicator, so a curry stain turns reddish-brown with basic soap and yellow again when washed with plenty of water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a yellow stain from a spicy dish change colour when scrubbed with a cleaning bar, and what brings the original colour back?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t1c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "synthetic indicators",
+            "methyl orange",
+            "phenolphthalein"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ib_synth",
+              "criterion": "Names synthetic indicators, such as methyl orange and phenolphthalein, used to test for acids and bases.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do acids and bases change the colour of litmus, and what other indicators are there?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t1c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "purple dye",
+            "lichen",
+            "neither acidic nor basic",
+            "red cabbage",
+            "acid-base indicators"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ib_litmus_dye",
+              "criterion": "States that litmus is a purple dye from lichen, purple when neither acidic nor basic, and that other natural materials like red cabbage and some flower petals are also acid-base indicators.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do acids and bases change the colour of litmus, and what other indicators are there?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_ind_curry",
+          "linksChecks": [
+            "chk_sci10c2_ib_litmus",
+            "chk_sci10c2_ib_turmeric"
+          ],
+          "criterion": "Connects the basic nature of soap to the colour change of turmeric in a curry stain, using it as a natural indicator.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ib_taste",
+          "wrong": "Acids and bases are identified by tasting them.",
+          "fix": "Acids and bases are tested without tasting them, using indicators that change colour.",
+          "checkId": "mchk_misc_sci10c2_ib_taste",
+          "checkCriterion": "The answer states or implies this wrong idea: Acids and bases are identified by tasting them.",
+          "fixCheckId": "mfix_misc_sci10c2_ib_taste",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Acids and bases are tested without tasting them, using indicators that change colour.",
+          "keyPointIds": [
+            "sci10c2_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ib_taste"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ib_litmus",
+            "chk_sci10c2_ib_turmeric"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_ib_synth",
+            "chk_sci10c2_ib_litmus_dye",
+            "lnk_sci10c2_ind_curry"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t1_c2",
+      "topicId": "ncert_science_10_ch2_t1",
+      "topicTitle": "Acid-Base Indicators and Sensory Properties",
+      "label": "Olfactory Indicators",
+      "headingType": "heading",
+      "sourcePages": [
+        18,
+        19
+      ],
+      "conceptHash": "47bdb7d13a3aaa38e5af752526fd6e91ba50f43c69dad8cbd46ba71db61af187",
+      "cardText": "Indicators like litmus tell us whether a substance is acidic or basic by a change in colour. There are some substances whose odour changes in acidic or basic media. These are called olfactory indicators. Finely chopped onion, dilute vanilla essence and clove oil are tested with dilute hydrochloric acid and dilute sodium hydroxide: the onion smell is lost in a base but not in an acid, and vanilla and clove oil also change in odour in the same way, so they can be used as olfactory indicators. Acid-base indicators are dyes or mixtures of dyes used to indicate the presence of acids and bases.",
+      "hint": "What kind of indicator changes its smell instead of its colour?",
+      "probe": "Explain what an olfactory indicator is and name some examples.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Olfactory Indicators, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Besides colour changes, what other change in a substance can show whether a solution is acidic or basic?",
+          "requiredEvidence": [
+            "odour changes",
+            "acidic or basic media",
+            "olfactory indicators"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ol_def",
+              "criterion": "Defines olfactory indicators as substances whose odour changes in acidic or basic media.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Besides colour changes, what other change in a substance can show whether a solution is acidic or basic?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ol_colour_only"
+          ]
+        },
+        {
+          "id": "sci10c2_t1c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "onion",
+            "vanilla",
+            "clove"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ol_examples",
+              "criterion": "Names onion, vanilla and clove as substances tested as olfactory indicators with dilute acid and dilute base.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of indicator changes its smell instead of its colour?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t1c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "dyes or mixtures of dyes",
+            "indicate the presence of acids and bases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ol_summary",
+              "criterion": "States that acid-base indicators are dyes or mixtures of dyes used to indicate the presence of acids and bases.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What kind of indicator changes its smell instead of its colour?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_olf_use",
+          "linksChecks": [
+            "chk_sci10c2_ol_def",
+            "chk_sci10c2_ol_examples"
+          ],
+          "criterion": "Connects the change in odour in acid or base to the use of onion, vanilla and clove as olfactory indicators.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ol_colour_only",
+          "wrong": "All indicators work only by changing colour.",
+          "fix": "Olfactory indicators are substances whose odour changes in acidic or basic media.",
+          "checkId": "mchk_misc_sci10c2_ol_colour_only",
+          "checkCriterion": "The answer states or implies this wrong idea: All indicators work only by changing colour.",
+          "fixCheckId": "mfix_misc_sci10c2_ol_colour_only",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Olfactory indicators are substances whose odour changes in acidic or basic media.",
+          "keyPointIds": [
+            "sci10c2_t1c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ol_colour_only"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ol_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_ol_examples",
+            "chk_sci10c2_ol_summary",
+            "lnk_sci10c2_olf_use"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t2_c1",
+      "topicId": "ncert_science_10_ch2_t2",
+      "topicTitle": "Reactions of Acids and Bases with Metals, Carbonates and Oxides",
+      "label": "Reaction of Acids and Bases with Metals",
+      "headingType": "heading",
+      "sourcePages": [
+        19,
+        20
+      ],
+      "conceptHash": "80592652795feb1216bf0e0d6515926277ae6c1b7c20ff2fa3a44ce8af7bfc92",
+      "cardText": "When zinc granules are added to dilute sulphuric acid, bubbles of gas form on the surface of the zinc. The gas is hydrogen: it forms bubbles in soap solution, and a burning candle brought near a gas-filled bubble makes it burn. The same happens with hydrochloric acid, nitric acid and acetic acid. The metal displaces hydrogen from the acid as hydrogen gas and forms a compound called a salt, so acid + metal gives salt + hydrogen gas. When a base such as sodium hydroxide is warmed with zinc, hydrogen is formed again, together with sodium zincate. However, such reactions are not possible with all metals. When an acid reacts with a metal, hydrogen gas is evolved and a corresponding salt is formed.",
+      "hint": "What gas is given off when a metal reacts with an acid, and what else is formed?",
+      "probe": "Explain what happens when a metal reacts with an acid and with a base, and how to test the gas.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reaction of Acids and Bases with Metals, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When a piece of zinc is dropped into a dilute acid, what do you see, and what does the metal do to the acid?",
+          "requiredEvidence": [
+            "displaces hydrogen",
+            "hydrogen gas",
+            "a compound called a salt",
+            "acid + metal"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_mt_acid",
+              "criterion": "States that when a metal reacts with an acid it displaces hydrogen as hydrogen gas and forms a salt (acid + metal gives salt + hydrogen gas).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When a piece of zinc is dropped into a dilute acid, what do you see, and what does the metal do to the acid?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_mt_co2"
+          ]
+        },
+        {
+          "id": "sci10c2_t2c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "zinc granules",
+            "dilute sulphuric acid",
+            "soap solution",
+            "burning candle"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_mt_test",
+              "criterion": "States that the gas from zinc and dilute acid forms bubbles in soap solution and burns when a burning candle is brought near the bubble, showing it is hydrogen.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What gas is given off when a metal reacts with an acid, and what else is formed?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a metal is warmed with a strong alkali solution, can it also give off a gas? Is that true for every metal?",
+          "requiredEvidence": [
+            "sodium hydroxide",
+            "zinc",
+            "hydrogen is formed",
+            "sodium zincate",
+            "not possible with all metals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_mt_base",
+              "criterion": "States that a base such as sodium hydroxide warmed with zinc also forms hydrogen gas along with a salt (sodium zincate), but such reactions are not possible with all metals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a metal is warmed with a strong alkali solution, can it also give off a gas? Is that true for every metal?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t2c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "base reacts with a metal",
+            "hydrogen gas",
+            "negative ion composed of the metal and oxygen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_mt_summary",
+              "criterion": "States that when a base reacts with a metal hydrogen gas is evolved and a salt is formed with a negative ion composed of the metal and oxygen.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What gas is given off when a metal reacts with an acid, and what else is formed?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_met_h2",
+          "linksChecks": [
+            "chk_sci10c2_mt_acid",
+            "chk_sci10c2_mt_test"
+          ],
+          "criterion": "Connects the metal displacing hydrogen from the acid to the formation of a salt and of hydrogen gas that burns near a candle.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_mt_co2",
+          "wrong": "The gas given off when an acid reacts with a metal is carbon dioxide.",
+          "fix": "When an acid reacts with a metal, hydrogen gas is evolved and a corresponding salt is formed.",
+          "checkId": "mchk_misc_sci10c2_mt_co2",
+          "checkCriterion": "The answer states or implies this wrong idea: The gas given off when an acid reacts with a metal is carbon dioxide.",
+          "fixCheckId": "mfix_misc_sci10c2_mt_co2",
+          "fixCheckCriterion": "Answer 2 states the correct idea: When an acid reacts with a metal, hydrogen gas is evolved and a corresponding salt is formed.",
+          "keyPointIds": [
+            "sci10c2_t2c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_mt_co2"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_mt_acid",
+            "chk_sci10c2_mt_base"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_mt_test",
+            "chk_sci10c2_mt_summary",
+            "lnk_sci10c2_met_h2"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t2_c2",
+      "topicId": "ncert_science_10_ch2_t2",
+      "topicTitle": "Reactions of Acids and Bases with Metals, Carbonates and Oxides",
+      "label": "Reaction of Metal Carbonates and Hydrogencarbonates with Acids",
+      "headingType": "heading",
+      "sourcePages": [
+        20,
+        21
+      ],
+      "conceptHash": "fc6541b393a3a4c49cd9bd15580e592d42799ccab71c1f59730fff109addc641",
+      "cardText": "When sodium carbonate and sodium hydrogencarbonate are each treated with dilute hydrochloric acid, a gas is produced in both cases. Passed through lime water (calcium hydroxide solution), the gas gives a white precipitate of calcium carbonate. On passing excess carbon dioxide, the calcium carbonate reacts further to give calcium hydrogencarbonate, which is soluble in water. Limestone, chalk and marble are different forms of calcium carbonate. All metal carbonates and hydrogencarbonates react with acids to give a corresponding salt, carbon dioxide and water: metal carbonate or hydrogencarbonate + acid gives salt + carbon dioxide + water.",
+      "hint": "What three products do carbonates and hydrogencarbonates give with an acid, and how is the gas tested?",
+      "probe": "Explain what happens when a metal carbonate or hydrogencarbonate reacts with an acid and how you test the gas.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reaction of Metal Carbonates and Hydrogencarbonates with Acids, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When the gas released by a carbonate and an acid is bubbled through calcium hydroxide solution, what do you observe, and which gas is it?",
+          "requiredEvidence": [
+            "sodium carbonate",
+            "sodium hydrogencarbonate",
+            "dilute HCl",
+            "lime water",
+            "white precipitate"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_cb_limewater",
+              "criterion": "States that the gas from sodium carbonate or hydrogencarbonate with dilute HCl is carbon dioxide, which turns lime water to a white precipitate (calcium carbonate).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When the gas released by a carbonate and an acid is bubbled through calcium hydroxide solution, what do you observe, and which gas is it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t2c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "excess carbon dioxide",
+            "calcium hydrogencarbonate",
+            "soluble in water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_cb_excess",
+              "criterion": "States that excess carbon dioxide reacts with the calcium carbonate to give calcium hydrogencarbonate, which is soluble in water.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What three products do carbonates and hydrogencarbonates give with an acid, and how is the gas tested?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What three things form whenever a carbonate or a hydrogencarbonate meets an acid, and which everyday rocks are made of calcium carbonate?",
+          "requiredEvidence": [
+            "metal carbonates and hydrogencarbonates",
+            "corresponding salt",
+            "carbon dioxide",
+            "water",
+            "limestone, chalk and marble"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_cb_general",
+              "criterion": "States that all metal carbonates and hydrogencarbonates react with acids to give a corresponding salt, carbon dioxide and water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What three things form whenever a carbonate or a hydrogencarbonate meets an acid, and which everyday rocks are made of calcium carbonate?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_cb_h2"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_carb_gas",
+          "linksChecks": [
+            "chk_sci10c2_cb_limewater",
+            "chk_sci10c2_cb_general"
+          ],
+          "criterion": "Connects the gas turning lime water into a white precipitate to it being carbon dioxide, one of the products with the salt and water.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_cb_h2",
+          "wrong": "A carbonate reacting with an acid gives hydrogen gas.",
+          "fix": "A metal carbonate or hydrogencarbonate with an acid gives a salt, carbon dioxide and water.",
+          "checkId": "mchk_misc_sci10c2_cb_h2",
+          "checkCriterion": "The answer states or implies this wrong idea: A carbonate reacting with an acid gives hydrogen gas.",
+          "fixCheckId": "mfix_misc_sci10c2_cb_h2",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A metal carbonate or hydrogencarbonate with an acid gives a salt, carbon dioxide and water.",
+          "keyPointIds": [
+            "sci10c2_t2c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_cb_h2"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_cb_limewater",
+            "chk_sci10c2_cb_general"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_cb_excess",
+            "lnk_sci10c2_carb_gas"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t2_c3",
+      "topicId": "ncert_science_10_ch2_t2",
+      "topicTitle": "Reactions of Acids and Bases with Metals, Carbonates and Oxides",
+      "label": "Reaction of Metal Oxides with Acids and Non-metal Oxides with Bases",
+      "headingType": "heading",
+      "sourcePages": [
+        21,
+        22
+      ],
+      "conceptHash": "77b18b19df408bb88d5bd492fc9e20ace8530fc83f1ba1ca89264ff24f73e65d",
+      "cardText": "When copper oxide is treated with dilute hydrochloric acid, the colour of the solution becomes blue-green and the copper oxide dissolves; the blue-green colour is due to the formation of copper(II) chloride. A metal oxide + acid gives salt + water. Since metallic oxides react with acids to give salts and water, similar to a base reacting with an acid, metallic oxides are said to be basic oxides. Calcium hydroxide, a base, reacts with carbon dioxide to produce a salt and water. Since this is similar to the reaction between a base and an acid, we can conclude that non-metallic oxides are acidic in nature.",
+      "hint": "Are metal oxides basic or acidic, and what about non-metal oxides?",
+      "probe": "Explain why metallic oxides are basic and non-metallic oxides are acidic, with examples.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Reaction of Metal Oxides with Acids and Non-metal Oxides with Bases, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When black copper oxide is stirred into dilute hydrochloric acid, what colour does the solution turn, and what has made that colour?",
+          "requiredEvidence": [
+            "copper oxide dissolves",
+            "blue-green",
+            "copper(II) chloride",
+            "salt and water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ox_cu",
+              "criterion": "States that copper oxide dissolves in dilute HCl giving a blue-green solution of copper(II) chloride, so metal oxide + acid gives salt + water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When black copper oxide is stirred into dilute hydrochloric acid, what colour does the solution turn, and what has made that colour?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of oxides do metals form, judging from what they give on reacting with an acid, and what are the products?",
+          "requiredEvidence": [
+            "metallic oxides react with acids",
+            "salts and water",
+            "basic oxides"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ox_metal",
+              "criterion": "States that metallic oxides react with acids to give salt and water, like bases do, so they are basic oxides.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of oxides do metals form, judging from what they give on reacting with an acid, and what are the products?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ox_reversed"
+          ]
+        },
+        {
+          "id": "sci10c2_t2c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "The gas formed when a non-metal like carbon burns reacts with a base, as it did with lime water. What does this suggest about the nature of the oxides of non-metals?",
+          "requiredEvidence": [
+            "calcium hydroxide",
+            "carbon dioxide",
+            "salt and water",
+            "non-metallic oxides are acidic in nature"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ox_nonmetal",
+              "criterion": "States that carbon dioxide reacts with the base calcium hydroxide to give a salt and water, so non-metallic oxides are acidic in nature.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "The gas formed when a non-metal like carbon burns reacts with a base, as it did with lime water. What does this suggest about the nature of the oxides of non-metals?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_oxide_nature",
+          "linksChecks": [
+            "chk_sci10c2_ox_metal",
+            "chk_sci10c2_ox_nonmetal"
+          ],
+          "criterion": "Connects the way an oxide reacts with an acid or a base to its being basic (metal oxide) or acidic (non-metal oxide).",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ox_reversed",
+          "wrong": "Metallic oxides are acidic and non-metallic oxides are basic.",
+          "fix": "Metallic oxides react with acids to give salts and water, so they are basic oxides; non-metallic oxides react with bases, so they are acidic.",
+          "checkId": "mchk_misc_sci10c2_ox_reversed",
+          "checkCriterion": "The answer states or implies this wrong idea: Metallic oxides are acidic and non-metallic oxides are basic.",
+          "fixCheckId": "mfix_misc_sci10c2_ox_reversed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Metallic oxides react with acids to give salts and water, so they are basic oxides; non-metallic oxides react with bases, so they are acidic.",
+          "keyPointIds": [
+            "sci10c2_t2c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ox_reversed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ox_cu",
+            "chk_sci10c2_ox_metal",
+            "chk_sci10c2_ox_nonmetal"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_oxide_nature"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t3_c1",
+      "topicId": "ncert_science_10_ch2_t3",
+      "topicTitle": "Neutralisation and the Ionic Nature of Acids and Bases",
+      "label": "Neutralisation Reaction",
+      "headingType": "heading",
+      "sourcePages": [
+        21,
+        34
+      ],
+      "conceptHash": "08bed60debeebbd6c04b510a4b2f98e033cbc847bb67adb1057bd580beca9166",
+      "cardText": "When dilute hydrochloric acid is added drop by drop to sodium hydroxide solution coloured pink with phenolphthalein, the effect of the base is nullified by the acid and vice-versa, and the pink colour disappears. The reaction is NaOH + HCl giving NaCl + H2O. The reaction between an acid and a base to give a salt and water is known as a neutralisation reaction: base + acid gives salt + water. Acids and bases neutralise each other to form corresponding salts and water.",
+      "hint": "What do an acid and a base give when they react, and what happens to their effects?",
+      "probe": "Explain what a neutralisation reaction is, with an example.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Neutralisation Reaction, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t3c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "effect of a base is nullified by an acid",
+            "vice-versa",
+            "NaOH",
+            "HCl",
+            "NaCl"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ne_cancel",
+              "criterion": "States that the effect of a base is nullified by an acid and vice-versa, as in sodium hydroxide reacting with hydrochloric acid to give sodium chloride and water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do an acid and a base give when they react, and what happens to their effects?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the name for the reaction in which sodium hydroxide and hydrochloric acid cancel each other's effects, and what do they form together?",
+          "requiredEvidence": [
+            "acid and a base",
+            "salt and water",
+            "neutralisation reaction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ne_def",
+              "criterion": "Defines a neutralisation reaction as the reaction between an acid and a base to give a salt and water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the name for the reaction in which sodium hydroxide and hydrochloric acid cancel each other's effects, and what do they form together?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ne_none"
+          ]
+        },
+        {
+          "id": "sci10c2_t3c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "neutralise each other",
+            "corresponding salts and water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ne_summary",
+              "criterion": "States that acids and bases neutralise each other to form corresponding salts and water.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What do an acid and a base give when they react, and what happens to their effects?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_neut_example",
+          "linksChecks": [
+            "chk_sci10c2_ne_cancel",
+            "chk_sci10c2_ne_def"
+          ],
+          "criterion": "Connects the cancelling of acid and base effects to the products salt and water, as in sodium hydroxide with hydrochloric acid.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ne_none",
+          "wrong": "A neutralisation reaction gives only water.",
+          "fix": "The reaction between an acid and a base gives a salt and water.",
+          "checkId": "mchk_misc_sci10c2_ne_none",
+          "checkCriterion": "The answer states or implies this wrong idea: A neutralisation reaction gives only water.",
+          "fixCheckId": "mfix_misc_sci10c2_ne_none",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The reaction between an acid and a base gives a salt and water.",
+          "keyPointIds": [
+            "sci10c2_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ne_none"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ne_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_ne_cancel",
+            "chk_sci10c2_ne_summary",
+            "lnk_sci10c2_neut_example"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t3_c2",
+      "topicId": "ncert_science_10_ch2_t3",
+      "topicTitle": "Neutralisation and the Ionic Nature of Acids and Bases",
+      "label": "What All Acids and All Bases Have in Common",
+      "headingType": "heading",
+      "sourcePages": [
+        22,
+        23,
+        33
+      ],
+      "conceptHash": "ea20f4e3e278f06092a83c7b9347454f51587f4229490621f9023241e4b06f2a",
+      "cardText": "All acids generate hydrogen gas on reacting with metals, so hydrogen seems common to all acids. But glucose and alcohol also contain hydrogen and are not acids. In the conductivity activity the bulb glows with hydrochloric and sulphuric acid solutions but not with glucose or alcohol solutions. The glowing of the bulb indicates that there is a flow of electric current through the solution, and the electric current is carried through the acidic solution by ions. Since the cation present in acids is H+, acids produce hydrogen ions, H+(aq), in solution, which are responsible for their acidic properties. Formation of OH-(aq) ions in solution is responsible for the basic nature of a substance.",
+      "hint": "What is common to acids that glucose and alcohol do not have, and how does a solution conduct?",
+      "probe": "Explain what all acids have in common, using the conductivity activity.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain What All Acids and All Bases Have in Common, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Alcohol and glucose both contain hydrogen but are not acids. What does this tell us about hydrogen alone?",
+          "requiredEvidence": [
+            "hydrogen gas",
+            "glucose and alcohol",
+            "do not conduct electricity",
+            "compounds containing hydrogen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ac_glucose",
+              "criterion": "States that glucose and alcohol contain hydrogen but do not conduct electricity or show acidic character, so not all hydrogen compounds are acids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Alcohol and glucose both contain hydrogen but are not acids. What does this tell us about hydrogen alone?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ac_hydrogen"
+          ]
+        },
+        {
+          "id": "sci10c2_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In the bulb-and-nails set-up, what makes the bulb glow with acid but not with glucose?",
+          "requiredEvidence": [
+            "bulb will start glowing",
+            "flow of electric current",
+            "carried through the acidic solution by ions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ac_conduct",
+              "criterion": "States that acid solutions make the bulb glow because the electric current is carried through the solution by ions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In the bulb-and-nails set-up, what makes the bulb glow with acid but not with glucose?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which kind of particle in a solution makes it acidic, and which makes it basic?",
+          "requiredEvidence": [
+            "cation present in acids is H+",
+            "hydrogen ions",
+            "H+(aq)",
+            "acidic properties",
+            "OH-(aq) ions",
+            "basic nature"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ac_h",
+              "criterion": "States that acids produce hydrogen ions, H+(aq), in solution, which cause their acidic properties, while OH-(aq) ions cause the basic nature of a substance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which kind of particle in a solution makes it acidic, and which makes it basic?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_acid_ions",
+          "linksChecks": [
+            "chk_sci10c2_ac_conduct",
+            "chk_sci10c2_ac_h"
+          ],
+          "criterion": "Connects ions carrying current in an acidic solution to hydrogen ions being what makes a solution acidic.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ac_hydrogen",
+          "wrong": "Any compound that contains hydrogen is an acid.",
+          "fix": "Glucose and alcohol contain hydrogen but do not conduct electricity or show acidic character, because they do not give hydrogen ions in solution.",
+          "checkId": "mchk_misc_sci10c2_ac_hydrogen",
+          "checkCriterion": "The answer states or implies this wrong idea: Any compound that contains hydrogen is an acid.",
+          "fixCheckId": "mfix_misc_sci10c2_ac_hydrogen",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Glucose and alcohol contain hydrogen but do not conduct electricity or show acidic character, because they do not give hydrogen ions in solution.",
+          "keyPointIds": [
+            "sci10c2_t3c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ac_hydrogen"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ac_glucose",
+            "chk_sci10c2_ac_conduct",
+            "chk_sci10c2_ac_h"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_acid_ions"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t3_c3",
+      "topicId": "ncert_science_10_ch2_t3",
+      "topicTitle": "Neutralisation and the Ionic Nature of Acids and Bases",
+      "label": "What Happens to an Acid or a Base in Water",
+      "headingType": "heading",
+      "sourcePages": [
+        23,
+        24
+      ],
+      "conceptHash": "506740cc8f18ab64a19b96a8da1d80bede1472c317bc4c9c55378264a7740a3d",
+      "cardText": "Dry hydrogen chloride gas does not change dry blue litmus paper, but moist blue litmus turns red. This suggests that hydrogen ions in HCl are produced in the presence of water; the separation of H+ ion from HCl molecules cannot occur in the absence of water. Hydrogen ions cannot exist alone, but exist after combining with water molecules, so they must always be shown as H+(aq) or hydronium ion, H3O+. Bases generate hydroxide (OH-) ions in water. Bases which are soluble in water are called alkalis, and all bases do not dissolve in water. Viewing the acid as giving H+(aq) and the base OH-(aq), neutralisation is H+(aq) + OH-(aq) giving H2O(l).",
+      "hint": "Why does dry HCl gas not act as an acid, and what do bases give in water?",
+      "probe": "Explain what happens to an acid and to a base in water and what an alkali is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain What Happens to an Acid or a Base in Water, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does dry hydrogen chloride gas leave dry litmus paper unchanged, but the gas dissolved in water turns it red?",
+          "requiredEvidence": [
+            "produced in the presence of water",
+            "cannot occur in the absence of water",
+            "dry HCl gas",
+            "moist"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wa_hcl",
+              "criterion": "States that hydrogen ions in HCl are produced only in the presence of water, so dry HCl gas does not show acidic behaviour while HCl solution does.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does dry hydrogen chloride gas leave dry litmus paper unchanged, but the gas dissolved in water turns it red?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t3c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "cannot exist alone",
+            "combining with water molecules",
+            "H+(aq)",
+            "hydronium ion",
+            "H3O+"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wa_hydronium",
+              "criterion": "States that hydrogen ions cannot exist alone but combine with water molecules, so they are shown as H+(aq) or hydronium ion (H3O+).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does dry HCl gas not act as an acid, and what do bases give in water?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do bases give in water, and what is the special name for a base that dissolves in water?",
+          "requiredEvidence": [
+            "hydroxide",
+            "OH-",
+            "soluble in water",
+            "alkalis"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wa_base",
+              "criterion": "States that bases generate hydroxide (OH-) ions in water and that bases soluble in water are called alkalis.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do bases give in water, and what is the special name for a base that dissolves in water?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_wa_alkali"
+          ]
+        },
+        {
+          "id": "sci10c2_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "neutralisation reaction",
+            "H+(aq)",
+            "OH-(aq)",
+            "H2O"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wa_neut",
+              "criterion": "States that neutralisation can be viewed as hydrogen ions combining with hydroxide ions to form water.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why does dry HCl gas not act as an acid, and what do bases give in water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_water_needed",
+          "linksChecks": [
+            "chk_sci10c2_wa_hcl",
+            "chk_sci10c2_wa_hydronium"
+          ],
+          "criterion": "Connects dry HCl gas not showing acidic behaviour to hydrogen ions being produced only in the presence of water.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_wa_alkali",
+          "wrong": "All bases are alkalis.",
+          "fix": "An alkali is a base that dissolves in water; all bases do not dissolve in water.",
+          "checkId": "mchk_misc_sci10c2_wa_alkali",
+          "checkCriterion": "The answer states or implies this wrong idea: All bases are alkalis.",
+          "fixCheckId": "mfix_misc_sci10c2_wa_alkali",
+          "fixCheckCriterion": "Answer 2 states the correct idea: An alkali is a base that dissolves in water; all bases do not dissolve in water.",
+          "keyPointIds": [
+            "sci10c2_t3c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_wa_alkali"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_wa_hcl",
+            "chk_sci10c2_wa_base"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_wa_hydronium",
+            "chk_sci10c2_wa_neut",
+            "lnk_sci10c2_water_needed"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t4_c1",
+      "topicId": "ncert_science_10_ch2_t4",
+      "topicTitle": "Concentration, Dilution, and Exothermic Mixing",
+      "label": "Dilution and the Heat of Dissolving Acids and Bases",
+      "headingType": "heading",
+      "sourcePages": [
+        24
+      ],
+      "conceptHash": "90da46e4a1988d1572ce867884bf07dcbcbcdc86196129981c4a9310e709f134",
+      "cardText": "The process of dissolving an acid or a base in water is a highly exothermic one: touching the beaker after adding concentrated sulphuric acid or sodium hydroxide pellets to water shows it get warm. Care must be taken while mixing concentrated nitric acid or sulphuric acid with water. The acid must always be added slowly to water with constant stirring. If water is added to a concentrated acid, the heat generated may cause the mixture to splash out and cause burns, and the glass container may break due to excessive local heating. Warning signs are shown on containers of concentrated acids and bases. Mixing an acid or base with water results in a decrease in the concentration of ions (H3O+ or OH-) per unit volume; such a process is called dilution and the acid or the base is said to be diluted.",
+      "hint": "Why must acid be added to water and not water to acid, and what is dilution?",
+      "probe": "Explain why dissolving an acid or base in water needs care and what dilution is.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Dilution and the Heat of Dissolving Acids and Bases, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When concentrated sulphuric acid is dripped into water, what does the beaker feel like, and what does this tell you about the process?",
+          "requiredEvidence": [
+            "dissolving an acid or a base in water",
+            "highly exothermic"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_dl_exo",
+              "criterion": "States that dissolving an acid or a base in water is a highly exothermic process.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When concentrated sulphuric acid is dripped into water, what does the beaker feel like, and what does this tell you about the process?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why must an acid always be poured into water instead of water into the acid, and what could go wrong otherwise?",
+          "requiredEvidence": [
+            "added slowly to water",
+            "constant stirring",
+            "splash out",
+            "burns",
+            "glass container may also break",
+            "excessive local heating"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_dl_rule",
+              "criterion": "States that the acid must always be added slowly to water with constant stirring, because adding water to concentrated acid can make the mixture splash out and cause burns or break the glass container.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why must an acid always be poured into water instead of water into the acid, and what could go wrong otherwise?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_dl_water_to_acid"
+          ]
+        },
+        {
+          "id": "sci10c2_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the number of ions in each unit of volume when more water is mixed in, and what is this process called?",
+          "requiredEvidence": [
+            "decrease in the concentration of ions",
+            "per unit volume",
+            "dilution",
+            "diluted"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_dl_def",
+              "criterion": "Defines dilution as mixing an acid or base with water, which decreases the concentration of ions (H3O+ or OH-) per unit volume.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the number of ions in each unit of volume when more water is mixed in, and what is this process called?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_dil_safety",
+          "linksChecks": [
+            "chk_sci10c2_dl_exo",
+            "chk_sci10c2_dl_rule"
+          ],
+          "criterion": "Connects the highly exothermic dissolving of an acid to the rule of adding acid slowly to water with stirring.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_dl_water_to_acid",
+          "wrong": "It is safe to add water to a concentrated acid.",
+          "fix": "The acid must always be added slowly to water with constant stirring because adding water to concentrated acid can make the hot mixture splash out and cause burns.",
+          "checkId": "mchk_misc_sci10c2_dl_water_to_acid",
+          "checkCriterion": "The answer states or implies this wrong idea: It is safe to add water to a concentrated acid.",
+          "fixCheckId": "mfix_misc_sci10c2_dl_water_to_acid",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The acid must always be added slowly to water with constant stirring because adding water to concentrated acid can make the hot mixture splash out and cause burns.",
+          "keyPointIds": [
+            "sci10c2_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_dl_water_to_acid"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_dl_exo",
+            "chk_sci10c2_dl_rule",
+            "chk_sci10c2_dl_def"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_dil_safety"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t5_c1",
+      "topicId": "ncert_science_10_ch2_t5",
+      "topicTitle": "The pH Scale and Acid-Base Strength",
+      "label": "The pH Scale",
+      "headingType": "heading",
+      "sourcePages": [
+        25,
+        34
+      ],
+      "conceptHash": "80f631b50e4944ed252b4967797bfa5a446b70b089d97467a0d16eefe6ebcb00",
+      "cardText": "A universal indicator, a mixture of several indicators, shows different colours at different concentrations of hydrogen ions in a solution. A scale for measuring hydrogen ion concentration, called the pH scale, has been developed. The p in pH stands for potenz in German, meaning power. On the pH scale we can measure pH generally from 0 (very acidic) to 14 (very alkaline). The higher the hydronium ion concentration, the lower is the pH value. The pH of a neutral solution is 7, values less than 7 represent an acidic solution, and as the pH value increases from 7 to 14 the OH- ion concentration increases, meaning an increase in the strength of alkali. Paper impregnated with the universal indicator is used for measuring pH.",
+      "hint": "What does the pH number tell you and how does it relate to hydrogen ions?",
+      "probe": "Explain the pH scale: its range, what 7 means, and how it relates to hydronium ion concentration.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The pH Scale, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can one special indicator paper that gives many colours help you find how acidic or basic a solution is?",
+          "requiredEvidence": [
+            "universal indicator",
+            "mixture of several indicators",
+            "different colours",
+            "concentrations of hydrogen ions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ph_universal",
+              "criterion": "States that a universal indicator is a mixture of several indicators that shows different colours at different hydrogen ion concentrations, used on paper to measure pH.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can one special indicator paper that gives many colours help you find how acidic or basic a solution is?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t5c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the scale used to express hydrogen ion concentration called, what are its two ends, and what does the letter p stand for?",
+          "requiredEvidence": [
+            "scale for measuring hydrogen ion concentration",
+            "pH scale",
+            "0 (very acidic) to 14 (very alkaline)",
+            "potenz"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ph_scale",
+              "criterion": "States that the pH scale measures hydrogen ion concentration generally from 0 (very acidic) to 14 (very alkaline).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the scale used to express hydrogen ion concentration called, what are its two ends, and what does the letter p stand for?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t5c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If one solution has more hydronium ions than another, which one has the lower number on the scale, and what number marks a neutral solution?",
+          "requiredEvidence": [
+            "higher the hydronium ion concentration, lower is the pH",
+            "neutral solution is 7",
+            "less than 7",
+            "acidic solution",
+            "increase in OH- ion concentration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ph_inverse",
+              "criterion": "States that a higher hydronium ion concentration gives a lower pH, that a neutral solution has pH 7, below 7 is acidic, and from 7 to 14 the alkali strength increases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If one solution has more hydronium ions than another, which one has the lower number on the scale, and what number marks a neutral solution?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ph_direct"
+          ]
+        },
+        {
+          "id": "sci10c2_t5c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "pH of exactly 7",
+            "less than 7",
+            "more than 7"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ph_values",
+              "criterion": "States that a neutral solution has pH 7, an acidic solution less than 7 and a basic solution more than 7.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What does the pH number tell you and how does it relate to hydrogen ions?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_ph_h",
+          "linksChecks": [
+            "chk_sci10c2_ph_inverse",
+            "chk_sci10c2_ph_values"
+          ],
+          "criterion": "Connects a higher hydronium ion concentration to a lower pH value and pH below 7 to acidic solutions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ph_direct",
+          "wrong": "The higher the hydrogen ion concentration the higher the pH.",
+          "fix": "The higher the hydronium ion concentration, the lower is the pH value.",
+          "checkId": "mchk_misc_sci10c2_ph_direct",
+          "checkCriterion": "The answer states or implies this wrong idea: The higher the hydrogen ion concentration the higher the pH.",
+          "fixCheckId": "mfix_misc_sci10c2_ph_direct",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The higher the hydronium ion concentration, the lower is the pH value.",
+          "keyPointIds": [
+            "sci10c2_t5c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ph_direct"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ph_universal",
+            "chk_sci10c2_ph_scale",
+            "chk_sci10c2_ph_inverse"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_ph_values",
+            "lnk_sci10c2_ph_h"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t5_c2",
+      "topicId": "ncert_science_10_ch2_t5",
+      "topicTitle": "The pH Scale and Acid-Base Strength",
+      "label": "Strong and Weak Acids and Bases",
+      "headingType": "heading",
+      "sourcePages": [
+        26
+      ],
+      "conceptHash": "25e1e8408dbae56400a33e9d2838d8f34613f6f63efdf8074faefc3253046dcb",
+      "cardText": "The strength of acids and bases depends on the number of H+ ions and OH- ions produced, respectively. If hydrochloric acid and acetic acid of the same concentration, say one molar, are taken, they produce different amounts of hydrogen ions. Acids that give rise to more H+ ions are said to be strong acids, and acids that give fewer H+ ions are said to be weak acids. In the same way, bases that give more OH- ions are strong bases and those that give fewer are weak bases.",
+      "hint": "What decides whether an acid is strong or weak?",
+      "probe": "Explain what makes an acid or a base strong or weak, with hydrochloric and acetic acid.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Strong and Weak Acids and Bases, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two acids are made up to equal strength of solution but give unequal numbers of hydrogen ions. What does the strength of an acid depend on?",
+          "requiredEvidence": [
+            "number of H+ ions and OH- ions produced",
+            "same concentration",
+            "one molar",
+            "different amounts of hydrogen ions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sw_depends",
+              "criterion": "States that the strength of acids and bases depends on the number of H+ ions and OH- ions produced, so acids of the same concentration, like HCl and acetic acid, give different amounts of hydrogen ions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two acids are made up to equal strength of solution but give unequal numbers of hydrogen ions. What does the strength of an acid depend on?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_sw_conc"
+          ]
+        },
+        {
+          "id": "sci10c2_t5c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do we describe an acid that gives many hydrogen ions compared with one that gives few?",
+          "requiredEvidence": [
+            "more H+ ions",
+            "strong acids",
+            "less H+ ions",
+            "weak acids"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sw_def",
+              "criterion": "States that acids that give more H+ ions are strong acids and acids that give fewer H+ ions are weak acids.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do we describe an acid that gives many hydrogen ions compared with one that gives few?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_strength_ions",
+          "linksChecks": [
+            "chk_sci10c2_sw_depends",
+            "chk_sci10c2_sw_def"
+          ],
+          "criterion": "Connects the number of hydrogen ions produced at the same concentration to an acid being strong or weak.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_sw_conc",
+          "wrong": "A strong acid is simply a concentrated acid.",
+          "fix": "Strength depends on the number of H+ ions produced, not only on concentration; HCl and acetic acid of the same concentration give different amounts of hydrogen ions.",
+          "checkId": "mchk_misc_sci10c2_sw_conc",
+          "checkCriterion": "The answer states or implies this wrong idea: A strong acid is simply a concentrated acid.",
+          "fixCheckId": "mfix_misc_sci10c2_sw_conc",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Strength depends on the number of H+ ions produced, not only on concentration; HCl and acetic acid of the same concentration give different amounts of hydrogen ions.",
+          "keyPointIds": [
+            "sci10c2_t5c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_sw_conc"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_sw_depends",
+            "chk_sci10c2_sw_def"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_strength_ions"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t6_c1",
+      "topicId": "ncert_science_10_ch2_t6",
+      "topicTitle": "Importance of pH in Everyday Life",
+      "label": "pH in Living Things, Rain and Soil",
+      "headingType": "heading",
+      "sourcePages": [
+        26,
+        27
+      ],
+      "conceptHash": "225cdbb3645cd35d01f495422ec12e90f312edb38431fceb7eda25fc879df368",
+      "cardText": "Our body works within the pH range of 7.0 to 7.8, and living organisms can survive only in a narrow range of pH change. When the pH of rain water is less than 5.6, it is called acid rain. When acid rain flows into the rivers, it lowers the pH of the river water, and the survival of aquatic life in such rivers becomes difficult. Plants also require a specific pH range for their healthy growth, which can be checked by testing the pH of the soil with universal indicator paper. The atmosphere of Venus is made of thick clouds of sulphuric acid.",
+      "hint": "What narrow pH ranges do living things need, and what does acid rain do?",
+      "probe": "Explain why pH matters for living things, rivers and plants.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain pH in Living Things, Rain and Soil, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t6c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Within what narrow range does the body work, and what does that mean for how much change living things can tolerate?",
+          "requiredEvidence": [
+            "pH range of 7.0 to 7.8",
+            "narrow range of pH change"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pl_range",
+              "criterion": "States that our body works within a pH range of 7.0 to 7.8 and living organisms can survive only in a narrow range of pH change.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Within what narrow range does the body work, and what does that mean for how much change living things can tolerate?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_pl_any"
+          ]
+        },
+        {
+          "id": "sci10c2_t6c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to rivers and the life in them when rain water becomes unusually acidic?",
+          "requiredEvidence": [
+            "less than 5.6",
+            "acid rain",
+            "lowers the pH of the river water",
+            "aquatic life",
+            "difficult"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pl_rain",
+              "criterion": "States that rain water with pH less than 5.6 is acid rain, which lowers the pH of river water and makes the survival of aquatic life difficult.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to rivers and the life in them when rain water becomes unusually acidic?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t6c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "specific pH range",
+            "healthy growth",
+            "soil",
+            "universal indicator paper"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pl_soil",
+              "criterion": "States that plants require a specific pH range for healthy growth, which can be tested in soil with universal indicator paper.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What narrow pH ranges do living things need, and what does acid rain do?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_ph_life",
+          "linksChecks": [
+            "chk_sci10c2_pl_range",
+            "chk_sci10c2_pl_rain"
+          ],
+          "criterion": "Connects acid rain lowering river pH to the difficulty of aquatic life surviving in a narrow pH range.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_pl_any",
+          "wrong": "Living organisms can survive at any pH.",
+          "fix": "Living organisms can survive only in a narrow range of pH change.",
+          "checkId": "mchk_misc_sci10c2_pl_any",
+          "checkCriterion": "The answer states or implies this wrong idea: Living organisms can survive at any pH.",
+          "fixCheckId": "mfix_misc_sci10c2_pl_any",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Living organisms can survive only in a narrow range of pH change.",
+          "keyPointIds": [
+            "sci10c2_t6c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_pl_any"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_pl_range",
+            "chk_sci10c2_pl_rain"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_pl_soil",
+            "lnk_sci10c2_ph_life"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t6_c2",
+      "topicId": "ncert_science_10_ch2_t6",
+      "topicTitle": "Importance of pH in Everyday Life",
+      "label": "pH in Digestion and Tooth Decay",
+      "headingType": "heading",
+      "sourcePages": [
+        27
+      ],
+      "conceptHash": "bf3b83a0c748abf9fd0acf082482973e6cbd07d4912b2fe7b5e1445e3e5fd089",
+      "cardText": "Our stomach produces hydrochloric acid, which helps digest food without harming the stomach. During indigestion the stomach produces too much acid, which causes pain and irritation. To get rid of this pain people use bases called antacids, which neutralise the excess acid; magnesium hydroxide (milk of magnesia), a mild base, is often used for this purpose. Tooth decay starts when the pH of the mouth is lower than 5.5. Tooth enamel, made up of calcium hydroxyapatite, is the hardest substance in the body; it does not dissolve in water but is corroded when the pH in the mouth is below 5.5. Bacteria in the mouth produce acids by degradation of sugar and food particles left in the mouth after eating. The best way to prevent this is to clean the mouth after eating. Toothpastes, which are generally basic, neutralise the excess acid and prevent tooth decay.",
+      "hint": "How do antacids and toothpaste use bases to fix a pH problem?",
+      "probe": "Explain the role of pH in indigestion and in tooth decay.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain pH in Digestion and Tooth Decay, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t6c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does an upset stomach feel better after taking a mild base such as milk of magnesia?",
+          "requiredEvidence": [
+            "stomach produces hydrochloric acid",
+            "too much acid",
+            "pain and irritation",
+            "antacids",
+            "neutralise the excess acid",
+            "magnesium hydroxide"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pd_antacid",
+              "criterion": "States that during indigestion the stomach makes too much acid, causing pain, and antacids, mild bases like magnesium hydroxide (milk of magnesia), neutralise the excess acid.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does an upset stomach feel better after taking a mild base such as milk of magnesia?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t6c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What lowers the acidity of the mouth after a sweet snack, and what part of the tooth is damaged by it?",
+          "requiredEvidence": [
+            "pH of the mouth is lower than 5.5",
+            "enamel",
+            "calcium hydroxyapatite",
+            "hardest substance in the body",
+            "corroded",
+            "bacteria",
+            "degradation of sugar"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pd_bacteria",
+              "criterion": "States that tooth decay starts when the pH of the mouth falls below 5.5, when acids made by bacteria from sugar and food particles corrode the tooth enamel.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What lowers the acidity of the mouth after a sweet snack, and what part of the tooth is damaged by it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_pd_enamel"
+          ]
+        },
+        {
+          "id": "sci10c2_t6c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "clean the mouth after eating",
+            "toothpastes",
+            "generally basic",
+            "neutralise the excess acid",
+            "prevent tooth decay"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pd_toothpaste",
+              "criterion": "States that cleaning the mouth after eating and using toothpaste, which is generally basic, neutralises the excess acid and prevents tooth decay.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do antacids and toothpaste use bases to fix a pH problem?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_ph_tooth",
+          "linksChecks": [
+            "chk_sci10c2_pd_bacteria",
+            "chk_sci10c2_pd_toothpaste"
+          ],
+          "criterion": "Connects acid made by bacteria from sugar, lowering the pH below 5.5, to enamel corrosion that basic toothpaste helps prevent.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_pd_enamel",
+          "wrong": "Tooth enamel dissolves easily in water.",
+          "fix": "Tooth enamel does not dissolve in water, but is corroded when the pH in the mouth is below 5.5.",
+          "checkId": "mchk_misc_sci10c2_pd_enamel",
+          "checkCriterion": "The answer states or implies this wrong idea: Tooth enamel dissolves easily in water.",
+          "fixCheckId": "mfix_misc_sci10c2_pd_enamel",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Tooth enamel does not dissolve in water, but is corroded when the pH in the mouth is below 5.5.",
+          "keyPointIds": [
+            "sci10c2_t6c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_pd_enamel"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_pd_antacid",
+            "chk_sci10c2_pd_bacteria"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_pd_toothpaste",
+            "lnk_sci10c2_ph_tooth"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t6_c3",
+      "topicId": "ncert_science_10_ch2_t6",
+      "topicTitle": "Importance of pH in Everyday Life",
+      "label": "Self Defence by Animals and Plants Through Chemical Warfare",
+      "headingType": "heading",
+      "sourcePages": [
+        27,
+        28
+      ],
+      "conceptHash": "c2c3c94c46335318005422c51ec75d0ff92c08081ed64dc64a235b987c7d2e05",
+      "cardText": "A bee-sting leaves an acid which causes pain and irritation, and a mild base such as baking soda on the stung area gives relief. The stinging hair of nettle leaves injects methanoic acid, causing burning pain. A traditional remedy is rubbing the area with the leaf of the dock plant, which often grows beside the nettle; the dock plant is basic in nature. Natural sources of acids include vinegar (acetic acid), orange and lemon (citric acid), tamarind (tartaric acid), tomato (oxalic acid), sour milk or curd (lactic acid), and ant sting and nettle sting (methanoic acid).",
+      "hint": "How does a mild base give relief from a bee or nettle sting?",
+      "probe": "Explain how animals and plants use acids for self defence and how the sting is neutralised.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Self Defence by Animals and Plants Through Chemical Warfare, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t6c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What kind of substance is left by a honey-bee sting, and what does the hair of a stinging wild plant inject?",
+          "requiredEvidence": [
+            "bee-sting leaves an acid",
+            "pain and irritation",
+            "nettle",
+            "methanoic acid",
+            "burning pain"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sd_sting",
+              "criterion": "States that a bee-sting leaves an acid causing pain and irritation and that nettle hair injects methanoic acid causing burning pain.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What kind of substance is left by a honey-bee sting, and what does the hair of a stinging wild plant inject?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_sd_base_sting"
+          ]
+        },
+        {
+          "id": "sci10c2_t6c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What can you rub on a bee sting for relief, and what grows beside nettle that helps?",
+          "requiredEvidence": [
+            "mild base",
+            "baking soda",
+            "gives relief",
+            "dock plant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sd_relief",
+              "criterion": "States that a mild base like baking soda on the stung area gives relief, as does the dock plant leaf for a nettle sting.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can you rub on a bee sting for relief, and what grows beside nettle that helps?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t6c3_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "acetic acid",
+            "citric acid",
+            "tartaric acid",
+            "oxalic acid",
+            "lactic acid",
+            "methanoic acid"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sd_table",
+              "criterion": "Names natural sources of acids and their acids, such as vinegar (acetic), lemon (citric), curd (lactic) or ant sting (methanoic).",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How does a mild base give relief from a bee or nettle sting?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_sting_base",
+          "linksChecks": [
+            "chk_sci10c2_sd_sting",
+            "chk_sci10c2_sd_relief"
+          ],
+          "criterion": "Connects the acid injected by a sting to the relief given by neutralising it with a mild base.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_sd_base_sting",
+          "wrong": "A bee-sting leaves a base, so vinegar gives relief.",
+          "fix": "A bee-sting leaves an acid, so a mild base like baking soda gives relief.",
+          "checkId": "mchk_misc_sci10c2_sd_base_sting",
+          "checkCriterion": "The answer states or implies this wrong idea: A bee-sting leaves a base, so vinegar gives relief.",
+          "fixCheckId": "mfix_misc_sci10c2_sd_base_sting",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A bee-sting leaves an acid, so a mild base like baking soda gives relief.",
+          "keyPointIds": [
+            "sci10c2_t6c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_sd_base_sting"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_sd_sting",
+            "chk_sci10c2_sd_relief"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_sd_table",
+            "lnk_sci10c2_sting_base"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t7_c1",
+      "topicId": "ncert_science_10_ch2_t7",
+      "topicTitle": "Salts and Chemicals Derived from Common Salt",
+      "label": "Family of Salts and the pH of Salts",
+      "headingType": "heading",
+      "sourcePages": [
+        28,
+        29,
+        34
+      ],
+      "conceptHash": "e6fc45ab56753bd50cbeeebb0d3e19f56d876692742d030ff7cd9d59d45ec801",
+      "cardText": "Salts formed during various reactions can be grouped. Salts having the same positive or negative radicals are said to belong to a family: NaCl and Na2SO4 belong to the family of sodium salts, and NaCl and KCl belong to the family of chloride salts. The pH of a salt depends on the acid and the base it comes from. Salts of a strong acid and a strong base are neutral with pH value of 7. Salts of a strong acid and a weak base are acidic with pH value less than 7, and those of a strong base and a weak acid are basic in nature, with pH value more than 7. Salts have various uses in everyday life and in industries.",
+      "hint": "How are salts grouped into families, and how does the pH of a salt depend on its parent acid and base?",
+      "probe": "Explain what a family of salts is and how the pH of a salt depends on the strength of the acid and base it is made from.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Family of Salts and the pH of Salts, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t7c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do chemists put salts that share a metal or a non-metal part into the same group, and can you give a pair from the sodium group?",
+          "requiredEvidence": [
+            "same positive or negative radicals",
+            "family",
+            "NaCl and Na2SO4",
+            "sodium salts",
+            "chloride salts"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sf_family",
+              "criterion": "States that salts having the same positive or negative radicals belong to a family, such as NaCl and Na2SO4 in the sodium salts or NaCl and KCl in the chloride salts.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do chemists put salts that share a metal or a non-metal part into the same group, and can you give a pair from the sodium group?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t7c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the strength of the acid and of the base that a salt is made from decide the pH of that salt?",
+          "requiredEvidence": [
+            "strong acid and a strong base",
+            "neutral",
+            "pH value of 7",
+            "strong acid and weak base",
+            "acidic",
+            "strong base and weak acid",
+            "basic"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sf_ph",
+              "criterion": "States that salts of a strong acid and a strong base are neutral (pH 7), strong acid with weak base are acidic (below 7), and strong base with weak acid are basic (above 7).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the strength of the acid and of the base that a salt is made from decide the pH of that salt?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_sf_all_neutral"
+          ]
+        },
+        {
+          "id": "sci10c2_t7c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "various uses",
+            "everyday life",
+            "industries"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_sf_uses",
+              "criterion": "States that salts have various uses in everyday life and in industries.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How are salts grouped into families, and how does the pH of a salt depend on its parent acid and base?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_salt_ph",
+          "linksChecks": [
+            "chk_sci10c2_sf_family",
+            "chk_sci10c2_sf_ph"
+          ],
+          "criterion": "Connects the strength of the parent acid and base to the salt being neutral, acidic or basic.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_sf_all_neutral",
+          "wrong": "All salts are neutral.",
+          "fix": "Salts of a strong acid and a strong base are neutral, but salts of a strong acid and weak base are acidic and those of a strong base and weak acid are basic.",
+          "checkId": "mchk_misc_sci10c2_sf_all_neutral",
+          "checkCriterion": "The answer states or implies this wrong idea: All salts are neutral.",
+          "fixCheckId": "mfix_misc_sci10c2_sf_all_neutral",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Salts of a strong acid and a strong base are neutral, but salts of a strong acid and weak base are acidic and those of a strong base and weak acid are basic.",
+          "keyPointIds": [
+            "sci10c2_t7c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_sf_all_neutral"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_sf_family",
+            "chk_sci10c2_sf_ph"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_sf_uses",
+            "lnk_sci10c2_salt_ph"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t7_c2",
+      "topicId": "ncert_science_10_ch2_t7",
+      "topicTitle": "Salts and Chemicals Derived from Common Salt",
+      "label": "Common Salt and the Chlor-alkali Process",
+      "headingType": "heading",
+      "sourcePages": [
+        29,
+        30
+      ],
+      "conceptHash": "04dccb0af8ab88f6152dab3608cab1b6c77594faa40c723a7dbd3412f00fd343",
+      "cardText": "Seawater contains many salts dissolved in it, and sodium chloride is separated from these salts. Deposits of solid salt, often brown due to impurities, are called rock salt; beds of rock salt were formed when seas of bygone ages dried up, and rock salt is mined like coal. Common salt is an important raw material for sodium hydroxide, baking soda, washing soda and bleaching powder. When electricity is passed through an aqueous solution of sodium chloride (brine), it decomposes to form sodium hydroxide. This is called the chlor-alkali process because of the products formed: chlor for chlorine and alkali for sodium hydroxide. Chlorine gas is given off at the anode and hydrogen gas at the cathode; sodium hydroxide solution is formed near the cathode. All three products are useful.",
+      "hint": "Where does common salt come from, and what happens when electricity is passed through brine?",
+      "probe": "Explain where common salt comes from and what the chlor-alkali process is and gives.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Common Salt and the Chlor-alkali Process, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t7c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "seawater",
+            "sodium chloride",
+            "rock salt",
+            "seas of bygone ages dried up",
+            "mined like coal"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ca_source",
+              "criterion": "States that common salt is separated from seawater or mined as rock salt, formed when seas of bygone ages dried up.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does common salt come from, and what happens when electricity is passed through brine?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t7c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "important raw material",
+            "sodium hydroxide",
+            "baking soda",
+            "washing soda",
+            "bleaching powder"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ca_raw",
+              "criterion": "States that common salt is a raw material for sodium hydroxide, baking soda, washing soda and bleaching powder.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does common salt come from, and what happens when electricity is passed through brine?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t7c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to concentrated salt solution in a cell with two electrodes carrying current, and what is this industrial process named after?",
+          "requiredEvidence": [
+            "electricity is passed",
+            "aqueous solution of sodium chloride",
+            "brine",
+            "sodium hydroxide",
+            "chlor-alkali process"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ca_process",
+              "criterion": "States that passing electricity through brine (aqueous sodium chloride) forms sodium hydroxide, and the process is called the chlor-alkali process after chlorine and alkali.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to concentrated salt solution in a cell with two electrodes carrying current, and what is this industrial process named after?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t7c2_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "At which electrode does each gas appear in that process, and where does the alkali form?",
+          "requiredEvidence": [
+            "chlorine gas",
+            "anode",
+            "hydrogen gas",
+            "cathode",
+            "sodium hydroxide solution is formed near the cathode"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ca_products",
+              "criterion": "States that chlorine gas is given off at the anode, hydrogen gas at the cathode and sodium hydroxide solution forms near the cathode.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "At which electrode does each gas appear in that process, and where does the alkali form?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ca_chlor"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_chlor_alkali",
+          "linksChecks": [
+            "chk_sci10c2_ca_source",
+            "chk_sci10c2_ca_process"
+          ],
+          "criterion": "Connects passing electricity through brine to the chlor-alkali products chlorine, hydrogen and sodium hydroxide.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ca_chlor",
+          "wrong": "In the chlor-alkali process chlorine is formed at the cathode.",
+          "fix": "Chlorine gas is given off at the anode, and hydrogen gas at the cathode, with sodium hydroxide solution formed near the cathode.",
+          "checkId": "mchk_misc_sci10c2_ca_chlor",
+          "checkCriterion": "The answer states or implies this wrong idea: In the chlor-alkali process chlorine is formed at the cathode.",
+          "fixCheckId": "mfix_misc_sci10c2_ca_chlor",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Chlorine gas is given off at the anode, and hydrogen gas at the cathode, with sodium hydroxide solution formed near the cathode.",
+          "keyPointIds": [
+            "sci10c2_t7c2_kp4"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ca_chlor"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ca_process",
+            "chk_sci10c2_ca_products"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_ca_source",
+            "chk_sci10c2_ca_raw",
+            "lnk_sci10c2_chlor_alkali"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t7_c3",
+      "topicId": "ncert_science_10_ch2_t7",
+      "topicTitle": "Salts and Chemicals Derived from Common Salt",
+      "label": "Bleaching Powder",
+      "headingType": "heading",
+      "sourcePages": [
+        30,
+        31
+      ],
+      "conceptHash": "b5cf12772e780719180af75e1593fe6d6434910bbd16f8cce8fcc25316fbe3e7",
+      "cardText": "Chlorine is produced during the electrolysis of aqueous sodium chloride (brine), and this chlorine gas is used for the manufacture of bleaching powder. Bleaching powder is produced by the action of chlorine on dry slaked lime, Ca(OH)2. It is represented as Ca(ClO)2, though the actual composition is quite complex. Bleaching powder is used for bleaching cotton and linen in the textile industry, for bleaching wood pulp in paper factories and for bleaching washed clothes in laundry; as an oxidising agent in many chemical industries; and to make drinking water free from germs.",
+      "hint": "What is bleaching powder made from, and what is it used for?",
+      "probe": "Explain how bleaching powder is made and what it is used for.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Bleaching Powder, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t7c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What gas from the electrolysis of brine is used to make bleaching powder, and what does it act upon?",
+          "requiredEvidence": [
+            "chlorine",
+            "electrolysis of aqueous sodium chloride",
+            "dry slaked lime",
+            "Ca(OH)2",
+            "Ca(ClO)2"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_bp_make",
+              "criterion": "States that bleaching powder is made by the action of chlorine (from the electrolysis of brine) on dry slaked lime, and is represented as Ca(ClO)2.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What gas from the electrolysis of brine is used to make bleaching powder, and what does it act upon?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_bp_wet"
+          ]
+        },
+        {
+          "id": "sci10c2_t7c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name some uses of this white powder in making cloth and paper white, in industry, and in making water safe to drink.",
+          "requiredEvidence": [
+            "bleaching cotton and linen",
+            "wood pulp",
+            "laundry",
+            "oxidising agent",
+            "drinking water free from germs"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_bp_uses",
+              "criterion": "States uses of bleaching powder: bleaching cotton, linen, wood pulp and washed clothes, as an oxidising agent, and to make drinking water free from germs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name some uses of this white powder in making cloth and paper white, in industry, and in making water safe to drink."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_bleach_use",
+          "linksChecks": [
+            "chk_sci10c2_bp_make",
+            "chk_sci10c2_bp_uses"
+          ],
+          "criterion": "Connects the manufacture from chlorine and dry slaked lime to its uses in bleaching and in making drinking water germ free.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_bp_wet",
+          "wrong": "Bleaching powder is made by passing chlorine through water.",
+          "fix": "Bleaching powder is produced by the action of chlorine on dry slaked lime.",
+          "checkId": "mchk_misc_sci10c2_bp_wet",
+          "checkCriterion": "The answer states or implies this wrong idea: Bleaching powder is made by passing chlorine through water.",
+          "fixCheckId": "mfix_misc_sci10c2_bp_wet",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Bleaching powder is produced by the action of chlorine on dry slaked lime.",
+          "keyPointIds": [
+            "sci10c2_t7c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_bp_wet"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_bp_make",
+            "chk_sci10c2_bp_uses"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_bleach_use"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t7_c4",
+      "topicId": "ncert_science_10_ch2_t7",
+      "topicTitle": "Salts and Chemicals Derived from Common Salt",
+      "label": "Baking Soda",
+      "headingType": "heading",
+      "sourcePages": [
+        31
+      ],
+      "conceptHash": "15df08d8aec7521a011d44902b0bc52858ed97ef6b2ff0f5f8017985f5f030a5",
+      "cardText": "Baking soda is commonly used in the kitchen for making tasty crispy pakoras and sometimes for faster cooking. Its chemical name is sodium hydrogencarbonate (NaHCO3), produced using sodium chloride as one of the raw materials. It is a mild non-corrosive basic salt, which is why it can be used to neutralise an acid. On heating it gives sodium carbonate, water and carbon dioxide. Baking powder is a mixture of baking soda and tartaric acid, a weak edible acid; when heated or mixed in water the carbon dioxide produced causes bread or cake to rise, making them soft and spongy. Sodium hydrogencarbonate is also an ingredient in antacids, where being alkaline it neutralises excess acid in the stomach, and it is used in soda-acid fire extinguishers.",
+      "hint": "What is baking soda, why is it a mild base, and what does it do in baking and in antacids?",
+      "probe": "Explain what baking soda is and its uses in baking powder, antacids and fire extinguishers.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Baking Soda, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t7c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the chemical name of the compound used in the kitchen to make pakoras crisp, and what makes it a mild base?",
+          "requiredEvidence": [
+            "sodium hydrogencarbonate",
+            "NaHCO3",
+            "sodium chloride",
+            "mild non-corrosive basic salt"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_bs_what",
+              "criterion": "States that baking soda is sodium hydrogencarbonate (NaHCO3), made using sodium chloride, and is a mild non-corrosive basic salt.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the chemical name of the compound used in the kitchen to make pakoras crisp, and what makes it a mild base?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t7c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a cake rise and become light when a certain raising agent is used, and which gas is responsible?",
+          "requiredEvidence": [
+            "baking powder",
+            "mixture of baking soda",
+            "tartaric acid",
+            "weak edible acid",
+            "carbon dioxide",
+            "soft and spongy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_bs_powder",
+              "criterion": "States that baking powder is a mixture of baking soda and tartaric acid, and the carbon dioxide produced makes bread or cake rise, soft and spongy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a cake rise and become light when a certain raising agent is used, and which gas is responsible?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_bs_same"
+          ]
+        },
+        {
+          "id": "sci10c2_t7c4_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "ingredient in antacids",
+            "alkaline",
+            "neutralises excess acid in the stomach",
+            "soda-acid fire extinguishers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_bs_uses",
+              "criterion": "States that sodium hydrogencarbonate is an ingredient in antacids, neutralising excess stomach acid, and is used in soda-acid fire extinguishers.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is baking soda, why is it a mild base, and what does it do in baking and in antacids?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_baking_co2",
+          "linksChecks": [
+            "chk_sci10c2_bs_what",
+            "chk_sci10c2_bs_powder"
+          ],
+          "criterion": "Connects baking soda reacting with an acid to carbon dioxide that makes cakes rise, and its basic nature to its use in antacids.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_bs_same",
+          "wrong": "Baking soda and baking powder are the same thing.",
+          "fix": "Baking powder is a mixture of baking soda and tartaric acid, a weak edible acid; baking soda alone is sodium hydrogencarbonate.",
+          "checkId": "mchk_misc_sci10c2_bs_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Baking soda and baking powder are the same thing.",
+          "fixCheckId": "mfix_misc_sci10c2_bs_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Baking powder is a mixture of baking soda and tartaric acid, a weak edible acid; baking soda alone is sodium hydrogencarbonate.",
+          "keyPointIds": [
+            "sci10c2_t7c4_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_bs_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_bs_what",
+            "chk_sci10c2_bs_powder"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_bs_uses",
+            "lnk_sci10c2_baking_co2"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t7_c5",
+      "topicId": "ncert_science_10_ch2_t7",
+      "topicTitle": "Salts and Chemicals Derived from Common Salt",
+      "label": "Washing Soda",
+      "headingType": "heading",
+      "sourcePages": [
+        31,
+        32
+      ],
+      "conceptHash": "e621c3f077719ecf5ad2fbb50f4a1f06e41b95aac4b9bb511b933449ee430cf8",
+      "cardText": "Washing soda, Na2CO3.10H2O, is another chemical obtained from sodium chloride. Sodium carbonate can be obtained by heating baking soda, and recrystallisation of sodium carbonate gives washing soda. It is also a basic salt. Sodium carbonate and sodium hydrogencarbonate are useful chemicals for many industrial processes. Washing soda is used in glass, soap and paper industries, in the manufacture of sodium compounds such as borax, and as a cleaning agent for domestic purposes. It is also used for removing permanent hardness of water.",
+      "hint": "How is washing soda made, and what is it used for?",
+      "probe": "Explain how washing soda is made from baking soda and what it is used for.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Washing Soda, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t7c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the hydrated cleaning salt obtained starting from the kitchen powder, and what kind of salt is it?",
+          "requiredEvidence": [
+            "Na2CO3.10H2O",
+            "washing soda",
+            "heating baking soda",
+            "recrystallisation of sodium carbonate",
+            "basic salt"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ws_make",
+              "criterion": "States that sodium carbonate from heating baking soda is recrystallised to give washing soda, Na2CO3.10H2O, a basic salt.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the hydrated cleaning salt obtained starting from the kitchen powder, and what kind of salt is it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_ws_dry"
+          ]
+        },
+        {
+          "id": "sci10c2_t7c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which industries and household jobs use this cleaning salt, and what does it do to hard water?",
+          "requiredEvidence": [
+            "glass, soap and paper industries",
+            "borax",
+            "cleaning agent for domestic purposes",
+            "removing permanent hardness of water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_ws_uses",
+              "criterion": "States uses of washing soda: glass, soap and paper industries, making borax, domestic cleaning, and removing permanent hardness of water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which industries and household jobs use this cleaning salt, and what does it do to hard water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_wash_make",
+          "linksChecks": [
+            "chk_sci10c2_ws_make",
+            "chk_sci10c2_ws_uses"
+          ],
+          "criterion": "Connects obtaining sodium carbonate by heating baking soda and recrystallising it to washing soda and its uses.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_ws_dry",
+          "wrong": "Washing soda is just dry sodium carbonate.",
+          "fix": "Washing soda is Na2CO3.10H2O, obtained by recrystallisation of sodium carbonate, which itself comes from heating baking soda.",
+          "checkId": "mchk_misc_sci10c2_ws_dry",
+          "checkCriterion": "The answer states or implies this wrong idea: Washing soda is just dry sodium carbonate.",
+          "fixCheckId": "mfix_misc_sci10c2_ws_dry",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Washing soda is Na2CO3.10H2O, obtained by recrystallisation of sodium carbonate, which itself comes from heating baking soda.",
+          "keyPointIds": [
+            "sci10c2_t7c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_ws_dry"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_ws_make",
+            "chk_sci10c2_ws_uses"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c2_wash_make"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t8_c1",
+      "topicId": "ncert_science_10_ch2_t8",
+      "topicTitle": "Water of Crystallisation and Plaster of Paris",
+      "label": "Water of Crystallisation",
+      "headingType": "heading",
+      "sourcePages": [
+        32,
+        34
+      ],
+      "conceptHash": "ed6e0ffec6d1741e131b25cb29e24eae1f5566ef575e5a02859c69f84b1ffe38",
+      "cardText": "Copper sulphate crystals which seem to be dry contain water of crystallisation. When the crystals are heated, this water is removed, water droplets appear in the boiling tube and the salt turns white. If the crystals are moistened again with water, the blue colour reappears. Water of crystallisation is the fixed number of water molecules present in one formula unit of a salt. Five water molecules are present in one formula unit of copper sulphate, whose hydrated formula is CuSO4.5H2O. The Na2CO3.10H2O molecule is therefore not wet; the water is part of the crystal.",
+      "hint": "Why do crystals that look dry still lose water when heated?",
+      "probe": "Explain what water of crystallisation is, using copper sulphate.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Water of Crystallisation, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t8c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Blue crystals that look dry turn white on heating and blue again on moistening. What does this show they contain?",
+          "requiredEvidence": [
+            "seem to be dry",
+            "water of crystallisation",
+            "water is removed",
+            "turns white",
+            "blue colour"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wc_cu",
+              "criterion": "States that dry-looking copper sulphate crystals contain water of crystallisation; heating removes it and the salt turns white, and moistening brings back the blue colour.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Blue crystals that look dry turn white on heating and blue again on moistening. What does this show they contain?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t8c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the term water of crystallisation mean, and how many molecules of it does copper sulphate hold?",
+          "requiredEvidence": [
+            "fixed number of water molecules",
+            "one formula unit",
+            "five water molecules",
+            "CuSO4.5H2O"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wc_def",
+              "criterion": "Defines water of crystallisation as the fixed number of water molecules present in one formula unit of a salt, five in copper sulphate (CuSO4.5H2O).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the term water of crystallisation mean, and how many molecules of it does copper sulphate hold?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_wc_wet"
+          ]
+        },
+        {
+          "id": "sci10c2_t8c1_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fixed number of water molecules",
+            "formula unit of a salt"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_wc_summary",
+              "criterion": "States the summary that water of crystallisation is the fixed number of water molecules in one formula unit of a salt.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why do crystals that look dry still lose water when heated?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_woc_cu",
+          "linksChecks": [
+            "chk_sci10c2_wc_cu",
+            "chk_sci10c2_wc_def"
+          ],
+          "criterion": "Connects the colour change on heating and moistening copper sulphate to the fixed number of water molecules in its crystal.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_wc_wet",
+          "wrong": "A salt with 10H2O in its formula, such as washing soda, is wet.",
+          "fix": "Water of crystallisation is a fixed number of water molecules in the crystal; it does not make the salt wet.",
+          "checkId": "mchk_misc_sci10c2_wc_wet",
+          "checkCriterion": "The answer states or implies this wrong idea: A salt with 10H2O in its formula, such as washing soda, is wet.",
+          "fixCheckId": "mfix_misc_sci10c2_wc_wet",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Water of crystallisation is a fixed number of water molecules in the crystal; it does not make the salt wet.",
+          "keyPointIds": [
+            "sci10c2_t8c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_wc_wet"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_wc_cu",
+            "chk_sci10c2_wc_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_wc_summary",
+            "lnk_sci10c2_woc_cu"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch2_t8_c2",
+      "topicId": "ncert_science_10_ch2_t8",
+      "topicTitle": "Water of Crystallisation and Plaster of Paris",
+      "label": "Plaster of Paris",
+      "headingType": "heading",
+      "sourcePages": [
+        32,
+        33
+      ],
+      "conceptHash": "c0388e77ac7cef17aaf62dc77f1477bd27c808769fcbefff2b32afc0c9e73fe8",
+      "cardText": "Gypsum, CaSO4.2H2O, is another salt that has water of crystallisation, with two water molecules. On heating gypsum at 373 K it loses water molecules and becomes calcium sulphate hemihydrate, which is called Plaster of Paris, the substance which doctors use as plaster for supporting fractured bones in the right position. Plaster of Paris is a white powder and on mixing with water it changes to gypsum once again, giving a hard solid mass. Only half a water molecule is shown attached because two formula units of CaSO4 share one molecule of water. Plaster of Paris is used for making toys, materials for decoration and for making surfaces smooth.",
+      "hint": "What does heating gypsum give, and what happens when it is mixed with water?",
+      "probe": "Explain how Plaster of Paris is made, what happens when it meets water and what it is used for.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Plaster of Paris, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c2_t8c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What substance is obtained on heating the hydrated calcium sulphate salt at a moderate temperature, and what is it commonly called?",
+          "requiredEvidence": [
+            "gypsum",
+            "two water molecules",
+            "373 K",
+            "loses water molecules",
+            "calcium sulphate hemihydrate",
+            "Plaster of Paris"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pp_make",
+              "criterion": "States that heating gypsum at 373 K makes it lose water molecules and become calcium sulphate hemihydrate, Plaster of Paris.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What substance is obtained on heating the hydrated calcium sulphate salt at a moderate temperature, and what is it commonly called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c2_t8c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens when this material meets water, and why do doctors use it to support broken bones?",
+          "requiredEvidence": [
+            "white powder",
+            "mixing with water",
+            "changes to gypsum",
+            "hard solid mass",
+            "fractured bones"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pp_set",
+              "criterion": "States that Plaster of Paris is a white powder that changes back to gypsum on mixing with water, giving a hard solid mass, used by doctors to support fractured bones.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens when this material meets water, and why do doctors use it to support broken bones?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c2_pp_dry"
+          ]
+        },
+        {
+          "id": "sci10c2_t8c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "two formula units of CaSO4 share one molecule of water",
+            "toys",
+            "materials for decoration",
+            "surfaces smooth"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c2_pp_uses",
+              "criterion": "States that two formula units of CaSO4 share one water molecule, and that Plaster of Paris is used for toys, decoration and making surfaces smooth.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What does heating gypsum give, and what happens when it is mixed with water?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c2_pop_set",
+          "linksChecks": [
+            "chk_sci10c2_pp_make",
+            "chk_sci10c2_pp_set"
+          ],
+          "criterion": "Connects Plaster of Paris changing back to gypsum on mixing with water to its use as a hard cast for fractured bones.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c2_pp_dry",
+          "wrong": "Plaster of Paris can be stored anywhere because it never reacts with water.",
+          "fix": "Plaster of Paris sets to hard gypsum on mixing with water, so it must be stored in a moisture-proof container.",
+          "checkId": "mchk_misc_sci10c2_pp_dry",
+          "checkCriterion": "The answer states or implies this wrong idea: Plaster of Paris can be stored anywhere because it never reacts with water.",
+          "fixCheckId": "mfix_misc_sci10c2_pp_dry",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Plaster of Paris sets to hard gypsum on mixing with water, so it must be stored in a moisture-proof container.",
+          "keyPointIds": [
+            "sci10c2_t8c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c2_pp_dry"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c2_pp_make",
+            "chk_sci10c2_pp_set"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c2_pp_uses",
+            "lnk_sci10c2_pop_set"
+          ]
+        ]
+      }
+    }
+  ]
+}

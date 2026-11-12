@@ -1,0 +1,3179 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 8,
+  "chapterName": "Journey Inside the Atom",
+  "sourceStatus": "Built from the NCERT PDF iesc108 (edition as supplied). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Exploration, Science (Grade 9), edition as supplied, chapter pp. 140-161",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. Tables 8.1-8.5, figures and nuclide symbols are images or lost symbols in the PDF and are not quoted. Pause and Ponder prompts and the Revise, Reflect, Refine questions (pp. 158-160) are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c8_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci9c8_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example atom, parmanu, electron, proton, neutron, nucleus, plum pudding model, gold foil experiment.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "atom",
+    "parmanu",
+    "electron",
+    "proton",
+    "neutron",
+    "nucleus",
+    "plum pudding model",
+    "gold foil experiment",
+    "planetary model",
+    "Bohr's model",
+    "shell",
+    "atomic number",
+    "mass number",
+    "valency",
+    "octet",
+    "isotopes",
+    "isobars",
+    "electronic configuration"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_sci_9_ch8_t1",
+      "title": "Ideas about atoms before the models",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t1_c1",
+          "label": "Ancient Roots of the Atom: Kanada and Democritus",
+          "headingType": "heading",
+          "sourcePages": [141],
+          "cardText": "More than 2,000 years ago, thinkers in ancient India and ancient Greece asked what everything is made of. Acharya Kanada suggested that if matter (dravya) is divided repeatedly you reach the smallest particles that can no longer be divided, which he called parmanus; his ideas are recorded in the Sanskrit text Vaisesika Sutras. A parmanu is infinitely small and cannot be perceived by the senses; combinations form dyads (groups of two) and triads (groups of three), and out of these the whole material universe is created, though the description does not specify the proportions in which parmanus combine. The Greek philosophers Leucippus and Democritus proposed a similar idea and called the indivisible particles atomos, meaning indivisible. The concept of an atom originated as an imaginary idea rather than from experimental observations.",
+          "hint": "Who first proposed indivisible particles of matter, and was it based on experiments?",
+          "probe": "What did Kanada and the Greek philosophers propose about matter, and how did the idea originate?",
+          "causeChain": "Ancient thinkers asked what everything is made of -> Kanada proposed indivisible parmanus and Democritus proposed atomos -> the concept originated as an imaginary idea, not from experimental observation",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Acharya Kanada suggested that if matter (dravya) is divided repeatedly, you will reach a stage where you would encounter the smallest particles that can no longer be divided. He called these particles parmanus.",
+              "followUp": "In the ancient Indian view, what would you eventually reach if you kept dividing matter into ever smaller pieces?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Acharya Kanada",
+                  "divided repeatedly",
+                  "smallest particles",
+                  "no longer be divided",
+                  "parmanus"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_anc_kanada",
+                    "criterion": "States that Acharya Kanada suggested that repeatedly dividing matter leads to the smallest, indivisible particles, which he called parmanus.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t1c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A parmanu is infinitely small and cannot be perceived by the senses. Combinations of these forms dyads (groups of two parmanus) and triads (groups of three parmanus), and so on.",
+              "assessment": {
+                "requiredEvidence": [
+                  "infinitely small",
+                  "cannot be perceived by the senses",
+                  "dyads",
+                  "triads"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_anc_parmanu",
+                    "criterion": "States that a parmanu is infinitely small and imperceptible, and combinations of parmanus form dyads and triads.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t1c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The Greek philosophers Leucippus and Democritus also proposed a similar idea. They called these indivisible particles atomos (in Greek, atomos means indivisible).",
+              "followUp": "Which Greek thinkers held a comparable view, and what name did they give to the smallest pieces?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Leucippus and Democritus",
+                  "similar idea",
+                  "atomos",
+                  "indivisible"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_anc_greek",
+                    "criterion": "States that the Greek philosophers Leucippus and Democritus proposed a similar idea and called the indivisible particles atomos, meaning indivisible.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t1c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "You must remember that the concept of ‘atom’ originated as an imaginary idea rather than from experimental observations.",
+              "followUp": "Was the early idea of the atom based on laboratory measurements? Where did it come from?",
+              "assessment": {
+                "requiredEvidence": [
+                  "imaginary idea",
+                  "rather than from experimental observations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_anc_imag",
+                    "criterion": "States that the concept of the atom originated as an imaginary idea rather than from experimental observations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_anc_experiment"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t1c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "However, this description does not specify the proportions in which parmanus combine to form different substances.",
+              "assessment": {
+                "requiredEvidence": [
+                  "does not specify the proportions",
+                  "parmanus combine"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_anc_prop",
+                    "criterion": "States that Kanada's description does not specify the proportions in which parmanus combine to form different substances.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_anc_experiment",
+              "wrong": "The ancient idea of the atom came from laboratory experiments.",
+              "fix": "The concept of 'atom' originated as an imaginary idea rather than from experimental observations."
+            }
+          ],
+          "verify": [
+            { "page": 141, "quote": "Acharya Kanada suggested that if matter (dravya) is divided repeatedly, you will reach a stage where you would encounter the smallest particles that can no longer be divided.", "supports": ["sci9c8_t1c1_kp1"] },
+            { "page": 141, "quote": "He called these particles parmanus.", "supports": ["sci9c8_t1c1_kp1"] },
+            { "page": 141, "quote": "A parmanu is infinitely small and cannot be perceived by the senses.", "supports": ["sci9c8_t1c1_kp2"] },
+            { "page": 141, "quote": "Combinations of these forms dyads (groups of two parmanus) and triads (groups of three parmanus), and so on.", "supports": ["sci9c8_t1c1_kp2"] },
+            { "page": 141, "quote": "The Greek philosophers Leucippus and Democritus also proposed a similar idea. They called these indivisible particles atomos (in Greek, atomos means indivisible).", "supports": ["sci9c8_t1c1_kp3"] },
+            { "page": 141, "quote": "You must remember that the concept of ‘atom’ originated as an imaginary idea rather than from experimental observations.", "supports": ["sci9c8_t1c1_kp4"] },
+            { "page": 141, "quote": "However, this description does not specify the proportions in which parmanus combine to form different substances.", "supports": ["sci9c8_t1c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t1_c2",
+          "label": "Dalton's Atomic Theory",
+          "headingType": "heading",
+          "sourcePages": [141],
+          "cardText": "In 1808 John Dalton proposed his atomic theory, which was based on the scientific experiments of that time. He proposed that all matter is composed of indivisible particles called atoms, the fundamental building blocks of matter that cannot be broken down into smaller parts. Dalton's atomic theory was the first scientific description of how matter is made and the starting point for the current understanding of atomic structure. It raised new questions: what are atoms made up of, what would atoms look like if we could see them, and what makes the atoms of one element different from the atoms of another. Early atomic models were later changed and improved as new evidence came to light; although they are not fully correct they are important because they show how science moves forward one step at a time, driven by curiosity, questioning and experimentation.",
+          "hint": "What did Dalton say atoms were, and why does his theory matter?",
+          "probe": "State Dalton's atomic theory and say why it was important.",
+          "causeChain": "In 1808 Dalton, using the experiments of the time, proposed that matter is made of indivisible atoms -> this was the first scientific description of how matter is made -> it led scientists to ask what atoms are made of and how the atoms of different elements differ",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_first_scientific",
+              "linksChecks": [
+                "chk_sci9c8_dal_theory",
+                "chk_sci9c8_dal_first"
+              ],
+              "criterion": "Connects Dalton's theory being based on experiments of his time to its being the first scientific description of matter and the starting point for later models.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Many centuries later, in 1808, John Dalton proposed his atomic theory. It was based on scientific experiments of that time. He proposed that all matter is composed of indivisible particles called atoms.",
+              "followUp": "In which year was a scientific theory of atoms put forward on the basis of experiments, and by whom?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1808",
+                  "John Dalton",
+                  "scientific experiments",
+                  "indivisible particles called atoms"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_dal_theory",
+                    "criterion": "States that in 1808 John Dalton proposed an atomic theory based on scientific experiments, that all matter is composed of indivisible particles called atoms.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_dal_divisible"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t1c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "That is, the atoms are the fundamental building blocks of matter that cannot be broken down into smaller parts. Dalton’s atomic theory was the first scientific description of how matter is made. It became the starting point for the current understanding of atomic structure.",
+              "followUp": "According to this theory, can an atom be broken into smaller parts? Why was the theory a significant step?",
+              "assessment": {
+                "requiredEvidence": [
+                  "fundamental building blocks",
+                  "cannot be broken down into smaller parts",
+                  "first scientific description",
+                  "starting point"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_dal_first",
+                    "criterion": "States that Dalton's theory was the first scientific description of how matter is made and became the starting point for the current understanding of atomic structure.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t1c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "What would atoms look like if we could see them? What makes the atoms of one element different from the atoms of another element?",
+              "assessment": {
+                "requiredEvidence": [
+                  "what are atoms made up of",
+                  "look like",
+                  "atoms of one element different"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_dal_questions",
+                    "criterion": "Names the questions Dalton's theory raised: what atoms are made of, what they would look like, and what makes the atoms of one element different from another's.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t1c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Although we now know that the early models were not fully correct, they are still important because they show how science moves forward — one step at a time, driven by curiosity, questioning, and experimentation.",
+              "assessment": {
+                "requiredEvidence": [
+                  "early models were not fully correct",
+                  "still important",
+                  "one step at a time",
+                  "curiosity, questioning, and experimentation"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_dal_models",
+                    "criterion": "States that early atomic models, though not fully correct, are important because they show how science moves forward step by step through curiosity, questioning and experimentation.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_dal_divisible",
+              "wrong": "Dalton proposed that atoms are made of smaller particles.",
+              "fix": "Dalton proposed that all matter is composed of indivisible particles called atoms that cannot be broken down into smaller parts; later discoveries showed atoms are divisible."
+            }
+          ],
+          "verify": [
+            { "page": 141, "quote": "Many centuries later, in 1808, John Dalton proposed his atomic theory.", "supports": ["sci9c8_t1c2_kp1"] },
+            { "page": 141, "quote": "It was based on scientific experiments of that time.", "supports": ["sci9c8_t1c2_kp1"] },
+            { "page": 141, "quote": "He proposed that all matter is composed of indivisible particles called atoms.", "supports": ["sci9c8_t1c2_kp1"] },
+            { "page": 141, "quote": "That is, the atoms are the fundamental building blocks of matter that cannot be broken down into smaller parts.", "supports": ["sci9c8_t1c2_kp2"] },
+            { "page": 141, "quote": "Dalton’s atomic theory was the first scientific description of how matter is made.", "supports": ["sci9c8_t1c2_kp2"] },
+            { "page": 141, "quote": "It became the starting point for the current understanding of atomic structure.", "supports": ["sci9c8_t1c2_kp2"] },
+            { "page": 141, "quote": "What are atoms made up of ?", "supports": ["sci9c8_t1c2_kp3"] },
+            { "page": 141, "quote": "What makes the atoms of one element different from the atoms of another element?", "supports": ["sci9c8_t1c2_kp3"] },
+            { "page": 141, "quote": "Although we now know that the early models were not fully correct, they are still important because they show how science moves forward — one step at a time, driven by curiosity, questioning, and experimentation.", "supports": ["sci9c8_t1c2_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch8_t2",
+      "title": "Atomic models",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t2_c1",
+          "label": "Radioactivity and the Discovery of the Electron",
+          "headingType": "heading",
+          "sourcePages": [141, 142],
+          "cardText": "Until the late 19th century atoms were thought to be the smallest, indivisible units of matter. But scientists discovered that certain elements emit invisible energy and particles called radiation, a phenomenon known as radioactivity, which showed that atoms must be composed of smaller particles. In 1897 J. J. Thomson studied the conduction of electric current through gases at very low pressure, using a glass tube with two electrodes and a high voltage. He observed rays moving from the cathode (negative electrode) to the anode (positive electrode), called cathode rays. By studying these rays in electric and magnetic fields he concluded that they are streams of negatively charged particles with a much smaller mass than atoms; these particles, later called electrons, were emitted from atoms, so atoms are composed of smaller subatomic components. The nature of cathode rays was independent of the cathode material and the gas in the tube, which showed that electrons are a fundamental component of all atoms, present in every element.",
+          "hint": "What did the cathode ray experiment show about atoms?",
+          "probe": "Describe Thomson's cathode ray experiment and what it showed about electrons.",
+          "causeChain": "Radioactivity showed atoms are not indivisible -> Thomson's cathode rays were deflected in electric and magnetic fields, showing streams of negatively charged particles lighter than atoms (electrons) -> the rays were the same whatever the cathode or gas, so electrons are in every atom",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_same_rays_all_atoms",
+              "linksChecks": [
+                "chk_sci9c8_el_rays",
+                "chk_sci9c8_el_all"
+              ],
+              "criterion": "Connects the cathode rays being independent of the cathode material and the gas to electrons being a fundamental component of all atoms.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "However, scientists discovered that certain elements emit invisible energy and particles called radiation, This showed that atoms must be composed of smaller particles, proving that they were not indivisible as previously believed.",
+              "followUp": "What did the discovery that some elements give off invisible rays and particles suggest about the structure of atoms?",
+              "assessment": {
+                "requiredEvidence": [
+                  "emit invisible energy and particles",
+                  "radiation",
+                  "radioactivity",
+                  "smaller particles",
+                  "not indivisible"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_el_radio",
+                    "criterion": "States that certain elements emit invisible energy and particles called radiation (radioactivity), showing that atoms are composed of smaller particles and are not indivisible.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In 1897, J. J. Thomson studied the conduction of electric current through gases at a very low pressure. He used a glass tube with two electrodes and applied a high voltage. He observed rays moving from the cathode (negative electrode) to the anode (positive electrode) (Fig. 8.1). These were called cathode rays.",
+              "followUp": "How did the scientist who passed electricity through a low pressure gas in a sealed tube arrange his apparatus?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1897",
+                  "J. J. Thomson",
+                  "very low pressure",
+                  "cathode",
+                  "anode",
+                  "cathode rays"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_el_setup",
+                    "criterion": "Describes the experiment: in 1897 J. J. Thomson applied a high voltage to a glass tube with two electrodes at very low pressure and observed cathode rays moving from the cathode to the anode.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "By studying these cathode rays in electric and magnetic fields, he concluded that they are streams of negatively charged particles, with a much smaller mass than atoms. These particles, later called electrons, were emitted from atoms, indicating that atoms are composed of smaller subatomic components.",
+              "followUp": "What did studying how the rays bent in applied fields reveal about what they are made of?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electric and magnetic fields",
+                  "streams of negatively charged particles",
+                  "much smaller mass than atoms",
+                  "electrons",
+                  "subatomic components"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_el_rays",
+                    "criterion": "States that studying the rays in electric and magnetic fields showed they are streams of negatively charged particles with a much smaller mass than atoms, later called electrons, emitted from atoms.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_el_positive"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t2c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "It was found that the nature of cathode rays was independent of the material of the cathode and the gas filled in the cathode ray tube. It showed that electrons are a fundamental component of all atoms, present in every element.",
+              "followUp": "Did the rays change if a different metal or a different gas was used? What did this suggest?",
+              "assessment": {
+                "requiredEvidence": [
+                  "independent of the material of the cathode",
+                  "gas filled",
+                  "fundamental component of all atoms",
+                  "present in every element"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_el_all",
+                    "criterion": "States that the cathode rays were independent of the cathode material and the gas, showing that electrons are a fundamental component of all atoms, present in every element.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: Thomson concluded that electrons are present in all atoms because the cathode rays were the same whatever the cathode material or gas used"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_el_positive",
+              "wrong": "Cathode rays are streams of positive particles moving to the anode.",
+              "fix": "Cathode rays are streams of negatively charged particles, later called electrons, moving from the cathode (negative electrode) to the anode (positive electrode)."
+            }
+          ],
+          "verify": [
+            { "page": 141, "quote": "Until the late 19th century, atoms were thought to be the smallest, indivisible units of matter.", "supports": ["sci9c8_t2c1_kp1"] },
+            { "page": 142, "quote": "This showed that atoms must be composed of smaller particles, proving that they were not indivisible as previously believed.", "supports": ["sci9c8_t2c1_kp1"] },
+            { "page": 142, "quote": "In 1897, J. J. Thomson studied the conduction of electric current through gases at a very low pressure.", "supports": ["sci9c8_t2c1_kp2"] },
+            { "page": 142, "quote": "He used a glass tube with two electrodes and applied a high voltage.", "supports": ["sci9c8_t2c1_kp2"] },
+            { "page": 142, "quote": "He observed rays moving from the cathode (negative electrode) to the anode (positive electrode) (Fig. 8.1). These were called cathode rays.", "supports": ["sci9c8_t2c1_kp2"] },
+            { "page": 142, "quote": "By studying these cathode rays in electric and magnetic fields, he concluded that they are streams of negatively charged particles, with a much smaller mass than atoms. These particles, later called electrons, were emitted from atoms, indicating that atoms are composed of smaller subatomic components.", "supports": ["sci9c8_t2c1_kp3"] },
+            { "page": 142, "quote": "It was found that the nature of cathode rays was independent of the material of the cathode and the gas filled in the cathode ray tube.", "supports": ["sci9c8_t2c1_kp4"] },
+            { "page": 142, "quote": "It showed that electrons are a fundamental component of all atoms, present in every element.", "supports": ["sci9c8_t2c1_kp4"] },
+            { "page": 143, "quote": "Why did Thomson conclude that electrons are present in all atoms?", "supports": ["sci9c8_t2c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t2_c2",
+          "label": "Thomson's Plum Pudding Model",
+          "headingType": "heading",
+          "sourcePages": [142],
+          "cardText": "When J. J. Thomson discovered tiny negatively charged particles called electrons he faced a puzzle: atoms are neutral, so where is the positive charge? To solve this, Thomson proposed the atom to be a sphere of positive charge with electrons distributed throughout it. This model was compared to a pudding with plums embedded in it, called the plum pudding model, or to a watermelon, where the red pulp represents the positively charged matter and the seeds represent electrons distributed throughout the atom. This simple picture, though later replaced, was the first genuine attempt to describe how the atom's positive and negative charges stay balanced. Atoms do not show any colour; the colours in diagrams are only illustrative. Thomson received the Nobel Prize in Physics in 1906 for his studies of the electrical conductivity of gases.",
+          "hint": "How did Thomson explain that atoms are neutral although they contain electrons?",
+          "probe": "Describe Thomson's model of the atom and why it was proposed.",
+          "causeChain": "Atoms are neutral but contain negative electrons -> so there must be positive charge too -> Thomson pictured a sphere of positive charge with electrons embedded throughout, like plums in a pudding or seeds in a watermelon",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_balance_charges",
+              "linksChecks": [
+                "chk_sci9c8_th_puzzle",
+                "chk_sci9c8_th_model"
+              ],
+              "criterion": "Connects atoms being neutral to a model in which a sphere of positive charge balances the electrons spread through it.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When J. J. Thomson discovered tiny negatively charged particles called electrons, he faced a puzzle — atoms are neutral, so where is the positive charge present?",
+              "followUp": "After electrons were found, what puzzle arose about the charge of a whole atom?",
+              "assessment": {
+                "requiredEvidence": [
+                  "negatively charged particles called electrons",
+                  "atoms are neutral",
+                  "where is the positive charge"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_th_puzzle",
+                    "criterion": "States the puzzle Thomson faced: atoms are neutral, so where is the positive charge present once electrons were found?",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "To solve this, Thomson proposed the atom to be a sphere of positive charge with electrons distributed throughout it (Fig. 8.2). This model was compared to a pudding with plums embedded in it, called the plum pudding model.",
+              "followUp": "How did the new model solve this, and how were the electrons placed in it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sphere of positive charge",
+                  "electrons distributed throughout",
+                  "pudding with plums",
+                  "plum pudding model"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_th_model",
+                    "criterion": "States that Thomson proposed the atom as a sphere of positive charge with electrons distributed throughout it, called the plum pudding model.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_th_nucleus"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t2c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A more familiar picture would be that of a watermelon (Fig. 8.3), where the red pulp represents the positively charged matter, and the seeds represent electrons distributed throughout the atom.",
+              "assessment": {
+                "requiredEvidence": [
+                  "watermelon",
+                  "red pulp",
+                  "positively charged matter",
+                  "seeds represent electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_th_melon",
+                    "criterion": "Gives the watermelon picture: the red pulp is the positively charged matter and the seeds are the electrons distributed throughout the atom.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c2_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "This simple picture, though later replaced, was the first genuine attempt to describe how the atom’s positive and negative charges stay balanced.",
+              "assessment": {
+                "requiredEvidence": [
+                  "later replaced",
+                  "first genuine attempt",
+                  "positive and negative charges stay balanced"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_th_first",
+                    "criterion": "States that this simple picture, though later replaced, was the first genuine attempt to describe how an atom's positive and negative charges stay balanced.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: if the clay in a model of Thomson's atom carries less positive charge than the beads' negative charge, the model would not represent a neutral atom",
+            "Pause: an orange or lemon with seeds in soft pulp is a comparison that matches the embedded seeds but falls short in not representing electron charges"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_th_nucleus",
+              "wrong": "Thomson's model has a small dense nucleus at the centre with electrons around it.",
+              "fix": "Thomson's model is a sphere of positive charge with electrons distributed throughout it; the nucleus idea came from Rutherford."
+            }
+          ],
+          "verify": [
+            { "page": 142, "quote": "When J. J. Thomson discovered tiny negatively charged particles called electrons, he faced a puzzle — atoms are neutral, so where is the positive charge present?", "supports": ["sci9c8_t2c2_kp1"] },
+            { "page": 142, "quote": "To solve this, Thomson proposed the atom to be a sphere of positive charge with electrons distributed throughout it (Fig. 8.2).", "supports": ["sci9c8_t2c2_kp2"] },
+            { "page": 142, "quote": "This model was compared to a pudding with plums embedded in it, called the plum pudding model.", "supports": ["sci9c8_t2c2_kp2"] },
+            { "page": 142, "quote": "A more familiar picture would be that of a watermelon (Fig. 8.3), where the red pulp represents the positively charged matter, and the seeds represent electrons distributed throughout the atom.", "supports": ["sci9c8_t2c2_kp3"] },
+            { "page": 142, "quote": "This simple picture, though later replaced, was the first genuine attempt to describe how the atom’s positive and negative charges stay balanced.", "supports": ["sci9c8_t2c2_kp4"] },
+            { "page": 143, "quote": "Suppose you made up your own ‘atom’, as Thomson described, using clay for the", "supports": ["sci9c8_t2c2_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t2_c3",
+          "label": "The Gold Foil Experiment",
+          "headingType": "heading",
+          "sourcePages": [143],
+          "cardText": "In 1911 Geiger and Marsden, working under Ernest Rutherford, tested Thomson's model with the gold foil experiment. They aimed a narrow beam of alpha particles, tiny positively charged particles emitted from certain radioactive elements, at an extremely thin sheet of gold foil. According to Thomson's model the positive charge was spread out evenly, so they expected the alpha particles to pass straight through or be deflected only slightly. To their surprise, most particles passed through undeflected, some were sharply deflected and a few even bounced back; this deflection from the straight path is called scattering, so the experiment is also called the alpha-ray scattering experiment. Thomson's model failed to explain the results, particularly the deflection of some alpha particles through large angles while most passed undeflected.",
+          "hint": "What did Geiger and Marsden expect, and what surprised them?",
+          "probe": "Describe the gold foil experiment, what was expected, and what was actually observed.",
+          "causeChain": "Alpha particles were fired at a thin gold foil -> Thomson's evenly spread positive charge predicted straight passage or slight deflection -> most passed straight but some were sharply deflected and a few bounced back -> Thomson's model could not explain this",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_expected_vs_seen",
+              "linksChecks": [
+                "chk_sci9c8_gf_expect",
+                "chk_sci9c8_gf_obs",
+                "chk_sci9c8_gf_fail"
+              ],
+              "criterion": "Connects the expected result from evenly spread positive charge to the surprising large deflections that Thomson's model could not explain.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "In 1911, Geiger and Marsden, working under Ernest Rutherford, tested Thomson’s model of the atom through what became famous as the gold foil experiment. They aimed a narrow beam of alpha particles at an extremely thin sheet of gold foil.",
+              "followUp": "Who carried out the experiment of firing particles at a thin metal sheet, and what was its purpose?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1911",
+                  "Geiger and Marsden",
+                  "gold foil experiment",
+                  "narrow beam of alpha particles",
+                  "extremely thin sheet of gold foil"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_gf_setup",
+                    "criterion": "Describes the gold foil experiment: in 1911 Geiger and Marsden, under Rutherford, aimed a narrow beam of alpha particles at an extremely thin sheet of gold foil.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Alpha (symbol α) particles are tiny, positively charged particles emitted from certain radioactive elements.",
+              "assessment": {
+                "requiredEvidence": [
+                  "alpha",
+                  "tiny",
+                  "positively charged",
+                  "radioactive elements"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_gf_alpha",
+                    "criterion": "States that alpha particles are tiny, positively charged particles emitted from certain radioactive elements.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "According to Thomson’s model, the positive charge in the atom was spread out evenly. So they expected the alpha particles to pass straight through the gold foil or be deflected only slightly.",
+              "followUp": "If positive charge were spread evenly, what outcome did the experimenters expect for the fired particles?",
+              "assessment": {
+                "requiredEvidence": [
+                  "spread out evenly",
+                  "pass straight through",
+                  "deflected only slightly"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_gf_expect",
+                    "criterion": "States that Thomson's model, with the positive charge spread evenly, led them to expect alpha particles to pass straight through or be deflected only slightly.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c3_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "But to their surprise, while most particles passed through undeflected, some were sharply deflected (Fig. 8.4), and a few even bounced back. This deflection from the straight path is called scattering.",
+              "followUp": "What surprising things did they observe happen to the particles?",
+              "assessment": {
+                "requiredEvidence": [
+                  "most particles passed through undeflected",
+                  "some were sharply deflected",
+                  "a few even bounced back",
+                  "scattering"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_gf_obs",
+                    "criterion": "States the observations: most particles passed through undeflected, some were sharply deflected and a few even bounced back; this deflection is called scattering.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_gf_all_through"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t2c3_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "model failed to explain the results of the gold foil experiment, particularly the deflection of some α-particles through large angles and that most of the α-particles passed undeflected.",
+              "followUp": "Why did the older model fail to account for what was seen?",
+              "assessment": {
+                "requiredEvidence": [
+                  "failed to explain",
+                  "deflection of some",
+                  "large angles",
+                  "most of the α-particles passed undeflected"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_gf_fail",
+                    "criterion": "States that Thomson's model failed to explain the results, particularly the large-angle deflection of some alpha particles and the passage of most undeflected.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: replacing alpha particles with negatively charged particles in Rutherford's gold foil experiment would change the direction of the deflections",
+            "Pause: the few alpha particles that bounced back rule out the plum pudding model because evenly spread positive charge could not turn them back",
+            "Think as a Scientist: a thicker gold foil would give more chances of alpha particles hitting a nucleus and so more deflections"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_gf_all_through",
+              "wrong": "All the alpha particles passed straight through the gold foil.",
+              "fix": "While most particles passed through undeflected, some were sharply deflected and a few even bounced back."
+            }
+          ],
+          "verify": [
+            { "page": 143, "quote": "In 1911, Geiger and Marsden, working under Ernest Rutherford, tested Thomson’s model of the atom through what became famous as the gold foil experiment.", "supports": ["sci9c8_t2c3_kp1"] },
+            { "page": 143, "quote": "They aimed a narrow beam of alpha particles at an extremely thin sheet of gold foil.", "supports": ["sci9c8_t2c3_kp1"] },
+            { "page": 143, "quote": "Alpha (symbol α) particles are tiny, positively charged particles emitted from certain radioactive elements.", "supports": ["sci9c8_t2c3_kp2"] },
+            { "page": 143, "quote": "According to Thomson’s model, the positive charge in the atom was spread out evenly.", "supports": ["sci9c8_t2c3_kp3"] },
+            { "page": 143, "quote": "So they expected the alpha particles to pass straight through the gold foil or be deflected only slightly.", "supports": ["sci9c8_t2c3_kp3"] },
+            { "page": 143, "quote": "But to their surprise, while most particles passed through undeflected, some were sharply deflected (Fig. 8.4), and a few even bounced back.", "supports": ["sci9c8_t2c3_kp4"] },
+            { "page": 143, "quote": "This deflection from the straight path is called scattering.", "supports": ["sci9c8_t2c3_kp4"] },
+            { "page": 143, "quote": "model failed to explain the results of the gold foil experiment, particularly the deflection of some α-particles through large angles and that most of the α-particles passed undeflected.", "supports": ["sci9c8_t2c3_kp5"] },
+            { "page": 144, "quote": "What do you think would happen if α-particles were replaced with negatively charged particles in Rutherford’s gold foil experiment?", "supports": ["sci9c8_t2c3_kp1"] },
+            { "page": 144, "quote": "Rutherford found that a few α-particles bounced back sharply.", "supports": ["sci9c8_t2c3_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t2_c4",
+          "label": "Rutherford's Nuclear (Planetary) Model",
+          "headingType": "heading",
+          "sourcePages": [144],
+          "cardText": "From the gold foil experiment Rutherford concluded that the positive charge of an atom is not spread throughout but is concentrated in an extremely small region called the nucleus. He proposed that most of an atom is empty space, as most alpha particles passed through the foil without any deflection; the nucleus is dense and contains all the positive charge and most of the mass of an atom; and the electrons revolve around the nucleus somewhat like planets orbiting the Sun, so this is called the planetary model of the atom. Rutherford found that the nucleus is extremely small, about one lakh times smaller than the atom. If an atom were the size of a cricket ground of about 100 m across, the nucleus would be a tiny black pepper grain of a few mm at the centre.",
+          "hint": "What did the deflection of alpha particles tell Rutherford about where the positive charge lies?",
+          "probe": "State Rutherford's conclusions about the atom and the nucleus.",
+          "causeChain": "Most alpha particles passed straight, so most of the atom is empty space -> a few were sharply deflected, so the positive charge and mass are concentrated in a tiny dense nucleus -> electrons orbit the nucleus like planets around the Sun",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_pass_empty",
+              "linksChecks": [
+                "chk_sci9c8_ru_empty",
+                "chk_sci9c8_ru_nucleus"
+              ],
+              "criterion": "Connects most alpha particles passing undeflected to most of the atom being empty space, and large deflections to a small dense nucleus.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "From the gold foil experiment, Rutherford concluded that the positive charge of an atom is not spread throughout but remains concentrated in an extremely small region called the nucleus.",
+              "followUp": "Where did Rutherford conclude the positive charge of an atom is placed?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not spread throughout",
+                  "concentrated in an extremely small region",
+                  "nucleus"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ru_conc",
+                    "criterion": "States that Rutherford concluded the positive charge of an atom is concentrated in an extremely small region called the nucleus, not spread throughout.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Most of an atom is empty space, as most α-particles passed through the gold foil without any deflection.",
+              "followUp": "Why did most of the fired particles go straight through, and what does it say about the atom?",
+              "assessment": {
+                "requiredEvidence": [
+                  "empty space",
+                  "most α-particles passed through",
+                  "without any deflection"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ru_empty",
+                    "criterion": "States that most of an atom is empty space, as most alpha particles passed through the gold foil without any deflection.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c4_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The nucleus is dense, contains all the positive charge and most of the mass of an atom.",
+              "followUp": "What does the central part of an atom contain, and how dense is it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "nucleus is dense",
+                  "all the positive charge",
+                  "most of the mass"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ru_nucleus",
+                    "criterion": "States that the nucleus is dense and contains all the positive charge and most of the mass of an atom.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c4_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The electrons revolve around the nucleus, somewhat like planets orbiting the Sun. Hence, this model is called the planetary model of the atom (Fig. 8.5).",
+              "followUp": "How did this model picture the electrons, and why is it given the name it has?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electrons revolve around the nucleus",
+                  "planets orbiting the Sun",
+                  "planetary model"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ru_planetary",
+                    "criterion": "States that electrons revolve around the nucleus somewhat like planets orbiting the Sun, so the model is called the planetary model.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c4_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "You can imagine that if an atom were of the size of a cricket ground (about 100 m across), the nucleus would be just a tiny black pepper grain (a few mm) at the centre!",
+              "assessment": {
+                "requiredEvidence": [
+                  "nucleus is extremely small",
+                  "one lakh times smaller",
+                  "cricket ground",
+                  "black pepper grain"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ru_size",
+                    "criterion": "States that the nucleus is about one lakh times smaller than the atom: if an atom were a cricket ground, the nucleus would be a tiny black pepper grain at the centre.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_ru_nucleus_big"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: the large deflection of a few alpha particles indicated that most of the mass and positive charge of the atom are packed into a tiny centre",
+            "Exercise: Rutherford's results disproved the plum pudding model and led to the idea of a nucleus",
+            "Exercise: the experiment did not show neutrons in the nucleus or prove that electrons move around it"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_ru_nucleus_big",
+              "wrong": "The nucleus takes up most of the volume of the atom.",
+              "fix": "The nucleus is extremely small, about one lakh times smaller than the atom, and most of an atom is empty space."
+            }
+          ],
+          "verify": [
+            { "page": 144, "quote": "From the gold foil experiment, Rutherford concluded that the positive charge of an atom is not spread throughout but remains concentrated in an extremely small region called the nucleus.", "supports": ["sci9c8_t2c4_kp1"] },
+            { "page": 144, "quote": "Most of an atom is empty space, as most α-particles passed through the gold foil without any deflection.", "supports": ["sci9c8_t2c4_kp2"] },
+            { "page": 144, "quote": "The nucleus is dense, contains all the positive charge and most of the mass of an atom.", "supports": ["sci9c8_t2c4_kp3"] },
+            { "page": 144, "quote": "The electrons revolve around the nucleus, somewhat like planets orbiting the Sun.", "supports": ["sci9c8_t2c4_kp4"] },
+            { "page": 144, "quote": "Hence, this model is called the planetary model of the atom (Fig. 8.5).", "supports": ["sci9c8_t2c4_kp4"] },
+            { "page": 144, "quote": "You can imagine that if an atom were of the size of a cricket ground (about 100 m across), the nucleus would be just a tiny black pepper grain (a few mm) at the centre!", "supports": ["sci9c8_t2c4_kp5"] },
+            { "page": 158, "quote": "The large deflection of a few alpha particles indicated that most of the mass of the atom and positive charge are packed into a tiny centre.", "supports": ["sci9c8_t2c4_kp1"] },
+            { "page": 158, "quote": "What conclusion did Rutherford draw about the position and characteristics of the atom’s positively charged part based on the few alpha particles that bounced back or were deflected at large angles in the gold foil experiment?", "supports": ["sci9c8_t2c4_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t2_c5",
+          "label": "Limitation of Rutherford's Model and the Discovery of the Proton",
+          "headingType": "heading",
+          "sourcePages": [145],
+          "cardText": "Rutherford's model was better than Thomson's in explaining the gold foil results, but it could not explain the stability of the atom. A particle moving in a circular path is constantly changing direction, which means it is accelerating. If a negatively charged electron keeps accelerating around the nucleus it should lose energy, spiral inward and eventually fall into the positively charged nucleus; atoms would collapse and not exist, but in reality atoms are stable. So the model was not completely correct and a new explanation was needed. Rutherford also discovered and named the proton: the nucleus carries positive charge which comes from particles called protons, which are much heavier than electrons and possess a charge equal and opposite to that of electrons. For an atom to be electrically neutral the number of protons equals the number of electrons: a helium atom has 2 protons and 2 electrons, and a sodium atom has 11 and 11. All atoms are electrically neutral.",
+          "hint": "Why should an electron orbiting a nucleus, in Rutherford's picture, eventually fall in?",
+          "probe": "Explain the limitation of Rutherford's model, and what protons are.",
+          "causeChain": "An electron moving in a circle is accelerating -> an accelerating charged electron should lose energy and spiral into the nucleus -> but atoms are stable, so Rutherford's model was incomplete; protons in the nucleus balance the electrons, making atoms neutral",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_accelerate_spiral",
+              "linksChecks": [
+                "chk_sci9c8_rl_spiral",
+                "chk_sci9c8_rl_stable"
+              ],
+              "criterion": "Connects the electron's circular motion being accelerated to it losing energy and spiralling into the nucleus, which contradicts the stability of atoms.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c5_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Rutherford’s atomic model was better than Thomson’s atomic model in explaining the results of the gold foil experiment. However, it had a limitation. It could not explain the stability of the atom.",
+              "followUp": "In what way was this model an improvement, and what limitation did it still have?",
+              "assessment": {
+                "requiredEvidence": [
+                  "better than Thomson's",
+                  "limitation",
+                  "stability of the atom"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_rl_limit",
+                    "criterion": "States that Rutherford's model explained the gold foil results better than Thomson's but could not explain the stability of the atom.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c5_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "a particle moving in a circular path is constantly changing direction, which means it is accelerating. If a negatively charged electron keeps accelerating around the nucleus, it should lose energy. Losing energy would make it spiral inward and eventually fall into the positively charged nucleus (Fig. 8.6).",
+              "followUp": "A particle moving along a circle keeps changing direction. What would that imply for an electron circling the centre?",
+              "assessment": {
+                "requiredEvidence": [
+                  "circular path",
+                  "constantly changing direction",
+                  "accelerating",
+                  "lose energy",
+                  "spiral inward",
+                  "fall into the positively charged nucleus"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_rl_spiral",
+                    "criterion": "Explains that an electron moving in a circle is accelerating, so it should lose energy, spiral inward and fall into the nucleus.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_rl_collapse"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t2c5_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "If that really happened, atoms would collapse and would not exist! But in reality, atoms are stable that is why matter around us stays intact. This meant that Rutherford’s model was not completely correct",
+              "followUp": "What would happen to atoms if that were really true, and what do we actually observe?",
+              "assessment": {
+                "requiredEvidence": [
+                  "atoms would collapse",
+                  "would not exist",
+                  "atoms are stable",
+                  "not completely correct"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_rl_stable",
+                    "criterion": "States that if electrons spiralled in, atoms would collapse, but atoms are stable, so Rutherford's model was not completely correct.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c5_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Rutherford showed that the nucleus carries positive charge which comes from the particles called protons. Protons are much heavier than electrons and possess a charge equal and opposite to that of electrons.",
+              "followUp": "What particles give the nucleus its charge, and how do they compare with electrons in mass?",
+              "assessment": {
+                "requiredEvidence": [
+                  "nucleus carries positive charge",
+                  "protons",
+                  "much heavier than electrons",
+                  "equal and opposite"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_rl_proton",
+                    "criterion": "States that the positive charge of the nucleus comes from protons, which are much heavier than electrons and carry a charge equal and opposite to that of electrons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c5_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "For an atom to be electrically neutral, the number of protons must be equal to the number of electrons. For example, a helium atom has 2 protons and 2 electrons, while a sodium atom has 11 protons and 11 electrons.",
+              "followUp": "For an atom to be neutral overall, how must its positive and negative particles compare in number?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electrically neutral",
+                  "number of protons must be equal to the number of electrons",
+                  "2 protons and 2 electrons",
+                  "11 protons and 11 electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_rl_neutral",
+                    "criterion": "States that for an atom to be electrically neutral the number of protons equals the number of electrons, e.g. helium has 2 and 2 and sodium 11 and 11.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: Rutherford's model failed to explain atomic stability because orbiting electrons should lose energy, whereas Bohr's model succeeded with fixed stationary states",
+            "Exercise: the electrons do not fly away from the atom because they are attracted to the positively charged nucleus"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_rl_collapse",
+              "wrong": "According to Rutherford's model atoms are stable because electrons never lose energy.",
+              "fix": "Rutherford's model predicts an accelerating electron should lose energy and fall into the nucleus, so it could not explain why atoms are stable."
+            }
+          ],
+          "verify": [
+            { "page": 145, "quote": "Rutherford’s atomic model was better than Thomson’s atomic model in explaining the results of the gold foil experiment.", "supports": ["sci9c8_t2c5_kp1"] },
+            { "page": 145, "quote": "However, it had a limitation. It could not explain the stability of the atom.", "supports": ["sci9c8_t2c5_kp1"] },
+            { "page": 145, "quote": "a particle moving in a circular path is constantly changing direction, which means it is accelerating.", "supports": ["sci9c8_t2c5_kp2"] },
+            { "page": 145, "quote": "If a negatively charged electron keeps accelerating around the nucleus, it should lose energy.", "supports": ["sci9c8_t2c5_kp2"] },
+            { "page": 145, "quote": "Losing energy would make it spiral inward and eventually fall into the positively charged nucleus (Fig. 8.6).", "supports": ["sci9c8_t2c5_kp2"] },
+            { "page": 145, "quote": "If that really happened, atoms would collapse and would not exist! But in reality, atoms are stable that is why matter around us stays intact.", "supports": ["sci9c8_t2c5_kp3"] },
+            { "page": 145, "quote": "This meant that Rutherford’s model was not completely correct", "supports": ["sci9c8_t2c5_kp3"] },
+            { "page": 145, "quote": "Rutherford showed that the nucleus carries positive charge which comes from the particles called protons.", "supports": ["sci9c8_t2c5_kp4"] },
+            { "page": 145, "quote": "Protons are much heavier than electrons and possess a charge equal and opposite to that of electrons.", "supports": ["sci9c8_t2c5_kp4"] },
+            { "page": 145, "quote": "For an atom to be electrically neutral, the number of protons must be equal to the number of electrons.", "supports": ["sci9c8_t2c5_kp5"] },
+            { "page": 145, "quote": "For example, a helium atom has 2 protons and 2 electrons, while a sodium atom has 11 protons and 11 electrons.", "supports": ["sci9c8_t2c5_kp5"] },
+            { "page": 160, "quote": "Both Rutherford’s and Bohr’s models have electrons orbiting the", "supports": ["sci9c8_t2c5_kp3"] },
+            { "page": 159, "quote": "Electrons move around the nucleus in orbits. Why do they not fly away", "supports": ["sci9c8_t2c5_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t2_c6",
+          "label": "Bohr's Model of the Atom",
+          "headingType": "heading",
+          "sourcePages": [146],
+          "cardText": "To explain why atoms are stable, Niels Bohr proposed a new model in 1913. According to Bohr, electrons do not move randomly around the nucleus but follow fixed circular paths called stationary states, orbits or shells. In each shell an electron has a definite amount of energy, so the shells are also called energy levels, named K, L, M, N or n = 1, 2, 3, 4. Electrons can revolve only in these allowed shells and not in between, and while moving in a fixed shell an electron does not lose energy. The first level K (n = 1) is closest to the nucleus and has the least energy, and the energy increases as we move away from the nucleus. An electron can move to another shell by absorbing or releasing a fixed amount of energy equal to the difference between the energies of the two levels, and each shell can hold only a certain number of electrons. Bohr explained stability by introducing stationary states as a postulate: in a stationary state the energy of an electron remains constant even though it moves around the nucleus. Even Bohr's model was later found to have limitations and the quantum mechanical model was proposed.",
+          "hint": "How did Bohr explain that electrons orbiting the nucleus do not lose energy?",
+          "probe": "Describe Bohr's model and how it explains the stability of atoms.",
+          "causeChain": "Electrons move only in fixed shells (energy levels) -> in a shell an electron has a definite, constant energy and does not lose it -> so electrons do not spiral into the nucleus; an electron changes shell only by absorbing or releasing a fixed amount of energy",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_fixed_energy_stable",
+              "linksChecks": [
+                "chk_sci9c8_bo_shells",
+                "chk_sci9c8_bo_stable"
+              ],
+              "criterion": "Connects electrons moving only in fixed shells with constant energy to atoms being stable, unlike in Rutherford's model.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t2c6_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "To explain why atoms are stable, Niels Bohr proposed a new model of the atom in 1913.",
+              "followUp": "Who proposed a new model to explain why atoms do not collapse, and in which year?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Niels Bohr",
+                  "stable",
+                  "1913"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_who",
+                    "criterion": "States that Niels Bohr proposed a new model of the atom in 1913 to explain why atoms are stable.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Electrons do not move randomly around the nucleus but follow fixed circular paths called stationary states, orbits, or shells. In each shell, an electron has a definite amount of energy, so these shells are also called energy levels.",
+              "followUp": "Do electrons wander at random around the nucleus? What paths do they follow, and what are these paths called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not move randomly",
+                  "fixed circular paths",
+                  "stationary states",
+                  "definite amount of energy",
+                  "energy levels"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_shells",
+                    "criterion": "States that electrons follow fixed circular paths called stationary states, orbits or shells, each with a definite amount of energy, so they are also called energy levels.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "These shells are represented by the letters K, L, M, N, ... or by the numbers n = 1, 2, 3, 4, ...",
+              "assessment": {
+                "requiredEvidence": [
+                  "K, L, M, N",
+                  "n = 1, 2, 3, 4"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_names",
+                    "criterion": "States that the shells are represented by the letters K, L, M, N... or by n = 1, 2, 3, 4...",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Electrons can revolve only in these allowed shells, and not in between them. While moving in a fixed shell, an electron does not lose energy.",
+              "followUp": "Can an electron be found between the allowed paths? What happens to its energy while it stays in one path?",
+              "assessment": {
+                "requiredEvidence": [
+                  "only in these allowed shells",
+                  "not in between",
+                  "does not lose energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_stable",
+                    "criterion": "States that electrons revolve only in the allowed shells, not in between, and do not lose energy while moving in a fixed shell.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_bo_between",
+                  "misc_sci9c8_bo_lose"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "The first energy level K (n = 1) is the one closest to the nucleus (Fig. 8.7) and has the least energy. The energy of these levels increases as we move away from the nucleus.",
+              "followUp": "Which level lies nearest the nucleus, and how does energy change as you go outward?",
+              "assessment": {
+                "requiredEvidence": [
+                  "K (n = 1)",
+                  "closest to the nucleus",
+                  "least energy",
+                  "increases as we move away"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_energy",
+                    "criterion": "States that the K shell (n = 1) is closest to the nucleus with the least energy, and the energy of the levels increases as we move away from the nucleus.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "An electron can move to another shell by absorbing or releasing a fixed amount of energy equal to the difference between the energies of the two levels.",
+              "followUp": "How can an electron shift from one level to another?",
+              "assessment": {
+                "requiredEvidence": [
+                  "absorbing or releasing",
+                  "fixed amount of energy",
+                  "difference between the energies of the two levels"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_jump",
+                    "criterion": "States that an electron moves to another shell by absorbing or releasing a fixed amount of energy equal to the difference between the energies of the two levels.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t2c6_kp7",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Bohr addressed this by introducing the concept of stationary states as a postulate. In a stationary state, the energy of an electron remains constant, even though it is in motion around the nucleus.",
+              "assessment": {
+                "requiredEvidence": [
+                  "stationary states",
+                  "postulate",
+                  "energy of an electron remains constant"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_bo_postulate",
+                    "criterion": "States that Bohr introduced stationary states as a postulate: in a stationary state the energy of an electron remains constant though it moves around the nucleus.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: in Bohr's model electrons revolve around the nucleus in orbits of fixed energy without losing energy; they do not slowly fall into the nucleus, exist anywhere with no fixed energy, or lie between energy levels"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_bo_between",
+              "wrong": "According to Bohr's model, electrons can be found at any distance between the energy levels.",
+              "fix": "Electrons can revolve only in the allowed shells, and not in between them."
+            },
+            {
+              "id": "misc_sci9c8_bo_lose",
+              "wrong": "In Bohr's model electrons lose energy while moving in orbits and slowly fall into the nucleus.",
+              "fix": "While moving in a fixed shell, an electron does not lose energy; in a stationary state its energy remains constant."
+            }
+          ],
+          "verify": [
+            { "page": 146, "quote": "To explain why atoms are stable, Niels Bohr proposed a new model of the atom in 1913.", "supports": ["sci9c8_t2c6_kp1"] },
+            { "page": 146, "quote": "Electrons do not move randomly around the nucleus but follow fixed circular paths called stationary states, orbits, or shells.", "supports": ["sci9c8_t2c6_kp2"] },
+            { "page": 146, "quote": "In each shell, an electron has a definite amount of energy, so these shells are also called energy levels.", "supports": ["sci9c8_t2c6_kp2"] },
+            { "page": 146, "quote": "These shells are represented by the letters K, L, M, N, ... or by the numbers n = 1, 2, 3, 4, ...", "supports": ["sci9c8_t2c6_kp3"] },
+            { "page": 146, "quote": "Electrons can revolve only in these allowed shells, and not in between them.", "supports": ["sci9c8_t2c6_kp4"] },
+            { "page": 146, "quote": "While moving in a fixed shell, an electron does not lose energy.", "supports": ["sci9c8_t2c6_kp4"] },
+            { "page": 146, "quote": "The first energy level K (n = 1) is the one closest to the nucleus (Fig. 8.7) and has the least energy.", "supports": ["sci9c8_t2c6_kp5"] },
+            { "page": 146, "quote": "The energy of these levels increases as we move away from the nucleus.", "supports": ["sci9c8_t2c6_kp5"] },
+            { "page": 146, "quote": "The energy of these levels increases as we move away from the nucleus.", "supports": ["sci9c8_t2c6_kp5"] },
+            { "page": 146, "quote": "An electron can move to another shell by absorbing or releasing a fixed amount of energy equal to the difference between the energies of the two levels.", "supports": ["sci9c8_t2c6_kp6"] },
+            { "page": 146, "quote": "Bohr addressed this by introducing the concept of stationary states as a postulate.", "supports": ["sci9c8_t2c6_kp7"] },
+            { "page": 146, "quote": "In a stationary state, the energy of an electron remains constant, even though it is in motion around the nucleus.", "supports": ["sci9c8_t2c6_kp7"] },
+            { "page": 158, "quote": "Electrons lose energy while moving in fixed orbits and slowly fall", "supports": ["sci9c8_t2c6_kp4"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch8_t3",
+      "title": "The neutron and the mass of an atom",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t3_c1",
+          "label": "Discovery of the Neutron",
+          "headingType": "heading",
+          "sourcePages": [147],
+          "cardText": "Rutherford's model showed that most of the mass of an atom is concentrated in its nucleus, since the electrons are so light their mass can be ignored. But something puzzling appeared in the early 20th century: a hydrogen atom has one proton and a helium atom has two protons, yet the mass of a helium atom is about four times that of a hydrogen atom, not double. In 1932 James Chadwick, a student of Rutherford, solved this by discovering a new subatomic particle with a mass nearly equal to that of a proton but no electrical charge. This neutral particle was named the neutron, usually represented by the symbol n. Neutrons are found in the nucleus of all atoms except hydrogen. The mass of an atom comes mainly from its protons and neutrons packed tightly in the nucleus, which explains why atoms are heavier than the mass of their total number of protons.",
+          "hint": "Why is a helium atom four times as heavy as a hydrogen atom, not twice?",
+          "probe": "What puzzle led to the discovery of the neutron, and what are its properties?",
+          "causeChain": "Helium has twice the protons of hydrogen but four times the mass -> Chadwick discovered the neutron in 1932, with nearly the mass of a proton and no charge -> the mass of an atom comes mainly from the protons and neutrons in its nucleus",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_extra_mass_neutral",
+              "linksChecks": [
+                "chk_sci9c8_nt_puzzle",
+                "chk_sci9c8_nt_discover"
+              ],
+              "criterion": "Connects the extra mass of helium without extra charge to the discovery of the neutral neutron in the nucleus.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "a hydrogen atom has one proton, whereas a helium atom has two protons, yet the mass of a helium atom is about four times that of a hydrogen atom, not double.",
+              "followUp": "A helium atom has twice the positive particles of hydrogen, yet its mass is far more than double. What puzzle does this raise?",
+              "assessment": {
+                "requiredEvidence": [
+                  "hydrogen atom has one proton",
+                  "helium atom has two protons",
+                  "about four times",
+                  "not double"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_nt_puzzle",
+                    "criterion": "States the puzzle: a helium atom has two protons to hydrogen's one, yet its mass is about four times that of hydrogen, not double.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In 1932, this problem was solved by James Chadwick (a student of Ernest Rutherford). He discovered a new subatomic particle with a mass nearly equal to that of a proton but no electrical charge. This neutral particle was named as neutron and is usually represented by the symbol ‘n’.",
+              "followUp": "Who solved this puzzle, and what is the new particle like in mass and charge?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1932",
+                  "James Chadwick",
+                  "mass nearly equal to that of a proton",
+                  "no electrical charge",
+                  "neutron"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_nt_discover",
+                    "criterion": "States that in 1932 James Chadwick discovered the neutron, a subatomic particle with a mass nearly equal to a proton's but no electrical charge.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_nt_charge"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The neutrons are found in the nucleus of all atoms except hydrogen.",
+              "assessment": {
+                "requiredEvidence": [
+                  "nucleus of all atoms except hydrogen"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_nt_where",
+                    "criterion": "States that neutrons are found in the nucleus of all atoms except hydrogen.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t3c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Thus, the mass of an atom comes mainly from its protons and neutrons packed tightly in the nucleus. This also explains why atoms are heavier than the mass of their total number of protons.",
+              "followUp": "Which particles account for most of an atom's mass, and where are they?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mass of an atom comes mainly from",
+                  "protons and neutrons",
+                  "packed tightly in the nucleus"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_nt_mass",
+                    "criterion": "States that the mass of an atom comes mainly from the protons and neutrons packed in the nucleus.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t3c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Rutherford’s model showed that most of the mass of an atom is concentrated in its nucleus. Electrons that revolve around the nucleus are so light that their mass can be ignored.",
+              "assessment": {
+                "requiredEvidence": [
+                  "most of the mass",
+                  "concentrated in its nucleus",
+                  "electrons",
+                  "so light",
+                  "ignored"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_nt_electron",
+                    "criterion": "States that most of the mass is in the nucleus and electrons are so light their mass can be ignored.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "What if: if an atom had no empty space, the size of various objects would be much smaller"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_nt_charge",
+              "wrong": "The neutron carries a positive charge like the proton.",
+              "fix": "The neutron has a mass nearly equal to that of a proton but no electrical charge."
+            }
+          ],
+          "verify": [
+            { "page": 147, "quote": "a hydrogen atom has one proton, whereas a helium atom has two protons, yet the mass of a helium atom is about four times that of a hydrogen atom, not double.", "supports": ["sci9c8_t3c1_kp1"] },
+            { "page": 147, "quote": "In 1932, this problem was solved by James Chadwick (a student of Ernest Rutherford).", "supports": ["sci9c8_t3c1_kp2"] },
+            { "page": 147, "quote": "He discovered a new subatomic particle with a mass nearly equal to that of a proton but no electrical charge.", "supports": ["sci9c8_t3c1_kp2"] },
+            { "page": 147, "quote": "This neutral particle was named as neutron and is usually represented by the symbol ‘n’.", "supports": ["sci9c8_t3c1_kp2"] },
+            { "page": 147, "quote": "The neutrons are found in the nucleus of all atoms except hydrogen.", "supports": ["sci9c8_t3c1_kp3"] },
+            { "page": 147, "quote": "Thus, the mass of an atom comes mainly from its protons and neutrons packed tightly in the nucleus.", "supports": ["sci9c8_t3c1_kp4"] },
+            { "page": 147, "quote": "This also explains why atoms are heavier than the mass of their total number of protons.", "supports": ["sci9c8_t3c1_kp4"] },
+            { "page": 147, "quote": "Rutherford’s model showed that most of the mass of an atom is concentrated in its nucleus.", "supports": ["sci9c8_t3c1_kp5"] },
+            { "page": 147, "quote": "Electrons that revolve around the nucleus are so light that their mass can be ignored.", "supports": ["sci9c8_t3c1_kp5"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t3_c2",
+          "label": "Why Heavier Atoms Need More Neutrons",
+          "headingType": "heading",
+          "sourcePages": [147],
+          "cardText": "Lighter atoms often have an equal number of protons and neutrons, like carbon with six each or oxygen with eight each. But as atoms get heavier their nuclei have many more neutrons than protons: iron has 26 protons and 30 neutrons, and uranium has 92 protons and 146 neutrons. Every proton inside the nucleus repels every other proton because they all carry positive charge. Neutrons, being neutral, help reduce this repulsion by increasing the distance between protons and by strengthening the nuclear force that binds all particles together. So heavier atoms need many more neutrons to hold everything in the nucleus tightly bound.",
+          "hint": "Why do protons in a nucleus not push each other apart?",
+          "probe": "Why do heavier atoms need many more neutrons than protons?",
+          "causeChain": "Protons all carry positive charge and repel one another -> neutrons, being neutral, increase the distance between protons and strengthen the nuclear force binding the particles -> so heavier atoms need many more neutrons to hold the nucleus together",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_repulsion_neutrons",
+              "linksChecks": [
+                "chk_sci9c8_hv_repel",
+                "chk_sci9c8_hv_more"
+              ],
+              "criterion": "Connects the repulsion between protons to neutrons increasing the distance between them and strengthening the nuclear force, so heavier nuclei need more neutrons.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Lighter atoms often have an equal number of protons and neutrons (like carbon with six each or oxygen with eight each). However, as atoms get heavier, their nuclei have many more neutrons than protons. Iron has 26 protons and 30 neutrons, and by the time we reach uranium, the nucleus has 92 protons and 146 neutrons.",
+              "followUp": "In lighter atoms how do the numbers of the two nuclear particles compare, and what changes as atoms get heavier?",
+              "assessment": {
+                "requiredEvidence": [
+                  "equal number of protons and neutrons",
+                  "carbon with six each",
+                  "many more neutrons than protons",
+                  "26 protons and 30 neutrons",
+                  "92 protons and 146 neutrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_hv_more",
+                    "criterion": "States that lighter atoms often have equal numbers of protons and neutrons, but heavier atoms have many more neutrons than protons, e.g. iron 26 and 30, uranium 92 and 146.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_hv_equal"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t3c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "every proton inside the nucleus repels every other proton because they all carry positive charge. Neutrons being neutral help reduce this repulsion by intervening and increasing the distance between protons, and also by strengthening the force, called the nuclear force, that binds all particles together.",
+              "followUp": "Why do positive particles in a nucleus need something to reduce their mutual push, and which particle does this job?",
+              "assessment": {
+                "requiredEvidence": [
+                  "repels every other proton",
+                  "positive charge",
+                  "neutrons being neutral",
+                  "increasing the distance between protons",
+                  "nuclear force"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_hv_repel",
+                    "criterion": "Explains that protons repel one another, and neutrons being neutral reduce this repulsion by increasing the distance between protons and strengthening the nuclear force that binds the particles.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t3c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "So, heavier atoms need many more neutrons to hold everything in the nucleus tightly bound.",
+              "assessment": {
+                "requiredEvidence": [
+                  "heavier atoms",
+                  "many more neutrons",
+                  "tightly bound"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_hv_conclusion",
+                    "criterion": "Concludes that heavier atoms need many more neutrons to hold the nucleus tightly bound.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_hv_equal",
+              "wrong": "All atoms have an equal number of protons and neutrons.",
+              "fix": "Lighter atoms often have equal numbers, but as atoms get heavier their nuclei have many more neutrons than protons, e.g. uranium has 92 protons and 146 neutrons."
+            }
+          ],
+          "verify": [
+            { "page": 147, "quote": "Lighter atoms often have an equal number of protons and neutrons (like carbon with six each or oxygen with eight each).", "supports": ["sci9c8_t3c2_kp1"] },
+            { "page": 147, "quote": "However, as atoms get heavier, their nuclei have many more neutrons than protons.", "supports": ["sci9c8_t3c2_kp1"] },
+            { "page": 147, "quote": "Iron has 26 protons and 30 neutrons, and by the time we reach uranium, the nucleus has 92 protons and 146 neutrons.", "supports": ["sci9c8_t3c2_kp1"] },
+            { "page": 147, "quote": "every proton inside the nucleus repels every other proton because they all carry positive charge.", "supports": ["sci9c8_t3c2_kp2"] },
+            { "page": 147, "quote": "Neutrons being neutral help reduce this repulsion by intervening and increasing the distance between protons, and also by strengthening the force, called the nuclear force, that binds all particles together.", "supports": ["sci9c8_t3c2_kp2"] },
+            { "page": 147, "quote": "So, heavier atoms need many more neutrons to hold everything in the nucleus tightly bound.", "supports": ["sci9c8_t3c2_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch8_t4",
+      "title": "Elements: symbols, atomic number and mass number",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t4_c1",
+          "label": "Symbols of Elements",
+          "headingType": "heading",
+          "sourcePages": [148, 149],
+          "cardText": "By 1869 scientists knew about 69 elements, and today about 118 unique chemical elements are known, some artificially made. John Dalton realised the need for a standard way to represent elements and in 1803 introduced the first pictorial symbols. In 1813 Berzelius suggested that symbols should be derived from the Latin names of elements, which gave alphabetic chemical symbols. Today the International Union of Pure and Applied Chemistry (IUPAC) approves the names and symbols of elements. Many symbols are the first letter or the first two letters of the name. The first letter is always a capital and the second letter, if any, a small letter: hydrogen H, aluminium Al (not AL), cobalt Co (not CO). Some symbols use the first letter and a letter other than the second, such as chlorine Cl and zinc Zn. Some come from Latin, Greek or German names: iron Fe (ferrum), mercury Hg (hydrargyros) and tungsten W (wolfram). Scientists use these symbols because they are internationally recognised and allow communication regardless of language barriers.",
+          "hint": "Who proposed letters as symbols, and what are the rules for writing them?",
+          "probe": "How did symbols of elements develop, and what rules govern writing them?",
+          "causeChain": "Dalton introduced pictorial symbols -> Berzelius proposed symbols from Latin names, giving alphabetic symbols -> IUPAC now approves names and symbols, written with a capital first letter and small second letter -> common symbols let scientists communicate across languages",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_common_language",
+              "linksChecks": [
+                "chk_sci9c8_sy_why",
+                "chk_sci9c8_sy_iupac"
+              ],
+              "criterion": "Connects internationally agreed symbols to scientists being able to communicate clearly regardless of language barriers.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t4c1_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "By 1869, scientists knew about 69 elements, most of which were found naturally on the Earth. Today, we know about 118 unique chemical elements.",
+              "assessment": {
+                "requiredEvidence": [
+                  "69 elements",
+                  "1869",
+                  "118 unique chemical elements"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_count",
+                    "criterion": "States that by 1869 scientists knew about 69 elements and today about 118 unique chemical elements are known.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In 1803, he introduced the first pictorial symbols to represent the known elements. In 1813, Berzelius suggested that the symbols of elements should be derived from their Latin names. Thus, came alphabetic chemical symbols.",
+              "followUp": "Who introduced the first picture symbols for elements, and what later change was suggested for them?",
+              "assessment": {
+                "requiredEvidence": [
+                  "1803",
+                  "pictorial symbols",
+                  "1813",
+                  "Berzelius",
+                  "Latin names",
+                  "alphabetic chemical symbols"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_history",
+                    "criterion": "States that Dalton introduced pictorial symbols in 1803 and Berzelius suggested in 1813 that symbols be derived from Latin names, giving alphabetic symbols.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Nowadays, the International Union of Pure and Applied Chemistry (IUPAC), an international scientific organisation, approves the names and symbols of elements.",
+              "assessment": {
+                "requiredEvidence": [
+                  "IUPAC",
+                  "International Union of Pure and Applied Chemistry",
+                  "approves the names and symbols"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_iupac",
+                    "criterion": "States that the International Union of Pure and Applied Chemistry (IUPAC) approves the names and symbols of elements.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The first letter of a symbol is always written as a capital letter (uppercase) while the second letter (if there is one) is written as a small letter (lowercase). For example, hydrogen, H; aluminium, Al (not AL); cobalt, Co (not CO), etc.",
+              "followUp": "When a symbol has two letters, how should each be written?",
+              "assessment": {
+                "requiredEvidence": [
+                  "first letter",
+                  "capital letter",
+                  "second letter",
+                  "small letter",
+                  "Al (not AL)"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_case",
+                    "criterion": "States that the first letter of a symbol is a capital and the second a small letter, e.g. Al (not AL) and Co (not CO).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_sy_case"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Many symbols are the first letter or the first two letters of the name of the element. Symbols of some elements are formed from the first letter of the name and a letter other than the second letter in the name. For example, chlorine, Cl; zinc, Zn, etc.",
+              "assessment": {
+                "requiredEvidence": [
+                  "first letter",
+                  "first two letters",
+                  "letter other than the second letter",
+                  "chlorine, Cl",
+                  "zinc, Zn"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_norm",
+                    "criterion": "States that many symbols are the first one or two letters of the name, while some use the first letter and a letter other than the second, e.g. Cl and Zn.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp6",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Symbols of some elements come from their Latin, Greek, or German names rather than English. For example, the symbol for iron is Fe (from Latin ferrum), for mercury is Hg (from Greek hydrargyros), and for tungsten is W (from German wolfram).",
+              "assessment": {
+                "requiredEvidence": [
+                  "Latin, Greek, or German names",
+                  "iron is Fe",
+                  "ferrum",
+                  "mercury is Hg",
+                  "tungsten is W"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_names",
+                    "criterion": "States that some symbols come from Latin, Greek or German names, e.g. Fe (ferrum), Hg (hydrargyros) and W (wolfram).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c1_kp7",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Scientists use these symbols instead of full names because they are internationally recognised and allow scientists worldwide to communicate clearly, regardless of language barriers.",
+              "assessment": {
+                "requiredEvidence": [
+                  "internationally recognised",
+                  "communicate clearly",
+                  "language barriers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_sy_why",
+                    "criterion": "States that symbols are used because they are internationally recognised and allow scientists worldwide to communicate clearly regardless of language barriers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: a new element named after yourself must follow the IUPAC rules for its symbol, with a capital first letter and a small second letter",
+            "Pause: if every scientist used different symbols for the same element, communication would be confused"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_sy_case",
+              "wrong": "The symbol of cobalt can be written CO.",
+              "fix": "The first letter of a symbol is always a capital and the second letter a small letter, so cobalt is Co (not CO)."
+            }
+          ],
+          "verify": [
+            { "page": 148, "quote": "By 1869, scientists knew about 69 elements, most of which were found naturally on the Earth.", "supports": ["sci9c8_t4c1_kp1"] },
+            { "page": 148, "quote": "Today, we know about 118 unique chemical elements.", "supports": ["sci9c8_t4c1_kp1"] },
+            { "page": 148, "quote": "In 1803, he introduced the first pictorial symbols to represent the known elements.", "supports": ["sci9c8_t4c1_kp2"] },
+            { "page": 148, "quote": "In 1813, Berzelius suggested that the symbols of elements should be derived from their Latin names.", "supports": ["sci9c8_t4c1_kp2"] },
+            { "page": 148, "quote": "Thus, came alphabetic chemical symbols.", "supports": ["sci9c8_t4c1_kp2"] },
+            { "page": 148, "quote": "Nowadays, the International Union of Pure and Applied Chemistry (IUPAC), an international scientific organisation, approves the names and symbols of elements.", "supports": ["sci9c8_t4c1_kp3"] },
+            { "page": 148, "quote": "The first letter of a symbol is always written as a capital letter (uppercase) while the second letter (if there is one) is written as a small letter (lowercase). For example, hydrogen, H; aluminium, Al (not AL); cobalt, Co (not CO), etc.", "supports": ["sci9c8_t4c1_kp4"] },
+            { "page": 148, "quote": "Many symbols are the first letter or the first two letters of the name of the element.", "supports": ["sci9c8_t4c1_kp5"] },
+            { "page": 148, "quote": "Symbols of some elements are formed from the first letter of the name and a letter other than the second letter in the name.", "supports": ["sci9c8_t4c1_kp5"] },
+            { "page": 148, "quote": "For example, chlorine, Cl; zinc, Zn, etc.", "supports": ["sci9c8_t4c1_kp5"] },
+            { "page": 149, "quote": "Symbols of some elements come from their Latin, Greek, or German names rather than English. For example, the symbol for iron is Fe (from Latin ferrum), for mercury is Hg (from Greek hydrargyros), and for tungsten is W (from German wolfram).", "supports": ["sci9c8_t4c1_kp6"] },
+            { "page": 149, "quote": "Scientists use these symbols instead of full names because they are internationally recognised and allow scientists worldwide to communicate clearly, regardless of language barriers.", "supports": ["sci9c8_t4c1_kp7"] },
+            { "page": 149, "quote": "What problems could arise if every scientist used different symbols for the same element?", "supports": ["sci9c8_t4c1_kp7"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t4_c2",
+          "label": "Atomic Number",
+          "headingType": "heading",
+          "sourcePages": [149, 150],
+          "cardText": "The atoms of an element are all alike but different from the atoms of other elements; they differ in the number of electrons and protons in them. The number of protons in the nucleus of an atom of an element is known as its atomic number, designated by the symbol Z. This number determines the identity of an element and its chemical behaviour. Since the atom as a whole is neutral, the number of protons equals the number of electrons orbiting the nucleus. Hydrogen has one proton and one electron, so its atomic number is 1; helium, with atomic number 2, has 2 protons and 2 electrons.",
+          "hint": "What does the atomic number count, and what does it determine?",
+          "probe": "Define atomic number and say what it tells us about an element.",
+          "causeChain": "The atoms of each element are alike and differ from those of other elements -> the number of protons in the nucleus is the atomic number Z -> it determines the identity and chemical behaviour of an element, and in a neutral atom equals the number of electrons",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_protons_identity",
+              "linksChecks": [
+                "chk_sci9c8_an_def",
+                "chk_sci9c8_an_neutral"
+              ],
+              "criterion": "Connects the number of protons (atomic number) to the identity of an element and, in a neutral atom, to the number of electrons.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The number of protons in the nucleus of an atom of an element is known as its atomic number. It is designated by the symbol Z, this number determines the identity of an element and its chemical behaviour.",
+              "followUp": "What is the count of protons in a nucleus called, and which letter represents it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "number of protons in the nucleus",
+                  "atomic number",
+                  "symbol Z",
+                  "identity of an element",
+                  "chemical behaviour"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_an_def",
+                    "criterion": "Defines the atomic number (Z) as the number of protons in the nucleus, which determines the identity of an element and its chemical behaviour.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_an_neutrons"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Since the atom as a whole is neutral, the number of protons in it equals the number of electrons orbiting the nucleus. For example, hydrogen has one proton and one electron, so its atomic number is 1. Helium, with atomic number 2, has 2 protons and 2 electrons.",
+              "followUp": "In a neutral atom, how does the count of positive particles in the centre compare with the count of orbiting negative particles?",
+              "assessment": {
+                "requiredEvidence": [
+                  "atom as a whole is neutral",
+                  "number of protons",
+                  "equals the number of electrons",
+                  "hydrogen",
+                  "atomic number is 1",
+                  "helium"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_an_neutral",
+                    "criterion": "States that since an atom is neutral the number of protons equals the number of electrons, e.g. hydrogen has 1 and helium 2.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "You have learnt that the atoms of an element are all alike but different from the atoms of other elements. They differ in the number of electrons and protons in them.",
+              "assessment": {
+                "requiredEvidence": [
+                  "atoms of an element are all alike",
+                  "different from the atoms of other elements",
+                  "number of electrons and protons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_an_alike",
+                    "criterion": "States that the atoms of an element are all alike but differ from the atoms of other elements in the number of electrons and protons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_an_neutrons",
+              "wrong": "The atomic number is the number of neutrons plus protons.",
+              "fix": "The atomic number is the number of protons in the nucleus; the total of protons and neutrons is the mass number."
+            }
+          ],
+          "verify": [
+            { "page": 149, "quote": "The number of protons in the nucleus of an atom of an element is known as its atomic number.", "supports": ["sci9c8_t4c2_kp1"] },
+            { "page": 149, "quote": "It is designated by the symbol Z, this number determines the identity of an element and its chemical behaviour.", "supports": ["sci9c8_t4c2_kp1"] },
+            { "page": 150, "quote": "Since the atom as a whole is neutral, the number of protons in it equals the number of electrons orbiting the nucleus.", "supports": ["sci9c8_t4c2_kp2"] },
+            { "page": 150, "quote": "For example, hydrogen has one proton and one electron, so its atomic number is 1.", "supports": ["sci9c8_t4c2_kp2"] },
+            { "page": 150, "quote": "Helium, with atomic number 2, has 2 protons and 2 electrons.", "supports": ["sci9c8_t4c2_kp2"] },
+            { "page": 149, "quote": "You have learnt that the atoms of an element are all alike but different from the atoms of other elements.", "supports": ["sci9c8_t4c2_kp3"] },
+            { "page": 149, "quote": "They differ in the number of electrons and protons in them.", "supports": ["sci9c8_t4c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t4_c3",
+          "label": "Mass Number and Nucleons",
+          "headingType": "heading",
+          "sourcePages": [150],
+          "cardText": "The total number of protons and neutrons present in the nucleus of an atom is called its mass number, denoted by A, and the protons and neutrons in the nucleus are called nucleons. Mass number equals the number of protons plus the number of neutrons. Since the mass of a neutron is roughly equal to that of a proton, the mass of a helium atom can be accounted for by two protons and two neutrons. The electron has almost negligible mass in comparison, so it can be ignored in calculations. In the standard notation the symbol, the atomic number Z and the mass number A are written together; for example carbon has symbol C, atomic number 6 and mass number 12.",
+          "hint": "What does the mass number add up, and why are electrons left out?",
+          "probe": "Define mass number and nucleons, and write the relation between mass number, protons and neutrons.",
+          "causeChain": "Protons and neutrons in the nucleus are nucleons -> mass number is the number of protons plus the number of neutrons -> electrons have almost negligible mass so they are ignored",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_nucleons_sum",
+              "linksChecks": [
+                "chk_sci9c8_mn_def",
+                "chk_sci9c8_mn_electron"
+              ],
+              "criterion": "Connects mass number being the sum of protons and neutrons to the negligible electron mass being ignored in the calculation.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t4c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The total number of protons and neutrons present in the nucleus of an atom is called its mass number, and is denoted by A. The protons and neutrons present in the nucleus are called nucleons.",
+              "followUp": "What is the combined count of particles in the nucleus called, and which letter denotes it?",
+              "assessment": {
+                "requiredEvidence": [
+                  "total number of protons and neutrons",
+                  "mass number",
+                  "denoted by A",
+                  "nucleons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_mn_def",
+                    "criterion": "Defines the mass number (A) as the total number of protons and neutrons in the nucleus, which are called nucleons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_mn_electrons"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t4c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Mass number = Number of protons + Number of neutrons",
+              "followUp": "How can you work out this combined count from the two kinds of particles in the nucleus?",
+              "assessment": {
+                "requiredEvidence": [
+                  "number of protons",
+                  "number of neutrons",
+                  "mass number"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_mn_formula",
+                    "criterion": "States that the mass number equals the number of protons plus the number of neutrons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Since, the mass of a neutron is roughly equal to that of a proton, the mass of a helium atom can be accounted by two protons and two neutrons.",
+              "assessment": {
+                "requiredEvidence": [
+                  "mass of a neutron is roughly equal to that of a proton",
+                  "helium",
+                  "two protons and two neutrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_mn_helium",
+                    "criterion": "States that since a neutron's mass is roughly a proton's, the mass of a helium atom is accounted for by two protons and two neutrons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c3_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The electron, in comparison, has almost negligible mass, and hence, can be ignored in calculations.",
+              "followUp": "Why can the lightest particles outside the centre be ignored when calculating this count?",
+              "assessment": {
+                "requiredEvidence": [
+                  "electron",
+                  "almost negligible mass",
+                  "ignored in calculations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_mn_electron",
+                    "criterion": "States that the electron has almost negligible mass compared with protons and neutrons and can be ignored in calculations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t4c3_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "For example, the symbol for carbon is C, its atomic number is 6, and its mass number is 12.",
+              "assessment": {
+                "requiredEvidence": [
+                  "carbon",
+                  "atomic number is 6",
+                  "mass number is 12"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_mn_carbon",
+                    "criterion": "Gives the example of carbon: symbol C, atomic number 6, mass number 12.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: an atom with atomic number 26 and 56 nucleons has 26 protons, 26 electrons and 30 neutrons",
+            "Pause: a nucleus with 20 protons and mass number 41 has 21 neutrons",
+            "Pause: an atom with 18 neutrons and atomic number 17 has mass number 35",
+            "Exercise: an atom with 79 protons and mass number 197 has 118 neutrons and 79 electrons"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_mn_electrons",
+              "wrong": "The mass number includes the number of electrons as well.",
+              "fix": "The mass number is the number of protons plus neutrons; electrons have almost negligible mass and are ignored."
+            }
+          ],
+          "verify": [
+            { "page": 150, "quote": "The total number of protons and neutrons present in the nucleus of an atom is called its mass number, and is denoted by A.", "supports": ["sci9c8_t4c3_kp1"] },
+            { "page": 150, "quote": "The protons and neutrons present in the nucleus are called nucleons.", "supports": ["sci9c8_t4c3_kp1"] },
+            { "page": 150, "quote": "Mass number = Number of protons + Number of neutrons", "supports": ["sci9c8_t4c3_kp2"] },
+            { "page": 150, "quote": "Since, the mass of a neutron is roughly equal to that of a proton, the mass of a helium atom can be accounted by two protons and two neutrons.", "supports": ["sci9c8_t4c3_kp3"] },
+            { "page": 150, "quote": "The electron, in comparison, has almost negligible mass, and hence, can be ignored in calculations.", "supports": ["sci9c8_t4c3_kp4"] },
+            { "page": 150, "quote": "For example, the symbol for carbon is C, its atomic number is 6, and its mass number is 12.", "supports": ["sci9c8_t4c3_kp5"] },
+            { "page": 150, "quote": "An atom with an atomic number of 26 has 56", "supports": ["sci9c8_t4c3_kp1"] },
+            { "page": 160, "quote": "An atom has 79 protons and a mass number of 197.", "supports": ["sci9c8_t4c3_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch8_t5",
+      "title": "Electrons in shells, and valency",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t5_c1",
+          "label": "Distribution of Electrons in Shells",
+          "headingType": "heading",
+          "sourcePages": [151],
+          "cardText": "Bohr and Bury suggested rules for filling electrons. The maximum number of electrons in a shell is given by 2n squared, where n is the number of the shell: the K shell (n = 1) holds 2 electrons, the L shell (n = 2) holds 8 and the M shell (n = 3) holds 18. The maximum number of electrons that can be accommodated in the outermost shell is 8, with the first shell holding a maximum of two. Electrons are filled in a stepwise manner, starting from the shell closest to the nucleus and moving outward in the order K, L, M, N; the L shell is filled only after the K shell is complete, and so on. Hydrogen's only electron is in the K shell, and helium's two electrons also fill the K shell. The distribution of electrons among the shells is known as the electronic configuration of the atom.",
+          "hint": "How many electrons can the first three shells hold, and in what order are they filled?",
+          "probe": "State the rules for distributing electrons in shells and give the electronic configuration of an atom.",
+          "causeChain": "A shell n holds at most 2n squared electrons (2, 8, 18) -> the outermost shell holds at most 8 -> shells are filled from the nearest to the nucleus outward, K then L then M -> the resulting distribution is the electronic configuration",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_fill_order",
+              "linksChecks": [
+                "chk_sci9c8_ed_max",
+                "chk_sci9c8_ed_order"
+              ],
+              "criterion": "Connects the filling of shells from the nearest the nucleus outward, with the capacity 2n squared, to an atom's electronic configuration.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t5c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The maximum number of electrons present in a shell is given by the formula 2n², where ‘n’ is the number of the shell (Fig. 8.7). Hence, K-shell (n = 1) 2×1² = 2, can accommodate 2 electrons, L-shell (n = 2) 2×2² = 8 electrons, and M-shell (n = 3) 2×3² = 18 electrons.",
+              "followUp": "What formula gives the largest number of electrons that a given shell can hold?",
+              "assessment": {
+                "requiredEvidence": [
+                  "2n²",
+                  "number of the shell",
+                  "K-shell",
+                  "2 electrons",
+                  "8 electrons",
+                  "18 electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ed_max",
+                    "criterion": "States that the maximum number of electrons in a shell is 2n squared, so the K shell holds 2, the L shell 8 and the M shell 18.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The maximum number of electrons that can be accommodated in the outermost shell is 8 (the first shell can accommodate a maximum of two electrons).",
+              "followUp": "What is the largest count of electrons allowed in the last occupied shell?",
+              "assessment": {
+                "requiredEvidence": [
+                  "outermost shell",
+                  "maximum",
+                  "8",
+                  "first shell",
+                  "two electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ed_outer",
+                    "criterion": "States that the outermost shell can hold a maximum of 8 electrons (the first shell a maximum of two).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c1_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Electrons are filled in these shells in a stepwise manner, starting from the one closest to the nucleus and moving outward, i.e., in the order K, L, M, N, … The L-shell will be filled only after the K-shell is complete, and so on.",
+              "followUp": "In what order do electrons fill the shells?",
+              "assessment": {
+                "requiredEvidence": [
+                  "stepwise manner",
+                  "closest to the nucleus",
+                  "moving outward",
+                  "K, L, M, N",
+                  "only after the K-shell is complete"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ed_order",
+                    "criterion": "States that electrons fill the shells stepwise from the one closest to the nucleus outward in the order K, L, M, N, and the L shell fills only after the K shell is complete.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_ed_skip"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t5c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The distribution of electrons among various shells is known as the electronic configuration of the atom",
+              "assessment": {
+                "requiredEvidence": [
+                  "distribution of electrons among various shells",
+                  "electronic configuration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ed_config",
+                    "criterion": "Defines the electronic configuration as the distribution of electrons among the various shells of an atom.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "To understand the placement of electrons in atoms, let us begin with hydrogen (atomic number 1). The only electron in it has to be in the K-shell.",
+              "assessment": {
+                "requiredEvidence": [
+                  "hydrogen",
+                  "atomic number 1",
+                  "only electron",
+                  "K-shell"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ed_hydrogen",
+                    "criterion": "States that the only electron of hydrogen (atomic number 1) is in the K shell.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: the electronic configuration of the elements with atomic numbers 12, 16 and 18 follow from filling K, L, M shells in order",
+            "Exercise: magnesium with mass number 24 and atomic number 12 has 12 protons, 12 neutrons and 12 electrons arranged 2, 8, 2",
+            "Pause: an atom with mass number 23 and 11 protons is sodium with 12 neutrons"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_ed_skip",
+              "wrong": "Electrons can start filling the L shell before the K shell is complete.",
+              "fix": "The L-shell will be filled only after the K-shell is complete, and so on."
+            }
+          ],
+          "verify": [
+            { "page": 151, "quote": "The maximum number of electrons present in a shell is given by the formula 2n², where ‘n’ is the number of the shell (Fig. 8.7).", "supports": ["sci9c8_t5c1_kp1"] },
+            { "page": 151, "quote": "Hence, K-shell (n = 1) 2×1² = 2, can accommodate 2 electrons, L-shell (n = 2) 2×2² = 8 electrons, and M-shell (n = 3) 2×3² = 18 electrons.", "supports": ["sci9c8_t5c1_kp1"] },
+            { "page": 151, "quote": "The maximum number of electrons that can be accommodated in the outermost shell is 8 (the first shell can accommodate a maximum of two electrons).", "supports": ["sci9c8_t5c1_kp2"] },
+            { "page": 151, "quote": "Electrons are filled in these shells in a stepwise manner, starting from the one closest to the nucleus and moving outward, i.e., in the order K, L, M, N, … The L-shell will be filled only after the K-shell is complete, and so on.", "supports": ["sci9c8_t5c1_kp3"] },
+            { "page": 151, "quote": "The distribution of electrons among various shells is known as the electronic configuration of the atom", "supports": ["sci9c8_t5c1_kp4"] },
+            { "page": 151, "quote": "The only electron in it has to be in the K-shell.", "supports": ["sci9c8_t5c1_kp5"] },
+            { "page": 152, "quote": "Write the electronic configuration of the elements having atomic numbers 12, 16 and 18.", "supports": ["sci9c8_t5c1_kp1"] },
+            { "page": 152, "quote": "I am an atom with a mass number of 23 and 11 protons.", "supports": ["sci9c8_t5c1_kp1"] },
+            { "page": 159, "quote": "For an atom of magnesium with a mass number of 24 and atomic number 12, determine the number of", "supports": ["sci9c8_t5c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t5_c2",
+          "label": "Valency, Octet and the Valence Shell",
+          "headingType": "heading",
+          "sourcePages": [153],
+          "cardText": "The number of atoms of hydrogen or chlorine with which one atom of an element can combine to form a compound is called its combining capacity, since both have a combining capacity of one; oxygen in water (H2O) combines with two hydrogen atoms so its combining capacity is two. The outermost shell containing electrons is the valence shell and its electrons are valence electrons. If the outermost shell has 8 electrons it is called an octet. Elements with a complete octet, or 2 electrons in the case of helium, in their valence shell are largely unreactive and more stable, while atoms with incomplete valence shells are usually more reactive and lose, gain or share electrons to complete their octet. The number of electrons gained, lost or shared to complete the octet is the valency of the element. With fewer than four valence electrons an element tends to lose electrons, and with more than four it tends to gain electrons. Sodium (2, 8, 1) loses one electron, so its valency is 1; oxygen (2, 6) gains two, so its valency is 2; carbon (2, 4) shares four, so its valency is 4.",
+          "hint": "Why are atoms with a complete outer shell unreactive, and what decides valency?",
+          "probe": "Define valency and explain it for sodium, oxygen and carbon using their electronic configurations.",
+          "causeChain": "Atoms with a complete octet (or two electrons for helium) are stable and unreactive -> other atoms lose, gain or share electrons to complete the octet -> the number of electrons gained, lost or shared is the valency, e.g. sodium 1, oxygen 2, carbon 4",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_octet_valency",
+              "linksChecks": [
+                "chk_sci9c8_val_octet",
+                "chk_sci9c8_val_def",
+                "chk_sci9c8_val_examples"
+              ],
+              "criterion": "Connects an incomplete valence shell to atoms losing, gaining or sharing electrons to complete the octet, and the number of electrons involved to the valency.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t5c2_kp1",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The number of atoms of hydrogen or chlorine with which one atom of an element can combine to form a compound is called its combining capacity.",
+              "assessment": {
+                "requiredEvidence": [
+                  "atoms of hydrogen or chlorine",
+                  "one atom of an element can combine",
+                  "combining capacity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_comb",
+                    "criterion": "Defines combining capacity as the number of atoms of hydrogen or chlorine with which one atom of an element can combine to form a compound, e.g. oxygen combines with two hydrogens in water.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "The outermost shell containing electrons of an atom is known as its valence shell. The electrons present in it are known as valence electrons.",
+              "followUp": "What is the outermost occupied shell called, and what are its electrons called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "outermost shell",
+                  "valence shell",
+                  "valence electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_shell",
+                    "criterion": "Defines the valence shell as the outermost shell containing electrons of an atom and valence electrons as the electrons in it.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "If the outermost shell of an atom has 8 electrons, it is called an octet. It has been observed that elements with complete octet of electrons (8 electrons), or 2 electrons in the case of helium in their valence shell are largely unreactive and more stable.",
+              "followUp": "What do we call a shell holding a full set of eight, and how do elements having it behave?",
+              "assessment": {
+                "requiredEvidence": [
+                  "octet",
+                  "8 electrons",
+                  "2 electrons in the case of helium",
+                  "largely unreactive",
+                  "more stable"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_octet",
+                    "criterion": "States that an outermost shell with 8 electrons is an octet, and elements with a complete octet (or 2 electrons for helium) are largely unreactive and more stable.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_val_noble"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "On the other hand, atoms with incomplete valence shells are usually more reactive. Such elements lose, gain, or share electrons to complete their octet. The number of electrons gained, lost, or shared to complete the octet is called the valency of the element.",
+              "followUp": "How do atoms with incomplete outer shells usually behave?",
+              "assessment": {
+                "requiredEvidence": [
+                  "incomplete valence shells",
+                  "more reactive",
+                  "lose, gain, or share",
+                  "valency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_def",
+                    "criterion": "States that atoms with incomplete valence shells are more reactive and lose, gain or share electrons to complete their octet; the number of electrons gained, lost or shared is the valency.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_val_valence_all"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp5",
+              "weight": 2,
+              "role": "core",
+              "text": "Generally, if the element has fewer than four electrons in its valence shell, it tends to lose electrons to complete its octet and become stable. On the other hand, if the number of valence electrons is more than four, it tends to gain electrons to complete its octet.",
+              "followUp": "What tends to happen if an atom has fewer than four outer electrons?",
+              "assessment": {
+                "requiredEvidence": [
+                  "fewer than four electrons",
+                  "tends to lose electrons",
+                  "more than four",
+                  "tends to gain electrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_rule",
+                    "criterion": "States that an element with fewer than four valence electrons tends to lose electrons, and one with more than four tends to gain electrons, to complete the octet.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp6",
+              "weight": 2,
+              "role": "core",
+              "text": "the electronic configuration of sodium is 2, 8, 1. It can get an octet by losing one electron. Therefore, its valency or combining capacity is 1. On the other hand, oxygen has an electronic configuration of 2, 6. It has six valence electrons. Therefore, it can gain two electrons to attain an octet, its valency is 2.",
+              "followUp": "For sodium with configuration 2, 8, 1, how can it reach a full outer shell, and what is its valency?",
+              "assessment": {
+                "requiredEvidence": [
+                  "sodium is 2, 8, 1",
+                  "losing one electron",
+                  "valency or combining capacity is 1",
+                  "oxygen",
+                  "2, 6",
+                  "gain two electrons",
+                  "valency is 2"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_examples",
+                    "criterion": "Works examples: sodium (2, 8, 1) loses one electron so its valency is 1, and oxygen (2, 6) gains two electrons so its valency is 2.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t5c2_kp7",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The electronic configuration of carbon is 2, 4. Carbon has four valence electrons and cannot easily gain or lose them. Therefore, it can share four electrons with other atoms to complete its octet. Thus, the valency of carbon is 4.",
+              "assessment": {
+                "requiredEvidence": [
+                  "carbon is 2, 4",
+                  "four valence electrons",
+                  "share four electrons",
+                  "valency of carbon is 4"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_val_carbon",
+                    "criterion": "States that carbon (2, 4) has four valence electrons and shares four electrons to complete its octet, so its valency is 4.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Exercise: in NH3 and MgCl2 the combining capacities of nitrogen and magnesium are found by counting the hydrogen or chlorine atoms they combine with"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_val_noble",
+              "wrong": "Atoms with a complete outer shell lose or gain electrons very easily.",
+              "fix": "Elements with a complete octet (or 2 electrons in helium) in their valence shell are largely unreactive and more stable."
+            },
+            {
+              "id": "misc_sci9c8_val_valence_all",
+              "wrong": "The valency of an element is the total number of electrons in the atom.",
+              "fix": "Valency is the number of electrons gained, lost or shared to complete the octet."
+            }
+          ],
+          "verify": [
+            { "page": 153, "quote": "The number of atoms of hydrogen or chlorine with which one atom of an element can combine to form a compound is called its combining capacity.", "supports": ["sci9c8_t5c2_kp1"] },
+            { "page": 153, "quote": "The outermost shell containing electrons of an atom is known as its valence shell. The electrons present in it are known as valence electrons.", "supports": ["sci9c8_t5c2_kp2"] },
+            { "page": 153, "quote": "If the outermost shell of an atom has 8 electrons, it is called an octet.", "supports": ["sci9c8_t5c2_kp3"] },
+            { "page": 153, "quote": "It has been observed that elements with complete octet of electrons (8 electrons), or 2 electrons in the case of helium in their valence shell are largely unreactive and more stable.", "supports": ["sci9c8_t5c2_kp3"] },
+            { "page": 153, "quote": "On the other hand, atoms with incomplete valence shells are usually more reactive.", "supports": ["sci9c8_t5c2_kp4"] },
+            { "page": 153, "quote": "Such elements lose, gain, or share electrons to complete their octet.", "supports": ["sci9c8_t5c2_kp4"] },
+            { "page": 153, "quote": "The number of electrons gained, lost, or shared to complete the octet is called the valency of the element.", "supports": ["sci9c8_t5c2_kp4"] },
+            { "page": 153, "quote": "Generally, if the element has fewer than four electrons in its valence shell, it tends to lose electrons to complete its octet and become stable. On the other hand, if the number of valence electrons is more than four, it tends to gain electrons to complete its octet.", "supports": ["sci9c8_t5c2_kp5"] },
+            { "page": 153, "quote": "the electronic configuration of sodium is 2, 8, 1. It can get an octet by losing one electron.", "supports": ["sci9c8_t5c2_kp6"] },
+            { "page": 153, "quote": "Therefore, its valency or combining capacity is 1.", "supports": ["sci9c8_t5c2_kp6"] },
+            { "page": 153, "quote": "On the other hand, oxygen has an electronic configuration of 2, 6. It has six valence electrons.", "supports": ["sci9c8_t5c2_kp6"] },
+            { "page": 153, "quote": "Therefore, it can gain two electrons to attain an octet, its valency is 2.", "supports": ["sci9c8_t5c2_kp6"] },
+            { "page": 153, "quote": "The electronic configuration of carbon is 2, 4.", "supports": ["sci9c8_t5c2_kp7"] },
+            { "page": 153, "quote": "Carbon has four valence electrons and cannot easily gain or lose them.", "supports": ["sci9c8_t5c2_kp7"] },
+            { "page": 153, "quote": "Therefore, it can share four electrons with other atoms to complete its octet.", "supports": ["sci9c8_t5c2_kp7"] },
+            { "page": 153, "quote": "Thus, the valency of carbon is 4.", "supports": ["sci9c8_t5c2_kp7"] },
+            { "page": 153, "quote": "In NH3 (ammonia) and MgCl2", "supports": ["sci9c8_t5c2_kp1"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch8_t6",
+      "title": "Isotopes, isobars and average atomic mass",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch8_t6_c1",
+          "label": "Isotopes",
+          "headingType": "heading",
+          "sourcePages": [154],
+          "cardText": "Dalton proposed that all atoms of an element are identical with the same mass, but scientists later discovered atoms of the same element that have the same number of protons (the same atomic number) yet different numbers of neutrons, and so different mass numbers. These atoms with the same atomic number but different mass numbers are called isotopes. Naturally occurring hydrogen is a mixture of three isotopes, protium, deuterium and tritium; all contain one proton, deuterium contains one neutron and tritium contains two neutrons. Carbon likewise has three isotopes, each with six protons and six electrons but a different number of neutrons. The chemical properties of isotopes are similar because they have the same number of electrons and the same electronic configuration, and chemical properties depend mainly on the number of valence electrons; they differ in physical properties such as boiling and melting points. Atomic masses are measured in the unified atomic mass unit (u).",
+          "hint": "What is the same and what is different between isotopes of an element?",
+          "probe": "Define isotopes and explain why they have similar chemical properties but different physical properties.",
+          "causeChain": "Atoms of the same element can have different numbers of neutrons -> the same atomic number but different mass numbers makes them isotopes -> they have the same electrons and valence electrons, so similar chemical properties, but different masses give different physical properties",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_same_electrons_same_chemistry",
+              "linksChecks": [
+                "chk_sci9c8_iso_def",
+                "chk_sci9c8_iso_chem"
+              ],
+              "criterion": "Connects isotopes having the same number of electrons and electronic configuration to similar chemical properties, while their different masses give different physical properties.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t6c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Dalton proposed that all atoms of an element are identical and have the same mass. But scientists later discovered that there were atoms of the same element that could have the same number of protons (atomic number, Z) yet could have different numbers of neutrons, and thus, different mass numbers",
+              "followUp": "Earlier it was believed that all atoms of one element are identical. What did later discoveries show?",
+              "assessment": {
+                "requiredEvidence": [
+                  "same number of protons",
+                  "atomic number",
+                  "different numbers of neutrons",
+                  "different mass numbers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_iso_diff",
+                    "criterion": "States that atoms of the same element can have the same number of protons (atomic number) but different numbers of neutrons and so different mass numbers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_iso_dalton"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t6c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "with the same atomic number but different mass numbers are called isotopes.",
+              "followUp": "What name is given to atoms that match in one number but differ in another?",
+              "assessment": {
+                "requiredEvidence": [
+                  "same atomic number",
+                  "different mass numbers",
+                  "isotopes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_iso_def",
+                    "criterion": "Defines isotopes as atoms with the same atomic number but different mass numbers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "All of these contain one proton each, whereas deuterium contains one neutron, and tritium contains two neutrons.",
+              "assessment": {
+                "requiredEvidence": [
+                  "one proton each",
+                  "deuterium",
+                  "one neutron",
+                  "tritium",
+                  "two neutrons"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_iso_h",
+                    "criterion": "Gives the hydrogen isotopes: each has one proton, deuterium has one neutron and tritium has two neutrons.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "The chemical properties of isotopes are similar. Do you know why? It is so because they have the same number of electrons and the same electronic configuration. As you have learnt, chemical properties depend mainly on the number of valence electrons. All the isotopes will have the same chemical properties although they differ in their physical properties, for example, boiling and melting points.",
+              "followUp": "Why do these atoms behave similarly in chemical reactions?",
+              "assessment": {
+                "requiredEvidence": [
+                  "chemical properties of isotopes are similar",
+                  "same number of electrons",
+                  "same electronic configuration",
+                  "number of valence electrons",
+                  "physical properties",
+                  "boiling and melting points"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_iso_chem",
+                    "criterion": "Explains that isotopes have similar chemical properties because they have the same number of electrons and electronic configuration (valence electrons), but differ in physical properties such as boiling and melting points.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c1_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Each of these has six protons and six electrons.",
+              "assessment": {
+                "requiredEvidence": [
+                  "three isotopes",
+                  "six protons and six electrons"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_iso_c",
+                    "criterion": "States that carbon has three isotopes, each with six protons and six electrons but differing in the number of neutrons.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: two atoms with 11 protons each but 12 and 13 neutrons have the same atomic number but different mass numbers, so they are isotopes of the same element",
+            "Exercise: atoms with the same protons but different neutrons, as in the nuclei of species Y and Z, are isotopes"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_iso_dalton",
+              "wrong": "All atoms of an element are identical in mass, as Dalton said.",
+              "fix": "Scientists later discovered that atoms of the same element can have different numbers of neutrons, and thus different mass numbers: isotopes."
+            }
+          ],
+          "verify": [
+            { "page": 154, "quote": "Dalton proposed that all atoms of an element are identical and have the same mass.", "supports": ["sci9c8_t6c1_kp1"] },
+            { "page": 154, "quote": "But scientists later discovered that there were atoms of the same element that could have the same number of protons (atomic number, Z) yet could have different numbers of neutrons, and thus, different mass numbers", "supports": ["sci9c8_t6c1_kp1"] },
+            { "page": 154, "quote": "with the same atomic number but different mass numbers are called isotopes.", "supports": ["sci9c8_t6c1_kp2"] },
+            { "page": 154, "quote": "All of these contain one proton each, whereas deuterium contains one neutron, and tritium contains two neutrons.", "supports": ["sci9c8_t6c1_kp3"] },
+            { "page": 154, "quote": "The chemical properties of isotopes are similar.", "supports": ["sci9c8_t6c1_kp4"] },
+            { "page": 154, "quote": "It is so because they have the same number of electrons and the same electronic configuration.", "supports": ["sci9c8_t6c1_kp4"] },
+            { "page": 154, "quote": "As you have learnt, chemical properties depend mainly on the number of valence electrons.", "supports": ["sci9c8_t6c1_kp4"] },
+            { "page": 154, "quote": "All the isotopes will have the same chemical properties although they differ in their physical properties, for example, boiling and melting points.", "supports": ["sci9c8_t6c1_kp4"] },
+            { "page": 154, "quote": "Each of these has six protons and six electrons.", "supports": ["sci9c8_t6c1_kp5"] },
+            { "page": 156, "quote": "Two different atoms have 11 protons each, but one has", "supports": ["sci9c8_t6c1_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t6_c2",
+          "label": "Applications of Isotopes",
+          "headingType": "example",
+          "sourcePages": [155],
+          "cardText": "Some isotopes have special properties useful in various fields. An isotope of uranium is used as a fuel in a nuclear reactor to generate electricity in a nuclear power plant. A radioactive isotope of cobalt is used in radiation treatment for cancer. An isotope of iodine is used to treat goitre and thyroid cancer. An isotope of carbon is used in archaeology and geology to determine the age of ancient fossils and artefacts.",
+          "hint": "Name some uses of isotopes in medicine, energy and dating.",
+          "probe": "Give examples of applications of isotopes.",
+          "causeChain": "Some isotopes have special properties -> uranium isotope fuels nuclear reactors, cobalt treats cancer, iodine treats thyroid problems -> a carbon isotope dates ancient fossils and artefacts",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t6c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "an isotope of uranium, is used as a fuel in a nuclear reactor to generate electricity in a nuclear power plant (Fig. 8.14).",
+              "followUp": "Which form of uranium is used in power generation, and for what role?",
+              "assessment": {
+                "requiredEvidence": [
+                  "isotope of uranium",
+                  "fuel in a nuclear reactor",
+                  "generate electricity"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ap_uranium",
+                    "criterion": "States that an isotope of uranium is used as a fuel in a nuclear reactor to generate electricity.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "a radioactive isotope of cobalt, is used in radiation treatment for cancer. an isotope of iodine, is used to treat goitre and thyroid cancer.",
+              "followUp": "Name a medical use of a radioactive form of cobalt and one of iodine.",
+              "assessment": {
+                "requiredEvidence": [
+                  "radioactive isotope of cobalt",
+                  "radiation treatment for cancer",
+                  "isotope of iodine",
+                  "goitre and thyroid cancer"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ap_medicine",
+                    "criterion": "States that a radioactive isotope of cobalt is used in radiation treatment for cancer and an isotope of iodine to treat goitre and thyroid cancer.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "an isotope of carbon, is used in archaeology and geology to determine the age of ancient fossils and artefacts.",
+              "assessment": {
+                "requiredEvidence": [
+                  "isotope of carbon",
+                  "archaeology and geology",
+                  "age of ancient fossils and artefacts"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ap_carbon",
+                    "criterion": "States that an isotope of carbon is used in archaeology and geology to determine the age of ancient fossils and artefacts.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 155, "quote": "an isotope of uranium, is used as a fuel in a nuclear reactor to generate electricity in a nuclear power plant (Fig. 8.14).", "supports": ["sci9c8_t6c2_kp1"] },
+            { "page": 155, "quote": "a radioactive isotope of cobalt, is used in radiation treatment for cancer.", "supports": ["sci9c8_t6c2_kp2"] },
+            { "page": 155, "quote": "an isotope of iodine, is used to treat goitre and thyroid cancer.", "supports": ["sci9c8_t6c2_kp2"] },
+            { "page": 155, "quote": "an isotope of carbon, is used in archaeology and geology to determine the age of ancient fossils and artefacts.", "supports": ["sci9c8_t6c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t6_c3",
+          "label": "Average Atomic Mass",
+          "headingType": "heading",
+          "sourcePages": [155, 156],
+          "cardText": "Chlorine occurs in nature as two isotopes, one of mass 35 u and the other of mass 37 u, in the ratio 3:1. The simple arithmetic mean of 35 and 37 is 36 u, but this does not accurately reflect nature, since isotopes do not occur in equal ratios; the more common isotope, chlorine-35, makes up about 75% and chlorine-37 about 25%. The accurate value is the weighted average atomic mass, calculated by multiplying the mass of each isotope by its percent relative abundance and adding the values, which gives about 35.5 u. This does not mean that any one atom of chlorine has a fractional mass of 35.5 u: in 1 million chlorine atoms about 7.5 lakh have mass 35 u and 2.5 lakh have mass 37 u. The simple average ignores abundance, whereas the weighted average accurately reflects the mass of the element as it occurs in nature.",
+          "hint": "Why is the average atomic mass of chlorine not simply 36 u?",
+          "probe": "How is the average atomic mass of an element worked out from its isotopes?",
+          "causeChain": "Chlorine has two isotopes of masses 35 u and 37 u in the ratio 3:1 -> the simple mean ignores abundance and does not reflect nature -> the weighted average multiplies each mass by its relative abundance and adds, giving about 35.5 u",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_abundance_weighted",
+              "linksChecks": [
+                "chk_sci9c8_am_unequal",
+                "chk_sci9c8_am_weighted"
+              ],
+              "criterion": "Connects isotopes occurring in unequal ratios to the average atomic mass being a weighted average that accounts for natural abundance.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t6c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Chlorine occurs in nature in two isotopic forms. One isotope has a mass of 35 u, and the other has a mass of 37 u. They occur in the ratio 3:1.",
+              "followUp": "Chlorine has two forms in a 3 to 1 ratio. How would you begin to find the average of their masses?",
+              "assessment": {
+                "requiredEvidence": [
+                  "two isotopic forms",
+                  "35 u",
+                  "37 u",
+                  "ratio 3:1"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_am_chlorine",
+                    "criterion": "States that chlorine occurs as two isotopes of mass 35 u and 37 u in the ratio 3:1.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "However, this does not accurately reflect nature, since isotopes do not occur in equal ratios.",
+              "followUp": "Why is a simple average of the two masses not accurate for nature?",
+              "assessment": {
+                "requiredEvidence": [
+                  "does not accurately reflect nature",
+                  "isotopes do not occur in equal ratios"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_am_unequal",
+                    "criterion": "States that the simple average does not accurately reflect nature, since isotopes do not occur in equal ratios.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "The accurate average atomic mass can be calculated by considering their natural abundances. This is called a weighted average atomic mass, which can be calculated by multiplying the mass of each isotope by its percent relative abundance and then adding the two values",
+              "followUp": "How is an accurate average obtained, and what is it called?",
+              "assessment": {
+                "requiredEvidence": [
+                  "natural abundances",
+                  "weighted average atomic mass",
+                  "mass of each isotope",
+                  "percent relative abundance"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_am_weighted",
+                    "criterion": "States that the accurate average atomic mass is the weighted average, found by multiplying each isotope's mass by its percent relative abundance and adding the values.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c3_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "This does not mean that any one atom of chlorine has a fractional mass of 35.5 u.",
+              "assessment": {
+                "requiredEvidence": [
+                  "any one atom",
+                  "fractional mass"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_am_not_atom",
+                    "criterion": "States that the 35.5 u average does not mean any one chlorine atom has that mass.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_am_fraction"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t6c3_kp5",
+              "weight": 1,
+              "role": "supporting",
+              "text": "This comparison shows that the simple average ignores abundance, whereas the weighted average accurately reflects the mass of the element as it occurs in nature.",
+              "assessment": {
+                "requiredEvidence": [
+                  "simple average ignores abundance",
+                  "weighted average accurately reflects"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_am_compare",
+                    "criterion": "States that the simple average ignores abundance, whereas the weighted average accurately reflects the mass of the element as it occurs in nature.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: the average atomic mass of bromine with two isotopes at 49.7% and 50.3% abundance is the weighted average of their masses"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_am_fraction",
+              "wrong": "A single chlorine atom has a fractional mass of 35.5 u.",
+              "fix": "This does not mean that any one atom of chlorine has a fractional mass of 35.5 u; it is a weighted average over the atoms present."
+            }
+          ],
+          "verify": [
+            { "page": 155, "quote": "Chlorine occurs in nature in two isotopic forms.", "supports": ["sci9c8_t6c3_kp1"] },
+            { "page": 155, "quote": "One isotope has a mass of 35 u, and the other has a mass of 37 u. They occur in the ratio 3:1.", "supports": ["sci9c8_t6c3_kp1"] },
+            { "page": 155, "quote": "However, this does not accurately reflect nature, since isotopes do not occur in equal ratios.", "supports": ["sci9c8_t6c3_kp2"] },
+            { "page": 155, "quote": "The accurate average atomic mass can be calculated by considering their natural abundances.", "supports": ["sci9c8_t6c3_kp3"] },
+            { "page": 155, "quote": "This is called a weighted average atomic mass, which can be calculated by multiplying the mass of each isotope by its percent relative abundance and then adding the two values", "supports": ["sci9c8_t6c3_kp3"] },
+            { "page": 156, "quote": "This does not mean that any one atom of chlorine has a fractional mass of 35.5 u.", "supports": ["sci9c8_t6c3_kp4"] },
+            { "page": 156, "quote": "This comparison shows that the simple average ignores abundance, whereas the weighted average accurately reflects the mass of the element as it occurs in nature.", "supports": ["sci9c8_t6c3_kp5"] },
+            { "page": 156, "quote": "If a bromine atom is available in the form of, say two", "supports": ["sci9c8_t6c3_kp1"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch8_t6_c4",
+          "label": "Isobars and Beyond Bohr's Model",
+          "headingType": "heading",
+          "sourcePages": [156],
+          "cardText": "Calcium (atomic number 20), potassium (19) and argon (18) have different numbers of protons, yet each has a mass number of 40, so the total number of nucleons in their atoms is the same even though they are different elements. When atoms of different elements have the same mass number but different atomic numbers, they are called isobars. The exploration of the structure of the atom is still continuing: scientists later discovered that even Bohr's model was not entirely correct. Electrons do not follow well-defined paths like the fixed Bohr orbits; today we understand that they exist as electron clouds around the nucleus, and we can predict regions where they are most likely to be, not exactly where they are.",
+          "hint": "What is the difference between isotopes and isobars?",
+          "probe": "Define isobars with an example, and say how the modern view of electrons differs from Bohr's.",
+          "causeChain": "Calcium, potassium and argon have different atomic numbers but the same mass number 40 -> atoms of different elements with the same mass number are isobars -> the modern view replaces fixed orbits by electron clouds, regions where electrons are most likely to be",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c8_same_mass_different_z",
+              "linksChecks": [
+                "chk_sci9c8_ib_example",
+                "chk_sci9c8_ib_def"
+              ],
+              "criterion": "Connects different atomic numbers with the same mass number to isobars, in contrast with isotopes that share the atomic number.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c8_t6c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Let us consider three elements — calcium (atomic number 20), potassium (atomic number 19), and argon (atomic number 18). These elements have different numbers of protons, yet each has a mass number of 40.",
+              "followUp": "Three neighbouring elements have different atomic numbers. What do they have in common?",
+              "assessment": {
+                "requiredEvidence": [
+                  "calcium",
+                  "potassium",
+                  "argon",
+                  "different numbers of protons",
+                  "mass number of 40"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ib_example",
+                    "criterion": "Gives the example of calcium (20), potassium (19) and argon (18), which have different numbers of protons yet each has a mass number of 40.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c8_t6c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "When atoms of different elements have the same mass number, but different atomic numbers, they are called isobars.",
+              "followUp": "What name is given to atoms with an equal mass number but belonging to separate elements?",
+              "assessment": {
+                "requiredEvidence": [
+                  "different elements",
+                  "same mass number",
+                  "different atomic numbers",
+                  "isobars"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ib_def",
+                    "criterion": "Defines isobars as atoms of different elements with the same mass number but different atomic numbers.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c8_ib_isotopes"
+                ]
+              }
+            },
+            {
+              "id": "sci9c8_t6c4_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Electrons do not follow well-defined paths like the fixed Bohr orbits. We can predict regions where they are most likely to be, not exactly where they are.",
+              "followUp": "How does the present picture of where electrons are differ from fixed orbits?",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not follow well-defined paths",
+                  "fixed Bohr orbits",
+                  "electron clouds",
+                  "regions where they are most likely to be"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c8_ib_cloud",
+                    "criterion": "States that electrons do not follow well-defined paths like fixed Bohr orbits; they exist as electron clouds, and we can predict regions where they are most likely to be, not exactly where.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c8_ib_isotopes",
+              "wrong": "Isobars are atoms with the same atomic number but different mass numbers.",
+              "fix": "Isobars are atoms of different elements with the same mass number but different atomic numbers; atoms with the same atomic number but different mass numbers are isotopes."
+            }
+          ],
+          "verify": [
+            { "page": 156, "quote": "Let us consider three elements — calcium (atomic number 20), potassium (atomic number 19), and argon (atomic number 18).", "supports": ["sci9c8_t6c4_kp1"] },
+            { "page": 156, "quote": "These elements have different numbers of protons, yet each has a mass number of 40.", "supports": ["sci9c8_t6c4_kp1"] },
+            { "page": 156, "quote": "When atoms of different elements have the same mass number, but different atomic numbers, they are called isobars.", "supports": ["sci9c8_t6c4_kp2"] },
+            { "page": 156, "quote": "Electrons do not follow well-defined paths like the fixed Bohr orbits.", "supports": ["sci9c8_t6c4_kp3"] },
+            { "page": 156, "quote": "We can predict regions where they are most likely to be, not exactly where they are.", "supports": ["sci9c8_t6c4_kp3"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

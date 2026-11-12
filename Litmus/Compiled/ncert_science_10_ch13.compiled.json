@@ -1,0 +1,1142 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_10_ch13.json",
+  "sourceSha256": "fb8a225426bd2e48685c933418a42008a55aa2c0303c68a817cc7718cb00f015",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 13,
+  "chapterName": "Our Environment",
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c13_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci10c13_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example environment, ecosystem, biotic, abiotic, producers, consumers, decomposers, food chain.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "environment",
+    "ecosystem",
+    "biotic",
+    "abiotic",
+    "producers",
+    "consumers",
+    "decomposers",
+    "food chain",
+    "trophic level",
+    "food web",
+    "energy flow",
+    "10% law",
+    "biological magnification",
+    "ozone layer",
+    "CFCs",
+    "biodegradable",
+    "non-biodegradable"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci10_ch13_t1_c1",
+      "topicId": "ncert_science_10_ch13_t1",
+      "topicTitle": "Ecosystem Structure: Biotic and Abiotic Components",
+      "label": "What an Ecosystem Is: Biotic and Abiotic Components",
+      "headingType": "heading",
+      "sourcePages": [
+        208,
+        209
+      ],
+      "conceptHash": "59b417515ff16347eba556a7c2dec6c27a15f1fa8f4b07e2fb03bdc3b5cf72bc",
+      "cardText": "All organisms, such as plants, animals, microorganisms and human beings, as well as the physical surroundings interact with each other and maintain a balance in nature. All the interacting organisms in an area together with the non-living constituents of the environment form an ecosystem. An ecosystem consists of biotic components, the living organisms, and abiotic components, physical factors like temperature, rainfall, wind, soil and minerals. A garden, with grasses, trees, flowering plants, frogs, insects and birds whose growth and activities are affected by the abiotic factors, is an ecosystem. Forests, ponds and lakes are natural ecosystems, while gardens and crop-fields are human-made (artificial) ecosystems. An aquarium is also a human-made ecosystem that can become self-sustaining if a few aquatic plants and animals are added.",
+      "hint": "What are the biotic and abiotic components of an ecosystem and which ecosystems are natural or human-made?",
+      "probe": "Explain what an ecosystem is and the difference between biotic and abiotic components and between natural and human-made ecosystems.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain What an Ecosystem Is: Biotic and Abiotic Components, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe a pond as an ecosystem: which of its parts are living and which are not, and why both count.",
+          "requiredEvidence": [
+            "interacting organisms",
+            "non-living constituents",
+            "ecosystem",
+            "biotic components",
+            "living organisms",
+            "abiotic components",
+            "temperature, rainfall, wind, soil and minerals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_es_def",
+              "criterion": "Defines an ecosystem as all the interacting organisms in an area together with the non-living constituents, made of biotic (living) and abiotic (physical factors like temperature, rainfall, wind, soil, minerals) components.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe a pond as an ecosystem: which of its parts are living and which are not, and why both count."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_es_living"
+          ]
+        },
+        {
+          "id": "sci10c13_t1c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Sort a forest, a crop field, a lake and a fish tank in a room into those made by nature and those made by people.",
+          "requiredEvidence": [
+            "forests, ponds and lakes",
+            "natural ecosystems",
+            "gardens and crop-fields",
+            "human-made",
+            "aquarium"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_es_types",
+              "criterion": "Distinguishes natural ecosystems (forests, ponds, lakes) from human-made ecosystems (gardens, crop-fields, aquariums).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Sort a forest, a crop field, a lake and a fish tank in a room into those made by nature and those made by people."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_ecosystem_chain",
+          "linksChecks": [
+            "chk_sci10c13_es_def",
+            "chk_sci10c13_es_types"
+          ],
+          "criterion": "Connects interacting organisms and surroundings to the biotic and abiotic components and to natural versus human-made ecosystems.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_es_living",
+          "wrong": "An ecosystem consists only of living organisms.",
+          "fix": "An ecosystem includes the interacting organisms together with the non-living constituents of the environment, such as temperature, rainfall, wind, soil and minerals.",
+          "checkId": "mchk_misc_sci10c13_es_living",
+          "checkCriterion": "The answer states or implies this wrong idea: An ecosystem consists only of living organisms.",
+          "fixCheckId": "mfix_misc_sci10c13_es_living",
+          "fixCheckCriterion": "Answer 2 states the correct idea: An ecosystem includes the interacting organisms together with the non-living constituents of the environment, such as temperature, rainfall, wind, soil and minerals.",
+          "keyPointIds": [
+            "sci10c13_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_es_living"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_es_def"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c13_es_types",
+            "lnk_sci10c13_ecosystem_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t1_c2",
+      "topicId": "ncert_science_10_ch13_t1",
+      "topicTitle": "Ecosystem Structure: Biotic and Abiotic Components",
+      "label": "Producers, Consumers and Decomposers",
+      "headingType": "heading",
+      "sourcePages": [
+        209
+      ],
+      "conceptHash": "a9362e84f35905b9869ddd7a012fe3d58b59ee9c752c6bbeb8e66bc25b188296",
+      "cardText": "Organisms can be grouped as producers, consumers and decomposers according to how they obtain their sustenance. Green plants and certain bacteria that make organic compounds like sugar and starch from inorganic substances using the radiant energy of the Sun in the presence of chlorophyll, by photosynthesis, are the producers. Organisms that consume the food produced, directly from producers or indirectly by feeding on other consumers, are the consumers: herbivores, carnivores, omnivores and parasites. Microorganisms, bacteria and fungi, break down the dead remains and waste products of organisms: they are the decomposers. They break down complex organic substances into simple inorganic substances that go into the soil and are used up once more by plants.",
+      "hint": "What do producers, consumers and decomposers do in an ecosystem?",
+      "probe": "Explain the roles of producers, consumers and decomposers.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Producers, Consumers and Decomposers, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which living things can make their own food from sunlight and simple substances, and what name do we give them in an ecosystem?",
+          "requiredEvidence": [
+            "green plants",
+            "certain bacteria",
+            "organic compounds",
+            "inorganic substances",
+            "radiant energy of the Sun",
+            "chlorophyll",
+            "photosynthesis",
+            "producers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_pc_producers",
+              "criterion": "States that producers (green plants and certain bacteria) make organic compounds like sugar and starch from inorganic substances by photosynthesis using sunlight and chlorophyll.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which living things can make their own food from sunlight and simple substances, and what name do we give them in an ecosystem?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t1c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Who depends on the producers for food, and in what different ways can they do so?",
+          "requiredEvidence": [
+            "consume the food produced",
+            "directly from producers",
+            "indirectly",
+            "consumers",
+            "herbivores",
+            "carnivores",
+            "omnivores",
+            "parasites"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_pc_consumers",
+              "criterion": "States that consumers get their food directly from producers or indirectly from other consumers, and include herbivores, carnivores, omnivores and parasites.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Who depends on the producers for food, and in what different ways can they do so?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What would pile up in a forest, and what would the plants lack, if nothing broke down dead matter?",
+          "requiredEvidence": [
+            "microorganisms",
+            "bacteria and fungi",
+            "dead remains and waste products",
+            "decomposers",
+            "complex organic substances",
+            "simple inorganic substances",
+            "used up once more by the plants"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_pc_decomposers",
+              "criterion": "States that decomposers (bacteria and fungi) break down dead remains and wastes of organisms into simple inorganic substances that go into the soil and are used again by plants.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What would pile up in a forest, and what would the plants lack, if nothing broke down dead matter?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_pc_decomp"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_roles_chain",
+          "linksChecks": [
+            "chk_sci10c13_pc_producers",
+            "chk_sci10c13_pc_consumers",
+            "chk_sci10c13_pc_decomposers"
+          ],
+          "criterion": "Connects producers making food to consumers eating it and decomposers returning nutrients to the soil.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_pc_decomp",
+          "wrong": "Dead organisms simply disappear without any organisms acting on them.",
+          "fix": "Microorganisms, bacteria and fungi, break down the dead remains and waste products of organisms, returning simple inorganic substances to the soil.",
+          "checkId": "mchk_misc_sci10c13_pc_decomp",
+          "checkCriterion": "The answer states or implies this wrong idea: Dead organisms simply disappear without any organisms acting on them.",
+          "fixCheckId": "mfix_misc_sci10c13_pc_decomp",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Microorganisms, bacteria and fungi, break down the dead remains and waste products of organisms, returning simple inorganic substances to the soil.",
+          "keyPointIds": [
+            "sci10c13_t1c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_pc_decomp"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_pc_producers",
+            "chk_sci10c13_pc_decomposers"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c13_pc_consumers",
+            "lnk_sci10c13_roles_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t2_c1",
+      "topicId": "ncert_science_10_ch13_t2",
+      "topicTitle": "Trophic Levels, Food Chains and Unidirectional Energy Flow",
+      "label": "Food Chains and Trophic Levels",
+      "headingType": "heading",
+      "sourcePages": [
+        210
+      ],
+      "conceptHash": "318cd5df11fce10caa5dc7704aa435e48124c77c427b596c0ec3b573d5095911",
+      "cardText": "A series of organisms feeding on one another, taking part at various biotic levels, forms a food chain. Each step or level of the food chain forms a trophic level. The autotrophs, or producers, are at the first trophic level, fixing solar energy and making it available to the heterotrophs, or consumers. The herbivores, or primary consumers, come at the second level, small carnivores or secondary consumers at the third, and larger carnivores or tertiary consumers form the fourth trophic level. The interactions among components of the environment involve a flow of energy from one component to another: autotrophs capture the energy in sunlight and convert it into chemical energy that supports all the activities of the living world, passing from autotrophs to heterotrophs and decomposers.",
+      "hint": "What is a trophic level and which organisms occupy each level of a food chain?",
+      "probe": "Explain what a food chain and trophic levels are and give the order of trophic levels with an example.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Food Chains and Trophic Levels, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Grass is eaten by a goat, which is eaten by a human. What do we call this sequence, and what do we call each place in it?",
+          "requiredEvidence": [
+            "series of organisms",
+            "feeding on one another",
+            "food chain",
+            "each step or level",
+            "trophic level"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_fc_def",
+              "criterion": "Defines a food chain as a series of organisms feeding on one another, with each step or level being a trophic level.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Grass is eaten by a goat, which is eaten by a human. What do we call this sequence, and what do we call each place in it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Place a plant, a deer, a fox and a tiger on the correct trophic levels and say what each is called.",
+          "requiredEvidence": [
+            "autotrophs",
+            "first trophic level",
+            "solar energy",
+            "herbivores",
+            "primary consumers",
+            "second",
+            "secondary consumers",
+            "third",
+            "tertiary consumers",
+            "fourth trophic level"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_fc_levels",
+              "criterion": "States the trophic levels: producers first, herbivores (primary consumers) second, small carnivores (secondary consumers) third and larger carnivores (tertiary consumers) fourth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Place a plant, a deer, a fox and a tiger on the correct trophic levels and say what each is called."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_fc_top"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_foodchain_chain",
+          "linksChecks": [
+            "chk_sci10c13_fc_def",
+            "chk_sci10c13_fc_levels"
+          ],
+          "criterion": "Connects the food chain to the ordered trophic levels and the passing on of energy captured by producers.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_fc_top",
+          "wrong": "Carnivores are at the first trophic level because they are the strongest.",
+          "fix": "The autotrophs or producers are at the first trophic level; herbivores are at the second, and carnivores come after them at higher levels.",
+          "checkId": "mchk_misc_sci10c13_fc_top",
+          "checkCriterion": "The answer states or implies this wrong idea: Carnivores are at the first trophic level because they are the strongest.",
+          "fixCheckId": "mfix_misc_sci10c13_fc_top",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The autotrophs or producers are at the first trophic level; herbivores are at the second, and carnivores come after them at higher levels.",
+          "keyPointIds": [
+            "sci10c13_t2c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_fc_top"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_fc_def",
+            "chk_sci10c13_fc_levels"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c13_foodchain_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t2_c2",
+      "topicId": "ncert_science_10_ch13_t2",
+      "topicTitle": "Trophic Levels, Food Chains and Unidirectional Energy Flow",
+      "label": "Flow of Energy: The 10 Per Cent Law and Why Food Chains Are Short",
+      "headingType": "heading",
+      "sourcePages": [
+        210,
+        211
+      ],
+      "conceptHash": "ab66c3ef9c11eb6cd1bb2d38ced710210778172fe7287df701fb5289aaf03971",
+      "cardText": "Autotrophs capture the energy of sunlight and convert it into chemical energy that supports all activities of the living world; from them the energy goes to heterotrophs and decomposers. When one form of energy changes to another, some energy is lost to the environment in forms that cannot be used again. Green plants in a terrestrial ecosystem capture about 1% of the energy of sunlight falling on their leaves. When plants are eaten by primary consumers, a great deal of energy is lost as heat, some goes into digestion and doing work, and the rest goes to growth and reproduction. An average of 10% of the food eaten is turned into the consumer's own body and made available to the next level. Because so little energy reaches the next level, food chains generally have only three or four steps. The flow of energy is unidirectional: it does not revert to the solar input or back to the previous level, and the energy available at each trophic level gets diminished progressively.",
+      "hint": "How much energy passes from one trophic level to the next and why are food chains short?",
+      "probe": "Explain the flow of energy in an ecosystem, the 10 per cent rule and why energy flow is unidirectional.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Flow of Energy: The 10 Per Cent Law and Why Food Chains Are Short, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A deer eats a lot of grass but only a little of that becomes deer body. Where does the rest of the energy go?",
+          "requiredEvidence": [
+            "some energy is lost",
+            "forms which cannot be used again",
+            "about 1% of the energy of sunlight",
+            "primary consumers",
+            "lost as heat",
+            "digestion and in doing work",
+            "growth and reproduction"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_ef_loss",
+              "criterion": "States that energy is lost at each step: plants capture about 1% of sunlight, and when eaten much energy is lost as heat, some goes into digestion and work, and the rest into growth and reproduction.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A deer eats a lot of grass but only a little of that becomes deer body. Where does the rest of the energy go?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a level has 1000 units of energy, roughly how much can the next level receive, and what does that imply for how many levels can exist?",
+          "requiredEvidence": [
+            "10% of the food eaten",
+            "next level of consumers",
+            "average value",
+            "so little energy",
+            "only three or four steps",
+            "very little usable energy remains after four trophic levels"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_ef_short",
+              "criterion": "States that on average only 10% of the energy passes to the next trophic level, so little energy is left that food chains usually have only three or four steps.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a level has 1000 units of energy, roughly how much can the next level receive, and what does that imply for how many levels can exist?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Can the energy a herbivore got from a plant ever be used by that plant again, and what happens to the amount of energy as you go up the levels?",
+          "requiredEvidence": [
+            "unidirectional",
+            "does not revert back to the solar input",
+            "does not come back to autotrophs",
+            "no longer available to the previous level",
+            "diminished progressively"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_ef_oneway",
+              "criterion": "States that energy flow is unidirectional (never returns to the sun or the previous level) and that the energy available at each trophic level progressively diminishes.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Can the energy a herbivore got from a plant ever be used by that plant again, and what happens to the amount of energy as you go up the levels?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_ef_recycle"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_energy_chain",
+          "linksChecks": [
+            "chk_sci10c13_ef_loss",
+            "chk_sci10c13_ef_short",
+            "chk_sci10c13_ef_oneway"
+          ],
+          "criterion": "Connects loss of energy at each level to the 10% average, the short length of food chains and the one-way flow of energy.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_ef_recycle",
+          "wrong": "Energy, like nutrients, is recycled and returns to the previous trophic level.",
+          "fix": "The flow of energy is unidirectional: the energy captured by autotrophs does not revert back to the solar input, and the energy passing to herbivores does not come back to autotrophs.",
+          "checkId": "mchk_misc_sci10c13_ef_recycle",
+          "checkCriterion": "The answer states or implies this wrong idea: Energy, like nutrients, is recycled and returns to the previous trophic level.",
+          "fixCheckId": "mfix_misc_sci10c13_ef_recycle",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The flow of energy is unidirectional: the energy captured by autotrophs does not revert back to the solar input, and the energy passing to herbivores does not come back to autotrophs.",
+          "keyPointIds": [
+            "sci10c13_t2c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_ef_recycle"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_ef_loss",
+            "chk_sci10c13_ef_short",
+            "chk_sci10c13_ef_oneway"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c13_energy_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t3_c1",
+      "topicId": "ncert_science_10_ch13_t3",
+      "topicTitle": "Food Webs and Biological Magnification",
+      "label": "Food Webs",
+      "headingType": "heading",
+      "sourcePages": [
+        210
+      ],
+      "conceptHash": "348f08f2f01e2435f7fc41bbfddde6197bf66061b43fcd819156760e25a46d14",
+      "cardText": "The length and complexity of food chains vary greatly. Each organism is generally eaten by two or more other kinds of organisms, which in turn are eaten by several other organisms. So, instead of a straight line food chain, the relationship can be shown as a series of branching lines called a food web. A food web consists of many food chains linked together. There are generally a greater number of individuals at the lower trophic levels of an ecosystem, with the greatest number being of the producers.",
+      "hint": "Why do we often draw a food web rather than a single food chain?",
+      "probe": "Explain what a food web is and why it is more realistic than a single food chain.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Food Webs, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A frog is eaten by snakes and by birds, and insects are eaten by frogs and by lizards. How would you draw all these feeding relationships?",
+          "requiredEvidence": [
+            "eaten by two or more other kinds of organisms",
+            "instead of a straight line food chain",
+            "branching lines",
+            "food web"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_fw_web",
+              "criterion": "States that because each organism is generally eaten by several other kinds of organisms, the feeding relationships form branching lines, a food web, instead of a straight food chain.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A frog is eaten by snakes and by birds, and insects are eaten by frogs and by lizards. How would you draw all these feeding relationships?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_fw_line"
+          ]
+        },
+        {
+          "id": "sci10c13_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "In a typical ecosystem, which level has the most individuals and which the fewest?",
+          "requiredEvidence": [
+            "length and complexity",
+            "vary greatly",
+            "greater number of individuals",
+            "lower trophic levels",
+            "producers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_fw_numbers",
+              "criterion": "States that food chains vary in length and complexity and that there are generally more individuals at lower trophic levels, the most being producers.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "In a typical ecosystem, which level has the most individuals and which the fewest?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_web_chain",
+          "linksChecks": [
+            "chk_sci10c13_fw_web",
+            "chk_sci10c13_fw_numbers"
+          ],
+          "criterion": "Connects organisms having several predators and food sources to the branching food web.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_fw_line",
+          "wrong": "Every organism feeds on exactly one other organism, so food chains never branch.",
+          "fix": "Each organism is generally eaten by two or more other kinds of organisms, so the relationship is shown as branching lines, a food web.",
+          "checkId": "mchk_misc_sci10c13_fw_line",
+          "checkCriterion": "The answer states or implies this wrong idea: Every organism feeds on exactly one other organism, so food chains never branch.",
+          "fixCheckId": "mfix_misc_sci10c13_fw_line",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Each organism is generally eaten by two or more other kinds of organisms, so the relationship is shown as branching lines, a food web.",
+          "keyPointIds": [
+            "sci10c13_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_fw_line"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_fw_web"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c13_fw_numbers",
+            "lnk_sci10c13_web_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t3_c2",
+      "topicId": "ncert_science_10_ch13_t3",
+      "topicTitle": "Food Webs and Biological Magnification",
+      "label": "Biological Magnification",
+      "headingType": "heading",
+      "sourcePages": [
+        211,
+        212
+      ],
+      "conceptHash": "b433ee4b79144efdff4709cc59d3d9fe4fdc8905a83f2b3bb48c2f3872fa9ef4",
+      "cardText": "Some harmful chemicals unknowingly enter our bodies through the food chain. Pesticides and other chemicals used to protect crops from diseases and pests are washed down into the soil or into water bodies. From the soil they are absorbed by plants along with water and minerals, and from the water bodies they are taken up by aquatic plants and animals, so they enter the food chain. As these chemicals are not degradable, they get accumulated progressively at each trophic level. Because human beings occupy the top level in any food chain, the maximum concentration of these chemicals accumulates in our bodies. This phenomenon is known as biological magnification. This is why food grains such as wheat and rice, vegetables, fruits and even meat contain varying amounts of pesticide residues, which cannot always be removed by washing.",
+      "hint": "How do pesticides reach us through food and why are humans most affected?",
+      "probe": "Explain biological magnification and why the highest concentration of harmful chemicals is found in humans.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Biological Magnification, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A farmer sprays a field. By what routes can that chemical end up in the plants, fish and finally the people who eat them?",
+          "requiredEvidence": [
+            "pesticides",
+            "washed down into the soil",
+            "water bodies",
+            "absorbed by the plants",
+            "aquatic plants and animals",
+            "enter the food chain"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_bm_entry",
+              "criterion": "States that pesticides washed into soil and water are absorbed by plants and taken up by aquatic organisms, thereby entering the food chain.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A farmer sprays a field. By what routes can that chemical end up in the plants, fish and finally the people who eat them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c13_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would a person at the top of a food chain carry more of a persistent chemical than a plant at the bottom?",
+          "requiredEvidence": [
+            "not degradable",
+            "accumulated progressively at each trophic level",
+            "human beings occupy the top level",
+            "maximum concentration",
+            "biological magnification",
+            "pesticide residues"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_bm_magnify",
+              "criterion": "States that non-degradable chemicals accumulate progressively at each trophic level, so humans at the top accumulate the highest concentration, a phenomenon called biological magnification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would a person at the top of a food chain carry more of a persistent chemical than a plant at the bottom?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_bm_wash"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_magnification_chain",
+          "linksChecks": [
+            "chk_sci10c13_bm_entry",
+            "chk_sci10c13_bm_magnify"
+          ],
+          "criterion": "Connects pesticides entering the food chain to non-degradable accumulation and the highest concentration in humans.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_bm_wash",
+          "wrong": "Pesticide residues in food can be completely removed by washing.",
+          "fix": "Pesticide residues in food grains, vegetables, fruits and meat cannot always be removed by washing or other means.",
+          "checkId": "mchk_misc_sci10c13_bm_wash",
+          "checkCriterion": "The answer states or implies this wrong idea: Pesticide residues in food can be completely removed by washing.",
+          "fixCheckId": "mfix_misc_sci10c13_bm_wash",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Pesticide residues in food grains, vegetables, fruits and meat cannot always be removed by washing or other means.",
+          "keyPointIds": [
+            "sci10c13_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_bm_wash"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_bm_entry",
+            "chk_sci10c13_bm_magnify"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c13_magnification_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t4_c1",
+      "topicId": "ncert_science_10_ch13_t4",
+      "topicTitle": "Ozone Layer Depletion and the Environmental Impact of Waste",
+      "label": "The Ozone Layer and How It Is Depleted",
+      "headingType": "heading",
+      "sourcePages": [
+        212,
+        213
+      ],
+      "conceptHash": "702bcfcdd408b09487ca98af4926d63e330c9a1d5a6a39f02b53825bbe846851",
+      "cardText": "Ozone (O3) is a molecule formed by three atoms of oxygen. While O2, which we normally call oxygen, is essential for all aerobic forms of life, ozone is a deadly poison. However, at the higher levels of the atmosphere, ozone performs an essential function: it shields the surface of the earth from the Sun's ultraviolet (UV) radiation, which is highly damaging to organisms and is known to cause skin cancer in humans. Ozone at the higher levels is a product of UV radiation acting on oxygen: higher energy UV splits some oxygen molecules into free oxygen atoms, which combine with molecular oxygen to form ozone. The amount of ozone began to drop sharply in the 1980s, linked to synthetic chemicals like chlorofluorocarbons (CFCs) used as refrigerants and in fire extinguishers. In 1987 UNEP forged an agreement to freeze CFC production at 1986 levels, and it is now mandatory for manufacturers worldwide to make CFC-free refrigerators.",
+      "hint": "Why is the ozone layer important, what is depleting it and what has been done?",
+      "probe": "Explain what ozone is, why the ozone layer matters, why it is depleted and what action was taken.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Ozone Layer and How It Is Depleted, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would it be dangerous for life on the ground if the high-altitude ozone thinned out?",
+          "requiredEvidence": [
+            "three atoms of oxygen",
+            "higher levels of the atmosphere",
+            "shields the surface of the earth",
+            "ultraviolet radiation",
+            "highly damaging to organisms",
+            "skin cancer"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_oz_role",
+              "criterion": "States that ozone (three oxygen atoms) in the upper atmosphere shields the earth's surface from the Sun's harmful ultraviolet radiation, which can cause skin cancer.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would it be dangerous for life on the ground if the high-altitude ozone thinned out?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_oz_poison"
+          ]
+        },
+        {
+          "id": "sci10c13_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which man-made chemicals were linked with the thinning of the ozone layer, and what international step was taken about them?",
+          "requiredEvidence": [
+            "UV radiation acting on oxygen",
+            "drop sharply in the 1980s",
+            "chlorofluorocarbons",
+            "CFCs",
+            "refrigerants",
+            "fire extinguishers",
+            "UNEP",
+            "1987",
+            "freeze CFC production",
+            "CFC-free refrigerators"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_oz_depletion",
+              "criterion": "States that ozone fell sharply from the 1980s because of CFCs (used in refrigerants and fire extinguishers), and that UNEP's 1987 agreement froze CFC production, with CFC-free refrigerators now mandatory.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which man-made chemicals were linked with the thinning of the ozone layer, and what international step was taken about them?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_ozone_chain",
+          "linksChecks": [
+            "chk_sci10c13_oz_role",
+            "chk_sci10c13_oz_depletion"
+          ],
+          "criterion": "Connects the shielding role of ozone to its depletion by CFCs and the international action taken.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_oz_poison",
+          "wrong": "Ozone is harmful everywhere, so there is no need to protect the ozone layer.",
+          "fix": "At the higher levels of the atmosphere ozone performs an essential function: it shields the surface of the earth from the Sun's ultraviolet radiation.",
+          "checkId": "mchk_misc_sci10c13_oz_poison",
+          "checkCriterion": "The answer states or implies this wrong idea: Ozone is harmful everywhere, so there is no need to protect the ozone layer.",
+          "fixCheckId": "mfix_misc_sci10c13_oz_poison",
+          "fixCheckCriterion": "Answer 2 states the correct idea: At the higher levels of the atmosphere ozone performs an essential function: it shields the surface of the earth from the Sun's ultraviolet radiation.",
+          "keyPointIds": [
+            "sci10c13_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_oz_poison"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_oz_role",
+            "chk_sci10c13_oz_depletion"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c13_ozone_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch13_t4_c2",
+      "topicId": "ncert_science_10_ch13_t4",
+      "topicTitle": "Ozone Layer Depletion and the Environmental Impact of Waste",
+      "label": "Biodegradable and Non-biodegradable Waste",
+      "headingType": "heading",
+      "sourcePages": [
+        213,
+        214,
+        215
+      ],
+      "conceptHash": "46b2974f2d09b378f5debb0cc4ed7a08cf2a3a5a8f7e9d01ea356ec2334da96d",
+      "cardText": "Enzymes are specific in their action: specific enzymes are needed to break down a particular substance, which is why we get no energy from eating coal. Because of this, many human-made materials like plastics are not broken down by the action of bacteria or other saprophytes; they are acted on by physical processes like heat and pressure, but under ambient conditions persist for a long time. Substances that are broken down by biological processes are biodegradable; those that are not are non-biodegradable. Non-biodegradable substances may be inert and simply persist in the environment for a long time, or may harm members of the ecosystem. Improvements in life-style have resulted in greater amounts of waste, more things we use have become disposable, and changes in packaging have made much of our waste non-biodegradable. Disposal of the waste we generate is causing serious environmental problems.",
+      "hint": "Why are some substances biodegradable and others not, and what is the effect of non-biodegradable waste?",
+      "probe": "Explain biodegradable and non-biodegradable substances and why waste is a growing environmental problem.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Biodegradable and Non-biodegradable Waste, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c13_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why can a vegetable peel rot away in the soil while a plastic bottle stays for ages?",
+          "requiredEvidence": [
+            "enzymes are specific in their action",
+            "particular substance",
+            "plastics",
+            "not be broken down by the action of bacteria or other saprophytes",
+            "biological processes",
+            "biodegradable",
+            "non-biodegradable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_wa_bio",
+              "criterion": "States that enzymes are specific, so human-made materials like plastics are not broken down by bacteria or saprophytes; substances broken down by biological processes are biodegradable and the others non-biodegradable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can a vegetable peel rot away in the soil while a plastic bottle stays for ages?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c13_wa_all"
+          ]
+        },
+        {
+          "id": "sci10c13_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What has happened to the amount and kind of waste we produce as our life-style and packaging have changed, and what trouble does it cause?",
+          "requiredEvidence": [
+            "inert",
+            "persist in the environment for a long time",
+            "harm the various members of the ecosystem",
+            "improvements in our life-style",
+            "greater amounts of waste",
+            "non-biodegradable",
+            "serious environmental problems"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c13_wa_problem",
+              "criterion": "States that non-biodegradable waste persists or harms the ecosystem, and that life-style changes, disposables and packaging have increased waste, causing serious environmental problems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What has happened to the amount and kind of waste we produce as our life-style and packaging have changed, and what trouble does it cause?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c13_waste_chain",
+          "linksChecks": [
+            "chk_sci10c13_wa_bio",
+            "chk_sci10c13_wa_problem"
+          ],
+          "criterion": "Connects enzyme specificity to biodegradability and to the growing volume of non-biodegradable waste.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c13_wa_all",
+          "wrong": "All wastes, including plastics, are broken down by bacteria in the soil within a short time.",
+          "fix": "Many human-made materials like plastics will not be broken down by the action of bacteria or other saprophytes; they persist for a long time under ambient conditions.",
+          "checkId": "mchk_misc_sci10c13_wa_all",
+          "checkCriterion": "The answer states or implies this wrong idea: All wastes, including plastics, are broken down by bacteria in the soil within a short time.",
+          "fixCheckId": "mfix_misc_sci10c13_wa_all",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Many human-made materials like plastics will not be broken down by the action of bacteria or other saprophytes; they persist for a long time under ambient conditions.",
+          "keyPointIds": [
+            "sci10c13_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c13_wa_all"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c13_wa_bio"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c13_wa_problem",
+            "lnk_sci10c13_waste_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

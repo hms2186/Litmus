@@ -1,0 +1,2050 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_10_ch9.json",
+  "sourceSha256": "0c3d0bcf8ddf3f29484003e35819f2d541a0704bb0c7c6d10ac32bb6a1c758ba",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 10",
+  "subject": "Science",
+  "book": "Science",
+  "chapterNumber": 9,
+  "chapterName": "Light – Reflection and Refraction",
+  "articulationChecks": [
+    {
+      "id": "chk_sci10c9_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci10c9_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example reflection, refraction, concave mirror, convex mirror, pole, centre of curvature, radius of curvature, principal axis.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "reflection",
+    "refraction",
+    "concave mirror",
+    "convex mirror",
+    "pole",
+    "centre of curvature",
+    "radius of curvature",
+    "principal axis",
+    "principal focus",
+    "focal length",
+    "real image",
+    "virtual image",
+    "magnification",
+    "sign convention",
+    "mirror formula",
+    "refractive index",
+    "Snell's law",
+    "optical density",
+    "convex lens",
+    "concave lens",
+    "optical centre",
+    "lens formula",
+    "power of a lens",
+    "dioptre"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci10_ch9_t1_c1",
+      "topicId": "ncert_science_10_ch9_t1",
+      "topicTitle": "Reflection of Light and Image Formation by Plane and Spherical Mirrors",
+      "label": "Laws of Reflection and the Image in a Plane Mirror",
+      "headingType": "heading",
+      "sourcePages": [
+        134,
+        135
+      ],
+      "conceptHash": "76896bdc720ebba3f6e6553b52e2723abaef4206aa00421a2b4f70a0538cff2b",
+      "cardText": "An object reflects light that falls on it, and when this reflected light is received by our eyes we see the object. A highly polished surface, such as a mirror, reflects most of the light falling on it. The laws of reflection are: the angle of incidence is equal to the angle of reflection, and the incident ray, the normal to the mirror at the point of incidence and the reflected ray all lie in the same plane. These laws apply to all types of reflecting surfaces, including spherical surfaces. The image formed by a plane mirror is always virtual and erect, the same size as the object, as far behind the mirror as the object is in front of it, and laterally inverted.",
+      "hint": "State the two laws of reflection and the properties of the image in a plane mirror.",
+      "probe": "Explain the laws of reflection and describe the image formed by a plane mirror.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Laws of Reflection and the Image in a Plane Mirror, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When a ray of light bounces off a polished surface, what can you say about the angles it makes and about the three lines involved?",
+          "requiredEvidence": [
+            "angle of incidence is equal to the angle of reflection",
+            "incident ray",
+            "normal",
+            "reflected ray",
+            "same plane",
+            "all types of reflecting surfaces"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rl_laws",
+              "criterion": "States both laws of reflection: the angle of incidence equals the angle of reflection, and the incident ray, normal and reflected ray lie in the same plane; they apply to all reflecting surfaces.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When a ray of light bounces off a polished surface, what can you say about the angles it makes and about the three lines involved?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_rl_laws_curved"
+          ]
+        },
+        {
+          "id": "sci10c9_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Look at your reflection in a flat mirror and describe it: its size, its distance, its orientation and whether it can be caught on a screen.",
+          "requiredEvidence": [
+            "virtual and erect",
+            "equal to that of the object",
+            "as far behind the mirror",
+            "laterally inverted"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rl_plane",
+              "criterion": "Describes the plane-mirror image as virtual, erect, the same size as the object, as far behind the mirror as the object is in front, and laterally inverted.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Look at your reflection in a flat mirror and describe it: its size, its distance, its orientation and whether it can be caught on a screen."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_reflect_chain",
+          "linksChecks": [
+            "chk_sci10c9_rl_laws",
+            "chk_sci10c9_rl_plane"
+          ],
+          "criterion": "Connects the laws of reflection to the nature of the image in a plane mirror.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_rl_laws_curved",
+          "wrong": "The laws of reflection do not apply to curved mirrors.",
+          "fix": "These laws of reflection are applicable to all types of reflecting surfaces including spherical surfaces.",
+          "checkId": "mchk_misc_sci10c9_rl_laws_curved",
+          "checkCriterion": "The answer states or implies this wrong idea: The laws of reflection do not apply to curved mirrors.",
+          "fixCheckId": "mfix_misc_sci10c9_rl_laws_curved",
+          "fixCheckCriterion": "Answer 2 states the correct idea: These laws of reflection are applicable to all types of reflecting surfaces including spherical surfaces.",
+          "keyPointIds": [
+            "sci10c9_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_rl_laws_curved"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_rl_laws",
+            "chk_sci10c9_rl_plane"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_reflect_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t1_c2",
+      "topicId": "ncert_science_10_ch9_t1",
+      "topicTitle": "Reflection of Light and Image Formation by Plane and Spherical Mirrors",
+      "label": "Spherical Mirrors: Concave and Convex, and Their Terms",
+      "headingType": "heading",
+      "sourcePages": [
+        135,
+        136
+      ],
+      "conceptHash": "576be25398550bc8620e0d805bf05a47b79f5794599fef54e7adc221fab22c38",
+      "cardText": "Mirrors whose reflecting surfaces are spherical are called spherical mirrors. If the reflecting surface is curved inwards, facing the centre of the sphere, it is a concave mirror; if curved outwards, a convex mirror. The centre of the reflecting surface is the pole P. The reflecting surface forms part of a sphere whose centre, C, is the centre of curvature; it is not part of the mirror, lies in front of a concave mirror and behind a convex mirror. The radius of that sphere is the radius of curvature R, equal to PC. The straight line through the pole and the centre of curvature is the principal axis, normal to the mirror at its pole.",
+      "hint": "What are the pole, centre of curvature, radius of curvature and principal axis of a spherical mirror?",
+      "probe": "Explain the difference between concave and convex mirrors and define pole, centre of curvature, radius of curvature and principal axis.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Spherical Mirrors: Concave and Convex, and Their Terms, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How can you tell an inward-curved mirror from an outward-curved one by looking at its reflecting surface?",
+          "requiredEvidence": [
+            "spherical mirrors",
+            "curved inwards",
+            "concave mirror",
+            "curved outwards",
+            "convex mirror"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sm_types",
+              "criterion": "Defines a concave mirror (reflecting surface curved inwards) and a convex mirror (curved outwards) as spherical mirrors.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How can you tell an inward-curved mirror from an outward-curved one by looking at its reflecting surface?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the point on the mirror, the point of the sphere it came from, the distance between them and the line joining them.",
+          "requiredEvidence": [
+            "pole",
+            "centre of curvature",
+            "not a part of the mirror",
+            "radius of curvature",
+            "PC",
+            "principal axis",
+            "normal to the mirror at its pole"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sm_terms",
+              "criterion": "Defines the pole (centre of the reflecting surface), centre of curvature (centre of the sphere, outside the mirror), radius of curvature (PC) and principal axis (line through P and C, normal at the pole).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the point on the mirror, the point of the sphere it came from, the distance between them and the line joining them."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_sm_c_part"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_mirror_terms",
+          "linksChecks": [
+            "chk_sci10c9_sm_types",
+            "chk_sci10c9_sm_terms"
+          ],
+          "criterion": "Connects the type of curvature to the pole, centre of curvature, radius and principal axis.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_sm_c_part",
+          "wrong": "The centre of curvature is a point on the mirror's surface.",
+          "fix": "The centre of curvature is not a part of the mirror; it lies outside its reflecting surface, in front of a concave mirror and behind a convex mirror.",
+          "checkId": "mchk_misc_sci10c9_sm_c_part",
+          "checkCriterion": "The answer states or implies this wrong idea: The centre of curvature is a point on the mirror's surface.",
+          "fixCheckId": "mfix_misc_sci10c9_sm_c_part",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The centre of curvature is not a part of the mirror; it lies outside its reflecting surface, in front of a concave mirror and behind a convex mirror.",
+          "keyPointIds": [
+            "sci10c9_t1c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_sm_c_part"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_sm_types",
+            "chk_sci10c9_sm_terms"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_mirror_terms"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t1_c3",
+      "topicId": "ncert_science_10_ch9_t1",
+      "topicTitle": "Reflection of Light and Image Formation by Plane and Spherical Mirrors",
+      "label": "Principal Focus, Focal Length and R = 2f",
+      "headingType": "heading",
+      "sourcePages": [
+        136,
+        137
+      ],
+      "conceptHash": "040d980f9b171373f8d58645b0cbba3a3312085984fad3503839b5d6666910e5",
+      "cardText": "Sunlight directed by a concave mirror onto paper converges to a sharp, bright spot, the focus, and the heat can ignite the paper. Rays parallel to the principal axis, after reflection from a concave mirror, meet at a point on the axis called the principal focus. For a convex mirror the reflected rays appear to come from a point on the axis, the principal focus. The principal focus is F, and the distance between the pole and the principal focus is the focal length f. The diameter of the reflecting surface is its aperture. For spherical mirrors of small aperture, the radius of curvature is twice the focal length, R = 2f, so the principal focus lies midway between the pole and the centre of curvature.",
+      "hint": "Where is the principal focus of a concave and a convex mirror and how are f and R related?",
+      "probe": "Explain the principal focus and focal length of a spherical mirror and the relation between R and f.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Principal Focus, Focal Length and R = 2f, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Parallel sunrays hit a concave mirror and a convex mirror. Describe what becomes of the reflected rays in each case.",
+          "requiredEvidence": [
+            "parallel to the principal axis",
+            "meeting",
+            "principal focus",
+            "appear to come from a point",
+            "focal length",
+            "pole"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_pf_focus",
+              "criterion": "States that parallel rays meet at the principal focus after reflection from a concave mirror and appear to come from it for a convex mirror, and that the pole-to-focus distance is the focal length.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Parallel sunrays hit a concave mirror and a convex mirror. Describe what becomes of the reflected rays in each case."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_pf_convex_meet"
+          ]
+        },
+        {
+          "id": "sci10c9_t1c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If a mirror's sphere has a known radius, how do you get its focal length and where is the focus?",
+          "requiredEvidence": [
+            "aperture",
+            "small apertures",
+            "radius of curvature",
+            "twice the focal length",
+            "R = 2f",
+            "midway between the pole and centre of curvature"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_pf_r2f",
+              "criterion": "States that for spherical mirrors of small aperture the radius of curvature is twice the focal length (R = 2f), so the principal focus lies midway between the pole and the centre of curvature.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If a mirror's sphere has a known radius, how do you get its focal length and where is the focus?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_focus_chain",
+          "linksChecks": [
+            "chk_sci10c9_pf_focus",
+            "chk_sci10c9_pf_r2f"
+          ],
+          "criterion": "Connects the principal focus to the focal length and to R = 2f.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_pf_convex_meet",
+          "wrong": "A convex mirror makes parallel rays actually meet at a point in front of it.",
+          "fix": "For a convex mirror the reflected rays only appear to come from a point on the principal axis behind the mirror; this is its principal focus.",
+          "checkId": "mchk_misc_sci10c9_pf_convex_meet",
+          "checkCriterion": "The answer states or implies this wrong idea: A convex mirror makes parallel rays actually meet at a point in front of it.",
+          "fixCheckId": "mfix_misc_sci10c9_pf_convex_meet",
+          "fixCheckCriterion": "Answer 2 states the correct idea: For a convex mirror the reflected rays only appear to come from a point on the principal axis behind the mirror; this is its principal focus.",
+          "keyPointIds": [
+            "sci10c9_t1c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_pf_convex_meet"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_pf_focus",
+            "chk_sci10c9_pf_r2f"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_focus_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t1_c4",
+      "topicId": "ncert_science_10_ch9_t1",
+      "topicTitle": "Reflection of Light and Image Formation by Plane and Spherical Mirrors",
+      "label": "Image Formation by a Concave Mirror",
+      "headingType": "heading",
+      "sourcePages": [
+        137,
+        138,
+        140
+      ],
+      "conceptHash": "0341a4680e2116033d33bd1053234a9d02aaa2abe25813edf15ea80bb0dbd0bb",
+      "cardText": "The nature, position and size of the image formed by a concave mirror depend on the position of the object in relation to the points P, F and C. The image is real for some positions and virtual for one other. It is magnified, reduced or the same size depending on the position. A real, inverted image forms when the object is beyond C (diminished, between F and C), at C (same size, at C), or between C and F (enlarged, beyond C). At infinity the image is highly diminished and point-sized at F. When the object is at F, the image is at infinity. Only when the object is between P and F is the image virtual, erect, enlarged and behind the mirror. Concave mirrors are used in torches, headlights, shaving mirrors, dentists' mirrors and solar furnaces.",
+      "hint": "How do the position, size and nature of the image change as an object moves towards a concave mirror?",
+      "probe": "Explain how the image formed by a concave mirror depends on the position of the object, and give uses of concave mirrors.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Image Formation by a Concave Mirror, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t1c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If you slide a candle slowly towards a concave mirror from far away, what keeps changing about its image?",
+          "requiredEvidence": [
+            "position of the object",
+            "P, F and C",
+            "real",
+            "virtual",
+            "magnified, reduced or has the same size"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_cm_position",
+              "criterion": "States that the nature, position and size of the image formed by a concave mirror depend on where the object is relative to P, F and C, and that the image may be real or virtual, enlarged, reduced or the same size.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If you slide a candle slowly towards a concave mirror from far away, what keeps changing about its image?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_cm_always_real"
+          ]
+        },
+        {
+          "id": "sci10c9_t1c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where must you hold your face relative to a concave mirror to see a bigger, upright image, and what happens to the image once you move further back past the focus?",
+          "requiredEvidence": [
+            "between P and F",
+            "behind the mirror",
+            "enlarged",
+            "virtual and erect",
+            "real and inverted",
+            "at C",
+            "same size",
+            "at infinity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_cm_virtual",
+              "criterion": "States that an object between P and F gives a virtual, erect, enlarged image behind the mirror, whereas objects beyond F give real, inverted images (diminished beyond C, same size at C, enlarged between C and F).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where must you hold your face relative to a concave mirror to see a bigger, upright image, and what happens to the image once you move further back past the focus?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t1c4_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "Why would a torch, a dentist and a solar furnace all choose the same type of mirror?",
+          "requiredEvidence": [
+            "torches",
+            "headlights",
+            "parallel beams of light",
+            "shaving mirrors",
+            "dentists",
+            "solar furnaces"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_cm_uses",
+              "criterion": "Gives uses of concave mirrors: torches, search-lights and headlights (parallel beams), shaving mirrors, dentists' mirrors and solar furnaces.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why would a torch, a dentist and a solar furnace all choose the same type of mirror?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_concave_chain",
+          "linksChecks": [
+            "chk_sci10c9_cm_position",
+            "chk_sci10c9_cm_virtual",
+            "chk_sci10c9_cm_uses"
+          ],
+          "criterion": "Connects object position to the real or virtual nature of the image and to uses of concave mirrors.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_cm_always_real",
+          "wrong": "A concave mirror always forms a real image.",
+          "fix": "The image formed by a concave mirror is real for some positions of the object, but it is virtual for the position between P and F.",
+          "checkId": "mchk_misc_sci10c9_cm_always_real",
+          "checkCriterion": "The answer states or implies this wrong idea: A concave mirror always forms a real image.",
+          "fixCheckId": "mfix_misc_sci10c9_cm_always_real",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The image formed by a concave mirror is real for some positions of the object, but it is virtual for the position between P and F.",
+          "keyPointIds": [
+            "sci10c9_t1c4_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_cm_always_real"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_cm_position",
+            "chk_sci10c9_cm_virtual"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c9_cm_uses",
+            "lnk_sci10c9_concave_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t1_c5",
+      "topicId": "ncert_science_10_ch9_t1",
+      "topicTitle": "Reflection of Light and Image Formation by Plane and Spherical Mirrors",
+      "label": "Image Formation by a Convex Mirror and Its Uses",
+      "headingType": "heading",
+      "sourcePages": [
+        141,
+        142
+      ],
+      "conceptHash": "9bb169c0ee5be133a6c813c67c498df50b1227880ff3c98cc4136471dd5e51be",
+      "cardText": "For a convex mirror two object positions are considered. When the object is at infinity the image is at the focus F behind the mirror, highly diminished and point-sized, virtual and erect. When the object is between infinity and the pole P, the image is between P and F behind the mirror, diminished, virtual and erect. You can see a full-length image of a tall building in a small convex mirror, as in the one fitted in a wall of Agra Fort facing the Taj Mahal. Convex mirrors are used as rear-view (wing) mirrors in vehicles, because they always give an erect though diminished image and, being curved outwards, have a wider field of view, so the driver sees a much larger area than with a plane mirror.",
+      "hint": "Why is a convex mirror preferred as a rear-view mirror?",
+      "probe": "Explain the image formed by a convex mirror and why convex mirrors are used as rear-view mirrors.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Image Formation by a Convex Mirror and Its Uses, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t1c5_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Whatever distance you hold a pencil from a convex mirror, what kind of image do you get and where does it appear?",
+          "requiredEvidence": [
+            "at infinity",
+            "at the focus F",
+            "behind the mirror",
+            "highly diminished",
+            "virtual and erect",
+            "between P and F",
+            "diminished"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_cv_image",
+              "criterion": "States that a convex mirror always forms a virtual, erect, diminished image behind the mirror (between P and F, or at F for an object at infinity).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Whatever distance you hold a pencil from a convex mirror, what kind of image do you get and where does it appear?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_cv_real"
+          ]
+        },
+        {
+          "id": "sci10c9_t1c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why would a driver choose a curved-outward mirror over a flat one for watching the traffic behind?",
+          "requiredEvidence": [
+            "full-length image",
+            "rear-view",
+            "erect, though diminished",
+            "wider field of view",
+            "curved outwards",
+            "much larger area"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_cv_use",
+              "criterion": "States that convex mirrors are used as rear-view mirrors because they always give an erect, diminished image and, being curved outwards, a wider field of view.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why would a driver choose a curved-outward mirror over a flat one for watching the traffic behind?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_convex_chain",
+          "linksChecks": [
+            "chk_sci10c9_cv_image",
+            "chk_sci10c9_cv_use"
+          ],
+          "criterion": "Connects the diminished erect image and wide field of view to the rear-view use.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_cv_real",
+          "wrong": "A convex mirror can form a real, inverted image of a distant object.",
+          "fix": "A convex mirror always gives a virtual, erect and diminished image behind the mirror, whether the object is at infinity or at a finite distance.",
+          "checkId": "mchk_misc_sci10c9_cv_real",
+          "checkCriterion": "The answer states or implies this wrong idea: A convex mirror can form a real, inverted image of a distant object.",
+          "fixCheckId": "mfix_misc_sci10c9_cv_real",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A convex mirror always gives a virtual, erect and diminished image behind the mirror, whether the object is at infinity or at a finite distance.",
+          "keyPointIds": [
+            "sci10c9_t1c5_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_cv_real"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_cv_image",
+            "chk_sci10c9_cv_use"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_convex_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t2_c1",
+      "topicId": "ncert_science_10_ch9_t2",
+      "topicTitle": "Ray Diagrams, Sign Convention, Mirror Formula and Magnification",
+      "label": "Ray Diagrams for Spherical Mirrors",
+      "headingType": "heading",
+      "sourcePages": [
+        138,
+        139
+      ],
+      "conceptHash": "18ec697d0fb5f8c8e365a136469f68e4e13b2c0d316f3362177df4ab827b1dcf",
+      "cardText": "An extended object acts as many point sources, each sending out an infinite number of rays, but for clarity two rays are chosen whose directions after reflection are easy to know. The intersection of at least two reflected rays gives the position of the image. Any two of four rays can be used: (i) a ray parallel to the principal axis passes through the principal focus after reflection in a concave mirror, or appears to diverge from it in a convex mirror; (ii) a ray through the principal focus of a concave mirror, or directed towards that of a convex mirror, emerges parallel to the axis; (iii) a ray through the centre of curvature, or directed towards it, is reflected back along the same path, because it falls along the normal; (iv) a ray incident obliquely at the pole is reflected obliquely at an equal angle. In all cases the laws of reflection are followed.",
+      "hint": "Which rays can be used to locate the image formed by a spherical mirror and how does each behave?",
+      "probe": "Explain the rays used in ray diagrams for spherical mirrors and how each is reflected.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ray Diagrams for Spherical Mirrors, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t2c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do you find where the image of one point of an object forms using just a couple of rays?",
+          "requiredEvidence": [
+            "point source",
+            "two rays",
+            "easy to know their directions after reflection",
+            "intersection",
+            "at least two reflected rays",
+            "position of image"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rd_method",
+              "criterion": "States that a ray diagram uses two convenient rays whose directions after reflection are known, and the intersection of at least two reflected rays gives the position of the image.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do you find where the image of one point of an object forms using just a couple of rays?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_rd_all"
+          ]
+        },
+        {
+          "id": "sci10c9_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A ray travels straight towards the centre of the sphere the mirror was cut from. Where does it go after reflection and why?",
+          "requiredEvidence": [
+            "parallel to the principal axis",
+            "principal focus",
+            "emerge parallel",
+            "centre of curvature",
+            "same path",
+            "normal",
+            "pole",
+            "equal angles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rd_rules",
+              "criterion": "States how the four rays are reflected: parallel ray via the principal focus, ray through the focus emerges parallel, ray through the centre of curvature returns along the same path (it meets the mirror normally), and an oblique ray at the pole reflects at an equal angle.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A ray travels straight towards the centre of the sphere the mirror was cut from. Where does it go after reflection and why?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_rays_chain",
+          "linksChecks": [
+            "chk_sci10c9_rd_method",
+            "chk_sci10c9_rd_rules"
+          ],
+          "criterion": "Connects the choice of easy rays to the intersection that locates the image.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_rd_all",
+          "wrong": "Every ray of an extended object must be drawn to find the image.",
+          "fix": "It is more convenient to consider only two rays whose directions after reflection are easy to know; the intersection of at least two reflected rays gives the image.",
+          "checkId": "mchk_misc_sci10c9_rd_all",
+          "checkCriterion": "The answer states or implies this wrong idea: Every ray of an extended object must be drawn to find the image.",
+          "fixCheckId": "mfix_misc_sci10c9_rd_all",
+          "fixCheckCriterion": "Answer 2 states the correct idea: It is more convenient to consider only two rays whose directions after reflection are easy to know; the intersection of at least two reflected rays gives the image.",
+          "keyPointIds": [
+            "sci10c9_t2c1_kp1"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_rd_all"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_rd_rules"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c9_rd_method",
+            "lnk_sci10c9_rays_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t2_c2",
+      "topicId": "ncert_science_10_ch9_t2",
+      "topicTitle": "Ray Diagrams, Sign Convention, Mirror Formula and Magnification",
+      "label": "New Cartesian Sign Convention for Mirrors",
+      "headingType": "heading",
+      "sourcePages": [
+        142,
+        143
+      ],
+      "conceptHash": "142873e5d1f40fe243f9ab439244c73e1bfac2388c7f37804323929717b6d3d8",
+      "cardText": "While dealing with reflection by spherical mirrors we follow the New Cartesian Sign Convention. The pole of the mirror is the origin and the principal axis is the x-axis. The object is always placed to the left of the mirror, so light falls on it from the left. All distances parallel to the principal axis are measured from the pole. Distances to the right of the origin (along +x) are positive, while those to the left (along -x) are negative. Distances measured perpendicular to and above the principal axis (along +y) are positive, and those below (along -y) are negative. These sign conventions are applied to obtain the mirror formula and solve numerical problems.",
+      "hint": "From where are distances measured and which directions are positive in the New Cartesian Sign Convention?",
+      "probe": "Explain the New Cartesian Sign Convention for spherical mirrors.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain New Cartesian Sign Convention for Mirrors, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where do you start measuring distances for mirror problems, and on which side of the mirror does the object always sit?",
+          "requiredEvidence": [
+            "New Cartesian Sign Convention",
+            "pole",
+            "origin",
+            "principal axis",
+            "x-axis",
+            "object is always placed to the left",
+            "measured from the pole"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sc_origin",
+              "criterion": "States that in the New Cartesian Sign Convention the pole is the origin, the principal axis is the x-axis, the object is always to the left of the mirror, and distances are measured from the pole.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where do you start measuring distances for mirror problems, and on which side of the mirror does the object always sit?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "For a real object in front of a mirror, what sign does its distance carry and why?",
+          "requiredEvidence": [
+            "right of the origin",
+            "positive",
+            "left of the origin",
+            "negative",
+            "above the principal axis",
+            "below"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sc_signs",
+              "criterion": "States that distances to the right of the origin and above the principal axis are positive, while those to the left and below are negative.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "For a real object in front of a mirror, what sign does its distance carry and why?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_sc_left"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_sign_chain",
+          "linksChecks": [
+            "chk_sci10c9_sc_origin",
+            "chk_sci10c9_sc_signs"
+          ],
+          "criterion": "Connects the origin and axis to the positive and negative directions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_sc_left",
+          "wrong": "Distances in front of a mirror are measured as positive.",
+          "fix": "Distances measured to the left of the origin (along -x) are taken as negative, and the object is always placed to the left of the mirror.",
+          "checkId": "mchk_misc_sci10c9_sc_left",
+          "checkCriterion": "The answer states or implies this wrong idea: Distances in front of a mirror are measured as positive.",
+          "fixCheckId": "mfix_misc_sci10c9_sc_left",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Distances measured to the left of the origin (along -x) are taken as negative, and the object is always placed to the left of the mirror.",
+          "keyPointIds": [
+            "sci10c9_t2c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_sc_left"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_sc_origin",
+            "chk_sci10c9_sc_signs"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_sign_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t2_c3",
+      "topicId": "ncert_science_10_ch9_t2",
+      "topicTitle": "Ray Diagrams, Sign Convention, Mirror Formula and Magnification",
+      "label": "Mirror Formula and Magnification",
+      "headingType": "heading",
+      "sourcePages": [
+        143
+      ],
+      "conceptHash": "5d3865a9d313603d7ac1fe8d4bbc849cc76404c424da86686206d3f0a006b2bf",
+      "cardText": "In a spherical mirror the distance of the object from the pole is the object distance u, the distance of the image from the pole is the image distance v, and the distance of the principal focus from the pole is the focal length f. These are related by the mirror formula, 1/v + 1/u = 1/f, valid in all situations for all spherical mirrors and all positions of the object, as long as the New Cartesian Sign Convention is used. Magnification m is the ratio of the height of the image to the height of the object, m = h'/h, and is also -v/u. A negative sign for m indicates that the image is real; a positive sign indicates that it is virtual.",
+      "hint": "What does the mirror formula relate and what does the sign of the magnification tell you?",
+      "probe": "Explain the mirror formula and magnification, and what the sign of magnification tells about the image.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Mirror Formula and Magnification, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which three distances does the mirror formula connect, and what must you keep consistent when you put numbers in?",
+          "requiredEvidence": [
+            "object distance",
+            "image distance",
+            "focal length",
+            "mirror formula",
+            "valid in all situations",
+            "New Cartesian Sign Convention"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_mf_formula",
+              "criterion": "States that the mirror formula relates object distance u, image distance v and focal length f, is valid for all spherical mirrors and object positions, and needs the New Cartesian Sign Convention.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which three distances does the mirror formula connect, and what must you keep consistent when you put numbers in?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A calculation gives a magnification of -2 for one mirror and +0.5 for another. What can you say about each image?",
+          "requiredEvidence": [
+            "magnification",
+            "ratio of the height of the image to the height of the object",
+            "negative sign",
+            "real",
+            "positive sign",
+            "virtual"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_mf_magnification",
+              "criterion": "States that magnification is the ratio of image height to object height (also related to u and v), a negative value means a real image and a positive value a virtual image.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A calculation gives a magnification of -2 for one mirror and +0.5 for another. What can you say about each image?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_mf_sign"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_formula_chain",
+          "linksChecks": [
+            "chk_sci10c9_mf_formula",
+            "chk_sci10c9_mf_magnification"
+          ],
+          "criterion": "Connects u, v and f in the mirror formula to magnification and the meaning of its sign.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_mf_sign",
+          "wrong": "A negative magnification means the image is virtual.",
+          "fix": "A negative sign in the value of the magnification indicates that the image is real, and a positive sign indicates that the image is virtual.",
+          "checkId": "mchk_misc_sci10c9_mf_sign",
+          "checkCriterion": "The answer states or implies this wrong idea: A negative magnification means the image is virtual.",
+          "fixCheckId": "mfix_misc_sci10c9_mf_sign",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A negative sign in the value of the magnification indicates that the image is real, and a positive sign indicates that the image is virtual.",
+          "keyPointIds": [
+            "sci10c9_t2c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_mf_sign"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_mf_formula",
+            "chk_sci10c9_mf_magnification"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_formula_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t3_c1",
+      "topicId": "ncert_science_10_ch9_t3",
+      "topicTitle": "Refraction of Light, Snell's Law and Absolute Refractive Index",
+      "label": "Refraction of Light: Bending Between Media",
+      "headingType": "heading",
+      "sourcePages": [
+        145,
+        146,
+        147
+      ],
+      "conceptHash": "de4ba6e7de4471017e8d48f4fd77b9b17cc5e839c145684652b15aad65281400",
+      "cardText": "The bottom of a pond appears raised, letters under a glass slab appear raised, and a pencil partly in water appears displaced at the interface. The light from the part of the pencil inside water seems to come from a different direction compared with the part above it, and the effect differs for different pairs of media. When light travels obliquely from one medium to another, its direction of propagation in the second medium changes: this is refraction. Through a rectangular glass slab the ray bends towards the normal on entering the denser glass and away from the normal on leaving into the rarer air. The bending at the two parallel faces is equal and opposite, so the emergent ray is parallel to the incident ray, but shifted sideways. Refraction is due to a change in the speed of light as it enters from one transparent medium to another.",
+      "hint": "What causes a pencil in water to look bent and how does a ray pass through a glass slab?",
+      "probe": "Explain refraction of light and how a ray bends through a rectangular glass slab.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Refraction of Light: Bending Between Media, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does a straw look broken where it enters a glass of water?",
+          "requiredEvidence": [
+            "not travel in the same direction in all media",
+            "obliquely",
+            "direction of propagation",
+            "refraction of light",
+            "change in the speed of light",
+            "transparent medium"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rf_def",
+              "criterion": "Defines refraction as the change in direction of light travelling obliquely from one medium to another, due to a change in its speed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does a straw look broken where it enters a glass of water?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_rf_straight"
+          ]
+        },
+        {
+          "id": "sci10c9_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A ray passes in through one face of a glass block and out of the opposite parallel face. How does the leaving ray compare with the entering ray, and why?",
+          "requiredEvidence": [
+            "rarer medium to a denser medium",
+            "bent towards the normal",
+            "denser medium to a rarer medium",
+            "away from the normal",
+            "equal and opposite",
+            "parallel to the incident ray",
+            "shifted sideward"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_rf_slab",
+              "criterion": "States that in a glass slab the ray bends towards the normal on entering glass and away from it on leaving, equally and oppositely, so the emergent ray is parallel to the incident ray but shifted sideways.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A ray passes in through one face of a glass block and out of the opposite parallel face. How does the leaving ray compare with the entering ray, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_refraction_chain",
+          "linksChecks": [
+            "chk_sci10c9_rf_def",
+            "chk_sci10c9_rf_slab"
+          ],
+          "criterion": "Connects the speed change between media to the bending at each face and the parallel emergent ray.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_rf_straight",
+          "wrong": "Light always travels in the same direction in every medium.",
+          "fix": "Light does not travel in the same direction in all media; when travelling obliquely from one medium to another, its direction of propagation in the second medium changes, which is refraction.",
+          "checkId": "mchk_misc_sci10c9_rf_straight",
+          "checkCriterion": "The answer states or implies this wrong idea: Light always travels in the same direction in every medium.",
+          "fixCheckId": "mfix_misc_sci10c9_rf_straight",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Light does not travel in the same direction in all media; when travelling obliquely from one medium to another, its direction of propagation in the second medium changes, which is refraction.",
+          "keyPointIds": [
+            "sci10c9_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_rf_straight"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_rf_def",
+            "chk_sci10c9_rf_slab"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_refraction_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t3_c2",
+      "topicId": "ncert_science_10_ch9_t3",
+      "topicTitle": "Refraction of Light, Snell's Law and Absolute Refractive Index",
+      "label": "Laws of Refraction and Snell's Law",
+      "headingType": "heading",
+      "sourcePages": [
+        148
+      ],
+      "conceptHash": "a4dcaa1082db3f5e511617fe8f9e0b8753cd9b82d1ea76669de5c16e61582407",
+      "cardText": "Refraction of light follows two laws. First, the incident ray, the refracted ray and the normal to the interface of two transparent media at the point of incidence all lie in the same plane. Second, the ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant, for light of a given colour and for the given pair of media. This is also known as Snell's law of refraction, true for angles between 0 and 90 degrees. If i is the angle of incidence and r the angle of refraction, sin i / sin r is a constant, and this constant value is called the refractive index of the second medium with respect to the first.",
+      "hint": "State the two laws of refraction and what the constant in Snell's law is called.",
+      "probe": "Explain the laws of refraction including Snell's law.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Laws of Refraction and Snell's Law, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t3c2_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which three lines at a refracting surface always lie in one flat plane?",
+          "requiredEvidence": [
+            "incident ray",
+            "refracted ray",
+            "normal",
+            "interface of two transparent media",
+            "same plane"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sn_plane",
+              "criterion": "States the first law of refraction: the incident ray, refracted ray and normal at the point of incidence lie in the same plane.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which three lines at a refracting surface always lie in one flat plane?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When you change the angle at which light hits the same two media, what stays the same and what do we call it?",
+          "requiredEvidence": [
+            "ratio of sine of angle of incidence to the sine of angle of refraction",
+            "constant",
+            "given colour",
+            "given pair of media",
+            "Snell's law",
+            "refractive index"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_sn_snell",
+              "criterion": "States Snell's law: sin i / sin r is a constant for light of a given colour and a given pair of media, and this constant is the refractive index of the second medium with respect to the first.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When you change the angle at which light hits the same two media, what stays the same and what do we call it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_sn_angle"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_snell_chain",
+          "linksChecks": [
+            "chk_sci10c9_sn_plane",
+            "chk_sci10c9_sn_snell"
+          ],
+          "criterion": "Connects the two laws to the constant sin i / sin r being the refractive index.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_sn_angle",
+          "wrong": "The angle of refraction is always equal to the angle of incidence.",
+          "fix": "The ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant for a given pair of media; the two angles are generally different.",
+          "checkId": "mchk_misc_sci10c9_sn_angle",
+          "checkCriterion": "The answer states or implies this wrong idea: The angle of refraction is always equal to the angle of incidence.",
+          "fixCheckId": "mfix_misc_sci10c9_sn_angle",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The ratio of the sine of the angle of incidence to the sine of the angle of refraction is a constant for a given pair of media; the two angles are generally different.",
+          "keyPointIds": [
+            "sci10c9_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_sn_angle"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_sn_snell"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c9_sn_plane",
+            "lnk_sci10c9_snell_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t3_c3",
+      "topicId": "ncert_science_10_ch9_t3",
+      "topicTitle": "Refraction of Light, Snell's Law and Absolute Refractive Index",
+      "label": "Refractive Index and Optical Density",
+      "headingType": "heading",
+      "sourcePages": [
+        148,
+        149
+      ],
+      "conceptHash": "8522463a000fa9594d4769450e73fa34c2438bc7f2893b827fa53010aef9fa5b",
+      "cardText": "Light travels fastest in vacuum, at 3×10^8 m/s; in air it is only marginally less, and it reduces considerably in glass or water. The refractive index of medium 2 with respect to medium 1 is the ratio of the speed of light in medium 1 to its speed in medium 2. If medium 1 is vacuum or air, this is the absolute refractive index of the medium, the ratio of the speed of light in air to the speed in the medium. For example water has n = 1.33 and crown glass 1.52. The medium with the larger refractive index is optically denser, which may not mean greater mass density: kerosene is optically denser than water though lighter. Light speeds are higher in a rarer medium, so a ray going rarer to denser slows down and bends towards the normal, and going denser to rarer speeds up and bends away from the normal.",
+      "hint": "How are refractive index, speed of light and optical density connected?",
+      "probe": "Explain refractive index in terms of the speed of light and what optically denser means.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Refractive Index and Optical Density, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "If the refractive index of glass is 1.5, what does that tell you about how fast light goes in glass compared with air?",
+          "requiredEvidence": [
+            "different speeds in different media",
+            "fastest in vacuum",
+            "refractive index",
+            "ratio of the speed of light in air",
+            "speed of light in the medium",
+            "absolute refractive index"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_ri_speed",
+              "criterion": "States that light travels with different speeds in different media (fastest in vacuum), and that the refractive index of a medium is the ratio of the speed of light in air or vacuum to the speed in the medium.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "If the refractive index of glass is 1.5, what does that tell you about how fast light goes in glass compared with air?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t3c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "A ray goes from air into water. Does it speed up or slow down, and which way does it turn relative to the perpendicular at the surface?",
+          "requiredEvidence": [
+            "larger refractive index",
+            "optically denser medium",
+            "not possess greater mass density",
+            "speed of light is higher in a rarer medium",
+            "slows down",
+            "bends towards the normal",
+            "speeds up",
+            "away from the normal"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_ri_dense",
+              "criterion": "States that the medium with the larger refractive index is optically denser (not necessarily of greater mass density), and that light slows and bends towards the normal entering a denser medium and speeds up and bends away entering a rarer one.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "A ray goes from air into water. Does it speed up or slow down, and which way does it turn relative to the perpendicular at the surface?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_ri_mass"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_ri_chain",
+          "linksChecks": [
+            "chk_sci10c9_ri_speed",
+            "chk_sci10c9_ri_dense"
+          ],
+          "criterion": "Connects the speed of light in a medium to refractive index, optical density and the direction of bending.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_ri_mass",
+          "wrong": "A medium with greater mass density always has a greater refractive index.",
+          "fix": "An optically denser medium may not possess greater mass density: kerosene has a higher refractive index and is optically denser than water, although its mass density is less.",
+          "checkId": "mchk_misc_sci10c9_ri_mass",
+          "checkCriterion": "The answer states or implies this wrong idea: A medium with greater mass density always has a greater refractive index.",
+          "fixCheckId": "mfix_misc_sci10c9_ri_mass",
+          "fixCheckCriterion": "Answer 2 states the correct idea: An optically denser medium may not possess greater mass density: kerosene has a higher refractive index and is optically denser than water, although its mass density is less.",
+          "keyPointIds": [
+            "sci10c9_t3c3_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_ri_mass"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_ri_speed",
+            "chk_sci10c9_ri_dense"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_ri_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t4_c1",
+      "topicId": "ncert_science_10_ch9_t4",
+      "topicTitle": "Image Formation by Spherical Lenses, Lens Formula and Power of a Lens",
+      "label": "Convex and Concave Lenses and Their Terms",
+      "headingType": "heading",
+      "sourcePages": [
+        150,
+        151
+      ],
+      "conceptHash": "a628c3589962e527710287a487429dbb6f20d9653cab06da0a39573df17de371",
+      "cardText": "A transparent material bound by two surfaces, of which one or both are spherical, forms a lens. A double convex lens bulges outwards on both sides, is thicker at the middle than at the edges and converges light rays, so it is a converging lens. A double concave lens is curved inwards, thicker at the edges than at the middle, and diverges light rays, so it is a diverging lens. The centres of the two spheres are the centres of curvature C1 and C2, and the line through them is the principal axis. The central point is the optical centre O, and a ray through it passes without any deviation. The aperture is the effective diameter of the lens outline. Parallel rays converge to the principal focus of a convex lens, or appear to diverge from that of a concave lens; a lens has two principal foci, F1 and F2, and the distance from the optical centre to a focus is the focal length f.",
+      "hint": "How do convex and concave lenses bend parallel rays and what are the optical centre and principal focus?",
+      "probe": "Explain convex and concave lenses and define optical centre, principal axis, principal focus and focal length.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Convex and Concave Lenses and Their Terms, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Feel two magnifying glasses, one thick in the centre and one thin in the centre. What does each do to a beam of parallel light?",
+          "requiredEvidence": [
+            "lens",
+            "spherical",
+            "convex lens",
+            "thicker at the middle",
+            "converges light rays",
+            "converging lenses",
+            "concave lens",
+            "thicker at the edges",
+            "diverges light rays",
+            "diverging lenses"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_ls_types",
+              "criterion": "States that a convex lens (bulging outwards, thicker at the middle) converges light rays and a concave lens (curved inwards, thicker at the edges) diverges them.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Feel two magnifying glasses, one thick in the centre and one thin in the centre. What does each do to a beam of parallel light?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does sunlight go after passing through a convex lens, and how do you use that to estimate the lens's focal length?",
+          "requiredEvidence": [
+            "principal axis",
+            "optical centre",
+            "without suffering any deviation",
+            "converging to a point",
+            "principal focus",
+            "appearing to diverge",
+            "two principal foci",
+            "focal length"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_ls_focus",
+              "criterion": "States that the optical centre is the lens's central point (a ray through it is undeviated), parallel rays converge to or appear to diverge from the principal focus, a lens has two foci, and the distance from optical centre to focus is the focal length.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does sunlight go after passing through a convex lens, and how do you use that to estimate the lens's focal length?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_ls_deviate"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_lens_chain",
+          "linksChecks": [
+            "chk_sci10c9_ls_types",
+            "chk_sci10c9_ls_focus"
+          ],
+          "criterion": "Connects the shapes of the lenses to converging and diverging action and to the focus and optical centre.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_ls_deviate",
+          "wrong": "A ray through the centre of a lens is bent like any other ray.",
+          "fix": "A ray of light through the optical centre of a lens passes without suffering any deviation.",
+          "checkId": "mchk_misc_sci10c9_ls_deviate",
+          "checkCriterion": "The answer states or implies this wrong idea: A ray through the centre of a lens is bent like any other ray.",
+          "fixCheckId": "mfix_misc_sci10c9_ls_deviate",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A ray of light through the optical centre of a lens passes without suffering any deviation.",
+          "keyPointIds": [
+            "sci10c9_t4c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_ls_deviate"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_ls_types",
+            "chk_sci10c9_ls_focus"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_lens_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t4_c2",
+      "topicId": "ncert_science_10_ch9_t4",
+      "topicTitle": "Image Formation by Spherical Lenses, Lens Formula and Power of a Lens",
+      "label": "Image Formation by Convex and Concave Lenses",
+      "headingType": "heading",
+      "sourcePages": [
+        152,
+        153,
+        154
+      ],
+      "conceptHash": "ba7983b88040e4aed5c94f4917ab82174833b257137d8bd46788b77696c6828b",
+      "cardText": "Lenses form images by refracting light. For a convex lens the image depends on the object's position relative to F and 2F. A real, inverted image forms when the object is at infinity (at F2, point-sized), beyond 2F1 (between F2 and 2F2, diminished), at 2F1 (at 2F2, same size) or between F1 and 2F1 (beyond 2F2, enlarged). At F1 the image is at infinity. Between F1 and the optical centre the image is virtual, erect and enlarged, on the same side as the object. A concave lens always gives a virtual, erect and diminished image, irrespective of the position of the object, between the focus F1 and the optical centre. For ray diagrams, any two of three rays are used: a parallel ray through the focus, a ray through the focus emerging parallel, and a ray through the optical centre undeviated.",
+      "hint": "How does the image formed by a convex lens change with object position, and what does a concave lens always give?",
+      "probe": "Explain the images formed by convex and concave lenses and the rays used to draw them.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Image Formation by Convex and Concave Lenses, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Explain how a magnifying glass gets a bigger, upright view of a small insect and where the insect must be relative to the lens.",
+          "requiredEvidence": [
+            "position of the object",
+            "beyond 2F1",
+            "real and inverted",
+            "diminished",
+            "at 2F1",
+            "same size",
+            "enlarged",
+            "virtual and erect",
+            "between focus F1 and optical centre"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_li_convex",
+              "criterion": "States that a convex lens gives real, inverted images (diminished beyond 2F, same size at 2F, enlarged between F and 2F) for objects beyond F, and a virtual, erect, enlarged image for an object between F and the optical centre.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Explain how a magnifying glass gets a bigger, upright view of a small insect and where the insect must be relative to the lens."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci10c9_t4c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "No matter how far or near you hold an object, what two things can you always say about the image a concave lens makes of it?",
+          "requiredEvidence": [
+            "concave lens",
+            "virtual, erect and diminished",
+            "irrespective of the position of the object",
+            "at infinity",
+            "highly diminished",
+            "between focus F1 and optical centre"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_li_concave",
+              "criterion": "States that a concave lens always forms a virtual, erect, diminished image between its focus and optical centre, whatever the position of the object.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "No matter how far or near you hold an object, what two things can you always say about the image a concave lens makes of it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_li_concave_real"
+          ]
+        },
+        {
+          "id": "sci10c9_t4c2_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which three rays are easiest to draw to find where a lens forms an image, and how does each behave?",
+          "requiredEvidence": [
+            "parallel to the principal axis",
+            "principal focus",
+            "emerge parallel",
+            "optical centre",
+            "without any deviation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_li_rays",
+              "criterion": "States the rays used for lens ray diagrams: a ray parallel to the axis goes through the focus, a ray through the focus emerges parallel, and a ray through the optical centre goes straight on undeviated.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which three rays are easiest to draw to find where a lens forms an image, and how does each behave?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_lensimg_chain",
+          "linksChecks": [
+            "chk_sci10c9_li_convex",
+            "chk_sci10c9_li_concave",
+            "chk_sci10c9_li_rays"
+          ],
+          "criterion": "Connects object position to the nature of the image for convex lenses, the constant image of a concave lens and the rays used in diagrams.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_li_concave_real",
+          "wrong": "A concave lens can form a real image when the object is far enough away.",
+          "fix": "A concave lens will always give a virtual, erect and diminished image, irrespective of the position of the object.",
+          "checkId": "mchk_misc_sci10c9_li_concave_real",
+          "checkCriterion": "The answer states or implies this wrong idea: A concave lens can form a real image when the object is far enough away.",
+          "fixCheckId": "mfix_misc_sci10c9_li_concave_real",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A concave lens will always give a virtual, erect and diminished image, irrespective of the position of the object.",
+          "keyPointIds": [
+            "sci10c9_t4c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 5
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_li_concave_real"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_li_convex",
+            "chk_sci10c9_li_concave"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c9_li_rays",
+            "lnk_sci10c9_lensimg_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t4_c3",
+      "topicId": "ncert_science_10_ch9_t4",
+      "topicTitle": "Image Formation by Spherical Lenses, Lens Formula and Power of a Lens",
+      "label": "Lens Formula, Sign Convention and Magnification",
+      "headingType": "heading",
+      "sourcePages": [
+        155,
+        156
+      ],
+      "conceptHash": "a47211069da07ec2c24c38721eb5397a8fbf67b6a3d46387db6a04679574f771",
+      "cardText": "For lenses we follow a sign convention similar to the one for spherical mirrors, with all distances measured from the optical centre. The focal length of a convex lens is positive and that of a concave lens is negative. The lens formula gives the relationship between the object distance u, image distance v and focal length f, 1/v - 1/u = 1/f. It is general and valid in all situations for any spherical lens, but signs must be applied properly. Magnification by a lens is the ratio of the height of the image to the height of the object, m = h'/h, which is also v/u. A positive magnification means an erect, virtual image and a negative one an inverted, real image.",
+      "hint": "What does the lens formula relate and what are the signs of f for convex and concave lenses?",
+      "probe": "Explain the sign convention for lenses, the lens formula and magnification.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Lens Formula, Sign Convention and Magnification, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t4c3_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "When you substitute into a lens problem, from which point are all distances measured and which sign does each type of lens's focal length take?",
+          "requiredEvidence": [
+            "sign convention",
+            "optical centre",
+            "focal length of a convex lens is positive",
+            "concave lens is negative"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_lf_sign",
+              "criterion": "States that the lens sign convention is like that for mirrors but with distances measured from the optical centre; f is positive for a convex lens and negative for a concave lens.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "When you substitute into a lens problem, from which point are all distances measured and which sign does each type of lens's focal length take?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_lf_mirror"
+          ]
+        },
+        {
+          "id": "sci10c9_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which three quantities does the lens formula connect, and how do you describe the size change an image has compared to the object?",
+          "requiredEvidence": [
+            "lens formula",
+            "object-distance",
+            "image-distance",
+            "focal length",
+            "valid in all situations",
+            "magnification",
+            "ratio of the height of the image and the height of the object"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_lf_formula",
+              "criterion": "States that the lens formula relates u, v and f for any spherical lens (with proper signs), and that magnification is the ratio of image height to object height, also related to v and u.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which three quantities does the lens formula connect, and how do you describe the size change an image has compared to the object?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_lensform_chain",
+          "linksChecks": [
+            "chk_sci10c9_lf_sign",
+            "chk_sci10c9_lf_formula"
+          ],
+          "criterion": "Connects the sign convention to the lens formula and to magnification.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_lf_mirror",
+          "wrong": "The lens formula is the same as the mirror formula, with identical signs for f.",
+          "fix": "For lenses the same sign rules apply, except that all measurements are taken from the optical centre, and the focal length of a convex lens is positive and of a concave lens negative.",
+          "checkId": "mchk_misc_sci10c9_lf_mirror",
+          "checkCriterion": "The answer states or implies this wrong idea: The lens formula is the same as the mirror formula, with identical signs for f.",
+          "fixCheckId": "mfix_misc_sci10c9_lf_mirror",
+          "fixCheckCriterion": "Answer 2 states the correct idea: For lenses the same sign rules apply, except that all measurements are taken from the optical centre, and the focal length of a convex lens is positive and of a concave lens negative.",
+          "keyPointIds": [
+            "sci10c9_t4c3_kp1"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_lf_mirror"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_lf_formula"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci10c9_lf_sign",
+            "lnk_sci10c9_lensform_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci10_ch9_t4_c4",
+      "topicId": "ncert_science_10_ch9_t4",
+      "topicTitle": "Image Formation by Spherical Lenses, Lens Formula and Power of a Lens",
+      "label": "Power of a Lens and the Dioptre",
+      "headingType": "heading",
+      "sourcePages": [
+        157,
+        158
+      ],
+      "conceptHash": "d5f4a5fa57dce50605f0d39f3d2bbfad2db28c3efa2464311d6bcc4f6571f8eb",
+      "cardText": "The ability of a lens to converge or diverge light rays depends on its focal length: a convex lens of short focal length bends rays through large angles, and a concave lens of very short focal length causes higher divergence. This degree of convergence or divergence is expressed as the power of the lens, the reciprocal of its focal length: P = 1/f. The SI unit of power is the dioptre, D; if f is in metres, power is in dioptres, so 1 dioptre is the power of a lens of focal length 1 metre. The power of a convex lens is positive and of a concave lens negative. A prescription of +2.0 D means a convex lens of focal length +0.50 m, and -2.5 D a concave lens of focal length -0.40 m. The net power of lenses in contact is the algebraic sum of their individual powers.",
+      "hint": "What is the power of a lens, its unit and its sign for convex and concave lenses?",
+      "probe": "Explain the power of a lens, its SI unit and how to read a lens prescription.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Power of a Lens and the Dioptre, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci10c9_t4c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Two lenses have focal lengths of 0.5 m and 2 m. Which one bends light more, and how would you express that as a number?",
+          "requiredEvidence": [
+            "degree of convergence or divergence",
+            "power",
+            "reciprocal of its focal length",
+            "dioptre",
+            "metres",
+            "focal length is 1 metre"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_pw_def",
+              "criterion": "States that the power of a lens is the reciprocal of its focal length, measured in dioptres when f is in metres, and 1 dioptre is the power of a lens of focal length 1 m.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Two lenses have focal lengths of 0.5 m and 2 m. Which one bends light more, and how would you express that as a number?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci10c9_pw_negative"
+          ]
+        },
+        {
+          "id": "sci10c9_t4c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "An optician prescribes a lens of power -3 D. What sort of lens is it, and what sort of lens would +3 D be?",
+          "requiredEvidence": [
+            "power of a convex lens is positive",
+            "concave lens is negative",
+            "+ 2.0 D",
+            "convex",
+            "- 2.5 D",
+            "concave",
+            "algebraic sum"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci10c9_pw_sign",
+              "criterion": "States that convex lenses have positive power and concave lenses negative power (e.g. +2.0 D convex with f = +0.50 m, -2.5 D concave with f = -0.40 m), and that powers of lenses in contact add algebraically.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "An optician prescribes a lens of power -3 D. What sort of lens is it, and what sort of lens would +3 D be?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci10c9_power_chain",
+          "linksChecks": [
+            "chk_sci10c9_pw_def",
+            "chk_sci10c9_pw_sign"
+          ],
+          "criterion": "Connects focal length to power, its dioptre unit and its sign for the two lens types.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci10c9_pw_negative",
+          "wrong": "A larger focal length means a more powerful lens.",
+          "fix": "Power is the reciprocal of the focal length, so a lens with a shorter focal length bends the rays more and has greater power.",
+          "checkId": "mchk_misc_sci10c9_pw_negative",
+          "checkCriterion": "The answer states or implies this wrong idea: A larger focal length means a more powerful lens.",
+          "fixCheckId": "mfix_misc_sci10c9_pw_negative",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Power is the reciprocal of the focal length, so a lens with a shorter focal length bends the rays more and has greater power.",
+          "keyPointIds": [
+            "sci10c9_t4c4_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci10c9_pw_negative"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci10c9_pw_def",
+            "chk_sci10c9_pw_sign"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci10c9_power_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

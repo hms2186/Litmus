@@ -1,0 +1,1400 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_ss_9_ch3.json",
+  "sourceSha256": "08827fba1643fc7d01ea01e6b6f89994594ac9682bfbd1c31f7ed3dee7073f24",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Geography",
+  "book": "Understanding Society: India and Beyond (Grade 9, Part 1)",
+  "chapterNumber": 3,
+  "chapterName": "Atmosphere and Climate",
+  "articulationChecks": [
+    {
+      "id": "chk_ss9a3_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_ss9a3_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example atmosphere, troposphere, stratosphere, mesosphere, thermosphere, exosphere, weather, climate.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "atmosphere",
+    "troposphere",
+    "stratosphere",
+    "mesosphere",
+    "thermosphere",
+    "exosphere",
+    "weather",
+    "climate",
+    "insolation",
+    "humidity",
+    "precipitation",
+    "air pressure",
+    "wind",
+    "monsoon",
+    "south-west monsoon",
+    "north-east monsoon",
+    "climate change",
+    "greenhouse gases",
+    "carbon footprint"
+  ],
+  "concepts": [
+    {
+      "conceptId": "soc9a_ch3_t1_c1",
+      "topicId": "ncert_ss9a_ch3_t1",
+      "topicTitle": "Atmospheric Composition and Layered Structure",
+      "label": "The Atmosphere and Its Composition",
+      "headingType": "heading",
+      "sourcePages": [
+        39,
+        40
+      ],
+      "conceptHash": "7a9fe88f8ff5b7dcb7069229040736579f7232d5f20a13e70053cfd8777d9ac3",
+      "cardText": "The atmosphere is a blanket of air surrounding the Earth, pulled down around it by gravity, and a mixture of gases in various proportions, vital for the survival of all living beings. It shields us from harmful radiation from the Sun, including ultraviolet radiation, and regulates the Earth's temperature by trapping some of the Sun's energy and preventing it from escaping back into space. It is a key component of the Earth's weather and climate systems, influencing temperature, humidity and air pressure. Nitrogen and oxygen are the two primary and most abundant gases, essential to life; carbon dioxide, argon, helium, neon, krypton, xenon, ozone and hydrogen are present in lesser quantities. The atmosphere also contains water vapour, generally 0.1 to 0.4 per cent, which plays a significant role in cloud formation and precipitation, and tiny dust particles.",
+      "hint": "What is the atmosphere made of and what does it do for life on Earth?",
+      "probe": "Explain what the atmosphere is, its composition and its importance.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Atmosphere and Its Composition, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t1c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "List what the air around us is made of, from the largest shares to the tiny amounts and the water and dust it also holds.",
+          "requiredEvidence": [
+            "mixture of various gases",
+            "nitrogen and oxygen",
+            "most abundant gases",
+            "carbon dioxide, argon",
+            "lesser quantities",
+            "water vapour",
+            "tiny dust particles"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_at_comp",
+              "criterion": "States that the atmosphere is a mixture of gases, mainly nitrogen and oxygen, with smaller amounts of carbon dioxide, argon and others, plus water vapour and dust.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "List what the air around us is made of, from the largest shares to the tiny amounts and the water and dust it also holds."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_at_oxygen"
+          ]
+        },
+        {
+          "id": "ss9a3_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Imagine the Earth with no atmosphere. What protection and temperature control would be lost?",
+          "requiredEvidence": [
+            "blanket of air",
+            "gravity",
+            "vital for the survival",
+            "shields us from the harmful radiation",
+            "ultraviolet radiation",
+            "regulates the Earth's temperature",
+            "trapping some of the Sun's energy",
+            "weather and climate"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_at_role",
+              "criterion": "States that the atmosphere, held by gravity, shields life from the Sun's harmful (ultraviolet) radiation, regulates temperature by trapping some of the Sun's energy, and is a key part of weather and climate.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Imagine the Earth with no atmosphere. What protection and temperature control would be lost?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_atmos_chain",
+          "linksChecks": [
+            "chk_ss9a3_at_comp",
+            "chk_ss9a3_at_role"
+          ],
+          "criterion": "Connects the composition of the atmosphere to its protective and regulating functions.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_at_oxygen",
+          "wrong": "Oxygen is the most abundant gas in the atmosphere.",
+          "fix": "Nitrogen and oxygen are the two primary and most abundant gases, with nitrogen the largest share (78%) and oxygen about 21%.",
+          "checkId": "mchk_misc_ss9a3_at_oxygen",
+          "checkCriterion": "The answer states or implies this wrong idea: Oxygen is the most abundant gas in the atmosphere.",
+          "fixCheckId": "mfix_misc_ss9a3_at_oxygen",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Nitrogen and oxygen are the two primary and most abundant gases, with nitrogen the largest share (78%) and oxygen about 21%.",
+          "keyPointIds": [
+            "ss9a3_t1c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_at_oxygen"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_at_comp",
+            "chk_ss9a3_at_role"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_atmos_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t1_c2",
+      "topicId": "ncert_ss9a_ch3_t1",
+      "topicTitle": "Atmospheric Composition and Layered Structure",
+      "label": "Layers of the Atmosphere: Troposphere, Stratosphere and Mesosphere",
+      "headingType": "heading",
+      "sourcePages": [
+        40,
+        41,
+        42
+      ],
+      "conceptHash": "f439ff3d1f968da12ea5ac300c1f3bd27733380a3ab530253da1a6f0fd0f6488",
+      "cardText": "The atmosphere has a layered structure defined by changes in temperature and density with altitude; the density of air is highest near the Earth's surface and decreases with altitude. The troposphere is the most important layer, with an average height of about 12 km. Temperature decreases with altitude here. It holds the air we breathe, most of the water vapour and clouds, and nearly all weather phenomena such as rainfall, fog and hail. Above it lies the stratosphere, up to 50 km, free of clouds and weather disturbances and so ideal for flying aeroplanes; it contains the ozone layer, which shields us by filtering the Sun's harmful radiation, including ultraviolet. The mesosphere extends up to 80 km, where temperature decreases with altitude and most meteorites entering from space burn up. Temperature decreases with altitude only in the troposphere and mesosphere.",
+      "hint": "Which layers lie nearest the Earth and what happens in each?",
+      "probe": "Describe the troposphere, stratosphere and mesosphere and what makes each important.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Layers of the Atmosphere: Troposphere, Stratosphere and Mesosphere, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "In which layer do clouds and rain belong, and what happens to temperature as you climb through it?",
+          "requiredEvidence": [
+            "troposphere",
+            "most important layer",
+            "12 kilometres",
+            "temperature decreases",
+            "air we breathe",
+            "water vapour and clouds",
+            "rainfall, fog, and hail"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_ly_trop",
+              "criterion": "States that the troposphere, about 12 km high, is where temperature falls with altitude, where the air we breathe, most water vapour and clouds are found, and where nearly all weather occurs.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which layer do clouds and rain belong, and what happens to temperature as you climb through it?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_ly_weather"
+          ]
+        },
+        {
+          "id": "ss9a3_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do aeroplanes cruise in the layer above the weather, and which gas in that layer protects us from the Sun's harmful rays?",
+          "requiredEvidence": [
+            "stratosphere",
+            "up to 50 kilometres",
+            "free of clouds",
+            "ideal for flying aeroplanes",
+            "ozone",
+            "filtering the Sun's harmful radiation",
+            "mesosphere",
+            "80 kilometres",
+            "meteorites",
+            "burn up"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_ly_strat_meso",
+              "criterion": "States that the stratosphere (up to 50 km) is cloud-free, good for aeroplanes and holds the ozone layer filtering harmful radiation, and that the mesosphere (up to 80 km) is where most meteorites burn up.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do aeroplanes cruise in the layer above the weather, and which gas in that layer protects us from the Sun's harmful rays?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_layers_chain",
+          "linksChecks": [
+            "chk_ss9a3_ly_trop",
+            "chk_ss9a3_ly_strat_meso"
+          ],
+          "criterion": "Connects each lower layer to its key features and importance.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_ly_weather",
+          "wrong": "Weather phenomena like rain and hail occur in the stratosphere.",
+          "fix": "Nearly all the weather phenomena, such as rainfall, fog and hail, occur in the troposphere; the stratosphere is free of clouds and weather disturbances.",
+          "checkId": "mchk_misc_ss9a3_ly_weather",
+          "checkCriterion": "The answer states or implies this wrong idea: Weather phenomena like rain and hail occur in the stratosphere.",
+          "fixCheckId": "mfix_misc_ss9a3_ly_weather",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Nearly all the weather phenomena, such as rainfall, fog and hail, occur in the troposphere; the stratosphere is free of clouds and weather disturbances.",
+          "keyPointIds": [
+            "ss9a3_t1c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_ly_weather"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_ly_trop",
+            "chk_ss9a3_ly_strat_meso"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_layers_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t1_c3",
+      "topicId": "ncert_ss9a_ch3_t1",
+      "topicTitle": "Atmospheric Composition and Layered Structure",
+      "label": "The Thermosphere and Exosphere",
+      "headingType": "heading",
+      "sourcePages": [
+        42,
+        43
+      ],
+      "conceptHash": "1dbd895aa3c8ba056db3945d8c4296fd9034c5932bc42e3de08a601f61dc0a94",
+      "cardText": "In the thermosphere, which extends from 80 to 700 km, temperature rises very rapidly with altitude because gas molecules absorb the X-rays and short-wave ultraviolet radiation of the Sun. It helps radio transmission by reflecting radio waves back towards the Earth, the ionosphere is part of it, and the northern and southern lights (auroras) occur here: solar wind, charged particles from the Sun, is directed towards the magnetic poles and interacts with atmospheric gases, each gas glowing a particular colour. The exosphere is the uppermost layer, with very thin air, where light gases like helium and hydrogen float into space because of weak gravity. All these layers play a vital role in the Earth's atmospheric processes and affect weather and climate.",
+      "hint": "What happens in the thermosphere and exosphere?",
+      "probe": "Describe the thermosphere and exosphere and the features associated with them.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Thermosphere and Exosphere, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t1c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does temperature climb steeply in the layer where the northern and southern lights appear, and how does that layer help radio signals?",
+          "requiredEvidence": [
+            "thermosphere",
+            "temperature rises very rapidly",
+            "absorb the X-rays and short-wave ultraviolet radiation",
+            "80 to 700 km",
+            "reflecting radio waves",
+            "auroras"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_up_thermo",
+              "criterion": "States that in the thermosphere (80 to 700 km) temperature rises rapidly as gas molecules absorb X-rays and short-wave ultraviolet radiation, radio waves are reflected back to Earth, and auroras occur.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does temperature climb steeply in the layer where the northern and southern lights appear, and how does that layer help radio signals?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_up_cool"
+          ]
+        },
+        {
+          "id": "ss9a3_t1c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the outermost layer like, and why can light gases leave the Earth from there?",
+          "requiredEvidence": [
+            "exosphere",
+            "uppermost layer",
+            "very thin air",
+            "helium and hydrogen",
+            "float into space",
+            "weak gravity"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_up_exo",
+              "criterion": "States that the exosphere is the uppermost layer with very thin air from which light gases like helium and hydrogen float into space because gravity is weak.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the outermost layer like, and why can light gases leave the Earth from there?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_upper_chain",
+          "linksChecks": [
+            "chk_ss9a3_up_thermo",
+            "chk_ss9a3_up_exo"
+          ],
+          "criterion": "Connects absorption of solar radiation in the thermosphere to its uses and phenomena and to the thin exosphere.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_up_cool",
+          "wrong": "Temperature keeps falling with altitude in the thermosphere.",
+          "fix": "In the thermosphere temperature rises very rapidly with increasing altitude because gas molecules absorb X-rays and short-wave ultraviolet radiation.",
+          "checkId": "mchk_misc_ss9a3_up_cool",
+          "checkCriterion": "The answer states or implies this wrong idea: Temperature keeps falling with altitude in the thermosphere.",
+          "fixCheckId": "mfix_misc_ss9a3_up_cool",
+          "fixCheckCriterion": "Answer 2 states the correct idea: In the thermosphere temperature rises very rapidly with increasing altitude because gas molecules absorb X-rays and short-wave ultraviolet radiation.",
+          "keyPointIds": [
+            "ss9a3_t1c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_up_cool"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_up_thermo"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a3_up_exo",
+            "lnk_ss9a3_upper_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t2_c1",
+      "topicId": "ncert_ss9a_ch3_t2",
+      "topicTitle": "Atmospheric Pressure, Temperature Zones and Wind Dynamics",
+      "label": "Weather and Climate and Their Elements",
+      "headingType": "heading",
+      "sourcePages": [
+        43,
+        44
+      ],
+      "conceptHash": "7c30f6d3b6f749b0fd1e93fd2e0d2f245b232be79031f857217ecfdb7f942c99",
+      "cardText": "Weather refers to the hour-to-hour and day-to-day conditions of the atmosphere, and it can vary significantly from day to day. The average weather conditions of a place over a longer period make up its climate: the sum total of weather conditions and variations over a large area for an extended period, usually thirty years or more. The major elements of the atmosphere that impact human life are temperature, precipitation, humidity, wind and atmospheric pressure. Temperature varies between day and night and across seasons. An important factor is insolation, the incoming solar energy intercepted by the Earth, which decreases from the equator towards the poles, so temperature also decreases from the equator towards the poles. Humidity is the presence of water vapour in the air, higher when air is warmer. Precipitation occurs when air saturated with water vapour condenses and falls as drizzle, rain, snow, sleet or hail.",
+      "hint": "How are weather and climate different and what are their main elements?",
+      "probe": "Explain the difference between weather and climate and describe temperature, humidity and precipitation.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Weather and Climate and Their Elements, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is a cold wet Monday a statement about a place's weather or its climate, and what would you need to know to talk about its climate?",
+          "requiredEvidence": [
+            "hour-to-hour and day-to-day conditions",
+            "weather can vary significantly",
+            "average weather conditions",
+            "longer period of time",
+            "climate",
+            "thirty years or more"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_wc_def",
+              "criterion": "Distinguishes weather (hour-to-hour and day-to-day conditions of the atmosphere) from climate (the sum total of weather conditions over a large area for an extended period, usually thirty years or more).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is a cold wet Monday a statement about a place's weather or its climate, and what would you need to know to talk about its climate?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_wc_same"
+          ]
+        },
+        {
+          "id": "ss9a3_t2c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are the poles colder than the equator, and what has to happen to the air before rain or snow can fall?",
+          "requiredEvidence": [
+            "temperature, precipitation, humidity, wind, and atmospheric pressure",
+            "insolation decreases from the equator towards the poles",
+            "humidity",
+            "presence of water vapour",
+            "warmer",
+            "precipitation",
+            "saturated with water vapour",
+            "condenses"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_wc_elements",
+              "criterion": "Names the elements of weather and climate (temperature, precipitation, humidity, wind, pressure) and explains that insolation, and so temperature, falls from the equator to the poles, humidity is water vapour in the air (higher when warm) and precipitation occurs when saturated air condenses and falls.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are the poles colder than the equator, and what has to happen to the air before rain or snow can fall?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_weather_chain",
+          "linksChecks": [
+            "chk_ss9a3_wc_def",
+            "chk_ss9a3_wc_elements"
+          ],
+          "criterion": "Connects the definitions of weather and climate to the elements, especially temperature, humidity and precipitation.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_wc_same",
+          "wrong": "Weather and climate are the same thing.",
+          "fix": "Weather is the hour-to-hour and day-to-day condition of the atmosphere, while climate is the sum total of weather conditions over a large area for an extended period of time, usually thirty years or more.",
+          "checkId": "mchk_misc_ss9a3_wc_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Weather and climate are the same thing.",
+          "fixCheckId": "mfix_misc_ss9a3_wc_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Weather is the hour-to-hour and day-to-day condition of the atmosphere, while climate is the sum total of weather conditions over a large area for an extended period of time, usually thirty years or more.",
+          "keyPointIds": [
+            "ss9a3_t2c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_wc_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_wc_def",
+            "chk_ss9a3_wc_elements"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_weather_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t2_c2",
+      "topicId": "ncert_ss9a_ch3_t2",
+      "topicTitle": "Atmospheric Pressure, Temperature Zones and Wind Dynamics",
+      "label": "Air Pressure, Wind and Local Winds",
+      "headingType": "heading",
+      "sourcePages": [
+        45,
+        46
+      ],
+      "conceptHash": "c9eb5f1cbd156ed1348378107663dae4d8f007c3009dea4c39a9364df67ce17d",
+      "cardText": "The pressure exerted by the weight of air on the Earth's surface is air pressure. It is highest at sea level and falls rapidly as we go higher. Horizontally, it is influenced by the air's temperature: in areas with high temperatures air heats up and rises, creating a low-pressure area, associated with cloudy skies and wet weather; in colder areas air is heavy and sinks, creating a high-pressure area, associated with clear and sunny skies. Air always moves from high-pressure areas to low-pressure areas, and this movement is called wind. Winds are named after the direction they blow from. A sea breeze blows from sea to land during the day, when land is warmer and a low-pressure region forms over land; a land breeze blows from land to sea at night, when land cools faster than the sea.",
+      "hint": "How do pressure differences cause wind and how do land and sea breezes work?",
+      "probe": "Explain air pressure, how wind is caused and how land and sea breezes arise.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Air Pressure, Wind and Local Winds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is the sky usually clear where the air is cold and sinking, and where does air flow when two places have different pressures?",
+          "requiredEvidence": [
+            "weight of air",
+            "air pressure",
+            "highest at sea level",
+            "decreases with altitude",
+            "heats up and rises",
+            "low-pressure area",
+            "cloudy skies and wet weather",
+            "high-pressure area",
+            "clear and sunny skies",
+            "high-pressure areas to low-pressure areas"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_wd_pressure",
+              "criterion": "States that air pressure is the weight of air, highest at sea level; warm rising air makes low pressure (cloudy, wet) and cold sinking air makes high pressure (clear, sunny), and air moves from high to low pressure.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the sky usually clear where the air is cold and sinking, and where does air flow when two places have different pressures?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_wd_low"
+          ]
+        },
+        {
+          "id": "ss9a3_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "On a beach, which way does the wind blow in the afternoon and which way late at night, and why does it change?",
+          "requiredEvidence": [
+            "movement of air from a high-pressure area to a low-pressure area",
+            "wind",
+            "sea breeze",
+            "sea to land during the day",
+            "land becomes relatively warmer",
+            "low-pressure region over land",
+            "land breeze",
+            "land to sea during the night",
+            "land cools faster"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_wd_breeze",
+              "criterion": "States that wind is the movement of air from high to low pressure, and that the sea breeze blows from sea to land by day (land warmer, low pressure over land) while the land breeze blows from land to sea at night (land cools faster).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "On a beach, which way does the wind blow in the afternoon and which way late at night, and why does it change?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_wind_chain",
+          "linksChecks": [
+            "chk_ss9a3_wd_pressure",
+            "chk_ss9a3_wd_breeze"
+          ],
+          "criterion": "Connects temperature-driven pressure differences to wind and to land and sea breezes.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_wd_low",
+          "wrong": "Low-pressure areas are associated with clear sunny skies.",
+          "fix": "Low pressure, formed where air heats up and rises, is associated with cloudy skies and wet weather, while high pressure is associated with clear and sunny skies.",
+          "checkId": "mchk_misc_ss9a3_wd_low",
+          "checkCriterion": "The answer states or implies this wrong idea: Low-pressure areas are associated with clear sunny skies.",
+          "fixCheckId": "mfix_misc_ss9a3_wd_low",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Low pressure, formed where air heats up and rises, is associated with cloudy skies and wet weather, while high pressure is associated with clear and sunny skies.",
+          "keyPointIds": [
+            "ss9a3_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_wd_low"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_wd_pressure",
+            "chk_ss9a3_wd_breeze"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_wind_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t3_c1",
+      "topicId": "ncert_ss9a_ch3_t3",
+      "topicTitle": "The Indian Monsoon System and Seasonal Frameworks",
+      "label": "Seasons in India",
+      "headingType": "heading",
+      "sourcePages": [
+        47,
+        48
+      ],
+      "conceptHash": "ef07a5c6be3f03a55e9bfcbe67bcfc6a1212d475f7cb90dbd0cc92a1839c1967",
+      "cardText": "The climate of India can be broadly classified as tropical monsoon. The Indian Meteorological Department (IMD) recognises four distinct seasons. Winter generally lasts from December to early April, the coldest months being December and January. Summer or pre-monsoon spans April to June, with an average temperature across most of inland India of 32–40°C. The monsoon or rainy season generally runs from June to September, dominated by the humid south-west summer monsoon. The post-monsoon (retreating monsoon) season lasts from October to December. The Himalayan states experience two additional seasons, autumn and spring. Traditionally India has six seasons (ṛtu) of about two months each: Vasanta, Grīṣhma, Varṣhā, Śharad, Hemanta and Śhiśhira. Kauṭilya's Arthaśhāstra has records of scientific rainfall measurement.",
+      "hint": "Which four seasons does the IMD recognise and what marks each?",
+      "probe": "Name the four seasons recognised in India with their months and describe them.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Seasons in India, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Name the four seasons into which India's year is divided and say roughly when the rains arrive and when they retreat.",
+          "requiredEvidence": [
+            "tropical monsoon",
+            "Indian Meteorological Department",
+            "four distinct seasons",
+            "winter",
+            "summer or pre-monsoon",
+            "monsoon or rainy",
+            "post-monsoon",
+            "retreating monsoon",
+            "autumn and spring"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_sn_imd",
+              "criterion": "States that India's climate is tropical monsoon and the IMD recognises four seasons: winter, summer or pre-monsoon, monsoon or rainy, and post-monsoon (retreating monsoon), with the Himalayan states having two extra seasons.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the four seasons into which India's year is divided and say roughly when the rains arrive and when they retreat."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_sn_same"
+          ]
+        },
+        {
+          "id": "ss9a3_t3c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": "Besides the four seasons used in weather reports, how did traditional Indian thought divide the year?",
+          "requiredEvidence": [
+            "six seasons",
+            "two months long",
+            "spring, summer, monsoon, early autumn, late autumn, and winter",
+            "astronomical division",
+            "Arthaśhāstra",
+            "measurements of rainfall"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_sn_traditional",
+              "criterion": "States that traditionally India has six ṛtu seasons of about two months each, based on dividing the 12 months into six parts, and that Kauṭilya's Arthaśhāstra records rainfall measurements used in revenue and relief.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Besides the four seasons used in weather reports, how did traditional Indian thought divide the year?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_seasons_chain",
+          "linksChecks": [
+            "chk_ss9a3_sn_imd",
+            "chk_ss9a3_sn_traditional"
+          ],
+          "criterion": "Connects the monsoon climate to the IMD's four seasons and the traditional six seasons.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_sn_same",
+          "wrong": "India has the same four seasons in every region, including the Himalayan states.",
+          "fix": "The Himalayan states, being more temperate, experience two additional seasons, autumn and spring.",
+          "checkId": "mchk_misc_ss9a3_sn_same",
+          "checkCriterion": "The answer states or implies this wrong idea: India has the same four seasons in every region, including the Himalayan states.",
+          "fixCheckId": "mfix_misc_ss9a3_sn_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Himalayan states, being more temperate, experience two additional seasons, autumn and spring.",
+          "keyPointIds": [
+            "ss9a3_t3c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_sn_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_sn_imd"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a3_sn_traditional",
+            "lnk_ss9a3_seasons_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t3_c2",
+      "topicId": "ncert_ss9a_ch3_t3",
+      "topicTitle": "The Indian Monsoon System and Seasonal Frameworks",
+      "label": "The Monsoon: South-west and North-east",
+      "headingType": "heading",
+      "sourcePages": [
+        49,
+        52
+      ],
+      "conceptHash": "75b0c6f7833e9d80a7ade86882c44a4c9e41e3ca1c5048e57b5d23bfa7dd12de",
+      "cardText": "The climate of India is strongly influenced by monsoon winds. The Arabs named the seasonal reversal of the wind system 'monsoon', from the Arabic word mausim, meaning season. The south-west monsoon, or summer monsoon, blows from sea to land across the Indian Ocean, Arabian Sea and Bay of Bengal between June and September, mainly caused by unequal heating of land and sea: the Indian landmass heats faster in summer, creating low pressure over the subcontinent while the cooler Indian Ocean has high pressure, so moist winds blow towards the land bringing rainfall. It accounts for most of the country's rain. The winter or north-east monsoon, from October to February, occurs when the landmass cools faster, creating high pressure over land: cold dry winds blow from land to sea, and bring rain only to the eastern coast (Tamil Nadu, Andhra Pradesh, parts of Karnataka) after crossing the Bay of Bengal.",
+      "hint": "What causes the south-west and north-east monsoons and how are their rains different?",
+      "probe": "Explain how the south-west and north-east monsoons are caused and which regions they bring rain to.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Monsoon: South-west and North-east, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the wind blow from the ocean towards the land in the Indian summer, and what does it bring?",
+          "requiredEvidence": [
+            "seasonal reversal in the wind direction",
+            "south-west monsoon",
+            "sea to land",
+            "June and September",
+            "unequal heating of land and the sea",
+            "heats up faster",
+            "low-pressure area",
+            "moist winds",
+            "bringing rainfall"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_mo_sw",
+              "criterion": "Explains that the south-west (summer) monsoon is a seasonal reversal of wind caused by unequal heating: land heats faster than the sea, creating low pressure over India so moist winds blow from the ocean to the land, bringing most of the rainfall between June and September.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the wind blow from the ocean towards the land in the Indian summer, and what does it bring?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a3_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the winter wind not bring rain to most of India, and why does the south-east coast still get rain then?",
+          "requiredEvidence": [
+            "winter monsoon",
+            "north-east monsoon",
+            "October to February",
+            "landmass cools faster",
+            "high-pressure area over the land",
+            "cold and dry winds",
+            "land to sea",
+            "Bay of Bengal",
+            "pick up moisture",
+            "eastern coast",
+            "Tamil Nadu"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_mo_ne",
+              "criterion": "Explains that in the north-east (winter) monsoon the land cools faster, creating high pressure over land so cold dry winds blow from land to sea, bringing little rain except to the eastern coast (Tamil Nadu, Andhra Pradesh, parts of Karnataka) after picking up moisture over the Bay of Bengal.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the winter wind not bring rain to most of India, and why does the south-east coast still get rain then?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_mo_ne_rain"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_monsoon_chain",
+          "linksChecks": [
+            "chk_ss9a3_mo_sw",
+            "chk_ss9a3_mo_ne"
+          ],
+          "criterion": "Connects the heating of land and sea to the direction of monsoon winds and the regions that receive rain.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_mo_ne_rain",
+          "wrong": "The north-east monsoon brings heavy rain to most parts of India.",
+          "fix": "The cold dry north-east monsoon winds generally do not bring rainfall to most parts of India, but after passing over the Bay of Bengal they cause rain on the eastern coast.",
+          "checkId": "mchk_misc_ss9a3_mo_ne_rain",
+          "checkCriterion": "The answer states or implies this wrong idea: The north-east monsoon brings heavy rain to most parts of India.",
+          "fixCheckId": "mfix_misc_ss9a3_mo_ne_rain",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The cold dry north-east monsoon winds generally do not bring rainfall to most parts of India, but after passing over the Bay of Bengal they cause rain on the eastern coast.",
+          "keyPointIds": [
+            "ss9a3_t3c2_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 4
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_mo_ne_rain"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_mo_sw",
+            "chk_ss9a3_mo_ne"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_monsoon_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t3_c3",
+      "topicId": "ncert_ss9a_ch3_t3",
+      "topicTitle": "The Indian Monsoon System and Seasonal Frameworks",
+      "label": "Why the Monsoon Matters to India",
+      "headingType": "heading",
+      "sourcePages": [
+        52
+      ],
+      "conceptHash": "0f4a974fa7e2638e47e55ad4dd52d09cad25314dbab6f794aae0aee786f43926",
+      "cardText": "The monsoon plays a vital role in the lives of people in India. Most of India's agriculture depends on monsoon rainfall, as farmers rely on rain for sowing and growing crops. A good monsoon ensures sufficient food production and water supply in rivers, reservoirs and wells. The monsoon also affects daily life, transport, festivals and employment, especially in rural areas. However, excessive rainfall can cause floods, while weak monsoons can lead to droughts. Thus the monsoon greatly influences the economy, lifestyle and livelihoods of people in India. Under the National Monsoon Mission, the Ministry of Earth Sciences has developed weather and climate prediction models, and 'Mission Mausam' aims to make India 'Weather Ready' and 'Climate Smart'.",
+      "hint": "Why is the monsoon so important for India's economy and daily life?",
+      "probe": "Explain the importance of the monsoon for India and what happens when it is excessive or weak.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Why the Monsoon Matters to India, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why do farmers, markets and festivals all watch the arrival of the monsoon?",
+          "requiredEvidence": [
+            "vital role",
+            "agriculture depends on monsoon rainfall",
+            "sowing and growing crops",
+            "good monsoon",
+            "food production",
+            "water supply",
+            "daily life, transport, festivals, and employment"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_mm_agri",
+              "criterion": "States that most of India's agriculture depends on monsoon rain for sowing and growing, a good monsoon ensures food and water supply, and the monsoon affects daily life, transport, festivals and rural employment.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why do farmers, markets and festivals all watch the arrival of the monsoon?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_mm_urban"
+          ]
+        },
+        {
+          "id": "ss9a3_t3c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What can go wrong when the monsoon is too strong or too weak, and what is India doing to forecast it better?",
+          "requiredEvidence": [
+            "excessive rainfall",
+            "floods",
+            "weak monsoons",
+            "droughts",
+            "economy, lifestyle, and livelihoods",
+            "National Monsoon Mission",
+            "Mission Mausam",
+            "Weather Ready",
+            "Climate Smart"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_mm_risk",
+              "criterion": "States that excessive monsoon rain causes floods and weak monsoons cause droughts, so it influences economy and livelihoods, and that the National Monsoon Mission and Mission Mausam aim to improve prediction and preparedness.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can go wrong when the monsoon is too strong or too weak, and what is India doing to forecast it better?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_monsoon_matters_chain",
+          "linksChecks": [
+            "chk_ss9a3_mm_agri",
+            "chk_ss9a3_mm_risk"
+          ],
+          "criterion": "Connects dependence of agriculture on the monsoon to benefits, risks and efforts to predict it.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_mm_urban",
+          "wrong": "The monsoon matters only to farmers and not to daily life or the economy.",
+          "fix": "Monsoon also affects daily life, transport, festivals, and employment, especially in rural areas, and greatly influences the economy, lifestyle and livelihoods of people in India.",
+          "checkId": "mchk_misc_ss9a3_mm_urban",
+          "checkCriterion": "The answer states or implies this wrong idea: The monsoon matters only to farmers and not to daily life or the economy.",
+          "fixCheckId": "mfix_misc_ss9a3_mm_urban",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Monsoon also affects daily life, transport, festivals, and employment, especially in rural areas, and greatly influences the economy, lifestyle and livelihoods of people in India.",
+          "keyPointIds": [
+            "ss9a3_t3c3_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_mm_urban"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_mm_agri"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a3_mm_risk",
+            "lnk_ss9a3_monsoon_matters_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t4_c1",
+      "topicId": "ncert_ss9a_ch3_t4",
+      "topicTitle": "Climate Change, Human Footprint and Extreme Disasters",
+      "label": "Climate Change and the Carbon Footprint",
+      "headingType": "heading",
+      "sourcePages": [
+        53
+      ],
+      "conceptHash": "e216528e11d41b928731bc7942e7f09d36260bd97d71d3cb60c18e9291b7dd85",
+      "cardText": "Climate change refers to long-term changes in weather patterns, such as temperature, rainfall and wind, caused mainly by human activities, including the burning of fossil fuels, deforestation and industrial pollution that releases gases like carbon dioxide into the atmosphere. These actions increase greenhouse gases such as carbon dioxide, methane, nitrous oxide and water vapour, trapping heat and raising global temperatures. As a result we see more frequent floods, droughts, melting of glaciers, rising sea levels and loss of biodiversity, threatening ecosystems, human health, agriculture and livelihoods, with great impact on women and children. Tackling it requires collective efforts: reducing carbon footprints, using renewable energy, protecting forests and adopting sustainable lifestyles. A carbon footprint is the total amount of greenhouse gases released as a result of human activities such as energy use, transportation, or the production of goods and services.",
+      "hint": "What is climate change, what causes it and what can we do about it?",
+      "probe": "Explain the causes and effects of climate change and ways to reduce our carbon footprint.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Climate Change and the Carbon Footprint, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What everyday and industrial activities add to the blanket of heat-trapping gases, and what does that blanket do?",
+          "requiredEvidence": [
+            "long-term changes in weather patterns",
+            "caused mainly by human activities",
+            "burning of fossil fuels",
+            "deforestation",
+            "industrial pollution",
+            "greenhouse gases",
+            "trapping heat",
+            "raising global temperatures"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_cc_cause",
+              "criterion": "States that climate change is long-term change in weather patterns caused mainly by human activities (burning fossil fuels, deforestation, industrial pollution) that increase greenhouse gases, trapping heat and raising global temperatures.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What everyday and industrial activities add to the blanket of heat-trapping gases, and what does that blanket do?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_cc_natural"
+          ]
+        },
+        {
+          "id": "ss9a3_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "List the visible signs and consequences of a warming climate for nature and for people.",
+          "requiredEvidence": [
+            "more frequent floods, droughts",
+            "melting of glaciers",
+            "rising sea levels",
+            "loss of biodiversity",
+            "threatens ecosystems",
+            "human health, agriculture, and livelihoods",
+            "women and children"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_cc_effect",
+              "criterion": "States the effects of climate change: more frequent floods and droughts, melting glaciers, rising sea levels and biodiversity loss, threatening ecosystems, health, agriculture and livelihoods, including women and children.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "List the visible signs and consequences of a warming climate for nature and for people."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "ss9a3_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe what a carbon footprint measures and three things a household or community could do to shrink it.",
+          "requiredEvidence": [
+            "collective efforts",
+            "reducing carbon footprints",
+            "renewable energy",
+            "protecting forests",
+            "sustainable lifestyles",
+            "total amount of greenhouse gases",
+            "energy use, transportation"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_cc_action",
+              "criterion": "States that tackling climate change needs collective efforts (reducing carbon footprints, renewable energy, protecting forests, sustainable lifestyles) and defines the carbon footprint as the total greenhouse gases released by human activities such as energy use, transport and producing goods.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe what a carbon footprint measures and three things a household or community could do to shrink it."
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_climate_chain",
+          "linksChecks": [
+            "chk_ss9a3_cc_cause",
+            "chk_ss9a3_cc_effect",
+            "chk_ss9a3_cc_action"
+          ],
+          "criterion": "Connects human emissions to greenhouse heating, its impacts and the actions to reduce it.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_cc_natural",
+          "wrong": "Climate change is caused mainly by natural causes unrelated to people.",
+          "fix": "Climate change is caused mainly by human activities, including the burning of fossil fuels, deforestation and industrial pollution that releases gases like carbon dioxide into the atmosphere.",
+          "checkId": "mchk_misc_ss9a3_cc_natural",
+          "checkCriterion": "The answer states or implies this wrong idea: Climate change is caused mainly by natural causes unrelated to people.",
+          "fixCheckId": "mfix_misc_ss9a3_cc_natural",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Climate change is caused mainly by human activities, including the burning of fossil fuels, deforestation and industrial pollution that releases gases like carbon dioxide into the atmosphere.",
+          "keyPointIds": [
+            "ss9a3_t4c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_cc_natural"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_cc_cause",
+            "chk_ss9a3_cc_effect",
+            "chk_ss9a3_cc_action"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_ss9a3_climate_chain"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "soc9a_ch3_t4_c2",
+      "topicId": "ncert_ss9a_ch3_t4",
+      "topicTitle": "Climate Change, Human Footprint and Extreme Disasters",
+      "label": "Case Study: The Punjab Floods of 2025",
+      "headingType": "heading",
+      "sourcePages": [
+        54,
+        55,
+        56
+      ],
+      "conceptHash": "337f9adc5e189774ab2cddc2d9c0ad1438a2c4fdb121f5b82eb5ae49748b94c6",
+      "cardText": "In 2025 Punjab experienced severe floods due to heavy monsoon rains and the swelling of the rivers Satluj, Beas and Ravi, damaging villages, farmland, houses, roads and bridges, with heavy economic losses and social disruption. The causes were both natural and human-made. Naturally, very heavy monsoon rain was intensified by western disturbances, it rained also in Himachal Pradesh and Jammu and Kashmir, and the rivers were already flowing high. Human-made causes included weak and old river embankments (dhūsī bāndh), houses and farms built too close to the rivers, silt and mud that reduced the capacity of rivers and dams, and late or unclear flood warnings. The effects included loss of life, thousands moved to relief camps, farmland and paddy crops damaged, poultry and dairy farms destroyed, damaged roads and bridges, and health problems from murky standing water.",
+      "hint": "What natural and human factors caused the 2025 Punjab floods and what were their effects?",
+      "probe": "Explain the natural and human-made causes and effects of the 2025 Punjab floods.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Case Study: The Punjab Floods of 2025, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "ss9a3_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Separate what nature contributed from what people's choices contributed to the flooding of a river valley.",
+          "requiredEvidence": [
+            "natural and human-made factors",
+            "very heavy monsoon rains",
+            "western disturbances",
+            "already flowing high",
+            "weak and old river embankments",
+            "too close to the rivers",
+            "silt and mud",
+            "flood warnings"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_pj_causes",
+              "criterion": "States that the Punjab floods had natural causes (very heavy monsoon rain, western disturbances, rivers already high) and human-made causes (weak embankments, building too close to rivers, silt reducing capacity, late warnings).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Separate what nature contributed from what people's choices contributed to the flooding of a river valley."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_ss9a3_pj_natural"
+          ]
+        },
+        {
+          "id": "ss9a3_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the different ways a major flood hurts people, farms, animals, infrastructure and health?",
+          "requiredEvidence": [
+            "lost their lives",
+            "relief camps",
+            "farmland",
+            "paddy",
+            "poultry and dairy farms",
+            "roads, bridges",
+            "waterborne diseases"
+          ],
+          "checks": [
+            {
+              "id": "chk_ss9a3_pj_effects",
+              "criterion": "States the effects of the Punjab floods: loss of life, people moved to relief camps, farmland and paddy damaged, poultry and dairy farms destroyed, roads and bridges damaged, and waterborne disease from standing water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the different ways a major flood hurts people, farms, animals, infrastructure and health?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_ss9a3_punjab_chain",
+          "linksChecks": [
+            "chk_ss9a3_pj_causes",
+            "chk_ss9a3_pj_effects"
+          ],
+          "criterion": "Connects natural and human causes of the floods to their social, economic and health effects.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_ss9a3_pj_natural",
+          "wrong": "The Punjab floods were caused only by natural heavy rain, with no human contribution.",
+          "fix": "The floods resulted from both natural and human-made factors: weak river embankments, building close to rivers, silt-filled rivers and late warnings aggravated them.",
+          "checkId": "mchk_misc_ss9a3_pj_natural",
+          "checkCriterion": "The answer states or implies this wrong idea: The Punjab floods were caused only by natural heavy rain, with no human contribution.",
+          "fixCheckId": "mfix_misc_ss9a3_pj_natural",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The floods resulted from both natural and human-made factors: weak river embankments, building close to rivers, silt-filled rivers and late warnings aggravated them.",
+          "keyPointIds": [
+            "ss9a3_t4c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 2,
+        "scored": 3
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_ss9a3_pj_natural"
+          ]
+        ],
+        "a": [
+          [
+            "chk_ss9a3_pj_causes"
+          ]
+        ],
+        "b": [
+          [
+            "chk_ss9a3_pj_effects",
+            "lnk_ss9a3_punjab_chain"
+          ]
+        ]
+      }
+    }
+  ]
+}

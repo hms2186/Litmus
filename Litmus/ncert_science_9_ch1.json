@@ -1,0 +1,1821 @@
+{
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 1,
+  "chapterName": "Exploration: Entering the World of Secondary Science",
+  "sourceStatus": "Built from the NCERT PDF iesc101 (edition as supplied). Every verify quote was matched against the extracted text of the printed page it cites.",
+  "pageVerification": {
+    "status": "confirmed",
+    "edition": "NCERT Exploration, Science (Grade 9), edition as supplied, chapter pp. 1-7",
+    "note": "Pages are the printed page numbers. Quotes were checked automatically against the PDF text. The 'Pause and Ponder' prompts are used as accepted examples only."
+  },
+  "review": {
+    "status": "pending",
+    "reviewedBy": null,
+    "reviewedOn": null,
+    "note": "v4.1 fields (keyPoint.role, keyPoint.followUp, check.lexical) were filled in as suggestions by compile_curriculum.py migrate. Check them in Curriculum/review_report.html, edit this file where needed, then set status to \"approved\"."
+  },
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c1_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true
+    },
+    {
+      "id": "chk_sci9c1_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example model, assumption, standard units, SI units, law, theory, principle, prediction.",
+      "isRequired": true
+    }
+  ],
+  "chapterVocabulary": [
+    "model",
+    "assumption",
+    "standard units",
+    "SI units",
+    "law",
+    "theory",
+    "principle",
+    "prediction",
+    "estimation",
+    "scientific language",
+    "mathematics in science",
+    "branches of science"
+  ],
+  "topics": [
+    {
+      "topicId": "ncert_sci_9_ch1_t1",
+      "title": "Models and simplification",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch1_t1_c1",
+          "label": "Science as Exploration",
+          "headingType": "heading",
+          "sourcePages": [1],
+          "cardText": "In the middle stage science invited you to be curious, observe the world closely and ask questions. At the secondary stage the journey continues with an emphasis on deep exploration. Science is not only about what we know, but also about how we know it: how observations lead to measurements, how patterns are expressed using symbols and equations, how models are built to represent complex systems, and how ideas are tested, often revised, and sometimes even discarded. The page numbers are framed by a magnifying glass, which symbolises careful observation, and a compass, which reminds us that exploration needs direction: choosing appropriate models, asking the right questions and knowing the limits of where ideas apply. Exploration in science is not wandering aimlessly but trying to make sense of the world with care and purpose.",
+          "hint": "What does science tell us beyond what we know, and what do the magnifying glass and compass stand for?",
+          "probe": "What does it mean to say that science is not only about what we know but also how we know it?",
+          "causeChain": "Observations lead to measurements, patterns are expressed in symbols and equations, models represent complex systems, and ideas are tested and revised -> science is exploration with care and purpose, using observation (magnifying glass) and direction (compass)",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t1c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Science is not only about what we know, but also about how we know it — how observations lead to measurements, how patterns are expressed using symbols and equations, how models are built to represent complex systems, and how ideas are tested, often revised, and sometimes even discarded.",
+              "followUp": "Besides what we already know, what does science also care about, and what steps does that involve?",
+              "assessment": {
+                "requiredEvidence": [
+                  "how we know it",
+                  "observations lead to measurements",
+                  "symbols and equations",
+                  "models",
+                  "tested, often revised"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_sci_how",
+                    "criterion": "States that science is not only about what we know but also how we know it, through observations, measurements, symbols and equations, models and tested ideas that are revised or discarded.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_science_facts_only"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t1c1_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The magnifying glass symbolises careful observation — noticing patterns and paying attention to what might otherwise be missed. The compass reminds us that exploration also needs direction — choosing appropriate models, asking the right questions, and knowing the limits of where our ideas apply.",
+              "assessment": {
+                "requiredEvidence": [
+                  "magnifying glass",
+                  "careful observation",
+                  "compass",
+                  "direction",
+                  "limits of where our ideas apply"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_sci_symbols",
+                    "criterion": "States that the magnifying glass symbolises careful observation and the compass reminds us that exploration needs direction: choosing models, asking the right questions and knowing the limits of ideas.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t1c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "exploration in science is not wandering aimlessly, but trying to make sense of our world with care and purpose",
+              "assessment": {
+                "requiredEvidence": [
+                  "not wandering aimlessly",
+                  "care and purpose"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_sci_purpose",
+                    "criterion": "States that exploration in science is not wandering aimlessly but trying to make sense of the world with care and purpose.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_science_facts_only",
+              "wrong": "Science is only a collection of facts to be learnt.",
+              "fix": "Science is not only about what we know but also about how we know it: how observations lead to measurements, how models are built, and how ideas are tested, revised and sometimes discarded."
+            }
+          ],
+          "verify": [
+            { "page": 1, "quote": "Science is not only about what we know, but also about how we know it — how observations lead to measurements, how patterns are expressed using symbols and equations, how models are built to represent complex systems, and how ideas are tested, often revised, and sometimes even discarded.", "supports": ["sci9c1_t1c1_kp1"] },
+            { "page": 1, "quote": "The magnifying glass symbolises careful observation — noticing patterns and paying attention to what might otherwise be missed.", "supports": ["sci9c1_t1c1_kp2"] },
+            { "page": 1, "quote": "The compass reminds us that exploration also needs direction — choosing appropriate models, asking the right questions, and knowing the limits of where our ideas apply.", "supports": ["sci9c1_t1c1_kp2"] },
+            { "page": 1, "quote": "exploration in science is not wandering aimlessly, but trying to make sense of our world with care and purpose", "supports": ["sci9c1_t1c1_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t1_c2",
+          "label": "Models in Science",
+          "headingType": "heading",
+          "sourcePages": [2],
+          "cardText": "The natural world is complex and studying it in full detail is often impossible, so science uses models: simplified ways of looking at real systems that focus only on what is most important for a given question. In physics a moving car may be represented as a single point, in chemistry atoms and molecules are drawn as spheres and bonds, in biology cells are shown as diagrams highlighting key parts, and in earth science the Earth may be treated as a smooth sphere layered into distinct regions. Building models involves making assumptions and deliberately ignoring certain details; for example air resistance may be neglected to understand the basic effect of gravity, and when studying how the heart pumps blood many individual cells are ignored. These choices are not mistakes; they are done on purpose to keep things simple enough while still allowing us to find answers.",
+          "hint": "Why does science leave out details in a model, and is that a mistake?",
+          "probe": "What is a model in science, and why do models deliberately ignore some details?",
+          "causeChain": "The natural world is too complex to study in full detail -> science builds simplified models that focus on what matters for the question -> models make assumptions and deliberately ignore details (such as air resistance) -> these are purposeful choices, not mistakes",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_complexity_models",
+              "linksChecks": [
+                "chk_sci9c1_model_why",
+                "chk_sci9c1_model_def"
+              ],
+              "criterion": "Connects the natural world being too complex to study in full detail to science using simplified models that focus on what is most important for a question.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t1c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "The natural world is complex, and studying it in full detail is often impossible. To make sense of this complexity, science uses models. These are simplified ways of looking at real systems that focus only on what is most important for a given question.",
+              "followUp": "Why can science not study natural systems in full, and what does it do instead?",
+              "assessment": {
+                "requiredEvidence": [
+                  "complex",
+                  "full detail",
+                  "models",
+                  "simplified ways",
+                  "most important for a given question"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_model_why",
+                    "criterion": "States that the natural world is too complex to study in full detail, so science uses models.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_model_def",
+                    "criterion": "Defines models as simplified ways of looking at real systems that focus only on what is most important for a given question.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t1c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "In physics, a moving car may be represented as a single point, while in chemistry, atoms and molecules are drawn as spheres and bonds. In biology, cells are shown as diagrams highlighting key parts, and in earth science, the Earth may be treated as a smooth sphere layered into distinct regions.",
+              "assessment": {
+                "requiredEvidence": [
+                  "moving car",
+                  "single point",
+                  "spheres and bonds",
+                  "cells",
+                  "smooth sphere"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_model_examples",
+                    "criterion": "Gives an example of a model: a moving car as a single point, atoms drawn as spheres and bonds, cells as diagrams, or the Earth as a layered smooth sphere.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t1c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Building such models involves making assumptions and deliberately ignoring certain details. For example, when studying the motion of a falling object, air resistance may be neglected to understand the basic effect of gravity. In biology, when studying how the heart pumps blood, many individual cells are ignored so that the organ can be understood as a functioning system.",
+              "followUp": "What choices go into building such a simplified version of a system, and what is one thing that may be left out when studying a falling object?",
+              "assessment": {
+                "requiredEvidence": [
+                  "assumptions",
+                  "deliberately ignoring certain details",
+                  "air resistance may be neglected",
+                  "basic effect of gravity",
+                  "heart pumps blood"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_model_ignore",
+                    "criterion": "States that building models involves making assumptions and deliberately ignoring certain details, for example neglecting air resistance for a falling object.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t1c2_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Remember that these choices are not mistakes, they are done on purpose to keep things simple enough, but still allow us to find answers to what we are looking for.",
+              "followUp": "Is leaving out details an error in the model, and why is it done?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not mistakes",
+                  "on purpose",
+                  "simple enough",
+                  "find answers"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_model_purpose",
+                    "criterion": "States that ignoring details is not a mistake but done on purpose to keep things simple enough while still answering the question.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_ignore_mistake"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: when modelling a bicycle ride from school to home, keep distance and speed and ignore details such as the colour of the bicycle"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_ignore_mistake",
+              "wrong": "Ignoring details in a model is a mistake that makes the model wrong.",
+              "fix": "These choices are not mistakes; they are done on purpose to keep things simple enough but still allow us to find answers to what we are looking for."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "The natural world is complex, and studying it in full detail is often impossible.", "supports": ["sci9c1_t1c2_kp1"] },
+            { "page": 2, "quote": "To make sense of this complexity, science uses models.", "supports": ["sci9c1_t1c2_kp1"] },
+            { "page": 2, "quote": "These are simplified ways of looking at real systems that focus only on what is most important for a given question.", "supports": ["sci9c1_t1c2_kp1"] },
+            { "page": 2, "quote": "In physics, a moving car may be represented as a single point, while in chemistry, atoms and molecules are drawn as spheres and bonds.", "supports": ["sci9c1_t1c2_kp2"] },
+            { "page": 2, "quote": "In biology, cells are shown as diagrams highlighting key parts, and in earth science, the Earth may be treated as a smooth sphere layered into distinct regions.", "supports": ["sci9c1_t1c2_kp2"] },
+            { "page": 2, "quote": "Building such models involves making assumptions and deliberately ignoring certain details.", "supports": ["sci9c1_t1c2_kp3"] },
+            { "page": 2, "quote": "For example, when studying the motion of a falling object, air resistance may be neglected to understand the basic effect of gravity.", "supports": ["sci9c1_t1c2_kp3"] },
+            { "page": 2, "quote": "In biology, when studying how the heart pumps blood, many individual cells are ignored so that the organ can be understood as a functioning system.", "supports": ["sci9c1_t1c2_kp3"] },
+            { "page": 2, "quote": "Remember that these choices are not mistakes, they are done on purpose to keep things simple enough, but still allow us to find answers to what we are looking for.", "supports": ["sci9c1_t1c2_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t1_c3",
+          "label": "Example: Modelling a Cricket Shot",
+          "headingType": "example",
+          "sourcePages": [2],
+          "cardText": "To model a cricket ball hit for a six, ask whether the ball will cross the boundary without hitting the ground first. For this, the brand of the bat, the colour of the ball and the amount of grass on the field make no difference, but the mass of the ball and the speed and direction in which it has been hit are very important. Air resistance, the spin of the ball and the stitching of the seam have smaller effects that can be ignored in a simple model. As we build more complex models we add extra details for greater accuracy.",
+          "hint": "Which details matter for the cricket ball's flight, and which can be ignored?",
+          "probe": "In modelling a cricket ball hit for a six, which details would you keep and which would you ignore?",
+          "causeChain": "Start from the question 'will the ball clear the boundary?' -> keep mass, speed and direction -> ignore bat brand, ball colour and grass, and treat air resistance and spin as small effects -> add details later for greater accuracy",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_question_details",
+              "linksChecks": [
+                "chk_sci9c1_cric_keep",
+                "chk_sci9c1_cric_ignore"
+              ],
+              "criterion": "Connects the question being asked about the ball to deciding which details (mass, speed, direction) matter and which (bat brand, ball colour, grass) do not.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t1c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "We must ask, “Will the ball cross the boundary without hitting the ground first?”. For this, things like the brand of the bat, the colour of the ball, the amount of grass on the field will make no difference. On the other hand, the mass of the ball, and the speed and direction in which it has been hit will be very important.",
+              "followUp": "Which details matter and which do not when asking whether the ball will clear the boundary?",
+              "assessment": {
+                "requiredEvidence": [
+                  "cross the boundary",
+                  "brand of the bat",
+                  "colour of the ball",
+                  "mass of the ball",
+                  "speed and direction"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_cric_keep",
+                    "criterion": "States that the mass of the ball and the speed and direction in which it is hit are very important for whether it crosses the boundary.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_cric_ignore",
+                    "criterion": "States that the brand of the bat, the colour of the ball and the amount of grass make no difference.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_cric_all_matter"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t1c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Air resistance, the spin of the ball, and the stitching of the threads at the seam have smaller effects that can be ignored in a simple model. As we build more and more complex models, we add extra details for greater accuracy.",
+              "assessment": {
+                "requiredEvidence": [
+                  "air resistance",
+                  "spin of the ball",
+                  "smaller effects",
+                  "ignored in a simple model",
+                  "greater accuracy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_cric_small",
+                    "criterion": "States that air resistance, spin and the seam stitching have smaller effects that can be ignored in a simple model, and more details are added in more complex models for greater accuracy.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_cric_all_matter",
+              "wrong": "Every detail of the cricket ball and field must be included in a model.",
+              "fix": "Details like the brand of the bat, the colour of the ball and the amount of grass make no difference; the mass of the ball and the speed and direction of the hit are very important."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "We must ask, “Will the ball cross the boundary without hitting the ground first?”.", "supports": ["sci9c1_t1c3_kp1"] },
+            { "page": 2, "quote": "For this, things like the brand of the bat, the colour of the ball, the amount of grass on the field will make no difference.", "supports": ["sci9c1_t1c3_kp1"] },
+            { "page": 2, "quote": "On the other hand, the mass of the ball, and the speed and direction in which it has been hit will be very important.", "supports": ["sci9c1_t1c3_kp1"] },
+            { "page": 2, "quote": "Air resistance, the spin of the ball, and the stitching of the threads at the seam have smaller effects that can be ignored in a simple model.", "supports": ["sci9c1_t1c3_kp2"] },
+            { "page": 2, "quote": "As we build more and more complex models, we add extra details for greater accuracy.", "supports": ["sci9c1_t1c3_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t1_c4",
+          "label": "Simplifying the Stars: Meghnad Saha",
+          "headingType": "example",
+          "sourcePages": [2],
+          "cardText": "Science often begins by ignoring details. When the physicist Meghnad Saha studied the light from stars, he did not try to model every atom, every reaction or every movement inside a star. Instead he treated the matter in the star as a hot gas, ignored many complex processes, and focused only on temperature, pressure and how atoms formed ions. This simplification allowed him to explain how the colour of stars is deeply connected to their temperature.",
+          "hint": "What did Saha ignore, and what did he keep, to explain the colour of stars?",
+          "probe": "How did Meghnad Saha use simplification to study stars?",
+          "causeChain": "Saha did not model every atom or reaction inside a star -> he treated stellar matter as a hot gas and focused on temperature, pressure and ionisation -> this explained how a star's colour is connected to its temperature",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t1c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "When physicist Meghnad Saha studied the light from stars, he did not try to model every atom, every reaction, or every movement inside a star. Instead, he treated the matter in the star as a hot gas, ignored many complex processes, and focused only on temperature, pressure, and how atoms formed ions.",
+              "followUp": "How did he treat the matter in a star, what did he ignore, and what did he focus on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "Meghnad Saha",
+                  "light from stars",
+                  "hot gas",
+                  "temperature, pressure",
+                  "atoms formed ions"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_saha_method",
+                    "criterion": "States that Saha treated the matter in a star as a hot gas, ignoring many complex processes, and focused only on temperature, pressure and how atoms formed ions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t1c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "This simplification allowed him to explain how the colour of stars is deeply connected to their temperature.",
+              "followUp": "What did this approach let him explain about stars?",
+              "assessment": {
+                "requiredEvidence": [
+                  "simplification",
+                  "colour of stars",
+                  "connected to their temperature"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_saha_result",
+                    "criterion": "States that this simplification let him explain how the colour of stars is deeply connected to their temperature.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [],
+          "verify": [
+            { "page": 2, "quote": "When physicist Meghnad Saha studied the light from stars, he did not try to model every atom, every reaction, or every movement inside a star.", "supports": ["sci9c1_t1c4_kp1"] },
+            { "page": 2, "quote": "Instead, he treated the matter in the star as a hot gas, ignored many complex processes, and focused only on temperature, pressure, and how atoms formed ions.", "supports": ["sci9c1_t1c4_kp1"] },
+            { "page": 2, "quote": "This simplification allowed him to explain how the colour of stars is deeply connected to their temperature.", "supports": ["sci9c1_t1c4_kp2"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch1_t2",
+      "title": "The language of science",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch1_t2_c1",
+          "label": "Precise Language, Symbols and Units",
+          "headingType": "heading",
+          "sourcePages": [2],
+          "cardText": "Science uses language in a very careful and precise way. Many everyday words, such as force, work, cell or reaction, have specific meanings in science, and these meanings are specific because scientific ideas must be communicated clearly and unambiguously. To allow scientists across the world to describe observations, compare results and build ideas together, science uses a shared language of specific terms, symbols and units. Quantities such as mass, velocity, force and electric current are represented by symbols like m, v, F and I, each associated with a defined unit.",
+          "hint": "Why do scientific words like force or work have specific meanings?",
+          "probe": "Why does science use careful and precise language, symbols and units?",
+          "causeChain": "Scientific ideas must be communicated clearly and unambiguously -> everyday words get specific meanings and quantities get symbols and units -> scientists across the world can describe observations, compare results and build ideas together",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_clarity_shared",
+              "linksChecks": [
+                "chk_sci9c1_lang_precise",
+                "chk_sci9c1_lang_shared"
+              ],
+              "criterion": "Connects the need to communicate scientific ideas clearly and unambiguously to a shared language of specific terms, symbols and units that lets scientists compare results.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t2c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "As you explore science more deeply, you will notice that it uses language in a very careful and precise way. Many words that we use in everyday life, such as force, work, cell, or reaction, have specific meanings in science. These meanings are often very specific because scientific ideas must be communicated clearly and unambiguously.",
+              "followUp": "Why do everyday words sometimes have narrower meanings in science, and how carefully is the language used?",
+              "assessment": {
+                "requiredEvidence": [
+                  "careful and precise way",
+                  "force, work, cell, or reaction",
+                  "specific meanings",
+                  "clearly and unambiguously"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lang_precise",
+                    "criterion": "States that science uses language carefully and precisely, so everyday words like force, work, cell or reaction have specific meanings, because ideas must be communicated clearly and unambiguously.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_lang_everyday"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t2c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "To allow scientists across the world to describe observations, compare results, and build ideas together, science uses a shared language of these specific terms, symbols, and units. Quantities, such as mass, velocity, force, and electric current are represented by symbols like m, v, F, and I, each associated with a defined unit.",
+              "followUp": "What common means of expression lets scientists everywhere compare results, and how are quantities written down?",
+              "assessment": {
+                "requiredEvidence": [
+                  "scientists across the world",
+                  "shared language",
+                  "terms, symbols, and units",
+                  "m, v, F, and I",
+                  "defined unit"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lang_shared",
+                    "criterion": "States that science uses a shared language of specific terms, symbols and units so scientists across the world can describe observations, compare results and build ideas together.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_lang_symbols",
+                    "criterion": "Gives examples of quantities and symbols: mass m, velocity v, force F and electric current I, each with a defined unit.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_lang_everyday",
+              "wrong": "Words like force, work and cell mean the same in science as in everyday life.",
+              "fix": "Many words used in everyday life, such as force, work, cell or reaction, have specific meanings in science."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "As you explore science more deeply, you will notice that it uses language in a very careful and precise way.", "supports": ["sci9c1_t2c1_kp1"] },
+            { "page": 2, "quote": "Many words that we use in everyday life, such as force, work, cell, or reaction, have specific meanings in science.", "supports": ["sci9c1_t2c1_kp1"] },
+            { "page": 2, "quote": "These meanings are often very specific because scientific ideas must be communicated clearly and unambiguously.", "supports": ["sci9c1_t2c1_kp1"] },
+            { "page": 2, "quote": "To allow scientists across the world to describe observations, compare results, and build ideas together, science uses a shared language of these specific terms, symbols, and units.", "supports": ["sci9c1_t2c1_kp2"] },
+            { "page": 2, "quote": "Quantities, such as mass, velocity, force, and electric current are represented by symbols like m, v, F, and I, each associated with a defined unit.", "supports": ["sci9c1_t2c1_kp2"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t2_c2",
+          "label": "Mathematics in Science",
+          "headingType": "heading",
+          "sourcePages": [2, 3],
+          "cardText": "Science often turns to mathematics to allow relationships between quantities to be expressed clearly and tested carefully. Mathematics in science is not meant to be a hurdle; it is a language that helps us think more clearly about the world. An equation is not just a calculation tool, it is a compact statement about how certain things are related. Describing motion using distance, time and velocity lets us answer where an object will be at a later moment, and mathematical expressions describe rates of chemical reactions, patterns of population growth or changes in energy. Learning to use mathematics in science does not mean memorising equations; it means understanding the situation first, identifying relevant quantities and then using mathematical relationships to reason carefully, so mathematics becomes a powerful language for thinking, not just for finding numerical answers.",
+          "hint": "What is an equation in science, and what must you do before using one?",
+          "probe": "Why does science use mathematics, and how should we use it?",
+          "causeChain": "Science needs relationships between quantities expressed clearly and tested carefully -> an equation is a compact statement of how things are related -> understand the situation, identify relevant quantities, then reason with the relationship -> mathematics is a language for thinking, not just calculation",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_understand_then_equation",
+              "linksChecks": [
+                "chk_sci9c1_math_use"
+              ],
+              "criterion": "Connects understanding the situation and identifying relevant quantities first to using mathematical relationships to reason carefully.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t2c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "To make this even more precise, science often turns to mathematics to allow relationships between quantities to be expressed clearly and tested carefully.",
+              "followUp": "Why does science turn to maths, and what does it let us do with how quantities are connected?",
+              "assessment": {
+                "requiredEvidence": [
+                  "mathematics",
+                  "relationships between quantities",
+                  "expressed clearly",
+                  "tested carefully"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_math_why",
+                    "criterion": "States that science turns to mathematics so relationships between quantities can be expressed clearly and tested carefully.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t2c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "mathematics in science is not meant to be a hurdle. Instead, it is a language that helps us think more clearly about the world. An equation is not just a calculation tool, it is a compact statement about how certain things are related.",
+              "followUp": "Is maths a barrier in science, and what is a formula really?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not meant to be a hurdle",
+                  "language",
+                  "think more clearly",
+                  "equation",
+                  "compact statement"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_math_language",
+                    "criterion": "States that mathematics in science is a language that helps us think more clearly, and an equation is a compact statement about how things are related, not just a calculation tool.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t2c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Learning to use mathematics in science does not mean memorising equations. It means understanding the situation first, identifying relevant quantities, and then using mathematical relationships to reason carefully. In this way, mathematics becomes a powerful language for thinking, not just for finding numerical answers.",
+              "followUp": "What should you do before turning to equations, and does learning them mean memorising?",
+              "assessment": {
+                "requiredEvidence": [
+                  "does not mean memorising equations",
+                  "understanding the situation first",
+                  "identifying relevant quantities",
+                  "reason carefully",
+                  "powerful language for thinking"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_math_use",
+                    "criterion": "States that using mathematics in science means understanding the situation first, identifying relevant quantities and then reasoning with mathematical relationships, not memorising equations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_math_memorise"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_math_memorise",
+              "wrong": "Learning mathematics in science means memorising equations.",
+              "fix": "Learning to use mathematics in science does not mean memorising equations; it means understanding the situation first, identifying relevant quantities, and then using mathematical relationships to reason carefully."
+            }
+          ],
+          "verify": [
+            { "page": 2, "quote": "To make this even more precise, science often turns to mathematics to allow relationships between quantities to be expressed clearly and tested carefully.", "supports": ["sci9c1_t2c2_kp1"] },
+            { "page": 3, "quote": "mathematics in science is not meant to be a hurdle. Instead, it is a language that helps us think more clearly about the world.", "supports": ["sci9c1_t2c2_kp2"] },
+            { "page": 3, "quote": "An equation is not just a calculation tool, it is a compact statement about how certain things are related.", "supports": ["sci9c1_t2c2_kp2"] },
+            { "page": 3, "quote": "Learning to use mathematics in science does not mean memorising equations.", "supports": ["sci9c1_t2c2_kp3"] },
+            { "page": 3, "quote": "It means understanding the situation first, identifying relevant quantities, and then using mathematical relationships to reason carefully.", "supports": ["sci9c1_t2c2_kp3"] },
+            { "page": 3, "quote": "In this way, mathematics becomes a powerful language for thinking, not just for finding numerical answers.", "supports": ["sci9c1_t2c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t2_c3",
+          "label": "Standard Units: Why Is a Kilogram Used Everywhere?",
+          "headingType": "heading",
+          "sourcePages": [3],
+          "cardText": "A kilogram should mean the same amount everywhere when we buy rice or vegetables, and measurements are based on agreed international standards, not local objects or opinions. Standard units allow scientific results to be compared and ensure fairness in daily life and trade. In a well-known incident a passenger aircraft ran out of fuel mid-flight because of a mix-up in units: the ground crew used the density of fuel in pounds per litre rather than kilograms per litre, leaving the aircraft about 15,000 litres short, and it had to glide to an emergency landing. Using standard (SI) units everywhere avoids conversions and errors. Scientific symbols often come from history and international agreement; the speed of light is denoted c from the Latin word celeritas, meaning speed.",
+          "hint": "Why do we need agreed standard units, and what went wrong in the aircraft fuel incident?",
+          "probe": "Why are standard units like the kilogram used everywhere?",
+          "causeChain": "Measurements need to mean the same everywhere -> they are based on agreed international standards rather than local objects -> results can be compared and trade is fair; mixing pounds with kilograms left an aircraft short of fuel",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_units_mixup",
+              "linksChecks": [
+                "chk_sci9c1_unit_incident",
+                "chk_sci9c1_unit_si"
+              ],
+              "criterion": "Connects mixing pounds with kilograms in the fuel calculation to the aircraft running short of fuel, showing why standard units avoid errors.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t2c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Thankfully, measurements are based on agreed international standards, not local objects or opinions. Standard units allow scientific results to be compared, and ensure fairness in daily life and trade.",
+              "followUp": "Why should a kilogram mean the same everywhere, and what are measurements based on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "agreed international standards",
+                  "not local objects or opinions",
+                  "compared",
+                  "fairness in daily life and trade"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_unit_standard",
+                    "criterion": "States that measurements are based on agreed international standards, not local objects or opinions.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_unit_fair",
+                    "criterion": "States that standard units allow scientific results to be compared and ensure fairness in daily life and trade.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_unit_local"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t2c3_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "In a well-known incident, a passenger aircraft ran out of fuel mid-flight due to a mix-up in units. The flight needed 22,300 kg fuel in total, but the ground crew miscalculated the fuel required, since they used the density of fuel in pounds (lb) per litre rather than kilograms (kg) per litre. Using standard (SI) units everywhere avoids conversions and errors.",
+              "followUp": "What went wrong in the well-known aircraft fuel incident, and what is the lesson?",
+              "assessment": {
+                "requiredEvidence": [
+                  "ran out of fuel",
+                  "mix-up in units",
+                  "pounds",
+                  "kilograms",
+                  "avoids conversions and errors"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_unit_incident",
+                    "criterion": "States that an aircraft ran out of fuel mid-flight because the ground crew used the density of fuel in pounds per litre instead of kilograms per litre.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_unit_si",
+                    "criterion": "States that using standard (SI) units everywhere avoids conversions and errors.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t2c3_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Scientific symbols often come from history, and are based on international agreements, not necessarily abbreviations of convenience. For example, the speed of light, is usually denoted with the symbol c, since it comes from the Latin word celeritas, meaning speed.",
+              "assessment": {
+                "requiredEvidence": [
+                  "symbols",
+                  "international agreements",
+                  "speed of light",
+                  "c",
+                  "celeritas"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_unit_symbol_c",
+                    "criterion": "States that scientific symbols come from history and international agreement, for example the speed of light is denoted c from the Latin celeritas, meaning speed.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_unit_local",
+              "wrong": "Units of measurement can be chosen locally by any seller or country without any problem.",
+              "fix": "Measurements are based on agreed international standards, not local objects or opinions, so that a kilogram means the same amount everywhere."
+            }
+          ],
+          "verify": [
+            { "page": 3, "quote": "Thankfully, measurements are based on agreed international standards, not local objects or opinions.", "supports": ["sci9c1_t2c3_kp1"] },
+            { "page": 3, "quote": "Standard units allow scientific results to be compared, and ensure fairness in daily life and trade.", "supports": ["sci9c1_t2c3_kp1"] },
+            { "page": 3, "quote": "In a well-known incident, a passenger aircraft ran out of fuel mid-flight due to a mix-up in units.", "supports": ["sci9c1_t2c3_kp2"] },
+            { "page": 3, "quote": "since they used the density of fuel in pounds (lb) per litre rather than kilograms (kg) per litre", "supports": ["sci9c1_t2c3_kp2"] },
+            { "page": 3, "quote": "Using standard (SI) units everywhere avoids conversions and errors.", "supports": ["sci9c1_t2c3_kp2"] },
+            { "page": 3, "quote": "Scientific symbols often come from history, and are based on international agreements, not necessarily abbreviations of convenience.", "supports": ["sci9c1_t2c3_kp3"] },
+            { "page": 3, "quote": "the speed of light, is usually denoted with the symbol c, since it comes from the Latin word celeritas, meaning speed", "supports": ["sci9c1_t2c3_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch1_t3",
+      "title": "Laws, theories, principles and predictions",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch1_t3_c1",
+          "label": "Laws, Theories and Principles",
+          "headingType": "heading",
+          "sourcePages": [3, 4],
+          "cardText": "As observations are repeated, measurements refined and ideas tested through experiments, we can organise our understanding of the world in a systematic way. A law usually describes a regular pattern observed in nature, often expressed in words or mathematical relationships; for example Newton's laws of motion explain the jerk felt when a bus stops suddenly. A theory goes a step further and provides an explanation of why those patterns occur, usually based on evidence gathered over time; for example the atomic theory explains how molecules are formed. Principles are broad ideas that help us make sense of a given situation; for example the principle of conservation of energy applies when climbing up the stairs. In science a theory does not mean a guess or an untested idea; it is an explanation based on careful testing and critical examination, always open to improvement and often changing as new evidence becomes available, which is a key feature that makes science reliable.",
+          "hint": "How does a law differ from a theory, and is a theory just a guess?",
+          "probe": "What do the terms law, theory and principle mean in science?",
+          "causeChain": "Repeated observation and testing organise our understanding -> a law describes a regular pattern, a theory explains why the pattern occurs from evidence, and a principle is a broad idea for making sense of situations -> a theory is a carefully tested explanation, open to improvement, not a guess",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_law_theory_step",
+              "linksChecks": [
+                "chk_sci9c1_lt_law",
+                "chk_sci9c1_lt_theory"
+              ],
+              "criterion": "Connects a law describing a regular pattern to a theory going a step further to explain why the pattern occurs, based on evidence.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t3c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "A law usually describes a regular pattern observed in nature, often expressed using words or mathematical relationships. For example, Newton’s laws of motion explain the jerk felt when a bus stops suddenly.",
+              "followUp": "What does a statement of a regular pattern in nature, often written as a relationship, tell us, and what example accounts for the lurch passengers feel when a bus brakes?",
+              "assessment": {
+                "requiredEvidence": [
+                  "law",
+                  "regular pattern observed in nature",
+                  "mathematical relationships",
+                  "Newton's laws of motion",
+                  "jerk"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lt_law",
+                    "criterion": "States that a law usually describes a regular pattern observed in nature, often expressed in words or mathematical relationships, as with Newton's laws of motion.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_law_explains"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t3c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "A theory goes a step further and provides an explanation of why those patterns occur, usually based on evidence gathered over time and available at that time. For example, the atomic theory explains how molecules are formed.",
+              "followUp": "What further step beyond describing a pattern does a scientific explanation take, and what example explains how molecules form?",
+              "assessment": {
+                "requiredEvidence": [
+                  "theory",
+                  "a step further",
+                  "explanation of why those patterns occur",
+                  "evidence gathered over time",
+                  "atomic theory"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lt_theory",
+                    "criterion": "States that a theory goes a step further than a law and explains why patterns occur, based on evidence gathered over time, as the atomic theory explains how molecules form.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Principles are broad ideas that help us make sense in a given situation. For example, the principle of conservation of energy being applied when climbing up the stairs.",
+              "assessment": {
+                "requiredEvidence": [
+                  "principles",
+                  "broad ideas",
+                  "make sense in a given situation",
+                  "conservation of energy"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lt_principle",
+                    "criterion": "States that principles are broad ideas that help us make sense of a given situation, such as the principle of conservation of energy.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c1_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Do remember that in science, a theory does not mean a guess or an untested idea, it is an explanation based on careful testing and critical examination. These ideas are always open to improvement and often change as new evidence becomes available. This is a key feature of science that makes it reliable.",
+              "followUp": "Is a well-established scientific explanation just a hunch? What is it based on, and can it change?",
+              "assessment": {
+                "requiredEvidence": [
+                  "does not mean a guess",
+                  "untested idea",
+                  "careful testing and critical examination",
+                  "open to improvement",
+                  "new evidence"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_lt_notguess",
+                    "criterion": "States that a scientific theory is not a guess or an untested idea but an explanation based on careful testing and critical examination.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_lt_open",
+                    "criterion": "States that these ideas are always open to improvement and change as new evidence becomes available, which makes science reliable.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_theory_guess"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: Newton's laws of motion explain the jerk felt when a bus stops suddenly"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_theory_guess",
+              "wrong": "A scientific theory is just a guess or an untested idea.",
+              "fix": "In science, a theory does not mean a guess or an untested idea; it is an explanation based on careful testing and critical examination."
+            },
+            {
+              "id": "misc_sci9c1_law_explains",
+              "wrong": "A law explains why a pattern occurs.",
+              "fix": "A law usually describes a regular pattern observed in nature; it is a theory that goes a step further and explains why those patterns occur."
+            }
+          ],
+          "verify": [
+            { "page": 3, "quote": "As observations are repeated, measurements refined, and ideas tested through experiments, we can organise our understanding of the world in a systematic way.", "supports": ["sci9c1_t3c1_kp1"] },
+            { "page": 3, "quote": "A law usually describes a regular pattern observed in nature, often expressed using words or mathematical relationships.", "supports": ["sci9c1_t3c1_kp1"] },
+            { "page": 3, "quote": "For example, Newton’s laws of motion explain the jerk felt when a bus stops suddenly.", "supports": ["sci9c1_t3c1_kp1"] },
+            { "page": 4, "quote": "A theory goes a step further and provides an explanation of why those patterns occur, usually based on evidence gathered over time and available at that time.", "supports": ["sci9c1_t3c1_kp2"] },
+            { "page": 4, "quote": "For example, the atomic theory explains how molecules are formed.", "supports": ["sci9c1_t3c1_kp2"] },
+            { "page": 4, "quote": "Principles are broad ideas that help us make sense in a given situation.", "supports": ["sci9c1_t3c1_kp3"] },
+            { "page": 4, "quote": "For example, the principle of conservation of energy being applied when climbing up the stairs.", "supports": ["sci9c1_t3c1_kp3"] },
+            { "page": 4, "quote": "Do remember that in science, a theory does not mean a guess or an untested idea, it is an explanation based on careful testing and critical examination.", "supports": ["sci9c1_t3c1_kp4"] },
+            { "page": 4, "quote": "These ideas are always open to improvement and often change as new evidence becomes available.", "supports": ["sci9c1_t3c1_kp4"] },
+            { "page": 4, "quote": "This is a key feature of science that makes it reliable.", "supports": ["sci9c1_t3c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t3_c2",
+          "label": "Prediction in Science",
+          "headingType": "heading",
+          "sourcePages": [4],
+          "cardText": "One of the most remarkable strengths of science is its ability to make predictions. When laws, theories and models are well established, they allow us to anticipate what will happen under new or different conditions, before we can perform an experiment and in many cases even if we cannot. Using ideas about motion we can predict how far a kicked football will travel; using chemical reactions we can estimate how much carbon dioxide will be produced; using biological principles we can predict how breathing changes while running. These predictions are not guesses; they are reasoned expectations based on evidence and careful thinking. When predictions match observations, confidence in the underlying science grows, and even more important, when they do not, scientists re-examine their assumptions, models or measurements. In this way prediction is a powerful tool that drives further exploration and deeper understanding.",
+          "hint": "How is a scientific prediction different from a guess, and what happens when it fails?",
+          "probe": "What is prediction in science and why is it important?",
+          "causeChain": "Well-established laws, theories and models let us anticipate what happens in new conditions -> predictions are reasoned expectations based on evidence, not guesses -> a match raises confidence, a mismatch makes scientists re-examine assumptions, models or measurements -> further exploration",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_mismatch_reexamine",
+              "linksChecks": [
+                "chk_sci9c1_pred_match"
+              ],
+              "criterion": "Connects a prediction not matching observations to scientists re-examining their assumptions, models or measurements, which drives further exploration.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t3c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "One of the most remarkable strengths of science is its ability to make predictions. When laws, theories, and models are well established, they allow us to anticipate what will happen under new or different conditions, before we can perform an experiment, and in many cases even if we cannot perform an experiment.",
+              "followUp": "What can scientific ideas that have stood up to testing let us do about new situations, even before an experiment?",
+              "assessment": {
+                "requiredEvidence": [
+                  "ability to make predictions",
+                  "well established",
+                  "anticipate what will happen",
+                  "new or different conditions",
+                  "before we can perform an experiment"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_pred_ability",
+                    "criterion": "States that well-established laws, theories and models let us anticipate what will happen under new or different conditions, even before or without performing an experiment.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c2_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Using ideas about motion, we can predict how far a kicked football will travel; using knowledge of chemical reactions, we can estimate how much carbon dioxide will be produced, or how soft a baked bread would be; using biological principles, we can predict how one’s breathing would change while running.",
+              "assessment": {
+                "requiredEvidence": [
+                  "how far a kicked football will travel",
+                  "chemical reactions",
+                  "carbon dioxide",
+                  "breathing would change while running"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_pred_examples",
+                    "criterion": "Gives an example of a scientific prediction, such as how far a kicked football will travel, how much carbon dioxide a reaction produces, or how breathing changes while running.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c2_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Remember that these predictions are not guesses, they are reasoned expectations based on evidence and careful thinking. When predictions match observations, confidence in the underlying science grows. But even more important, when they do not, scientists re-examine their assumptions, models, or measurements. In this way, prediction is a powerful tool that drives further exploration and a deeper understanding of the world.",
+              "followUp": "What kind of expectation is a scientific prediction, and what do scientists do when results do not match?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not guesses",
+                  "reasoned expectations",
+                  "confidence in the underlying science grows",
+                  "re-examine their assumptions, models, or measurements",
+                  "drives further exploration"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_pred_reasoned",
+                    "criterion": "States that predictions are not guesses but reasoned expectations based on evidence and careful thinking.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_pred_match",
+                    "criterion": "States that when predictions match observations confidence grows, and when they do not scientists re-examine their assumptions, models or measurements, driving further exploration.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_pred_guess"
+                ]
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: a family's prediction of a cricket match outcome can be improved by basing it on evidence and reasoning rather than guesswork"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_pred_guess",
+              "wrong": "A scientific prediction is just a guess about what might happen.",
+              "fix": "These predictions are not guesses; they are reasoned expectations based on evidence and careful thinking."
+            }
+          ],
+          "verify": [
+            { "page": 4, "quote": "One of the most remarkable strengths of science is its ability to make predictions.", "supports": ["sci9c1_t3c2_kp1"] },
+            { "page": 4, "quote": "When laws, theories, and models are well established, they allow us to anticipate what will happen under new or different conditions, before we can perform an experiment, and in many cases even if we cannot perform an experiment.", "supports": ["sci9c1_t3c2_kp1"] },
+            { "page": 4, "quote": "Using ideas about motion, we can predict how far a kicked football will travel", "supports": ["sci9c1_t3c2_kp2"] },
+            { "page": 4, "quote": "using knowledge of chemical reactions, we can estimate how much carbon dioxide will be produced, or how soft a baked bread would be", "supports": ["sci9c1_t3c2_kp2"] },
+            { "page": 4, "quote": "using biological principles, we can predict how one’s breathing would change while running", "supports": ["sci9c1_t3c2_kp2"] },
+            { "page": 4, "quote": "Remember that these predictions are not guesses, they are reasoned expectations based on evidence and careful thinking.", "supports": ["sci9c1_t3c2_kp3"] },
+            { "page": 4, "quote": "When predictions match observations, confidence in the underlying science grows.", "supports": ["sci9c1_t3c2_kp3"] },
+            { "page": 4, "quote": "But even more important, when they do not, scientists re-examine their assumptions, models, or measurements.", "supports": ["sci9c1_t3c2_kp3"] },
+            { "page": 4, "quote": "In this way, prediction is a powerful tool that drives further exploration and a deeper understanding of the world.", "supports": ["sci9c1_t3c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t3_c3",
+          "label": "Checking Predictions Scientifically",
+          "headingType": "example",
+          "sourcePages": [4],
+          "cardText": "Varsha told Meghna that it will rain this afternoon because the clouds look dark. To make the prediction scientifically testable, Meghna should ask for measurable evidence and past patterns, not simple yes/no questions. She could ask what the condition of the sky was when it rained last time, what the humidity is today and whether it was above 80 per cent the last time it rained, what the wind speed and direction are, and whether the temperature is dropping as it did before the recent rains. These questions ask about measurable data and past patterns, which go beyond the mere observation that the clouds look dark. Weather forecasts sometimes go wrong because weather depends on many changing factors such as temperature, pressure, humidity and wind, and very tiny differences in conditions can grow over time and lead to something completely different, so forecasts are usually reliable for a few hours or days but less certain further ahead.",
+          "hint": "What kind of questions make a prediction testable, and why do forecasts fail further ahead?",
+          "probe": "How can the prediction 'it will rain because the clouds look dark' be checked scientifically?",
+          "causeChain": "A prediction becomes testable when it is tied to measurable evidence and past patterns (humidity, wind, temperature) -> forecasts use measurements and models, but tiny differences in conditions grow over time -> so forecasts are reliable for hours or days and less certain further ahead",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_tiny_diffs_forecast",
+              "linksChecks": [
+                "chk_sci9c1_check_weather"
+              ],
+              "criterion": "Connects very tiny differences in weather conditions growing over time to forecasts being less certain further into the future.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t3c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Good scientific questions will look for measurable evidence and past patterns. Questions with simple yes/no answers are usually not so useful.",
+              "followUp": "What kind of questions make a prediction testable, and which kind are less useful?",
+              "assessment": {
+                "requiredEvidence": [
+                  "measurable evidence",
+                  "past patterns",
+                  "yes/no answers",
+                  "not so useful"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_check_questions",
+                    "criterion": "States that good scientific questions look for measurable evidence and past patterns, and simple yes/no questions are usually not so useful.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_check_yesno"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t3c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Meghna could ask Varsha questions like “What was the condition of sky when it rained the last time? What is the humidity today? Was it above 80 per cent the last time it rained? What is today’s wind speed and direction? Is the temperature dropping like it did before the recent rains?”.",
+              "assessment": {
+                "requiredEvidence": [
+                  "humidity",
+                  "80 per cent",
+                  "wind speed and direction",
+                  "temperature dropping",
+                  "last time it rained"
+                ],
+                "passRule": "anyOf",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_check_example",
+                    "criterion": "Gives an example of a testable question, such as today's humidity, wind speed and direction, or whether the temperature is dropping as before the last rains.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Questions like these ask about measurable data and past patterns, which go beyond mere ‘clouds look dark’.",
+              "followUp": "How do such questions go beyond simply noticing the sky?",
+              "assessment": {
+                "requiredEvidence": [
+                  "measurable data",
+                  "past patterns",
+                  "beyond mere",
+                  "clouds look dark"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_check_beyond",
+                    "criterion": "States that such questions ask about measurable data and past patterns, which go beyond the mere observation that the clouds look dark.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c3_kp4",
+              "weight": 2,
+              "role": "core",
+              "text": "Weather depends on many changing factors, such as temperature, pressure, humidity, and wind. Weather forecasts use measurements and models, but very tiny differences in conditions can grow over time and lead to something completely different. This is why forecasts are usually reliable for a few hours or even a few days, but less certain further into the future.",
+              "followUp": "Why do weather forecasts go wrong further ahead, and what does weather depend on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "many changing factors",
+                  "temperature, pressure, humidity, and wind",
+                  "tiny differences",
+                  "grow over time",
+                  "less certain further into the future"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_check_weather",
+                    "criterion": "States that weather depends on many changing factors and tiny differences in conditions can grow over time, so forecasts are reliable for hours or days but less certain further into the future.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_check_yesno",
+              "wrong": "Simple yes/no questions are the best way to test a prediction.",
+              "fix": "Good scientific questions look for measurable evidence and past patterns; questions with simple yes/no answers are usually not so useful."
+            }
+          ],
+          "verify": [
+            { "page": 4, "quote": "Good scientific questions will look for measurable evidence and past patterns.", "supports": ["sci9c1_t3c3_kp1"] },
+            { "page": 4, "quote": "Questions with simple yes/no answers are usually not so useful.", "supports": ["sci9c1_t3c3_kp1"] },
+            { "page": 4, "quote": "What is the humidity today? Was it above 80 per cent the last time it rained?", "supports": ["sci9c1_t3c3_kp2"] },
+            { "page": 4, "quote": "What is today’s wind speed and direction?", "supports": ["sci9c1_t3c3_kp2"] },
+            { "page": 4, "quote": "Is the temperature dropping like it did before the recent rains?", "supports": ["sci9c1_t3c3_kp2"] },
+            { "page": 4, "quote": "Questions like these ask about measurable data and past patterns, which go beyond mere ‘clouds look dark’.", "supports": ["sci9c1_t3c3_kp3"] },
+            { "page": 4, "quote": "Weather depends on many changing factors, such as temperature, pressure, humidity, and wind.", "supports": ["sci9c1_t3c3_kp4"] },
+            { "page": 4, "quote": "Weather forecasts use measurements and models, but very tiny differences in conditions can grow over time and lead to something completely different.", "supports": ["sci9c1_t3c3_kp4"] },
+            { "page": 4, "quote": "This is why forecasts are usually reliable for a few hours or even a few days, but less certain further into the future.", "supports": ["sci9c1_t3c3_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t3_c4",
+          "label": "Limits of Theories and Evidence-Based Thinking",
+          "headingType": "heading",
+          "sourcePages": [4, 5],
+          "cardText": "Even the most successful scientific theories have limits and may fail when new conditions are explored or when measurements become more precise. Such failures are not a weakness of science; in fact, they are its greatest strength. When predictions do not match observations, scientists do not reject ideas based on opinion or belief, but only on evidence. No scientific theory is ever final and none is beyond question; this openness to being corrected by nature itself is what has allowed science to help us understand the world. The same habit helps us check viral claims on social media, such as that food becomes harmful during an eclipse: an eclipse is just a play of shadows, and asking simple scientific questions about what physical change occurs, whether temperature changes significantly or food goes bad in a shadow, shows that no physical, chemical or biological mechanism supports such a claim.",
+          "hint": "Why are failures of theories a strength of science, and how can we test a viral claim?",
+          "probe": "Why are the limits and failures of scientific theories a strength rather than a weakness?",
+          "causeChain": "Theories have limits and can fail with new conditions or more precise measurements -> scientists reject ideas only on evidence, not opinion or belief -> no theory is final, so openness to correction by nature makes science reliable -> the same evidence-based questioning disproves viral claims such as food being harmful during an eclipse",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_evidence_not_opinion",
+              "linksChecks": [
+                "chk_sci9c1_limit_evidence"
+              ],
+              "criterion": "Connects predictions failing to match observations to scientists rejecting ideas only on evidence rather than opinion or belief.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t3c4_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "Even the most successful scientific theories have limits and may fail when new conditions are explored or when measurements become more precise. Such failures are not a weakness of science; in fact, they are its greatest strength.",
+              "followUp": "What can happen to even very successful scientific explanations when circumstances change, and why is that a strength?",
+              "assessment": {
+                "requiredEvidence": [
+                  "limits",
+                  "may fail",
+                  "new conditions",
+                  "more precise",
+                  "not a weakness",
+                  "greatest strength"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_limit_fail",
+                    "criterion": "States that even the most successful theories have limits and may fail when new conditions are explored or measurements become more precise.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_limit_strength",
+                    "criterion": "States that such failures are not a weakness of science but its greatest strength.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_failure_weakness"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t3c4_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "When predictions do not match observations, scientists do not reject ideas based on opinion or belief, but only on evidence. No scientific theory is ever final and none is beyond question. This openness to being corrected by nature itself is what has allowed science to help us in understanding the world we live in.",
+              "followUp": "On what basis do scientists reject an idea when a prediction fails, and is any explanation final?",
+              "assessment": {
+                "requiredEvidence": [
+                  "do not match observations",
+                  "opinion or belief",
+                  "only on evidence",
+                  "never final",
+                  "openness to being corrected by nature"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_limit_evidence",
+                    "criterion": "States that when predictions do not match observations scientists reject ideas only on evidence, not opinion or belief.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_limit_final",
+                    "criterion": "States that no scientific theory is ever final or beyond question, and this openness to being corrected by nature has helped science understand the world.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t3c4_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "A commonly circulated claim is that, “Food should not be eaten during an eclipse because it becomes harmful”. Disproof comes from asking simple scientific questions. An eclipse is just a play of shadows. You will conclude that no physical, chemical, or biological mechanism supports such a claim.",
+              "assessment": {
+                "requiredEvidence": [
+                  "viral claims",
+                  "eclipse",
+                  "play of shadows",
+                  "simple scientific questions",
+                  "no physical, chemical, or biological mechanism"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_limit_viral",
+                    "criterion": "States that asking simple scientific questions shows the claim that food is harmful during an eclipse is false, since an eclipse is just a play of shadows and no physical, chemical or biological mechanism supports it.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_failure_weakness",
+              "wrong": "When a scientific theory fails, it shows that science is weak and unreliable.",
+              "fix": "Such failures are not a weakness of science; in fact, they are its greatest strength, because scientists reject ideas only on evidence."
+            }
+          ],
+          "verify": [
+            { "page": 4, "quote": "Even the most successful scientific theories have limits and may fail when new conditions are explored or when measurements become more", "supports": ["sci9c1_t3c4_kp1"] },
+            { "page": 5, "quote": "precise. Such failures are not a weakness of science; in fact, they are its greatest strength.", "supports": ["sci9c1_t3c4_kp1"] },
+            { "page": 5, "quote": "When predictions do not match observations, scientists do not reject ideas based on opinion or belief, but only on evidence.", "supports": ["sci9c1_t3c4_kp2"] },
+            { "page": 5, "quote": "No scientific theory is ever final and none is beyond question.", "supports": ["sci9c1_t3c4_kp2"] },
+            { "page": 5, "quote": "This openness to being corrected by nature itself is what has allowed science to help us in understanding the world we live in.", "supports": ["sci9c1_t3c4_kp2"] },
+            { "page": 5, "quote": "A commonly circulated claim is that, “Food should not be eaten during an eclipse because it becomes harmful”.", "supports": ["sci9c1_t3c4_kp3"] },
+            { "page": 5, "quote": "Disproof comes from asking simple scientific questions.", "supports": ["sci9c1_t3c4_kp3"] },
+            { "page": 5, "quote": "An eclipse is just a play of shadows", "supports": ["sci9c1_t3c4_kp3"] },
+            { "page": 5, "quote": "You will conclude that no physical, chemical, or biological mechanism supports such a claim.", "supports": ["sci9c1_t3c4_kp3"] }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "ncert_sci_9_ch1_t4",
+      "title": "Habits of scientific thinking",
+      "concepts": [
+        {
+          "conceptId": "sci9_ch1_t4_c1",
+          "label": "Estimation and Approximate Reasoning",
+          "headingType": "heading",
+          "sourcePages": [5, 6],
+          "cardText": "A helpful strategy is to first understand the situation being studied, then identify the quantities that matter, and finally make a rough estimate to check whether an answer makes sense. Exact values are not always necessary, especially in the early stages of reasoning; an approximate estimate is often enough to tell whether a result is reasonable or impossible. Estimating helps build intuition, detect errors and develop confidence, and science values careful reasoning perhaps much more than accurate calculations. For example, in estimating how much rice would feed a family of four for a month, the aim is not an exact number but to check that the answer makes sense, since 100 g for a month is clearly too little while a few tonnes is far too much. To estimate the air breathed in a day, take about 12-15 breaths a minute over 1440 minutes, roughly 20 thousand breaths, and about 0.5 litre per breath (it takes 4-5 breaths to fill a 2-litre balloon), giving about 10,000 litres a day.",
+          "hint": "What are the steps of a rough estimate, and why is an approximate answer useful?",
+          "probe": "Why is estimation useful, and how would you estimate the litres of air you breathe in a day?",
+          "causeChain": "Understand the situation -> identify the quantities that matter -> make a rough estimate and check it makes sense -> an approximate answer shows if a result is reasonable or impossible and builds intuition; e.g. 20 thousand breaths x 0.5 litre = about 10,000 litres a day",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_estimate_check",
+              "linksChecks": [
+                "chk_sci9c1_est_why",
+                "chk_sci9c1_est_rice"
+              ],
+              "criterion": "Connects making a rough estimate to checking whether an answer is reasonable or impossible, as with 100 g of rice for a month being clearly too little.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t4c1_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "A helpful strategy is to first understand the situation being studied, then identify the quantities that matter, and finally make a rough estimate to check whether an answer makes sense. Exact values are not always necessary, especially in the early stages of reasoning.",
+              "followUp": "What steps does a good approximate answer involve, and are exact values always needed early on?",
+              "assessment": {
+                "requiredEvidence": [
+                  "understand the situation",
+                  "quantities that matter",
+                  "rough estimate",
+                  "check whether an answer makes sense",
+                  "exact values are not always necessary"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_est_steps",
+                    "criterion": "States the strategy: first understand the situation, then identify the quantities that matter, then make a rough estimate to check whether the answer makes sense.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_exact_always"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t4c1_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Often, an approximate estimate is enough to tell us whether a result is reasonable or impossible. Learning to estimate helps you build intuition, detect errors, and develop confidence in your thinking. Science values careful reasoning perhaps much more than accurate calculations!",
+              "followUp": "What can a rough answer tell us, and what does science value?",
+              "assessment": {
+                "requiredEvidence": [
+                  "approximate estimate is enough",
+                  "reasonable or impossible",
+                  "build intuition, detect errors",
+                  "careful reasoning",
+                  "accurate calculations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_est_why",
+                    "criterion": "States that an approximate estimate can tell us whether a result is reasonable or impossible, and estimation builds intuition, detects errors and builds confidence.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_est_reasoning",
+                    "criterion": "States that science values careful reasoning perhaps much more than accurate calculations.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t4c1_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "The aim is not to get an exact number, but to check whether the answer makes sense as 100 g for a month is clearly too little, while a few tonnes is far too much.",
+              "assessment": {
+                "requiredEvidence": [
+                  "not to get an exact number",
+                  "100 g for a month",
+                  "clearly too little",
+                  "a few tonnes is far too much"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_est_rice",
+                    "criterion": "States, with the rice example, that the aim is to check whether the answer makes sense: 100 g for a month is clearly too little and a few tonnes is far too much.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t4c1_kp4",
+              "weight": 1,
+              "role": "supporting",
+              "text": "At rest, we take about 12 – 15 breaths a minute, and there are 60 × 24 = 1440 minutes in a day, so we take roughly 18 – 22 thousand breaths, about 20 thousand breaths a day. One way to estimate this is to think that it takes about 4 – 5 breaths to fill a typical rubber party balloon, which when inflated has a volume of about 2 litres. So, one breath is perhaps about 0.5 litre. Hence, we breathe in about 10,000 litres of air a day!",
+              "assessment": {
+                "requiredEvidence": [
+                  "12 - 15 breaths a minute",
+                  "1440 minutes",
+                  "20 thousand breaths",
+                  "0.5 litre",
+                  "10,000 litres"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_est_breath",
+                    "criterion": "Estimates the air breathed in a day: about 12-15 breaths a minute over 1440 minutes gives about 20 thousand breaths, and about 0.5 litre per breath gives about 10,000 litres.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: an approximate answer is good enough when estimating how much rice a family needs, but an exact value is needed when measuring a medicine dose"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_exact_always",
+              "wrong": "Science always needs exact values and accurate calculations before any reasoning.",
+              "fix": "Exact values are not always necessary, especially in the early stages of reasoning; an approximate estimate is often enough to tell us whether a result is reasonable or impossible."
+            }
+          ],
+          "verify": [
+            { "page": 5, "quote": "A helpful strategy is to first understand the situation being studied, then identify the quantities that matter, and finally make a rough estimate to check whether an answer makes sense.", "supports": ["sci9c1_t4c1_kp1"] },
+            { "page": 5, "quote": "Exact values are not always necessary, especially in the early stages of reasoning.", "supports": ["sci9c1_t4c1_kp1"] },
+            { "page": 5, "quote": "Often, an approximate estimate is enough to tell us whether a result is reasonable or impossible.", "supports": ["sci9c1_t4c1_kp2"] },
+            { "page": 5, "quote": "Learning to estimate helps you build intuition, detect errors, and develop confidence in your thinking.", "supports": ["sci9c1_t4c1_kp2"] },
+            { "page": 5, "quote": "Science values careful reasoning perhaps much more than accurate calculations!", "supports": ["sci9c1_t4c1_kp2"] },
+            { "page": 5, "quote": "The aim is not to get an exact number, but to check whether the answer makes sense", "supports": ["sci9c1_t4c1_kp3"] },
+            { "page": 5, "quote": "as 100 g for a month is clearly too little, while a few tonnes is far too much", "supports": ["sci9c1_t4c1_kp3"] },
+            { "page": 6, "quote": "At rest, we take about 12 – 15 breaths a minute", "supports": ["sci9c1_t4c1_kp4"] },
+            { "page": 6, "quote": "One way to estimate this is to think that it takes about 4 – 5 breaths to fill a typical rubber party balloon, which when inflated has a volume of about 2 litres.", "supports": ["sci9c1_t4c1_kp4"] },
+            { "page": 6, "quote": "So, one breath is perhaps about 0.5 litre.", "supports": ["sci9c1_t4c1_kp4"] },
+            { "page": 6, "quote": "Hence, we breathe in about 10,000 litres of air a day!", "supports": ["sci9c1_t4c1_kp4"] },
+            { "page": 6, "quote": "Describe one situation where an approximate answer is good enough, and one where you would need a very exact value.", "supports": ["sci9c1_t4c1_kp4"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t4_c2",
+          "label": "Branches of Science and Connections Across Disciplines",
+          "headingType": "heading",
+          "sourcePages": [6, 7],
+          "cardText": "After Grade 10, if you study science, it will be divided into branches like physics, chemistry, biology and earth science, and even in Grades 9 and 10 the chapters focus on some of these areas. But the natural world does not have such boundaries; these divisions are made by us only to help organise knowledge, and they are not independent of each other. Most real-world problems, such as understanding climate change, developing medicines or designing sustainable technologies, require ideas from several disciplines together, and science also connects naturally with mathematics, technology, arts and social sciences. To make sense of the world fully we need to connect multiple ways of knowing and expressing ideas, each enriching the other. For example, understanding how a mask works needs physics (particle motion and electrostatic attraction), chemistry (properties of polymer fibres), biology (size and behaviour of viruses) and mathematics (modelling airflow and filtration efficiency).",
+          "hint": "Why are the branches of science not separate, and what does a mask show?",
+          "probe": "Why do real-world problems need ideas from several branches of science? Give an example.",
+          "causeChain": "Branches of science are divisions made by us to organise knowledge -> nature has no such boundaries -> real problems like climate change, medicines and masks need physics, chemistry, biology and mathematics together",
+          "causeLinks": [
+            {
+              "id": "lnk_sci9c1_boundaries_together",
+              "linksChecks": [
+                "chk_sci9c1_branch_no_boundary",
+                "chk_sci9c1_branch_problems"
+              ],
+              "criterion": "Connects the natural world having no boundaries, with divisions made only to organise knowledge, to real-world problems needing ideas from several disciplines together.",
+              "isRequired": true
+            }
+          ],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t4c2_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "After Grade 10, if you decide to study science, it will be divided into branches like physics, chemistry, biology and earth science. However, do remember that the natural world does not have any such boundaries. These divisions are made by us to only help organise knowledge, they are not independent of each other.",
+              "followUp": "Into which branches is science divided later, and does nature respect those divisions?",
+              "assessment": {
+                "requiredEvidence": [
+                  "branches like physics, chemistry, biology and earth science",
+                  "natural world does not have any such boundaries",
+                  "help organise knowledge",
+                  "not independent of each other"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_branch_names",
+                    "criterion": "Names the branches science is divided into: physics, chemistry, biology and earth science.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_branch_no_boundary",
+                    "criterion": "States that the natural world has no such boundaries and the divisions are made by us only to help organise knowledge, not independent of each other.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_branches_separate"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t4c2_kp2",
+              "weight": 2,
+              "role": "core",
+              "text": "Most of the real-world problems today, such as understanding climate change, developing medicines, or designing sustainable technologies require ideas from several disciplines together. Science also connects naturally with mathematics, technology, arts, and social sciences.",
+              "followUp": "Why do real problems need several subjects, and which other areas does science link with?",
+              "assessment": {
+                "requiredEvidence": [
+                  "real-world problems",
+                  "climate change",
+                  "developing medicines",
+                  "several disciplines together",
+                  "mathematics, technology, arts, and social sciences"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_branch_problems",
+                    "criterion": "States that real-world problems such as climate change, developing medicines or designing sustainable technologies require ideas from several disciplines together.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_branch_connect",
+                    "criterion": "States that science also connects naturally with mathematics, technology, arts and social sciences.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t4c2_kp3",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Solving real problems requires knowledge from several branches of science. Understanding how a mask works requires concepts from physics (particle motion and electrostatic attraction), chemistry (properties of polymer fibres), biology (size and behaviour of viruses), and mathematics (modelling airflow and filtration efficiency).",
+              "assessment": {
+                "requiredEvidence": [
+                  "mask",
+                  "physics",
+                  "particle motion and electrostatic attraction",
+                  "polymer fibres",
+                  "viruses",
+                  "airflow and filtration efficiency"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_branch_mask",
+                    "criterion": "Explains that understanding how a mask works needs physics (particle motion, electrostatic attraction), chemistry (polymer fibres), biology (viruses) and mathematics (airflow and filtration efficiency).",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [
+            "Pause: a pressure cooker involves physics (pressure and heat) and chemistry (cooking changes the food)"
+          ],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_branches_separate",
+              "wrong": "Physics, chemistry, biology and earth science are independent of each other in nature.",
+              "fix": "The natural world does not have such boundaries; these divisions are made by us only to help organise knowledge, and they are not independent of each other."
+            }
+          ],
+          "verify": [
+            { "page": 6, "quote": "After Grade 10, if you decide to study science, it will be divided into branches like physics, chemistry, biology and earth science", "supports": ["sci9c1_t4c2_kp1"] },
+            { "page": 6, "quote": "However, do remember that the natural world does not have any such boundaries.", "supports": ["sci9c1_t4c2_kp1"] },
+            { "page": 6, "quote": "These divisions are made by us to only help organise knowledge, they are not independent of each other.", "supports": ["sci9c1_t4c2_kp1"] },
+            { "page": 6, "quote": "Most of the real-world problems today, such as understanding climate change, developing medicines, or designing sustainable technologies require ideas from several disciplines together.", "supports": ["sci9c1_t4c2_kp2"] },
+            { "page": 6, "quote": "Science also connects naturally with mathematics, technology, arts, and social sciences.", "supports": ["sci9c1_t4c2_kp2"] },
+            { "page": 7, "quote": "Solving real problems requires knowledge from several branches of science.", "supports": ["sci9c1_t4c2_kp3"] },
+            { "page": 7, "quote": "Understanding how a mask works requires concepts from physics (particle motion and electrostatic attraction), chemistry (properties of polymer fibres), biology (size and behaviour of viruses), and mathematics (modelling airflow and filtration efficiency).", "supports": ["sci9c1_t4c2_kp3"] }
+          ]
+        },
+        {
+          "conceptId": "sci9_ch1_t4_c3",
+          "label": "Science as a Human Activity",
+          "headingType": "heading",
+          "sourcePages": [7],
+          "cardText": "Science is not just a collection of facts, equations or experiments. It is a human activity shaped by curiosity, creativity, collaboration and careful questioning. It grows as people ask questions, test ideas, share results and learn from mistakes, and develops over time through the work of many individuals across different cultures and generations. Even if you do not study science beyond Grade 10, scientific thinking will be very important in whatever you do: it helps you understand the technology around you, evaluate information critically and make sense of the world. Science invites you not only to learn about the world but to learn how we are trying to understand it.",
+          "hint": "What shapes science as a human activity, and why does scientific thinking matter for everyone?",
+          "probe": "Why is science called a human activity, and why does scientific thinking matter even if you do not study science later?",
+          "causeChain": "Science is shaped by curiosity, creativity, collaboration and careful questioning -> it grows as people ask questions, test ideas, share results and learn from mistakes across cultures and generations -> scientific thinking helps everyone understand technology and evaluate information critically",
+          "causeLinks": [],
+          "keyPoints": [
+            {
+              "id": "sci9c1_t4c3_kp1",
+              "weight": 2,
+              "role": "core",
+              "text": "science is not just a collection of facts, equations, or experiments. It is a human activity shaped by curiosity, creativity, collaboration, and careful questioning. It grows as people ask questions, test ideas, share results, and learn from mistakes.",
+              "followUp": "Is science only facts and experiments? What shapes it, and how does it grow?",
+              "assessment": {
+                "requiredEvidence": [
+                  "not just a collection of facts",
+                  "human activity",
+                  "curiosity, creativity, collaboration",
+                  "careful questioning",
+                  "learn from mistakes"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_human_activity",
+                    "criterion": "States that science is not just a collection of facts, equations or experiments but a human activity shaped by curiosity, creativity, collaboration and careful questioning.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  },
+                  {
+                    "id": "chk_sci9c1_human_grows",
+                    "criterion": "States that science grows as people ask questions, test ideas, share results and learn from mistakes.",
+                    "isRequired": false,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": [
+                  "misc_sci9c1_science_facts"
+                ]
+              }
+            },
+            {
+              "id": "sci9c1_t4c3_kp2",
+              "weight": 1,
+              "role": "supporting",
+              "text": "Science develops over time through the work of many individuals across different cultures and generations.",
+              "assessment": {
+                "requiredEvidence": [
+                  "over time",
+                  "many individuals",
+                  "different cultures and generations"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_human_cultures",
+                    "criterion": "States that science develops over time through the work of many individuals across different cultures and generations.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            },
+            {
+              "id": "sci9c1_t4c3_kp3",
+              "weight": 2,
+              "role": "core",
+              "text": "Even if you do not choose to study science beyond Grade 10, scientific thinking will be very important in whatever you do. It helps you understand the technology that surrounds you, and helps you evaluate information critically and make sense of the world you live in.",
+              "followUp": "Why does scientific thinking matter even if you do not study science later?",
+              "assessment": {
+                "requiredEvidence": [
+                  "scientific thinking",
+                  "understand the technology",
+                  "evaluate information critically",
+                  "make sense of the world"
+                ],
+                "passRule": "allRequired",
+                "checks": [
+                  {
+                    "id": "chk_sci9c1_human_matters",
+                    "criterion": "States that scientific thinking matters even without studying science beyond Grade 10, helping us understand technology, evaluate information critically and make sense of the world.",
+                    "isRequired": true,
+                    "lexical": "never"
+                  }
+                ],
+                "misconceptionIds": []
+              }
+            }
+          ],
+          "acceptedExamples": [],
+          "extraExamplesOk": [],
+          "misconceptions": [
+            {
+              "id": "misc_sci9c1_science_facts",
+              "wrong": "Science is just a collection of facts, equations and experiments.",
+              "fix": "Science is not just a collection of facts, equations, or experiments; it is a human activity shaped by curiosity, creativity, collaboration, and careful questioning."
+            }
+          ],
+          "verify": [
+            { "page": 7, "quote": "science is not just a collection of facts, equations, or experiments.", "supports": ["sci9c1_t4c3_kp1"] },
+            { "page": 7, "quote": "It is a human activity shaped by curiosity, creativity, collaboration, and careful questioning.", "supports": ["sci9c1_t4c3_kp1"] },
+            { "page": 7, "quote": "It grows as people ask questions, test ideas, share results, and learn from mistakes.", "supports": ["sci9c1_t4c3_kp1"] },
+            { "page": 7, "quote": "Science develops over time through the work of many individuals across different cultures and generations.", "supports": ["sci9c1_t4c3_kp2"] },
+            { "page": 7, "quote": "Even if you do not choose to study science beyond Grade 10, scientific thinking will be very important in whatever you do.", "supports": ["sci9c1_t4c3_kp3"] },
+            { "page": 7, "quote": "It helps you understand the technology that surrounds you, and helps you evaluate information critically and make sense of the world you live in.", "supports": ["sci9c1_t4c3_kp3"] }
+          ]
+        }
+      ]
+    }
+  ]
+}

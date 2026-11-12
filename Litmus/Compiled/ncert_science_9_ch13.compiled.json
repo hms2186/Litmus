@@ -1,0 +1,4150 @@
+{
+  "compilerVersion": "1.0.0",
+  "schemaVersion": 4,
+  "schemaRevision": 1,
+  "sourceFile": "ncert_science_9_ch13.json",
+  "sourceSha256": "44b5dfee8d1e85cb83079e0117c5b2ec55fda9289018a993c8b1a318162d5079",
+  "reviewStatus": "pending",
+  "framework": "NCERT",
+  "gradeLevel": "Class 9",
+  "subject": "Science",
+  "book": "Exploration",
+  "chapterNumber": 13,
+  "chapterName": "Earth as a System: Energy, Matter, and Life",
+  "articulationChecks": [
+    {
+      "id": "chk_sci9c13_art_complete_sentences",
+      "criterion": "The answer is written in complete sentences, not a list of fragments.",
+      "isRequired": true,
+      "gradedBy": "code"
+    },
+    {
+      "id": "chk_sci9c13_art_chapter_terms",
+      "criterion": "The answer correctly uses at least one term from this chapter, for example geosphere, hydrosphere, cryosphere, atmosphere, biosphere, solar radiation, insolation, solar constant.",
+      "isRequired": true,
+      "gradedBy": "code"
+    }
+  ],
+  "chapterVocabulary": [
+    "geosphere",
+    "hydrosphere",
+    "cryosphere",
+    "atmosphere",
+    "biosphere",
+    "solar radiation",
+    "insolation",
+    "solar constant",
+    "albedo",
+    "greenhouse gases",
+    "troposphere",
+    "stratosphere",
+    "ozone layer",
+    "planetary winds",
+    "ocean currents",
+    "biogeochemical cycle",
+    "carbon cycle",
+    "nitrogen cycle",
+    "eutrophication"
+  ],
+  "concepts": [
+    {
+      "conceptId": "sci9_ch13_t1_c1",
+      "topicId": "ncert_sci_9_ch13_t1",
+      "topicTitle": "The Earth as a system",
+      "label": "The Spheres of the Earth System",
+      "headingType": "heading",
+      "sourcePages": [
+        252,
+        253
+      ],
+      "conceptHash": "75d92af1665683e894accc1a8033f0befedb38fc22279fab256beffc41befa99",
+      "cardText": "Life on Earth is powered by a constant flow of energy and matter. The Sun is the main source of energy, and the Earth's hot interior and chemical reactions in the air, water and rocks also drive the flow of energy and matter. The chapter considers these processes together as belonging to one Earth system made up of interacting spheres. The geosphere is the solid rocks, soil, landforms and the Earth's interior. The hydrosphere is liquid water in the form of oceans, rivers, lakes and groundwater. The cryosphere is the solid form of water, such as ice and snow, like the Himalayan glaciers and polar ice caps. The atmosphere is the air surrounding the Earth that we breathe. The biosphere is all living organisms and their habitats, including mangroves, forests, farms, ocean plankton and coral reefs. Natural processes such as heating by solar radiation, movement of air and water, and nutrient cycling connect these spheres in a delicate balance.",
+      "hint": "Name the five spheres of the Earth system and what each contains.",
+      "probe": "Define the five spheres of the Earth system and say what connects them.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Spheres of the Earth System, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t1c1_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "constant flow of energy and matter",
+            "Sun is the main source of energy"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_sp_flow",
+              "criterion": "States that life on Earth is powered by a constant flow of energy and matter, with the Sun the main source of energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Name the five spheres of the Earth system and what each contains."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t1c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do the solid parts of the Earth and its rivers, lakes and oceans make up in this scheme, and what do they include?",
+          "requiredEvidence": [
+            "geosphere",
+            "solid rocks, soil, landforms",
+            "hydrosphere",
+            "liquid water",
+            "oceans, rivers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_sp_five",
+              "criterion": "Defines the geosphere (solid rocks, soil, landforms and the Earth's interior) and the hydrosphere (liquid water in oceans, rivers, lakes and groundwater).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do the solid parts of the Earth and its rivers, lakes and oceans make up in this scheme, and what do they include?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_sp_ice"
+          ]
+        },
+        {
+          "id": "sci9c13_t1c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the frozen water, the surrounding air and the living things called, and what does each include?",
+          "requiredEvidence": [
+            "cryosphere",
+            "solid form of water",
+            "atmosphere",
+            "air surrounding the Earth",
+            "biosphere",
+            "all living organisms and their habitats"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_sp_five2",
+              "criterion": "Defines the cryosphere (solid water as ice and snow), the atmosphere (the air surrounding the Earth) and the biosphere (all living organisms and their habitats).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the frozen water, the surrounding air and the living things called, and what does each include?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t1c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What links the different parts of the Earth together, and in what state do they stay?",
+          "requiredEvidence": [
+            "heating by solar radiation",
+            "movement of air and water",
+            "nutrient cycling",
+            "connect these spheres",
+            "delicate balance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_sp_connect",
+              "criterion": "States that natural processes such as heating by solar radiation, movement of air and water, and nutrient cycling connect the spheres in a delicate balance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What links the different parts of the Earth together, and in what state do they stay?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_spheres_connected",
+          "linksChecks": [
+            "chk_sci9c13_sp_five",
+            "chk_sci9c13_sp_connect"
+          ],
+          "criterion": "Connects solar heating, movement of air and water, and nutrient cycling to the five spheres being connected in a delicate balance.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_sp_ice",
+          "wrong": "Ice and snow belong to the hydrosphere along with liquid water.",
+          "fix": "The hydrosphere is liquid water, while the solid form of water such as ice and snow forms the cryosphere.",
+          "checkId": "mchk_misc_sci9c13_sp_ice",
+          "checkCriterion": "The answer states or implies this wrong idea: Ice and snow belong to the hydrosphere along with liquid water.",
+          "fixCheckId": "mfix_misc_sci9c13_sp_ice",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The hydrosphere is liquid water, while the solid form of water such as ice and snow forms the cryosphere.",
+          "keyPointIds": [
+            "sci9c13_t1c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_sp_ice"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_sp_five",
+            "chk_sci9c13_sp_five2",
+            "chk_sci9c13_sp_connect"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_sp_flow",
+            "lnk_sci9c13_spheres_connected"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t1_c2",
+      "topicId": "ncert_sci_9_ch13_t1",
+      "topicTitle": "The Earth as a system",
+      "label": "Interactions Among the Spheres",
+      "headingType": "heading",
+      "sourcePages": [
+        253
+      ],
+      "conceptHash": "0a360b07c1724d29f2a753c6d0534572814f6d853a812c59b0f279d0e3c1ff8b",
+      "cardText": "From Activity 13.1 we can infer that a disturbance in one sphere can lead to changes in others. For example, less snowfall in winters may lead to less water in the lake in summers, resulting in less water to support the growth of grass. On a large scale, warmer Arabian Sea water leads to more evaporation from the sea, which causes fluctuations in the southwest monsoon and variability in rainfall, bringing floods to some regions of India while leaving others in drought. The rise in atmospheric temperature could eventually accelerate the melting of glaciers and polar ice in the cryosphere, which may lead to the flooding of low-lying regions and, in the long run, raise sea levels and threaten coastal cities. This could disturb the ecosystems within the biosphere by causing habitat loss.",
+      "hint": "How can a change in one sphere affect the others?",
+      "probe": "Give examples showing that a disturbance in one sphere changes others.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Interactions Among the Spheres, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t1c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What can a change in one part of the Earth cause elsewhere? Give an example with snowfall in winter.",
+          "requiredEvidence": [
+            "disturbance in one sphere",
+            "changes in others",
+            "less snowfall",
+            "less water in the lake",
+            "growth of grass"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_si_example",
+              "criterion": "States that a disturbance in one sphere can lead to changes in others, e.g. less snowfall in winter leads to less lake water in summer and less water for grass growth.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can a change in one part of the Earth cause elsewhere? Give an example with snowfall in winter."
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_si_isolated"
+          ]
+        },
+        {
+          "id": "sci9c13_t1c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How could warmer sea water far from land change the rains over India?",
+          "requiredEvidence": [
+            "warmer Arabian Sea water",
+            "more evaporation",
+            "southwest monsoon",
+            "floods",
+            "drought"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_si_monsoon",
+              "criterion": "States that warmer Arabian Sea water causes more evaporation and fluctuations in the southwest monsoon, bringing floods to some regions of India and drought to others.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How could warmer sea water far from land change the rains over India?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t1c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What chain of effects could a hotter atmosphere set off for ice, sea level and living things?",
+          "requiredEvidence": [
+            "melting of glaciers and polar ice",
+            "flooding of low-lying regions",
+            "raise sea levels",
+            "coastal cities",
+            "habitat loss"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_si_warming",
+              "criterion": "States that a rise in atmospheric temperature could accelerate melting of glaciers and polar ice, flooding low-lying regions and raising sea levels that threaten coastal cities, causing habitat loss in the biosphere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What chain of effects could a hotter atmosphere set off for ice, sea level and living things?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_chain_of_effects",
+          "linksChecks": [
+            "chk_sci9c13_si_example",
+            "chk_sci9c13_si_warming"
+          ],
+          "criterion": "Connects warming to melting ice, rising sea levels and habitat loss, showing a disturbance in one sphere passing to others.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_si_isolated",
+          "wrong": "Each sphere of the Earth works independently of the others.",
+          "fix": "A disturbance in one sphere can lead to changes in others.",
+          "checkId": "mchk_misc_sci9c13_si_isolated",
+          "checkCriterion": "The answer states or implies this wrong idea: Each sphere of the Earth works independently of the others.",
+          "fixCheckId": "mfix_misc_sci9c13_si_isolated",
+          "fixCheckCriterion": "Answer 2 states the correct idea: A disturbance in one sphere can lead to changes in others.",
+          "keyPointIds": [
+            "sci9c13_t1c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 6
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_si_isolated"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_si_example",
+            "chk_sci9c13_si_monsoon",
+            "chk_sci9c13_si_warming"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c13_chain_of_effects"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c1",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "Solar Radiation and the Electromagnetic Spectrum",
+      "headingType": "heading",
+      "sourcePages": [
+        253,
+        254
+      ],
+      "conceptHash": "d27682292e3a13864bfb67ed314b1880d97ee9cc69ddb800d7d169f78d6f863f",
+      "cardText": "Solar radiation is the main source of energy on the Earth and reaches it as electromagnetic (EM) waves that travel through a vacuum at the speed of light. EM waves cover a wide range of frequencies, from high frequency or short wavelength radiation (gamma rays and X-rays) to low frequency or long wavelength radiation (infrared and radio waves); the high frequency EM waves have very high energy and can be harmful for life. The solar radiation reaching the Earth is concentrated mainly in the ultraviolet (UV), visible and infrared (IR) range, about 99 per cent of the Sun's energy. Short wavelength UV radiation is mostly absorbed by the ozone layer, protecting life and contributing to some atmospheric heating. Visible light reaches the surface, provides energy for photosynthesis, the primary source of food for most organisms, and partly warms the land and water. Infrared radiation warms the Earth's surface, which then re-radiates this heat into the atmosphere; a portion of this outgoing heat is trapped by greenhouse gases such as carbon dioxide, methane and water vapour, keeping the Earth warm enough to support life.",
+      "hint": "Which parts of the solar spectrum reach the Earth and what does each do?",
+      "probe": "Explain what kinds of solar radiation reach the Earth and what UV, visible and infrared radiation each do.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Solar Radiation and the Electromagnetic Spectrum, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the main energy source for the Earth, and in what form does it arrive across empty space?",
+          "requiredEvidence": [
+            "main source of energy",
+            "electromagnetic (EM) waves",
+            "vacuum"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_source",
+              "criterion": "States that solar radiation is the main source of energy on the Earth and reaches it as electromagnetic (EM) waves travelling through a vacuum.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the main energy source for the Earth, and in what form does it arrive across empty space?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_ra_vacuum"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "wide range of frequencies",
+            "gamma rays and X-rays",
+            "infrared and radio waves",
+            "very high energy",
+            "harmful for life"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_spectrum",
+              "criterion": "States that EM waves range from high frequency, short wavelength radiation (gamma rays, X-rays), which has very high energy and can harm life, to low frequency, long wavelength radiation (infrared, radio waves).",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which parts of the solar spectrum reach the Earth and what does each do?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which parts of the spectrum make up most of the energy reaching us, and how much of the total?",
+          "requiredEvidence": [
+            "ultraviolet",
+            "visible",
+            "infrared",
+            "99 per cent"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_range",
+              "criterion": "States that the solar radiation reaching the Earth is concentrated mainly in the ultraviolet, visible and infrared range, about 99 per cent of the Sun's energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which parts of the spectrum make up most of the energy reaching us, and how much of the total?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What becomes of the shortest wavelengths and of the light we see?",
+          "requiredEvidence": [
+            "UV radiation is mostly absorbed by the ozone layer",
+            "visible light",
+            "energy for photosynthesis",
+            "primary source of food",
+            "partly warms the land and water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_uv_vis",
+              "criterion": "States that UV radiation is mostly absorbed by the ozone layer, protecting life, while visible light reaches the surface, provides energy for photosynthesis and partly warms the land and water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What becomes of the shortest wavelengths and of the light we see?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c1_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the longest of the three kinds after it reaches the ground, and what traps some of it?",
+          "requiredEvidence": [
+            "infrared radiation warms the Earth's surface",
+            "re-radiates this heat",
+            "trapped by the greenhouse gases",
+            "carbon dioxide",
+            "methane",
+            "water vapour"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_ir",
+              "criterion": "States that infrared radiation warms the Earth's surface, which re-radiates heat, and a portion of it is trapped by greenhouse gases (carbon dioxide, methane, water vapour), keeping the Earth warm enough to support life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the longest of the three kinds after it reaches the ground, and what traps some of it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c1_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "prolonged exposure",
+            "damage the eyes and skin",
+            "risk of cancer"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ra_uv_harm",
+              "criterion": "States that prolonged exposure to UV rays can damage the eyes and skin and increase the risk of cancer.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which parts of the solar spectrum reach the Earth and what does each do?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_ir_greenhouse",
+          "linksChecks": [
+            "chk_sci9c13_ra_uv_vis",
+            "chk_sci9c13_ra_ir"
+          ],
+          "criterion": "Connects infrared radiation warming the surface, which re-radiates heat, to greenhouse gases trapping part of it and keeping the Earth warm enough for life.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_ra_vacuum",
+          "wrong": "Solar radiation reaches the Earth as mechanical waves that need a medium.",
+          "fix": "Solar radiation reaches the Earth as electromagnetic (EM) waves, which travel through a vacuum at the speed of light.",
+          "checkId": "mchk_misc_sci9c13_ra_vacuum",
+          "checkCriterion": "The answer states or implies this wrong idea: Solar radiation reaches the Earth as mechanical waves that need a medium.",
+          "fixCheckId": "mfix_misc_sci9c13_ra_vacuum",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Solar radiation reaches the Earth as electromagnetic (EM) waves, which travel through a vacuum at the speed of light.",
+          "keyPointIds": [
+            "sci9c13_t2c1_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 10
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_ra_vacuum"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_ra_source",
+            "chk_sci9c13_ra_range",
+            "chk_sci9c13_ra_uv_vis",
+            "chk_sci9c13_ra_ir"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_ra_spectrum",
+            "chk_sci9c13_ra_uv_harm",
+            "lnk_sci9c13_ir_greenhouse"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c2",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "Insolation and the Solar Constant",
+      "headingType": "heading",
+      "sourcePages": [
+        254,
+        255
+      ],
+      "conceptHash": "d7d632660d9ca012176577f4b709309f2c43376f8e9dcb1d6d18cfe603a3d310",
+      "cardText": "The amount of the Sun's radiation that reaches the Earth's surface is called insolation, and it is responsible for warming the Earth's surface and its atmosphere. The average amount of solar energy received per unit time per unit area perpendicular to the Sun's rays at the top of the Earth's atmosphere is called the solar constant, which represents the Sun's energy available on the Earth before any absorption, scattering or reflection in the atmosphere. The solar constant is important because it helps scientists understand the Earth's energy balance, climate and weather patterns. Some of this energy is absorbed and scattered by gases, clouds and dust particles in the atmosphere, so the maximum insolation reaching the surface is lower than the solar constant, about 1 kilowatt per square metre under clear sky conditions. India, in the tropical and sub-tropical regions, receives abundant sunlight throughout the year, which drives the southwest monsoon and offers immense potential for solar energy as a renewable and sustainable source. Anna Mani mapped solar insolation across India.",
+      "hint": "How are insolation and the solar constant different?",
+      "probe": "Define insolation and the solar constant and explain why the insolation at the surface is lower.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Insolation and the Solar Constant, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What do we call the amount of the Sun's radiation reaching the ground, and what does it do?",
+          "requiredEvidence": [
+            "Sun's radiation that reaches the Earth's surface",
+            "insolation",
+            "warming the Earth's surface and its atmosphere"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_in_def",
+              "criterion": "Defines insolation as the amount of the Sun's radiation that reaches the Earth's surface, responsible for warming the surface and atmosphere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What do we call the amount of the Sun's radiation reaching the ground, and what does it do?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_in_same"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the energy received each second over a unit of area at the very top of the air defined, and what does it exclude?",
+          "requiredEvidence": [
+            "per unit time per unit area",
+            "perpendicular to the Sun's rays",
+            "top of the Earth's atmosphere",
+            "solar constant",
+            "before any absorption, scattering or reflection"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_in_const",
+              "criterion": "Defines the solar constant as the average solar energy received per unit time per unit area perpendicular to the Sun's rays at the top of the atmosphere, before any absorption, scattering or reflection.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the energy received each second over a unit of area at the very top of the air defined, and what does it exclude?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is the energy at the ground less than at the top of the air?",
+          "requiredEvidence": [
+            "absorbed and scattered by gases, clouds and dust particles",
+            "before reaching the surface",
+            "maximum insolation",
+            "lower than the solar constant"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_in_lower",
+              "criterion": "Explains that gases, clouds and dust particles absorb and scatter some energy, so the maximum insolation reaching the surface is lower than the solar constant.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the energy at the ground less than at the top of the air?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "tropical and sub-tropical regions",
+            "abundant sunlight throughout the year",
+            "drives the southwest monsoon",
+            "climate and agriculture"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_in_india",
+              "criterion": "States that India, in the tropical and sub-tropical regions, receives abundant sunlight throughout the year, and insolation drives the southwest monsoon, influencing climate and agriculture.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are insolation and the solar constant different?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "immense potential",
+            "solar energy",
+            "renewable and sustainable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_in_solar",
+              "criterion": "States that India's sunlight offers immense potential for harnessing solar energy as a renewable and sustainable source of energy.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How are insolation and the solar constant different?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_absorbed_scattered_lower",
+          "linksChecks": [
+            "chk_sci9c13_in_const",
+            "chk_sci9c13_in_lower"
+          ],
+          "criterion": "Connects absorption and scattering by gases, clouds and dust in the atmosphere to the surface insolation being lower than the solar constant.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_in_same",
+          "wrong": "Insolation and the solar constant are the same quantity.",
+          "fix": "The solar constant is the energy at the top of the atmosphere before any absorption, scattering or reflection; insolation is the radiation that reaches the Earth's surface, which is lower.",
+          "checkId": "mchk_misc_sci9c13_in_same",
+          "checkCriterion": "The answer states or implies this wrong idea: Insolation and the solar constant are the same quantity.",
+          "fixCheckId": "mfix_misc_sci9c13_in_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The solar constant is the energy at the top of the atmosphere before any absorption, scattering or reflection; insolation is the radiation that reaches the Earth's surface, which is lower.",
+          "keyPointIds": [
+            "sci9c13_t2c2_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_in_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_in_def",
+            "chk_sci9c13_in_const",
+            "chk_sci9c13_in_lower"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_in_india",
+            "chk_sci9c13_in_solar",
+            "lnk_sci9c13_absorbed_scattered_lower"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c3",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "Albedo: How Surfaces Reflect and Absorb Sunlight",
+      "headingType": "heading",
+      "sourcePages": [
+        256
+      ],
+      "conceptHash": "3aa7117781f3f6d5b3f369ca8a91722a2c12b792b5ad955f00c6808bab582ca5",
+      "cardText": "Different materials absorb and heat up differently under sunlight. Dark surfaces absorb more sunlight, while light coloured surfaces reflect more and remain comparatively cooler; for example dark coloured roads heat up quickly and dark clothes feel hotter than white ones. The fraction of solar radiation reflected by a surface is called its albedo. High albedo surfaces stay cool because they reflect more light, while low albedo ones heat up more quickly as they reflect less and absorb more light. Snow and ice have high albedo, reflecting a large proportion of the incoming solar radiation, which makes polar regions very cold. Surfaces like black soil and ocean water have lower albedo as they absorb more solar radiation, so they are relatively warmer.",
+      "hint": "Why do snow and ice stay cold while dark surfaces warm up quickly?",
+      "probe": "Define albedo and explain how it affects the temperature of a surface.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Albedo: How Surfaces Reflect and Absorb Sunlight, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do dark and light colours differ when sunlight falls on them?",
+          "requiredEvidence": [
+            "dark surfaces absorb more sunlight",
+            "light coloured surfaces reflect more",
+            "comparatively cooler",
+            "dark coloured roads"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_al_colour",
+              "criterion": "States that dark surfaces absorb more sunlight, while light coloured surfaces reflect more and stay cooler, e.g. dark roads heat up quickly.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do dark and light colours differ when sunlight falls on them?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What fraction of the incoming light is reflected by a surface, and what is this called?",
+          "requiredEvidence": [
+            "fraction of solar radiation reflected",
+            "albedo"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_al_def",
+              "criterion": "Defines albedo as the fraction of solar radiation reflected by a surface.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What fraction of the incoming light is reflected by a surface, and what is this called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do surfaces that reflect a lot and those that reflect little differ in warming?",
+          "requiredEvidence": [
+            "high albedo",
+            "stay cool",
+            "reflect more light",
+            "low albedo",
+            "heat up more quickly",
+            "absorb more light"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_al_effect",
+              "criterion": "States that high albedo surfaces stay cool because they reflect more light, while low albedo surfaces heat up more quickly as they reflect less and absorb more.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do surfaces that reflect a lot and those that reflect little differ in warming?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_al_high_hot"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why are the polar regions so cold, while dark soil and the sea are warmer?",
+          "requiredEvidence": [
+            "snow and ice have high albedo",
+            "polar regions very cold",
+            "black soil and ocean water",
+            "lower albedo",
+            "relatively warmer"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_al_snow",
+              "criterion": "States that snow and ice have high albedo and reflect much incoming radiation, making polar regions cold, while black soil and ocean water have lower albedo, absorb more and are warmer.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are the polar regions so cold, while dark soil and the sea are warmer?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_reflect_absorb",
+          "linksChecks": [
+            "chk_sci9c13_al_def",
+            "chk_sci9c13_al_snow"
+          ],
+          "criterion": "Connects a high albedo to more reflection and a cooler surface, and a low albedo to more absorption and a warmer one.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_al_high_hot",
+          "wrong": "A high albedo surface absorbs more sunlight and heats up faster.",
+          "fix": "High albedo surfaces stay cool because they reflect more light, while low albedo ones heat up more quickly as they reflect less and absorb more light.",
+          "checkId": "mchk_misc_sci9c13_al_high_hot",
+          "checkCriterion": "The answer states or implies this wrong idea: A high albedo surface absorbs more sunlight and heats up faster.",
+          "fixCheckId": "mfix_misc_sci9c13_al_high_hot",
+          "fixCheckCriterion": "Answer 2 states the correct idea: High albedo surfaces stay cool because they reflect more light, while low albedo ones heat up more quickly as they reflect less and absorb more light.",
+          "keyPointIds": [
+            "sci9c13_t2c3_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_al_high_hot"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_al_colour",
+            "chk_sci9c13_al_def",
+            "chk_sci9c13_al_effect",
+            "chk_sci9c13_al_snow"
+          ]
+        ],
+        "b": [
+          [
+            "lnk_sci9c13_reflect_absorb"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c4",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "Heat Re-radiation and the Urban Heat Island Effect",
+      "headingType": "heading",
+      "sourcePages": [
+        257
+      ],
+      "conceptHash": "d9a3cb42e436f251e0e9cfa81c218843a4d1d0b81ed736867cbd599892e36e9c",
+      "cardText": "All objects radiate heat. We feel hot inside a concrete house at night in hot summer because of the heat re-radiated by the concrete, whereas traditional houses built with thick mud and wooden walls stay cool because of less re-radiation. Cities are warmer than their surrounding rural areas, especially during summer and at night. Cities have more built-up areas, with buildings of steel, concrete and brick and roads of concrete and asphalt, which absorb solar radiation and retain heat; the re-radiated heat warms cities more than rural areas. This increases energy demand for air conditioning, further stressing urban ecosystems. Rural areas and forests have more vegetation and stay cool through shade and plant transpiration. The urban heat island effect shows how human land use can alter the local climate.",
+      "hint": "Why are cities warmer than nearby rural areas?",
+      "probe": "Explain the urban heat island effect.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Heat Re-radiation and the Urban Heat Island Effect, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c4_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "concrete house at night",
+            "heat re-radiated by the concrete",
+            "thick mud and wooden walls",
+            "less re-radiation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_uh_house",
+              "criterion": "Explains that a concrete house feels hot at night because of re-radiated heat, whereas thick mud and wooden walls stay cool due to less re-radiation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are cities warmer than nearby rural areas?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c4_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do towns compare in temperature with the countryside around them, and when is the difference greatest?",
+          "requiredEvidence": [
+            "cities are warmer",
+            "surrounding rural areas",
+            "summer and at night"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_uh_warmer",
+              "criterion": "States that cities are warmer than their surrounding rural areas, especially during summer and at night.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do towns compare in temperature with the countryside around them, and when is the difference greatest?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What materials are found in towns that hold heat, and what do they do with sunlight?",
+          "requiredEvidence": [
+            "built-up areas",
+            "steel, concrete, brick",
+            "concrete and asphalt",
+            "absorb solar radiation and retain heat",
+            "re-radiated heat"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_uh_why",
+              "criterion": "Explains that cities have more built-up areas of steel, concrete, brick and asphalt that absorb solar radiation and retain heat, and the re-radiated heat warms cities more than rural areas.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What materials are found in towns that hold heat, and what do they do with sunlight?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_uh_ac"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c4_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "energy demand for air conditioning",
+            "urban ecosystems",
+            "more vegetation",
+            "shade and plant transpiration"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_uh_rural",
+              "criterion": "States that the heat increases energy demand for air conditioning, stressing urban ecosystems, while rural areas and forests with more vegetation stay cool through shade and plant transpiration.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are cities warmer than nearby rural areas?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c4_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "urban heat island effect",
+            "human land use",
+            "alter the local climate"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_uh_land",
+              "criterion": "States that the urban heat island effect shows how human land use can alter the local climate.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are cities warmer than nearby rural areas?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_materials_retain_heat",
+          "linksChecks": [
+            "chk_sci9c13_uh_why",
+            "chk_sci9c13_uh_rural"
+          ],
+          "criterion": "Connects built-up materials absorbing and re-radiating heat to cities being warmer than vegetated rural areas.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_uh_ac",
+          "wrong": "Cities are warmer only because of air conditioners.",
+          "fix": "Cities are warmer mainly because buildings and roads absorb solar radiation and re-radiate the heat; the extra air conditioning demand is a result, further stressing urban ecosystems.",
+          "checkId": "mchk_misc_sci9c13_uh_ac",
+          "checkCriterion": "The answer states or implies this wrong idea: Cities are warmer only because of air conditioners.",
+          "fixCheckId": "mfix_misc_sci9c13_uh_ac",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Cities are warmer mainly because buildings and roads absorb solar radiation and re-radiate the heat; the extra air conditioning demand is a result, further stressing urban ecosystems.",
+          "keyPointIds": [
+            "sci9c13_t2c4_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_uh_ac"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_uh_warmer",
+            "chk_sci9c13_uh_why"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_uh_house",
+            "chk_sci9c13_uh_rural",
+            "chk_sci9c13_uh_land",
+            "lnk_sci9c13_materials_retain_heat"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c5",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "Latitude and the Shape of the Earth",
+      "headingType": "heading",
+      "sourcePages": [
+        257
+      ],
+      "conceptHash": "5c8d3c42b323664debdea4cb3eea744de1497ad2fec291d84d2f0889c407af36",
+      "cardText": "The amount of radiation received by a region also depends on its latitude. Because the Earth is spherical, the Sun's rays strike different latitudes at different angles. The Sun's radiation falling on the equatorial region is concentrated over a smaller area, whereas in the polar region it is spread over a larger area. This is why equatorial regions remain relatively warm throughout the year while polar regions experience much colder conditions, creating temperature differences between the equator and the poles. The Earth's spherical shape and the tilt of its axis also give rise to seasons and the changing length of daytime. Thus solar radiation is not evenly distributed across the globe, and this uneven heating drives global winds and ocean currents.",
+      "hint": "Why are the equatorial regions warm and the polar regions cold?",
+      "probe": "Explain how latitude and the Earth's shape cause uneven heating.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Latitude and the Shape of the Earth, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c5_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "amount of radiation received",
+            "depends on its latitude"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_la_depends",
+              "criterion": "States that the amount of radiation received by a region depends on its latitude.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why are the equatorial regions warm and the polar regions cold?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why does the angle of the Sun's rays matter at different latitudes, and how is the energy spread?",
+          "requiredEvidence": [
+            "different latitudes at different angles",
+            "equatorial region",
+            "concentrated over a smaller area",
+            "polar region",
+            "spread over a larger area"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_la_area",
+              "criterion": "Explains that the Sun's rays strike different latitudes at different angles, so the radiation is concentrated over a smaller area at the equator and spread over a larger area at the poles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why does the angle of the Sun's rays matter at different latitudes, and how is the energy spread?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_la_flat"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do the warmest and coldest parts of the globe compare, and what difference does this create?",
+          "requiredEvidence": [
+            "equatorial regions remain relatively warm",
+            "polar regions experience much colder conditions",
+            "temperature differences between the equator and the poles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_la_diff",
+              "criterion": "States that equatorial regions stay relatively warm all year while polar regions are much colder, creating temperature differences between the equator and the poles.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the warmest and coldest parts of the globe compare, and what difference does this create?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is sunlight shared out evenly, and what does the uneven heating drive?",
+          "requiredEvidence": [
+            "not evenly distributed",
+            "uneven heating",
+            "drives global winds and ocean currents"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_la_uneven",
+              "criterion": "States that solar radiation is not evenly distributed across the globe, and this uneven heating drives global winds and ocean currents.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is sunlight shared out evenly, and what does the uneven heating drive?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_angle_area",
+          "linksChecks": [
+            "chk_sci9c13_la_area",
+            "chk_sci9c13_la_uneven"
+          ],
+          "criterion": "Connects the angle at which the Sun's rays strike each latitude to radiation being concentrated over a smaller area at the equator and spread over a larger area at the poles.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_la_flat",
+          "wrong": "If the Earth were a flat disc all places would receive the same radiation.",
+          "fix": "Because the Earth is spherical, the Sun's rays strike different latitudes at different angles, so the radiation is not evenly distributed.",
+          "checkId": "mchk_misc_sci9c13_la_flat",
+          "checkCriterion": "The answer states or implies this wrong idea: If the Earth were a flat disc all places would receive the same radiation.",
+          "fixCheckId": "mfix_misc_sci9c13_la_flat",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Because the Earth is spherical, the Sun's rays strike different latitudes at different angles, so the radiation is not evenly distributed.",
+          "keyPointIds": [
+            "sci9c13_t2c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_la_flat"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_la_area",
+            "chk_sci9c13_la_diff",
+            "chk_sci9c13_la_uneven"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_la_depends",
+            "lnk_sci9c13_angle_area"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c6",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "The Atmosphere and Its Layers",
+      "headingType": "heading",
+      "sourcePages": [
+        257,
+        258
+      ],
+      "conceptHash": "f9b8fad0d89113bc4567b15313f3e8fb0c858d9a36a2ae99f5d7d10bbaffe836",
+      "cardText": "The air surrounding the Earth is called the atmosphere, and it is held in place by the force of Earth's gravity. It consists mainly of nitrogen (78%) and oxygen (21%) along with small amounts of argon, carbon dioxide, water vapour and other gases. Nearly all weather phenomena take place in the troposphere, which has an average height of about 12 km and is heated from the Earth's surface; in it temperature decreases with height, and as warm air rises it drives winds and storms. The height of the troposphere is maximum above the equator and lowest above the poles. In the stratosphere (12 to 50 km), where the ozone layer is located, ozone absorbs UV rays and heats up the atmosphere, so temperature rises with height; this calms the layer due to the lack of vertical mixing of air, keeping weather confined to the troposphere. Above are the mesosphere, thermosphere and exosphere, which play only a minor role in regulating climate on the surface, and at about 100 km outer space begins.",
+      "hint": "In which layer does weather occur, and why does it stay there?",
+      "probe": "Describe the composition of the atmosphere and the troposphere and stratosphere.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Atmosphere and Its Layers, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c6_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "air surrounding the Earth",
+            "force of Earth's gravity",
+            "nitrogen (78%)",
+            "oxygen (21%)"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_at_comp",
+              "criterion": "States that the atmosphere is the air surrounding the Earth, held by gravity, mainly nitrogen (78%) and oxygen (21%) with small amounts of argon, carbon dioxide, water vapour and other gases.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which layer does weather occur, and why does it stay there?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_at_oxygen"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c6_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which layer holds nearly all weather, how tall is it, and how does temperature change with height?",
+          "requiredEvidence": [
+            "weather phenomena take place in the troposphere",
+            "about 12 km",
+            "heated from the Earth's surface",
+            "temperature decreases with height",
+            "drives winds and storms"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_at_trop",
+              "criterion": "States that nearly all weather occurs in the troposphere (about 12 km), which is heated from the Earth's surface; temperature decreases with height and rising warm air drives winds and storms.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which layer holds nearly all weather, how tall is it, and how does temperature change with height?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c6_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "height of the troposphere",
+            "maximum above the equator",
+            "lowest above the polar regions"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_at_height",
+              "criterion": "States that the troposphere is tallest above the equator and lowest above the polar regions.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "In which layer does weather occur, and why does it stay there?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c6_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How does the layer above the weather layer behave in temperature, and why does it stay calm?",
+          "requiredEvidence": [
+            "stratosphere",
+            "12 – 50 km",
+            "ozone absorbs UV rays",
+            "temperature rises with height",
+            "lack of vertical mixing",
+            "weather confined to the troposphere"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_at_strat",
+              "criterion": "States that in the stratosphere (12 to 50 km), ozone absorbs UV rays and temperature rises with height, which calms the layer through lack of vertical mixing and keeps weather confined to the troposphere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How does the layer above the weather layer behave in temperature, and why does it stay calm?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c6_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "mesosphere, thermosphere and exosphere",
+            "minor role in regulating climate"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_at_upper",
+              "criterion": "States that above the stratosphere are the mesosphere, thermosphere and exosphere, which play only a minor role in regulating climate on the surface.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "In which layer does weather occur, and why does it stay there?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_stratosphere_calm",
+          "linksChecks": [
+            "chk_sci9c13_at_trop",
+            "chk_sci9c13_at_strat"
+          ],
+          "criterion": "Connects temperature rising with height in the stratosphere to a lack of vertical mixing, keeping weather confined to the troposphere.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_at_oxygen",
+          "wrong": "The atmosphere is mostly oxygen.",
+          "fix": "The atmosphere consists mainly of nitrogen (78%) and oxygen (21%) along with small amounts of other gases.",
+          "checkId": "mchk_misc_sci9c13_at_oxygen",
+          "checkCriterion": "The answer states or implies this wrong idea: The atmosphere is mostly oxygen.",
+          "fixCheckId": "mfix_misc_sci9c13_at_oxygen",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The atmosphere consists mainly of nitrogen (78%) and oxygen (21%) along with small amounts of other gases.",
+          "keyPointIds": [
+            "sci9c13_t2c6_kp1"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_at_oxygen"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_at_trop",
+            "chk_sci9c13_at_strat"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_at_comp",
+            "chk_sci9c13_at_height",
+            "chk_sci9c13_at_upper",
+            "lnk_sci9c13_stratosphere_calm"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c7",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "The Atmosphere, the Greenhouse Effect and Global Warming",
+      "headingType": "heading",
+      "sourcePages": [
+        258
+      ],
+      "conceptHash": "fd5d56d7cf0eb2f2e2d834b5b0afbefdaf27212bbba5ac00a014775199795ced",
+      "cardText": "The atmosphere plays two crucial roles in protecting life on the Earth. Firstly, it partly absorbs the incoming solar radiation: the ozone layer blocks the harmful UV rays, and clouds and other gases absorb some sunlight before it reaches the surface. Secondly, it traps outgoing heat: the Earth's surface absorbs sunlight and re-radiates it in the infrared region, and greenhouse gases like CO2, CH4 and water vapour absorb this re-radiated heat, preventing it from escaping into space. Without the atmosphere the Earth would be too cold for life to survive. However, excess CO2 from human activities enhances the greenhouse effect, causing global warming, which if left unchecked could make the Earth uninhabitable. Venus is hotter than Mercury, even though Mercury is closer to the Sun, because of the atmosphere on Venus, which has led to an uncontrolled greenhouse effect.",
+      "hint": "What two roles does the atmosphere play, and why is too much carbon dioxide a problem?",
+      "probe": "Explain how the atmosphere keeps the Earth suitable for life and what happens when there is excess CO2.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Atmosphere, the Greenhouse Effect and Global Warming, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c7_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the first way the air protects life, and how does it deal with incoming sunlight?",
+          "requiredEvidence": [
+            "two crucial roles",
+            "partly absorbs the incoming solar radiation",
+            "ozone layer blocks the harmful UV rays",
+            "clouds and other gases"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_gh_absorb",
+              "criterion": "States that the atmosphere partly absorbs incoming solar radiation: the ozone layer blocks harmful UV rays, and clouds and other gases absorb some sunlight before it reaches the surface.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the first way the air protects life, and how does it deal with incoming sunlight?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c7_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the second way, and what do certain gases do with heat radiated back from the ground?",
+          "requiredEvidence": [
+            "traps outgoing heat",
+            "re-radiates it in the infrared region",
+            "greenhouse gases",
+            "preventing it from escaping into space",
+            "too cold for life"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_gh_trap",
+              "criterion": "States that the atmosphere traps outgoing heat: the surface re-radiates sunlight as infrared and greenhouse gases like CO2, CH4 and water vapour absorb it, preventing it from escaping; without the atmosphere the Earth would be too cold for life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the second way, and what do certain gases do with heat radiated back from the ground?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_gh_no"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c7_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What problem arises from extra carbon dioxide produced by people?",
+          "requiredEvidence": [
+            "excess CO2 from human activities",
+            "enhances the greenhouse effect",
+            "global warming",
+            "uninhabitable"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_gh_excess",
+              "criterion": "States that excess CO2 from human activities enhances the greenhouse effect, causing global warming, which if unchecked could make the Earth uninhabitable.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What problem arises from extra carbon dioxide produced by people?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c7_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Venus is hotter than Mercury",
+            "atmosphere on Venus",
+            "uncontrolled greenhouse effect"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_gh_venus",
+              "criterion": "States that Venus is hotter than Mercury, though Mercury is closer to the Sun, because Venus' atmosphere has led to an uncontrolled greenhouse effect.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What two roles does the atmosphere play, and why is too much carbon dioxide a problem?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_trap_heat",
+          "linksChecks": [
+            "chk_sci9c13_gh_trap",
+            "chk_sci9c13_gh_excess"
+          ],
+          "criterion": "Connects greenhouse gases absorbing re-radiated infrared heat to the Earth staying warm enough for life, and excess CO2 enhancing this into global warming.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_gh_no",
+          "wrong": "The greenhouse effect is entirely harmful and the Earth would be better without it.",
+          "fix": "Without the atmosphere trapping heat the Earth would be too cold for life to survive; only the excess CO2 from human activities enhances the effect into global warming.",
+          "checkId": "mchk_misc_sci9c13_gh_no",
+          "checkCriterion": "The answer states or implies this wrong idea: The greenhouse effect is entirely harmful and the Earth would be better without it.",
+          "fixCheckId": "mfix_misc_sci9c13_gh_no",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Without the atmosphere trapping heat the Earth would be too cold for life to survive; only the excess CO2 from human activities enhances the effect into global warming.",
+          "keyPointIds": [
+            "sci9c13_t2c7_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_gh_no"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_gh_absorb",
+            "chk_sci9c13_gh_trap",
+            "chk_sci9c13_gh_excess"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_gh_venus",
+            "lnk_sci9c13_trap_heat"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t2_c8",
+      "topicId": "ncert_sci_9_ch13_t2",
+      "topicTitle": "Uneven heating of the Earth",
+      "label": "The Ozone Layer",
+      "headingType": "heading",
+      "sourcePages": [
+        259
+      ],
+      "conceptHash": "92ab7696863d879556be85244d82dede69422a8d39c32c942d4a65f68ab5b70f",
+      "cardText": "The ozone layer is vital to life on the Earth because it acts as a protective shield, absorbing harmful UV radiation from the Sun. When ozone molecules are destroyed faster than they are naturally formed, the layer becomes thinner and less effective. In the late 20th century human-made chemicals called chlorofluorocarbons (CFCs), used in refrigerators and aerosols, caused severe ozone loss over Antarctica, which came to be known as the ozone hole. Increased UV radiation on the Earth can harm living organisms and the ecosystems. A global agreement known as the Montreal Protocol reduced the use of CFCs and the ozone layer is now slowly recovering, showing the power of international scientific cooperation.",
+      "hint": "Why is the ozone layer important, and what caused the ozone hole?",
+      "probe": "Explain the importance of the ozone layer, what damaged it and how it is recovering.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Ozone Layer, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t2c8_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is the layer high above us important, and when does it become less effective?",
+          "requiredEvidence": [
+            "protective shield",
+            "absorbing harmful UV radiation",
+            "destroyed faster than they are naturally formed",
+            "thinner and less effective"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oz_shield",
+              "criterion": "States that the ozone layer is a protective shield absorbing harmful UV radiation, and becomes thinner and less effective when ozone molecules are destroyed faster than they are formed.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the layer high above us important, and when does it become less effective?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c8_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which man-made substances damaged it and where was the thinning most severe?",
+          "requiredEvidence": [
+            "chlorofluorocarbons",
+            "refrigerators and aerosols",
+            "severe ozone loss over Antarctica",
+            "ozone hole"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oz_cfc",
+              "criterion": "States that human-made chlorofluorocarbons (CFCs), used in refrigerators and aerosols, caused severe ozone loss over Antarctica, known as the ozone hole.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which man-made substances damaged it and where was the thinning most severe?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_oz_carbon"
+          ]
+        },
+        {
+          "id": "sci9c13_t2c8_kp3",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "increased UV radiation",
+            "harm the living organisms and the ecosystems"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oz_harm",
+              "criterion": "States that increased UV radiation on the Earth can harm living organisms and ecosystems.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the ozone layer important, and what caused the ozone hole?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t2c8_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What international agreement helped it, and how is it doing now?",
+          "requiredEvidence": [
+            "Montreal Protocol",
+            "reduced the use of CFCs",
+            "slowly recovering",
+            "international scientific cooperation"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oz_protocol",
+              "criterion": "States that the global Montreal Protocol reduced the use of CFCs and the ozone layer is now slowly recovering, showing the power of international scientific cooperation.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What international agreement helped it, and how is it doing now?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_cfc_protocol",
+          "linksChecks": [
+            "chk_sci9c13_oz_cfc",
+            "chk_sci9c13_oz_protocol"
+          ],
+          "criterion": "Connects CFCs destroying ozone to the ozone hole, and the Montreal Protocol reducing CFCs to the layer slowly recovering.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_oz_carbon",
+          "wrong": "The ozone hole is caused by carbon dioxide trapping heat.",
+          "fix": "Human-made chemicals called CFCs caused severe ozone loss over Antarctica, the ozone hole.",
+          "checkId": "mchk_misc_sci9c13_oz_carbon",
+          "checkCriterion": "The answer states or implies this wrong idea: The ozone hole is caused by carbon dioxide trapping heat.",
+          "fixCheckId": "mfix_misc_sci9c13_oz_carbon",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Human-made chemicals called CFCs caused severe ozone loss over Antarctica, the ozone hole.",
+          "keyPointIds": [
+            "sci9c13_t2c8_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_oz_carbon"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_oz_shield",
+            "chk_sci9c13_oz_cfc",
+            "chk_sci9c13_oz_protocol"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_oz_harm",
+            "lnk_sci9c13_cfc_protocol"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t3_c1",
+      "topicId": "ncert_sci_9_ch13_t3",
+      "topicTitle": "Winds and ocean currents",
+      "label": "Local Winds: Valley and Mountain Breezes",
+      "headingType": "heading",
+      "sourcePages": [
+        259
+      ],
+      "conceptHash": "07f7c38af5af474575f29d66147199658adf094b4c814483e8bbaad9ceb77564",
+      "cardText": "Wind is the movement of air from a region of high pressure to a region of low pressure, and these pressure differences are mainly caused by the uneven heating of the Earth's surface by the Sun. Uneven heating also produces local winds such as valley and mountain breezes. During the day the mountain slopes facing the Sun are heated more rapidly than the valley floor, so the air over the slopes becomes warm and rises, creating a low pressure region, and cooler air from the valley moves up the slopes to replace it; this is called a valley breeze. After sunset the situation reverses: the slopes lose heat faster and become cooler while the valley floor remains relatively warmer, so the cooler, denser air over the slopes flows down into the valley; this is a mountain breeze. Such daily changes in wind direction are commonly experienced in hilly regions like Shimla and Dehradun.",
+      "hint": "Which way does the breeze blow in the day and at night in the hills, and why?",
+      "probe": "Explain how valley and mountain breezes form.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Local Winds: Valley and Mountain Breezes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t3c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What causes air to move, and what is behind the pressure differences?",
+          "requiredEvidence": [
+            "movement of air",
+            "high pressure to a region of low pressure",
+            "uneven heating of the Earth's surface"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_lw_wind",
+              "criterion": "States that wind is the movement of air from a region of high pressure to a region of low pressure, with pressure differences mainly caused by uneven heating of the Earth's surface by the Sun.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What causes air to move, and what is behind the pressure differences?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "On a sunny day, how do the hill slopes and the valley floor differ in heating, and which way does the air flow?",
+          "requiredEvidence": [
+            "slopes facing the Sun are heated more rapidly",
+            "air over the slopes becomes warm and rises",
+            "low pressure region",
+            "cooler air from the valley moves up",
+            "valley breeze"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_lw_valley",
+              "criterion": "Explains the valley breeze: by day the sunlit slopes heat faster, the air over them warms and rises creating low pressure, and cooler valley air moves up the slopes to replace it.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "On a sunny day, how do the hill slopes and the valley floor differ in heating, and which way does the air flow?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_lw_same"
+          ]
+        },
+        {
+          "id": "sci9c13_t3c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens in the evening after the Sun has set, and which way does the air flow?",
+          "requiredEvidence": [
+            "after sunset",
+            "slopes lose heat faster",
+            "valley floor remains relatively warmer",
+            "cooler and denser",
+            "flows down into the valley",
+            "mountain breeze"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_lw_mountain",
+              "criterion": "Explains the mountain breeze: after sunset the slopes lose heat faster and become cooler, so the cooler, denser air flows down into the valley.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in the evening after the Sun has set, and which way does the air flow?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "daily changes in the direction of the wind",
+            "Shimla, Dehradun"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_lw_places",
+              "criterion": "States that such daily changes in wind direction are commonly experienced in hilly regions like Shimla, Dehradun and Himalayan valleys.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Which way does the breeze blow in the day and at night in the hills, and why?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_heat_rate_breeze",
+          "linksChecks": [
+            "chk_sci9c13_lw_valley",
+            "chk_sci9c13_lw_mountain"
+          ],
+          "criterion": "Connects slopes and valley floor heating and cooling at different rates to rising warm air by day and sinking cool air after sunset.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_lw_same",
+          "wrong": "The valley breeze blows downhill during the day.",
+          "fix": "The valley breeze blows up the slopes during the day; the mountain breeze flows down into the valley after sunset.",
+          "checkId": "mchk_misc_sci9c13_lw_same",
+          "checkCriterion": "The answer states or implies this wrong idea: The valley breeze blows downhill during the day.",
+          "fixCheckId": "mfix_misc_sci9c13_lw_same",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The valley breeze blows up the slopes during the day; the mountain breeze flows down into the valley after sunset.",
+          "keyPointIds": [
+            "sci9c13_t3c1_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_lw_same"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_lw_wind",
+            "chk_sci9c13_lw_valley",
+            "chk_sci9c13_lw_mountain"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_lw_places",
+            "lnk_sci9c13_heat_rate_breeze"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t3_c2",
+      "topicId": "ncert_sci_9_ch13_t3",
+      "topicTitle": "Winds and ocean currents",
+      "label": "Planetary Winds",
+      "headingType": "heading",
+      "sourcePages": [
+        260
+      ],
+      "conceptHash": "9e7f94e4257237bbc1d72731871459913c7ab5c111e207d49c0b182bcf67605d",
+      "cardText": "Uneven heating of the Earth between the equator and the poles creates belts of low and high pressure, and this large scale pressure difference sets the air in motion over long distances, giving rise to planetary winds. Near the equator intense heating causes warm air to rise, forming an equatorial low pressure belt. The air moves poleward at higher altitudes, cools, becomes denser and sinks around 30 degrees North and South latitudes, forming the sub-tropical high pressure belts, from which air flows back towards the equator along the surface. Part of the sinking air moves towards the poles along the surface and rises again around 60 degrees North and South, forming the sub-polar low pressure belts. In the polar regions very low temperature causes cold, dense air to sink, forming polar high pressure belts. The Earth's rotation deflects these winds from their straight paths, so planetary winds follow curved paths, to the right in the Northern Hemisphere and to the left in the Southern Hemisphere.",
+      "hint": "How do the pressure belts form, and why do planetary winds curve?",
+      "probe": "Describe how uneven heating creates pressure belts and planetary winds and why the winds are deflected.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Planetary Winds, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t3c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does uneven heating between the equator and poles create, and what does it set in motion?",
+          "requiredEvidence": [
+            "uneven heating",
+            "equator and the poles",
+            "belts of low and high pressure",
+            "planetary winds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_pw_belts",
+              "criterion": "States that uneven heating between the equator and the poles creates belts of low and high pressure, and the large scale pressure difference sets air in motion over long distances as planetary winds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does uneven heating between the equator and poles create, and what does it set in motion?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c2_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the air at the equator, and what belt forms there?",
+          "requiredEvidence": [
+            "near the equator",
+            "intense heating",
+            "warm air to rise",
+            "equatorial low pressure belt"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_pw_eq",
+              "criterion": "States that near the equator intense heating makes warm air rise, forming an equatorial low pressure belt.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the air at the equator, and what belt forms there?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Where does the cooled air sink, and what belt results?",
+          "requiredEvidence": [
+            "cooling",
+            "denser and sinks",
+            "30° North and South",
+            "sub-tropical high pressure belts"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_pw_sub",
+              "criterion": "States that the air cools, becomes denser and sinks around 30 degrees North and South latitudes, forming the sub-tropical high pressure belts.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where does the cooled air sink, and what belt results?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "polar regions",
+            "very low temperature",
+            "cold and dense air to sink",
+            "polar high pressure belts"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_pw_polar",
+              "criterion": "States that in the polar regions very low temperature makes cold, dense air sink, forming polar high pressure belts.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do the pressure belts form, and why do planetary winds curve?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What bends the winds off a straight path, and what path do they follow instead?",
+          "requiredEvidence": [
+            "Earth's rotation",
+            "deflected from their straight paths",
+            "curved paths"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_pw_deflect",
+              "criterion": "States that the Earth's rotation deflects the winds from their straight paths, so planetary winds follow curved paths rather than moving directly from high to low pressure.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What bends the winds off a straight path, and what path do they follow instead?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_pw_straight"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_heat_belts_winds",
+          "linksChecks": [
+            "chk_sci9c13_pw_belts",
+            "chk_sci9c13_pw_deflect"
+          ],
+          "criterion": "Connects uneven heating between equator and poles to belts of low and high pressure and the planetary winds flowing between them.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_pw_straight",
+          "wrong": "Planetary winds blow in straight lines from high to low pressure.",
+          "fix": "The Earth's rotation causes these winds to be deflected from their straight paths, so planetary winds follow curved paths.",
+          "checkId": "mchk_misc_sci9c13_pw_straight",
+          "checkCriterion": "The answer states or implies this wrong idea: Planetary winds blow in straight lines from high to low pressure.",
+          "fixCheckId": "mfix_misc_sci9c13_pw_straight",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Earth's rotation causes these winds to be deflected from their straight paths, so planetary winds follow curved paths.",
+          "keyPointIds": [
+            "sci9c13_t3c2_kp5"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_pw_straight"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_pw_belts",
+            "chk_sci9c13_pw_eq",
+            "chk_sci9c13_pw_sub",
+            "chk_sci9c13_pw_deflect"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_pw_polar",
+            "lnk_sci9c13_heat_belts_winds"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t3_c3",
+      "topicId": "ncert_sci_9_ch13_t3",
+      "topicTitle": "Winds and ocean currents",
+      "label": "Ocean Currents",
+      "headingType": "heading",
+      "sourcePages": [
+        260,
+        261
+      ],
+      "conceptHash": "a316eefb954cf462dfb77e573d942f4798e4921d7569a2b8d0a5ca4dd929d864",
+      "cardText": "Ocean currents are the continuous movement of large masses of ocean water. Similar to winds, planetary pressure differences drive the ocean currents: strong planetary winds drag the surface water because of friction, setting surface currents in motion. Differences in temperature and salinity, the rotation of the Earth and the distribution of land masses also influence the movement of ocean water. Warm equatorial waters travel over the surface toward the poles, while colder and denser waters flow back towards the equator through deeper levels. Water with lower salinity, being less dense, tends to remain near the surface, while higher salinity, denser water sinks. The Earth's rotation deflects these moving water masses, forming large circular patterns called gyres, which rotate clockwise in the Northern Hemisphere and counter clockwise in the Southern Hemisphere. By transporting heat from the equator towards the poles, ocean currents reduce temperature differences across the planet and regulate the Earth's climate; the warm North Atlantic Drift keeps many ports ice-free during winter in Europe. Ocean currents also support a massive ecosystem by transporting nutrients.",
+      "hint": "What drives ocean currents, and what do they do for climate?",
+      "probe": "Explain what causes ocean currents and how they affect climate and life.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Ocean Currents, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t3c3_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the continuous movement of large masses of sea water called, and what drives the surface layer?",
+          "requiredEvidence": [
+            "continuous movement of large masses of ocean water",
+            "planetary pressure differences",
+            "planetary winds drag the surface water",
+            "friction",
+            "surface currents"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_drive",
+              "criterion": "Defines ocean currents as the continuous movement of large masses of ocean water, driven by planetary pressure differences: strong planetary winds drag the surface water by friction, setting surface currents in motion.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the continuous movement of large masses of sea water called, and what drives the surface layer?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "temperature and salinity",
+            "rotation of the Earth",
+            "distribution of land masses"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_factors",
+              "criterion": "States that differences in temperature and salinity, the rotation of the Earth and the distribution of land masses also influence the movement of ocean water.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What drives ocean currents, and what do they do for climate?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do surface and deeper flows differ between the equator and the poles?",
+          "requiredEvidence": [
+            "warm equatorial waters",
+            "toward the poles",
+            "colder and denser waters",
+            "back towards the equator",
+            "deeper ocean levels"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_flow",
+              "criterion": "States that warm equatorial waters travel over the surface toward the poles while colder, denser waters slowly flow back towards the equator at deeper levels.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do surface and deeper flows differ between the equator and the poles?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "lower salinity",
+            "less dense",
+            "near the surface",
+            "higher salinity",
+            "denser water sinks"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_salinity",
+              "criterion": "States that lower salinity, less dense water tends to stay near the surface, while higher salinity, denser water sinks and moves at deeper levels.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What drives ocean currents, and what do they do for climate?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What patterns do the water masses form, and which way do they turn in each half of the globe?",
+          "requiredEvidence": [
+            "Earth's rotation deflects",
+            "large circular patterns called gyres",
+            "clockwise in the Northern Hemisphere",
+            "counter clockwise in the Southern Hemisphere"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_gyres",
+              "criterion": "States that the Earth's rotation deflects the moving water, forming gyres that rotate clockwise in the Northern Hemisphere and counter clockwise in the Southern Hemisphere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What patterns do the water masses form, and which way do they turn in each half of the globe?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do these flows affect temperature differences between regions?",
+          "requiredEvidence": [
+            "transporting heat from the equator towards the poles",
+            "reduce temperature differences"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_climate",
+              "criterion": "States that by transporting heat from the equator towards the poles, ocean currents reduce temperature differences across the planet.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do these flows affect temperature differences between regions?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t3c3_kp7",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "northwestern coast of Europe",
+            "ports ice-free during winter",
+            "moderating influence on climate",
+            "transporting nutrients"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_oc_nad",
+              "criterion": "Gives the North Atlantic Drift example: a warm current that flows towards northwestern Europe and keeps many ports ice-free in winter; ocean currents also support ecosystems by transporting nutrients.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What drives ocean currents, and what do they do for climate?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_oc_cold"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_heat_transport",
+          "linksChecks": [
+            "chk_sci9c13_oc_drive",
+            "chk_sci9c13_oc_climate"
+          ],
+          "criterion": "Connects currents carrying warm water from the equator towards the poles to reduced temperature differences and milder climate, e.g. ice-free ports in Europe.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_oc_cold",
+          "wrong": "The North Atlantic Drift is a cold current that freezes European ports.",
+          "fix": "The North Atlantic Drift is a warm ocean current that keeps many ports ice-free during winter, even at high latitudes.",
+          "checkId": "mchk_misc_sci9c13_oc_cold",
+          "checkCriterion": "The answer states or implies this wrong idea: The North Atlantic Drift is a cold current that freezes European ports.",
+          "fixCheckId": "mfix_misc_sci9c13_oc_cold",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The North Atlantic Drift is a warm ocean current that keeps many ports ice-free during winter, even at high latitudes.",
+          "keyPointIds": [
+            "sci9c13_t3c3_kp7"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 8,
+        "scored": 11
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_oc_cold"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_oc_drive",
+            "chk_sci9c13_oc_flow",
+            "chk_sci9c13_oc_gyres",
+            "chk_sci9c13_oc_climate"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_oc_factors",
+            "chk_sci9c13_oc_salinity",
+            "chk_sci9c13_oc_nad",
+            "lnk_sci9c13_heat_transport"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t4_c1",
+      "topicId": "ncert_sci_9_ch13_t4",
+      "topicTitle": "Biogeochemical cycles",
+      "label": "Biogeochemical Cycles",
+      "headingType": "heading",
+      "sourcePages": [
+        262
+      ],
+      "conceptHash": "faea3765d29671fd733eaa56893fed12ec67b70dbb4d4741891e8e11e95f626a",
+      "cardText": "Living organisms constantly exchange matter and energy with the air, water, soil and rocks around them. This continuous interaction between the non-living (abiotic) and living (biotic) components of the Earth results in the transfer of matter and energy across the spheres. It ensures that essential nutrients such as carbon, nitrogen and oxygen are recycled and remain available to support life. This cyclic movement of matter and energy between the abiotic and biotic components is called the biogeochemical cycle. The interconnectedness of ecosystems helps them recover from disturbances or degradation and maintain environmental balance. The chapter examines the water, carbon, nitrogen and oxygen cycles.",
+      "hint": "What is a biogeochemical cycle and why does it matter?",
+      "probe": "Define a biogeochemical cycle and say why it is important for life.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Biogeochemical Cycles, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t4c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the constant interaction between living and non-living parts of the Earth result in?",
+          "requiredEvidence": [
+            "non-living (abiotic) and living (biotic) components",
+            "transfer of matter and energy",
+            "various spheres"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_bc_interact",
+              "criterion": "States that the continuous interaction between the non-living (abiotic) and living (biotic) components results in the transfer of matter and energy across the Earth's spheres.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the constant interaction between living and non-living parts of the Earth result in?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c1_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What is the cyclic movement of matter between non-living and living components called?",
+          "requiredEvidence": [
+            "cyclic movement of matter and energy",
+            "abiotic and biotic components",
+            "biogeochemical cycle"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_bc_def",
+              "criterion": "Defines the biogeochemical cycle as the cyclic movement of matter and energy between the abiotic and biotic components.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is the cyclic movement of matter between non-living and living components called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does this process make sure of for the nutrients that organisms need?",
+          "requiredEvidence": [
+            "essential nutrients",
+            "carbon, nitrogen and oxygen",
+            "recycled",
+            "available to support life"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_bc_why",
+              "criterion": "States that the process ensures essential nutrients such as carbon, nitrogen and oxygen are recycled and remain available to support life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does this process make sure of for the nutrients that organisms need?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_bc_create"
+          ]
+        },
+        {
+          "id": "sci9c13_t4c1_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "interconnectedness",
+            "recover from disturbances",
+            "environmental balance"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_bc_balance",
+              "criterion": "States that interconnectedness helps ecosystems recover from disturbances or degradation and maintain environmental balance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What is a biogeochemical cycle and why does it matter?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_recycle_balance",
+          "linksChecks": [
+            "chk_sci9c13_bc_def",
+            "chk_sci9c13_bc_why"
+          ],
+          "criterion": "Connects the cyclic movement of matter between living and non-living components to nutrients remaining available for life and ecosystems staying balanced.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_bc_create",
+          "wrong": "Biogeochemical cycles create new elements for living things to use.",
+          "fix": "Biogeochemical cycles recycle essential nutrients between the biotic and abiotic components; they do not create new elements.",
+          "checkId": "mchk_misc_sci9c13_bc_create",
+          "checkCriterion": "The answer states or implies this wrong idea: Biogeochemical cycles create new elements for living things to use.",
+          "fixCheckId": "mfix_misc_sci9c13_bc_create",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Biogeochemical cycles recycle essential nutrients between the biotic and abiotic components; they do not create new elements.",
+          "keyPointIds": [
+            "sci9c13_t4c1_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_bc_create"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_bc_interact",
+            "chk_sci9c13_bc_def",
+            "chk_sci9c13_bc_why"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_bc_balance",
+            "lnk_sci9c13_recycle_balance"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t4_c2",
+      "topicId": "ncert_sci_9_ch13_t4",
+      "topicTitle": "Biogeochemical cycles",
+      "label": "The Water Cycle and Climate Change",
+      "headingType": "heading",
+      "sourcePages": [
+        262
+      ],
+      "conceptHash": "2cc825ccc5547e62fce9b933e34a49e1620b71ae31cdd86ab0630653bec35c5c",
+      "cardText": "In the water cycle water evaporates from water bodies such as rivers, lakes and oceans and condenses to form clouds. It returns as precipitation in the form of rain, hail or snow and finally flows back to the ocean, and some water seeps through soil and rocks beneath the surface. Water dissolves minerals from soil and rocks, supports all terrestrial organisms and transports nutrients to oceans, supporting marine life. Climate change is now affecting the water cycle: a warmer atmosphere holds more moisture, causing heavier rains in some areas and droughts elsewhere. Melting glaciers add more water to rivers, raising sea levels in the long run and threatening coastal cities such as Mumbai and Chennai. Sudden bursts of intense rainfall result in more run off that erodes soil, and less infiltration reduces the recharge of groundwater, making sustaining agriculture difficult in dry months. The water cycle thus links the cryosphere, hydrosphere, atmosphere, geosphere and biosphere, all affected by global warming.",
+      "hint": "How is climate change affecting the water cycle?",
+      "probe": "Describe the water cycle and explain how climate change alters it.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Water Cycle and Climate Change, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t4c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the path of water from the sea back to the sea.",
+          "requiredEvidence": [
+            "water evaporates",
+            "condenses to form clouds",
+            "precipitation in the form of rain, hail or snow",
+            "flows back to the ocean",
+            "seeps through soil and rocks"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_cycle",
+              "criterion": "Describes the water cycle: water evaporates from water bodies, condenses into clouds, returns as precipitation (rain, hail or snow) and flows back to the ocean, and some seeps through soil and rocks.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the path of water from the sea back to the sea."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "dissolves minerals from soil and rocks",
+            "supports all terrestrial organisms",
+            "transports these nutrients to oceans"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_minerals",
+              "criterion": "States that water dissolves minerals from soil and rocks, supports terrestrial organisms and transports nutrients to the oceans, supporting marine life.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is climate change affecting the water cycle?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is the warming of the climate altering the rains in some places and others?",
+          "requiredEvidence": [
+            "climate change",
+            "warmer atmosphere holds more moisture",
+            "heavier rains in some areas",
+            "droughts elsewhere"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_climate",
+              "criterion": "States that climate change is affecting the water cycle: a warmer atmosphere holds more moisture, causing heavier rains in some areas and droughts elsewhere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is the warming of the climate altering the rains in some places and others?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_wc_closed"
+          ]
+        },
+        {
+          "id": "sci9c13_t4c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "melting glaciers",
+            "raising sea levels",
+            "coastal cities"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_glaciers",
+              "criterion": "States that melting glaciers add more water to rivers, raising sea levels in the long run and threatening coastal cities such as Mumbai and Chennai.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is climate change affecting the water cycle?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c2_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens on the ground when rain falls in sudden intense bursts, and how does this affect farming?",
+          "requiredEvidence": [
+            "intense rainfall",
+            "run off that erodes soil",
+            "less infiltration",
+            "recharge of groundwater",
+            "sustaining agriculture difficult"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_runoff",
+              "criterion": "States that sudden intense rainfall causes more run-off that erodes soil and less infiltration, reducing groundwater recharge and making agriculture difficult in dry months.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens on the ground when rain falls in sudden intense bursts, and how does this affect farming?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c2_kp6",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "links the cryosphere",
+            "hydrosphere",
+            "atmosphere",
+            "geosphere",
+            "biosphere",
+            "affected by global warming"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_wc_links",
+              "criterion": "States that the water cycle links the cryosphere, hydrosphere, atmosphere, geosphere and biosphere, all affected by global warming.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How is climate change affecting the water cycle?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_warm_air_extremes",
+          "linksChecks": [
+            "chk_sci9c13_wc_cycle",
+            "chk_sci9c13_wc_climate"
+          ],
+          "criterion": "Connects a warmer atmosphere holding more moisture to heavier rains in some areas and droughts elsewhere, with more run-off and less groundwater recharge.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_wc_closed",
+          "wrong": "Climate change does not affect the water cycle.",
+          "fix": "Climate change is affecting the water cycle: a warmer atmosphere holds more moisture, causing heavier rains in some areas and droughts elsewhere.",
+          "checkId": "mchk_misc_sci9c13_wc_closed",
+          "checkCriterion": "The answer states or implies this wrong idea: Climate change does not affect the water cycle.",
+          "fixCheckId": "mfix_misc_sci9c13_wc_closed",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Climate change is affecting the water cycle: a warmer atmosphere holds more moisture, causing heavier rains in some areas and droughts elsewhere.",
+          "keyPointIds": [
+            "sci9c13_t4c2_kp3"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 9
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_wc_closed"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_wc_cycle",
+            "chk_sci9c13_wc_climate",
+            "chk_sci9c13_wc_runoff"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_wc_minerals",
+            "chk_sci9c13_wc_glaciers",
+            "chk_sci9c13_wc_links",
+            "lnk_sci9c13_warm_air_extremes"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t4_c3",
+      "topicId": "ncert_sci_9_ch13_t4",
+      "topicTitle": "Biogeochemical cycles",
+      "label": "The Carbon Cycle",
+      "headingType": "heading",
+      "sourcePages": [
+        262,
+        263
+      ],
+      "conceptHash": "d5923816b2c63f0be42672a805596b86c42b5170495a1530303103dfebd54d95",
+      "cardText": "Carbon forms the backbone of life; every protein, carbohydrate, fat and DNA molecule contains carbon. It circulates continuously between the atmosphere (CO2), the biosphere (plants and animals), the geosphere (carbonate rocks and fossil fuels) and the hydrosphere (dissolved CO2 and marine shells). In the fast cycle, over days to years, plants convert atmospheric CO2 into glucose using sunlight through photosynthesis, CO2 is released back through respiration, animals eat plants and other animals, and when they die CO2 returns to the air by decomposition. In the slow cycle, over millions of years, dead plants and animals get buried and are converted to fossil fuels such as coal, oil and gas; when these are burnt carbon is released back as CO2 on a very short time scale. The ocean water absorbs atmospheric CO2 to form carbonate and bicarbonate ions, which phytoplankton use for photosynthesis and some marine organisms use to form shells. Human activities like burning fossil fuels and deforestation have raised atmospheric CO2 by about 35% since 1960, from 315 ppm to 420 ppm. Some CO2 is necessary to keep the Earth warm enough for life but the balance is critical: excess CO2 intensifies the greenhouse effect, leading to global warming, melting of glaciers and Arctic sea ice, rising sea level and more extreme weather.",
+      "hint": "Which processes take carbon out of the air and which return it?",
+      "probe": "Describe the fast and slow carbon cycles and how human activities have changed atmospheric CO2.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Carbon Cycle, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t4c3_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "backbone of life",
+            "protein, carbohydrate, fat and DNA"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_backbone",
+              "criterion": "States that carbon forms the backbone of life: every protein, carbohydrate, fat and DNA molecule contains carbon.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which processes take carbon out of the air and which return it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Between which parts of the Earth does carbon move continuously?",
+          "requiredEvidence": [
+            "circulates continuously",
+            "atmosphere",
+            "biosphere",
+            "geosphere"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_spheres",
+              "criterion": "States that carbon circulates continuously between the atmosphere (CO2), biosphere, geosphere (carbonate rocks and fossil fuels) and hydrosphere.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Between which parts of the Earth does carbon move continuously?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the quick route by which carbon moves between the air, plants and animals.",
+          "requiredEvidence": [
+            "fast cycle",
+            "days to years",
+            "convert atmospheric CO2 into glucose",
+            "respiration",
+            "decomposition"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_fast",
+              "criterion": "Describes the fast cycle (days to years): plants convert atmospheric CO2 into glucose by photosynthesis, CO2 returns through respiration, and CO2 returns to the air from dead organisms by decomposition.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the quick route by which carbon moves between the air, plants and animals."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Describe the long route, and what happens when its products are burnt?",
+          "requiredEvidence": [
+            "slow cycle",
+            "millions of years",
+            "converted to fossil fuels",
+            "coal, oil and gas",
+            "very short time scale"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_slow",
+              "criterion": "Describes the slow cycle (millions of years): buried dead plants and animals become fossil fuels (coal, oil, gas), and when burnt the carbon is released back as CO2 on a very short time scale.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the long route, and what happens when its products are burnt?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "ocean water absorbs atmospheric CO2",
+            "carbonate and bicarbonate ions",
+            "phytoplankton",
+            "form shells"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_ocean",
+              "criterion": "States that ocean water absorbs atmospheric CO2 to form carbonate and bicarbonate ions, which phytoplankton use for photosynthesis and some marine organisms use to form shells.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which processes take carbon out of the air and which return it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How have people changed the amount of carbon dioxide in the air in recent decades?",
+          "requiredEvidence": [
+            "burning fossil fuels and deforestation",
+            "raised atmospheric CO2 by about 35%",
+            "since 1960",
+            "315 ppm to 420 ppm"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_human",
+              "criterion": "States that burning fossil fuels and deforestation have raised atmospheric CO2 by about 35% since 1960 (315 ppm to 420 ppm), an unprecedented rise in human history.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How have people changed the amount of carbon dioxide in the air in recent decades?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c3_kp7",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Is some of this gas needed? What happens when there is too much?",
+          "requiredEvidence": [
+            "necessary to keep the Earth warm enough",
+            "balance is critical",
+            "excessive amounts of CO2",
+            "greenhouse effect",
+            "global warming",
+            "rising of sea level"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_cc_excess",
+              "criterion": "States that some CO2 is necessary to keep the Earth warm enough for life but the balance is critical, as excess CO2 intensifies the greenhouse effect causing global warming, melting ice, rising sea level and extreme weather.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Is some of this gas needed? What happens when there is too much?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_cc_co2_bad"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_fast_slow_human",
+          "linksChecks": [
+            "chk_sci9c13_cc_slow",
+            "chk_sci9c13_cc_human"
+          ],
+          "criterion": "Connects the slow formation of fossil fuels to their quick burning, which has raised atmospheric CO2 and intensified the greenhouse effect.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_cc_co2_bad",
+          "wrong": "Carbon dioxide in the atmosphere is always harmful and should be removed completely.",
+          "fix": "Some CO2 is necessary to keep the Earth warm enough to sustain life; the balance is critical, and excess CO2 intensifies the greenhouse effect.",
+          "checkId": "mchk_misc_sci9c13_cc_co2_bad",
+          "checkCriterion": "The answer states or implies this wrong idea: Carbon dioxide in the atmosphere is always harmful and should be removed completely.",
+          "fixCheckId": "mfix_misc_sci9c13_cc_co2_bad",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Some CO2 is necessary to keep the Earth warm enough to sustain life; the balance is critical, and excess CO2 intensifies the greenhouse effect.",
+          "keyPointIds": [
+            "sci9c13_t4c3_kp7"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 10,
+        "scored": 12
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_cc_co2_bad"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_cc_spheres",
+            "chk_sci9c13_cc_fast",
+            "chk_sci9c13_cc_slow",
+            "chk_sci9c13_cc_human",
+            "chk_sci9c13_cc_excess"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_cc_backbone",
+            "chk_sci9c13_cc_ocean",
+            "lnk_sci9c13_fast_slow_human"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t4_c4",
+      "topicId": "ncert_sci_9_ch13_t4",
+      "topicTitle": "Biogeochemical cycles",
+      "label": "The Nitrogen Cycle",
+      "headingType": "heading",
+      "sourcePages": [
+        264
+      ],
+      "conceptHash": "8226111c4e7f47ca71936932b5c61f866f71941bbeb5f94d9fcc342ed3a159fa",
+      "cardText": "Nitrogen is an essential element for the synthesis of proteins and nucleic acids in all living organisms. The largest reservoir of nitrogen is the atmosphere, but nitrogen gas (N2) is rather non-reactive and cannot be directly used by plants and animals; it must first be converted to soluble compounds that living beings can absorb. The overall movement of nitrogen between air, soil, water and organisms is the nitrogen cycle, with the steps nitrogen fixation, assimilation, ammonification, nitrification and denitrification. Nitrogen-fixing bacteria, such as Rhizobium in the root nodules of legumes and Azotobacter in the soil, convert atmospheric N2 into ammonia. Nitrifying bacteria like Nitrosomonas convert ammonia into nitrite and Nitrobacter convert nitrite into nitrate, a process known as nitrification. Plants assimilate these compounds from the soil, and animals obtain nitrogen by consuming plants or other animals. When plants and animals die or produce waste, decomposers like bacteria and fungi return nitrogen compounds like ammonia to the soil, called ammonification. Denitrifying bacteria such as Pseudomonas convert some nitrates back into nitrogen gas, called denitrification, completing the cycle. Lightning also fixes a tiny amount of nitrogen into nitrogen oxides, and today most nitrogen is fixed artificially by the Haber-Bosch process, which produces most of the fertilisers used today but is energy intensive, and overuse of fertilisers has degraded soil and water.",
+      "hint": "Why can plants not use nitrogen gas directly, and which steps return it to the air?",
+      "probe": "Describe the nitrogen cycle, naming its steps and the organisms involved.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Nitrogen Cycle, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t4c4_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Why is the most plentiful gas in the air not directly usable by living things?",
+          "requiredEvidence": [
+            "proteins and nucleic acids",
+            "largest reservoir of nitrogen is in our atmosphere",
+            "non-reactive",
+            "cannot be directly used",
+            "soluble compounds"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_gas",
+              "criterion": "States that nitrogen is essential for proteins and nucleic acids and its largest reservoir is the atmosphere, but N2 is non-reactive and cannot be directly used; it must first be converted to soluble compounds.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why is the most plentiful gas in the air not directly usable by living things?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_nc_direct"
+          ]
+        },
+        {
+          "id": "sci9c13_t4c4_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "nitrogen fixation",
+            "assimilation",
+            "ammonification",
+            "nitrification",
+            "denitrification"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_steps",
+              "criterion": "Names the steps of the nitrogen cycle: nitrogen fixation, assimilation, ammonification, nitrification and denitrification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Why can plants not use nitrogen gas directly, and which steps return it to the air?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which microbes convert the air's gas into a usable compound, and where do they live?",
+          "requiredEvidence": [
+            "nitrogen-fixing bacteria",
+            "Rhizobium in the root nodules of legumes",
+            "Azotobacter",
+            "ammonia"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_fix",
+              "criterion": "States that nitrogen-fixing bacteria, such as Rhizobium in legume root nodules and Azotobacter in soil, convert atmospheric N2 into ammonia.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which microbes convert the air's gas into a usable compound, and where do they live?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which microbes change ammonia into other forms in the soil?",
+          "requiredEvidence": [
+            "nitrifying bacteria",
+            "Nitrosomonas",
+            "ammonia into nitrite",
+            "Nitrobacter",
+            "nitrate"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_nitrify",
+              "criterion": "States that nitrifying bacteria convert ammonia to nitrite (Nitrosomonas) and nitrite to nitrate (Nitrobacter), a process called nitrification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which microbes change ammonia into other forms in the soil?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp5",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How do plants and animals each get their nitrogen?",
+          "requiredEvidence": [
+            "plants assimilate",
+            "nitrogen compounds from the soil",
+            "animals obtain nitrogen by consuming plants or other animals"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_assimilate",
+              "criterion": "States that plants assimilate nitrogen compounds from the soil, while animals obtain nitrogen by consuming plants or other animals.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do plants and animals each get their nitrogen?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp6",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to nitrogen in dead organisms and waste, and who does it?",
+          "requiredEvidence": [
+            "die or produce waste",
+            "decomposers",
+            "bacteria and fungi",
+            "ammonia to the soil",
+            "ammonification"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_ammon",
+              "criterion": "States that when plants and animals die or produce waste, decomposers like bacteria and fungi break down the organic matter and return nitrogen compounds like ammonia to the soil, called ammonification.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to nitrogen in dead organisms and waste, and who does it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp7",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which microbes return nitrogen to the air, and what does this do for the cycle?",
+          "requiredEvidence": [
+            "denitrifying bacteria",
+            "Pseudomonas",
+            "nitrates back into nitrogen gas",
+            "denitrification",
+            "completes the cycle"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_denit",
+              "criterion": "States that denitrifying bacteria such as Pseudomonas convert some nitrates back into nitrogen gas (denitrification), completing the cycle and maintaining nitrogen balance.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which microbes return nitrogen to the air, and what does this do for the cycle?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp8",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "fixed artificially",
+            "Haber-Bosch process",
+            "ammonia from atmospheric nitrogen",
+            "fertilisers"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_haber",
+              "criterion": "States that today most nitrogen is fixed artificially by the Haber-Bosch process of making ammonia from atmospheric nitrogen, producing most of the fertilisers used today.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why can plants not use nitrogen gas directly, and which steps return it to the air?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c4_kp9",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "energy intensive",
+            "overuse of fertilisers",
+            "degraded soil and water"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_nc_cost",
+              "criterion": "States that the Haber-Bosch reaction is energy intensive and overuse of fertilisers has degraded soil and water.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "Why can plants not use nitrogen gas directly, and which steps return it to the air?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_fixation_needed",
+          "linksChecks": [
+            "chk_sci9c13_nc_gas",
+            "chk_sci9c13_nc_fix"
+          ],
+          "criterion": "Connects atmospheric nitrogen gas being non-reactive to the need for nitrogen fixation into soluble compounds that plants can assimilate.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_nc_direct",
+          "wrong": "Plants absorb nitrogen gas directly from the air.",
+          "fix": "Nitrogen gas (N2) is rather non-reactive and cannot be directly used by plants and animals; it must first be converted to soluble compounds.",
+          "checkId": "mchk_misc_sci9c13_nc_direct",
+          "checkCriterion": "The answer states or implies this wrong idea: Plants absorb nitrogen gas directly from the air.",
+          "fixCheckId": "mfix_misc_sci9c13_nc_direct",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Nitrogen gas (N2) is rather non-reactive and cannot be directly used by plants and animals; it must first be converted to soluble compounds.",
+          "keyPointIds": [
+            "sci9c13_t4c4_kp1"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 12,
+        "scored": 15
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_nc_direct"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_nc_gas",
+            "chk_sci9c13_nc_fix",
+            "chk_sci9c13_nc_nitrify",
+            "chk_sci9c13_nc_assimilate",
+            "chk_sci9c13_nc_ammon",
+            "chk_sci9c13_nc_denit"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_nc_steps",
+            "chk_sci9c13_nc_haber",
+            "chk_sci9c13_nc_cost",
+            "lnk_sci9c13_fixation_needed"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t4_c5",
+      "topicId": "ncert_sci_9_ch13_t4",
+      "topicTitle": "Biogeochemical cycles",
+      "label": "The Oxygen Cycle",
+      "headingType": "heading",
+      "sourcePages": [
+        264,
+        265
+      ],
+      "conceptHash": "327b960da0ccc463fc518daa645c4a861cfa3c4de77661c420c5e08a301a1fc0",
+      "cardText": "Oxygen is one of the Earth's most abundant elements; about 21% of the atmosphere is free oxygen gas (O2), and it is an essential component of most biological molecules like carbohydrates, proteins, nucleic acids and fats. Oxygen also exists in combined forms, in the Earth's crust as metal oxides and minerals and in the air as carbon dioxide. The oxygen cycle focuses on the processes that regulate the oxygen level in the atmosphere. Organisms like plants and animals use oxygen for respiration and release CO2, and combustion of fuels uses oxygen and releases CO2. Plants restore oxygen through photosynthesis using sunlight, water and CO2 to form glucose and release O2. This balance between consumption (respiration and combustion) and production (photosynthesis) circulates oxygen between the atmosphere, land, oceans and living organisms, sustaining life across all spheres of the Earth.",
+      "hint": "Which processes use up oxygen and which restore it?",
+      "probe": "Describe the oxygen cycle and the balance between consumption and production.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain The Oxygen Cycle, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t4c5_kp1",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "21% of the atmosphere",
+            "free oxygen gas",
+            "biological molecules",
+            "carbohydrates, proteins, nucleic acids and fats"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ox_abundant",
+              "criterion": "States that about 21% of the atmosphere is free oxygen gas, an essential component of most biological molecules like carbohydrates, proteins, nucleic acids and fats.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which processes use up oxygen and which restore it?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c5_kp2",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "Which activities of living things and fuels consume oxygen, and what do they release?",
+          "requiredEvidence": [
+            "use oxygen for respiration",
+            "releases CO2",
+            "combustion of fuels uses oxygen"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ox_use",
+              "criterion": "States that plants and animals use oxygen for respiration and release CO2, and combustion of fuels also uses oxygen and releases CO2.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "Which activities of living things and fuels consume oxygen, and what do they release?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_ox_combust"
+          ]
+        },
+        {
+          "id": "sci9c13_t4c5_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "How is oxygen put back into the air?",
+          "requiredEvidence": [
+            "plants restore oxygen",
+            "photosynthesis",
+            "sunlight, water and CO2",
+            "glucose",
+            "release O2"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ox_restore",
+              "criterion": "States that plants restore oxygen through photosynthesis, using sunlight, water and CO2 to form glucose and release O2.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How is oxygen put back into the air?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t4c5_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What does the balance between using and making oxygen achieve?",
+          "requiredEvidence": [
+            "balance between consumption",
+            "respiration and combustion",
+            "production (photosynthesis)",
+            "circulates oxygen",
+            "sustaining life across all spheres"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_ox_balance",
+              "criterion": "States that the balance between consumption (respiration and combustion) and production (photosynthesis) circulates oxygen between the atmosphere, land, oceans and living organisms, sustaining life across all spheres.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What does the balance between using and making oxygen achieve?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_consume_produce",
+          "linksChecks": [
+            "chk_sci9c13_ox_use",
+            "chk_sci9c13_ox_restore"
+          ],
+          "criterion": "Connects oxygen consumption by respiration and combustion to its restoration by photosynthesis, keeping the atmospheric level balanced.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_ox_combust",
+          "wrong": "Combustion of fuels releases oxygen into the air.",
+          "fix": "Combustion of fuels uses oxygen and releases CO2; oxygen is restored by photosynthesis.",
+          "checkId": "mchk_misc_sci9c13_ox_combust",
+          "checkCriterion": "The answer states or implies this wrong idea: Combustion of fuels releases oxygen into the air.",
+          "fixCheckId": "mfix_misc_sci9c13_ox_combust",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Combustion of fuels uses oxygen and releases CO2; oxygen is restored by photosynthesis.",
+          "keyPointIds": [
+            "sci9c13_t4c5_kp2"
+          ],
+          "isRequired": true
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_ox_combust"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_ox_use",
+            "chk_sci9c13_ox_restore",
+            "chk_sci9c13_ox_balance"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_ox_abundant",
+            "lnk_sci9c13_consume_produce"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t5_c1",
+      "topicId": "ncert_sci_9_ch13_t5",
+      "topicTitle": "Human impact and restoring the balance",
+      "label": "Human Impact on Earth's Processes",
+      "headingType": "heading",
+      "sourcePages": [
+        265,
+        266
+      ],
+      "conceptHash": "79b6317f3189e2a3caeb6d758995b95f8628f568b5edc0913a9cb354202be29f",
+      "cardText": "Human actions disrupt the biogeochemical cycles across the Earth's spheres. Excess atmospheric CO2 increases ocean absorption, making sea water more acidic, which could threaten tiny plankton and coral reefs and disrupt marine ecosystems; however, warmer ocean water reduces the ocean's capacity to absorb CO2 as an effective carbon sink. Burning of fossil fuels and deforestation saturate natural carbon sinks like forests and oceans, and the excess CO2 intensifies greenhouse warming. The overuse of fertilisers adds excessive nitrogen via nitrates to rivers and lakes, causing widespread growth of algae (algal blooms) that deplete oxygen and kill fish; this process is called eutrophication and threatens water bodies and coastal fisheries. Clearing forests decreases photosynthesis and transpiration, which can lead to a decline in local rainfall, alters surface albedo, increases soil erosion when tree roots no longer hold the soil, and destroys habitats, leading to a decline in biodiversity. Vehicular emissions react with sunlight to form ground level smog and ground level ozone, which is harmful for health, making city air unhealthy.",
+      "hint": "How do human actions disrupt the carbon and nitrogen cycles and what are the effects?",
+      "probe": "Explain how fossil fuel burning, fertiliser overuse and deforestation disrupt the Earth's systems.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Human Impact on Earth's Processes, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t5c1_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens to the sea when the air has too much carbon dioxide, and who is threatened?",
+          "requiredEvidence": [
+            "excess atmospheric CO2",
+            "ocean absorption",
+            "sea water more acidic",
+            "plankton and coral reefs",
+            "capacity to absorb CO2"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_hi_co2",
+              "criterion": "States that excess atmospheric CO2 increases ocean absorption, making sea water more acidic and threatening plankton and coral reefs, while warmer ocean water reduces its capacity to absorb CO2 as a carbon sink.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens to the sea when the air has too much carbon dioxide, and who is threatened?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c1_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "burning of fossil fuels",
+            "deforestation",
+            "saturate natural carbon sinks"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_hi_sinks",
+              "criterion": "States that burning fossil fuels and deforestation saturate natural carbon sinks like forests and oceans.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "How do human actions disrupt the carbon and nitrogen cycles and what are the effects?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c1_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What happens in a river or lake when too much farm chemical runs in, and what is the process called?",
+          "requiredEvidence": [
+            "overuse of fertilisers",
+            "excessive nitrogen via nitrates",
+            "algal blooms",
+            "deplete oxygen and kill fish",
+            "eutrophication"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_hi_eutro",
+              "criterion": "States that overuse of fertilisers adds excessive nitrogen as nitrates to rivers and lakes, causing algal blooms that deplete oxygen and kill fish, called eutrophication, which threatens water bodies and coastal fisheries.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What happens in a river or lake when too much farm chemical runs in, and what is the process called?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c1_kp4",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What are the effects of removing large areas of trees on rain, soil and wildlife?",
+          "requiredEvidence": [
+            "clearing forests",
+            "decreased photosynthesis",
+            "reduced transpiration",
+            "decline in the local rainfall",
+            "surface albedo",
+            "soil erosion",
+            "decline in biodiversity"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_hi_defor",
+              "criterion": "States that clearing forests decreases photosynthesis and transpiration (reducing local rainfall), alters surface albedo, increases soil erosion and destroys habitats, declining biodiversity.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What are the effects of removing large areas of trees on rain, soil and wildlife?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c1_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "vehicular emissions",
+            "ground level smog",
+            "ground level ozone",
+            "harmful for health"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_hi_smog",
+              "criterion": "States that vehicular emissions react with sunlight to form ground level smog and ground level ozone, which is harmful for health.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "How do human actions disrupt the carbon and nitrogen cycles and what are the effects?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_hi_ozone"
+          ]
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_fertiliser_bloom",
+          "linksChecks": [
+            "chk_sci9c13_hi_eutro",
+            "chk_sci9c13_hi_co2"
+          ],
+          "criterion": "Connects excess nitrates from fertilisers to algal blooms that deplete oxygen and kill fish, called eutrophication.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_hi_ozone",
+          "wrong": "Ozone is always protective and good wherever it occurs.",
+          "fix": "Ozone in the stratosphere blocks UV radiation and is protective of life, but ground level ozone formed from vehicular emissions is harmful for health.",
+          "checkId": "mchk_misc_sci9c13_hi_ozone",
+          "checkCriterion": "The answer states or implies this wrong idea: Ozone is always protective and good wherever it occurs.",
+          "fixCheckId": "mfix_misc_sci9c13_hi_ozone",
+          "fixCheckCriterion": "Answer 2 states the correct idea: Ozone in the stratosphere blocks UV radiation and is protective of life, but ground level ozone formed from vehicular emissions is harmful for health.",
+          "keyPointIds": [
+            "sci9c13_t5c1_kp5"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 6,
+        "scored": 8
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_hi_ozone"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_hi_co2",
+            "chk_sci9c13_hi_eutro",
+            "chk_sci9c13_hi_defor"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_hi_sinks",
+            "chk_sci9c13_hi_smog",
+            "lnk_sci9c13_fertiliser_bloom"
+          ]
+        ]
+      }
+    },
+    {
+      "conceptId": "sci9_ch13_t5_c2",
+      "topicId": "ncert_sci_9_ch13_t5",
+      "topicTitle": "Human impact and restoring the balance",
+      "label": "Restoring the Earth's Balance",
+      "headingType": "heading",
+      "sourcePages": [
+        266
+      ],
+      "conceptHash": "d78c59e7fffedcfbc3079ca5eec5f91b237a288ebce183728cefbd7c72bc4e8b",
+      "cardText": "While human impact affects all the Earth's spheres, a combination of local actions and global cooperation can help restore the Earth's natural systems. The Montreal Protocol has started the recovery of the ozone layer through global cooperation, though the Kyoto Protocol and the Paris Agreement, in which countries were supposed to reduce their CO2 emissions, have been less successful. Conserving energy and energy resources, switching to renewable energy resources like solar and wind, planting trees, saving water and practising sustainable farming can help restore the balance. India has planted billions of trees, expanded energy from solar and renewable sources significantly and promoted sustainable farming practices. Individuals can contribute by saving resources (water, food and energy), reducing waste, and reusing and recycling materials. Mission LiFE (Lifestyle for Environment), an India-led global initiative introduced in 2021, encourages people to adopt mindful, eco-friendly lifestyles.",
+      "hint": "What can countries and individuals do to restore the balance of the Earth's systems?",
+      "probe": "Describe actions, local and global, that help restore the Earth's natural systems.",
+      "relevanceCheck": {
+        "id": "chk_relevance",
+        "criterion": "The answer attempts to explain Restoring the Earth's Balance, even if it uses everyday words instead of textbook terms."
+      },
+      "keyPoints": [
+        {
+          "id": "sci9c13_t5c2_kp1",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "What combination of efforts can help recover the Earth's natural systems? Give an example.",
+          "requiredEvidence": [
+            "local actions and global cooperation",
+            "restore the Earth's natural systems",
+            "Montreal Protocol",
+            "recovery of the ozone layer"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_rs_global",
+              "criterion": "States that a combination of local actions and global cooperation can help restore the Earth's natural systems, e.g. the Montreal Protocol has started the recovery of the ozone layer.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What combination of efforts can help recover the Earth's natural systems? Give an example."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c2_kp2",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Kyoto Protocol",
+            "Paris Agreement",
+            "reduce their CO2 emissions",
+            "less successful"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_rs_kyoto",
+              "criterion": "States that the Kyoto Protocol and the Paris Agreement, in which countries were to reduce CO2 emissions, have been less successful.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can countries and individuals do to restore the balance of the Earth's systems?"
+            }
+          ],
+          "misconceptionIds": [
+            "misc_sci9c13_rs_global_all"
+          ]
+        },
+        {
+          "id": "sci9c13_t5c2_kp3",
+          "role": "core",
+          "weight": 2,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": "List steps in daily life and policy that can help restore balance.",
+          "requiredEvidence": [
+            "conserving energy",
+            "renewable energy resources",
+            "solar and wind",
+            "planting trees",
+            "saving water",
+            "sustainable farming"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_rs_actions",
+              "criterion": "Lists actions that help restore the balance: conserving energy, switching to renewable energy like solar and wind, planting trees, saving water and sustainable farming.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "List steps in daily life and policy that can help restore balance."
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c2_kp4",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "allRequired"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "individuals",
+            "saving resources",
+            "water, food and energy",
+            "reducing waste",
+            "reusing and recycling"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_rs_individual",
+              "criterion": "States that individuals can contribute by saving resources (water, food and energy), reducing waste, and reusing and recycling materials.",
+              "isRequired": true,
+              "lexical": "never",
+              "followUp": "What can countries and individuals do to restore the balance of the Earth's systems?"
+            }
+          ],
+          "misconceptionIds": []
+        },
+        {
+          "id": "sci9c13_t5c2_kp5",
+          "role": "supporting",
+          "weight": 1,
+          "scored": true,
+          "passRule": {
+            "kind": "anyOf"
+          },
+          "followUp": null,
+          "requiredEvidence": [
+            "Mission LiFE",
+            "Lifestyle for Environment",
+            "mindful, eco-friendly lifestyles"
+          ],
+          "checks": [
+            {
+              "id": "chk_sci9c13_rs_life",
+              "criterion": "States that Mission LiFE (Lifestyle for Environment), an India-led global initiative introduced in 2021, encourages people to adopt mindful, eco-friendly lifestyles.",
+              "isRequired": false,
+              "lexical": "never",
+              "followUp": "What can countries and individuals do to restore the balance of the Earth's systems?"
+            }
+          ],
+          "misconceptionIds": []
+        }
+      ],
+      "causeLinks": [
+        {
+          "id": "lnk_sci9c13_cooperation_actions",
+          "linksChecks": [
+            "chk_sci9c13_rs_global",
+            "chk_sci9c13_rs_actions"
+          ],
+          "criterion": "Connects global cooperation like the Montreal Protocol and local actions like planting trees and renewable energy to restoring the Earth's natural systems.",
+          "isRequired": true
+        }
+      ],
+      "misconceptions": [
+        {
+          "id": "misc_sci9c13_rs_global_all",
+          "wrong": "All global agreements to reduce emissions have been successful.",
+          "fix": "The Montreal Protocol has started the recovery of the ozone layer, but the Kyoto Protocol and the Paris Agreement have been less successful in reducing CO2 emissions.",
+          "checkId": "mchk_misc_sci9c13_rs_global_all",
+          "checkCriterion": "The answer states or implies this wrong idea: All global agreements to reduce emissions have been successful.",
+          "fixCheckId": "mfix_misc_sci9c13_rs_global_all",
+          "fixCheckCriterion": "Answer 2 states the correct idea: The Montreal Protocol has started the recovery of the ozone layer, but the Kyoto Protocol and the Paris Agreement have been less successful in reducing CO2 emissions.",
+          "keyPointIds": [
+            "sci9c13_t5c2_kp2"
+          ],
+          "isRequired": false
+        }
+      ],
+      "weights": {
+        "core": 4,
+        "scored": 7
+      },
+      "batches": {
+        "topic": [
+          [
+            "chk_relevance",
+            "mchk_misc_sci9c13_rs_global_all"
+          ]
+        ],
+        "a": [
+          [
+            "chk_sci9c13_rs_global",
+            "chk_sci9c13_rs_actions"
+          ]
+        ],
+        "b": [
+          [
+            "chk_sci9c13_rs_kyoto",
+            "chk_sci9c13_rs_individual",
+            "chk_sci9c13_rs_life",
+            "lnk_sci9c13_cooperation_actions"
+          ]
+        ]
+      }
+    }
+  ]
+}
