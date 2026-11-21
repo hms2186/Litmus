@@ -12,7 +12,6 @@
 //    transmitted, inspected, or synced to any external server.
 //  - Uses PropertyListEncoder / PropertyListDecoder for persistent storage of opaque tokens.
 //  - Observes live authorization status changes via Combine subscription to AuthorizationCenter.shared.$authorizationStatus.
-//  - Provides seamless simulator fallback so full UI and timer workflows can be validated in Xcode Simulator.
 //
 
 import SwiftUI
@@ -35,7 +34,6 @@ public final class ScreenTimeManager: ObservableObject {
     @Published public private(set) var isShieldActive: Bool = false
     @Published public private(set) var isRequestingAuth: Bool = false
     @Published public private(set) var statusMessage: String = ""
-    @Published public var isPickerPresented: Bool = false
 
     /// Master user preference to activate app blocking during focus stints
     @AppStorage("settings_app_blocking") public var isAppBlockingEnabled: Bool = true
@@ -43,21 +41,6 @@ public final class ScreenTimeManager: ObservableObject {
     /// Strict mode preference (disallows early stint cancellation)
     @AppStorage("settings_app_blocking_strict") public var isStrictMode: Bool = false
 
-    #if targetEnvironment(simulator)
-    private let simulatorAuthKey = "dev.bongo.Litmus.SimulatorAuthorized"
-    private let simulatorCountKey = "dev.bongo.Litmus.SimulatedSelectionCount"
-
-    @Published public var simulatedSelectionCount: Int = 0 {
-        didSet {
-            UserDefaults.standard.set(simulatedSelectionCount, forKey: simulatorCountKey)
-        }
-    }
-    @Published public var isSimulatorAuthorized: Bool = false {
-        didSet {
-            UserDefaults.standard.set(isSimulatorAuthorized, forKey: simulatorAuthKey)
-        }
-    }
-    #endif
 
     // MARK: - Private Storage & Store
 
@@ -70,21 +53,12 @@ public final class ScreenTimeManager: ObservableObject {
 
     // MARK: - Computed Properties
 
-    public var isAuthorized: Bool {
-        #if targetEnvironment(simulator)
-        if isSimulatorAuthorized { return true }
-        #endif
-        return Self.isApproved(status)
-    }
+    public var isAuthorized: Bool { Self.isApproved(status) }
 
     public var hasSelection: Bool {
         let hasRealSelection = !selection.applicationTokens.isEmpty ||
                                !selection.categoryTokens.isEmpty ||
                                !selection.webDomainTokens.isEmpty
-        #if targetEnvironment(simulator)
-        if hasRealSelection { return true }
-        if simulatedSelectionCount > 0 { return true }
-        #endif
         return hasRealSelection
     }
 
@@ -92,10 +66,6 @@ public final class ScreenTimeManager: ObservableObject {
         let realCount = selection.applicationTokens.count +
                         selection.categoryTokens.count +
                         selection.webDomainTokens.count
-        #if targetEnvironment(simulator)
-        if realCount > 0 { return realCount }
-        if simulatedSelectionCount > 0 { return simulatedSelectionCount }
-        #endif
         return realCount
     }
 
@@ -112,20 +82,6 @@ public final class ScreenTimeManager: ObservableObject {
             self.selection = FamilyActivitySelection()
         }
 
-        #if targetEnvironment(simulator)
-        if UserDefaults.standard.bool(forKey: simulatorAuthKey) ||
-           UserDefaults.standard.bool(forKey: "settings_app_blocking") {
-            self.isSimulatorAuthorized = true
-            self.status = .approved
-            self.statusMessage = "Screen Time access granted (Simulator Mode)."
-        }
-        let savedSimCount = UserDefaults.standard.integer(forKey: simulatorCountKey)
-        if savedSimCount > 0 {
-            self.simulatedSelectionCount = savedSimCount
-        } else if self.isSimulatorAuthorized {
-            self.simulatedSelectionCount = 3
-        }
-        #endif
 
         observeAuthorizationStatus()
     }
@@ -142,13 +98,6 @@ public final class ScreenTimeManager: ObservableObject {
     }
 
     private func handleStatusUpdate(_ newStatus: AuthorizationStatus) {
-        #if targetEnvironment(simulator)
-        if isSimulatorAuthorized {
-            self.status = .approved
-            self.statusMessage = "Screen Time access granted (Simulator Mode)."
-            return
-        }
-        #endif
 
         self.status = newStatus
         // Matched through isApproved, because `approvedWithDataAccess` exists only from iOS 26.4
@@ -180,33 +129,6 @@ public final class ScreenTimeManager: ObservableObject {
         isRequestingAuth = true
         defer { isRequestingAuth = false }
 
-        #if targetEnvironment(simulator)
-        do {
-            try await AuthorizationCenter.shared.requestAuthorization(for: .individual)
-            if Self.isApproved(AuthorizationCenter.shared.authorizationStatus) {
-                handleStatusUpdate(AuthorizationCenter.shared.authorizationStatus)
-                return true
-            } else {
-                isSimulatorAuthorized = true
-                status = .approved
-                if simulatedSelectionCount == 0 {
-                    simulatedSelectionCount = 3
-                }
-                statusMessage = "Screen Time access granted (Simulator Mode)."
-                return true
-            }
-        } catch {
-            // CoreSimulator lacks interactive Touch ID / Face ID FamilyControls prompt daemon.
-            // Catch error and grant simulator authorization for seamless testing.
-            isSimulatorAuthorized = true
-            status = .approved
-            if simulatedSelectionCount == 0 {
-                simulatedSelectionCount = 3
-            }
-            statusMessage = "Screen Time access granted (Simulator Mode)."
-            return true
-        }
-        #else
         do {
             try await AuthorizationCenter.shared.requestAuthorization(for: .individual)
             handleStatusUpdate(AuthorizationCenter.shared.authorizationStatus)
@@ -241,7 +163,6 @@ public final class ScreenTimeManager: ObservableObject {
             statusMessage = "Authorization failed: \(error.localizedDescription)"
             return false
         }
-        #endif
     }
 
     // MARK: - Shield Activation & Deactivation
@@ -286,24 +207,9 @@ public final class ScreenTimeManager: ObservableObject {
     /// Clears selected applications and restores normal device access.
     public func clearSelection() {
         selection = FamilyActivitySelection()
-        #if targetEnvironment(simulator)
-        simulatedSelectionCount = 0
-        #endif
         saveSelection()
         if isShieldActive {
             stopBlocking()
-        }
-    }
-
-    /// Toggles shield for developer and testing verification.
-    public func toggleShieldTest() {
-        if isShieldActive {
-            stopBlocking()
-        } else {
-            if !isAppBlockingEnabled {
-                isAppBlockingEnabled = true
-            }
-            startBlocking()
         }
     }
 

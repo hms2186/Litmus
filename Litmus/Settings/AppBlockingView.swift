@@ -2,8 +2,9 @@
 //  AppBlockingView.swift
 //  Litmus
 //
-//  Official Apple HIG Screen Time App Shielding interface inside Settings.
-//  Uses Apple's FamilyControls and ManagedSettings frameworks for on-device app self-regulation.
+//  App Blocking inside Settings: Screen Time app shielding (FamilyControls and ManagedSettings) while a focus timer runs.
+//  Kept to what a student decides: whether to block, how strict to be, and which apps. A grouped list like the rest of Settings;
+//  the access prompt appears only while permission is missing; the test tools exist only in the simulator.
 //
 
 import SwiftUI
@@ -11,428 +12,133 @@ import FamilyControls
 
 public struct AppBlockingView: View {
     @Environment(\.appReduceMotion) private var reduceMotion
-    @Environment(\.inSettingsPane) private var inPane
     @ObservedObject var manager: ScreenTimeManager = .shared
-    @Environment(\.dismiss) private var dismiss
-
-    private let red = Color(red: 255/255, green: 24/255, blue: 36/255)
-    private let yellow = Color(red: 255/255, green: 186/255, blue: 73/255)
-    private let blue = Color(red: 10/255, green: 132/255, blue: 255/255)
-    private let green = Color(red: 57/255, green: 181/255, blue: 74/255)
+    // As in Apple's FamilyActivityPicker sample: the selection and the presentation flag are this view's own state, and the manager
+    // is told when the person confirms. (Binding the picker straight to the manager republished and rebuilt the screen while the
+    // picker was open, which is what made choosing a category glitch.)
+    @State private var selection = FamilyActivitySelection()
+    @State private var showPicker = false
 
     public init() {}
 
     public var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 18) {
-                // Section 1: Shield Master Toggle
-                section(title: "Stint Shielding", systemImage: "hourglass") {
-                    Toggle(isOn: $manager.isAppBlockingEnabled) {
-                        HStack(spacing: 14) {
-                            Image(systemName: "iphone")
-                                .symbolRenderingMode(.hierarchical)
-                                .font(.system(size: 20, weight: .semibold))
-                                .foregroundStyle(.white)
-                                .frame(width: 40, height: 40)
-                                .background(red.opacity(0.3), in: Circle())
-                                .accessibilityHidden(true)
+        SettingsScroll {
+            // Only while permission is missing: nothing else on this screen works without it
+            if !manager.isAuthorized { accessSection }
 
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("Shield Apps")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-
-                                Text("Block selected apps while a timer is running.")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.white.opacity(0.7))
-                            }
-                        }
-                    }
-                    .tint(red)
-                    .padding(.vertical, 4)
+            SettingsGroup(footer: "Chosen apps are blocked while a timer runs. Strict Mode does not let a session be paused or stopped early.", inset: 58) {
+                Toggle(isOn: $manager.isAppBlockingEnabled) {
+                    SettingsLabel(title: "Block Apps During Focus", symbol: "hourglass", color: .indigo)
                 }
-
-                // Section 2: Screen Time Authorization
-                section(title: "Screen Time Access", systemImage: "lock.shield") {
-                    if manager.isAuthorized {
-                        HStack(spacing: 14) {
-                            Image(systemName: "checkmark.shield.fill")
-                                .symbolRenderingMode(.hierarchical)
-                                .font(.system(size: 22, weight: .semibold))
-                                .foregroundStyle(green)
-                                .frame(width: 40, height: 40)
-                                .background(green.opacity(0.2), in: Circle())
-                                .accessibilityHidden(true)
-
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("Authorized")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-
-                                Text("Screen Time shielding is active on this iPad.")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.white.opacity(0.7))
-                            }
-
-                            Spacer()
-
-                            HStack(spacing: 6) {
-                                Circle()
-                                    .fill(green)
-                                    .frame(width: 8, height: 8)
-                                Text("Active")
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(green)
-                            }
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 6)
-                            .background(green.opacity(0.15), in: Capsule())
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.vertical, 4)
-                    } else if manager.status == .denied {
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack(spacing: 10) {
-                                Image(systemName: "xmark.shield.fill")
-                                    .symbolRenderingMode(.hierarchical)
-                                    .foregroundStyle(red)
-                                    .font(.system(size: 20, weight: .semibold))
-                                    .accessibilityHidden(true)
-
-                                Text("Access Denied")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-                            }
-
-                            Text("Screen Time permission was denied. Please allow Litmus in iPadOS Settings.")
-                                .font(.subheadline)
-                                .foregroundStyle(.white.opacity(0.75))
-
-                            Button {
-                                manager.openSystemSettings()
-                            } label: {
-                                HStack(spacing: 8) {
-                                    Spacer()
-                                    Image(systemName: "arrow.up.forward.app")
-                                        .symbolRenderingMode(.hierarchical)
-                                        .font(.system(size: 15, weight: .semibold))
-                                    Text("Open iPadOS Settings")
-                                        .scaledFont(size: 15, weight: .semibold)
-                                    Spacer()
-                                }
-                                .padding(.vertical, 8)
-                            }
-                            .litmusGlassButton()
-                            .buttonBorderShape(.capsule)
-                            .controlSize(.large)
-                            .tint(.white)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.vertical, 4)
-                    } else {
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack(spacing: 10) {
-                                Image(systemName: "exclamationmark.triangle.fill")
-                                    .symbolRenderingMode(.palette)
-                                    .foregroundStyle(yellow, .black)
-                                    .font(.system(size: 20, weight: .semibold))
-                                    .symbolEffect(.pulse, isActive: !reduceMotion)
-                                    .accessibilityHidden(true)
-
-                                Text("Permission Required")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-                            }
-
-                            Text("Screen Time access is required to shield apps during focus.")
-                                .font(.subheadline)
-                                .foregroundStyle(.white.opacity(0.75))
-
-                            Button {
-                                Task {
-                                    await manager.requestAuthorization()
-                                }
-                            } label: {
-                                HStack(spacing: 8) {
-                                    Spacer()
-                                    if manager.isRequestingAuth {
-                                        ProgressView()
-                                            .tint(.white)
-                                    } else {
-                                        Image(systemName: "lock.shield.fill")
-                                            .symbolRenderingMode(.hierarchical)
-                                            .font(.system(size: 16, weight: .semibold))
-                                    }
-                                    Text("Authorize Screen Time Access")
-                                        .scaledFont(size: 15, weight: .semibold)
-                                    Spacer()
-                                }
-                                .padding(.vertical, 8)
-                            }
-                            .litmusProminentGlassButton()
-                            .buttonBorderShape(.capsule)
-                            .controlSize(.large)
-                            .tint(AppTheme.accent)
-                            .disabled(manager.isRequestingAuth)
-
-                            if !manager.statusMessage.isEmpty {
-                                Label(manager.statusMessage, systemImage: "info.circle")
-                                    .font(.footnote)
-                                    .foregroundStyle(.white.opacity(0.75))
-                            }
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.vertical, 4)
-                    }
+                .tint(.green)
+                .settingsRow()
+                Toggle(isOn: $manager.isStrictMode) {
+                    SettingsLabel(title: "Strict Mode", symbol: "flame.fill", color: .orange)
                 }
+                .tint(.green)
+                .settingsRow()
+            }
 
-                // Section 3: Blocked Applications
-                section(title: "Blocked Apps", systemImage: "apps.ipad") {
-                    VStack(alignment: .leading, spacing: 12) {
-                        HStack {
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("Selected Items")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-
-                                Text(manager.hasSelection ? "\(manager.selectionCount) selected" : "None selected")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.white.opacity(0.65))
-                            }
-
-                            Spacer()
-
-                            Button {
-                                if !manager.isAuthorized {
-                                    Task {
-                                        await manager.requestAuthorization()
-                                    }
-                                }
-                                #if targetEnvironment(simulator)
-                                if manager.selectionCount == 0 && manager.selection.applicationTokens.isEmpty {
-                                    withAnimation(AppMotionSystem.interactiveSpring) {
-                                        manager.simulatedSelectionCount = 3
-                                    }
-                                }
-                                #endif
-                                manager.isPickerPresented = true
-                            } label: {
-                                HStack(spacing: 6) {
-                                    Image(systemName: manager.hasSelection ? "slider.horizontal.3" : "plus")
-                                        .symbolRenderingMode(.hierarchical)
-                                        .font(.system(size: 14, weight: .semibold))
-                                    Text(manager.hasSelection ? "Edit" : "Choose Apps")
-                                }
-                                .scaledFont(size: 14, weight: .semibold)
-                                .padding(.horizontal, 14)
-                                .padding(.vertical, 7)
-                            }
-                            .litmusGlassButton()
-                            .buttonBorderShape(.capsule)
-                            .tint(yellow)
-                            .accessibilityLabel("Select apps to block")
-                        }
-
-                        if manager.hasSelection {
-                            Divider().overlay(Color.white.opacity(0.12))
-
-                            HStack(spacing: 10) {
-                                let appCount = manager.selection.applicationTokens.count > 0 ? manager.selection.applicationTokens.count : (manager.selectionCount > 1 ? 2 : manager.selectionCount)
-                                let catCount = manager.selection.categoryTokens.count > 0 ? manager.selection.categoryTokens.count : (manager.selectionCount > 2 ? 1 : 0)
-                                let webCount = manager.selection.webDomainTokens.count
-
-                                Label("\(appCount) Apps", systemImage: "app.badge.checkmark.fill")
-                                    .symbolRenderingMode(.hierarchical)
-                                    .scaledFont(size: 13, weight: .medium)
-                                    .padding(.horizontal, 10)
-                                    .padding(.vertical, 5)
-                                    .background(Color.white.opacity(0.1))
-                                    .clipShape(Capsule())
-
-                                Label("\(catCount) Categories", systemImage: "square.grid.2x2.fill")
-                                    .symbolRenderingMode(.hierarchical)
-                                    .scaledFont(size: 13, weight: .medium)
-                                    .padding(.horizontal, 10)
-                                    .padding(.vertical, 5)
-                                    .background(Color.white.opacity(0.1))
-                                    .clipShape(Capsule())
-
-                                if webCount > 0 {
-                                    Label("\(webCount) Sites", systemImage: "globe")
-                                        .symbolRenderingMode(.hierarchical)
-                                        .scaledFont(size: 13, weight: .medium)
-                                        .padding(.horizontal, 10)
-                                        .padding(.vertical, 5)
-                                        .background(Color.white.opacity(0.1))
-                                        .clipShape(Capsule())
-                                }
-
-                                Spacer()
-
-                                Button(role: .destructive) {
-                                    withAnimation {
-                                        manager.clearSelection()
-                                    }
-                                } label: {
-                                    HStack(spacing: 4) {
-                                        Image(systemName: "trash")
-                                            .symbolRenderingMode(.hierarchical)
-                                        Text("Clear")
-                                    }
-                                    .scaledFont(size: 13, weight: .semibold)
-                                }
-                                .litmusGlassButton()
-                                .buttonBorderShape(.capsule)
-                                .tint(Color(red: 255/255, green: 80/255, blue: 80/255))
-                            }
-                        }
-
-                        #if targetEnvironment(simulator)
-                        VStack(alignment: .leading, spacing: 8) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "info.circle.fill")
-                                    .foregroundStyle(yellow)
-                                    .font(.system(size: 14, weight: .semibold))
-                                Text("Simulator Note: Empty Category Expansion")
-                                    .font(.subheadline.weight(.semibold))
-                                    .foregroundStyle(.white)
-                            }
-
-                            Text("Apple's FamilyActivityPicker cannot show individual apps inside the simulator because Xcode Simulator has no App Store apps installed. On a real iPad, all installed apps appear under each category. On Simulator, tap the radio circle on the left of any category (e.g. Social, Games) to shield that category, or use the simulator test buttons below.")
-                                .font(.footnote)
-                                .foregroundStyle(.white.opacity(0.75))
-                                .fixedSize(horizontal: false, vertical: true)
-
-                            HStack(spacing: 10) {
-                                Button("Simulate 3 Apps") {
-                                    withAnimation(AppMotionSystem.interactiveSpring) {
-                                        manager.simulatedSelectionCount = 3
-                                    }
-                                }
-                                .litmusGlassButton()
-                                .buttonBorderShape(.capsule)
-                                .scaledFont(size: 13, weight: .medium)
-
-                                Button("Simulate 5 Apps") {
-                                    withAnimation(AppMotionSystem.interactiveSpring) {
-                                        manager.simulatedSelectionCount = 5
-                                    }
-                                }
-                                .litmusGlassButton()
-                                .buttonBorderShape(.capsule)
-                                .scaledFont(size: 13, weight: .medium)
-                            }
-                            .padding(.top, 4)
-                        }
-                        .padding(14)
-                        .background(Color.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                        #endif
-                    }
-                    .padding(.vertical, 4)
-                }
-
-                // Section 4: Live Shield Verification
-                section(title: "Shield Status", systemImage: "bolt.shield") {
-                    HStack(spacing: 14) {
-                        Image(systemName: manager.isShieldActive ? "bolt.shield.fill" : "shield")
-                            .symbolRenderingMode(.hierarchical)
-                            .font(.system(size: 22, weight: .semibold))
-                            .foregroundStyle(manager.isShieldActive ? green : .white.opacity(0.6))
-                            .frame(width: 40, height: 40)
-                            .background(
-                                (manager.isShieldActive ? green : Color.white).opacity(0.15),
-                                in: Circle()
-                            )
+            SettingsGroup(footer: readiness, inset: 58) {
+                Button(action: chooseApps) {
+                    HStack {
+                        SettingsLabel(title: "Apps to Block", symbol: "apps.ipad", color: .blue)
+                        Spacer(minLength: 8)
+                        Text(selectionSummary).foregroundStyle(.secondary).lineLimit(1)
+                        Image(systemName: "chevron.right")
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(.tertiary)
                             .accessibilityHidden(true)
-
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(manager.isShieldActive ? "Shield Active" : "Shield Idle")
-                                .font(.headline)
-                                .foregroundStyle(.white)
-
-                            Text(manager.isShieldActive ? "Selected apps are currently restricted." : "Shield will activate when a timer starts.")
-                                .font(.subheadline)
-                                .foregroundStyle(.white.opacity(0.7))
-                        }
-
-                        Spacer()
-
-                        Button {
-                            withAnimation(AppMotionSystem.interactiveSpring) {
-                                manager.toggleShieldTest()
-                            }
-                        } label: {
-                            HStack(spacing: 6) {
-                                Image(systemName: manager.isShieldActive ? "stop.circle.fill" : "play.circle.fill")
-                                    .symbolRenderingMode(.hierarchical)
-                                Text(manager.isShieldActive ? "Lift Shield" : "Test Shield")
-                            }
-                            .scaledFont(size: 13, weight: .semibold)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 7)
-                        }
-                        .litmusGlassButton()
-                        .buttonBorderShape(.capsule)
-                        .tint(manager.isShieldActive ? red : yellow)
-                        .disabled(!manager.hasSelection && !manager.isShieldActive)
                     }
-                    .padding(.vertical, 4)
                 }
-
-                // Section 5: Strict Mode
-                section(title: "Focus Rules", systemImage: "flame") {
-                    Toggle(isOn: $manager.isStrictMode) {
-                        HStack(spacing: 14) {
-                            Image(systemName: "flame.fill")
-                                .symbolRenderingMode(.hierarchical)
-                                .font(.system(size: 20, weight: .semibold))
-                                .foregroundStyle(yellow)
-                                .frame(width: 40, height: 40)
-                                .background(yellow.opacity(0.2), in: Circle())
-                                .accessibilityHidden(true)
-
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text("Strict Mode")
-                                    .font(.headline)
-                                    .foregroundStyle(.white)
-
-                                Text("Prevents pausing or stopping focus stints early.")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.white.opacity(0.7))
-                            }
-                        }
+                .buttonStyle(SettingsRowButton())
+                .accessibilityHint("Opens the list of apps and categories to block")
+                if manager.hasSelection {
+                    Button(role: .destructive) {
+                        withAnimation(reduceMotion ? nil : AppMotionSystem.interactiveSpring) { manager.clearSelection(); selection = FamilyActivitySelection() }
+                    } label: {
+                        Text("Clear Selection").foregroundStyle(.red)
                     }
-                    .tint(yellow)
-                    .padding(.vertical, 4)
+                    .buttonStyle(SettingsRowButton())
                 }
             }
-            .padding(.horizontal, 32)
-            .padding(.bottom, 32)
         }
-        .scrollContentBackground(.hidden)
-        .background { if !inPane { AppBackground().ignoresSafeArea() } }
-        .centeredTitle("App Blocking")
+        .settingsScreen("App Blocking")
         .toolbarVisibility(.hidden, for: .tabBar)
         .toolbar(.hidden, for: .tabBar)
-        .tint(.white)
-        .familyActivityPicker(isPresented: $manager.isPickerPresented, selection: $manager.selection)
+        .familyActivityPicker(isPresented: $showPicker, selection: $selection)
+        .onChange(of: selection) { _, newSelection in manager.selection = newSelection }
+        .onAppear { selection = manager.selection }
     }
 
-    @ViewBuilder
-    private func section<Content: View>(title: String, systemImage: String, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Label(title.uppercased(), systemImage: systemImage)
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(.white.opacity(0.6))
-                .padding(.horizontal, 8)
+    // MARK: Apps to block
 
-            VStack(alignment: .leading, spacing: 0) {
-                content()
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(18)
-            .litmusGlass(in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+    /// Says whether the next timer will block anything, and what is missing when it will not (the timer starts blocking only when
+    /// all three are true: blocking is on, Screen Time access is granted, and at least one app, category or site is chosen)
+    private var readiness: String {
+        if !manager.isAppBlockingEnabled { return "Blocking is off. Turn on Block Apps During Focus." }
+        if !manager.isAuthorized { return "Not blocking yet: allow Screen Time access above." }
+        if !manager.hasSelection { return "Not blocking yet: choose at least one app or category." }
+        return "Ready: \(selectionSummary) will be blocked while a timer runs."
+    }
+
+    /// The system's picker needs Screen Time access first (presenting it without it is what made it misbehave), so access is asked
+    /// for when missing and the picker opens once it is granted
+    private func chooseApps() {
+        if manager.isAuthorized {
+            showPicker = true
+        } else {
+            Task { if await manager.requestAuthorization() { showPicker = true } }
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+
+    /// "None", or what is chosen in words: "3 apps, 1 category"
+    private var selectionSummary: String {
+        guard manager.hasSelection else { return "None" }
+        let apps = manager.selection.applicationTokens.count
+        let categories = manager.selection.categoryTokens.count
+        let sites = manager.selection.webDomainTokens.count
+        var parts: [String] = []
+        if apps > 0 { parts.append(apps == 1 ? "1 app" : "\(apps) apps") }
+        if categories > 0 { parts.append(categories == 1 ? "1 category" : "\(categories) categories") }
+        if sites > 0 { parts.append(sites == 1 ? "1 site" : "\(sites) sites") }
+        return parts.joined(separator: ", ")
+    }
+
+    // MARK: Screen Time access
+
+    private var accessSection: some View {
+        let denied = manager.status == .denied
+        return SettingsGroup {
+            VStack(alignment: .leading, spacing: 12) {
+                SettingsLabel(title: denied ? "Screen Time Access Is Off" : "Allow Screen Time Access",
+                              symbol: denied ? "xmark.shield.fill" : "lock.shield.fill", color: denied ? .red : .orange)
+                    .font(.headline)
+                Text(denied ? "Allow Litmus in iPadOS Settings so it can block apps while you focus."
+                            : "Litmus needs it to block apps while you focus.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+                Button {
+                    if denied { manager.openSystemSettings() } else { Task { if await manager.requestAuthorization() { showPicker = true } } }
+                } label: {
+                    HStack(spacing: 8) {
+                        if manager.isRequestingAuth { ProgressView() }
+                        Text(denied ? "Open Settings" : "Allow Access").font(.body.weight(.semibold))
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 44)
+                }
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                .tint(AppTheme.accent)
+                .disabled(manager.isRequestingAuth)
+                if !manager.statusMessage.isEmpty {
+                    Label(manager.statusMessage, systemImage: "info.circle")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .settingsRow()
+        }
     }
 }

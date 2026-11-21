@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-private let calendarAccent = Color(red: 255/255, green: 69/255, blue: 58/255)
+private let calendarAccent = Color.red
+/// Custom on purpose: the system purple is too light for white 12 pt text on it (contrast), this one passes
 private let topicChip = Color(red: 150/255, green: 52/255, blue: 190/255)
-private let freezeBlue = Color(red: 120/255, green: 205/255, blue: 255/255)
+private let freezeBlue = Color.cyan
 
 /// The date as a big calendar tile, the topics of the day under it, and the freezes in hand.
 struct CalendarTodayContent: View {
@@ -34,13 +35,11 @@ struct CalendarTodayContent: View {
                 .padding(.top, -14)
             Divider().overlay(Color.white.opacity(0.12))
             if let topics = record?.topics, !topics.isEmpty {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 8) {
-                        ForEach(topics, id: \.self) { topic in
-                            HStack(spacing: 10) {
-                                Capsule().fill(topicChip).frame(width: 4, height: 22)
-                                Text(topic).scaledFont(size: 19).foregroundStyle(.white).lineLimit(2)
-                            }
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(topics, id: \.self) { topic in
+                        HStack(spacing: 10) {
+                            Capsule().fill(topicChip).frame(width: 4, height: 22)
+                            Text(topic).scaledFont(size: 19).foregroundStyle(.white).lineLimit(2)
                         }
                     }
                 }
@@ -81,7 +80,9 @@ struct FreezeBadge: View {
     }
 }
 
-/// The month calendar. Back through the last 12 months; each day lists what was studied.
+/// The month calendar sheet, laid out like Apple's Calendar app: a full-width month grid of equal cells, the day number at the
+/// top of each cell (today's in a red circle), what was studied inside it, and the chosen day's topics under the grid. The date
+/// work is Foundation's `Calendar` (month interval, first weekday, today and day comparisons). A year back and a year ahead.
 struct StudyCalendarSheet: View {
     @ObservedObject private var progress = StudyProgressManager.shared
     @Environment(\.dismiss) private var dismiss
@@ -91,6 +92,7 @@ struct StudyCalendarSheet: View {
 
     private let calendar = Calendar.current
     private let maxBack = 12
+    private let maxForward = 12
 
     private var monthStart: Date {
         let thisMonth = calendar.date(from: calendar.dateComponents([.year, .month], from: Date())) ?? Date()
@@ -103,92 +105,97 @@ struct StudyCalendarSheet: View {
         return Array(symbols[first...] + symbols[..<first])
     }
 
-    /// Leading blanks, the month's days, and trailing days of the next month to finish the last week
+    /// Six whole weeks starting on the week of the 1st, as Apple's Calendar draws a month: days of the neighbouring months fill the
+    /// first and last rows
     private var cells: [Date] {
         guard let interval = calendar.dateInterval(of: .month, for: monthStart),
-              let firstWeek = calendar.dateInterval(of: .weekOfYear, for: interval.start)?.start,
-              let lastDay = calendar.date(byAdding: .day, value: -1, to: interval.end),
-              let lastWeek = calendar.dateInterval(of: .weekOfYear, for: lastDay)?.end else { return [] }
-        var days: [Date] = []
-        var day = firstWeek
-        while day < lastWeek { days.append(day); day = calendar.date(byAdding: .day, value: 1, to: day) ?? lastWeek }
-        return days
+              let firstWeek = calendar.dateInterval(of: .weekOfYear, for: interval.start)?.start else { return [] }
+        return (0..<42).compactMap { calendar.date(byAdding: .day, value: $0, to: firstWeek) }
     }
 
-    /// 12 months back from this one, the present date's year of history
     private var oldestAllowed: Date {
         calendar.date(byAdding: .year, value: -1, to: calendar.startOfDay(for: Date())) ?? Date()
     }
 
+    private var canGoBack: Bool { monthOffset > -maxBack }
+    private var canGoForward: Bool { monthOffset < maxForward }
+
+    private func step(_ delta: Int) {
+        withAnimation(.smooth(duration: 0.25)) { monthOffset = max(-maxBack, min(maxForward, monthOffset + delta)) }
+    }
+
     var body: some View {
         NavigationStack {
-            VStack(spacing: 14) {
-                header
-                streakStrip
-                weekdayRow
-                grid
-                if sizeClass == .compact || selected != nil { dayDetail }
+            VStack(spacing: 12) {
+                header.padding(.horizontal, 20)
+                FreezeBadge(count: progress.freezesAvailable, streak: progress.streakDays).padding(.horizontal, 20)
+                // The month grid fills the sheet's width, as in Apple's Calendar
+                VStack(spacing: 0) {
+                    weekdayRow
+                    grid
+                        // Inset with rounded, outlined corners so all four corners of the grid show inside the sheet
+                        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                        .overlay { RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Color.white.opacity(0.16), lineWidth: 0.5) }
+                }
+                .padding(.horizontal, 12)
+                dayDetail.fixedSize(horizontal: false, vertical: true).padding(.horizontal, 20)
             }
-            .padding(.horizontal, 20)
-            .padding(.bottom, 12)
-            .background { AppBackground().ignoresSafeArea() }
+            .padding(.bottom, 16)
             .navigationTitle("Calendar")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() }.fontWeight(.semibold) } }
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button(role: .cancel) { dismiss() } label: { Image(systemName: "xmark") }
+                        .accessibilityLabel("Close")
+                }
+            }
         }
         .tint(.white)
         .preferredColorScheme(.dark)
-        .presentationDragIndicator(.visible)
-        .presentationCornerRadius(36)
+        .presentationBackground(.regularMaterial)
     }
 
     // MARK: Header
 
+    /// The month and year on the left; on the right one control, as in Apple's Calendar: back, Today, forward in a single glass pill
     private var header: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 12) {
             (Text(monthStart.formatted(.dateTime.month(.wide))).fontWeight(.bold) + Text(" " + monthStart.formatted(.dateTime.year())).fontWeight(.regular))
                 .scaledFont(size: 34)
                 .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            Spacer()
-            Button { step(-1) } label: { Image(systemName: "chevron.left").frame(width: 30, height: 30) }
-                .litmusGlassButton().buttonBorderShape(.circle)
-                .disabled(!canGoBack)
-                .accessibilityLabel("Previous month")
-            Button { withAnimation(.smooth) { monthOffset = 0; selected = Date() } } label: {
-                Text("Today").scaledFont(size: 16, weight: .medium).padding(.horizontal, 6)
+            Spacer(minLength: 8)
+            // Back, Today and forward as three independent glass buttons
+            HStack(spacing: 10) {
+                Button { step(-1) } label: { Image(systemName: "chevron.left").frame(width: 24, height: 24) }
+                    .buttonBorderShape(.circle)
+                    .disabled(!canGoBack)
+                    .accessibilityLabel("Previous Month")
+                Button("Today") { withAnimation(.smooth) { monthOffset = 0; selected = Date() } }
+                    .buttonBorderShape(.capsule)
+                Button { step(1) } label: { Image(systemName: "chevron.right").frame(width: 24, height: 24) }
+                    .buttonBorderShape(.circle)
+                    .disabled(!canGoForward)
+                    .accessibilityLabel("Next Month")
             }
-            .litmusGlassButton().buttonBorderShape(.capsule)
-            Button { step(1) } label: { Image(systemName: "chevron.right").frame(width: 30, height: 30) }
-                .litmusGlassButton().buttonBorderShape(.circle)
-                .disabled(monthOffset >= 0)
-                .accessibilityLabel("Next month")
+            .litmusGlassButton()
+            .controlSize(.large)
         }
-        .foregroundStyle(.white)
     }
 
-    private var canGoBack: Bool {
-        guard let previous = calendar.date(byAdding: .month, value: monthOffset - 1, to: calendar.date(from: calendar.dateComponents([.year, .month], from: Date())) ?? Date()),
-              let end = calendar.dateInterval(of: .month, for: previous)?.end else { return false }
-        return end > oldestAllowed
-    }
-
-    private func step(_ delta: Int) {
-        withAnimation(.smooth(duration: 0.25)) { monthOffset = min(0, monthOffset + delta) }
-    }
-
-    private var streakStrip: some View {
-        FreezeBadge(count: progress.freezesAvailable, streak: progress.streakDays)
-    }
-
+    /// Weekday names in the day numbers' own right-aligned column, as in Apple's Calendar
     private var weekdayRow: some View {
         HStack(spacing: 0) {
             ForEach(weekdaySymbols, id: \.self) { symbol in
                 Text(symbol)
-                    .scaledFont(size: 15, weight: .medium)
+                    .scaledFont(size: 17)
                     .foregroundStyle(.white.opacity(0.6))
-                    .frame(maxWidth: .infinity)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .padding(.trailing, 10)
+                    .padding(.vertical, 6)
             }
         }
     }
@@ -200,79 +207,88 @@ struct StudyCalendarSheet: View {
         let rows = max(1, days.count / 7)
         return GeometryReader { geo in
             let rowHeight = geo.size.height / CGFloat(rows)
+            let cellWidth = geo.size.width / 7
             VStack(spacing: 0) {
                 ForEach(0..<rows, id: \.self) { row in
                     HStack(spacing: 0) {
                         ForEach(0..<7, id: \.self) { column in
-                            dayCell(days[row * 7 + column])
+                            dayCell(days[row * 7 + column], isFirstCell: row == 0 && column == 0, cellWidth: cellWidth)
                                 .frame(maxWidth: .infinity)
                         }
                     }
                     .frame(height: rowHeight)
-                    .overlay(alignment: .top) { Rectangle().fill(Color.white.opacity(0.12)).frame(height: 1) }
+                    .overlay(alignment: .top) { Rectangle().fill(Color.white.opacity(0.16)).frame(height: 0.5) }
                 }
             }
         }
-        .frame(minHeight: 280)
-        .background(Color.black.opacity(0.18), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .frame(minHeight: 300, maxHeight: .infinity)
         .animation(.smooth(duration: 0.2), value: monthOffset)
     }
 
-    private func dayCell(_ day: Date) -> some View {
+    private func dayCell(_ day: Date, isFirstCell: Bool, cellWidth: CGFloat) -> some View {
         let inMonth = calendar.isDate(day, equalTo: monthStart, toGranularity: .month)
         let isToday = calendar.isDateInToday(day)
         let isSelected = selected.map { calendar.isDate($0, inSameDayAs: day) } ?? false
         let isFuture = day > Date() && !isToday
-        let record = progress.record(for: day)
-        let topics = record?.topics ?? []
+        let topics = progress.record(for: day)?.topics ?? []
         let frozen = progress.isFrozen(day)
         let beyondRange = day < oldestAllowed
+        // The 1st of a month (and the first cell) carry the month too: "1 Nov", "1 Dec"
+        let showsMonth = isFirstCell || calendar.component(.day, from: day) == 1
+        let number = showsMonth ? day.formatted(.dateTime.day().month(.abbreviated)) : day.formatted(.dateTime.day())
         return Button {
             guard !isFuture, !beyondRange else { return }
             selected = day
         } label: {
-            VStack(spacing: 4) {
+            VStack(alignment: .trailing, spacing: 3) {
                 HStack(spacing: 4) {
                     if frozen { Image(systemName: "snowflake").font(.system(size: 12, weight: .bold)).foregroundStyle(freezeBlue) }
                     Spacer(minLength: 0)
-                    Text(day.formatted(.dateTime.day()))
-                        .scaledFont(size: 16, weight: isToday ? .bold : .medium)
-                        .foregroundStyle(isToday ? .white : (inMonth ? .white : .white.opacity(0.35)))
-                        .frame(minWidth: 28, minHeight: 28)
-                        .background(Circle().fill(isToday ? calendarAccent : .clear))
+                    Text(number)
+                        .scaledFont(size: 17, weight: isToday ? .semibold : .regular)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.7)
+                        // Today: a number in a red circle; a chosen day: a soft circle; days of other months are dimmed
+                        .foregroundStyle(isToday ? Color.white : (inMonth ? Color.white : Color.white.opacity(0.35)))
+                        .padding(.horizontal, isToday || isSelected ? 6 : 0)
+                        .frame(minWidth: 30, minHeight: 30)
+                        .background {
+                            if isToday { Circle().fill(calendarAccent) }
+                            else if isSelected { Circle().fill(Color.white.opacity(0.22)) }
+                        }
                 }
-                if sizeClass == .compact {
+                .padding(.trailing, 4)
+                if cellWidth < 90 {
                     HStack(spacing: 3) {
                         ForEach(0..<min(topics.count, 3), id: \.self) { _ in Circle().fill(topicChip).frame(width: 6, height: 6) }
                     }
                 } else {
-                    VStack(spacing: 3) {
-                        ForEach(topics.count <= 2 ? topics : Array(topics.prefix(1)), id: \.self) { topic in
-                            Text(topic)
-                                .scaledFont(size: 12, weight: .medium)
-                                .foregroundStyle(.white)
-                                .lineLimit(1)
-                                .padding(.horizontal, 6).padding(.vertical, 2)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .background(topicChip.opacity(0.75), in: Capsule())
+                    // What was studied, as a full-width bar across the cell, like an event in Apple's Calendar; any more are counted at its end
+                    if let first = topics.first {
+                        HStack(spacing: 4) {
+                            Text(first).lineLimit(1)
+                            if topics.count > 1 { Text("+\(topics.count - 1)").scaledFont(size: 12, weight: .bold).fixedSize() }
                         }
-                        if topics.count > 2 {
-                            Text("+\(topics.count - 1) more").scaledFont(size: 11).foregroundStyle(.white.opacity(0.7))
-                        }
+                        .scaledFont(size: 14, weight: .medium)
+                        .foregroundStyle(Color(red: 0.86, green: 0.65, blue: 1.0))
+                        .padding(.horizontal, 6).padding(.vertical, 2)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(topicChip.opacity(0.45), in: RoundedRectangle(cornerRadius: 6, style: .continuous))
+                        .padding(.horizontal, 3)
                     }
                 }
                 Spacer(minLength: 0)
             }
-            .padding(4)
+            .padding(.top, 5)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .clipped()
-            .background(isSelected ? Color.white.opacity(0.12) : .clear)
-            .overlay(alignment: .leading) { Rectangle().fill(Color.white.opacity(0.08)).frame(width: 1) }
+            .overlay(alignment: .leading) { Rectangle().fill(Color.white.opacity(0.12)).frame(width: 0.5) }
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
-        .opacity(beyondRange ? 0.3 : 1)
+        .hoverEffectDisabled()
+        .opacity(beyondRange ? 0.3 : (isFuture ? 0.6 : 1))
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
         .accessibilityLabel(day.formatted(.dateTime.weekday(.wide).day().month(.wide))
                             + (topics.isEmpty ? ", nothing studied" : ", studied " + topics.joined(separator: ", "))
                             + (frozen ? ", streak freeze used" : ""))
@@ -313,6 +329,6 @@ struct StudyCalendarSheet: View {
         }
         .padding(14)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .litmusGlass(in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }

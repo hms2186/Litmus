@@ -557,7 +557,7 @@ if let only, only.contains("stress") {
         emit(["run": "own", "id": a.id, "concept": e.concept.label, "category": a.category, "expectPass": a.expectPass, "passed": passed, "outcome": "\(o.decision.outcome)",
               "seconds": (wall * 10).rounded() / 10, "green": o.decision.report.right.count, "missing": o.decision.report.missing.count, "vague": o.decision.report.vague.count,
               "corrections": o.decision.report.corrections.count, "rightRows": o.decision.report.right, "missingRows": o.decision.report.missing, "vagueRows": o.decision.report.vague, "correctionRows": o.decision.report.corrections, "phrasingLifted": o.log.phrasingSupported, "evidenceLifted": o.log.rubricSupported,
-              "keywordStuffing": o.log.keywordStuffing, "termListOverruled": o.log.termListOverruled, "proofRejected": o.log.proofRejected, "rechecked": o.log.rechecked,
+              "keywordStuffing": o.log.keywordStuffing, "termListOverruled": o.log.termListOverruled, "proofRejected": o.log.proofRejected, "rechecked": o.log.rechecked, "focusedRechecked": o.log.focusedRechecked, "focusedFlipped": o.log.focusedFlipped,
               "recheckFlipped": o.log.recheckFlipped, "calls": o.log.modelCalls, "checks": checks])
         print("\(tag.padding(toLength: 10, withPad: " ", startingAt: 0)) \(a.id.padding(toLength: 10, withPad: " ", startingAt: 0)) \("\(o.decision.outcome)".prefix(34).padding(toLength: 34, withPad: " ", startingAt: 0)) green \(o.decision.report.right.count) | \(String(format: "%.1f", wall)) s | lifted \(o.log.phrasingSupported)")
     }
@@ -685,6 +685,8 @@ if let only, only.contains("qtrace") {
     let ids = (ProcessInfo.processInfo.environment["QIDS"] ?? "").split(separator: ",").map(String.init)
     var st = GradingSettings()
     st.phrasingSupport = true
+    if ProcessInfo.processInfo.environment["NOSEG"] == "1" { st.segmentQuoteRetry = false }
+    if ProcessInfo.processInfo.environment["NOPROVE"] == "1" { st.proveDisplayedGreen = false }
     for id in ids {
         let drift = set.answers.first(where: { $0.id == id }).map { SA(id: $0.id, conceptId: $0.conceptId, text: $0.text, spoken: false) }
         guard let a = sset.answers.first(where: { $0.id == id }) ?? drift, let e = store.entriesById[a.conceptId] else { continue }

@@ -419,6 +419,42 @@ nonisolated struct ModelGrader: Sendable {
         }
     }
 
+    private static let overlapStopwords: Set<String> = ["the", "and", "that", "this", "with", "from", "such", "for", "are", "was", "were", "has", "have", "had", "not",
+        "but", "also", "their", "they", "them", "which", "who", "what", "when", "where", "than", "then", "into", "over", "about", "between", "more", "most",
+        "can", "could", "may", "will", "would", "should", "each", "any", "all", "some", "one", "two", "very", "like", "called", "known", "used", "use", "make",
+        "made", "states", "state", "explains", "mentions", "describes", "notes", "says", "correctly", "connects"]
+
+    /// The share of the criterion's content words (4+ letters or any number, not filler, lightly stemmed) that also appear in `text`.
+    static func contentOverlap(of criterion: String, in text: String) -> Double {
+        func stem(_ word: String) -> String {
+            for suffix in ["ing", "ed", "es", "s", "ly"] where word.hasSuffix(suffix) && word.count > suffix.count + 3 { return String(word.dropLast(suffix.count)) }
+            return word
+        }
+        func words(_ value: String) -> Set<String> {
+            Set(value.lowercased().components(separatedBy: CharacterSet.alphanumerics.inverted)
+                .filter { ($0.count > 3 || $0.contains(where: \.isNumber)) && !overlapStopwords.contains($0) }.map(stem))
+        }
+        let wanted = words(criterion)
+        guard !wanted.isEmpty else { return 0 }
+        return Double(wanted.intersection(words(text)).count) / Double(wanted.count)
+    }
+
+    /// The one or two neighbouring pieces of the answer that share the most content words with the criterion; the whole answer when it has
+    /// at most two pieces. A smaller text lets the model look at the part that matters instead of the whole answer.
+    static func focus(of transcript: String, for criterion: String) -> String {
+        let pieces = segments(of: transcript)
+        guard pieces.count > 2 else { return transcript }
+        var best: (score: Double, text: String)?
+        for start in pieces.indices {
+            for length in 1...2 where start + length <= pieces.count {
+                let text = String(transcript[pieces[start].lowerBound..<pieces[start + length - 1].upperBound])
+                let score = contentOverlap(of: criterion, in: text) - 0.01 * Double(length)
+                if best == nil || score > best!.score { best = (score, text) }
+            }
+        }
+        return best?.text ?? transcript
+    }
+
     /// Second try for a quote that was rejected because the model changed, merged or shortened the words. The model names the
     /// piece(s) of the answer that show the check; the quote is those pieces' own text, so it is genuine by construction. The caller
     /// still requires a finite verb and the in-context confirmation, exactly as for a copied quote.

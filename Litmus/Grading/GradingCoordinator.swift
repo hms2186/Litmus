@@ -35,6 +35,12 @@ nonisolated struct GradingSettings: Sendable, Equatable {
     /// that opted-in check (capped at Likely mastered). On: measured in docs/MODEL_REPORT.md section 8d; only concepts whose
     /// compiled checks carry `acceptedPhrasings` (two so far) are affected.
     var phrasingSupport = true
+    /// A model "no" on a key point whose criterion clearly overlaps the answer is asked again about only the best-matching sentence(s). A
+    /// yes counts only with a genuine quote that is confirmed in context. Off by default: measured on 2026-11-20 it re-asked 22 of 100 dev
+    /// answers and flipped one row (see docs/MODEL_REPORT.md 8j).
+    var focusedRecheck = false
+    var focusedMinimumOverlap = 0.35
+    var maxFocusedRechecks = 4
     /// Every model yes on a key point or cause link must be backed by a verbatim quote of the student's words that is confirmed in
     /// context, not only the ones that decide mastery; otherwise it stays uncertain and is not shown as "right". Rollback: false.
     var proveDisplayedGreen = true
@@ -78,6 +84,8 @@ nonisolated struct GradingLog: Sendable, Equatable {
     var semanticSupported: [String] = []
     /// Checks lifted from a model "no" because one statement matched an accepted phrasing of the check.
     var phrasingSupported: [String] = []
+    var focusedRechecked: [String] = []
+    var focusedFlipped: [String] = []
     var quoteRetried: [String] = []
     var quoteRecovered: [String] = []
     var misconceptionHeldOnSharedQuote: [String] = []
@@ -162,6 +170,7 @@ nonisolated struct GradingCoordinator: Sendable {
                                      provisionalOnly: settings.provisionalOnly)
         await recheckBlockingNos(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
                                  transcript: answer, deadline: deadline, log: &log)
+        await recheckFocused(&results, concept: concept, catalog: catalog, transcript: answer, deadline: deadline, log: &log)
         await proveDecisiveYeses(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
                                  transcript: answer, deadline: deadline, log: &log, proveShown: true)
 
@@ -567,6 +576,71 @@ nonisolated struct GradingCoordinator: Sendable {
             result.history = (results[id]?.history ?? []) + [CheckHistoryEntry(round: result.round, state: .yes, source: .model, event: .recheck)]
             results[id] = result
             log.recheckFlipped.append(id)
+        }
+    }
+
+    // MARK: - Focused recheck of "no" results
+
+    /// A model "no" often comes from reading a long answer for many checks at once ("6 infant deaths per 1000 compared to 28 in Haryana" was
+    /// refused as the infant-mortality comparison). For a key-point check with a model "no" whose criterion shares at least
+    /// `focusedMinimumOverlap` of its content words with the answer, the model is asked again alone in lenient wording about only the
+    /// best-matching sentence(s). A yes counts only with the same proof every yes needs: a genuine quote (taken from the whole answer) that,
+    /// read with its neighbouring sentences, states the check. Nothing here turns a yes into a no.
+    private func recheckFocused(_ results: inout ResultSet, concept: CompiledConcept, catalog: [String: GradableCheck], transcript: String,
+                                deadline: ContinuousClock.Instant, log: inout GradingLog) async {
+        guard settings.focusedRecheck, settings.recheckNoResults, transport.isReady, !log.keywordStuffing, !CodeGrader.isTermList(transcript) else { return }
+        let minimumOverlap = settings.focusedMinimumOverlap
+        let candidates = concept.keyPoints.flatMap(\.checks)
+            .compactMap { check -> (GradableCheck, Double)? in
+                guard results[check.id]?.state == .no, results[check.id]?.source == .model, !log.rechecked.contains(check.id),
+                      let gradable = catalog[check.id], gradable.kind == .keyPoint else { return nil }
+                let overlap = ModelGrader.contentOverlap(of: check.criterion, in: transcript)
+                return overlap >= minimumOverlap ? (gradable, overlap) : nil
+            }
+            .sorted { $0.1 > $1.1 }
+            .prefix(settings.maxFocusedRechecks)
+            .map(\.0)
+        guard !candidates.isEmpty, Self.seconds(until: deadline) >= 0.3 * settings.totalSeconds else { return }
+        log.focusedRechecked += candidates.map(\.id)
+        let grader = ModelGrader(transport: transport, context: self.context)
+        let perBatch = settings.perBatchSeconds
+        let minimumWords = settings.minimumQuoteWords
+        let contextSentences = settings.confirmContextSentences
+        var flipped: [String: String] = [:]
+        await withTaskGroup(of: (String, String)?.self) { group in
+            for check in candidates {
+                group.addTask {
+                    func left() -> Double { Self.seconds(until: deadline) }
+                    let focus = ModelGrader.focus(of: transcript, for: check.criterion)
+                    guard left() > 0,
+                          let again = try? await Self.withTimeout(min(perBatch, left()), {
+                              try await grader.grade([check], style: .screening, answers: [focus], strictFormat: true, lenient: true)
+                          }), again[check.id]?.state == .yes, left() > 0,
+                          let verdicts = try? await Self.withTimeout(left(), {
+                              try await grader.prove([check], transcript: transcript, minimumWords: minimumWords)
+                          }), left() > 0 else { return nil }
+                    // A rejected quote gets the same second try as everywhere else: the model names the piece of the answer
+                    var verdict = verdicts[check.id]
+                    if case .genuine? = verdict {} else if let picked = try? await Self.withTimeout(left(), {
+                        try await grader.pickSegments([check], transcript: transcript, minimumWords: minimumWords)
+                    }) { verdict = picked[check.id] }
+                    guard case .genuine(let quote)? = verdict, CodeGrader.hasFiniteVerb(quote), left() > 0 else { return nil }
+                    let excerpt = ModelGrader.excerpt(around: quote, in: transcript, contextSentences: contextSentences)
+                    guard let confirmed = try? await Self.withTimeout(left(), {
+                        try await grader.grade([check], style: .screening, answers: [excerpt])
+                    }), confirmed[check.id]?.state == .yes else { return nil }
+                    return (check.id, quote)
+                }
+            }
+            for await result in group { if let result { flipped[result.0] = result.1 } }
+        }
+        log.modelCalls += candidates.count * 3
+        for (id, quote) in flipped {
+            var result = CheckResult(state: .yes, source: .model, quoteCheck: .proven, quote: quote)
+            result.round = results[id]?.round ?? 0
+            result.history = (results[id]?.history ?? []) + [CheckHistoryEntry(round: result.round, state: .yes, source: .model, event: .recheck)]
+            results[id] = result
+            log.focusedFlipped.append(id)
         }
     }
 

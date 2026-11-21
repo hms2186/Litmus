@@ -77,6 +77,18 @@ extension View {
             .hoverEffect(.highlight)
     }
 
+    /// The soft scroll edge under the bar on iPadOS 26 and later; nothing before that.
+    @ViewBuilder
+    func litmusSoftTopEdge() -> some View {
+        if #available(iOS 26.0, *) { self.scrollEdgeEffectStyle(.soft, for: .top) } else { self }
+    }
+
+    /// The glass button style with the label in red, for a destructive action (a destructive-role button in glass).
+    @ViewBuilder
+    func litmusDestructiveGlassButton() -> some View {
+        if #available(iOS 26.0, *) { self.buttonStyle(.glass).tint(.red) } else { self.buttonStyle(.bordered).tint(.red) }
+    }
+
     /// Chooses between the glass and the prominent glass button style, for a button that is the chosen one only some of the time.
     @ViewBuilder
     func litmusGlassStyle(prominent: Bool) -> some View {

@@ -691,6 +691,19 @@ do {
     expect(o2?.results[link]?.state == .yes && o2?.decision.report.right.contains(linkCriterion) == true, "G4 a yes with a confirmed quote is shown as right", show(o2))
 }
 
+// MARK: - Focused recheck helpers
+
+do {
+    let criterion = "States that Kerala has a much lower Infant Mortality Rate than Haryana (6 against 28 per 1000 live births)."
+    let said = ModelGrader.contentOverlap(of: criterion, in: "kerala has only 6 infant deaths per 1000 compared to 28 in haryana")
+    let unrelated = ModelGrader.contentOverlap(of: criterion, in: "Alluvial soil covers the northern plains and is very fertile for wheat.")
+    expect(said >= 0.35 && unrelated < 0.2, "H1 content overlap separates a stated idea from an unrelated answer", "\(said) \(unrelated)")
+    let answer = "Haryana has the highest income. In Kerala 6 infant deaths per 1000 compared to 28 in Haryana. In Bihar a third of teenagers are out of school. So we need health and education as well."
+    let focus = ModelGrader.focus(of: answer, for: criterion)
+    expect(focus.contains("infant deaths") && focus.count < answer.count && answer.contains(focus), "H2 the focus window is exact text of the best-matching sentence(s)", focus)
+    expect(ModelGrader.focus(of: "Short answer here. Two sentences only.", for: criterion) == "Short answer here. Two sentences only.", "H3 an answer of two pieces or fewer is used whole")
+}
+
 // MARK: - Quote pieces (retry for a changed or merged quote)
 
 do {

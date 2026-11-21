@@ -52,21 +52,200 @@ enum StudyReminder {
     }
 }
 
-/// Tells a settings screen it is shown in the right-hand pane, which already has the app background behind it.
-private struct InSettingsPaneKey: EnvironmentKey { static let defaultValue = false }
-extension EnvironmentValues {
-    var inSettingsPane: Bool {
-        get { self[InSettingsPaneKey.self] }
-        set { self[InSettingsPaneKey.self] = newValue }
+// MARK: - Shared look of the settings screens
+
+/// Every settings screen is groups of rows, each group one native Liquid Glass card (`litmusGlass`) on the app background. Inside
+/// the card the rows are a real (non-scrolling) `List`, so the rows, their layout and the separators between them are the system's,
+/// exactly as in the Settings app; the card's height follows the list's content.
+enum SettingsStyle {}
+
+extension View {
+    /// Kept so every row reads the same; the list gives a row its own padding and height
+    func settingsRow() -> some View { self }
+}
+
+/// The button style of a row that is itself a button: the whole row is the target and it dims while pressed
+struct SettingsRowButton: ButtonStyle {
+    var selected = false
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundStyle(.primary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .contentShape(Rectangle())
+            .opacity(configuration.isPressed ? 0.55 : 1)
     }
 }
 
-/// Settings laid out like the iPad's own Settings app: a sidebar of grouped rows with coloured icon tiles on the left
-/// and the chosen screen on the right. On a phone-sized width the same rows push their screens one by one.
+/// The title above a group, drawn by the system as a real `Section("…")` header (the standard header style, as in a `Form`): a
+/// list that holds only that section, so its text style, size and position are the official ones.
+private struct SettingsSectionHeader: View {
+    let title: String
+    var body: some View {
+        List {
+            Section {
+                Color.clear.frame(height: 0)
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            } header: {
+                Text(title)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .scrollDisabled(true)
+        .scrollContentBackground(.hidden)
+        .environment(\.defaultMinListRowHeight, 0)
+        .listSectionSpacing(0)
+        .contentMargins(.vertical, 0, for: .scrollContent)
+        .contentMargins(.horizontal, 0, for: .scrollContent)
+        .frame(height: 34)
+        .accessibilityAddTraits(.isHeader)
+    }
+}
+
+/// A group of rows in one glass card: a prominent header above it, a footer below it. The rows are a native plain `List` with
+/// system separators (starting `inset` points in; 58 clears a row's tile).
+struct SettingsGroup<Content: View>: View {
+    var header: String?
+    var footer: String?
+    var inset: CGFloat = 16
+    @ViewBuilder var content: Content
+    @State private var listHeight: CGFloat = 0
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            if let header { SettingsSectionHeader(title: header) }
+            List {
+                // One section, with the separators above its first row and below its last hidden, so only the lines between rows show
+                Section {
+                    content
+                        .listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets(top: 13, leading: 16, bottom: 13, trailing: 16))
+                        .alignmentGuide(.listRowSeparatorLeading) { _ in inset - 16 }
+                }
+                .listSectionSeparator(.hidden)
+            }
+            .listStyle(.plain)
+            .scrollDisabled(true)
+            .scrollContentBackground(.hidden)
+            .listRowSeparatorTint(Color.white.opacity(0.16))
+            .environment(\.defaultMinListRowHeight, 58)
+            .onScrollGeometryChange(for: CGFloat.self) { $0.contentSize.height } action: { _, height in listHeight = height }
+            .frame(height: max(listHeight, 44))
+            .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+            .litmusGlass(in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+            if let footer {
+                Text(footer)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .padding(.horizontal, 16)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
+    }
+}
+
+/// A settings screen's scrolling body: groups stacked 22 pt apart, held to a readable width on a wide screen, with the soft edge
+/// under the bar. The large title and background come from `settingsScreen`.
+struct SettingsScroll<Content: View>: View {
+    @ViewBuilder var content: Content
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 22) { content }
+                .frame(maxWidth: 680)
+                .padding(.horizontal, 20)
+                .padding(.top, 4)
+                .padding(.bottom, 32)
+                .frame(maxWidth: .infinity)
+        }
+        .scrollIndicators(.hidden)
+        .litmusSoftTopEdge()
+    }
+}
+
+/// True inside the split view, where one app background sits behind both columns so it runs unbroken between them
+private struct SettingsSplitKey: EnvironmentKey { static let defaultValue = false }
+extension EnvironmentValues {
+    var settingsSplit: Bool {
+        get { self[SettingsSplitKey.self] }
+        set { self[SettingsSplitKey.self] = newValue }
+    }
+}
+
+/// The size of the whole split view, so each column can draw its part of one app background
+private struct SettingsSplitSizeKey: EnvironmentKey { static let defaultValue = CGSize.zero }
+extension EnvironmentValues {
+    var settingsSplitSize: CGSize {
+        get { self[SettingsSplitSizeKey.self] }
+        set { self[SettingsSplitSizeKey.self] = newValue }
+    }
+}
+
+/// One column's share of a single app background laid across the whole split view: the full-size background is drawn and shifted so
+/// that it lines up with the other column, with no seam between them
+private struct SpanningBackground: View {
+    @Environment(\.settingsSplitSize) private var full
+    var body: some View {
+        GeometryReader { geo in
+            let frame = geo.frame(in: .global)
+            AppBackground()
+                .frame(width: full.width, height: full.height)
+                .offset(x: -frame.minX, y: -frame.minY)
+        }
+        .ignoresSafeArea()
+    }
+}
+
+private struct SettingsScreenBackground: ViewModifier {
+    @Environment(\.settingsSplit) private var inSplit
+    func body(content: Content) -> some View {
+        if inSplit { content.background { SpanningBackground() } } else { content.background { AppBackground().ignoresSafeArea() } }
+    }
+}
+
+extension View {
+    /// A settings screen's native large title (it collapses into the bar as the screen scrolls) over the app background
+    func settingsScreen(_ title: String) -> some View {
+        largeTitle(title).modifier(SettingsScreenBackground())
+    }
+}
+
+/// The coloured rounded tile with a white symbol, as in the system's Settings: a system colour, regular weight to match the row's
+/// text, one colour (monochrome). Decorative, so hidden from VoiceOver (the row carries the label).
+struct SettingsTile: View {
+    let symbol: String
+    let color: Color
+    var body: some View {
+        Image(systemName: symbol)
+            .symbolRenderingMode(.monochrome)
+            .font(.system(size: 16, weight: .regular))
+            .foregroundStyle(.white)
+            .frame(width: 30, height: 30)
+            .background(color.gradient, in: RoundedRectangle(cornerRadius: 7, style: .continuous))
+            .accessibilityHidden(true)
+    }
+}
+
+/// A row's leading tile and title
+struct SettingsLabel: View {
+    let title: String
+    let symbol: String
+    let color: Color
+    var body: some View {
+        HStack(spacing: 12) {
+            SettingsTile(symbol: symbol, color: color)
+            Text(title)
+        }
+    }
+}
+
+// MARK: - Settings
+
+/// Settings. On a phone it is one list under a large "Settings" title that collapses as it scrolls, each screen pushed with the
+/// bar's back button. On an iPad it is a split view: the list is the sidebar (titled "Settings") and the chosen screen is the
+/// detail, each with its own navigation title.
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
-    @ObservedObject private var progress = StudyProgressManager.shared
-
     @ObservedObject private var blocker = ScreenTimeManager.shared
     @ObservedObject private var profileStore = ProfileStore.shared
     @State private var showResetApp = false
@@ -79,14 +258,14 @@ struct SettingsView: View {
     @AppStorage("learner_curriculum") private var learnerCurriculum = "NCERT"
 
     private enum Screen: Hashable { case about, accessibility, appBlocking, privacy }
+    @State private var selection: Screen = .about
+
     /// Pushed on a navigation stack that already exists (from the gear): the stack's own back button returns. Presented
-    /// on its own (from Revise): it brings a stack, with a back button that closes it.
+    /// on its own (from Revise): it brings a stack, with a Close button.
     var embedded = false
     @Environment(\.openURL) private var openURL
     @State private var showReminderDenied = false
-    /// Wide enough for the sidebar and a screen side by side
-    @State private var isSplit = false
-    @State private var selection: Screen = .about
+    @Environment(\.horizontalSizeClass) private var sizeClass
 
     var body: some View {
         if embedded {
@@ -95,11 +274,9 @@ struct SettingsView: View {
             NavigationStack {
                 content
                     .toolbar {
-                        if !isSplit {
-                            ToolbarItem(placement: .topBarLeading) {
-                                Button(role: .cancel) { dismiss() } label: { Image(systemName: "xmark") }
-                                    .accessibilityLabel("Close")
-                            }
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button(role: .cancel) { dismiss() } label: { Image(systemName: "xmark") }
+                                .accessibilityLabel("Close")
                         }
                     }
             }
@@ -108,11 +285,9 @@ struct SettingsView: View {
 
     private var content: some View {
         Group {
-            if isSplit { splitLayout } else { compactLayout }
+            // The size class decides, not orientation: an iPad is regular both upright and sideways
+            if sizeClass == .regular { splitLayout } else { stackLayout }
         }
-        .onSettledWidth { isSplit = $0 >= 820 }
-        .background { AppBackground().ignoresSafeArea() }
-        .toolbarVisibility(isSplit ? .hidden : .visible, for: .navigationBar)
         .preferredColorScheme(.dark)
         .onChange(of: reminders) { _, enabled in
             Task {
@@ -145,17 +320,6 @@ struct SettingsView: View {
 
     // MARK: Layouts
 
-    private var compactLayout: some View {
-        // The scroll view is the root of the screen, so the large title collapses with it
-        ScrollView(.vertical, showsIndicators: false) {
-            sidebarRows
-                .padding(.horizontal, 20)
-                .padding(.bottom, 24)
-        }
-        .scrollContentBackground(.hidden)
-        .largeTitle("Settings")
-    }
-
     private func title(for screen: Screen) -> String {
         switch screen {
         case .about: return "About You"
@@ -165,215 +329,133 @@ struct SettingsView: View {
         }
     }
 
-    /// Both columns start with a header of the same height, so the two titles sit on one line, and share the same side margins
-    private let headerHeight: CGFloat = 60
-    private let sideMargin: CGFloat = 16
-    /// Room above both headers, so nothing sits against the top edge
-    private let topInset: CGFloat = 36
-
-    private var splitLayout: some View {
-        HStack(spacing: 0) {
-            VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 14) {
-                    Button { dismiss() } label: {
-                        Image(systemName: embedded ? "chevron.left" : "xmark").font(.system(size: 17, weight: .semibold)).frame(width: 28, height: 28)
-                    }
-                    .litmusGlassButton()
-                    .buttonBorderShape(.circle)
-                    .tint(.white)
-                    .accessibilityLabel(embedded ? "Back" : "Close")
-                    Text("Settings").scaledFont(size: 32, weight: .bold).foregroundStyle(.white)
-                    Spacer(minLength: 0)
-                }
-                .padding(.horizontal, sideMargin)
-                .padding(.top, topInset)
-                .frame(height: headerHeight + topInset)
-                ScrollView(.vertical, showsIndicators: false) {
-                    sidebarRows
-                        .padding(.horizontal, sideMargin)
-                        .padding(.bottom, 48)
-                }
-            }
-            .frame(width: 380)
-            Rectangle().fill(Color.white.opacity(0.10)).frame(width: 1).ignoresSafeArea()
-            VStack(alignment: .leading, spacing: 0) {
-                Text(title(for: selection))
-                    .scaledFont(size: 32, weight: .bold)
-                    .foregroundStyle(.white)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                    .padding(.horizontal, 32)
-                    .padding(.top, topInset)
-                    .frame(maxWidth: .infinity, minHeight: headerHeight + topInset, maxHeight: headerHeight + topInset, alignment: .leading)
-                    .accessibilityAddTraits(.isHeader)
-                destination(for: selection)
-                    .id(selection)
-                    .environment(\.inSettingsPane, true)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-            }
-        }
-        // Content runs under the home indicator instead of stopping above it; the lists keep their own bottom padding
-        .ignoresSafeArea(.container, edges: .bottom)
-    }
-
-    @ViewBuilder
-    private func destination(for screen: Screen) -> some View {
+    @ViewBuilder private func destination(_ screen: Screen) -> some View {
         switch screen {
-        case .about:
-            AboutYouView()
-                .padding(.horizontal, 32).padding(.bottom, isSplit ? 0 : 24)
-                .background { if !isSplit { AppBackground().ignoresSafeArea() } }
-                // The Name alert's keyboard must not squeeze the cards behind it
-                .ignoresSafeArea(.keyboard, edges: .bottom)
-                .ignoresSafeArea(.container, edges: isSplit ? .bottom : [])
-                .centeredTitle("About You")
-        case .accessibility:
-            AccessibilitySettingsView()
-        case .appBlocking:
-            AppBlockingView()
-        case .privacy:
-            PrivacyView()
-                .padding(.horizontal, 32).padding(.bottom, isSplit ? 0 : 24)
-                .background { if !isSplit { AppBackground().ignoresSafeArea() } }
-                .centeredTitle("Privacy & Data")
+        case .about: AboutYouView()
+        case .accessibility: AccessibilitySettingsView()
+        case .appBlocking: AppBlockingView()
+        case .privacy: PrivacyView()
         }
     }
 
-    // MARK: Sidebar rows
+    private var stackLayout: some View {
+        SettingsScroll { groups(split: false) }
+            .settingsScreen("Settings")
+    }
 
-    private var sidebarRows: some View {
-        VStack(spacing: 22) {
-            // The learner, like the Apple Account row at the top of the iPad's Settings
-            group { profileRow }
-            group {
-                toggleRow("bell.badge.fill", Color(red: 1.0, green: 0.27, blue: 0.23), "Notifications", $reminders)
-                separator
-                toggleRow("speaker.wave.3.fill", Color(red: 1.0, green: 0.18, blue: 0.33), "Sound Effects", $soundEffects)
-                separator
-                toggleRow("timer", Color(red: 1.0, green: 0.62, blue: 0.04), "Widget Timer", $widgetTimer)
-                separator
-                navRow(.appBlocking, "hourglass", Color(red: 0.35, green: 0.34, blue: 0.84), "App Blocking", value: blocker.isAppBlockingEnabled ? "On" : "Off")
+    /// A split view with its sidebar always showing: the list is titled "Settings", the screen beside it carries its own title.
+    private var splitLayout: some View {
+        GeometryReader { geo in
+            splitColumns
+                .environment(\.settingsSplit, true)
+                .environment(\.settingsSplitSize, CGSize(width: geo.size.width + geo.safeAreaInsets.leading + geo.safeAreaInsets.trailing,
+                                                          height: geo.size.height + geo.safeAreaInsets.top + geo.safeAreaInsets.bottom))
+        }
+        .ignoresSafeArea()
+    }
+
+    private var splitColumns: some View {
+        NavigationSplitView(columnVisibility: .constant(.all)) {
+            SettingsScroll { groups(split: true) }
+                // A blur over the background, as in the system's Settings, so the sidebar reads as its own pane
+                .background { Rectangle().fill(.ultraThinMaterial).opacity(0.45).ignoresSafeArea() }
+                .settingsScreen("Settings")
+                .toolbar(removing: .sidebarToggle)
+                .toolbar {
+                    // The split view brings its own bars, so the pushing stack's bar is hidden and its place is taken here by the
+                    // standard back button (or Close, when Settings was presented on its own)
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button { dismiss() } label: { Image(systemName: embedded ? "chevron.backward" : "xmark") }
+                            .accessibilityLabel(embedded ? "Back" : "Close")
+                    }
+                }
+                .navigationSplitViewColumnWidth(min: 320, ideal: 360, max: 420)
+        } detail: {
+            NavigationStack { destination(selection).id(selection) }
+        }
+        .navigationSplitViewStyle(.balanced)
+        .toolbar(.hidden, for: .navigationBar)
+    }
+
+    // MARK: The groups
+
+    @ViewBuilder private func groups(split: Bool) -> some View {
+        SettingsGroup {
+            navRow(.about, split: split) { profileRow }
+        }
+        SettingsGroup(inset: 58) {
+            toggleRow("Notifications", "bell.badge.fill", .red, $reminders)
+            toggleRow("Sound Effects", "speaker.wave.3.fill", .pink, $soundEffects)
+            toggleRow("Widget Timer", "timer", .orange, $widgetTimer)
+            navRow(.appBlocking, split: split) {
+                HStack {
+                    SettingsLabel(title: "App Blocking", symbol: "hourglass", color: .indigo)
+                    Spacer(minLength: 8)
+                    Text(blocker.isAppBlockingEnabled ? "On" : "Off").foregroundStyle(.secondary)
+                }
             }
-            group {
-                navRow(.accessibility, "accessibility", Color(red: 0.04, green: 0.52, blue: 1.0), "Accessibility")
-                separator
-                navRow(.privacy, "hand.raised.fill", Color(red: 0.04, green: 0.52, blue: 1.0), "Privacy & Data")
-                separator
-                // English is the only language, so this is a plain value, not something to open
-                valueRow("globe", Color(red: 0.56, green: 0.56, blue: 0.58), "Language", "English")
+        }
+        SettingsGroup(inset: 58) {
+            navRow(.accessibility, split: split) { SettingsLabel(title: "Accessibility", symbol: "accessibility", color: .blue) }
+            navRow(.privacy, split: split) { SettingsLabel(title: "Privacy & Data", symbol: "hand.raised.fill", color: .blue) }
+            // English is the only language, so this is a plain value, not something to open
+            LabeledContent {
+                Text("English")
+            } label: {
+                SettingsLabel(title: "Language", symbol: "globe", color: .gray)
             }
-            group { resetRow }
+            .settingsRow()
         }
-        .padding(.top, 4)
-    }
-
-    private func group<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
-        VStack(spacing: 0) { content() }
-            .padding(.vertical, 4)
-            .frame(maxWidth: .infinity)
-            .litmusGlass(in: RoundedRectangle(cornerRadius: 24, style: .continuous))
-    }
-
-    private var separator: some View {
-        Rectangle().fill(Color.white.opacity(0.12)).frame(height: 1).padding(.leading, 64)
-    }
-
-    /// The coloured rounded tile with a white symbol, as in the system's Settings
-    private func tile(_ symbol: String, _ color: Color) -> some View {
-        Image(systemName: symbol)
-            .font(.system(size: 17, weight: .semibold))
-            .foregroundStyle(.white)
-            .frame(width: 34, height: 34)
-            .background(color.gradient, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
-            .accessibilityHidden(true)
-    }
-
-    private var chevron: some View {
-        Image(systemName: "chevron.right")
-            .font(.system(size: 15, weight: .semibold))
-            .foregroundStyle(.white.opacity(0.5))
-    }
-
-    private func rowBody<Trailing: View>(_ symbol: String, _ color: Color, _ title: String, selected: Bool = false, @ViewBuilder trailing: () -> Trailing) -> some View {
-        HStack(spacing: 14) {
-            tile(symbol, color)
-            Text(title).scaledFont(size: 19).foregroundStyle(.white).lineLimit(1)
-            Spacer(minLength: 8)
-            trailing()
+        // Last and apart from the rest: erases everything on this iPad and returns to first-time setup
+        SettingsGroup(inset: 58) {
+            Button(role: .destructive) { showResetApp = true } label: {
+                SettingsLabel(title: "Reset App", symbol: "arrow.counterclockwise", color: .red)
+                    .foregroundStyle(.red)
+            }
+            .buttonStyle(SettingsRowButton())
         }
-        .padding(.horizontal, 14)
-        .frame(minHeight: 54)
-        .background {
-            if selected { RoundedRectangle(cornerRadius: 18, style: .continuous).fill(Color.white.opacity(0.16)).padding(.horizontal, 4) }
-        }
-        .contentShape(Rectangle())
     }
 
+    /// A row that opens a screen: a native link (with the system's chevron) on its own, or selecting the screen beside the list in
+    /// the split view
     @ViewBuilder
-    private func navRow(_ screen: Screen, _ symbol: String, _ color: Color, _ title: String, value: String? = nil) -> some View {
-        let body = rowBody(symbol, color, title, selected: isSplit && selection == screen) {
-            HStack(spacing: 8) {
-                if let value { Text(value).scaledFont(size: 18).foregroundStyle(.white.opacity(0.6)) }
-                if !isSplit { chevron }
-            }
-        }
-        if isSplit {
-            Button { selection = screen } label: { body }.buttonStyle(.plain)
+    private func navRow<Label: View>(_ screen: Screen, split: Bool, @ViewBuilder label: () -> Label) -> some View {
+        if split {
+            Button { selection = screen } label: { label() }
+                .buttonStyle(SettingsRowButton())
+                .listRowBackground(selection == screen ? Color.white.opacity(0.18) : Color.clear)
+                .accessibilityAddTraits(selection == screen ? .isSelected : [])
         } else {
-            NavigationLink { destination(for: screen).minimalBackButton() } label: { body }.buttonStyle(.plain)
+            NavigationLink { destination(screen) } label: { label() }
         }
-    }
-
-    private func toggleRow(_ symbol: String, _ color: Color, _ title: String, _ binding: Binding<Bool>) -> some View {
-        rowBody(symbol, color, title) {
-            Toggle("", isOn: binding).labelsHidden().tint(Color(red: 0.20, green: 0.78, blue: 0.35))
-        }
-        .accessibilityElement(children: .combine)
-    }
-
-    private func valueRow(_ symbol: String, _ color: Color, _ title: String, _ value: String) -> some View {
-        rowBody(symbol, color, title) {
-            Text(value).scaledFont(size: 18).foregroundStyle(.white.opacity(0.6))
-        }
-        .accessibilityElement(children: .combine)
     }
 
     /// The learner at the top: picture, name, and what they study
-    @ViewBuilder
     private var profileRow: some View {
-        let label = HStack(spacing: 14) {
-            ProfileAvatar(index: learnerAvatar, size: 58, ring: .clear, name: learnerName)
+        HStack(spacing: 14) {
+            ProfileAvatar(index: learnerAvatar, size: 56, ring: .clear, name: learnerName)
             VStack(alignment: .leading, spacing: 2) {
-                Text(learnerName.isEmpty ? "Driver" : learnerName).scaledFont(size: 22, weight: .semibold).foregroundStyle(.white).lineLimit(1)
-                Text("About You · \(learnerCurriculum) · \(learnerGrade)").scaledFont(size: 14).foregroundStyle(.white.opacity(0.65)).lineLimit(1)
+                Text(learnerName.isEmpty ? "Driver" : learnerName).font(.title3.weight(.semibold)).lineLimit(1)
+                Text("\(learnerCurriculum) · \(learnerGrade)").font(.subheadline).foregroundStyle(.secondary).lineLimit(1)
             }
-            Spacer(minLength: 8)
-            if !isSplit { chevron }
+            Spacer(minLength: 0)
         }
-        .padding(.horizontal, 14).padding(.vertical, 10)
-        .background {
-            if isSplit && selection == .about { RoundedRectangle(cornerRadius: 20, style: .continuous).fill(Color.white.opacity(0.16)).padding(.horizontal, 4) }
-        }
-        .contentShape(Rectangle())
-        if isSplit {
-            Button { selection = .about } label: { label }.buttonStyle(.plain)
-        } else {
-            NavigationLink { destination(for: .about).minimalBackButton() } label: { label }.buttonStyle(.plain)
-        }
+        .padding(.vertical, 4)
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("About You, \(learnerName.isEmpty ? "Driver" : learnerName), \(learnerCurriculum), \(learnerGrade)")
     }
 
-    /// The last row: erases everything on this iPad and returns to first-time setup.
-    private var resetRow: some View {
-        Button { showResetApp = true } label: {
-            rowBody("arrow.counterclockwise", Color(red: 1.0, green: 0.27, blue: 0.23), "Reset App") { EmptyView() }
-                .foregroundStyle(Color(red: 255/255, green: 69/255, blue: 58/255))
-        }
-        .buttonStyle(.plain)
+    private func toggleRow(_ title: String, _ symbol: String, _ color: Color, _ binding: Binding<Bool>) -> some View {
+        Toggle(isOn: binding) { SettingsLabel(title: title, symbol: symbol, color: color) }
+            .tint(.green)
+            .settingsRow()
     }
 }
 
 // MARK: - About You
 
+/// About You as grouped lists under a large title, the same upright and sideways: the learner at the top, then Profile, Study,
+/// Recent Sessions, and the one destructive action last and apart.
 struct AboutYouView: View {
     @ObservedObject private var progress = StudyProgressManager.shared
     @ObservedObject private var profileStore = ProfileStore.shared
@@ -381,17 +463,12 @@ struct AboutYouView: View {
     @AppStorage("learner_name") private var name = ""
     @AppStorage("learner_curriculum") private var curriculum = "NCERT"
     @AppStorage("learner_grade") private var grade = "Grade 10"
-    @AppStorage("learner_about") private var aboutMe = ""
     @AppStorage("learner_daily_goal_minutes") private var dailyGoal = 120
     @AppStorage("learner_avatar") private var avatar = 0
 
     @State private var showAllSessions = false
-    @State private var isNarrow = false
     @State private var editingName = false
     @State private var nameDraft = ""
-    @State private var editingAbout = false
-    @State private var confirmDiscardAbout = false
-    @State private var aboutDraft = ""
     @State private var editingAvatar = false
     @State private var editingGoal = false
     @State private var showCalendar = false
@@ -401,144 +478,209 @@ struct AboutYouView: View {
     private let curricula = ["NCERT", "ICSE", "NGSS", "International Baccalaureate"]
 
     var body: some View {
-        GeometryReader { geo in
-            let gap: CGFloat = 20
-            if isNarrow {
-                // Portrait and narrow windows: one column that scrolls, so no text is squeezed
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: gap) {
-                        profileCard
-                        todayCard.frame(height: 280)
-                        lastSessionCard.frame(minHeight: 260)
-                        summaryCard.frame(minHeight: 260)
-                        recentCard.frame(minHeight: 340)
-                    }
-                    .padding(.bottom, 24)
-                }
-                .ignoresSafeArea(edges: .bottom)
-            } else {
-                let width = max(0, geo.size.width - gap * 2)
-                HStack(alignment: .top, spacing: gap) {
-                    VStack(spacing: gap) {
-                        todayCard.frame(height: geo.size.height * 0.46)
-                        recentCard
-                    }
-                    .frame(width: width * 0.31)
-                    VStack(spacing: gap) {
-                        lastSessionCard.frame(height: geo.size.height * 0.46)
-                        summaryCard
-                    }
-                    .frame(width: width * 0.31)
-                    profileCard
-                        .frame(width: width * 0.38)
-                }
+        SettingsScroll {
+            header
+            SettingsGroup(header: "Profile", footer: "Deleting a profile removes this learner’s coins, streaks and study history.") { profileRows }
+            SettingsGroup(header: "Study") { studyRows }
+            if !progress.sessions.isEmpty {
+                SettingsGroup(header: "Recent Sessions") { recentRows }
             }
         }
-        // Switches between the columns and the single column once, after the sidebar has finished moving
-        .onSettledWidth { width in isNarrow = width < 900 }
+        .settingsScreen("About You")
         .alert("Your Name", isPresented: $editingName) {
             TextField("Name", text: $nameDraft)
             Button("Cancel", role: .cancel) {}
             Button("Save") { name = nameDraft.trimmingCharacters(in: .whitespacesAndNewlines) }
         }
+        .alert("Delete “\(name.isEmpty ? "this profile" : name)”?", isPresented: $confirmDeleteProfile) {
+            Button("Cancel", role: .cancel) {}
+            Button("Delete", role: .destructive) { profileStore.deleteActive() }
+        } message: {
+            Text(profileStore.isOnlyProfile
+                 ? "This is the only profile. Deleting it removes its coins, streaks and study history and starts setup again. This can’t be undone."
+                 : "Its coins, streaks and study history will be removed. This can’t be undone.")
+        }
         .sheet(isPresented: $editingAvatar) { AvatarPicker(selection: $avatar) }
         .sheet(isPresented: $editingGoal) { goalEditor }
+        .sheet(isPresented: $showAllSessions) { allSessionsSheet }
         .sheet(isPresented: $showCalendar) { StudyCalendarSheet().presentationSizing(.page) }
-        .sheet(isPresented: $editingAbout) {
-            NavigationStack {
-                TextEditor(text: $aboutDraft)
-                    .padding()
-                    .navigationTitle("About Me")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        // Cancel on the left, Save on the right. With edits not yet saved, Cancel asks before throwing them away
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancel") { if aboutDraft == aboutMe { editingAbout = false } else { confirmDiscardAbout = true } }
-                                .confirmationDialog("Discard your changes?", isPresented: $confirmDiscardAbout, titleVisibility: .visible) {
-                                    Button("Discard Changes", role: .destructive) { editingAbout = false }
-                                    Button("Keep Editing", role: .cancel) {}
-                                }
-                        }
-                        ToolbarItem(placement: .confirmationAction) { Button("Save") { aboutMe = aboutDraft; editingAbout = false } }
-                    }
-            }
-            // Half height to start, and up to full height: the keyboard takes much of an iPhone screen, so the text needs the room
-            .presentationDetents([.medium, .large])
-            .presentationDragIndicator(.visible)
-            // Swiping the sheet away would lose the edits, so it waits for Save or Cancel until something has changed
-            .interactiveDismissDisabled(aboutDraft != aboutMe)
-        }
     }
 
-    // MARK: Cards
+    // MARK: Header
 
-    private func card<Content: View>(_ title: String, trailing: AnyView? = nil, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 14) {
-            HStack {
-                Text(title)
-                    .scaledFont(size: 16, weight: .bold)
-                    .tracking(1.5)
-                    .lineLimit(1)
-                    .minimumScaleFactor(0.7)
-                    .foregroundStyle(settingsRed)
-                Spacer()
-                if let trailing { trailing }
-            }
-            content()
+    /// Centred, like the system's account page: the picture (itself the control, with "edit" along its lower edge), the name, and
+    /// what they study
+    private var header: some View {
+        VStack(spacing: 6) {
+            Button { editingAvatar = true } label: { EditablePicture(index: avatar, name: name, size: 104) }
+                .buttonStyle(.plain)
+                .accessibilityLabel("Edit profile picture")
+            Text(name.isEmpty ? "Driver" : name)
+                .font(.title2.weight(.bold))
+                .lineLimit(1)
+                .padding(.top, 6)
+            Text("\(curriculum) · \(ordinal(grade))")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
         }
-        .padding(24)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .clipShape(RoundedRectangle(cornerRadius: 32, style: .continuous))
-        .litmusGlass(in: RoundedRectangle(cornerRadius: 32, style: .continuous))
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 6)
     }
 
-    private var todayCard: some View {
+    // MARK: Profile
+
+    @ViewBuilder private var profileRows: some View {
+        Button { nameDraft = name; editingName = true } label: {
+            LabeledContent("Name") { Text(name.isEmpty ? "Driver" : name) }
+        }
+        .buttonStyle(SettingsRowButton())
+        // Each value is chosen with the system pop-up picker: tap it, pick from the list
+        LabeledContent("Curriculum") {
+            Picker("Curriculum", selection: $curriculum) { ForEach(curricula, id: \.self) { Text($0).tag($0) } }
+                .labelsHidden()
+                .pickerStyle(.menu)
+        }
+        .settingsRow()
+        LabeledContent("Grade") {
+            Picker("Grade", selection: $grade) { ForEach(6...10, id: \.self) { Text("\($0)th").tag("Grade \($0)") } }
+                .labelsHidden()
+                .pickerStyle(.menu)
+        }
+        .settingsRow()
+        // The one destructive action, last in the card: red, and it asks before anything is removed
+        Button(role: .destructive) { confirmDeleteProfile = true } label: {
+            Text("Delete Profile").foregroundStyle(.red)
+        }
+        .buttonStyle(SettingsRowButton())
+    }
+
+    // MARK: Study
+
+    @ViewBuilder private var studyRows: some View {
         let minutes = Int(progress.studiedMinutesToday.rounded())
         let fraction = min(1, progress.studiedMinutesToday / Double(max(dailyGoal, 1)))
-        return card("TODAY", trailing: AnyView(
-            Button { editingGoal = true } label: {
-                Label("Edit goal", systemImage: "pencil")
-                    .scaledFont(size: 16, weight: .medium)
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 14).padding(.vertical, 8)
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(alignment: .firstTextBaseline) {
+                Text("Today")
+                Spacer()
+                Button("Edit Goal") { editingGoal = true }
+                    .litmusGlassButton()
+                    .buttonBorderShape(.capsule)
+                    .controlSize(.small)
             }
-            .litmusGlassButton()
-            .buttonBorderShape(.capsule)
-            .accessibilityLabel("Edit daily goal")
-        )) {
-            Spacer(minLength: 0)
             Text(minutes >= 60 ? "\(minutes / 60)h \(minutes % 60)m" : "\(minutes)m")
-                .scaledFont(size: 58, weight: .bold)
-                .foregroundStyle(.white)
+                .font(.largeTitle.weight(.bold))
                 .contentTransition(.numericText())
-            Text("Study time")
-                .scaledFont(size: 22)
-                .foregroundStyle(.white.opacity(0.7))
-            GeometryReader { bar in
-                ZStack(alignment: .leading) {
-                    Capsule().fill(Color.white.opacity(0.15))
-                    Capsule().fill(settingsRed).frame(width: max(0, bar.size.width * (fraction.isFinite ? fraction : 0)))
+            // The system's own progress view, goal as its total. Drawn at its standard 4 pt it reads as a hairline, so the bar alone
+            // is scaled to a thicker track and its labels sit outside it
+            HStack {
+                Text("Daily Goal").foregroundStyle(.secondary)
+                Spacer()
+                Text("\(Int(fraction * 100))% of \(goalLabel(dailyGoal))").foregroundStyle(.secondary)
+            }
+            .font(.subheadline)
+            ProgressView(value: min(progress.studiedMinutesToday, Double(max(dailyGoal, 1))), total: Double(max(dailyGoal, 1)))
+                .progressViewStyle(.linear)
+                .tint(settingsRed)
+                .scaleEffect(x: 1, y: 2.6, anchor: .center)
+                .padding(.vertical, 5)
+                .accessibilityLabel("Daily goal")
+                .accessibilityValue("\(Int(fraction * 100)) percent of \(goalLabel(dailyGoal))")
+                .animation(.smooth, value: fraction)
+        }
+        .fixedSize(horizontal: false, vertical: true)
+        .accessibilityElement(children: .contain)
+
+        if let last = progress.sessions.first {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("Last Session")
+                HStack(spacing: 14) {
+                    sessionThumb(last, size: 52)
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text(last.topic).font(.headline).lineLimit(2)
+                        Text("\(last.subject.isEmpty ? "Science" : last.subject) · \(when(last.date)) · \(max(1, last.seconds / 60)) min")
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                if let note = last.reviewNote {
+                    Label("Needs review: \(note)", systemImage: "exclamationmark.triangle.fill")
+                        .font(.subheadline)
+                        .foregroundStyle(.yellow)
+                } else {
+                    Label("Nothing to review", systemImage: "checkmark.circle.fill")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
                 }
             }
-            .frame(height: 12)
-            HStack {
-                Text("\(Int(fraction * 100))%")
-                Spacer()
-                Text("\(goalLabel(dailyGoal)) goal")
-            }
-            .scaledFont(size: 18)
-            .foregroundStyle(.white.opacity(0.75))
-            .animation(.smooth, value: fraction)
+            .fixedSize(horizontal: false, vertical: true)
+            .accessibilityElement(children: .combine)
+        } else {
+            LabeledContent("Last Session") { Text("None yet") }.settingsRow()
         }
+
+        // The whole row opens the month calendar (a year of history); the chevron is the standard disclosure indicator
+        Button { showCalendar = true } label: {
+            HStack {
+                SettingsLabel(title: "Calendar", symbol: "calendar", color: .red)
+                Spacer(minLength: 8)
+                Text(Date().formatted(.dateTime.weekday(.abbreviated).day().month(.abbreviated))).foregroundStyle(.secondary)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(.tertiary)
+                    .accessibilityHidden(true)
+            }
+        }
+        .buttonStyle(SettingsRowButton())
+        .accessibilityHint("Opens the month calendar")
+    }
+
+    @ViewBuilder private var recentRows: some View {
+        ForEach(progress.sessions.prefix(3)) { record in sessionRow(record) }
+        if progress.sessions.count > 3 {
+            // The rest opens in a sheet, so this screen stays short
+            Button("Show All") { showAllSessions = true }
+                .buttonStyle(SettingsRowButton())
+                .foregroundStyle(AppTheme.accent)
+                .accessibilityHint("Opens every recent session")
+        }
+    }
+
+    private func sessionRow(_ record: StudySession) -> some View {
+        HStack(spacing: 12) {
+            sessionThumb(record, size: 40)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(record.topic).lineLimit(1)
+                Text(when(record.date)).font(.footnote).foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 8)
+            Text("\(max(1, record.seconds / 60)) min").foregroundStyle(.secondary)
+        }
+        .accessibilityElement(children: .combine)
+    }
+
+    /// Every recent session in a sheet: a plain list under a title, closed with Done
+    private var allSessionsSheet: some View {
+        NavigationStack {
+            List(progress.sessions.prefix(30)) { record in sessionRow(record).listRowBackground(Color.white.opacity(0.08)) }
+                .scrollContentBackground(.hidden)
+                .navigationTitle("Recent Sessions")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { showAllSessions = false } } }
+        }
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+        .presentationBackground(.regularMaterial)
+        .preferredColorScheme(.dark)
     }
 
     private func sessionThumb(_ record: StudySession, size: CGFloat) -> some View {
         let image = AboutYouView.diagram(for: record.topic)
         return ZStack {
-            RoundedRectangle(cornerRadius: 14, style: .continuous)
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .fill(LinearGradient(colors: [Color(red: 0.08, green: 0.10, blue: 0.35), Color(red: 0.35, green: 0.05, blue: 0.15)], startPoint: .topLeading, endPoint: .bottomTrailing))
             if let image {
-                Image(image).resizable().scaledToFit().padding(6).background(Color.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 10, style: .continuous)).padding(4)
+                Image(image).resizable().scaledToFit().padding(4).background(Color.white.opacity(0.9), in: RoundedRectangle(cornerRadius: 8, style: .continuous)).padding(3)
             } else {
                 Image(systemName: "atom").font(.system(size: size * 0.45)).foregroundStyle(.white.opacity(0.85))
             }
@@ -557,152 +699,6 @@ struct AboutYouView: View {
         if Calendar.current.isDateInToday(date) { return "Today, \(time)" }
         if Calendar.current.isDateInYesterday(date) { return "Yesterday, \(time)" }
         return date.formatted(.dateTime.day().month(.abbreviated)) + ", " + time
-    }
-
-    private var lastSessionCard: some View {
-        card("LAST SESSION") {
-            if let last = progress.sessions.first {
-                HStack(spacing: 18) {
-                    sessionThumb(last, size: 96)
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(last.topic).scaledFont(size: 26).foregroundStyle(.white).lineLimit(2)
-                        Label(last.subject.isEmpty ? "Science" : last.subject, systemImage: "book").scaledFont(size: 17).foregroundStyle(.white.opacity(0.7))
-                        Label("\(when(last.date))  |  \(max(1, last.seconds / 60)) min", systemImage: "calendar").scaledFont(size: 16).foregroundStyle(.white.opacity(0.7))
-                    }
-                }
-                Divider().overlay(Color.white.opacity(0.12))
-                if let note = last.reviewNote {
-                    HStack(spacing: 12) {
-                        Image(systemName: "exclamationmark.triangle.fill").foregroundStyle(Color(red: 255/255, green: 197/255, blue: 89/255))
-                        Text("Needs review: \(note)").scaledFont(size: 19).foregroundStyle(.white).lineLimit(2)
-                    }
-                } else {
-                    Label("Nothing to review", systemImage: "checkmark.circle.fill").scaledFont(size: 19).foregroundStyle(.white.opacity(0.8))
-                }
-            } else {
-                emptyNote("Finish a focus session to see it here.")
-            }
-        }
-    }
-
-    private var recentCard: some View {
-        card("RECENT SESSIONS", trailing: AnyView(
-            Button { withAnimation(.smooth) { showAllSessions.toggle() } } label: {
-                Text(showAllSessions ? "Show less" : "View All")
-                    .scaledFont(size: 17).foregroundStyle(.white)
-                    .padding(.horizontal, 16).padding(.vertical, 8)
-                    .litmusGlass(interactive: true, in: Capsule())
-            }
-        )) {
-            if progress.sessions.isEmpty {
-                emptyNote("No sessions yet.")
-            } else {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 12) {
-                        ForEach(progress.sessions.prefix(showAllSessions ? 12 : 2)) { record in
-                            HStack(spacing: 14) {
-                                sessionThumb(record, size: 64)
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(record.topic).scaledFont(size: 19).foregroundStyle(.white).lineLimit(1)
-                                    Text(when(record.date)).scaledFont(size: 14).foregroundStyle(.white.opacity(0.65))
-                                }
-                                Spacer()
-                                Text("\(max(1, record.seconds / 60)) min").scaledFont(size: 18).foregroundStyle(.white.opacity(0.85))
-                            }
-                            .padding(10)
-                            .background(Color.white.opacity(0.08), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /// Today's date with what was covered, and a chevron that opens the month calendar (a year of history).
-    private var summaryCard: some View {
-        card("CALENDAR", trailing: AnyView(
-            Button { showCalendar = true } label: {
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 15, weight: .bold))
-                    .foregroundStyle(.white)
-                    .frame(width: 30, height: 30)
-            }
-            .litmusGlassButton()
-            .buttonBorderShape(.circle)
-            .accessibilityLabel("Open calendar")
-        )) {
-            CalendarTodayContent(progress: progress)
-        }
-    }
-
-    private func emptyNote(_ text: String) -> some View {
-        Text(text).scaledFont(size: 18).foregroundStyle(.white.opacity(0.6)).frame(maxWidth: .infinity, minHeight: 90)
-    }
-
-    // MARK: Profile
-
-    /// At the bottom of the profile: removes this learner (the only profile too: the app then starts setup again).
-    private var deleteProfileButton: some View {
-        let shownName = name.isEmpty ? "this profile" : name
-        return VStack(spacing: 6) {
-            Button(role: .destructive) { confirmDeleteProfile = true } label: {
-                Text("Delete Profile")
-                    .scaledFont(size: 19, weight: .medium)
-                    .frame(maxWidth: .infinity, minHeight: 52)
-                    .foregroundStyle(Color(red: 255/255, green: 69/255, blue: 58/255))
-            }
-            .litmusGlassButton()
-            .buttonBorderShape(.capsule)
-        }
-        .alert("Delete “\(shownName)”?", isPresented: $confirmDeleteProfile) {
-            Button("Cancel", role: .cancel) {}
-            Button("Delete", role: .destructive) { profileStore.deleteActive() }
-        } message: {
-            Text(profileStore.isOnlyProfile
-                 ? "This is the only profile. Deleting it removes its coins, streaks and study history and starts setup again. This can’t be undone."
-                 : "Its coins, streaks and study history will be removed. This can’t be undone.")
-        }
-    }
-
-    private var profileCard: some View {
-        VStack(spacing: 14) {
-            // The picture is itself the control, with "edit" along its lower edge
-            Button { editingAvatar = true } label: {
-                EditablePicture(index: avatar, name: name)
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Edit profile picture")
-            HStack(spacing: 12) {
-                Text(name.isEmpty ? "Driver" : name).scaledFont(size: 40, weight: .bold).foregroundStyle(.white).lineLimit(1).minimumScaleFactor(0.6)
-                pencil { nameDraft = name; editingName = true }
-            }
-            Divider().overlay(Color.white.opacity(0.12))
-            // Each value is chosen with the system pop-up picker: tap it, pick from the list
-            pickerRow(icon: "book", label: "Curriculum") {
-                Picker("Curriculum", selection: $curriculum) { ForEach(curricula, id: \.self) { Text($0).tag($0) } }
-            }
-            pickerRow(icon: "graduationcap", label: "Grade") {
-                Picker("Grade", selection: $grade) { ForEach(6...10, id: \.self) { Text("\($0)th").tag("Grade \($0)") } }
-            }
-            Divider().overlay(Color.white.opacity(0.12))
-            HStack {
-                Image(systemName: "doc.text").font(.system(size: 22)).foregroundStyle(.white).frame(width: 44)
-                Text("About Me").scaledFont(size: 19).foregroundStyle(.white.opacity(0.85))
-                Spacer()
-                pencil { aboutDraft = aboutMe; editingAbout = true }
-            }
-            Text(aboutMe.isEmpty ? "Tell us a little about yourself." : aboutMe)
-                .scaledFont(size: 18)
-                .foregroundStyle(aboutMe.isEmpty ? .white.opacity(0.5) : .white)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(16)
-                .background(Color.white.opacity(0.08), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-            Spacer(minLength: 0)
-            deleteProfileButton
-        }
-        .padding(24)
-        .frame(maxHeight: .infinity, alignment: .top)
-        .litmusGlass(in: RoundedRectangle(cornerRadius: 32, style: .continuous))
     }
 
     // MARK: Daily goal
@@ -776,31 +772,6 @@ struct AboutYouView: View {
         let digits = grade.filter(\.isNumber)
         return digits.isEmpty ? grade : "\(digits)th"
     }
-
-    private var pencilIcon: some View {
-        Image(systemName: "pencil")
-            .font(.system(size: 22, weight: .semibold))
-            .foregroundStyle(Color.white)
-            .frame(width: 44, height: 44)
-    }
-
-    private func pencil(_ action: @escaping () -> Void) -> some View {
-        Button(action: action) { pencilIcon }.litmusGlassButton().buttonBorderShape(.circle).accessibilityLabel("Edit")
-    }
-
-    private func pickerRow<P: View>(icon: String, label: String, @ViewBuilder picker: () -> P) -> some View {
-        HStack(spacing: 14) {
-            Image(systemName: icon).font(.system(size: 24)).foregroundStyle(.white.opacity(0.9)).frame(width: 44)
-            Text(label).scaledFont(size: 19).foregroundStyle(.white.opacity(0.85))
-            Spacer()
-            picker()
-                .pickerStyle(.menu)
-                .labelsHidden()
-                .buttonBorderShape(.capsule)
-                .tint(.white)
-        }
-        .frame(minHeight: 52)
-    }
 }
 
 // MARK: - Privacy & Data
@@ -810,56 +781,52 @@ struct PrivacyView: View {
     @State private var confirmDelete = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 18) {
-            note("mic", "Your voice stays on this iPad", "Speech is recognised on the device when it can be, and recordings are not kept after your explanation is checked.")
-            note("cpu", "Answers are checked on the device", "Your explanations are graded by the on-device model. Nothing you say or write is sent to a server.")
-            note("internaldrive", "What is saved", "Your name, grade, coins, streaks, study minutes and a short list of recent sessions are saved on this iPad only.")
-            Spacer()
-            Button(role: .destructive) { confirmDelete = true } label: {
-                Text("Delete my study history")
-                    .scaledFont(size: 19, weight: .medium)
-                    .frame(maxWidth: .infinity, minHeight: 58)
-                    .background(settingsRed.opacity(0.25), in: Capsule())
-                    .foregroundStyle(.white)
+        SettingsScroll {
+            SettingsGroup(inset: 58) {
+                note("mic", .red, "Your voice stays on this iPad", "Speech is recognised on the device when it can be, and recordings are not kept after your explanation is checked.")
+                note("cpu", .indigo, "Answers are checked on the device", "Your explanations are graded by the on-device model. Nothing you say or write is sent to a server.")
+                note("internaldrive", .gray, "What is saved", "Your name, grade, coins, streaks, study minutes and a short list of recent sessions are saved on this iPad only.")
             }
-            .confirmationDialog("Delete your study history?", isPresented: $confirmDelete, titleVisibility: .visible) {
-                Button("Delete history", role: .destructive) { progress.clearStudyData() }
-            } message: {
-                Text("Streaks, study minutes and sessions will be cleared. Your coins stay.")
+            SettingsGroup(footer: "Streaks, study minutes and sessions are cleared. Your coins stay.") {
+                Button(role: .destructive) { confirmDelete = true } label: {
+                    Text("Delete My Study History").foregroundStyle(.red).frame(maxWidth: .infinity)
+                }
+                .buttonStyle(SettingsRowButton())
             }
         }
-        .padding(.top, 6)
+        .settingsScreen("Privacy & Data")
+        .confirmationDialog("Delete your study history?", isPresented: $confirmDelete, titleVisibility: .visible) {
+            Button("Delete History", role: .destructive) { progress.clearStudyData() }
+        } message: {
+            Text("Streaks, study minutes and sessions will be cleared. Your coins stay.")
+        }
     }
 
-    private func note(_ icon: String, _ title: String, _ text: String) -> some View {
-        HStack(alignment: .top, spacing: 18) {
-            Image(systemName: icon).font(.system(size: 24)).foregroundStyle(.white).frame(width: 58, height: 58).background(settingsRed.opacity(0.28), in: Circle())
-            VStack(alignment: .leading, spacing: 4) {
-                Text(title).scaledFont(size: 22, weight: .semibold).foregroundStyle(.white)
-                Text(text).scaledFont(size: 18).foregroundStyle(.white.opacity(0.75))
-            }
-            Spacer()
+    private func note(_ symbol: String, _ color: Color, _ title: String, _ text: String) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            SettingsLabel(title: title, symbol: symbol, color: color).font(.headline)
+            Text(text).font(.subheadline).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
         }
-        .padding(18)
-        .litmusGlass(in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+        .settingsRow()
+        .accessibilityElement(children: .combine)
     }
 }
-
 
 /// A profile picture that is its own edit control: a soft shade with "edit" always along its lower edge (touch has no
 /// hover). No highlight plate and no ring.
 private struct EditablePicture: View {
     var index: Int
     var name: String
+    var size: CGFloat = 128
 
     var body: some View {
-        ProfileAvatar(index: index, size: 128, ring: .clear, name: name)
+        ProfileAvatar(index: index, size: size, ring: .clear, name: name)
             .overlay(alignment: .bottom) {
                 Text("edit")
-                    .scaledFont(size: 15, weight: .semibold)
+                    .scaledFont(size: size < 110 ? 13 : 15, weight: .semibold)
                     .foregroundStyle(Color.white)
                     .frame(maxWidth: .infinity)
-                    .padding(.top, 20).padding(.bottom, 10)
+                    .padding(.top, 16).padding(.bottom, size < 110 ? 6 : 10)
                     .background(LinearGradient(colors: [.clear, .black.opacity(0.55)], startPoint: .top, endPoint: .bottom))
             }
             .clipShape(Circle())
