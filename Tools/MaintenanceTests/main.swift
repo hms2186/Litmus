@@ -28,12 +28,12 @@ let moe = "chk_eco3_medium_of_exchange"
 let link = "lnk_eco3_money_removes_dcw"
 let mchk = "mchk_misc_eco3_barter_needs_money"
 let goodAnswer = "A shoe maker who wants wheat has to find a farmer who has wheat and also wants shoes. Both must want what the other has. With money, the shoe maker sells shoes to anyone for money and then buys wheat from anyone, so he no longer needs that exact match."
-let quotes = [dcw: "Both must want what the other has", moe: "so he no longer needs that exact match",
+let quotes = [dcw: "Both must want what the other has", moe: "so he no longer needs that exact match", link: "so he no longer needs that exact match",
               mchk: "With money, the shoe maker sells shoes to anyone for money"]
 
 // MARK: - Fixture transport
 
-nonisolated func fixtureIsProof(_ instructions: String) -> Bool { instructions.hasPrefix("You copy evidence") }
+nonisolated func fixtureIsProof(_ instructions: String) -> Bool { instructions.contains("You copy evidence") }
 nonisolated func fixtureIds(_ prompt: String) -> [String] {
     prompt.split(separator: "\n").compactMap { line in
         guard let colon = line.firstIndex(of: ":") else { return nil }
@@ -206,7 +206,7 @@ expect(report.skippedModelNotReady == 1 && records().count == 1, "P13 no model: 
 
 // MARK: - 3. Drift
 
-let set = try JSONDecoder().decode(DriftSet.self, from: Data(contentsOf: root.appending(path: "Litmus/drift_set.json")))
+let set = try JSONDecoder().decode(DriftSet.self, from: Data(contentsOf: root.appending(path: "Litmus/Resources/Evaluation/drift_set.json")))
 expect(set.answers.count == 30 && set.answers.allSatisfy { store.entriesById[$0.conceptId] != nil }, "D0 drift set is complete")
 
 // A model that agrees with every label.

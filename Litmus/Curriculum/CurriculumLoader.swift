@@ -57,31 +57,6 @@ extension ChapterData {
     }
 }
 
-/// Schema 4 concepts, keyed by the topic title the UI shows (the concept label).
-enum FeynmanConceptRegistry {
-    struct Entry {
-        let concept: FeynmanConcept
-        let articulationChecks: [ArticulationCheck]
-        let chapterVocabulary: [String]
-    }
-
-    private static var entries: [String: Entry] = [:]
-
-    static func register(_ curriculum: FeynmanCurriculum) {
-        for concept in curriculum.topics.flatMap(\.concepts) {
-            entries[concept.label] = Entry(
-                concept: concept,
-                articulationChecks: curriculum.articulationChecks,
-                chapterVocabulary: curriculum.chapterVocabulary
-            )
-        }
-    }
-
-    static func entry(forTopicTitle title: String) -> Entry? {
-        entries[title]
-    }
-}
-
 struct ChapterTopic: Codable, Identifiable {
     var id: String { topicId }
     let topicId: String
@@ -207,8 +182,7 @@ class CurriculumLoader {
     /// Loads and decodes a specific chapter JSON file from the app bundle
     static func loadChapter(named filename: String) -> ChapterData? {
         let bundle = Bundle.main
-        guard let url = bundle.url(forResource: filename, withExtension: "json") ??
-                        Bundle(for: DeterministicStorageBridge.self).url(forResource: filename, withExtension: "json") else {
+        guard let url = bundle.url(forResource: filename, withExtension: "json") else {
             print("❌ FILE NOT FOUND: \(filename).json is missing.")
             return nil
         }
@@ -236,7 +210,6 @@ class CurriculumLoader {
             // and are shown in the UI as one topic per concept.
             if jsonSub.contains("\"keyPoints\"") {
                 let curriculum = try JSONDecoder().decode(FeynmanCurriculum.self, from: cleanData)
-                FeynmanConceptRegistry.register(curriculum)
                 return ChapterData(feynman: curriculum)
             }
 

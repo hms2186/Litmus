@@ -158,11 +158,9 @@ final class LiveSpeechRecorder: ObservableObject {
         }
         try Task.checkCancellation()
 
-        let session = AVAudioSession.sharedInstance()
         // The default mode keeps the system's gain control and noise handling on, which gives the recogniser a
         // cleaner signal than `.measurement`; the speaker stays the output so the engineer's voice is not muffled.
-        try session.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetoothHFP])
-        try session.setActive(true, options: .notifyOthersOnDeactivation)
+        try await AppAudioSession.apply(.record)
 
         let inputFormat = audioEngine.inputNode.outputFormat(forBus: 0)
         // No usable microphone: installing a tap would raise an Objective-C exception and abort the app.
@@ -413,6 +411,8 @@ nonisolated final class LegacyDictationSession: @unchecked Sendable {
                 Task { @MainActor in completion(false) }
                 return
             }
+            // This callback is not on the main thread, which is where the audio session is best changed
+            try? AppAudioSession.applyBlocking(.record)
             DispatchQueue.main.async {
                 self.accumulatedTranscript = ""
                 self.latestFullTranscript = ""
@@ -441,9 +441,7 @@ nonisolated final class LegacyDictationSession: @unchecked Sendable {
         recognitionTask?.cancel()
         recognitionTask = nil
 
-        let audioSession = AVAudioSession.sharedInstance()
-        try? audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetoothHFP])
-        try? audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+        // The audio session is already set up by the caller, off the main thread (see `start` and the restart below)
 
         let request = SFSpeechAudioBufferRecognitionRequest()
         recognitionRequest = request
@@ -503,12 +501,14 @@ nonisolated final class LegacyDictationSession: @unchecked Sendable {
             self.recognitionTask?.cancel()
             self.recognitionTask = nil
             self.recognitionRequest = nil
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+            Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(50))
+                try? await AppAudioSession.apply(.record)
                 self.isRestarting = false
                 if self.running {
                     if !self.startEngine() {
                         self.running = false
-                        Task { @MainActor in self.onStopped?() }
+                        self.onStopped?()
                     }
                 }
             }

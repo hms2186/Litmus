@@ -69,60 +69,54 @@ struct ReviseWidgetView: View {
         Group {
             if let topic = entry.topic { content(topic) } else { empty }
         }
-        .widgetURL(entry.topic.map { LitmusShared.deckURL(chapter: $0.chapter, subject: $0.subject) })
+        .widgetURL(entry.topic.map { LitmusShared.deckURL(chapter: $0.chapter, subject: $0.subject) } ?? LitmusShared.reviseURL)
         .containerBackground(for: .widget) { Palette.background }
     }
 
-    /// The textbook diagram of the topic's chapter fills the tile, with page dots, like the Revise tile in the app
+    /// The Revise tile from the app's Home screen, as one extra-large widget: the chapter's cover picture, page dots and
+    /// REVISE on a blur at the bottom. It slides to the next topic on its own as the timeline moves on.
     private func cover(_ topic: LitmusRevisionTopic) -> some View {
         ZStack(alignment: .bottom) {
             LinearGradient(colors: [Color(red: 250/255, green: 232/255, blue: 210/255), Color(red: 214/255, green: 228/255, blue: 252/255)], startPoint: .top, endPoint: .bottom)
             if let name = topic.cover, let url = LitmusWidgetStore.coverURL(name), let image = UIImage(contentsOfFile: url.path) {
-                Image(uiImage: image).resizable().scaledToFill()
+                // As on the Home tile: the cover fills the whole widget, edge to edge, anchored at the bottom
+                Color.clear.overlay(alignment: .bottom) { Image(uiImage: image).resizable().scaledToFill() }
+                    .clipped()
             } else {
-                Image(systemName: "rectangle.stack.fill").font(.system(size: 36)).foregroundStyle(Color(red: 0.25, green: 0.4, blue: 0.8).opacity(0.55))
+                Image(systemName: "rectangle.stack.fill").font(.system(size: 64)).foregroundStyle(Color(red: 0.25, green: 0.4, blue: 0.8).opacity(0.55))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
-            if entry.total > 1 {
-                HStack(spacing: 5) {
-                    ForEach(0..<min(entry.total, 6), id: \.self) { dot in
-                        Circle().fill(dot == entry.index % 6 ? Color.white : Color.white.opacity(0.45)).frame(width: 5, height: 5)
+            // As on the Home tile: REVISE on its own blur, low on the cover, with the page dots under it
+            VStack(spacing: 12) {
+                Text("REVISE")
+                    .font(.system(size: 30, weight: .heavy))
+                    .tracking(3)
+                    .foregroundStyle(.white)
+                    .shadow(color: .black.opacity(0.35), radius: 3, y: 1)
+                    .padding(.horizontal, 18).padding(.vertical, 4)
+                    .background(.ultraThinMaterial, in: Capsule())
+                if entry.total > 1 {
+                    // Drawn like the system page dots under the Home tile
+                    HStack(spacing: 8) {
+                        ForEach(0..<min(entry.total, 5), id: \.self) { dot in
+                            Circle().fill(dot == entry.index % 5 ? Color.white : Color.white.opacity(0.45)).frame(width: 7, height: 7)
+                        }
                     }
+                    .padding(.horizontal, 9).padding(.vertical, 6)
+                    .background(.black.opacity(0.3), in: Capsule())
                 }
-                .padding(.horizontal, 8).padding(.vertical, 5)
-                .background(.black.opacity(0.35), in: Capsule())
-                .padding(.bottom, 8)
             }
+            .padding(.bottom, 12)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .overlay(LinearGradient(colors: [.black.opacity(0.65), .clear], startPoint: .top, endPoint: .center))
-        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         // Each topic slides in from the side as the entry changes
         .id(topic.id)
         .transition(.push(from: .trailing))
     }
 
-    /// The Revise tile from the app's Home screen: the chapter's cover fills the widget, "REVISE" and the topic over its top,
-    /// page dots under it. It slides to the next topic on its own.
     @ViewBuilder
     private func content(_ topic: LitmusRevisionTopic) -> some View {
-        ZStack(alignment: .topLeading) {
-            cover(topic)
-            VStack(alignment: .leading, spacing: 2) {
-                Text("REVISE")
-                    .font(.system(size: family == .systemMedium ? 22 : 30, weight: .black))
-                    .foregroundStyle(Palette.red)
-                Text(topic.topic)
-                    .font(.system(size: family == .systemMedium ? 17 : 26, weight: .heavy))
-                    .foregroundStyle(.white)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.7)
-                Text("\(topic.cardCount) flashcards")
-                    .font(.system(size: 12, weight: .semibold))
-                    .foregroundStyle(Palette.yellow)
-            }
-            .shadow(color: .black.opacity(0.7), radius: 4)
-            .padding(14)
-        }
+        cover(topic)
     }
 
     private var empty: some View {
@@ -135,6 +129,9 @@ struct ReviseWidgetView: View {
                 .foregroundStyle(.white)
             Spacer(minLength: 0)
         }
+        // The widget's own margins are off (for the full-bleed cover), so the text keeps its distance here
+        .padding(16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
     }
 }
 
@@ -145,7 +142,10 @@ struct LitmusReviseWidget: Widget {
         }
         .configurationDisplayName("Revise")
         .description("The topics you studied lately. Tap one to open its flashcards.")
-        .supportedFamilies([.systemMedium, .systemLarge])
+        // Large is nearly square like the Home tile, and is the size iPhone offers; Extra Large stays for iPad
+        .supportedFamilies([.systemLarge, .systemExtraLarge])
+        // The cover runs to the widget's edges, as the tile's does, instead of sitting inside the default margins
+        .contentMarginsDisabled()
     }
 }
 

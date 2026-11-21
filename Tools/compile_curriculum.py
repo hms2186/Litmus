@@ -30,7 +30,8 @@ COMPILER_VERSION = "1.0.0"
 SCHEMA_REVISION = 1  # v4.1
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SOURCE_DIR = os.path.join(ROOT, "Litmus")
+APP_DIR = os.path.join(ROOT, "Litmus")
+SOURCE_DIR = os.path.join(APP_DIR, "Resources", "Chapters")
 # An optional copy of the authored chapter JSON kept outside the repository. Set NCERT_MIRROR_DIR to its path;
 # without it, the script looks for a "JSON NCERT" folder next to the repository folder.
 MIRROR_DIR = os.environ.get("NCERT_MIRROR_DIR", os.path.join(os.path.dirname(ROOT), "JSON NCERT"))
@@ -38,7 +39,7 @@ CURRICULUM_DIR = os.path.join(ROOT, "Curriculum")
 PDF_TEXT_DIR = os.path.join(CURRICULUM_DIR, "pdf_text")
 # Inside the app folder, so the compiled chapters ship in the app bundle (the folder is synced with
 # the app target).
-COMPILED_DIR = os.path.join(SOURCE_DIR, "Compiled")
+COMPILED_DIR = os.path.join(APP_DIR, "Compiled")
 FOLLOWUP_DIR = os.path.join(CURRICULUM_DIR, "followups")
 SOURCES_FILE = os.path.join(CURRICULUM_DIR, "pdf_sources.json")
 REPORT_FILE = os.path.join(CURRICULUM_DIR, "review_report.html")
@@ -50,7 +51,7 @@ BACKUP_DIRS = {
 ROLES = ("core", "supporting", "extra")
 LEXICAL = ("evidence", "never")
 BATCH_SIZE = 6  # M0 decision D1
-CHECK_FIELDS = {"id", "criterion", "isRequired", "lexical", "followUp"}
+CHECK_FIELDS = {"id", "criterion", "isRequired", "lexical", "followUp", "acceptedPhrasings"}
 KEYPOINT_FIELDS = {"id", "weight", "role", "text", "followUp", "followUpAllows", "assessment"}
 
 
@@ -225,7 +226,7 @@ def migrate(mirror):
                         kp.pop("followUpAllows", None)
                 for check in kp["assessment"]["checks"]:
                     check.setdefault("lexical", suggested_lexical(check, kp)[0])
-                kp["assessment"]["checks"] = [ordered(c, ["id", "criterion", "isRequired", "lexical", "followUp"])
+                kp["assessment"]["checks"] = [ordered(c, ["id", "criterion", "isRequired", "lexical", "followUp", "acceptedPhrasings"])
                                               for c in kp["assessment"]["checks"]]
                 new_kps.append(ordered(kp, ["id", "weight", "role", "text", "followUp", "followUpAllows", "assessment"]))
             concept["keyPoints"] = new_kps
@@ -386,6 +387,7 @@ def validate_chapter(name, chapter, pdfs, sources, findings):
                     stats["lexicalEvidence"] += 1
                 for leak in [p for p in answer_phrases(kp, concept) if contains_phrase(check.get("followUp", ""), p)]:
                     findings.error(check["id"], f"followUp gives away the answer ({leak!r})")
+                validate_phrasings(check, assessment, findings)
             for allowed in kp.get("followUpAllows", []):
                 if not contains_phrase(kp.get("followUp", ""), allowed):
                     findings.error(kid, f"followUpAllows lists {allowed!r} but the follow-up does not use it")
@@ -442,6 +444,42 @@ def validate_chapter(name, chapter, pdfs, sources, findings):
 
 # ---------------------------------------------------------------- compile
 
+def validate_phrasings(check, assessment, findings):
+    """acceptedPhrasings (optional) lets one sentence of the answer lift a model "no" on a plain key-point check.
+    A rule needs at least 3 anchor groups of at least 2 phrases each, every phrase non-empty, and a reviewer note when
+    the key point has a misconception (the lift is blocked while that misconception is stated, but a person must
+    have judged that the anchors cannot also describe the wrong idea)."""
+    rules = check.get("acceptedPhrasings")
+    if rules is None:
+        return
+    cid = check["id"]
+    if not isinstance(rules, list) or not rules:
+        findings.error(cid, "acceptedPhrasings must be a non-empty list")
+        return
+    if cid.startswith(("mchk_", "lnk_", "chk_relevance")):
+        findings.error(cid, "acceptedPhrasings is only allowed on key-point checks")
+    for rule in rules:
+        if not isinstance(rule, dict) or set(rule) - {"all", "note", "exclude"}:
+            findings.error(cid, "each phrasing rule has only 'all', 'note' and 'exclude'")
+            continue
+        excl = rule.get("exclude", [])
+        if not isinstance(excl, list) or any(not isinstance(x, str) or not norm_words(x) for x in excl):
+            findings.error(cid, "'exclude' must be a list of non-empty phrases")
+        groups = rule.get("all")
+        if not isinstance(groups, list) or len(groups) < 3:
+            findings.error(cid, "a phrasing rule needs at least 3 anchor groups")
+            continue
+        for group in groups:
+            if not isinstance(group, list) or len(group) < 2:
+                findings.error(cid, "every anchor group needs at least 2 phrases")
+                continue
+            for phrase in group:
+                if not isinstance(phrase, str) or not norm_words(phrase):
+                    findings.error(cid, f"empty anchor phrase {phrase!r}")
+        if assessment.get("misconceptionIds") and not str(rule.get("note") or "").strip():
+            findings.error(cid, "its key point has a misconception: the phrasing rule needs a reviewer 'note'")
+
+
 def compile_concept(topic, concept):
     rules = {}
     keypoints = []
@@ -462,6 +500,7 @@ def compile_concept(topic, concept):
                 "isRequired": c["isRequired"],
                 "lexical": c["lexical"],
                 "followUp": c.get("followUp") or kp.get("followUp") or concept["hint"],
+                **({"acceptedPhrasings": c["acceptedPhrasings"]} if c.get("acceptedPhrasings") else {}),
             } for c in kp["assessment"]["checks"]],
             "misconceptionIds": kp["assessment"].get("misconceptionIds") or [],
         })
@@ -519,7 +558,8 @@ def compile_concept(topic, concept):
 
     grading = {
         "keyPoints": [{k: kp[k] for k in ("id", "role", "weight", "passRule", "misconceptionIds")}
-                      | {"checks": [{k: c[k] for k in ("id", "criterion", "isRequired", "lexical")} for c in kp["checks"]]}
+                      | {"checks": [{k: c[k] for k in ("id", "criterion", "isRequired", "lexical") + (("acceptedPhrasings",) if c.get("acceptedPhrasings") else ())}
+                            for c in kp["checks"]]}
                       for kp in keypoints],
         "causeLinks": concept["causeLinks"],
         "misconceptions": [{k: m[k] for k in ("id", "wrong", "fix", "keyPointIds", "isRequired")} for m in misconceptions],

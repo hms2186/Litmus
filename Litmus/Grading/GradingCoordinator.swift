@@ -12,8 +12,10 @@ import Foundation
 import os
 
 nonisolated struct GradingSettings: Sendable, Equatable {
-    var perBatchSeconds = 8.0
-    var totalSeconds = 15.0
+    // Measured about 5 s end to end on an M-series Mac; an iPad is slower, and a budget spent early leaves checks
+    // "uncertain", which sends a correct explanation to the review screen. So the limits are generous.
+    var perBatchSeconds = 15.0
+    var totalSeconds = 30.0
     /// Pass 2 on the deciding checks of a would-be Mastered answer (M0 decision D5). Misconception
     /// yeses are always checked (D4).
     var quoteCheckMastery = true
@@ -25,6 +27,22 @@ nonisolated struct GradingSettings: Sendable, Equatable {
     /// Ask a blocking model "no" again, alone and in lenient wording, when that is all that stands between the
     /// answer and mastery (Milestone 6). The flipped yes must still survive a genuine quote and its confirmation.
     var recheckNoResults = true
+    /// PARAKH rubric: textbook evidence in the student's own words may overrule a model "no" (see RubricMatrix).
+    var rubricEvidence = true
+    /// Experimental, off: lets a statement close in meaning to a criterion (NLEmbedding) support a model "no". On the labelled answers its distances did not separate right from wrong statements (see docs/MODEL_REPORT.md).
+    var semanticSupport = false
+    /// Lets one statement that contains every anchor group of a compiled `acceptedPhrasings` rule support a model "no" on
+    /// that opted-in check (capped at Likely mastered). On: measured in docs/MODEL_REPORT.md section 8d; only concepts whose
+    /// compiled checks carry `acceptedPhrasings` (two so far) are affected.
+    var phrasingSupport = true
+    /// Every model yes on a key point or cause link must be backed by a verbatim quote of the student's words that is confirmed in
+    /// context, not only the ones that decide mastery; otherwise it stays uncertain and is not shown as "right". Rollback: false.
+    var proveDisplayedGreen = true
+    /// A rejected quote (changed, merged or a bare list of terms) is asked for once more by naming the piece of the answer. Rollback: false.
+    var segmentQuoteRetry = true
+    /// Experiment (off): a misconception flag whose quote is word for word the quote that proves a key point it is bound to
+    /// is held as uncertain instead of accusing the student (the same sentence cannot state both the right and the wrong idea).
+    var holdMisconceptionOnSharedQuote = false
     static let maxRechecks = 3
     var clarificationRounds = 1
     /// Set when the drift check fails after an OS update: the best outcome is Likely mastered.
@@ -54,6 +72,19 @@ nonisolated struct GradingLog: Sendable, Equatable {
     var recheckFlipped: [String] = []
     /// Flagged misconceptions ruled out because the student's own words explicitly reject or correct them.
     var misconceptionRuledOut: [String] = []
+    /// Checks a model "no" or "uncertain" on which the student's own words showed the textbook evidence (RubricMatrix).
+    var rubricSupported: [String] = []
+    /// Checks lifted from a model "no" because a statement of the answer was close in meaning to the criterion (NLEmbedding).
+    var semanticSupported: [String] = []
+    /// Checks lifted from a model "no" because one statement matched an accepted phrasing of the check.
+    var phrasingSupported: [String] = []
+    var quoteRetried: [String] = []
+    var quoteRecovered: [String] = []
+    var misconceptionHeldOnSharedQuote: [String] = []
+    /// Why a failing answer was not given a recheck (empty when one was run or nothing was failing).
+    var recheckSkipped: String = ""
+    /// Key-point checks the model said yes to on an answer that was only a list of terms; the guard turned them into no.
+    var termListOverruled: [String] = []
     var keywordStuffing = false
     var seconds = 0.0
 }
@@ -77,6 +108,8 @@ nonisolated enum GradingResult: Sendable {
 nonisolated struct GradingCoordinator: Sendable {
     let transport: any ModelTransport
     var settings: GradingSettings
+    /// The chapter file of the concept being graded, set by `grade`, `gradeFollowUp` and `regrade` for the grader prompts.
+    private var context: GradingContext? = nil
 
     private static let signposter = OSSignposter(subsystem: "Litmus", category: "Grading")
 
@@ -87,7 +120,14 @@ nonisolated struct GradingCoordinator: Sendable {
 
     // MARK: - First answer
 
-    func grade(answer: String, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
+    func grade(answer: String, concept: CompiledConcept, chapter: CompiledChapter, spoken: Bool = false) async -> GradingResult {
+        var scoped = self
+        scoped.context = GradingContext(concept: concept, chapter: chapter)
+        scoped.context?.spoken = spoken
+        return await scoped.gradeScoped(answer: answer, concept: concept, chapter: chapter)
+    }
+
+    private func gradeScoped(answer: String, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
         let start = ContinuousClock.now
         let deadline = start.advanced(by: .seconds(settings.totalSeconds))
         let catalog = Self.catalog(concept)
@@ -123,8 +163,20 @@ nonisolated struct GradingCoordinator: Sendable {
         await recheckBlockingNos(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
                                  transcript: answer, deadline: deadline, log: &log)
         await proveDecisiveYeses(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
-                                 transcript: answer, deadline: deadline, log: &log)
+                                 transcript: answer, deadline: deadline, log: &log, proveShown: true)
 
+        if settings.rubricEvidence {
+            log.rubricSupported = RubricMatrix.supportWithEvidence(&results, concept: concept, catalog: catalog, transcript: answer,
+                                                                   keywordStuffing: log.keywordStuffing)
+        }
+        if settings.semanticSupport {
+            log.semanticSupported = RubricMatrix.supportWithMeaning(&results, concept: concept, catalog: catalog, transcript: answer,
+                                                                    keywordStuffing: log.keywordStuffing)
+        }
+        if settings.phrasingSupport {
+            log.phrasingSupported = RubricMatrix.supportWithPhrasing(&results, concept: concept, catalog: catalog, transcript: answer,
+                                                                     keywordStuffing: log.keywordStuffing)
+        }
         let decision = RuleEngine.decide(concept, results: results, context: context, articulationChecks: chapter.articulationChecks)
         log.seconds = Self.seconds(since: start)
         return .graded(GradingOutcome(answers: [answer], results: results, context: context, decision: decision, events: [], log: log))
@@ -136,7 +188,14 @@ nonisolated struct GradingCoordinator: Sendable {
     /// into the earlier results. Resolve checks are graded on Answer 2 alone; corrections and
     /// contradictions compare the answers. A retry after Needs correction aims at the keyPoints linked
     /// to the stated misconceptions and does not use up a clarification round.
-    func gradeFollowUp(answer: String, previous: GradingOutcome, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
+    func gradeFollowUp(answer: String, previous: GradingOutcome, concept: CompiledConcept, chapter: CompiledChapter, spoken: Bool = false) async -> GradingResult {
+        var scoped = self
+        scoped.context = GradingContext(concept: concept, chapter: chapter)
+        scoped.context?.spoken = spoken
+        return await scoped.gradeFollowUpScoped(answer: answer, previous: previous, concept: concept, chapter: chapter)
+    }
+
+    private func gradeFollowUpScoped(answer: String, previous: GradingOutcome, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
         let target: String
         var startingContext = previous.context
         switch previous.decision.outcome {
@@ -216,7 +275,7 @@ nonisolated struct GradingCoordinator: Sendable {
         await recheckBlockingNos(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
                                  transcript: combined, deadline: deadline, log: &log)
         await proveDecisiveYeses(&results, concept: concept, chapter: chapter, catalog: catalog, context: context,
-                                 transcript: combined, deadline: deadline, log: &log)
+                                 transcript: combined, deadline: deadline, log: &log, proveShown: true)
 
         let decision = RuleEngine.decide(concept, results: results, context: context, articulationChecks: chapter.articulationChecks)
         log.seconds = Self.seconds(since: start)
@@ -232,6 +291,12 @@ nonisolated struct GradingCoordinator: Sendable {
     /// result, because the fallback only ever stood in for the model. If the model fails, the earlier
     /// result stays. No clarification is asked: the student is not there.
     func regrade(transcripts: [String], previous: ResultSet, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
+        var scoped = self
+        scoped.context = GradingContext(concept: concept, chapter: chapter)
+        return await scoped.regradeScoped(transcripts: transcripts, previous: previous, concept: concept, chapter: chapter)
+    }
+
+    private func regradeScoped(transcripts: [String], previous: ResultSet, concept: CompiledConcept, chapter: CompiledChapter) async -> GradingResult {
         let start = ContinuousClock.now
         let deadline = start.advanced(by: .seconds(settings.totalSeconds))
         let catalog = Self.catalog(concept)
@@ -315,7 +380,7 @@ nonisolated struct GradingCoordinator: Sendable {
     /// spent is graded by the keyword fallback (when `fallback`), on the newest answer.
     private func run(_ jobs: [Job], answers: [String], deadline: ContinuousClock.Instant, fallback: Bool = true) async -> BatchRun {
         var batchRun = BatchRun()
-        let grader = ModelGrader(transport: transport)
+        let grader = ModelGrader(transport: transport, context: self.context)
         let perBatch = settings.perBatchSeconds
         await withTaskGroup(of: (Job, Result<ResultSet, TransportError>?, Int).self) { group in
             for job in jobs {
@@ -424,6 +489,16 @@ nonisolated struct GradingCoordinator: Sendable {
         for link in concept.causeLinks {
             results[link.id] = CheckResult(state: .no, source: .code)
         }
+        // A list with no statement in it can meet no criterion. A model "yes" on such an answer is the model filling the
+        // gap (it did, on a list of six chapter terms), so it is overruled here, before any proof or rule sees it.
+        if CodeGrader.isTermList(transcript) {
+            for keyPoint in concept.keyPoints {
+                for check in keyPoint.checks where results[check.id]?.state == .yes {
+                    results[check.id] = CheckResult(state: .no, source: .code)
+                    log.termListOverruled.append(check.id)
+                }
+            }
+        }
     }
 
     // MARK: - Recheck of blocking "no" results
@@ -437,7 +512,7 @@ nonisolated struct GradingCoordinator: Sendable {
     private func recheckBlockingNos(_ results: inout ResultSet, concept: CompiledConcept, chapter: CompiledChapter,
                                     catalog: [String: GradableCheck], context: AttemptContext, transcript: String,
                                     deadline: ContinuousClock.Instant, log: inout GradingLog) async {
-        guard settings.recheckNoResults, transport.isReady, !log.keywordStuffing else { return }
+        guard settings.recheckNoResults, transport.isReady, !log.keywordStuffing else { log.recheckSkipped = "settings, model or keyword guard"; return }
         var candidates: [GradableCheck] = []
         for keyPoint in concept.keyPoints where keyPoint.role == .core {
             guard RuleEngine.keyPointOutcome(keyPoint, concept: concept, results: results) == .fail else { continue }
@@ -446,17 +521,20 @@ nonisolated struct GradingCoordinator: Sendable {
                     && (check.isRequired || keyPoint.passRule != .allRequired)
             }
             // A failing core keyPoint with no model "no" to blame (a stated misconception, say) cannot be rescued.
-            guard !blockers.isEmpty else { return }
+            guard !blockers.isEmpty else {
+                log.recheckSkipped = "core key point \(keyPoint.id) fails with no model \"no\" to blame: " + keyPoint.checks.map { "\($0.id)=\(results[$0.id]?.state.rawValue ?? "unset")/\(results[$0.id]?.source.rawValue ?? "-")" }.joined(separator: ", ")
+                return
+            }
             candidates += blockers.compactMap { catalog[$0.id] }
         }
-        guard (1...GradingSettings.maxRechecks).contains(candidates.count) else { return }
+        guard (1...GradingSettings.maxRechecks).contains(candidates.count) else { log.recheckSkipped = "\(candidates.count) candidates (allowed 1...\(GradingSettings.maxRechecks))"; return }
         var assumed = results
         for check in candidates { assumed[check.id]?.state = .yes }
         let outcome = RuleEngine.decide(concept, results: assumed, context: context, articulationChecks: chapter.articulationChecks).outcome
-        guard outcome == .mastered || outcome == .likelyMastered else { return }
+        guard outcome == .mastered || outcome == .likelyMastered else { log.recheckSkipped = "even with \(candidates.map(\.id)) as yes the outcome is \(outcome)"; return }
 
         log.rechecked += candidates.map(\.id)
-        let grader = ModelGrader(transport: transport)
+        let grader = ModelGrader(transport: transport, context: self.context)
         let perBatch = settings.perBatchSeconds
         let minimumWords = settings.minimumQuoteWords
         let contextSentences = settings.confirmContextSentences
@@ -505,7 +583,7 @@ nonisolated struct GradingCoordinator: Sendable {
     /// is ruled out only when the student's own words explicitly reject or correct the wrong idea.
     private func proveDecisiveYeses(_ results: inout ResultSet, concept: CompiledConcept, chapter: CompiledChapter,
                                     catalog: [String: GradableCheck], context: AttemptContext, transcript: String,
-                                    deadline: ContinuousClock.Instant, log: inout GradingLog) async {
+                                    deadline: ContinuousClock.Instant, log: inout GradingLog, proveShown: Bool = false) async {
         guard transport.isReady else { return }
         let misconceptionIds = concept.misconceptions.map(\.checkId).filter {
             results[$0]?.state == .yes && results[$0]?.source == .model && results[$0]?.quoteCheck != .proven
@@ -525,6 +603,12 @@ nonisolated struct GradingCoordinator: Sendable {
                 }
             }
         }
+        if settings.proveDisplayedGreen, proveShown {
+            let shown = concept.keyPoints.flatMap(\.checks).map(\.id) + concept.causeLinks.map(\.id)
+            masteryIds += shown.filter {
+                results[$0]?.state == .yes && results[$0]?.source == .model && results[$0]?.quoteCheck != .proven && !masteryIds.contains($0)
+            }
+        }
         let ids = misconceptionIds + masteryIds.filter { !misconceptionIds.contains($0) }
         guard !ids.isEmpty else { return }
         log.proofRequested += ids
@@ -542,11 +626,23 @@ nonisolated struct GradingCoordinator: Sendable {
         let confirmed = await confirm(ids.compactMap { id -> (GradableCheck, String, BatchStyle)? in
             guard case .genuine(let quote)? = verdicts[id], let check = catalog[id] else { return nil }
             if misconceptionSet.contains(id) { return (check, quote, .topic) }
+            // The words quoted must make a statement: "reactants, products, coefficients" does not state any idea
+            guard CodeGrader.hasFiniteVerb(ModelGrader.excerpt(around: quote, in: transcript, contextSentences: 0)) else { return nil }
             return (check, ModelGrader.excerpt(around: quote, in: transcript, contextSentences: contextSentences), .screening)
         }, deadline: deadline, log: &log)
 
         for id in ids {
             switch verdicts[id] {
+            case .genuine(let quote)? where !misconceptionSet.contains(id)
+                && !CodeGrader.hasFiniteVerb(ModelGrader.excerpt(around: quote, in: transcript, contextSentences: 0)):
+                log.proofRejected.append("\(id): noStatement")
+                results[id]?.state = .uncertain
+                results[id]?.quote = quote
+            case .genuine(let quote)? where misconceptionSet.contains(id) && settings.holdMisconceptionOnSharedQuote
+                && Self.sharesQuoteWithProvenKeyPoint(id, quote: quote, concept: concept, verdicts: verdicts):
+                log.misconceptionHeldOnSharedQuote.append(id)
+                results[id]?.state = .uncertain
+                results[id]?.quote = quote
             case .genuine(let quote)? where misconceptionSet.contains(id) && !confirmed.contains(id):
                 log.misconceptionNotConfirmed.append(id)
                 results[id]?.state = .uncertain
@@ -562,8 +658,15 @@ nonisolated struct GradingCoordinator: Sendable {
                 log.proofNotChecked.append(id)
                 if misconceptionSet.contains(id) {
                     results[id]?.state = .uncertain
-                } else {
+                } else if let check = catalog[id],
+                          LexicalGrader.evidence(check.evidence, in: LexicalGrader.tokenize(transcript)) == .found {
+                    // Not proven by a quote, but the student's own words contain the textbook phrase: kept as an
+                    // unproven yes, which the Rule Engine caps at Likely mastered
                     results[id]?.quoteCheck = .timedOut
+                } else {
+                    // Not proven and nothing in the answer backs it: a model "yes" with no support is not accepted
+                    // (a yes for the guilds on an answer that never mentions guilds passed this way before)
+                    results[id]?.state = .uncertain
                 }
             case let verdict?:
                 log.proofRejected.append("\(id): \(verdict)")
@@ -604,11 +707,24 @@ nonisolated struct GradingCoordinator: Sendable {
         Self.signposter.endInterval("pass2", interval)
     }
 
+    /// True when a key point this misconception is bound to has a check whose genuine proof quote is the same words.
+    private static func sharesQuoteWithProvenKeyPoint(_ id: String, quote: String, concept: CompiledConcept,
+                                                     verdicts: [String: QuoteVerdict]) -> Bool {
+        guard let misconception = concept.misconceptions.first(where: { $0.checkId == id }) else { return false }
+        let mine = ModelGrader.normalise(quote)
+        for keyPoint in concept.keyPoints where misconception.keyPointIds.contains(keyPoint.id) {
+            for check in keyPoint.checks {
+                if case .genuine(let other)? = verdicts[check.id], ModelGrader.normalise(other) == mine { return true }
+            }
+        }
+        return false
+    }
+
     /// Asks for the student's exact words behind each check, in batches of up to six per group, all in
     /// parallel within the budget. A batch that fails or runs out of time is left out and logged.
     private func quotes(for groups: [(label: String, checks: [GradableCheck])], transcript: String,
                         deadline: ContinuousClock.Instant, log: inout GradingLog) async -> [String: QuoteVerdict] {
-        let grader = ModelGrader(transport: transport)
+        let grader = ModelGrader(transport: transport, context: self.context)
         let minimumWords = settings.minimumQuoteWords
         let jobs = groups.flatMap { chunked($0.checks, style: .screening, label: $0.label) }
         var verdicts: [String: QuoteVerdict] = [:]
@@ -656,6 +772,45 @@ nonisolated struct GradingCoordinator: Sendable {
                 if case .genuine = verdict { verdicts[id] = verdict }
             }
         }
+
+        // A quote the model changed, merged or cut down (rejected as invented or copied from the criterion), or a bare list of terms, is
+        // asked for once more by naming the numbered piece of the answer. The quote is then the student's own text, so it stays genuine
+        // by construction; it still needs a finite verb here and the in-context confirmation afterwards. Misconception quotes are left
+        // out: this only helps a student, it never makes an accusation easier.
+        if settings.segmentQuoteRetry, Self.seconds(until: deadline) >= 0.2 * settings.totalSeconds {
+            let eligible = groups.filter { $0.label != "proof-misconception" && $0.label != "rejection" }.flatMap(\.checks)
+            let retry = eligible.filter { check in
+                switch verdicts[check.id] {
+                case .invented?, .copiedCriterion?: return true
+                case .genuine(let quote)?: return !CodeGrader.hasFiniteVerb(ModelGrader.excerpt(around: quote, in: transcript, contextSentences: 0))
+                default: return false
+                }
+            }
+            if !retry.isEmpty {
+                log.quoteRetried += retry.map(\.id)
+                let retryJobs = chunked(retry, style: .screening, label: "quote-pieces")
+                var picked: [String: QuoteVerdict] = [:]
+                await withTaskGroup(of: [String: QuoteVerdict].self) { group in
+                    for job in retryJobs {
+                        group.addTask {
+                            let remaining = Self.seconds(until: deadline)
+                            guard remaining > 0 else { return [:] }
+                            return (try? await Self.withTimeout(remaining) {
+                                try await grader.pickSegments(job.checks, transcript: transcript, minimumWords: minimumWords)
+                            }) ?? [:]
+                        }
+                    }
+                    for await batch in group { picked.merge(batch) { _, new in new } }
+                }
+                log.modelCalls += retryJobs.count
+                for (id, verdict) in picked {
+                    if case .genuine(let quote) = verdict, CodeGrader.hasFiniteVerb(quote) {
+                        verdicts[id] = verdict
+                        log.quoteRecovered.append(id)
+                    }
+                }
+            }
+        }
         return verdicts
     }
 
@@ -664,7 +819,7 @@ nonisolated struct GradingCoordinator: Sendable {
     private func confirm(_ pairs: [(GradableCheck, String, BatchStyle)], deadline: ContinuousClock.Instant,
                          log: inout GradingLog) async -> Set<String> {
         guard !pairs.isEmpty else { return [] }
-        let grader = ModelGrader(transport: transport)
+        let grader = ModelGrader(transport: transport, context: self.context)
         var confirmed: Set<String> = []
         await withTaskGroup(of: String?.self) { group in
             for (check, quote, style) in pairs {
@@ -699,7 +854,8 @@ nonisolated struct GradingCoordinator: Sendable {
                         && (0...(criterionTokens.count - words.count)).contains { Array(criterionTokens[$0..<$0 + words.count]) == words }
                 }
                 catalog[check.id] = GradableCheck(id: check.id, criterion: check.criterion, kind: .keyPoint, lexical: check.lexical,
-                                                  evidence: named.isEmpty ? keyPoint.requiredEvidence : named)
+                                                  evidence: named.isEmpty ? keyPoint.requiredEvidence : named,
+                                                  phrasings: check.acceptedPhrasings ?? [])
             }
         }
         for link in concept.causeLinks {

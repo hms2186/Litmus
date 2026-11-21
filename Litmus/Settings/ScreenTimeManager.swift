@@ -151,16 +151,18 @@ public final class ScreenTimeManager: ObservableObject {
         #endif
 
         self.status = newStatus
-        switch newStatus {
-        case .approved:
+        // Matched through isApproved, because `approvedWithDataAccess` exists only from iOS 26.4
+        if Self.isApproved(newStatus) {
             self.statusMessage = "Screen Time access authorized."
+            return
+        }
+        switch newStatus {
         case .denied:
             self.statusMessage = "Screen Time permission denied. Enable in Settings."
         case .notDetermined:
             self.statusMessage = "Screen Time authorization required."
-        @unknown default:
-            // `approvedWithDataAccess` exists only from iOS 26.4, so it is matched here rather than by name
-            self.statusMessage = Self.isApproved(newStatus) ? "Screen Time access authorized." : "Screen Time status unknown."
+        default:
+            self.statusMessage = "Screen Time status unknown."
         }
     }
 
@@ -325,4 +327,4 @@ public final class ScreenTimeManager: ObservableObject {
 }
 
 // MARK: - Compatibility Alias
-public typealias F1AppBlocker = ScreenTimeManager
+public typealias AppBlocker = ScreenTimeManager

@@ -189,11 +189,11 @@ def tuning_texts():
     """Every answer used while building the engine: the release set may not contain any of them."""
     texts = []
     for name in ("m0_answers.json", "drift_set.json"):
-        data = load_json(os.path.join(APP, name), default={})
+        data = load_json(os.path.join(APP, "Resources", "Evaluation", name), default={})
         for c in data.get("concepts", []):
             texts += [a["text"] for a in c["answers"]]
         texts += [a["text"] for a in data.get("answers", [])]
-    return texts, {c["conceptId"] for c in load_json(os.path.join(APP, "m0_answers.json"), default={}).get("concepts", [])}
+    return texts, {c["conceptId"] for c in load_json(os.path.join(APP, "Resources", "Evaluation", "m0_answers.json"), default={}).get("concepts", [])}
 
 
 def jaccard(a, b):

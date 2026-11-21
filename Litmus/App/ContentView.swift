@@ -17,7 +17,7 @@ struct ContentView: View {
 #Preview("App", traits: .landscapeLeft) {
     ContentView()
         .modelContainer(for: [ConceptProgress.self, AttemptRecord.self, ProvisionalRecord.self], inMemory: true)
-        .tint(F1Theme.accent)
+        .tint(AppTheme.accent)
         .preferredColorScheme(.dark)
 }
 
@@ -26,7 +26,7 @@ struct ContentView: View {
 }
 
 #Preview("Dashboard", traits: .landscapeLeft) {
-    F1AppRouter()
+    MainTabView()
         .modelContainer(for: [ConceptProgress.self, AttemptRecord.self, ProvisionalRecord.self], inMemory: true)
         .preferredColorScheme(.dark)
 }

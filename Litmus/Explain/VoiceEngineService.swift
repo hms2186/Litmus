@@ -40,12 +40,19 @@ final class VoiceEngineService: NSObject, AVSpeechSynthesizerDelegate {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else { return }
         stop()
-        configureAudioSession()
 
         let utterance = AVSpeechUtterance(string: trimmed)
         Self.configure(utterance, rate: rate)
         current = utterance
-        synthesizer.speak(utterance)
+        if Self.sessionReady {
+            synthesizer.speak(utterance)
+        } else {
+            // The first line waits for the audio session, so the session change cannot cut it off mid-sentence
+            Task { @MainActor in
+                await Self.prepareAudioSession()
+                if self.current === utterance { self.synthesizer.speak(utterance) }
+            }
+        }
     }
 
     func stop() {
@@ -80,39 +87,40 @@ final class VoiceEngineService: NSObject, AVSpeechSynthesizerDelegate {
 
     // MARK: - Audio session
 
-    private static var sessionConfigured = false
+    private static var sessionReady = false
 
     /// The session is set up once, off the main thread (AVAudioSession calls can block it and make the UI lag)
-    private func configureAudioSession() {
-        guard !Self.sessionConfigured else { return }
-        Self.sessionConfigured = true
-        Task.detached(priority: .userInitiated) {
-            let session = AVAudioSession.sharedInstance()
-            try? session.setCategory(.playback, mode: .spokenAudio, options: [.mixWithOthers])
-            try? session.setActive(true)
-        }
+    private static func prepareAudioSession() async {
+        guard !sessionReady else { return }
+        await Task.detached(priority: .userInitiated) {
+            try? AppAudioSession.applyBlocking(.playback)
+        }.value
+        sessionReady = true
     }
 
     // MARK: - AVSpeechSynthesizerDelegate
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
+        let spoken = ObjectIdentifier(utterance)
         Task { @MainActor in
-            guard utterance === self.current else { return }
+            guard let current = self.current, spoken == ObjectIdentifier(current) else { return }
             self.onWord?(characterRange)
         }
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        let spoken = ObjectIdentifier(utterance)
         Task { @MainActor in
-            guard utterance === self.current else { return }
+            guard let current = self.current, spoken == ObjectIdentifier(current) else { return }
             self.current = nil
             self.onFinish?()
         }
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        let spoken = ObjectIdentifier(utterance)
         Task { @MainActor in
-            guard utterance === self.current else { return }
+            guard let current = self.current, spoken == ObjectIdentifier(current) else { return }
             self.current = nil
             self.onFinish?()
         }

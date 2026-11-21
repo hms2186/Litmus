@@ -34,7 +34,7 @@ private enum Paint {
 
 struct LitmusFocusLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: F1FocusLapActivityAttributes.self) { context in
+        ActivityConfiguration(for: FocusTimerAttributes.self) { context in
             LockScreenTimer(attributes: context.attributes, state: context.state)
                 .activityBackgroundTint(Paint.ink.opacity(0.62))
                 .activitySystemActionForegroundColor(.white)
@@ -50,6 +50,7 @@ struct LitmusFocusLiveActivity: Widget {
                     Text(context.state.topicTitle)
                         .font(.system(.subheadline, weight: .semibold))
                         .lineLimit(1)
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
                 DynamicIslandExpandedRegion(.bottom) {
                     SectorBars(state: context.state, height: 6)
@@ -76,8 +77,8 @@ struct LitmusFocusLiveActivity: Widget {
 /// right, and the three sector bars along the bottom with the car on its way to the next coin. Text is SF Pro
 /// (the system font, which is SF Pro Display from 20 pt up).
 private struct LockScreenTimer: View {
-    let attributes: F1FocusLapActivityAttributes
-    let state: F1FocusLapActivityAttributes.ContentState
+    let attributes: FocusTimerAttributes
+    let state: FocusTimerAttributes.ContentState
 
     private var subjectLabel: String {
         let subject = attributes.subject.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -86,8 +87,8 @@ private struct LockScreenTimer: View {
 
     var body: some View {
         VStack(spacing: 14) {
-            HStack(alignment: .bottom, spacing: 0) {
-                VStack(alignment: .leading, spacing: 5) {
+            HStack(alignment: .center, spacing: 0) {
+                VStack(alignment: .leading, spacing: 6) {
                     HStack(spacing: 8) {
                         Circle().fill(Paint.sectorRed).frame(width: 7, height: 7)
                         Text(subjectLabel)
@@ -97,15 +98,15 @@ private struct LockScreenTimer: View {
                             .lineLimit(1)
                     }
                     Text(state.topicTitle)
-                        .font(.system(size: 22, weight: .medium))
+                        .font(.system(size: 20, weight: .semibold))
                         .foregroundStyle(.white)
                         .lineLimit(1)
                         .truncationMode(.tail)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     TimerPill(state: state)
-                        .padding(.top, 2)
+                        .padding(.top, 4)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.bottom, 2)
 
                 FocusEngineer()
                     .padding(.leading, 6)
@@ -113,7 +114,8 @@ private struct LockScreenTimer: View {
 
             SectorBars(state: state, height: 6, showsCar: true)
         }
-        .padding(.horizontal, 18)
+        .padding(.leading, 22)
+        .padding(.trailing, 18)
         .padding(.top, 14)
         .padding(.bottom, 12)
         // A red edge on the left, like the pit-wall display
@@ -125,7 +127,7 @@ private struct LockScreenTimer: View {
 
 /// The stopwatch and the time left, in a dark pill with a red edge.
 private struct TimerPill: View {
-    let state: F1FocusLapActivityAttributes.ContentState
+    let state: FocusTimerAttributes.ContentState
 
     var body: some View {
         HStack(spacing: 10) {
@@ -133,8 +135,8 @@ private struct TimerPill: View {
                 .font(.system(size: 22, weight: .regular))
                 .foregroundStyle(Paint.sectorYellow)
             // The system draws the running timer, so it is given a width of its own (mm:ss in 36 pt italic) to keep the pill snug
-            CountdownText(state: state, size: 36, italic: true)
-                .frame(width: 104, alignment: .leading)
+            CountdownText(state: state, size: 32, italic: true)
+                .frame(width: 92, alignment: .leading)
         }
         .padding(.leading, 14)
         .padding(.trailing, 18)
@@ -169,9 +171,9 @@ private struct FocusEngineer: View {
                         .offset(x: 10, y: 2)
                 }
                 .fixedSize()
-                .offset(x: 30, y: 14)
+                .offset(x: 24, y: 12)
             }
-            .padding(.trailing, 22)
+            .padding(.trailing, 18)
             .accessibilityHidden(true)
     }
 }
@@ -180,7 +182,7 @@ private struct FocusEngineer: View {
 
 /// The remaining time. While running it counts down by itself; paused, it shows the time that was left.
 private struct CountdownText: View {
-    let state: F1FocusLapActivityAttributes.ContentState
+    let state: FocusTimerAttributes.ContentState
     let size: CGFloat
     var italic = false
 
@@ -204,13 +206,28 @@ private struct CountdownText: View {
 /// Three bars, one per sector of the circuit; each fills during its third of the timer and ends on a coin. The car
 /// drives along the top edge of the bars, to the point the timer has reached.
 private struct SectorBars: View {
-    let state: F1FocusLapActivityAttributes.ContentState
+    let state: FocusTimerAttributes.ContentState
     let height: CGFloat
     /// The car is only drawn on the Lock Screen card, not in the Dynamic Island
     var showsCar = false
 
     private let colors = [Paint.sectorRed, Paint.sectorBlue, Paint.sectorYellow]
     private let carWidth: CGFloat = 92
+    private static let outer: CGFloat = 10      // between sectors
+    private static let inner: CGFloat = 8       // between label, bar and coin
+    private static let labelWidth: CGFloat = 24
+    private static let iconWidth: CGFloat = 26
+
+    /// The car's front sits on the edge of the bar that is filling: sector by sector, then along that sector's bar.
+    private func carOffset(in width: CGFloat) -> CGFloat {
+        let segment = (width - 2 * Self.outer) / 3
+        let bar = max(1, segment - Self.labelWidth - Self.iconWidth - 2 * Self.inner)
+        let p = progress * 3
+        let sector = min(2, Int(p))
+        let fraction = min(1, max(0, p - Double(sector)))
+        let barStart = CGFloat(sector) * (segment + Self.outer) + Self.labelWidth + Self.inner
+        return barStart + bar * CGFloat(fraction) - carWidth * 0.92
+    }
 
     /// How far through the timer it is as this view is drawn: from the clock while it runs, as it stood while paused.
     private var progress: Double {
@@ -222,13 +239,14 @@ private struct SectorBars: View {
     var body: some View {
         HStack(spacing: 10) {
             ForEach(0..<3, id: \.self) { index in
-                HStack(spacing: 8) {
+                HStack(spacing: Self.inner) {
                     Text("S\(index + 1)")
                         .font(.system(size: 17, weight: .heavy))
                         .foregroundStyle(colors[index])
                         .shadow(color: colors[index].opacity(0.55), radius: 5)
+                        .frame(width: Self.labelWidth, alignment: .leading)
                     bar(index)
-                    if index == 2 { FinishFlag(size: 26) } else { CoinMark(size: 26) }
+                    if index == 2 { FinishFlag(size: Self.iconWidth) } else { CoinMark(size: Self.iconWidth) }
                 }
             }
         }
@@ -238,7 +256,7 @@ private struct SectorBars: View {
                 GeometryReader { geo in
                     // Each update glides the car to its new place (a linear move of up to 2 s, the longest a widget animates)
                     CarMark(width: carWidth)
-                        .offset(x: progress * max(0, geo.size.width - carWidth), y: -19)
+                        .offset(x: carOffset(in: geo.size.width), y: -19)
                         .animation(.linear(duration: 2), value: progress)
                 }
             }
@@ -334,7 +352,7 @@ private struct TyreBadge: View {
                 .foregroundStyle(.white)
         }
         .frame(width: size, height: size)
-        .f1Glass(in: Circle())
+        .litmusGlass(in: Circle())
         .accessibilityLabel("\(compound) tyres")
     }
 }

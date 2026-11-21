@@ -30,7 +30,7 @@ fi
 BUILD="${TMPDIR:-/tmp}/litmus-release-run"
 mkdir -p "$BUILD"
 xcrun swiftc -swift-version 5 -default-isolation MainActor -module-name ReleaseRun -target arm64-apple-macos26.0 \
-  "$ROOT/Litmus/Curriculum/CompiledCurriculum.swift" "$ROOT/Litmus/Grading/RuleEngine.swift" "$ROOT/Litmus/Grading/Graders.swift" \
+  "$ROOT/Litmus/Curriculum/CompiledCurriculum.swift" "$ROOT/Litmus/Grading/RuleEngine.swift" "$ROOT/Litmus/Grading/RubricMatrix.swift" "$ROOT/Litmus/Grading/Graders.swift" \
   "$ROOT/Litmus/Grading/GradingCoordinator.swift" "$ROOT/Litmus/Curriculum/CompiledCurriculumStore.swift" \
   "$ROOT/Tools/ReleaseRun/main.swift" -o "$BUILD/release-run" 2>&1 | grep -E "error" || true
 "$BUILD/release-run" "$ROOT" "$SET" "$RESULTS" --path "$PATHS"

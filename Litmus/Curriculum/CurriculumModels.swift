@@ -88,17 +88,6 @@ struct NCERTTopic: Codable, Identifiable {
         }
     }
     
-    /// Loads all 10 standard NCERT curriculum topics from topics_curriculum.json
-    static func loadAllCurriculumTopics() -> [NCERTTopic] {
-        if let url = Bundle.main.url(forResource: "topics_curriculum", withExtension: "json") ?? Bundle(for: DeterministicStorageBridge.self).url(forResource: "topics_curriculum", withExtension: "json"),
-           let data = try? Data(contentsOf: url),
-           let topics = try? JSONDecoder().decode([NCERTTopic].self, from: data),
-           !topics.isEmpty {
-            return topics
-        }
-        return sampleChapter
-    }
-    
     // Fallback sample data (Your 10 detailed concepts)
     static let sampleChapter: [NCERTTopic] = [
         // 1. Money and Credit -> Double Coincidence of Wants

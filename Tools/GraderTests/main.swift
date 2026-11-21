@@ -23,9 +23,9 @@ func expect(_ condition: Bool, _ name: String, _ detail: @autoclosure () -> Stri
 nonisolated enum FixtureStyle: Sendable { case screening, topic, comparison, proof }
 
 nonisolated func style(of instructions: String) -> FixtureStyle {
-    if instructions.hasPrefix("You copy evidence") { return .proof }
-    if instructions.hasPrefix("You compare") { return .comparison }
-    if instructions.hasPrefix("You read") { return .topic }
+    if instructions.contains("You copy evidence") { return .proof }
+    if instructions.contains("You compare") { return .comparison }
+    if instructions.contains("You read") { return .topic }
     return .screening
 }
 
@@ -108,7 +108,7 @@ let mfix = "mfix_misc_eco3_barter_needs_money"
 
 let goodAnswer = "A shoe maker who wants wheat has to find a farmer who has wheat and also wants shoes. Both must want what the other has. With money, the shoe maker sells shoes to anyone for money and then buys wheat from anyone, so he no longer needs that exact match. Money sits in the middle of every trade."
 let goodTruth: [String: Bool] = ["chk_relevance": true, dcw: true, moe: true, link: true, mchk: false]
-let goodQuotes = [dcw: "Both must want what the other has", moe: "so he no longer needs that exact match"]
+let goodQuotes = [dcw: "Both must want what the other has", moe: "so he no longer needs that exact match", link: "so he no longer needs that exact match"]
 
 // MARK: - Unit checks
 
@@ -131,12 +131,59 @@ expect(ModelGrader.excerpt(around: "the farmer wants shoes", in: story, contextS
 
 let paired = ModelGrader.parseStates("```json {\"criterion\": \"a1\", \"answer\": \"true\", \"criterion\": \"b2\", \"answer\": false} ```", ids: ["a1", "b2"])
 expect(paired["a1"] == .some(.yes) && paired["b2"] == .some(.no), "U17 criterion/answer pairs are read", "\(paired)")
+let statusPair = ModelGrader.parseStates("```json\n[{\"criterion\": \"a1\", \"status\": true}, {\"criterion\": \"b2\", \"status\": false}]\n```", ids: ["a1", "b2", "c3"])
+expect(statusPair["a1"] == .some(.yes) && statusPair["b2"] == .some(.no) && statusPair["c3"] == .some(nil), "U17b criterion/status pairs are read, an ID not in the reply stays left out", "\(statusPair)")
 let positional = ModelGrader.parseStates("{\"criterion_1\": true, \"criterion_2\": false, \"criterion_3\": \"true\"}", ids: ["a1", "b2", "c3"])
 expect(positional["a1"] == .some(.yes) && positional["b2"] == .some(.no) && positional["c3"] == .some(.yes), "U18 positional reply is read", "\(positional)")
 let partialPositional = ModelGrader.parseStates("{\"criterion_1\": true}", ids: ["a1", "b2"])
 expect(partialPositional["a1"] == .some(nil) && partialPositional["b2"] == .some(nil), "U19 a partial positional reply is not guessed", "\(partialPositional)")
 let mixed = ModelGrader.parseStates("{\"a1\": true, \"criterion_2\": false}", ids: ["a1", "b2"])
 expect(mixed["a1"] == .some(.yes) && mixed["b2"] == .some(nil), "U20 positional is used only when no ID was found by name", "\(mixed)")
+
+// Chapter-aware instructions (measured in Curriculum/official/EXPERIMENT_instructions.md)
+let arrayed = ModelGrader.parseStates("```json\n[{\"ID\": \"a1\", \"result\": \"true\"}, {\"ID\": \"b2\", \"value\": false}, {\"ID\": \"c3\", \"status\": true}]", ids: ["a1", "b2", "c3", "d4"])
+expect(arrayed["a1"] == .some(.yes) && arrayed["b2"] == .some(.no) && arrayed["c3"] == .some(.yes) && arrayed["d4"] == .some(nil),
+       "U21 an array of {ID, result|value|status} objects is read", "\(arrayed)")
+expect(GradingPrompts.booleanTokens(6) >= 3 * (20 + 16 * 6), "U22 the token cap leaves room for the array reply")
+
+let recorded = OSAllocatedUnfairLock(initialState: [String]())
+let recorder = FixtureTransport { style, ids, _ in
+    if style == .proof { return ids.map { "\($0): NONE" }.joined(separator: "\n") }
+    return json(ids.map { ($0, "true") })
+}
+nonisolated struct RecordingTransport: ModelTransport {
+    let log: OSAllocatedUnfairLock<[String]>
+    let inner: FixtureTransport
+    var isReady: Bool { true }
+    func respond(instructions: String, prompt: String, maximumTokens: Int) async throws -> String {
+        log.withLock { $0.append(instructions) }
+        return try await inner.respond(instructions: instructions, prompt: prompt, maximumTokens: maximumTokens)
+    }
+}
+let context = GradingContext(concept: money, chapter: economics3)
+expect(context.grade == "Class 10" && context.subject == "Economics" && context.chapter == economics3.chapterName
+       && context.topic == money.label && context.passage == money.cardText, "U23 the context is read from the chapter file and concept")
+let catalogForContext = GradingCoordinator.catalog(money)
+let keyChecks = money.keyPoints.flatMap(\.checks).prefix(2).compactMap { catalogForContext[$0.id] }
+let topicChecks = [catalogForContext[money.relevanceCheck.id]!]
+let recording = RecordingTransport(log: recorded, inner: recorder)
+let withContext = ModelGrader(transport: recording, context: context)
+_ = try? await withContext.grade(Array(keyChecks), style: .screening, answers: [goodAnswer])
+_ = try? await withContext.grade(topicChecks, style: .topic, answers: [goodAnswer])
+_ = try? await withContext.prove(Array(keyChecks), transcript: goodAnswer, minimumWords: 4)
+let seen = recorded.withLock { $0 }
+expect(seen.count == 3, "U24 three calls were recorded", "\(seen.count)")
+if seen.count == 3 {
+    expect(seen[0].contains("TEXTBOOK PASSAGE") && seen[0].contains(money.cardText) && seen[0].contains(economics3.chapterName)
+           && seen[0].contains(money.label) && seen[0].contains("Class 10 Economics"), "U25 concept checks get the chapter, topic and textbook passage")
+    expect(seen[0].contains("You check a student's explanation against a fixed list"), "U26 the rules still follow the chapter text")
+    expect(!seen[1].contains("TEXTBOOK PASSAGE") && seen[1].contains(GradingPrompts.roleLine), "U27 relevance and misconception checks get the role line, not the passage")
+    expect(!seen[2].contains("TEXTBOOK PASSAGE") && seen[2].contains(GradingPrompts.roleLine), "U28 the quote request gets the role line, not the passage")
+}
+recorded.withLock { $0.removeAll() }
+_ = try? await ModelGrader(transport: recording).grade(Array(keyChecks), style: .screening, answers: [goodAnswer])
+expect(recorded.withLock { $0 }.first.map { !$0.contains("TEXTBOOK PASSAGE") && $0.contains(GradingPrompts.roleLine) } == true,
+       "U29 without a context the concept checks still get the role line")
 
 let kerala = GradableCheck(id: "k", criterion: "Mentions Kerala", kind: .keyPoint, lexical: .evidence, evidence: ["Kerala"])
 let keralaNever = GradableCheck(id: "k2", criterion: "Mentions Kerala", kind: .keyPoint, lexical: .never, evidence: ["Kerala"])
@@ -309,21 +356,35 @@ expect(o?.results.values.allSatisfy { $0.source == .lexical || $0.source == .cod
        && o?.decision.outcome != .mastered && o?.decision.outcome != .offTopic, "F10 model unavailable", show(o))
 
 // F11 an invented quote turns the yes into uncertain, which leads to a question, not a failure.
-o = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: [dcw: goodQuotes[dcw]!, moe: "money is a magic bridge for all trades"])))
+o = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: [dcw: goodQuotes[dcw]!, link: goodQuotes[link]!, moe: "money is a magic bridge for all trades"])))
 expect(o?.results[moe]?.state == .uncertain && o?.decision.outcome == .needsClarification(targetCheckId: moe)
        && o?.log.proofRejected == ["\(moe): invented"], "F11 invented quote", show(o))
 
 // F12 a quote copied from the criterion is rejected.
-o = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: [moe: goodQuotes[moe]!,
+o = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: [moe: goodQuotes[moe]!, link: goodQuotes[link]!,
     dcw: "both parties must want to sell and buy each other's goods"])))
 expect(o?.results[dcw]?.state == .uncertain && o?.log.proofRejected == ["\(dcw): copiedCriterion"], "F12 copied criterion", show(o))
 
-// F13 the quote check runs out of time: mastery is capped at Likely mastered.
+// K1 a model that says yes to everything cannot pass a list of keywords: the answer states nothing, so the guard overrules the yes
+let keywordList = "money, barter, medium, exchange, double coincidence, wants, buyers, sellers"
+let allYes: [String: Bool] = ["chk_relevance": true, dcw: true, moe: true, link: true, mchk: false]
+o = outcome(await grade(keywordList, money, economics3, standard(allYes, quotes: [dcw: keywordList, moe: keywordList])))
+expect(o?.decision.outcome != .mastered && o?.decision.outcome != .likelyMastered
+       && o?.results[dcw]?.state != .yes && o?.log.termListOverruled.contains(dcw) == true,
+       "K1 keyword list cannot pass, whatever the model says", show(o))
+expect(CodeGrader.isTermList(keywordList) && !CodeGrader.isTermList(goodAnswer), "K2 a list is a term list, an explanation is not")
+expect(CodeGrader.isTermList("reactant,ko,product,coefficient, subsripts, atom, counting, and rearrangement of atoms"), "K2b the answer a student really gave is a term list")
+expect(!CodeGrader.hasFiniteVerb("atom counting, rearrangement of atoms") && CodeGrader.hasFiniteVerb("atoms are conserved"),
+       "K3 only a real verb makes a statement")
+
+// F13 the quote check runs out of time. A yes that nothing in the student's own words backs is not accepted (it went
+// through as Likely mastered before, which let an unsupported model yes pass an incomplete answer): it becomes uncertain
+// and leads to a question. (A yes backed by the textbook phrase in the answer is kept, capped at Likely mastered.)
 o = outcome(await grade(goodAnswer, money, economics3, { style, ids, prompt in
     if style == .proof { try await Task.sleep(for: .seconds(5)) }
     return try await standard(goodTruth, quotes: goodQuotes)(style, ids, prompt)
 }, settings: GradingSettings(perBatchSeconds: 0.5, totalSeconds: 1.0)))
-expect(o?.results[dcw]?.quoteCheck == .timedOut && o?.decision.outcome == .likelyMastered, "F13 quote check timed out", show(o))
+expect(o?.results[dcw]?.state == .uncertain && o?.decision.outcome != .mastered && o?.decision.outcome != .likelyMastered, "F13 quote check timed out", show(o))
 
 // F14 a misconception without quoted proof is not held against the student.
 var truth14 = goodTruth
@@ -516,6 +577,141 @@ if CommandLine.arguments.contains("--live") {
         }
     }
     #endif
+}
+
+// MARK: - Phrasing support (acceptedPhrasings)
+
+let civics1 = try loadChapter("ncert_Civics_10_ch1.compiled.json")
+let federal = civics1.concepts.first { $0.conceptId == "civ10_ch1_t3_c2" }!
+let vertical = "chk_vertical_higher_lower"
+let verticalMisc = "mchk_misc_vertical_horizontal_mix"
+let verticalCatalog = GradingCoordinator.catalog(federal)
+expect(!verticalCatalog[vertical]!.phrasings.isEmpty, "P0 opted-in check carries its phrasings")
+expect(GradingCoordinator.catalog(money)[dcw]!.phrasings.isEmpty, "P0b other checks carry none")
+expect(GradingSettings().phrasingSupport, "P0c phrasing support is on, and it affects only opted-in checks (P0b)")
+
+func phrasingResults(misconception: CheckState = .no, corrected: Bool = false) -> ResultSet {
+    var results: ResultSet = [:]
+    for (id, check) in verticalCatalog {
+        switch check.kind {
+        case .misconception:
+            var r = CheckResult(state: id == verticalMisc ? misconception : .no, source: .model)
+            r.corrected = corrected
+            results[id] = r
+        case .keyPoint:
+            results[id] = CheckResult(state: .yes, source: .model, quoteCheck: .proven, quote: "a quote of four words")
+        default:
+            results[id] = CheckResult(state: .yes, source: .model)
+        }
+    }
+    results[vertical] = CheckResult(state: .no, source: .model)
+    return results
+}
+func lift(_ answer: String, keywordStuffing: Bool = false, misconception: CheckState = .no, corrected: Bool = false) -> (ResultSet, [String]) {
+    var results = phrasingResults(misconception: misconception, corrected: corrected)
+    let changed = RubricMatrix.supportWithPhrasing(&results, concept: federal, catalog: verticalCatalog, transcript: answer, keywordStuffing: keywordStuffing)
+    return (results, changed)
+}
+
+let splitAnswer = "Our constitution writes down what each of them may do, and that is why power is split between the top level and the lower levels."
+var (lifted, changedIds) = lift(splitAnswer)
+expect(changedIds == [vertical] && lifted[vertical]?.state == .yes && lifted[vertical]?.source == .lexical, "P1 one statement with every anchor lifts the check", "\(changedIds)")
+
+(lifted, changedIds) = lift("Top level, lower level, split, shared, divided.")
+expect(changedIds.isEmpty && lifted[vertical]?.state == .no, "P2 a list of terms lifts nothing", "\(changedIds)")
+
+(lifted, changedIds) = lift(splitAnswer, keywordStuffing: true)
+expect(changedIds.isEmpty, "P3 nothing is lifted when the answer is keyword stuffing")
+
+(lifted, changedIds) = lift("Power is not split between the top level and the lower levels.")
+expect(changedIds.isEmpty, "P4 a negated anchor lifts nothing", "\(changedIds)")
+
+(lifted, changedIds) = lift("The top level has its own government. The lower levels are the villages. Everything is shared in meetings.")
+expect(changedIds.isEmpty, "P5 anchors spread over several sentences lift nothing", "\(changedIds)")
+
+(lifted, changedIds) = lift(splitAnswer, misconception: .yes)
+expect(changedIds.isEmpty && lifted[vertical]?.state == .no, "P6 a stated misconception on the key point blocks the lift")
+
+(lifted, changedIds) = lift(splitAnswer, misconception: .yes, corrected: true)
+expect(changedIds == [vertical], "P6b a corrected misconception no longer blocks", "\(changedIds)")
+
+(lifted, changedIds) = lift("Power is divided between the legislature, the executive and the judiciary.")
+expect(changedIds.isEmpty, "P7 a horizontal split does not match the vertical check", "\(changedIds)")
+
+let federal2 = civics1.concepts.first { $0.conceptId == "civ10_ch1_t3_c2" }!
+(lifted, changedIds) = lift("Power is divided between the top level and the lower levels of the legislature, the executive and the judiciary.")
+expect(changedIds.isEmpty, "P7b an excluded word (horizontal organs) in the sentence blocks the lift", "\(changedIds)")
+let routes = try loadChapter("ncert_Civics_10_ch2.compiled.json")
+let routeConcept = routes.concepts.first { $0.conceptId == "civ10_ch2_t1_c3" }!
+let routeCatalog = GradingCoordinator.catalog(routeConcept)
+func routeLift(_ answer: String) -> [String] {
+    var r: ResultSet = [:]
+    for (id, c) in routeCatalog {
+        r[id] = c.kind == .misconception ? CheckResult(state: .no, source: .model) : CheckResult(state: .no, source: .model)
+    }
+    return RubricMatrix.supportWithPhrasing(&r, concept: routeConcept, catalog: routeCatalog, transcript: answer, keywordStuffing: false)
+}
+expect(routeLift("In coming together federations independent states agree on their own to join and form a bigger unit.") == ["chk_ch2_route_coming_pool"], "P7c a coming-together sentence lifts the pool check")
+expect(routeLift("In holding together federations small independent states join voluntarily and the centre is weaker.").isEmpty, "P7d the same words attributed to holding together do not lift")
+_ = federal2
+
+do {
+    var withModelYes = phrasingResults()
+    withModelYes[vertical] = CheckResult(state: .yes, source: .model, quoteCheck: .proven, quote: "split between the top level and the lower levels")
+    let before = withModelYes
+    let none = RubricMatrix.supportWithPhrasing(&withModelYes, concept: federal, catalog: verticalCatalog, transcript: splitAnswer, keywordStuffing: false)
+    expect(none.isEmpty && withModelYes == before, "P8 a model yes is left untouched")
+}
+
+do {
+    let overlap = CodeGrader.keywordOverlap(splitAnswer, concept: federal, vocabulary: civics1.chapterVocabulary)
+    let context = AttemptContext(clarificationRoundsLeft: 1, keywordOverlap: overlap, provisionalOnly: false)
+    let without = RuleEngine.decide(federal, results: phrasingResults(), context: context, articulationChecks: civics1.articulationChecks)
+    let (withLift, _) = lift(splitAnswer)
+    let with = RuleEngine.decide(federal, results: withLift, context: context, articulationChecks: civics1.articulationChecks)
+    expect(without.outcome != .mastered && without.outcome != .likelyMastered, "P9a without the lift the core check blocks the pass", "\(without.outcome)")
+    expect(with.outcome == .likelyMastered, "P9b with the lift the outcome is Likely mastered and never Mastered", "\(with.outcome) | \(with.trace.joined(separator: " | "))")
+}
+
+// MARK: - Relevance of green rows
+
+do {
+    let phrases = ["one-third", "Bihar"]
+    let one = LexicalGrader.evidence(phrases, in: LexicalGrader.tokenize("Haryana has the highest income and Bihar has the lowest."))
+    let both = LexicalGrader.evidence(phrases, in: LexicalGrader.tokenize("About one-third of the children in Bihar are not in school."))
+    let single = LexicalGrader.evidence(["Odisha"], in: LexicalGrader.tokenize("Odisha passed the first resolution."))
+    let negatedPair = LexicalGrader.evidence(phrases, in: LexicalGrader.tokenize("It is not one-third and Bihar is fine."))
+    expect(one == .absent && both == .found && single == .found, "G1 two evidence phrases are needed when the check names two; one is enough when it names one", "\(one) \(both) \(single)")
+    expect(negatedPair != .found, "G2 a negated phrase still does not count")
+    // A model yes with no quote from the student is not credited and is not shown as right
+    var o2 = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: [dcw: goodQuotes[dcw]!, moe: goodQuotes[moe]!])))
+    let linkCriterion = money.causeLinks.first { $0.id == link }?.criterion ?? "?"
+    expect(o2?.results[link]?.state == .uncertain && o2?.decision.report.right.contains(linkCriterion) == false, "G3 a yes without a quote is not shown as right", show(o2))
+    o2 = outcome(await grade(goodAnswer, money, economics3, standard(goodTruth, quotes: goodQuotes)))
+    expect(o2?.results[link]?.state == .yes && o2?.decision.report.right.contains(linkCriterion) == true, "G4 a yes with a confirmed quote is shown as right", show(o2))
+}
+
+// MARK: - Quote pieces (retry for a changed or merged quote)
+
+do {
+    let spoken = "so power is shared between the higher level and the lower levels, and below the states there are panchayats and municipalities also, which means the principle goes further down than the state governments"
+    let sentences = "Roots grow from their tips. Cells there keep dividing by mitosis. So plants grow longer at the tips."
+    let spokenPieces = ModelGrader.segments(of: spoken)
+    expect(spokenPieces.count >= 2, "Q1 a long spoken run-on is cut into pieces", "\(spokenPieces.count)")
+    expect(spokenPieces.allSatisfy { spoken.contains(spoken[$0]) } && ModelGrader.segments(of: sentences).count == 3, "Q2 pieces are exact substrings; short sentences stay whole")
+    let check = GradableCheck(id: "c1", criterion: "States that roots grow from their tips.", kind: .keyPoint, lexical: .never, evidence: [])
+    func reply(_ text: String) -> ModelGrader {
+        ModelGrader(transport: FixtureTransport(handler: { _, _, _ in text }))
+    }
+    let picked = try? await reply("c1: 1-2").pickSegments([check], transcript: sentences, minimumWords: 4)
+    expect(picked?["c1"] == .genuine("Roots grow from their tips. Cells there keep dividing by mitosis."), "Q3 a piece number gives the student's own words", "\(String(describing: picked))")
+    let none = try? await reply("c1: NONE").pickSegments([check], transcript: sentences, minimumWords: 4)
+    let outOfRange = try? await reply("c1: 9").pickSegments([check], transcript: sentences, minimumWords: 4)
+    expect(none?["c1"] == QuoteVerdict.none && outOfRange?["c1"] == QuoteVerdict.none, "Q4 NONE or a number that does not exist gives no quote")
+    let tooShort = try? await reply("c1: 1").pickSegments([check], transcript: sentences, minimumWords: 6)
+    expect(tooShort?["c1"] == QuoteVerdict.none, "Q5 a piece shorter than the minimum words is not accepted")
+    let wide = try? await reply("c1: 1-3").pickSegments([check], transcript: sentences, minimumWords: 4)
+    expect(wide?["c1"] == .genuine("Roots grow from their tips. Cells there keep dividing by mitosis."), "Q6 a range is capped at two neighbouring pieces")
 }
 
 // MARK: - Result

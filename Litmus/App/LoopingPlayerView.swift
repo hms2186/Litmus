@@ -44,9 +44,7 @@ public struct LoopingPlayerView: View {
         }
         // Off screen (another tab, a pushed screen): stop decoding, which saves battery and heat
         .onDisappear { player?.pause() }
-        .onChange(of: videoName) { _ in
-            loadPlayer()
-        }
+        .onChange(of: videoName) { loadPlayer() }
     }
 
     /// The clip's tracks are read off the main thread first, so opening a screen with video never waits on the decoder;
@@ -70,7 +68,7 @@ public struct LoopingPlayerView: View {
             }
             queuePlayer.isMuted = true
             queuePlayer.play()
-            withAnimation(.easeOut(duration: 0.25)) { player = queuePlayer }
+            withAnimation(.smooth(duration: 0.25)) { player = queuePlayer }
         }
     }
 }

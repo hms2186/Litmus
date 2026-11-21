@@ -1,13 +1,13 @@
 //
 //  Measures the drift-check baseline with the real on-device model, using the app's own
-//  DriftCheck.measure, and writes it into Litmus/drift_set.json. Run Tools/run_drift_baseline.sh
+//  DriftCheck.measure, and writes it into Litmus/Resources/Evaluation/drift_set.json. Run Tools/run_drift_baseline.sh
 //  after changing the drift set, the prompts or the compiled chapters.
 //
 
 import Foundation
 
 let root = URL(fileURLWithPath: CommandLine.arguments[1])
-let setURL = root.appending(path: "Litmus/drift_set.json")
+let setURL = root.appending(path: "Litmus/Resources/Evaluation/drift_set.json")
 let set = try JSONDecoder().decode(DriftSet.self, from: Data(contentsOf: setURL))
 let compiled = try FileManager.default.contentsOfDirectory(at: root.appending(path: "Litmus/Compiled"), includingPropertiesForKeys: nil)
     .filter { $0.lastPathComponent.hasSuffix(".compiled.json") }

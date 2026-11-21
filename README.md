@@ -55,7 +55,7 @@ For how the pieces fit together, read the [developer guide](docs/DEVELOPER_GUIDE
 - **Flashcards with diagrams.** Cards come from the topic's own curriculum text and carry the NCERT diagrams, with read-aloud and an adjustable reading speed.
 - **Live Activity.** With **Widget Timer** on in Settings, the timer keeps running on the Lock Screen when the app is in the background.
 - **Accessibility.** Text Size, Bold Text, Reduce Motion and Haptic Feedback, under **Settings > Accessibility**, apply across the app.
-- **Liquid Glass.** The interface uses Liquid Glass on iPadOS 26 and later and system materials on iPadOS 18 to 25 (see `Shared/F1Compat.swift`), including the sidebar-adaptable tab bar.
+- **Liquid Glass.** The interface uses Liquid Glass on iPadOS 26 and later and system materials on iPadOS 18 to 25 (see `Shared/Compat.swift`), including the sidebar-adaptable tab bar.
 
 ## Run the tests
 

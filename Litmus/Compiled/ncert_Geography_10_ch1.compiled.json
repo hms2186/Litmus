@@ -3,7 +3,7 @@
   "schemaVersion": 4,
   "schemaRevision": 1,
   "sourceFile": "ncert_Geography_10_ch1.json",
-  "sourceSha256": "d192d054d363ec117cf2b3e6cd747f4c4361ad27f7243558397b40ec0bc27845",
+  "sourceSha256": "1640c7c1e39ebfdf1a963e80f6eccfddd68d326612530693428c6b68ed046ed2",
   "reviewStatus": "pending",
   "framework": "NCERT",
   "gradeLevel": "Class 10",
@@ -2006,7 +2006,7 @@
       "sourcePages": [
         7
       ],
-      "conceptHash": "f526b8292f7b0164695a8544919c313e398be7d37d81488810800b1814fa6409",
+      "conceptHash": "77e6bb1fdebc65ee42744f717926b3246300bb3c98dbc646ff94b136c320db8d",
       "cardText": "Alluvial soil is the most widely spread and important soil. The entire northern plains are made of it, deposited by the Indus, the Ganga and the Brahmaputra; it also extends into Rajasthan and Gujarat and is found in the deltas of the Mahanadi, Godavari, Krishna and Kaveri. It consists of sand, silt and clay, and is coarse near the break of slope, in piedmont plains like Duars, Chos and Terai. By age, it is old alluvial (Bangar), with a higher concentration of kanker nodules, and new alluvial (Khadar), with more fine particles and more fertile. Alluvial soils are very fertile, with potash, phosphoric acid and lime, ideal for sugarcane, paddy and wheat, so these regions are intensively cultivated and densely populated.",
       "hint": "Which rivers deposited it? How do Bangar and Khadar differ?",
       "probe": "Where is alluvial soil found, and how are Bangar and Khadar different? Why are alluvial regions densely populated?",
@@ -2033,8 +2033,15 @@
           "checks": [
             {
               "id": "chk_geo1_alluvial_where",
-              "criterion": "States that alluvial soil covers the northern plains, deposited by the Indus, Ganga and Brahmaputra, and is found in eastern coastal deltas (Mahanadi, Godavari, Krishna, Kaveri).",
+              "criterion": "States that alluvial soil covers the northern plains and was deposited by the Indus, Ganga and Brahmaputra rivers.",
               "isRequired": true,
+              "lexical": "never",
+              "followUp": "Where is alluvial soil found, and which rivers deposited it?"
+            },
+            {
+              "id": "chk_geo1_alluvial_deltas",
+              "criterion": "Adds that alluvial soil is also found in the eastern coastal deltas (Mahanadi, Godavari, Krishna, Kaveri).",
+              "isRequired": false,
               "lexical": "never",
               "followUp": "Where is alluvial soil found, and which rivers deposited it?"
             }
@@ -2169,6 +2176,7 @@
         "a": [
           [
             "chk_geo1_alluvial_where",
+            "chk_geo1_alluvial_deltas",
             "chk_geo1_bangar_khadar",
             "chk_geo1_alluvial_fertile",
             "chk_geo1_alluvial_dense"
@@ -2793,7 +2801,7 @@
       "sourcePages": [
         10
       ],
-      "conceptHash": "a858eb2240f2f564be224ab37fb3693eac3d4042a9713993df333fb68b0150e3",
+      "conceptHash": "125c52ab5d37c66de5bc4bf17712753548558f0135345c74601d1d47eb7504e4",
       "cardText": "The denudation of the soil cover and its subsequent washing down is called soil erosion. Soil formation and erosion go on simultaneously and are usually balanced, but human activities like deforestation, over-grazing, construction and mining disturb the balance, while wind, glaciers and water also cause erosion. Running water cuts deep channels called gullies; the land becomes unfit for cultivation and is called bad land, or ravines in the Chambal basin. When water flows as a sheet down a slope, the top soil is washed away: sheet erosion. Wind blows loose soil off land: wind erosion. Ploughing up and down the slope forms channels for quick flow of water, causing erosion.",
       "hint": "Compare gully erosion, sheet erosion and wind erosion. How can ploughing cause erosion?",
       "probe": "What is soil erosion? Explain gully erosion and sheet erosion, and how human activities cause erosion.",
@@ -2855,8 +2863,15 @@
           "checks": [
             {
               "id": "chk_geo1_gully_erosion",
-              "criterion": "Explains gully erosion: running water cuts deep channels (gullies), making land unfit for cultivation (bad land), called ravines in the Chambal basin.",
+              "criterion": "Explains gully erosion: running water cuts deep channels (gullies), making land unfit for cultivation (bad land).",
               "isRequired": true,
+              "lexical": "never",
+              "followUp": "Describe the different ways running water and wind can carry soil away."
+            },
+            {
+              "id": "chk_geo1_gully_ravines",
+              "criterion": "Adds that gully-eroded bad land is called ravines in the Chambal basin.",
+              "isRequired": false,
               "lexical": "never",
               "followUp": "Describe the different ways running water and wind can carry soil away."
             },
@@ -2947,6 +2962,7 @@
             "chk_geo1_erosion_def",
             "chk_geo1_erosion_balance",
             "chk_geo1_gully_erosion",
+            "chk_geo1_gully_ravines",
             "chk_geo1_sheet_erosion",
             "chk_geo1_wind_erosion"
           ]

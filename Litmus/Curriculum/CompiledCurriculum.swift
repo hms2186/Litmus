@@ -124,6 +124,18 @@ nonisolated struct CompiledCheck: Codable, Sendable, Equatable {
     /// Already resolved by the compiler: the check's own follow-up, else its keyPoint's, else the
     /// concept hint. Never contains the answer.
     let followUp: String
+    /// Optional ways of saying the check's idea (see `PhrasingRule`). Absent in files compiled before this existed.
+    var acceptedPhrasings: [PhrasingRule]? = nil
+}
+
+/// One accepted wording of a check's idea: every anchor group must have one of its phrases in the SAME sentence of the answer.
+/// `note` is the reviewer's reason the anchors cannot also describe the wrong idea; the compiler requires it.
+nonisolated struct PhrasingRule: Codable, Sendable, Equatable {
+    let all: [[String]]
+    var note: String? = nil
+    /// Phrases that cancel the rule when they appear in the same sentence (for example the opposite route's name), so a sentence
+    /// that attributes the anchor words to the wrong idea cannot lift the check.
+    var exclude: [String]? = nil
 }
 
 nonisolated struct CompiledCauseLink: Codable, Sendable, Equatable {

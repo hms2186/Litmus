@@ -59,7 +59,6 @@ nonisolated enum DriftCheck {
     static func measure(_ set: DriftSet, store: CompiledCurriculumStore, transport: any ModelTransport,
                         perBatchSeconds: Double = 8, isBusy: @escaping @Sendable () async -> Bool = { false }) async -> Measurement? {
         guard transport.isReady else { return nil }
-        let grader = ModelGrader(transport: transport)
         var correct = 0
         var total = 0
         var answered = 0
@@ -70,7 +69,10 @@ nonisolated enum DriftCheck {
                 try? await Task.sleep(for: .seconds(5))
             }
             if Task.isCancelled { return nil }
-            guard let concept = store.entriesById[answer.conceptId]?.concept else { continue }
+            guard let entry = store.entriesById[answer.conceptId] else { continue }
+            let concept = entry.concept
+            // The drift check grades with the same prompts as a student's answer, chapter passage included
+            let grader = ModelGrader(transport: transport, context: GradingContext(concept: concept, chapter: entry.chapter))
             let catalog = GradingCoordinator.catalog(concept)
             let batches = concept.batches.topic.map { ($0, BatchStyle.topic) }
                 + (concept.batches.a + concept.batches.b).map { ($0, BatchStyle.screening) }

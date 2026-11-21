@@ -28,7 +28,9 @@ let compiledURLs = try FileManager.default.contentsOfDirectory(at: compiledDir, 
 // MARK: - 1. Store
 
 let store = CompiledCurriculumStore(urls: compiledURLs)
-expect(store.refused.isEmpty && store.entriesById.count == 718 && store.entriesByLabel.count == 718,
+// Counted from the files: the number of concepts grows as chapters are added (it was a fixed 718 and went stale)
+let expectedConcepts = try compiledURLs.reduce(0) { $0 + (try JSONDecoder().decode(CompiledChapter.self, from: Data(contentsOf: $1)).concepts.count) }
+expect(store.refused.isEmpty && store.entriesById.count == expectedConcepts && store.entriesByLabel.count == expectedConcepts,
        "S1 loads all compiled concepts", "\(store.entriesById.count) by id, \(store.entriesByLabel.count) by label, refused \(store.refused)")
 let moneyEntry = store.entry(forLabel: "Money as a Medium of Exchange")
 expect(moneyEntry?.concept.conceptId == "eco10_ch3_t1_c1" && moneyEntry?.chapter.subject == "Economics", "S2 lookup by label")
@@ -103,9 +105,9 @@ expect(machine.state == .ready, "M13 a late result after leaving the concept is 
 
 nonisolated enum FixtureStyle: Sendable { case screening, topic, comparison, proof }
 nonisolated func fixtureStyle(_ instructions: String) -> FixtureStyle {
-    if instructions.hasPrefix("You copy evidence") { return .proof }
-    if instructions.hasPrefix("You compare") { return .comparison }
-    if instructions.hasPrefix("You read") { return .topic }
+    if instructions.contains("You copy evidence") { return .proof }
+    if instructions.contains("You compare") { return .comparison }
+    if instructions.contains("You read") { return .topic }
     return .screening
 }
 nonisolated func fixtureIds(_ prompt: String) -> [String] {
@@ -238,7 +240,65 @@ expect(j2.0.state == .blocked && j2.1 == nil && attemptCount() == attemptsBefore
 
 try? FileManager.default.removeItem(at: tempDir)
 
+// MARK: - 6. The review lines (DebriefComposer)
+
+do {
+    let checkText = money.keyPoints[0].checks[0].criterion
+    var report = EvaluationReport()
+    report.right = [checkText]
+    let withRight = DebriefComposer.rows(report: report, outcome: .partial(almostThere: false), concept: money, answers: [goodAnswer])
+    expect(withRight.right.hasPrefix("You ") && withRight.right.contains("You said: “"), "D1 a right idea shows the student's own sentence", withRight.right)
+    if let start = withRight.right.range(of: "You said: “"), let end = withRight.right.range(of: "”", range: start.upperBound..<withRight.right.endIndex) {
+        let quoted = String(withRight.right[start.upperBound..<end.lowerBound])
+        expect(goodAnswer.contains(quoted.replacingOccurrences(of: "…", with: "")), "D2 the quote is words the student really said", quoted)
+    }
+
+    let none = DebriefComposer.rows(report: EvaluationReport(), outcome: .notYet, concept: money, answers: ["I think money is important for shops."])
+    let otherNone = DebriefComposer.rows(report: EvaluationReport(), outcome: .notYet, concept: money, answers: ["Barter is a very old thing that people did."])
+    expect(none.right.hasPrefix("None of the key ideas") && none.right.contains("money is important for shops"), "D3 nothing right: says so and shows where the student began", none.right)
+    expect(none.right != otherNone.right, "D4 two different answers give two different lines")
+    expect(!none.right.contains("gave it a go") && !none.missing.contains("Nothing important"), "D5 no generic placeholder lines", "\(none)")
+
+    var wrong = EvaluationReport()
+    let misconception = money.misconceptions[0]
+    wrong.corrections = [misconception.fix]
+    let said = "Money is only useful because it is made of gold. " + misconception.wrong
+    let corrected = DebriefComposer.rows(report: wrong, outcome: .needsCorrection, concept: money, answers: [said])
+    expect(corrected.missing.contains("Remember: \(misconception.fix)"), "D6 a stated wrong idea shows the stored correction", corrected.missing)
+    expect(corrected.missing.hasPrefix("You said “"), "D7 and the student's own sentence first", corrected.missing)
+
+    let passing = DebriefComposer.rows(report: EvaluationReport(), outcome: .mastered, concept: money, answers: [goodAnswer])
+    expect(passing.missing.hasPrefix("Nothing missing") && passing.vague.hasPrefix("Nothing vague"), "D8 a passed attempt may say nothing is missing", "\(passing)")
+
+    let open = DebriefComposer.rows(report: EvaluationReport(), outcome: .partial(almostThere: false), concept: money, answers: [goodAnswer])
+    expect(!open.missing.hasPrefix("Nothing missing") && open.vague == "Think about this: \(money.hint)", "D9 not finished and nothing vague: the compiled hint, never 'nothing missing'", "\(open)")
+
+    var asked = EvaluationReport()
+    asked.followUp = "What does money change about the shoe maker's problem?"
+    let clarify = DebriefComposer.rows(report: asked, outcome: .needsClarification(targetCheckId: "x"), concept: money, answers: [goodAnswer])
+    expect(clarify.vague == "Think about this: What does money change about the shoe maker's problem?" && !clarify.missing.hasPrefix("Nothing missing"),
+           "D10 a follow-up question is shown and the missing line does not claim nothing is missing", "\(clarify)")
+
+    expect(DebriefComposer.quote(matching: [checkText], in: ["The weather is nice today."]) == nil, "D11 no quote when the sentence is not about the idea")
+    let long = String(repeating: "money exchange shoe maker wheat farmer ", count: 20) + "."
+    expect((DebriefComposer.quote(matching: [checkText], in: [long])?.count ?? 0) <= 140, "D12 a long sentence is shortened")
+}
+
 // MARK: - Result
+
+// V1 speech transcripts: the recogniser's mishearings of the topic's own words are put back, nothing else is touched
+if let proto = store.entriesById["hist10_ch4_t1_c2"] {
+    let heard = "Photo-industrialization was production for faraway markets. In the 17th and 18th centuries merchants gave money to pheasants and artisans."
+    let cleaned = TranscriptCleaner.clean(heard, concept: proto.concept, vocabulary: proto.chapter.chapterVocabulary)
+    expect(cleaned.hasPrefix("Proto-industrialisation was") && cleaned.contains("peasants and artisans")
+           && cleaned.contains("seventeenth and eighteenth centuries"), "V1 speech mishearings corrected", cleaned)
+    let plain = "The merchants turned to the countryside because guilds were powerful."
+    expect(TranscriptCleaner.clean(plain, concept: proto.concept, vocabulary: proto.chapter.chapterVocabulary) == plain,
+           "V2 correct words are left alone")
+    let unrelated = "Banana smoothies contain potassium."
+    expect(TranscriptCleaner.clean(unrelated, concept: proto.concept, vocabulary: proto.chapter.chapterVocabulary) == unrelated,
+           "V3 unrelated words are left alone")
+}
 
 print("App-flow tests: \(checksRun) checks")
 if failures.isEmpty {

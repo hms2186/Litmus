@@ -3,26 +3,19 @@
 //  Feynman Tutor Engine - Layer 5 (Presentation)
 //
 //  Topics from compiled v4.1 chapters are graded by the architecture v4.0 engine: Phase 2 sorting,
-//  the attempt state machine, GradingCoordinator, then SwiftData progress. Every other topic keeps
-//  the legacy ConceptEvaluator path and its three feedback strings.
+//  the attempt state machine, GradingCoordinator, then SwiftData progress. All 961 listed concepts
+//  are compiled, so this is the only grading path.
 //
 
 import Foundation
 import Combine
 import SwiftData
+import FoundationModels
 
 @MainActor
 final class FeedbackViewModel: ObservableObject {
 
-    // MARK: Legacy path
-
-    @Published private(set) var result: SemanticEvaluationResult?
     @Published private(set) var isEvaluating = false
-
-    /// Bound by the legacy feedback rows; empty strings hide their row.
-    var report: FeedbackReport {
-        result?.feedback ?? FeedbackReport(missing: "", vague: "", right: "")
-    }
 
     // MARK: Engine path
 
@@ -49,13 +42,32 @@ final class FeedbackViewModel: ObservableObject {
         self.transport = transport ?? makeDefaultModelTransport()
     }
 
+    /// The student's own answers of the current attempt (Answer 1, then any follow-ups), for quoting their words on the review.
+    var attemptAnswers: [String] { lastGrading?.answers ?? [] }
+    /// The compiled concept the attempt is graded against.
+    var activeConcept: CompiledConcept? { activeEntry?.concept }
+
     func isEngineTopic(_ topic: NCERTTopic) -> Bool {
         CompiledCurriculumStore.shared.entry(forLabel: topic.title) != nil
     }
 
     /// Loads what the current concept needs before the student answers: a review card or revisit
     /// flag from earlier work, and the recogniser's vocabulary hints.
+    /// Loads the on-device model before the first answer. On the iPad the first grading call of a session was timing out
+    /// ("a[0]: timeout, topic[0]: timeout" in the log, 19.9 s) while the model loaded; the student is still choosing or
+    /// speaking at this point, so the load costs nothing.
+    private static var warmed = false
+    private func warmModel() {
+        guard !Self.warmed, transport.isReady else { return }
+        Self.warmed = true
+        if #available(iOS 26.0, *) {
+            let model = SystemLanguageModel(useCase: .general, guardrails: .permissiveContentTransformations)
+            LanguageModelSession(model: model, instructions: GradingPrompts.roleLine).prewarm()
+        }
+    }
+
     func prepare(topic: NCERTTopic) {
+        warmModel()
         reviewCard = nil
         revisitPending = false
         guard let entry = CompiledCurriculumStore.shared.entry(forLabel: topic.title), let modelContext else { return }
@@ -96,22 +108,15 @@ final class FeedbackViewModel: ObservableObject {
             evaluateWithEngine(text, entry: entry, confidence: confidence)
             return
         }
+        // Every topic the app lists has a compiled entry; one without it is not graded
         engineTopicActive = false
         evaluationTask?.cancel()
-        result = nil
-        isEvaluating = true
-        evaluationTask = Task {
-            let evaluation = await ConceptEvaluator.evaluate(text: text, topic: topic.title, topicObject: topic)
-            guard !Task.isCancelled else { return }
-            result = evaluation
-            isEvaluating = false
-        }
+        isEvaluating = false
     }
 
     func reset() {
         evaluationTask?.cancel()
         evaluationTask = nil
-        result = nil
         isEvaluating = false
         GradingActivity.isGrading = false
         machine.handle(.reset)
@@ -128,6 +133,17 @@ final class FeedbackViewModel: ObservableObject {
             activeEntry = entry
         }
         engineTopicActive = true
+        // A spoken answer comes from a recogniser that mishears the topic's own words; typed text is left exactly as typed
+        let heard = text
+        let text = confidence == nil ? text
+            : TranscriptCleaner.clean(text, concept: entry.concept, vocabulary: entry.chapter.chapterVocabulary)
+        #if DEBUG
+        print("🗣️ [Answer] \(confidence == nil ? "typed" : "spoken, confidence \(String(format: "%.2f", confidence ?? 0))") | \(heard.split(whereSeparator: { $0.isWhitespace }).count) words")
+        print("🗣️ [Answer] model ready: \(transport.isReady)")
+        if #available(iOS 26.0, *) { print("🗣️ [Answer] model availability: \(SystemLanguageModel.default.availability)") }
+        print("🗣️ [Answer] heard:   \(heard)")
+        if text != heard { print("🗣️ [Answer] cleaned: \(text)") }
+        #endif
         let sorting = AnswerSorter.sort(text, confidence: confidence, concept: entry.concept, vocabulary: entry.chapter.chapterVocabulary)
         machine.handle(.submit(sorting))
         guard case .grading(let followUp) = machine.state else { return }
@@ -146,9 +162,9 @@ final class FeedbackViewModel: ObservableObject {
         evaluationTask = Task {
             let graded: GradingResult
             if let previous {
-                graded = await coordinator.gradeFollowUp(answer: text, previous: previous, concept: entry.concept, chapter: entry.chapter)
+                graded = await coordinator.gradeFollowUp(answer: text, previous: previous, concept: entry.concept, chapter: entry.chapter, spoken: confidence != nil)
             } else {
-                graded = await coordinator.grade(answer: text, concept: entry.concept, chapter: entry.chapter)
+                graded = await coordinator.grade(answer: text, concept: entry.concept, chapter: entry.chapter, spoken: confidence != nil)
             }
             guard !Task.isCancelled else { return }
             isEvaluating = false

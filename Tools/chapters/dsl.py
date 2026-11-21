@@ -14,7 +14,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 PDF_TEXT = os.path.join(ROOT, "Curriculum", "pdf_text")
-OUT_DIR = os.path.join(ROOT, "Litmus")
+OUT_DIR = os.path.join(ROOT, "Litmus", "Resources", "Chapters")
 
 
 def norm(s):

@@ -26,15 +26,15 @@ How Litmus is built, how to change it, and why it is built that way. Read the [R
 
 | Folder | What lives there | Start reading at |
 |---|---|---|
-| `App/` | Launch, the tab bar and navigation, the splash screen | `LitmusApp.swift`, then `F1AppRouter.swift` |
-| `Home/` | Greeting, Weekly Streaks, subject and chapter tiles | `F1HomeDashboardView.swift` |
-| `Timer/` | Timer setup, the circuit cockpit, start lights, Live Activity, notifications, widget sync | `F1TimerSetupView.swift`, `F1LiveCockpitHUDView.swift` |
-| `Explain/` | Speak, Sketch and Type, the race engineer's voice, hints, the review card | `F1TeamRadioStudioView.swift` |
-| `Flashcards/` | Decks, the library and covers, revise mode, card narration, concept diagrams | `F1FlashcardLibrary.swift`, `F1DeckViews.swift` |
-| `Settings/` | Settings, accessibility, app blocking, profiles, onboarding | `F1SettingsViews.swift` |
+| `App/` | Launch, the tab bar and navigation, the splash screen | `LitmusApp.swift`, then `MainTabView.swift` (the tab bar) |
+| `Home/` | Greeting, Weekly Streaks, subject and chapter tiles | `HomeView.swift` |
+| `Timer/` | Timer setup, the running timer on its circuit (`FocusTimerView`), start lights, Live Activity, notifications, widget sync | `TimerSetupView.swift`, `FocusTimerView.swift` |
+| `Explain/` | Speak, Sketch and Type, the race engineer's voice, hints, the review card | `ExplainView.swift` |
+| `Flashcards/` | Decks, the library and covers, revise mode, card narration, concept diagrams | `FlashcardLibrary.swift`, `FlashcardsView.swift` |
+| `Settings/` | Settings, accessibility, app blocking, profiles, onboarding | `SettingsView.swift` |
 | `Grading/` | The rule engine, graders, the coordinator, guardrails and the drift check | `RuleEngine.swift`, `GradingCoordinator.swift` |
-| `Curriculum/` | Compiled curriculum, the catalog, progress and streak storage | `CurriculumLoader.swift`, `F1SessionProgressManager.swift` |
-| `DesignSystem/` | Fonts, haptics, accessibility environment, layout helpers and shared models | `F1Accessibility.swift`, `F1Layout.swift` |
+| `Curriculum/` | Compiled curriculum, the catalog, progress and streak storage | `CurriculumLoader.swift`, `StudyProgressManager.swift` |
+| `DesignSystem/` | Fonts, haptics, accessibility environment, layout helpers and shared models | `Accessibility.swift`, `WindowLayout.swift` |
 
 Resources (`Assets.xcassets`, the `ncert_*.json` chapter sources, `Compiled/`, videos and sounds) stay at the top of `Litmus/` because the app loads them from the bundle by name. `Info.plist` also stays there: the project excludes it from the target by its path.
 
@@ -43,7 +43,7 @@ Rules for adding code:
 - A screen goes in the folder of its tab. Code used by two or more tabs goes in `DesignSystem/` (UI) or `Curriculum/` (data).
 - The files the test scripts in `Tools/` compile (`RuleEngine`, `Graders`, `GradingCoordinator`, `AttemptMachine`, `CompiledCurriculum`, `CompiledCurriculumStore`, `ProgressStore`, `DriftCheck`) must not import SwiftUI. If you move one, update the paths in `Tools/run_*.sh` and `FROZEN_FOLDER` in `Tools/release/release_gate.py`.
 - Code shared with the widget extension goes in `Shared/`.
-- Colours and button styles come from `F1Theme` and the helpers in `Shared/F1Compat.swift`; do not set them per screen.
+- Colours and button styles come from `AppTheme` and the helpers in `Shared/Compat.swift`; do not set them per screen.
 
 ## Requirements and targets
 
@@ -68,26 +68,26 @@ Folders are Xcode *synchronized groups*: add a file to `Litmus/`, `LitmusWidgets
 
 `LitmusApp` creates the SwiftData container and registers the background task, then shows `LaunchContainer`.
 
-`LaunchContainer` shows the launch animation first (`LitmusSplashView`). The dashboard (`F1AppRouter`) is **not built until the animation has fully appeared**. Building it takes the main thread for a moment on a device, and the animation's timers would otherwise run out during the stall and skip the animation. The animation waits for the dashboard to report it is ready, then zooms and fades into it.
+`LaunchContainer` shows the launch animation first (`LitmusSplashView`). The dashboard (`MainTabView`) is **not built until the animation has fully appeared**. Building it takes the main thread for a moment on a device, and the animation's timers would otherwise run out during the stall and skip the animation. The animation waits for the dashboard to report it is ready, then zooms and fades into it.
 
-The container also wraps everything in `F1AccessibilityHost` (see [Accessibility](#accessibility)) and sets one scroll edge style for every scroll view. Launch with `-skipSplash` to go straight to the dashboard.
+The container also wraps everything in `AccessibilityHost` (see [Accessibility](#accessibility)) and sets one scroll edge style for every scroll view. Launch with `-skipSplash` to go straight to the dashboard.
 
 ## Navigation
 
-`F1AppRouter` owns the app's state and a `TabView` with the `.sidebarAdaptable` style, so the tab bar can open into a sidebar. The tabs are in `AppNavigationTab`:
+`MainTabView` owns the app's state and a `TabView` with the `.sidebarAdaptable` style, so the tab bar can open into a sidebar. The tabs are in `AppNavigationTab`:
 
 | Tab | Screen | Notes |
 |---|---|---|
-| Home | `F1HomeDashboardView` | Greeting, the session card, weekly streaks, the Revise banner and study analysis |
-| Timer | `F1TimerSetupView` | Pick a circuit, a length and a tyre, then **Begin** |
-| Explain | `F1TeamRadioStudioView` | The race engineer. Speak, Sketch or Type, then the debrief |
-| Flashcards | `F1StudyDeckView` | Chapters as tiles; a tile opens its deck with a zoom transition |
+| Home | `HomeView` | Greeting, the session card, weekly streaks, the Revise banner and study analysis |
+| Timer | `TimerSetupView` | Pick a circuit, a length and a tyre, then **Begin** |
+| Explain | `ExplainView` | The race engineer. Speak, Sketch or Type, then the debrief |
+| Flashcards | `FlashcardsView` | Chapters as tiles; a tile opens its deck with a zoom transition |
 
 Settings opens from the gear in the top right of Home and Timer, as a screen pushed on that tab's `NavigationStack`, so it has the system back button. The Revise page presents Settings in a stack of its own.
 
-Full-screen moments are layered over the tabs by the router: the **start lights** (`F1StartSequenceView`), the **cockpit** (`F1LiveCockpitHUDView`), the **Congratulations** card and the onboarding.
+Full-screen moments are layered over the tabs by the router: the **start lights** (`StartLightsView`), the **cockpit** (`FocusTimerView`), the **Congratulations** card and the onboarding.
 
-Back buttons: pushed screens use the system's chevron-only back button (`f1MinimalBackButton()` in `Shared/F1Compat.swift`; SwiftUI has no modifier for it, so it sets `backButtonDisplayMode` through UIKit). Screens that cover the navigation bar, such as the cockpit and the Explain flow, draw one white chevron button. Only the tab bar is red; other controls use the blue accent, and the Settings gear is white.
+Back buttons: pushed screens use the system's chevron-only back button (`minimalBackButton()` in `Shared/Compat.swift`; SwiftUI has no modifier for it, so it sets `backButtonDisplayMode` through UIKit). Screens that cover the navigation bar, such as the cockpit and the Explain flow, draw one white chevron button. Only the tab bar is red. Button text and back chevrons are white (`glassButton()` sets the tint to white); the blue accent (`AppTheme.accent`) is kept for prominent button fills, sliders and selection marks.
 
 ## The focus timer
 
@@ -98,21 +98,21 @@ Back buttons: pushed screens use the system's chevron-only back button (`f1Minim
 
 ### The circuit
 
-The track in the cockpit is the circuit from the design, stored as 92 points along its centre line, scaled to a unit box (`waypoints` in `F1LiveCockpitHUDView`). A spline through them is sampled into 600 points and parameterised by arc length. The lap has three sectors, drawn red, blue and yellow, which end at 33.9% and 72.9% of the track's length.
+The track in the cockpit is the circuit from the design, stored as 92 points along its centre line, scaled to a unit box (`waypoints` in `FocusTimerView`). A spline through them is sampled into 600 points and parameterised by arc length. The lap has three sectors, drawn red, blue and yellow, which end at 33.9% and 72.9% of the track's length.
 
 The timer is split into three equal parts. A piecewise mapping (`trackProgress`) makes the car reach the end of sector 1 and sector 2 exactly at one third and two thirds of the time, and the finish line at 100%.
 
 ### Coins
 
-There are three checkpoints and one coin for each: one third, two thirds, and the end of the timer. `F1AppRouter.awardCheckpointCoinsIfDue()` awards them, once each per lap (`F1SessionProgressManager.awardLapCoin`). The cockpit pops a coin from below the screen, shows "+1" in the middle and flies it to the badge; the badge counts up when the coin lands.
+There are three checkpoints and one coin for each: one third, two thirds, and the end of the timer. `MainTabView.awardCheckpointCoinsIfDue()` awards them, once each per lap (`StudyProgressManager.awardLapCoin`). The cockpit pops a coin from below the screen, shows "+1" in the middle and flies it to the badge; the badge counts up when the coin lands.
 
 When the timer reaches zero, the lap closes about two seconds later so the last coin can land.
 
-A day's streak tick (the green check in Weekly Streaks) needs both a finished focus session and an explanation that day (`recordSession` and `recordExplanation` in `F1SessionProgressManager`). Today's circle is filled yellow; the tick is separate from it.
+A day's streak tick (the green check in Weekly Streaks) needs both a finished focus session and an explanation that day (`recordSession` and `recordExplanation` in `StudyProgressManager`). Today's circle is filled yellow; the tick is separate from it.
 
 ### Live Activity
 
-With **Widget Timer** on in Settings, `startLap()` starts a Live Activity (`F1LiveActivityManager`). The widget (`LitmusWidgets/LitmusFocusLiveActivity.swift`) draws:
+With **Widget Timer** on in Settings, `startLap()` starts a Live Activity (`LiveActivityManager`). The widget (`LitmusWidgets/LitmusFocusLiveActivity.swift`) draws:
 
 - the countdown, with `Text(timerInterval:)`;
 - three sector bars, each a `ProgressView(timerInterval:)` for its third of the timer;
@@ -122,7 +122,7 @@ Because time itself drives the countdown and the bars, they keep moving while th
 
 A local notification for the end of the timer is scheduled when the lap starts, so it arrives even if the app is closed. It is cancelled if the student finishes early.
 
-`F1FocusLapActivityAttributes` is in `Shared/` because both the app (to start the activity) and the widget (to draw it) need it.
+`FocusTimerAttributes` is in `Shared/` because both the app (to start the activity) and the widget (to draw it) need it.
 
 ## Explaining and grading
 
@@ -131,10 +131,10 @@ The Explain tab has three ways to answer, in `ExplainInputMode`:
 | Mode | Input | Code |
 |---|---|---|
 | Speak | On-device speech recognition | `LiveSpeechRecorder` |
-| Sketch (`.write`) | Apple Pencil, read with Vision text recognition | `PencilDrawingCanvasView` (in `F1TeamRadioStudioView.swift`), `PencilTextExtractor` |
-| Type | The keyboard | `F1TeamRadioStudioView` |
+| Sketch (`.write`) | Apple Pencil, read with Vision text recognition | `PencilDrawingCanvasView` (in `ExplainView.swift`), `PencilTextExtractor` |
+| Type | The keyboard | `ExplainView` |
 
-The engineer asks the question differently for each mode (`modeLine(_:)`), and the line is read aloud by `F1EngineerVoice`, which wraps `VoiceEngineService` (`AVSpeechSynthesizer`).
+The engineer asks the question differently for each mode (`modeLine(_:)`), and the line is read aloud by `EngineerVoice`, which wraps `VoiceEngineService` (`AVSpeechSynthesizer`).
 
 ### The grading engine
 
@@ -149,6 +149,7 @@ answer ──▶ AnswerSorter ──▶ AttemptMachine ──▶ GradingCoordina
 2. **`AttemptMachine`** is a pure state machine: `ready`, `grading`, `awaitingFollowUp`, `correcting`, `finished` and the re-prompt states. The view model feeds events in and reads the state out.
 3. **`GradingCoordinator`** turns an answer into checked results. It runs the code checks, then the model graders in parallel batches, retries omitted IDs once, guards against keyword stuffing, and falls back to keyword matching if a batch fails or times out. Every model call is bounded in time.
 4. **`Graders`**: `CodeGrader` (checks that need no model), `ModelGrader` (the on-device model through a `ModelTransport`; its replies are checked, unknown IDs are dropped and anything that is not clearly true counts as "left out") and `LexicalGrader` (keyword fallback, never says no).
+   The grader prompts are built from the compiled chapter (`GradingContext`): the key-point and cause-link checks are told the class, subject, chapter, topic and the NCERT textbook passage as the source of truth; the misconception, relevance, comparison and quote checks get only the role line (the passage made the model less willing to flag a wrong idea). The model runs with permissive guardrails, which apply to string generation only; its reply is just true/false or copied words. Measured results and how to repeat them are in `Curriculum/official/EXPERIMENT_instructions.md` and `Tools/model_experiments/`.
 5. **`RuleEngine`** is pure: no I/O, no clock, no model. The same checked results always give the same `EvaluationOutcome`. This is what keeps the verdict explainable and testable.
 6. **`ProgressStore`** writes progress to SwiftData, only from the outcome's own properties, so a provisional result can never be saved as confirmed mastery.
 
@@ -187,30 +188,30 @@ python3 -I Tools/compile_curriculum.py      # checks everything; writes nothing 
 | Store | What it holds |
 |---|---|
 | SwiftData | `ConceptProgress`, `AttemptRecord`, `ProvisionalRecord`: progress and saved answers |
-| `UserDefaults` | Coins, weekly streaks, study minutes, session history (`F1SessionProgressManager`) |
+| `UserDefaults` | Coins, weekly streaks, study minutes, session history (`StudyProgressManager`) |
 | `@AppStorage` | Profile (`learner_*`), Settings toggles (`settings_*`) and Accessibility options (`a11y_*`) |
 
-The profile keys are `learner_name`, `learner_grade`, `learner_curriculum`, `learner_nationality`, `learner_driver_number`, `learner_about` and `learner_daily_goal_minutes`. The Accessibility keys are in `F1A11yKey`.
+The profile keys are `learner_name`, `learner_grade`, `learner_curriculum`, `learner_nationality`, `learner_driver_number`, `learner_about` and `learner_daily_goal_minutes`. The Accessibility keys are in `A11yKey`.
 
 ## Accessibility
 
 Settings has an **Accessibility** page with Text Size (seven steps), Bold Text, Reduce Motion and Haptic Feedback. They sit beside the system's own settings and apply to the whole app.
 
-`F1AccessibilityHost` reads the options and publishes them to the environment (`f1TextScale`, `f1BoldText`, `f1ReduceMotion`, `f1Haptics`). It also sets `dynamicTypeSize`, so system text styles follow the Text Size step, and `legibilityWeight`, so Bold Text bolds system fonts.
+`AccessibilityHost` reads the options and publishes them to the environment (`appTextScale`, `appBoldText`, `appReduceMotion`, `appHaptics`). It also sets `dynamicTypeSize`, so system text styles follow the Text Size step, and `legibilityWeight`, so Bold Text bolds system fonts.
 
 Most text in the app is drawn at design sizes. Use these helpers so new text follows the options:
 
 ```swift
-Text("Explain it").f1Font(size: 22, weight: .semibold)        // instead of .font(.system(size:weight:))
-view.f1Feedback(.selection, trigger: value)                    // instead of .sensoryFeedback
-@Environment(\.f1ReduceMotion) private var reduceMotion        // instead of the system key
+Text("Explain it").scaledFont(size: 22, weight: .semibold)        // instead of .font(.system(size:weight:))
+view.haptic(.selection, trigger: value)                    // instead of .sensoryFeedback
+@Environment(\.appReduceMotion) private var reduceMotion        // instead of the system key
 ```
 
 Reduce Motion is on when either the system's switch or the app's is on. Never use motion as the only way to show something; pair it with haptics or text.
 
 ## Layout that follows the window
 
-The sidebar changes the width of the content while it animates. Reading that width into state on every frame would rebuild the screen for every frame of the animation. `onSettledWidth` (`Litmus/DesignSystem/F1Layout.swift`) reports the width once, when it first appears and again after it has stopped changing for 140 milliseconds.
+The sidebar changes the width of the content while it animates. Reading that width into state on every frame would rebuild the screen for every frame of the animation. `onSettledWidth` (`Litmus/DesignSystem/WindowLayout.swift`) reports the width once, when it first appears and again after it has stopped changing for 140 milliseconds.
 
 Home measures the width with a spacer that the content cannot widen. The content sits in an overlay of the spacer; measuring the content itself would make a wide layout widen its own container, and the layout would never shrink back.
 
@@ -220,7 +221,7 @@ Sizes on Home come from `d(_:)`, which scales the Figma design's points by the s
 
 The deployment target is iPadOS 18. Liquid Glass, the glass button styles, the scroll edge effect, `SpeechAnalyzer` and Foundation Models arrive in iPadOS 26, so none of them may be called directly.
 
-- **Glass and controls.** Use the helpers in `Shared/F1Compat.swift`: `f1Glass(in:)` (with `interactive:`, `clear:` and `tint:`), `f1GlassButtonStyle()`, `f1GlassProminentButtonStyle()` and `f1ScrollEdgeEffect(for:)`. On iPadOS 26 and later they draw the real thing; before that, a system material or bordered style.
+- **Glass and controls.** Use the helpers in `Shared/Compat.swift`: `glassBackground(in:)` (with `interactive:`, `clear:` and `tint:`), `glassButton()`, `glassProminentButton()` and `softScrollEdge(for:)`. On iPadOS 26 and later they draw the real thing; before that, a system material or bordered style.
 - **Grading model.** `makeDefaultModelTransport()` returns the on-device model on iPadOS 26 and later and `UnavailableTransport` before that, so grading uses the keyword fallback and the best outcome is **Likely mastered**.
 - **Speech.** `LiveSpeechRecorder` uses `SpeechAnalyzer` on iPadOS 26 and later and the `SFSpeechRecognizer` path before that. The iPadOS 26 types are held type-erased because a stored property cannot be available only from a later system.
 - Any new use of an API newer than iPadOS 18 needs `#available(iOS 26.0, *)` and a fallback. Test on an iPadOS 18 simulator as well as the newest.
@@ -242,9 +243,8 @@ A shield lives in the system, not in the app. `startBlocking(for:)` records when
 
 ## Media and assets
 
-- **Asset catalog** (`Litmus/Assets.xcassets`): app colours, the characters, and the NCERT diagrams used by flashcards (`chem_*` and `bio_*`). A diagram is linked to its concept in `F1ConceptDiagrams.swift`.
-- **Videos** in `Litmus/`: `Idle123.mov` (the engineer waiting), `listening1.1.mov` (the engineer listening), and `idle-1.mov`, `wrong-1.mov` and `proceedtonxt-1.mov` for the debrief. `LoopingPlayerView` plays them in a loop.
-- **Cut-outs.** The clips have a black background. `idle_mask` (in the asset catalog) and the `race_engineer_listening` still are used as masks, so the character appears at full opacity on the garage background. If you replace a clip, make a new mask from its frames.
+- **Asset catalog** (`Litmus/Assets.xcassets`): app colours, the characters, and the NCERT diagrams used by flashcards (`chem_*` and `bio_*`). A diagram is linked to its concept in `ConceptDiagrams.swift`.
+- **The engineer** is not a video. `EngineerAvatarView` animates the stills in the asset catalog live (a slow head sway, breathing, blinking).
 - **App icon.** `Logo_Litmus.icon`, made in Icon Composer.
 
 ## Tests
@@ -272,7 +272,7 @@ The scripts compile the engine's source files directly with `swiftc`, so keep th
 
 ## Conventions
 
-- Names: types for screens start with `F1` (the circuit theme); the engine files have plain names (`RuleEngine`, `Graders`).
+- Names: a screen is named for what it shows and ends in `View` (`HomeView`, `TimerSetupView`, `ExplainView`); a file is named for the main type it holds. There is no app-wide prefix. Modifiers that add the app's own behaviour have plain verbs: `scaledFont`, `haptic`, `glassButton`, `glassBackground`.
 - Comments describe why, in plain sentences. Each file starts with a header that says what it is for.
 - New screens use the accessibility helpers, glass tiles and the back-button rules in [Navigation](#navigation).
 - Keep the engine pure: `RuleEngine` and `AttemptMachine` have no I/O, no clock and no model, so they can be tested exhaustively.

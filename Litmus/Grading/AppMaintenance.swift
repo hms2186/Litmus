@@ -20,7 +20,7 @@ enum GradingActivity {
 @MainActor
 final class AppMaintenance {
     static let shared = AppMaintenance()
-    static let backgroundTaskIdentifier = "dev.Bongo.Litmus.maintenance"
+    static let backgroundTaskIdentifier = "dev.Mohith.Litmus.maintenance"
 
     private var running = false
     private(set) var lastReport: MaintenanceReport?

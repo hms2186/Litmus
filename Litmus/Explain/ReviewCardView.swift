@@ -51,8 +51,9 @@ struct ReviewCardView: View {
                         .padding(.horizontal, 20)
                         .frame(height: 44)
                 }
-                .f1GlassProminentButtonStyle()
+                .litmusProminentGlassButton()
                 .buttonBorderShape(.capsule)
+                .tint(AppTheme.accent)
                 Spacer()
             }
         }

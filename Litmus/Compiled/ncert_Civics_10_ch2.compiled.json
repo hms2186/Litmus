@@ -3,7 +3,7 @@
   "schemaVersion": 4,
   "schemaRevision": 1,
   "sourceFile": "ncert_Civics_10_ch2.json",
-  "sourceSha256": "da3ae813c97986af25a27afd0a4258a07b9ea18ccf47f681840d8cd00d5d73ae",
+  "sourceSha256": "628e67439945e23dc568f84a7accb5e8717cf958a97a34b5047e702152df5f9c",
   "reviewStatus": "pending",
   "framework": "NCERT",
   "gradeLevel": "Class 10",
@@ -528,7 +528,7 @@
       "sourcePages": [
         15
       ],
-      "conceptHash": "1af8b374548fd762a45379593274d161e167bc922b5ed641b32f0bc1adc1bd4f",
+      "conceptHash": "317d6a7ed1e9d80e2b7027d9e979d8b4266a64f5a6ef42e5de3f04c6883a70cd",
       "cardText": "Federations are formed in two ways. In 'coming together' federations, independent States come together on their own and pool sovereignty to increase their security; the States usually have equal power (USA, Switzerland, Australia). In 'holding together' federations, a large country divides its power between the constituent States and the national government; the central government tends to be more powerful (India, Spain, Belgium).",
       "hint": "Did independent States join together, or did one large country divide its power?",
       "probe": "Compare 'coming together' and 'holding together' federations. How does the balance of power differ?",
@@ -558,7 +558,39 @@
               "criterion": "States that in 'coming together' federations independent States come together on their own and pool sovereignty to form a bigger unit.",
               "isRequired": true,
               "lexical": "never",
-              "followUp": "In a 'coming together' federation, how and why do the States form a bigger unit?"
+              "followUp": "In a 'coming together' federation, how and why do the States form a bigger unit?",
+              "acceptedPhrasings": [
+                {
+                  "all": [
+                    [
+                      "independent",
+                      "separate",
+                      "sovereign"
+                    ],
+                    [
+                      "join",
+                      "joined",
+                      "unite",
+                      "united",
+                      "come together",
+                      "came together",
+                      "merge"
+                    ],
+                    [
+                      "on their own",
+                      "by themselves",
+                      "voluntarily",
+                      "agree",
+                      "agreed"
+                    ]
+                  ],
+                  "exclude": [
+                    "holding together",
+                    "holding"
+                  ],
+                  "note": "Reviewer: the same words would describe the wrong claim that India was formed this way; that is the misc_ch2_india_coming_together misconception, and the lift is blocked while its check is stated and not corrected."
+                }
+              ]
             }
           ],
           "misconceptionIds": []

@@ -7,7 +7,7 @@
 import Foundation
 
 enum LitmusShared {
-    static let appGroup = "group.dev.Bongo.Litmus"
+    static let appGroup = "group.dev.Mohith.Litmus"
     /// Opens the flashcard deck of a chapter: litmus://deck?chapter=...&subject=...
     static func deckURL(chapter: String, subject: String) -> URL {
         var parts = URLComponents()
@@ -16,6 +16,9 @@ enum LitmusShared {
         parts.queryItems = [URLQueryItem(name: "chapter", value: chapter), URLQueryItem(name: "subject", value: subject)]
         return parts.url ?? URL(string: "litmus://deck")!
     }
+
+    /// Opens the Revise tab with no chapter picked: litmus://revise
+    static let reviseURL = URL(string: "litmus://revise")!
 
     static func deckRequest(from url: URL) -> (chapter: String, subject: String)? {
         guard url.scheme == "litmus", url.host == "deck",

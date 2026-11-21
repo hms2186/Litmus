@@ -8,7 +8,7 @@ mkdir -p "$BUILD"
 xcrun swiftc -swift-version 5 -default-isolation MainActor -module-name GraderTests \
   -target arm64-apple-macos26.0 \
   "$ROOT/Litmus/Curriculum/CompiledCurriculum.swift" \
-  "$ROOT/Litmus/Grading/RuleEngine.swift" \
+  "$ROOT/Litmus/Grading/RuleEngine.swift" "$ROOT/Litmus/Grading/RubricMatrix.swift" \
   "$ROOT/Litmus/Grading/Graders.swift" \
   "$ROOT/Litmus/Grading/GradingCoordinator.swift" \
   "$ROOT/Tools/GraderTests/main.swift" \
